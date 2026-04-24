@@ -1,17 +1,7 @@
 version: "3.9"
 
-# ─────────────────────────────────────────────────────────────────────────────
-# OSDHYAN — Local Development Stack
-#
-# Usage:
-#   docker compose up -d
-#   docker compose exec backend php artisan migrate
-#   docker compose exec backend php artisan horizon
-# ─────────────────────────────────────────────────────────────────────────────
-
 services:
 
-  # ── PostgreSQL ─────────────────────────────────────────────────────────────
   postgres:
     image: postgres:16-alpine
     container_name: osdhyan_postgres
@@ -30,7 +20,6 @@ services:
       timeout: 5s
       retries: 5
 
-  # ── Redis ──────────────────────────────────────────────────────────────────
   redis:
     image: redis:7-alpine
     container_name: osdhyan_redis
@@ -46,11 +35,10 @@ services:
       timeout: 3s
       retries: 5
 
-  # ── Laravel Backend ────────────────────────────────────────────────────────
   backend:
     build:
       context: ./backend
-      target: production
+      dockerfile: Dockerfile
     container_name: osdhyan_backend
     restart: unless-stopped
     depends_on:
@@ -59,8 +47,10 @@ services:
       redis:
         condition: service_healthy
     environment:
+      APP_NAME: OSDHYAN
       APP_ENV: local
       APP_DEBUG: "true"
+      APP_KEY: base64:REPLACE_WITH_YOUR_KEY
       APP_URL: "http://localhost:8000"
       FRONTEND_URL: "http://localhost:3000"
       DB_CONNECTION: pgsql
@@ -69,43 +59,17 @@ services:
       DB_DATABASE: test_series_db
       DB_USERNAME: postgres
       DB_PASSWORD: postgres
-      CACHE_DRIVER: redis
+      DB_SSLMODE: prefer
+      CACHE_STORE: redis
       QUEUE_CONNECTION: redis
       SESSION_DRIVER: redis
+      REDIS_CLIENT: predis
       REDIS_HOST: redis
       REDIS_PORT: 6379
+      SANCTUM_STATEFUL_DOMAINS: "localhost:3000,localhost"
     ports:
       - "8000:80"
-    volumes:
-      # Mount source for hot-reload in dev (remove in prod)
-      - ./backend:/var/www/osdhyan
-      - /var/www/osdhyan/vendor   # keep vendor from image
 
-  # ── Laravel Horizon (Queue Worker) ────────────────────────────────────────
-  horizon:
-    build:
-      context: ./backend
-      target: production
-    container_name: osdhyan_horizon
-    restart: unless-stopped
-    command: php artisan horizon
-    depends_on:
-      - backend
-      - redis
-    environment:
-      APP_ENV: local
-      DB_HOST: postgres
-      DB_DATABASE: test_series_db
-      DB_USERNAME: postgres
-      DB_PASSWORD: postgres
-      CACHE_DRIVER: redis
-      QUEUE_CONNECTION: redis
-      REDIS_HOST: redis
-    volumes:
-      - ./backend:/var/www/osdhyan
-      - /var/www/osdhyan/vendor
-
-  # ── Next.js Frontend ──────────────────────────────────────────────────────
   portal:
     build:
       context: ./apps/portal

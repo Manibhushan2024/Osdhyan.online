@@ -26,6 +26,11 @@ use Illuminate\Support\Facades\Route;
 | limits that persist across the 1-minute window.
 */
 
+// Health check — used by Render, Docker, and uptime monitors
+Route::get('/health', function () {
+    return response()->json(['status' => 'ok', 'timestamp' => now()->toISOString()]);
+});
+
 Route::middleware('throttle:5,1')->group(function () {
     Route::post('/auth/login', [AuthController::class, 'login']);
     Route::post('/auth/admin/login', [AuthController::class, 'adminLogin']);
