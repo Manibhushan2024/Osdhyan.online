@@ -1,0 +1,80 @@
+# ─── OS ──────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# ─── IDE ─────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.iml
+
+# ─── Node ────────────────────────────────────────────────────────
+node_modules/
+.npm
+
+# ─── Logs & temp ─────────────────────────────────────────────────
+*.log
+*.tmp
+npm-debug.log*
+
+# ─── Env files ───────────────────────────────────────────────────
+.env
+.env.local
+.env.production
+.env.staging
+!.env.example
+!.env.local.example
+
+# ─── Keys & secrets ──────────────────────────────────────────────
+mykeys/
+*.pem
+*.key
+*.p12
+*.pfx
+
+# ─── Debug artifacts (root-level dev files) ──────────────────────
+debug_gemini*.php
+test_ai*.php
+test_gemini*.php
+test_models*.php
+test_realistic_payload.php
+check_key.php
+dump_ids.php
+gen.py
+generate_bpsc_json.py
+patch_*.php
+create_bpsc*.php
+import_test_series.php
+import_log*.txt
+remote_*.php
+remote_*.b64
+seed_test_user.php
+build_mock.php
+fix_urls.js
+payload.json
+temp_*.txt
+bpsc_mock.json
+firebase-debug.log
+
+# ─── Screenshots / Media (use git-lfs if needed) ─────────────────
+*.png
+*.jpg
+*.jpeg
+!apps/portal/public/**
+!mobile/osdhyan/assets/**
+
+# ─── PDFs ────────────────────────────────────────────────────────
+*.pdf
+
+# ─── Zip / Archives ──────────────────────────────────────────────
+*.zip
+*.tar.gz
+
+# ─── SSH keys ────────────────────────────────────────────────────
+remote-ssh-*
+portal_conf.*
+
+# ─── Build outputs ───────────────────────────────────────────────
+build/
+dist/

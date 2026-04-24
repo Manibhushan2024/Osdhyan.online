@@ -1,0 +1,25 @@
+{
+  "name": "osdhyan-promo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/run-remotion.mjs studio src/index.ts",
+    "render": "node scripts/run-remotion.mjs render src/index.ts OSDHYANPromoReel out/osdhyan-promo-reel.mp4",
+    "thumbnail": "node scripts/run-remotion.mjs still src/index.ts OSDHYANPromoThumbnail out/osdhyan-promo-thumbnail.png",
+    "render:tutorial": "node scripts/run-remotion.mjs render src/index.ts OSDHYANTutorial out/osdhyan-tutorial.mp4",
+    "thumbnail:tutorial": "node scripts/run-remotion.mjs still src/index.ts OSDHYANTutorialCover out/osdhyan-tutorial-cover.png"
+  },
+  "dependencies": {
+    "@remotion/google-fonts": "4.0.434",
+    "@remotion/transitions": "4.0.434",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.434"
+  },
+  "devDependencies": {
+    "@remotion/cli": "4.0.434",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "typescript": "^5.9.2"
+  }
+}

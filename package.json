@@ -1,0 +1,30 @@
+{
+  "name": "test-series-platform",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "backend",
+    "mobile/*"
+  ],
+  "scripts": {
+    "dev:mobile": "npm --workspace mobile/osdhyan run start",
+    "dev:backend": "cd backend && php artisan serve",
+    "dev:all": "concurrently \"npm run dev:mobile\" \"npm run dev:backend\"",
+    "typecheck:mobile": "npm --workspace mobile/osdhyan run typecheck",
+    "doctor:mobile": "npm --workspace mobile/osdhyan run doctor",
+    "build:android:preview": "npm --workspace mobile/osdhyan run build:android:preview",
+    "build:android:production": "npm --workspace mobile/osdhyan run build:android:production",
+    "build:ios:preview": "npm --workspace mobile/osdhyan run build:ios:preview",
+    "build:ios:production": "npm --workspace mobile/osdhyan run build:ios:production",
+    "promo:dev": "npm --workspace apps/osdhyan-promo run dev",
+    "promo:render": "npm --workspace apps/osdhyan-promo run render",
+    "promo:thumbnail": "npm --workspace apps/osdhyan-promo run thumbnail",
+    "tutorial:render": "npm --workspace apps/osdhyan-promo run render:tutorial",
+    "tutorial:thumbnail": "npm --workspace apps/osdhyan-promo run thumbnail:tutorial",
+    "lint": "npm run lint --workspaces",
+    "typecheck": "npm run typecheck --workspaces"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}

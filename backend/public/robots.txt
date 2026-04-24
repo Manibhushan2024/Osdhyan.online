@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Block admin and API paths from crawlers
+Disallow: /api/
+Disallow: /admin/
+Disallow: /horizon/
+Disallow: /telescope/
+
+# Allow sitemap discovery
+Sitemap: https://osdhyan.com/sitemap.xml
