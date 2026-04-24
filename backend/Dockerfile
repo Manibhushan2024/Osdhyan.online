@@ -1,4 +1,4 @@
-# ─── Stage 1: Install PHP dependencies ───────────────────────────────────────
+# ─── Stage 1: Install dependencies ───────────────────────────────────────────
 FROM composer:2.7 AS vendor
 
 WORKDIR /app
@@ -11,12 +11,10 @@ RUN composer install \
     --ignore-platform-reqs \
     --no-scripts
 
-# ─── Stage 2: Production image ────────────────────────────────────────────────
-FROM php:8.2-fpm-bookworm AS production
+# ─── Stage 2: Runtime ─────────────────────────────────────────────────────────
+FROM php:8.2-cli-bookworm
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    nginx \
-    supervisor \
     libpq-dev \
     libzip-dev \
     zip \
@@ -32,25 +30,19 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         opcache \
     && pecl install redis \
     && docker-php-ext-enable redis \
-    && rm -rf /var/lib/apt/lists/* \
-    && mkdir -p /var/log/supervisor /run/nginx
+    && rm -rf /var/lib/apt/lists/*
 
 COPY docker/php.ini /usr/local/etc/php/conf.d/custom.ini
-COPY docker/nginx.conf /etc/nginx/nginx.conf
-COPY supervisor.conf /etc/supervisor/conf.d/osdhyan.conf
 
 WORKDIR /var/www/osdhyan
 
-# Copy vendor from composer stage (not from git — vendor is gitignored)
 COPY --from=vendor /app/vendor ./vendor
-
-# Copy application source
 COPY . .
 
-RUN chown -R www-data:www-data storage bootstrap/cache \
-    && chmod -R 775 storage bootstrap/cache \
-    && chmod +x docker/entrypoint.sh
+RUN mkdir -p storage/framework/sessions storage/framework/views storage/framework/cache/data storage/logs bootstrap/cache \
+    && chown -R www-data:www-data storage bootstrap/cache \
+    && chmod -R 775 storage bootstrap/cache
 
-EXPOSE 80
+EXPOSE 10000
 
-ENTRYPOINT ["docker/entrypoint.sh"]
+CMD ["sh", "-c", "php artisan migrate --force && php artisan config:cache && php artisan route:cache && php artisan storage:link 2>/dev/null; php artisan serve --host=0.0.0.0 --port=10000"]
