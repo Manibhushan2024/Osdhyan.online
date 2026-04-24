@@ -1,18 +1,21 @@
 #!/bin/sh
-set -e
 
 cd /var/www/osdhyan
 
-# Cache config/routes/views at runtime (not build time) so env vars are available
-php artisan config:cache
-php artisan route:cache
-php artisan view:cache
-php artisan event:cache
+# Ensure writable dirs exist
+mkdir -p storage/framework/sessions storage/framework/views storage/framework/cache/data storage/logs bootstrap/cache
+chown -R www-data:www-data storage bootstrap/cache
 
-# Run pending migrations automatically
-php artisan migrate --force
+# Run migrations (non-fatal — DB might not be ready on very first cold boot)
+php artisan migrate --force || echo "[entrypoint] migrate failed, continuing..."
 
-# Create storage symlink if not present
+# Cache at runtime so all env vars are available
+php artisan config:cache  || echo "[entrypoint] config:cache failed"
+php artisan route:cache   || echo "[entrypoint] route:cache failed"
+php artisan view:cache    || echo "[entrypoint] view:cache failed"
+php artisan event:cache   || echo "[entrypoint] event:cache failed"
+
+# Storage symlink
 php artisan storage:link 2>/dev/null || true
 
-exec supervisord -c /etc/supervisor/supervisord.conf
+exec /usr/bin/supervisord -c /etc/supervisor/supervisord.conf
