@@ -1,21 +1,7 @@
-# ─── Stage 1: Composer dependencies ──────────────────────────────────────────
-FROM composer:2.7 AS composer
+# Single-stage: copies pre-built vendor from local context (no network needed in Docker)
+FROM php:8.2-fpm-bookworm AS production
 
-WORKDIR /app
-COPY composer.json composer.lock ./
-RUN composer install \
-    --no-interaction \
-    --no-dev \
-    --prefer-dist \
-    --optimize-autoloader \
-    --ignore-platform-req=ext-pcntl \
-    --ignore-platform-req=ext-posix \
-    --no-scripts
-
-# ─── Stage 2: Production image ────────────────────────────────────────────────
-FROM php:8.2-fpm-alpine AS production
-
-RUN apk add --no-cache \
+RUN apt-get update && apt-get install -y --no-install-recommends \
     nginx \
     supervisor \
     libpq-dev \
@@ -23,7 +9,6 @@ RUN apk add --no-cache \
     zip \
     unzip \
     curl \
-    bash \
     && docker-php-ext-install \
         pdo \
         pdo_pgsql \
@@ -34,6 +19,7 @@ RUN apk add --no-cache \
         opcache \
     && pecl install redis \
     && docker-php-ext-enable redis \
+    && rm -rf /var/lib/apt/lists/* \
     && mkdir -p /var/log/supervisor /run/nginx
 
 COPY docker/php.ini /usr/local/etc/php/conf.d/custom.ini
@@ -42,7 +28,7 @@ COPY supervisor.conf /etc/supervisor/conf.d/osdhyan.conf
 
 WORKDIR /var/www/osdhyan
 
-COPY --from=composer /app/vendor ./vendor
+# Copy application (vendor is included via .dockerignore allowlist)
 COPY . .
 
 RUN chown -R www-data:www-data storage bootstrap/cache \
