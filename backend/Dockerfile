@@ -45,4 +45,4 @@ RUN mkdir -p storage/framework/sessions storage/framework/views storage/framewor
 
 EXPOSE 10000
 
-CMD ["sh", "-c", "php artisan migrate --force && php artisan config:cache && php artisan route:cache && php artisan storage:link 2>/dev/null; php artisan serve --host=0.0.0.0 --port=10000"]
+CMD ["sh", "-c", "php artisan migrate --force && php artisan config:cache && php artisan route:cache && php artisan storage:link 2>/dev/null; php artisan admin:create --email=${ADMIN_EMAIL:-admin@osdhyan.com} --password=${ADMIN_PASSWORD:-Admin@1234} --name='Super Admin' --phone=9999999999 --admin-role=root 2>/dev/null || true; php artisan serve --host=0.0.0.0 --port=10000"]
