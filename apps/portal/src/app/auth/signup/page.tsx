@@ -41,7 +41,11 @@ export default function SignupPage() {
         }
 
         try {
-            const res = await api.post('/auth/register', formData);
+            const { confirmPassword, ...rest } = formData;
+            const res = await api.post('/auth/register', {
+                ...rest,
+                password_confirmation: confirmPassword,
+            });
             await authenticateUser(res.data.access_token, res.data.user);
         } catch (err: any) {
             setError(err.response?.data?.message || 'Signup failed. Please check your details.');
