@@ -385,11 +385,11 @@ export default function LiveClassroomPage() {
     // ── Start / stop polling intervals ──────────────────────────────────────────
     const startIntervals = useCallback((tId?: number) => {
         stopAllIntervals();
-        stateIntervalRef.current = setInterval(pollState, STATE_INTERVAL);
+        stateIntervalRef.current = window.setInterval(pollState, STATE_INTERVAL);
         if (isTeacher) {
-            signalIntervalRef.current = setInterval(teacherSignalLoop, SIGNAL_INTERVAL);
+            signalIntervalRef.current = window.setInterval(teacherSignalLoop, SIGNAL_INTERVAL);
         } else if (tId) {
-            signalIntervalRef.current = setInterval(() => studentSignalLoop(tId), SIGNAL_INTERVAL);
+            signalIntervalRef.current = window.setInterval(() => studentSignalLoop(tId), SIGNAL_INTERVAL);
         }
     }, [isTeacher, pollState, teacherSignalLoop, studentSignalLoop]);
 

@@ -217,7 +217,7 @@ export default function FocusTimerPage() {
 
     useEffect(() => {
         if (isRunning) {
-            timerRef.current = setInterval(() => {
+            timerRef.current = window.setInterval(() => {
                 setTimeLeft((prev: number) => {
                     if (prev <= 1) {
                         clearInterval(timerRef.current!);

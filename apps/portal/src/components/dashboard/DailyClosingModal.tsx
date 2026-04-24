@@ -81,7 +81,7 @@ export function DailyClosingModal({
             setIsRecording(true);
             clearRecordingTimer();
 
-            recordingTimerRef.current = setInterval(() => {
+            recordingTimerRef.current = window.setInterval(() => {
                 setRecordingSeconds((seconds) => {
                     const next = seconds + 1;
                     if (next >= 30) {

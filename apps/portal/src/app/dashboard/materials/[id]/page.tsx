@@ -66,7 +66,7 @@ export default function MaterialViewerPage() {
 
     useEffect(() => {
         if (!loading && material && isActive) {
-            timerRef.current = setInterval(() => {
+            timerRef.current = window.setInterval(() => {
                 setSecondsSpent(prev => prev + 1);
             }, 1000);
             return () => {
