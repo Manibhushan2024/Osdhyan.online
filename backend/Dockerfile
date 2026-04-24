@@ -1,4 +1,17 @@
-# Single-stage: copies pre-built vendor from local context (no network needed in Docker)
+# ─── Stage 1: Install PHP dependencies ───────────────────────────────────────
+FROM composer:2.7 AS vendor
+
+WORKDIR /app
+COPY composer.json composer.lock ./
+RUN composer install \
+    --no-interaction \
+    --no-dev \
+    --prefer-dist \
+    --optimize-autoloader \
+    --ignore-platform-reqs \
+    --no-scripts
+
+# ─── Stage 2: Production image ────────────────────────────────────────────────
 FROM php:8.2-fpm-bookworm AS production
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -28,7 +41,10 @@ COPY supervisor.conf /etc/supervisor/conf.d/osdhyan.conf
 
 WORKDIR /var/www/osdhyan
 
-# Copy application (vendor is included via .dockerignore allowlist)
+# Copy vendor from composer stage (not from git — vendor is gitignored)
+COPY --from=vendor /app/vendor ./vendor
+
+# Copy application source
 COPY . .
 
 RUN chown -R www-data:www-data storage bootstrap/cache \
