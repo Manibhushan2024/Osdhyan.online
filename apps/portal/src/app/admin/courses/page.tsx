@@ -51,14 +51,18 @@ export default function AdminSubjectsPage() {
         fetchInitialData();
     }, []);
 
+    const [showExamWizard, setShowExamWizard] = useState(false);
+    const [examWizardData, setExamWizardData] = useState({ name_en: '', name_hi: '', code: '', description_en: '' });
+    const [isCreatingExam, setIsCreatingExam] = useState(false);
+
     const fetchInitialData = async () => {
         try {
             const [subsRes, examsRes] = await Promise.all([
                 api.get('/admin/subjects'),
-                api.get('/exams')
+                api.get('/admin/exams')
             ]);
-            setSubjects(subsRes.data);
-            setExams(examsRes.data);
+            setSubjects(Array.isArray(subsRes.data) ? subsRes.data : []);
+            setExams(Array.isArray(examsRes.data) ? examsRes.data : []);
             if (examsRes.data.length > 0) {
                 setWizardData(prev => ({ ...prev, exam_id: examsRes.data[0].id }));
             }
@@ -69,6 +73,24 @@ export default function AdminSubjectsPage() {
         }
     };
 
+    const handleCreateExam = async (e: React.FormEvent) => {
+        e.preventDefault();
+        setIsCreatingExam(true);
+        try {
+            await api.post('/admin/exams', examWizardData);
+            setShowExamWizard(false);
+            const res = await api.get('/admin/exams');
+            const newExams = Array.isArray(res.data) ? res.data : [];
+            setExams(newExams);
+            if (newExams.length > 0) setWizardData(prev => ({ ...prev, exam_id: newExams[0].id }));
+            setExamWizardData({ name_en: '', name_hi: '', code: '', description_en: '' });
+        } catch (error: any) {
+            alert(error?.response?.data?.message ?? 'Failed to create exam');
+        } finally {
+            setIsCreatingExam(false);
+        }
+    };
+
     const handleDeploy = async (e: React.FormEvent) => {
         e.preventDefault();
         setIsDeploying(true);
@@ -76,7 +98,7 @@ export default function AdminSubjectsPage() {
             await api.post('/admin/subjects', wizardData);
             setShowWizard(false);
             const res = await api.get('/admin/subjects');
-            setSubjects(res.data);
+            setSubjects(Array.isArray(res.data) ? res.data : []);
             // Reset wizard
             setWizardData({
                 exam_id: exams[0]?.id || '',
@@ -174,13 +196,22 @@ export default function AdminSubjectsPage() {
                         ))}
                     </div>
 
-                    <button
-                        onClick={() => setShowWizard(true)}
-                        className="flex items-center gap-3 bg-indigo-600 text-white px-8 py-5 rounded-[2rem] text-[10px] font-black uppercase tracking-widest shadow-2xl shadow-indigo-500/20 hover:scale-[1.02] active:scale-95 transition-all group"
-                    >
-                        <Plus className="h-4 w-4 group-hover:rotate-12 transition-transform" />
-                        Deploy New Course
-                    </button>
+                    <div className="flex items-center gap-3">
+                        <button
+                            onClick={() => setShowExamWizard(true)}
+                            className="flex items-center gap-2 bg-white/5 border border-white/10 text-foreground/60 px-6 py-5 rounded-[2rem] text-[9px] font-black uppercase tracking-widest hover:bg-white/10 hover:text-white transition-all group"
+                        >
+                            <Plus className="h-3 w-3" />
+                            New Exam
+                        </button>
+                        <button
+                            onClick={() => setShowWizard(true)}
+                            className="flex items-center gap-3 bg-indigo-600 text-white px-8 py-5 rounded-[2rem] text-[10px] font-black uppercase tracking-widest shadow-2xl shadow-indigo-500/20 hover:scale-[1.02] active:scale-95 transition-all group"
+                        >
+                            <Plus className="h-4 w-4 group-hover:rotate-12 transition-transform" />
+                            Deploy New Course
+                        </button>
+                    </div>
                 </div>
             </div>
 
@@ -374,6 +405,61 @@ export default function AdminSubjectsPage() {
                                         <Rocket className="h-5 w-5 group-hover:-translate-y-1 transition-transform" />
                                     )}
                                     {isDeploying ? 'Deploying...' : 'Initialize Deployment'}
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            )}
+
+            {/* EXAM CREATION WIZARD */}
+            {showExamWizard && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center p-6 bg-black/80 backdrop-blur-md animate-in fade-in duration-300">
+                    <div className="w-full max-w-lg bg-card-bg border border-card-border rounded-[3rem] shadow-2xl overflow-hidden animate-in zoom-in-95 duration-500">
+                        <div className="p-10 space-y-6">
+                            <div className="flex items-center justify-between">
+                                <h2 className="text-lg font-black text-foreground uppercase tracking-tight italic">Create New Exam</h2>
+                                <button onClick={() => setShowExamWizard(false)} className="text-foreground/20 hover:text-foreground transition-colors p-2">
+                                    <X className="h-5 w-5" />
+                                </button>
+                            </div>
+                            <form onSubmit={handleCreateExam} className="space-y-4">
+                                <div className="grid grid-cols-2 gap-4">
+                                    <div className="col-span-2">
+                                        <label className="block text-[8px] font-black uppercase tracking-widest text-foreground/40 mb-2">Exam Name (English) *</label>
+                                        <input
+                                            required
+                                            value={examWizardData.name_en}
+                                            onChange={e => setExamWizardData({ ...examWizardData, name_en: e.target.value })}
+                                            placeholder="e.g. BPSC 70th"
+                                            className="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-sm font-black text-foreground focus:outline-none focus:border-indigo-600/30"
+                                        />
+                                    </div>
+                                    <div>
+                                        <label className="block text-[8px] font-black uppercase tracking-widest text-foreground/40 mb-2">Short Code</label>
+                                        <input
+                                            value={examWizardData.code}
+                                            onChange={e => setExamWizardData({ ...examWizardData, code: e.target.value.toUpperCase() })}
+                                            placeholder="BPSC70"
+                                            className="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-sm font-black text-foreground focus:outline-none focus:border-indigo-600/30"
+                                        />
+                                    </div>
+                                    <div>
+                                        <label className="block text-[8px] font-black uppercase tracking-widest text-foreground/40 mb-2">Hindi Name</label>
+                                        <input
+                                            value={examWizardData.name_hi}
+                                            onChange={e => setExamWizardData({ ...examWizardData, name_hi: e.target.value })}
+                                            placeholder="Optional"
+                                            className="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-sm font-black text-foreground focus:outline-none focus:border-indigo-600/30"
+                                        />
+                                    </div>
+                                </div>
+                                <button
+                                    type="submit"
+                                    disabled={isCreatingExam}
+                                    className="w-full bg-indigo-600 text-white py-4 rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-indigo-700 disabled:opacity-50 transition-all"
+                                >
+                                    {isCreatingExam ? 'Creating...' : 'Create Exam'}
                                 </button>
                             </form>
                         </div>

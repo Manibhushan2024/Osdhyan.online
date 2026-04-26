@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Models\Chapter;
+use App\Models\Exam;
 use App\Models\Question;
 use App\Models\QuestionOption;
 use App\Models\StudyMaterial;
@@ -18,6 +19,46 @@ use Illuminate\Support\Facades\Storage;
 
 class AdminCourseController extends Controller
 {
+    // ─── Exams ────────────────────────────────────────────────────────────────
+
+    public function getExams(): JsonResponse
+    {
+        return response()->json(Exam::orderBy('name_en')->get());
+    }
+
+    public function storeExam(Request $request): JsonResponse
+    {
+        $data = $request->validate([
+            'name_en'        => 'required|string|max:255',
+            'name_hi'        => 'nullable|string|max:255',
+            'slug'           => 'nullable|string|max:255|unique:exams,slug',
+            'code'           => 'nullable|string|max:20',
+            'description_en' => 'nullable|string',
+            'description_hi' => 'nullable|string',
+        ]);
+
+        if (empty($data['slug'])) {
+            $base = \Illuminate\Support\Str::slug($data['name_en']);
+            $suffix = $data['code'] ? '-' . strtolower($data['code']) : '';
+            $data['slug'] = $base . $suffix ?: $base . '-' . uniqid();
+        }
+
+        return response()->json(Exam::create($data), 201);
+    }
+
+    public function updateExam(Request $request, int $id): JsonResponse
+    {
+        $exam = Exam::findOrFail($id);
+        $exam->update($request->only(['name_en', 'name_hi', 'slug', 'code', 'description_en', 'description_hi']));
+        return response()->json($exam);
+    }
+
+    public function deleteExam(int $id): JsonResponse
+    {
+        Exam::findOrFail($id)->delete();
+        return response()->json(['message' => 'Exam deleted.']);
+    }
+
     // ─── Subjects ─────────────────────────────────────────────────────────────
 
     public function getSubjects(): JsonResponse

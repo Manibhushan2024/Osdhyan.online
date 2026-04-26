@@ -154,6 +154,12 @@ Route::middleware(['auth:sanctum', 'throttle:60,1'])->group(function () {
 
     // ── Admin ─────────────────────────────────────────────────────────────────
     Route::middleware('admin')->group(function () {
+        Route::get('/admin/exams', [\App\Http\Controllers\Api\AdminCourseController::class, 'getExams']);
+        Route::post('/admin/exams', [\App\Http\Controllers\Api\AdminCourseController::class, 'storeExam']);
+        Route::put('/admin/exams/{id}', [\App\Http\Controllers\Api\AdminCourseController::class, 'updateExam']);
+        Route::delete('/admin/exams/{id}', [\App\Http\Controllers\Api\AdminCourseController::class, 'deleteExam'])
+            ->middleware('root_admin');
+
         Route::get('/admin/subjects', [\App\Http\Controllers\Api\AdminCourseController::class, 'getSubjects']);
         Route::post('/admin/subjects', [\App\Http\Controllers\Api\AdminCourseController::class, 'storeSubject']);
         Route::put('/admin/subjects/{id}', [\App\Http\Controllers\Api\AdminCourseController::class, 'updateSubject']);
