@@ -22,25 +22,39 @@ class AdminCourseController extends Controller
 
     public function getSubjects(): JsonResponse
     {
-        return response()->json(['data' => Subject::with('exam')->orderBy('name_en')->get()]);
+        return response()->json(Subject::with('exam')->orderBy('name_en')->get());
     }
 
     public function storeSubject(Request $request): JsonResponse
     {
         $data = $request->validate([
-            'exam_id' => 'required|exists:exams,id',
-            'name_en' => 'required|string|max:255',
-            'name_hi' => 'nullable|string|max:255',
-            'slug' => 'required|string|unique:subjects,slug',
+            'exam_id'     => 'required|exists:exams,id',
+            'name_en'     => 'required|string|max:255',
+            'name_hi'     => 'nullable|string|max:255',
+            'slug'        => 'nullable|string|max:255|unique:subjects,slug',
+            'code'        => 'nullable|string|max:30',
+            'category'    => 'nullable|string|max:50',
+            'class_level' => 'nullable|string|max:10',
+            'sort_order'  => 'nullable|integer',
+            'is_published'=> 'nullable|boolean',
         ]);
-        return response()->json(['data' => Subject::create($data)], 201);
+
+        if (empty($data['slug'])) {
+            $base = \Illuminate\Support\Str::slug($data['name_en']);
+            $suffix = $data['code'] ? '-' . strtolower($data['code']) : '-' . uniqid();
+            $data['slug'] = $base . $suffix;
+        }
+
+        return response()->json(Subject::create($data), 201);
     }
 
     public function updateSubject(Request $request, int $id): JsonResponse
     {
         $subject = Subject::findOrFail($id);
-        $subject->update($request->only(['name_en', 'name_hi', 'slug']));
-        return response()->json(['data' => $subject]);
+        $subject->update($request->only([
+            'name_en', 'name_hi', 'slug', 'code', 'category', 'class_level', 'sort_order', 'is_published',
+        ]));
+        return response()->json($subject);
     }
 
     public function deleteSubject(int $id): JsonResponse

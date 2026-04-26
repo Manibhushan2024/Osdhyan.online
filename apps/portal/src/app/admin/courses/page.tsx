@@ -107,9 +107,9 @@ export default function AdminSubjectsPage() {
 
     const categories = ['ALL', 'NCERT', 'GS', 'APTITUDE', 'REASONING', 'ENGLISH', 'CURRENT AFFAIRS'];
 
-    const filteredSubjects = subjects.filter(s => {
-        const matchesSearch = s.name_en.toLowerCase().includes(search.toLowerCase()) ||
-            s.code.toLowerCase().includes(search.toLowerCase());
+    const filteredSubjects = (Array.isArray(subjects) ? subjects : []).filter(s => {
+        const matchesSearch = s.name_en?.toLowerCase().includes(search.toLowerCase()) ||
+            (s.code ?? '').toLowerCase().includes(search.toLowerCase());
         const matchesCategory = categoryFilter === 'ALL' || s.category === categoryFilter;
         return matchesSearch && matchesCategory;
     });

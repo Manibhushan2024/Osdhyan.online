@@ -11,6 +11,16 @@ class Subject extends Model
         'name_en',
         'name_hi',
         'slug',
+        'code',
+        'category',
+        'class_level',
+        'sort_order',
+        'is_published',
+    ];
+
+    protected $casts = [
+        'is_published' => 'boolean',
+        'sort_order'   => 'integer',
     ];
 
     public function exam()
