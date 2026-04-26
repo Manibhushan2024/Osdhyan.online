@@ -289,7 +289,9 @@ class AdminCourseController extends Controller
 
         $question = DB::transaction(function () use ($data) {
             $q = Question::create($data);
-            foreach ($data['options'] as $opt) {
+            $labels = ['A', 'B', 'C', 'D', 'E'];
+            foreach ($data['options'] as $idx => $opt) {
+                $opt['label'] = $opt['label'] ?? ($labels[$idx] ?? chr(65 + $idx));
                 $q->options()->create($opt);
             }
             return $q->load('options');
