@@ -71,7 +71,10 @@ export default function AdminSidebar() {
 
             <div className="mt-auto p-8 space-y-4">
                 <button
-                    onClick={() => window.open((process.env.NEXT_PUBLIC_SITE_URL ?? '') + '/admin', '_blank')}
+                    onClick={() => {
+                        const api = (process.env.NEXT_PUBLIC_API_URL ?? '').replace(/\/api\s*$/, '');
+                        window.open(api + '/admin', '_blank');
+                    }}
                     className="w-full flex items-center gap-3 px-6 py-4 bg-white/5 border border-white/10 rounded-2xl text-[8px] font-black text-indigo-400 uppercase tracking-widest hover:bg-white/10 transition-all group"
                 >
                     <ArrowLeft className="h-3 w-3 group-hover:-translate-x-1 transition-transform" />
