@@ -212,6 +212,18 @@ Route::middleware(['auth:sanctum', 'throttle:60,1'])->group(function () {
         });
     });
 
+    // ── Live Classes ──────────────────────────────────────────────────────────
+    Route::get('/live-classes', [\App\Http\Controllers\Api\LiveClassController::class, 'index']);
+    Route::get('/live-classes/{id}', [\App\Http\Controllers\Api\LiveClassController::class, 'show']);
+    Route::post('/live-classes/{id}/join', [\App\Http\Controllers\Api\LiveClassController::class, 'join']);
+    Route::post('/live-classes/{id}/leave', [\App\Http\Controllers\Api\LiveClassController::class, 'leave']);
+    Route::get('/live-classes/{id}/state', [\App\Http\Controllers\Api\LiveClassController::class, 'state']);
+    Route::get('/live-classes/{id}/signals', [\App\Http\Controllers\Api\LiveClassController::class, 'signals']);
+    Route::post('/live-classes/{id}/signals', [\App\Http\Controllers\Api\LiveClassController::class, 'sendSignal']);
+    Route::post('/live-classes/{id}/messages', [\App\Http\Controllers\Api\LiveClassController::class, 'sendMessage']);
+    Route::post('/live-classes/{id}/raise-hand', [\App\Http\Controllers\Api\LiveClassController::class, 'raiseHand']);
+    Route::post('/live-classes/{id}/polls/{pollId}/vote', [\App\Http\Controllers\Api\LiveClassController::class, 'vote']);
+
     // ── Study Planner ─────────────────────────────────────────────────────────
     Route::prefix('study-planner')->group(function () {
         Route::get('/dashboard', [\App\Http\Controllers\Api\StudyPlannerController::class, 'getDashboardData']);
