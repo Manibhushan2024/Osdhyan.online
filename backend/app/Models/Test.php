@@ -7,21 +7,17 @@ use Illuminate\Database\Eloquent\Model;
 class Test extends Model
 {
     protected $fillable = [
-        'exam_id',
-        'subject_id',
-        'chapter_id',
-        'topic_id',
-        'name_en',
-        'name_hi',
-        'description_en',
-        'description_hi',
-        'mode',
-        'status',
-        'category',
-        'duration_sec',
-        'negative_marking',
-        'question_mark',
-        'total_marks',
+        'exam_id', 'subject_id', 'chapter_id', 'topic_id',
+        'name_en', 'name_hi', 'description_en', 'description_hi',
+        'mode', 'status', 'category',
+        'duration_sec', 'negative_marking', 'question_mark', 'total_marks',
+        'passing_marks', 'is_free', 'shuffle_questions', 'max_attempts',
+        'year', 'paper_type',
+    ];
+
+    protected $casts = [
+        'is_free'           => 'boolean',
+        'shuffle_questions' => 'boolean',
     ];
 
     public function exam()

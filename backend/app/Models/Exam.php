@@ -10,6 +10,7 @@ class Exam extends Model
         'name_en',
         'name_hi',
         'slug',
+        'code',
         'description_en',
         'description_hi',
     ];

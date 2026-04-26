@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\AchievementController;
+use App\Http\Controllers\Api\AdminTestController;
 use App\Http\Controllers\Api\AnalyticsController;
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\NoteController;
@@ -182,6 +183,15 @@ Route::middleware(['auth:sanctum', 'throttle:60,1'])->group(function () {
         Route::get('/admin/questions/search', [\App\Http\Controllers\Api\AdminCourseController::class, 'searchQuestions']);
         Route::post('/admin/questions', [\App\Http\Controllers\Api\AdminCourseController::class, 'createQuestion']);
         Route::post('/admin/tests/with-questions', [\App\Http\Controllers\Api\AdminCourseController::class, 'createTestWithQuestions']);
+
+        // Full test CRUD + actions
+        Route::get('/admin/tests', [AdminTestController::class, 'index']);
+        Route::post('/admin/tests', [AdminTestController::class, 'store']);
+        Route::put('/admin/tests/{id}', [AdminTestController::class, 'update']);
+        Route::delete('/admin/tests/{id}', [AdminTestController::class, 'destroy']);
+        Route::post('/admin/tests/{id}/publish', [AdminTestController::class, 'publish']);
+        Route::post('/admin/tests/{id}/duplicate', [AdminTestController::class, 'duplicate']);
+        Route::post('/admin/tests/auto-assign', [AdminTestController::class, 'autoAssign']);
 
         Route::post('/admin/automation/token', [\App\Http\Controllers\Api\AdminAutomationController::class, 'createAutomationToken']);
         Route::post('/admin/automation/import-mock-test', [\App\Http\Controllers\Api\AdminAutomationController::class, 'importMockTest']);

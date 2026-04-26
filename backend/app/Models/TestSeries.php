@@ -7,13 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class TestSeries extends Model
 {
     protected $fillable = [
-        'exam_id',
-        'name_en',
-        'name_hi',
-        'description_en',
-        'description_hi',
-        'category',
-        'is_published',
+        'exam_id', 'name_en', 'name_hi',
+        'description_en', 'description_hi',
+        'category', 'is_published', 'image',
     ];
 
     protected $casts = [

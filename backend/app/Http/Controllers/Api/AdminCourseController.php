@@ -145,27 +145,44 @@ class AdminCourseController extends Controller
 
     public function getAdminTestSeries(): JsonResponse
     {
-        return response()->json(['data' => TestSeries::with('exam')->latest()->get()]);
+        return response()->json(TestSeries::with('exam')->latest()->get());
     }
 
     public function storeTestSeries(Request $request): JsonResponse
     {
         $data = $request->validate([
-            'exam_id' => 'nullable|exists:exams,id',
-            'name_en' => 'required|string|max:255',
-            'name_hi' => 'nullable|string|max:255',
+            'exam_id'        => 'nullable|exists:exams,id',
+            'name_en'        => 'required|string|max:255',
+            'name_hi'        => 'nullable|string|max:255',
             'description_en' => 'nullable|string',
-            'category' => 'nullable|string',
-            'is_published' => 'boolean',
+            'category'       => 'nullable|string',
+            'is_published'   => 'nullable|boolean',
+            'image_file'     => 'nullable|file|mimes:jpg,jpeg,png,webp|max:5120',
         ]);
-        return response()->json(['data' => TestSeries::create($data)], 201);
+
+        $imagePath = null;
+        if ($request->hasFile('image_file')) {
+            $imagePath = $request->file('image_file')->store('test-series', 'public');
+        }
+
+        $series = TestSeries::create([
+            'exam_id'        => $data['exam_id'] ?? null,
+            'name_en'        => $data['name_en'],
+            'name_hi'        => $data['name_hi'] ?? null,
+            'description_en' => $data['description_en'] ?? null,
+            'category'       => $data['category'] ?? null,
+            'is_published'   => (bool) ($data['is_published'] ?? false),
+            'image'          => $imagePath,
+        ]);
+
+        return response()->json($series->load('exam'), 201);
     }
 
     public function updateTestSeries(Request $request, int $id): JsonResponse
     {
         $series = TestSeries::findOrFail($id);
         $series->update($request->only(['name_en', 'name_hi', 'description_en', 'category', 'is_published']));
-        return response()->json(['data' => $series]);
+        return response()->json($series->load('exam'));
     }
 
     public function deleteTestSeries(int $id): JsonResponse
@@ -178,26 +195,40 @@ class AdminCourseController extends Controller
 
     public function searchQuestions(Request $request): JsonResponse
     {
-        $query = Question::with('options');
-        if ($request->filled('q')) {
-            $query->where('question_en', 'ilike', '%' . $request->q . '%');
+        $query = Question::with(['subject:id,name_en', 'chapter:id,name_en']);
+
+        if ($request->filled('search') || $request->filled('q')) {
+            $term = $request->filled('search') ? $request->search : $request->q;
+            $query->where('question_en', 'ilike', '%' . $term . '%');
         }
-        return response()->json(['data' => $query->limit(50)->get()]);
+        if ($request->filled('subject_id')) {
+            $query->where('subject_id', $request->subject_id);
+        }
+        if ($request->filled('difficulty')) {
+            $query->where('difficulty', $request->difficulty);
+        }
+        if ($request->filled('exam_id')) {
+            $query->whereHas('subject', fn($q) => $q->where('exam_id', $request->exam_id));
+        }
+
+        return response()->json($query->limit(100)->get(['id', 'question_en', 'difficulty', 'subject_id', 'chapter_id']));
     }
 
     public function createQuestion(Request $request): JsonResponse
     {
         $data = $request->validate([
-            'subject_id' => 'nullable|exists:subjects,id',
-            'chapter_id' => 'nullable|exists:chapters,id',
-            'topic_id' => 'nullable|exists:topics,id',
-            'question_en' => 'required|string',
-            'question_hi' => 'nullable|string',
-            'explanation_en' => 'nullable|string',
-            'difficulty' => 'nullable|in:easy,medium,hard',
-            'options' => 'required|array|min:2',
-            'options.*.label' => 'required|string|max:1',
+            'subject_id'      => 'nullable|exists:subjects,id',
+            'chapter_id'      => 'nullable|exists:chapters,id',
+            'topic_id'        => 'nullable|exists:topics,id',
+            'question_en'     => 'required|string',
+            'question_hi'     => 'nullable|string',
+            'explanation_en'  => 'nullable|string',
+            'explanation_hi'  => 'nullable|string',
+            'difficulty'      => 'nullable|in:easy,medium,hard',
+            'options'         => 'required|array|min:2',
+            'options.*.label'     => 'nullable|string|max:1',
             'options.*.option_en' => 'required|string',
+            'options.*.option_hi' => 'nullable|string',
             'options.*.is_correct' => 'required|boolean',
         ]);
 
@@ -209,7 +240,7 @@ class AdminCourseController extends Controller
             return $q->load('options');
         });
 
-        return response()->json(['data' => $question], 201);
+        return response()->json($question, 201);
     }
 
     public function createTestWithQuestions(Request $request): JsonResponse
