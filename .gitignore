@@ -78,3 +78,5 @@ portal_conf.*
 # ─── Build outputs ───────────────────────────────────────────────
 build/
 dist/
+
+.vercel
