@@ -164,10 +164,22 @@ class TestAttemptController extends Controller
             return $unauthorized;
         }
 
+        $attempt->load(['responses', 'test.questions.options', 'test.questions.subject']);
+
+        // While the attempt is ongoing, never ship correct answers or
+        // explanations — smaller payload and no mid-test answer leaking.
+        if ($attempt->status !== 'completed') {
+            $attempt->test?->questions?->each(function ($question) {
+                $question->makeHidden(['explanation_en', 'explanation_hi']);
+                $question->options->each->makeHidden('is_correct');
+            });
+        }
+
         return response()->json(
-            $this->presentAttempt(
-                $attempt->load(['responses', 'test.questions.options', 'test.questions.subject'])
-            )
+            $this->presentAttempt($attempt),
+            200,
+            [],
+            JSON_UNESCAPED_UNICODE
         );
     }
 
@@ -282,7 +294,10 @@ class TestAttemptController extends Controller
         return response()->json(
             $this->presentAttempt(
                 $attempt->fresh()->load(['responses', 'test.questions.options', 'test.questions.subject'])
-            )
+            ),
+            200,
+            [],
+            JSON_UNESCAPED_UNICODE
         );
     }
 

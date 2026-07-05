@@ -81,6 +81,13 @@ class TestController extends Controller
             return $question->pivot?->marks ?? ($test->question_mark ?? 1);
         });
 
-        return response()->json($test);
+        // Pre-attempt payload: never ship answers or explanations, and keep
+        // Hindi text unescaped (escaped Devanagari inflates the JSON ~6x).
+        $test->questions->each(function ($question) {
+            $question->makeHidden(['explanation_en', 'explanation_hi']);
+            $question->options->each->makeHidden('is_correct');
+        });
+
+        return response()->json($test, 200, [], JSON_UNESCAPED_UNICODE);
     }
 }
