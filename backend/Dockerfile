@@ -45,4 +45,6 @@ RUN mkdir -p storage/framework/sessions storage/framework/views storage/framewor
 
 EXPOSE 10000
 
-CMD ["sh", "-c", "php artisan migrate --force && php artisan config:cache && php artisan route:cache && php artisan storage:link 2>/dev/null; php artisan admin:create --email=${ADMIN_EMAIL:-admin@osdhyan.com} --password=${ADMIN_PASSWORD:-Admin@1234} --name='Super Admin' --phone=9999999999 --admin-role=root 2>/dev/null || true; php artisan serve --host=0.0.0.0 --port=10000"]
+# CACHE_STORE=file: cache + rate-limiter ops hit local disk instead of paying
+# a network round trip to the remote Postgres on every request.
+CMD ["sh", "-c", "export CACHE_STORE=file; php artisan migrate --force && php artisan config:cache && php artisan route:cache && php artisan storage:link 2>/dev/null; php artisan admin:create --email=${ADMIN_EMAIL:-admin@osdhyan.com} --password=${ADMIN_PASSWORD:-Admin@1234} --name='Super Admin' --phone=9999999999 --admin-role=root 2>/dev/null || true; php artisan serve --host=0.0.0.0 --port=10000"]

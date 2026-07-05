@@ -32,6 +32,30 @@ Route::get('/health', function () {
     return response()->json(['status' => 'ok', 'timestamp' => now()->toISOString()]);
 });
 
+// Deep health check — measures DB and cache round-trip latency to diagnose
+// slow environments (e.g. DB in a different region than the web service).
+Route::get('/health/deep', function () {
+    $out = [
+        'cache_driver' => config('cache.default'),
+        'db_driver'    => config('database.default'),
+    ];
+
+    $t = microtime(true);
+    \Illuminate\Support\Facades\DB::connection()->getPdo();
+    $out['db_connect_ms'] = (int) ((microtime(true) - $t) * 1000);
+
+    $t = microtime(true);
+    \Illuminate\Support\Facades\DB::select('select 1');
+    $out['db_query_ms'] = (int) ((microtime(true) - $t) * 1000);
+
+    $t = microtime(true);
+    \Illuminate\Support\Facades\Cache::put('health_probe', 1, 10);
+    \Illuminate\Support\Facades\Cache::get('health_probe');
+    $out['cache_roundtrip_ms'] = (int) ((microtime(true) - $t) * 1000);
+
+    return response()->json($out);
+});
+
 Route::middleware('throttle:5,1')->group(function () {
     Route::post('/auth/login', [AuthController::class, 'login']);
     Route::post('/auth/admin/login', [AuthController::class, 'adminLogin']);

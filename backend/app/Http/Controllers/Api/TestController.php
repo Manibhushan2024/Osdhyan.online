@@ -7,35 +7,41 @@ use App\Models\Test;
 use App\Models\TestAttempt;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Cache;
 
 class TestController extends Controller
 {
     public function index(Request $request)
     {
-        $query = Test::query()
-            ->with(['subject', 'chapter', 'topic'])
-            ->withCount('questions');
+        $filters = $request->only(['mode', 'exam_id', 'subject_id', 'chapter_id', 'topic_id']);
+        $cacheKey = 'tests_index_' . md5(json_encode($filters));
 
-        if ($request->filled('mode')) {
-            $mode = $request->string('mode')->toString();
-            $query->where(function ($builder) use ($mode) {
-                $builder->where('mode', $mode)
-                    ->orWhere('category', $mode);
-            });
-        }
+        $tests = Cache::remember($cacheKey, 60, function () use ($request) {
+            $query = Test::query()
+                ->with(['subject', 'chapter', 'topic'])
+                ->withCount('questions');
 
-        foreach (['exam_id', 'subject_id', 'chapter_id', 'topic_id'] as $filter) {
-            if ($request->filled($filter)) {
-                $query->where($filter, $request->input($filter));
+            if ($request->filled('mode')) {
+                $mode = $request->string('mode')->toString();
+                $query->where(function ($builder) use ($mode) {
+                    $builder->where('mode', $mode)
+                        ->orWhere('category', $mode);
+                });
             }
-        }
 
-        $query->where(function ($builder) {
-            $builder->whereNull('status')
-                ->orWhereIn('status', ['published', 'active']);
+            foreach (['exam_id', 'subject_id', 'chapter_id', 'topic_id'] as $filter) {
+                if ($request->filled($filter)) {
+                    $query->where($filter, $request->input($filter));
+                }
+            }
+
+            $query->where(function ($builder) {
+                $builder->whereNull('status')
+                    ->orWhereIn('status', ['published', 'active']);
+            });
+
+            return $query->latest('id')->get();
         });
-
-        $tests = $query->latest('id')->get();
 
         $latestAttempts = collect();
         if (Auth::check()) {
@@ -66,28 +72,34 @@ class TestController extends Controller
 
     public function show(Test $test)
     {
-        $test->load([
-            'subject',
-            'chapter',
-            'topic',
-            'questions.options',
-            'questions.subject',
-        ]);
+        // Payload is user-independent, so cache the whole thing. 120s TTL keeps
+        // admin edits reasonably fresh without a cache-invalidation web.
+        $payload = Cache::remember("test_show_v3_{$test->id}", 120, function () use ($test) {
+            $test->load([
+                'subject',
+                'chapter',
+                'topic',
+                'questions.options',
+                'questions.subject',
+            ]);
 
-        $questionsCount = $test->questions->count();
-        $test->questions_count = $questionsCount;
-        $test->mode = $test->mode ?: ($test->category ?: 'full_mock');
-        $test->total_marks = $test->total_marks ?: $test->questions->sum(function ($question) use ($test) {
-            return $question->pivot?->marks ?? ($test->question_mark ?? 1);
+            $questionsCount = $test->questions->count();
+            $test->questions_count = $questionsCount;
+            $test->mode = $test->mode ?: ($test->category ?: 'full_mock');
+            $test->total_marks = $test->total_marks ?: $test->questions->sum(function ($question) use ($test) {
+                return $question->pivot?->marks ?? ($test->question_mark ?? 1);
+            });
+
+            // Pre-attempt payload: never ship answers or explanations, and keep
+            // Hindi text unescaped (escaped Devanagari inflates the JSON ~6x).
+            $test->questions->each(function ($question) {
+                $question->makeHidden(['explanation_en', 'explanation_hi']);
+                $question->options->each->makeHidden('is_correct');
+            });
+
+            return $test->toArray();
         });
 
-        // Pre-attempt payload: never ship answers or explanations, and keep
-        // Hindi text unescaped (escaped Devanagari inflates the JSON ~6x).
-        $test->questions->each(function ($question) {
-            $question->makeHidden(['explanation_en', 'explanation_hi']);
-            $question->options->each->makeHidden('is_correct');
-        });
-
-        return response()->json($test, 200, [], JSON_UNESCAPED_UNICODE);
+        return response()->json($payload, 200, [], JSON_UNESCAPED_UNICODE);
     }
 }
