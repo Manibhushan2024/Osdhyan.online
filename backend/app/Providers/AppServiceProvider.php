@@ -66,6 +66,12 @@ class AppServiceProvider extends ServiceProvider
             Limit::perMinute(120)->by('ip:' . $r->ip()),
         ]);
 
+        // Typing a wrong OTP must not count against "send OTP" (3/min).
+        RateLimiter::for('otp-verify', fn (Request $r) => [
+            Limit::perMinute(10)->by('id:' . sha1($identity($r))),
+            Limit::perMinute(300)->by('ip:' . $r->ip()),
+        ]);
+
         RateLimiter::for('register', fn (Request $r) => Limit::perHour(500)->by('ip:' . $r->ip()));
     }
 }

@@ -1,22 +1,25 @@
 'use client';
 
-import { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { Suspense, useState } from 'react';
+import { useSearchParams } from 'next/navigation';
 import api from '@/lib/api';
 import Link from 'next/link';
 import { Loader2 } from 'lucide-react';
 import { useAuth } from '@/components/providers/AuthProvider';
-import { redirectFromLocation, rememberOAuthRedirect } from '@/lib/redirect';
+import { redirectFromLocation } from '@/lib/redirect';
+import OtpForm from '@/components/auth/OtpForm';
+import GoogleButton from '@/components/auth/GoogleButton';
 import AuthShell from '@/components/auth/AuthShell';
 
-export default function LoginPage() {
-    const router = useRouter();
+function LoginPageInner() {
     const { login: authenticateUser } = useAuth();
     const [login, setLogin] = useState('');
     const [password, setPassword] = useState('');
     const [loading, setLoading] = useState(false);
-    const [googleLoading, setGoogleLoading] = useState(false);
     const [error, setError] = useState('');
+    const params = useSearchParams();
+    const [method, setMethod] = useState<'otp' | 'password'>(params.get('via') === 'password' ? 'password' : 'otp');
+    const prefillPhone = params.get('phone') ?? '';
 
     const handleLogin = async (e: React.FormEvent) => {
         e.preventDefault();
@@ -53,6 +56,31 @@ export default function LoginPage() {
                 </div>
             )}
 
+            {params.get('error') && !error && (
+                <div role="alert" className="mb-5 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700 dark:border-red-900/50 dark:bg-red-900/20 dark:text-red-300">
+                    {params.get('error')}
+                </div>
+            )}
+
+            {/* Method switch */}
+            <div className="mb-6 grid grid-cols-2 rounded-xl bg-background/60 p-1 border border-card-border text-sm font-medium" role="tablist">
+                <button type="button" role="tab" aria-selected={method === 'otp'} onClick={() => { setMethod('otp'); setError(''); }}
+                    className={`rounded-lg py-2 transition ${method === 'otp' ? 'bg-primary text-white shadow' : 'text-muted-foreground hover:text-foreground'}`}>
+                    Mobile OTP
+                </button>
+                <button type="button" role="tab" aria-selected={method === 'password'} onClick={() => { setMethod('password'); setError(''); }}
+                    className={`rounded-lg py-2 transition ${method === 'password' ? 'bg-primary text-white shadow' : 'text-muted-foreground hover:text-foreground'}`}>
+                    Email / password
+                </button>
+            </div>
+
+            {method === 'otp' ? (
+                <OtpForm
+                    mode="login"
+                    initialPhone={prefillPhone}
+                    onAuthenticated={(token, user) => authenticateUser(token, user as Parameters<typeof authenticateUser>[1], redirectFromLocation('/dashboard'))}
+                />
+            ) : (
             <form className="space-y-5" onSubmit={handleLogin}>
                 <div>
                     <label htmlFor="login" className="label">Mobile number or email</label>
@@ -92,6 +120,7 @@ export default function LoginPage() {
                     {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : 'Sign in'}
                 </button>
             </form>
+            )}
 
             <div className="relative my-6">
                 <div className="absolute inset-0 flex items-center"><div className="w-full border-t border-card-border" /></div>
@@ -100,33 +129,15 @@ export default function LoginPage() {
                 </div>
             </div>
 
-            <button
-                type="button"
-                disabled={googleLoading}
-                onClick={async () => {
-                    setGoogleLoading(true);
-                    try {
-                        rememberOAuthRedirect(redirectFromLocation(''));
-                        const res = await api.get('/auth/google/redirect');
-                        window.location.href = res.data.url;
-                    } catch {
-                        setError('Google sign-in is unavailable right now. Please try again.');
-                        setGoogleLoading(false);
-                    }
-                }}
-                className="btn btn-secondary w-full"
-            >
-                {googleLoading
-                    ? <Loader2 className="h-4 w-4 animate-spin" />
-                    : <svg className="h-4 w-4" viewBox="0 0 24 24" aria-hidden="true">
-                        <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
-                        <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
-                        <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" />
-                        <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
-                    </svg>
-                }
-                Continue with Google
-            </button>
+            <GoogleButton onError={setError} />
         </AuthShell>
+    );
+}
+
+export default function LoginPage() {
+    return (
+        <Suspense fallback={<div className="min-h-screen bg-background" />}>
+            <LoginPageInner />
+        </Suspense>
     );
 }

@@ -62,10 +62,8 @@ Route::middleware('throttle:login')->group(function () {
     Route::post('/auth/reset-password', [AuthController::class, 'resetPassword']);
 });
 
-Route::middleware('throttle:otp')->group(function () {
-    Route::post('/auth/send-otp', [AuthController::class, 'sendOtp']);
-    Route::post('/auth/verify-otp', [AuthController::class, 'verifyOtp']);
-});
+Route::post('/auth/send-otp', [AuthController::class, 'sendOtp'])->middleware('throttle:otp');
+Route::post('/auth/verify-otp', [AuthController::class, 'verifyOtp'])->middleware('throttle:otp-verify');
 
 Route::middleware('throttle:register')->group(function () {
     Route::post('/auth/register', [AuthController::class, 'register']);
@@ -73,6 +71,10 @@ Route::middleware('throttle:register')->group(function () {
 
 Route::get('/auth/google/redirect', [AuthController::class, 'redirectToGoogle']);
 Route::get('/auth/google/callback', [AuthController::class, 'handleGoogleCallback']);
+// Sign in with a Google ID token (Google Identity Services on web, expo-auth-session on mobile)
+Route::post('/auth/google/token', [AuthController::class, 'googleToken'])->middleware('throttle:login');
+// Tells the client which sign-in methods are available (OTP delivery, Google)
+Route::get('/auth/options', [AuthController::class, 'options']);
 
 /*
 |--------------------------------------------------------------------------

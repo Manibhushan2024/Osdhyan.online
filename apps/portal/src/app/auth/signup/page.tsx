@@ -1,19 +1,23 @@
 'use client';
 
-import { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { Suspense, useState } from 'react';
+import { useSearchParams } from 'next/navigation';
 import api from '@/lib/api';
 import { Loader2 } from 'lucide-react';
 import Link from 'next/link';
 import { useAuth } from '@/components/providers/AuthProvider';
 import { redirectFromLocation } from '@/lib/redirect';
 import AuthShell from '@/components/auth/AuthShell';
+import OtpForm from '@/components/auth/OtpForm';
+import GoogleButton from '@/components/auth/GoogleButton';
 
-export default function SignupPage() {
-    const router = useRouter();
+function SignupPageInner() {
     const { login: authenticateUser } = useAuth();
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState('');
+    const params = useSearchParams();
+    const [method, setMethod] = useState<'otp' | 'password'>(params.get('via') === 'password' ? 'password' : 'otp');
+    const prefillPhone = params.get('phone') ?? '';
     const [formData, setFormData] = useState({
         name: '',
         phone: '',
@@ -75,6 +79,25 @@ export default function SignupPage() {
                 </div>
             )}
 
+            {/* Method switch */}
+            <div className="mb-6 grid grid-cols-2 rounded-xl bg-background/60 p-1 border border-card-border text-sm font-medium" role="tablist">
+                <button type="button" role="tab" aria-selected={method === 'otp'} onClick={() => { setMethod('otp'); setError(''); }}
+                    className={`rounded-lg py-2 transition ${method === 'otp' ? 'bg-primary text-white shadow' : 'text-muted-foreground hover:text-foreground'}`}>
+                    Mobile OTP (no password)
+                </button>
+                <button type="button" role="tab" aria-selected={method === 'password'} onClick={() => { setMethod('password'); setError(''); }}
+                    className={`rounded-lg py-2 transition ${method === 'password' ? 'bg-primary text-white shadow' : 'text-muted-foreground hover:text-foreground'}`}>
+                    Email &amp; password
+                </button>
+            </div>
+
+            {method === 'otp' ? (
+                <OtpForm
+                    mode="signup"
+                    initialPhone={prefillPhone}
+                    onAuthenticated={(token, user) => authenticateUser(token, user as Parameters<typeof authenticateUser>[1], redirectFromLocation('/dashboard'))}
+                />
+            ) : (
             <form className="space-y-6" onSubmit={handleSignup}>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
@@ -167,6 +190,25 @@ export default function SignupPage() {
                     {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : 'Create account'}
                 </button>
             </form>
+            )}
+
+            <div className="relative my-6">
+                <div className="absolute inset-0 flex items-center"><div className="w-full border-t border-card-border" /></div>
+                <div className="relative flex justify-center">
+                    <span className="bg-card-bg px-3 text-xs text-muted-foreground">or</span>
+                </div>
+            </div>
+
+            <GoogleButton label="Sign up with Google" onError={setError} />
+
         </AuthShell>
+    );
+}
+
+export default function SignupPage() {
+    return (
+        <Suspense fallback={<div className="min-h-screen bg-background" />}>
+            <SignupPageInner />
+        </Suspense>
     );
 }

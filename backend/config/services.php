@@ -38,7 +38,8 @@ return [
     'google' => [
         'client_id' => env('GOOGLE_CLIENT_ID'),
         'client_secret' => env('GOOGLE_CLIENT_SECRET'),
-        'redirect' => env('GOOGLE_REDIRECT_URI'),
+        // Behind the same-origin proxy the callback lives under the public URL (/api/...).
+        'redirect' => env('GOOGLE_REDIRECT_URI') ?: rtrim((string) env('APP_URL', 'http://localhost:8000'), '/') . '/api/auth/google/callback',
     ],
 
     // Read through config() so values survive `php artisan config:cache`
@@ -52,10 +53,12 @@ return [
         'gemini_model'  => env('GEMINI_MODEL', 'gemini-2.5-flash'),
     ],
 
+    // SMS OTP — see App\Services\SmsService for providers (log|msg91|fast2sms|textlocal)
     'sms' => [
-        'provider'  => env('SMS_PROVIDER', 'log'),
-        'api_key'   => env('SMS_API_KEY'),
-        'sender_id' => env('SMS_SENDER_ID', 'OSDHYN'),
+        'provider'    => env('SMS_PROVIDER', 'log'),
+        'api_key'     => env('SMS_API_KEY'),
+        'sender_id'   => env('SMS_SENDER_ID', 'OSDHYN'),
+        'template_id' => env('SMS_TEMPLATE_ID'),   // msg91 DLT OTP template
     ],
 
     // Razorpay checkout for paid test series. PAYMENTS_FAKE=true swaps in a
