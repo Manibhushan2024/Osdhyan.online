@@ -13,7 +13,7 @@ export default function LegacyTestPlayerRedirect() {
 
     return (
         <div className="flex items-center justify-center min-h-screen">
-            <p>Redirecting to mission command...</p>
+            <p>Redirecting to the test...</p>
         </div>
     );
 }

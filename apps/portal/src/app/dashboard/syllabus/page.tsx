@@ -98,7 +98,7 @@ export default function SyllabusPage() {
     return (
         <div className="max-w-5xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
             <div className="mb-8">
-                <h1 className="text-3xl font-bold text-gray-900 tracking-tight">Syllabus Explorer</h1>
+                <h1 className="page-title">Syllabus</h1>
                 <p className="mt-2 text-gray-600">Browse your exam course structure and set study goals.</p>
             </div>
 

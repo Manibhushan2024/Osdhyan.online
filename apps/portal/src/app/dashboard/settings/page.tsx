@@ -7,14 +7,12 @@ import api from '@/lib/api';
 import {
     User,
     Lock,
-    MapPin,
-    Mail,
     Camera,
     Moon,
     Sun,
-    ShieldCheck,
-    ArrowRight,
-    Loader2
+    Palette,
+    Loader2,
+    Check,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useEffect } from 'react';
@@ -56,9 +54,9 @@ export default function SettingsPage() {
         try {
             const res = await api.post('/profile', profileData);
             updateUser(res.data.user);
-            alert('Profile updated successfully');
+            alert('Profile updated');
         } catch (error) {
-            alert('Failed to update profile');
+            alert('Could not update your profile. Please try again.');
         } finally {
             setLoading(false);
         }
@@ -69,10 +67,10 @@ export default function SettingsPage() {
         setLoading(true);
         try {
             await api.put('/profile/password', passwordData);
-            alert('Password changed successfully');
+            alert('Password changed');
             setPasswordData({ current_password: '', password: '', password_confirmation: '' });
         } catch (error: any) {
-            alert(error.response?.data?.message || 'Failed to change password');
+            alert(error.response?.data?.message || 'Could not change your password. Please try again.');
         } finally {
             setLoading(false);
         }
@@ -94,35 +92,37 @@ export default function SettingsPage() {
             });
             updateUser(res.data.user);
         } catch (error) {
-            alert('Failed to upload avatar');
+            alert('Could not upload the photo. Please try a smaller image.');
         } finally {
             setLoading(false);
         }
     };
 
+    const tabs = [
+        { id: 'profile', name: 'Profile', icon: User },
+        { id: 'security', name: 'Password', icon: Lock },
+        { id: 'preferences', name: 'Appearance', icon: Palette },
+    ];
+
     return (
-        <div className="max-w-4xl mx-auto space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
+        <div className="space-y-6 pb-12 max-w-4xl">
             <div>
-                <h1 className="text-4xl font-black text-gray-900 dark:text-white uppercase tracking-tighter italic">Portal Settings</h1>
-                <p className="text-gray-500 dark:text-gray-400 font-medium italic mt-2">Manage your identity, security, and preferences across osdhyan.</p>
+                <h1 className="page-title">Settings</h1>
+                <p className="page-subtitle">Manage your profile, password and appearance.</p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-                {/* Sidebar Navigation */}
-                <div className="space-y-2">
-                    {[
-                        { id: 'profile', name: 'Identity', icon: User },
-                        { id: 'security', name: 'Security', icon: Lock },
-                        { id: 'preferences', name: 'Aesthetics', icon: ShieldCheck },
-                    ].map((tab) => (
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6">
+                {/* Tabs */}
+                <div className="flex md:flex-col gap-2 overflow-x-auto no-scrollbar -mx-4 px-4 md:mx-0 md:px-0">
+                    {tabs.map((tab) => (
                         <button
                             key={tab.id}
                             onClick={() => setActiveTab(tab.id)}
                             className={cn(
-                                "w-full flex items-center gap-3 px-4 py-3 rounded-2xl font-bold uppercase tracking-widest text-[10px] transition-all",
+                                'flex items-center gap-2 px-4 py-2.5 min-h-[44px] rounded-xl text-sm font-medium whitespace-nowrap transition-colors',
                                 activeTab === tab.id
-                                    ? "bg-blue-600 text-white shadow-xl shadow-blue-200 dark:shadow-blue-900/20"
-                                    : "bg-white dark:bg-gray-800/50 text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800"
+                                    ? 'bg-primary text-white'
+                                    : 'bg-card-bg border border-card-border text-muted-foreground hover:text-foreground hover:bg-muted'
                             )}
                         >
                             <tab.icon className="h-4 w-4" />
@@ -131,89 +131,80 @@ export default function SettingsPage() {
                     ))}
                 </div>
 
-                {/* Content Area */}
+                {/* Content */}
                 <div className="md:col-span-3">
-                    <div className="bg-card-bg border border-card-border rounded-[2.5rem] p-8 md:p-12 shadow-sm">
-
+                    <div className="card p-5 sm:p-8">
                         {activeTab === 'profile' && (
-                            <div className="space-y-8">
-                                <div className="flex flex-col items-center gap-6 mb-8">
-                                    <div className="relative group">
-                                        <div className="h-32 w-32 rounded-full border-4 border-blue-600/20 p-1 bg-gradient-to-tr from-blue-600 to-indigo-600 overflow-hidden shadow-2xl flex items-center justify-center">
+                            <div className="space-y-6">
+                                <div className="flex items-center gap-5">
+                                    <div className="relative">
+                                        <div className="h-20 w-20 rounded-full overflow-hidden bg-accent text-accent-foreground flex items-center justify-center text-2xl font-bold uppercase">
                                             {user?.avatar ? (
+                                                // eslint-disable-next-line @next/next/no-img-element
                                                 <img
                                                     src={`${getBaseUrl()}/storage/${user.avatar}`}
-                                                    alt={user?.name}
-                                                    className="h-full w-full object-cover rounded-full"
+                                                    alt={user?.name || 'Profile photo'}
+                                                    className="h-full w-full object-cover"
                                                     onError={(e) => {
-                                                        (e.target as HTMLImageElement).src = '';
                                                         (e.target as HTMLImageElement).style.display = 'none';
                                                     }}
                                                 />
                                             ) : (
-                                                <div className="text-3xl font-black text-white uppercase">
-                                                    {user?.name?.charAt(0) || 'U'}
-                                                </div>
+                                                <span>{user?.name?.charAt(0) || 'U'}</span>
                                             )}
                                         </div>
-                                        <label className="absolute bottom-0 right-0 p-2 bg-blue-600 text-white rounded-full cursor-pointer shadow-lg hover:bg-blue-700 transition-colors">
+                                        <label className="absolute -bottom-1 -right-1 h-9 w-9 rounded-full bg-primary text-white flex items-center justify-center cursor-pointer shadow-sm hover:bg-blue-700" title="Change photo">
                                             <Camera className="h-4 w-4" />
                                             <input type="file" className="hidden" onChange={handleAvatarUpload} accept="image/*" />
                                         </label>
                                     </div>
-                                    <div className="text-center">
-                                        <h3 className="text-xl font-black text-gray-900 dark:text-white uppercase tracking-tight">{user?.name}</h3>
-                                        <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mt-1">osdhyan Candidate</p>
+                                    <div>
+                                        <h2 className="text-lg font-semibold">{user?.name}</h2>
+                                        <p className="text-sm text-muted-foreground">Tap the camera icon to change your photo.</p>
                                     </div>
                                 </div>
 
-                                <form onSubmit={handleProfileUpdate} className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                    <div className="space-y-2">
-                                        <label className="text-[10px] font-black text-gray-400 dark:text-gray-500 uppercase tracking-widest px-2">Full Legal Name</label>
-                                        <div className="relative">
-                                            <User className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-300" />
-                                            <input
-                                                type="text"
-                                                className="w-full bg-gray-50 dark:bg-gray-900/50 border border-gray-100 dark:border-gray-700 p-4 pl-12 rounded-2xl font-bold text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-600 outline-none"
-                                                value={profileData.name}
-                                                onChange={(e) => setProfileData({ ...profileData, name: e.target.value })}
-                                            />
-                                        </div>
+                                <form onSubmit={handleProfileUpdate} className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <div>
+                                        <label htmlFor="name" className="label">Full name</label>
+                                        <input
+                                            id="name"
+                                            type="text"
+                                            autoComplete="name"
+                                            className="input"
+                                            value={profileData.name}
+                                            onChange={(e) => setProfileData({ ...profileData, name: e.target.value })}
+                                        />
                                     </div>
 
-                                    <div className="space-y-2">
-                                        <label className="text-[10px] font-black text-gray-400 dark:text-gray-500 uppercase tracking-widest px-2">Email Address</label>
-                                        <div className="relative">
-                                            <Mail className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-300" />
-                                            <input
-                                                type="email"
-                                                className="w-full bg-gray-50 dark:bg-gray-900/50 border border-gray-100 dark:border-gray-700 p-4 pl-12 rounded-2xl font-bold text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-600 outline-none"
-                                                value={profileData.email}
-                                                onChange={(e) => setProfileData({ ...profileData, email: e.target.value })}
-                                            />
-                                        </div>
-                                    </div>
-
-                                    <div className="md:col-span-2 space-y-2">
-                                        <label className="text-[10px] font-black text-gray-400 dark:text-gray-500 uppercase tracking-widest px-2">Correspondence Address</label>
-                                        <div className="relative">
-                                            <MapPin className="absolute left-4 top-4 h-4 w-4 text-gray-300" />
-                                            <textarea
-                                                rows={3}
-                                                className="w-full bg-gray-50 dark:bg-gray-900/50 border border-gray-100 dark:border-gray-700 p-4 pl-12 rounded-2xl font-bold text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-600 outline-none resize-none"
-                                                value={profileData.address}
-                                                onChange={(e) => setProfileData({ ...profileData, address: e.target.value })}
-                                            />
-                                        </div>
+                                    <div>
+                                        <label htmlFor="email" className="label">Email</label>
+                                        <input
+                                            id="email"
+                                            type="email"
+                                            autoComplete="email"
+                                            className="input"
+                                            value={profileData.email}
+                                            onChange={(e) => setProfileData({ ...profileData, email: e.target.value })}
+                                        />
                                     </div>
 
                                     <div className="md:col-span-2">
-                                        <button
-                                            disabled={loading}
-                                            className="w-full py-4 bg-gray-900 dark:bg-blue-600 text-white font-black rounded-2xl hover:bg-blue-600 dark:hover:bg-blue-700 transition-all shadow-xl shadow-blue-100 dark:shadow-none uppercase tracking-widest text-xs flex items-center justify-center gap-2"
-                                        >
+                                        <label htmlFor="address" className="label">Address <span className="text-muted-foreground font-normal">(optional)</span></label>
+                                        <textarea
+                                            id="address"
+                                            rows={3}
+                                            autoComplete="street-address"
+                                            className="input resize-none"
+                                            value={profileData.address}
+                                            onChange={(e) => setProfileData({ ...profileData, address: e.target.value })}
+                                        />
+                                    </div>
+
+                                    <div className="md:col-span-2">
+                                        <button disabled={loading} className="btn btn-primary w-full sm:w-auto">
                                             {loading && <Loader2 className="h-4 w-4 animate-spin" />}
-                                            Update Identity Detail
+                                            Save changes
                                         </button>
                                     </div>
                                 </form>
@@ -221,84 +212,89 @@ export default function SettingsPage() {
                         )}
 
                         {activeTab === 'security' && (
-                            <div className="space-y-8">
-                                <h3 className="text-xl font-black text-gray-900 dark:text-white uppercase tracking-tight">Security Credentials</h3>
-                                <form onSubmit={handlePasswordUpdate} className="space-y-6">
-                                    <div className="space-y-2">
-                                        <label className="text-[10px] font-black text-gray-400 dark:text-gray-500 uppercase tracking-widest px-2">Current Secret Key</label>
+                            <div className="space-y-6">
+                                <div>
+                                    <h2 className="text-lg font-semibold">Change password</h2>
+                                    <p className="text-sm text-muted-foreground mt-1">Use at least 8 characters.</p>
+                                </div>
+                                <form onSubmit={handlePasswordUpdate} className="space-y-4 max-w-md">
+                                    <div>
+                                        <label htmlFor="current_password" className="label">Current password</label>
                                         <input
+                                            id="current_password"
                                             type="password"
-                                            className="w-full bg-gray-50 dark:bg-gray-900/50 border border-gray-100 dark:border-gray-700 p-4 rounded-2xl font-bold text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-600 outline-none"
+                                            autoComplete="current-password"
+                                            className="input"
                                             value={passwordData.current_password}
                                             onChange={(e) => setPasswordData({ ...passwordData, current_password: e.target.value })}
                                         />
                                     </div>
-                                    <div className="space-y-2">
-                                        <label className="text-[10px] font-black text-gray-400 dark:text-gray-500 uppercase tracking-widest px-2">New Password Pattern</label>
+                                    <div>
+                                        <label htmlFor="new_password" className="label">New password</label>
                                         <input
+                                            id="new_password"
                                             type="password"
-                                            className="w-full bg-gray-50 dark:bg-gray-900/50 border border-gray-100 dark:border-gray-700 p-4 rounded-2xl font-bold text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-600 outline-none"
+                                            autoComplete="new-password"
+                                            className="input"
                                             value={passwordData.password}
                                             onChange={(e) => setPasswordData({ ...passwordData, password: e.target.value })}
                                         />
                                     </div>
-                                    <div className="space-y-2">
-                                        <label className="text-[10px] font-black text-gray-400 dark:text-gray-500 uppercase tracking-widest px-2">Confirm Pattern</label>
+                                    <div>
+                                        <label htmlFor="confirm_password" className="label">Confirm new password</label>
                                         <input
+                                            id="confirm_password"
                                             type="password"
-                                            className="w-full bg-gray-50 dark:bg-gray-900/50 border border-gray-100 dark:border-gray-700 p-4 rounded-2xl font-bold text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-600 outline-none"
+                                            autoComplete="new-password"
+                                            className="input"
                                             value={passwordData.password_confirmation}
                                             onChange={(e) => setPasswordData({ ...passwordData, password_confirmation: e.target.value })}
                                         />
                                     </div>
-                                    <button
-                                        disabled={loading}
-                                        className="w-full py-4 bg-gray-900 dark:bg-blue-600 text-white font-black rounded-2xl hover:bg-blue-600 dark:hover:bg-blue-700 transition-all uppercase tracking-widest text-xs flex items-center justify-center gap-2"
-                                    >
+                                    <button disabled={loading} className="btn btn-primary w-full sm:w-auto">
                                         {loading && <Loader2 className="h-4 w-4 animate-spin" />}
-                                        Update Security Pattern
+                                        Change password
                                     </button>
                                 </form>
                             </div>
                         )}
 
                         {activeTab === 'preferences' && (
-                            <div className="space-y-10">
-                                <div className="space-y-4">
-                                    <h3 className="text-xl font-black text-gray-900 dark:text-white uppercase tracking-tight">Portal Aesthetic</h3>
-                                    <p className="text-gray-500 dark:text-gray-400 text-sm font-medium">Choose how osdhyan appears on your device. Dark mode is recommended for late-night focus sessions.</p>
+                            <div className="space-y-6">
+                                <div>
+                                    <h2 className="text-lg font-semibold">Appearance</h2>
+                                    <p className="text-sm text-muted-foreground mt-1">Choose how OSDHYAN looks on this device.</p>
                                 </div>
 
-                                <div className="grid grid-cols-2 gap-4">
+                                <div className="grid grid-cols-2 gap-3 max-w-md">
                                     <button
                                         onClick={() => theme === 'dark' && toggleTheme()}
+                                        aria-pressed={theme === 'light'}
                                         className={cn(
-                                            "relative p-8 rounded-[2rem] border-2 transition-all group overflow-hidden bg-white",
-                                            theme === 'light' ? "border-blue-600 shadow-neon" : "border-card-border"
+                                            'relative p-5 rounded-2xl border-2 text-left bg-white text-slate-900 transition-colors',
+                                            theme === 'light' ? 'border-primary' : 'border-card-border'
                                         )}
                                     >
-                                        <div className="absolute top-0 right-0 w-24 h-24 bg-blue-600/5 rounded-full -mr-8 -mt-8" />
-                                        <Sun className={cn("h-8 w-8 mb-4", theme === 'light' ? "text-blue-600" : "text-gray-400")} />
-                                        <p className={cn("font-black uppercase tracking-widest text-xs", theme === 'light' ? "text-blue-600" : "text-gray-400")}>Solar Light</p>
-                                        {theme === 'light' && <ShieldCheck className="absolute top-4 right-4 h-4 w-4 text-blue-600" />}
+                                        <Sun className="h-6 w-6 mb-3 text-amber-500" />
+                                        <p className="font-semibold">Light</p>
+                                        {theme === 'light' && <Check className="absolute top-3 right-3 h-5 w-5 text-primary" />}
                                     </button>
 
                                     <button
                                         onClick={() => theme === 'light' && toggleTheme()}
+                                        aria-pressed={theme === 'dark'}
                                         className={cn(
-                                            "relative p-8 rounded-[2rem] border-2 transition-all group overflow-hidden bg-[#080808] text-white",
-                                            theme === 'dark' ? "border-blue-500 shadow-neon" : "border-transparent"
+                                            'relative p-5 rounded-2xl border-2 text-left bg-slate-900 text-white transition-colors',
+                                            theme === 'dark' ? 'border-primary' : 'border-card-border'
                                         )}
                                     >
-                                        <div className="absolute top-0 right-0 w-24 h-24 bg-white/5 rounded-full -mr-8 -mt-8" />
-                                        <Moon className={cn("h-8 w-8 mb-4", theme === 'dark' ? "text-blue-400" : "text-white")} />
-                                        <p className={cn("font-black uppercase tracking-widest text-xs", theme === 'dark' ? "text-blue-400" : "text-white")}>Midnight Stealth</p>
-                                        {theme === 'dark' && <ShieldCheck className="absolute top-4 right-4 h-4 w-4 text-blue-400" />}
+                                        <Moon className="h-6 w-6 mb-3 text-blue-300" />
+                                        <p className="font-semibold">Dark</p>
+                                        {theme === 'dark' && <Check className="absolute top-3 right-3 h-5 w-5 text-blue-300" />}
                                     </button>
                                 </div>
                             </div>
                         )}
-
                     </div>
                 </div>
             </div>

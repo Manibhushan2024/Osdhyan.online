@@ -48,32 +48,32 @@ export default function AdminLoginPage() {
 
     return (
         <div className="min-h-screen bg-slate-950 flex items-center justify-center px-6">
-            <div className="w-full max-w-md rounded-[2rem] border border-indigo-500/20 bg-white/[0.02] p-8 shadow-2xl shadow-indigo-900/30">
+            <div className="w-full max-w-md rounded-2xl border border-indigo-500/20 bg-white/[0.02] p-8 shadow-2xl shadow-indigo-900/30">
                 <div className="flex flex-col items-center text-center mb-8">
                     <Logo variant="indigo" className="scale-125 mb-4" />
-                    <h1 className="mt-4 text-2xl font-black text-white uppercase tracking-tight italic">
-                        Intelligence Hub
+                    <h1 className="mt-4 text-2xl font-bold text-white tracking-tight">
+                        Admin sign in
                     </h1>
-                    <p className="mt-2 text-[10px] font-black uppercase tracking-[0.2em] text-indigo-200/50">
-                        Admin Access Portal
+                    <p className="mt-2 text-sm text-indigo-200/70">
+                        For OSDHYAN administrators only
                     </p>
                 </div>
 
                 <form onSubmit={handleSubmit} className="space-y-4">
                     <div>
-                        <label className="block text-[10px] font-black uppercase tracking-widest text-indigo-200/60 mb-2">
+                        <label className="block text-sm font-medium text-indigo-100 mb-1.5">
                             Username or Email
                         </label>
                         <input
                             value={loginValue}
                             onChange={(e) => setLoginValue(e.target.value)}
-                            placeholder="Mani__Ay or email"
+                            placeholder="Username or email"
                             className="w-full rounded-xl border border-indigo-500/20 bg-slate-900/70 px-4 py-3 text-sm text-white placeholder:text-indigo-200/25 focus:outline-none focus:border-indigo-400/50"
                         />
                     </div>
 
                     <div>
-                        <label className="block text-[10px] font-black uppercase tracking-widest text-indigo-200/60 mb-2">
+                        <label className="block text-sm font-medium text-indigo-100 mb-1.5">
                             Password
                         </label>
                         <input
@@ -94,10 +94,10 @@ export default function AdminLoginPage() {
                     <button
                         type="submit"
                         disabled={submitting}
-                        className="w-full rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white py-3 text-[11px] font-black uppercase tracking-[0.2em] transition-all disabled:opacity-60 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                        className="w-full rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white py-3 min-h-[44px] text-sm font-semibold transition-colors disabled:opacity-60 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                     >
                         {submitting ? <Loader2 className="h-4 w-4 animate-spin" /> : null}
-                        {submitting ? 'Authorizing...' : 'Admin Login'}
+                        {submitting ? 'Signing in…' : 'Sign in'}
                     </button>
                 </form>
             </div>

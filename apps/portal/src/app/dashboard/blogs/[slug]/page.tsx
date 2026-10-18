@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { storageUrl } from '@/lib/storage';
 import { useParams } from 'next/navigation';
 import api from '@/lib/api';
 import {
@@ -57,8 +58,8 @@ export default function BlogDetailPage() {
     if (!post) {
         return (
             <div className="text-center py-20">
-                <h2 className="text-2xl font-black text-gray-900 dark:text-white uppercase italic">Post Not Found</h2>
-                <Link href="/dashboard/blogs" className="mt-4 inline-flex text-blue-600 font-bold hover:underline">Return to Hub</Link>
+                <h2 className="text-xl font-semibold text-foreground">Article not found</h2>
+                <Link href="/dashboard/blogs" className="mt-4 inline-flex text-blue-600 font-bold hover:underline">Back to blog</Link>
             </div>
         );
     }
@@ -66,7 +67,7 @@ export default function BlogDetailPage() {
     return (
         <div className="max-w-4xl mx-auto space-y-12 animate-in fade-in slide-in-from-bottom-6 duration-1000">
             {/* Back Nav */}
-            <Link href="/dashboard/blogs" className="inline-flex items-center gap-2 text-sm font-bold text-gray-400 hover:text-blue-600 transition-colors uppercase tracking-widest">
+            <Link href="/dashboard/blogs" className="inline-flex items-center gap-2 text-sm font-bold text-gray-400 hover:text-blue-600 transition-colors uppercase tracking-wide">
                 <ArrowLeft className="h-4 w-4" />
                 Back to Blogs
             </Link>
@@ -74,14 +75,14 @@ export default function BlogDetailPage() {
             {/* Header */}
             <div className="space-y-8">
                 <div className="space-y-4">
-                    <div className="flex items-center gap-4 text-[10px] font-bold text-blue-600 uppercase tracking-[0.2em]">
-                        <span className="px-3 py-1 bg-blue-50 dark:bg-blue-900/20 rounded-lg">Official Mastery Blog</span>
+                    <div className="flex items-center gap-4 text-xs font-bold text-blue-600 uppercase tracking-wide">
+                        <span className="px-3 py-1 bg-blue-50 dark:bg-blue-900/20 rounded-lg">OSDHYAN blog</span>
                         <div className="flex items-center gap-2 text-gray-400">
                             <Calendar className="h-4 w-4" />
                             {new Date(post.created_at).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
                         </div>
                     </div>
-                    <h1 className="text-4xl md:text-5xl font-black text-gray-900 dark:text-white uppercase tracking-tighter italic leading-[1.1]">
+                    <h1 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight leading-tight">
                         {post.title}
                     </h1>
                 </div>
@@ -90,7 +91,7 @@ export default function BlogDetailPage() {
                     <div className="flex items-center gap-4">
                         <div className="h-12 w-12 rounded-full bg-blue-100 dark:bg-blue-900/30 p-0.5">
                             {post.author.avatar ? (
-                                <img src={`${process.env.NEXT_PUBLIC_API_URL}/storage/${post.author.avatar}`} className="h-full w-full object-cover rounded-full" />
+                                <img src={storageUrl(post.author.avatar)} className="h-full w-full object-cover rounded-full" />
                             ) : (
                                 <div className="h-full w-full bg-white dark:bg-gray-800 rounded-full flex items-center justify-center text-blue-600">
                                     <User className="h-6 w-6" />
@@ -98,8 +99,8 @@ export default function BlogDetailPage() {
                             )}
                         </div>
                         <div>
-                            <p className="text-xs font-black text-gray-900 dark:text-white uppercase tracking-widest">{post.author.name}</p>
-                            <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Mastery Educator</p>
+                            <p className="text-xs font-black text-gray-900 dark:text-white uppercase tracking-wide">{post.author.name}</p>
+                            <p className="text-xs font-bold text-gray-400 uppercase tracking-wide">Author</p>
                         </div>
                     </div>
                     <div className="flex items-center gap-2">
@@ -115,9 +116,9 @@ export default function BlogDetailPage() {
 
             {/* Featured Image */}
             {post.thumbnail && (
-                <div className="relative h-[450px] rounded-[3rem] overflow-hidden shadow-2xl">
+                <div className="relative h-[450px] rounded-2xl overflow-hidden shadow-2xl">
                     <img
-                        src={`${process.env.NEXT_PUBLIC_API_URL}/storage/${post.thumbnail}`}
+                        src={storageUrl(post.thumbnail)}
                         className="h-full w-full object-cover"
                         alt={post.title}
                     />
@@ -127,7 +128,7 @@ export default function BlogDetailPage() {
             {/* Content */}
             <div
                 className="prose prose-lg dark:prose-invert prose-blue max-w-none 
-                    prose-headings:font-black prose-headings:uppercase prose-headings:italic prose-headings:tracking-tight
+                    prose-headings:font-bold prose-headings:tracking-tight
                     prose-p:text-gray-700 dark:prose-p:text-gray-300 prose-p:leading-relaxed prose-p:font-medium prose-p:italic
                     prose-blockquote:border-l-4 prose-blockquote:border-blue-600 prose-blockquote:bg-blue-50 dark:prose-blockquote:bg-blue-900/10 prose-blockquote:p-6 prose-blockquote:rounded-r-3xl
                     pb-32"

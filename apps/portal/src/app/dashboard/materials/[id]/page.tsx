@@ -168,7 +168,7 @@ export default function MaterialViewerPage() {
     return (
         <div className="flex flex-col h-[calc(100vh-6rem)] max-w-7xl mx-auto space-y-6 animate-in fade-in slide-in-from-bottom-6 duration-1000">
             {/* Header / Toolbar */}
-            <div className="flex items-center justify-between bg-card-bg p-4 rounded-[2rem] border border-card-border shadow-sm transition-all">
+            <div className="flex items-center justify-between bg-card-bg p-4 rounded-2xl border border-card-border shadow-sm transition-all">
                 <div className="flex items-center gap-4">
                     <button
                         onClick={() => router.back()}
@@ -179,9 +179,9 @@ export default function MaterialViewerPage() {
                     <div>
                         <h1 className="text-sm font-black text-foreground uppercase tracking-tight line-clamp-1">{material.title}</h1>
                         <div className="flex items-center gap-3 mt-0.5">
-                            <span className="text-[10px] font-bold text-blue-600 uppercase tracking-widest">{material.subject?.name_en}</span>
+                            <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">{material.subject?.name_en}</span>
                             <span className="h-1 w-1 rounded-full bg-card-border" />
-                            <span className="text-[10px] font-bold text-foreground/40 uppercase tracking-widest">{material.type}</span>
+                            <span className="text-xs font-bold text-foreground/40 uppercase tracking-wide">{material.type}</span>
                         </div>
                     </div>
                 </div>
@@ -200,8 +200,8 @@ export default function MaterialViewerPage() {
                                 isActive ? "bg-blue-600 shadow-[0_0_8px_rgba(37,99,235,1)]" : "bg-orange-500 shadow-[0_0_8px_rgba(249,115,22,1)]"
                             )} />
                             <div className="flex flex-col">
-                                <span className="text-[8px] font-black text-foreground/40 uppercase tracking-[0.2em]">{isActive ? 'Flowing' : 'Paused'}</span>
-                                <span className="text-xs font-black text-foreground uppercase tracking-widest tabular-nums">{formatTime(secondsSpent)}</span>
+                                <span className="text-xs font-black text-foreground/40 uppercase tracking-wide">{isActive ? 'Playing' : 'Paused'}</span>
+                                <span className="text-xs font-black text-foreground uppercase tracking-wide tabular-nums">{formatTime(secondsSpent)}</span>
                             </div>
                         </div>
 
@@ -211,7 +211,7 @@ export default function MaterialViewerPage() {
                             <button
                                 onClick={handleToggleTimer}
                                 className={cn(
-                                    "px-4 py-1.5 rounded-lg text-[10px] font-black uppercase tracking-widest transition-all",
+                                    "px-4 py-1.5 rounded-lg text-xs font-black uppercase tracking-wide transition-all",
                                     isActive
                                         ? "bg-orange-500 text-white hover:bg-orange-600"
                                         : "bg-blue-600 text-white shadow-lg shadow-blue-500/20 hover:scale-105"
@@ -221,7 +221,7 @@ export default function MaterialViewerPage() {
                             </button>
                             <button
                                 onClick={handleSaveAndClose}
-                                className="px-4 py-1.5 bg-gray-900 dark:bg-blue-600/20 text-white rounded-lg text-[10px] font-black uppercase tracking-widest hover:bg-blue-600 transition-all border border-card-border shadow-md"
+                                className="px-4 py-1.5 bg-gray-900 dark:bg-blue-600/20 text-white rounded-lg text-xs font-black uppercase tracking-wide hover:bg-blue-600 transition-all border border-card-border shadow-md"
                             >
                                 Save & Close
                             </button>
@@ -245,7 +245,7 @@ export default function MaterialViewerPage() {
             </div>
 
             {/* Viewer Area */}
-            <div className="flex-1 bg-card-bg rounded-[3rem] border border-card-border shadow-xl overflow-hidden relative group">
+            <div className="flex-1 bg-card-bg rounded-2xl border border-card-border shadow-xl overflow-hidden relative group">
                 {/* Scroll Indicator */}
                 {!isCompleted && (
                     <div className="absolute top-0 left-0 w-full h-1 bg-background/50 z-50">
@@ -276,11 +276,11 @@ export default function MaterialViewerPage() {
                         </div>
                     ) : (
                         <div className="flex flex-col items-center justify-center h-full py-20 text-center space-y-6">
-                            <div className="h-20 w-20 bg-blue-50 dark:bg-blue-900/20 rounded-[2rem] flex items-center justify-center text-blue-600">
+                            <div className="h-20 w-20 bg-blue-50 dark:bg-blue-900/20 rounded-2xl flex items-center justify-center text-blue-600">
                                 <FolderOpen className="h-10 w-10" />
                             </div>
                             <div>
-                                <h2 className="text-xl font-black text-gray-900 dark:text-white uppercase italic">Unsupported Preview</h2>
+                                <h2 className="text-lg font-semibold text-foreground">Preview not available</h2>
                                 <p className="text-gray-500 dark:text-gray-400 mt-2 font-medium italic">This file type cannot be previewed. Please download it using the button above.</p>
                             </div>
                         </div>
@@ -302,7 +302,7 @@ export default function MaterialViewerPage() {
                         <div className="h-8 w-8 bg-blue-500 rounded-full flex items-center justify-center text-white">
                             <CheckCircle className="h-5 w-5" />
                         </div>
-                        <span className="text-xs font-black uppercase tracking-[0.2em]">Material Selection Optimized</span>
+                        <span className="text-xs font-black uppercase tracking-wide">Study material</span>
                     </div>
                 </div>
             )}

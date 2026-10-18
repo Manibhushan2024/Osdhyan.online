@@ -6,6 +6,7 @@ use App\Models\PersonalAccessToken;
 use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\RateLimiter;
+use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Sanctum\Sanctum;
 
@@ -25,6 +26,10 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         Sanctum::usePersonalAccessTokenModel(PersonalAccessToken::class);
+
+        // Junk ids (/live-classes/abc) become 404s instead of 500 TypeErrors
+        // in controllers with typed int $id parameters.
+        Route::pattern('id', '[0-9]+');
 
         $this->configureRateLimiting();
     }

@@ -33,6 +33,9 @@ class User extends Authenticatable implements FilamentUser
         'target_year',
         'is_admin',
         'admin_role',
+        'role',
+        'city',
+        'bio',
         'address',
         'total_tests_attempted',
         'avg_accuracy',
@@ -68,6 +71,14 @@ class User extends Authenticatable implements FilamentUser
         return $panel->getId() === 'admin'
             ? $this->isAdminUser()
             : true;
+    }
+
+    public const ROLE_STUDENT = 'student';
+    public const ROLE_TEACHER = 'teacher';
+
+    public function isTeacher(): bool
+    {
+        return $this->role === self::ROLE_TEACHER;
     }
 
     public function isAdminUser(): bool

@@ -241,18 +241,6 @@ Route::middleware(['auth:sanctum', 'throttle:api'])->group(function () {
         });
     });
 
-    // ── Live Classes ──────────────────────────────────────────────────────────
-    Route::get('/live-classes', [\App\Http\Controllers\Api\LiveClassController::class, 'index']);
-    Route::get('/live-classes/{id}', [\App\Http\Controllers\Api\LiveClassController::class, 'show']);
-    Route::post('/live-classes/{id}/join', [\App\Http\Controllers\Api\LiveClassController::class, 'join']);
-    Route::post('/live-classes/{id}/leave', [\App\Http\Controllers\Api\LiveClassController::class, 'leave']);
-    Route::get('/live-classes/{id}/state', [\App\Http\Controllers\Api\LiveClassController::class, 'state']);
-    Route::get('/live-classes/{id}/signals', [\App\Http\Controllers\Api\LiveClassController::class, 'signals']);
-    Route::post('/live-classes/{id}/signals', [\App\Http\Controllers\Api\LiveClassController::class, 'sendSignal']);
-    Route::post('/live-classes/{id}/messages', [\App\Http\Controllers\Api\LiveClassController::class, 'sendMessage']);
-    Route::post('/live-classes/{id}/raise-hand', [\App\Http\Controllers\Api\LiveClassController::class, 'raiseHand']);
-    Route::post('/live-classes/{id}/polls/{pollId}/vote', [\App\Http\Controllers\Api\LiveClassController::class, 'vote']);
-
     // ── Study Planner ─────────────────────────────────────────────────────────
     Route::prefix('study-planner')->group(function () {
         Route::get('/dashboard', [\App\Http\Controllers\Api\StudyPlannerController::class, 'getDashboardData']);
@@ -272,3 +260,14 @@ Route::middleware(['auth:sanctum', 'throttle:api'])->group(function () {
         Route::post('/nodes/{node}/timer/stop', [\App\Http\Controllers\Api\StudyPlannerController::class, 'stopNodeTimer']);
     });
 });
+
+/*
+|--------------------------------------------------------------------------
+| Feature modules
+|--------------------------------------------------------------------------
+| Each file under routes/api/ owns one module (live classes, payments,
+| tuition, chat) and declares its own middleware groups.
+*/
+foreach (glob(__DIR__ . '/api/*.php') as $moduleRoutes) {
+    require $moduleRoutes;
+}

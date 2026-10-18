@@ -120,7 +120,7 @@ export default function NotesHubPage() {
         <div className="max-w-7xl mx-auto space-y-8">
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                 <div>
-                    <h1 className="text-3xl font-bold text-gray-900 tracking-tight italic">Multimedia Notes</h1>
+                    <h1 className="page-title">My notes</h1>
                     <p className="text-gray-600 mt-1 font-medium italic">Store text, diagrams, and PDFs for your osdhyan preparation.</p>
                 </div>
                 <button
@@ -138,7 +138,7 @@ export default function NotesHubPage() {
                         <div>
                             <div className="flex justify-between items-start mb-4">
                                 <div className={cn(
-                                    "p-2 rounded-lg font-black text-[10px] uppercase tracking-widest pl-3 pr-3",
+                                    "p-2 rounded-lg font-black text-xs uppercase tracking-wide pl-3 pr-3",
                                     note.user?.is_admin ? "bg-amber-100 text-amber-700 border border-amber-200" : "bg-blue-50 text-blue-600"
                                 )}>
                                     {note.user?.is_admin ? 'Official Note' : 'My Note'}
@@ -162,10 +162,10 @@ export default function NotesHubPage() {
                                     className="flex items-center gap-2 p-2 bg-gray-50 rounded-xl border border-gray-100 hover:bg-blue-50 hover:border-blue-100 transition-colors"
                                 >
                                     {att.file_type === 'pdf' ? <FileIcon className="h-3 w-3 text-red-500" /> : <ImageIcon className="h-3 w-3 text-green-500" />}
-                                    <span className="text-[10px] font-bold text-gray-600 truncate uppercase tracking-widest">Attachment {i + 1} ({att.file_type})</span>
+                                    <span className="text-xs font-bold text-gray-600 truncate uppercase tracking-wide">Attachment {i + 1} ({att.file_type})</span>
                                 </a>
                             ))}
-                            {!note.attachments?.length && <p className="text-[10px] text-gray-300 italic font-bold">No attachments</p>}
+                            {!note.attachments?.length && <p className="text-xs text-gray-300 italic font-bold">No attachments</p>}
                         </div>
                     </div>
                 )) : (
@@ -179,12 +179,12 @@ export default function NotesHubPage() {
             {showAddNote && (
                 <div className="fixed inset-0 bg-gray-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
                     <div className="bg-white rounded-3xl shadow-2xl w-full max-w-lg p-8 transform transition-all">
-                        <h2 className="text-2xl font-black text-gray-900 uppercase tracking-tight italic mb-8">Create New Knowledge Note</h2>
+                        <h2 className="text-xl font-semibold text-foreground mb-6">New note</h2>
 
                         <form onSubmit={handleCreateNote} className="space-y-5">
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                                 <div>
-                                    <label className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-2 block">Subject</label>
+                                    <label className="text-xs font-bold text-gray-500 uppercase tracking-wide mb-2 block">Subject</label>
                                     <select
                                         className="w-full bg-gray-50 border border-gray-100 p-4 rounded-2xl font-bold text-gray-800 text-sm"
                                         value={newNote.noteable_type === 'Subject' ? newNote.noteable_id : (subjects.find(s => s.id)?.id || '')}
@@ -198,7 +198,7 @@ export default function NotesHubPage() {
                                 </div>
 
                                 <div>
-                                    <label className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-2 block">Chapter (Opt)</label>
+                                    <label className="text-xs font-bold text-gray-500 uppercase tracking-wide mb-2 block">Chapter (Opt)</label>
                                     <select
                                         className="w-full bg-gray-50 border border-gray-100 p-4 rounded-2xl font-bold text-gray-800 text-sm"
                                         value={newNote.noteable_type === 'Chapter' ? newNote.noteable_id : ''}
@@ -215,7 +215,7 @@ export default function NotesHubPage() {
                                 </div>
 
                                 <div>
-                                    <label className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-2 block">Topic (Opt)</label>
+                                    <label className="text-xs font-bold text-gray-500 uppercase tracking-wide mb-2 block">Topic (Opt)</label>
                                     <select
                                         className="w-full bg-gray-50 border border-gray-100 p-4 rounded-2xl font-bold text-gray-800 text-sm"
                                         value={newNote.noteable_type === 'Topic' ? newNote.noteable_id : ''}
@@ -232,7 +232,7 @@ export default function NotesHubPage() {
                             </div>
 
                             <input
-                                type="text" placeholder="Note Title (e.g. Mughal Architecture Summary)"
+                                type="text" placeholder="Title, e.g. Mughal architecture summary"
                                 className="w-full bg-gray-50 border border-gray-100 p-4 rounded-2xl font-bold text-gray-800"
                                 value={newNote.title}
                                 onChange={(e) => setNewNote({ ...newNote, title: e.target.value })}
@@ -240,7 +240,7 @@ export default function NotesHubPage() {
                             />
 
                             <textarea
-                                placeholder="Your detailed notes here..."
+                                placeholder="Write your notes here"
                                 className="w-full bg-gray-50 border border-gray-100 p-4 rounded-2xl font-medium text-gray-800 h-32"
                                 value={newNote.content}
                                 onChange={(e) => setNewNote({ ...newNote, content: e.target.value })}
@@ -249,7 +249,7 @@ export default function NotesHubPage() {
                             <div className="p-4 bg-gray-50 rounded-2xl border-2 border-dashed border-gray-200">
                                 <label className="flex flex-col items-center cursor-pointer">
                                     <Paperclip className="h-6 w-6 text-gray-400 mb-2" />
-                                    <span className="text-[10px] font-bold text-gray-500 uppercase tracking-widest">Attach Diagrams or PDFs</span>
+                                    <span className="text-xs font-bold text-gray-500 uppercase tracking-wide">Attach images or PDFs</span>
                                     <input
                                         type="file" multiple className="hidden"
                                         onChange={(e) => setFiles(Array.from(e.target.files || []))}
@@ -258,7 +258,7 @@ export default function NotesHubPage() {
                                 {files.length > 0 && (
                                     <div className="mt-4 space-y-2">
                                         {files.map((f, i) => (
-                                            <p key={i} className="text-[10px] font-bold text-blue-600">{f.name}</p>
+                                            <p key={i} className="text-xs font-bold text-blue-600">{f.name}</p>
                                         ))}
                                     </div>
                                 )}
@@ -267,13 +267,13 @@ export default function NotesHubPage() {
                             <div className="flex gap-4 mt-8">
                                 <button
                                     type="button" onClick={() => setShowAddNote(false)}
-                                    className="flex-1 py-4 font-bold text-gray-500 hover:text-gray-900 transition-colors uppercase tracking-widest text-xs"
+                                    className="flex-1 py-4 font-bold text-gray-500 hover:text-gray-900 transition-colors uppercase tracking-wide text-xs"
                                 >
                                     Cancel
                                 </button>
                                 <button
                                     type="submit"
-                                    className="flex-1 py-4 bg-blue-600 text-white font-black rounded-2xl hover:bg-blue-700 transition-all uppercase tracking-widest text-xs shadow-lg shadow-blue-100"
+                                    className="flex-1 py-4 bg-blue-600 text-white font-black rounded-2xl hover:bg-blue-700 transition-all uppercase tracking-wide text-xs shadow-lg shadow-blue-100"
                                 >
                                     Create Note
                                 </button>

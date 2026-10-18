@@ -38,3 +38,7 @@ php artisan test --filter=BulkImport   # one file / test name
 - CI runs the suite on every push/PR (`.github/workflows/ci.yml`, job `backend-tests`).
 - End-to-end check against a running server: `python ../scripts/smoke_test.py --api http://localhost:8000/api`.
 
+> **Safety guard:** the suite refuses to start unless the database is SQLite `:memory:`. If you see
+> `REFUSING TO RUN TESTS`, a cached config is active (e.g. after `scripts/host/start-all.ps1`):
+> run `php artisan config:clear`, run the tests, then `php artisan config:cache` again for the host.
+

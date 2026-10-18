@@ -42,7 +42,7 @@ export default function NcertAllSubjectsPage() {
         return (
             <div className="flex flex-col items-center justify-center py-40 gap-4">
                 <Loader2 className="h-10 w-10 text-blue-600 animate-spin" />
-                <p className="text-[10px] font-black text-foreground/40 uppercase tracking-[0.3em]">Loading Integrated NCERT content...</p>
+                <p className="text-xs font-black text-foreground/40 uppercase tracking-wide">Loading Integrated NCERT content...</p>
             </div>
         );
     }
@@ -51,7 +51,7 @@ export default function NcertAllSubjectsPage() {
         <div className="max-w-7xl mx-auto space-y-10 animate-in fade-in duration-1000 pb-20 px-4">
             {/* Breadcrumbs & Actions */}
             <div className="flex items-center justify-between gap-4 flex-wrap">
-                <div className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-foreground/40">
+                <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wide text-foreground/40">
                     <Link href="/dashboard/courses" className="hover:text-blue-600 transition-colors">Courses</Link>
                     <ChevronRight className="h-3 w-3" />
                     <Link href="/dashboard/courses/ncert" className="hover:text-blue-600 transition-colors">NCERT</Link>
@@ -61,20 +61,20 @@ export default function NcertAllSubjectsPage() {
 
                 <button
                     onClick={() => router.back()}
-                    className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-foreground/60 hover:text-blue-600 transition-all group"
+                    className="flex items-center gap-2 text-xs font-black uppercase tracking-wide text-foreground/60 hover:text-blue-600 transition-all group"
                 >
                     <ArrowLeft className="h-3 w-3 group-hover:-translate-x-1 transition-transform" />
                     Back to Classes
                 </button>
             </div>
 
-            <div className="relative overflow-hidden rounded-[2.5rem] border border-blue-200/35 bg-gradient-to-br from-slate-950 via-blue-950 to-sky-900 p-8 md:p-10 shadow-[0_24px_60px_-35px_rgba(2,6,23,0.95)]">
+            <div className="relative overflow-hidden rounded-2xl border border-blue-200/35 bg-gradient-to-br from-slate-950 via-blue-950 to-sky-900 p-8 md:p-10 shadow-[0_24px_60px_-35px_rgba(2,6,23,0.95)]">
                 <div className="absolute -top-16 -right-8 h-56 w-56 rounded-full bg-cyan-300/20 blur-[90px]" />
                 <div className="absolute -bottom-16 -left-12 h-56 w-56 rounded-full bg-blue-500/20 blur-[90px]" />
 
                 <div className="relative z-10 space-y-5">
-                    <h1 className="text-3xl md:text-5xl font-black text-white uppercase tracking-tight italic">
-                        Integrated <span className="text-cyan-200">NCERT Hub</span>
+                    <h1 className="text-3xl md:text-5xl font-black text-white uppercase tracking-tight ">
+                        All NCERT subjects
                     </h1>
                     <p className="text-cyan-100/85 font-semibold text-sm md:text-base max-w-3xl">
                         Access one unified subject repository across classes with full-window multimodal study tools.
@@ -89,7 +89,7 @@ export default function NcertAllSubjectsPage() {
                         ].map((item) => (
                             <div key={item.label} className="rounded-xl border border-white/20 bg-white/10 px-3 py-2 flex items-center gap-2">
                                 <item.icon className="h-4 w-4 text-cyan-200" />
-                                <span className="text-[10px] font-black uppercase tracking-widest text-white">{item.label}</span>
+                                <span className="text-xs font-black uppercase tracking-wide text-white">{item.label}</span>
                             </div>
                         ))}
                     </div>
@@ -103,7 +103,7 @@ export default function NcertAllSubjectsPage() {
                         <Link
                             key={subject.id}
                             href={`/dashboard/courses/ncert/all/${subject.id}`}
-                            className="group relative bg-card-bg border border-card-border p-7 rounded-[2rem] shadow-sm hover:shadow-2xl hover:border-blue-500/30 transition-all duration-500 overflow-hidden"
+                            className="group relative bg-card-bg border border-card-border p-7 rounded-2xl shadow-sm hover:shadow-2xl hover:border-blue-500/30 transition-all duration-500 overflow-hidden"
                         >
                             <div className="absolute top-4 right-8 opacity-5 group-hover:opacity-10 transition-opacity">
                                 <Sparkles className="h-16 w-16 text-blue-600" />
@@ -114,16 +114,16 @@ export default function NcertAllSubjectsPage() {
                                     <Book className="h-6 w-6" />
                                 </div>
 
-                                <h3 className="text-lg font-black text-foreground uppercase tracking-tight italic mb-2 group-hover:text-blue-500 transition-colors line-clamp-1">
+                                <h3 className="text-lg font-black text-foreground uppercase tracking-tight mb-2 group-hover:text-blue-500 transition-colors line-clamp-1">
                                     {subject.name_en}
                                 </h3>
-                                <p className="text-[10px] font-bold text-foreground/40 uppercase tracking-widest mb-5">
+                                <p className="text-xs font-bold text-foreground/40 uppercase tracking-wide mb-5">
                                     {subject.class_level || 'General'}
                                 </p>
 
                                 <div className="flex gap-1.5 mb-5">
                                     {['PDF', 'Audio', 'Video', 'Map', 'Info'].map((label) => (
-                                        <span key={label} className="rounded-full border border-gray-200 px-2 py-0.5 text-[9px] font-black uppercase tracking-wider text-foreground/45">
+                                        <span key={label} className="rounded-full border border-gray-200 px-2 py-0.5 text-xs font-black uppercase tracking-wider text-foreground/45">
                                             {label}
                                         </span>
                                     ))}
@@ -132,7 +132,7 @@ export default function NcertAllSubjectsPage() {
                                 <div className="flex items-center justify-between pt-5 border-t border-card-border">
                                     <div className="flex items-center gap-2">
                                         <div className="h-2 w-2 rounded-full bg-indigo-500 animate-pulse" />
-                                        <span className="text-[9px] font-black text-foreground/35 uppercase tracking-widest">Open Subject Console</span>
+                                        <span className="text-xs font-black text-foreground/35 uppercase tracking-wide">Open Subject Console</span>
                                     </div>
                                     <ChevronRight className="h-4 w-4 text-foreground/20 group-hover:text-blue-600 group-hover:translate-x-1 transition-all" />
                                 </div>
@@ -140,9 +140,9 @@ export default function NcertAllSubjectsPage() {
                         </Link>
                     ))
                 ) : (
-                    <div className="col-span-full py-20 bg-card-bg border border-dashed border-card-border rounded-[2rem] text-center">
+                    <div className="col-span-full py-20 bg-card-bg border border-dashed border-card-border rounded-2xl text-center">
                         <LayoutGrid className="h-12 w-12 text-foreground/20 mx-auto mb-4" />
-                        <p className="text-xs font-black text-foreground/40 uppercase tracking-widest italic">No integrated assets identified yet.</p>
+                        <p className="text-xs font-black text-foreground/40 uppercase tracking-wide ">No integrated assets identified yet.</p>
                     </div>
                 )}
             </div>

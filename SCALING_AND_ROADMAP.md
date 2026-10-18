@@ -1,5 +1,7 @@
 # OSDHYAN — Status, Scaling Plan & Roadmap
 
+> **Update 2026-10-18 (evening):** revenue modules added — paid test series with Razorpay, live classes (Jitsi / YouTube Live) with teacher panel, home-tuition marketplace with in-app chat, and a UI/copy clean-up. Laptop hosting with a public link is in `scripts/host/HOSTING.md`. Backend suite: 111 tests. See §7.
+
 > Written 2026-10-18 after a full audit and local end-to-end test of backend (Laravel 11), portal (Next.js 16) and admin.
 > Goal: **10,000 students logging in and taking a test at the same time**, reliably, with bulk CSV/Excel question upload for admins.
 
@@ -162,3 +164,24 @@ python scripts/smoke_test.py --admin-login admin@local.test --admin-password <se
 ```
 
 Note: the password in `backend/.env` does not match the local PostgreSQL 16 service on this machine, so testing in this pass used a separate throw-away Postgres on port 5433 (`DB_PORT=5433`).
+
+---
+
+## 7. Revenue modules (added 2026-10-18)
+
+| Module | What works | Needs from you |
+|---|---|---|
+| **Paid test series** (`routes/api/payments.php`) | Admin sets price / MRP / validity on a series; students see price, pay via Razorpay checkout, access is granted (with expiry), locked tests show a lock; My Purchases page; admin Orders & revenue page (today / 7d / 30d / total, top series); webhook keeps orders in sync. `PAYMENTS_FAKE=true` gives a working **test-mode** checkout until keys exist. | Razorpay account → `RAZORPAY_KEY_ID`, `RAZORPAY_KEY_SECRET`, webhook at `https://<host>/api/webhooks/razorpay` with `RAZORPAY_WEBHOOK_SECRET`; set `PAYMENTS_FAKE=false`. Note: tests inside a paid series stay free until you untick *Free* on them (admin → Tests → Edit). |
+| **Live classes** (`routes/api/live.php`) | Teacher panel (`/dashboard/live/manage`): schedule, Go live, End, add recording, copy link. In-class: video (Jitsi) or YouTube Live embed, chat, pin/answer, polls, raise hand, participants, **join from a second device** (link + password + QR). Students: Live now / Upcoming / Recordings. | Free: works with public `meet.jit.si` (the teacher signs in once to become moderator). Better: JaaS (8x8) keys `JAAS_APP_ID`, `JAAS_API_KEY_ID`, `JAAS_PRIVATE_KEY` → no sign-in, up to 100 participants; or self-hosted Jitsi. For 500+ students use **YouTube Live** (OBS → YouTube, paste the link). |
+| **Home tuition** (`routes/api/tuition.php`) | Teachers register (`/teach/register`), admin verifies (`/admin/teachers`), students search tutors by subject/exam/city/mode, post requirements, teachers send proposals from Leads, student accepts → chat opens. Contact details are never exposed; all contact is through chat. | Decide the revenue rule: lead fee per proposal / contact (hooks marked `TODO(revenue)` in `TuitionController`), or commission on the agreed fee at accept. |
+| **Chat** (`routes/api/chat.php`) | 1:1 conversations (student ↔ teacher), unread counts, polling (4 s thread / 15 s list). Reusable for support chat later. | Upgrade path: Laravel Reverb websockets when traffic grows. |
+
+**Tests:** 111 backend feature tests (`php artisan test`), `scripts/smoke_test.py` (42 checks) and `scripts/smoke_modules.py` (46 checks) — all green on the laptop host.
+
+### What to do first to earn revenue
+1. Upload content (Admin → Bulk import, .xlsx), create 2–3 paid series with prices, keep one free series as a funnel.
+2. Get Razorpay live keys (KYC takes a few days) — until then checkout runs in test mode.
+3. Register 5–10 tutors in your city, verify them, and announce the tuition board.
+4. Run one free YouTube-Live class per week to bring students in; sell the paid series inside the class.
+5. Move hosting to the cloud (Phase 2) before the first big scheduled mock.
+

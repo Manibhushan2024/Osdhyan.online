@@ -182,7 +182,7 @@ export default function AdminCurriculumEditor() {
                 const match = section.topics.find((t: any) => t.id === selectedTopic.id);
                 if (match) setSelectedTopic(match);
             }
-            alert('Intelligence Payload Deployed!');
+            alert('Content uploaded.');
         } catch (error) {
             console.error('Upload failed', error);
         } finally {
@@ -204,7 +204,7 @@ export default function AdminCurriculumEditor() {
         return (
             <div className="flex flex-col items-center justify-center py-40 gap-4">
                 <Loader2 className="h-10 w-10 text-indigo-600 animate-spin" />
-                <p className="text-[10px] font-black text-foreground/40 uppercase tracking-[0.3em]">Connecting to Neural Network...</p>
+                <p className="text-xs font-black text-foreground/40 uppercase tracking-wide">Loading subject…</p>
             </div>
         );
     }
@@ -221,13 +221,13 @@ export default function AdminCurriculumEditor() {
                         <ArrowLeft className="h-4 w-4" />
                     </button>
                     <div>
-                        <h1 className="text-3xl font-black text-foreground uppercase tracking-tight italic">
+                        <h1 className="text-3xl font-black text-foreground uppercase tracking-tight ">
                             Curriculum <span className="text-indigo-600">Architect</span>
                         </h1>
                         <div className="flex items-center gap-3">
-                            <p className="text-[10px] font-black text-foreground/40 uppercase tracking-[0.2em]">{subject?.name_en}</p>
+                            <p className="text-xs font-black text-foreground/40 uppercase tracking-wide">{subject?.name_en}</p>
                             <span className={cn(
-                                "text-[7px] font-black px-2 py-0.5 rounded-full border",
+                                "text-xs font-black px-2 py-0.5 rounded-full border",
                                 subject?.is_published ? "bg-emerald-500/10 text-emerald-500 border-emerald-500/20" : "bg-amber-500/10 text-amber-500 border-amber-500/20"
                             )}>
                                 {subject?.is_published ? 'LIVE' : 'DRAFT'}
@@ -240,7 +240,7 @@ export default function AdminCurriculumEditor() {
                     <button
                         onClick={() => handleTogglePublication('subjects', subject.id, subject.is_published)}
                         className={cn(
-                            "flex items-center gap-2 px-6 py-3 rounded-2xl text-[9px] font-black uppercase tracking-widest transition-all",
+                            "flex items-center gap-2 px-6 py-3 rounded-2xl text-xs font-black uppercase tracking-wide transition-all",
                             subject?.is_published
                                 ? "bg-amber-600/10 text-amber-600 border border-amber-600/20 hover:bg-amber-600/20"
                                 : "bg-indigo-600 text-white shadow-lg shadow-indigo-600/20 hover:scale-105"
@@ -254,11 +254,11 @@ export default function AdminCurriculumEditor() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
                 {/* Left: Deep Dive Tree */}
                 <div className="lg:col-span-7 space-y-8">
-                    <div className="bg-card-bg border border-card-border rounded-[2.5rem] p-8 space-y-6">
+                    <div className="bg-card-bg border border-card-border rounded-2xl p-8 space-y-6">
                         <div className="flex items-center justify-between border-b border-card-border pb-6">
-                            <h3 className="text-xs font-black text-foreground uppercase tracking-widest flex items-center gap-2">
+                            <h3 className="text-xs font-black text-foreground uppercase tracking-wide flex items-center gap-2">
                                 <LayoutIcon className="h-4 w-4 text-indigo-600" />
-                                Structural Vectors (Sections)
+                                Sections
                             </h3>
                             <div className="flex gap-2">
                                 <input
@@ -266,11 +266,11 @@ export default function AdminCurriculumEditor() {
                                     placeholder="NEW SECTION NAME..."
                                     value={newSectionName}
                                     onChange={(e) => setNewSectionName(e.target.value)}
-                                    className="bg-card-border/20 border border-card-border rounded-lg px-4 py-2 text-[9px] uppercase font-black tracking-widest focus:outline-none focus:border-indigo-600/30 w-48"
+                                    className="bg-card-border/20 border border-card-border rounded-lg px-4 py-2 text-xs uppercase font-black tracking-wide focus:outline-none focus:border-indigo-600/30 w-48"
                                 />
                                 <button
                                     onClick={handleAddSection}
-                                    className="h-9 px-4 bg-indigo-600 text-white rounded-xl flex items-center gap-2 text-[8px] font-black uppercase tracking-widest shadow-lg shadow-indigo-500/20 active:scale-95 transition-all"
+                                    className="h-9 px-4 bg-indigo-600 text-white rounded-xl flex items-center gap-2 text-xs font-black uppercase tracking-wide shadow-lg shadow-indigo-500/20 active:scale-95 transition-all"
                                 >
                                     <Plus className="h-4 w-4" />
                                     Create Section
@@ -280,24 +280,24 @@ export default function AdminCurriculumEditor() {
 
                         <div className="space-y-6 max-h-[800px] overflow-y-auto pr-4 custom-scrollbar">
                             {chapters.length === 0 && (
-                                <div className="py-20 text-center text-[10px] font-black text-foreground/20 uppercase tracking-[0.2em]">
+                                <div className="py-20 text-center text-xs font-black text-foreground/20 uppercase tracking-wide">
                                     No Sections Deployed
                                 </div>
                             )}
                             {chapters.map((section) => (
                                 <div key={section.id} className="space-y-4">
-                                    <div className="flex items-center justify-between group bg-white/5 p-5 rounded-[1.5rem] border border-card-border hover:border-indigo-600/30 transition-all">
+                                    <div className="flex items-center justify-between group bg-white/5 p-5 rounded-2xl border border-card-border hover:border-indigo-600/30 transition-all">
                                         <div className="flex flex-col">
                                             <div className="flex items-center gap-3">
-                                                <span className="text-[11px] font-black text-foreground uppercase tracking-wider italic">{section.name_en}</span>
+                                                <span className="text-xs font-black text-foreground uppercase tracking-wider ">{section.name_en}</span>
                                                 <span className={cn(
-                                                    "text-[6px] font-black px-1.5 py-0.5 rounded-full border uppercase tracking-widest",
+                                                    "text-xs font-black px-1.5 py-0.5 rounded-full border uppercase tracking-wide",
                                                     section.is_published ? "bg-emerald-500/10 text-emerald-500 border-emerald-500/10" : "bg-amber-500/10 text-amber-500 border-amber-500/10"
                                                 )}>
                                                     {section.is_published ? 'LIVE' : 'DRAFT'}
                                                 </span>
                                             </div>
-                                            <span className="text-[7px] font-black text-foreground/20 uppercase tracking-widest mt-1">Section Protocol</span>
+                                            <span className="text-xs font-black text-foreground/20 uppercase tracking-wide mt-1">Section</span>
                                         </div>
                                         <div className="flex items-center gap-2">
                                             <button
@@ -309,7 +309,7 @@ export default function AdminCurriculumEditor() {
                                             <button
                                                 onClick={() => handleTogglePublication('chapters', section.id, section.is_published)}
                                                 className={cn(
-                                                    "h-8 px-3 rounded-xl border flex items-center justify-center text-[7px] font-black uppercase tracking-widest transition-all",
+                                                    "h-8 px-3 rounded-xl border flex items-center justify-center text-xs font-black uppercase tracking-wide transition-all",
                                                     section.is_published ? "border-amber-500/20 text-amber-500 hover:bg-amber-500/5" : "border-emerald-500/20 text-emerald-500 hover:bg-emerald-500/5"
                                                 )}
                                             >
@@ -326,7 +326,7 @@ export default function AdminCurriculumEditor() {
                                             <div className="w-[1px] h-6 bg-card-border mx-2" />
                                             <button
                                                 onClick={() => handleAddChapter(section.id)}
-                                                className="flex items-center gap-2 bg-indigo-600 text-white px-4 py-2 rounded-xl text-[8px] font-black uppercase tracking-widest shadow-xl shadow-indigo-600/10 hover:scale-[1.02] active:scale-95 transition-all"
+                                                className="flex items-center gap-2 bg-indigo-600 text-white px-4 py-2 rounded-xl text-xs font-black uppercase tracking-wide shadow-xl shadow-indigo-600/10 hover:scale-[1.02] active:scale-95 transition-all"
                                             >
                                                 <Plus className="h-3.5 w-3.5" />
                                                 New Topic
@@ -354,10 +354,10 @@ export default function AdminCurriculumEditor() {
                                                         topic.is_published ? "bg-emerald-500" : "bg-amber-500"
                                                     )} />
                                                     <div className="flex flex-col">
-                                                        <span className="text-[10px] font-black uppercase tracking-widest">{topic.name_en}</span>
+                                                        <span className="text-xs font-black uppercase tracking-wide">{topic.name_en}</span>
                                                         <div className="flex gap-2 mt-1">
                                                             {topic.materials?.map((m: any) => (
-                                                                <span key={m.id} className="text-[6px] bg-indigo-600/10 text-indigo-600/70 border border-indigo-600/10 px-1 py-0.5 rounded uppercase font-black">
+                                                                <span key={m.id} className="text-xs bg-indigo-600/10 text-indigo-600/70 border border-indigo-600/10 px-1 py-0.5 rounded uppercase font-black">
                                                                     {m.type}
                                                                 </span>
                                                             ))}
@@ -374,7 +374,7 @@ export default function AdminCurriculumEditor() {
                                                     <button
                                                         onClick={(e) => { e.stopPropagation(); handleTogglePublication('topics', topic.id, topic.is_published); }}
                                                         className={cn(
-                                                            "h-7 px-2 rounded-lg border text-[7px] font-black uppercase tracking-widest transition-all",
+                                                            "h-7 px-2 rounded-lg border text-xs font-black uppercase tracking-wide transition-all",
                                                             topic.is_published ? "border-amber-500/20 text-amber-500" : "border-emerald-500/20 text-emerald-500"
                                                         )}
                                                     >
@@ -401,37 +401,37 @@ export default function AdminCurriculumEditor() {
                 {/* Right: Perfect Payload Panel */}
                 <div className="lg:col-span-5 space-y-8">
                     {selectedTopic ? (
-                        <div className="bg-card-bg border border-card-border rounded-[3rem] p-10 space-y-10 sticky top-8 animate-in slide-in-from-right duration-500 shadow-2xl">
+                        <div className="bg-card-bg border border-card-border rounded-2xl p-10 space-y-10 sticky top-8 animate-in slide-in-from-right duration-500 shadow-2xl">
                             <div className="flex items-start justify-between border-b border-card-border pb-6">
                                 <div className="space-y-1">
                                     <div className="flex items-center gap-3">
-                                        <h3 className="text-sm font-black text-foreground uppercase tracking-[0.2em]">Neural Deployment</h3>
+                                        <h3 className="text-sm font-black text-foreground uppercase tracking-wide">Upload content</h3>
                                         <span className={cn(
-                                            "text-[7px] font-black px-2 py-0.5 rounded-full border uppercase tracking-widest",
+                                            "text-xs font-black px-2 py-0.5 rounded-full border uppercase tracking-wide",
                                             selectedTopic.is_published ? "bg-emerald-500/10 text-emerald-500 border-emerald-500/20" : "bg-amber-500/10 text-amber-500 border-amber-500/20"
                                         )}>
                                             {selectedTopic.is_published ? 'LIVE IN PORTAL' : 'STAGING DRAFT'}
                                         </span>
                                     </div>
-                                    <p className="text-[9px] font-black text-indigo-600 uppercase tracking-[0.3em] italic">{selectedTopic.name_en}</p>
+                                    <p className="text-xs font-black text-indigo-600 uppercase tracking-wide ">{selectedTopic.name_en}</p>
                                 </div>
                                 <button onClick={() => setSelectedTopic(null)} className="h-8 w-8 rounded-full bg-white/5 flex items-center justify-center text-foreground/20 hover:text-foreground transition-all">
                                     <X className="h-4 w-4" />
                                 </button>
                             </div>
 
-                            {/* Publication Command */}
+                            {/* Publish */}
                             <div className="bg-indigo-600/[0.03] border border-indigo-600/10 rounded-2xl p-5 flex items-center justify-between">
                                 <div className="space-y-1">
-                                    <p className="text-[8px] font-black text-indigo-600 uppercase tracking-widest">Publication Vector</p>
-                                    <p className="text-[10px] font-bold text-foreground/60 uppercase tracking-tight">
+                                    <p className="text-xs font-black text-indigo-600 uppercase tracking-wide">Publishing</p>
+                                    <p className="text-xs font-bold text-foreground/60 uppercase tracking-tight">
                                         {selectedTopic.is_published ? 'Visible to all students' : 'Only visible to administrators'}
                                     </p>
                                 </div>
                                 <button
                                     onClick={() => handleTogglePublication('topics', selectedTopic.id, selectedTopic.is_published)}
                                     className={cn(
-                                        "px-6 py-2.5 rounded-xl text-[8px] font-black uppercase tracking-widest transition-all shadow-lg",
+                                        "px-6 py-2.5 rounded-xl text-xs font-black uppercase tracking-wide transition-all shadow-lg",
                                         selectedTopic.is_published
                                             ? "bg-amber-600/10 text-amber-600 border border-amber-600/20"
                                             : "bg-emerald-600 text-white shadow-emerald-600/20"
@@ -443,19 +443,19 @@ export default function AdminCurriculumEditor() {
 
                             {/* Active Assets Review */}
                             <div className="space-y-4">
-                                <h4 className="text-[9px] font-black text-foreground/30 uppercase tracking-[0.3em] px-2 flex items-center gap-2">
+                                <h4 className="text-xs font-black text-foreground/30 uppercase tracking-wide px-2 flex items-center gap-2">
                                     <CheckCircle2 className="h-3 w-3 text-emerald-500" />
-                                    Active Intelligence Payloads
+                                    Uploaded content
                                 </h4>
                                 <div className="grid grid-cols-1 gap-3">
                                     {['text', 'audio', 'video', 'mindmap', 'infographic'].map((type) => {
                                         const material = selectedTopic.materials?.find((m: any) => m.type === type);
                                         const config: any = {
-                                            text: { label: 'Digital Dossier (PDF)', icon: FileText, color: 'text-blue-500' },
+                                            text: { label: 'PDF document', icon: FileText, color: 'text-blue-500' },
                                             audio: { label: 'Audio Brief (MP3)', icon: Headphones, color: 'text-amber-500' },
-                                            video: { label: 'Neural Feed (MP4)', icon: Video, color: 'text-indigo-500' },
-                                            mindmap: { label: 'Neural Mindmap', icon: MapIcon, color: 'text-fuchsia-500' },
-                                            infographic: { label: 'Tactical Infographic', icon: LayoutIcon, color: 'text-emerald-500' },
+                                            video: { label: 'Video (MP4)', icon: Video, color: 'text-indigo-500' },
+                                            mindmap: { label: 'Mind map', icon: MapIcon, color: 'text-fuchsia-500' },
+                                            infographic: { label: 'Infographic', icon: LayoutIcon, color: 'text-emerald-500' },
                                         };
                                         const item = config[type];
 
@@ -469,8 +469,8 @@ export default function AdminCurriculumEditor() {
                                                         <item.icon className="h-4 w-4" />
                                                     </div>
                                                     <div className="flex flex-col">
-                                                        <span className="text-[9px] font-black text-foreground uppercase tracking-wider">{item.label}</span>
-                                                        <span className="text-[7px] font-bold text-foreground/30 uppercase tracking-widest">
+                                                        <span className="text-xs font-black text-foreground uppercase tracking-wider">{item.label}</span>
+                                                        <span className="text-xs font-bold text-foreground/30 uppercase tracking-wide">
                                                             {material ? material.title : 'Not Deployed'}
                                                         </span>
                                                     </div>
@@ -484,12 +484,12 @@ export default function AdminCurriculumEditor() {
                                                             <Trash2 className="h-4 w-4" />
                                                         </button>
                                                     ) : (
-                                                        <span className="text-[7px] font-black text-foreground/20 uppercase tracking-widest">Locked</span>
+                                                        <span className="text-xs font-black text-foreground/20 uppercase tracking-wide">Locked</span>
                                                     )
                                                 ) : (
                                                     <button
                                                         onClick={() => setUploadType(type as any)}
-                                                        className="h-8 px-4 rounded-xl bg-card-bg border border-card-border text-[7px] font-black uppercase tracking-widest hover:border-indigo-600/30 hover:text-indigo-600 transition-all"
+                                                        className="h-8 px-4 rounded-xl bg-card-bg border border-card-border text-xs font-black uppercase tracking-wide hover:border-indigo-600/30 hover:text-indigo-600 transition-all"
                                                     >
                                                         Upload
                                                     </button>
@@ -502,7 +502,7 @@ export default function AdminCurriculumEditor() {
 
                             {/* New Payload Wizard */}
                             <div className="space-y-6 pt-10 border-t border-card-border">
-                                <h4 className="text-[9px] font-black text-foreground/30 uppercase tracking-[0.3em] text-center">Transfer Intelligence Data</h4>
+                                <h4 className="text-xs font-black text-foreground/30 uppercase tracking-wide text-center">Upload a file</h4>
 
                                 <div className="space-y-4">
                                     <div className="grid grid-cols-5 gap-2">
@@ -531,15 +531,15 @@ export default function AdminCurriculumEditor() {
                                             className="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10"
                                         />
                                         <div className={cn(
-                                            "border-2 border-dashed rounded-[2rem] p-12 flex flex-col items-center gap-4 transition-all group-hover:bg-indigo-600/[0.02] group-hover:border-indigo-600/40 animate-pulse-slow",
+                                            "border-2 border-dashed rounded-2xl p-12 flex flex-col items-center gap-4 transition-all group-hover:bg-indigo-600/[0.02] group-hover:border-indigo-600/40 animate-pulse-slow",
                                             uploadFile ? "border-emerald-500/50 bg-emerald-500/5" : "border-card-border"
                                         )}>
                                             <Upload className={cn("h-10 w-10 transition-colors", uploadFile ? "text-emerald-500" : "text-foreground/10 group-hover:text-indigo-600")} />
                                             <div className="text-center">
-                                                <p className="text-[10px] font-black text-foreground uppercase tracking-[0.2em] max-w-[250px] truncate">
+                                                <p className="text-xs font-black text-foreground uppercase tracking-wide max-w-[250px] truncate">
                                                     {uploadFile ? uploadFile.name : 'Click or Drag Strategic Assets'}
                                                 </p>
-                                                <p className="text-[7px] font-black text-foreground/20 uppercase tracking-widest mt-2 italic">Max Payload: 100MB</p>
+                                                <p className="text-xs font-black text-foreground/20 uppercase tracking-wide mt-2 ">Max Payload: 100MB</p>
                                             </div>
                                         </div>
                                     </div>
@@ -547,25 +547,25 @@ export default function AdminCurriculumEditor() {
                                     <button
                                         onClick={handleUpload}
                                         disabled={!uploadFile || uploading}
-                                        className="w-full bg-indigo-600 disabled:bg-indigo-600/30 text-white py-6 rounded-[1.5rem] text-[11px] font-black uppercase tracking-[0.2em] shadow-2xl shadow-indigo-600/20 active:scale-95 transition-all flex items-center justify-center gap-4"
+                                        className="w-full bg-indigo-600 disabled:bg-indigo-600/30 text-white py-6 rounded-2xl text-xs font-black uppercase tracking-wide shadow-2xl shadow-indigo-600/20 active:scale-95 transition-all flex items-center justify-center gap-4"
                                     >
                                         {uploading ? <Loader2 className="h-5 w-5 animate-spin" /> : <Rocket className="h-5 w-5" />}
-                                        {uploading ? 'Processing Signal...' : 'Commence Intelligence Deployment'}
+                                        {uploading ? 'Uploading…' : 'Upload'}
                                     </button>
                                 </div>
                             </div>
                         </div>
                     ) : (
-                        <div className="bg-card-bg border border-card-border border-dashed rounded-[3rem] p-20 text-center flex flex-col items-center justify-center gap-6 h-[600px] sticky top-8">
-                            <div className="h-24 w-24 rounded-[2rem] bg-indigo-600/5 flex items-center justify-center border border-indigo-600/10">
+                        <div className="bg-card-bg border border-card-border border-dashed rounded-2xl p-20 text-center flex flex-col items-center justify-center gap-6 h-[600px] sticky top-8">
+                            <div className="h-24 w-24 rounded-2xl bg-indigo-600/5 flex items-center justify-center border border-indigo-600/10">
                                 <LayoutIcon className="h-10 w-10 text-indigo-600/20" />
                             </div>
                             <div className="space-y-2">
-                                <p className="text-[11px] font-black text-foreground/40 uppercase tracking-[0.3em] italic">
+                                <p className="text-xs font-black text-foreground/40 uppercase tracking-wide ">
                                     Curriculum Core Offline
                                 </p>
-                                <p className="text-[8px] font-bold text-foreground/20 uppercase tracking-widest max-w-[220px] mx-auto leading-relaxed">
-                                    Select a structural topic from the neural tree to initialize tactical payload deployment.
+                                <p className="text-xs font-bold text-foreground/20 uppercase tracking-wide max-w-[220px] mx-auto leading-relaxed">
+                                    Select a structural topic from the topic tree to initialize tactical payload deployment.
                                 </p>
                             </div>
                         </div>

@@ -176,12 +176,12 @@ export default function ProductivityPage() {
             {/* Header */}
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                 <div>
-                    <h1 className="text-3xl font-black text-foreground tracking-tight italic uppercase">Growth Lab</h1>
+                    <h1 className="page-title">Productivity</h1>
                     <p className="text-foreground/50 mt-1 font-bold text-sm italic">Track your study hours. Crush your goals.</p>
                 </div>
                 <button
                     onClick={openAddModal}
-                    className="flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white font-black rounded-2xl transition-all shadow-lg shadow-blue-600/20 text-[11px] uppercase tracking-widest"
+                    className="flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white font-black rounded-2xl transition-all shadow-lg shadow-blue-600/20 text-xs uppercase tracking-wide"
                 >
                     <Plus className="h-4 w-4" /> Set New Goal
                 </button>
@@ -191,14 +191,14 @@ export default function ProductivityPage() {
                 {/* Goals Performance */}
                 <div className="lg:col-span-2 space-y-6">
                     <div className="bg-card-bg border border-card-border rounded-3xl p-8">
-                        <h2 className="text-base font-black text-foreground uppercase tracking-tight italic mb-6 flex items-center gap-3">
+                        <h2 className="text-base font-black text-foreground uppercase tracking-tight mb-6 flex items-center gap-3">
                             <TrendingUp className="h-5 w-5 text-blue-500" />
                             Goal Performance
                         </h2>
                         {chartData.length === 0 ? (
                             <div className="flex flex-col items-center justify-center h-48 gap-3 text-foreground/20">
                                 <Target className="h-12 w-12" />
-                                <p className="text-[11px] font-black uppercase tracking-widest">No goals yet — set your first goal</p>
+                                <p className="text-xs font-black uppercase tracking-wide">No goals yet — set your first goal</p>
                             </div>
                         ) : (
                             <div className="h-[300px] w-full">
@@ -239,25 +239,25 @@ export default function ProductivityPage() {
                                         </button>
                                     </div>
                                     <h3 className="font-black text-foreground text-sm uppercase tracking-tight">{goal.goalable?.name_en || 'Goal'}</h3>
-                                    <p className="text-[9px] font-black text-foreground/30 uppercase tracking-widest mt-0.5">{goal.goalable_type}</p>
+                                    <p className="text-xs font-black text-foreground/30 uppercase tracking-wide mt-0.5">{goal.goalable_type}</p>
 
                                     <div className="mt-4 flex items-end justify-between">
                                         <div>
                                             <p className="text-2xl font-black text-foreground">
                                                 {Math.floor(goal.spent_hours || 0)}h {Math.round(((goal.spent_hours || 0) % 1) * 60)}m
                                             </p>
-                                            <p className="text-[9px] font-black text-blue-500 uppercase tracking-widest">Spent</p>
+                                            <p className="text-xs font-black text-blue-500 uppercase tracking-wide">Spent</p>
                                         </div>
                                         <div className="text-right">
                                             <p className="text-lg font-black text-orange-400">{remaining.toFixed(1)}h</p>
-                                            <p className="text-[9px] font-black text-foreground/30 uppercase tracking-widest">Left</p>
+                                            <p className="text-xs font-black text-foreground/30 uppercase tracking-wide">Left</p>
                                         </div>
                                     </div>
 
                                     <div className="mt-4">
                                         <div className="flex items-center justify-between mb-1.5">
-                                            <span className="text-[9px] font-black text-foreground/30 uppercase tracking-widest">{goal.target_hours}h target</span>
-                                            <span className="text-[9px] font-black text-blue-500">{pct}%</span>
+                                            <span className="text-xs font-black text-foreground/30 uppercase tracking-wide">{goal.target_hours}h target</span>
+                                            <span className="text-xs font-black text-blue-500">{pct}%</span>
                                         </div>
                                         <div className="h-1.5 w-full bg-foreground/5 rounded-full overflow-hidden">
                                             <div
@@ -277,7 +277,7 @@ export default function ProductivityPage() {
                                 className="cursor-pointer border border-dashed border-card-border rounded-3xl p-8 flex flex-col items-center justify-center gap-3 hover:border-blue-500/30 hover:bg-blue-500/5 transition-all col-span-2"
                             >
                                 <Plus className="h-8 w-8 text-foreground/20" />
-                                <p className="text-[10px] font-black text-foreground/30 uppercase tracking-widest">Set your first goal</p>
+                                <p className="text-xs font-black text-foreground/30 uppercase tracking-wide">Set your first goal</p>
                             </div>
                         )}
                     </div>
@@ -287,7 +287,7 @@ export default function ProductivityPage() {
                 <div className="space-y-6">
                     <div className="bg-gray-900 rounded-3xl p-8 text-white relative overflow-hidden">
                         <div className="absolute -top-10 -right-10 h-40 w-40 bg-blue-500/20 rounded-full blur-3xl" />
-                        <h2 className="text-base font-black uppercase tracking-tight italic mb-4 relative z-10 flex items-center gap-2">
+                        <h2 className="text-base font-black uppercase tracking-tight mb-4 relative z-10 flex items-center gap-2">
                             <Zap className="h-4 w-4 text-yellow-400" /> Habits Check
                         </h2>
                         <div className="space-y-4 relative z-10">
@@ -302,33 +302,33 @@ export default function ProductivityPage() {
                             <div className="mt-6 pt-6 border-t border-white/10 relative z-10 grid grid-cols-2 gap-4">
                                 <div className="text-center">
                                     <p className="text-2xl font-black text-white">{analytics.overall_accuracy ?? 0}%</p>
-                                    <p className="text-[9px] font-black text-gray-400 uppercase tracking-widest">Accuracy</p>
+                                    <p className="text-xs font-black text-gray-400 uppercase tracking-wide">Accuracy</p>
                                 </div>
                                 <div className="text-center">
                                     <p className="text-2xl font-black text-white">{analytics.tests_completed ?? 0}</p>
-                                    <p className="text-[9px] font-black text-gray-400 uppercase tracking-widest">Tests Done</p>
+                                    <p className="text-xs font-black text-gray-400 uppercase tracking-wide">Tests done</p>
                                 </div>
                             </div>
                         )}
                     </div>
 
                     <div className="bg-card-bg border border-card-border rounded-3xl p-6">
-                        <h2 className="text-[10px] font-black text-foreground uppercase tracking-widest italic mb-5 flex items-center gap-2">
+                        <h2 className="text-xs font-black text-foreground uppercase tracking-wide mb-5 flex items-center gap-2">
                             <Calendar className="h-4 w-4 text-orange-500" /> Milestones
                         </h2>
                         <div className="space-y-4">
                             {milestones.length === 0 ? (
-                                <p className="text-[10px] text-foreground/30 font-black italic uppercase tracking-widest">Set goals to see milestones</p>
+                                <p className="text-xs text-foreground/30 font-black uppercase tracking-wide">Set goals to see milestones</p>
                             ) : milestones.map((m, i) => (
                                 <div key={i} className="p-3 bg-background rounded-2xl border border-card-border">
                                     <div className="flex items-center justify-between mb-2">
-                                        <span className="text-[10px] font-black text-foreground/60 truncate flex-1">{m.name}</span>
-                                        <span className="text-[10px] font-black text-blue-500 ml-2">{m.pct}%</span>
+                                        <span className="text-xs font-black text-foreground/60 truncate flex-1">{m.name}</span>
+                                        <span className="text-xs font-black text-blue-500 ml-2">{m.pct}%</span>
                                     </div>
                                     <div className="h-1.5 w-full bg-foreground/5 rounded-full overflow-hidden">
                                         <div className="h-full bg-blue-500 rounded-full" style={{ width: `${m.pct}%` }} />
                                     </div>
-                                    <p className="text-[9px] font-black text-foreground/30 uppercase tracking-widest mt-1">{m.remaining}h remaining</p>
+                                    <p className="text-xs font-black text-foreground/30 uppercase tracking-wide mt-1">{m.remaining}h remaining</p>
                                 </div>
                             ))}
                         </div>
@@ -339,12 +339,12 @@ export default function ProductivityPage() {
             {/* ── Add Goal Modal ──────────────────────────────────────────────── */}
             {showAddGoal && (
                 <div className="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-                    <div className="bg-card-bg rounded-[2rem] shadow-2xl w-full max-w-lg border border-card-border animate-in zoom-in-95 fade-in duration-200">
+                    <div className="bg-card-bg rounded-2xl shadow-2xl w-full max-w-lg border border-card-border animate-in zoom-in-95 fade-in duration-200">
                         {/* Modal header */}
                         <div className="flex items-center justify-between px-8 pt-8 pb-0">
                             <div>
-                                <h2 className="text-xl font-black text-foreground uppercase tracking-tight italic">New Study Goal</h2>
-                                <p className="text-[10px] font-black text-foreground/30 uppercase tracking-widest mt-0.5">Select what you want to track</p>
+                                <h2 className="text-xl font-black text-foreground uppercase tracking-tight ">New study goal</h2>
+                                <p className="text-xs font-black text-foreground/30 uppercase tracking-wide mt-0.5">Choose what you want to track</p>
                             </div>
                             <button onClick={() => setShowAddGoal(false)} className="p-2 rounded-xl hover:bg-foreground/5 text-foreground/30 hover:text-foreground transition-all">
                                 <X className="h-5 w-5" />
@@ -354,11 +354,11 @@ export default function ProductivityPage() {
                         <div className="p-8 space-y-6">
                             {/* Step 1: Exam */}
                             <div>
-                                <label className="text-[10px] font-black text-foreground/50 uppercase tracking-widest mb-2 block flex items-center gap-1.5">
+                                <label className="text-xs font-black text-foreground/50 uppercase tracking-wide mb-2 block flex items-center gap-1.5">
                                     <BookOpen className="h-3 w-3" /> 1. Exam
                                 </label>
                                 <select
-                                    className="w-full bg-background border border-card-border rounded-2xl px-4 py-3 text-[11px] font-black text-foreground focus:outline-none focus:ring-2 focus:ring-blue-500/20"
+                                    className="w-full bg-background border border-card-border rounded-2xl px-4 py-3 text-xs font-black text-foreground focus:outline-none focus:ring-2 focus:ring-blue-500/20"
                                     value={selectedExamId}
                                     onChange={e => setSelectedExamId(e.target.value)}
                                 >
@@ -369,12 +369,12 @@ export default function ProductivityPage() {
 
                             {/* Step 2: Subject */}
                             <div>
-                                <label className="text-[10px] font-black text-foreground/50 uppercase tracking-widest mb-2 block flex items-center gap-1.5">
+                                <label className="text-xs font-black text-foreground/50 uppercase tracking-wide mb-2 block flex items-center gap-1.5">
                                     <Target className="h-3 w-3" /> 2. Subject
                                     {loadingSubjects && <Loader2 className="h-2.5 w-2.5 animate-spin ml-1" />}
                                 </label>
                                 <select
-                                    className="w-full bg-background border border-card-border rounded-2xl px-4 py-3 text-[11px] font-black text-foreground focus:outline-none focus:ring-2 focus:ring-blue-500/20 disabled:opacity-40"
+                                    className="w-full bg-background border border-card-border rounded-2xl px-4 py-3 text-xs font-black text-foreground focus:outline-none focus:ring-2 focus:ring-blue-500/20 disabled:opacity-40"
                                     value={selectedSubjectId}
                                     disabled={!selectedExamId || loadingSubjects}
                                     onChange={e => { setSelectedSubjectId(e.target.value); setGoalLevel('subject'); setSelectedChapterId(''); setSelectedTopicId(''); }}
@@ -387,13 +387,13 @@ export default function ProductivityPage() {
                             {/* Step 3: Chapter (optional) */}
                             {selectedSubjectId && chapters.length > 0 && (
                                 <div>
-                                    <label className="text-[10px] font-black text-foreground/50 uppercase tracking-widest mb-2 block flex items-center gap-1.5">
+                                    <label className="text-xs font-black text-foreground/50 uppercase tracking-wide mb-2 block flex items-center gap-1.5">
                                         <Layers className="h-3 w-3" /> 3. Chapter
                                         <span className="text-foreground/20">(optional)</span>
                                         {loadingChapters && <Loader2 className="h-2.5 w-2.5 animate-spin ml-1" />}
                                     </label>
                                     <select
-                                        className="w-full bg-background border border-card-border rounded-2xl px-4 py-3 text-[11px] font-black text-foreground focus:outline-none focus:ring-2 focus:ring-blue-500/20 disabled:opacity-40"
+                                        className="w-full bg-background border border-card-border rounded-2xl px-4 py-3 text-xs font-black text-foreground focus:outline-none focus:ring-2 focus:ring-blue-500/20 disabled:opacity-40"
                                         value={selectedChapterId}
                                         disabled={loadingChapters}
                                         onChange={e => { setSelectedChapterId(e.target.value); setGoalLevel(e.target.value ? 'chapter' : 'subject'); setSelectedTopicId(''); }}
@@ -407,13 +407,13 @@ export default function ProductivityPage() {
                             {/* Step 4: Topic (optional) */}
                             {selectedChapterId && topics.length > 0 && (
                                 <div>
-                                    <label className="text-[10px] font-black text-foreground/50 uppercase tracking-widest mb-2 block flex items-center gap-1.5">
+                                    <label className="text-xs font-black text-foreground/50 uppercase tracking-wide mb-2 block flex items-center gap-1.5">
                                         <ChevronRight className="h-3 w-3" /> 4. Topic
                                         <span className="text-foreground/20">(optional)</span>
                                         {loadingTopics && <Loader2 className="h-2.5 w-2.5 animate-spin ml-1" />}
                                     </label>
                                     <select
-                                        className="w-full bg-background border border-card-border rounded-2xl px-4 py-3 text-[11px] font-black text-foreground focus:outline-none focus:ring-2 focus:ring-blue-500/20 disabled:opacity-40"
+                                        className="w-full bg-background border border-card-border rounded-2xl px-4 py-3 text-xs font-black text-foreground focus:outline-none focus:ring-2 focus:ring-blue-500/20 disabled:opacity-40"
                                         value={selectedTopicId}
                                         disabled={loadingTopics}
                                         onChange={e => { setSelectedTopicId(e.target.value); setGoalLevel(e.target.value ? 'topic' : 'chapter'); }}
@@ -426,7 +426,7 @@ export default function ProductivityPage() {
 
                             {/* Target Hours */}
                             <div>
-                                <label className="text-[10px] font-black text-foreground/50 uppercase tracking-widest mb-3 block flex items-center gap-1.5">
+                                <label className="text-xs font-black text-foreground/50 uppercase tracking-wide mb-3 block flex items-center gap-1.5">
                                     <Clock className="h-3 w-3" /> Target Hours
                                 </label>
                                 {/* Preset buttons */}
@@ -437,7 +437,7 @@ export default function ProductivityPage() {
                                             type="button"
                                             onClick={() => setTargetHoursInput(String(h))}
                                             className={cn(
-                                                "px-3 py-1.5 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all border",
+                                                "px-3 py-1.5 rounded-xl text-xs font-black uppercase tracking-wide transition-all border",
                                                 targetHoursInput === String(h)
                                                     ? "bg-blue-600 text-white border-blue-600 shadow-lg shadow-blue-600/20"
                                                     : "bg-background text-foreground/50 border-card-border hover:border-blue-500/30 hover:text-foreground"
@@ -476,7 +476,7 @@ export default function ProductivityPage() {
                                             else if (n > 500) setTargetHoursInput('500');
                                         }}
                                     />
-                                    <span className="absolute right-4 top-1/2 -translate-y-1/2 text-[10px] font-black text-foreground/30 uppercase tracking-widest">hrs</span>
+                                    <span className="absolute right-4 top-1/2 -translate-y-1/2 text-xs font-black text-foreground/30 uppercase tracking-wide">hrs</span>
                                 </div>
                             </div>
 
@@ -484,7 +484,7 @@ export default function ProductivityPage() {
                             {selectedSubjectId && (
                                 <div className="flex items-center gap-2 px-4 py-2.5 bg-blue-500/5 border border-blue-500/10 rounded-2xl">
                                     <Target className="h-3.5 w-3.5 text-blue-500 shrink-0" />
-                                    <p className="text-[10px] font-black text-blue-500 uppercase tracking-widest">
+                                    <p className="text-xs font-black text-blue-500 uppercase tracking-wide">
                                         Goal set at: {goalableType} level
                                         {goalableType === 'Subject' && subjects.find(s => s.id == selectedSubjectId)?.name_en && ` — ${subjects.find(s => s.id == selectedSubjectId)?.name_en}`}
                                         {goalableType === 'Chapter' && chapters.find(c => c.id == selectedChapterId)?.name_en && ` — ${chapters.find(c => c.id == selectedChapterId)?.name_en}`}
@@ -497,14 +497,14 @@ export default function ProductivityPage() {
                             <div className="flex gap-3 pt-2">
                                 <button
                                     onClick={() => setShowAddGoal(false)}
-                                    className="flex-1 py-3.5 border border-card-border rounded-2xl text-[10px] font-black uppercase tracking-widest text-foreground/40 hover:text-foreground transition-all"
+                                    className="flex-1 py-3.5 border border-card-border rounded-2xl text-xs font-black uppercase tracking-wide text-foreground/40 hover:text-foreground transition-all"
                                 >
                                     Cancel
                                 </button>
                                 <button
                                     onClick={handleCreateGoal}
                                     disabled={saving || !goalableId || !targetHoursInput || parseInt(targetHoursInput) < 1}
-                                    className="flex-1 py-3.5 bg-blue-600 hover:bg-blue-500 text-white rounded-2xl text-[10px] font-black uppercase tracking-widest shadow-lg shadow-blue-600/20 transition-all disabled:opacity-40 flex items-center justify-center gap-2"
+                                    className="flex-1 py-3.5 bg-blue-600 hover:bg-blue-500 text-white rounded-2xl text-xs font-black uppercase tracking-wide shadow-lg shadow-blue-600/20 transition-all disabled:opacity-40 flex items-center justify-center gap-2"
                                 >
                                     {saving ? <Loader2 className="h-4 w-4 animate-spin" /> : <Plus className="h-4 w-4" />}
                                     {saving ? 'Saving...' : 'Save Goal'}

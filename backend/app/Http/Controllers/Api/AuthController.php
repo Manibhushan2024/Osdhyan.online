@@ -161,6 +161,7 @@ class AuthController extends Controller
             'state'                 => 'nullable|string',
             'exam_preference'       => 'nullable|string',
             'target_year'           => 'nullable|integer',
+            'role'                  => 'nullable|in:student,teacher',
         ]);
 
         $user = User::create([
@@ -170,6 +171,7 @@ class AuthController extends Controller
             'state'            => $validated['state'] ?? null,
             'exam_preference'  => $validated['exam_preference'] ?? null,
             'target_year'      => $validated['target_year'] ?? null,
+            'role'             => $validated['role'] ?? User::ROLE_STUDENT,
             'password'         => Hash::make($validated['password']),
         ]);
 

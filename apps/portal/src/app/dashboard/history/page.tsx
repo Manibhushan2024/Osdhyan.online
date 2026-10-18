@@ -3,20 +3,43 @@
 import { useState, useEffect } from 'react';
 import api from '@/lib/api';
 import {
-    Trophy,
     Clock,
     Calendar,
     ChevronRight,
-    CheckCircle2,
-    XCircle,
-    Zap,
-    History as HistoryIcon
+    Target,
+    History as HistoryIcon,
+    Eye,
+    EyeOff,
 } from 'lucide-react';
 import Link from 'next/link';
-import { cn } from '@/lib/utils';
+
+type ActivityItem = {
+    type: string;
+    title?: string;
+    test_title?: string;
+    score?: number;
+    total_marks?: number;
+    max_marks?: number;
+    accuracy?: number | null;
+    duration_sec?: number;
+    activity_at?: string;
+};
+
+function formatDate(value?: string) {
+    if (!value) return '—';
+    const d = new Date(value);
+    if (Number.isNaN(d.getTime())) return '—';
+    return d.toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' });
+}
+
+function formatDuration(sec?: number) {
+    if (!sec || sec <= 0) return null;
+    const m = Math.round(sec / 60);
+    return m < 1 ? '< 1 min' : `${m} min`;
+}
 
 export default function HistoryPage() {
-    const [history, setHistory] = useState<any[]>([]);
+    const [history, setHistory] = useState<ActivityItem[]>([]);
     const [loading, setLoading] = useState(true);
     const [hideScores, setHideScores] = useState(false);
 
@@ -44,73 +67,83 @@ export default function HistoryPage() {
     };
 
     return (
-        <div className="max-w-7xl mx-auto space-y-8">
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div className="space-y-6 pb-12">
+            <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
                 <div>
-                    <h1 className="text-3xl font-bold text-gray-900 tracking-tight italic">Your Learning History</h1>
-                    <p className="mt-2 text-gray-600 font-medium italic">Track your past performance and review solutions.</p>
+                    <h1 className="page-title">Test history</h1>
+                    <p className="page-subtitle">Your recent test attempts with score and accuracy.</p>
                 </div>
-                <button
-                    onClick={toggleHideScores}
-                    className={cn(
-                        "px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-widest transition-all",
-                        hideScores ? "bg-blue-600 text-white shadow-lg" : "bg-white border border-gray-200 text-gray-500 hover:border-blue-200"
-                    )}
-                >
-                    {hideScores ? 'Show Scores' : 'Hide My Scores'}
+                <button onClick={toggleHideScores} className="btn btn-secondary btn-sm self-start md:self-auto">
+                    {hideScores ? <Eye className="h-4 w-4" /> : <EyeOff className="h-4 w-4" />}
+                    {hideScores ? 'Show scores' : 'Hide scores'}
                 </button>
             </div>
 
             {loading ? (
-                <div className="flex justify-center py-20">
-                    <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-blue-600"></div>
+                <div className="space-y-3">
+                    {Array.from({ length: 3 }).map((_, i) => (
+                        <div key={i} className="card p-5 animate-pulse space-y-2">
+                            <div className="h-5 w-2/3 bg-muted rounded" />
+                            <div className="h-4 w-1/3 bg-muted rounded" />
+                        </div>
+                    ))}
                 </div>
-            ) : (
-                <div className="space-y-4">
-                    {history.length > 0 ? history.map((item, idx) => (
-                        <div key={idx} className="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-6 hover:border-blue-200 transition-all group">
-                            <div className="flex items-center gap-4">
-                                <div className="h-14 w-14 bg-gray-50 rounded-2xl flex items-center justify-center text-blue-600 group-hover:bg-blue-50 transition-colors">
-                                    <Trophy className="h-8 w-8" />
-                                </div>
-                                <div>
-                                    <h3 className="font-bold text-gray-900 text-lg uppercase tracking-tight">{item.test_title || 'Mock Test Attempt'}</h3>
-                                    <div className="flex items-center gap-4 text-sm text-gray-500 mt-1 font-medium">
-                                        <span className="flex items-center gap-1">
-                                            <Calendar className="h-3.5 w-3.5" />
-                                            {new Date().toLocaleDateString()}
+            ) : history.length > 0 ? (
+                <div className="space-y-3">
+                    {history.map((item, idx) => {
+                        const title = item.title || item.test_title || 'Test attempt';
+                        const total = item.total_marks ?? item.max_marks;
+                        const accuracy = item.accuracy != null ? Math.round(Number(item.accuracy)) : null;
+                        const duration = formatDuration(item.duration_sec);
+                        return (
+                            <div key={idx} className="card p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                                <div className="min-w-0">
+                                    <h3 className="font-semibold leading-snug">{title}</h3>
+                                    <div className="mt-1.5 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-muted-foreground">
+                                        <span className="flex items-center gap-1.5">
+                                            <Calendar className="h-4 w-4" />
+                                            {formatDate(item.activity_at)}
                                         </span>
-                                        <span className="flex items-center gap-1">
-                                            <Zap className="h-3.5 w-3.5" />
-                                            {hideScores ? 'Score Hidden' : `${item.score || 0}/${item.max_marks || 100} Marks`}
-                                        </span>
+                                        {duration && (
+                                            <span className="flex items-center gap-1.5">
+                                                <Clock className="h-4 w-4" />
+                                                {duration}
+                                            </span>
+                                        )}
                                     </div>
                                 </div>
-                            </div>
 
-                            <div className="flex items-center gap-6">
-                                <div className="text-right hidden sm:block">
-                                    <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Accuracy</p>
-                                    <p className={item.accuracy > 70 ? "text-lg font-bold text-green-600" : "text-lg font-bold text-orange-600"}>
-                                        {hideScores ? '??' : `${item.accuracy}%`}
-                                    </p>
+                                <div className="flex items-center gap-6 shrink-0">
+                                    <div>
+                                        <p className="text-xs text-muted-foreground">Score</p>
+                                        <p className="text-lg font-bold">
+                                            {hideScores ? '••' : `${item.score ?? 0}${total != null ? ` / ${total}` : ''}`}
+                                        </p>
+                                    </div>
+                                    {accuracy != null && (
+                                        <div>
+                                            <p className="text-xs text-muted-foreground flex items-center gap-1"><Target className="h-3 w-3" /> Accuracy</p>
+                                            <p className={`text-lg font-bold ${!hideScores && accuracy >= 70 ? 'text-green-600 dark:text-green-400' : ''}`}>
+                                                {hideScores ? '••' : `${accuracy}%`}
+                                            </p>
+                                        </div>
+                                    )}
                                 </div>
-                                <Link
-                                    href={`/dashboard/analytics`}
-                                    className="flex items-center justify-center gap-2 px-6 py-3 bg-gray-50 text-gray-900 font-bold rounded-xl hover:bg-blue-600 hover:text-white transition-all shadow-sm border border-gray-200"
-                                >
-                                    View Solution
-                                    <ChevronRight className="h-4 w-4" />
-                                </Link>
                             </div>
-                        </div>
-                    )) : (
-                        <div className="py-20 bg-gray-50 rounded-2xl border-2 border-dashed border-gray-200 flex flex-col items-center justify-center">
-                            <HistoryIcon className="h-12 w-12 text-gray-300 mb-4" />
-                            <p className="text-gray-500 font-medium text-lg italic tracking-tight">You haven't attempted any tests yet.</p>
-                            <Link href="/dashboard/tests" className="mt-4 text-blue-600 font-bold hover:underline">Start your first test →</Link>
-                        </div>
-                    )}
+                        );
+                    })}
+                    <div className="pt-2">
+                        <Link href="/dashboard/analytics" className="inline-flex items-center gap-1 text-sm font-semibold text-primary hover:underline">
+                            See detailed analytics <ChevronRight className="h-4 w-4" />
+                        </Link>
+                    </div>
+                </div>
+            ) : (
+                <div className="card p-10 text-center">
+                    <HistoryIcon className="h-10 w-10 mx-auto text-muted-foreground/50" />
+                    <h3 className="mt-4 text-lg font-semibold">No attempts yet</h3>
+                    <p className="mt-1 text-sm text-muted-foreground">Your completed tests will appear here.</p>
+                    <Link href="/dashboard/tests" className="btn btn-primary mt-5">Start your first test</Link>
                 </div>
             )}
         </div>

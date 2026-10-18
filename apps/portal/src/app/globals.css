@@ -1,23 +1,59 @@
 @import "tailwindcss";
 
+/* The app toggles a `.dark` class on <html>; make `dark:` utilities follow it. */
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
-  --background: #ffffff;
+  --background: #f8fafc;
   --foreground: #0f172a;
   --accent-blue: #2563eb;
-  --accent-glow: rgba(37, 99, 235, 0.1);
+  --accent-glow: rgba(37, 99, 235, 0.12);
   --card-bg: #ffffff;
-  --card-border: #f1f5f9;
+  --card-border: #e2e8f0;
   --sidebar-bg: #ffffff;
+
+  /* Semantic tokens (used by components/ui and shared classes) */
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+  --primary: #2563eb;
+  --primary-foreground: #ffffff;
+  --secondary: #f1f5f9;
+  --secondary-foreground: #0f172a;
+  --accent: #eff6ff;
+  --accent-foreground: #1d4ed8;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: #e2e8f0;
+  --input: #cbd5e1;
+  --ring: #2563eb;
+  --success: #16a34a;
+  --warning: #d97706;
 }
 
 .dark {
-  --background: #050505;
-  --foreground: #f8fafc;
+  --background: #0b1120;
+  --foreground: #f1f5f9;
   --accent-blue: #3b82f6;
-  --accent-glow: rgba(59, 130, 246, 0.15);
-  --card-bg: #0d0d0d;
-  --card-border: #1e293b;
-  --sidebar-bg: #080808;
+  --accent-glow: rgba(59, 130, 246, 0.18);
+  --card-bg: #111827;
+  --card-border: #1f2937;
+  --sidebar-bg: #0f172a;
+
+  --muted: #1e293b;
+  --muted-foreground: #94a3b8;
+  --primary: #3b82f6;
+  --primary-foreground: #ffffff;
+  --secondary: #1e293b;
+  --secondary-foreground: #f1f5f9;
+  --accent: #172554;
+  --accent-foreground: #bfdbfe;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: #1f2937;
+  --input: #334155;
+  --ring: #3b82f6;
+  --success: #22c55e;
+  --warning: #f59e0b;
   color-scheme: dark;
 }
 
@@ -28,20 +64,139 @@
   --color-card-bg: var(--card-bg);
   --color-card-border: var(--card-border);
   --color-sidebar-bg: var(--sidebar-bg);
-  --font-sans: var(--font-plus-jakarta);
-  --font-mono: monospace;
+  --color-card: var(--card-bg);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+
+  --font-sans: var(--font-plus-jakarta), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Noto Sans Devanagari", sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
 
   --shadow-neon: 0 0 20px var(--accent-glow);
+  --shadow-card: 0 1px 2px rgba(15, 23, 42, 0.04), 0 4px 16px -8px rgba(15, 23, 42, 0.08);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-  transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1), color 0.5s ease;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.5;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* High-Tech Scrollbar */
+/* ── Shared layout, card, button and text styles ─────────────────────────── */
+@layer components {
+  .page-container {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 w-full;
+  }
+
+  .page-title {
+    @apply text-2xl sm:text-3xl font-bold tracking-tight text-foreground;
+  }
+
+  .page-subtitle {
+    @apply text-sm sm:text-base text-muted-foreground mt-1;
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-wide text-muted-foreground;
+  }
+
+  .card {
+    @apply bg-card-bg border border-card-border rounded-2xl shadow-card;
+  }
+
+  .card-hover {
+    @apply transition-shadow hover:shadow-lg;
+  }
+
+  /* Buttons: use `btn btn-primary`, `btn btn-secondary`, etc. */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 min-h-[44px] text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:opacity-50 disabled:pointer-events-none;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-primary-foreground hover:bg-blue-700 dark:hover:bg-blue-500 shadow-sm;
+  }
+
+  .btn-secondary {
+    @apply bg-card-bg text-foreground border border-card-border hover:bg-muted;
+  }
+
+  .btn-ghost {
+    @apply text-muted-foreground hover:text-foreground hover:bg-muted;
+  }
+
+  .btn-danger {
+    @apply bg-destructive text-destructive-foreground hover:bg-red-700;
+  }
+
+  .btn-sm {
+    @apply px-3 py-2 min-h-[40px] text-sm;
+  }
+
+  .btn-lg {
+    @apply px-6 py-3 min-h-[48px] text-base;
+  }
+
+  .input {
+    @apply block w-full rounded-xl border border-input bg-card-bg px-4 py-3 text-base text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring/40 focus:border-ring transition-colors min-h-[44px];
+  }
+
+  .label {
+    @apply block text-sm font-medium text-foreground mb-1.5;
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-xs font-semibold;
+  }
+
+  /* Badges: use `badge badge-green`, etc. */
+  .badge-green {
+    @apply bg-green-100 text-green-800 dark:bg-green-900/40 dark:text-green-300;
+  }
+
+  .badge-blue {
+    @apply bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300;
+  }
+
+  .badge-amber {
+    @apply bg-amber-100 text-amber-800 dark:bg-amber-900/40 dark:text-amber-300;
+  }
+
+  .badge-gray {
+    @apply bg-muted text-muted-foreground;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -56,7 +211,7 @@ body {
 }
 
 .dark ::-webkit-scrollbar-thumb {
-  background: #1e293b;
+  background: #334155;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -64,5 +219,5 @@ body {
 }
 
 .dark ::-webkit-scrollbar-thumb:hover {
-  background: #334155;
+  background: #475569;
 }

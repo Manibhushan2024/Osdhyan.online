@@ -2,13 +2,11 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import api from '@/lib/api';
 import {
-    ChevronRight,
     Clock,
     FileText,
-    Trophy,
-    CheckCircle2,
     Lock,
     Search,
     LayoutDashboard,
@@ -16,9 +14,11 @@ import {
     ClipboardCheck,
     BookOpen,
     RotateCcw,
-    Sparkles,
-    Zap,
-    Target
+    HelpCircle,
+    Award,
+    MinusCircle,
+    Play,
+    CheckCircle2,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useAuth } from '@/components/providers/AuthProvider';
@@ -28,23 +28,37 @@ type Test = {
     id: number;
     name_en: string;
     name_hi: string;
-    mode: 'chapter' | 'subject' | 'full_mock';
+    mode: 'chapter' | 'subject' | 'full_mock' | string;
     duration_sec: number;
     total_marks: number;
     questions_count?: number;
+    negative_marking?: number;
     status: string;
     is_locked?: boolean;
+    is_free?: boolean;
+    requires_purchase?: boolean;
+    attempt_status?: 'in_progress' | 'completed' | 'abandoned' | 'none' | string;
+    attempt_id?: number | null;
 };
+
 const categories = [
     { id: 'all', name: 'All', icon: LayoutDashboard },
-    { id: 'live', name: 'Live Tests', icon: Video, badge: 'NEW' },
-    { id: 'full_mock', name: 'Full Mock Tests', icon: ClipboardCheck },
-    { id: 'subject', name: 'Subject Tests', icon: BookOpen },
-    { id: 'chapter', name: 'Chapter Tests', icon: RotateCcw },
-    { id: 'pyp', name: 'Prev. Year Papers', icon: FileText },
+    { id: 'live', name: 'Live tests', icon: Video },
+    { id: 'full_mock', name: 'Full mock tests', icon: ClipboardCheck },
+    { id: 'subject', name: 'Subject tests', icon: BookOpen },
+    { id: 'chapter', name: 'Chapter tests', icon: RotateCcw },
+    { id: 'pyp', name: 'Previous year papers', icon: FileText },
 ];
 
-export default function TestSeriesPage() {
+function formatDuration(sec: number) {
+    const mins = Math.round(sec / 60);
+    if (mins < 60) return `${mins} min`;
+    const h = Math.floor(mins / 60);
+    const m = mins % 60;
+    return m ? `${h} hr ${m} min` : `${h} hr`;
+}
+
+export default function TestsPage() {
     const { user } = useAuth();
     const router = useRouter();
     const [tests, setTests] = useState<Test[]>([]);
@@ -53,7 +67,7 @@ export default function TestSeriesPage() {
     const [searchQuery, setSearchQuery] = useState('');
     const [authModal, setAuthModal] = useState<{ open: boolean; redirectTo: string }>({ open: false, redirectTo: '' });
 
-    const handleStartMission = (testId: number) => {
+    const handleStartTest = (testId: number) => {
         const playUrl = `/dashboard/tests/play/${testId}`;
         if (!user) {
             setAuthModal({ open: true, redirectTo: playUrl });
@@ -83,185 +97,167 @@ export default function TestSeriesPage() {
     };
 
     const filteredTests = tests.filter(test =>
-        test.name_en.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        test.name_hi.toLowerCase().includes(searchQuery.toLowerCase())
+        (test.name_en || '').toLowerCase().includes(searchQuery.toLowerCase()) ||
+        (test.name_hi || '').toLowerCase().includes(searchQuery.toLowerCase())
     );
 
     return (
         <>
-        <div className="max-w-7xl mx-auto space-y-10 animate-in fade-in duration-1000 pb-20 px-4 md:px-0">
-            {/* Header Section */}
-            <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
-                <div className="space-y-4">
-                    <div className="flex items-center gap-3">
-                        <div className="h-12 w-12 bg-blue-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-blue-500/20">
-                            <Trophy className="h-6 w-6" />
-                        </div>
-                        <h1 className="text-4xl font-black text-foreground uppercase tracking-tighter italic leading-none">Intelligence <span className="text-blue-600">Hub</span></h1>
+            <div className="space-y-6 pb-12">
+                {/* Header */}
+                <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+                    <div>
+                        <h1 className="page-title">Free tests</h1>
+                        <p className="page-subtitle">Timed tests on the real exam pattern. Available in Hindi and English.</p>
                     </div>
-                    <p className="text-foreground/40 font-black uppercase tracking-widest text-[10px]">Access 50,000+ Mock Tests & Selection Audits</p>
+
+                    <div className="relative w-full md:w-80">
+                        <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                        <input
+                            type="search"
+                            placeholder="Search tests"
+                            aria-label="Search tests"
+                            value={searchQuery}
+                            onChange={(e) => setSearchQuery(e.target.value)}
+                            className="input pl-10"
+                        />
+                    </div>
                 </div>
 
-                <div className="relative w-full md:w-96 group">
-                    <Search className="absolute left-5 top-1/2 -translate-y-1/2 h-5 w-5 text-foreground/20 group-hover:text-blue-600 transition-colors" />
-                    <input
-                        type="text"
-                        placeholder="Search for Exams, Subjects or Papers..."
-                        value={searchQuery}
-                        onChange={(e) => setSearchQuery(e.target.value)}
-                        className="w-full bg-card-bg border border-card-border p-5 pl-14 rounded-[2rem] text-sm font-black uppercase tracking-tight focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500/50 transition-all shadow-sm"
-                    />
-                </div>
-            </div>
-
-            {/* Premium Category Navigation */}
-            <div className="bg-card-bg border border-card-border p-4 rounded-[3rem] shadow-sm overflow-x-auto no-scrollbar">
-                <div className="flex items-center gap-3 min-w-[800px]">
-                    {categories.map((cat) => (
-                        <button
-                            key={cat.id}
-                            onClick={() => setActiveTab(cat.id)}
-                            className={cn(
-                                "flex items-center gap-3 px-8 py-4 rounded-[2rem] text-[10px] font-black uppercase tracking-widest transition-all relative group",
-                                activeTab === cat.id
-                                    ? "bg-blue-600 text-white shadow-xl shadow-blue-500/20 scale-105"
-                                    : "text-foreground/40 hover:bg-background hover:text-blue-600"
-                            )}
-                        >
-                            <cat.icon className={cn("h-4 w-4", activeTab === cat.id ? "text-white" : "group-hover:text-blue-600")} />
-                            {cat.name}
-                            {cat.badge && (
-                                <span className="absolute -top-1 -right-1 bg-red-500 text-white text-[7px] font-black px-2 py-0.5 rounded-full shadow-lg">
-                                    {cat.badge}
-                                </span>
-                            )}
-                        </button>
-                    ))}
-                </div>
-            </div>
-
-            {/* Test List with Detailed Cards */}
-            {loading ? (
-                <div className="flex justify-center py-40">
-                    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
-                </div>
-            ) : (
-                <div className="space-y-6">
-                    {filteredTests.length > 0 ? filteredTests.map((test) => (
-                        <div
-                            key={test.id}
-                            className="bg-card-bg border border-card-border p-10 rounded-[3.5rem] shadow-sm hover:shadow-2xl transition-all group overflow-hidden relative"
-                        >
-                            <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-12">
-                                {/* Left Side: Branding & Info */}
-                                <div className="space-y-6 flex-1">
-                                    <div className="flex items-center gap-6">
-                                        <div className="h-20 w-20 bg-white rounded-[2rem] flex items-center justify-center shadow-md border border-gray-100 shrink-0 group-hover:scale-105 transition-transform">
-                                            <Sparkles className="h-10 w-10 text-blue-600" />
-                                        </div>
-                                        <div className="space-y-2">
-                                            <div className="flex items-center gap-3">
-                                                <h3 className="text-2xl font-black text-foreground uppercase tracking-tight italic leading-tight group-hover:text-blue-600 transition-colors">
-                                                    {test.name_en}
-                                                </h3>
-                                                {!test.is_locked ? (
-                                                    <span className="bg-green-500/10 text-green-600 text-[8px] font-black px-3 py-1 rounded-full uppercase tracking-widest border border-green-500/20">
-                                                        Free Test
-                                                    </span>
-                                                ) : (
-                                                    <span className="bg-orange-500/10 text-orange-600 text-[8px] font-black px-3 py-1 rounded-full uppercase tracking-widest border border-orange-500/20">
-                                                        Super Pass
-                                                    </span>
-                                                )}
-                                            </div>
-                                            <div className="flex items-center gap-4 text-[9px] font-black text-foreground/40 uppercase tracking-widest">
-                                                <span className="flex items-center gap-1.5 bg-background px-3 py-1 rounded-full border border-card-border">
-                                                    <Zap className="h-3 w-3 text-yellow-500 fill-yellow-500" />
-                                                    206.1k Students
-                                                </span>
-                                                <span className="flex items-center gap-1.5 bg-background px-3 py-1 rounded-full border border-card-border">
-                                                    <Trophy className="h-3 w-3 text-blue-500" />
-                                                    4.8 Rating
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    {/* Features Bar */}
-                                    <div className="flex flex-wrap items-center gap-10 pl-2">
-                                        <div className="flex items-center gap-3 text-[11px] font-black text-foreground/40 uppercase tracking-widest">
-                                            <div className="h-8 w-8 rounded-xl bg-blue-50 dark:bg-white/5 flex items-center justify-center">
-                                                <ClipboardCheck className="h-4 w-4 text-blue-600" />
-                                            </div>
-                                            {test.questions_count ?? 0} Questions
-                                        </div>
-                                        <div className="flex items-center gap-3 text-[11px] font-black text-foreground/40 uppercase tracking-widest">
-                                            <div className="h-8 w-8 rounded-xl bg-orange-50 dark:bg-white/5 flex items-center justify-center">
-                                                <Clock className="h-4 w-4 text-orange-500" />
-                                            </div>
-                                            {Math.floor(test.duration_sec / 60)} Mins
-                                        </div>
-                                        <div className="flex items-center gap-3 text-[11px] font-black text-foreground/40 uppercase tracking-widest">
-                                            <div className="h-8 w-8 rounded-xl bg-green-50 dark:bg-white/5 flex items-center justify-center">
-                                                <Target className="h-4 w-4 text-green-600" />
-                                            </div>
-                                            {test.total_marks} Marks
-                                        </div>
-                                    </div>
-
-                                    <div className="flex items-center gap-6 text-[10px] font-black text-blue-600 uppercase tracking-[0.3em] bg-blue-50 dark:bg-blue-900/10 px-8 py-3 rounded-full w-fit">
-                                        <CheckCircle2 className="h-4 w-4" />
-                                        Advanced Video Solutions
-                                        <div className="h-1.5 w-1.5 rounded-full bg-blue-600" />
-                                        Performance Audit Ready
-                                    </div>
-                                </div>
-
-                                {/* Right Side: Action Button */}
-                                <div className="shrink-0 flex flex-col items-center gap-4">
-                                    {test.is_locked ? (
-                                        <button className="px-16 py-6 bg-gray-900 text-white rounded-[2.5rem] font-black text-sm uppercase tracking-[0.3em] transition-all shadow-xl active:scale-95 flex items-center gap-4 border border-white/10 opacity-50 cursor-not-allowed">
-                                            <Lock className="h-5 w-5" />
-                                            Activate Pass
-                                        </button>
-                                    ) : (
-                                        <button
-                                            onClick={() => handleStartMission(test.id)}
-                                            className="px-16 py-6 bg-cyan-500 hover:bg-cyan-600 text-white rounded-[2.5rem] font-black text-sm uppercase tracking-[0.3em] transition-all shadow-xl shadow-cyan-500/20 active:scale-95 flex items-center gap-4 group/btn"
-                                        >
-                                            Start Mission
-                                            <ChevronRight className="h-5 w-5 group-hover/btn:translate-x-2 transition-transform" />
-                                        </button>
-                                    )}
-                                    <span className="text-[9px] font-black text-foreground/20 uppercase tracking-[0.3em]">English, Hindi Available</span>
-                                </div>
-                            </div>
-                        </div>
-                    )) : (
-                        <div className="py-40 flex flex-col items-center justify-center text-center space-y-6 bg-card-bg border border-dashed border-card-border rounded-[4rem]">
-                            <Search className="h-16 w-16 text-foreground/10" />
-                            <div className="space-y-2">
-                                <h3 className="text-xl font-black text-foreground uppercase tracking-tight italic">No Intelligence Matches</h3>
-                                <p className="text-sm font-bold text-foreground/40 uppercase tracking-widest">Adjust your search parameters or try another category Explorer.</p>
-                            </div>
+                {/* Category tabs */}
+                <div className="-mx-4 px-4 sm:mx-0 sm:px-0 overflow-x-auto no-scrollbar">
+                    <div className="flex items-center gap-2 w-max">
+                        {categories.map((cat) => (
                             <button
-                                onClick={() => setSearchQuery('')}
-                                className="px-8 py-3 bg-blue-600 text-white rounded-2xl font-black text-[10px] uppercase tracking-widest shadow-lg shadow-blue-500/20 active:scale-95 transition-all"
+                                key={cat.id}
+                                onClick={() => setActiveTab(cat.id)}
+                                className={cn(
+                                    'flex items-center gap-2 px-4 py-2 min-h-[40px] rounded-full text-sm font-medium border transition-colors whitespace-nowrap',
+                                    activeTab === cat.id
+                                        ? 'bg-primary text-white border-primary'
+                                        : 'bg-card-bg text-muted-foreground border-card-border hover:text-foreground hover:bg-muted'
+                                )}
                             >
-                                Reset Search Terminal
+                                <cat.icon className="h-4 w-4" />
+                                {cat.name}
                             </button>
-                        </div>
-                    )}
+                        ))}
+                    </div>
                 </div>
-            )}
-        </div>
 
-        <AuthModal
-            open={authModal.open}
-            onClose={() => setAuthModal({ open: false, redirectTo: '' })}
-            reason="attempt this test"
-            redirectTo={authModal.redirectTo}
-        />
+                {/* Test list */}
+                {loading ? (
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        {Array.from({ length: 4 }).map((_, i) => (
+                            <div key={i} className="card p-5 animate-pulse space-y-3">
+                                <div className="h-5 w-3/4 bg-muted rounded" />
+                                <div className="h-4 w-1/2 bg-muted rounded" />
+                                <div className="h-10 w-32 bg-muted rounded-xl mt-4" />
+                            </div>
+                        ))}
+                    </div>
+                ) : filteredTests.length > 0 ? (
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        {filteredTests.map((test) => {
+                            const isPaid = test.requires_purchase === true || test.is_free === false || test.is_locked === true;
+                            const hasPricingInfo = typeof test.is_free === 'boolean' || typeof test.requires_purchase === 'boolean' || typeof test.is_locked === 'boolean';
+                            const inProgress = test.attempt_status === 'in_progress';
+                            const completed = test.attempt_status === 'completed' && !!test.attempt_id;
+                            const negative = Number(test.negative_marking ?? 0);
+
+                            return (
+                                <div key={test.id} className="card card-hover p-5 flex flex-col gap-4">
+                                    <div className="flex items-start justify-between gap-3">
+                                        <div className="min-w-0">
+                                            <h3 className="text-base sm:text-lg font-semibold leading-snug">{test.name_en}</h3>
+                                            {test.name_hi && <p className="text-sm text-muted-foreground mt-0.5 truncate">{test.name_hi}</p>}
+                                        </div>
+                                        <div className="flex flex-col items-end gap-1 shrink-0">
+                                            {hasPricingInfo && (
+                                                isPaid
+                                                    ? <span className="badge badge-amber"><Lock className="h-3 w-3" /> Paid</span>
+                                                    : <span className="badge badge-green">Free</span>
+                                            )}
+                                            {inProgress && <span className="badge badge-blue">In progress</span>}
+                                            {completed && <span className="badge badge-gray"><CheckCircle2 className="h-3 w-3" /> Completed</span>}
+                                        </div>
+                                    </div>
+
+                                    <dl className="grid grid-cols-2 sm:grid-cols-4 gap-x-3 gap-y-2 text-sm">
+                                        <div className="flex items-center gap-2 text-muted-foreground">
+                                            <HelpCircle className="h-4 w-4 shrink-0" />
+                                            <span><span className="font-semibold text-foreground">{test.questions_count ?? 0}</span> questions</span>
+                                        </div>
+                                        <div className="flex items-center gap-2 text-muted-foreground">
+                                            <Clock className="h-4 w-4 shrink-0" />
+                                            <span className="font-semibold text-foreground">{formatDuration(test.duration_sec)}</span>
+                                        </div>
+                                        <div className="flex items-center gap-2 text-muted-foreground">
+                                            <Award className="h-4 w-4 shrink-0" />
+                                            <span><span className="font-semibold text-foreground">{test.total_marks}</span> marks</span>
+                                        </div>
+                                        {negative > 0 && (
+                                            <div className="flex items-center gap-2 text-muted-foreground">
+                                                <MinusCircle className="h-4 w-4 shrink-0" />
+                                                <span><span className="font-semibold text-foreground">−{negative}</span> per wrong</span>
+                                            </div>
+                                        )}
+                                    </dl>
+
+                                    <div className="flex flex-wrap items-center gap-2 pt-1 mt-auto">
+                                        {isPaid && !inProgress && !completed ? (
+                                            <button disabled className="btn btn-secondary" title="This test is part of a paid test series">
+                                                <Lock className="h-4 w-4" />
+                                                Paid test
+                                            </button>
+                                        ) : completed ? (
+                                            <>
+                                                <Link href={`/dashboard/tests/result/${test.attempt_id}`} className="btn btn-primary">
+                                                    View result
+                                                </Link>
+                                                <button onClick={() => handleStartTest(test.id)} className="btn btn-secondary">
+                                                    <RotateCcw className="h-4 w-4" />
+                                                    Re-attempt
+                                                </button>
+                                            </>
+                                        ) : inProgress ? (
+                                            <button onClick={() => handleStartTest(test.id)} className="btn btn-primary">
+                                                <Play className="h-4 w-4" />
+                                                Resume
+                                            </button>
+                                        ) : (
+                                            <button onClick={() => handleStartTest(test.id)} className="btn btn-primary">
+                                                <Play className="h-4 w-4" />
+                                                Start test
+                                            </button>
+                                        )}
+                                    </div>
+                                </div>
+                            );
+                        })}
+                    </div>
+                ) : (
+                    <div className="card p-10 text-center">
+                        <Search className="h-10 w-10 mx-auto text-muted-foreground/50" />
+                        <h3 className="mt-4 text-lg font-semibold">No tests found</h3>
+                        <p className="mt-1 text-sm text-muted-foreground">
+                            {searchQuery ? 'Try a different search or category.' : 'No tests are available in this category yet.'}
+                        </p>
+                        {searchQuery && (
+                            <button onClick={() => setSearchQuery('')} className="btn btn-secondary mt-5">
+                                Clear search
+                            </button>
+                        )}
+                    </div>
+                )}
+            </div>
+
+            <AuthModal
+                open={authModal.open}
+                onClose={() => setAuthModal({ open: false, redirectTo: '' })}
+                reason="attempt this test"
+                redirectTo={authModal.redirectTo}
+            />
         </>
     );
 }

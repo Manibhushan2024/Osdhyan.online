@@ -199,7 +199,7 @@ export default function AdminQuestionsPage() {
         return (
             <div className="flex flex-col items-center justify-center py-40 gap-4">
                 <Loader2 className="h-10 w-10 text-indigo-600 animate-spin" />
-                <p className="text-[10px] font-black text-foreground/40 uppercase tracking-[0.3em]">Loading Intelligence Vectors...</p>
+                <p className="text-xs font-black text-foreground/40 uppercase tracking-wide">Loading questions…</p>
             </div>
         );
     }
@@ -209,22 +209,22 @@ export default function AdminQuestionsPage() {
             {/* Header */}
             <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
                 <div className="space-y-4">
-                    <div className="flex items-center gap-4 text-[10px] font-black uppercase tracking-[0.2em] text-foreground/40">
-                        <span>Intelligence Hub</span>
+                    <div className="flex items-center gap-4 text-xs font-black uppercase tracking-wide text-foreground/40">
+                        <span>Admin</span>
                         <ChevronRight className="h-3 w-3" />
                         <span className="text-indigo-600">Question Bank</span>
                     </div>
-                    <h1 className="text-5xl font-black text-foreground uppercase tracking-tighter italic leading-none">
+                    <h1 className="text-5xl font-black text-foreground uppercase tracking-tighter leading-none">
                         Question <span className="text-indigo-600">Architect</span>
                     </h1>
-                    <p className="text-sm text-foreground/40 font-bold uppercase tracking-widest">
+                    <p className="text-sm text-foreground/40 font-bold uppercase tracking-wide">
                         Create, manage, and deploy intelligent test questions
                     </p>
                 </div>
 
                 <button
                     onClick={() => setShowWizard(true)}
-                    className="flex items-center gap-3 bg-indigo-600 text-white px-8 py-5 rounded-[2rem] text-[10px] font-black uppercase tracking-widest shadow-2xl shadow-indigo-500/20 hover:scale-[1.02] active:scale-95 transition-all group"
+                    className="flex items-center gap-3 bg-indigo-600 text-white px-8 py-5 rounded-2xl text-xs font-black uppercase tracking-wide shadow-2xl shadow-indigo-500/20 hover:scale-[1.02] active:scale-95 transition-all group"
                 >
                     <Plus className="h-4 w-4 group-hover:rotate-90 transition-transform" />
                     Create New Question
@@ -232,17 +232,17 @@ export default function AdminQuestionsPage() {
             </div>
 
             {/* Quick Link to Filament */}
-            <div className="bg-gradient-to-r from-blue-600 to-indigo-600 p-1 rounded-[3rem] shadow-2xl shadow-blue-500/20">
+            <div className="bg-gradient-to-r from-blue-600 to-indigo-600 p-1 rounded-2xl shadow-2xl shadow-blue-500/20">
                 <div className="bg-background rounded-[2.8rem] p-8 flex flex-col lg:flex-row items-center justify-between gap-6">
                     <div className="space-y-2">
-                        <h3 className="text-xl font-black text-foreground uppercase tracking-tighter italic">Advanced Question Management</h3>
-                        <p className="text-sm font-bold text-foreground/40 uppercase tracking-widest">
+                        <h3 className="text-xl font-black text-foreground uppercase tracking-tighter ">Advanced Question Management</h3>
+                        <p className="text-sm font-bold text-foreground/40 uppercase tracking-wide">
                             Use Filament Admin for bulk uploads, advanced filtering, and detailed analytics
                         </p>
                     </div>
                     <button
                         onClick={() => window.open((process.env.NEXT_PUBLIC_SITE_URL ?? '') + '/admin/questions', '_blank')}
-                        className="px-10 py-5 bg-indigo-600 text-white rounded-[2rem] font-black text-sm uppercase tracking-[0.3em] shadow-xl hover:scale-105 active:scale-95 transition-all flex items-center gap-4"
+                        className="px-10 py-5 bg-indigo-600 text-white rounded-2xl font-black text-sm uppercase tracking-wide shadow-xl hover:scale-105 active:scale-95 transition-all flex items-center gap-4"
                     >
                         Open Filament
                         <ChevronRight className="h-5 w-5" />
@@ -253,14 +253,14 @@ export default function AdminQuestionsPage() {
             {/* CREATE WIZARD MODAL */}
             {showWizard && (
                 <div className="fixed inset-0 z-50 flex items-start justify-center p-6 bg-black/80 backdrop-blur-md animate-in fade-in duration-300 overflow-y-auto">
-                    <div className="w-full max-w-5xl bg-slate-900 border border-indigo-600/20 rounded-[3rem] shadow-2xl overflow-hidden animate-in zoom-in-95 duration-500 my-12 max-h-[90vh]">
+                    <div className="w-full max-w-5xl bg-slate-900 border border-indigo-600/20 rounded-2xl shadow-2xl overflow-hidden animate-in zoom-in-95 duration-500 my-12 max-h-[90vh]">
                         <div className="overflow-y-auto max-h-[90vh]">
                             <div className="p-12 space-y-10">
                                 {/* Header */}
                                 <div className="flex items-center justify-between">
                                     <div>
-                                        <h2 className="text-3xl font-black text-white uppercase tracking-tight italic">Question Creation Form</h2>
-                                        <p className="text-sm font-black text-indigo-400 uppercase tracking-widest mt-2">Mark the correct answer by toggling ON</p>
+                                        <h2 className="text-3xl font-black text-white uppercase tracking-tight ">Question Creation Form</h2>
+                                        <p className="text-sm font-black text-indigo-400 uppercase tracking-wide mt-2">Mark the correct answer by toggling ON</p>
                                     </div>
                                     <button onClick={() => setShowWizard(false)} className="text-white/40 hover:text-white transition-colors p-2">
                                         <Plus className="h-6 w-6 rotate-45" />
@@ -271,7 +271,7 @@ export default function AdminQuestionsPage() {
                                     {/* Hierarchy */}
                                     <div className="grid grid-cols-4 gap-6">
                                         <div className="space-y-2">
-                                            <label className="text-[9px] font-black text-white/40 uppercase tracking-widest block">Exam</label>
+                                            <label className="text-xs font-black text-white/40 uppercase tracking-wide block">Exam</label>
                                             <select
                                                 value={formData.exam_id}
                                                 onChange={(e) => setFormData({ ...formData, exam_id: e.target.value })}
@@ -283,7 +283,7 @@ export default function AdminQuestionsPage() {
                                             </select>
                                         </div>
                                         <div className="space-y-2">
-                                            <label className="text-[9px] font-black text-white/40 uppercase tracking-widest block">Subject</label>
+                                            <label className="text-xs font-black text-white/40 uppercase tracking-wide block">Subject</label>
                                             <select
                                                 value={formData.subject_id}
                                                 onChange={(e) => setFormData({ ...formData, subject_id: e.target.value })}
@@ -295,7 +295,7 @@ export default function AdminQuestionsPage() {
                                             </select>
                                         </div>
                                         <div className="space-y-2">
-                                            <label className="text-[9px] font-black text-white/40 uppercase tracking-widest block">Chapter</label>
+                                            <label className="text-xs font-black text-white/40 uppercase tracking-wide block">Chapter</label>
                                             <select
                                                 value={formData.chapter_id}
                                                 onChange={(e) => setFormData({ ...formData, chapter_id: e.target.value })}
@@ -307,7 +307,7 @@ export default function AdminQuestionsPage() {
                                             </select>
                                         </div>
                                         <div className="space-y-2">
-                                            <label className="text-[9px] font-black text-white/40 uppercase tracking-widest block">Topic</label>
+                                            <label className="text-xs font-black text-white/40 uppercase tracking-wide block">Topic</label>
                                             <select
                                                 value={formData.topic_id}
                                                 onChange={(e) => setFormData({ ...formData, topic_id: e.target.value })}
@@ -322,7 +322,7 @@ export default function AdminQuestionsPage() {
 
                                     {/* Question (EN) */}
                                     <div className="space-y-2">
-                                        <label className="text-[9px] font-black text-white/40 uppercase tracking-widest block">Question (EN)</label>
+                                        <label className="text-xs font-black text-white/40 uppercase tracking-wide block">Question (EN)</label>
                                         <textarea
                                             required
                                             value={formData.question_en}
@@ -335,7 +335,7 @@ export default function AdminQuestionsPage() {
 
                                     {/* Question (HI) */}
                                     <div className="space-y-2">
-                                        <label className="text-[9px] font-black text-white/40 uppercase tracking-widest block">Question (HI)</label>
+                                        <label className="text-xs font-black text-white/40 uppercase tracking-wide block">Question (HI)</label>
                                         <textarea
                                             required
                                             value={formData.question_hi}
@@ -348,13 +348,13 @@ export default function AdminQuestionsPage() {
 
                                     {/* Options */}
                                     <div className="space-y-4">
-                                        <h3 className="text-sm font-black text-white/60 uppercase tracking-widest">Options</h3>
+                                        <h3 className="text-sm font-black text-white/60 uppercase tracking-wide">Options</h3>
                                         {options.map((opt, index) => (
                                             <div key={index} className="bg-slate-800/30 border border-slate-700 rounded-2xl p-6 space-y-4">
                                                 <div className="flex items-center justify-between">
-                                                    <span className="text-[10px] font-black text-white/40 uppercase tracking-widest">Option {index + 1} Text</span>
+                                                    <span className="text-xs font-black text-white/40 uppercase tracking-wide">Option {index + 1} Text</span>
                                                     <div className="flex items-center gap-3">
-                                                        <span className="text-[9px] font-black text-white/40 uppercase tracking-widest">Correct Answer</span>
+                                                        <span className="text-xs font-black text-white/40 uppercase tracking-wide">Correct Answer</span>
                                                         <button
                                                             type="button"
                                                             onClick={() => toggleCorrectAnswer(index)}
@@ -400,10 +400,10 @@ export default function AdminQuestionsPage() {
 
                                     {/* Explanation */}
                                     <div className="space-y-4">
-                                        <h3 className="text-sm font-black text-white/60 uppercase tracking-widest">Explanation</h3>
+                                        <h3 className="text-sm font-black text-white/60 uppercase tracking-wide">Explanation</h3>
                                         <div className="grid grid-cols-2 gap-6">
                                             <div className="space-y-2">
-                                                <label className="text-[9px] font-black text-white/40 uppercase tracking-widest block">Explanation (EN)</label>
+                                                <label className="text-xs font-black text-white/40 uppercase tracking-wide block">Explanation (EN)</label>
                                                 <textarea
                                                     value={formData.explanation_en}
                                                     onChange={(e) => setFormData({ ...formData, explanation_en: e.target.value })}
@@ -413,7 +413,7 @@ export default function AdminQuestionsPage() {
                                                 />
                                             </div>
                                             <div className="space-y-2">
-                                                <label className="text-[9px] font-black text-white/40 uppercase tracking-widest block">Explanation (HI)</label>
+                                                <label className="text-xs font-black text-white/40 uppercase tracking-wide block">Explanation (HI)</label>
                                                 <textarea
                                                     value={formData.explanation_hi}
                                                     onChange={(e) => setFormData({ ...formData, explanation_hi: e.target.value })}
@@ -433,7 +433,7 @@ export default function AdminQuestionsPage() {
                                                 type="button"
                                                 onClick={() => setFormData({ ...formData, difficulty: level })}
                                                 className={cn(
-                                                    "py-4 rounded-2xl font-black text-sm uppercase tracking-widest transition-all border-2",
+                                                    "py-4 rounded-2xl font-black text-sm uppercase tracking-wide transition-all border-2",
                                                     formData.difficulty === level
                                                         ? "bg-indigo-600 border-indigo-600 text-white shadow-xl shadow-indigo-500/20"
                                                         : "border-slate-700 text-white/40 hover:border-indigo-600/30"
@@ -448,7 +448,7 @@ export default function AdminQuestionsPage() {
                                     <button
                                         disabled={isSaving}
                                         type="submit"
-                                        className="w-full bg-indigo-600 text-white py-6 rounded-[2rem] text-sm font-black uppercase tracking-[0.2em] shadow-2xl shadow-indigo-600/20 active:scale-95 transition-all flex items-center justify-center gap-4 disabled:bg-indigo-600/50"
+                                        className="w-full bg-indigo-600 text-white py-6 rounded-2xl text-sm font-black uppercase tracking-wide shadow-2xl shadow-indigo-600/20 active:scale-95 transition-all flex items-center justify-center gap-4 disabled:bg-indigo-600/50"
                                     >
                                         {isSaving ? <Loader2 className="h-5 w-5 animate-spin" /> : <CheckCircle2 className="h-5 w-5" />}
                                         {isSaving ? 'Creating...' : 'Create Question'}

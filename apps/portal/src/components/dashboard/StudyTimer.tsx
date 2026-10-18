@@ -89,13 +89,13 @@ export function StudyTimer({ onSessionComplete }: StudyTimerProps) {
     };
 
     return (
-        <div className="bg-gradient-to-br from-indigo-600 to-violet-700 rounded-[2.5rem] p-8 text-white shadow-xl relative overflow-hidden">
+        <div className="bg-gradient-to-br from-indigo-600 to-violet-700 rounded-2xl p-8 text-white shadow-xl relative overflow-hidden">
             {/* Background decoration */}
             <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-16 -mt-16 pointer-events-none" />
 
             <div className="relative z-10 flex flex-col items-center justify-center space-y-6">
                 <div className="text-center">
-                    <h3 className="text-lg font-medium text-indigo-100 uppercase tracking-widest">Focus Session</h3>
+                    <h3 className="text-lg font-medium text-indigo-100 uppercase tracking-wide">Focus Session</h3>
                     <p className="text-6xl font-bold font-mono tracking-wider tabular-nums mt-2">
                         {formatTime(sessionSeconds)}
                     </p>

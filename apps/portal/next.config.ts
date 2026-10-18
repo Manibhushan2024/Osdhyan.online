@@ -15,9 +15,25 @@ function storageHostname(): string {
 
 const hostname = storageHostname();
 
+// Backend origin for the same-origin proxy below (server-side only).
+const BACKEND_ORIGIN = (process.env.BACKEND_ORIGIN || "http://127.0.0.1:8000").replace(/\/$/, "");
+
 const nextConfig: NextConfig = {
   reactCompiler: true,
   output: "standalone",
+
+  // ── Same-origin API proxy ─────────────────────────────────────────────────
+  // With NEXT_PUBLIC_API_URL=/api the browser talks only to this host and
+  // Next forwards to Laravel: one public URL (tunnel/CDN), no CORS, no
+  // mixed-origin cookies. Set NEXT_PUBLIC_API_URL to an absolute URL to
+  // bypass the proxy (e.g. Vercel → api.osdhyan.online directly).
+  async rewrites() {
+    return [
+      { source: "/api/:path*", destination: `${BACKEND_ORIGIN}/api/:path*` },
+      { source: "/storage/:path*", destination: `${BACKEND_ORIGIN}/storage/:path*` },
+      { source: "/up", destination: `${BACKEND_ORIGIN}/up` },
+    ];
+  },
 
   // ── Image Domains ────────────────────────────────────────────────────────
   images: {

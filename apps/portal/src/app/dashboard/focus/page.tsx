@@ -357,12 +357,8 @@ export default function FocusTimerPage() {
             {/* Top Bar */}
             <div className="flex items-center justify-between shrink-0">
                 <div>
-                    <h1 className="text-3xl font-black text-foreground uppercase tracking-tighter italic">
-                        Pomodoro <span className="text-blue-600">Studio</span>
-                    </h1>
-                    <p className="text-[10px] font-black text-foreground/30 uppercase tracking-widest mt-0.5">
-                        Subject → Chapter → Topic → Task Focus Engine
-                    </p>
+                    <h1 className="page-title">Focus timer</h1>
+                    <p className="page-subtitle">Pomodoro timer with a subject, chapter, topic and task list.</p>
                 </div>
                 <div className="flex items-center gap-3">
                     {[...Array(4)].map((_, i) => (
@@ -371,7 +367,7 @@ export default function FocusTimerPage() {
                             i < pomodoroCount % 4 ? "bg-blue-600 border-blue-600" : "border-card-border"
                         )} />
                     ))}
-                    <span className="text-[10px] font-black text-foreground/30 uppercase tracking-widest ml-1">
+                    <span className="text-xs font-black text-foreground/30 uppercase tracking-wide ml-1">
                         {pomodoroCount} done
                     </span>
                     <button
@@ -388,9 +384,9 @@ export default function FocusTimerPage() {
             <div className="flex gap-5 flex-1 overflow-hidden min-h-0">
 
                 {/* ─── LEFT: Study Plan Tree ─────────────────────────── */}
-                <div className="w-72 shrink-0 flex flex-col bg-card-bg border border-card-border rounded-[2rem] overflow-hidden">
+                <div className="w-72 shrink-0 flex flex-col bg-card-bg border border-card-border rounded-2xl overflow-hidden">
                     <div className="flex items-center justify-between px-5 py-3.5 border-b border-card-border shrink-0">
-                        <span className="text-[10px] font-black text-foreground/40 uppercase tracking-widest">Study Plan</span>
+                        <span className="text-xs font-black text-foreground/40 uppercase tracking-wide">Study Plan</span>
                         <button
                             onClick={() => openAdd({ type: 'subject' }, 3)}
                             className="h-7 w-7 bg-blue-600 text-white rounded-xl flex items-center justify-center hover:bg-blue-700 transition-all"
@@ -412,10 +408,10 @@ export default function FocusTimerPage() {
                                         className="w-full flex items-center gap-2 px-3 py-2.5 rounded-xl hover:bg-background transition-all text-left"
                                     >
                                         <div className={cn("h-4 w-4 rounded-md shrink-0", sub.color)} />
-                                        <span className="flex-1 text-[11px] font-black text-foreground uppercase tracking-tight truncate">{sub.title}</span>
-                                        <span className="text-[9px] font-black text-foreground/30 shrink-0">{sub.allocatedHours}h</span>
+                                        <span className="flex-1 text-xs font-black text-foreground uppercase tracking-tight truncate">{sub.title}</span>
+                                        <span className="text-xs font-black text-foreground/30 shrink-0">{sub.allocatedHours}h</span>
                                         {allTasks.length > 0 && (
-                                            <span className="text-[8px] font-black text-foreground/30 shrink-0">{doneCnt}/{allTasks.length}</span>
+                                            <span className="text-xs font-black text-foreground/30 shrink-0">{doneCnt}/{allTasks.length}</span>
                                         )}
                                         {sub.expanded
                                             ? <ChevronDown className="h-3 w-3 text-foreground/30 shrink-0" />
@@ -433,8 +429,8 @@ export default function FocusTimerPage() {
                                                             className="flex-1 flex items-center gap-2 px-3 py-2 rounded-xl hover:bg-background transition-all text-left"
                                                         >
                                                             <Layers className="h-3 w-3 text-foreground/30 shrink-0" />
-                                                            <span className="flex-1 text-[10px] font-black text-foreground/70 truncate">{ch.title}</span>
-                                                            <span className="text-[9px] text-foreground/30 shrink-0">{ch.allocatedMin}m</span>
+                                                            <span className="flex-1 text-xs font-black text-foreground/70 truncate">{ch.title}</span>
+                                                            <span className="text-xs text-foreground/30 shrink-0">{ch.allocatedMin}m</span>
                                                             {ch.expanded
                                                                 ? <ChevronDown className="h-3 w-3 text-foreground/20" />
                                                                 : <ChevronRight className="h-3 w-3 text-foreground/20" />}
@@ -459,8 +455,8 @@ export default function FocusTimerPage() {
                                                                             className="flex-1 flex items-center gap-2 px-3 py-1.5 rounded-xl hover:bg-background transition-all text-left"
                                                                         >
                                                                             <BookOpen className="h-3 w-3 text-foreground/20 shrink-0" />
-                                                                            <span className="flex-1 text-[10px] text-foreground/60 truncate">{tp.title}</span>
-                                                                            <span className="text-[9px] text-foreground/20 shrink-0">{tp.allocatedMin}m</span>
+                                                                            <span className="flex-1 text-xs text-foreground/60 truncate">{tp.title}</span>
+                                                                            <span className="text-xs text-foreground/20 shrink-0">{tp.allocatedMin}m</span>
                                                                             {tp.expanded
                                                                                 ? <ChevronDown className="h-3 w-3 text-foreground/20" />
                                                                                 : <ChevronRight className="h-3 w-3 text-foreground/20" />}
@@ -502,15 +498,15 @@ export default function FocusTimerPage() {
                                                                                         {task.done && <Check className="h-2.5 w-2.5 text-white" />}
                                                                                     </button>
                                                                                     <span className={cn(
-                                                                                        "flex-1 text-[10px] truncate",
+                                                                                        "flex-1 text-xs truncate",
                                                                                         task.done ? "line-through text-foreground/25" : "text-foreground/60"
                                                                                     )}>
                                                                                         {task.title}
                                                                                     </span>
                                                                                     {task.pomodorosDone > 0 && (
-                                                                                        <span className="text-[8px] font-black text-orange-500 shrink-0">🍅×{task.pomodorosDone}</span>
+                                                                                        <span className="text-xs font-black text-orange-500 shrink-0">🍅×{task.pomodorosDone}</span>
                                                                                     )}
-                                                                                    <span className="text-[9px] text-foreground/20 shrink-0">{task.allocatedMin}m</span>
+                                                                                    <span className="text-xs text-foreground/20 shrink-0">{task.allocatedMin}m</span>
                                                                                 </button>
                                                                             ))}
                                                                         </div>
@@ -523,7 +519,7 @@ export default function FocusTimerPage() {
                                             ))}
                                             <button
                                                 onClick={() => openAdd({ type: 'chapter', parentId: sub.id }, 45)}
-                                                className="w-full flex items-center gap-1.5 px-3 py-1.5 text-[9px] font-black text-foreground/20 hover:text-blue-600 transition-colors uppercase tracking-widest"
+                                                className="w-full flex items-center gap-1.5 px-3 py-1.5 text-xs font-black text-foreground/20 hover:text-blue-600 transition-colors uppercase tracking-wide"
                                             >
                                                 <Plus className="h-3 w-3" /> Add Chapter
                                             </button>
@@ -535,7 +531,7 @@ export default function FocusTimerPage() {
                         {subjects.length === 0 && (
                             <div className="flex flex-col items-center justify-center py-16 gap-3">
                                 <ListChecks className="h-8 w-8 text-foreground/10" />
-                                <p className="text-[9px] font-black text-foreground/20 uppercase tracking-widest text-center">
+                                <p className="text-xs font-black text-foreground/20 uppercase tracking-wide text-center">
                                     No subjects yet.<br />Click + to add one.
                                 </p>
                             </div>
@@ -556,14 +552,14 @@ export default function FocusTimerPage() {
                                 key={key}
                                 onClick={() => switchMode(key)}
                                 className={cn(
-                                    "px-4 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all flex flex-col items-center",
+                                    "px-4 py-2 rounded-xl text-xs font-black uppercase tracking-wide transition-all flex flex-col items-center",
                                     mode === key
                                         ? "bg-background shadow text-foreground"
                                         : "text-foreground/30 hover:text-foreground/60"
                                 )}
                             >
                                 <span>{label}</span>
-                                <span className="text-[8px] font-bold opacity-60 tabular-nums">{formatTime(durations[key])}</span>
+                                <span className="text-xs font-bold opacity-60 tabular-nums">{formatTime(durations[key])}</span>
                             </button>
                         ))}
                     </div>
@@ -572,7 +568,7 @@ export default function FocusTimerPage() {
                     {selectedTask ? (
                         <div className="flex items-center gap-2 bg-blue-600/10 border border-blue-500/20 px-5 py-2 rounded-2xl max-w-sm">
                             <Target className="h-3.5 w-3.5 text-blue-500 shrink-0" />
-                            <span className="text-[11px] font-black text-blue-500 uppercase tracking-wide truncate">{selectedTask.task.title}</span>
+                            <span className="text-xs font-black text-blue-500 uppercase tracking-wide truncate">{selectedTask.task.title}</span>
                             <button onClick={() => setSelectedTask(null)} className="text-blue-400/40 hover:text-blue-400 shrink-0">
                                 <X className="h-3 w-3" />
                             </button>
@@ -580,7 +576,7 @@ export default function FocusTimerPage() {
                     ) : (
                         <div className="flex items-center gap-2 bg-foreground/5 border border-card-border px-5 py-2 rounded-2xl">
                             <ListChecks className="h-3.5 w-3.5 text-foreground/30" />
-                            <span className="text-[10px] font-black text-foreground/30 uppercase tracking-widest">Select a task from the plan</span>
+                            <span className="text-xs font-black text-foreground/30 uppercase tracking-wide">Select a task from the plan</span>
                         </div>
                     )}
 
@@ -608,7 +604,7 @@ export default function FocusTimerPage() {
                             <span className={cn("text-5xl font-black tabular-nums tracking-tighter transition-colors", TEXT_COLOR[mode])}>
                                 {formatTime(timeLeft)}
                             </span>
-                            <span className="text-[10px] font-black text-foreground/30 uppercase tracking-widest">
+                            <span className="text-xs font-black text-foreground/30 uppercase tracking-wide">
                                 {mode === 'focus' ? 'Deep Focus' : mode === 'short_break' ? 'Short Break' : 'Long Break'}
                             </span>
                         </div>
@@ -639,15 +635,15 @@ export default function FocusTimerPage() {
                         </button>
 
                         <div className="h-12 w-12 bg-card-bg border border-card-border rounded-2xl flex flex-col items-center justify-center gap-0.5">
-                            <span className="text-[9px] font-black text-foreground/30 uppercase">Cycle</span>
-                            <span className="text-[11px] font-black text-foreground">#{pomodoroCount + 1}</span>
+                            <span className="text-xs font-black text-foreground/30 uppercase">Cycle</span>
+                            <span className="text-xs font-black text-foreground">#{pomodoroCount + 1}</span>
                         </div>
                     </div>
 
                     {/* Tip */}
                     <div className="flex items-center gap-2 px-5 py-3 bg-blue-600/5 border border-blue-600/10 rounded-2xl max-w-sm">
                         <ShieldCheck className="h-4 w-4 text-blue-500 shrink-0" />
-                        <p className="text-[9px] font-bold text-foreground/50 leading-relaxed">
+                        <p className="text-xs font-bold text-foreground/50 leading-relaxed">
                             {mode === 'focus'
                                 ? 'Stay away from distractions for 25 minutes. You can do it.'
                                 : 'Walk, breathe, stretch. Let your brain consolidate.'}
@@ -658,16 +654,16 @@ export default function FocusTimerPage() {
                 {/* ─── RIGHT: Stats & Log ────────────────────────────── */}
                 <div className="w-64 shrink-0 flex flex-col gap-4 overflow-hidden">
                     {/* Today's Stats */}
-                    <div className="bg-card-bg border border-card-border rounded-[2rem] p-5 space-y-4 shrink-0">
-                        <p className="text-[10px] font-black text-foreground/30 uppercase tracking-widest">Today</p>
+                    <div className="bg-card-bg border border-card-border rounded-2xl p-5 space-y-4 shrink-0">
+                        <p className="text-xs font-black text-foreground/30 uppercase tracking-wide">Today</p>
                         <div className="grid grid-cols-2 gap-3">
                             <div className="bg-background border border-card-border rounded-2xl p-3 text-center">
                                 <p className="text-2xl font-black text-blue-600">{sessionLog.length}</p>
-                                <p className="text-[8px] font-black text-foreground/30 uppercase tracking-widest mt-0.5">🍅 Done</p>
+                                <p className="text-xs font-black text-foreground/30 uppercase tracking-wide mt-0.5">🍅 Done</p>
                             </div>
                             <div className="bg-background border border-card-border rounded-2xl p-3 text-center">
                                 <p className="text-2xl font-black text-green-600">{totalFocusMin}m</p>
-                                <p className="text-[8px] font-black text-foreground/30 uppercase tracking-widest mt-0.5">Focus</p>
+                                <p className="text-xs font-black text-foreground/30 uppercase tracking-wide mt-0.5">Focus</p>
                             </div>
                         </div>
 
@@ -682,9 +678,9 @@ export default function FocusTimerPage() {
                                         <div className="flex items-center justify-between">
                                             <div className="flex items-center gap-1.5">
                                                 <div className={cn("h-2 w-2 rounded-sm", sub.color)} />
-                                                <span className="text-[9px] font-black text-foreground/50 uppercase truncate max-w-[90px]">{sub.title}</span>
+                                                <span className="text-xs font-black text-foreground/50 uppercase truncate max-w-[90px]">{sub.title}</span>
                                             </div>
-                                            <span className="text-[9px] font-black text-foreground/30">{done}/{all.length}</span>
+                                            <span className="text-xs font-black text-foreground/30">{done}/{all.length}</span>
                                         </div>
                                         <div className="h-1.5 bg-background rounded-full overflow-hidden border border-card-border">
                                             <div className={cn("h-full rounded-full transition-all duration-500", sub.color)} style={{ width: `${pct}%` }} />
@@ -696,13 +692,13 @@ export default function FocusTimerPage() {
                     </div>
 
                     {/* Session Log */}
-                    <div className="bg-card-bg border border-card-border rounded-[2rem] p-5 flex flex-col flex-1 overflow-hidden min-h-0">
-                        <p className="text-[10px] font-black text-foreground/30 uppercase tracking-widest mb-3 shrink-0">Session Log</p>
+                    <div className="bg-card-bg border border-card-border rounded-2xl p-5 flex flex-col flex-1 overflow-hidden min-h-0">
+                        <p className="text-xs font-black text-foreground/30 uppercase tracking-wide mb-3 shrink-0">Session Log</p>
                         {sessionLog.length === 0 ? (
                             <div className="flex-1 flex items-center justify-center">
                                 <div className="text-center space-y-2">
                                     <Zap className="h-6 w-6 text-foreground/10 mx-auto" />
-                                    <p className="text-[9px] font-black text-foreground/20 uppercase tracking-widest">
+                                    <p className="text-xs font-black text-foreground/20 uppercase tracking-wide">
                                         No sessions yet
                                     </p>
                                 </div>
@@ -715,8 +711,8 @@ export default function FocusTimerPage() {
                                             <Timer className="h-3 w-3 text-blue-600" />
                                         </div>
                                         <div className="min-w-0">
-                                            <p className="text-[9px] font-black text-foreground/60 truncate">{log.task}</p>
-                                            <p className="text-[8px] text-foreground/30">{log.duration} min</p>
+                                            <p className="text-xs font-black text-foreground/60 truncate">{log.task}</p>
+                                            <p className="text-xs text-foreground/30">{log.duration} min</p>
                                         </div>
                                     </div>
                                 ))}
@@ -730,13 +726,13 @@ export default function FocusTimerPage() {
             {addModal && (
                 <div className="fixed inset-0 z-[500] flex items-center justify-center p-4">
                     <div className="absolute inset-0 bg-slate-950/70 backdrop-blur-md" onClick={() => setAddModal(null)} />
-                    <div className="relative z-10 w-full max-w-sm bg-card-bg border border-card-border rounded-[2rem] p-8 shadow-2xl space-y-6 animate-in zoom-in-95 fade-in duration-200">
-                        <h3 className="text-lg font-black text-foreground uppercase tracking-tight italic">
+                    <div className="relative z-10 w-full max-w-sm bg-card-bg border border-card-border rounded-2xl p-8 shadow-2xl space-y-6 animate-in zoom-in-95 fade-in duration-200">
+                        <h3 className="text-lg font-black text-foreground uppercase tracking-tight ">
                             Add {addModal.type.charAt(0).toUpperCase() + addModal.type.slice(1)}
                         </h3>
                         <div className="space-y-4">
                             <div>
-                                <label className="text-[10px] font-black text-foreground/40 uppercase tracking-widest mb-2 block">
+                                <label className="text-xs font-black text-foreground/40 uppercase tracking-wide mb-2 block">
                                     {addModal.type === 'subject' ? 'Subject Name' :
                                         addModal.type === 'chapter' ? 'Chapter Name' :
                                             addModal.type === 'topic' ? 'Topic Name' : 'Task Description'}
@@ -752,7 +748,7 @@ export default function FocusTimerPage() {
                                 />
                             </div>
                             <div>
-                                <label className="text-[10px] font-black text-foreground/40 uppercase tracking-widest mb-2 block">
+                                <label className="text-xs font-black text-foreground/40 uppercase tracking-wide mb-2 block">
                                     Time Allocation ({addModal.type === 'subject' ? 'hours' : 'minutes'})
                                 </label>
                                 <input
@@ -768,14 +764,14 @@ export default function FocusTimerPage() {
                         <div className="flex gap-3">
                             <button
                                 onClick={() => setAddModal(null)}
-                                className="flex-1 py-3 border border-card-border rounded-2xl text-[10px] font-black uppercase tracking-widest text-foreground/40 hover:text-foreground transition-all"
+                                className="flex-1 py-3 border border-card-border rounded-2xl text-xs font-black uppercase tracking-wide text-foreground/40 hover:text-foreground transition-all"
                             >
                                 Cancel
                             </button>
                             <button
                                 onClick={addItem}
                                 disabled={!addTitle.trim()}
-                                className="flex-1 py-3 bg-blue-600 text-white rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-blue-700 transition-all disabled:opacity-40 disabled:cursor-not-allowed"
+                                className="flex-1 py-3 bg-blue-600 text-white rounded-2xl text-xs font-black uppercase tracking-wide hover:bg-blue-700 transition-all disabled:opacity-40 disabled:cursor-not-allowed"
                             >
                                 Add
                             </button>
@@ -788,9 +784,9 @@ export default function FocusTimerPage() {
             {showSettings && (
                 <div className="fixed inset-0 z-[500] flex items-center justify-center p-4">
                     <div className="absolute inset-0 bg-black/70 backdrop-blur-sm" onClick={() => setShowSettings(false)} />
-                    <div className="relative z-10 w-full max-w-sm bg-card-bg border border-card-border rounded-[2rem] p-8 shadow-2xl space-y-6 animate-in zoom-in-95 fade-in duration-200">
+                    <div className="relative z-10 w-full max-w-sm bg-card-bg border border-card-border rounded-2xl p-8 shadow-2xl space-y-6 animate-in zoom-in-95 fade-in duration-200">
                         <div className="flex items-center justify-between">
-                            <h3 className="text-base font-black text-foreground uppercase tracking-tight italic">Timer Settings</h3>
+                            <h3 className="text-base font-black text-foreground uppercase tracking-tight ">Timer settings</h3>
                             <button onClick={() => setShowSettings(false)} className="p-1.5 rounded-xl hover:bg-foreground/5 text-foreground/30 hover:text-foreground transition-all">
                                 <X className="h-4 w-4" />
                             </button>
@@ -798,7 +794,7 @@ export default function FocusTimerPage() {
 
                         {/* Presets */}
                         <div>
-                            <p className="text-[9px] font-black text-foreground/30 uppercase tracking-widest mb-2.5">Quick Presets</p>
+                            <p className="text-xs font-black text-foreground/30 uppercase tracking-wide mb-2.5">Quick Presets</p>
                             <div className="grid grid-cols-2 gap-2">
                                 {PRESETS.map(p => (
                                     <button
@@ -811,8 +807,8 @@ export default function FocusTimerPage() {
                                                 : "border-card-border hover:border-foreground/20 text-foreground/60"
                                         )}
                                     >
-                                        <p className="text-[10px] font-black uppercase tracking-widest">{p.label}</p>
-                                        <p className="text-[9px] font-bold opacity-60">{p.sub} min</p>
+                                        <p className="text-xs font-black uppercase tracking-wide">{p.label}</p>
+                                        <p className="text-xs font-bold opacity-60">{p.sub} min</p>
                                     </button>
                                 ))}
                             </div>
@@ -820,14 +816,14 @@ export default function FocusTimerPage() {
 
                         {/* Custom fields */}
                         <div className="space-y-3">
-                            <p className="text-[9px] font-black text-foreground/30 uppercase tracking-widest">Custom (minutes)</p>
+                            <p className="text-xs font-black text-foreground/30 uppercase tracking-wide">Custom (minutes)</p>
                             {[
                                 { label: 'Focus Session', color: 'text-blue-500', val: settingsFocus, set: setSettingsFocus, min: 1, max: 120 },
                                 { label: 'Short Break', color: 'text-green-500', val: settingsShort, set: setSettingsShort, min: 1, max: 60 },
                                 { label: 'Long Break', color: 'text-purple-500', val: settingsLong, set: setSettingsLong, min: 1, max: 60 },
                             ].map(({ label, color, val, set, min, max }) => (
                                 <div key={label} className="flex items-center gap-3">
-                                    <span className={cn("text-[10px] font-black uppercase tracking-widest w-28 shrink-0", color)}>{label}</span>
+                                    <span className={cn("text-xs font-black uppercase tracking-wide w-28 shrink-0", color)}>{label}</span>
                                     <div className="flex items-center gap-2 flex-1">
                                         <button
                                             onClick={() => set(v => Math.max(min, v - 1))}
@@ -849,14 +845,14 @@ export default function FocusTimerPage() {
                                             className="h-8 w-8 rounded-xl bg-foreground/5 border border-card-border text-foreground/50 hover:text-foreground flex items-center justify-center font-black text-sm transition-all"
                                         >+</button>
                                     </div>
-                                    <span className="text-[9px] font-black text-foreground/20 w-6 shrink-0">min</span>
+                                    <span className="text-xs font-black text-foreground/20 w-6 shrink-0">min</span>
                                 </div>
                             ))}
                         </div>
 
                         {/* Pomodoro science tip */}
                         <div className="px-4 py-3 bg-blue-500/5 border border-blue-500/10 rounded-2xl">
-                            <p className="text-[9px] font-bold text-foreground/40 leading-relaxed">
+                            <p className="text-xs font-bold text-foreground/40 leading-relaxed">
                                 The Pomodoro technique recommends <strong className="text-foreground/60">25 min focus → 5 min break</strong>, with a long 15–30 min break after every 4 sessions. Longer sessions (50/90 min) suit deep work tasks.
                             </p>
                         </div>
@@ -864,11 +860,11 @@ export default function FocusTimerPage() {
                         <div className="flex gap-3">
                             <button
                                 onClick={() => setShowSettings(false)}
-                                className="flex-1 py-3 border border-card-border rounded-2xl text-[10px] font-black uppercase tracking-widest text-foreground/40 hover:text-foreground transition-all"
+                                className="flex-1 py-3 border border-card-border rounded-2xl text-xs font-black uppercase tracking-wide text-foreground/40 hover:text-foreground transition-all"
                             >Cancel</button>
                             <button
                                 onClick={applySettings}
-                                className="flex-1 py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-2xl text-[10px] font-black uppercase tracking-widest shadow-lg shadow-blue-600/20 transition-all"
+                                className="flex-1 py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-2xl text-xs font-black uppercase tracking-wide shadow-lg shadow-blue-600/20 transition-all"
                             >Apply</button>
                         </div>
                     </div>

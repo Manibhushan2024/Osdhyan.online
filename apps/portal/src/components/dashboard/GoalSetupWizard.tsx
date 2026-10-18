@@ -214,7 +214,7 @@ export function GoalSetupWizard({ open, onOpenChange, onGoalSet }: GoalSetupWiza
                     <DialogTitle className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
                         Goal Builder
                     </DialogTitle>
-                    <p className="text-xs uppercase tracking-widest text-gray-500 mt-1">
+                    <p className="text-xs uppercase tracking-wide text-gray-500 mt-1">
                         Step {step} / {maxSteps}
                     </p>
                 </DialogHeader>

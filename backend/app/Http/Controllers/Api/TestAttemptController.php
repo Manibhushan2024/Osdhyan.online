@@ -89,6 +89,19 @@ class TestAttemptController extends Controller
             return response()->json(['message' => 'This test is not available yet.'], 403);
         }
 
+        // Paid test series: a test that lives only in paid series (and is not
+        // itself free) needs an active purchase. Admins can always preview.
+        if (!$user->isAdminUser()) {
+            $lockedBy = \App\Services\Payments\UserAccess::lockingSeriesId($test, $user);
+            if ($lockedBy !== null) {
+                return response()->json([
+                    'message'        => 'Purchase the test series to attempt this test.',
+                    'code'           => 'PAYMENT_REQUIRED',
+                    'test_series_id' => $lockedBy,
+                ], 403);
+            }
+        }
+
         $ongoing = TestAttempt::where('user_id', $user->id)
             ->where('test_id', $test->id)
             ->whereIn('status', ['ongoing', 'in_progress'])

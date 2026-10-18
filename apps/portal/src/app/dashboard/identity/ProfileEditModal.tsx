@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useRef } from 'react';
+import { storageUrl } from '@/lib/storage';
 import api from '@/lib/api';
 import { X, Camera, Save, MapPin, Phone, GraduationCap, Calendar, User as UserIcon } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -101,7 +102,7 @@ export default function ProfileEditModal({ isOpen, onClose, user, onUpdate }: Pr
                                 {avatarPreview ? (
                                     <img src={avatarPreview} alt="Preview" className="h-full w-full object-cover" />
                                 ) : user?.avatar ? (
-                                    <img src={`${process.env.NEXT_PUBLIC_API_URL?.replace(/\/api$/, '')}/storage/${user.avatar}`} alt="Avatar" className="h-full w-full object-cover" />
+                                    <img src={storageUrl(user.avatar)} alt="Avatar" className="h-full w-full object-cover" />
                                 ) : (
                                     <div className="h-full w-full bg-blue-600/10 flex items-center justify-center text-blue-600 font-bold text-3xl">
                                         {user?.name?.charAt(0)}
@@ -119,12 +120,12 @@ export default function ProfileEditModal({ isOpen, onClose, user, onUpdate }: Pr
                             accept="image/*"
                             onChange={handleFileChange}
                         />
-                        <p className="text-xs text-foreground/50 font-bold uppercase tracking-widest">Tap to change avatar</p>
+                        <p className="text-xs text-foreground/50 font-bold uppercase tracking-wide">Tap to change avatar</p>
                     </div>
 
                     <div className="space-y-4">
                         <div className="space-y-1">
-                            <label className="text-xs font-bold text-foreground/70 uppercase tracking-widest pl-1">Full Name</label>
+                            <label className="text-xs font-bold text-foreground/70 uppercase tracking-wide pl-1">Full Name</label>
                             <div className="relative">
                                 <UserIcon className="absolute left-3 top-3 h-4 w-4 text-foreground/40" />
                                 <input
@@ -140,7 +141,7 @@ export default function ProfileEditModal({ isOpen, onClose, user, onUpdate }: Pr
                         </div>
 
                         <div className="space-y-1">
-                            <label className="text-xs font-bold text-foreground/70 uppercase tracking-widest pl-1">Phone Number</label>
+                            <label className="text-xs font-bold text-foreground/70 uppercase tracking-wide pl-1">Phone Number</label>
                             <div className="relative">
                                 <Phone className="absolute left-3 top-3 h-4 w-4 text-foreground/40" />
                                 <input
@@ -157,7 +158,7 @@ export default function ProfileEditModal({ isOpen, onClose, user, onUpdate }: Pr
 
                         <div className="grid grid-cols-2 gap-4">
                             <div className="space-y-1">
-                                <label className="text-xs font-bold text-foreground/70 uppercase tracking-widest pl-1">Target Exam</label>
+                                <label className="text-xs font-bold text-foreground/70 uppercase tracking-wide pl-1">Target Exam</label>
                                 <div className="relative">
                                     <GraduationCap className="absolute left-3 top-3 h-4 w-4 text-foreground/40" />
                                     <input
@@ -171,7 +172,7 @@ export default function ProfileEditModal({ isOpen, onClose, user, onUpdate }: Pr
                                 </div>
                             </div>
                             <div className="space-y-1">
-                                <label className="text-xs font-bold text-foreground/70 uppercase tracking-widest pl-1">Target Year</label>
+                                <label className="text-xs font-bold text-foreground/70 uppercase tracking-wide pl-1">Target Year</label>
                                 <div className="relative">
                                     <Calendar className="absolute left-3 top-3 h-4 w-4 text-foreground/40" />
                                     <input
@@ -187,7 +188,7 @@ export default function ProfileEditModal({ isOpen, onClose, user, onUpdate }: Pr
                         </div>
 
                         <div className="space-y-1">
-                            <label className="text-xs font-bold text-foreground/70 uppercase tracking-widest pl-1">State</label>
+                            <label className="text-xs font-bold text-foreground/70 uppercase tracking-wide pl-1">State</label>
                             <div className="relative">
                                 <MapPin className="absolute left-3 top-3 h-4 w-4 text-foreground/40" />
                                 <input

@@ -115,7 +115,7 @@ function FormattedAssistantMessage({ content }: { content: string }) {
 
                 if (lines.length === 1 && lines[0].endsWith(':') && lines[0].length <= 80) {
                     return (
-                        <h4 key={`h-${blockIndex}`} className="text-[11px] font-black uppercase tracking-wide text-blue-600">
+                        <h4 key={`h-${blockIndex}`} className="text-xs font-black uppercase tracking-wide text-blue-600">
                             {lines[0]}
                         </h4>
                     );
@@ -183,7 +183,7 @@ export default function SolutionHub() {
         setChatMessages([
             {
                 role: 'assistant',
-                content: 'Mission parameters received.\n\nAsk me anything about THIS question: concept, mistake analysis, shortcut, or Hindi explanation.',
+                content: 'Ask me anything about this question: the concept, where you went wrong, a shortcut, or an explanation in Hindi.',
             },
         ]);
         setChatMessage('');
@@ -238,34 +238,34 @@ export default function SolutionHub() {
             {/* Header */}
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
                 <div className="space-y-4">
-                    <div className="flex items-center gap-4 text-[10px] font-black uppercase tracking-[0.2em] text-foreground/40">
-                        <Link href={`/dashboard/tests/result/${attempt.id}`} className="hover:text-blue-600 transition-colors">Mission Debrief</Link>
+                    <div className="flex items-center gap-4 text-xs font-black uppercase tracking-wide text-foreground/40">
+                        <Link href={`/dashboard/tests/result/${attempt.id}`} className="hover:text-blue-600 transition-colors">Result</Link>
                         <ChevronRight className="h-3 w-3" />
-                        <span>Intelligence Analysis</span>
+                        <span>Solutions</span>
                     </div>
-                    <h1 className="text-4xl lg:text-5xl font-black text-foreground uppercase tracking-tighter italic leading-none">
-                        Mastery <span className="text-blue-600">Terminal</span>
+                    <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-foreground">
+                        Solutions
                     </h1>
                 </div>
 
                 <div className="relative group">
-                    <button className="px-8 py-4 bg-blue-600 text-white rounded-2xl font-black text-[10px] uppercase tracking-widest shadow-xl shadow-blue-500/20 active:scale-95 flex items-center gap-3">
+                    <button className="px-8 py-4 bg-blue-600 text-white rounded-2xl font-black text-xs uppercase tracking-wide shadow-xl shadow-blue-500/20 active:scale-95 flex items-center gap-3">
                         <Download className="h-4 w-4" />
                         Download
                     </button>
                     <div className="hidden group-hover:block absolute right-0 top-full mt-2 w-56 bg-white dark:bg-card-bg border border-card-border rounded-xl shadow-2xl overflow-hidden z-50">
                         <button
                             onClick={() => window.print()}
-                            className="w-full text-left px-6 py-4 text-[10px] font-black uppercase tracking-widest hover:bg-blue-50 dark:hover:bg-blue-900/10 hover:text-blue-600 transition-colors border-b border-card-border last:border-0"
+                            className="w-full text-left px-6 py-4 text-xs font-black uppercase tracking-wide hover:bg-blue-50 dark:hover:bg-blue-900/10 hover:text-blue-600 transition-colors border-b border-card-border last:border-0"
                         >
-                            Current Question
+                            Print this question
                         </button>
                         <Link
                             href={`/dashboard/tests/solutions/${attempt.id}/print`}
                             target="_blank"
-                            className="block w-full text-left px-6 py-4 text-[10px] font-black uppercase tracking-widest hover:bg-blue-50 dark:hover:bg-blue-900/10 hover:text-blue-600 transition-colors"
+                            className="block w-full text-left px-6 py-4 text-xs font-black uppercase tracking-wide hover:bg-blue-50 dark:hover:bg-blue-900/10 hover:text-blue-600 transition-colors"
                         >
-                            Full Solution PDF
+                            Download all solutions (PDF)
                         </Link>
                     </div>
                 </div>
@@ -305,15 +305,15 @@ export default function SolutionHub() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
                 {/* Palette Sidebar */}
                 <div className="lg:col-span-3 space-y-6">
-                    <div className="bg-card-bg border border-card-border p-8 rounded-[3rem] shadow-sm">
-                        <h3 className="text-[10px] font-black uppercase tracking-[0.3em] text-foreground/30 px-2 mb-4">Filter</h3>
+                    <div className="bg-card-bg border border-card-border p-8 rounded-2xl shadow-sm">
+                        <h3 className="text-xs font-black uppercase tracking-wide text-foreground/30 px-2 mb-4">Filter</h3>
                         <div className="flex flex-wrap gap-2 mb-6">
                             {(['all', 'correct', 'wrong', 'skipped'] as const).map((f) => (
                                 <button
                                     key={f}
                                     onClick={() => { setFilter(f); setCurrentIdx(0); }}
                                     className={cn(
-                                        "px-4 py-2 rounded-xl text-[8px] font-black uppercase tracking-widest border transition-all",
+                                        "px-4 py-2 rounded-xl text-xs font-black uppercase tracking-wide border transition-all",
                                         filter === f
                                             ? f === 'correct' ? "bg-green-500/10 border-green-500/30 text-green-600"
                                                 : f === 'wrong' ? "bg-red-500/10 border-red-500/30 text-red-600"
@@ -330,7 +330,7 @@ export default function SolutionHub() {
                             ))}
                         </div>
 
-                        <h3 className="text-[10px] font-black uppercase tracking-[0.3em] text-foreground/30 px-2 mb-6">Mission Log</h3>
+                        <h3 className="text-xs font-black uppercase tracking-wide text-foreground/30 px-2 mb-6">Questions</h3>
                         <div className="grid grid-cols-5 gap-3">
                             {filteredQuestions.map((q, i) => {
                                 const status = getQuestionStatus(q);
@@ -340,7 +340,7 @@ export default function SolutionHub() {
                                         key={q.id}
                                         onClick={() => setCurrentIdx(i)}
                                         className={cn(
-                                            "h-10 w-10 rounded-xl border-2 flex items-center justify-center text-[10px] font-black transition-all hover:scale-110",
+                                            "h-10 w-10 rounded-xl border-2 flex items-center justify-center text-xs font-black transition-all hover:scale-110",
                                             currentIdx === i ? "border-blue-600 bg-blue-600/10 text-blue-600" :
                                                 status === 'skipped' ? "border-card-border text-foreground/20" :
                                                     status === 'correct' ? "border-green-500 bg-green-500/10 text-green-600" : "border-red-500 bg-red-500/10 text-red-600"
@@ -353,19 +353,19 @@ export default function SolutionHub() {
                         </div>
                     </div>
 
-                    <div className="bg-gradient-to-br from-blue-600/10 to-cyan-500/10 border border-blue-500/20 p-8 rounded-[3rem] shadow-sm space-y-4">
+                    <div className="bg-gradient-to-br from-blue-600/10 to-cyan-500/10 border border-blue-500/20 p-8 rounded-2xl shadow-sm space-y-4">
                         <div className="flex items-center gap-3 text-blue-600">
                             <Bot className="h-5 w-5" />
-                            <h4 className="text-[10px] font-black uppercase tracking-widest italic">AI Command</h4>
+                            <h4 className="text-xs font-black uppercase tracking-wide ">Ask AI</h4>
                         </div>
-                        <p className="text-[9px] font-bold text-foreground/50 uppercase tracking-widest leading-relaxed">
-                            Ask me anything about this mission. I can explain complex logic, suggest shortcuts, or help with concepts.
+                        <p className="text-xs font-bold text-foreground/50 uppercase tracking-wide leading-relaxed">
+                            Ask about this question: the concept, a shortcut, or an explanation in Hindi.
                         </p>
                         <button
                             onClick={() => setShowAiChat(true)}
-                            className="w-full py-4 bg-blue-600 text-white rounded-2xl font-black text-[9px] uppercase tracking-widest shadow-lg shadow-blue-500/20"
+                            className="w-full py-4 bg-blue-600 text-white rounded-2xl font-black text-xs uppercase tracking-wide shadow-lg shadow-blue-500/20"
                         >
-                            Initiate Chat
+                            Start chat
                         </button>
                     </div>
                 </div>
@@ -373,17 +373,17 @@ export default function SolutionHub() {
                 {/* Question & Solution Area */}
                 <div className="lg:col-span-9 space-y-8">
                     {/* Question Card */}
-                    <div className="question-card bg-card-bg border border-card-border p-12 rounded-[4rem] shadow-sm space-y-10 group">
+                    <div className="question-card bg-card-bg border border-card-border p-12 rounded-2xl shadow-sm space-y-10 group">
                         <div className="flex items-center justify-between">
-                            <span className="text-[10px] font-black text-blue-600 uppercase tracking-[0.2em] bg-blue-500/10 px-6 py-2 rounded-full border border-blue-600/20">
+                            <span className="text-xs font-black text-blue-600 uppercase tracking-wide bg-blue-500/10 px-6 py-2 rounded-full border border-blue-600/20">
                                 Question {currentIdx + 1}
                             </span>
-                            <span className="text-[10px] font-black text-foreground/30 uppercase tracking-[0.2em]">
-                                Sector: {currentQ.subject?.name_en ?? 'General'}
+                            <span className="text-xs font-black text-foreground/30 uppercase tracking-wide">
+                                Subject: {currentQ.subject?.name_en ?? 'General'}
                             </span>
                         </div>
 
-                        <h2 className="text-3xl font-black text-foreground uppercase tracking-tight italic leading-tight">
+                        <h2 className="text-lg sm:text-xl font-semibold text-foreground leading-relaxed">
                             {language === 'en' ? currentQ.question_en : currentQ.question_hi}
                         </h2>
 
@@ -396,7 +396,7 @@ export default function SolutionHub() {
                                     <div
                                         key={opt.id}
                                         className={cn(
-                                            "p-8 rounded-[2.5rem] border-2 flex items-center justify-between transition-all",
+                                            "p-8 rounded-2xl border-2 flex items-center justify-between transition-all",
                                             isCorrect ? "bg-green-500/5 border-green-500/30 text-green-600" :
                                                 isUserSelected ? "bg-red-500/5 border-red-500/30 text-red-600" : "bg-background border-card-border text-foreground/40"
                                         )}
@@ -422,10 +422,10 @@ export default function SolutionHub() {
                     </div>
 
                     {/* Explanation Card */}
-                    <div className="explanation-card bg-card-bg border border-card-border rounded-[4rem] shadow-sm overflow-hidden animate-in slide-in-from-bottom-5">
+                    <div className="explanation-card bg-card-bg border border-card-border rounded-2xl shadow-sm overflow-hidden animate-in slide-in-from-bottom-5">
                         <div className="p-8 border-b border-card-border bg-background/50 flex items-center gap-4">
                             <Info className="h-5 w-5 text-blue-600" />
-                            <h3 className="text-[10px] font-black uppercase tracking-[0.4em] text-foreground/60 italic">Deep Logic Analysis</h3>
+                            <h3 className="text-xs font-black uppercase tracking-wide text-foreground/60 ">Explanation</h3>
                         </div>
                         <div className="p-12 space-y-8">
                             <div className="prose prose-blue dark:prose-invert max-w-none text-foreground/70 font-medium uppercase tracking-wide leading-relaxed text-sm">
@@ -433,12 +433,12 @@ export default function SolutionHub() {
                             </div>
 
                             {/* Pro Tip/Concept */}
-                            <div className="bg-blue-600/5 rounded-[2.5rem] p-8 border border-blue-600/10 space-y-3">
+                            <div className="bg-blue-600/5 rounded-2xl p-8 border border-blue-600/10 space-y-3">
                                 <div className="flex items-center gap-3 text-blue-600">
                                     <Zap className="h-4 w-4 fill-blue-600" />
-                                    <span className="text-[10px] font-black uppercase tracking-widest">Growth Concept Bolt</span>
+                                    <span className="text-xs font-black uppercase tracking-wide">Key concept</span>
                                 </div>
-                                <p className="text-[9px] font-bold text-foreground/50 uppercase tracking-widest leading-relaxed italic">
+                                <p className="text-xs font-bold text-foreground/50 uppercase tracking-wide leading-relaxed italic">
                                     &quot;When dealing with AE/JE Civil structures, always prioritize the MOMENT OF INERTIA calculation as the first point of audit.&quot;
                                 </p>
                             </div>
@@ -450,7 +450,7 @@ export default function SolutionHub() {
                         <button
                             disabled={currentIdx === 0}
                             onClick={() => setCurrentIdx(prev => prev - 1)}
-                            className="flex-1 py-6 bg-card-bg border border-card-border rounded-[2rem] font-black text-[10px] uppercase tracking-widest transition-all hover:bg-background disabled:opacity-20 flex items-center justify-center gap-4"
+                            className="flex-1 py-6 bg-card-bg border border-card-border rounded-2xl font-black text-xs uppercase tracking-wide transition-all hover:bg-background disabled:opacity-20 flex items-center justify-center gap-4"
                         >
                             <ChevronLeft className="h-4 w-4" />
                             Previous Logic
@@ -458,7 +458,7 @@ export default function SolutionHub() {
                         <button
                             disabled={currentIdx === filteredQuestions.length - 1}
                             onClick={() => setCurrentIdx(prev => prev + 1)}
-                            className="flex-1 py-6 bg-blue-600 text-white rounded-[2rem] font-black text-[10px] uppercase tracking-widest transition-all shadow-xl shadow-blue-500/20 active:scale-95 flex items-center justify-center gap-4"
+                            className="flex-1 py-6 bg-blue-600 text-white rounded-2xl font-black text-xs uppercase tracking-wide transition-all shadow-xl shadow-blue-500/20 active:scale-95 flex items-center justify-center gap-4"
                         >
                             Next Logic
                             <ChevronRight className="h-4 w-4" />
@@ -477,8 +477,8 @@ export default function SolutionHub() {
                                     <Bot className="h-6 w-6 text-white" />
                                 </div>
                                 <div>
-                                    <h3 className="text-sm font-black text-foreground uppercase tracking-tight italic">OSDHYAN Intelligence</h3>
-                                    <p className="text-[8px] font-black text-green-500 uppercase tracking-widest">Active & Operational</p>
+                                    <h3 className="text-sm font-black text-foreground uppercase tracking-tight ">OSDHYAN AI</h3>
+                                    <p className="text-xs font-black text-green-500 uppercase tracking-wide">Online</p>
                                 </div>
                             </div>
                             <button onClick={() => setShowAiChat(false)} className="p-2 hover:bg-background rounded-full transition-colors">
@@ -503,7 +503,7 @@ export default function SolutionHub() {
                                             'p-5 rounded-2xl max-w-[88%] shadow-sm',
                                             entry.role === 'assistant'
                                                 ? 'bg-gradient-to-b from-blue-50/60 to-white dark:from-blue-900/15 dark:to-card-bg border border-blue-200/40 dark:border-blue-500/20 text-[12px] font-medium tracking-normal rounded-tl-none'
-                                                : 'bg-blue-600 text-white rounded-tr-none text-[11px] font-bold uppercase tracking-wide'
+                                                : 'bg-blue-600 text-white rounded-tr-none text-xs font-bold uppercase tracking-wide'
                                         )}
                                     >
                                         {entry.role === 'assistant' ? (
@@ -520,7 +520,7 @@ export default function SolutionHub() {
                                     <div className="h-8 w-8 bg-blue-600/10 rounded-lg flex items-center justify-center shrink-0">
                                         <Bot className="h-4 w-4 text-blue-600" />
                                     </div>
-                                    <div className="bg-background border border-card-border p-4 rounded-2xl rounded-tl-none text-[10px] font-bold text-foreground/50 uppercase tracking-wider">
+                                    <div className="bg-background border border-card-border p-4 rounded-2xl rounded-tl-none text-xs font-bold text-foreground/50 uppercase tracking-wider">
                                         Processing question context...
                                     </div>
                                 </div>

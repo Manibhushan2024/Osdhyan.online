@@ -9,8 +9,7 @@ import {
     HelpCircle,
     Rocket,
     Cpu,
-    Upload,
-} from 'lucide-react';
+    Upload, IndianRupee, GraduationCap } from 'lucide-react';
 import { usePathname, useRouter } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
@@ -18,11 +17,13 @@ import { useAuth } from '@/components/providers/AuthProvider';
 import { Logo } from '@/components/ui/Logo';
 
 const navigation = [
-    { name: 'Intelligence Hub', href: '/admin/courses', icon: Cpu },
+    { name: 'Courses', href: '/admin/courses', icon: Cpu },
     { name: 'Test Series', href: '/admin/test-series', icon: Rocket },
-    { name: 'Tests Pool', href: '/admin/tests', icon: LayoutDashboard },
-    { name: 'Question Bank', href: '/admin/questions', icon: BookOpen },
-    { name: 'Bulk Import', href: '/admin/bulk-import', icon: Upload },
+    { name: 'Tests', href: '/admin/tests', icon: LayoutDashboard },
+    { name: 'Questions', href: '/admin/questions', icon: BookOpen },
+    { name: 'Bulk import', href: '/admin/bulk-import', icon: Upload },
+    { name: 'Orders & revenue', href: '/admin/orders', icon: IndianRupee },
+    { name: 'Teachers', href: '/admin/teachers', icon: GraduationCap },
 ];
 
 export default function AdminSidebar() {
@@ -35,9 +36,9 @@ export default function AdminSidebar() {
         : navigation;
 
     return (
-        <div className="flex h-full flex-col bg-slate-950 border-r border-indigo-500/10 transition-all duration-700 w-80 shrink-0">
-            <div className="p-8">
-                <div className="mb-10 px-2 group transition-all duration-500 transform hover:scale-105">
+        <div className="flex h-full flex-col bg-slate-950 border-r border-indigo-500/10 w-64 shrink-0">
+            <div className="p-5">
+                <div className="mb-8 px-2">
                     <Link href="/admin/courses">
                         <Logo variant="white" />
                     </Link>
@@ -52,7 +53,7 @@ export default function AdminSidebar() {
                                 key={item.name}
                                 href={item.href}
                                 className={cn(
-                                    "flex items-center gap-4 px-5 py-4 text-[9px] font-black uppercase tracking-[0.2em] rounded-2xl transition-all group relative",
+                                    "flex items-center gap-3 px-4 py-2.5 min-h-[44px] text-sm font-medium rounded-xl transition-colors group relative",
                                     isActive
                                         ? "bg-indigo-600 text-white shadow-xl shadow-indigo-500/20"
                                         : "text-indigo-100/30 hover:bg-white/5 hover:text-white"
@@ -69,25 +70,22 @@ export default function AdminSidebar() {
                 </nav>
             </div>
 
-            <div className="mt-auto p-8 space-y-4">
+            <div className="mt-auto p-5 space-y-3">
+                {/* Filament (Laravel) panel lives on the backend host; only reachable
+                    when the API URL is absolute (not the same-origin /api proxy). */}
+                {/^https?:\/\//.test(process.env.NEXT_PUBLIC_API_URL ?? '') && (
                 <button
                     onClick={() => {
                         const api = (process.env.NEXT_PUBLIC_API_URL ?? '').replace(/\/api\s*$/, '');
                         window.open(api + '/admin', '_blank');
                     }}
-                    className="w-full flex items-center gap-3 px-6 py-4 bg-white/5 border border-white/10 rounded-2xl text-[8px] font-black text-indigo-400 uppercase tracking-widest hover:bg-white/10 transition-all group"
+                    className="w-full flex items-center gap-3 px-4 py-2.5 min-h-[44px] bg-white/5 border border-white/10 rounded-xl text-sm font-medium text-indigo-300 hover:bg-white/10 transition-colors group"
                 >
                     <ArrowLeft className="h-3 w-3 group-hover:-translate-x-1 transition-transform" />
-                    Filament Dashboard
+                    Open Filament admin
                 </button>
+                )}
 
-                <div className="p-6 bg-indigo-600/5 rounded-[2rem] border border-indigo-600/20">
-                    <h4 className="text-[9px] font-black text-indigo-400 uppercase tracking-widest">Admin Status</h4>
-                    <p className="text-[8px] text-white/40 font-black uppercase tracking-widest mt-2 flex items-center gap-2">
-                        <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,1)] animate-pulse" />
-                        Command Mode Active
-                    </p>
-                </div>
             </div>
         </div>
     );

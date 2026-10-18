@@ -58,4 +58,29 @@ return [
         'sender_id' => env('SMS_SENDER_ID', 'OSDHYN'),
     ],
 
+    // Razorpay checkout for paid test series. PAYMENTS_FAKE=true swaps in a
+    // local gateway that marks orders paid instantly (refused in production).
+    'razorpay' => [
+        'key_id'         => env('RAZORPAY_KEY_ID'),
+        'key_secret'     => env('RAZORPAY_KEY_SECRET'),
+        'webhook_secret' => env('RAZORPAY_WEBHOOK_SECRET'),
+        'fake'           => (bool) env('PAYMENTS_FAKE', false),
+    ],
+
+    // Live classes. Jitsi is used as-is (meet.jit.si or a self-hosted
+    // domain); when the three JAAS_* values are set, rooms move to 8x8.vc
+    // and every join is signed with an RS256 JWT (see JaasTokenGenerator).
+    'live' => [
+        'jitsi' => [
+            'domain' => env('JITSI_DOMAIN', 'meet.jit.si'),
+        ],
+        'jaas' => [
+            'app_id'      => env('JAAS_APP_ID'),
+            'api_key_id'  => env('JAAS_API_KEY_ID'),
+            'private_key' => env('JAAS_PRIVATE_KEY'),
+            'token_ttl'   => (int) env('JAAS_TOKEN_TTL', 10800),
+        ],
+        'state_cache_seconds' => (int) env('LIVE_STATE_CACHE_SECONDS', 2),
+    ],
+
 ];

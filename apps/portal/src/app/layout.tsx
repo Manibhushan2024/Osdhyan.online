@@ -23,11 +23,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "OSDHYAN — India's Smartest Exam Prep Platform",
+    default: "OSDHYAN — Mock tests and study tools for BPSC, UPSC, SSC and Banking",
     template: "%s | OSDHYAN",
   },
   description:
-    "Crack BPSC, SSC, UPSC & more with OSDHYAN. Bilingual mock tests, AI-powered analytics, daily study planner, NCERT courses — all in one platform. Free to start.",
+    "Prepare for BPSC, UPSC, SSC and Banking exams with OSDHYAN: exam-pattern mock tests in Hindi and English, instant result analysis, previous year papers, live classes and home tuition. Free to start.",
   keywords: [
     "BPSC mock test",
     "UPSC preparation",
@@ -53,9 +53,9 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: siteUrl,
     siteName: "OSDHYAN",
-    title: "OSDHYAN — India's Smartest Exam Prep Platform",
+    title: "OSDHYAN — Mock tests and study tools for BPSC, UPSC, SSC and Banking",
     description:
-      "Crack BPSC, SSC, UPSC & more with AI-powered mock tests, bilingual questions, and a built-in study planner. Free to start.",
+      "Exam-pattern mock tests in Hindi and English, instant result analysis, previous year papers, live classes and home tuition. Free to start.",
     images: [
       {
         url: "/og-image.png",
@@ -69,9 +69,9 @@ export const metadata: Metadata = {
   // ── Twitter / X ──────────────────────────────────────────────────────────
   twitter: {
     card: "summary_large_image",
-    title: "OSDHYAN — India's Smartest Exam Prep Platform",
+    title: "OSDHYAN — Mock tests for BPSC, UPSC, SSC and Banking",
     description:
-      "Crack BPSC, SSC, UPSC & more with AI mock tests and a smart study planner.",
+      "Bilingual mock tests, instant analysis, previous year papers, live classes and home tuition. Free to start.",
     images: ["/og-image.png"],
     site: "@osdhyan",
     creator: "@osdhyan",
@@ -129,7 +129,7 @@ export default function RootLayout({
               url: siteUrl,
               logo: `${siteUrl}/logo.png`,
               description:
-                "India's focused exam preparation platform for BPSC, SSC, UPSC and more.",
+                "Exam preparation platform for BPSC, UPSC, SSC and Banking aspirants: bilingual mock tests, analysis, live classes and home tuition.",
               sameAs: [],
             }),
           }}

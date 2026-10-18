@@ -95,23 +95,23 @@ export default function AdminTestsPage() {
             {/* Header */}
             <div className="flex items-end justify-between">
                 <div>
-                    <div className="flex items-center gap-2 text-[9px] font-black text-white/30 uppercase tracking-widest mb-3">
-                        <span>Admin</span><ChevronRight className="h-3 w-3" /><span className="text-indigo-400">Tests Pool</span>
+                    <div className="flex items-center gap-2 text-xs font-black text-white/30 uppercase tracking-wide mb-3">
+                        <span>Admin</span><ChevronRight className="h-3 w-3" /><span className="text-indigo-400">Tests</span>
                     </div>
-                    <h1 className="text-4xl font-black text-white uppercase tracking-tighter italic">
-                        Test <span className="text-indigo-400">Command Center</span>
+                    <h1 className="text-4xl font-black text-white uppercase tracking-tighter ">
+                        Tests
                     </h1>
-                    <p className="text-white/30 text-[10px] font-black uppercase tracking-widest mt-1">
+                    <p className="text-white/30 text-xs font-black uppercase tracking-wide mt-1">
                         {total} tests in the system
                     </p>
                 </div>
                 <div className="flex gap-3">
-                    <Link href="/admin/bulk-import" className="flex items-center gap-2 px-5 py-3 bg-white/5 border border-white/10 rounded-2xl text-[10px] font-black text-white/50 uppercase tracking-widest hover:text-white transition-all">
+                    <Link href="/admin/bulk-import" className="flex items-center gap-2 px-5 py-3 bg-white/5 border border-white/10 rounded-2xl text-xs font-black text-white/50 uppercase tracking-wide hover:text-white transition-all">
                         <Upload className="h-3.5 w-3.5" /> Bulk Import
                     </Link>
                     <button
                         onClick={() => { setEditTest(null); setShowWizard(true); }}
-                        className="flex items-center gap-2 px-6 py-3 bg-indigo-600 rounded-2xl text-[10px] font-black text-white uppercase tracking-widest shadow-lg shadow-indigo-600/20 hover:bg-indigo-500 transition-all"
+                        className="flex items-center gap-2 px-6 py-3 bg-indigo-600 rounded-2xl text-xs font-black text-white uppercase tracking-wide shadow-lg shadow-indigo-600/20 hover:bg-indigo-500 transition-all"
                     >
                         <Plus className="h-4 w-4" /> Create Test
                     </button>
@@ -123,16 +123,16 @@ export default function AdminTestsPage() {
                 <div className="relative flex-1 min-w-[200px]">
                     <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-white/20" />
                     <input value={search} onChange={e => { setSearch(e.target.value); setPage(1); }}
-                        placeholder="Search tests..." className="w-full bg-slate-900 border border-indigo-500/10 rounded-xl pl-9 pr-4 py-2.5 text-[11px] text-white placeholder:text-white/20 focus:outline-none focus:ring-1 focus:ring-indigo-500/30" />
+                        placeholder="Search tests..." className="w-full bg-slate-900 border border-indigo-500/10 rounded-xl pl-9 pr-4 py-2.5 text-xs text-white placeholder:text-white/20 focus:outline-none focus:ring-1 focus:ring-indigo-500/30" />
                 </div>
                 <select value={statusF} onChange={e => { setStatusF(e.target.value); setPage(1); }}
-                    className="bg-slate-900 border border-indigo-500/10 rounded-xl px-4 py-2.5 text-[11px] text-white focus:outline-none">
+                    className="bg-slate-900 border border-indigo-500/10 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none">
                     <option value="">All Status</option>
                     <option value="published">Published</option>
                     <option value="draft">Draft</option>
                 </select>
                 <select value={examF} onChange={e => { setExamF(e.target.value); setPage(1); }}
-                    className="bg-slate-900 border border-indigo-500/10 rounded-xl px-4 py-2.5 text-[11px] text-white focus:outline-none">
+                    className="bg-slate-900 border border-indigo-500/10 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none">
                     <option value="">All Exams</option>
                     {exams.map(e => <option key={e.id} value={e.id}>{e.code}</option>)}
                 </select>
@@ -146,8 +146,8 @@ export default function AdminTestsPage() {
             ) : tests.length === 0 ? (
                 <div className="text-center py-20">
                     <LayoutList className="h-12 w-12 text-white/10 mx-auto mb-4" />
-                    <p className="text-white/30 font-black uppercase tracking-widest text-[10px]">No tests found</p>
-                    <button onClick={() => setShowWizard(true)} className="mt-4 text-indigo-400 text-[10px] font-black uppercase tracking-widest hover:text-indigo-300">
+                    <p className="text-white/30 font-black uppercase tracking-wide text-xs">No tests found</p>
+                    <button onClick={() => setShowWizard(true)} className="mt-4 text-indigo-400 text-xs font-black uppercase tracking-wide hover:text-indigo-300">
                         + Create your first test
                     </button>
                 </div>
@@ -168,12 +168,12 @@ export default function AdminTestsPage() {
             {total > 15 && (
                 <div className="flex items-center justify-center gap-3">
                     <button onClick={() => setPage(p => Math.max(1, p - 1))} disabled={page === 1}
-                        className="px-4 py-2 bg-slate-900 border border-indigo-500/10 rounded-xl text-[10px] font-black text-white/50 hover:text-white disabled:opacity-30 transition-all">
+                        className="px-4 py-2 bg-slate-900 border border-indigo-500/10 rounded-xl text-xs font-black text-white/50 hover:text-white disabled:opacity-30 transition-all">
                         ← Prev
                     </button>
-                    <span className="text-[10px] font-black text-white/30">Page {page} of {Math.ceil(total / 15)}</span>
+                    <span className="text-xs font-black text-white/30">Page {page} of {Math.ceil(total / 15)}</span>
                     <button onClick={() => setPage(p => p + 1)} disabled={page >= Math.ceil(total / 15)}
-                        className="px-4 py-2 bg-slate-900 border border-indigo-500/10 rounded-xl text-[10px] font-black text-white/50 hover:text-white disabled:opacity-30 transition-all">
+                        className="px-4 py-2 bg-slate-900 border border-indigo-500/10 rounded-xl text-xs font-black text-white/50 hover:text-white disabled:opacity-30 transition-all">
                         Next →
                     </button>
                 </div>
@@ -208,17 +208,17 @@ function TestRow({ test, onEdit, onPublish, onDelete, onDuplicate }: {
             <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-2 flex-wrap">
                     <p className="text-[13px] font-black text-white truncate">{test.name_en}</p>
-                    {test.year && <span className="text-[8px] font-black text-white/30 bg-white/5 px-2 py-0.5 rounded">{test.year}</span>}
-                    {test.paper_type && <span className="text-[8px] font-black text-white/30 bg-white/5 px-2 py-0.5 rounded">{test.paper_type}</span>}
+                    {test.year && <span className="text-xs font-black text-white/30 bg-white/5 px-2 py-0.5 rounded">{test.year}</span>}
+                    {test.paper_type && <span className="text-xs font-black text-white/30 bg-white/5 px-2 py-0.5 rounded">{test.paper_type}</span>}
                 </div>
                 <div className="flex items-center gap-4 mt-1 flex-wrap">
-                    <span className="text-[9px] font-black text-indigo-400 uppercase">{test.exam?.code}</span>
-                    <span className="text-[9px] font-black text-white/30 uppercase">{test.category?.replace('_', ' ')}</span>
-                    <span className="flex items-center gap-1 text-[9px] text-white/30"><Clock className="h-3 w-3" />{mins} min</span>
-                    <span className="flex items-center gap-1 text-[9px] text-white/30"><BookOpen className="h-3 w-3" />{test.question_count} Qs</span>
-                    <span className="flex items-center gap-1 text-[9px] text-white/30"><Target className="h-3 w-3" />{test.total_marks} marks</span>
-                    {test.negative_marking > 0 && <span className="text-[9px] text-red-400">-{test.negative_marking}/wrong</span>}
-                    <span className="flex items-center gap-1 text-[9px] text-white/30"><Users className="h-3 w-3" />{test.attempt_count} attempts</span>
+                    <span className="text-xs font-black text-indigo-400 uppercase">{test.exam?.code}</span>
+                    <span className="text-xs font-black text-white/30 uppercase">{test.category?.replace('_', ' ')}</span>
+                    <span className="flex items-center gap-1 text-xs text-white/30"><Clock className="h-3 w-3" />{mins} min</span>
+                    <span className="flex items-center gap-1 text-xs text-white/30"><BookOpen className="h-3 w-3" />{test.question_count} Qs</span>
+                    <span className="flex items-center gap-1 text-xs text-white/30"><Target className="h-3 w-3" />{test.total_marks} marks</span>
+                    {test.negative_marking > 0 && <span className="text-xs text-red-400">-{test.negative_marking}/wrong</span>}
+                    <span className="flex items-center gap-1 text-xs text-white/30"><Users className="h-3 w-3" />{test.attempt_count} attempts</span>
                 </div>
             </div>
 
@@ -406,13 +406,13 @@ function TestWizard({ exams, editTest, onClose, onSaved }: {
                     {/* Header */}
                     <div className="flex items-center justify-between p-8 border-b border-indigo-500/10">
                         <div>
-                            <h2 className="text-2xl font-black text-white uppercase tracking-tight italic">
+                            <h2 className="text-2xl font-black text-white uppercase tracking-tight ">
                                 {isEdit ? 'Edit Test' : 'Create Test'}
                             </h2>
                             <div className="flex gap-4 mt-3">
                                 {['Metadata', 'Sections', 'Questions'].map((s, i) => (
                                     <button key={s} onClick={() => setStep(i + 1)}
-                                        className={cn("text-[9px] font-black uppercase tracking-widest px-3 py-1 rounded-lg transition-all",
+                                        className={cn("text-xs font-black uppercase tracking-wide px-3 py-1 rounded-lg transition-all",
                                             step === i + 1 ? "bg-indigo-600 text-white" : step > i + 1 ? "text-emerald-400" : "text-white/20")}>
                                         {step > i + 1 ? '✓ ' : ''}{s}
                                     </button>
@@ -498,7 +498,7 @@ function TestWizard({ exams, editTest, onClose, onSaved }: {
                                     <div className="flex gap-2">
                                         {['draft', 'published'].map(s => (
                                             <button key={s} onClick={() => setMeta({...meta, status: s})}
-                                                className={cn("px-4 py-2 rounded-xl text-[9px] font-black uppercase tracking-widest transition-all",
+                                                className={cn("px-4 py-2 rounded-xl text-xs font-black uppercase tracking-wide transition-all",
                                                     meta.status === s
                                                         ? s === 'published' ? "bg-emerald-600 text-white" : "bg-slate-600 text-white"
                                                         : "text-white/30 bg-white/5 hover:text-white")}>
@@ -510,7 +510,7 @@ function TestWizard({ exams, editTest, onClose, onSaved }: {
 
                                 <button onClick={() => setStep(2)}
                                     disabled={!meta.name_en || !meta.exam_id}
-                                    className="w-full py-4 bg-indigo-600 rounded-2xl text-[11px] font-black text-white uppercase tracking-widest disabled:opacity-40 flex items-center justify-center gap-2 hover:bg-indigo-500 transition-all">
+                                    className="w-full py-4 bg-indigo-600 rounded-2xl text-xs font-black text-white uppercase tracking-wide disabled:opacity-40 flex items-center justify-center gap-2 hover:bg-indigo-500 transition-all">
                                     Next: Define Sections <ArrowRight className="h-4 w-4" />
                                 </button>
                             </div>
@@ -520,11 +520,11 @@ function TestWizard({ exams, editTest, onClose, onSaved }: {
                         {step === 2 && (
                             <div className="space-y-6">
                                 <div className="flex items-center justify-between">
-                                    <p className="text-[10px] font-black text-white/40 uppercase tracking-widest">
+                                    <p className="text-xs font-black text-white/40 uppercase tracking-wide">
                                         Define sections (e.g., General Studies, Reasoning, English). For a simple single-paper exam, keep one section.
                                     </p>
                                     <button onClick={() => setSections(p => [...p, { name_en: '', name_hi: '', duration_min: '', marks_per_q: '1', negative_marks_per_q: '0' }])}
-                                        className="flex items-center gap-1.5 text-[9px] font-black text-indigo-400 hover:text-indigo-300 uppercase tracking-widest">
+                                        className="flex items-center gap-1.5 text-xs font-black text-indigo-400 hover:text-indigo-300 uppercase tracking-wide">
                                         <Plus className="h-3.5 w-3.5" /> Add Section
                                     </button>
                                 </div>
@@ -533,7 +533,7 @@ function TestWizard({ exams, editTest, onClose, onSaved }: {
                                     {sections.map((sec, idx) => (
                                         <div key={idx} className="bg-slate-900 border border-indigo-500/10 rounded-2xl p-4 space-y-3">
                                             <div className="flex items-center justify-between">
-                                                <span className="text-[9px] font-black text-indigo-400 uppercase tracking-widest">Section {idx + 1}</span>
+                                                <span className="text-xs font-black text-indigo-400 uppercase tracking-wide">Section {idx + 1}</span>
                                                 {sections.length > 1 && (
                                                     <button onClick={() => setSections(p => p.filter((_, i) => i !== idx))}
                                                         className="text-red-400/50 hover:text-red-400 transition-all">
@@ -570,10 +570,10 @@ function TestWizard({ exams, editTest, onClose, onSaved }: {
                                 </div>
 
                                 <div className="flex gap-3">
-                                    <button onClick={() => setStep(1)} className="flex-1 py-4 bg-white/5 rounded-2xl text-[11px] font-black text-white/50 hover:text-white uppercase tracking-widest transition-all flex items-center justify-center gap-2">
+                                    <button onClick={() => setStep(1)} className="flex-1 py-4 bg-white/5 rounded-2xl text-xs font-black text-white/50 hover:text-white uppercase tracking-wide transition-all flex items-center justify-center gap-2">
                                         <ArrowLeft className="h-4 w-4" /> Back
                                     </button>
-                                    <button onClick={() => setStep(3)} className="flex-1 py-4 bg-indigo-600 rounded-2xl text-[11px] font-black text-white uppercase tracking-widest hover:bg-indigo-500 transition-all flex items-center justify-center gap-2">
+                                    <button onClick={() => setStep(3)} className="flex-1 py-4 bg-indigo-600 rounded-2xl text-xs font-black text-white uppercase tracking-wide hover:bg-indigo-500 transition-all flex items-center justify-center gap-2">
                                         Next: Add Questions <ArrowRight className="h-4 w-4" />
                                     </button>
                                 </div>
@@ -585,7 +585,7 @@ function TestWizard({ exams, editTest, onClose, onSaved }: {
                             <div className="space-y-5">
                                 {/* Auto-assign panel */}
                                 <div className="bg-indigo-500/5 border border-indigo-500/20 rounded-2xl p-5 space-y-4">
-                                    <p className="text-[10px] font-black text-indigo-400 uppercase tracking-widest flex items-center gap-2">
+                                    <p className="text-xs font-black text-indigo-400 uppercase tracking-wide flex items-center gap-2">
                                         <Zap className="h-3.5 w-3.5" /> Auto-Fill from Question Bank
                                     </p>
                                     <div className="grid grid-cols-4 gap-3">
@@ -606,7 +606,7 @@ function TestWizard({ exams, editTest, onClose, onSaved }: {
                                         </Field>
                                         <div className="flex items-end">
                                             <button onClick={handleAutoAssign} disabled={autoLoading}
-                                                className="w-full py-3 bg-indigo-600 rounded-xl text-[9px] font-black text-white uppercase tracking-widest disabled:opacity-40 flex items-center justify-center gap-2 hover:bg-indigo-500 transition-all">
+                                                className="w-full py-3 bg-indigo-600 rounded-xl text-xs font-black text-white uppercase tracking-wide disabled:opacity-40 flex items-center justify-center gap-2 hover:bg-indigo-500 transition-all">
                                                 {autoLoading ? <Loader2 className="h-3.5 w-3.5 animate-spin" /> : <Zap className="h-3.5 w-3.5" />}
                                                 Auto Fill
                                             </button>
@@ -616,12 +616,12 @@ function TestWizard({ exams, editTest, onClose, onSaved }: {
 
                                 {/* Selected count */}
                                 <div className="flex items-center justify-between bg-emerald-500/5 border border-emerald-500/20 rounded-xl px-4 py-3">
-                                    <span className="text-[10px] font-black text-emerald-400 uppercase tracking-widest">
+                                    <span className="text-xs font-black text-emerald-400 uppercase tracking-wide">
                                         {selectedQIds.length} questions selected
                                     </span>
                                     {selectedQIds.length > 0 && (
                                         <button onClick={() => { setSelectedQIds([]); setSectionAssign({}); }}
-                                            className="text-[9px] font-black text-white/30 hover:text-red-400 uppercase tracking-widest transition-all">
+                                            className="text-xs font-black text-white/30 hover:text-red-400 uppercase tracking-wide transition-all">
                                             Clear All
                                         </button>
                                     )}
@@ -645,7 +645,7 @@ function TestWizard({ exams, editTest, onClose, onSaved }: {
                                         <option value="medium">Medium</option>
                                         <option value="hard">Hard</option>
                                     </select>
-                                    <button onClick={loadQuestions} className="px-4 bg-indigo-600 rounded-xl text-[10px] font-black text-white hover:bg-indigo-500 transition-all">Search</button>
+                                    <button onClick={loadQuestions} className="px-4 bg-indigo-600 rounded-xl text-xs font-black text-white hover:bg-indigo-500 transition-all">Search</button>
                                 </div>
 
                                 {/* Select all */}
@@ -660,7 +660,7 @@ function TestWizard({ exams, editTest, onClose, onSaved }: {
                                             newIds.forEach(id => { if (assign[id] === undefined) assign[id] = 0; });
                                             setSectionAssign(assign);
                                         }
-                                    }} className="text-[9px] font-black text-indigo-400 hover:text-indigo-300 uppercase tracking-widest transition-all">
+                                    }} className="text-xs font-black text-indigo-400 hover:text-indigo-300 uppercase tracking-wide transition-all">
                                         {allSelected ? '✓ Deselect all visible' : `Select all ${available.length} visible`}
                                     </button>
                                 )}
@@ -681,14 +681,14 @@ function TestWizard({ exams, editTest, onClose, onSaved }: {
                                                         {sel && <Check className="h-2.5 w-2.5 text-white" />}
                                                     </div>
                                                     <div className="flex-1 min-w-0">
-                                                        <p className="text-[11px] text-white line-clamp-1">{q.question_en}</p>
+                                                        <p className="text-xs text-white line-clamp-1">{q.question_en}</p>
                                                         <div className="flex gap-2 mt-1">
-                                                            <span className={cn("text-[8px] font-black px-1.5 py-0.5 rounded",
+                                                            <span className={cn("text-xs font-black px-1.5 py-0.5 rounded",
                                                                 q.difficulty === 'easy' ? 'bg-emerald-500/20 text-emerald-400' :
                                                                 q.difficulty === 'hard' ? 'bg-red-500/20 text-red-400' : 'bg-amber-500/20 text-amber-400')}>
                                                                 {q.difficulty}
                                                             </span>
-                                                            {q.subject && <span className="text-[8px] text-white/30">{q.subject.name_en}</span>}
+                                                            {q.subject && <span className="text-xs text-white/30">{q.subject.name_en}</span>}
                                                         </div>
                                                     </div>
                                                     {/* Section assignment */}
@@ -696,7 +696,7 @@ function TestWizard({ exams, editTest, onClose, onSaved }: {
                                                         <select value={sectionAssign[q.id] ?? 0}
                                                             onClick={e => e.stopPropagation()}
                                                             onChange={e => setSectionAssign(prev => ({...prev, [q.id]: parseInt(e.target.value)}))}
-                                                            className="text-[8px] bg-slate-800 border border-indigo-500/20 rounded-lg px-2 py-1 text-white/50 w-32">
+                                                            className="text-xs bg-slate-800 border border-indigo-500/20 rounded-lg px-2 py-1 text-white/50 w-32">
                                                             {sections.map((s, i) => <option key={i} value={i}>{s.name_en || `Section ${i + 1}`}</option>)}
                                                         </select>
                                                     )}
@@ -708,11 +708,11 @@ function TestWizard({ exams, editTest, onClose, onSaved }: {
 
                                 {/* Actions */}
                                 <div className="flex gap-3 pt-2 border-t border-indigo-500/10">
-                                    <button onClick={() => setStep(2)} className="px-6 py-4 bg-white/5 rounded-2xl text-[11px] font-black text-white/50 hover:text-white uppercase tracking-widest transition-all flex items-center gap-2">
+                                    <button onClick={() => setStep(2)} className="px-6 py-4 bg-white/5 rounded-2xl text-xs font-black text-white/50 hover:text-white uppercase tracking-wide transition-all flex items-center gap-2">
                                         <ArrowLeft className="h-4 w-4" /> Back
                                     </button>
                                     <button onClick={handleSave} disabled={saving}
-                                        className="flex-1 py-4 bg-indigo-600 rounded-2xl text-[11px] font-black text-white uppercase tracking-widest hover:bg-indigo-500 disabled:opacity-40 transition-all flex items-center justify-center gap-2">
+                                        className="flex-1 py-4 bg-indigo-600 rounded-2xl text-xs font-black text-white uppercase tracking-wide hover:bg-indigo-500 disabled:opacity-40 transition-all flex items-center justify-center gap-2">
                                         {saving ? <Loader2 className="h-4 w-4 animate-spin" /> : <CheckCircle2 className="h-4 w-4" />}
                                         {saving ? 'Saving...' : isEdit ? 'Update Test' : `Save & ${meta.status === 'published' ? 'Publish' : 'Draft'}`}
                                     </button>
@@ -728,12 +728,12 @@ function TestWizard({ exams, editTest, onClose, onSaved }: {
 
 // ─── Tiny helpers ─────────────────────────────────────────────────────────────
 
-const inputCls = "w-full bg-slate-900 border border-indigo-500/10 rounded-xl px-3 py-2.5 text-[11px] text-white placeholder:text-white/20 focus:outline-none focus:ring-1 focus:ring-indigo-500/30";
+const inputCls = "w-full bg-slate-900 border border-indigo-500/10 rounded-xl px-3 py-2.5 text-xs text-white placeholder:text-white/20 focus:outline-none focus:ring-1 focus:ring-indigo-500/30";
 
 function Field({ label, children }: { label: string; children: React.ReactNode }) {
     return (
         <div className="space-y-1.5">
-            <label className="text-[8px] font-black text-white/30 uppercase tracking-widest block">{label}</label>
+            <label className="text-xs font-black text-white/30 uppercase tracking-wide block">{label}</label>
             {children}
         </div>
     );
@@ -746,7 +746,7 @@ function Toggle({ label, checked, onChange }: { label: string; checked: boolean;
                 className={cn("h-4 w-8 rounded-full relative transition-all", checked ? "bg-indigo-600" : "bg-white/10")}>
                 <span className={cn("absolute top-0.5 h-3 w-3 rounded-full bg-white shadow transition-all", checked ? "left-4" : "left-0.5")} />
             </div>
-            <span className="text-[9px] font-black text-white/40 uppercase tracking-widest">{label}</span>
+            <span className="text-xs font-black text-white/40 uppercase tracking-wide">{label}</span>
         </label>
     );
 }

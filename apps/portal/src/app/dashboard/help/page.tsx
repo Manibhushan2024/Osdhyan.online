@@ -7,20 +7,21 @@ import {
     MessageSquare,
     Send,
     CheckCircle,
-    ChevronRight,
-    LifeBuoy,
-    ShieldCheck,
     HelpCircle,
-    ArrowRight
 } from 'lucide-react';
 import api from '@/lib/api';
-import { cn } from '@/lib/utils';
-import { useTheme } from '@/components/providers/ThemeProvider';
 
-export default function HelpHubPage() {
-    const { theme } = useTheme();
+const faqs = [
+    { q: 'My test did not submit. Are my answers lost?', a: 'No. Answers are saved on your device as you go. Open the test again from the same device and tap Submit, or sign in again if your session expired.' },
+    { q: 'Can I attempt a test in Hindi?', a: 'Yes. Choose Hindi before starting, or use the language button on any question during the test.' },
+    { q: 'Where do I see my results?', a: 'Open Test History in the sidebar, or tap View result on any completed test in the Tests page.' },
+    { q: 'How do I change my password?', a: 'Go to Settings, open the Security tab and enter your current and new password.' },
+];
+
+export default function HelpPage() {
     const [submitting, setSubmitting] = useState(false);
     const [submitted, setSubmitted] = useState(false);
+    const [error, setError] = useState('');
     const [form, setForm] = useState({
         subject: '',
         message: '',
@@ -30,143 +31,139 @@ export default function HelpHubPage() {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setSubmitting(true);
+        setError('');
         try {
             await api.post('/support/tickets', form);
             setSubmitted(true);
-        } catch (error) {
-            console.error('Failed to submit ticket', error);
+        } catch (err) {
+            console.error('Failed to submit ticket', err);
+            setError('Could not send your message. Please try again or call us.');
         } finally {
             setSubmitting(false);
         }
     };
 
     return (
-        <div className="max-w-7xl mx-auto space-y-8 animate-in fade-in slide-in-from-bottom-6 duration-1000">
-            {/* Header */}
-            <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
-                <div>
-                    <h1 className="text-3xl font-black text-gray-900 dark:text-white uppercase tracking-tighter italic">Support Terminal</h1>
-                    <p className="text-gray-500 dark:text-gray-400 mt-1 font-medium italic">Dedicated academic assistance and technical support.</p>
-                </div>
-
-                <div className="flex items-center gap-4">
-                    <div className="h-2 w-2 rounded-full bg-green-500 animate-pulse" />
-                    <span className="text-[10px] font-black text-gray-400 dark:text-gray-500 uppercase tracking-widest">Support Line Active</span>
-                </div>
+        <div className="space-y-6 pb-12">
+            <div>
+                <h1 className="page-title">Help & support</h1>
+                <p className="page-subtitle">Questions about a test, payment or your account? We are here to help.</p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-                {/* Contact Cards */}
-                <div className="lg:col-span-5 space-y-6">
-                    <div className="bg-white dark:bg-gray-800 p-8 rounded-[3rem] border border-gray-100 dark:border-gray-700 shadow-sm group hover:border-blue-600/30 transition-all duration-500">
-                        <div className="h-14 w-14 bg-blue-50 dark:bg-blue-900/20 rounded-2xl flex items-center justify-center text-blue-600 mb-6 group-hover:scale-110 transition-transform">
-                            <Phone className="h-6 w-6" />
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                <div className="lg:col-span-5 space-y-4">
+                    <a href="tel:+919334892585" className="card card-hover p-5 flex items-start gap-4">
+                        <div className="h-11 w-11 shrink-0 rounded-xl bg-accent text-accent-foreground flex items-center justify-center">
+                            <Phone className="h-5 w-5" />
                         </div>
-                        <h3 className="text-lg font-black text-gray-900 dark:text-white uppercase tracking-tight">Vocal Assistance</h3>
-                        <p className="text-sm text-gray-500 dark:text-gray-400 mt-2 font-medium italic">Call our selectors for immediate technical guidance.</p>
-                        <div className="mt-6 flex items-center gap-3">
-                            <span className="text-xl font-black text-blue-600 tracking-tighter italic">+91 9334892585</span>
+                        <div>
+                            <h3 className="font-semibold">Call us</h3>
+                            <p className="text-sm text-muted-foreground mt-0.5">For urgent issues during a test.</p>
+                            <p className="mt-2 text-base font-semibold text-primary">+91 93348 92585</p>
                         </div>
-                    </div>
+                    </a>
 
-                    <div className="bg-white dark:bg-gray-800 p-8 rounded-[3rem] border border-gray-100 dark:border-gray-700 shadow-sm group hover:border-indigo-600/30 transition-all duration-500">
-                        <div className="h-14 w-14 bg-indigo-50 dark:bg-indigo-900/20 rounded-2xl flex items-center justify-center text-indigo-600 mb-6 group-hover:scale-110 transition-transform">
-                            <Mail className="h-6 w-6" />
+                    <a href="mailto:help.osdhyan@gmail.com" className="card card-hover p-5 flex items-start gap-4">
+                        <div className="h-11 w-11 shrink-0 rounded-xl bg-accent text-accent-foreground flex items-center justify-center">
+                            <Mail className="h-5 w-5" />
                         </div>
-                        <h3 className="text-lg font-black text-gray-900 dark:text-white uppercase tracking-tight">Academic Desk</h3>
-                        <p className="text-sm text-gray-500 dark:text-gray-400 mt-2 font-medium italic">Send your detailed queries for expert review.</p>
-                        <div className="mt-6">
-                            <span className="text-xs font-black text-indigo-600 uppercase tracking-widest">help.osdhyan@gmail.com</span>
+                        <div className="min-w-0">
+                            <h3 className="font-semibold">Email us</h3>
+                            <p className="text-sm text-muted-foreground mt-0.5">For detailed questions or feedback.</p>
+                            <p className="mt-2 text-base font-semibold text-primary break-all">help.osdhyan@gmail.com</p>
                         </div>
-                    </div>
+                    </a>
 
-                    {/* FAQ Quick Link */}
-                    <div className="bg-gray-900 dark:bg-gray-800 p-10 rounded-[3.5rem] text-white relative overflow-hidden group">
-                        <div className="absolute top-0 right-0 h-40 w-40 bg-blue-600/20 rounded-full blur-3xl" />
-                        <LifeBuoy className="h-10 w-10 text-blue-400 mb-6 group-hover:rotate-12 transition-transform" />
-                        <h2 className="text-xl font-black uppercase tracking-tight italic">Self-Optimization Hub</h2>
-                        <p className="text-gray-400 text-sm mt-3 font-medium italic">Browse our selection manuals and technical documentation.</p>
-                        <button className="mt-8 flex items-center gap-3 text-[10px] font-black uppercase tracking-[0.2em] text-blue-400 hover:text-white transition-colors">
-                            Explore Manuals <ArrowRight className="h-4 w-4" />
-                        </button>
+                    <div className="card p-5">
+                        <h3 className="font-semibold flex items-center gap-2"><HelpCircle className="h-4 w-4 text-primary" /> Common questions</h3>
+                        <div className="mt-3 divide-y divide-card-border">
+                            {faqs.map((f) => (
+                                <details key={f.q} className="py-3 group">
+                                    <summary className="cursor-pointer list-none text-sm font-medium min-h-[40px] flex items-center justify-between gap-3">
+                                        {f.q}
+                                        <span className="text-muted-foreground group-open:rotate-180 transition-transform">⌄</span>
+                                    </summary>
+                                    <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{f.a}</p>
+                                </details>
+                            ))}
+                        </div>
                     </div>
                 </div>
 
-                {/* Ticket Form */}
                 <div className="lg:col-span-7">
-                    <div className="bg-white dark:bg-gray-800 rounded-[3.5rem] p-10 lg:p-14 border border-gray-100 dark:border-gray-700 shadow-2xl relative">
+                    <div className="card p-5 sm:p-8">
                         {submitted ? (
-                            <div className="flex flex-col items-center justify-center text-center py-20 space-y-6 animate-in zoom-in duration-500">
-                                <div className="h-24 w-24 bg-green-50 dark:bg-green-900/20 rounded-full flex items-center justify-center text-green-500">
-                                    <CheckCircle className="h-12 w-12" />
+                            <div className="flex flex-col items-center text-center py-10 gap-4">
+                                <div className="h-16 w-16 rounded-full bg-green-100 dark:bg-green-900/30 text-green-600 flex items-center justify-center">
+                                    <CheckCircle className="h-8 w-8" />
                                 </div>
                                 <div>
-                                    <h2 className="text-2xl font-black text-gray-900 dark:text-white uppercase italic">Ticket Transmitted</h2>
-                                    <p className="text-gray-500 dark:text-gray-400 mt-2 font-medium italic">Our support elite will review your data and respond within 2-4 hours.</p>
+                                    <h2 className="text-xl font-bold">Message sent</h2>
+                                    <p className="mt-1 text-sm text-muted-foreground">We usually reply within a few hours on working days.</p>
                                 </div>
-                                <button
-                                    onClick={() => setSubmitted(false)}
-                                    className="px-8 py-3 bg-gray-900 dark:bg-blue-600 text-white rounded-2xl font-black text-[10px] uppercase tracking-widest hover:bg-blue-600 transition-all shadow-xl"
-                                >
-                                    New Inquiry
+                                <button onClick={() => { setSubmitted(false); setForm({ subject: '', message: '', priority: 'normal' }); }} className="btn btn-secondary">
+                                    Send another message
                                 </button>
                             </div>
                         ) : (
-                            <form onSubmit={handleSubmit} className="space-y-8">
-                                <div className="space-y-2">
-                                    <div className="flex items-center gap-2 mb-8">
-                                        <MessageSquare className="h-5 w-5 text-blue-600" />
-                                        <h2 className="text-xl font-black text-gray-900 dark:text-white uppercase tracking-tight italic">Selection Priority Support</h2>
-                                    </div>
+                            <form onSubmit={handleSubmit} className="space-y-5">
+                                <div className="flex items-center gap-2">
+                                    <MessageSquare className="h-5 w-5 text-primary" />
+                                    <h2 className="text-lg font-semibold">Send us a message</h2>
+                                </div>
 
-                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                        <div className="space-y-2">
-                                            <label className="text-[10px] font-black text-gray-400 uppercase tracking-widest px-1">Case Subject</label>
-                                            <input
-                                                type="text"
-                                                required
-                                                placeholder="e.g. Test Engine Glitch"
-                                                className="w-full px-6 py-4 bg-gray-50 dark:bg-gray-900 border-0 rounded-2xl text-sm font-bold focus:ring-2 focus:ring-blue-600/20 transition-all outline-none"
-                                                value={form.subject}
-                                                onChange={e => setForm({ ...form, subject: e.target.value })}
-                                            />
-                                        </div>
-                                        <div className="space-y-2">
-                                            <label className="text-[10px] font-black text-gray-400 uppercase tracking-widest px-1">Urgency Protocol</label>
-                                            <select
-                                                className="w-full px-6 py-4 bg-gray-50 dark:bg-gray-900 border-0 rounded-2xl text-sm font-bold focus:ring-2 focus:ring-blue-600/20 transition-all outline-none appearance-none"
-                                                value={form.priority}
-                                                onChange={e => setForm({ ...form, priority: e.target.value })}
-                                            >
-                                                <option value="low">Low Priority</option>
-                                                <option value="normal">Normal Ops</option>
-                                                <option value="high">Critical Failure</option>
-                                            </select>
-                                        </div>
+                                {error && (
+                                    <div role="alert" className="rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700 dark:border-red-900/50 dark:bg-red-900/20 dark:text-red-300">
+                                        {error}
+                                    </div>
+                                )}
+
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <div>
+                                        <label htmlFor="subject" className="label">Subject</label>
+                                        <input
+                                            id="subject"
+                                            type="text"
+                                            required
+                                            placeholder="e.g. Test did not submit"
+                                            className="input"
+                                            value={form.subject}
+                                            onChange={e => setForm({ ...form, subject: e.target.value })}
+                                        />
+                                    </div>
+                                    <div>
+                                        <label htmlFor="priority" className="label">How urgent is it?</label>
+                                        <select
+                                            id="priority"
+                                            className="input"
+                                            value={form.priority}
+                                            onChange={e => setForm({ ...form, priority: e.target.value })}
+                                        >
+                                            <option value="low">Not urgent</option>
+                                            <option value="normal">Normal</option>
+                                            <option value="high">Urgent — I cannot use the app</option>
+                                        </select>
                                     </div>
                                 </div>
 
-                                <div className="space-y-2">
-                                    <label className="text-[10px] font-black text-gray-400 uppercase tracking-widest px-1">Case Intelligence (Message)</label>
+                                <div>
+                                    <label htmlFor="message" className="label">Message</label>
                                     <textarea
+                                        id="message"
                                         required
                                         rows={6}
-                                        placeholder="Explain the incident in detail..."
-                                        className="w-full px-6 py-4 bg-gray-50 dark:bg-gray-900 border-0 rounded-3xl text-sm font-bold focus:ring-2 focus:ring-blue-600/20 transition-all outline-none resize-none"
+                                        placeholder="Tell us what happened, including the test name if relevant."
+                                        className="input resize-none"
                                         value={form.message}
                                         onChange={e => setForm({ ...form, message: e.target.value })}
                                     />
                                 </div>
 
-                                <button
-                                    type="submit"
-                                    disabled={submitting}
-                                    className="w-full flex items-center justify-center gap-3 py-5 bg-gray-900 dark:bg-blue-600 text-white rounded-[2rem] font-black text-xs uppercase tracking-[0.2em] hover:bg-blue-600 dark:hover:bg-blue-500 transition-all shadow-2xl shadow-gray-200 dark:shadow-none group"
-                                >
-                                    {submitting ? 'Transmitting Data...' : (
+                                <button type="submit" disabled={submitting} className="btn btn-primary w-full sm:w-auto">
+                                    {submitting ? 'Sending…' : (
                                         <>
-                                            Execute Ticket Submission
-                                            <Send className="h-4 w-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                                            Send message
+                                            <Send className="h-4 w-4" />
                                         </>
                                     )}
                                 </button>

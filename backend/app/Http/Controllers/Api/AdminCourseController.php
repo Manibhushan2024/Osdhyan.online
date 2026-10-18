@@ -211,6 +211,12 @@ class AdminCourseController extends Controller
             'category'       => 'nullable|string',
             'is_published'   => 'nullable|boolean',
             'image_file'     => 'nullable|file|mimes:jpg,jpeg,png,webp|max:5120',
+            // Pricing (paid test series)
+            'price'          => 'nullable|numeric|min:0|max:9999999',
+            'mrp'            => 'nullable|numeric|min:0|max:9999999|gte:price',
+            'currency'       => 'nullable|string|size:3',
+            'is_paid'        => 'nullable|boolean',
+            'validity_days'  => 'nullable|integer|min:1|max:3650',
         ]);
 
         $imagePath = null;
@@ -226,6 +232,11 @@ class AdminCourseController extends Controller
             'category'       => $data['category'] ?? null,
             'is_published'   => (bool) ($data['is_published'] ?? false),
             'image'          => $imagePath,
+            'price'          => $data['price'] ?? 0,
+            'mrp'            => $data['mrp'] ?? null,
+            'currency'       => strtoupper($data['currency'] ?? 'INR'),
+            'is_paid'        => (bool) ($data['is_paid'] ?? false),
+            'validity_days'  => $data['validity_days'] ?? null,
         ]);
 
         return response()->json($series->load('exam'), 201);
@@ -234,7 +245,30 @@ class AdminCourseController extends Controller
     public function updateTestSeries(Request $request, int $id): JsonResponse
     {
         $series = TestSeries::findOrFail($id);
-        $series->update($request->only(['name_en', 'name_hi', 'description_en', 'category', 'is_published']));
+
+        $request->validate([
+            'price'         => 'nullable|numeric|min:0|max:9999999',
+            'mrp'           => 'nullable|numeric|min:0|max:9999999',
+            'currency'      => 'nullable|string|size:3',
+            'is_paid'       => 'nullable|boolean',
+            'validity_days' => 'nullable|integer|min:0|max:3650',
+        ]);
+
+        $data = $request->only([
+            'name_en', 'name_hi', 'description_en', 'category', 'is_published',
+            'price', 'mrp', 'currency', 'is_paid', 'validity_days',
+        ]);
+        if (array_key_exists('currency', $data) && $data['currency']) {
+            $data['currency'] = strtoupper($data['currency']);
+        }
+        if (array_key_exists('validity_days', $data) && (int) $data['validity_days'] === 0) {
+            $data['validity_days'] = null; // 0 / '' means lifetime
+        }
+        if (array_key_exists('mrp', $data) && $data['mrp'] === '') {
+            $data['mrp'] = null;
+        }
+
+        $series->update($data);
         return response()->json($series->load('exam'));
     }
 

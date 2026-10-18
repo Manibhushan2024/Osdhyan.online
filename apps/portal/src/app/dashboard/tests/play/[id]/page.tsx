@@ -681,7 +681,7 @@ export default function TestPlayer() {
 
     const startTest = async () => {
         if (!declared) {
-            toast.error('Please accept the declaration to proceed');
+            toast.error('Please accept the declaration to continue');
             return;
         }
         const testData = testRef.current;
@@ -699,13 +699,13 @@ export default function TestPlayer() {
                 server_time: data.server_time ?? attempt.server_time,
             };
             enterPlaying(attempt, timing, testData);
-            toast.success(data.is_resume ? 'Attempt Resumed!' : 'Mission Started!');
+            toast.success(data.is_resume ? 'Attempt resumed' : 'Test started');
         } catch (error) {
             if (httpStatus(error) === 401) {
                 redirectToLogin();
                 return;
             }
-            toast.error(errorMessage(error, 'Failed to initialize attempt'));
+            toast.error(errorMessage(error, 'Could not start the test'));
         } finally {
             setIsStarting(false);
         }
@@ -744,7 +744,7 @@ export default function TestPlayer() {
         if (currentQuestionIdx < (test?.questions.length || 0) - 1) {
             goToQuestion(currentQuestionIdx + 1);
         } else {
-            toast.success('Reached the end of the mission!');
+            toast.success('You have reached the last question.');
         }
     };
 
@@ -902,8 +902,8 @@ export default function TestPlayer() {
                     <Zap className="h-10 w-10 text-blue-600" />
                 </div>
                 <div className="space-y-2 text-center">
-                    <h2 className="text-xl font-black text-foreground uppercase tracking-tight italic">Initiating Engine</h2>
-                    <p className="text-[10px] font-bold text-foreground/40 uppercase tracking-widest">Loading assessment parameters & question payload...</p>
+                    <h2 className="text-xl font-semibold text-foreground">Loading test</h2>
+                    <p className="text-sm text-foreground/60">Please wait while we load the questions…</p>
                 </div>
             </div>
         );
@@ -911,57 +911,57 @@ export default function TestPlayer() {
 
     if (step === 'instructions') {
         return (
-            <div className="max-w-4xl mx-auto py-20 px-4 animate-in fade-in slide-in-from-bottom-10 duration-700">
-                <div className="bg-card-bg border border-card-border rounded-[4rem] shadow-2xl overflow-hidden">
-                    <div className="p-12 space-y-10">
+            <div className="max-w-3xl mx-auto py-6 sm:py-12 px-4">
+                <div className="bg-card-bg border border-card-border rounded-2xl shadow-sm overflow-hidden">
+                    <div className="p-5 sm:p-8 space-y-8">
                         <div className="flex items-center gap-4">
                             <div className="h-12 w-12 bg-blue-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-blue-500/20">
                                 <Info className="h-6 w-6" />
                             </div>
-                            <h1 className="text-3xl font-black text-foreground uppercase tracking-tighter italic">Exam <span className="text-blue-600">Instructions</span></h1>
+                            <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-foreground">Test instructions</h1>
                         </div>
 
                         <div className="space-y-8">
-                            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                                <div className="p-6 bg-background rounded-3xl border border-card-border space-y-2">
+                            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                                <div className="p-4 bg-background rounded-xl border border-card-border space-y-2">
                                     <Clock className="h-5 w-5 text-orange-500" />
-                                    <p className="text-[10px] font-black text-foreground/40 uppercase tracking-widest">Duration</p>
-                                    <p className="text-lg font-black text-foreground">{Math.floor((test?.duration_sec ?? 0) / 60)} Mins</p>
+                                    <p className="text-xs font-medium text-foreground/60">Duration</p>
+                                    <p className="text-lg font-black text-foreground">{Math.floor((test?.duration_sec ?? 0) / 60)} min</p>
                                 </div>
-                                <div className="p-6 bg-background rounded-3xl border border-card-border space-y-2">
+                                <div className="p-4 bg-background rounded-xl border border-card-border space-y-2">
                                     <Target className="h-5 w-5 text-green-600" />
-                                    <p className="text-[10px] font-black text-foreground/40 uppercase tracking-widest">Total Marks</p>
-                                    <p className="text-lg font-black text-foreground">{test?.total_marks} Marks</p>
+                                    <p className="text-xs font-medium text-foreground/60">Total marks</p>
+                                    <p className="text-lg font-black text-foreground">{test?.total_marks}</p>
                                 </div>
-                                <div className="p-6 bg-background rounded-3xl border border-card-border space-y-2">
+                                <div className="p-4 bg-background rounded-xl border border-card-border space-y-2">
                                     <ClipboardCheck className="h-5 w-5 text-blue-600" />
-                                    <p className="text-[10px] font-black text-foreground/40 uppercase tracking-widest">Questions</p>
+                                    <p className="text-xs font-medium text-foreground/60">Questions</p>
                                     <p className="text-lg font-black text-foreground">{test?.questions.length}</p>
                                 </div>
-                                <div className="p-6 bg-background rounded-3xl border border-card-border space-y-2">
+                                <div className="p-4 bg-background rounded-xl border border-card-border space-y-2">
                                     <AlertCircle className="h-5 w-5 text-red-500" />
-                                    <p className="text-[10px] font-black text-foreground/40 uppercase tracking-widest">Negative</p>
+                                    <p className="text-xs font-medium text-foreground/60">Negative marking</p>
                                     <p className="text-lg font-black text-foreground">{test?.negative_marking}</p>
                                 </div>
                             </div>
 
-                            <div className="space-y-6 text-sm font-bold text-foreground/60 uppercase tracking-wide leading-relaxed p-8 border border-dashed border-card-border rounded-[2.5rem]">
+                            <div className="space-y-6 text-sm text-foreground/80 leading-relaxed p-6 border border-dashed border-card-border rounded-2xl">
                                 <ul className="space-y-4 list-disc pl-5">
-                                    <li>Ensure you have a stable internet connection before starting the mission.</li>
-                                    <li>Each question has 4 options, only one is correct.</li>
-                                    <li>Marked for Review questions will be considered for final assessment.</li>
-                                    <li>The clock starts exactly when you initiate the mission.</li>
-                                    <li>You can switch between Languages (English/Hindi) during the test.</li>
+                                    <li>Make sure you have a stable internet connection before you start. Your answers are also saved on this device.</li>
+                                    <li>Each question has 4 options and only one is correct.</li>
+                                    <li>Questions marked for review are still counted if you have selected an answer.</li>
+                                    <li>The timer starts as soon as you begin the test.</li>
+                                    <li>You can switch between English and Hindi at any time during the test.</li>
                                 </ul>
                             </div>
                         </div>
 
-                        <div className="flex justify-end pt-6">
+                        <div className="flex justify-end pt-4">
                             <button
                                 onClick={() => setStep('declaration')}
-                                className="px-16 py-6 bg-blue-600 hover:bg-blue-700 text-white rounded-[2.5rem] font-black text-sm uppercase tracking-[0.3em] transition-all shadow-xl shadow-blue-500/20 active:scale-95 flex items-center gap-4 group"
+                                className="px-6 py-3 min-h-[48px] bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold text-base transition-colors shadow-sm flex items-center gap-2 group"
                             >
-                                Next Step
+                                Next
                                 <ChevronRight className="h-5 w-5 group-hover:translate-x-2 transition-transform" />
                             </button>
                         </div>
@@ -973,25 +973,25 @@ export default function TestPlayer() {
 
     if (step === 'declaration') {
         return (
-            <div className="max-w-4xl mx-auto py-20 px-4 animate-in fade-in slide-in-from-right-10 duration-700">
-                <div className="bg-card-bg border border-card-border rounded-[4rem] shadow-2xl overflow-hidden">
-                    <div className="p-12 space-y-12">
+            <div className="max-w-3xl mx-auto py-6 sm:py-12 px-4">
+                <div className="bg-card-bg border border-card-border rounded-2xl shadow-sm overflow-hidden">
+                    <div className="p-5 sm:p-8 space-y-8">
                         <div className="flex items-center gap-4">
                             <div className="h-12 w-12 bg-orange-500 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-orange-500/20">
                                 <Languages className="h-6 w-6" />
                             </div>
-                            <h1 className="text-3xl font-black text-foreground uppercase tracking-tighter italic">Language <span className="text-orange-500">& Declaration</span></h1>
+                            <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-foreground">Language and declaration</h1>
                         </div>
 
                         <div className="space-y-10">
                             {/* Language Choice */}
-                            <div className="space-y-6 p-10 bg-background rounded-[3rem] border border-card-border shadow-inner">
-                                <label className="text-[10px] font-black text-foreground/30 uppercase tracking-[0.3em]">Select Default Language</label>
+                            <div className="space-y-4 p-5 sm:p-6 bg-background rounded-2xl border border-card-border">
+                                <label className="text-sm font-semibold text-foreground">Choose your language</label>
                                 <div className="flex gap-4">
                                     <button
                                         onClick={() => setLanguage('en')}
                                         className={cn(
-                                            "flex-1 py-8 rounded-[2rem] font-black text-sm uppercase tracking-[0.2em] transition-all border-2",
+                                            "flex-1 py-4 min-h-[56px] rounded-xl font-semibold text-base transition-colors border-2",
                                             language === 'en'
                                                 ? "bg-blue-600/10 border-blue-600 text-blue-600 shadow-xl"
                                                 : "border-card-border text-foreground/40 hover:border-blue-500/30"
@@ -1002,7 +1002,7 @@ export default function TestPlayer() {
                                     <button
                                         onClick={() => setLanguage('hi')}
                                         className={cn(
-                                            "flex-1 py-8 rounded-[2rem] font-black text-sm uppercase tracking-[0.2em] transition-all border-2",
+                                            "flex-1 py-4 min-h-[56px] rounded-xl font-semibold text-base transition-colors border-2",
                                             language === 'hi'
                                                 ? "bg-blue-600/10 border-blue-600 text-blue-600 shadow-xl"
                                                 : "border-card-border text-foreground/40 hover:border-blue-500/30"
@@ -1011,12 +1011,12 @@ export default function TestPlayer() {
                                         Hindi / हिंदी
                                     </button>
                                 </div>
-                                <p className="text-[8px] font-black text-blue-600 uppercase tracking-widest text-center italic">** You can toggle language later for specific questions</p>
+                                <p className="text-sm text-foreground/60 text-center">You can switch language for any question during the test</p>
                             </div>
 
                             {/* Declaration */}
                             <div className="space-y-6">
-                                <div className="flex items-start gap-4 p-8 bg-orange-500/5 rounded-[2.5rem] border border-orange-500/10">
+                                <div className="flex items-start gap-4 p-5 bg-orange-500/5 rounded-2xl border border-orange-500/20">
                                     <div className="pt-1">
                                         <input
                                             type="checkbox"
@@ -1026,32 +1026,32 @@ export default function TestPlayer() {
                                             className="h-6 w-6 rounded-lg bg-background border-card-border text-blue-600 focus:ring-blue-500/20 cursor-pointer"
                                         />
                                     </div>
-                                    <label htmlFor="declaration" className="text-xs font-bold text-foreground/70 uppercase tracking-wide leading-relaxed cursor-pointer select-none italic">
+                                    <label htmlFor="declaration" className="text-sm text-foreground/80 leading-relaxed cursor-pointer select-none">
                                         I have read and understood the instructions. All computer hardware allotted to me are in proper working condition. I declare that I am not in possession of / not wearing any prohibited gadgets and I will not engage in any unfair means. Any engagement in prohibited items/unfair means shall disqualify me.
                                     </label>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="flex items-center justify-between pt-6">
+                        <div className="flex flex-col-reverse sm:flex-row sm:items-center sm:justify-between gap-3 pt-4">
                             <button
                                 onClick={() => setStep('instructions')}
-                                className="px-10 py-5 text-[10px] font-black text-foreground/30 uppercase tracking-[0.3em] hover:text-foreground transition-colors flex items-center gap-3"
+                                className="px-4 py-3 min-h-[44px] text-sm font-medium text-foreground/70 hover:text-foreground transition-colors flex items-center justify-center gap-2"
                             >
                                 <ChevronLeft className="h-4 w-4" />
-                                Back to Instructions
+                                Back to instructions
                             </button>
                             <button
                                 onClick={startTest}
                                 disabled={isStarting}
                                 className={cn(
-                                    "px-16 py-6 rounded-[2.5rem] font-black text-sm uppercase tracking-[0.3em] transition-all flex items-center gap-4 group shadow-xl",
+                                    "px-6 py-3 min-h-[48px] rounded-xl font-semibold text-base transition-colors flex items-center justify-center gap-2 group shadow-sm",
                                     declared
                                         ? "bg-green-500 hover:bg-green-600 text-white shadow-green-500/20 active:scale-95"
                                         : "bg-gray-200 dark:bg-gray-800 text-foreground/20 cursor-not-allowed shadow-none"
                                 )}
                             >
-                                I am Ready to Begin
+                                Start test
                                 {isStarting
                                     ? <Loader2 className="h-5 w-5 animate-spin" />
                                     : <Play className="h-5 w-5 group-hover:scale-110 transition-transform" />}
@@ -1087,28 +1087,28 @@ export default function TestPlayer() {
         return (
             <div className="fixed inset-0 bg-background z-[100] flex flex-col font-sans">
                 {/* 1. Header Bar */}
-                <div className="h-20 bg-card-bg border-b border-card-border px-8 flex items-center justify-between shadow-sm">
+                <div className="h-16 sm:h-20 bg-card-bg border-b border-card-border px-3 sm:px-6 flex items-center justify-between gap-2 shadow-sm">
                     <div className="flex items-center gap-6">
                         <div className="h-10 w-10 bg-blue-600 rounded-xl flex items-center justify-center text-white">
                             <Zap className="h-5 w-5" />
                         </div>
                         <div className="hidden md:block">
-                            <h2 className="text-sm font-black text-foreground uppercase tracking-tight italic">{test?.name_en}</h2>
-                            <p className="text-[9px] font-bold text-foreground/30 uppercase tracking-widest mt-0.5">Mission ID: #{test?.id}</p>
+                            <h2 className="text-sm font-semibold text-foreground truncate max-w-[280px]">{test?.name_en}</h2>
+                            <p className="text-xs text-foreground/50 mt-0.5">Test ID: {test?.id}</p>
                         </div>
                     </div>
 
-                    <div className="flex items-center gap-10">
+                    <div className="flex items-center gap-3 sm:gap-6">
                         {/* Status Counts */}
                         <div className="hidden lg:flex items-center gap-6 border-r border-card-border pr-10">
                             {[
                                 { label: 'Answered', count: Object.values(responses).filter(r => r.status === 'answered').length, color: 'text-green-500' },
                                 { label: 'Marked', count: Object.values(responses).filter(r => r.status === 'marked').length, color: 'text-purple-500' },
-                                { label: 'Left', count: (test?.questions.length || 0) - Object.keys(responses).length, color: 'text-foreground/20' }
+                                { label: 'Not answered', count: (test?.questions.length || 0) - Object.keys(responses).length, color: 'text-foreground/20' }
                             ].map((s, i) => (
                                 <div key={i} className="text-center">
                                     <p className={cn("text-lg font-black leading-none", s.color)}>{s.count}</p>
-                                    <p className="text-[7px] font-black uppercase tracking-widest text-foreground/40 mt-1">{s.label}</p>
+                                    <p className="text-xs font-semibold text-foreground/60 mt-1">{s.label}</p>
                                 </div>
                             ))}
                         </div>
@@ -1116,7 +1116,7 @@ export default function TestPlayer() {
                         {/* Save status (unobtrusive) */}
                         <div
                             className={cn(
-                                "hidden sm:flex items-center gap-2 text-[8px] font-black uppercase tracking-widest",
+                                "hidden sm:flex items-center gap-2 text-xs font-medium",
                                 isOffline ? "text-orange-500" : "text-foreground/30"
                             )}
                             aria-live="polite"
@@ -1131,11 +1131,11 @@ export default function TestPlayer() {
 
                         {/* Timer */}
                         <div className={cn(
-                            "flex items-center gap-4 px-6 py-3 rounded-2xl border transition-colors",
+                            "flex items-center gap-2 sm:gap-3 px-3 sm:px-5 py-2 rounded-xl border transition-colors",
                             timeLeft < 300 ? "bg-red-500/10 border-red-500/20 text-red-500" : "bg-blue-500/5 border-blue-500/10 text-blue-600"
                         )}>
                             <Timer className={cn("h-5 w-5", timeLeft < 300 && "animate-pulse")} />
-                            <span className="text-xl font-black tabular-nums tracking-tighter">{formatTime(timeLeft)}</span>
+                            <span className="text-lg sm:text-xl font-bold tabular-nums">{formatTime(timeLeft)}</span>
                         </div>
 
                         {/* Controls */}
@@ -1143,9 +1143,9 @@ export default function TestPlayer() {
                             <button
                                 onClick={handleSubmit}
                                 disabled={isSubmitting}
-                                className="h-12 border border-card-border rounded-xl px-6 font-black text-[10px] uppercase tracking-widest text-foreground/40 hover:bg-background transition-all"
+                                className="h-11 border border-card-border rounded-xl px-4 text-sm font-semibold text-foreground/70 hover:bg-background transition-colors"
                             >
-                                {isSubmitting ? <Loader2 className="h-4 w-4 animate-spin" /> : 'Submit'}
+                                {isSubmitting ? <Loader2 className="h-4 w-4 animate-spin" /> : 'Submit test'}
                             </button>
                         </div>
                     </div>
@@ -1153,30 +1153,30 @@ export default function TestPlayer() {
 
                 {/* Session expired notice — answers keep being saved on this device */}
                 {sessionExpired && (
-                    <div className="bg-orange-500/10 border-b border-orange-500/20 px-8 py-3 flex items-center justify-between gap-4">
+                    <div className="bg-orange-500/10 border-b border-orange-500/20 px-4 sm:px-6 py-3 flex items-center justify-between gap-4">
                         <div className="flex items-center gap-3 text-orange-600">
                             <AlertCircle className="h-4 w-4 shrink-0" />
-                            <p className="text-[10px] font-black uppercase tracking-widest">
-                                Session expired — log in again to continue. Your answers are saved on this device.
+                            <p className="text-sm font-medium">
+                                Your session has expired. Sign in again to continue — your answers are saved on this device.
                             </p>
                         </div>
                         <button
                             onClick={goToLogin}
-                            className="shrink-0 px-5 py-2 bg-orange-500 hover:bg-orange-600 text-white rounded-xl font-black text-[10px] uppercase tracking-widest transition-all"
+                            className="shrink-0 px-4 py-2 min-h-[40px] bg-orange-500 hover:bg-orange-600 text-white rounded-xl font-semibold text-sm transition-colors"
                         >
-                            Log in again
+                            Sign in again
                         </button>
                     </div>
                 )}
 
                 {/* 2. Main Workspace */}
-                <div className="flex-1 flex overflow-hidden">
+                <div className="flex-1 flex overflow-hidden relative">
                     {/* Left: Question Area */}
-                    <div className="flex-1 overflow-y-auto no-scrollbar p-12 bg-background">
-                        <div className="max-w-4xl mx-auto space-y-12">
+                    <div className="flex-1 overflow-y-auto no-scrollbar p-4 sm:p-8 lg:p-12 bg-background">
+                        <div className="max-w-4xl mx-auto space-y-8">
                             {/* Question Header */}
                             <div className="flex items-center justify-between border-b border-card-border pb-6">
-                                <span className="bg-blue-600/10 text-blue-600 text-[10px] font-black px-4 py-2 rounded-full uppercase tracking-widest border border-blue-600/20">
+                                <span className="bg-blue-600/10 text-blue-700 dark:text-blue-300 text-sm font-semibold px-3 py-1.5 rounded-full border border-blue-600/20">
                                     Question {currentQuestionIdx + 1}
                                 </span>
                                 <div className="flex items-center gap-4">
@@ -1188,7 +1188,7 @@ export default function TestPlayer() {
                                     </button>
                                     <button
                                         onClick={() => setLanguage(language === 'en' ? 'hi' : 'en')}
-                                        className="flex items-center gap-2 px-4 py-2 bg-card-bg border border-card-border rounded-full text-[10px] font-black uppercase tracking-widest text-foreground/40 hover:text-blue-600 transition-colors"
+                                        className="flex items-center gap-2 px-3 py-2 min-h-[40px] bg-card-bg border border-card-border rounded-full text-sm font-medium text-foreground/70 hover:text-blue-600 transition-colors"
                                     >
                                         <Languages className="h-4 w-4" />
                                         {language === 'en' ? 'Hindi' : 'English'}
@@ -1199,7 +1199,7 @@ export default function TestPlayer() {
                             {/* Question Text */}
                             <div className="space-y-8">
                                 <div
-                                    className="text-2xl font-black text-foreground uppercase tracking-tight italic leading-tight"
+                                    className="text-lg sm:text-xl font-semibold text-foreground leading-relaxed"
                                     dangerouslySetInnerHTML={{ __html: (language === 'en' ? currentQ?.question_en : currentQ?.question_hi) || '' }}
                                 />
 
@@ -1208,7 +1208,7 @@ export default function TestPlayer() {
                                         {/* eslint-disable-next-line @next/next/no-img-element */}
                                         <img
                                             src={storageUrl(currentQ.image_path)}
-                                            alt="Question Visual"
+                                            alt="Question image"
                                             className="w-full object-contain max-h-[400px]"
                                         />
                                     </div>
@@ -1216,7 +1216,7 @@ export default function TestPlayer() {
                             </div>
 
                             {/* Options */}
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pb-20">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 pb-24">
                                 {currentQ?.options.map((opt, idx) => {
                                     const isSelected = responses[currentQ.id]?.selected_option_id === opt.id;
                                     return (
@@ -1224,13 +1224,13 @@ export default function TestPlayer() {
                                             key={opt.id}
                                             onClick={() => handleSelectOption(currentQ.id, opt.id)}
                                             className={cn(
-                                                "p-8 rounded-[2.5rem] border-2 text-left transition-all relative group flex flex-col gap-4",
+                                                "p-4 sm:p-5 rounded-2xl border-2 text-left transition-colors relative group flex flex-col gap-3",
                                                 isSelected
                                                     ? "bg-blue-600/10 border-blue-600 shadow-xl"
                                                     : "bg-card-bg border-card-border hover:border-blue-500/30"
                                             )}
                                         >
-                                            <div className="flex items-center gap-6">
+                                            <div className="flex items-center gap-4">
                                                 <div className={cn(
                                                     "h-10 w-10 shrink-0 rounded-xl flex items-center justify-center text-xs font-black border transition-all",
                                                     isSelected ? "bg-blue-600 border-blue-600 text-white" : "bg-background border-card-border text-foreground/40"
@@ -1238,7 +1238,7 @@ export default function TestPlayer() {
                                                     {String.fromCharCode(65 + idx)}
                                                 </div>
                                                 <span className={cn(
-                                                    "text-sm font-bold uppercase tracking-wide",
+                                                    "text-base font-medium",
                                                     isSelected ? "text-blue-600" : "text-foreground/60"
                                                 )}>
                                                     {language === 'en' ? opt.option_en : opt.option_hi}
@@ -1250,7 +1250,7 @@ export default function TestPlayer() {
                                                     {/* eslint-disable-next-line @next/next/no-img-element */}
                                                     <img
                                                         src={storageUrl(opt.image_path)}
-                                                        alt="Option Visual"
+                                                        alt="Option image"
                                                         className="w-full object-contain max-h-[150px]"
                                                     />
                                                 </div>
@@ -1267,12 +1267,12 @@ export default function TestPlayer() {
                     {/* Right: Palette Sidebar */}
                     <div className={cn(
                         "bg-card-bg border-l border-card-border transition-all overflow-hidden flex flex-col",
-                        isSidebarOpen ? "w-[400px]" : "w-0"
+                        isSidebarOpen ? "absolute inset-y-0 right-0 z-20 w-full sm:static sm:w-[360px] lg:w-[400px]" : "w-0"
                     )}>
-                        <div className="p-8 border-b border-card-border flex items-center justify-between">
+                        <div className="p-5 border-b border-card-border flex items-center justify-between">
                             <div className="space-y-1">
-                                <h3 className="text-[10px] font-black uppercase tracking-[0.3em] text-foreground/40 italic leading-none">Mission Analysis</h3>
-                                <p className="text-[8px] font-black uppercase text-blue-600 tracking-widest">{test?.name_en}</p>
+                                <h3 className="text-sm font-semibold text-foreground leading-none">Question palette</h3>
+                                <p className="text-xs text-foreground/60 truncate max-w-[220px]">{test?.name_en}</p>
                             </div>
                             <div className="flex items-center gap-2">
                                 <div className={cn(
@@ -1281,26 +1281,26 @@ export default function TestPlayer() {
                                         ? "bg-orange-500 shadow-[0_0_8px_rgba(249,115,22,0.5)]"
                                         : "bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.5)]"
                                 )} />
-                                <span className="text-[8px] font-black uppercase text-foreground/20 italic">
+                                <span className="text-xs text-foreground/60">
                                     {isOffline ? 'Saved on device' : dirtyCount > 0 ? 'Saving…' : 'All saved'}
                                 </span>
                             </div>
                         </div>
 
                         {/* Top: Final Submission and Stats Breakdown */}
-                        <div className="p-8 border-b border-card-border bg-emerald-600/5">
+                        <div className="p-5 border-b border-card-border bg-emerald-600/5">
                             <button
                                 onClick={handleSubmit}
                                 disabled={isSubmitting}
-                                className="w-full py-5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-2xl font-black text-[11px] uppercase tracking-[0.2em] shadow-lg shadow-emerald-500/20 active:scale-95 transition-all flex items-center justify-center gap-3 group"
+                                className="w-full py-3 min-h-[44px] bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl font-semibold text-sm shadow-sm transition-colors flex items-center justify-center gap-2"
                             >
                                 {isSubmitting ? <Loader2 className="h-4 w-4 animate-spin" /> : <ShieldCheck className="h-4 w-4" />}
-                                PREPARE FINAL SUBMISSION
+                                Submit test
                             </button>
                         </div>
 
-                        <div className="flex-1 overflow-y-auto no-scrollbar p-8">
-                            <div className="grid grid-cols-5 gap-4">
+                        <div className="flex-1 overflow-y-auto no-scrollbar p-5">
+                            <div className="grid grid-cols-5 gap-3">
                                 {test?.questions.map((q, i) => {
                                     const resp = responses[q.id];
                                     const isCurrent = currentQuestionIdx === i;
@@ -1337,62 +1337,63 @@ export default function TestPlayer() {
                         </div>
 
                         {/* Legend */}
-                        <div className="p-8 border-t border-card-border bg-background/50 grid grid-cols-2 gap-4">
+                        <div className="p-5 border-t border-card-border bg-background/50 grid grid-cols-2 gap-3">
                             <div className="flex items-center gap-3">
                                 <div className="h-3 w-3 rounded-full bg-green-500" />
-                                <span className="text-[8px] font-black uppercase tracking-widest text-foreground/40">Answered</span>
+                                <span className="text-xs text-foreground/70">Answered</span>
                             </div>
                             <div className="flex items-center gap-3">
                                 <div className="h-3 w-3 rounded-full bg-red-500" />
-                                <span className="text-[8px] font-black uppercase tracking-widest text-foreground/40">Not Answered</span>
+                                <span className="text-xs text-foreground/70">Not answered</span>
                             </div>
                             <div className="flex items-center gap-3">
                                 <div className="h-3 w-3 rounded-full bg-purple-600" />
-                                <span className="text-[8px] font-black uppercase tracking-widest text-foreground/40">Marked</span>
+                                <span className="text-xs text-foreground/70">Marked for review</span>
                             </div>
                             <div className="flex items-center gap-3">
                                 <div className="h-3 w-3 rounded-full bg-background border border-card-border" />
-                                <span className="text-[8px] font-black uppercase tracking-widest text-foreground/40">Not Visited</span>
+                                <span className="text-xs text-foreground/70">Not visited</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 {/* 3. Footer Action Bar */}
-                <div className="h-24 bg-card-bg border-t border-card-border px-12 flex items-center justify-between">
-                    <div className="flex items-center gap-6">
+                <div className="min-h-[72px] bg-card-bg border-t border-card-border px-3 sm:px-6 py-2 flex items-center justify-between gap-2">
+                    <div className="flex items-center gap-2">
                         <button
                             onClick={handleMarkForReview}
-                            className="px-8 py-4 border border-card-border hover:border-purple-500/30 text-foreground/40 hover:text-purple-600 rounded-2xl font-black text-[10px] uppercase tracking-widest transition-all"
+                            className="px-3 sm:px-4 py-2.5 min-h-[44px] border border-card-border hover:border-purple-500/40 text-foreground/70 hover:text-purple-600 rounded-xl text-sm font-medium transition-colors"
                         >
-                            Mark for Review & Next
+                            Mark for review & next
                         </button>
                         <button
                             onClick={handleClearSelection}
-                            className="px-8 py-4 text-foreground/20 hover:text-red-500 font-black text-[10px] uppercase tracking-widest transition-all"
+                            className="px-3 sm:px-4 py-2.5 min-h-[44px] text-foreground/60 hover:text-red-500 text-sm font-medium transition-colors"
                         >
-                            Clear Selection
+                            Clear
                         </button>
                     </div>
 
-                    <div className="flex items-center gap-6">
+                    <div className="flex items-center gap-2">
                         <button
                             onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-                            className="h-14 w-14 bg-background border border-card-border rounded-2xl flex items-center justify-center text-foreground/40 hover:text-blue-600 transition-all"
+                            aria-label="Toggle question palette"
+                            className="h-11 w-11 bg-background border border-card-border rounded-xl flex items-center justify-center text-foreground/70 hover:text-blue-600 transition-colors"
                         >
                             <Menu className="h-6 w-6" />
                         </button>
                         <button
                             onClick={handleSaveAndNext}
-                            className="px-16 py-5 bg-blue-600 hover:bg-blue-700 text-white rounded-[2rem] font-black text-[10px] uppercase tracking-[0.3em] shadow-xl shadow-blue-500/20 transition-all active:scale-95 flex items-center gap-4"
+                            className="px-5 sm:px-8 py-2.5 min-h-[44px] bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold text-sm shadow-sm transition-colors flex items-center gap-2"
                         >
-                            Save & Tactical Move
+                            Save & Next
                             <ChevronRight className="h-4 w-4" />
                         </button>
                     </div>
                 </div>
 
-                <div className="fixed bottom-32 right-12 z-[50]">
+                <div className="hidden sm:block fixed bottom-28 right-6 lg:right-12 z-[50]">
                     <button
                         onClick={handleSubmit}
                         disabled={isSubmitting}
@@ -1400,7 +1401,7 @@ export default function TestPlayer() {
                     >
                         <div className="flex items-center gap-3">
                             <Rocket className="h-6 w-6 group-hover:translate-x-12 transition-all duration-500" />
-                            <span className="text-[10px] font-black uppercase tracking-widest hidden group-hover:block animate-in slide-in-from-left duration-300">Final Submission</span>
+                            <span className="text-[10px] font-black uppercase tracking-widest hidden group-hover:block animate-in slide-in-from-left duration-300">Submit test</span>
                         </div>
                     </button>
                 </div>
@@ -1408,45 +1409,45 @@ export default function TestPlayer() {
                 {/* Submit Confirmation Modal */}
                 {showSubmitModal && (
                     <div className="fixed inset-0 bg-slate-950/80 backdrop-blur-xl z-[300] flex items-center justify-center p-6 animate-in fade-in duration-200">
-                        <div className="bg-card-bg border border-card-border rounded-[3rem] p-12 max-w-md w-full shadow-2xl space-y-8 animate-in zoom-in-95 duration-200">
+                        <div className="bg-card-bg border border-card-border rounded-2xl p-6 sm:p-8 max-w-md w-full shadow-2xl space-y-6">
                             <div className="flex flex-col items-center text-center space-y-4">
                                 <div className="h-16 w-16 bg-orange-500/10 rounded-[2rem] flex items-center justify-center border border-orange-500/20">
                                     <ShieldCheck className="h-8 w-8 text-orange-500" />
                                 </div>
-                                <h2 className="text-2xl font-black text-foreground uppercase tracking-tight italic">Final Submission</h2>
-                                <p className="text-[11px] font-bold text-foreground/50 uppercase tracking-widest leading-relaxed">
-                                    You are about to submit this test. This action cannot be undone.
+                                <h2 className="text-2xl font-bold tracking-tight text-foreground">Submit test?</h2>
+                                <p className="text-sm text-foreground/70 leading-relaxed">
+                                    Once you submit, you cannot change your answers.
                                 </p>
                             </div>
 
-                            <div className="grid grid-cols-3 gap-4 text-center p-6 bg-background rounded-[2rem] border border-card-border">
+                            <div className="grid grid-cols-3 gap-3 text-center p-4 bg-background rounded-xl border border-card-border">
                                 <div>
                                     <p className="text-xl font-black text-green-500">{Object.values(responses).filter(r => r.status === 'answered').length}</p>
-                                    <p className="text-[8px] font-black uppercase tracking-widest text-foreground/40 mt-1">Answered</p>
+                                    <p className="text-xs text-foreground/60 mt-1">Answered</p>
                                 </div>
                                 <div>
                                     <p className="text-xl font-black text-purple-500">{Object.values(responses).filter(r => r.status === 'marked').length}</p>
-                                    <p className="text-[8px] font-black uppercase tracking-widest text-foreground/40 mt-1">Marked</p>
+                                    <p className="text-xs text-foreground/60 mt-1">Marked</p>
                                 </div>
                                 <div>
                                     <p className="text-xl font-black text-foreground/30">{(test?.questions.length || 0) - Object.values(responses).filter(r => r.status === 'answered' || r.status === 'marked').length}</p>
-                                    <p className="text-[8px] font-black uppercase tracking-widest text-foreground/40 mt-1">Skipped</p>
+                                    <p className="text-xs text-foreground/60 mt-1">Not answered</p>
                                 </div>
                             </div>
 
                             <div className="flex gap-4">
                                 <button
                                     onClick={() => setShowSubmitModal(false)}
-                                    className="flex-1 py-5 border border-card-border rounded-[2rem] text-[10px] font-black uppercase tracking-widest text-foreground/40 hover:text-foreground hover:border-foreground/20 transition-all"
+                                    className="flex-1 py-3 min-h-[44px] border border-card-border rounded-xl text-sm font-semibold text-foreground/70 hover:text-foreground hover:bg-background transition-colors"
                                 >
                                     Cancel
                                 </button>
                                 <button
                                     onClick={handleConfirmedSubmit}
                                     disabled={isSubmitting}
-                                    className="flex-1 py-5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-[2rem] text-[10px] font-black uppercase tracking-widest shadow-xl shadow-emerald-500/20 transition-all active:scale-95 flex items-center justify-center gap-2"
+                                    className="flex-1 py-3 min-h-[44px] bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-sm font-semibold shadow-sm transition-colors flex items-center justify-center gap-2"
                                 >
-                                    {isSubmitting ? <Loader2 className="h-4 w-4 animate-spin" /> : 'Confirm Submit'}
+                                    {isSubmitting ? <Loader2 className="h-4 w-4 animate-spin" /> : 'Yes, submit'}
                                 </button>
                             </div>
                         </div>
@@ -1461,10 +1462,10 @@ export default function TestPlayer() {
                                 ? <AlertCircle className="h-10 w-10 text-orange-500" />
                                 : <Loader2 className="h-10 w-10 text-blue-600 animate-spin" />}
                         </div>
-                        <h2 className="text-4xl font-black text-white uppercase tracking-tighter italic mb-4">
-                            {submitError ? 'Submission Pending' : 'Time Up'}
+                        <h2 className="text-3xl font-bold text-white tracking-tight mb-4">
+                            {submitError ? 'Submission pending' : 'Time up'}
                         </h2>
-                        <p className="text-sm font-bold text-white/40 uppercase tracking-[0.3em] mb-12 max-w-2xl">
+                        <p className="text-base text-white/70 mb-12 max-w-2xl">
                             {submitError
                                 ? `${submitError} Your answers are saved on this device.`
                                 : 'Submitting your answers…'}
@@ -1474,26 +1475,26 @@ export default function TestPlayer() {
                                 {sessionExpired ? (
                                     <button
                                         onClick={goToLogin}
-                                        className="px-16 py-6 bg-orange-500 hover:bg-orange-600 text-white rounded-[3rem] font-black text-sm uppercase tracking-[0.3em] transition-all shadow-2xl active:scale-95"
+                                        className="px-6 py-3 min-h-[48px] bg-orange-500 hover:bg-orange-600 text-white rounded-xl font-semibold text-base transition-colors shadow-sm"
                                     >
-                                        Log in again
+                                        Sign in again
                                     </button>
                                 ) : (
                                     <button
                                         onClick={handleRetrySubmit}
                                         disabled={isSubmitting}
-                                        className="px-16 py-6 bg-blue-600 hover:bg-blue-700 text-white rounded-[3rem] font-black text-sm uppercase tracking-[0.3em] transition-all shadow-2xl shadow-blue-500/40 active:scale-95 flex items-center gap-4"
+                                        className="px-6 py-3 min-h-[48px] bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold text-base transition-colors shadow-sm flex items-center gap-2"
                                     >
                                         {isSubmitting ? <Loader2 className="h-5 w-5 animate-spin" /> : <RotateCw className="h-5 w-5" />}
-                                        Retry Submission
+                                        Retry submission
                                     </button>
                                 )}
                                 {!timeUp && (
                                     <button
                                         onClick={() => setSubmitError(null)}
-                                        className="px-10 py-6 text-[10px] font-black text-white/40 uppercase tracking-[0.3em] hover:text-white transition-colors"
+                                        className="px-6 py-3 min-h-[48px] text-sm font-medium text-white/70 hover:text-white transition-colors"
                                     >
-                                        Back to Test
+                                        Back to test
                                     </button>
                                 )}
                             </div>

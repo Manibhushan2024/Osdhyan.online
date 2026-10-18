@@ -24,3 +24,6 @@ yarn-error.log
 !/storage/framework/cache/data/.gitkeep
 !/storage/framework/sessions/.gitkeep
 !/storage/framework/views/.gitkeep
+
+# Laravel real-time facade cache
+storage/framework/cache/facade-*.php

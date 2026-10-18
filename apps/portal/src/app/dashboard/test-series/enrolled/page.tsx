@@ -28,7 +28,7 @@ type TestSeries = {
     }
 };
 
-export default function EnrolledMissionsPage() {
+export default function EnrolledSeriesPage() {
     const [enrolledSeries, setEnrolledSeries] = useState<TestSeries[]>([]);
     const [loading, setLoading] = useState(true);
     const router = useRouter();
@@ -44,7 +44,7 @@ export default function EnrolledMissionsPage() {
             setEnrolledSeries(res.data);
         } catch (error) {
             console.error('Failed to fetch enrolled series', error);
-            toast.error('Failed to load enrolled missions');
+            toast.error('Failed to load enrolled series');
         } finally {
             setLoading(false);
         }
@@ -73,8 +73,8 @@ export default function EnrolledMissionsPage() {
                         <ChevronLeft className="h-4 w-4" />
                         Back to Hub
                     </button>
-                    <h1 className="text-4xl font-black text-foreground uppercase tracking-tighter italic">Your Enrolled <span className="text-blue-600">Missions</span></h1>
-                    <p className="text-foreground/40 font-black uppercase tracking-widest text-[10px]">Active Intelligence Operations & Strategic Tracking</p>
+                    <h1 className="text-4xl font-black text-foreground uppercase tracking-tighter italic">Your enrolled <span className="text-blue-600">series</span></h1>
+                    <p className="text-foreground/40 font-black uppercase tracking-widest text-[10px]">Track your progress across every series you joined</p>
                 </div>
             </div>
 
@@ -87,7 +87,7 @@ export default function EnrolledMissionsPage() {
                     <div className="h-20 w-20 bg-gray-100 dark:bg-white/5 rounded-full flex items-center justify-center mx-auto">
                         <Trophy className="h-10 w-10 text-gray-400" />
                     </div>
-                    <h2 className="text-2xl font-black text-foreground uppercase italic">No Active Missions</h2>
+                    <h2 className="text-2xl font-black text-foreground uppercase italic">No enrolled series yet</h2>
                     <p className="text-gray-500 max-w-sm mx-auto font-medium italic">You haven't enrolled in any test series yet. Head back to the Hub to start your journey.</p>
                     <Link
                         href="/dashboard/test-series"

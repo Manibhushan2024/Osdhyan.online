@@ -54,12 +54,21 @@ class TestController extends Controller
                 ->map(fn ($items) => $items->first());
         }
 
-        $tests->each(function (Test $test) use ($latestAttempts) {
+        // Paid-series flags (two queries for the whole list, never cached:
+        // is_locked depends on the current user's purchases).
+        $accessFlags = \App\Services\Payments\UserAccess::flagsForTests($tests, Auth::user());
+
+        $tests->each(function (Test $test) use ($latestAttempts, $accessFlags) {
             $questionsCount = (int) ($test->questions_count ?? 0);
 
             $test->questions_count = $questionsCount;
             $test->mode = $test->mode ?: ($test->category ?: 'full_mock');
             $test->total_marks = $test->total_marks ?: (($test->question_mark ?? 1) * $questionsCount);
+
+            $flags = $accessFlags[(int) $test->id] ?? null;
+            $test->requires_purchase = (bool) ($flags['requires_purchase'] ?? false);
+            $test->is_locked = (bool) ($flags['is_locked'] ?? false);
+            $test->locked_series_id = $flags['test_series_id'] ?? null;
 
             if ($latestAttempts->has($test->id)) {
                 $latest = $latestAttempts->get($test->id);
