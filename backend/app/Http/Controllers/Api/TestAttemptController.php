@@ -6,299 +6,241 @@ use App\Http\Controllers\Controller;
 use App\Jobs\SendTestResultEmailJob;
 use App\Models\Test;
 use App\Models\TestAttempt;
-use App\Models\TestResponse;
-use App\Models\QuestionOption;
-use Carbon\Carbon;
+use App\Services\AttemptScorer;
+use App\Services\TestAnswerKey;
+use App\Services\TestPayload;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\DB;
 
 class TestAttemptController extends Controller
 {
-    protected function presentAttempt(TestAttempt $attempt): TestAttempt
+    private const MAX_ONGOING = 50;
+
+    // ─── Helpers ──────────────────────────────────────────────────────────────
+
+    /**
+     * Normalise the legacy 'ongoing' status and attach the server-side clock
+     * so clients derive the timer from the server, not from their own start.
+     */
+    protected function presentAttempt(TestAttempt $attempt, ?Test $test = null): array
     {
-        if ($attempt->status === 'ongoing') {
-            $attempt->status = 'in_progress';
+        $test ??= $attempt->relationLoaded('test') ? $attempt->test : null;
+        $data = $attempt->toArray();
+
+        if ($attempt->isOngoing()) {
+            $duration = (int) ($test?->duration_sec ?: Test::whereKey($attempt->test_id)->value('duration_sec') ?: 3600);
+            $data['status']        = 'in_progress';
+            $data['server_time']   = now()->toISOString();
+            $data['deadline_at']   = $attempt->deadline($duration)->toISOString();
+            $data['remaining_sec'] = $attempt->remainingSeconds($duration);
+        }
+
+        return $data;
+    }
+
+    protected function json($data, int $status = 200): JsonResponse
+    {
+        return response()->json($data, $status, [], JSON_UNESCAPED_UNICODE);
+    }
+
+    protected function findOwnedAttempt($attemptId): TestAttempt|JsonResponse
+    {
+        if (!is_numeric($attemptId)) {
+            return response()->json(['message' => 'Invalid attempt ID'], 400);
+        }
+
+        $attempt = TestAttempt::find($attemptId);
+        if (!$attempt) {
+            return response()->json(['message' => 'Attempt not found.'], 404);
+        }
+        if ((int) $attempt->user_id !== (int) Auth::id()) {
+            return response()->json(['message' => 'Unauthorized attempt access.'], 403);
         }
 
         return $attempt;
     }
 
-    protected function ensureAttemptOwner(TestAttempt $attempt)
+    protected function isAvailableToStudents(Test $test): bool
     {
-        if ((int) $attempt->user_id !== (int) Auth::id()) {
-            return response()->json(['message' => 'Unauthorized attempt access.'], 403);
-        }
+        return $test->status === null || in_array($test->status, ['published', 'active'], true);
+    }
 
-        return null;
+    protected function validateResponsesPayload(Request $request, bool $required): array
+    {
+        return $request->validate([
+            'responses'                        => ($required ? 'required' : 'nullable') . '|array|max:500',
+            'responses.*.question_id'          => 'required|integer',
+            'responses.*.selected_option_id'   => 'nullable|integer',
+            'responses.*.is_marked_for_review' => 'nullable|boolean',
+            'responses.*.time_taken_sec'       => 'nullable|integer|min:0',
+        ])['responses'] ?? [];
     }
 
     // ─── Start / Resume ───────────────────────────────────────────────────────
 
     public function startAttempt(Test $test)
     {
-        \Log::info("StartAttempt: test={$test->id} user=" . Auth::id());
+        $user = Auth::user();
 
-        $ongoingAttempt = TestAttempt::where('user_id', Auth::id())
-            ->where('test_id', $test->id)
-            ->where('status', 'ongoing')
-            ->first();
-
-        if ($ongoingAttempt) {
-            return response()->json([
-                'message'   => 'Resuming existing attempt',
-                'attempt'   => $this->presentAttempt($ongoingAttempt->load('responses')),
-                'is_resume' => true,
-            ]);
+        if (!$this->isAvailableToStudents($test) && !$user->isAdminUser()) {
+            return response()->json(['message' => 'This test is not available yet.'], 403);
         }
 
-        $ongoingCount = TestAttempt::where('user_id', Auth::id())
-            ->where('status', 'ongoing')
+        $ongoing = TestAttempt::where('user_id', $user->id)
+            ->where('test_id', $test->id)
+            ->whereIn('status', ['ongoing', 'in_progress'])
+            ->latest('id')
+            ->first();
+
+        if ($ongoing) {
+            if ($ongoing->acceptsAnswers($test->duration_sec)) {
+                $ongoing->load('responses:id,test_attempt_id,question_id,selected_option_id,is_marked_for_review,time_taken_sec');
+
+                return $this->json([
+                    'message'   => 'Resuming existing attempt',
+                    'attempt'   => $this->presentAttempt($ongoing, $test),
+                    'is_resume' => true,
+                ]);
+            }
+
+            // Time ran out while the student was away — score what was saved.
+            AttemptScorer::finalize($ongoing, $test);
+        }
+
+        if ((int) $test->max_attempts > 0) {
+            $done = TestAttempt::where('user_id', $user->id)->where('test_id', $test->id)->count();
+            if ($done >= (int) $test->max_attempts) {
+                return response()->json([
+                    'message' => "You have used all {$test->max_attempts} attempt(s) for this test.",
+                ], 403);
+            }
+        }
+
+        $ongoingCount = TestAttempt::where('user_id', $user->id)
+            ->whereIn('status', ['ongoing', 'in_progress'])
             ->count();
 
-        if ($ongoingCount >= 50) {
+        if ($ongoingCount >= self::MAX_ONGOING) {
             return response()->json([
-                'message' => 'You can only have 50 active tests at a time. Please complete your existing attempts.',
+                'message' => 'You can only have ' . self::MAX_ONGOING . ' active tests at a time. Please complete your existing attempts.',
             ], 403);
         }
 
         $attempt = TestAttempt::create([
-            'user_id'    => Auth::id(),
+            'user_id'    => $user->id,
             'test_id'    => $test->id,
             'started_at' => now(),
             'status'     => 'ongoing',
         ]);
+        $attempt->setRelation('responses', collect());
 
-        return response()->json([
+        return $this->json([
             'message' => 'Attempt started successfully',
-            'attempt' => $this->presentAttempt($attempt),
+            'attempt' => $this->presentAttempt($attempt, $test),
         ]);
     }
 
-    // ─── Save Single Response ─────────────────────────────────────────────────
+    // ─── Save answers ─────────────────────────────────────────────────────────
 
+    /** Legacy single-answer endpoint — same path as sync with one item. */
     public function saveResponse(Request $request, $attemptId)
     {
-        if (!is_numeric($attemptId)) {
-            return response()->json(['message' => 'Invalid attempt ID'], 400);
-        }
-
-        $attempt = TestAttempt::findOrFail($attemptId);
-        if ($unauthorized = $this->ensureAttemptOwner($attempt)) {
-            return $unauthorized;
-        }
-
-        $validated = $request->validate([
-            'question_id'        => 'required|exists:questions,id',
-            'selected_option_id' => 'nullable|exists:question_options,id',
-            'is_marked_for_review'=> 'boolean',
-            'time_taken_sec'     => 'integer',
+        $request->validate([
+            'question_id'          => 'required|integer',
+            'selected_option_id'   => 'nullable|integer',
+            'is_marked_for_review' => 'nullable|boolean',
+            'time_taken_sec'       => 'nullable|integer|min:0',
         ]);
 
-        $response = TestResponse::updateOrCreate(
-            [
-                'test_attempt_id' => $attempt->id,
-                'question_id'     => $validated['question_id'],
-            ],
-            [
-                'selected_option_id'    => $validated['selected_option_id'] ?? null,
-                'is_marked_for_review'  => $validated['is_marked_for_review'] ?? false,
-                'time_taken_sec'        => $validated['time_taken_sec'] ?? 0,
-            ]
-        );
+        $request->merge(['responses' => [$request->only([
+            'question_id', 'selected_option_id', 'is_marked_for_review', 'time_taken_sec',
+        ])]]);
 
-        return response()->json([
-            'message'  => 'Response saved successfully',
-            'response' => $response,
-        ]);
+        $result = $this->syncResponses($request, $attemptId);
+        if ($result->getStatusCode() === 200 && ($result->getData(true)['saved'] ?? 0) === 0) {
+            return response()->json(['message' => 'Invalid question or option for this test.'], 422);
+        }
+
+        return $result;
     }
-
-    // ─── Sync Batch Responses ─────────────────────────────────────────────────
 
     public function syncResponses(Request $request, $attemptId)
     {
-        if (!is_numeric($attemptId)) {
-            return response()->json(['message' => 'Invalid attempt ID'], 400);
+        $attempt = $this->findOwnedAttempt($attemptId);
+        if ($attempt instanceof JsonResponse) {
+            return $attempt;
         }
 
-        $attempt = TestAttempt::findOrFail($attemptId);
-        if ($unauthorized = $this->ensureAttemptOwner($attempt)) {
-            return $unauthorized;
+        $responses = $this->validateResponsesPayload($request, true);
+        $test = $attempt->test;
+
+        if (!$attempt->acceptsAnswers($test->duration_sec)) {
+            return response()->json([
+                'message' => $attempt->isOngoing() ? 'Time is over for this test.' : 'This attempt has already been submitted.',
+                'code'    => 'ATTEMPT_CLOSED',
+                'status'  => $attempt->status,
+            ], 409);
         }
 
-        $validated = $request->validate([
-            'responses'                         => 'required|array',
-            'responses.*.question_id'           => 'required|exists:questions,id',
-            'responses.*.selected_option_id'    => 'nullable|exists:question_options,id',
-            'responses.*.is_marked_for_review'  => 'boolean',
-            'responses.*.time_taken_sec'        => 'integer',
+        $result = AttemptScorer::upsertResponses($attempt, TestAnswerKey::for($test), $responses);
+
+        return response()->json([
+            'message'       => 'Responses saved',
+            'saved'         => $result['saved'],
+            'rejected'      => $result['rejected'],
+            'remaining_sec' => $attempt->remainingSeconds($test->duration_sec),
         ]);
-
-        foreach ($validated['responses'] as $resp) {
-            TestResponse::updateOrCreate(
-                [
-                    'test_attempt_id' => $attempt->id,
-                    'question_id'     => $resp['question_id'],
-                ],
-                [
-                    'selected_option_id'   => $resp['selected_option_id'] ?? null,
-                    'is_marked_for_review' => $resp['is_marked_for_review'] ?? false,
-                    'time_taken_sec'       => $resp['time_taken_sec'] ?? 0,
-                ]
-            );
-        }
-
-        return response()->json(['message' => 'All responses synced successfully']);
     }
 
-    // ─── Show Result ──────────────────────────────────────────────────────────
+    // ─── Show (in progress or result) ─────────────────────────────────────────
 
     public function show($attemptId)
     {
-        if (!is_numeric($attemptId)) {
-            return response()->json(['message' => 'Invalid attempt ID'], 400);
+        $attempt = $this->findOwnedAttempt($attemptId);
+        if ($attempt instanceof JsonResponse) {
+            return $attempt;
         }
 
-        $attempt = TestAttempt::findOrFail($attemptId);
-        if ($unauthorized = $this->ensureAttemptOwner($attempt)) {
-            return $unauthorized;
+        $test = $attempt->test;
+
+        if ($attempt->isOngoing() && !$attempt->acceptsAnswers($test->duration_sec)) {
+            AttemptScorer::finalize($attempt, $test);
+            $attempt->refresh();
         }
 
-        $attempt->load(['responses', 'test.questions.options', 'test.questions.subject']);
+        $attempt->load('responses');
+        $data = $this->presentAttempt($attempt, $test);
 
-        // While the attempt is ongoing, never ship correct answers or
-        // explanations — smaller payload and no mid-test answer leaking.
-        if ($attempt->status !== 'completed') {
-            $attempt->test?->questions?->each(function ($question) {
-                $question->makeHidden(['explanation_en', 'explanation_hi']);
-                $question->options->each->makeHidden('is_correct');
-            });
-        }
+        // While ongoing, never ship correct answers or explanations.
+        $data['test'] = $attempt->status === 'completed'
+            ? TestPayload::withAnswers($test)
+            : TestPayload::student($test);
 
-        return response()->json(
-            $this->presentAttempt($attempt),
-            200,
-            [],
-            JSON_UNESCAPED_UNICODE
-        );
+        return $this->json($data);
     }
 
-    // ─── Complete Attempt ─────────────────────────────────────────────────────
+    // ─── Complete ─────────────────────────────────────────────────────────────
 
-    public function completeAttempt($attemptId)
+    public function completeAttempt(Request $request, $attemptId)
     {
-        \Log::info("CompleteAttempt: attemptId={$attemptId}");
-
-        if (!is_numeric($attemptId)) {
-            return response()->json(['message' => 'Invalid attempt ID'], 400);
+        $attempt = $this->findOwnedAttempt($attemptId);
+        if ($attempt instanceof JsonResponse) {
+            return $attempt;
         }
 
-        $attempt = TestAttempt::findOrFail($attemptId);
-        if ($unauthorized = $this->ensureAttemptOwner($attempt)) {
-            return $unauthorized;
-        }
+        $finalResponses = $this->validateResponsesPayload($request, false);
+        $test = $attempt->test;
 
-        if ($attempt->status !== 'ongoing') {
-            return response()->json(['message' => 'Attempt already completed'], 400);
-        }
+        AttemptScorer::finalize($attempt, $test, $finalResponses);
 
-        $test           = $attempt->test()->with('questions.subject')->first();
-        $totalScore     = 0;
-        $correctCount   = 0;
-        $incorrectCount = 0;
-        $responses      = $attempt->responses()->get();
-        $sectionalStats = [];
+        $attempt->refresh()->load('responses');
+        $data = $this->presentAttempt($attempt, $test);
+        $data['test'] = TestPayload::withAnswers($test);
 
-        foreach ($responses as $response) {
-            if (!$response->selected_option_id) {
-                continue;
-            }
-
-            $isCorrect = QuestionOption::where('id', $response->selected_option_id)
-                ->where('question_id', $response->question_id)
-                ->where('is_correct', true)
-                ->exists();
-
-            $question = $test->questions()->where('questions.id', $response->question_id)->first();
-            if (!$question) {
-                continue;
-            }
-
-            $pivot        = $question->pivot;
-            $marks        = $pivot->marks ?? 1.0;
-            $negativeMarks= $pivot->negative_marks ?? $test->negative_marking ?? 0.0;
-            $subjectName  = $question->subject->name_en ?? 'General';
-
-            if (!isset($sectionalStats[$subjectName])) {
-                $sectionalStats[$subjectName] = ['correct' => 0, 'incorrect' => 0, 'total' => 0, 'marks' => 0];
-            }
-
-            $sectionalStats[$subjectName]['total']++;
-
-            if ($isCorrect) {
-                $totalScore += $marks;
-                $correctCount++;
-                $response->update(['marks_obtained' => $marks]);
-                $sectionalStats[$subjectName]['correct']++;
-                $sectionalStats[$subjectName]['marks'] += $marks;
-            } else {
-                $totalScore     -= $negativeMarks;
-                $incorrectCount++;
-                $response->update(['marks_obtained' => -$negativeMarks]);
-                $sectionalStats[$subjectName]['incorrect']++;
-                $sectionalStats[$subjectName]['marks'] -= $negativeMarks;
-            }
-        }
-
-        $accuracy = ($correctCount + $incorrectCount) > 0
-            ? round(($correctCount / ($correctCount + $incorrectCount)) * 100, 2)
-            : 0;
-
-        $attempt->update([
-            'completed_at' => now(),
-            'total_score'  => $totalScore,
-            'status'       => 'completed',
-            'time_taken_sec' => (int) Carbon::parse($attempt->started_at)->diffInSeconds(now()),
-            'metadata' => [
-                'correct_count'   => $correctCount,
-                'incorrect_count' => $incorrectCount,
-                'sectional_stats' => $sectionalStats,
-                'accuracy'        => $accuracy,
-            ],
-        ]);
-
-        // Update user aggregate stats
-        $user     = $attempt->user;
-        $prevTests= $user->total_tests_attempted;
-        $prevAvg  = $user->avg_accuracy;
-        $newTests = $prevTests + 1;
-        $newAvg   = (($prevTests * $prevAvg) + $accuracy) / $newTests;
-
-        $user->update([
-            'total_tests_attempted'      => $newTests,
-            'avg_accuracy'               => round($newAvg, 2),
-            'total_study_time_prod_sec'  => $user->total_study_time_prod_sec + $attempt->time_taken_sec,
-        ]);
-
-        // Bust topic-performance cache so next analytics request is fresh
-        Cache::forget("topic_performance_{$user->id}");
-        Cache::forget("ai_insights_{$user->id}");
-
-        // Fire-and-forget result email
-        try {
-            SendTestResultEmailJob::dispatch($user->id, $attempt->id);
-        } catch (\Throwable $e) {
-            \Log::warning('SendTestResultEmailJob dispatch failed', ['error' => $e->getMessage()]);
-        }
-
-        return response()->json(
-            $this->presentAttempt(
-                $attempt->fresh()->load(['responses', 'test.questions.options', 'test.questions.subject'])
-            ),
-            200,
-            [],
-            JSON_UNESCAPED_UNICODE
-        );
+        return $this->json($data);
     }
 
     // ─── Latest Attempt ───────────────────────────────────────────────────────
@@ -307,14 +249,16 @@ class TestAttemptController extends Controller
     {
         $attempt = TestAttempt::where('user_id', Auth::id())
             ->where('test_id', $testId)
-            ->latest()
+            ->latest('id')
             ->first();
 
         if (!$attempt) {
             return response()->json(null);
         }
 
-        return response()->json($this->presentAttempt($attempt->load('test')));
+        $attempt->load('test');
+
+        return $this->json($this->presentAttempt($attempt, $attempt->test));
     }
 
     // ─── List Attempts ────────────────────────────────────────────────────────
@@ -323,9 +267,9 @@ class TestAttemptController extends Controller
     {
         $attempts = TestAttempt::where('user_id', Auth::id())
             ->where('test_id', $test->id)
-            ->latest()
+            ->latest('id')
             ->get();
 
-        return response()->json($attempts->map(fn ($a) => $this->presentAttempt($a)));
+        return $this->json($attempts->map(fn ($a) => $this->presentAttempt($a, $test)));
     }
 }

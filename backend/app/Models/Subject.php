@@ -27,4 +27,9 @@ class Subject extends Model
     {
         return $this->belongsTo(Exam::class);
     }
+
+    public function chapters()
+    {
+        return $this->hasMany(Chapter::class);
+    }
 }

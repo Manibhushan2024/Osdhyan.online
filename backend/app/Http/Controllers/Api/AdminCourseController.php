@@ -38,9 +38,7 @@ class AdminCourseController extends Controller
         ]);
 
         if (empty($data['slug'])) {
-            $base = \Illuminate\Support\Str::slug($data['name_en']);
-            $suffix = $data['code'] ? '-' . strtolower($data['code']) : '';
-            $data['slug'] = $base . $suffix ?: $base . '-' . uniqid();
+            $data['slug'] = \App\Support\Slug::unique('exams', $data['name_en'] . (!empty($data['code']) ? ' ' . $data['code'] : ''), 'exam');
         }
 
         return response()->json(Exam::create($data), 201);
@@ -81,9 +79,7 @@ class AdminCourseController extends Controller
         ]);
 
         if (empty($data['slug'])) {
-            $base = \Illuminate\Support\Str::slug($data['name_en']);
-            $suffix = $data['code'] ? '-' . strtolower($data['code']) : '-' . uniqid();
-            $data['slug'] = $base . $suffix;
+            $data['slug'] = \App\Support\Slug::unique('subjects', $data['name_en'] . (!empty($data['code']) ? ' ' . $data['code'] : ''), 'subject');
         }
 
         return response()->json(Subject::create($data), 201);
@@ -112,8 +108,9 @@ class AdminCourseController extends Controller
             'subject_id' => 'required|exists:subjects,id',
             'name_en' => 'required|string|max:255',
             'name_hi' => 'nullable|string|max:255',
-            'slug' => 'required|string|unique:chapters,slug',
+            'slug' => 'nullable|string|unique:chapters,slug',
         ]);
+        $data['slug'] ??= \App\Support\Slug::unique('chapters', $data['name_en'], 'chapter');
         return response()->json(['data' => Chapter::create($data)], 201);
     }
 
@@ -138,8 +135,9 @@ class AdminCourseController extends Controller
             'chapter_id' => 'required|exists:chapters,id',
             'name_en' => 'required|string|max:255',
             'name_hi' => 'nullable|string|max:255',
-            'slug' => 'required|string|unique:topics,slug',
+            'slug' => 'nullable|string|unique:topics,slug',
         ]);
+        $data['slug'] ??= \App\Support\Slug::unique('topics', $data['name_en'], 'topic');
         return response()->json(['data' => Topic::create($data)], 201);
     }
 
@@ -325,9 +323,7 @@ class AdminCourseController extends Controller
                 'status' => 'published',
             ]);
 
-            foreach (array_values($data['question_ids']) as $idx => $qid) {
-                $t->questions()->attach($qid, ['sort_order' => $idx]);
-            }
+            $t->replaceQuestions(array_values(array_unique($data['question_ids'])));
 
             return $t->load('questions');
         });

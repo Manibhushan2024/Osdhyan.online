@@ -52,7 +52,7 @@ const nextConfig: NextConfig = {
           // Permissions — disable unnecessary browser features
           {
             key: "Permissions-Policy",
-            value: "camera=(), microphone=(), geolocation=(self), interest-cohort=()",
+            value: "camera=(self), microphone=(self), geolocation=(self), interest-cohort=()",
           },
         ],
       },

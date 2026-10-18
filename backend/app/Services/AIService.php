@@ -15,17 +15,17 @@ class AIService
 
     public function __construct()
     {
-        $this->openAiApiKey = env('OPENAI_API_KEY');
-        $this->geminiApiKey = env('GEMINI_API_KEY');
+        $this->openAiApiKey = config('services.ai.openai_key') ?: null;
+        $this->geminiApiKey = config('services.ai.gemini_key') ?: null;
 
         $defaultProvider = $this->geminiApiKey ? 'gemini' : 'openai';
-        $this->provider = strtolower((string) env('AI_PROVIDER', $defaultProvider));
+        $this->provider = strtolower((string) (config('services.ai.provider') ?: $defaultProvider));
 
         $defaultModel = $this->provider === 'gemini'
-            ? env('GEMINI_MODEL', 'gemini-2.5-flash')
-            : env('OPENAI_MODEL', 'gpt-4o-mini');
+            ? config('services.ai.gemini_model', 'gemini-2.5-flash')
+            : config('services.ai.openai_model', 'gpt-4o-mini');
 
-        $this->model = (string) env('AI_MODEL', $defaultModel);
+        $this->model = (string) (config('services.ai.model') ?: $defaultModel);
     }
 
     /**
@@ -253,6 +253,17 @@ class AIService
         ]);
     }
 
+    /** Template explanation with no network call — safe on the request path. */
+    public function offlineExplanation(Question $question): string
+    {
+        return $this->getMockExplanation($question, null);
+    }
+
+    public function isConfigured(): bool
+    {
+        return $this->hasProviderCredentials();
+    }
+
     protected function hasProviderCredentials(): bool
     {
         return ($this->provider === 'gemini' && !empty($this->geminiApiKey))
@@ -392,7 +403,7 @@ class AIService
             return null;
         }
 
-        $model = $this->model ?: env('GEMINI_MODEL', 'gemini-2.5-flash');
+        $model = $this->model ?: config('services.ai.gemini_model', 'gemini-2.5-flash');
         $endpoint = "https://generativelanguage.googleapis.com/v1beta/models/{$model}:generateContent?key={$this->geminiApiKey}";
 
         $contents = [];

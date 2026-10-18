@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use App\Models\Test;
 use App\Models\TestAttempt;
+use App\Services\TestPayload;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Cache;
@@ -72,34 +73,13 @@ class TestController extends Controller
 
     public function show(Test $test)
     {
-        // Payload is user-independent, so cache the whole thing. 120s TTL keeps
-        // admin edits reasonably fresh without a cache-invalidation web.
-        $payload = Cache::remember("test_show_v3_{$test->id}", 120, function () use ($test) {
-            $test->load([
-                'subject',
-                'chapter',
-                'topic',
-                'questions.options',
-                'questions.subject',
-            ]);
+        $available = $test->status === null || in_array($test->status, ['published', 'active'], true);
+        if (!$available && !Auth::user()?->isAdminUser()) {
+            return response()->json(['message' => 'Test not found.'], 404);
+        }
 
-            $questionsCount = $test->questions->count();
-            $test->questions_count = $questionsCount;
-            $test->mode = $test->mode ?: ($test->category ?: 'full_mock');
-            $test->total_marks = $test->total_marks ?: $test->questions->sum(function ($question) use ($test) {
-                return $question->pivot?->marks ?? ($test->question_mark ?? 1);
-            });
-
-            // Pre-attempt payload: never ship answers or explanations, and keep
-            // Hindi text unescaped (escaped Devanagari inflates the JSON ~6x).
-            $test->questions->each(function ($question) {
-                $question->makeHidden(['explanation_en', 'explanation_hi']);
-                $question->options->each->makeHidden('is_correct');
-            });
-
-            return $test->toArray();
-        });
-
-        return response()->json($payload, 200, [], JSON_UNESCAPED_UNICODE);
+        // User-independent and cached with a stampede lock: when a mock opens,
+        // thousands of students request the same payload at once.
+        return response()->json(TestPayload::student($test), 200, [], JSON_UNESCAPED_UNICODE);
     }
 }

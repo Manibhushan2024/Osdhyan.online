@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Question;
 use App\Models\Subject;
 use App\Models\Test;
+use App\Services\TestPayload;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -95,15 +96,13 @@ class AdminTestController extends Controller
             if (!empty($data['question_ids'])) {
                 $allQIds = array_merge($allQIds, $data['question_ids']);
             }
-            $allQIds = array_unique($allQIds);
+            $allQIds = array_values(array_unique($allQIds));
 
-            foreach (array_values($allQIds) as $idx => $qid) {
-                $t->questions()->attach($qid, ['sort_order' => $idx]);
-            }
+            $t->replaceQuestions($allQIds);
 
             // Update total_marks based on question count if not provided
-            if (!$data['total_marks'] && count($allQIds)) {
-                $t->update(['total_marks' => count($allQIds) * ($data['question_mark'] ?? 1)]);
+            if (empty($data['total_marks']) && count($allQIds)) {
+                $t->refreshTotalMarks();
             }
 
             return $t->load('exam:id,name_en,code')->loadCount(['questions', 'attempts']);
@@ -126,6 +125,7 @@ class AdminTestController extends Controller
             'duration_sec'      => 'nullable|integer|min:60',
             'total_marks'       => 'nullable|numeric',
             'negative_marking'  => 'nullable|numeric|min:0',
+            'question_mark'     => 'nullable|numeric|min:0',
             'passing_marks'     => 'nullable|numeric',
             'is_free'           => 'nullable|boolean',
             'shuffle_questions' => 'nullable|boolean',
@@ -140,12 +140,31 @@ class AdminTestController extends Controller
         ]);
 
         DB::transaction(function () use ($test, $data) {
+            $oldNegative = (float) $test->negative_marking;
+            $oldMark     = (float) $test->question_mark;
+
             $test->update(array_intersect_key($data, array_flip([
                 'exam_id', 'name_en', 'name_hi', 'description_en',
                 'mode', 'category', 'duration_sec', 'total_marks', 'negative_marking',
-                'passing_marks', 'is_free', 'shuffle_questions', 'max_attempts',
+                'question_mark', 'passing_marks', 'is_free', 'shuffle_questions', 'max_attempts',
                 'year', 'paper_type', 'status',
             ])));
+
+            // Keep per-question marks in step with test-level marking changes
+            // (only rows still on the old test-level value are touched).
+            if (array_key_exists('negative_marking', $data) && (float) $data['negative_marking'] !== $oldNegative) {
+                DB::table('question_test')->where('test_id', $test->id)
+                    ->where('negative_marks', $oldNegative)
+                    ->update(['negative_marks' => (float) $data['negative_marking']]);
+            }
+            if (array_key_exists('question_mark', $data) && (float) $data['question_mark'] !== $oldMark) {
+                DB::table('question_test')->where('test_id', $test->id)
+                    ->where('marks', $oldMark)
+                    ->update(['marks' => (float) $data['question_mark']]);
+                if (empty($data['total_marks'])) {
+                    $test->refreshTotalMarks();
+                }
+            }
 
             // Re-sync questions if provided
             $allQIds = [];
@@ -158,14 +177,14 @@ class AdminTestController extends Controller
                 $allQIds = array_merge($allQIds, $data['question_ids']);
             }
             if ($allQIds) {
-                $allQIds = array_unique($allQIds);
-                $syncData = [];
-                foreach (array_values($allQIds) as $idx => $qid) {
-                    $syncData[$qid] = ['sort_order' => $idx];
+                $test->replaceQuestions(array_values(array_unique($allQIds)));
+                if (empty($data['total_marks'])) {
+                    $test->refreshTotalMarks();
                 }
-                $test->questions()->sync($syncData);
             }
         });
+
+        TestPayload::forget($test->id);
 
         return response()->json(
             $test->fresh()->load('exam:id,name_en,code')->loadCount(['questions', 'attempts'])
@@ -175,6 +194,7 @@ class AdminTestController extends Controller
     public function destroy(int $id): JsonResponse
     {
         Test::findOrFail($id)->delete();
+        TestPayload::forget($id);
         return response()->json(['message' => 'Test deleted.']);
     }
 
@@ -183,6 +203,7 @@ class AdminTestController extends Controller
         $test = Test::findOrFail($id);
         $test->status = $test->status === 'published' ? 'draft' : 'published';
         $test->save();
+        TestPayload::forget($test->id);
 
         return response()->json([
             'message' => $test->status === 'published' ? 'Test published.' : 'Test moved to draft.',
@@ -192,7 +213,7 @@ class AdminTestController extends Controller
 
     public function duplicate(int $id): JsonResponse
     {
-        $original = Test::with('questions')->findOrFail($id);
+        $original = Test::findOrFail($id);
 
         $copy = DB::transaction(function () use ($original) {
             $t = $original->replicate();
@@ -200,8 +221,12 @@ class AdminTestController extends Controller
             $t->status  = 'draft';
             $t->save();
 
-            foreach ($original->questions as $q) {
-                $t->questions()->attach($q->id, ['sort_order' => $q->pivot->sort_order ?? 0]);
+            // Copy pivot rows verbatim so section marks survive duplication.
+            $rows = DB::table('question_test')->where('test_id', $original->id)
+                ->orderBy('sort_order')->get(['question_id', 'sort_order', 'marks', 'negative_marks'])
+                ->map(fn ($r) => (array) $r + ['test_id' => $t->id])->all();
+            foreach (array_chunk($rows, 500) as $chunk) {
+                DB::table('question_test')->insert($chunk);
             }
             return $t;
         });

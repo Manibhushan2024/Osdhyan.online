@@ -18,9 +18,8 @@ use Illuminate\Support\Facades\Route;
 | Auth Endpoints — rate-limited per IP
 |--------------------------------------------------------------------------
 |
-| throttle:10,1   → 10 requests per 1 minute
-| throttle:5,1    → 5 requests per 1 minute
-| throttle:60,1   → 60 requests per 1 minute (generous, for normal browsing)
+| Named limiters (login, otp, register, api, answers, ai) are defined in
+| AppServiceProvider::configureRateLimiting().
 |
 | Laravel's built-in RateLimiter middleware adds X-RateLimit-* headers.
 | The AuthController also uses Laravel's RateLimiter facade for per-action
@@ -56,19 +55,19 @@ Route::get('/health/deep', function () {
     return response()->json($out);
 });
 
-Route::middleware('throttle:5,1')->group(function () {
+Route::middleware('throttle:login')->group(function () {
     Route::post('/auth/login', [AuthController::class, 'login']);
     Route::post('/auth/admin/login', [AuthController::class, 'adminLogin']);
     Route::post('/auth/forgot-password', [AuthController::class, 'forgotPassword']);
     Route::post('/auth/reset-password', [AuthController::class, 'resetPassword']);
 });
 
-Route::middleware('throttle:3,1')->group(function () {
+Route::middleware('throttle:otp')->group(function () {
     Route::post('/auth/send-otp', [AuthController::class, 'sendOtp']);
     Route::post('/auth/verify-otp', [AuthController::class, 'verifyOtp']);
 });
 
-Route::middleware('throttle:10,1')->group(function () {
+Route::middleware('throttle:register')->group(function () {
     Route::post('/auth/register', [AuthController::class, 'register']);
 });
 
@@ -81,7 +80,7 @@ Route::get('/auth/google/callback', [AuthController::class, 'handleGoogleCallbac
 |--------------------------------------------------------------------------
 */
 
-Route::middleware(['auth:sanctum', 'throttle:60,1'])->group(function () {
+Route::middleware(['auth:sanctum', 'throttle:api'])->group(function () {
 
     Route::get('/user', function (Request $request) {
         return $request->user();
@@ -105,7 +104,7 @@ Route::middleware(['auth:sanctum', 'throttle:60,1'])->group(function () {
     Route::get('/attempts/{attempt}', [TestAttemptController::class, 'show']);
 
     // Answer sync is high-frequency — give it a higher limit
-    Route::middleware('throttle:120,1')->group(function () {
+    Route::middleware('throttle:answers')->group(function () {
         Route::post('/attempts/{attempt}/responses', [TestAttemptController::class, 'saveResponse']);
         Route::post('/attempts/{attempt}/sync', [TestAttemptController::class, 'syncResponses']);
     });
@@ -113,7 +112,7 @@ Route::middleware(['auth:sanctum', 'throttle:60,1'])->group(function () {
     Route::post('/attempts/{attempt}/complete', [TestAttemptController::class, 'completeAttempt']);
 
     // AI chat is expensive — tighter limit
-    Route::middleware('throttle:20,1')->group(function () {
+    Route::middleware('throttle:ai')->group(function () {
         Route::post('/attempts/{attempt}/assistant-chat', [AnalyticsController::class, 'assistantChat']);
     });
 
@@ -222,6 +221,12 @@ Route::middleware(['auth:sanctum', 'throttle:60,1'])->group(function () {
         Route::post('/admin/tests/{id}/publish', [AdminTestController::class, 'publish']);
         Route::post('/admin/tests/{id}/duplicate', [AdminTestController::class, 'duplicate']);
         Route::post('/admin/tests/auto-assign', [AdminTestController::class, 'autoAssign']);
+
+        // Bulk import (.csv / .xlsx) — dry_run=1 previews without writing
+        Route::get('/admin/bulk-import/template/{type}', [\App\Http\Controllers\Api\AdminBulkImportController::class, 'template']);
+        Route::post('/admin/bulk-import/questions', [\App\Http\Controllers\Api\AdminBulkImportController::class, 'importQuestions']);
+        Route::post('/admin/bulk-import/syllabus', [\App\Http\Controllers\Api\AdminBulkImportController::class, 'importSyllabus']);
+        Route::post('/admin/bulk-import/tests', [\App\Http\Controllers\Api\AdminBulkImportController::class, 'importTests']);
 
         Route::post('/admin/automation/token', [\App\Http\Controllers\Api\AdminAutomationController::class, 'createAutomationToken']);
         Route::post('/admin/automation/import-mock-test', [\App\Http\Controllers\Api\AdminAutomationController::class, 'importMockTest']);

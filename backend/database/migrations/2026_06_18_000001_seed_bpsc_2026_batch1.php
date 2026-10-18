@@ -22,6 +22,11 @@ return new class extends Migration
 
     public function up(): void
     {
+        // Content seed, not schema — keep the automated test database empty.
+        if (app()->environment('testing')) {
+            return;
+        }
+
         $file = database_path('data/bpsc_batch1.json');
         if (!is_file($file)) {
             return; // data file not shipped — skip silently

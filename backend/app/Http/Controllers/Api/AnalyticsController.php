@@ -25,17 +25,47 @@ class AnalyticsController extends Controller
     {
         $userId = $request->user()->id;
 
-        $attempts = TestAttempt::with(['test', 'responses'])
+        // Every dashboard page asks for this; cache per user and bust it when
+        // the student submits a test (see TestAttemptController::finalize).
+        $payload = Cache::remember("analytics_overview_{$userId}", 300, fn () => $this->buildOverview($userId));
+
+        // AI insights are cached separately so they can arrive after the job runs.
+        $aiInsights = Cache::get("ai_insights_{$userId}");
+        if (!$aiInsights && $payload['tests_completed'] >= 1 && $this->aiService->isConfigured()
+            && Cache::add("ai_insights_pending_{$userId}", 1, 900)) {
+            // Cache::add makes this dispatch at most once per 15 min per user
+            // instead of on every dashboard view.
+            $topicData = $this->getTopicData($userId);
+
+            GenerateAIInsightsJob::dispatch(
+                $userId,
+                ['accuracy_percentage' => $payload['accuracy'], 'total_tests' => $payload['tests_completed']],
+                $topicData['weaknesses']->pluck('topic_name')->toArray(),
+                $topicData['strengths']->pluck('topic_name')->toArray()
+            );
+        }
+
+        $payload['ai_insights']       = $aiInsights;
+        $payload['ai_insights_ready'] = $aiInsights !== null;
+
+        return response()->json($payload);
+    }
+
+    protected function buildOverview(int $userId): array
+    {
+        // Columns only — no responses eager-load (that pulled every answer
+        // the student ever gave just to count them).
+        $attempts = TestAttempt::with('test:id,name_en,total_marks')
             ->where('user_id', $userId)
             ->where('status', 'completed')
             ->latest('completed_at')
-            ->get();
+            ->get(['id', 'test_id', 'total_score', 'time_taken_sec', 'metadata', 'completed_at']);
 
         $testsCompleted   = $attempts->count();
         $studyTimeSec     = (int) $attempts->sum('time_taken_sec');
         $accuracy         = round((float) $attempts->avg(fn ($a) => (float) data_get($a->metadata, 'accuracy', 0)), 2);
         $averageScore     = round((float) $attempts->avg('total_score'), 2);
-        $responseCount    = (int) $attempts->sum(fn ($a) => $a->responses->count());
+        $responseCount    = (int) $attempts->sum(fn ($a) => (int) data_get($a->metadata, 'correct_count', 0) + (int) data_get($a->metadata, 'incorrect_count', 0));
         $avgTimePerQ      = $responseCount > 0 ? round($studyTimeSec / $responseCount, 2) : null;
 
         $recentActivity = $attempts->take(5)->map(fn (TestAttempt $a) => [
@@ -59,23 +89,7 @@ class AnalyticsController extends Controller
 
         $streakDays = $this->computeStudyStreak($attempts);
 
-        // ── AI Insights (async from cache) ────────────────────────────────────
-        $insightsCacheKey = "ai_insights_{$userId}";
-        $aiInsights       = Cache::get($insightsCacheKey);
-
-        if (!$aiInsights && $testsCompleted >= 1) {
-            // Build minimal stats so job can run independently
-            $topicData = $this->getTopicData($userId);
-
-            GenerateAIInsightsJob::dispatch(
-                $userId,
-                ['accuracy_percentage' => $accuracy, 'total_tests' => $testsCompleted],
-                $topicData['weaknesses']->pluck('topic_name')->toArray(),
-                $topicData['strengths']->pluck('topic_name')->toArray()
-            );
-        }
-
-        return response()->json([
+        return [
             'accuracy'          => $accuracy,
             'tests_completed'   => $testsCompleted,
             'study_time_sec'    => $studyTimeSec,
@@ -86,8 +100,8 @@ class AnalyticsController extends Controller
                     ->sum('time_taken_sec') / 60,
                 2
             ),
-            'recent_activity'   => $recentActivity,
-            'score_trend'       => $scoreTrend,
+            'recent_activity'   => $recentActivity->all(),
+            'score_trend'       => $scoreTrend->all(),
             'overall_accuracy'  => $accuracy,
             'stats' => [
                 'total_tests'              => $testsCompleted,
@@ -104,10 +118,7 @@ class AnalyticsController extends Controller
             'ai_time_suggestion' => $avgTimePerQ
                 ? "Average response time is {$avgTimePerQ}s per question. Keep difficult questions under strict review to improve speed."
                 : null,
-            // Async AI insights (null while job is running, populated after ~30s)
-            'ai_insights'        => $aiInsights,
-            'ai_insights_ready'  => $aiInsights !== null,
-        ]);
+        ];
     }
 
     // ─── Topic Performance ────────────────────────────────────────────────────
@@ -121,11 +132,23 @@ class AnalyticsController extends Controller
 
     // ─── Question Explanation (async-first) ───────────────────────────────────
 
-    public function getQuestionExplanation(Question $question)
+    public function getQuestionExplanation(Request $request, Question $question)
     {
-        $question->load(['options', 'subject', 'chapter', 'topic']);
-        $cacheKey = "ai_explanation_{$question->id}";
+        $user = $request->user();
 
+        // Explanations reveal the answer: only after the student has
+        // submitted a test containing this question.
+        if (!$user->isAdminUser()) {
+            $allowed = TestAttempt::where('user_id', $user->id)
+                ->where('status', 'completed')
+                ->whereIn('test_id', fn ($q) => $q->select('test_id')->from('question_test')->where('question_id', $question->id))
+                ->exists();
+            if (!$allowed) {
+                return response()->json(['message' => 'Explanations are available after you submit the test.'], 403);
+            }
+        }
+
+        $cacheKey = "ai_explanation_{$question->id}";
         $cached = Cache::get($cacheKey);
 
         if ($cached) {
@@ -137,17 +160,28 @@ class AnalyticsController extends Controller
             ]);
         }
 
-        // Dispatch background job to generate; return mock immediately
-        GenerateAIExplanationJob::dispatch($question->id);
+        $generating = false;
+        if ($this->aiService->isConfigured() && Cache::add("ai_explanation_pending_{$question->id}", 1, 600)) {
+            GenerateAIExplanationJob::dispatch($question->id);
+            $generating = true;
+        }
 
-        $fallback = $this->aiService->generateExplanation($question);
-        $decoded  = json_decode($fallback, true);
+        // Never block the request on an AI call: serve the stored explanation
+        // (or the offline template) and let the job fill the cache.
+        if ($question->explanation_en || $question->explanation_hi) {
+            $explanation = ['step_by_step' => $question->explanation_en ?: $question->explanation_hi];
+        } else {
+            $question->load(['options', 'subject', 'chapter', 'topic']);
+            $fallback = $this->aiService->offlineExplanation($question);
+            $decoded = json_decode($fallback, true);
+            $explanation = is_array($decoded) ? $decoded : ['step_by_step' => $fallback];
+        }
 
         return response()->json([
             'question_id' => $question->id,
-            'explanation' => is_array($decoded) ? $decoded : ['step_by_step' => $fallback],
+            'explanation' => $explanation,
             'from_cache'  => false,
-            'generating'  => true,
+            'generating'  => $generating,
         ]);
     }
 

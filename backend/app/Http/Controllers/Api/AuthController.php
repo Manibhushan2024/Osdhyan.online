@@ -24,7 +24,11 @@ class AuthController extends Controller
      */
     private function throttleKey(string $action, Request $request): string
     {
-        return $action . '|' . $request->ip();
+        // IP + identifier: students behind one shared IP (coaching centre,
+        // carrier NAT) must not lock each other out.
+        $identity = strtolower(trim((string) ($request->input('login') ?? $request->input('email') ?? $request->input('phone') ?? '')));
+
+        return $action . '|' . $request->ip() . '|' . sha1($identity);
     }
 
     /**

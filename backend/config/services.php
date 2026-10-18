@@ -41,4 +41,21 @@ return [
         'redirect' => env('GOOGLE_REDIRECT_URI'),
     ],
 
+    // Read through config() so values survive `php artisan config:cache`
+    // (env() returns null at runtime once config is cached).
+    'ai' => [
+        'provider'      => env('AI_PROVIDER'),
+        'model'         => env('AI_MODEL'),
+        'openai_key'    => env('OPENAI_API_KEY'),
+        'openai_model'  => env('OPENAI_MODEL', 'gpt-4o-mini'),
+        'gemini_key'    => env('GEMINI_API_KEY'),
+        'gemini_model'  => env('GEMINI_MODEL', 'gemini-2.5-flash'),
+    ],
+
+    'sms' => [
+        'provider'  => env('SMS_PROVIDER', 'log'),
+        'api_key'   => env('SMS_API_KEY'),
+        'sender_id' => env('SMS_SENDER_ID', 'OSDHYN'),
+    ],
+
 ];

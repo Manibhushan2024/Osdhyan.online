@@ -29,7 +29,7 @@ import { Logo } from '@/components/ui/Logo';
 interface NavItem {
     name: string;
     href: string;
-    icon: any;
+    icon: React.ElementType;
     badge?: string;
     color?: string;
 }
@@ -139,6 +139,15 @@ export default function Sidebar() {
             </div>
 
             <div className="mt-auto p-8 space-y-4">
+                {user?.is_admin && (
+                    <Link
+                        href="/admin"
+                        className="flex items-center gap-3 px-6 py-4 w-full rounded-2xl text-foreground/40 hover:text-accent-blue hover:bg-accent-blue/10 dark:hover:bg-accent-blue/10 transition-all font-black uppercase tracking-widest text-[10px]"
+                    >
+                        <Settings className="h-4 w-4" />
+                        Admin Panel
+                    </Link>
+                )}
                 {user ? (
                     <button
                         onClick={() => logout()}

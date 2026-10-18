@@ -1,35 +1,49 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Sidebar from './Sidebar';
 import Navbar from './Navbar';
 import { Loader2, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useAuth } from '@/components/providers/AuthProvider';
-import { useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
+import RouteGuard from '@/components/auth/RouteGuard';
+
+/**
+ * Dashboard routes that render a dedicated guest view (sign-in prompts /
+ * auth modals) and therefore stay browsable without an account. Every other
+ * /dashboard route is wrapped in RouteGuard and redirects to
+ * /auth/login?redirect=<path> when logged out.
+ */
+const GUEST_ROUTES: RegExp[] = [
+    /^\/dashboard\/?$/,
+    /^\/dashboard\/tests\/?$/,
+    /^\/dashboard\/test-series\/?$/,
+    /^\/dashboard\/test-series\/(?!enrolled\/?$)[^/]+\/?$/,
+    /^\/dashboard\/live\/?$/,
+    /^\/dashboard\/live\/(?!manage\/?$)[^/]+\/?$/,
+    /^\/dashboard\/focus\/?$/,
+];
+
+function isGuestRoute(pathname: string | null): boolean {
+    if (!pathname) return false;
+    return GUEST_ROUTES.some((re) => re.test(pathname));
+}
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-    const { user, loading } = useAuth();
-    const router = useRouter();
+    const { loading } = useAuth();
+    const pathname = usePathname();
+    const guestAllowed = isGuestRoute(pathname);
 
-    useEffect(() => {
-        if (loading) return;
-        // Admins belong in the Filament admin panel on the backend (port 8000)
-        if (user && user.is_admin) {
-            window.location.href = 'http://localhost:8000/admin';
-        }
-    }, [loading, user, router]);
-
-    // Show spinner only while resolving auth state or redirecting an admin
-    if (loading || (user && user.is_admin)) {
+    // Admins can use the student dashboard too (the Next.js admin panel lives at /admin).
+    if (loading) {
         return (
             <div className="min-h-screen bg-background flex items-center justify-center">
                 <Loader2 className="h-8 w-8 text-blue-600 animate-spin" />
             </div>
         );
     }
-    // user === null means guest — allowed to browse freely
 
     return (
         <div className="min-h-screen bg-background transition-colors duration-500">
@@ -67,7 +81,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                 <Navbar onMenuClick={() => setIsMobileMenuOpen(true)} />
                 <main className="py-8">
                     <div className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-                        {children}
+                        {guestAllowed ? children : <RouteGuard>{children}</RouteGuard>}
                     </div>
                 </main>
             </div>

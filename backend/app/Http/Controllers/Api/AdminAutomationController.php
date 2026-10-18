@@ -76,9 +76,7 @@ class AdminAutomationController extends Controller
                 'total_marks' => count($questionIds) * $questionMark,
             ]);
 
-            foreach (array_values($questionIds) as $idx => $qid) {
-                $test->questions()->attach($qid, ['sort_order' => $idx]);
-            }
+            $test->replaceQuestions($questionIds);
 
             $series->tests()->syncWithoutDetaching([$test->id]);
 
@@ -86,6 +84,7 @@ class AdminAutomationController extends Controller
         });
 
         Cache::forget("exam_{$exam->id}_full");
+        Cache::forget("exam_{$exam->id}_full_v2");
 
         return response()->json(['message' => 'Import successful.', 'data' => $result], 201);
     }

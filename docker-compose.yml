@@ -67,8 +67,9 @@ services:
       REDIS_HOST: redis
       REDIS_PORT: 6379
       SANCTUM_STATEFUL_DOMAINS: "localhost:3000,localhost"
+      FPM_MAX_CHILDREN: "20"
     ports:
-      - "8000:80"
+      - "8000:10000"
 
   portal:
     build:

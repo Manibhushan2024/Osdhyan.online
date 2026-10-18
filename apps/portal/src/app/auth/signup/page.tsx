@@ -8,6 +8,7 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { Logo } from '@/components/ui/Logo';
 import { useAuth } from '@/components/providers/AuthProvider';
+import { redirectFromLocation } from '@/lib/redirect';
 
 export default function SignupPage() {
     const router = useRouter();
@@ -46,9 +47,10 @@ export default function SignupPage() {
                 ...rest,
                 password_confirmation: confirmPassword,
             });
-            await authenticateUser(res.data.access_token, res.data.user);
-        } catch (err: any) {
-            setError(err.response?.data?.message || 'Signup failed. Please check your details.');
+            authenticateUser(res.data.access_token, res.data.user, redirectFromLocation('/dashboard'));
+        } catch (err: unknown) {
+            const message = (err as { response?: { data?: { message?: string } } })?.response?.data?.message;
+            setError(message || 'Signup failed. Please check your details.');
         } finally {
             setLoading(false);
         }

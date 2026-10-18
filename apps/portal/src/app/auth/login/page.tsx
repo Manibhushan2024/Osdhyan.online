@@ -8,6 +8,7 @@ import Link from 'next/link';
 import { Logo } from '@/components/ui/Logo';
 import { Loader2, ArrowRight, Lock, UserCircle } from 'lucide-react';
 import { useAuth } from '@/components/providers/AuthProvider';
+import { redirectFromLocation, rememberOAuthRedirect } from '@/lib/redirect';
 
 export default function LoginPage() {
     const router = useRouter();
@@ -24,9 +25,11 @@ export default function LoginPage() {
         setError('');
         try {
             const res = await api.post('/auth/login', { login, password });
-            await authenticateUser(res.data.access_token, res.data.user);
-        } catch (err: any) {
-            setError(err.response?.data?.message || 'Invalid credentials. Please try again.');
+            // Honour ?redirect= (same-origin relative paths only).
+            authenticateUser(res.data.access_token, res.data.user, redirectFromLocation('/dashboard'));
+        } catch (err: unknown) {
+            const message = (err as { response?: { data?: { message?: string } } })?.response?.data?.message;
+            setError(message || 'Invalid credentials. Please try again.');
         } finally {
             setLoading(false);
         }
@@ -137,6 +140,7 @@ export default function LoginPage() {
                                 onClick={async () => {
                                     setGoogleLoading(true);
                                     try {
+                                        rememberOAuthRedirect(redirectFromLocation(''));
                                         const res = await api.get('/auth/google/redirect');
                                         window.location.href = res.data.url;
                                     } catch {

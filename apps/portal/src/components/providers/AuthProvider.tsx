@@ -2,7 +2,6 @@
 
 import { createContext, useContext, useEffect, useState } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
-import axios from 'axios';
 
 type User = {
     id: number;
@@ -31,18 +30,7 @@ type AuthContextType = {
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
-const API_BASE = (process.env.NEXT_PUBLIC_API_URL ?? '').replace(/\/api$/, '');
-
-// Initialize CSRF cookie from Sanctum
-const initCsrf = async () => {
-    try {
-        // Sanctum CSRF endpoint is typically at the root, not under /api
-        const csrfBase = API_BASE.replace(/\/api$/, '');
-        await axios.get(`${csrfBase}/sanctum/csrf-cookie`, { withCredentials: true });
-    } catch (e) {
-        console.warn('CSRF cookie init failed:', e);
-    }
-};
+// Auth is Bearer-token only (see src/lib/api.ts) — no Sanctum CSRF cookie needed.
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
     const [user, setUser] = useState<User | null>(null);
@@ -86,8 +74,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
                 // Allow admin users to also have a student session.
                 nextUser = parsedUser;
-                // Initialize CSRF cookie on app boot if already logged in
-                initCsrf();
             } catch {
                 localStorage.removeItem(tokenKey);
                 localStorage.removeItem(userKey);
@@ -111,20 +97,22 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         };
     }, [isAdminRoute]);
 
-    const login = async (token: string, user: User, redirectPath = '/dashboard') => {
-        const isAdminSession = !!user?.is_admin && (redirectPath.startsWith('/admin') || !!user?.admin_role);
+    const login = (token: string, user: User, redirectPath = '/dashboard') => {
+        const targetsAdmin = redirectPath.startsWith('/admin');
+        const isAdminSession = !!user?.is_admin && (targetsAdmin || !!user?.admin_role);
 
         if (isAdminSession) {
             localStorage.setItem('admin_auth_token', token);
             localStorage.setItem('admin_user', JSON.stringify(user));
-        } else {
+        }
+        // Admins may also use the student dashboard, so any login that lands
+        // outside /admin also establishes the student session.
+        if (!targetsAdmin || !isAdminSession) {
             localStorage.setItem('auth_token', token);
             localStorage.setItem('user', JSON.stringify(user));
         }
 
         setUser(user);
-        // Initialize CSRF cookie before navigating
-        await initCsrf();
         router.push(redirectPath);
     };
 

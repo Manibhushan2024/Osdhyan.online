@@ -42,6 +42,11 @@ export default function AdminBulkImportPage() {
     const [qLoading, setQLoading] = useState(false);
     const [qResult, setQResult] = useState<DryRunResult | null>(null);
     const qFileRef = useRef<HTMLInputElement>(null);
+    const [qMakeTest, setQMakeTest] = useState(false);
+    const [qTestName, setQTestName] = useState('');
+    const [qDuration, setQDuration] = useState('60');
+    const [qMark, setQMark] = useState('1');
+    const [qNegative, setQNegative] = useState('0.25');
 
     // Syllabus import state
     const [sFile, setSFile] = useState<File | null>(null);
@@ -74,7 +79,7 @@ export default function AdminBulkImportPage() {
 
     // Submit questions import
     const submitQuestions = async () => {
-        if (!qFile) { toast.error('Select a CSV file first'); return; }
+        if (!qFile) { toast.error('Select a CSV or Excel file first'); return; }
         setQLoading(true);
         setQResult(null);
         try {
@@ -83,11 +88,19 @@ export default function AdminBulkImportPage() {
             if (qExamCode.trim()) form.append('exam_code', qExamCode.trim().toUpperCase());
             form.append('dry_run', qDryRun ? '1' : '0');
             form.append('is_published', qPublished ? '1' : '0');
+            if (qMakeTest) {
+                if (!qTestName.trim()) { toast.error('Enter a test name'); setQLoading(false); return; }
+                form.append('test_name', qTestName.trim());
+                form.append('duration_min', qDuration || '60');
+                form.append('question_mark', qMark || '1');
+                form.append('negative_marking', qNegative || '0');
+            }
             const res = await api.post('/admin/bulk-import/questions', form, {
                 headers: { 'Content-Type': 'multipart/form-data' }
             });
             setQResult(res.data);
-            if (!qDryRun && res.data.created > 0) toast.success(`${res.data.created} questions imported!`);
+            if (!qDryRun && res.data.test_id) toast.success(`Test "${res.data.test_name}" ready with ${res.data.question_count} questions`);
+            else if (!qDryRun && res.data.created > 0) toast.success(`${res.data.created} questions imported!`);
         } catch (err: any) {
             toast.error(err?.response?.data?.message ?? 'Import failed');
         } finally {
@@ -97,7 +110,7 @@ export default function AdminBulkImportPage() {
 
     // Submit tests import
     const submitTests = async () => {
-        if (!tFile) { toast.error('Select a CSV file first'); return; }
+        if (!tFile) { toast.error('Select a CSV or Excel file first'); return; }
         setTLoading(true);
         setTResult(null);
         try {
@@ -118,7 +131,7 @@ export default function AdminBulkImportPage() {
 
     // Submit syllabus import
     const submitSyllabus = async () => {
-        if (!sFile) { toast.error('Select a CSV file first'); return; }
+        if (!sFile) { toast.error('Select a CSV or Excel file first'); return; }
         setSLoading(true);
         setSResult(null);
         try {
@@ -142,7 +155,7 @@ export default function AdminBulkImportPage() {
             {/* Header */}
             <div>
                 <h1 className="text-3xl font-black text-white tracking-tight italic uppercase">Bulk Import</h1>
-                <p className="text-white/40 mt-1 font-bold text-sm">Upload hundreds of questions or syllabus entries via CSV in one go.</p>
+                <p className="text-white/40 mt-1 font-bold text-sm">Upload hundreds of questions, syllabus entries or whole tests from a CSV or Excel (.xlsx) sheet. Always preview with Dry Run first.</p>
             </div>
 
             {/* Tabs */}
@@ -172,7 +185,7 @@ export default function AdminBulkImportPage() {
                     <div className="bg-indigo-500/5 border border-indigo-500/20 rounded-2xl p-5 space-y-3">
                         <div className="flex items-center gap-2">
                             <Info className="h-4 w-4 text-indigo-400 shrink-0" />
-                            <p className="text-[11px] font-black text-indigo-400 uppercase tracking-widest">CSV Column Reference</p>
+                            <p className="text-[11px] font-black text-indigo-400 uppercase tracking-widest">Column Reference (CSV or Excel)</p>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                             {[
@@ -180,12 +193,15 @@ export default function AdminBulkImportPage() {
                                 { col: 'option_a … option_e', req: true, desc: 'Answer options (at least A & B)' },
                                 { col: 'correct_option', req: true, desc: 'Correct answer: A/B/C/D/E or 1/2/3/4/5' },
                                 { col: 'exam_code', req: false, desc: 'Exam code (or set globally below)' },
-                                { col: 'subject_name_en', req: true, desc: 'Subject name — auto-created if missing' },
+                                { col: 'subject_name_en', req: false, desc: 'Subject name — auto-created if missing' },
                                 { col: 'chapter_name_en', req: false, desc: 'Chapter — auto-created if missing' },
                                 { col: 'topic_name_en', req: false, desc: 'Topic — auto-created if missing' },
                                 { col: 'explanation_en', req: false, desc: 'Answer explanation' },
                                 { col: 'difficulty', req: false, desc: 'easy / medium / hard (default: medium)' },
                                 { col: 'question_hi', req: false, desc: 'Hindi question (falls back to English)' },
+                                { col: 'option_a_hi … option_d_hi', req: false, desc: 'Hindi options' },
+                                { col: 'explanation_hi', req: false, desc: 'Hindi explanation' },
+                                { col: 'marks / negative_marks', req: false, desc: 'Per-question marks (else test defaults)' },
                             ].map(({ col, req, desc }) => (
                                 <div key={col} className="flex items-start gap-2">
                                     <code className={cn("text-[9px] font-black px-1.5 py-0.5 rounded shrink-0", req ? "bg-indigo-500/20 text-indigo-400" : "bg-white/5 text-white/30")}>{col}</code>
@@ -193,6 +209,9 @@ export default function AdminBulkImportPage() {
                                 </div>
                             ))}
                         </div>
+                        <p className="text-[9px] text-white/30">
+                            Headers are matched loosely (e.g. &quot;Option A&quot;, &quot;Answer&quot;, &quot;Subject&quot; also work). For Hindi text in Excel, save as <strong className="text-white/50">.xlsx</strong> or <strong className="text-white/50">CSV UTF-8</strong>. Questions whose text already exists in the bank are reused, not duplicated.
+                        </p>
                         <button
                             onClick={() => downloadTemplate('questions')}
                             className="flex items-center gap-2 text-[10px] font-black text-indigo-400 hover:text-indigo-300 uppercase tracking-widest transition-all"
@@ -205,7 +224,7 @@ export default function AdminBulkImportPage() {
                     <div className="bg-slate-900 border border-indigo-500/10 rounded-3xl p-8 space-y-6">
                         {/* File upload */}
                         <div>
-                            <label className="text-[10px] font-black text-white/40 uppercase tracking-widest mb-3 block">CSV File *</label>
+                            <label className="text-[10px] font-black text-white/40 uppercase tracking-widest mb-3 block">CSV / Excel File *</label>
                             <div
                                 onClick={() => qFileRef.current?.click()}
                                 className={cn(
@@ -222,12 +241,12 @@ export default function AdminBulkImportPage() {
                                 ) : (
                                     <>
                                         <Upload className="h-8 w-8 text-white/20" />
-                                        <p className="text-[11px] font-black text-white/30">Click to select CSV file</p>
+                                        <p className="text-[11px] font-black text-white/30">Click to select CSV or Excel (.xlsx) file</p>
                                         <p className="text-[9px] text-white/20">Max 50 MB</p>
                                     </>
                                 )}
                             </div>
-                            <input ref={qFileRef} type="file" accept=".csv,.txt" className="hidden" onChange={e => setQFile(e.target.files?.[0] ?? null)} />
+                            <input ref={qFileRef} type="file" accept=".csv,.txt,.xlsx,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" className="hidden" onChange={e => setQFile(e.target.files?.[0] ?? null)} />
                         </div>
 
                         {/* Options row */}
@@ -265,10 +284,57 @@ export default function AdminBulkImportPage() {
                                     >
                                         <span className={cn("absolute top-0.5 h-4 w-4 rounded-full bg-white shadow transition-all", qPublished ? "left-4" : "left-0.5")} />
                                     </div>
-                                    <span className="text-[10px] font-black text-white/50 uppercase tracking-widest">Publish questions immediately</span>
+                                    <span className="text-[10px] font-black text-white/50 uppercase tracking-widest">Publish test immediately</span>
+                                </label>
+                                <label className="flex items-center gap-3 cursor-pointer">
+                                    <div
+                                        onClick={() => setQMakeTest(p => !p)}
+                                        className={cn(
+                                            "h-5 w-9 rounded-full transition-all relative",
+                                            qMakeTest ? "bg-emerald-600" : "bg-white/10"
+                                        )}
+                                    >
+                                        <span className={cn("absolute top-0.5 h-4 w-4 rounded-full bg-white shadow transition-all", qMakeTest ? "left-4" : "left-0.5")} />
+                                    </div>
+                                    <span className="text-[10px] font-black text-white/50 uppercase tracking-widest">Also create a test from this sheet</span>
                                 </label>
                             </div>
                         </div>
+
+                        {qMakeTest && (
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 bg-emerald-500/5 border border-emerald-500/20 rounded-2xl p-4">
+                                <div className="md:col-span-3">
+                                    <label className="text-[10px] font-black text-white/40 uppercase tracking-widest mb-2 block">Test Name *</label>
+                                    <input
+                                        type="text"
+                                        placeholder="e.g. BPSC Mock Test 6"
+                                        value={qTestName}
+                                        onChange={e => setQTestName(e.target.value)}
+                                        className="w-full bg-slate-950 border border-indigo-500/20 rounded-2xl px-4 py-3 text-[12px] font-black text-white placeholder:text-white/20 focus:outline-none focus:ring-2 focus:ring-indigo-500/20"
+                                    />
+                                </div>
+                                {[
+                                    { label: 'Duration (minutes)', value: qDuration, set: setQDuration, step: '1' },
+                                    { label: 'Marks per question', value: qMark, set: setQMark, step: '0.25' },
+                                    { label: 'Negative marking', value: qNegative, set: setQNegative, step: '0.05' },
+                                ].map(f => (
+                                    <div key={f.label}>
+                                        <label className="text-[10px] font-black text-white/40 uppercase tracking-widest mb-2 block">{f.label}</label>
+                                        <input
+                                            type="number"
+                                            min="0"
+                                            step={f.step}
+                                            value={f.value}
+                                            onChange={e => f.set(e.target.value)}
+                                            className="w-full bg-slate-950 border border-indigo-500/20 rounded-2xl px-4 py-3 text-[12px] font-black text-white focus:outline-none focus:ring-2 focus:ring-indigo-500/20"
+                                        />
+                                    </div>
+                                ))}
+                                <p className="md:col-span-3 text-[9px] text-white/30">
+                                    Questions are added to the test in sheet order. Per-row <code>marks</code> / <code>negative_marks</code> columns override these defaults. The test stays a draft unless &quot;Publish test immediately&quot; is on.
+                                </p>
+                            </div>
+                        )}
 
                         <button
                             onClick={submitQuestions}
@@ -292,7 +358,7 @@ export default function AdminBulkImportPage() {
                     <div className="bg-purple-500/5 border border-purple-500/20 rounded-2xl p-5 space-y-3">
                         <div className="flex items-center gap-2">
                             <Info className="h-4 w-4 text-purple-400 shrink-0" />
-                            <p className="text-[11px] font-black text-purple-400 uppercase tracking-widest">CSV Column Reference</p>
+                            <p className="text-[11px] font-black text-purple-400 uppercase tracking-widest">Column Reference (CSV or Excel)</p>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                             {[
@@ -322,7 +388,7 @@ export default function AdminBulkImportPage() {
                     {/* Form */}
                     <div className="bg-slate-900 border border-indigo-500/10 rounded-3xl p-8 space-y-6">
                         <div>
-                            <label className="text-[10px] font-black text-white/40 uppercase tracking-widest mb-3 block">CSV File *</label>
+                            <label className="text-[10px] font-black text-white/40 uppercase tracking-widest mb-3 block">CSV / Excel File *</label>
                             <div
                                 onClick={() => sFileRef.current?.click()}
                                 className={cn(
@@ -339,12 +405,12 @@ export default function AdminBulkImportPage() {
                                 ) : (
                                     <>
                                         <Upload className="h-8 w-8 text-white/20" />
-                                        <p className="text-[11px] font-black text-white/30">Click to select CSV file</p>
+                                        <p className="text-[11px] font-black text-white/30">Click to select CSV or Excel (.xlsx) file</p>
                                         <p className="text-[9px] text-white/20">Max 10 MB</p>
                                     </>
                                 )}
                             </div>
-                            <input ref={sFileRef} type="file" accept=".csv,.txt" className="hidden" onChange={e => setSFile(e.target.files?.[0] ?? null)} />
+                            <input ref={sFileRef} type="file" accept=".csv,.txt,.xlsx,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" className="hidden" onChange={e => setSFile(e.target.files?.[0] ?? null)} />
                         </div>
 
                         <label className="flex items-center gap-3 cursor-pointer">
@@ -412,7 +478,7 @@ export default function AdminBulkImportPage() {
                     {/* Form */}
                     <div className="bg-slate-900 border border-indigo-500/10 rounded-3xl p-8 space-y-6">
                         <div>
-                            <label className="text-[10px] font-black text-white/40 uppercase tracking-widest mb-3 block">CSV File *</label>
+                            <label className="text-[10px] font-black text-white/40 uppercase tracking-widest mb-3 block">CSV / Excel File *</label>
                             <div
                                 onClick={() => tFileRef.current?.click()}
                                 className={cn(
@@ -429,12 +495,12 @@ export default function AdminBulkImportPage() {
                                 ) : (
                                     <>
                                         <Upload className="h-8 w-8 text-white/20" />
-                                        <p className="text-[11px] font-black text-white/30">Click to select Test CSV file</p>
+                                        <p className="text-[11px] font-black text-white/30">Click to select Test CSV or Excel (.xlsx) file</p>
                                         <p className="text-[9px] text-white/20">Max 10 MB</p>
                                     </>
                                 )}
                             </div>
-                            <input ref={tFileRef} type="file" accept=".csv,.txt" className="hidden" onChange={e => setTFile(e.target.files?.[0] ?? null)} />
+                            <input ref={tFileRef} type="file" accept=".csv,.txt,.xlsx,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" className="hidden" onChange={e => setTFile(e.target.files?.[0] ?? null)} />
                         </div>
 
                         <label className="flex items-center gap-3 cursor-pointer">
@@ -586,6 +652,12 @@ function ImportResult({ result, type }: { result: DryRunResult; type: 'questions
                         </div>
                     )}
                 </div>
+            )}
+
+            {!result.dry_run && result.test_id && (
+                <p className="text-[10px] text-emerald-400 font-bold">
+                    ✓ Test ID {result.test_id} is {result.status}. Manage it under Admin → Tests.
+                </p>
             )}
 
             {/* Confirm CTA for dry-run */}

@@ -31,6 +31,7 @@ type Test = {
     mode: 'chapter' | 'subject' | 'full_mock';
     duration_sec: number;
     total_marks: number;
+    questions_count?: number;
     status: string;
     is_locked?: boolean;
 };
@@ -192,7 +193,7 @@ export default function TestSeriesPage() {
                                             <div className="h-8 w-8 rounded-xl bg-blue-50 dark:bg-white/5 flex items-center justify-center">
                                                 <ClipboardCheck className="h-4 w-4 text-blue-600" />
                                             </div>
-                                            {test.total_marks / 1} Questions
+                                            {test.questions_count ?? 0} Questions
                                         </div>
                                         <div className="flex items-center gap-3 text-[11px] font-black text-foreground/40 uppercase tracking-widest">
                                             <div className="h-8 w-8 rounded-xl bg-orange-50 dark:bg-white/5 flex items-center justify-center">

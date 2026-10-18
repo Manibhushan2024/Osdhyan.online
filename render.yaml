@@ -1,10 +1,20 @@
+# Render blueprint for the OSDHYAN API.
+#
+# Capacity notes (see SCALING_AND_ROADMAP.md):
+# - The free plan (0.1 CPU, sleeps when idle) cannot serve a live exam.
+#   Use at least "standard" (1 CPU / 2 GB) and scale out instances for exams.
+# - Put the web service, Postgres and Redis in the SAME region
+#   (e.g. Singapore for Indian students). Cross-region DB calls were the
+#   root cause of the ~650 ms-per-query slowness.
 services:
   - type: web
     name: osdhyan-backend
     runtime: docker
     dockerfilePath: ./backend/Dockerfile
     dockerContext: ./backend
-    plan: free
+    plan: standard
+    region: singapore
+    numInstances: 1
     healthCheckPath: /api/health
     envVars:
       - key: APP_NAME
@@ -16,18 +26,17 @@ services:
       - key: APP_KEY
         generateValue: true
       - key: APP_URL
-        fromService:
-          type: web
-          name: osdhyan-backend
-          property: host
+        sync: false   # e.g. https://api.osdhyan.com
+      - key: LOG_LEVEL
+        value: warning
       - key: DB_CONNECTION
         value: pgsql
       - key: DB_SSLMODE
         value: require
       - key: DATABASE_URL
-        sync: false   # set manually in Render dashboard
+        sync: false   # use the provider's POOLED connection string (e.g. Neon "-pooler" host)
       - key: REDIS_URL
-        sync: false   # set manually in Render dashboard
+        sync: false   # same-region Redis (Render Key Value or Upstash in the same region)
       - key: REDIS_CLIENT
         value: predis
       - key: CACHE_STORE
@@ -35,10 +44,20 @@ services:
       - key: QUEUE_CONNECTION
         value: redis
       - key: SESSION_DRIVER
-        value: redis
+        value: redis   # only the Filament /admin panel uses sessions; API is Bearer-token
       - key: FILESYSTEM_DISK
-        value: local
-      - key: SANCTUM_STATEFUL_DOMAINS
-        sync: false   # set to your Vercel domain
+        value: local   # move to S3/R2 before relying on uploads — Render disk is wiped on deploy
+      - key: BCRYPT_ROUNDS
+        value: "10"   # ~4x cheaper logins than 12; still above OWASP minimum
+      - key: FPM_MAX_CHILDREN
+        value: "25"   # ~2 GB RAM instance
+      - key: RUN_WORKERS
+        value: "1"    # set "0" on extra instances if you split web/worker
+      - key: ALLOWED_ORIGINS
+        sync: false   # e.g. https://osdhyan.com,https://www.osdhyan.com
       - key: FRONTEND_URL
-        sync: false   # set to your Vercel URL
+        sync: false
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false   # only used to create/update the root admin when set

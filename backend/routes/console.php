@@ -12,5 +12,8 @@ Artisan::command('inspire', function () {
 // Regenerate sitemap daily at 08:00 IST (02:30 UTC)
 Schedule::command('sitemap:generate')->dailyAt('02:30');
 
-// Horizon queue metrics snapshot every 5 minutes
-Schedule::command('horizon:snapshot')->everyFiveMinutes();
+// Auto-submit attempts whose timer ran out (student closed the tab etc.)
+Schedule::command('attempts:finalize-expired')->everyFiveMinutes()->withoutOverlapping()->onOneServer();
+
+// Delete expired API tokens daily
+Schedule::command('sanctum:prune-expired --hours=24')->dailyAt('23:00');

@@ -18,6 +18,21 @@ class Question extends Model
         'difficulty',
     ];
 
+    protected $hidden = ['content_hash'];
+
+    /** Normalised text hash used to detect duplicate questions (see bulk import). */
+    public static function fingerprint(string $text): string
+    {
+        return sha1(mb_strtolower(preg_replace('/\s+/u', ' ', trim($text))));
+    }
+
+    protected static function booted(): void
+    {
+        static::saving(function (Question $q) {
+            $q->content_hash = self::fingerprint((string) $q->question_en);
+        });
+    }
+
     public function options()
     {
         return $this->hasMany(QuestionOption::class);
