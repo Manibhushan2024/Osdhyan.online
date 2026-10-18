@@ -8,7 +8,7 @@ import api from '@/lib/api';
 type Props = {
     /** login = existing account; signup = new account (asks for a name) */
     mode: 'login' | 'signup';
-    initialPhone?: string;
+    initialIdentifier?: string;
     /** Called with the auth payload once the OTP is verified */
     onAuthenticated: (token: string, user: unknown, isNewUser: boolean) => void;
 };
@@ -17,22 +17,26 @@ type ApiError = { response?: { status?: number; data?: { message?: string; can_s
 
 const RESEND_SECONDS = 30;
 
+const isEmail = (v: string) => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim());
+const toPhone = (v: string) => v.replace(/\D/g, '').replace(/^91(?=\d{10}$)/, '').replace(/^0(?=\d{10}$)/, '');
+const isPhone = (v: string) => /^[6-9]\d{9}$/.test(toPhone(v));
+
 /**
- * Mobile-number OTP sign-in / sign-up.
- * Step 1: phone (+ name/email for sign-up) → "Send OTP"
- * Step 2: 6-digit code → verify. In test mode (no SMS gateway yet) the server
- * returns the code and it is shown on screen.
+ * OTP sign-in / sign-up by mobile number OR e-mail.
+ * Step 1: identifier (+ name for sign-up) → "Send OTP"
+ * Step 2: 6-digit code → verify. In test mode (no SMS / e-mail gateway yet)
+ * the server returns the code and it is shown on screen.
  */
-export default function OtpForm({ mode, initialPhone = '', onAuthenticated }: Props) {
-    const [phone, setPhone] = useState(initialPhone);
+export default function OtpForm({ mode, initialIdentifier = '', onAuthenticated }: Props) {
+    const [identifier, setIdentifier] = useState(initialIdentifier);
     const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
     const [otp, setOtp] = useState('');
-    const [step, setStep] = useState<'phone' | 'otp'>('phone');
+    const [step, setStep] = useState<'identify' | 'otp'>('identify');
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState('');
     const [hint, setHint] = useState<React.ReactNode>(null);
     const [info, setInfo] = useState('');
+    const [sentTo, setSentTo] = useState('');
     const [devOtp, setDevOtp] = useState<string | null>(null);
     const [resendIn, setResendIn] = useState(0);
     const otpRef = useRef<HTMLInputElement>(null);
@@ -43,34 +47,31 @@ export default function OtpForm({ mode, initialPhone = '', onAuthenticated }: Pr
         return () => window.clearTimeout(t);
     }, [resendIn]);
 
-    const digits = phone.replace(/\D/g, '').replace(/^91(?=\d{10}$)/, '').replace(/^0(?=\d{10}$)/, '');
-    const phoneOk = /^[6-9]\d{9}$/.test(digits);
+    const trimmed = identifier.trim();
+    const channel: 'email' | 'phone' | null = isEmail(trimmed) ? 'email' : isPhone(trimmed) ? 'phone' : null;
+    const target = channel === 'phone' ? toPhone(trimmed) : trimmed.toLowerCase();
 
     const sendOtp = async () => {
         setError(''); setHint(null); setInfo(''); setDevOtp(null);
-        if (!phoneOk) { setError('Enter a valid 10-digit mobile number.'); return; }
+        if (!channel) { setError('Enter a valid 10-digit mobile number or an e-mail address.'); return; }
         if (mode === 'signup' && name.trim().length < 2) { setError('Please enter your name.'); return; }
         setLoading(true);
         try {
-            const res = await api.post('/auth/send-otp', {
-                phone: digits,
-                purpose: mode,
-                email: mode === 'signup' && email ? email : undefined,
-            });
+            const res = await api.post('/auth/send-otp', { identifier: target, purpose: mode });
             setStep('otp');
             setResendIn(RESEND_SECONDS);
             setInfo(res.data.message ?? 'OTP sent.');
+            setSentTo(channel === 'phone' ? `+91 ${target.slice(0, 2)}XXXXXX${target.slice(-2)}` : target);
             setDevOtp(res.data.dev_otp ?? null);
             window.setTimeout(() => otpRef.current?.focus(), 50);
         } catch (err: unknown) {
-            const e = err as ApiError;
-            const data = e.response?.data;
+            const data = (err as ApiError).response?.data;
             setError(data?.message || 'Could not send the OTP. Please try again.');
             if (data?.can_signup) {
-                setHint(<Link href={`/auth/signup?phone=${digits}&via=otp`} className="font-semibold text-primary hover:underline">Create an account with this number</Link>);
+                setHint(<Link href={`/auth/signup?id=${encodeURIComponent(target)}`} className="font-semibold text-primary hover:underline">Create an account</Link>);
             }
             if (data?.can_login) {
-                setHint(<Link href={`/auth/login?phone=${digits}&via=otp`} className="font-semibold text-primary hover:underline">Sign in instead</Link>);
+                setHint(<Link href={`/auth/login?id=${encodeURIComponent(target)}`} className="font-semibold text-primary hover:underline">Sign in instead</Link>);
             }
         } finally {
             setLoading(false);
@@ -84,17 +85,16 @@ export default function OtpForm({ mode, initialPhone = '', onAuthenticated }: Pr
         setLoading(true);
         try {
             const res = await api.post('/auth/verify-otp', {
-                phone: digits,
+                identifier: target,
                 otp,
-                ...(mode === 'signup' ? { name: name.trim(), email: email || undefined } : {}),
+                ...(mode === 'signup' ? { name: name.trim() } : {}),
             });
             onAuthenticated(res.data.access_token, res.data.user, !!res.data.is_new_user);
         } catch (err: unknown) {
-            const e = err as ApiError;
-            const data = e.response?.data;
+            const data = (err as ApiError).response?.data;
             if (data?.needs_name) {
-                setError('No account with this number yet.');
-                setHint(<Link href={`/auth/signup?phone=${digits}&via=otp`} className="font-semibold text-primary hover:underline">Create an account</Link>);
+                setError('No account yet with these details.');
+                setHint(<Link href={`/auth/signup?id=${encodeURIComponent(target)}`} className="font-semibold text-primary hover:underline">Create an account</Link>);
             } else {
                 setError(data?.message || 'Invalid or expired OTP.');
             }
@@ -111,7 +111,7 @@ export default function OtpForm({ mode, initialPhone = '', onAuthenticated }: Pr
                 </div>
             )}
 
-            {step === 'phone' && (
+            {step === 'identify' && (
                 <form className="space-y-5" onSubmit={(e) => { e.preventDefault(); void sendOtp(); }}>
                     {mode === 'signup' && (
                         <div>
@@ -121,24 +121,16 @@ export default function OtpForm({ mode, initialPhone = '', onAuthenticated }: Pr
                         </div>
                     )}
                     <div>
-                        <label htmlFor="otp-phone" className="label">Mobile number</label>
-                        <div className="flex gap-2">
-                            <span className="input w-16 shrink-0 flex items-center justify-center text-muted-foreground select-none">+91</span>
-                            <input id="otp-phone" className="input" required inputMode="numeric" autoComplete="tel-national"
-                                placeholder="10-digit mobile number" value={phone} onChange={(e) => setPhone(e.target.value)} />
-                        </div>
+                        <label htmlFor="otp-id" className="label">Mobile number or e-mail</label>
+                        <input id="otp-id" className="input" required inputMode="email" autoComplete="username"
+                            placeholder="98XXXXXXXX or you@example.com" value={identifier} onChange={(e) => setIdentifier(e.target.value)} />
+                        {channel === 'phone' && <p className="mt-1 text-xs text-muted-foreground">We will SMS a code to +91 {target}.</p>}
+                        {channel === 'email' && <p className="mt-1 text-xs text-muted-foreground">We will e-mail a code to {target}.</p>}
                     </div>
-                    {mode === 'signup' && (
-                        <div>
-                            <label htmlFor="otp-email" className="label">E-mail <span className="text-muted-foreground font-normal">(optional, for results)</span></label>
-                            <input id="otp-email" type="email" className="input" autoComplete="email" placeholder="you@example.com"
-                                value={email} onChange={(e) => setEmail(e.target.value)} />
-                        </div>
-                    )}
                     <button type="submit" disabled={loading} className="btn btn-primary w-full">
                         {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : 'Send OTP'}
                     </button>
-                    <p className="text-xs text-muted-foreground">We will send a 6-digit code by SMS. Standard rates may apply.</p>
+                    <p className="text-xs text-muted-foreground">No password needed. The code is valid for 10 minutes.</p>
                 </form>
             )}
 
@@ -147,14 +139,14 @@ export default function OtpForm({ mode, initialPhone = '', onAuthenticated }: Pr
                     <div className="rounded-xl border border-card-border bg-background/60 px-4 py-3 text-sm">
                         <p>{info}</p>
                         <p className="mt-1 text-muted-foreground">
-                            Sent to +91 {digits.slice(0, 2)}XXXXXX{digits.slice(-2)} ·{' '}
-                            <button type="button" className="font-semibold text-primary hover:underline" onClick={() => { setStep('phone'); setOtp(''); setDevOtp(null); }}>
-                                change number
+                            Sent to {sentTo} ·{' '}
+                            <button type="button" className="font-semibold text-primary hover:underline" onClick={() => { setStep('identify'); setOtp(''); setDevOtp(null); }}>
+                                change
                             </button>
                         </p>
                         {devOtp && (
                             <p className="mt-2 rounded-lg bg-amber-50 px-3 py-2 text-amber-800 dark:bg-amber-900/30 dark:text-amber-200">
-                                <strong>Test mode</strong> (SMS gateway not connected yet) — your OTP is <span className="font-mono text-base tracking-widest">{devOtp}</span>
+                                <strong>Test mode</strong> (delivery not connected yet) — your OTP is <span className="font-mono text-base tracking-widest">{devOtp}</span>
                             </p>
                         )}
                     </div>

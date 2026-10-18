@@ -19,7 +19,7 @@ function LoginPageInner() {
     const [error, setError] = useState('');
     const params = useSearchParams();
     const [method, setMethod] = useState<'otp' | 'password'>(params.get('via') === 'password' ? 'password' : 'otp');
-    const prefillPhone = params.get('phone') ?? '';
+    const prefillId = params.get('id') ?? params.get('phone') ?? '';
 
     const handleLogin = async (e: React.FormEvent) => {
         e.preventDefault();
@@ -77,7 +77,7 @@ function LoginPageInner() {
             {method === 'otp' ? (
                 <OtpForm
                     mode="login"
-                    initialPhone={prefillPhone}
+                    initialIdentifier={prefillId}
                     onAuthenticated={(token, user) => authenticateUser(token, user as Parameters<typeof authenticateUser>[1], redirectFromLocation('/dashboard'))}
                 />
             ) : (

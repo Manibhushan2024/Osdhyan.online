@@ -17,7 +17,7 @@ function SignupPageInner() {
     const [error, setError] = useState('');
     const params = useSearchParams();
     const [method, setMethod] = useState<'otp' | 'password'>(params.get('via') === 'password' ? 'password' : 'otp');
-    const prefillPhone = params.get('phone') ?? '';
+    const prefillId = params.get('id') ?? params.get('phone') ?? '';
     const [formData, setFormData] = useState({
         name: '',
         phone: '',
@@ -83,7 +83,7 @@ function SignupPageInner() {
             <div className="mb-6 grid grid-cols-2 rounded-xl bg-background/60 p-1 border border-card-border text-sm font-medium" role="tablist">
                 <button type="button" role="tab" aria-selected={method === 'otp'} onClick={() => { setMethod('otp'); setError(''); }}
                     className={`rounded-lg py-2 transition ${method === 'otp' ? 'bg-primary text-white shadow' : 'text-muted-foreground hover:text-foreground'}`}>
-                    Mobile OTP (no password)
+                    OTP — mobile or e-mail
                 </button>
                 <button type="button" role="tab" aria-selected={method === 'password'} onClick={() => { setMethod('password'); setError(''); }}
                     className={`rounded-lg py-2 transition ${method === 'password' ? 'bg-primary text-white shadow' : 'text-muted-foreground hover:text-foreground'}`}>
@@ -94,7 +94,7 @@ function SignupPageInner() {
             {method === 'otp' ? (
                 <OtpForm
                     mode="signup"
-                    initialPhone={prefillPhone}
+                    initialIdentifier={prefillId}
                     onAuthenticated={(token, user) => authenticateUser(token, user as Parameters<typeof authenticateUser>[1], redirectFromLocation('/dashboard'))}
                 />
             ) : (

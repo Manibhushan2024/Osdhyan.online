@@ -198,7 +198,10 @@ class AdminCourseController extends Controller
 
     public function getAdminTestSeries(): JsonResponse
     {
-        return response()->json(TestSeries::with('exam')->latest()->get());
+        return response()->json(
+            TestSeries::with(['exam', 'tests:id,name_en,status,duration_sec,total_marks'])
+                ->withCount('tests')->latest()->get()
+        );
     }
 
     public function storeTestSeries(Request $request): JsonResponse
@@ -217,6 +220,9 @@ class AdminCourseController extends Controller
             'currency'       => 'nullable|string|size:3',
             'is_paid'        => 'nullable|boolean',
             'validity_days'  => 'nullable|integer|min:1|max:3650',
+            // Tests to include, in order
+            'test_ids'       => 'nullable|array|max:500',
+            'test_ids.*'     => 'integer|exists:tests,id',
         ]);
 
         $imagePath = null;
@@ -239,7 +245,11 @@ class AdminCourseController extends Controller
             'validity_days'  => $data['validity_days'] ?? null,
         ]);
 
-        return response()->json($series->load('exam'), 201);
+        if (!empty($data['test_ids'])) {
+            $series->tests()->sync(array_values(array_unique(array_map('intval', $data['test_ids']))));
+        }
+
+        return response()->json($series->load(['exam', 'tests:id,name_en'])->loadCount('tests'), 201);
     }
 
     public function updateTestSeries(Request $request, int $id): JsonResponse
@@ -247,6 +257,8 @@ class AdminCourseController extends Controller
         $series = TestSeries::findOrFail($id);
 
         $request->validate([
+            'test_ids'      => 'nullable|array|max:500',
+            'test_ids.*'    => 'integer|exists:tests,id',
             'price'         => 'nullable|numeric|min:0|max:9999999',
             'mrp'           => 'nullable|numeric|min:0|max:9999999',
             'currency'      => 'nullable|string|size:3',
@@ -269,7 +281,12 @@ class AdminCourseController extends Controller
         }
 
         $series->update($data);
-        return response()->json($series->load('exam'));
+
+        if ($request->has('test_ids')) {
+            $series->tests()->sync(array_values(array_unique(array_map('intval', (array) $request->input('test_ids', [])))));
+        }
+
+        return response()->json($series->load(['exam', 'tests:id,name_en'])->loadCount('tests'));
     }
 
     public function deleteTestSeries(int $id): JsonResponse

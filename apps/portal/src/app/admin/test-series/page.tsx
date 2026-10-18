@@ -34,6 +34,8 @@ type Series = {
     image?: string | null;
     is_published: boolean;
     is_paid?: boolean;
+    tests?: { id: number; name_en: string }[];
+    tests_count?: number;
     price?: string | number | null;
     mrp?: string | number | null;
     currency?: string | null;
@@ -156,6 +158,48 @@ function appendPricing(formData: FormData, pricing: PricingForm) {
     }
 }
 
+type PickableTest = { id: number; name_en: string; status?: string; questions_count?: number; duration_sec?: number };
+
+/** Checkbox list of tests to include in a series, with search. */
+function TestPicker({ selected, onChange }: { selected: number[]; onChange: (ids: number[]) => void }) {
+    const [tests, setTests] = useState<PickableTest[]>([]);
+    const [q, setQ] = useState('');
+    const [loadingTests, setLoadingTests] = useState(true);
+
+    useEffect(() => {
+        let alive = true;
+        api.get('/admin/tests', { params: { per_page: 50, search: q || undefined } })
+            .then(res => { if (alive) setTests(res.data.data ?? res.data ?? []); })
+            .catch(() => { if (alive) setTests([]); })
+            .finally(() => { if (alive) setLoadingTests(false); });
+        return () => { alive = false; };
+    }, [q]);
+
+    const toggle = (id: number) => onChange(selected.includes(id) ? selected.filter(x => x !== id) : [...selected, id]);
+
+    return (
+        <div className="space-y-3">
+            <div className="flex items-center justify-between">
+                <label className="text-[10px] font-black text-foreground/40 uppercase tracking-widest">Tests in this series ({selected.length} selected)</label>
+                <input value={q} onChange={e => setQ(e.target.value)} placeholder="Search tests…"
+                    className="bg-background border border-card-border rounded-xl px-3 py-1.5 text-xs w-44 focus:outline-none" />
+            </div>
+            <div className="max-h-56 overflow-y-auto rounded-2xl border border-card-border divide-y divide-card-border">
+                {loadingTests && <p className="p-3 text-xs text-foreground/40">Loading tests…</p>}
+                {!loadingTests && tests.length === 0 && <p className="p-3 text-xs text-foreground/40">No tests yet. Create tests under Admin → Tests or Bulk import first.</p>}
+                {tests.map(t => (
+                    <label key={t.id} className="flex items-center gap-3 px-3 py-2 text-sm cursor-pointer hover:bg-foreground/5">
+                        <input type="checkbox" checked={selected.includes(t.id)} onChange={() => toggle(t.id)} className="h-4 w-4 accent-indigo-600" />
+                        <span className="flex-1 truncate">{t.name_en}</span>
+                        <span className="text-[10px] text-foreground/40 uppercase">{t.status ?? ''}{t.questions_count != null ? ` · ${t.questions_count} Q` : ''}</span>
+                    </label>
+                ))}
+            </div>
+            <p className="text-[11px] text-foreground/40">Students see these tests inside the series. You can also build a series from Bulk import → Tests.</p>
+        </div>
+    );
+}
+
 export default function AdminTestSeriesPage() {
     const { user } = useAuth();
     const canDelete = user?.admin_role === 'root';
@@ -173,11 +217,13 @@ export default function AdminTestSeriesPage() {
         description_hi: '',
     });
     const [wizardPricing, setWizardPricing] = useState<PricingForm>(emptyPricing);
+    const [wizardTestIds, setWizardTestIds] = useState<number[]>([]);
     const [selectedFile, setSelectedFile] = useState<File | null>(null);
 
     const [editing, setEditing] = useState<Series | null>(null);
     const [editData, setEditData] = useState({ name_en: '', name_hi: '', description_en: '', is_published: false });
     const [editPricing, setEditPricing] = useState<PricingForm>(emptyPricing);
+    const [editTestIds, setEditTestIds] = useState<number[]>([]);
 
     useEffect(() => {
         fetchInitialData();
@@ -232,6 +278,7 @@ export default function AdminTestSeriesPage() {
             formData.append('description_en', wizardData.description_en);
             formData.append('description_hi', wizardData.description_hi);
             appendPricing(formData, wizardPricing);
+            wizardTestIds.forEach(id => formData.append('test_ids[]', String(id)));
             if (selectedFile) {
                 formData.append('image_file', selectedFile);
             }
@@ -240,7 +287,7 @@ export default function AdminTestSeriesPage() {
                 headers: { 'Content-Type': 'multipart/form-data' }
             });
 
-            toast.success('Test Series Initialized!');
+            toast.success('Test series created');
             setShowWizard(false);
             await refreshSeries();
             setWizardData({
@@ -251,10 +298,11 @@ export default function AdminTestSeriesPage() {
                 description_hi: '',
             });
             setWizardPricing(emptyPricing);
+            setWizardTestIds([]);
             setSelectedFile(null);
         } catch (error: unknown) {
             const ax = error as { response?: { data?: { message?: string } } };
-            toast.error(ax.response?.data?.message || 'Deployment Failed');
+            toast.error(ax.response?.data?.message || 'Could not create the series');
         } finally {
             setIsSaving(false);
         }
@@ -274,6 +322,7 @@ export default function AdminTestSeriesPage() {
             mrp: s.mrp !== null && s.mrp !== undefined ? String(Number(s.mrp)) : '',
             validity_days: s.validity_days ? String(s.validity_days) : '',
         });
+        setEditTestIds((s.tests ?? []).map(t => t.id));
     };
 
     const handleUpdate = async (e: React.FormEvent) => {
@@ -291,6 +340,7 @@ export default function AdminTestSeriesPage() {
                 price: editPricing.is_paid ? Number(editPricing.price || 0) : 0,
                 mrp: editPricing.is_paid && editPricing.mrp !== '' ? Number(editPricing.mrp) : null,
                 validity_days: editPricing.is_paid && editPricing.validity_days !== '' ? Number(editPricing.validity_days) : 0,
+                test_ids: editTestIds,
             });
             toast.success('Series Updated');
             setEditing(null);
@@ -522,6 +572,7 @@ export default function AdminTestSeriesPage() {
                                 </div>
 
                                 <PricingFields value={wizardPricing} onChange={setWizardPricing} />
+                                <TestPicker selected={wizardTestIds} onChange={setWizardTestIds} />
 
                                 <div className="space-y-2">
                                     <label className="text-[9px] font-black text-foreground/40 uppercase tracking-widest block px-2">Series Visual Cover</label>
@@ -614,6 +665,7 @@ export default function AdminTestSeriesPage() {
                                 </div>
 
                                 <PricingFields value={editPricing} onChange={setEditPricing} />
+                                <TestPicker selected={editTestIds} onChange={setEditTestIds} />
 
                                 <label className="flex items-center gap-3 px-2 cursor-pointer">
                                     <input

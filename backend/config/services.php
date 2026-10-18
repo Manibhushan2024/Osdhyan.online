@@ -59,6 +59,10 @@ return [
         'api_key'     => env('SMS_API_KEY'),
         'sender_id'   => env('SMS_SENDER_ID', 'OSDHYN'),
         'template_id' => env('SMS_TEMPLATE_ID'),   // msg91 DLT OTP template
+        // provider=android: your own phone as the gateway (see SmsService)
+        'gateway_url'      => env('SMS_GATEWAY_URL'),
+        'gateway_user'     => env('SMS_GATEWAY_USER'),
+        'gateway_password' => env('SMS_GATEWAY_PASSWORD'),
     ],
 
     // Razorpay checkout for paid test series. PAYMENTS_FAKE=true swaps in a

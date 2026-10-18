@@ -112,70 +112,123 @@ class AuthController extends Controller
         RateLimiter::hit($key, 60);
 
         $validated = $request->validate([
-            'phone'   => 'required|string|min:10|max:16',
-            'purpose' => 'nullable|in:login,signup',
-            'email'   => 'nullable|email|max:255',
+            'phone'      => 'nullable|string|max:32',
+            'email'      => 'nullable|email|max:255',
+            'identifier' => 'nullable|string|max:255',   // "mobile or e-mail" box
+            'purpose'    => 'nullable|in:login,signup',
         ]);
 
-        $phone = PhoneNumber::normalize($validated['phone']);
-        if (!$phone) {
-            return response()->json(['message' => 'Enter a valid 10-digit Indian mobile number.'], 422);
+        [$channel, $id] = $this->resolveOtpTarget($validated);
+        if (!$channel) {
+            return response()->json(['message' => 'Enter a valid 10-digit Indian mobile number or an e-mail address.'], 422);
         }
 
         $purpose = $validated['purpose'] ?? 'login';
-        $user = User::whereIn('phone', PhoneNumber::candidates($phone))->first();
+        $user = $channel === 'phone'
+            ? User::whereIn('phone', PhoneNumber::candidates($id))->first()
+            : User::whereRaw('LOWER(email) = ?', [$id])->first();
 
         if ($purpose === 'login' && !$user) {
             return response()->json([
-                'message'    => 'No account found with this number. Create one in a minute.',
+                'message'    => $channel === 'phone' ? 'No account found with this number. Create one in a minute.' : 'No account found with this e-mail. Create one in a minute.',
                 'can_signup' => true,
             ], 404);
         }
         if ($purpose === 'signup' && $user) {
             return response()->json([
-                'message'   => 'This number is already registered. Please sign in.',
+                'message'   => $channel === 'phone' ? 'This number is already registered. Please sign in.' : 'This e-mail is already registered. Please sign in.',
                 'can_login' => true,
             ], 409);
         }
 
         $otp = (string) random_int(100000, 999999);
-        Cache::put('otp_' . $phone, ['otp' => $otp, 'purpose' => $purpose, 'tries' => 0], now()->addMinutes(10));
+        Cache::put($this->otpKey($channel, $id), ['otp' => $otp, 'purpose' => $purpose, 'tries' => 0], now()->addMinutes(10));
 
         $delivery = 'none';
         $sms = app(SmsService::class);
-        try {
-            if ($sms->sendOtp($phone, $otp)) {
-                $delivery = 'sms';
+        if ($channel === 'phone') {
+            try {
+                if ($sms->sendOtp($id, $otp)) {
+                    $delivery = 'sms';
+                }
+            } catch (\Throwable $e) {
+                \Log::warning('SMS OTP failed', ['error' => $e->getMessage()]);
             }
-        } catch (\Throwable $e) {
-            \Log::warning('SMS OTP failed', ['error' => $e->getMessage()]);
         }
 
-        $email = $user?->email ?: ($validated['email'] ?? null);
-        if ($delivery === 'none' && $email && !in_array(config('mail.default'), ['log', 'array'], true)) {
+        $email = $channel === 'email' ? $id : ($user?->email ?: ($validated['email'] ?? null));
+        if ($delivery === 'none' && $email && $this->mailConfigured()) {
             try {
-                Mail::to($email)->queue(new OtpEmail($user?->name ?? 'there', $otp, 'login'));
+                // Sent synchronously: an OTP must arrive now, not when a worker is free.
+                Mail::to($email)->sendNow(new OtpEmail($user?->name ?? 'there', $otp, $purpose === 'signup' ? 'signup' : 'login'));
                 $delivery = 'email';
             } catch (\Throwable $e) {
-                \Log::error('OTP email fallback failed', ['error' => $e->getMessage()]);
+                \Log::error('OTP e-mail failed', ['error' => $e->getMessage()]);
             }
         }
 
-        // Test mode: no gateway yet → show the OTP so the flow can be used end to end.
-        $testMode = !$sms->isConfigured() && !app()->environment('production');
+        // Test mode (never in production): if nothing could deliver the OTP —
+        // no gateway yet, or the gateway failed — return it so the flow still works.
+        $testMode = $delivery === 'none' && !app()->environment('production');
 
         return response()->json([
             'message'    => match ($delivery) {
-                'sms'   => 'OTP sent by SMS to ' . PhoneNumber::mask($phone) . '.',
-                'email' => 'OTP sent to your e-mail address.',
-                default => $testMode ? 'Test mode: use the OTP shown below.' : 'OTP could not be delivered. Please try again later.',
+                'sms'   => 'OTP sent by SMS to ' . PhoneNumber::mask($id) . '.',
+                'email' => 'OTP sent to ' . $this->maskEmail($email) . '. Check spam if you don\'t see it.',
+                default => $testMode ? 'Test mode: use the OTP shown below.' : 'OTP could not be delivered right now. Please try again in a minute.',
             },
             'delivery'   => $delivery,
-            'phone'      => $phone,
+            'channel'    => $channel,
+            'phone'      => $channel === 'phone' ? $id : null,
+            'email'      => $channel === 'email' ? $id : null,
             'expires_in' => 600,
             'test_mode'  => $testMode,
             'dev_otp'    => $testMode ? $otp : null,
         ], $delivery === 'none' && !$testMode ? 503 : 200);
+    }
+
+    /** @return array{0: 'phone'|'email'|null, 1: string|null} */
+    private function resolveOtpTarget(array $v): array
+    {
+        $raw = trim((string) ($v['identifier'] ?? $v['phone'] ?? $v['email'] ?? ''));
+        if ($raw === '' && !empty($v['email'])) {
+            $raw = $v['email'];
+        }
+        if (filter_var($raw, FILTER_VALIDATE_EMAIL)) {
+            return ['email', strtolower($raw)];
+        }
+        $phone = PhoneNumber::normalize($raw);
+        if ($phone) {
+            return ['phone', $phone];
+        }
+        if (!empty($v['email']) && filter_var($v['email'], FILTER_VALIDATE_EMAIL)) {
+            return ['email', strtolower($v['email'])];
+        }
+
+        return [null, null];
+    }
+
+    private function otpKey(string $channel, string $id): string
+    {
+        return $channel === 'phone' ? 'otp_' . $id : 'otp_email_' . sha1($id);
+    }
+
+    /** A mailer that can actually deliver (not log/array, and the provider has credentials). */
+    private function mailConfigured(): bool
+    {
+        $mailer = config('mail.default');
+        return match ($mailer) {
+            'log', 'array', null, '' => false,
+            'resend' => !empty(config('services.resend.key')),
+            'smtp'   => !empty(config('mail.mailers.smtp.host')) && !empty(config('mail.mailers.smtp.username')),
+            default  => true,
+        };
+    }
+
+    private function maskEmail(string $email): string
+    {
+        [$local, $domain] = array_pad(explode('@', $email, 2), 2, '');
+        return substr($local, 0, 2) . str_repeat('*', max(1, strlen($local) - 2)) . '@' . $domain;
     }
 
     // ─── Register ─────────────────────────────────────────────────────────────
@@ -397,62 +450,74 @@ class AuthController extends Controller
         }
 
         $validated = $request->validate([
-            'phone'           => 'required|string|min:10|max:16',
+            'phone'           => 'nullable|string|max:32',
+            'email'           => 'nullable|email|max:255',
+            'identifier'      => 'nullable|string|max:255',
             'otp'             => 'required|string|min:4|max:6',
             'name'            => 'nullable|string|max:255',
-            'email'           => 'nullable|email|max:255',
             'state'           => 'nullable|string|max:100',
             'exam_preference' => 'nullable|string|max:100',
             'target_year'     => 'nullable|integer',
             'role'            => 'nullable|in:student,teacher',
         ]);
 
-        $phone = PhoneNumber::normalize($validated['phone']);
-        $entry = $phone ? Cache::get('otp_' . $phone) : null;
-        $stored = is_array($entry) ? $entry['otp'] : $entry; // legacy string entries
+        [$channel, $id] = $this->resolveOtpTarget($validated);
+        $cacheKey = $channel ? $this->otpKey($channel, $id) : null;
+        $entry = $cacheKey ? Cache::get($cacheKey) : null;
+        $stored = is_array($entry) ? $entry['otp'] : $entry;
 
-        if (!$phone || !$stored || !hash_equals((string) $stored, trim($validated['otp']))) {
+        if (!$channel || !$stored || !hash_equals((string) $stored, trim($validated['otp']))) {
             RateLimiter::hit($key, 60);
             if (is_array($entry)) {
                 $entry['tries'] = ($entry['tries'] ?? 0) + 1;
                 if ($entry['tries'] >= 5) {
-                    Cache::forget('otp_' . $phone);
+                    Cache::forget($cacheKey);
                     return response()->json(['message' => 'Too many wrong attempts. Request a new OTP.'], 401);
                 }
-                Cache::put('otp_' . $phone, $entry, now()->addMinutes(10));
+                Cache::put($cacheKey, $entry, now()->addMinutes(10));
             }
             return response()->json(['message' => 'Invalid or expired OTP'], 401);
         }
 
-        $user = User::whereIn('phone', PhoneNumber::candidates($phone))->first();
+        $user = $channel === 'phone'
+            ? User::whereIn('phone', PhoneNumber::candidates($id))->first()
+            : User::whereRaw('LOWER(email) = ?', [$id])->first();
         $isNewUser = false;
 
         if (!$user) {
-            $regData = Cache::get('reg_data_' . $phone) ?: [];
+            $regData = ($channel === 'phone' ? Cache::get('reg_data_' . $id) : null) ?: [];
             $name = $validated['name'] ?? $regData['name'] ?? null;
             if (!$name) {
-                // Keep the OTP alive so the client can ask for a name and retry.
                 return response()->json([
-                    'message'    => 'No account with this number yet. Add your name to create one.',
+                    'message'    => 'No account yet. Add your name to create one.',
                     'needs_name' => true,
                 ], 404);
             }
-            $email = $validated['email'] ?? $regData['email'] ?? null;
+            $email = $channel === 'email' ? $id : ($validated['email'] ?? $regData['email'] ?? null);
             if ($email && User::whereRaw('LOWER(email) = ?', [strtolower($email)])->exists()) {
                 return response()->json(['message' => 'This e-mail is already used by another account.'], 409);
             }
+            $phone = $channel === 'phone' ? $id : PhoneNumber::normalize($validated['phone'] ?? '');
+            if ($phone && User::whereIn('phone', PhoneNumber::candidates($phone))->exists()) {
+                return response()->json(['message' => 'This mobile number is already used by another account.'], 409);
+            }
 
             $user = User::create([
-                'name'            => $name,
-                'email'           => $email,
-                'phone'           => $phone,
-                'state'           => $validated['state'] ?? $regData['state'] ?? null,
-                'exam_preference' => $validated['exam_preference'] ?? $regData['exam_preference'] ?? null,
-                'target_year'     => $validated['target_year'] ?? $regData['target_year'] ?? null,
-                'role'            => $validated['role'] ?? 'student',
-                'password'        => Hash::make(Str::random(32)),
+                'name'              => $name,
+                'email'             => $email,
+                'phone'             => $phone ?: null,
+                'state'             => $validated['state'] ?? $regData['state'] ?? null,
+                'exam_preference'   => $validated['exam_preference'] ?? $regData['exam_preference'] ?? null,
+                'target_year'       => $validated['target_year'] ?? $regData['target_year'] ?? null,
+                'role'              => $validated['role'] ?? 'student',
+                'password'          => Hash::make(Str::random(32)),
             ]);
-            Cache::forget('reg_data_' . $phone);
+            if ($channel === 'email') {
+                $user->forceFill(['email_verified_at' => now()])->save();
+            }
+            if ($channel === 'phone') {
+                Cache::forget('reg_data_' . $id);
+            }
             $isNewUser = true;
 
             if ($user->email) {
@@ -462,9 +527,11 @@ class AuthController extends Controller
                     \Log::warning('Welcome email (OTP reg) failed', ['error' => $e->getMessage()]);
                 }
             }
+        } elseif ($channel === 'email' && !$user->email_verified_at) {
+            $user->forceFill(['email_verified_at' => now()])->save();
         }
 
-        Cache::forget('otp_' . $phone);
+        Cache::forget($cacheKey);
         RateLimiter::clear($key);
 
         $token = $user->createToken('auth_token')->plainTextToken;
@@ -486,9 +553,11 @@ class AuthController extends Controller
 
         return response()->json([
             'otp' => [
-                'enabled'  => true,
-                'delivery' => $sms->isConfigured() ? 'sms' : (!app()->environment('production') ? 'test_mode' : 'email'),
-                'provider' => $sms->provider(),
+                'enabled'        => true,
+                'sms_configured'   => $sms->isConfigured(),
+                'email_configured' => $this->mailConfigured(),
+                'test_mode'      => !app()->environment('production') && (!$sms->isConfigured() || !$this->mailConfigured()),
+                'provider'       => $sms->provider(),
             ],
             'google' => [
                 'enabled'   => $this->googleConfigured(),
@@ -565,8 +634,8 @@ class AuthController extends Controller
                 'avatar'            => $avatar,
                 'password'          => Hash::make(Str::random(32)),
                 'phone'             => null,
-                'email_verified_at' => now(),
             ]);
+            $user->forceFill(['email_verified_at' => now()])->save();
             try {
                 Mail::to($user->email)->queue(new WelcomeEmail($user));
             } catch (\Throwable $e) {
