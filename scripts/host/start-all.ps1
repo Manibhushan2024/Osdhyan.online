@@ -89,7 +89,8 @@ if (-not $NoTunnel) {
         Start-Process cloudflared -ArgumentList "--config `"$Data\cloudflared\config.yml`" tunnel run" -WindowStyle Hidden -RedirectStandardOutput "$Logs\tunnel.log" -RedirectStandardError "$Logs\tunnel.err.log"
         "Tunnel: permanent (see $Data\cloudflared\config.yml for the hostname)"
     } else {
-        Start-Process cloudflared -ArgumentList "tunnel --url http://localhost:3000 --no-autoupdate" -WindowStyle Hidden -RedirectStandardOutput "$Logs\tunnel.log" -RedirectStandardError "$Logs\tunnel.err.log"
+        # http2 transport is more reliable than QUIC on home/mobile networks
+        Start-Process cloudflared -ArgumentList "tunnel --url http://127.0.0.1:3000 --no-autoupdate --protocol http2" -WindowStyle Hidden -RedirectStandardOutput "$Logs\tunnel.log" -RedirectStandardError "$Logs\tunnel.err.log"
         Start-Sleep 8
         $url = (Select-String -Path "$Logs\tunnel.err.log" -Pattern 'https://[a-z0-9-]+\.trycloudflare\.com' | Select-Object -First 1).Matches.Value
         "Tunnel: TEMPORARY link (changes on every restart; run setup-permanent-link.ps1 for a fixed one):`n        $url"
