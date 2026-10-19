@@ -1,0 +1,2940 @@
+[
+ {
+  "page": 4,
+  "section": "General intelligence and Reasoning Ability",
+  "number": 6,
+  "question_id": "630680256028",
+  "question": "In the evening, before sunset, X is facing towards the right hand side of the direction where his shadow is falling. He then turns right and walk 20 m. Then, he turns right again and walks 10 m. Then, he turns left and walks 10 m, and then turning right, he walks 20 m. Then, he turns right again and walks 30 m. At what distance and in which direction is X now from the starting point?",
+  "options": [
+   "30 m, north",
+   "20 m, north",
+   "30 m, south",
+   "20 m, south"
+  ],
+  "correct": 1,
+  "has_figure": false,
+  "note": "section inferred from page 3 header (not provided)"
+ },
+ {
+  "page": 4,
+  "section": "General intelligence and Reasoning Ability",
+  "number": 7,
+  "question_id": "630680256031",
+  "question": "Study the given information, statement and conclusions carefully, and decide which of the given conclusions logically follow(s) from the statement.\nP # Q means P is greater than Q.\nP $ Q means P is either greater than or equal to Q.\nP = Q means P is smaller than Q.\nStatement:\nC $ E, F # C, D = E.\nConclusions:\nI. C # D\nII. E # D",
+  "options": [
+   "Only conclusion II follows",
+   "Both conclusions I and II follow",
+   "Only conclusion I follows",
+   "Either conclusion I or II follows"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 4,
+  "section": "General intelligence and Reasoning Ability",
+  "number": 8,
+  "question_id": "630680256039",
+  "question": "Four number-pairs have been given, out of which three are alike in some manner and one is different. Select the one that is different.",
+  "options": [
+   "16 - 72",
+   "24 - 108",
+   "18 - 81",
+   "22 - 97"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 5,
+  "section": "General intelligence and Reasoning Ability",
+  "number": 9,
+  "question_id": "630680256041",
+  "question": "What approximate value should come in place of the question mark (?) in the following equation?\n23.87 ÷ 12.19 – 76.69 ÷ 29.89 × 17.37 = ?",
+  "options": [
+   "567",
+   "234",
+   "345",
+   "435"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 5,
+  "section": "General intelligence and Reasoning Ability",
+  "number": 10,
+  "question_id": "630680256030",
+  "question": "In a row of a picture hall where all are facing north, Khalid is 25th from the left end and Kapil is 29th from the right end. They interchange their seats, and Sham who is sitting 34th from the left end is sitting at the 5th place to the left of Khalid new position. How many persons are there in one row of the picture hall?",
+  "options": [
+   "56",
+   "67",
+   "76",
+   "62"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 5,
+  "section": "General intelligence and Reasoning Ability",
+  "number": 11,
+  "question_id": "630680256038",
+  "question": "Four number-pairs have been given, out of which three are alike in some manner and one is different. Select the one that is different.",
+  "options": [
+   "13 - 39",
+   "27 - 81",
+   "23 - 69",
+   "17 - 51"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 6,
+  "section": "General intelligence and Reasoning Ability",
+  "number": 12,
+  "question_id": "630680256024",
+  "question": "Read the given statements and conclusions carefully. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statements.\nStatements:\nA. Some dogs are goats.\nB. All goats are peacocks.\nC. All peacocks are eagles.\nConclusions:\nI. Some peacocks are dogs.\nII. All dogs are peacocks.\nIII. All eagles are peacocks.",
+  "options": [
+   "Only conclusion I follows",
+   "Only conclusions II and III follow",
+   "Only conclusions I and II follow",
+   "All the conclusions, I, II and III, follow"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 6,
+  "section": "General intelligence and Reasoning Ability",
+  "number": 13,
+  "question_id": "630680256036",
+  "question": "Three different positions of the same dice are shown. Which pattern will be on the face opposite to the one having ' [circle-with-mark symbol] '?\n[figure: three dice positions]",
+  "options": [
+   "[figure]",
+   "[figure]",
+   "[figure]",
+   "[figure]"
+  ],
+  "correct": 3,
+  "has_figure": true
+ },
+ {
+  "page": 7,
+  "section": "General intelligence and Reasoning Ability",
+  "number": 14,
+  "question_id": "630680256023",
+  "question": "In a row of 80 students, Ram is at the 15th position to the right of Rohit, who is at the 40th position from the right end. What will be the position of Ram from the left end?",
+  "options": [
+   "54th",
+   "56th",
+   "55th",
+   "57th"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 7,
+  "section": "General intelligence and Reasoning Ability",
+  "number": 15,
+  "question_id": "630680256033",
+  "question": "Select the figure from among the given options that can replace the question mark (?) in the following series.\n[figure: series of 5 boxes with a ? ]",
+  "options": [
+   "[figure]",
+   "[figure]",
+   "[figure]",
+   "[figure]"
+  ],
+  "correct": 1,
+  "has_figure": true
+ },
+ {
+  "page": 8,
+  "section": "General intelligence and Reasoning Ability",
+  "number": 16,
+  "question_id": "630680256029",
+  "question": "If\nP # Q means P is the brother of Q,\nP @ Q means P is the father of Q, and\nP & Q means P is the sister of Q,\nthen how is A related to E in the expression A # B @ C & D # E?",
+  "options": [
+   "Paternal uncle",
+   "Father",
+   "Grandfather",
+   "Maternal uncle"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 8,
+  "section": "General intelligence and Reasoning Ability",
+  "number": 17,
+  "question_id": "630680256027",
+  "question": "AOPQRSTUVDEFMNWXBZGHIJKLYC\nHow many letters in the above string occupy the same position as they occupy in the English alphabet?",
+  "options": [
+   "Four",
+   "Two",
+   "One",
+   "Three"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 8,
+  "section": "General intelligence and Reasoning Ability",
+  "number": 18,
+  "question_id": "630680256034",
+  "question": "Select the correct mirror image of the given combination when the mirror is held at the right side.\nACCESS",
+  "options": [
+   "[figure]",
+   "[figure]",
+   "[figure]",
+   "[figure]"
+  ],
+  "correct": 3,
+  "has_figure": true,
+  "note": "options are mirrored-text images"
+ },
+ {
+  "page": 9,
+  "section": "General intelligence and Reasoning Ability",
+  "number": 19,
+  "question_id": "630680256035",
+  "question": "Select the alternative figure in which the given figure (X) is embedded.\n[figure: X and figures 1-4]",
+  "options": [
+   "3",
+   "2",
+   "1",
+   "4"
+  ],
+  "correct": 2,
+  "has_figure": true
+ },
+ {
+  "page": 9,
+  "section": "General intelligence and Reasoning Ability",
+  "number": 20,
+  "question_id": "630680256032",
+  "question": "A statement is given, followed by two courses of action numbered I and II. You have to assume everything in the statement to be true, and on the basis of the information given in the statement, decide which of the suggested courses of action logically follow(s) for pursuing.\nStatement:\nFalse cases on dowry are on the increase in the last few years.\nCourses of Action:\nI. Government should instruct the local police administration to properly verify dowry complaints before registering an FIR.\nII. Local police should take strict action on false cases of dowry.",
+  "options": [
+   "Only II follows",
+   "Only I follows",
+   "Either I or II follows",
+   "Both I and II follow"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 10,
+  "section": "General Awareness",
+  "number": 1,
+  "question_id": "630680256053",
+  "question": "Which of the following pairs of personality and the associated musical instrument is NOT matched correctly?",
+  "options": [
+   "Zakir Hussain - Tabla",
+   "Bismillah Khan -Shehnai",
+   "Bhajan Sopori - Veena",
+   "Hari Prasad Chaurasia - Flute"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 10,
+  "section": "General Awareness",
+  "number": 2,
+  "question_id": "630680256061",
+  "question": "Which Constitutional Amendment Act promoted the appointment of the same person as a Governor for two or more states?",
+  "options": [
+   "Ninth",
+   "Third",
+   "Fifth",
+   "Seventh"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 10,
+  "section": "General Awareness",
+  "number": 3,
+  "question_id": "630680256043",
+  "question": "Where is the India's first Dark Night Sky Reserve being established?",
+  "options": [
+   "Ladakh",
+   "Daman and Diu",
+   "Lakshadweep",
+   "Dadra and Nagar Haveli"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 10,
+  "section": "General Awareness",
+  "number": 4,
+  "question_id": "630680256051",
+  "question": "Which of the following types of structures is NOT associated with Buddhist architecture in India?",
+  "options": [
+   "Chaityas",
+   "Monkas",
+   "Viharas",
+   "Stupas"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 11,
+  "section": "General Awareness",
+  "number": 5,
+  "question_id": "630680256044",
+  "question": "The first Indian to participate in NASA's International Air and Space Program was _____.",
+  "options": [
+   "Jahnavi Dangeti",
+   "Detriya Devi",
+   "Kusum Ghosat",
+   "Maanvi Bhatt"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 11,
+  "section": "General Awareness",
+  "number": 6,
+  "question_id": "630680256048",
+  "question": "Which of the following was the host country for the FIFA World Cup 2022?",
+  "options": [
+   "Turkey",
+   "Saudi Arabia",
+   "Qatar",
+   "UAE"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 11,
+  "section": "General Awareness",
+  "number": 7,
+  "question_id": "630680256057",
+  "question": "Which of the following states has the highest number of operating mines (excluding fuels, atomic mineral and minor minerals), according to the Annual Report, 2021-22 of the Ministry of Mines?",
+  "options": [
+   "Odisha",
+   "Madhya Pradesh",
+   "Jharkhand",
+   "Rajasthan"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 11,
+  "section": "General Awareness",
+  "number": 8,
+  "question_id": "630680256062",
+  "question": "As of December 2022, who was the Lieutenant Governor of Delhi?",
+  "options": [
+   "Tajendra Khanna",
+   "Vinai Kumar Saxena",
+   "Najeeb Jung",
+   "Anil Baijal"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 12,
+  "section": "General Awareness",
+  "number": 9,
+  "question_id": "630680256059",
+  "question": "Which of the following is NOT a sexually transmitted disease?",
+  "options": [
+   "AIDS",
+   "Amoebiasis",
+   "Gonorrhea",
+   "Syphilis"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 12,
+  "section": "General Awareness",
+  "number": 10,
+  "question_id": "630680256049",
+  "question": "The Battle of Khanwa (1527) was fought between the forces of Rana Sanga and _____.",
+  "options": [
+   "Babur",
+   "Mahmood Khalji",
+   "Isham Khan",
+   "Ibrahim Lodhi"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 12,
+  "section": "General Awareness",
+  "number": 11,
+  "question_id": "630680256058",
+  "question": "Which of the following eras is considered as the age of the dinosaurs?",
+  "options": [
+   "Cenozoic",
+   "Precambrian",
+   "Palaeozoic",
+   "Mesozoic"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 12,
+  "section": "General Awareness",
+  "number": 12,
+  "question_id": "630680256052",
+  "question": "'Buiya' is a popular folk-dance form of which of the following states?",
+  "options": [
+   "Mizoram",
+   "Nagaland",
+   "Arunachal Pradesh",
+   "Manipur"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 13,
+  "section": "General Awareness",
+  "number": 13,
+  "question_id": "630680256050",
+  "question": "What name was given to the operation for liberation of Goa, in 1961, to make it a part of the Union of India?",
+  "options": [
+   "Operation Vijay",
+   "Operation Margao",
+   "Operation Polo",
+   "Operation Searchlight"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 13,
+  "section": "General Awareness",
+  "number": 14,
+  "question_id": "630680256045",
+  "question": "The Ministry of Women and Child Development (MWCD), in partnership with the Ministry of Education, GOI and UNICEF, launched which of the following campaigns to bring back 'out of school' adolescent girls in India to the formal education and/or skilling system?",
+  "options": [
+   "Shakti Shiksha Abhiyaan",
+   "Beti Bachao Beti Padhao",
+   "Kanya Shiksha Pravesh Utsav",
+   "She is a Changemaker"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 13,
+  "section": "General Awareness",
+  "number": 15,
+  "question_id": "630680256046",
+  "question": "National Action Plan for Mechanised Sanitation Ecosystem (NAMASTE) is a joint initiative of _____ and _____.",
+  "options": [
+   "Ministry of Social Justice and Empowerment; Ministry of Housing and Urban Affairs",
+   "Ministry of Environment and Climate Change; Ministry of Housing and Urban Affairs",
+   "Ministry of Environment and Climate Change; Ministry of Minority Affairs",
+   "Ministry of Social Justice and Empowerment; Ministry of Environment and Climate Change"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 13,
+  "section": "General Awareness",
+  "number": 16,
+  "question_id": "630680256060",
+  "question": "How many internal reflections do light rays undergo, inside a raindrop, to form a secondary rainbow?",
+  "options": [
+   "One",
+   "Four",
+   "Three",
+   "Two"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 14,
+  "section": "General Awareness",
+  "number": 17,
+  "question_id": "630680256055",
+  "question": "As per the Census of India 2011, what percentage of Indians live in rural areas?",
+  "options": [
+   "81.2",
+   "61.5",
+   "68.8",
+   "77.3"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 14,
+  "section": "General Awareness",
+  "number": 18,
+  "question_id": "630680256054",
+  "question": "The formula for calculating Net National Product (NNP) is _____.",
+  "options": [
+   "GNP – Depreciation",
+   "GDP + Depreciation",
+   "GNP + Depreciation",
+   "GDP – Depreciation"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 14,
+  "section": "General Awareness",
+  "number": 19,
+  "question_id": "630680256056",
+  "question": "Which of the following states had the highest growth rate for population according to the Census of India, 2011 as compared to that of 2001?",
+  "options": [
+   "Himachal Pradesh",
+   "Meghalaya",
+   "Bihar",
+   "Uttar Pradesh"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 14,
+  "section": "General Awareness",
+  "number": 20,
+  "question_id": "630680256047",
+  "question": "Who among the following was the first woman president of the Indian Olympic Association?",
+  "options": [
+   "Sania Mirza",
+   "MC Mary Kom",
+   "PT Usha",
+   "Geeta Phogat"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 15,
+  "section": "Arithmetical and Numerical Ability",
+  "number": 1,
+  "question_id": "630680256068",
+  "question": "A has a sum of ₹12,528, which is 16% more than what B has and 20% less than what C has. The amount that B and C together have is:",
+  "options": [
+   "₹26,460",
+   "₹26,450",
+   "₹26,420",
+   "₹26,550"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 15,
+  "section": "Arithmetical and Numerical Ability",
+  "number": 2,
+  "question_id": "630680256063",
+  "question": "The value of [(6 2/5 ÷ 5 1/3 of 4 1/2) − (1 1/3 ÷ 3 3/5 of 5/6) + 2/5] / [3/4 − 2 2/3 ÷ 1 1/5 of 5/9 + 4 1/4] is:",
+  "options": [
+   "1/3",
+   "5/6",
+   "2/3",
+   "2/9"
+  ],
+  "correct": 4,
+  "has_figure": false,
+  "note": "expression is an image of a fraction; transcribed as numerator / denominator"
+ },
+ {
+  "page": 15,
+  "section": "Arithmetical and Numerical Ability",
+  "number": 3,
+  "question_id": "630680256073",
+  "question": "A varies directly as B and inversely as C. When B = 25 and C = 18, then A = 20. If B = 35 and C = 16, then what is the value of A?",
+  "options": [
+   "32",
+   "31.5",
+   "30",
+   "32.5"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 16,
+  "section": "Arithmetical and Numerical Ability",
+  "number": 4,
+  "question_id": "630680256071",
+  "question": "6 years ago, the ratio of the ages (in years) of Renu and Raman was 5 : 11. After 6 years from now, the ratio of their ages will be 11 : 17. What is the sum of their present ages (in years)?",
+  "options": [
+   "34",
+   "46",
+   "44",
+   "38"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 16,
+  "section": "Arithmetical and Numerical Ability",
+  "number": 5,
+  "question_id": "630680256082",
+  "question": "Study the given graph and answer the following question.\nImports and exports of a company in 2017 to 2020 (in ₹ crores)\n[bar graph: 2017 Imports 265, Exports 400; 2018 Imports 450, Exports 540; 2019 Imports 500, Exports 575; 2020 Imports 550, Exports 640]\nThe ratio of the average exports of the company in 2018 and 2020 to the total imports in 2017 and 2019 is:",
+  "options": [
+   "118 : 153",
+   "31 : 39",
+   "41 : 51",
+   "115 : 151"
+  ],
+  "correct": 1,
+  "has_figure": true,
+  "note": "bar graph image; values read from data labels (Imports blue, Exports orange)"
+ },
+ {
+  "page": 16,
+  "section": "Arithmetical and Numerical Ability",
+  "number": 6,
+  "question_id": "630680256070",
+  "question": "A man marks an article 60% above its cost price and sells it by giving two successive discounts of 25% and 5% on its marked price. What is his profit percentage?",
+  "options": [
+   "14%",
+   "20%",
+   "30%",
+   "16%"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 17,
+  "section": "Arithmetical and Numerical Ability",
+  "number": 7,
+  "question_id": "630680256081",
+  "question": "Study the given pie chart and answer the following question.\nBreakup (degree wise) of the number of students studying in classes VI to X in a school\n[pie chart: VI 84.6, VII 75.6, VIII 63.0, IX 72.0, X 64.8]\nNumbers of students in class VIII = 105\nThe ratio of the number of boys and girls in class X is 4 : 5 and the ratio of that of boys and girls in class VII is 5 : 9. What is the ratio of the number of boys in class VII to the number of girls in class X?",
+  "options": [
+   "4 : 3",
+   "4 : 5",
+   "5 : 4",
+   "3 : 4"
+  ],
+  "correct": 4,
+  "has_figure": true,
+  "note": "pie chart image; degree values read from labels"
+ },
+ {
+  "page": 17,
+  "section": "Arithmetical and Numerical Ability",
+  "number": 8,
+  "question_id": "630680256067",
+  "question": "The ratio of acid and water in solution A is 2 : 5 and the ratio of acid and water in solution B is 6 : 7. 7 L of A is mixed with 9 L of B. In 312 mL of the resulting solution, the quantity (in mL) of acid is:",
+  "options": [
+   "125",
+   "135",
+   "120",
+   "130"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 17,
+  "section": "Arithmetical and Numerical Ability",
+  "number": 9,
+  "question_id": "630680256064",
+  "question": "If the 9-digit number 924x597y4 is divisible by 88, then the maximum possible value of (5x − 3y) is:",
+  "options": [
+   "37",
+   "23",
+   "17",
+   "35"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 18,
+  "section": "Arithmetical and Numerical Ability",
+  "number": 10,
+  "question_id": "630680256069",
+  "question": "By selling an article at 11/25 of its selling price, a shopkeeper loses 34%. If he sells it at 80% of its original selling price, then his profit percentage is:",
+  "options": [
+   "28%",
+   "20%",
+   "30%",
+   "25%"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 18,
+  "section": "Arithmetical and Numerical Ability",
+  "number": 11,
+  "question_id": "630680256076",
+  "question": "A train passes two bridges of length 900 m and 420 m in 75 seconds and 50 seconds, respectively. The length (in m) of the train is:",
+  "options": [
+   "540",
+   "500",
+   "550",
+   "520"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 18,
+  "section": "Arithmetical and Numerical Ability",
+  "number": 12,
+  "question_id": "630680256077",
+  "question": "Pipe A can fill a tank in 20 hours and pipe B can empty the full tank in 40 hours. Both pipes were initially opened together for 30 hours, and then pipe B was closed and pipe A continued to fill the tank. In how much total time (in hours) was the tank filled completely?",
+  "options": [
+   "36",
+   "38",
+   "34",
+   "35"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 19,
+  "section": "Arithmetical and Numerical Ability",
+  "number": 13,
+  "question_id": "630680256080",
+  "question": "A circle is inscribed in a square. Another circle concentric to this circle is drawn within the circle. The area of the ring formed by these two circles is 1540 cm^2 and the difference between their radii is 7 cm. What is the perimeter (in cm) of the square? (Use π = 22/7)",
+  "options": [
+   "308",
+   "352",
+   "264",
+   "336"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 19,
+  "section": "Arithmetical and Numerical Ability",
+  "number": 14,
+  "question_id": "630680256075",
+  "question": "An item is available for ₹1,600 cash or for ₹700 cash down payment, followed by three monthly instalments of ₹310 each. The rate of interest (simple) p.a. charged under the instalment plan is (approximate):",
+  "options": [
+   "20.8%",
+   "21.6%",
+   "20.3%",
+   "21.2%"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 19,
+  "section": "Arithmetical and Numerical Ability",
+  "number": 15,
+  "question_id": "630680256074",
+  "question": "A certain sum invested at simple interest for 3 1/2 years amounts to ₹6,747 and for 5 years amounts to ₹7,410 at the same rate per cent per annum. The rate of interest p.a. is:",
+  "options": [
+   "8.5%",
+   "7.5%",
+   "8%",
+   "9%"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 20,
+  "section": "Arithmetical and Numerical Ability",
+  "number": 16,
+  "question_id": "630680256079",
+  "question": "Two solid metallic right circular cones of heights 31 cm and 53 cm and radii of their bases 21 cm each are melted and recast into a solid sphere. What is the surface area (in cm^2) of the sphere?",
+  "options": [
+   "1764 π",
+   "900 π",
+   "1600 π",
+   "1296 π"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 20,
+  "section": "Arithmetical and Numerical Ability",
+  "number": 17,
+  "question_id": "630680256078",
+  "question": "A can do a certain work in 14 days. B is 33 1/3 % less efficient than A. Both started to work together, but A left the work 2 days before the completion of the work and B continued to work till the work was over. In how many days was the whole work completed?",
+  "options": [
+   "9 3/5",
+   "8 1/4",
+   "8 1/2",
+   "10 2/5"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 20,
+  "section": "Arithmetical and Numerical Ability",
+  "number": 18,
+  "question_id": "630680256072",
+  "question": "A and B start a business by investing their capitals in the ratio of 2/3 : 3/8. After 4 months, A reduced his capital by 50% and B increased his capital by one-third. What will be the share (in ₹ lakhs) of B in a total profit of ₹ 39 lakhs, after 1 year?",
+  "options": [
+   "18.6",
+   "17.2",
+   "19.8",
+   "13.2"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 21,
+  "section": "Arithmetical and Numerical Ability",
+  "number": 19,
+  "question_id": "630680256065",
+  "question": "When 1529, 2178 and 2886 are divided by the greatest number n, the remainder in each case is r. What is the value of (3n – 2r)?",
+  "options": [
+   "69",
+   "61",
+   "67",
+   "63"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 21,
+  "section": "Arithmetical and Numerical Ability",
+  "number": 20,
+  "question_id": "630680256066",
+  "question": "A car travels for 45 minutes at a speed of 80 km/h, the next 40 minutes at s speed of 48 km/h and the next 35 minutes at a speed of x km/h. If his average speed for the whole journey is 72 1/4 km/h, then what is the value of x ?",
+  "options": [
+   "96",
+   "90",
+   "80",
+   "84"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 21,
+  "section": "Test of English Language and Comprehension",
+  "number": 1,
+  "question_id": "630680256092",
+  "question": "Select the option that contains no spelling error.",
+  "options": [
+   "The horrizontal movements of ocean water are refferred to as currents, while the vertical changes are called upwelling or downwelling.",
+   "The horizontal movements of ocean water are refered to as currents, while the vertical changes are called upwelling or downwelling.",
+   "The horizontal movements of ocean water are referred to as currents, while the vertical changes are called upwelling or downwelling.",
+   "The horrizontal movements of ocean water are referred to as currents, while the vertical changes are called upwelling or downwelling."
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 22,
+  "section": "Test of English Language and Comprehension",
+  "number": 2,
+  "question_id": "630680256095",
+  "question": "Select the most appropriate meaning of the given proverb.\nYou can't have your cake and eat it too",
+  "options": [
+   "Not to worry much about trivial matters",
+   "Encourage people to achieve at least one goal, if not two",
+   "To do two things that are similar to each other",
+   "Unable to do two things that are contradictory to each other"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 22,
+  "section": "Test of English Language and Comprehension",
+  "number": 3,
+  "question_id": "630680256083",
+  "question": "Sentences of a paragraph are given below in jumbled order. Arrange the sentences in the correct order to form a meaningful and coherent paragraph.\n1) Travellers should, however, realise that change cannot be brought by a single person, and we should join hands together and vow to follow the traffic rules.\n2) Eight out of ten road accidents are caused by the people who don't follow the rules of the road.\n3) Abiding by the traffic rules will only help us in having a smooth traffic flow and preventing road accidents.\n4) Road safety rules are meant for public safety and to keep the traffic congestion in check.",
+  "options": [
+   "3,4,1,2",
+   "1,3,2,4",
+   "4,2,1,3",
+   "3,2,1,4"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 22,
+  "section": "Test of English Language and Comprehension",
+  "number": 4,
+  "question_id": "630680256090",
+  "question": "Select the most appropriate ANTONYM of the underlined word/ set of given words.\nGarima has a propensity for being the attention seeker in the department.\nShe's inherited from her father a propensity to talk too much",
+  "options": [
+   "aptness",
+   "disinclination",
+   "competence",
+   "disposition"
+  ],
+  "correct": 2,
+  "has_figure": false,
+  "note": "underlined word is 'propensity'; second sentence is printed on the page as shown"
+ },
+ {
+  "page": 23,
+  "section": "Test of English Language and Comprehension",
+  "number": 5,
+  "question_id": "630680256086",
+  "question": "Select the option that can be used as a one-word substitute for the given group of words.\nOne who believes in ruthless self-aggrandisement",
+  "options": [
+   "Introvert",
+   "Egoist",
+   "Altruistic",
+   "Iconoclast"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 23,
+  "section": "Test of English Language and Comprehension",
+  "number": 6,
+  "question_id": "630680256096",
+  "question": "The following sentence has been split into four segments. Identify the segment that contains a grammatical error.\nThe ideal detect dog / is extremely energetic / with an excessive / play drive.",
+  "options": [
+   "The ideal detect dog",
+   "with an excessive",
+   "play drive",
+   "is extremely energetic"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 23,
+  "section": "Test of English Language and Comprehension",
+  "number": 7,
+  "question_id": "630680256088",
+  "question": "Select the most appropriate option that can substitute the underlined segment in the given sentence. If there is no need to substitute it, select 'No substitution required'.\nBarely has they won the match when the coach had a heart attack.",
+  "options": [
+   "Barely have they won",
+   "Barely did they won",
+   "No substitution required",
+   "Barely had they won"
+  ],
+  "correct": 4,
+  "has_figure": false,
+  "note": "underlined segment is 'Barely has they won'"
+ },
+ {
+  "page": 24,
+  "section": "Test of English Language and Comprehension",
+  "number": 8,
+  "question_id": "630680256097",
+  "question": "The following sentence has been split into four segments. Identify the segment that contains a grammatical error.\nThe sparrows are / some of the few birds / that engage on / dust bathing.",
+  "options": [
+   "some of the few birds",
+   "The sparrows are",
+   "dust bathing",
+   "that engage on"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 24,
+  "section": "Test of English Language and Comprehension",
+  "number": 9,
+  "question_id": "630680256089",
+  "question": "Select the most appropriate option to fill in the blank with the correct collocation.\nIf you read _____ you will clearly see what he means.",
+  "options": [
+   "among the lines",
+   "with the lines",
+   "on the lines",
+   "between the lines"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 24,
+  "section": "Test of English Language and Comprehension",
+  "number": 10,
+  "question_id": "630680256093",
+  "question": "Select the option that contains no spelling error.",
+  "options": [
+   "Conservation canines are fast becoming indispensable tools for biologists.",
+   "Conservation cannines are fast becoming indispensible tools for biologicsts.",
+   "Conversatoin canines are fast becoming indispensable tools for biologists.",
+   "Conversation canines are fast becoming indespensible tools for biologists."
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 25,
+  "section": "Test of English Language and Comprehension",
+  "number": 11,
+  "question_id": "630680256087",
+  "question": "Select the most appropriate option that can substitute the underlined segment in the given sentence. If there is no need to substitute it, select 'No substitution required'.\nNo sooner had the company launch its new product than it went bankrupt.",
+  "options": [
+   "No substitution required",
+   "No sooner had the company launched",
+   "No sooner did the company launched",
+   "No sooner have the company launched"
+  ],
+  "correct": 2,
+  "has_figure": false,
+  "note": "underlined segment is 'No sooner had the company launch'"
+ },
+ {
+  "page": 25,
+  "section": "Test of English Language and Comprehension",
+  "number": 12,
+  "question_id": "630680256094",
+  "question": "Select the most appropriate meaning of the given idiom.\nBlow off steam",
+  "options": [
+   "To be careful with steam",
+   "To get rid of pent-up energy or strong emotion",
+   "To deal with reality",
+   "To experience maximum heat"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 25,
+  "section": "Test of English Language and Comprehension",
+  "number": 13,
+  "question_id": "630680256084",
+  "question": "Sentences of a paragraph are given below in jumbled order. Arrange the sentences in the correct order to form a meaningful and coherent paragraph.\n1) As one starts growing old, the lens of the eye hardens, loses its transparency and becomes opaque.\n2) Cataract is the major cause of blindness, which is also caused by a damage to the cornea.\n3) It obstructs the light rays from entering the eye.\n4) It occurs more often in old age.",
+  "options": [
+   "4,2,3,1",
+   "2,4,1,3",
+   "1,2,3,4",
+   "2,1,4,3"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 26,
+  "section": "Test of English Language and Comprehension",
+  "number": 14,
+  "question_id": "630680256085",
+  "question": "Select the option that can be used as a one-word substitute for the given group of words.\nStudy of various aspects of aging",
+  "options": [
+   "Microbiology",
+   "Chronology",
+   "Genealogy",
+   "Gerontology"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 26,
+  "section": "Test of English Language and Comprehension",
+  "number": 15,
+  "question_id": "630680256091",
+  "question": "Select the most appropriate homonym to fill in the blanks.\nAs she _____ her hands from the deck I fear the huge _____ of ocean.",
+  "options": [
+   "hauls",
+   "ripples",
+   "tides",
+   "waves"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 27,
+  "section": "Test of English Language and Comprehension",
+  "number": 16,
+  "question_id": "630680256103",
+  "question": "Comprehension:\nRead the given passage and answer the questions that follow.\n\nWhen I was very little, I caught the travel bug. It started after my grandparents first brought me to their home in France and I have now been to twenty-nine different countries. Each has given me a unique learning experience.\n\nAt five, I marvelled at the Eiffel Tower in the City of Lights. When I was eight, I stood in the heart of Piazza San Marco feeding hordes of pigeons, then glided down Venetian waterways on sleek gondolas. At thirteen, I saw the ancient, megalithic structure of Stonehenge and walked along the Great Wall of China, amazed that the thousand-year-old stones were still in place.\n\nIt was through exploring cultures around the world that I first became interested in language.\n\nIt began with French, which taught me the importance of pronunciation. I remember once asking a store owner in Paris where Rue des Pyramides was. But when I pronounced it PYR–a–mides instead of pyr–A–mides, with more accent on the A, she looked at me bewildered.\n\nIn the eighth grade, I became fascinated with Spanish and aware of its similarities with English through cognates. Baseball in Spanish, for example, is béisbol, which looks different but sounds nearly the same. This was incredible to me as it made speech and comprehension more fluid, and even today I find that cognates come to the rescue when I forget how to say something in Spanish.\n\nThen, in high school, I developed an enthusiasm for Chinese. As I studied Chinese at my school, I marvelled how if just one stroke was missing from a character, the meaning is lost. I loved how long words were formed by combining simpler characters, so Huǒ meaning fire and Shān meaning mountain can be joined to create Huǒshān, which means volcano. I love spending hours at a time practicing the characters and I can feel the beauty and rhythm as I form them.\n\nSubQuestion No : 16\nIdentify the tone of the given passage.",
+  "options": [
+   "Sad",
+   "Hypocritical",
+   "Narrative and descriptive",
+   "Optimistic"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 28,
+  "section": "Test of English Language and Comprehension",
+  "number": 17,
+  "question_id": "630680256099",
+  "question": "Comprehension:\nRead the given passage and answer the questions that follow.\n\nWhen I was very little, I caught the travel bug. It started after my grandparents first brought me to their home in France and I have now been to twenty-nine different countries. Each has given me a unique learning experience.\n\nAt five, I marvelled at the Eiffel Tower in the City of Lights. When I was eight, I stood in the heart of Piazza San Marco feeding hordes of pigeons, then glided down Venetian waterways on sleek gondolas. At thirteen, I saw the ancient, megalithic structure of Stonehenge and walked along the Great Wall of China, amazed that the thousand-year-old stones were still in place.\n\nIt was through exploring cultures around the world that I first became interested in language.\n\nIt began with French, which taught me the importance of pronunciation. I remember once asking a store owner in Paris where Rue des Pyramides was. But when I pronounced it PYR–a–mides instead of pyr–A–mides, with more accent on the A, she looked at me bewildered.\n\nIn the eighth grade, I became fascinated with Spanish and aware of its similarities with English through cognates. Baseball in Spanish, for example, is béisbol, which looks different but sounds nearly the same. This was incredible to me as it made speech and comprehension more fluid, and even today I find that cognates come to the rescue when I forget how to say something in Spanish.\n\nThen, in high school, I developed an enthusiasm for Chinese. As I studied Chinese at my school, I marvelled how if just one stroke was missing from a character, the meaning is lost. I loved how long words were formed by combining simpler characters, so Huǒ meaning fire and Shān meaning mountain can be joined to create Huǒshān, which means volcano. I love spending hours at a time practicing the characters and I can feel the beauty and rhythm as I form them.\n\nSubQuestion No : 17\nIdentify the most suitable title for the given passage.",
+  "options": [
+   "The Beautiful World",
+   "Solo Travellers",
+   "Travel and Language",
+   "7 Wonders of the World"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 29,
+  "section": "Test of English Language and Comprehension",
+  "number": 18,
+  "question_id": "630680256102",
+  "question": "Comprehension:\nRead the given passage and answer the questions that follow.\n\nWhen I was very little, I caught the travel bug. It started after my grandparents first brought me to their home in France and I have now been to twenty-nine different countries. Each has given me a unique learning experience.\n\nAt five, I marvelled at the Eiffel Tower in the City of Lights. When I was eight, I stood in the heart of Piazza San Marco feeding hordes of pigeons, then glided down Venetian waterways on sleek gondolas. At thirteen, I saw the ancient, megalithic structure of Stonehenge and walked along the Great Wall of China, amazed that the thousand-year-old stones were still in place.\n\nIt was through exploring cultures around the world that I first became interested in language.\n\nIt began with French, which taught me the importance of pronunciation. I remember once asking a store owner in Paris where Rue des Pyramides was. But when I pronounced it PYR–a–mides instead of pyr–A–mides, with more accent on the A, she looked at me bewildered.\n\nIn the eighth grade, I became fascinated with Spanish and aware of its similarities with English through cognates. Baseball in Spanish, for example, is béisbol, which looks different but sounds nearly the same. This was incredible to me as it made speech and comprehension more fluid, and even today I find that cognates come to the rescue when I forget how to say something in Spanish.\n\nThen, in high school, I developed an enthusiasm for Chinese. As I studied Chinese at my school, I marvelled how if just one stroke was missing from a character, the meaning is lost. I loved how long words were formed by combining simpler characters, so Huǒ meaning fire and Shān meaning mountain can be joined to create Huǒshān, which means volcano. I love spending hours at a time practicing the characters and I can feel the beauty and rhythm as I form them.\n\nSubQuestion No : 18\nWhich word from the passage is the most appropriate synonym of the word'unbelievable '?",
+  "options": [
+   "Amazed",
+   "Bewildered",
+   "Incredible",
+   "Enthusiasm"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 30,
+  "section": "Test of English Language and Comprehension",
+  "number": 19,
+  "question_id": "630680256101",
+  "question": "Comprehension:\nRead the given passage and answer the questions that follow.\n\nWhen I was very little, I caught the travel bug. It started after my grandparents first brought me to their home in France and I have now been to twenty-nine different countries. Each has given me a unique learning experience.\n\nAt five, I marvelled at the Eiffel Tower in the City of Lights. When I was eight, I stood in the heart of Piazza San Marco feeding hordes of pigeons, then glided down Venetian waterways on sleek gondolas. At thirteen, I saw the ancient, megalithic structure of Stonehenge and walked along the Great Wall of China, amazed that the thousand-year-old stones were still in place.\n\nIt was through exploring cultures around the world that I first became interested in language.\n\nIt began with French, which taught me the importance of pronunciation. I remember once asking a store owner in Paris where Rue des Pyramides was. But when I pronounced it PYR–a–mides instead of pyr–A–mides, with more accent on the A, she looked at me bewildered.\n\nIn the eighth grade, I became fascinated with Spanish and aware of its similarities with English through cognates. Baseball in Spanish, for example, is béisbol, which looks different but sounds nearly the same. This was incredible to me as it made speech and comprehension more fluid, and even today I find that cognates come to the rescue when I forget how to say something in Spanish.\n\nThen, in high school, I developed an enthusiasm for Chinese. As I studied Chinese at my school, I marvelled how if just one stroke was missing from a character, the meaning is lost. I loved how long words were formed by combining simpler characters, so Huǒ meaning fire and Shān meaning mountain can be joined to create Huǒshān, which means volcano. I love spending hours at a time practicing the characters and I can feel the beauty and rhythm as I form them.\n\nSubQuestion No : 19\nWhich word from the passage is the most appropriate ANTONYM of the word' ordinary'?",
+  "options": [
+   "Marvelled",
+   "Fascinated",
+   "Unique",
+   "Bewildered"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 31,
+  "section": "Test of English Language and Comprehension",
+  "number": 20,
+  "question_id": "630680256100",
+  "question": "Comprehension:\nRead the given passage and answer the questions that follow.\n\nWhen I was very little, I caught the travel bug. It started after my grandparents first brought me to their home in France and I have now been to twenty-nine different countries. Each has given me a unique learning experience.\n\nAt five, I marvelled at the Eiffel Tower in the City of Lights. When I was eight, I stood in the heart of Piazza San Marco feeding hordes of pigeons, then glided down Venetian waterways on sleek gondolas. At thirteen, I saw the ancient, megalithic structure of Stonehenge and walked along the Great Wall of China, amazed that the thousand-year-old stones were still in place.\n\nIt was through exploring cultures around the world that I first became interested in language.\n\nIt began with French, which taught me the importance of pronunciation. I remember once asking a store owner in Paris where Rue des Pyramides was. But when I pronounced it PYR–a–mides instead of pyr–A–mides, with more accent on the A, she looked at me bewildered.\n\nIn the eighth grade, I became fascinated with Spanish and aware of its similarities with English through cognates. Baseball in Spanish, for example, is béisbol, which looks different but sounds nearly the same. This was incredible to me as it made speech and comprehension more fluid, and even today I find that cognates come to the rescue when I forget how to say something in Spanish.\n\nThen, in high school, I developed an enthusiasm for Chinese. As I studied Chinese at my school, I marvelled how if just one stroke was missing from a character, the meaning is lost. I loved how long words were formed by combining simpler characters, so Huǒ meaning fire and Shān meaning mountain can be joined to create Huǒshān, which means volcano. I love spending hours at a time practicing the characters and I can feel the beauty and rhythm as I form them.\n\nSubQuestion No : 20\nThe author was fascinated by which of the following when he was thirteen?",
+  "options": [
+   "All the twenty-nine different countries he had visited",
+   "Great Wall of China",
+   "Eiffel Tower in the City of Lights",
+   "Piazza San Marco"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 31,
+  "section": "Test of Hindi Language and Comprehension",
+  "number": 1,
+  "question_id": "630680256104",
+  "question": "वाक्य-विन्यास की दृष्टि से शुद्ध वाक्य का चयन करें।",
+  "options": [
+   "पालन करती है जनता शासक की आज्ञा का।",
+   "शासक की आज्ञा का जनता पालन करती है।",
+   "जनता शासक की आज्ञा का पालन करती है।",
+   "जनता आज्ञा का पालन करती है शासक की।"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 32,
+  "section": "Test of Hindi Language and Comprehension",
+  "number": 2,
+  "question_id": "630680256111",
+  "question": "निम्नलिखित में से किस वाक्य का प्रथमपद अशुद्ध है?",
+  "options": [
+   "सशक्त",
+   "निर्दोष",
+   "निरोग",
+   "अतीन्द्रिय"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 32,
+  "section": "Test of Hindi Language and Comprehension",
+  "number": 3,
+  "question_id": "630680256116",
+  "question": "दिए गए शब्दों में से 'समंजित' के विलोमार्थी शब्द की पहचान करें।",
+  "options": [
+   "मंजित",
+   "समायोजित",
+   "अमंजित",
+   "असमंजित"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 32,
+  "section": "Test of Hindi Language and Comprehension",
+  "number": 4,
+  "question_id": "630680256114",
+  "question": "'ओस का पानी होना' – अशुद्ध मुहावरे के रेखांकित शब्द को सही शब्द से बदलें।",
+  "options": [
+   "बूँद",
+   "छींटा",
+   "बुलबुला",
+   "मोती"
+  ],
+  "correct": 4,
+  "has_figure": false,
+  "note": "underlined word is 'पानी'"
+ },
+ {
+  "page": 32,
+  "section": "Test of Hindi Language and Comprehension",
+  "number": 5,
+  "question_id": "630680256110",
+  "question": "'भास्कर' शब्द के शुद्ध सन्धि-विच्छेद का चयन कीजिये।",
+  "options": [
+   "भास् + कर",
+   "भा + स्कर",
+   "भाः + कर",
+   "भास्क + र"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 33,
+  "section": "Test of Hindi Language and Comprehension",
+  "number": 6,
+  "question_id": "630680256105",
+  "question": "निम्नलिखित में से उस वाक्य का चयन करें जिसका पदक्रम शुद्ध हो?",
+  "options": [
+   "अंगद ने रावण से दो टूक बात कही कि मेरे पैर जमीन से हटा कर दिखाओ तो राम बिना सीता के वापस चले जायेंगे।",
+   "दो टूक कह देना ही होगा आज कि नचाना नाच ठीक नहीं तुम्हें।",
+   "वह घर जाता ही नहीं कैसी पट्टी मेरे बेटे को पढाई तुमने।",
+   "निनानवे के फेर में दोपहर को दतुअन करता है जेठामल तीसरे पहर को नाश्ता।"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 33,
+  "section": "Test of Hindi Language and Comprehension",
+  "number": 7,
+  "question_id": "630680256117",
+  "question": "'उसको ______ पसंद है।' –उपयुक्त तत्सम शब्द चुनकर वाक्य पूर्ति करें।",
+  "options": [
+   "हरड़",
+   "लशुन",
+   "हल्दी",
+   "हींग"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 33,
+  "section": "Test of Hindi Language and Comprehension",
+  "number": 8,
+  "question_id": "630680256106",
+  "question": "'श्रद्धा एक सामजिक ______ है।'\nउपयुक्त शब्द चुनकर, उपरोक्त वाक्य में रिक्त स्थान की पूर्ति करें।",
+  "options": [
+   "भाव",
+   "प्रभाव",
+   "प्रवंचना",
+   "अपराध"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 33,
+  "section": "Test of Hindi Language and Comprehension",
+  "number": 9,
+  "question_id": "630680256115",
+  "question": "निम्नलिखित में से 'तलवार' शब्द के पर्याय का चयन करें।",
+  "options": [
+   "चाप",
+   "कीर",
+   "कुम्भिल",
+   "खंग"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 34,
+  "section": "Test of Hindi Language and Comprehension",
+  "number": 10,
+  "question_id": "630680256107",
+  "question": "'पीछे-पीछे चलने वाला' – इस वाक्यांश के लिए उपयुक्त शब्द का चयन करें।",
+  "options": [
+   "अनुगामी",
+   "मित्र",
+   "सहयात्री",
+   "अनुवर्ती"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 34,
+  "section": "Test of Hindi Language and Comprehension",
+  "number": 11,
+  "question_id": "630680256118",
+  "question": "'मुझे ______ नहीं मिला।' निम्न में से विदेशज शब्द चुनकर उक्त वाक्य को पूर्ण करें।",
+  "options": [
+   "साथ",
+   "दर्शन",
+   "मौका",
+   "समय"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 34,
+  "section": "Test of Hindi Language and Comprehension",
+  "number": 12,
+  "question_id": "630680256112",
+  "question": "'विषधर – वह जो विष को धारण करता हो'- उक्त विग्रह किस समास के अनुसार किया गया है? पहचान करें।",
+  "options": [
+   "सम्बन्ध तत्पुरुष समास",
+   "बहुब्रीह समास",
+   "कर्मधारय समास",
+   "द्वंद्व समास"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 34,
+  "section": "Test of Hindi Language and Comprehension",
+  "number": 13,
+  "question_id": "630680256108",
+  "question": "'पहले पैदा होने वाला' - इस वाक्यांश के लिए उपयुक्त शब्द का चयन करें।",
+  "options": [
+   "अग्रज",
+   "पूर्वज",
+   "अनुज",
+   "पूर्वगामी"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 35,
+  "section": "Test of Hindi Language and Comprehension",
+  "number": 14,
+  "question_id": "630680256113",
+  "question": "'सो सुन्दर मादक मदिरा सी।\nखंजन-दृग सुख-प्रद प्रभुता सी।।'\nउक्त पंक्तियाँ, निम्न में से किस अलंकार का उदाहरण हैं?",
+  "options": [
+   "शब्दालंकार",
+   "पाश्चात्य अलंकार",
+   "उभयालंकार",
+   "अर्थालंकार"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 35,
+  "section": "Test of Hindi Language and Comprehension",
+  "number": 15,
+  "question_id": "630680256109",
+  "question": "उपयुक्त विशेषण शब्द चुनकर निम्न वाक्य को पूर्ण करें।\n'______ चिथड़े लपेटे रहो।'",
+  "options": [
+   "उचित-अनुचित",
+   "फटे-पुराने",
+   "नवीन-प्राचीन",
+   "अगले-पिछले"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 36,
+  "section": "Test of Hindi Language and Comprehension",
+  "number": 16,
+  "question_id": "630680256121",
+  "question": "Comprehension:\nदिए गए गद्यांश को ध्यान से पढ़े और प्रश्न के उत्तर दें।\n\nहिन्दी समीक्षकों में आचार्य रामचंद्र शुक्ल जी के बाद जिस आलोचक का नाम बड़े आदर से लिया जाता है वह हैं आचार्य नंददुलारे वाजपेई। उन्होंने छायावादी काव्य की विस्तृत समीक्षा करते हुए इस काव्यधारा को प्रतिष्ठित कराने में महत्वपूर्ण योगदान किया। उनके द्वारा रचित कुछ महत्वपूर्ण काव्य ग्रंथ हैं- आधुनिक साहित्य, नया साहित्य - नए प्रश्न, कवि निराला, प्रकीर्णिका तथा राष्ट्रीय साहित्य। वे काव्य में सौंदर्य विधायक तत्वों के उद्घाटन पर विशेष बल देते हैं। कथा साहित्य और नाटक की आलोचना वह इनके प्रभावकारी पक्ष को ध्यान में रखकर करते हैं। प्रसाद जी के नाटकों को वे स्वच्छंदतावादी तथा लक्ष्मीनारायण मिश्र के नाटकों को पुनरुत्थानवादी कहना उपयुक्त मानते हैं। वे मूलतः छायावादी एवं स्वच्छंदतावादी समीक्षक के रूप में हिन्दी समीक्षा में प्रतिष्ठित हुए हैं। दूसरी ओर हजारी प्रसाद द्विवेदी शुक्ल परंपरा के समीक्षक हैं, किंतु शुक्लजी की कई मान्यताओं से सहमत नहीं हैं। वे कबीर को एक उच्च कोटि का कवि और समाज सुधारक मानते हैं। कबीर की भाषा की शक्ति पर विचार करते हुए वे उन्हें 'वाणी का डिक्टेटर' कहते हैं। हिन्दी साहित्य की भूमिका, नाथ संप्रदाय, हिन्दी साहित्य, सूर साहित्य, कबीर आदि कृतियाँ उनके गंभीर चिंतन, मौलिक विवेचन को उजागर करती हैं। उनका दृष्टिकोण मानवतावादी अधिक है। मध्यकालीन धर्म साधना और तद्युगीन साहित्य का विश्लेषण करने में उन्हें विशेष सफलता प्राप्त हुई है।\n\nSubQuestion No : 16\nनिम्नलिखित में से कौन-सा शब्द 'आलोचना' का पर्यायवाची नहीं है?",
+  "options": [
+   "कथोपकथन",
+   "मीमांसा",
+   "समीक्षा",
+   "निरूपण"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 36,
+  "section": "Test of Hindi Language and Comprehension",
+  "number": 17,
+  "question_id": "630680256124",
+  "question": "Comprehension:\nदिए गए गद्यांश को ध्यान से पढ़े और प्रश्न के उत्तर दें।\n\nहिन्दी समीक्षकों में आचार्य रामचंद्र शुक्ल जी के बाद जिस आलोचक का नाम बड़े आदर से लिया जाता है वह हैं आचार्य नंददुलारे वाजपेई। उन्होंने छायावादी काव्य की विस्तृत समीक्षा करते हुए इस काव्यधारा को प्रतिष्ठित कराने में महत्वपूर्ण योगदान किया। उनके द्वारा रचित कुछ महत्वपूर्ण काव्य ग्रंथ हैं- आधुनिक साहित्य, नया साहित्य - नए प्रश्न, कवि निराला, प्रकीर्णिका तथा राष्ट्रीय साहित्य। वे काव्य में सौंदर्य विधायक तत्वों के उद्घाटन पर विशेष बल देते हैं। कथा साहित्य और नाटक की आलोचना वह इनके प्रभावकारी पक्ष को ध्यान में रखकर करते हैं। प्रसाद जी के नाटकों को वे स्वच्छंदतावादी तथा लक्ष्मीनारायण मिश्र के नाटकों को पुनरुत्थानवादी कहना उपयुक्त मानते हैं। वे मूलतः छायावादी एवं स्वच्छंदतावादी समीक्षक के रूप में हिन्दी समीक्षा में प्रतिष्ठित हुए हैं। दूसरी ओर हजारी प्रसाद द्विवेदी शुक्ल परंपरा के समीक्षक हैं, किंतु शुक्लजी की कई मान्यताओं से सहमत नहीं हैं। वे कबीर को एक उच्च कोटि का कवि और समाज सुधारक मानते हैं। कबीर की भाषा की शक्ति पर विचार करते हुए वे उन्हें 'वाणी का डिक्टेटर' कहते हैं। हिन्दी साहित्य की भूमिका, नाथ संप्रदाय, हिन्दी साहित्य, सूर साहित्य, कबीर आदि कृतियाँ उनके गंभीर चिंतन, मौलिक विवेचन को उजागर करती हैं। उनका दृष्टिकोण मानवतावादी अधिक है। मध्यकालीन धर्म साधना और तद्युगीन साहित्य का विश्लेषण करने में उन्हें विशेष सफलता प्राप्त हुई है।\n\nSubQuestion No : 17\nगद्यांश के अनुसार नन्दुलारे वाजपेयी किस वर्ग के आलोचक हैं?",
+  "options": [
+   "छायावाद के विरोधी",
+   "छायावाद के समर्थक",
+   "शुक्ल परंपरा के समीक्षक",
+   "नयी कविता के समर्थक"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 37,
+  "section": "Test of Hindi Language and Comprehension",
+  "number": 18,
+  "question_id": "630680256122",
+  "question": "Comprehension:\nदिए गए गद्यांश को ध्यान से पढ़े और प्रश्न के उत्तर दें।\n\nहिन्दी समीक्षकों में आचार्य रामचंद्र शुक्ल जी के बाद जिस आलोचक का नाम बड़े आदर से लिया जाता है वह हैं आचार्य नंददुलारे वाजपेई। उन्होंने छायावादी काव्य की विस्तृत समीक्षा करते हुए इस काव्यधारा को प्रतिष्ठित कराने में महत्वपूर्ण योगदान किया। उनके द्वारा रचित कुछ महत्वपूर्ण काव्य ग्रंथ हैं- आधुनिक साहित्य, नया साहित्य - नए प्रश्न, कवि निराला, प्रकीर्णिका तथा राष्ट्रीय साहित्य। वे काव्य में सौंदर्य विधायक तत्वों के उद्घाटन पर विशेष बल देते हैं। कथा साहित्य और नाटक की आलोचना वह इनके प्रभावकारी पक्ष को ध्यान में रखकर करते हैं। प्रसाद जी के नाटकों को वे स्वच्छंदतावादी तथा लक्ष्मीनारायण मिश्र के नाटकों को पुनरुत्थानवादी कहना उपयुक्त मानते हैं। वे मूलतः छायावादी एवं स्वच्छंदतावादी समीक्षक के रूप में हिन्दी समीक्षा में प्रतिष्ठित हुए हैं। दूसरी ओर हजारी प्रसाद द्विवेदी शुक्ल परंपरा के समीक्षक हैं, किंतु शुक्लजी की कई मान्यताओं से सहमत नहीं हैं। वे कबीर को एक उच्च कोटि का कवि और समाज सुधारक मानते हैं। कबीर की भाषा की शक्ति पर विचार करते हुए वे उन्हें 'वाणी का डिक्टेटर' कहते हैं। हिन्दी साहित्य की भूमिका, नाथ संप्रदाय, हिन्दी साहित्य, सूर साहित्य, कबीर आदि कृतियाँ उनके गंभीर चिंतन, मौलिक विवेचन को उजागर करती हैं। उनका दृष्टिकोण मानवतावादी अधिक है। मध्यकालीन धर्म साधना और तद्युगीन साहित्य का विश्लेषण करने में उन्हें विशेष सफलता प्राप्त हुई है।\n\nSubQuestion No : 18\nउपर्युक्त गद्यांश के अनुसार कबीर को 'वाणी का डिक्टेटर' किसने कहा है?",
+  "options": [
+   "हजारी प्रसाद द्विवेदी ने",
+   "नन्ददुलारे वाजपेयी ने",
+   "जयशंकर प्रसाद ने",
+   "लक्ष्मीनारायण मिश्र ने"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 37,
+  "section": "Test of Hindi Language and Comprehension",
+  "number": 19,
+  "question_id": "630680256120",
+  "question": "Comprehension:\nदिए गए गद्यांश को ध्यान से पढ़े और प्रश्न के उत्तर दें।\n\nहिन्दी समीक्षकों में आचार्य रामचंद्र शुक्ल जी के बाद जिस आलोचक का नाम बड़े आदर से लिया जाता है वह हैं आचार्य नंददुलारे वाजपेई। उन्होंने छायावादी काव्य की विस्तृत समीक्षा करते हुए इस काव्यधारा को प्रतिष्ठित कराने में महत्वपूर्ण योगदान किया। उनके द्वारा रचित कुछ महत्वपूर्ण काव्य ग्रंथ हैं- आधुनिक साहित्य, नया साहित्य - नए प्रश्न, कवि निराला, प्रकीर्णिका तथा राष्ट्रीय साहित्य। वे काव्य में सौंदर्य विधायक तत्वों के उद्घाटन पर विशेष बल देते हैं। कथा साहित्य और नाटक की आलोचना वह इनके प्रभावकारी पक्ष को ध्यान में रखकर करते हैं। प्रसाद जी के नाटकों को वे स्वच्छंदतावादी तथा लक्ष्मीनारायण मिश्र के नाटकों को पुनरुत्थानवादी कहना उपयुक्त मानते हैं। वे मूलतः छायावादी एवं स्वच्छंदतावादी समीक्षक के रूप में हिन्दी समीक्षा में प्रतिष्ठित हुए हैं। दूसरी ओर हजारी प्रसाद द्विवेदी शुक्ल परंपरा के समीक्षक हैं, किंतु शुक्लजी की कई मान्यताओं से सहमत नहीं हैं। वे कबीर को एक उच्च कोटि का कवि और समाज सुधारक मानते हैं। कबीर की भाषा की शक्ति पर विचार करते हुए वे उन्हें 'वाणी का डिक्टेटर' कहते हैं। हिन्दी साहित्य की भूमिका, नाथ संप्रदाय, हिन्दी साहित्य, सूर साहित्य, कबीर आदि कृतियाँ उनके गंभीर चिंतन, मौलिक विवेचन को उजागर करती हैं। उनका दृष्टिकोण मानवतावादी अधिक है। मध्यकालीन धर्म साधना और तद्युगीन साहित्य का विश्लेषण करने में उन्हें विशेष सफलता प्राप्त हुई है।\n\nSubQuestion No : 19\n'उजागर' शब्द के अर्थ का चयन कीजिये।",
+  "options": [
+   "उज्ज्वल",
+   "ध्वस्त",
+   "प्रकट",
+   "तीव्र"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 38,
+  "section": "Test of Hindi Language and Comprehension",
+  "number": 20,
+  "question_id": "630680256123",
+  "question": "Comprehension:\nदिए गए गद्यांश को ध्यान से पढ़े और प्रश्न के उत्तर दें।\n\nहिन्दी समीक्षकों में आचार्य रामचंद्र शुक्ल जी के बाद जिस आलोचक का नाम बड़े आदर से लिया जाता है वह हैं आचार्य नंददुलारे वाजपेई। उन्होंने छायावादी काव्य की विस्तृत समीक्षा करते हुए इस काव्यधारा को प्रतिष्ठित कराने में महत्वपूर्ण योगदान किया। उनके द्वारा रचित कुछ महत्वपूर्ण काव्य ग्रंथ हैं- आधुनिक साहित्य, नया साहित्य - नए प्रश्न, कवि निराला, प्रकीर्णिका तथा राष्ट्रीय साहित्य। वे काव्य में सौंदर्य विधायक तत्वों के उद्घाटन पर विशेष बल देते हैं। कथा साहित्य और नाटक की आलोचना वह इनके प्रभावकारी पक्ष को ध्यान में रखकर करते हैं। प्रसाद जी के नाटकों को वे स्वच्छंदतावादी तथा लक्ष्मीनारायण मिश्र के नाटकों को पुनरुत्थानवादी कहना उपयुक्त मानते हैं। वे मूलतः छायावादी एवं स्वच्छंदतावादी समीक्षक के रूप में हिन्दी समीक्षा में प्रतिष्ठित हुए हैं। दूसरी ओर हजारी प्रसाद द्विवेदी शुक्ल परंपरा के समीक्षक हैं, किंतु शुक्लजी की कई मान्यताओं से सहमत नहीं हैं। वे कबीर को एक उच्च कोटि का कवि और समाज सुधारक मानते हैं। कबीर की भाषा की शक्ति पर विचार करते हुए वे उन्हें 'वाणी का डिक्टेटर' कहते हैं। हिन्दी साहित्य की भूमिका, नाथ संप्रदाय, हिन्दी साहित्य, सूर साहित्य, कबीर आदि कृतियाँ उनके गंभीर चिंतन, मौलिक विवेचन को उजागर करती हैं। उनका दृष्टिकोण मानवतावादी अधिक है। मध्यकालीन धर्म साधना और तद्युगीन साहित्य का विश्लेषण करने में उन्हें विशेष सफलता प्राप्त हुई है।\n\nSubQuestion No : 20\nउपर्युक्त गद्यांश के लिए उचित शीर्षक का चयन करें।",
+  "options": [
+   "नन्ददुलारे वाजपेयी की समीक्षा पद्धति",
+   "छायावादी आलोचक",
+   "हजारी प्रसाद द्विवेदी की समीक्षा पद्धति",
+   "शुक्ल परवर्ती हिन्दी आलोचना"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 38,
+  "section": "Discipline1",
+  "number": 1,
+  "question_id": "630680256170",
+  "question": "_____ does NOT have any child ClassLoaders.",
+  "options": [
+   "BootStrap ClassLoader",
+   "Extension ClassLoader",
+   "Primordial ClassLoader",
+   "System ClassLoader"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 39,
+  "section": "Discipline1",
+  "number": 2,
+  "question_id": "630680256206",
+  "question": "The lowest cost solution to developing a KM system is:",
+  "options": [
+   "in-house development",
+   "outsourcing",
+   "development by end users",
+   "off-the shelf solution"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 39,
+  "section": "Discipline1",
+  "number": 3,
+  "question_id": "630680256195",
+  "question": "_____ is a set of interrelated components that collect (or retrieve), process, store and distribute information to support decision-making and control in an organisation.",
+  "options": [
+   "An information technology",
+   "Mini model of a processed system",
+   "Max model of a processed system",
+   "An information system"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 39,
+  "section": "Discipline1",
+  "number": 4,
+  "question_id": "630680256174",
+  "question": "Which of the following services is NOT provided by the operating system?",
+  "options": [
+   "Resource management",
+   "Inter process for communication",
+   "Translate source into machine code",
+   "Program execution"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 40,
+  "section": "Discipline1",
+  "number": 5,
+  "question_id": "630680256184",
+  "question": "How to write the dot net server control?",
+  "options": [
+   "<asp:controlType ID=\"ControlID\" runin=\"server\" Property1=value1 [Property2=value2] />",
+   "<asp:controlType ID=\"ControlID\" runas=\"server\" Property1=value1 [Property2=value2] />",
+   "<asp:controlType ID=\"ControlID\" run=\"server\" Property1=value1 [Property2=value2] />",
+   "<asp:controlType ID=\"ControlID\" runat=\"server\" Property1=value1 [Property2=value2] />"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 40,
+  "section": "Discipline1",
+  "number": 6,
+  "question_id": "630680256154",
+  "question": "Which of the following is NOT a type of computer architecture?",
+  "options": [
+   "Micro Architecture",
+   "Harvard Architecture",
+   "Software Architecture",
+   "Instruction Set Architecture"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 40,
+  "section": "Discipline1",
+  "number": 7,
+  "question_id": "630680256153",
+  "question": "A network on the internet has a subnet mask of 255.255.240.0. What is the maximum number of hosts it can handle?",
+  "options": [
+   "1024",
+   "3072",
+   "2048",
+   "4094"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 41,
+  "section": "Discipline1",
+  "number": 8,
+  "question_id": "630680256152",
+  "question": "Which of the following statements is true?",
+  "options": [
+   "Circuit setup is not required in both a datagram network and virtual-circuit network.",
+   "Circuit setup is required in both a datagram network and virtual-circuit network.",
+   "Circuit setup is required in a virtual-circuit network.",
+   "Circuit setup is required in a datagram network."
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 41,
+  "section": "Discipline1",
+  "number": 9,
+  "question_id": "630680256189",
+  "question": "Which of the following is NOT a risk management methodology?",
+  "options": [
+   "Acceptance of threats",
+   "Risk generation",
+   "Avoidance of threats",
+   "Transfer of risks"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 41,
+  "section": "Discipline1",
+  "number": 10,
+  "question_id": "630680256139",
+  "question": "The decimal equivalent of the binary number 111111 is:",
+  "options": [
+   "46",
+   "63",
+   "52",
+   "36"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 42,
+  "section": "Discipline1",
+  "number": 11,
+  "question_id": "630680256193",
+  "question": "[figure: undirected graph with vertices 1-10; edges 1-4, 1-2, 4-3, 3-2, 2-5, 2-8, 8-7, 5-7, 5-6, 3-10, 3-9]\nWhat are the articulation points in the above graph?",
+  "options": [
+   "1, 2 and 3",
+   "2, 3 and 4",
+   "3, 4 and 5",
+   "2, 3 and 5"
+  ],
+  "correct": 4,
+  "has_figure": true,
+  "note": "graph drawing; edges read from picture"
+ },
+ {
+  "page": 42,
+  "section": "Discipline1",
+  "number": 12,
+  "question_id": "630680256196",
+  "question": "DSS is a computer program application used to improve a company's _____ capabilities.",
+  "options": [
+   "decision-making capabilities",
+   "marketing capabilities",
+   "delegation capabilities",
+   "resources utilisation capabilities"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 42,
+  "section": "Discipline1",
+  "number": 13,
+  "question_id": "630680256182",
+  "question": "_____ is a code that consists of CPU and platform-independent set of instructions, which can be easily converted to the native code.",
+  "options": [
+   "DLL",
+   "FCL",
+   "JIT",
+   "MSIL"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 43,
+  "section": "Discipline1",
+  "number": 14,
+  "question_id": "630680256168",
+  "question": "CMM stands for:",
+  "options": [
+   "Cognitive Modularity Model",
+   "Capability Modularity Model",
+   "Cognitive Measurable Model",
+   "Capability Maturity Model"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 43,
+  "section": "Discipline1",
+  "number": 15,
+  "question_id": "630680256179",
+  "question": "Marginal revenue is calculated by _____.",
+  "options": [
+   "dividing the change in total output quantity by the change in total revenue",
+   "dividing the change in total cost by the change in total output quantity",
+   "dividing the change in total revenue by the change in total output quantity",
+   "dividing the change in total revenue by the change in total profit"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 43,
+  "section": "Discipline1",
+  "number": 16,
+  "question_id": "630680256175",
+  "question": "Which of the following statements is FALSE?",
+  "options": [
+   "Burst Time: Time required by a process to start its execution",
+   "Turn Around Time: Time difference between the completion time and arrival time",
+   "Completion Time: Time at which a process completes its execution",
+   "Arrival Time: Time at which a process arrives in the ready queue"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 44,
+  "section": "Discipline1",
+  "number": 17,
+  "question_id": "630680256138",
+  "question": "In C++ language, the instruction 'ignore(x,y);' _______ .",
+  "options": [
+   "skips the last x characters and stops if character y is encountered",
+   "skips the first y characters and stops if character x is encountered",
+   "skips the first x characters and stops if character y is encountered",
+   "skips the last y characters and stops if character x is encountered"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 44,
+  "section": "Discipline1",
+  "number": 18,
+  "question_id": "630680256176",
+  "question": "Page fault means:",
+  "options": [
+   "accessing the page that is not currently in the memory",
+   "removing the page whenever it is needed",
+   "fetching the page whenever it is needed",
+   "an error that always occurs in the page"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 44,
+  "section": "Discipline1",
+  "number": 19,
+  "question_id": "630680256165",
+  "question": "Any account or goods used by the owner of the business for his personal use is called as:",
+  "options": [
+   "sales",
+   "drawings",
+   "general expenses",
+   "expenses"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 45,
+  "section": "Discipline1",
+  "number": 20,
+  "question_id": "630680256173",
+  "question": "Which of the following parameters is used to create a hyperlink in HTML?",
+  "options": [
+   "Link",
+   "url",
+   "Path",
+   "Href"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 45,
+  "section": "Discipline2",
+  "number": 1,
+  "question_id": "630680256136",
+  "question": "Select the true statement about try-catch blocks.",
+  "options": [
+   "A try block must have at least 1 catch to have a finally block.",
+   "A try block must have only 1 finally block for each catch block.",
+   "A try block can have many catches but only 1 finally block.",
+   "A try block can have many catches and many finally blocks."
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 45,
+  "section": "Discipline2",
+  "number": 2,
+  "question_id": "630680256156",
+  "question": "A four-way set-associative cache memory unit with a capacity of 32 KB is built using a block size of 1 K. The word length is 8 bits. The size of physical address space is 32 GB. The number of bits for the TAG field is:",
+  "options": [
+   "22",
+   "24",
+   "25",
+   "23"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 46,
+  "section": "Discipline2",
+  "number": 3,
+  "question_id": "630680256133",
+  "question": "Which of the following statements is true?",
+  "options": [
+   "POST is the process performed by BIOS immediately after the system is shutdown.",
+   "The bootstrap program is stored in RAM.",
+   "CMOS chip is powered by the battery located in the mother board.",
+   "BIOS was developed by Charles Babbage."
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 46,
+  "section": "Discipline2",
+  "number": 4,
+  "question_id": "630680256142",
+  "question": "A body of mass 4.9 kg hangs from a spring and oscillates with a period of 0.6 sec. How much will the spring shorten when the body is removed?",
+  "options": [
+   "0.809 metre",
+   "1.089 metre",
+   "1.009 metre",
+   "0.089 metre"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 46,
+  "section": "Discipline2",
+  "number": 5,
+  "question_id": "630680256186",
+  "question": "Which of the following statements is NOT true?",
+  "options": [
+   "etc: It contains other additional commands that are related to system maintenance and administration.",
+   "usr: It contains temporary files created by Linux or other users.",
+   "bin: It contains executable files for the UNIX commands.",
+   "dev: It contains device drivers that control various peripherals that are connected with the system."
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 47,
+  "section": "Discipline2",
+  "number": 6,
+  "question_id": "630680256178",
+  "question": "Elasticity of demand explains the _____ of the correlation between price and quantity.",
+  "options": [
+   "level, degree and angle",
+   "angle",
+   "level",
+   "degree"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 47,
+  "section": "Discipline2",
+  "number": 7,
+  "question_id": "630680256209",
+  "question": "'FORTRAN' stands for _____.",
+  "options": [
+   "Format Translation",
+   "Format Transfer",
+   "Formula Translation",
+   "Formula Transfer"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 47,
+  "section": "Discipline2",
+  "number": 8,
+  "question_id": "630680256137",
+  "question": "In a path-graph having 'n' vertices, where 'n' > 2, _____ is the number of vertices with degree 2.",
+  "options": [
+   "3",
+   "n − 2",
+   "2",
+   "0"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 48,
+  "section": "Discipline2",
+  "number": 9,
+  "question_id": "630680256207",
+  "question": "Which of the following is NOT a type of business?",
+  "options": [
+   "Experience driven",
+   "Expense driven",
+   "Efficiency driven",
+   "Expert driven"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 48,
+  "section": "Discipline2",
+  "number": 10,
+  "question_id": "630680256128",
+  "question": "The algebraic sum of deviations is zero when measured from the _____.",
+  "options": [
+   "second quartile",
+   "geometric mean",
+   "arithmetic mean",
+   "harmonic mean"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 48,
+  "section": "Discipline2",
+  "number": 11,
+  "question_id": "630680256192",
+  "question": "Which of the following is NOT the application of Divide and Conquer?",
+  "options": [
+   "Binary Search",
+   "All Pairs Shortest Path Problem",
+   "Quick Sort",
+   "Strassen's Matrix Multiplication"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 49,
+  "section": "Discipline2",
+  "number": 12,
+  "question_id": "630680256127",
+  "question": "The volume of the tetrahedron bounded by the surfaces x = 0, y = 0, z = 0 and x/a + y/b + z/c = 1 is:",
+  "options": [
+   "abc/4",
+   "abc/2",
+   "abc/10",
+   "abc/6"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 49,
+  "section": "Discipline2",
+  "number": 13,
+  "question_id": "630680256172",
+  "question": "Which of the following opens the linked document in the windows full body among the target values?",
+  "options": [
+   "_self",
+   "_top",
+   "_blank",
+   "_parent"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 49,
+  "section": "Discipline2",
+  "number": 14,
+  "question_id": "630680256151",
+  "question": "Which of the following is a conflict serializable schedule?\nS1: R1(A); R1(B); R2(A); R2(B); W2(B); W1(A)\nS2: R1(A); R2(A); R2(B); W2(B); R1(B); W1(A)",
+  "options": [
+   "S1 is conflict serializable but S2 is not.",
+   "S1 is not conflict serializable but S2 is conflict serializable.",
+   "Both are not conflict serializable.",
+   "Both are conflict serializable."
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 50,
+  "section": "Discipline2",
+  "number": 15,
+  "question_id": "630680256201",
+  "question": "Which of the following is the syntax to write an external CSS?",
+  "options": [
+   "<style rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">",
+   "<style> href=\"style.css\" </style>",
+   "<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">",
+   "<a href=\"style.css\" rel=\"stylesheet\" type=\"text/css\" >"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 50,
+  "section": "Discipline2",
+  "number": 16,
+  "question_id": "630680256161",
+  "question": "Which of the following methods is used to slide down an element?",
+  "options": [
+   "slideDown()",
+   "moveBelow()",
+   "moveDown()",
+   "slideBelow()"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 50,
+  "section": "Discipline2",
+  "number": 17,
+  "question_id": "630680256199",
+  "question": "Which of the following is a clipping algorithm?",
+  "options": [
+   "Simple DDA",
+   "Liang Barsky's algorithm",
+   "Bresenham's algorithm",
+   "Mid-point Algorithm"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 51,
+  "section": "Discipline2",
+  "number": 18,
+  "question_id": "630680256163",
+  "question": "According to the double entry system, every transaction will have _____ entries.",
+  "options": [
+   "Right and Left",
+   "Up and Down",
+   "Debt and Credit",
+   "Up and Left"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 51,
+  "section": "Discipline2",
+  "number": 19,
+  "question_id": "630680256185",
+  "question": "Which of the following is a default permission for the text file in Linux?",
+  "options": [
+   "rwx r-- r--",
+   "rw- r-- r--",
+   "rwx rwx rwx",
+   "rwx --- ---"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 51,
+  "section": "Discipline2",
+  "number": 20,
+  "question_id": "630680256198",
+  "question": "Which of the following statements is true about Home Location Register (HLR) and Visitor Location Register (VLR)?",
+  "options": [
+   "VLR is not responsible for the MS (Mobile Station) to inform the MLR about location changes.",
+   "VLR is not responsible for the MS (Mobile Station) to inform the HLR about location changes.",
+   "VLR is responsible for the MS (Mobile Station) to inform the HLR about location changes.",
+   "HLR is responsible for the MS (Mobile Station) to inform the VLR about location changes."
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 52,
+  "section": "Discipline3",
+  "number": 1,
+  "question_id": "630680256143",
+  "question": "An LED emits green light of wavelength λ = 5511.11 Å. Find the value of Eg.",
+  "options": [
+   "1.25 eV",
+   "2.25 eV",
+   "3.606 eV",
+   "36.06 eV"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 52,
+  "section": "Discipline3",
+  "number": 2,
+  "question_id": "630680256169",
+  "question": "Which of the following is NOT true about the Waterfall model?",
+  "options": [
+   "Long duration",
+   "High cost",
+   "High-risk involvement",
+   "Low cost"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 52,
+  "section": "Discipline3",
+  "number": 3,
+  "question_id": "630680256210",
+  "question": "Which of the following is the easiest to be transformed into a computer program?",
+  "options": [
+   "Pseudo-code",
+   "Algorithm",
+   "Flowchart",
+   "None of the above"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 53,
+  "section": "Discipline3",
+  "number": 4,
+  "question_id": "630680256191",
+  "question": "Arrange the following in the order of growth.\nO(n), O(n^2), O(2^n), O(log n), O(n log n), O(n^2 log n)",
+  "options": [
+   "O(n), O(n^2), O(log n), O(2^n), O(n log n), O(n^2 log n)",
+   "O(n), O(2^n), O(2^n), O(log n), O(n^2 log n), O(n log n)",
+   "O(log n), O(n), O(n log n), O(n^2), O(n^2 log n), O(2^n)",
+   "O(n^2), O(n), O(2^n), O(log n), O(n log n), O(n^2 log n)"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 53,
+  "section": "Discipline3",
+  "number": 5,
+  "question_id": "630680256202",
+  "question": "How to change all images to black and white (100% grey)?",
+  "options": [
+   "img { filter: graycolor(100%);}",
+   "img { filter: grayscale(100%);}",
+   "img { graycolor(100%);}",
+   "img { filter: \"grayscale(100%)\";}"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 53,
+  "section": "Discipline3",
+  "number": 6,
+  "question_id": "630680256188",
+  "question": "Grep command is used to:",
+  "options": [
+   "change the case of alphabets",
+   "search for a specific pattern from a specified file and display those lines containing the pattern",
+   "cut the columns/fields of a specified file",
+   "redirect the output of one command to another command"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 54,
+  "section": "Discipline3",
+  "number": 7,
+  "question_id": "630680256203",
+  "question": "Which of the following is NOT an XML Parser?",
+  "options": [
+   "Shell",
+   "JDOM",
+   "DOM",
+   "SAX"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 54,
+  "section": "Discipline3",
+  "number": 8,
+  "question_id": "630680256200",
+  "question": "Which of these is NOT a parameter upon which the influence of lightning is based?",
+  "options": [
+   "Light Source",
+   "Position of Observer",
+   "Rendering Algorithm",
+   "Surface"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 54,
+  "section": "Discipline3",
+  "number": 9,
+  "question_id": "630680256132",
+  "question": "Which of the following statements is NOT true?",
+  "options": [
+   "5 kilobytes is equal to 10,240 half bytes",
+   "3 kilobytes is equal to 24,576 bits",
+   "4 kilobytes is equal to 4069 bytes",
+   "2 kilobytes is equal to 4096 nibbles"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 55,
+  "section": "Discipline3",
+  "number": 10,
+  "question_id": "630680256212",
+  "question": "What is the value of Δ^n e^(ax+b) ?",
+  "options": [
+   "(e^(ah) − 1)^n e^(ax − b)",
+   "(e^(ah) − 1)^n e^(ax + b)",
+   "(e^(ah) + 1)^n e^(ax − b)",
+   "(e^(ah) + 1)^n e^(ax + b)"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 55,
+  "section": "Discipline3",
+  "number": 11,
+  "question_id": "630680256147",
+  "question": "A Mod-6 counter and a Mod-8 counter in cascade give a _____ counter.",
+  "options": [
+   "Mod-14",
+   "Mod-68",
+   "Mod-2",
+   "Mod-48"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 55,
+  "section": "Discipline3",
+  "number": 12,
+  "question_id": "630680256146",
+  "question": "A three-variable function (A ⊕ B ⊕ C)' = ?",
+  "options": [
+   "(A ⊙ B ⊙ C)'",
+   "A ⊕ B ⊙ C'",
+   "A ⊙ B ⊕ C",
+   "A ⊕ B ⊙ C"
+  ],
+  "correct": 4,
+  "has_figure": false,
+  "note": "⊕ = XOR symbol, ⊙ = XNOR symbol as printed"
+ },
+ {
+  "page": 56,
+  "section": "Discipline3",
+  "number": 13,
+  "question_id": "630680256204",
+  "question": "How to write the external DTD?",
+  "options": [
+   "<!DOCTYPE SYSTEM \"file-name\">",
+   "<!DOCTYPE element ROOT \"file-name\">",
+   "<!DOCTYPE SYSTEM \"file-name\" root-element>",
+   "<!DOCTYPE root-element SYSTEM \"file-name\">"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 56,
+  "section": "Discipline3",
+  "number": 14,
+  "question_id": "630680256149",
+  "question": "Consider the relation R (PQRSTU) with the set of functional dependencies F = {P → RT, Q → S, R → PS, QS → TU}. Find the closures of PQ.",
+  "options": [
+   "PQRST",
+   "PQRTU",
+   "PQRSU",
+   "PQRSTU"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 56,
+  "section": "Discipline3",
+  "number": 15,
+  "question_id": "630680256213",
+  "question": "The values of x are 1, 3, 4 and those of f(x) are 1, 27, 64. What is the polynomial equation by using the Lagrange interpolation formula?",
+  "options": [
+   "8x^2 − 19x + 12",
+   "8x^2 + 9x + 12",
+   "8x^2 − 9x + 12",
+   "8x^2 + 9x + 12"
+  ],
+  "correct": 1,
+  "has_figure": false,
+  "note": "options 2 and 4 print identically in the source (both '8x^2 + 9x + 12')"
+ },
+ {
+  "page": 57,
+  "section": "Discipline3",
+  "number": 16,
+  "question_id": "630680256129",
+  "question": "If two dice are thrown, find the probability that the sum is neither 5 nor 9?",
+  "options": [
+   "3/9",
+   "5/9",
+   "1/9",
+   "7/9"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 57,
+  "section": "Discipline3",
+  "number": 17,
+  "question_id": "630680256125",
+  "question": "The general solution of dy/dx = e^(x + y) is:",
+  "options": [
+   "e^(−x) − e^(−y) = c",
+   "e^(−x) + e^(y) = c",
+   "e^x + e^(−y) = c",
+   "e^(−x) + e^(y) = c"
+  ],
+  "correct": 3,
+  "has_figure": false,
+  "note": "options 2 and 4 print identically in the source"
+ },
+ {
+  "page": 57,
+  "section": "Discipline3",
+  "number": 18,
+  "question_id": "630680256159",
+  "question": "What feature of the transport layer prevents data loss?",
+  "options": [
+   "Encryption",
+   "Packet switching",
+   "Addressing",
+   "Flow control"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 58,
+  "section": "Discipline3",
+  "number": 19,
+  "question_id": "630680256150",
+  "question": "Descriptive attributes are used to:",
+  "options": [
+   "record the information about relationships",
+   "record the information about attributes",
+   "record the information about participating entities",
+   "record the information about data"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 58,
+  "section": "Discipline3",
+  "number": 20,
+  "question_id": "630680256158",
+  "question": "Which of the following statements is FALSE about TCP (Transmission control protocol)?",
+  "options": [
+   "It uses a three-way handshake to establish a connection.",
+   "It receives data from application as a single stream.",
+   "It is a connection-oriented protocol.",
+   "It is a connection-less protocol."
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 58,
+  "section": "Discipline4",
+  "number": 1,
+  "question_id": "630680256166",
+  "question": "Which of the following is FALSE about packages?",
+  "options": [
+   "Packages cannot provide controlled access.",
+   "Packages are used to prevent naming conflicts.",
+   "Packages are considered data encapsulation.",
+   "Packages are used to prevent naming conflicts, and packages are considered data encapsulation."
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 59,
+  "section": "Discipline4",
+  "number": 2,
+  "question_id": "630680256160",
+  "question": "Which of the following statements is true about slow start phase of the TCP congestion control?",
+  "options": [
+   "Congestion window increases by 1 Maximum Segment Size every round trip time.",
+   "Congestion window approximately doubles every round trip time.",
+   "Congestion window increases by 2 Maximum Segment Size on every successful acknowledgement.",
+   "Congestion window approximately doubles on every successful acknowledgement."
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 59,
+  "section": "Discipline4",
+  "number": 3,
+  "question_id": "630680256208",
+  "question": "Which of the following is NOT the purpose of knowledge management system?",
+  "options": [
+   "Driving strategy",
+   "Integration",
+   "Sharing of knowledge",
+   "Portability"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 59,
+  "section": "Discipline4",
+  "number": 4,
+  "question_id": "630680256135",
+  "question": "Which of the following is NOT true about software?",
+  "options": [
+   "System software is written in a high-level language.",
+   "Application software is written in a high-level language.",
+   "System software plays a vital role for the effective functioning of a system.",
+   "System software is written in a low-level language."
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 60,
+  "section": "Discipline4",
+  "number": 5,
+  "question_id": "630680256187",
+  "question": "Which of the following is NOT a shell in Linux?",
+  "options": [
+   "C shell",
+   "Korn shell",
+   "Bourne shell",
+   "Alpha cell"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 60,
+  "section": "Discipline4",
+  "number": 6,
+  "question_id": "630680256140",
+  "question": "Which of the following is an example of the fifth-generation language?",
+  "options": [
+   "Java",
+   "Cobol",
+   "Prolog",
+   "Python"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 60,
+  "section": "Discipline4",
+  "number": 7,
+  "question_id": "630680256167",
+  "question": "Which of the following is NOT a phase of the RAD model?",
+  "options": [
+   "Development modelling",
+   "Business modelling",
+   "Process modelling",
+   "Data modelling"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 61,
+  "section": "Discipline4",
+  "number": 8,
+  "question_id": "630680256126",
+  "question": "If u = tan^(−1)(y/x), then x ∂u/∂x + y ∂u/∂y = ?",
+  "options": [
+   "Sin 2u",
+   "0",
+   "None of the given options",
+   "Cos 2u"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 61,
+  "section": "Discipline4",
+  "number": 9,
+  "question_id": "630680256180",
+  "question": "Which of the following inflations describes how demand for goods and services can drive up their prices?",
+  "options": [
+   "Cost-push inflation",
+   "Built-in Inflation",
+   "Demand-pull inflation",
+   "Demand-push inflation"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 61,
+  "section": "Discipline4",
+  "number": 10,
+  "question_id": "630680256211",
+  "question": "Program links with other parts of the program in a flowchart are represented by _______.",
+  "options": [
+   "rectangles",
+   "circles",
+   "trapezoids",
+   "rhombuses"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 62,
+  "section": "Discipline4",
+  "number": 11,
+  "question_id": "630680256141",
+  "question": "_____ is the process of visiting different web sites on the internet hosted by various companies, organisations, educational institutions, magazines, individuals, etc.",
+  "options": [
+   "Webbing",
+   "Searching",
+   "Chatting",
+   "Web surfing"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 62,
+  "section": "Discipline4",
+  "number": 12,
+  "question_id": "630680256164",
+  "question": "The part of the firm's capital that is required for conducting day to day expenses is called:",
+  "options": [
+   "working capital",
+   "asset",
+   "expenses",
+   "fixed capital"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 62,
+  "section": "Discipline4",
+  "number": 13,
+  "question_id": "630680256190",
+  "question": "Who is the father of e-commerce in India?",
+  "options": [
+   "Bryan Eisenberg",
+   "Michael Aldrich",
+   "K Vaitheeswaran",
+   "Tim Ferris"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 63,
+  "section": "Discipline4",
+  "number": 14,
+  "question_id": "630680256177",
+  "question": "The advantage of SSTF (Shortest Seek Time First) is:",
+  "options": [
+   "high variance of response time as SSTF favours only some requests",
+   "overhead to calculate seek time in advance",
+   "average response time decreases",
+   "throughput decreases"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 63,
+  "section": "Discipline4",
+  "number": 15,
+  "question_id": "630680256155",
+  "question": "Which of the following is an addressing mode used in an instruction of the form ADD R1, [R2]?",
+  "options": [
+   "Register Indirect",
+   "Register",
+   "Indexed Register",
+   "Assembly Register"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 63,
+  "section": "Discipline4",
+  "number": 16,
+  "question_id": "630680256171",
+  "question": "What is the output of the following code?\nint Integer = 24;\nchar String = 'I';\nSystem.out.print(Integer);\nSystem.out.print(String);",
+  "options": [
+   "I",
+   "Compiler Error",
+   "Throws Exception",
+   "24I"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 64,
+  "section": "Discipline4",
+  "number": 17,
+  "question_id": "630680256131",
+  "question": "An organisation structure establishes relationships between:",
+  "options": [
+   "people, work and resources",
+   "organisations and environment",
+   "suppliers and customers",
+   "organisations and society"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 64,
+  "section": "Discipline4",
+  "number": 18,
+  "question_id": "630680256157",
+  "question": "Which of the following is NOT a symmetric-key cryptographic algorithm?",
+  "options": [
+   "AES",
+   "RC4",
+   "RSA",
+   "DES"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 64,
+  "section": "Discipline4",
+  "number": 19,
+  "question_id": "630680256130",
+  "question": "_____ is a person who carries on business by himself/herself.",
+  "options": [
+   "Cooperative",
+   "Sole proprietorship",
+   "Partnership",
+   "Trader"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 65,
+  "section": "Discipline4",
+  "number": 20,
+  "question_id": "630680256134",
+  "question": "Which of the following is NOT true about NTFS?",
+  "options": [
+   "It utilises the disk space efficiently by using a smaller size of clusters.",
+   "NTFS's attributes are read-only, hidden, system, archive, not content indexed, off-line, temporary and compressed.",
+   "It introduced improved performance, scalable in comparison with its precursor.",
+   "It does not support the compression of files and directories to optimise storage space."
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 65,
+  "section": "Discipline5",
+  "number": 1,
+  "question_id": "630680256205",
+  "question": "The set of processes developed in an organisation to create, gather, store, transfer and apply knowledge best describes:",
+  "options": [
+   "knowledge management",
+   "organisational learnings",
+   "knowledge asset",
+   "organisational memory"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 65,
+  "section": "Discipline5",
+  "number": 2,
+  "question_id": "630680256181",
+  "question": "Which of the following is the execution engine for .NET applications and serves as the interface between .NET applications and the operating system.",
+  "options": [
+   "Framework Class Library (FCL)",
+   "Common Type System (CTS)",
+   "Common Language Specifications (CLS)",
+   "Common Language Runtime (CLR)"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 66,
+  "section": "Discipline5",
+  "number": 3,
+  "question_id": "630680256183",
+  "question": "Which of the following is NOT a feature of ADO.net?",
+  "options": [
+   "Maintainability",
+   "Interoperability",
+   "Reachability",
+   "Scalability"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 66,
+  "section": "Discipline5",
+  "number": 4,
+  "question_id": "630680256145",
+  "question": "Find the value of F = xy + x'z using distributive law.",
+  "options": [
+   "(x + z)(y + z)",
+   "(x + y')(x + z)",
+   "(x' + y)(y + z)",
+   "(x' + y)(x + z)(y + z)"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 66,
+  "section": "Discipline5",
+  "number": 5,
+  "question_id": "630680256144",
+  "question": "The refractive index of the core of an optical fibre is greater than that of cladding because:",
+  "options": [
+   "the light gets reflected at the entrance end of the optical fibre",
+   "the light gets totally internally reflected into the core",
+   "the light gets restricted at the entrance end of the optical fibre",
+   "the light gets refracted into cladding"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 67,
+  "section": "Discipline5",
+  "number": 6,
+  "question_id": "630680256162",
+  "question": "Which directive is used for binding the model data to the view?",
+  "options": [
+   "ng-model-view",
+   "ng-model-app",
+   "ng-model",
+   "ng-app-model"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 67,
+  "section": "Discipline5",
+  "number": 7,
+  "question_id": "630680256214",
+  "question": "If μ is an averaging operator and δ^n is the n^th central difference operator, then what is the value of μ^2?",
+  "options": [
+   "μ^2 = 1/4 (δ^2 + 4)",
+   "μ^2 = 1/2 (δ^2 + 4)",
+   "μ^2 = 1/4 (δ^2 + 6)",
+   "μ^2 = 1/4 (δ^2 + 8)"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 67,
+  "section": "Discipline5",
+  "number": 8,
+  "question_id": "630680256148",
+  "question": "For what minimum value of propagation delay in each FF will a 10-bit ripple counter skip a count when it is clocked at 10 MHz?",
+  "options": [
+   "10 ns",
+   "25 ns",
+   "100 ns",
+   "50 ns"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 68,
+  "section": "Discipline5",
+  "number": 9,
+  "question_id": "630680256194",
+  "question": "What are the solutions for the following sum of a subset problem?\nw[1:5]={2,7,8,9,15}; Sum required = 17\n1 means the item is included.\n0 means the item is excluded.",
+  "options": [
+   "11100; 10101; 00110",
+   "11100; 10001; 00110",
+   "11000; 10001; 00110",
+   "11100; 10101; 00111"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 68,
+  "section": "Discipline5",
+  "number": 10,
+  "question_id": "630680256197",
+  "question": "Which of the following systems comprises word processing, electronic filing, electronic mail, message switching, data storage and data and voice communication?",
+  "options": [
+   "Executive Support Systems",
+   "Office Automation Systems",
+   "Customer Relationship Management",
+   "Decision Support Systems"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 68,
+  "section": "Teaching Methodology",
+  "number": 1,
+  "question_id": "630680256218",
+  "question": "Who among the following is known as Lokhitwadi?",
+  "options": [
+   "Ishwar Chandra Vidyasagar",
+   "GopalHari Deshmukh",
+   "Rabindranath Tagore",
+   "Ram Mohan Roy"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 69,
+  "section": "Teaching Methodology",
+  "number": 2,
+  "question_id": "630680256220",
+  "question": "For preparing a unit plan, which of the following procedure is followed?\nI. Formation of proper units and sub-units if not prescribed in the syllabus.\nII. Determination of methods of assessment.",
+  "options": [
+   "Both I and II",
+   "Neither I nor II",
+   "Only I",
+   "Only II"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 69,
+  "section": "Teaching Methodology",
+  "number": 3,
+  "question_id": "630680256221",
+  "question": "David Kolb's model of learning style is based on which type of learning?",
+  "options": [
+   "Inquiry-based learning",
+   "Integrative learning",
+   "Collaborative learning",
+   "Experiential learning"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 69,
+  "section": "Teaching Methodology",
+  "number": 4,
+  "question_id": "630680256216",
+  "question": "Inconsistency in the development of different type of conservation is called _____.",
+  "options": [
+   "Horizontal Decalage",
+   "Meta-cognition",
+   "Selective attention",
+   "Immersion"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 69,
+  "section": "Teaching Methodology",
+  "number": 5,
+  "question_id": "630680256219",
+  "question": "Heuristic method of teaching science was introduced by_____.",
+  "options": [
+   "William James",
+   "Henry Edward Armstrong",
+   "Lev Vygotsky",
+   "Abraham Maslow"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 70,
+  "section": "Teaching Methodology",
+  "number": 6,
+  "question_id": "630680256215",
+  "question": "Which of the following statement is correct regarding vision of new-born babies?\nI. Neonates can discriminate between stationary black and white stripe which is 1/8 of an inch wide\nII. By three months babies can see stripes as narrow as 64th of an inch wide",
+  "options": [
+   "Both I and II",
+   "Neither I nor II",
+   "Only I",
+   "Only II"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 70,
+  "section": "Teaching Methodology",
+  "number": 7,
+  "question_id": "630680256217",
+  "question": "In the context of Parenting, which of the following is correctly matched?",
+  "options": [
+   "Clearly communicating parent – Child being less liked",
+   "Power assertive parents – Coercive tactics in peer used by child",
+   "Parents being harsh – Unattractive social behavior of child",
+   "Give and take relationship of parents – Children show same relationship with peer"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 70,
+  "section": "Teaching Methodology",
+  "number": 8,
+  "question_id": "630680256222",
+  "question": "Broca's area and wernicke's area are concerned with language. These are the areas of _____.\nI. right hemisphere of brain.\nII. left hemisphere of brain.",
+  "options": [
+   "Only II",
+   "Only I",
+   "Both I and II",
+   "Neither I nor II"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 72,
+  "section": "Teaching Methodology",
+  "number": 9,
+  "question_id": "630680256223",
+  "question": "Which of the following is NOT a Neo-Freudian Theory of Development?\nI. Henry Stack Sullivan's Interpersonal Theory\nII. Erik Erikson Theory of Psycho-social Development",
+  "options": [
+   "Only II",
+   "Both I and II",
+   "Neither I nor II",
+   "Only I"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 72,
+  "section": "Teaching Methodology",
+  "number": 10,
+  "question_id": "630680256224",
+  "question": "Participation in which of the following activities can enable the community to accept a teacher as one of them?\nI. Problems of unhygienic conditions.\nII. Problems of agriculture.",
+  "options": [
+   "Neither I nor II",
+   "Only I",
+   "Both I and II",
+   "Only II"
+  ],
+  "correct": 3,
+  "has_figure": false
+ }
+]

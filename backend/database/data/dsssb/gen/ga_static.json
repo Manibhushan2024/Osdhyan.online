@@ -1,0 +1,3192 @@
+[
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Modern History",
+  "difficulty": "easy",
+  "question_en": "The Battle of Plassey (1757) was fought between the British East India Company and the Nawab of Bengal, who was:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Mir Qasim",
+    "hi": null
+   },
+   {
+    "en": "Shuja-ud-Daulah",
+    "hi": null
+   },
+   {
+    "en": "Siraj-ud-Daulah",
+    "hi": null
+   },
+   {
+    "en": "Alivardi Khan",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Robert Clive defeated Siraj-ud-Daulah on 23 June 1757, helped by the treachery of Mir Jafar.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Modern History",
+  "difficulty": "hard",
+  "question_en": "The Company obtained the Diwani (revenue collection rights) of Bengal, Bihar and Orissa in 1765 through the Treaty of Allahabad from:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Mughal emperor Shah Alam II",
+    "hi": null
+   },
+   {
+    "en": "Mughal emperor Farrukhsiyar",
+    "hi": null
+   },
+   {
+    "en": "Nawab Mir Jafar",
+    "hi": null
+   },
+   {
+    "en": "Nawab Shuja-ud-Daulah",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "After winning Buxar (1764), Clive secured the Diwani from the Mughal emperor Shah Alam II.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Modern History",
+  "difficulty": "medium",
+  "question_en": "Which was the first Indian state to accept Lord Wellesley's Subsidiary Alliance (1798)?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Mysore",
+    "hi": null
+   },
+   {
+    "en": "Awadh",
+    "hi": null
+   },
+   {
+    "en": "Hyderabad",
+    "hi": null
+   },
+   {
+    "en": "Peshwa's Maratha state",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The Nizam of Hyderabad was the first to sign the Subsidiary Alliance in 1798; Awadh followed in 1801.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Modern History",
+  "difficulty": "medium",
+  "question_en": "The first princely state annexed by the British under Lord Dalhousie's Doctrine of Lapse was:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Jhansi",
+    "hi": null
+   },
+   {
+    "en": "Satara",
+    "hi": null
+   },
+   {
+    "en": "Nagpur",
+    "hi": null
+   },
+   {
+    "en": "Sambalpur",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Satara was annexed in 1848; Jhansi (1853) and Nagpur (1854) followed.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Modern History",
+  "difficulty": "medium",
+  "question_en": "The Revolt of 1857 began on 10 May 1857 at:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Delhi",
+    "hi": null
+   },
+   {
+    "en": "Kanpur",
+    "hi": null
+   },
+   {
+    "en": "Lucknow",
+    "hi": null
+   },
+   {
+    "en": "Meerut",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Sepoys at Meerut rebelled and marched to Delhi, proclaiming Bahadur Shah Zafar as their leader.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Modern History",
+  "difficulty": "medium",
+  "question_en": "Who was the first Viceroy of India after the Government of India Act, 1858 transferred power to the Crown?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Lord Canning",
+    "hi": null
+   },
+   {
+    "en": "Lord Dalhousie",
+    "hi": null
+   },
+   {
+    "en": "Lord Ripon",
+    "hi": null
+   },
+   {
+    "en": "Lord Curzon",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Canning, the last Governor-General, became the first Viceroy in 1858.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Modern History",
+  "difficulty": "hard",
+  "question_en": "The Partition of Bengal (1905), announced by Lord Curzon, was annulled in 1911 during the viceroyalty of:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Lord Minto II",
+    "hi": null
+   },
+   {
+    "en": "Lord Hardinge II",
+    "hi": null
+   },
+   {
+    "en": "Lord Chelmsford",
+    "hi": null
+   },
+   {
+    "en": "Lord Lansdowne",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "At the 1911 Delhi Durbar King George V annulled the partition and shifted the capital from Calcutta to Delhi; Hardinge was Viceroy.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Modern History",
+  "difficulty": "easy",
+  "question_en": "The Indian National Congress was founded in 1885; who was its first president?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "A. O. Hume",
+    "hi": null
+   },
+   {
+    "en": "Dadabhai Naoroji",
+    "hi": null
+   },
+   {
+    "en": "Surendranath Banerjee",
+    "hi": null
+   },
+   {
+    "en": "W. C. Bonnerjee",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "A. O. Hume helped found it, but the first session at Bombay was presided over by W. C. Bonnerjee.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Modern History",
+  "difficulty": "medium",
+  "question_en": "Which committee was appointed to inquire into the Jallianwala Bagh massacre of 13 April 1919?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Hunter Committee",
+    "hi": null
+   },
+   {
+    "en": "Simon Commission",
+    "hi": null
+   },
+   {
+    "en": "Sadler Commission",
+    "hi": null
+   },
+   {
+    "en": "Lee Commission",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The Hunter Committee (1919-20) investigated the Punjab disturbances and General Dyer's firing at Amritsar.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Modern History",
+  "difficulty": "medium",
+  "question_en": "Gandhiji suspended the Non-Cooperation Movement in February 1922 after the violent incident at:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Bardoli",
+    "hi": null
+   },
+   {
+    "en": "Kakori",
+    "hi": null
+   },
+   {
+    "en": "Chauri Chaura",
+    "hi": null
+   },
+   {
+    "en": "Champaran",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "A mob burned a police station at Chauri Chaura (UP) on 5 February 1922, killing policemen, so Gandhi called the movement off.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Modern History",
+  "difficulty": "medium",
+  "question_en": "Gandhiji began the Dandi March (Salt Satyagraha) on 12 March 1930 from:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Sevagram Ashram, Wardha",
+    "hi": null
+   },
+   {
+    "en": "Champaran",
+    "hi": null
+   },
+   {
+    "en": "Sabarmati Ashram, Ahmedabad",
+    "hi": null
+   },
+   {
+    "en": "Bardoli",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "He walked about 385 km with 78 followers and broke the salt law at Dandi on 6 April 1930.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Modern History",
+  "difficulty": "medium",
+  "question_en": "The Poona Pact (1932) was signed between Gandhiji and Dr B. R. Ambedkar after the announcement of the:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Communal Award",
+    "hi": null
+   },
+   {
+    "en": "Cripps Proposals",
+    "hi": null
+   },
+   {
+    "en": "August Offer",
+    "hi": null
+   },
+   {
+    "en": "Wavell Plan",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Gandhi's fast against separate electorates for the Depressed Classes ended with the Poona Pact, which gave them reserved seats in joint electorates.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Modern History",
+  "difficulty": "medium",
+  "question_en": "The Quit India resolution was passed in August 1942 at which venue in Bombay?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Azad Maidan",
+    "hi": null
+   },
+   {
+    "en": "Shivaji Park",
+    "hi": null
+   },
+   {
+    "en": "Chowpatty Beach",
+    "hi": null
+   },
+   {
+    "en": "Gowalia Tank Maidan",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The AICC passed the resolution on 8 August 1942 at Gowalia Tank Maidan (now August Kranti Maidan) and Gandhi gave the call 'Do or Die'.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Modern History",
+  "difficulty": "hard",
+  "question_en": "Which of the following was a member of the Cabinet Mission that came to India in 1946?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Lord Mountbatten",
+    "hi": null
+   },
+   {
+    "en": "Clement Attlee",
+    "hi": null
+   },
+   {
+    "en": "A. V. Alexander",
+    "hi": null
+   },
+   {
+    "en": "Lord Wavell",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The Mission comprised Pethick-Lawrence, Stafford Cripps and A. V. Alexander; Wavell was the Viceroy and Attlee the Prime Minister.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Polity",
+  "difficulty": "easy",
+  "question_en": "The words 'Socialist', 'Secular' and 'Integrity' were added to the Preamble by which Constitutional Amendment?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "24th Amendment, 1971",
+    "hi": null
+   },
+   {
+    "en": "42nd Amendment, 1976",
+    "hi": null
+   },
+   {
+    "en": "44th Amendment, 1978",
+    "hi": null
+   },
+   {
+    "en": "52nd Amendment, 1985",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The 42nd Amendment is the only one to have changed the Preamble.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Polity",
+  "difficulty": "easy",
+  "question_en": "Who was the Chairman of the Drafting Committee of the Constituent Assembly?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Dr Rajendra Prasad",
+    "hi": null
+   },
+   {
+    "en": "Jawaharlal Nehru",
+    "hi": null
+   },
+   {
+    "en": "B. N. Rau",
+    "hi": null
+   },
+   {
+    "en": "Dr B. R. Ambedkar",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Ambedkar chaired the seven-member Drafting Committee; Rajendra Prasad was President of the Assembly and B. N. Rau its constitutional adviser.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Polity",
+  "difficulty": "medium",
+  "question_en": "The Constituent Assembly took how much time to complete the framing of the Constitution?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "3 years, 2 months and 5 days",
+    "hi": null
+   },
+   {
+    "en": "2 years, 11 months and 18 days",
+    "hi": null
+   },
+   {
+    "en": "2 years, 5 months and 10 days",
+    "hi": null
+   },
+   {
+    "en": "4 years and 1 month",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The Assembly met first on 9 December 1946 and adopted the Constitution on 26 November 1949.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Polity",
+  "difficulty": "easy",
+  "question_en": "Which Article guarantees 'equality before the law and equal protection of the laws'?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Article 14",
+    "hi": null
+   },
+   {
+    "en": "Article 15",
+    "hi": null
+   },
+   {
+    "en": "Article 16",
+    "hi": null
+   },
+   {
+    "en": "Article 19",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Article 14 applies to all persons; Articles 15 and 16 deal with non-discrimination and equal opportunity in public employment.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Polity",
+  "difficulty": "medium",
+  "question_en": "The Right to Education for children aged 6 to 14 years became a Fundamental Right under Article 21A through which amendment?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "42nd Amendment, 1976",
+    "hi": null
+   },
+   {
+    "en": "73rd Amendment, 1992",
+    "hi": null
+   },
+   {
+    "en": "86th Amendment, 2002",
+    "hi": null
+   },
+   {
+    "en": "93rd Amendment, 2005",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The 86th Amendment inserted Article 21A; the RTE Act, 2009 gave it effect from 1 April 2010.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Polity",
+  "difficulty": "easy",
+  "question_en": "Dr Ambedkar called which Article the 'heart and soul' of the Constitution?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Article 19",
+    "hi": null
+   },
+   {
+    "en": "Article 226",
+    "hi": null
+   },
+   {
+    "en": "Article 21",
+    "hi": null
+   },
+   {
+    "en": "Article 32",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Article 32 gives the right to approach the Supreme Court for enforcement of Fundamental Rights.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Polity",
+  "difficulty": "medium",
+  "question_en": "How many Fundamental Duties are listed in Article 51A at present?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Eleven",
+    "hi": null
+   },
+   {
+    "en": "Ten",
+    "hi": null
+   },
+   {
+    "en": "Twelve",
+    "hi": null
+   },
+   {
+    "en": "Nine",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Ten duties were added by the 42nd Amendment (1976) and the 11th (duty of parents to educate children aged 6-14) by the 86th Amendment (2002).",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Polity",
+  "difficulty": "medium",
+  "question_en": "The Directive Principles of State Policy are contained in which Part of the Constitution?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Part III",
+    "hi": null
+   },
+   {
+    "en": "Part IV",
+    "hi": null
+   },
+   {
+    "en": "Part V",
+    "hi": null
+   },
+   {
+    "en": "Part VI",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Part IV (Articles 36 to 51) holds the DPSPs, which are non-justiciable and borrowed from the Irish Constitution.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Polity",
+  "difficulty": "hard",
+  "question_en": "Which Article of the Constitution directs the State to organise village panchayats?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Article 38",
+    "hi": null
+   },
+   {
+    "en": "Article 40",
+    "hi": null
+   },
+   {
+    "en": "Article 44",
+    "hi": null
+   },
+   {
+    "en": "Article 48",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Article 40 is a Directive Principle; Panchayati Raj was later given constitutional status by the 73rd Amendment.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Polity",
+  "difficulty": "hard",
+  "question_en": "The 73rd Constitutional Amendment Act added which Schedule listing 29 subjects for Panchayats?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Ninth Schedule",
+    "hi": null
+   },
+   {
+    "en": "Tenth Schedule",
+    "hi": null
+   },
+   {
+    "en": "Eleventh Schedule",
+    "hi": null
+   },
+   {
+    "en": "Twelfth Schedule",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The 73rd Amendment inserted Part IX and the Eleventh Schedule; the 74th added the Twelfth Schedule (18 subjects) for municipalities.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Polity",
+  "difficulty": "easy",
+  "question_en": "What is the maximum strength of the Rajya Sabha as per the Constitution?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "250",
+    "hi": null
+   },
+   {
+    "en": "238",
+    "hi": null
+   },
+   {
+    "en": "245",
+    "hi": null
+   },
+   {
+    "en": "545",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Up to 238 members represent States and UTs and 12 are nominated by the President, making 250.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Polity",
+  "difficulty": "easy",
+  "question_en": "Which Constitutional Amendment is popularly called the 'Mini-Constitution' because of the wide changes it made?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "7th Amendment, 1956",
+    "hi": null
+   },
+   {
+    "en": "44th Amendment, 1978",
+    "hi": null
+   },
+   {
+    "en": "73rd Amendment, 1992",
+    "hi": null
+   },
+   {
+    "en": "42nd Amendment, 1976",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The 42nd Amendment, passed during the Emergency, altered the Preamble, added Fundamental Duties and curbed judicial review.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Polity",
+  "difficulty": "medium",
+  "question_en": "The 44th Constitutional Amendment (1978) removed which right from the list of Fundamental Rights?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Right to equality",
+    "hi": null
+   },
+   {
+    "en": "Right to freedom of religion",
+    "hi": null
+   },
+   {
+    "en": "Right to property",
+    "hi": null
+   },
+   {
+    "en": "Right to constitutional remedies",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Article 31 was deleted; property became a legal right under Article 300A in Part XII.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Polity",
+  "difficulty": "medium",
+  "question_en": "The minimum voting age was reduced from 21 to 18 years by which Constitutional Amendment?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "61st Amendment, 1988",
+    "hi": null
+   },
+   {
+    "en": "52nd Amendment, 1985",
+    "hi": null
+   },
+   {
+    "en": "73rd Amendment, 1992",
+    "hi": null
+   },
+   {
+    "en": "86th Amendment, 2002",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The 61st Amendment amended Article 326; the change took effect in 1989.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Polity",
+  "difficulty": "easy",
+  "question_en": "The Goods and Services Tax (GST) was introduced through which Constitutional Amendment Act?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "100th Amendment, 2015",
+    "hi": null
+   },
+   {
+    "en": "101st Amendment, 2016",
+    "hi": null
+   },
+   {
+    "en": "102nd Amendment, 2018",
+    "hi": null
+   },
+   {
+    "en": "103rd Amendment, 2019",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The 101st Amendment inserted Article 279A (GST Council); GST was rolled out on 1 July 2017.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Polity",
+  "difficulty": "medium",
+  "question_en": "The 103rd Constitutional Amendment Act (2019) provided reservation of how much for Economically Weaker Sections in general category?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "10 per cent",
+    "hi": null
+   },
+   {
+    "en": "15 per cent",
+    "hi": null
+   },
+   {
+    "en": "20 per cent",
+    "hi": null
+   },
+   {
+    "en": "27 per cent",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "It added Articles 15(6) and 16(6) for EWS reservation in education and public employment, upheld by the Supreme Court in 2022.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Polity",
+  "difficulty": "medium",
+  "question_en": "The Nari Shakti Vandan Adhiniyam (106th Amendment, 2023) provides what reservation for women in the Lok Sabha and State Assemblies?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "One-third of seats",
+    "hi": null
+   },
+   {
+    "en": "25 per cent of seats",
+    "hi": null
+   },
+   {
+    "en": "50 per cent of seats",
+    "hi": null
+   },
+   {
+    "en": "Equal seats to men",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "It reserves one-third of seats, including within SC/ST quotas, but will be applied only after the next Census and delimitation.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Polity",
+  "difficulty": "medium",
+  "question_en": "Under which Article can the President be removed from office by impeachment?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Article 56",
+    "hi": null
+   },
+   {
+    "en": "Article 74",
+    "hi": null
+   },
+   {
+    "en": "Article 61",
+    "hi": null
+   },
+   {
+    "en": "Article 123",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Article 61 sets the procedure: a charge of 'violation of the Constitution' needs a two-thirds majority in both Houses.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Polity",
+  "difficulty": "medium",
+  "question_en": "The anti-defection law was added to the Constitution through the Tenth Schedule by which amendment?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "42nd Amendment, 1976",
+    "hi": null
+   },
+   {
+    "en": "52nd Amendment, 1985",
+    "hi": null
+   },
+   {
+    "en": "61st Amendment, 1988",
+    "hi": null
+   },
+   {
+    "en": "91st Amendment, 2003",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The 52nd Amendment added the Tenth Schedule; the 91st (2003) tightened it by banning splits and capping ministers at 15 per cent.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Polity",
+  "difficulty": "medium",
+  "question_en": "The 'basic structure' doctrine, limiting Parliament's power to amend the Constitution, was laid down in:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Golaknath v. State of Punjab (1967)",
+    "hi": null
+   },
+   {
+    "en": "Maneka Gandhi v. Union of India (1978)",
+    "hi": null
+   },
+   {
+    "en": "Kesavananda Bharati v. State of Kerala (1973)",
+    "hi": null
+   },
+   {
+    "en": "A. K. Gopalan v. State of Madras (1950)",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "A 13-judge bench ruled 7:6 that Parliament can amend but cannot destroy the basic structure; Golaknath had denied any power to amend Part III.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Polity",
+  "difficulty": "easy",
+  "question_en": "The writ of Habeas Corpus literally means:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "'You may have the body'",
+    "hi": null
+   },
+   {
+    "en": "'We command'",
+    "hi": null
+   },
+   {
+    "en": "'By what authority'",
+    "hi": null
+   },
+   {
+    "en": "'To be certified'",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The writ is issued to produce a detained person before the court to test legality of detention; 'Mandamus' means 'we command'.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Polity",
+  "difficulty": "hard",
+  "question_en": "A Money Bill passed by the Lok Sabha must be returned by the Rajya Sabha, with or without recommendations, within:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "14 days",
+    "hi": null
+   },
+   {
+    "en": "7 days",
+    "hi": null
+   },
+   {
+    "en": "21 days",
+    "hi": null
+   },
+   {
+    "en": "30 days",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Under Article 109, if the Rajya Sabha does not return it within 14 days it is deemed passed; the Lok Sabha may reject its recommendations.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Polity",
+  "difficulty": "easy",
+  "question_en": "Who presides over a joint sitting of both Houses of Parliament called under Article 108?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Vice-President of India",
+    "hi": null
+   },
+   {
+    "en": "Speaker of the Lok Sabha",
+    "hi": null
+   },
+   {
+    "en": "Chairman of the Rajya Sabha",
+    "hi": null
+   },
+   {
+    "en": "President of India",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The Speaker presides; in absence the Deputy Speaker, then the Deputy Chairman of the Rajya Sabha.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Polity",
+  "difficulty": "medium",
+  "question_en": "President's Rule in a State, on failure of constitutional machinery, is imposed under which Article?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Article 356",
+    "hi": null
+   },
+   {
+    "en": "Article 352",
+    "hi": null
+   },
+   {
+    "en": "Article 360",
+    "hi": null
+   },
+   {
+    "en": "Article 370",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Article 352 deals with National Emergency and Article 360 with Financial Emergency.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Polity",
+  "difficulty": "hard",
+  "question_en": "Under Article 249, Parliament can legislate on a State List subject in the national interest if which House passes a resolution by a two-thirds majority?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Lok Sabha",
+    "hi": null
+   },
+   {
+    "en": "Both Houses together",
+    "hi": null
+   },
+   {
+    "en": "Rajya Sabha",
+    "hi": null
+   },
+   {
+    "en": "Inter-State Council",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The Rajya Sabha, as the House of the States, must declare by two-thirds of members present and voting that it is expedient in national interest.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Geography",
+  "difficulty": "medium",
+  "question_en": "Which is the longest river of peninsular India?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Krishna",
+    "hi": null
+   },
+   {
+    "en": "Godavari",
+    "hi": null
+   },
+   {
+    "en": "Kaveri",
+    "hi": null
+   },
+   {
+    "en": "Mahanadi",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The Godavari (about 1,465 km) is the longest peninsular river and is called 'Dakshin Ganga'.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Geography",
+  "difficulty": "medium",
+  "question_en": "The river Yamuna, flowing through Delhi, originates from:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Gangotri Glacier",
+    "hi": null
+   },
+   {
+    "en": "Yamunotri Glacier",
+    "hi": null
+   },
+   {
+    "en": "Milam Glacier",
+    "hi": null
+   },
+   {
+    "en": "Siachen Glacier",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "It rises from the Yamunotri glacier on the Bandarpoonch range in Uttarakhand and joins the Ganga at Prayagraj.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Geography",
+  "difficulty": "medium",
+  "question_en": "The highest mountain peak located entirely within India is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Kangchenjunga",
+    "hi": null
+   },
+   {
+    "en": "K2",
+    "hi": null
+   },
+   {
+    "en": "Nanda Devi",
+    "hi": null
+   },
+   {
+    "en": "Mount Everest",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Kangchenjunga (8,586 m, Sikkim) is the third highest in the world; K2 lies in Gilgit-Baltistan and Everest in Nepal-Tibet.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Geography",
+  "difficulty": "hard",
+  "question_en": "The highest peak of the Western Ghats and of peninsular India is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Doddabetta",
+    "hi": null
+   },
+   {
+    "en": "Mahendragiri",
+    "hi": null
+   },
+   {
+    "en": "Anamudi",
+    "hi": null
+   },
+   {
+    "en": "Guru Shikhar",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Anamudi (2,695 m) is in the Anamalai hills of Kerala; Doddabetta (2,637 m) is the highest in the Nilgiris.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Geography",
+  "difficulty": "easy",
+  "question_en": "Black soil (regur), best suited for cotton cultivation, is mainly formed from the weathering of:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Granite",
+    "hi": null
+   },
+   {
+    "en": "Basalt lava rock",
+    "hi": null
+   },
+   {
+    "en": "Alluvium deposits",
+    "hi": null
+   },
+   {
+    "en": "Laterite",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The Deccan Trap's basaltic lava gives black soil, which is rich in lime, iron and potash and retains moisture well.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Geography",
+  "difficulty": "medium",
+  "question_en": "The Tropic of Cancer passes through all of the following states EXCEPT:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Jharkhand",
+    "hi": null
+   },
+   {
+    "en": "Chhattisgarh",
+    "hi": null
+   },
+   {
+    "en": "Odisha",
+    "hi": null
+   },
+   {
+    "en": "Tripura",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "It crosses eight states: Gujarat, Rajasthan, Madhya Pradesh, Chhattisgarh, Jharkhand, West Bengal, Tripura and Mizoram.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Geography",
+  "difficulty": "medium",
+  "question_en": "Which Indian state has the longest coastline on the mainland?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Andhra Pradesh",
+    "hi": null
+   },
+   {
+    "en": "Tamil Nadu",
+    "hi": null
+   },
+   {
+    "en": "Maharashtra",
+    "hi": null
+   },
+   {
+    "en": "Gujarat",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Gujarat has India's longest coastline (about 1,600 km), followed by Andhra Pradesh.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Geography",
+  "difficulty": "easy",
+  "question_en": "The south-west monsoon normally sets in over the Indian mainland first on the coast of:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Goa",
+    "hi": null
+   },
+   {
+    "en": "Kerala",
+    "hi": null
+   },
+   {
+    "en": "Tamil Nadu",
+    "hi": null
+   },
+   {
+    "en": "Odisha",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The monsoon normally arrives at Kerala around 1 June and covers the whole country by about 8 July.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Geography",
+  "difficulty": "medium",
+  "question_en": "Chilika Lake, the largest coastal lagoon of India, is located in:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Andhra Pradesh",
+    "hi": null
+   },
+   {
+    "en": "West Bengal",
+    "hi": null
+   },
+   {
+    "en": "Tamil Nadu",
+    "hi": null
+   },
+   {
+    "en": "Odisha",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Chilika is a brackish water lagoon on the Odisha coast and a Ramsar site; Pulicat Lake lies on the Andhra Pradesh-Tamil Nadu border.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Geography",
+  "difficulty": "hard",
+  "question_en": "The winter rainfall in north-western India, useful for the rabi wheat crop, is caused by:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Western disturbances",
+    "hi": null
+   },
+   {
+    "en": "Retreating monsoon",
+    "hi": null
+   },
+   {
+    "en": "Norwesters",
+    "hi": null
+   },
+   {
+    "en": "Cyclonic depressions of the Bay of Bengal",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Western disturbances are extra-tropical storms that originate in the Mediterranean region and bring winter rain to Punjab, Haryana and Delhi.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Geography",
+  "difficulty": "easy",
+  "question_en": "Which of the following rivers flows westward into the Arabian Sea through a rift valley?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Godavari",
+    "hi": null
+   },
+   {
+    "en": "Narmada",
+    "hi": null
+   },
+   {
+    "en": "Mahanadi",
+    "hi": null
+   },
+   {
+    "en": "Kaveri",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The Narmada flows west through a rift valley between the Vindhyas and Satpura and drains into the Gulf of Khambhat.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Geography",
+  "difficulty": "medium",
+  "question_en": "The Standard Meridian of India (82°30' E), on which Indian Standard Time is based, passes near which city?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Mirzapur",
+    "hi": null
+   },
+   {
+    "en": "Ujjain",
+    "hi": null
+   },
+   {
+    "en": "Nagpur",
+    "hi": null
+   },
+   {
+    "en": "Bhopal",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "IST is GMT+5:30; the 82°30' E meridian passes through Mirzapur in Uttar Pradesh.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Geography",
+  "difficulty": "hard",
+  "question_en": "The Andaman Islands are separated from the Nicobar Islands by the:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Eight Degree Channel",
+    "hi": null
+   },
+   {
+    "en": "Ten Degree Channel",
+    "hi": null
+   },
+   {
+    "en": "Nine Degree Channel",
+    "hi": null
+   },
+   {
+    "en": "Palk Strait",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The Ten Degree Channel lies along 10° N; the Eight and Nine Degree Channels are in the Lakshadweep area, and Palk Strait separates India from Sri Lanka.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Geography",
+  "difficulty": "medium",
+  "question_en": "The Sundarbans, the largest mangrove forest of the world, is mainly the delta of which two rivers?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Mahanadi and Godavari",
+    "hi": null
+   },
+   {
+    "en": "Krishna and Kaveri",
+    "hi": null
+   },
+   {
+    "en": "Ganga and Brahmaputra",
+    "hi": null
+   },
+   {
+    "en": "Narmada and Tapi",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The Sundarbans delta in West Bengal and Bangladesh is a UNESCO World Heritage Site and home to the Royal Bengal Tiger.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Geography",
+  "difficulty": "medium",
+  "question_en": "The Jharia coalfield, the largest source of coking coal in India, is in:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Jharkhand",
+    "hi": null
+   },
+   {
+    "en": "Odisha",
+    "hi": null
+   },
+   {
+    "en": "Chhattisgarh",
+    "hi": null
+   },
+   {
+    "en": "Madhya Pradesh",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Jharia, near Dhanbad, contains the best coking coal needed for steel making.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Geography",
+  "difficulty": "hard",
+  "question_en": "The Luni river, which rises in the Aravallis near Ajmer, ends in:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "The Rann of Kutch",
+    "hi": null
+   },
+   {
+    "en": "The Gulf of Khambhat",
+    "hi": null
+   },
+   {
+    "en": "The Arabian Sea at Kandla",
+    "hi": null
+   },
+   {
+    "en": "The Sambhar Lake",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The Luni is an inland drainage river of Rajasthan that disappears in the marshes of the Rann of Kutch in Gujarat.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Economy",
+  "difficulty": "easy",
+  "question_en": "The repo rate is the rate at which:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "The RBI lends short-term funds to commercial banks",
+    "hi": null
+   },
+   {
+    "en": "Commercial banks lend to the public",
+    "hi": null
+   },
+   {
+    "en": "The RBI borrows from commercial banks",
+    "hi": null
+   },
+   {
+    "en": "Banks pay interest on savings deposits",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Repo means repurchase agreement; reverse repo is the rate at which the RBI absorbs money from banks.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Economy",
+  "difficulty": "medium",
+  "question_en": "The Reserve Bank of India was nationalised in the year:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "1935",
+    "hi": null
+   },
+   {
+    "en": "1949",
+    "hi": null
+   },
+   {
+    "en": "1947",
+    "hi": null
+   },
+   {
+    "en": "1969",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The RBI began on 1 April 1935 as a private shareholders' bank and was nationalised on 1 January 1949; 14 commercial banks were nationalised in 1969.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Economy",
+  "difficulty": "medium",
+  "question_en": "Fiscal deficit of the Government is equal to total expenditure minus:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Total receipts including borrowings",
+    "hi": null
+   },
+   {
+    "en": "Revenue receipts only",
+    "hi": null
+   },
+   {
+    "en": "Tax revenue only",
+    "hi": null
+   },
+   {
+    "en": "Total receipts excluding borrowings",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Fiscal deficit shows the government's total borrowing requirement; primary deficit is fiscal deficit minus interest payments.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Economy",
+  "difficulty": "medium",
+  "question_en": "Which of the following is a tertiary sector activity?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Dairy farming",
+    "hi": null
+   },
+   {
+    "en": "Cotton textile manufacturing",
+    "hi": null
+   },
+   {
+    "en": "Mining",
+    "hi": null
+   },
+   {
+    "en": "Banking",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Tertiary (service) sector includes banking, transport and education; farming and mining are primary and manufacturing is secondary.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Economy",
+  "difficulty": "medium",
+  "question_en": "The NITI Aayog replaced the Planning Commission on:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "1 January 2015",
+    "hi": null
+   },
+   {
+    "en": "15 August 2014",
+    "hi": null
+   },
+   {
+    "en": "26 January 2016",
+    "hi": null
+   },
+   {
+    "en": "1 April 2017",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "NITI Aayog (National Institution for Transforming India) is a think tank chaired by the Prime Minister.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Economy",
+  "difficulty": "hard",
+  "question_en": "The Second Five Year Plan (1956-61) emphasised rapid industrialisation based on the model of:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Harrod-Domar",
+    "hi": null
+   },
+   {
+    "en": "V. K. R. V. Rao",
+    "hi": null
+   },
+   {
+    "en": "P. C. Mahalanobis",
+    "hi": null
+   },
+   {
+    "en": "M. Visvesvaraya",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The Second Plan stressed heavy industry and public sector expansion; the First Plan (1951-56) followed the Harrod-Domar model.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Economy",
+  "difficulty": "easy",
+  "question_en": "The GST Council, set up under Article 279A, is headed by:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "The Prime Minister",
+    "hi": null
+   },
+   {
+    "en": "The RBI Governor",
+    "hi": null
+   },
+   {
+    "en": "The Union Commerce Minister",
+    "hi": null
+   },
+   {
+    "en": "The Union Finance Minister",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The Union Finance Minister chairs it and State finance ministers are members; decisions need a three-fourths weighted majority.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Economy",
+  "difficulty": "medium",
+  "question_en": "Under the flexible inflation targeting framework adopted in 2016, the RBI targets which inflation measure at 4 per cent (with a band of plus or minus 2 per cent)?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Wholesale Price Index (WPI)",
+    "hi": null
+   },
+   {
+    "en": "GDP deflator",
+    "hi": null
+   },
+   {
+    "en": "Consumer Price Index (CPI)",
+    "hi": null
+   },
+   {
+    "en": "Index of Industrial Production",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The Monetary Policy Committee works with a CPI-based target of 4 per cent, tolerance band 2 to 6 per cent.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Economy",
+  "difficulty": "hard",
+  "question_en": "The Cash Reserve Ratio (CRR) is the share of a bank's deposits that must be kept:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "In government securities with the bank",
+    "hi": null
+   },
+   {
+    "en": "As cash with the RBI",
+    "hi": null
+   },
+   {
+    "en": "As gold in its own vaults",
+    "hi": null
+   },
+   {
+    "en": "With other commercial banks",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "CRR is held with the RBI and earns no interest; SLR is held by banks themselves in liquid assets such as G-secs and gold.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Indian Economy",
+  "difficulty": "hard",
+  "question_en": "The 'Annual Financial Statement', commonly called the Union Budget, is presented to Parliament under which Article?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Article 112",
+    "hi": null
+   },
+   {
+    "en": "Article 110",
+    "hi": null
+   },
+   {
+    "en": "Article 266",
+    "hi": null
+   },
+   {
+    "en": "Article 280",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Article 112 requires the statement of estimated receipts and expenditure each year; Article 110 defines Money Bills and Article 280 the Finance Commission.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "General Science",
+  "difficulty": "easy",
+  "question_en": "The chemical name of baking soda is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Sodium carbonate",
+    "hi": null
+   },
+   {
+    "en": "Calcium hydroxide",
+    "hi": null
+   },
+   {
+    "en": "Sodium hydrogencarbonate",
+    "hi": null
+   },
+   {
+    "en": "Sodium chloride",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Baking soda is NaHCO3; washing soda is Na2CO3.10H2O.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "General Science",
+  "difficulty": "easy",
+  "question_en": "Which metal is stored under kerosene oil because it reacts vigorously with air and water?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Iron",
+    "hi": null
+   },
+   {
+    "en": "Copper",
+    "hi": null
+   },
+   {
+    "en": "Sodium",
+    "hi": null
+   },
+   {
+    "en": "Aluminium",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Sodium and potassium are highly reactive, so they are kept immersed in kerosene to avoid fire.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "General Science",
+  "difficulty": "medium",
+  "question_en": "Rusting of iron requires the presence of:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Oxygen only",
+    "hi": null
+   },
+   {
+    "en": "Water only",
+    "hi": null
+   },
+   {
+    "en": "Carbon dioxide only",
+    "hi": null
+   },
+   {
+    "en": "Both oxygen and water",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Rust is hydrated iron(III) oxide formed when iron is exposed to moist air; galvanisation prevents it.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "General Science",
+  "difficulty": "medium",
+  "question_en": "The general formula of the homologous series of alkynes is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "CnH2n+2",
+    "hi": null
+   },
+   {
+    "en": "CnH2n",
+    "hi": null
+   },
+   {
+    "en": "CnH2n-1",
+    "hi": null
+   },
+   {
+    "en": "CnH2n-2",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Alkanes are CnH2n+2, alkenes CnH2n and alkynes CnH2n-2 (for example, ethyne C2H2).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "General Science",
+  "difficulty": "easy",
+  "question_en": "Which allotrope of carbon is a good conductor of electricity?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Diamond",
+    "hi": null
+   },
+   {
+    "en": "Fullerene (C-60)",
+    "hi": null
+   },
+   {
+    "en": "Lonsdaleite (hexagonal diamond)",
+    "hi": null
+   },
+   {
+    "en": "Graphite",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Each carbon in graphite uses three bonds, leaving a free electron per atom, whereas diamond has all four electrons bonded.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "General Science",
+  "difficulty": "hard",
+  "question_en": "Plaster of Paris is obtained by heating gypsum at 373 K. Its chemical formula is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "CaSO4.1/2 H2O",
+    "hi": null
+   },
+   {
+    "en": "CaSO4.2H2O",
+    "hi": null
+   },
+   {
+    "en": "CaCO3",
+    "hi": null
+   },
+   {
+    "en": "CaOCl2",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Gypsum is CaSO4.2H2O and loses 1.5 water molecules on heating; CaOCl2 is bleaching powder.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "General Science",
+  "difficulty": "easy",
+  "question_en": "In the human digestive system, absorption of digested food mainly takes place in the:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Stomach",
+    "hi": null
+   },
+   {
+    "en": "Large intestine",
+    "hi": null
+   },
+   {
+    "en": "Oesophagus",
+    "hi": null
+   },
+   {
+    "en": "Small intestine",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The small intestine has finger-like villi that give a large surface area for absorption.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "General Science",
+  "difficulty": "medium",
+  "question_en": "Salivary amylase present in saliva helps in the digestion of:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Proteins",
+    "hi": null
+   },
+   {
+    "en": "Starch",
+    "hi": null
+   },
+   {
+    "en": "Fats",
+    "hi": null
+   },
+   {
+    "en": "Cellulose",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Salivary amylase breaks starch into maltose; pepsin acts on proteins and lipase on fats.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "General Science",
+  "difficulty": "medium",
+  "question_en": "In a dihybrid cross between two pure parents with two contrasting traits, the phenotypic ratio in the F2 generation is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "3:1",
+    "hi": null
+   },
+   {
+    "en": "1:2:1",
+    "hi": null
+   },
+   {
+    "en": "9:3:3:1",
+    "hi": null
+   },
+   {
+    "en": "1:1:1:1",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Mendel's dihybrid cross of round-yellow and wrinkled-green seeds gave 9:3:3:1; a monohybrid cross gives 3:1.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "General Science",
+  "difficulty": "medium",
+  "question_en": "According to the 10 per cent law, the energy that passes from one trophic level to the next is about:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "10 per cent",
+    "hi": null
+   },
+   {
+    "en": "1 per cent",
+    "hi": null
+   },
+   {
+    "en": "50 per cent",
+    "hi": null
+   },
+   {
+    "en": "90 per cent",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Only about 10 per cent of energy is stored at the next level; the rest is lost as heat in respiration.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "General Science",
+  "difficulty": "easy",
+  "question_en": "Myopia (short-sightedness) is corrected by using a lens that is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Convex (converging)",
+    "hi": null
+   },
+   {
+    "en": "Concave (diverging)",
+    "hi": null
+   },
+   {
+    "en": "Cylindrical",
+    "hi": null
+   },
+   {
+    "en": "Bifocal convex",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "In myopia the image forms in front of the retina; a concave lens diverges rays so that it falls on the retina. Hypermetropia needs a convex lens.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "General Science",
+  "difficulty": "medium",
+  "question_en": "The power of a convex lens of focal length 50 cm is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "+0.5 dioptre",
+    "hi": null
+   },
+   {
+    "en": "+5 dioptre",
+    "hi": null
+   },
+   {
+    "en": "+2 dioptre",
+    "hi": null
+   },
+   {
+    "en": "-2 dioptre",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "P = 1/f in metres = 1/0.5 = +2 D; a convex lens has positive power.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "General Science",
+  "difficulty": "medium",
+  "question_en": "Two resistors of 6 ohm and 3 ohm are connected in parallel. Their equivalent resistance is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "9 ohm",
+    "hi": null
+   },
+   {
+    "en": "4.5 ohm",
+    "hi": null
+   },
+   {
+    "en": "3 ohm",
+    "hi": null
+   },
+   {
+    "en": "2 ohm",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "1/R = 1/6 + 1/3 = 3/6, so R = 2 ohm; series would give 9 ohm.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "General Science",
+  "difficulty": "medium",
+  "question_en": "An electric generator works on the principle of:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Heating effect of current",
+    "hi": null
+   },
+   {
+    "en": "Magnetic effect of current",
+    "hi": null
+   },
+   {
+    "en": "Chemical effect of current",
+    "hi": null
+   },
+   {
+    "en": "Electromagnetic induction",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Rotating a coil in a magnetic field changes the flux and induces current, a discovery of Faraday.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Delhi GK",
+  "difficulty": "easy",
+  "question_en": "Which two architects are mainly associated with the design of New Delhi, inaugurated in 1931?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Le Corbusier and Pierre Jeanneret",
+    "hi": null
+   },
+   {
+    "en": "Charles Correa and B. V. Doshi",
+    "hi": null
+   },
+   {
+    "en": "Robert T. Russell and Walter Sykes George",
+    "hi": null
+   },
+   {
+    "en": "Edwin Lutyens and Herbert Baker",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The capital's shift from Calcutta was announced at the 1911 Durbar; Lutyens and Baker designed Rashtrapati Bhavan and the Secretariat.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Delhi GK",
+  "difficulty": "medium",
+  "question_en": "Which of the following is NOT a UNESCO World Heritage Site in Delhi?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Red Fort Complex",
+    "hi": null
+   },
+   {
+    "en": "Qutb Minar and its Monuments",
+    "hi": null
+   },
+   {
+    "en": "Jantar Mantar",
+    "hi": null
+   },
+   {
+    "en": "Humayun's Tomb",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Delhi has three World Heritage Sites; the Jantar Mantar World Heritage Site is the one in Jaipur.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Delhi GK",
+  "difficulty": "medium",
+  "question_en": "Humayun's Tomb in Delhi, the first garden tomb on the Indian subcontinent, was commissioned by:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Akbar",
+    "hi": null
+   },
+   {
+    "en": "Hamida Banu Begum",
+    "hi": null
+   },
+   {
+    "en": "Shah Jahan",
+    "hi": null
+   },
+   {
+    "en": "Nur Jahan",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Humayun's widow Hamida Banu Begum had it built from 1565; it inspired the Taj Mahal's design.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Delhi GK",
+  "difficulty": "medium",
+  "question_en": "The Jantar Mantar observatory in Delhi was built in 1724 by:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Sawai Jai Singh II",
+    "hi": null
+   },
+   {
+    "en": "Man Singh I",
+    "hi": null
+   },
+   {
+    "en": "Raja Todar Mal",
+    "hi": null
+   },
+   {
+    "en": "Maharaja Ranjit Singh",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Jai Singh II of Amber built five Jantar Mantars (Delhi, Jaipur, Ujjain, Varanasi, Mathura).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Delhi GK",
+  "difficulty": "medium",
+  "question_en": "India Gate in New Delhi commemorates soldiers of the British Indian Army who died in:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Second World War and Burma Campaign",
+    "hi": null
+   },
+   {
+    "en": "Indo-Pak War of 1947-48",
+    "hi": null
+   },
+   {
+    "en": "First World War and the Third Anglo-Afghan War",
+    "hi": null
+   },
+   {
+    "en": "Revolt of 1857",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Designed by Lutyens, the memorial has 13,300 names inscribed from 1914-21; the National War Memorial nearby honours post-Independence martyrs.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Delhi GK",
+  "difficulty": "medium",
+  "question_en": "Delhi was designated the 'National Capital Territory' with a Legislative Assembly through which Constitutional Amendment?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "61st Amendment, 1988",
+    "hi": null
+   },
+   {
+    "en": "73rd Amendment, 1992",
+    "hi": null
+   },
+   {
+    "en": "69th Amendment, 1991",
+    "hi": null
+   },
+   {
+    "en": "74th Amendment, 1992",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The 69th Amendment inserted Article 239AA; the Assembly has 70 seats.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Delhi GK",
+  "difficulty": "easy",
+  "question_en": "How many seats in the Lok Sabha are allotted to the National Capital Territory of Delhi?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "5",
+    "hi": null
+   },
+   {
+    "en": "7",
+    "hi": null
+   },
+   {
+    "en": "10",
+    "hi": null
+   },
+   {
+    "en": "3",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Delhi sends 7 members to the Lok Sabha and 3 to the Rajya Sabha.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Delhi GK",
+  "difficulty": "medium",
+  "question_en": "After the unification of the three municipal corporations in May 2022, the Municipal Corporation of Delhi (MCD) has how many wards?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "272",
+    "hi": null
+   },
+   {
+    "en": "270",
+    "hi": null
+   },
+   {
+    "en": "300",
+    "hi": null
+   },
+   {
+    "en": "250",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The earlier three corporations had 272 wards in total; delimitation fixed the unified MCD at 250 wards.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Delhi GK",
+  "difficulty": "hard",
+  "question_en": "The Delhi High Court was established in the year:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "1947",
+    "hi": null
+   },
+   {
+    "en": "1966",
+    "hi": null
+   },
+   {
+    "en": "1956",
+    "hi": null
+   },
+   {
+    "en": "1971",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "It was set up on 31 October 1966 with the Delhi High Court Act, 1966; earlier Delhi came under the Punjab High Court.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Delhi GK",
+  "difficulty": "medium",
+  "question_en": "The Delhi Subordinate Services Selection Board (DSSSB) was constituted in:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "1996",
+    "hi": null
+   },
+   {
+    "en": "1991",
+    "hi": null
+   },
+   {
+    "en": "2001",
+    "hi": null
+   },
+   {
+    "en": "2006",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "DSSSB was set up by the Government of NCT of Delhi in 1996 to recruit for Group B and C posts of Delhi departments and bodies.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Delhi GK",
+  "difficulty": "medium",
+  "question_en": "Who is the longest-serving Chief Minister of Delhi?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Madan Lal Khurana",
+    "hi": null
+   },
+   {
+    "en": "Sahib Singh Verma",
+    "hi": null
+   },
+   {
+    "en": "Sheila Dikshit",
+    "hi": null
+   },
+   {
+    "en": "Arvind Kejriwal",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Sheila Dikshit held office for three consecutive terms from December 1998 to December 2013, about 15 years.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Delhi GK",
+  "difficulty": "hard",
+  "question_en": "The first section of the Delhi Metro (Shahdara-Tis Hazari) started operations in:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "October 1998",
+    "hi": null
+   },
+   {
+    "en": "March 2000",
+    "hi": null
+   },
+   {
+    "en": "December 2002",
+    "hi": null
+   },
+   {
+    "en": "April 2005",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The Red Line section opened on 24 December 2002; DMRC was incorporated in 1995 with E. Sreedharan as managing director.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Delhi GK",
+  "difficulty": "hard",
+  "question_en": "Recognised private schools in Delhi are regulated under which Act?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Delhi Education Code, 1950",
+    "hi": null
+   },
+   {
+    "en": "Right to Education Act, 2009 only",
+    "hi": null
+   },
+   {
+    "en": "Delhi Municipal Corporation Act, 1957",
+    "hi": null
+   },
+   {
+    "en": "Delhi School Education Act, 1973",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The Delhi School Education Act and Rules, 1973 regulate recognition, fees and staff service conditions in Delhi schools through the Directorate of Education.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Important Days",
+  "difficulty": "easy",
+  "question_en": "World Environment Day is observed every year on:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "22 April",
+    "hi": null
+   },
+   {
+    "en": "16 September",
+    "hi": null
+   },
+   {
+    "en": "5 June",
+    "hi": null
+   },
+   {
+    "en": "22 March",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Started by the UN in 1974 following the Stockholm Conference of 1972; Earth Day is on 22 April.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Important Days",
+  "difficulty": "easy",
+  "question_en": "National Science Day in India is celebrated on 28 February to mark the discovery of:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "The Zeeman Effect",
+    "hi": null
+   },
+   {
+    "en": "Cosmic radiation",
+    "hi": null
+   },
+   {
+    "en": "The Compton Effect",
+    "hi": null
+   },
+   {
+    "en": "The Raman Effect",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "C. V. Raman announced the Raman Effect (scattering of light) on 28 February 1928 and won the 1930 Nobel Prize in Physics.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Important Days",
+  "difficulty": "medium",
+  "question_en": "World Teachers' Day is observed internationally on:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "5 September",
+    "hi": null
+   },
+   {
+    "en": "11 November",
+    "hi": null
+   },
+   {
+    "en": "5 October",
+    "hi": null
+   },
+   {
+    "en": "8 September",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "UNESCO observes 5 October; India celebrates Teachers' Day on 5 September, the birthday of Dr S. Radhakrishnan.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Important Days",
+  "difficulty": "medium",
+  "question_en": "National Education Day in India is celebrated on 11 November, the birth anniversary of:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Dr S. Radhakrishnan",
+    "hi": null
+   },
+   {
+    "en": "Jawaharlal Nehru",
+    "hi": null
+   },
+   {
+    "en": "Dr Zakir Husain",
+    "hi": null
+   },
+   {
+    "en": "Maulana Abul Kalam Azad",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Azad was independent India's first Education Minister; the day has been observed since 2008.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Important Days",
+  "difficulty": "easy",
+  "question_en": "The International Day of Yoga is observed every year on:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "21 March",
+    "hi": null
+   },
+   {
+    "en": "21 June",
+    "hi": null
+   },
+   {
+    "en": "5 June",
+    "hi": null
+   },
+   {
+    "en": "2 October",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The UN General Assembly proclaimed it in December 2014 on India's proposal; first celebrated in 2015.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Important Days",
+  "difficulty": "medium",
+  "question_en": "International Literacy Day is observed on:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "8 March",
+    "hi": null
+   },
+   {
+    "en": "12 January",
+    "hi": null
+   },
+   {
+    "en": "24 January",
+    "hi": null
+   },
+   {
+    "en": "8 September",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "UNESCO proclaimed it in 1965; first celebrated in 1966. 24 January is National Girl Child Day.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Important Days",
+  "difficulty": "easy",
+  "question_en": "National Youth Day in India is observed on 12 January, the birth anniversary of:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Swami Vivekananda",
+    "hi": null
+   },
+   {
+    "en": "Subhas Chandra Bose",
+    "hi": null
+   },
+   {
+    "en": "Bhagat Singh",
+    "hi": null
+   },
+   {
+    "en": "Dr A. P. J. Abdul Kalam",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The Government of India declared it National Youth Day in 1984, and it has been celebrated from 1985.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Important Days",
+  "difficulty": "easy",
+  "question_en": "Human Rights Day is observed worldwide on:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "1 December",
+    "hi": null
+   },
+   {
+    "en": "24 October",
+    "hi": null
+   },
+   {
+    "en": "18 December",
+    "hi": null
+   },
+   {
+    "en": "10 December",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "It marks the adoption of the Universal Declaration of Human Rights by the UN General Assembly on 10 December 1948.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Firsts and Superlatives",
+  "difficulty": "easy",
+  "question_en": "Who was the first woman President of India?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Droupadi Murmu",
+    "hi": null
+   },
+   {
+    "en": "Pratibha Patil",
+    "hi": null
+   },
+   {
+    "en": "Sarojini Naidu",
+    "hi": null
+   },
+   {
+    "en": "Indira Gandhi",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Pratibha Patil served from 2007 to 2012; Droupadi Murmu (2022) is the second woman President.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Firsts and Superlatives",
+  "difficulty": "easy",
+  "question_en": "Who was the first Indian to travel into space (1984), aboard the Soviet Soyuz T-11?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Kalpana Chawla",
+    "hi": null
+   },
+   {
+    "en": "Ravish Malhotra",
+    "hi": null
+   },
+   {
+    "en": "Rakesh Sharma",
+    "hi": null
+   },
+   {
+    "en": "Shubhanshu Shukla",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Wing Commander Rakesh Sharma spent about eight days in orbit in April 1984 as part of an Indo-Soviet mission.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Firsts and Superlatives",
+  "difficulty": "medium",
+  "question_en": "In 2025, who became the first Indian astronaut to visit the International Space Station, on the Axiom-4 mission?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Shubhanshu Shukla",
+    "hi": null
+   },
+   {
+    "en": "Rakesh Sharma",
+    "hi": null
+   },
+   {
+    "en": "Sirisha Bandla",
+    "hi": null
+   },
+   {
+    "en": "Prasanth Nair",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Group Captain Shubhanshu Shukla flew as pilot of Axiom-4 and spent about 18 days on the ISS in June-July 2025.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Firsts and Superlatives",
+  "difficulty": "easy",
+  "question_en": "Who was the first Indian woman to reach the summit of Mount Everest (1984)?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Bachendri Pal",
+    "hi": null
+   },
+   {
+    "en": "Santosh Yadav",
+    "hi": null
+   },
+   {
+    "en": "Arunima Sinha",
+    "hi": null
+   },
+   {
+    "en": "Premlata Agarwal",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Bachendri Pal climbed Everest on 23 May 1984; Santosh Yadav later became the first woman to climb it twice.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Firsts and Superlatives",
+  "difficulty": "easy",
+  "question_en": "Who was the first Indian to win a Nobel Prize?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "C. V. Raman",
+    "hi": null
+   },
+   {
+    "en": "Mother Teresa",
+    "hi": null
+   },
+   {
+    "en": "Rabindranath Tagore",
+    "hi": null
+   },
+   {
+    "en": "Har Gobind Khorana",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Tagore won the Nobel Prize in Literature in 1913 for Gitanjali; Raman was the first Indian to win in a science field (1930).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Firsts and Superlatives",
+  "difficulty": "medium",
+  "question_en": "India's first national park, established in 1936 as Hailey National Park, is now called:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Kaziranga National Park",
+    "hi": null
+   },
+   {
+    "en": "Jim Corbett National Park",
+    "hi": null
+   },
+   {
+    "en": "Gir National Park",
+    "hi": null
+   },
+   {
+    "en": "Kanha National Park",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Located in Uttarakhand, it was renamed Jim Corbett National Park in 1957; Project Tiger was launched here in 1973.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Firsts and Superlatives",
+  "difficulty": "easy",
+  "question_en": "India's first satellite, launched in 1975, was named:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Bhaskara",
+    "hi": null
+   },
+   {
+    "en": "Aryabhata",
+    "hi": null
+   },
+   {
+    "en": "Rohini",
+    "hi": null
+   },
+   {
+    "en": "INSAT-1A",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Aryabhata, named after the ancient mathematician, was launched on 19 April 1975 from the Soviet Union.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Firsts and Superlatives",
+  "difficulty": "hard",
+  "question_en": "Who was the first woman judge of the Supreme Court of India (appointed 1989)?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Sujata Manohar",
+    "hi": null
+   },
+   {
+    "en": "M. Fathima Beevi",
+    "hi": null
+   },
+   {
+    "en": "Ruma Pal",
+    "hi": null
+   },
+   {
+    "en": "Leila Seth",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Justice Fathima Beevi joined the Supreme Court in 1989; Leila Seth was the first woman Chief Justice of a High Court (Himachal Pradesh).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Firsts and Superlatives",
+  "difficulty": "hard",
+  "question_en": "Who was the first Chief Election Commissioner of India?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "K. V. K. Sundaram",
+    "hi": null
+   },
+   {
+    "en": "Sukumar Sen",
+    "hi": null
+   },
+   {
+    "en": "T. N. Seshan",
+    "hi": null
+   },
+   {
+    "en": "S. P. Sen Verma",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Sukumar Sen (1950-58) conducted the first general elections of 1951-52.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_static",
+  "subtopic": "Firsts and Superlatives",
+  "difficulty": "hard",
+  "question_en": "Who was the first woman to be awarded the Bharat Ratna?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Mother Teresa",
+    "hi": null
+   },
+   {
+    "en": "M. S. Subbulakshmi",
+    "hi": null
+   },
+   {
+    "en": "Lata Mangeshkar",
+    "hi": null
+   },
+   {
+    "en": "Indira Gandhi",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Indira Gandhi received it in 1971; Mother Teresa (1980), M. S. Subbulakshmi (1998) and Lata Mangeshkar (2001) came later.",
+  "explanation_hi": null,
+  "expected": false
+ }
+]

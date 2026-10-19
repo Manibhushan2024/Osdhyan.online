@@ -37,12 +37,22 @@ type TestSeries = {
     }
 };
 
+// Exam tabs match on the exam / series name (case-insensitive keywords).
 const examCategories = [
-    { id: 'all', name: 'All exams', icon: LayoutDashboard },
-    { id: 'state', name: 'State PSC (BPSC)', icon: Trophy },
-    { id: 'ssc', name: 'SSC & Govt', icon: FileText },
-    { id: 'banking', name: 'Banking', icon: BookOpen },
+    { id: 'all', name: 'All exams', icon: LayoutDashboard, match: [] as string[] },
+    { id: 'dsssb', name: 'DSSSB', icon: Trophy, match: ['dsssb'] },
+    { id: 'state', name: 'State PSC (BPSC)', icon: Trophy, match: ['bpsc', 'psc', 'aedo'] },
+    { id: 'teaching', name: 'Teaching (DSSSB / KVS / CTET)', icon: BookOpen, match: ['dsssb', 'tgt', 'pgt', 'prt', 'kvs', 'ctet', 'teacher'] },
+    { id: 'ssc', name: 'SSC & Govt', icon: FileText, match: ['ssc', 'cgl', 'chsl', 'bssc', 'railway', 'rrb', 'police'] },
+    { id: 'banking', name: 'Banking', icon: BookOpen, match: ['bank', 'ibps', 'sbi', 'rbi'] },
 ];
+
+const matchesCategory = (s: { name_en?: string; exam?: { name_en?: string } | null }, id: string) => {
+    const cat = examCategories.find(c => c.id === id);
+    if (!cat || cat.match.length === 0) return true;
+    const hay = `${s.name_en || ''} ${s.exam?.name_en || ''}`.toLowerCase();
+    return cat.match.some(k => hay.includes(k));
+};
 
 export default function TestSeriesHub() {
     const { user } = useAuth();
@@ -122,8 +132,10 @@ export default function TestSeriesHub() {
 
     const enrolledSeries = series.filter(s => isEnrolled(s.id));
     const filteredSeries = series.filter(s =>
-        (s.name_en || '').toLowerCase().includes(searchQuery.toLowerCase()) ||
-        (s.name_hi || '').toLowerCase().includes(searchQuery.toLowerCase())
+        matchesCategory(s, activeCategory) && (
+            (s.name_en || '').toLowerCase().includes(searchQuery.toLowerCase()) ||
+            (s.name_hi || '').toLowerCase().includes(searchQuery.toLowerCase())
+        )
     );
 
     return (

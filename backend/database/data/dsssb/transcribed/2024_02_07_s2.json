@@ -1,0 +1,2951 @@
+[
+ {
+  "page": 4,
+  "section": "General intelligence and Reasoning Ability",
+  "number": 6,
+  "question_id": "630680600061",
+  "question": "A statement is followed by a set of conclusions in the given question. Identify which conclusion follows logically from the following statement.\nStatement:\nRaveena goes to the gym daily, as her father has advised her to exercise.\nConclusion:\nI. Raveena's father cares for her daughter health.\nII. Raveena is suffering from some chronic disease.",
+  "options": [
+   "Both I and II follow",
+   "Only I follow",
+   "Neither I nor II follow",
+   "Only II follow"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 4,
+  "section": "General intelligence and Reasoning Ability",
+  "number": 7,
+  "question_id": "630680600064",
+  "question": "If '÷' means '×', '–' means '+', '×' means '÷' and '+' means '–', then 38 × 57 ÷ 9 – 18 + 12 = ?",
+  "options": [
+   "10",
+   "12",
+   "6",
+   "7"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 4,
+  "section": "General intelligence and Reasoning Ability",
+  "number": 8,
+  "question_id": "630680600067",
+  "question": "Select that missing pair (Third number : Fourth number) which is related in the same way as the first number is related to the second number and fifth number is related to sixth number. (NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits. E.g.13 – Operations on 13 such as adding /subtracting /multiplying etc. to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed)\n442 : 633 :: ? : ?  :: 186 : 377",
+  "options": [
+   "313 : 504",
+   "518 : 719",
+   "111 : 292",
+   "277 : 467"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 5,
+  "section": "General intelligence and Reasoning Ability",
+  "number": 9,
+  "question_id": "630680600045",
+  "question": "P, Q, R, S, T, U and V are seven friends sitting in a single row facing North. S is to the immediate right of R. T and P are neighbors of U.Q is to the immediate left of R and on second place from left most end. P is at the right most end.Who is sitting on the immediate left of P?",
+  "options": [
+   "U",
+   "R",
+   "T",
+   "S"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 5,
+  "section": "General intelligence and Reasoning Ability",
+  "number": 10,
+  "question_id": "630680600052",
+  "question": "In the following question below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion logically follows the given statements.\nStatements:\nI. Some C are D.\nII. Some D are E.\nIII. No E is G.\nConclusion:\nI. Some E are C.\nII. No D is G.\nIII. Some G are C.",
+  "options": [
+   "Neither conclusion follows",
+   "Only conclusion II follows",
+   "Only conclusion I follows",
+   "Only conclusion III follows"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 5,
+  "section": "General intelligence and Reasoning Ability",
+  "number": 11,
+  "question_id": "630680600046",
+  "question": "Mona is 13th from the right end in a row of 40 girls. What is his position from the left end?",
+  "options": [
+   "29",
+   "27",
+   "28",
+   "26"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 6,
+  "section": "General intelligence and Reasoning Ability",
+  "number": 12,
+  "question_id": "630680600066",
+  "question": "In the following question, select the missing number from the given series.\n200, 197, 206, 179, 260, ?",
+  "options": [
+   "–83",
+   "–80",
+   "–100",
+   "17"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 6,
+  "section": "General intelligence and Reasoning Ability",
+  "number": 13,
+  "question_id": "630680600058",
+  "question": "In the following, select the odd letter/letters from the given alternatives.",
+  "options": [
+   "WXUZ",
+   "EFCG",
+   "NOLQ",
+   "IJGL"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 6,
+  "section": "General intelligence and Reasoning Ability",
+  "number": 14,
+  "question_id": "630680600055",
+  "question": "In the following question, select the related letters from the given alternatives.\nNQT : ORU :: ADH : ?",
+  "options": [
+   "ACZ",
+   "UVZ",
+   "BEI",
+   "SPQ"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 6,
+  "section": "General intelligence and Reasoning Ability",
+  "number": 15,
+  "question_id": "630680600050",
+  "question": "If A + B means 'A' is the husband of 'B', A – B means 'A' is the wife of 'B', A × B means 'A' is the mother of 'B', A ÷ B means 'A' is the son of 'B'. If J ÷ P + K × M – R, then How is P related to R?",
+  "options": [
+   "Husband",
+   "Wife's brother",
+   "Father",
+   "Wife's father"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 7,
+  "section": "General intelligence and Reasoning Ability",
+  "number": 16,
+  "question_id": "630680600065",
+  "question": "By Interchanging the given two numbers which of the following equation will be not correct?\n7 and 9",
+  "options": [
+   "9 – 7 + 3 = 1",
+   "9 × 4 – 7 × 3 = 4",
+   "9 × 1 – 7 × 2 = –11",
+   "7 × 2 + 9 – 4 = 21"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 7,
+  "section": "General intelligence and Reasoning Ability",
+  "number": 17,
+  "question_id": "630680600068",
+  "question": "Select the option that is related to the fifth number cluster in the same way as the second number cluster is related to the first number cluster and fourth number cluster is related to third number cluster.\n6 : 180 :: 8 : 448 :: 10 : ?",
+  "options": [
+   "900",
+   "990",
+   "800",
+   "999"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 7,
+  "section": "General intelligence and Reasoning Ability",
+  "number": 18,
+  "question_id": "630680600060",
+  "question": "In the given question, a statement is followed by two courses of action. Based on the information given in the statement, you have to assume everything in the statement to be true. Identify which course(s) of action logically follows.\nStatement:\nA bridge collapsed in town Y due to poor construction.\nCourse of Action:\nI. Search-and-rescue operations should be conducted immediately.\nII. People should leave town Y and move to town X.",
+  "options": [
+   "Only I follow",
+   "Only II follow",
+   "Neither I nor II follow",
+   "Both I and II follow"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 8,
+  "section": "General intelligence and Reasoning Ability",
+  "number": 19,
+  "question_id": "630680600063",
+  "question": "A statement is followed by a set of conclusions in the given question. Identify which conclusion follows logically from the following statement.\nStatement:\nFor the past three years the ABC Corporation has been planning to expand its operations in order to reach out to the world market.\nConclusion:\nI. The ABC corporation is not competitive.\nII. The ABC corporation wants to capture the global market.",
+  "options": [
+   "Neither I nor II follow",
+   "Only I follow",
+   "Both I and II follow",
+   "Only II follow"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 8,
+  "section": "General intelligence and Reasoning Ability",
+  "number": 20,
+  "question_id": "630680600053",
+  "question": "How many workers are uneducated?",
+  "options": [
+   "17",
+   "12",
+   "8",
+   "10"
+  ],
+  "correct": 2,
+  "has_figure": true,
+  "note": "Venn diagram figure (Man circle, Educated rectangle, Worker triangle) with region numbers 5,3,6,2,1,21,9,10,12"
+ },
+ {
+  "page": 9,
+  "section": "General Awareness",
+  "number": 1,
+  "question_id": "630680599869",
+  "question": "Which Indian badminton player secured a bronze medal in the men's singles at the BWF World Badminton Championships 2023?",
+  "options": [
+   "Srikanth Kidambi",
+   "HS Prannoy",
+   "Lakshya Sen",
+   "B. Sai Praneeth"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 9,
+  "section": "General Awareness",
+  "number": 2,
+  "question_id": "630680599871",
+  "question": "ISRO signed MoU with which of the following companies in January 2023 to support space-tech startups in India?",
+  "options": [
+   "Cognizant",
+   "Microsoft",
+   "Oracle",
+   "Capgemini"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 9,
+  "section": "General Awareness",
+  "number": 3,
+  "question_id": "630680599879",
+  "question": "Which of the following articles of the Indian Constitution mentions that the official language of the Union shall be Hindi in the Devanagari script?",
+  "options": [
+   "Article 343",
+   "Article 280",
+   "Article 324",
+   "Article 226"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 9,
+  "section": "General Awareness",
+  "number": 4,
+  "question_id": "630680599881",
+  "question": "Narmada originates from which of the following places?",
+  "options": [
+   "Amarkantak plateau",
+   "Mahabaleshwar",
+   "Brahmagiri hills",
+   "Chotanagpur Plateau"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 10,
+  "section": "General Awareness",
+  "number": 5,
+  "question_id": "630680599877",
+  "question": "In which year did the Battle of Seringapatam, a war between Mysore and the British, take place?",
+  "options": [
+   "1799",
+   "1764",
+   "1767",
+   "1805"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 10,
+  "section": "General Awareness",
+  "number": 6,
+  "question_id": "630680599885",
+  "question": "Article 315 of the Indian Constitution is related to which of the following?",
+  "options": [
+   "Finance Commission",
+   "Public Service Commissions for the Union and for the States",
+   "Administrative tribunals",
+   "Election Commission"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 10,
+  "section": "General Awareness",
+  "number": 7,
+  "question_id": "630680599880",
+  "question": "Nalwari Fair is a cattle fair celebrated in which of the following states?",
+  "options": [
+   "Tamil Nadu",
+   "Himachal Pradesh",
+   "Assam",
+   "Gujarat"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 10,
+  "section": "General Awareness",
+  "number": 8,
+  "question_id": "630680599884",
+  "question": "Which of the following articles of the Indian Constitution provides protection of life and personal liberty?",
+  "options": [
+   "Article 29",
+   "Article 25",
+   "Article 21",
+   "Article 19"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 11,
+  "section": "General Awareness",
+  "number": 9,
+  "question_id": "630680599878",
+  "question": "Who among the following composed the famous Tamil epic Silappadikaram?",
+  "options": [
+   "Kovalan",
+   "Thiruvalluvar",
+   "Sattanar",
+   "Ilango"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 11,
+  "section": "General Awareness",
+  "number": 10,
+  "question_id": "630680599873",
+  "question": "What was the repo rate of RBI announced in December 2023?",
+  "options": [
+   "3.5 percent",
+   "8.5 percent",
+   "6.5 percent",
+   "2.5 percent"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 11,
+  "section": "General Awareness",
+  "number": 11,
+  "question_id": "630680599875",
+  "question": "In which of the following years was the Indian National Congress established?",
+  "options": [
+   "1906",
+   "1893",
+   "1885",
+   "1875"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 11,
+  "section": "General Awareness",
+  "number": 12,
+  "question_id": "630680599883",
+  "question": "Which is the most populous state in India according to 2011 census?",
+  "options": [
+   "Madhya Pradesh",
+   "West Bengal",
+   "Bihar",
+   "Uttar Pradesh"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 12,
+  "section": "General Awareness",
+  "number": 13,
+  "question_id": "630680599872",
+  "question": "Which of the following ministries had signed a MoU with the International Society of Krishna Consciousness (ISKCON) in New Delhi on 23 November 2023 to spread the message of Nasha Mukt Bharat Abhiyan among youth, women, students etc.?",
+  "options": [
+   "Ministry of Home Affairs",
+   "Ministry of Social Justice and Empowerment",
+   "Ministry of Health and Family Welfare",
+   "Ministry of Food Processing Industries"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 12,
+  "section": "General Awareness",
+  "number": 14,
+  "question_id": "630680599870",
+  "question": "What is the name of the artificial intelligence project that Jio is working on with IIT Bombay, announced by Akash Ambani in December 2023?",
+  "options": [
+   "Bharat GPT",
+   "Chat GPT",
+   "Chat Bot",
+   "India GPT"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 12,
+  "section": "General Awareness",
+  "number": 15,
+  "question_id": "630680599887",
+  "question": "Which of the following is NOT a rich source of Vitamin A?",
+  "options": [
+   "Carrot",
+   "Mango",
+   "Amla",
+   "Papaya"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 12,
+  "section": "General Awareness",
+  "number": 16,
+  "question_id": "630680599876",
+  "question": "Who among the following started the Young Bengal Movement in Calcutta?",
+  "options": [
+   "Dadabhai Naoroji",
+   "W.C. Bonnerji",
+   "Henry Derozio",
+   "A.O. Hume"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 13,
+  "section": "General Awareness",
+  "number": 17,
+  "question_id": "630680599888",
+  "question": "Which of the following acids is found in orange?",
+  "options": [
+   "Citric acid",
+   "Oxalic acid",
+   "Methanoic acid",
+   "Lactic acid"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 13,
+  "section": "General Awareness",
+  "number": 18,
+  "question_id": "630680599886",
+  "question": "Which of the following Articles of the Indian Constitution empowers the Vice President to act as President or discharge his functions during casual vacancies in the office or during the absence of the President?",
+  "options": [
+   "Article 72",
+   "Article 61",
+   "Article 65",
+   "Article 52"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 13,
+  "section": "General Awareness",
+  "number": 19,
+  "question_id": "630680599882",
+  "question": "Which of these hills is NOT included in Purvanchal or Eastern hills?",
+  "options": [
+   "Manipur hills",
+   "Shevroy Hills",
+   "Patkai hills",
+   "Naga hills"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 13,
+  "section": "General Awareness",
+  "number": 20,
+  "question_id": "630680599874",
+  "question": "In which of the following years was ICICI formed at the initiative of World Bank, the Government of India and representative of Indian Industry?",
+  "options": [
+   "1982",
+   "1975",
+   "1955",
+   "1966"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 14,
+  "section": "Arithmetical and Numerical Ability",
+  "number": 1,
+  "question_id": "630680600116",
+  "question": "The ratio of Amit's and Ankit's present age is 10 : 13. Amit is 18 years younger than Ankit. What will be the ratio of Amit's age to Ankit's age after 12 years?",
+  "options": [
+   "4 : 5",
+   "3 : 5",
+   "4 : 9",
+   "4 : 7"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 14,
+  "section": "Arithmetical and Numerical Ability",
+  "number": 2,
+  "question_id": "630680600110",
+  "question": "If E1 is 8 times more than E2, then E2 is what percentage less than E1?",
+  "options": [
+   "96.96 percent",
+   "88.88 percent",
+   "80.88 percent",
+   "84.88 percent"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 15,
+  "section": "Arithmetical and Numerical Ability",
+  "number": 3,
+  "question_id": "630680600104",
+  "question": "The line chart given below shows the production of 6 companies in 2 years P and Q.\n[line chart]\nJ1 = The total production of all companies in year P.\nJ2 = The total production of all companies in year Q.\nWhat is the value of (J2 – J1)?",
+  "options": [
+   "125",
+   "110",
+   "150",
+   "85"
+  ],
+  "correct": 1,
+  "has_figure": true,
+  "note": "Line chart, companies A-F. Read from image: P (circles): A=160, B=50, C=40, D=35, E=48, F=52; Q (squares): A=68, B=72, C=60, D=170, E=96, F=44"
+ },
+ {
+  "page": 15,
+  "section": "Arithmetical and Numerical Ability",
+  "number": 4,
+  "question_id": "630680600098",
+  "question": "The average age of 40 students is 21 years. It was observed that while calculating the average age, the age of a student was taken as 20 years instead of 30 years. What will be the correct average age?",
+  "options": [
+   "21.25 years",
+   "21.22 years",
+   "12.12 years",
+   "23.84 years"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 16,
+  "section": "Arithmetical and Numerical Ability",
+  "number": 5,
+  "question_id": "630680600114",
+  "question": "Three numbers P, Q and R are in the ratio of 6 : 5 : 3 respectively. If R is 32 less than the sum of P and Q, then what is the value of Q?",
+  "options": [
+   "24",
+   "48",
+   "20",
+   "32"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 16,
+  "section": "Arithmetical and Numerical Ability",
+  "number": 6,
+  "question_id": "630680600102",
+  "question": "What is the compound interest on (compounding annually) Rs. 14400 at the rate of 10 percent for 3 years?",
+  "options": [
+   "Rs. 4214.8",
+   "Rs. 4712.6",
+   "Rs. 4812.6",
+   "Rs. 4766.4"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 16,
+  "section": "Arithmetical and Numerical Ability",
+  "number": 7,
+  "question_id": "630680600120",
+  "question": "Each of the length, breadth and height of a cuboid is decreased by 12 percent. What is the percentage decrease in the total surface area of the cuboid?",
+  "options": [
+   "20.24 percent",
+   "24.78 percent",
+   "18.92 percent",
+   "22.56 percent"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 16,
+  "section": "Arithmetical and Numerical Ability",
+  "number": 8,
+  "question_id": "630680600108",
+  "question": "For what value of M, 859M is divisible by 9?",
+  "options": [
+   "5",
+   "3",
+   "7",
+   "2"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 17,
+  "section": "Arithmetical and Numerical Ability",
+  "number": 9,
+  "question_id": "630680600112",
+  "question": "Cost price of an article is Rs. 230. If the profit percentage is 12 percent, then what is the value of profit?",
+  "options": [
+   "Rs. 27.6",
+   "Rs. 30",
+   "Rs. 32.8",
+   "Rs. 35"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 17,
+  "section": "Arithmetical and Numerical Ability",
+  "number": 10,
+  "question_id": "630680600113",
+  "question": "After giving a discount of 25 percent a cycle is sold for Rs. 7200. What is the marked price of the cycle?",
+  "options": [
+   "Rs. 9500",
+   "Rs. 10000",
+   "Rs. 9000",
+   "Rs. 9600"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 17,
+  "section": "Arithmetical and Numerical Ability",
+  "number": 11,
+  "question_id": "630680600100",
+  "question": "Simple interest and compound interest (compounding annually) on a principal at a certain rate of interest for 2 years is Rs. 28800 and Rs. 36000 respectively. What is the principal?",
+  "options": [
+   "Rs. 30000",
+   "Rs. 28800",
+   "Rs. 29750",
+   "Rs. 28850"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 17,
+  "section": "Arithmetical and Numerical Ability",
+  "number": 12,
+  "question_id": "630680600119",
+  "question": "A train of length 210 metres is running at a speed of 54 km/hr. In how much time it will completely cross a platform of 390 metres?",
+  "options": [
+   "50 seconds",
+   "60 seconds",
+   "40 seconds",
+   "30 seconds"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 18,
+  "section": "Arithmetical and Numerical Ability",
+  "number": 13,
+  "question_id": "630680600109",
+  "question": "What is the value of 33 ÷ 11 + 75 ÷ 5 × 2 – 6 ÷ 12 × 30?",
+  "options": [
+   "15",
+   "18",
+   "9",
+   "42"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 18,
+  "section": "Arithmetical and Numerical Ability",
+  "number": 14,
+  "question_id": "630680600111",
+  "question": "The population of a town is 30000. If every year the population increases by 20 percent, then what will be the population of the town after 3 years?",
+  "options": [
+   "51840",
+   "51720",
+   "50820",
+   "48000"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 18,
+  "section": "Arithmetical and Numerical Ability",
+  "number": 15,
+  "question_id": "630680600107",
+  "question": "What is the Highest Common Factor of 12, 36 and 240",
+  "options": [
+   "12",
+   "30",
+   "18",
+   "480"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 18,
+  "section": "Arithmetical and Numerical Ability",
+  "number": 16,
+  "question_id": "630680600122",
+  "question": "The breadth of a rectangular hall is 5/8 of its length. If the area of the floor is 160 metre^2, then what is the difference between the length and breadth of the hall?",
+  "options": [
+   "8 metre",
+   "6 metre",
+   "10 metre",
+   "4 metre"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 19,
+  "section": "Arithmetical and Numerical Ability",
+  "number": 17,
+  "question_id": "630680600117",
+  "question": "X and Y together can complete a work in 60 days. Y and Z together can complete the same work in 90 days. If X, Y and Z all work together, then the same work gets completed in 45 days. How many days will X and Z together take to complete the same work?",
+  "options": [
+   "120 days",
+   "90 days",
+   "60 days",
+   "150 days"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 19,
+  "section": "Arithmetical and Numerical Ability",
+  "number": 18,
+  "question_id": "630680600105",
+  "question": "The pie chart given below shows the number of employees in 6 different companies. The total number of employees in all these 6 companies 18000. The number of employees in a particular company is shown in terms of degree with respect to the total number of employee in all these 6 companies.\n[pie chart]\nWhich of the following statement is correct?\nI. The difference between average number of employee in company C1 and C2 and the average number of employee in company C3 and C5 are 150.\nII. The number of employee in company C6 is 50 percent of the number of employee in company C4.\nIII. The ratio of number of employee in company C2 to the number of employee in C6 are 2 : 15.",
+  "options": [
+   "I, II and III",
+   "I and II",
+   "II and III",
+   "I and III"
+  ],
+  "correct": 4,
+  "has_figure": true,
+  "note": "Pie chart angles: C1=130, C2=8, C3=95, C4=30, C5=37, C6=60 degrees"
+ },
+ {
+  "page": 20,
+  "section": "Arithmetical and Numerical Ability",
+  "number": 19,
+  "question_id": "630680600118",
+  "question": "A truck left 8 hours early than the scheduled time and in order to reach its destination 600 km away on time, it had to decrease its usual speed by 20 km/hr. What is the usual speed of the truck?",
+  "options": [
+   "30 km/hr",
+   "50 km/hr",
+   "40 km/hr",
+   "60 km/hr"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 20,
+  "section": "Arithmetical and Numerical Ability",
+  "number": 20,
+  "question_id": "630680600099",
+  "question": "The simple interest on a sum for 11 years is Rs. 42000. The rate of interest for the first 4 years is 3 percent per annum and for the next 7 years is 9 percent per annum. What is the sum?",
+  "options": [
+   "Rs. 70000",
+   "Rs. 56000",
+   "Rs. 60000",
+   "Rs. 58000"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 20,
+  "section": "Test of English Language and Comprehension",
+  "number": 1,
+  "question_id": "630680599693",
+  "question": "Choose the most appropriate synonym of the given word.\nObstinate",
+  "options": [
+   "Headstrong",
+   "Devilish",
+   "Joyful",
+   "Agreeable"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 21,
+  "section": "Test of English Language and Comprehension",
+  "number": 2,
+  "question_id": "630680599694",
+  "question": "Choose the most appropriate antonym of the given word.\nQuarantine",
+  "options": [
+   "Quarrel",
+   "Assimilate",
+   "Mourn",
+   "Circumstance"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 21,
+  "section": "Test of English Language and Comprehension",
+  "number": 3,
+  "question_id": "630680599675",
+  "question": "Choose the most appropriate option for the given blank.\nYou can't hear the chirping of the birds from outside, ______?",
+  "options": [
+   "were they",
+   "is she",
+   "can you",
+   "was they"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 21,
+  "section": "Test of English Language and Comprehension",
+  "number": 4,
+  "question_id": "630680599687",
+  "question": "Select the sentence with no spelling errors",
+  "options": [
+   "Compliance with the traffic laws is neccesary for safe driving.",
+   "Compliance with the trafic laws is necessary for safe driving.",
+   "Complience with the traffic laws is necessary for safe driving.",
+   "Compliance with the traffic laws is necessary for safe driving."
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 21,
+  "section": "Test of English Language and Comprehension",
+  "number": 5,
+  "question_id": "630680599691",
+  "question": "Choose the most appropriate antonym of the underlined word in the given sentence.\nWe should always be friendly to others and help them in need.",
+  "options": [
+   "Hostile",
+   "Igneous",
+   "Scorching",
+   "Mammoth"
+  ],
+  "correct": 1,
+  "has_figure": false,
+  "note": "underlined word is 'friendly'"
+ },
+ {
+  "page": 22,
+  "section": "Test of English Language and Comprehension",
+  "number": 6,
+  "question_id": "630680599682",
+  "question": "Rearrange the parts of the sentence in correct order.\nDeveloping basic\nP. is the only way to face an\nQ. infrastructure and the production sector\nR. responsibility to help states in this respect\nS. economic crisis and the Centre has the",
+  "options": [
+   "QPSR",
+   "RSPQ",
+   "SRPQ",
+   "PRSQ"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 22,
+  "section": "Test of English Language and Comprehension",
+  "number": 7,
+  "question_id": "630680599690",
+  "question": "Choose the most appropriate idiom for the given situation.\nThe team stopped working since they had been working for 6 hours continuously.",
+  "options": [
+   "Down to the wire",
+   "Cracked someone up",
+   "Flip the bird",
+   "Call it a day"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 22,
+  "section": "Test of English Language and Comprehension",
+  "number": 8,
+  "question_id": "630680599685",
+  "question": "Select the sentence with no spelling errors",
+  "options": [
+   "I'd like to rich a consensus on the isue before we take a formal vote.",
+   "I'd like to reach a consensus on the essue before we take a formal vote.",
+   "I'd like to reach a conssensus on the issue before we take a formal vote.",
+   "I'd like to reach a consensus on the issue before we take a formal vote."
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 23,
+  "section": "Test of English Language and Comprehension",
+  "number": 9,
+  "question_id": "630680599684",
+  "question": "The question below consists of a set of labelled sentences. Out of the four options given, select the most logical order of the sentences to form a coherent paragraph.\nP. As the Plains was settled and grassland converted for crops and grazing, fires were seen as a threat and extinguished.\nQ. Historically, fires set by lightning burned naturally at regular intervals across the Great Plains.\nR. Native Americans, who saw the benefits, periodically burned the prairie to improve grazing conditions for buffalo.\nS. In the last 50 years, as woody plants began increasing and transforming the grassland into a shrub ecosystem, fire has returned to the Plains in the form of controlled burns.",
+  "options": [
+   "SRQP",
+   "PSQR",
+   "RSQP",
+   "QRPS"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 23,
+  "section": "Test of English Language and Comprehension",
+  "number": 10,
+  "question_id": "630680599679",
+  "question": "A sentence has been given with a blank to be filled with an appropriate option. Choose the correct alternative.\nHe took another bite and chewed ______.",
+  "options": [
+   "slow",
+   "slower",
+   "slowly",
+   "slowest"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 23,
+  "section": "Test of English Language and Comprehension",
+  "number": 11,
+  "question_id": "630680599678",
+  "question": "A sentence has been given with a blank to be filled with an appropriate option. Choose the correct alternative.\nNina felt her eyes brim ______ tears and blinked hard.",
+  "options": [
+   "with",
+   "by",
+   "of",
+   "off"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 24,
+  "section": "Test of English Language and Comprehension",
+  "number": 12,
+  "question_id": "630680599681",
+  "question": "A sentence has been given with a blank to be filled with an appropriate option. Choose the correct alternative.\nThe sea provides humanity with a bounty of nutrient-rich food, which we have benefited ______ thousands of years.",
+  "options": [
+   "for since",
+   "for",
+   "of from",
+   "from of"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 24,
+  "section": "Test of English Language and Comprehension",
+  "number": 13,
+  "question_id": "630680599680",
+  "question": "A sentence has been given with a blank to be filled with an appropriate option. Choose the correct alternative.\nMelitopol residents ______ the streets following the alleged kidnapping of mayor.",
+  "options": [
+   "took on",
+   "took to",
+   "taken off",
+   "taken at"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 24,
+  "section": "Test of English Language and Comprehension",
+  "number": 14,
+  "question_id": "630680599677",
+  "question": "Choose the most appropriate option for the given blank.\nShe was wearing a ball gown in the party, ______?",
+  "options": [
+   "wasn't them",
+   "wasn't she",
+   "weren't they",
+   "isn't she"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 25,
+  "section": "Test of English Language and Comprehension",
+  "number": 15,
+  "question_id": "630680599688",
+  "question": "Choose the most appropriate idiom for the given situation.\nShe prepared herself for hard work as her exams were near.",
+  "options": [
+   "Drag one's feet",
+   "Roll up one's sleeves",
+   "Back to square one",
+   "Hit the books"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 25,
+  "section": "Test of English Language and Comprehension",
+  "number": 16,
+  "question_id": "630680599696",
+  "question": "Comprehension:\nRead the following passage and answer the questions given below.\nThe two main reasons of this chronic and unmanageable problem is rapidly ever increasing population and defective education system. Such a huge population, India finds it difficult to make any significant success in the areas of employment, alleviation of poverty and backwardness. Every sixth person in the world is an Indian. In other words, we are adding an Australia to our population every year or to Japan every ten years. There are about 31 new babies every minute or 45,000 new people daily. Thus, every year there are about 16 million more people to feed, cloth, educate and give employment. This prevailing trend of population growth is quite disturbing.\nUnemployment rate in India is showing an increasing trend since 2011 when it was 3.5 percent. The same rose to 3.6 percent in 2012 and climbed to 3.7 percent last year.\nQ. Through this passage, the author's main idea is to bring to your notice the ____________.",
+  "options": [
+   "population growth of Japan and Australia",
+   "low population growth and its benefits",
+   "rate of poverty in India and its cause",
+   "population explosion in India and the resulting problems"
+  ],
+  "correct": 4,
+  "has_figure": false,
+  "note": "comprehension passage prepended"
+ },
+ {
+  "page": 26,
+  "section": "Test of English Language and Comprehension",
+  "number": 17,
+  "question_id": "630680599699",
+  "question": "Comprehension:\nRead the following passage and answer the questions given below.\nThe two main reasons of this chronic and unmanageable problem is rapidly ever increasing population and defective education system. Such a huge population, India finds it difficult to make any significant success in the areas of employment, alleviation of poverty and backwardness. Every sixth person in the world is an Indian. In other words, we are adding an Australia to our population every year or to Japan every ten years. There are about 31 new babies every minute or 45,000 new people daily. Thus, every year there are about 16 million more people to feed, cloth, educate and give employment. This prevailing trend of population growth is quite disturbing.\nUnemployment rate in India is showing an increasing trend since 2011 when it was 3.5 percent. The same rose to 3.6 percent in 2012 and climbed to 3.7 percent last year.\nQ. According to the passage, which of these problems cannot be successfully tackled due to a large population?\nI. Unemployment\nII. Poverty\nIII. Backwardness",
+  "options": [
+   "Only I",
+   "Only III",
+   "Only II and III",
+   "I, II and III"
+  ],
+  "correct": 4,
+  "has_figure": false,
+  "note": "comprehension passage prepended"
+ },
+ {
+  "page": 26,
+  "section": "Test of English Language and Comprehension",
+  "number": 18,
+  "question_id": "630680599697",
+  "question": "Comprehension:\nRead the following passage and answer the questions given below.\nThe two main reasons of this chronic and unmanageable problem is rapidly ever increasing population and defective education system. Such a huge population, India finds it difficult to make any significant success in the areas of employment, alleviation of poverty and backwardness. Every sixth person in the world is an Indian. In other words, we are adding an Australia to our population every year or to Japan every ten years. There are about 31 new babies every minute or 45,000 new people daily. Thus, every year there are about 16 million more people to feed, cloth, educate and give employment. This prevailing trend of population growth is quite disturbing.\nUnemployment rate in India is showing an increasing trend since 2011 when it was 3.5 percent. The same rose to 3.6 percent in 2012 and climbed to 3.7 percent last year.\nQ. Through the given statement 'we are adding an Australia to our population every year', the author implies that ____________.",
+  "options": [
+   "our population growth is equivalent to that of Australia",
+   "population composition of India and Australia, is similar.",
+   "the number of people added to Australia's population is equal to India's entire population",
+   "the number of people added to India's population every year is equal to Australia's entire population"
+  ],
+  "correct": 4,
+  "has_figure": false,
+  "note": "comprehension passage prepended"
+ },
+ {
+  "page": 27,
+  "section": "Test of English Language and Comprehension",
+  "number": 19,
+  "question_id": "630680599698",
+  "question": "Comprehension:\nRead the following passage and answer the questions given below.\nThe two main reasons of this chronic and unmanageable problem is rapidly ever increasing population and defective education system. Such a huge population, India finds it difficult to make any significant success in the areas of employment, alleviation of poverty and backwardness. Every sixth person in the world is an Indian. In other words, we are adding an Australia to our population every year or to Japan every ten years. There are about 31 new babies every minute or 45,000 new people daily. Thus, every year there are about 16 million more people to feed, cloth, educate and give employment. This prevailing trend of population growth is quite disturbing.\nUnemployment rate in India is showing an increasing trend since 2011 when it was 3.5 percent. The same rose to 3.6 percent in 2012 and climbed to 3.7 percent last year.\nQ. Choose the word that has the most nearly the same meaning as the word given.\nAlleviation",
+  "options": [
+   "Eradicate",
+   "Indigenous",
+   "Intensify",
+   "Impressive"
+  ],
+  "correct": 1,
+  "has_figure": false,
+  "note": "comprehension passage prepended"
+ },
+ {
+  "page": 27,
+  "section": "Test of English Language and Comprehension",
+  "number": 20,
+  "question_id": "630680599700",
+  "question": "Comprehension:\nRead the following passage and answer the questions given below.\nThe two main reasons of this chronic and unmanageable problem is rapidly ever increasing population and defective education system. Such a huge population, India finds it difficult to make any significant success in the areas of employment, alleviation of poverty and backwardness. Every sixth person in the world is an Indian. In other words, we are adding an Australia to our population every year or to Japan every ten years. There are about 31 new babies every minute or 45,000 new people daily. Thus, every year there are about 16 million more people to feed, cloth, educate and give employment. This prevailing trend of population growth is quite disturbing.\nUnemployment rate in India is showing an increasing trend since 2011 when it was 3.5 percent. The same rose to 3.6 percent in 2012 and climbed to 3.7 percent last year.\nQ. Which of the following words is opposite in meaning to the word 'extinct' as used in the passage?",
+  "options": [
+   "prevailing",
+   "lost",
+   "obsolete",
+   "defunct"
+  ],
+  "correct": 1,
+  "has_figure": false,
+  "note": "comprehension passage prepended"
+ },
+ {
+  "page": 28,
+  "section": "Test of Hindi Language and Comprehension",
+  "number": 1,
+  "question_id": "630680600014",
+  "question": "1. कहानियां, जिसमें बेहतर सीख, संस्कार व जीवन में अच्छी चीज\n2. बच्चों के कोमल मन में बातों को गहराई तक पहुंचाने का\n3. की ओर बढ़ने की प्रेरणा मौजूद होती है\n4. तरीका कहानियों से बेहतर और क्या हो सकता है। खासकर, पंचतंत्र की\nप्रस्तुत खंडित वाक्य में वाक्य संरचना का सही क्रम क्या होगा?",
+  "options": [
+   "1,2,4,3",
+   "4,3,1,2",
+   "2,4,1,3",
+   "3,4,1,2"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 28,
+  "section": "Test of Hindi Language and Comprehension",
+  "number": 2,
+  "question_id": "630680600010",
+  "question": "निम्नलिखित प्रश्न में, दिए गए चार विकल्पों में से, उस विकल्प का चयन करें जो दिए गए मुहावरे के अर्थ को सर्वश्रेष्ठ रूप से व्यक्त करता है।\nटुकुर-टुकुर देखना",
+  "options": [
+   "बहुत लज्जित होना",
+   "बुरा-भला कहना",
+   "खूब परिश्रम करना",
+   "टकटकी लगाकर देखना"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 28,
+  "section": "Test of Hindi Language and Comprehension",
+  "number": 3,
+  "question_id": "630680600021",
+  "question": "दिए गए वाक्य में उचित विशेषण का चयन करके रिक्त स्थान की पूर्ति करें।\nमहाराज जी के चर्चे तो ______ लोकों में फैले हुए हैं।",
+  "options": [
+   "तीनों",
+   "स्वभाव",
+   "प्रत्येक",
+   "जिसको"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 29,
+  "section": "Test of Hindi Language and Comprehension",
+  "number": 4,
+  "question_id": "630680600009",
+  "question": "निम्नलिखित प्रश्न में, दिए गए चार विकल्पों में से, उस विकल्प का चयन करें जो दिए गए मुहावरे के अर्थ को सर्वश्रेष्ठ रूप से व्यक्त करता है।\nतौल-तौल कर मुँह से शब्द निकालना",
+  "options": [
+   "क्रोध दबाना",
+   "बातें बदलना",
+   "बहुत सोच-विचार कर बोलना",
+   "नुकसान पहुंचाना"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 29,
+  "section": "Test of Hindi Language and Comprehension",
+  "number": 5,
+  "question_id": "630680600015",
+  "question": "निम्नलिखित शब्द का संधि विच्छेद करें।\nप्रमाण",
+  "options": [
+   "पर+मान",
+   "प्रा+माण",
+   "प्र+मान",
+   "परम+अण"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 29,
+  "section": "Test of Hindi Language and Comprehension",
+  "number": 6,
+  "question_id": "630680600011",
+  "question": "निम्नलिखित प्रश्न में, दिए गए चार विकल्पों में से, उस विकल्प का चयन करें जो दी गई लोकोक्ति के अर्थ को सर्वश्रेष्ठ रूप से व्यक्त करता है।\nअपना हाथ जगन्नाथ",
+  "options": [
+   "दोहरा फायदा होना",
+   "पूरी तरह अनियंत्रित होना",
+   "स्वयं द्वारा किया गया कार्य अच्छा होता है",
+   "दोनों ओर संकट होना"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 30,
+  "section": "Test of Hindi Language and Comprehension",
+  "number": 7,
+  "question_id": "630680600012",
+  "question": "1. आश्विन के महीने का तीसरा पहर था। हर तरफ रामलीला का उत्साह था\n2. अचानक एक व्यक्ति वहां मेरे बारे में पूछते हुए व मेरा नाम लेते हुए वहां आया\n3. मैं भी अपने एक दोस्त के घर था, वहां ताश की बाजी चल रही थी\n4. और मेरे बगल की कुर्सी पर आकर बैठ गया। मैं उसे नहीं जानता था\nप्रस्तुत खंडित वाक्य में वाक्य संरचना का सही क्रम क्या होगा?",
+  "options": [
+   "4,1,2,3",
+   "2,1,3,4",
+   "1,3,2,4",
+   "3,4,1,2"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 30,
+  "section": "Test of Hindi Language and Comprehension",
+  "number": 8,
+  "question_id": "630680600020",
+  "question": "दिए गए वाक्य में उचित संज्ञा का चयन करके रिक्त स्थान की पूर्ति करें।\nमाही ने आते ही ______ से सबका दिल जीत लिया।",
+  "options": [
+   "लकड़ी",
+   "प्रार्थना",
+   "प्लास्टिक",
+   "प्यार"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 30,
+  "section": "Test of Hindi Language and Comprehension",
+  "number": 9,
+  "question_id": "630680600004",
+  "question": "नीचे दिए गए शब्द का पर्यायवाची शब्द ज्ञात करें।\nगणेश",
+  "options": [
+   "नीरद",
+   "चक्रपाणि",
+   "कौशलेन्द्र",
+   "लम्बोदर"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 31,
+  "section": "Test of Hindi Language and Comprehension",
+  "number": 10,
+  "question_id": "630680600002",
+  "question": "निम्नलिखित शब्द के अनेकार्थी शब्द का चयन करें।\nगुण",
+  "options": [
+   "लाल",
+   "धतूरा",
+   "इच्छा",
+   "विशेषता"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 31,
+  "section": "Test of Hindi Language and Comprehension",
+  "number": 11,
+  "question_id": "630680600007",
+  "question": "निम्नलिखित शब्द का विलोम शब्द ज्ञात करें।\nमोक्ष",
+  "options": [
+   "खगोल",
+   "शाश्वत",
+   "बंधन",
+   "सभ्य"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 31,
+  "section": "Test of Hindi Language and Comprehension",
+  "number": 12,
+  "question_id": "630680600019",
+  "question": "दिए गए वाक्य में उचित कारक का चयन करके रिक्त स्थान की पूर्ति करें।\nमिठाई ______ डब्बे में से एक मिठाई निकालकर ले आओ।",
+  "options": [
+   "का",
+   "में",
+   "के",
+   "पर"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 31,
+  "section": "Test of Hindi Language and Comprehension",
+  "number": 13,
+  "question_id": "630680600017",
+  "question": "निम्नलिखित शब्द का संधि विच्छेद करें।\nइत्यादि",
+  "options": [
+   "इत+आदि",
+   "इट+आदि",
+   "इद:+आदि",
+   "इति+आदि"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 32,
+  "section": "Test of Hindi Language and Comprehension",
+  "number": 14,
+  "question_id": "630680600018",
+  "question": "दिए गए वाक्य में उचित क्रिया का चयन करके रिक्त स्थान की पूर्ति करें।\nठंड के मारे मेरे दांत भी ______ लगे।",
+  "options": [
+   "लंगड़ाने",
+   "कटकटाने",
+   "सठियाने",
+   "कांपने"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 32,
+  "section": "Test of Hindi Language and Comprehension",
+  "number": 15,
+  "question_id": "630680600006",
+  "question": "नीचे दिए गए शब्द का पर्यायवाची शब्द ज्ञात करें।\nरमा",
+  "options": [
+   "निशा",
+   "फूल",
+   "कटक",
+   "श्री"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 33,
+  "section": "Test of Hindi Language and Comprehension",
+  "number": 16,
+  "question_id": "630680600001",
+  "question": "Comprehension:\nनिम्नलिखित गद्यांश के आधार पर पांच प्रश्न दिए गए हैं। गद्यांश को ध्यानपूर्वक पढ़ें तथा प्रत्येक प्रश्न के चार विकल्पों में से सही विकल्प चुनें।\nएक शोध के अनुसार, जलवायु परिवर्तन के कारण गर्म तापमान यूरोपीय आल्प्स में पहाड़ी बकरियों की जीवन शैली को बदल रहा है। अल्पाइन आइबेक्स (कैपरा आइबेक्स) एक पहाड़ी बकरी की प्रजाति है जो गर्म दिनों से बचने के लिए अपनी दैनिक आदतों को रात की आदतों में बदलने के लिए मजबूर है। जीवनशैली में यह बदलाव उन्हें भेड़ियों जैसे शिकारियों के प्रति संवेदनशील बना रहा है, जिससे उनकी आवाजाही में बाधा आ रही है और अंततः उनकी जनसंख्या में गिरावट आ सकती है।\nइटली में सासारी विश्वविद्यालय और फेरारा विश्वविद्यालय के शोधकर्ताओं ने 14 वर्षों की अवधि में 47 आइबेक्स का अध्ययन किया। अध्ययन, जिसका शीर्षक है- “सीकिंग टेम्पोरल रिफ्यूजिया टू हीट स्ट्रेस: परभक्षी जोखिम के बावजूद रात्रिकालीन गतिविधि में वृद्धि”, रॉयल सोसाइटी जर्नल में प्रकाशित हुई थी। मोशन सेंसर और ग्लोबल पोजिशनिंग सिस्टम ट्रैकर्स का उपयोग करके बकरियों को 2006 और 2019 के बीच ट्रैक किया गया था।\nशोधकर्ताओं ने नोट किया कि चंद्रमा की रोशनी के कारण गर्म दिनों और चमकदार रातों के दौरान आइबेक्स की रात्रि गतिविधियां बढ़ गईं। “मनुष्यों की व्यापक उपस्थिति या भूदृश्य संरचना के कारण अनुकूल क्षेत्रों में प्रवास में बाधा उत्पन्न हो सकती है। ऐसे मामलों में, जानवर अस्थायी आयाम में अपने पारिस्थितिक स्थान, यानी उनकी दैनिक गतिविधि लय को संशोधित करके अपनी वर्तमान वितरण सीमा और इष्टतम थर्मल आला को बनाए रख सकते हैं, “उन्होंने लिखा।\nजानवर शाम के ठंडे घंटों के कारण ऊर्जा संतुलन और कुशल गर्मी अपव्यय प्राप्त करने के लिए ऐसा करते हैं।\nव्यवहार पैटर्न में बदलाव इस बात का प्राथमिक प्रमाण है कि जानवर गर्मी के तनाव से बच रहे हैं और रात की गतिविधियों को अपना रहे हैं और इस प्रक्रिया में, शिकार के जोखिम में वृद्धि हो रही है।\nजलवायु परिवर्तन के अलावा, मानव गतिविधियाँ, शहरी विकास, कृषि, शिकार और अन्य जैसे अन्य दबाव भी स्तनपायी प्रजातियों की रात्रिचर गतिविधि में वैश्विक वृद्धि को बढ़ा रहे हैं।\nQ. गद्यांश के आधार पर उचित केन्द्रीय विषय का चयन करें।",
+  "options": [
+   "शोध और उनमें प्रकाशित तथ्य की जांच ज़रूरी है",
+   "अल्पाइन आइबेक्स की बदलती गतिविधियों और घटती जनसंख्या का जोखिम",
+   "परिवर्तन मानव जीवन की महत्वपूर्ण शैली है",
+   "अल्पाइन आइबेक्स की विविध प्रजातियों"
+  ],
+  "correct": 2,
+  "has_figure": false,
+  "note": "comprehension passage prepended (Hindi passage transcribed best-effort)"
+ },
+ {
+  "page": 34,
+  "section": "Test of Hindi Language and Comprehension",
+  "number": 17,
+  "question_id": "630680599998",
+  "question": "Comprehension:\nनिम्नलिखित गद्यांश के आधार पर पांच प्रश्न दिए गए हैं। गद्यांश को ध्यानपूर्वक पढ़ें तथा प्रत्येक प्रश्न के चार विकल्पों में से सही विकल्प चुनें।\nएक शोध के अनुसार, जलवायु परिवर्तन के कारण गर्म तापमान यूरोपीय आल्प्स में पहाड़ी बकरियों की जीवन शैली को बदल रहा है। अल्पाइन आइबेक्स (कैपरा आइबेक्स) एक पहाड़ी बकरी की प्रजाति है जो गर्म दिनों से बचने के लिए अपनी दैनिक आदतों को रात की आदतों में बदलने के लिए मजबूर है। जीवनशैली में यह बदलाव उन्हें भेड़ियों जैसे शिकारियों के प्रति संवेदनशील बना रहा है, जिससे उनकी आवाजाही में बाधा आ रही है और अंततः उनकी जनसंख्या में गिरावट आ सकती है।\nइटली में सासारी विश्वविद्यालय और फेरारा विश्वविद्यालय के शोधकर्ताओं ने 14 वर्षों की अवधि में 47 आइबेक्स का अध्ययन किया। अध्ययन, जिसका शीर्षक है- “सीकिंग टेम्पोरल रिफ्यूजिया टू हीट स्ट्रेस: परभक्षी जोखिम के बावजूद रात्रिकालीन गतिविधि में वृद्धि”, रॉयल सोसाइटी जर्नल में प्रकाशित हुई थी। मोशन सेंसर और ग्लोबल पोजिशनिंग सिस्टम ट्रैकर्स का उपयोग करके बकरियों को 2006 और 2019 के बीच ट्रैक किया गया था।\nशोधकर्ताओं ने नोट किया कि चंद्रमा की रोशनी के कारण गर्म दिनों और चमकदार रातों के दौरान आइबेक्स की रात्रि गतिविधियां बढ़ गईं। “मनुष्यों की व्यापक उपस्थिति या भूदृश्य संरचना के कारण अनुकूल क्षेत्रों में प्रवास में बाधा उत्पन्न हो सकती है। ऐसे मामलों में, जानवर अस्थायी आयाम में अपने पारिस्थितिक स्थान, यानी उनकी दैनिक गतिविधि लय को संशोधित करके अपनी वर्तमान वितरण सीमा और इष्टतम थर्मल आला को बनाए रख सकते हैं, “उन्होंने लिखा।\nजानवर शाम के ठंडे घंटों के कारण ऊर्जा संतुलन और कुशल गर्मी अपव्यय प्राप्त करने के लिए ऐसा करते हैं।\nव्यवहार पैटर्न में बदलाव इस बात का प्राथमिक प्रमाण है कि जानवर गर्मी के तनाव से बच रहे हैं और रात की गतिविधियों को अपना रहे हैं और इस प्रक्रिया में, शिकार के जोखिम में वृद्धि हो रही है।\nजलवायु परिवर्तन के अलावा, मानव गतिविधियाँ, शहरी विकास, कृषि, शिकार और अन्य जैसे अन्य दबाव भी स्तनपायी प्रजातियों की रात्रिचर गतिविधि में वैश्विक वृद्धि को बढ़ा रहे हैं।\nQ. गद्यांश के आधार पर उस विकल्प का चयन करें जिसमें दिया गया तथ्य नहीं है।",
+  "options": [
+   "अल्पाइन आइबेक्स (कैपरा आइबेक्स) एक पहाड़ी बकरी की प्रजाति है।",
+   "व्यवहार पैटर्न में बदलाव से शिकार के जोखिम कम हो रहे हैं।",
+   "जीवनशैली में बदलाव के कारण अल्पाइन आइबेक्स की जनसंख्या में गिरावट आ सकती है।",
+   "गर्म दिनों से बचने के लिए अल्पाइन आइबेक्स अपनी दैनिक आदतों को रात की आदतों में बदलने के लिए मजबूर हैं।"
+  ],
+  "correct": 2,
+  "has_figure": false,
+  "note": "comprehension passage prepended (Hindi passage transcribed best-effort)"
+ },
+ {
+  "page": 35,
+  "section": "Test of Hindi Language and Comprehension",
+  "number": 18,
+  "question_id": "630680600000",
+  "question": "Comprehension:\nनिम्नलिखित गद्यांश के आधार पर पांच प्रश्न दिए गए हैं। गद्यांश को ध्यानपूर्वक पढ़ें तथा प्रत्येक प्रश्न के चार विकल्पों में से सही विकल्प चुनें।\nएक शोध के अनुसार, जलवायु परिवर्तन के कारण गर्म तापमान यूरोपीय आल्प्स में पहाड़ी बकरियों की जीवन शैली को बदल रहा है। अल्पाइन आइबेक्स (कैपरा आइबेक्स) एक पहाड़ी बकरी की प्रजाति है जो गर्म दिनों से बचने के लिए अपनी दैनिक आदतों को रात की आदतों में बदलने के लिए मजबूर है। जीवनशैली में यह बदलाव उन्हें भेड़ियों जैसे शिकारियों के प्रति संवेदनशील बना रहा है, जिससे उनकी आवाजाही में बाधा आ रही है और अंततः उनकी जनसंख्या में गिरावट आ सकती है।\nइटली में सासारी विश्वविद्यालय और फेरारा विश्वविद्यालय के शोधकर्ताओं ने 14 वर्षों की अवधि में 47 आइबेक्स का अध्ययन किया। अध्ययन, जिसका शीर्षक है- “सीकिंग टेम्पोरल रिफ्यूजिया टू हीट स्ट्रेस: परभक्षी जोखिम के बावजूद रात्रिकालीन गतिविधि में वृद्धि”, रॉयल सोसाइटी जर्नल में प्रकाशित हुई थी। मोशन सेंसर और ग्लोबल पोजिशनिंग सिस्टम ट्रैकर्स का उपयोग करके बकरियों को 2006 और 2019 के बीच ट्रैक किया गया था।\nशोधकर्ताओं ने नोट किया कि चंद्रमा की रोशनी के कारण गर्म दिनों और चमकदार रातों के दौरान आइबेक्स की रात्रि गतिविधियां बढ़ गईं। “मनुष्यों की व्यापक उपस्थिति या भूदृश्य संरचना के कारण अनुकूल क्षेत्रों में प्रवास में बाधा उत्पन्न हो सकती है। ऐसे मामलों में, जानवर अस्थायी आयाम में अपने पारिस्थितिक स्थान, यानी उनकी दैनिक गतिविधि लय को संशोधित करके अपनी वर्तमान वितरण सीमा और इष्टतम थर्मल आला को बनाए रख सकते हैं, “उन्होंने लिखा।\nजानवर शाम के ठंडे घंटों के कारण ऊर्जा संतुलन और कुशल गर्मी अपव्यय प्राप्त करने के लिए ऐसा करते हैं।\nव्यवहार पैटर्न में बदलाव इस बात का प्राथमिक प्रमाण है कि जानवर गर्मी के तनाव से बच रहे हैं और रात की गतिविधियों को अपना रहे हैं और इस प्रक्रिया में, शिकार के जोखिम में वृद्धि हो रही है।\nजलवायु परिवर्तन के अलावा, मानव गतिविधियाँ, शहरी विकास, कृषि, शिकार और अन्य जैसे अन्य दबाव भी स्तनपायी प्रजातियों की रात्रिचर गतिविधि में वैश्विक वृद्धि को बढ़ा रहे हैं।\nQ. गद्यांश में दिए गए निम्नलिखित शब्द का उचित विलोम शब्द चुनें।\nपरिवर्तन",
+  "options": [
+   "प्रवर",
+   "बहुज्ञ",
+   "प्रस्थान",
+   "स्थिरता"
+  ],
+  "correct": 4,
+  "has_figure": false,
+  "note": "comprehension passage prepended (Hindi passage transcribed best-effort)"
+ },
+ {
+  "page": 36,
+  "section": "Test of Hindi Language and Comprehension",
+  "number": 19,
+  "question_id": "630680599997",
+  "question": "Comprehension:\nनिम्नलिखित गद्यांश के आधार पर पांच प्रश्न दिए गए हैं। गद्यांश को ध्यानपूर्वक पढ़ें तथा प्रत्येक प्रश्न के चार विकल्पों में से सही विकल्प चुनें।\nएक शोध के अनुसार, जलवायु परिवर्तन के कारण गर्म तापमान यूरोपीय आल्प्स में पहाड़ी बकरियों की जीवन शैली को बदल रहा है। अल्पाइन आइबेक्स (कैपरा आइबेक्स) एक पहाड़ी बकरी की प्रजाति है जो गर्म दिनों से बचने के लिए अपनी दैनिक आदतों को रात की आदतों में बदलने के लिए मजबूर है। जीवनशैली में यह बदलाव उन्हें भेड़ियों जैसे शिकारियों के प्रति संवेदनशील बना रहा है, जिससे उनकी आवाजाही में बाधा आ रही है और अंततः उनकी जनसंख्या में गिरावट आ सकती है।\nइटली में सासारी विश्वविद्यालय और फेरारा विश्वविद्यालय के शोधकर्ताओं ने 14 वर्षों की अवधि में 47 आइबेक्स का अध्ययन किया। अध्ययन, जिसका शीर्षक है- “सीकिंग टेम्पोरल रिफ्यूजिया टू हीट स्ट्रेस: परभक्षी जोखिम के बावजूद रात्रिकालीन गतिविधि में वृद्धि”, रॉयल सोसाइटी जर्नल में प्रकाशित हुई थी। मोशन सेंसर और ग्लोबल पोजिशनिंग सिस्टम ट्रैकर्स का उपयोग करके बकरियों को 2006 और 2019 के बीच ट्रैक किया गया था।\nशोधकर्ताओं ने नोट किया कि चंद्रमा की रोशनी के कारण गर्म दिनों और चमकदार रातों के दौरान आइबेक्स की रात्रि गतिविधियां बढ़ गईं। “मनुष्यों की व्यापक उपस्थिति या भूदृश्य संरचना के कारण अनुकूल क्षेत्रों में प्रवास में बाधा उत्पन्न हो सकती है। ऐसे मामलों में, जानवर अस्थायी आयाम में अपने पारिस्थितिक स्थान, यानी उनकी दैनिक गतिविधि लय को संशोधित करके अपनी वर्तमान वितरण सीमा और इष्टतम थर्मल आला को बनाए रख सकते हैं, “उन्होंने लिखा।\nजानवर शाम के ठंडे घंटों के कारण ऊर्जा संतुलन और कुशल गर्मी अपव्यय प्राप्त करने के लिए ऐसा करते हैं।\nव्यवहार पैटर्न में बदलाव इस बात का प्राथमिक प्रमाण है कि जानवर गर्मी के तनाव से बच रहे हैं और रात की गतिविधियों को अपना रहे हैं और इस प्रक्रिया में, शिकार के जोखिम में वृद्धि हो रही है।\nजलवायु परिवर्तन के अलावा, मानव गतिविधियाँ, शहरी विकास, कृषि, शिकार और अन्य जैसे अन्य दबाव भी स्तनपायी प्रजातियों की रात्रिचर गतिविधि में वैश्विक वृद्धि को बढ़ा रहे हैं।\nQ. गद्यांश को ध्यान में रखते हुए ‘जीवनशैली’ शब्द का उपयुक्त अर्थ ज्ञात करें।",
+  "options": [
+   "किसी व्यक्ति, समूह या संस्कृति के घूमने का विशिष्ट तरीका",
+   "किसी व्यक्ति, समूह या संस्कृति के जीवन का विशिष्ट तरीका",
+   "किसी व्यक्ति, समूह या संस्कृति के बदलाव का विशिष्ट तरीका",
+   "किसी व्यक्ति, समूह या संस्कृति के ठहरने का विशिष्ट तरीका"
+  ],
+  "correct": 2,
+  "has_figure": false,
+  "note": "comprehension passage prepended (Hindi passage transcribed best-effort)"
+ },
+ {
+  "page": 37,
+  "section": "Test of Hindi Language and Comprehension",
+  "number": 20,
+  "question_id": "630680599999",
+  "question": "Comprehension:\nनिम्नलिखित गद्यांश के आधार पर पांच प्रश्न दिए गए हैं। गद्यांश को ध्यानपूर्वक पढ़ें तथा प्रत्येक प्रश्न के चार विकल्पों में से सही विकल्प चुनें।\nएक शोध के अनुसार, जलवायु परिवर्तन के कारण गर्म तापमान यूरोपीय आल्प्स में पहाड़ी बकरियों की जीवन शैली को बदल रहा है। अल्पाइन आइबेक्स (कैपरा आइबेक्स) एक पहाड़ी बकरी की प्रजाति है जो गर्म दिनों से बचने के लिए अपनी दैनिक आदतों को रात की आदतों में बदलने के लिए मजबूर है। जीवनशैली में यह बदलाव उन्हें भेड़ियों जैसे शिकारियों के प्रति संवेदनशील बना रहा है, जिससे उनकी आवाजाही में बाधा आ रही है और अंततः उनकी जनसंख्या में गिरावट आ सकती है।\nइटली में सासारी विश्वविद्यालय और फेरारा विश्वविद्यालय के शोधकर्ताओं ने 14 वर्षों की अवधि में 47 आइबेक्स का अध्ययन किया। अध्ययन, जिसका शीर्षक है- “सीकिंग टेम्पोरल रिफ्यूजिया टू हीट स्ट्रेस: परभक्षी जोखिम के बावजूद रात्रिकालीन गतिविधि में वृद्धि”, रॉयल सोसाइटी जर्नल में प्रकाशित हुई थी। मोशन सेंसर और ग्लोबल पोजिशनिंग सिस्टम ट्रैकर्स का उपयोग करके बकरियों को 2006 और 2019 के बीच ट्रैक किया गया था।\nशोधकर्ताओं ने नोट किया कि चंद्रमा की रोशनी के कारण गर्म दिनों और चमकदार रातों के दौरान आइबेक्स की रात्रि गतिविधियां बढ़ गईं। “मनुष्यों की व्यापक उपस्थिति या भूदृश्य संरचना के कारण अनुकूल क्षेत्रों में प्रवास में बाधा उत्पन्न हो सकती है। ऐसे मामलों में, जानवर अस्थायी आयाम में अपने पारिस्थितिक स्थान, यानी उनकी दैनिक गतिविधि लय को संशोधित करके अपनी वर्तमान वितरण सीमा और इष्टतम थर्मल आला को बनाए रख सकते हैं, “उन्होंने लिखा।\nजानवर शाम के ठंडे घंटों के कारण ऊर्जा संतुलन और कुशल गर्मी अपव्यय प्राप्त करने के लिए ऐसा करते हैं।\nव्यवहार पैटर्न में बदलाव इस बात का प्राथमिक प्रमाण है कि जानवर गर्मी के तनाव से बच रहे हैं और रात की गतिविधियों को अपना रहे हैं और इस प्रक्रिया में, शिकार के जोखिम में वृद्धि हो रही है।\nजलवायु परिवर्तन के अलावा, मानव गतिविधियाँ, शहरी विकास, कृषि, शिकार और अन्य जैसे अन्य दबाव भी स्तनपायी प्रजातियों की रात्रिचर गतिविधि में वैश्विक वृद्धि को बढ़ा रहे हैं।\nQ. गद्यांश में दिए गए निम्नलिखित शब्द का उचित पर्यायवाची शब्द चुनें।\nप्रमाण",
+  "options": [
+   "मिथ्या",
+   "कृत्रिम",
+   "काल्पनिक",
+   "साक्ष्य"
+  ],
+  "correct": 4,
+  "has_figure": false,
+  "note": "comprehension passage prepended (Hindi passage transcribed best-effort)"
+ },
+ {
+  "page": 38,
+  "section": "Discipline 1",
+  "number": 1,
+  "question_id": "630680598500",
+  "question": "Match the AI Ethics with its correct description.\nAI Ethics | Description\nI. Data privacy | 1. It is a standard metric that measures how many users in a database share a particular attribute.\nII. K-anonymity | 2. It is a trade-off between the amount of data collected and the performance of a product or service.\nIII. L-diversity | 3. It extends the idea by merging several sensitive attributes together.",
+  "options": [
+   "I-1, II-3, III-2",
+   "I-2, II-3, III-1",
+   "I-1, II-2, III-3",
+   "I-2, II-1, III-3"
+  ],
+  "correct": 4,
+  "has_figure": false,
+  "note": "table transcribed as text"
+ },
+ {
+  "page": 38,
+  "section": "Discipline 1",
+  "number": 2,
+  "question_id": "630680598502",
+  "question": "What is the advantage of exploratory Data Analysis in Big Data and Analytics?",
+  "options": [
+   "Less realistic statements of accuracy",
+   "Flexible ways to generate hypotheses",
+   "Usually does not provide definitive answers",
+   "More realistic statements of accuracy"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 38,
+  "section": "Discipline 1",
+  "number": 3,
+  "question_id": "630680598468",
+  "question": "In computer networking, a Repeater is a device that operates only in the ______ layer.",
+  "options": [
+   "Physical",
+   "Network",
+   "Data link",
+   "Session"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 39,
+  "section": "Discipline 1",
+  "number": 4,
+  "question_id": "630680598497",
+  "question": "Which of the following data function in SQL returns the current database system timestamp as a 'datetime' value without the database time zone offset?",
+  "options": [
+   "GETTIME",
+   "GETDATE",
+   "CASTDATE",
+   "CASTTIME"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 39,
+  "section": "Discipline 1",
+  "number": 5,
+  "question_id": "630680598464",
+  "question": "Which of the following type of function used with strings in the Python language returns the character with the highest ASCII value?",
+  "options": [
+   "len ()",
+   "hvalue ()",
+   "max ()",
+   "long ()"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 39,
+  "section": "Discipline 1",
+  "number": 6,
+  "question_id": "630680598445",
+  "question": "Which of the following command is used in the communication system call of an operating system?",
+  "options": [
+   "Request device, release device",
+   "Attach or detach remote devices",
+   "Allocate and free memory",
+   "Read, write, reposition"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 39,
+  "section": "Discipline 1",
+  "number": 7,
+  "question_id": "630680598493",
+  "question": "A ______ index is an ordered file whose records are of fixed length with two fields primary key and a pointer to a disk block.",
+  "options": [
+   "Secondary",
+   "Multilevel",
+   "Primary",
+   "Clustering"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 40,
+  "section": "Discipline 1",
+  "number": 8,
+  "question_id": "630680598503",
+  "question": "In AI biases many AI models are ______.\nI. deepfakes\nII. Black boxes\nIII. K-anonymity",
+  "options": [
+   "Only II",
+   "Only I",
+   "I, II and III",
+   "Only I and III"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 40,
+  "section": "Discipline 1",
+  "number": 9,
+  "question_id": "630680598529",
+  "question": "Select the correct output for the following python code?\na = 20\nb = 35\nif a >= b:\n    print(\"yes\")\nelse:\n    print(\"No\")",
+  "options": [
+   "Syntax",
+   "No",
+   "Yes",
+   "Error"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 40,
+  "section": "Discipline 1",
+  "number": 10,
+  "question_id": "630680598513",
+  "question": "In cyber security, what remedy does the law provide?",
+  "options": [
+   "Apology",
+   "Imprisonment",
+   "Technologies",
+   "Computer networks"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 41,
+  "section": "Discipline 1",
+  "number": 11,
+  "question_id": "630680598480",
+  "question": "Which of the following is an input device which can detect the presence or absence of a pencil or pen mark on a paper?",
+  "options": [
+   "Optical Mark Reader (OMR)",
+   "Light pen",
+   "Digitizer",
+   "Optical Character Recognizer (OCR)"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 41,
+  "section": "Discipline 1",
+  "number": 12,
+  "question_id": "630680598463",
+  "question": "Which of the following type conversion function in the Python language, is used to convert a character into an integer?",
+  "options": [
+   "tuple ()",
+   "dict ()",
+   "set ()",
+   "ord ()"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 41,
+  "section": "Discipline 1",
+  "number": 13,
+  "question_id": "630680598443",
+  "question": "Using K-map, simplify the Boolean function: F(x, y, z) = S (0, 2, 4, 5, 6)\nWhich of the following is simplified function?",
+  "options": [
+   "F = z + x'y'",
+   "F = z' + xy'",
+   "F = z + x'y",
+   "F = z' + xy"
+  ],
+  "correct": 2,
+  "has_figure": false,
+  "note": "'S' as printed (sigma/minterm sum)"
+ },
+ {
+  "page": 41,
+  "section": "Discipline 1",
+  "number": 14,
+  "question_id": "630680598465",
+  "question": "In Python language, which of the following is correct for 'strip ( )' function?",
+  "options": [
+   "It returns the string by removing trailing and leading white spaces",
+   "It returns a list from the string depending upon the delimiter that we specify",
+   "It returns the power of values passed",
+   "It returns the string with the first character in upper case and lowering the case for rest of the string"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 42,
+  "section": "Discipline 1",
+  "number": 15,
+  "question_id": "630680598496",
+  "question": "Which of the following statement is correct for DATEDIFF function in SQL?\nI. This function reports difference between the arguments 'startdate' and 'enddate'.\nII. In this, 'datepart' argument/value can be specified in a variable.",
+  "options": [
+   "Only I",
+   "Neither I nor II",
+   "Both I and II",
+   "Only II"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 42,
+  "section": "Discipline 1",
+  "number": 16,
+  "question_id": "630680598469",
+  "question": "In the data link layer, _____ is based on automatic repeat request, which is the retransmission of data.",
+  "options": [
+   "Framing",
+   "Physical addressing",
+   "Error control",
+   "Flow control"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 42,
+  "section": "Discipline 1",
+  "number": 17,
+  "question_id": "630680598466",
+  "question": "In Python language, which of the following method of lists is used to add an element to the end of the list?",
+  "options": [
+   "index ()",
+   "sort ()",
+   "pop ()",
+   "append ()"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 42,
+  "section": "Discipline 1",
+  "number": 18,
+  "question_id": "630680598479",
+  "question": "Which of the following part of the CPU has the necessary electronic circuitry to perform binary addition and shift operations in computer system?",
+  "options": [
+   "Arithmetic Logic Unit (ALU)",
+   "Memory Buses",
+   "Registers",
+   "Control Unit"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 43,
+  "section": "Discipline 1",
+  "number": 19,
+  "question_id": "630680598499",
+  "question": "Match the categories of AI with its correct description.\nCategories of AI | Description\nI. Artificial Narrow Intelligence | 1. Level of general and strong AI that is smarter than humans if that's possible.\nII. Artificial General Intelligence | 2. Such system seems to act intelligently but they don't have any awareness of what they are doing.\nIII. Super Intelligence | 3. Acting like a smart human and thinking like one with a conscious.",
+  "options": [
+   "I-2, II-3, III-1",
+   "I-2, II-1, III-3",
+   "I-1, II-2, III-3",
+   "I-1, II-3, III-2"
+  ],
+  "correct": 1,
+  "has_figure": false,
+  "note": "table transcribed as text"
+ },
+ {
+  "page": 43,
+  "section": "Discipline 1",
+  "number": 20,
+  "question_id": "630680598527",
+  "question": "Choose the correct output for the following Python code.\ntuple_var_mix = (\"Example\", 1, \"Tuple\")\nprint (tuple_var_mix)",
+  "options": [
+   "{Example, 1, Tuple}",
+   "(Example, 1, tuple)",
+   "('Example', 1, 'Tuple')",
+   "[Example, 1, 'Tuple']"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 44,
+  "section": "Discipline 2",
+  "number": 1,
+  "question_id": "630680598459",
+  "question": "In which of the following condition of Deadlock Prevention, at least one resource must be non-sharable?",
+  "options": [
+   "Circular wait",
+   "Hold and wait",
+   "Mutual Exclusion",
+   "No preemption"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 44,
+  "section": "Discipline 2",
+  "number": 2,
+  "question_id": "630680598490",
+  "question": "Which of the following notation of ERD (Entity – Relationship Diagram) shows the 'Weak Entity'?",
+  "options": [
+   "[figure]",
+   "[figure]",
+   "[figure]",
+   "[figure]"
+  ],
+  "correct": 3,
+  "has_figure": true,
+  "note": "options are shapes: 1 single rectangle, 2 single diamond, 3 double rectangle (correct), 4 double diamond"
+ },
+ {
+  "page": 44,
+  "section": "Discipline 2",
+  "number": 3,
+  "question_id": "630680598457",
+  "question": "Which of the following statement is correct for a 'Volume Control block' in File-System Implementation?",
+  "options": [
+   "It is used to organize the files",
+   "It has a unique identifier number to allow association with a directory entry",
+   "It contains the number of block in the partition",
+   "It can contain information needed by the system to boot an operating system from that volume"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 45,
+  "section": "Discipline 2",
+  "number": 4,
+  "question_id": "630680598467",
+  "question": "In Python language, which of following mode for opening the file, opens the file for both reading and writing and file pointer will be placed at the start of the file?",
+  "options": [
+   "ab",
+   "rb",
+   "r+",
+   "a+"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 45,
+  "section": "Discipline 2",
+  "number": 5,
+  "question_id": "630680598449",
+  "question": "Which of the following is characteristic of a RISC (Reduced Instruction Set Computer) processor?",
+  "options": [
+   "Microprogrammed control",
+   "Instruction that manipulate operands in memory",
+   "Fixed-length, easily decoded instruction format",
+   "A large number (typically from 100 to 250) of instructions"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 45,
+  "section": "Discipline 2",
+  "number": 6,
+  "question_id": "630680598514",
+  "question": "Which among the following given below is correct in context of privacy issues in social media and online platforms?",
+  "options": [
+   "The sharing on social media especially by children must be monitored at all times.",
+   "The addiction of social media does not hamper the academic performance of a student.",
+   "Rumours and fake news cannot put the administration at risk.",
+   "Mishandling of social media cannot create tension in the law and order."
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 45,
+  "section": "Discipline 2",
+  "number": 7,
+  "question_id": "630680598451",
+  "question": "In which of the following type of addressing mode, the instruction specifies a register in the CPU whose contents give the address of the operand in memory?",
+  "options": [
+   "Register indirect mode",
+   "Indirect address mode",
+   "Implied mode",
+   "Immediate mode"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 46,
+  "section": "Discipline 2",
+  "number": 8,
+  "question_id": "630680598487",
+  "question": "In HTML body tag, which of the following attribute indicates the colour of the hyperlinks after the mouse is clicked on it?",
+  "options": [
+   "VLINK",
+   "ALINK",
+   "LINK",
+   "HLINK"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 46,
+  "section": "Discipline 2",
+  "number": 9,
+  "question_id": "630680598448",
+  "question": "Which of the following statement(s) is/are correct regarding Assembly language?\nI. An assembler converts (or assembles) the symbolic program of an Assembly language into its equivalent machine program.\nII. A program written in an assembly language is machine dependent.",
+  "options": [
+   "Both I and II",
+   "Only II",
+   "Only I",
+   "Neither I nor II"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 46,
+  "section": "Discipline 2",
+  "number": 10,
+  "question_id": "630680598450",
+  "question": "Which of the following Instruction format use an implied accumulator (AC) register for all data manipulation?",
+  "options": [
+   "One-address instructions",
+   "Three-address instructions",
+   "Zero-address instructions",
+   "Two-address instructions"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 46,
+  "section": "Discipline 2",
+  "number": 11,
+  "question_id": "630680598515",
+  "question": "In context of the Digital Personal Data Protection Act, 2023, which of the given following is correct?",
+  "options": [
+   "“Child” means an individual who has not completed the age of eighteen years",
+   "“Digital personal data” means personal data in physical form",
+   "“Chairperson” does not mean the chairperson of the board",
+   "“Data” means representation of facts only"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 47,
+  "section": "Discipline 2",
+  "number": 12,
+  "question_id": "630680598456",
+  "question": "Which of the following File operation need not involve any actual I/O (Input/Output) and is also known as 'File Seek'?",
+  "options": [
+   "Deleting a file",
+   "Repositioning within a file",
+   "Reading a file",
+   "Truncating a file"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 47,
+  "section": "Discipline 2",
+  "number": 13,
+  "question_id": "630680598446",
+  "question": "In CPU, which of the following type of register is required by the control unit and contains the instruction currently being executed?",
+  "options": [
+   "Instruction register",
+   "Accumulator",
+   "Program register",
+   "Memory data register"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 47,
+  "section": "Discipline 2",
+  "number": 14,
+  "question_id": "630680598530",
+  "question": "The values in a dictionary can be ______ but the keys in the dictionary should be ______ in Python programming languages",
+  "options": [
+   "repeated, repeated",
+   "repeated, unique",
+   "unique, repeated",
+   "unique, unique"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 47,
+  "section": "Discipline 2",
+  "number": 15,
+  "question_id": "630680598481",
+  "question": "Which of the following part of operating system allocates the CPU to next scheduled process in the system?",
+  "options": [
+   "File manager",
+   "Dispatcher",
+   "Scheduler",
+   "Input/output handler"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 48,
+  "section": "Discipline 2",
+  "number": 16,
+  "question_id": "630680598447",
+  "question": "Which of the following printer is type of impact printer?",
+  "options": [
+   "Ink-Jet",
+   "Laser",
+   "Dot matrix",
+   "Thermal"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 48,
+  "section": "Discipline 2",
+  "number": 17,
+  "question_id": "630680598474",
+  "question": "Which of the following statement is correct regarding point-to-point connection in the data communication?\nI. It provides a dedicated link between two devices.\nII. It is a timeshared connection.",
+  "options": [
+   "Only II",
+   "Both I and II",
+   "Neither I nor II",
+   "Only I"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 48,
+  "section": "Discipline 2",
+  "number": 18,
+  "question_id": "630680598452",
+  "question": "In Direct Memory Access (DMA) ______, a block sequence consisting of a number of memory words is transferred in a continuous burst.",
+  "options": [
+   "Bus granting",
+   "Burst transfer",
+   "Cycle stealing",
+   "Controller count"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 48,
+  "section": "Discipline 2",
+  "number": 19,
+  "question_id": "630680598492",
+  "question": "Which of the following normal form of normalization in relational model, disallows relations within relations or relations as attribute values within tuples?",
+  "options": [
+   "Fourth",
+   "First",
+   "Second",
+   "Third"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 49,
+  "section": "Discipline 2",
+  "number": 20,
+  "question_id": "630680598486",
+  "question": "Which of the following is NOT an attribute that included by the HR tag which puts a horizontal line on the page?",
+  "options": [
+   "SHADE",
+   "SIZE",
+   "ALIGN",
+   "WIDTH"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 49,
+  "section": "Discipline 3",
+  "number": 1,
+  "question_id": "630680598510",
+  "question": "______ enables the creator owner to earn recognition or financial benefit by using their creation or invention.",
+  "options": [
+   "Patent",
+   "Copyright",
+   "Intellectual property right",
+   "Data protection"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 49,
+  "section": "Discipline 3",
+  "number": 2,
+  "question_id": "630680598518",
+  "question": "Over half of the e-waste generated in the developed world are exported to developing countries, mainly to ______, where metals like copper, iron, silicon, nickel and gold are recovered during recycling process.",
+  "options": [
+   "Afghanistan",
+   "Kazakistan",
+   "UAE",
+   "India"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 50,
+  "section": "Discipline 3",
+  "number": 3,
+  "question_id": "630680598520",
+  "question": "______ is a two-dimensional labelled data structure with columns of potentially different type, in data handling with pandas.",
+  "options": [
+   "Series",
+   "Missing data",
+   "Iteration",
+   "Data frames"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 50,
+  "section": "Discipline 3",
+  "number": 4,
+  "question_id": "630680598458",
+  "question": "A semaphore is an integer variable that, apart from initialization, is accessed only through which of the following standard atomic operation?",
+  "options": [
+   "release ()",
+   "lock ()",
+   "acquire ()",
+   "signal ()"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 50,
+  "section": "Discipline 3",
+  "number": 5,
+  "question_id": "630680598501",
+  "question": "From the challenges given below, which of the challenge does IoT adoption include?",
+  "options": [
+   "Deepfake",
+   "Black box",
+   "Security",
+   "Cloud storage"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 50,
+  "section": "Discipline 3",
+  "number": 6,
+  "question_id": "630680598482",
+  "question": "Which of the following tag of HTML language is a container for the tags that contain information about the page?",
+  "options": [
+   "<title>",
+   "<html>",
+   "<head>",
+   "<body>"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 51,
+  "section": "Discipline 3",
+  "number": 7,
+  "question_id": "630680598517",
+  "question": "Irreparable computer and other electronic goods are known as ______ in tech world.",
+  "options": [
+   "Man made waste",
+   "Natural waste",
+   "Waste",
+   "Electronic waste"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 51,
+  "section": "Discipline 3",
+  "number": 8,
+  "question_id": "630680598521",
+  "question": "Which of the following is a one-dimensional labelled array capable of holding any data type (integers, strings, floating point numbers, python objects, etc) in data handling with pandas?",
+  "options": [
+   "Series",
+   "Missing data",
+   "Data frames",
+   "Iteration"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 51,
+  "section": "Discipline 3",
+  "number": 9,
+  "question_id": "630680598516",
+  "question": "The E-waste (management) rules 2016 of India, recognizes two broad categories: IT and telecommunication equipment and consumer electrical and electronics including which of the following material?\nI. Fluorescent\nII. Mercury",
+  "options": [
+   "Only I",
+   "Only II",
+   "Both I and II",
+   "Neither I nor II"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 51,
+  "section": "Discipline 3",
+  "number": 10,
+  "question_id": "630680598483",
+  "question": "Which of the following form is correct to show a 'comments' in the HTML language?",
+  "options": [
+   "< – – This is a comment – – >",
+   "< – – This is a comment – –! >",
+   "< !– – This is a comment –! >",
+   "< !– – This is a comment – – >"
+  ],
+  "correct": 4,
+  "has_figure": false,
+  "note": "dash/bang characters as printed"
+ },
+ {
+  "page": 52,
+  "section": "Discipline 3",
+  "number": 11,
+  "question_id": "630680598523",
+  "question": "If you encounter an import Error, what does it mean?\nI. Python could find pandas in list of available libraries\nII. Python couldn't find python in list of available libraries\nIII. Python couldn't find Pandas in list of available libraries",
+  "options": [
+   "Only III",
+   "I, II and III",
+   "Only I",
+   "Only I and III"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 52,
+  "section": "Discipline 3",
+  "number": 12,
+  "question_id": "630680598524",
+  "question": "Data frame in Pandas has a method which takes a column name (for a regular index) or a list of column names to create a new, re-indexed data frame, which of the following is correct method?",
+  "options": [
+   "dFb",
+   "data.index ( )",
+   "set_index ( )",
+   "dFmi"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 52,
+  "section": "Discipline 3",
+  "number": 13,
+  "question_id": "630680598461",
+  "question": "Which of the following is correct for Identifiers name used in Python language?",
+  "options": [
+   "An identifier can have underscore (_) symbol",
+   "We must use keywords as identifier",
+   "There is restriction the length of an identifier",
+   "An identifier must start with a digit"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 52,
+  "section": "Discipline 3",
+  "number": 14,
+  "question_id": "630680598485",
+  "question": "Which of the following rule is needed to be followed while declaring the XML (Extensible Markup Language) elements name?",
+  "options": [
+   "Name must start with a number",
+   "Name can contain spaces",
+   "Name must not start with the letter xml",
+   "Name cannot contain letter, numbers and other characters"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 53,
+  "section": "Discipline 3",
+  "number": 15,
+  "question_id": "630680598512",
+  "question": "In digital realm, which refers to the legal rights to protect invention or creation in intellectual property, are given to whom?",
+  "options": [
+   "Employee",
+   "Seller",
+   "Creator/invertor",
+   "Buyers"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 53,
+  "section": "Discipline 3",
+  "number": 16,
+  "question_id": "630680598462",
+  "question": "Which of the following symbol is used to add comments in the Python language?",
+  "options": [
+   "*",
+   "#",
+   "!",
+   "//"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 53,
+  "section": "Discipline 3",
+  "number": 17,
+  "question_id": "630680598522",
+  "question": "Which operation is provided in Pandas, when multiple tables can be concatenated both column wise and row wise as database?",
+  "options": [
+   "SUM",
+   "MERGE",
+   "GROUP BY",
+   "SELECT"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 53,
+  "section": "Discipline 3",
+  "number": 18,
+  "question_id": "630680598511",
+  "question": "IPR (Intellectual Property Right) is given for how much time, in digital realm?",
+  "options": [
+   "Certain period of time",
+   "Unlimited period of time",
+   "Uncertain period of time",
+   "Depending on case to case basis"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 54,
+  "section": "Discipline 3",
+  "number": 19,
+  "question_id": "630680598519",
+  "question": "In E-waste management, from which factors, there comes the exposure variability in electronic waste?",
+  "options": [
+   "Type of E-waste",
+   "Quantity of the Pollutants in air",
+   "Management processes of the air pollution",
+   "Medical waste"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 54,
+  "section": "Discipline 3",
+  "number": 20,
+  "question_id": "630680598484",
+  "question": "Which of the following HTML tag is used to puts a line break in the text?",
+  "options": [
+   "<B>",
+   "<BL>",
+   "<L>",
+   "<BR>"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 54,
+  "section": "Discipline 4",
+  "number": 1,
+  "question_id": "630680598498",
+  "question": "Which of the following maths function in SQL returns the smallest integer greater than, or equal to, the specified numeric expression?",
+  "options": [
+   "ROUND",
+   "CEILING",
+   "ABS",
+   "FLOOR"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 55,
+  "section": "Discipline 4",
+  "number": 2,
+  "question_id": "630680598455",
+  "question": "Which of the following page replacement algorithms(s) does not suffer from Belady's anomaly in Operating System?\nI. Least-Recently Used (LRU) page replacement.\nII. First-In, First-Out (FIFO) page replacement.",
+  "options": [
+   "Only I",
+   "Neither I nor II",
+   "Only II",
+   "Both I and II"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 55,
+  "section": "Discipline 4",
+  "number": 3,
+  "question_id": "630680598526",
+  "question": "String is a collection of one or more character which consists of ______ in programming language.\nI. Letters\nII. Numbers\nIII. Symbols",
+  "options": [
+   "I, II and III",
+   "Only I",
+   "Only I and III",
+   "Only II"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 55,
+  "section": "Discipline 4",
+  "number": 4,
+  "question_id": "630680598488",
+  "question": "Which of the following symbol is used with SELECT command of SQL, to retrieve all the attribute values of the selected tuples?",
+  "options": [
+   "#",
+   "%",
+   "*",
+   ":"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 56,
+  "section": "Discipline 4",
+  "number": 5,
+  "question_id": "630680598506",
+  "question": "Which of the following is commonly used in UNICODE encoding schemes and number system in computer science?",
+  "options": [
+   "UTF-17",
+   "UTF-61",
+   "UTF-8",
+   "UTF-35"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 56,
+  "section": "Discipline 4",
+  "number": 6,
+  "question_id": "630680598504",
+  "question": "Extensions like .txt, .py, .CSV, etc in python language are example of ______.",
+  "options": [
+   "text files",
+   "text editor",
+   "UNI CODE",
+   "ASCII"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 56,
+  "section": "Discipline 4",
+  "number": 7,
+  "question_id": "630680598441",
+  "question": "Which of the following logic gate is shown in the given Graphic Symbol? (where, A and B = inputs, x = output)\n[logic gate figure]",
+  "options": [
+   "OR gate",
+   "NAND gate",
+   "NOR gate",
+   "Exclusive – OR (XOR) gate"
+  ],
+  "correct": 4,
+  "has_figure": true,
+  "note": "figure: gate symbol with inputs A, B and output x (curved-input OR shape, i.e. XOR symbol)"
+ },
+ {
+  "page": 57,
+  "section": "Discipline 4",
+  "number": 8,
+  "question_id": "630680598444",
+  "question": "Which of the following phase of the compiler, gathers type information and saves it in either the syntax tree or the symbol table, for subsequent use during intermediate code generation?",
+  "options": [
+   "Semantic Analyzer",
+   "Code Analyzer",
+   "Syntax Analyzer",
+   "Lexical Analyzer"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 57,
+  "section": "Discipline 4",
+  "number": 9,
+  "question_id": "630680598525",
+  "question": "Number with decimal points is called ______ in programming language.",
+  "options": [
+   "Fractional point numbers",
+   "Complex numbers",
+   "Imaginary Numbers",
+   "Integer"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 57,
+  "section": "Discipline 4",
+  "number": 10,
+  "question_id": "630680598489",
+  "question": "Which of the following operation includes all tuples that are in R-set but not in S-set?",
+  "options": [
+   "R – S",
+   "R ∩ S",
+   "R ∪ S",
+   "R × S"
+  ],
+  "correct": 1,
+  "has_figure": false,
+  "note": "options 2 and 3 printed as 'R Ç S' and 'R È S' (font-mapped intersection/union symbols)"
+ },
+ {
+  "page": 57,
+  "section": "Discipline 4",
+  "number": 11,
+  "question_id": "630680598491",
+  "question": "Which of the following is NOT an aggregate function in SQL?",
+  "options": [
+   "CROSS PRODUCT",
+   "MAXIMUM",
+   "COUNT",
+   "SUM"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 58,
+  "section": "Discipline 4",
+  "number": 12,
+  "question_id": "630680598505",
+  "question": "______ has been developed to incorporate all the character of every written language of the world. It provides a unique number for every character, irrespective of device [server, desktop, mob], OS [linux, win] or software application",
+  "options": [
+   "UNICODE",
+   "Binary Code",
+   "ISCII",
+   "ASCII"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 58,
+  "section": "Discipline 4",
+  "number": 13,
+  "question_id": "630680598508",
+  "question": "ASCII (American Standard Code for Information Interchange) can only handle ______ or at most ______ languages and that shows its limitation to handle all world languages.",
+  "options": [
+   "2, 5",
+   "1, 2",
+   "1, 5",
+   "3, 4"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 58,
+  "section": "Discipline 4",
+  "number": 14,
+  "question_id": "630680598475",
+  "question": "In Database Management System (DBMS), which of the following term defines a collection of entities that have the same attributes in the database?",
+  "options": [
+   "Entity type",
+   "Value set",
+   "Entity set",
+   "Value type"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 58,
+  "section": "Discipline 4",
+  "number": 15,
+  "question_id": "630680598528",
+  "question": "Which symbol is used to add the comment in the code or program to make it more readable and understandable in Python programming language?",
+  "options": [
+   "#",
+   "*",
+   "–",
+   ":"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 59,
+  "section": "Discipline 4",
+  "number": 16,
+  "question_id": "630680598454",
+  "question": "Which of the following statement(s) is/are correct for context switching in Operating System?\nI. When a context switch occurs, the kernel saves the context of the old process in its PCB (Process Control Block).\nII. Context-Switch time is pure overhead, because the system does no useful work while switching.",
+  "options": [
+   "Neither I nor II",
+   "Only I",
+   "Only II",
+   "Both I and II"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 59,
+  "section": "Discipline 4",
+  "number": 17,
+  "question_id": "630680598442",
+  "question": "Which of the following statement(s) is/are correct regarding AND logic gate?\nI. The AND gate produces the output value 1 if input A and input B are both equal to 1.\nII. The algebraic operation symbol of the AND function is the same as the multiplication symbol of ordinary arithmetic.",
+  "options": [
+   "Neither I nor II",
+   "Only I",
+   "Both I and II",
+   "Only II"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 59,
+  "section": "Discipline 4",
+  "number": 18,
+  "question_id": "630680598477",
+  "question": "Which of the following term of ER model (Entity – Relationship) is corresponding to the foreign key (or relationship relation) in the relational model of database?",
+  "options": [
+   "Composite attribute",
+   "Entity type",
+   "1 : 1 (one to one) or 1 : N (one to many) relationship type",
+   "M : N (many to many) relationship type"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 60,
+  "section": "Discipline 4",
+  "number": 19,
+  "question_id": "630680598476",
+  "question": "In relational databases, which of the following integrity constraint is specified between two relations and is used to maintain the consistency among tuples in the two relations?",
+  "options": [
+   "Entity integrity constraint",
+   "Semantic integrity constraint",
+   "Functional integrity constraint",
+   "Referential integrity constraint"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 60,
+  "section": "Discipline 4",
+  "number": 20,
+  "question_id": "630680598453",
+  "question": "Match the following Process states of Operating System with their definitions.\nState | Definition\nI. New | 1. The process is waiting to be assigned to a processor\nII. Running | 2. Instructions are being executed\nIII. Ready | 3. The process is being created",
+  "options": [
+   "I-3, II-1, III-2",
+   "I-1, II-3, III-2",
+   "I-1, II-2, III-3",
+   "I-3, II-2, III-1"
+  ],
+  "correct": 4,
+  "has_figure": false,
+  "note": "table transcribed as text"
+ },
+ {
+  "page": 60,
+  "section": "Discipline 5",
+  "number": 1,
+  "question_id": "630680598494",
+  "question": "Which of the following operator is used as concatenation operator in SQL?",
+  "options": [
+   "++",
+   "“ ”",
+   "##",
+   "||"
+  ],
+  "correct": 4,
+  "has_figure": false,
+  "note": "options printed with spacing: '+ +', '“ ”', '# #', '| |'"
+ },
+ {
+  "page": 61,
+  "section": "Discipline 5",
+  "number": 2,
+  "question_id": "630680598471",
+  "question": "Which of the following statement is correct regarding unguided media (wireless)?\nI. Unguided media transport electromagnetic waves without using a physical conductor.\nII. Unguided signals can travel from the source to destination in ground propagation way.",
+  "options": [
+   "Only II",
+   "Both I and II",
+   "Only I",
+   "Neither I nor II"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 61,
+  "section": "Discipline 5",
+  "number": 3,
+  "question_id": "630680598473",
+  "question": "Which of the following is correct formula for calculating wavelength (λ) of a signal in the data communication?",
+  "options": [
+   "λ = propagation speed + frequency",
+   "λ = propagation speed × period",
+   "λ = propagation speed + period",
+   "λ = propagation speed × frequency"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 61,
+  "section": "Discipline 5",
+  "number": 4,
+  "question_id": "630680598472",
+  "question": "In periodic analog signals, which of the following is NOT a parameter to describe a sine wave in data communication?",
+  "options": [
+   "Wavelength",
+   "Phase",
+   "Frequency",
+   "Peak amplitude"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 62,
+  "section": "Discipline 5",
+  "number": 5,
+  "question_id": "630680598495",
+  "question": "Which of the following operator of SQL is used in WHERE clause for match a character pattern in database?",
+  "options": [
+   "LIKE",
+   "IN",
+   "IS NULL",
+   "OR"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 62,
+  "section": "Discipline 5",
+  "number": 6,
+  "question_id": "630680598478",
+  "question": "In SQL, which of the following is correct command for schema evolution, if the RESTRICT option is chosen than the schema is dropped only if schema has no element in it?",
+  "options": [
+   "DELETE",
+   "UPDATE",
+   "ALTER",
+   "DROP"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 62,
+  "section": "Discipline 5",
+  "number": 7,
+  "question_id": "630680598507",
+  "question": "______ files are spreadsheet files in a text format of data when cell contents are separated by a character for example a comma or semi-colon.",
+  "options": [
+   "Comma-Separated- Values",
+   "Semi-colon Separated Values",
+   "Column and Row Headers",
+   "CVS"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 62,
+  "section": "Discipline 5",
+  "number": 8,
+  "question_id": "630680598509",
+  "question": "Unicode in the programming language can be represented using which of the bit format standards in computer science?",
+  "options": [
+   "8-bit",
+   "17-bit",
+   "65-bit",
+   "9-bit"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 63,
+  "section": "Discipline 5",
+  "number": 9,
+  "question_id": "630680598470",
+  "question": "Which of the following type of guided transmission media are categorized by their Radio Government (RG) ratings in computer networking?",
+  "options": [
+   "Fiber-Optic Cable",
+   "Coaxial Cable",
+   "Metallic Cable",
+   "Twisted-Pair Cable"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 63,
+  "section": "Discipline 5",
+  "number": 10,
+  "question_id": "630680598460",
+  "question": "Which of the following system call include 'wait for time' operation command in Operating System?",
+  "options": [
+   "Process Control",
+   "Device Management",
+   "File Management",
+   "Communications"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 63,
+  "section": "Teaching Methodology",
+  "number": 1,
+  "question_id": "630680598531",
+  "question": "Which of the following stage is used for child cognition development at the age from 2 years to 7 years?",
+  "options": [
+   "Sensori-motor",
+   "Pre-operational",
+   "Formal operational",
+   "Concrete operational"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 64,
+  "section": "Teaching Methodology",
+  "number": 2,
+  "question_id": "630680598534",
+  "question": "The Government of India adopted the National Policy for Empowerment of Women in ______.",
+  "options": [
+   "2001",
+   "2005",
+   "2000",
+   "2003"
+  ],
+  "correct": 1,
+  "has_figure": false
+ },
+ {
+  "page": 64,
+  "section": "Teaching Methodology",
+  "number": 3,
+  "question_id": "630680598535",
+  "question": "In which of the following approach Pedagogy indicate learning by doing based on engagement of students through different activities?\nI. Teacher centered approach\nII. Student centered approach",
+  "options": [
+   "Both I and II",
+   "Only I",
+   "Neither I nor II",
+   "Only II"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 64,
+  "section": "Teaching Methodology",
+  "number": 4,
+  "question_id": "630680598537",
+  "question": "Which of the following approach of Assessment for Learning is the assessment of classmates on the response and performance of the learner?",
+  "options": [
+   "Teacher-led assessment",
+   "Learner self-assessment",
+   "Computer-based assessment",
+   "Peer assessment"
+  ],
+  "correct": 4,
+  "has_figure": false
+ },
+ {
+  "page": 64,
+  "section": "Teaching Methodology",
+  "number": 5,
+  "question_id": "630680598532",
+  "question": "Which of the following language was included through the 71st constitutional amendment (1992) in 8th schedule of the Indian Constitution?",
+  "options": [
+   "Bengali",
+   "Nepali",
+   "Boro",
+   "Gujarati"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 65,
+  "section": "Teaching Methodology",
+  "number": 6,
+  "question_id": "630680598540",
+  "question": "Art education is the area of learning that is based upon which of the following?\nI. The visual, tangible art\nII. The performing arts",
+  "options": [
+   "Only I",
+   "Both I and II",
+   "Neither I nor II",
+   "Only II"
+  ],
+  "correct": 2,
+  "has_figure": false
+ },
+ {
+  "page": 65,
+  "section": "Teaching Methodology",
+  "number": 7,
+  "question_id": "630680598533",
+  "question": "In which of the following approach to learning and teaching, both the teacher and the students perform activities strictly confined to the prescribed contents/ textbooks in the subject being taught?",
+  "options": [
+   "Learner centered",
+   "Teacher-centered",
+   "Subject-centered",
+   "Discipline centered"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 65,
+  "section": "Teaching Methodology",
+  "number": 8,
+  "question_id": "630680598539",
+  "question": "Piaget divided which of the following domain of development into four stages: The Sensorimotor Stage, The Pre-Operational Stage, Concrete Operational Stage and The Formal Operational Stage?",
+  "options": [
+   "Moral development",
+   "Physical and motor development",
+   "Cognitive development",
+   "Socio-emotional development"
+  ],
+  "correct": 3,
+  "has_figure": false
+ },
+ {
+  "page": 67,
+  "section": "Teaching Methodology",
+  "number": 9,
+  "question_id": "630680598538",
+  "question": "Match the following Classification Of Cognitive Disability (Mental Retardation) with their range of intelligence quotient (IQ).\nSeverity Levels | Range of IQ\nI. Profound Mentally Retarded | 1. 20-34\nII. Mild Mentally Retarded | 2. Below 20\nIII. Severe Mentally Retarded | 3. 50-75",
+  "options": [
+   "I-2, II-3, III-1",
+   "I-1, II-3, III-2",
+   "I-3, II-2, III-1",
+   "I-2, II-1, III-3"
+  ],
+  "correct": 1,
+  "has_figure": false,
+  "note": "table transcribed as text"
+ },
+ {
+  "page": 67,
+  "section": "Teaching Methodology",
+  "number": 10,
+  "question_id": "630680598536",
+  "question": "In the types of Learning resources, the term ______ denotes a partially three-dimensional, full-size replica or scale model of a landscape typically showing historical events, nature scenes or cityscapes, for purposes of education or entertainment.",
+  "options": [
+   "cartoons",
+   "Globes",
+   "realia",
+   "diorama"
+  ],
+  "correct": 4,
+  "has_figure": false
+ }
+]

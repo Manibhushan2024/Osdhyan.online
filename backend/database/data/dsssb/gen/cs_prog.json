@@ -1,0 +1,4497 @@
+[
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Data types & operators",
+    "difficulty": "medium",
+    "question_en": "What is the output of the following C program?\n\n#include <stdio.h>\nint main() {\n    int a = 7, b = 2;\n    float c = a / b;\n    printf(\"%.1f\", c);\n    return 0;\n}",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "3.5",
+        "hi": null
+      },
+      {
+        "en": "3.0",
+        "hi": null
+      },
+      {
+        "en": "3",
+        "hi": null
+      },
+      {
+        "en": "4.0",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Both a and b are int, so a / b is integer division giving 3; the result is then converted to float and stored as 3.0. To get 3.5 one operand must be cast to float, e.g. (float)a / b.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Data types & operators",
+    "difficulty": "easy",
+    "question_en": "What does the following Python statement print?\n\nprint(7 // 2, 7 % 2, -7 // 2)",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "3 1 -4",
+        "hi": null
+      },
+      {
+        "en": "3 1 -3",
+        "hi": null
+      },
+      {
+        "en": "3.5 1 -3.5",
+        "hi": null
+      },
+      {
+        "en": "3 -1 -4",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "// is floor division: 7 // 2 = 3 and 7 % 2 = 1. For -7 // 2 Python floors towards negative infinity, so -3.5 becomes -4 (C would truncate to -3).",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Data types & operators",
+    "difficulty": "medium",
+    "question_en": "What is printed by this Java code?\n\nint x = 5;\nint y = x++ + ++x;\nSystem.out.println(x + \" \" + y);",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "6 12",
+        "hi": null
+      },
+      {
+        "en": "7 11",
+        "hi": null
+      },
+      {
+        "en": "7 12",
+        "hi": null
+      },
+      {
+        "en": "7 13",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "x++ uses 5 then makes x = 6; ++x makes x = 7 and uses 7. So y = 5 + 7 = 12 and x ends at 7.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Data types & operators",
+    "difficulty": "easy",
+    "question_en": "What is the output of the following C code?\n\nint a = 10;\nint b = a++ * 2;\nprintf(\"%d %d\", a, b);",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "11 22",
+        "hi": null
+      },
+      {
+        "en": "11 20",
+        "hi": null
+      },
+      {
+        "en": "10 20",
+        "hi": null
+      },
+      {
+        "en": "10 22",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Post-increment a++ supplies the old value 10 to the multiplication, so b = 20; afterwards a becomes 11.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Data types & operators",
+    "difficulty": "medium",
+    "question_en": "What will this C++ fragment print?\n\nint x = 6, y = 4;\ncout << (x & y) << \" \" << (x | y) << \" \" << (x ^ y);",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "4 6 2",
+        "hi": null
+      },
+      {
+        "en": "2 6 4",
+        "hi": null
+      },
+      {
+        "en": "4 2 6",
+        "hi": null
+      },
+      {
+        "en": "6 4 2",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "6 = 110 and 4 = 100 in binary. Bitwise AND = 100 (4), OR = 110 (6), XOR = 010 (2).",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Data types & operators",
+    "difficulty": "medium",
+    "question_en": "What is the output of the following Python statement?\n\nprint(2 ** 3 ** 2)",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "64",
+        "hi": null
+      },
+      {
+        "en": "36",
+        "hi": null
+      },
+      {
+        "en": "512",
+        "hi": null
+      },
+      {
+        "en": "12",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "The exponent operator ** is right-associative, so 2 ** 3 ** 2 = 2 ** (3 ** 2) = 2 ** 9 = 512. Left-to-right evaluation would wrongly give (2**3)**2 = 64.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Data types & operators",
+    "difficulty": "easy",
+    "question_en": "In Java, the size of the long data type is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "8 bytes",
+        "hi": null
+      },
+      {
+        "en": "4 bytes",
+        "hi": null
+      },
+      {
+        "en": "2 bytes",
+        "hi": null
+      },
+      {
+        "en": "Depends on the operating system",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Java fixes primitive sizes regardless of platform: byte 1, short 2, int 4, long 8, float 4, double 8 bytes. Unlike C, Java sizes never depend on the OS or compiler.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Data types & operators",
+    "difficulty": "hard",
+    "question_en": "What is the output of the following C code?\n\nunsigned char c = 250;\nc = c + 10;\nprintf(\"%d\", c);",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "260",
+        "hi": null
+      },
+      {
+        "en": "-6",
+        "hi": null
+      },
+      {
+        "en": "255",
+        "hi": null
+      },
+      {
+        "en": "4",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "An unsigned char holds 0-255. 250 + 10 = 260 wraps around modulo 256, giving 260 - 256 = 4.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Data types & operators",
+    "difficulty": "easy",
+    "question_en": "What does the following Python code print?\n\nprint(5 / 5, 5 // 5, 5 % 5)",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "1 1 0",
+        "hi": null
+      },
+      {
+        "en": "1 1.0 0",
+        "hi": null
+      },
+      {
+        "en": "1.0 1.0 0",
+        "hi": null
+      },
+      {
+        "en": "1.0 1 0",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "In Python 3 the / operator always returns a float (1.0), // returns an int for int operands (1), and % gives the remainder 0.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Data types & operators",
+    "difficulty": "medium",
+    "question_en": "What is printed by the following Java statement?\n\nSystem.out.println(10 + 20 + \"30\" + 10 + 20);",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "30303030",
+        "hi": null
+      },
+      {
+        "en": "303030",
+        "hi": null
+      },
+      {
+        "en": "102030",
+        "hi": null
+      },
+      {
+        "en": "30301020",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Evaluation is left to right. 10 + 20 = 30 (numeric). Then 30 + \"30\" becomes string \"3030\", after which + performs concatenation: \"303010\" and then \"30301020\".",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Data types & operators",
+    "difficulty": "medium",
+    "question_en": "Which of the following C operators has the highest precedence?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "* (multiplication)",
+        "hi": null
+      },
+      {
+        "en": "++ (post-increment)",
+        "hi": null
+      },
+      {
+        "en": "= (assignment)",
+        "hi": null
+      },
+      {
+        "en": "&& (logical AND)",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Postfix operators (++, --, (), []) sit at the top of the C precedence table, above multiplicative operators; && is lower still and assignment is near the bottom.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Data types & operators",
+    "difficulty": "easy",
+    "question_en": "What is the output of this C code?\n\nint x = 5;\nprintf(\"%d %d\", x == 5, x != 5);",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "true false",
+        "hi": null
+      },
+      {
+        "en": "0 1",
+        "hi": null
+      },
+      {
+        "en": "5 0",
+        "hi": null
+      },
+      {
+        "en": "1 0",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "C has no boolean keywords in printf output; relational operators yield int 1 for true and 0 for false. x == 5 is 1 and x != 5 is 0.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Data types & operators",
+    "difficulty": "easy",
+    "question_en": "What is the final value printed by the following Python code?\n\na = 5\na += 2 * 3\na //= 2\nprint(a)",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "6",
+        "hi": null
+      },
+      {
+        "en": "5",
+        "hi": null
+      },
+      {
+        "en": "10",
+        "hi": null
+      },
+      {
+        "en": "11",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "a += 2 * 3 adds 6 (multiplication first), giving 11. Then a //= 2 is floor division: 11 // 2 = 5.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Data types & operators",
+    "difficulty": "easy",
+    "question_en": "What does the following C++ code print?\n\nint a = 5;\nint b = a > 3 ? a * 2 : a + 2;\ncout << b;",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "7",
+        "hi": null
+      },
+      {
+        "en": "5",
+        "hi": null
+      },
+      {
+        "en": "10",
+        "hi": null
+      },
+      {
+        "en": "3",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "The ternary operator evaluates the condition a > 3, which is true, so b takes the value of a * 2 = 10. The a + 2 branch (7) is never evaluated.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Data types & operators",
+    "difficulty": "medium",
+    "question_en": "In C, what is the data type of the result of the expression 'a' + 1?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "char",
+        "hi": null
+      },
+      {
+        "en": "float",
+        "hi": null
+      },
+      {
+        "en": "unsigned char",
+        "hi": null
+      },
+      {
+        "en": "int",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Arithmetic on char operands triggers integer promotion: the char is converted to int before the addition, so the expression has type int (value 98).",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Data types & operators",
+    "difficulty": "hard",
+    "question_en": "What is printed by the following Java code?\n\nint i = 10;\ni = i++ + i++;\nSystem.out.println(i);",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "21",
+        "hi": null
+      },
+      {
+        "en": "20",
+        "hi": null
+      },
+      {
+        "en": "22",
+        "hi": null
+      },
+      {
+        "en": "12",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "First i++ yields 10 (i becomes 11), second i++ yields 11 (i becomes 12). The sum 21 is then assigned to i, overwriting the 12.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Data types & operators",
+    "difficulty": "medium",
+    "question_en": "What is the output of the following C statement?\n\nint x = 3;\nprintf(\"%d\", x << 2 | 1);",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "12",
+        "hi": null
+      },
+      {
+        "en": "13",
+        "hi": null
+      },
+      {
+        "en": "7",
+        "hi": null
+      },
+      {
+        "en": "24",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Shift has higher precedence than bitwise OR. 3 << 2 = 12 (binary 1100); 1100 | 0001 = 1101 = 13.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Data types & operators",
+    "difficulty": "easy",
+    "question_en": "Which of the following is NOT a valid identifier in C?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "2sum",
+        "hi": null
+      },
+      {
+        "en": "_count",
+        "hi": null
+      },
+      {
+        "en": "sum2",
+        "hi": null
+      },
+      {
+        "en": "Sum_2",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "An identifier must begin with a letter or underscore, never a digit. 2sum starts with a digit and is rejected by the compiler.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Data types & operators",
+    "difficulty": "hard",
+    "question_en": "What does the following C statement print on a typical 64-bit compiler?\n\nprintf(\"%d\", sizeof(3.0));",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "4",
+        "hi": null
+      },
+      {
+        "en": "8",
+        "hi": null
+      },
+      {
+        "en": "2",
+        "hi": null
+      },
+      {
+        "en": "10",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The literal 3.0 is a double, and sizeof(double) is 8 bytes on standard compilers. A float literal would need the suffix f (3.0f) and would give 4.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Control flow",
+    "difficulty": "easy",
+    "question_en": "What is the output of the following C code?\n\nint i;\nfor (i = 0; i < 5; i++) {\n    if (i == 3) continue;\n    printf(\"%d\", i);\n}",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "01234",
+        "hi": null
+      },
+      {
+        "en": "0123",
+        "hi": null
+      },
+      {
+        "en": "012",
+        "hi": null
+      },
+      {
+        "en": "0124",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "continue skips the rest of the current iteration only. When i is 3 nothing is printed, and the loop goes on with i = 4, so the digits 0, 1, 2 and 4 appear.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Control flow",
+    "difficulty": "easy",
+    "question_en": "What is printed by the following Python code?\n\nfor i in range(1, 10, 3):\n    print(i, end=\" \")",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "1 4 7 10",
+        "hi": null
+      },
+      {
+        "en": "3 6 9",
+        "hi": null
+      },
+      {
+        "en": "1 3 6 9",
+        "hi": null
+      },
+      {
+        "en": "1 4 7",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "range(1, 10, 3) starts at 1 and adds 3 each time while the value is below 10: 1, 4, 7. The stop value 10 is excluded.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Control flow",
+    "difficulty": "medium",
+    "question_en": "What does this Java code print?\n\nint k = 2;\nswitch (k) {\n    case 1: System.out.print(\"A\");\n    case 2: System.out.print(\"B\");\n    case 3: System.out.print(\"C\");\n            break;\n    default: System.out.print(\"D\");\n}",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "B",
+        "hi": null
+      },
+      {
+        "en": "ABC",
+        "hi": null
+      },
+      {
+        "en": "BCD",
+        "hi": null
+      },
+      {
+        "en": "BC",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Execution jumps to case 2 and, because there is no break after it, falls through into case 3 and prints C before the break stops it. D is not reached.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Control flow",
+    "difficulty": "easy",
+    "question_en": "What is the output of the following C code?\n\nint n = 0;\nwhile (n < 10) {\n    n += 3;\n}\nprintf(\"%d\", n);",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "9",
+        "hi": null
+      },
+      {
+        "en": "10",
+        "hi": null
+      },
+      {
+        "en": "15",
+        "hi": null
+      },
+      {
+        "en": "12",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "n takes the values 3, 6, 9 and then 12. The test n < 10 fails only when n is already 12, so 12 is printed.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Control flow",
+    "difficulty": "medium",
+    "question_en": "What is printed by the following C++ code?\n\nint x = 10;\ndo {\n    cout << x << \" \";\n    x++;\n} while (x < 5);",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "10",
+        "hi": null
+      },
+      {
+        "en": "Nothing",
+        "hi": null
+      },
+      {
+        "en": "10 11 12",
+        "hi": null
+      },
+      {
+        "en": "Compilation error",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "A do-while loop runs its body once before checking the condition, so 10 is printed; then x < 5 is false and the loop ends.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Control flow",
+    "difficulty": "hard",
+    "question_en": "What does this Python code print?\n\ni = 0\nwhile i < 5:\n    i += 1\n    if i % 2 == 0:\n        continue\n    print(i, end=\"\")\nelse:\n    print(\"E\")",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "135E",
+        "hi": null
+      },
+      {
+        "en": "135",
+        "hi": null
+      },
+      {
+        "en": "24E",
+        "hi": null
+      },
+      {
+        "en": "12345E",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Odd values 1, 3, 5 are printed because even ones are skipped by continue. A while loop's else clause runs when the loop ends normally (not through break), so E is printed afterwards.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Control flow",
+    "difficulty": "medium",
+    "question_en": "What is the output of the following C code?\n\nint x = 0;\nif (x = 5)\n    printf(\"Yes\");\nelse\n    printf(\"No\");",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "No",
+        "hi": null
+      },
+      {
+        "en": "Compilation error",
+        "hi": null
+      },
+      {
+        "en": "Yes",
+        "hi": null
+      },
+      {
+        "en": "Runtime error",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "x = 5 is an assignment, not a comparison; its value is 5, which is non-zero and therefore true. This classic bug prints Yes.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Control flow",
+    "difficulty": "medium",
+    "question_en": "What is printed by the following Java code?\n\nint count = 0;\nfor (int i = 1; i <= 3; i++)\n    for (int j = i; j <= 3; j++)\n        count++;\nSystem.out.println(count);",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "9",
+        "hi": null
+      },
+      {
+        "en": "6",
+        "hi": null
+      },
+      {
+        "en": "3",
+        "hi": null
+      },
+      {
+        "en": "12",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The inner loop runs 3 times for i = 1, 2 times for i = 2 and once for i = 3, giving 3 + 2 + 1 = 6.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Control flow",
+    "difficulty": "easy",
+    "question_en": "Which loop is guaranteed to execute its body at least once even if the condition is false initially?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "for loop",
+        "hi": null
+      },
+      {
+        "en": "while loop",
+        "hi": null
+      },
+      {
+        "en": "nested for loop",
+        "hi": null
+      },
+      {
+        "en": "do-while loop",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "A do-while loop tests the condition after the body, so the body always runs once. for and while are entry-controlled loops that test first.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Control flow",
+    "difficulty": "medium",
+    "question_en": "How many asterisks are printed in total by the following Python code?\n\nfor i in range(3):\n    for j in range(i):\n        print(\"*\", end=\"\")\n    print()",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "2",
+        "hi": null
+      },
+      {
+        "en": "6",
+        "hi": null
+      },
+      {
+        "en": "3",
+        "hi": null
+      },
+      {
+        "en": "9",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "For i = 0 the inner loop runs 0 times, for i = 1 once and for i = 2 twice, so 0 + 1 + 2 = 3 asterisks are printed.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Control flow",
+    "difficulty": "medium",
+    "question_en": "What is the output of the following C code?\n\nint i = 5;\nfor (; i; i--)\n    printf(\"%d\", i);",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "543210",
+        "hi": null
+      },
+      {
+        "en": "54321",
+        "hi": null
+      },
+      {
+        "en": "5432",
+        "hi": null
+      },
+      {
+        "en": "Infinite loop",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The condition i is true while i is non-zero. Values 5, 4, 3, 2, 1 are printed; when i becomes 0 the loop stops.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Control flow",
+    "difficulty": "easy",
+    "question_en": "What will the following Python code print?\n\nx = 7\nif x > 5:\n    if x > 10:\n        print(\"A\")\n    else:\n        print(\"B\")\nelse:\n    print(\"C\")",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "A",
+        "hi": null
+      },
+      {
+        "en": "Nothing",
+        "hi": null
+      },
+      {
+        "en": "C",
+        "hi": null
+      },
+      {
+        "en": "B",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "x > 5 is true, so the inner if is checked. x > 10 is false, so the inner else prints B.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Control flow",
+    "difficulty": "medium",
+    "question_en": "What is printed by this C++ code?\n\nfor (int i = 1; i <= 3; i++) {\n    for (int j = 1; j <= 3; j++) {\n        if (j == 2) break;\n        cout << i << j << \" \";\n    }\n}",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "11 21 31 12 22 32",
+        "hi": null
+      },
+      {
+        "en": "11 12 13",
+        "hi": null
+      },
+      {
+        "en": "11",
+        "hi": null
+      },
+      {
+        "en": "11 21 31",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "break exits only the inner loop. For each i the inner loop prints i1 and then breaks when j becomes 2, so the output is 11 21 31.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Control flow",
+    "difficulty": "medium",
+    "question_en": "In Java, the expression used in a switch statement cannot be of which type?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "long",
+        "hi": null
+      },
+      {
+        "en": "String",
+        "hi": null
+      },
+      {
+        "en": "char",
+        "hi": null
+      },
+      {
+        "en": "int",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "A switch accepts byte, short, char, int, their wrappers, String and enum. long, float, double and boolean are not permitted.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Control flow",
+    "difficulty": "easy",
+    "question_en": "What value is printed by the following C code?\n\nint i, sum = 0;\nfor (i = 1; i <= 10; i += 2)\n    sum += i;\nprintf(\"%d\", sum);",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "25",
+        "hi": null
+      },
+      {
+        "en": "30",
+        "hi": null
+      },
+      {
+        "en": "55",
+        "hi": null
+      },
+      {
+        "en": "20",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "i takes the odd values 1, 3, 5, 7, 9 and their sum is 25. (The even values would give 30.)",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Control flow",
+    "difficulty": "hard",
+    "question_en": "What does the following Python code print?\n\nfor n in [2, 4, 6, 7]:\n    if n % 2:\n        print(\"odd\", n)\n        break\nelse:\n    print(\"all even\")",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "all even",
+        "hi": null
+      },
+      {
+        "en": "odd 7 and then all even",
+        "hi": null
+      },
+      {
+        "en": "odd 7",
+        "hi": null
+      },
+      {
+        "en": "odd 2",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "n % 2 is non-zero (true) for 7, so odd 7 is printed and break ends the loop. A for loop's else clause runs only when the loop is NOT terminated by break, so all even is not printed.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Control flow",
+    "difficulty": "easy",
+    "question_en": "In C, the statement for(;;) with an empty condition creates:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "A syntax error",
+        "hi": null
+      },
+      {
+        "en": "A loop that runs exactly once",
+        "hi": null
+      },
+      {
+        "en": "An infinite loop",
+        "hi": null
+      },
+      {
+        "en": "A loop that never executes",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "When the condition expression of a for loop is omitted it is treated as true, so for(;;) loops forever unless a break or return is executed inside.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Functions & recursion",
+    "difficulty": "easy",
+    "question_en": "What is the output of the following C code?\n\nint f(int n) {\n    if (n == 0) return 0;\n    return n + f(n - 1);\n}\nint main() {\n    printf(\"%d\", f(4));\n    return 0;\n}",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "24",
+        "hi": null
+      },
+      {
+        "en": "10",
+        "hi": null
+      },
+      {
+        "en": "4",
+        "hi": null
+      },
+      {
+        "en": "6",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "f(4) = 4 + f(3) = 4 + 3 + 2 + 1 + f(0) = 10. The function computes the sum of the first n natural numbers; 24 would be the factorial.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Functions & recursion",
+    "difficulty": "easy",
+    "question_en": "What does this Python code print?\n\ndef fact(n):\n    return 1 if n <= 1 else n * fact(n - 1)\nprint(fact(5))",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "120",
+        "hi": null
+      },
+      {
+        "en": "15",
+        "hi": null
+      },
+      {
+        "en": "25",
+        "hi": null
+      },
+      {
+        "en": "24",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "fact(5) = 5 x 4 x 3 x 2 x 1 = 120. The base case returns 1 when n is 1 or less.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Functions & recursion",
+    "difficulty": "medium",
+    "question_en": "What is printed by the following C program?\n\nvoid change(int x) {\n    x = x * 2;\n}\nint main() {\n    int a = 5;\n    change(a);\n    printf(\"%d\", a);\n    return 0;\n}",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "10",
+        "hi": null
+      },
+      {
+        "en": "Garbage value",
+        "hi": null
+      },
+      {
+        "en": "0",
+        "hi": null
+      },
+      {
+        "en": "5",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "C passes arguments by value: change receives a copy of a, doubles the copy, and the original a remains 5. To modify a, a pointer (change(&a)) would be needed.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Functions & recursion",
+    "difficulty": "medium",
+    "question_en": "What does this Java code print?\n\nstatic void modify(int[] arr) { arr[0] = 99; }\nstatic void modify2(int n) { n = 99; }\npublic static void main(String[] args) {\n    int[] a = {1, 2};\n    int b = 1;\n    modify(a);\n    modify2(b);\n    System.out.println(a[0] + \" \" + b);\n}",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "99 99",
+        "hi": null
+      },
+      {
+        "en": "99 1",
+        "hi": null
+      },
+      {
+        "en": "1 1",
+        "hi": null
+      },
+      {
+        "en": "1 99",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Java passes everything by value, but for an array the value is a reference, so modify changes the shared array element. The primitive b is copied, so b stays 1.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Functions & recursion",
+    "difficulty": "hard",
+    "question_en": "What is the output of the following Python code?\n\ndef f(a, b=2, *args, **kwargs):\n    return a + b + len(args) + len(kwargs)\nprint(f(1, 3, 4, 5, x=6))",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "19",
+        "hi": null
+      },
+      {
+        "en": "7",
+        "hi": null
+      },
+      {
+        "en": "9",
+        "hi": null
+      },
+      {
+        "en": "6",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "a = 1, b = 3 (positional overrides the default), args = (4, 5) with length 2, kwargs = {'x': 6} with length 1. Total 1 + 3 + 2 + 1 = 7.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Functions & recursion",
+    "difficulty": "medium",
+    "question_en": "What is printed by this C++ code?\n\nvoid show(int n) {\n    if (n == 0) return;\n    show(n - 1);\n    cout << n;\n}\nint main() {\n    show(3);\n    return 0;\n}",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "321",
+        "hi": null
+      },
+      {
+        "en": "0123",
+        "hi": null
+      },
+      {
+        "en": "3210",
+        "hi": null
+      },
+      {
+        "en": "123",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "The recursive call happens before printing, so printing starts when the deepest call returns: 1 is printed first, then 2, then 3. Printing before the call would give 321.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Functions & recursion",
+    "difficulty": "medium",
+    "question_en": "What does the following C code print?\n\nint fib(int n) {\n    if (n < 2) return n;\n    return fib(n - 1) + fib(n - 2);\n}\nint main() {\n    printf(\"%d\", fib(6));\n    return 0;\n}",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "5",
+        "hi": null
+      },
+      {
+        "en": "8",
+        "hi": null
+      },
+      {
+        "en": "13",
+        "hi": null
+      },
+      {
+        "en": "6",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The sequence from fib(0) is 0, 1, 1, 2, 3, 5, 8, so fib(6) = 8.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Functions & recursion",
+    "difficulty": "easy",
+    "question_en": "Recursive function calls are managed internally by the compiler using which data structure?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Queue",
+        "hi": null
+      },
+      {
+        "en": "Stack",
+        "hi": null
+      },
+      {
+        "en": "Linked list",
+        "hi": null
+      },
+      {
+        "en": "Hash table",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Each call pushes an activation record (parameters, locals, return address) onto the call stack; it is popped when the call returns. Too deep a recursion causes stack overflow.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Functions & recursion",
+    "difficulty": "medium",
+    "question_en": "What is the output of the following Python code?\n\nx = 10\ndef f():\n    x = 5\n    return x\nprint(f(), x)",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "5 10",
+        "hi": null
+      },
+      {
+        "en": "5 5",
+        "hi": null
+      },
+      {
+        "en": "10 10",
+        "hi": null
+      },
+      {
+        "en": "Error",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Assigning x inside f creates a new local variable that shadows the global. f() returns 5, while the global x is untouched and still 10.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Functions & recursion",
+    "difficulty": "medium",
+    "question_en": "What does the following Python code print?\n\ncount = 0\ndef inc():\n    global count\n    count += 1\ninc()\ninc()\nprint(count)",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "0",
+        "hi": null
+      },
+      {
+        "en": "2",
+        "hi": null
+      },
+      {
+        "en": "1",
+        "hi": null
+      },
+      {
+        "en": "UnboundLocalError",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The global statement tells inc to modify the module-level count rather than create a local one. Two calls raise it from 0 to 2. Without global, count += 1 would raise UnboundLocalError.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Functions & recursion",
+    "difficulty": "medium",
+    "question_en": "What is printed by the following Java code?\n\nstatic int g(int a, int b) {\n    return b == 0 ? a : g(b, a % b);\n}\npublic static void main(String[] args) {\n    System.out.println(g(48, 18));\n}",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "18",
+        "hi": null
+      },
+      {
+        "en": "12",
+        "hi": null
+      },
+      {
+        "en": "3",
+        "hi": null
+      },
+      {
+        "en": "6",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "This is Euclid's GCD: g(48,18) -> g(18,12) -> g(12,6) -> g(6,0) = 6.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Functions & recursion",
+    "difficulty": "medium",
+    "question_en": "What is the output of the following C program?\n\nint counter() {\n    static int c = 0;\n    c++;\n    return c;\n}\nint main() {\n    counter();\n    counter();\n    printf(\"%d\", counter());\n    return 0;\n}",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "1",
+        "hi": null
+      },
+      {
+        "en": "2",
+        "hi": null
+      },
+      {
+        "en": "0",
+        "hi": null
+      },
+      {
+        "en": "3",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "A static local variable is initialised once and keeps its value between calls. The three calls raise c to 1, 2 and 3, so the last call returns 3.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Functions & recursion",
+    "difficulty": "easy",
+    "question_en": "A recursive function that has no base case (terminating condition) will usually result in:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "A compile-time error",
+        "hi": null
+      },
+      {
+        "en": "Stack overflow / infinite recursion",
+        "hi": null
+      },
+      {
+        "en": "Returning zero",
+        "hi": null
+      },
+      {
+        "en": "A syntax warning only",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Without a base case the function keeps calling itself, each call adding a frame to the call stack until memory is exhausted. The compiler cannot detect this at compile time.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Functions & recursion",
+    "difficulty": "medium",
+    "question_en": "What is printed by the following C++ code?\n\nint add(int a, int b = 10, int c = 20) {\n    return a + b + c;\n}\nint main() {\n    cout << add(1) << \" \" << add(1, 2);\n    return 0;\n}",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "21 13",
+        "hi": null
+      },
+      {
+        "en": "1 3",
+        "hi": null
+      },
+      {
+        "en": "31 23",
+        "hi": null
+      },
+      {
+        "en": "31 33",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Default arguments fill in missing trailing parameters. add(1) = 1 + 10 + 20 = 31; add(1, 2) = 1 + 2 + 20 = 23.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Functions & recursion",
+    "difficulty": "easy",
+    "question_en": "What does the following Python code print?\n\nsq = lambda x: x * x\nprint(sq(4) + sq(3))",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "49",
+        "hi": null
+      },
+      {
+        "en": "12",
+        "hi": null
+      },
+      {
+        "en": "14",
+        "hi": null
+      },
+      {
+        "en": "25",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "A lambda is an anonymous one-line function. sq(4) = 16 and sq(3) = 9, so the sum is 25.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Functions & recursion",
+    "difficulty": "hard",
+    "question_en": "How many times is the function f called in total (including the first call) when f(5) is executed?\n\nint f(int n) {\n    if (n <= 1) return 1;\n    return f(n - 1) + f(n - 2);\n}",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "5",
+        "hi": null
+      },
+      {
+        "en": "9",
+        "hi": null
+      },
+      {
+        "en": "25",
+        "hi": null
+      },
+      {
+        "en": "15",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Let C(n) be the number of calls. C(0) = C(1) = 1 and C(n) = 1 + C(n-1) + C(n-2). So C(2) = 3, C(3) = 5, C(4) = 9, C(5) = 15.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Functions & recursion",
+    "difficulty": "easy",
+    "question_en": "In C, the statement int add(int, int); placed before main() is called a:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Function definition",
+        "hi": null
+      },
+      {
+        "en": "Function call",
+        "hi": null
+      },
+      {
+        "en": "Function prototype (declaration)",
+        "hi": null
+      },
+      {
+        "en": "Macro",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "A prototype declares the function's name, return type and parameter types so the compiler can check calls before the definition appears. The definition includes the body.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Pointers & arrays (C)",
+    "difficulty": "easy",
+    "question_en": "What is the output of the following C code?\n\nint a[] = {10, 20, 30, 40};\nint *p = a;\nprintf(\"%d\", *(p + 2));",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "20",
+        "hi": null
+      },
+      {
+        "en": "30",
+        "hi": null
+      },
+      {
+        "en": "40",
+        "hi": null
+      },
+      {
+        "en": "Address of a[2]",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "p points to a[0]; p + 2 points to a[2] and the dereference * gives its value 30. *(p + i) is equivalent to a[i].",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Pointers & arrays (C)",
+    "difficulty": "easy",
+    "question_en": "What does the following C code print?\n\nint x = 5;\nint *p = &x;\n*p = *p + 10;\nprintf(\"%d\", x);",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "5",
+        "hi": null
+      },
+      {
+        "en": "15",
+        "hi": null
+      },
+      {
+        "en": "10",
+        "hi": null
+      },
+      {
+        "en": "Address of x",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "p holds the address of x, so *p = *p + 10 writes 15 into x itself. Printing x therefore gives 15.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Pointers & arrays (C)",
+    "difficulty": "medium",
+    "question_en": "What is printed by this C code?\n\nint a[5] = {1, 2, 3};\nprintf(\"%d %d\", a[3], a[4]);",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "0 0",
+        "hi": null
+      },
+      {
+        "en": "Garbage values",
+        "hi": null
+      },
+      {
+        "en": "3 3",
+        "hi": null
+      },
+      {
+        "en": "Compilation error",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "When an array is partially initialised, the remaining elements are automatically set to 0. Only a completely uninitialised local array holds garbage.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Pointers & arrays (C)",
+    "difficulty": "easy",
+    "question_en": "What value does the following C statement print?\n\nint a[10];\nprintf(\"%lu\", sizeof(a) / sizeof(a[0]));",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "40",
+        "hi": null
+      },
+      {
+        "en": "2",
+        "hi": null
+      },
+      {
+        "en": "4",
+        "hi": null
+      },
+      {
+        "en": "10",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "sizeof(a) is the whole array (10 x 4 = 40 bytes) and sizeof(a[0]) is one element (4 bytes); dividing gives the number of elements, 10. This is the standard idiom for array length.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Pointers & arrays (C)",
+    "difficulty": "medium",
+    "question_en": "If an int pointer p holds the address 1000 and int occupies 4 bytes, what is the value of p + 1?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "1001",
+        "hi": null
+      },
+      {
+        "en": "1002",
+        "hi": null
+      },
+      {
+        "en": "1004",
+        "hi": null
+      },
+      {
+        "en": "1008",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Pointer arithmetic is scaled by the size of the pointed-to type. p + 1 moves to the next int, i.e. 1000 + 4 = 1004. For a char pointer the answer would be 1001.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Pointers & arrays (C)",
+    "difficulty": "medium",
+    "question_en": "What does this C code print?\n\nint arr[] = {5, 10, 15, 20, 25};\nint *p = arr + 1;\nprintf(\"%d\", p[2]);",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "20",
+        "hi": null
+      },
+      {
+        "en": "15",
+        "hi": null
+      },
+      {
+        "en": "10",
+        "hi": null
+      },
+      {
+        "en": "25",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "p points to arr[1]. p[2] means *(p + 2), i.e. arr[1 + 2] = arr[3] = 20.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Pointers & arrays (C)",
+    "difficulty": "easy",
+    "question_en": "What is the output of the following C code?\n\nint m[2][3] = {{1, 2, 3}, {4, 5, 6}};\nprintf(\"%d\", m[1][2] + m[0][1]);",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "7",
+        "hi": null
+      },
+      {
+        "en": "8",
+        "hi": null
+      },
+      {
+        "en": "9",
+        "hi": null
+      },
+      {
+        "en": "6",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "m[1][2] is the last element of the second row (6) and m[0][1] is the second element of the first row (2); 6 + 2 = 8.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Pointers & arrays (C)",
+    "difficulty": "medium",
+    "question_en": "What is printed by the following C program?\n\nvoid swap(int *a, int *b) {\n    int t = *a;\n    *a = *b;\n    *b = t;\n}\nint main() {\n    int x = 1, y = 2;\n    swap(&x, &y);\n    printf(\"%d%d\", x, y);\n    return 0;\n}",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "12",
+        "hi": null
+      },
+      {
+        "en": "21",
+        "hi": null
+      },
+      {
+        "en": "11",
+        "hi": null
+      },
+      {
+        "en": "22",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Addresses of x and y are passed, so the function swaps the actual variables through the pointers. x becomes 2 and y becomes 1, printing 21.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Pointers & arrays (C)",
+    "difficulty": "medium",
+    "question_en": "What happens when the following C code is executed?\n\nint *p = NULL;\n*p = 5;\nprintf(\"%d\", *p);",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Prints 5",
+        "hi": null
+      },
+      {
+        "en": "Prints 0",
+        "hi": null
+      },
+      {
+        "en": "Compilation error",
+        "hi": null
+      },
+      {
+        "en": "Runtime error (segmentation fault / undefined behaviour)",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Dereferencing a NULL pointer writes to an invalid address. The code compiles, but at run time it causes undefined behaviour, typically a segmentation fault.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Pointers & arrays (C)",
+    "difficulty": "medium",
+    "question_en": "What does the following C code print?\n\nchar s[] = \"hello\";\nprintf(\"%d\", sizeof(s));",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "6",
+        "hi": null
+      },
+      {
+        "en": "5",
+        "hi": null
+      },
+      {
+        "en": "4",
+        "hi": null
+      },
+      {
+        "en": "8",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "A string literal initialiser includes the terminating null character, so the array holds h, e, l, l, o and '\\0' = 6 bytes. strlen(s) would give 5.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Pointers & arrays (C)",
+    "difficulty": "medium",
+    "question_en": "What is the output of this C code?\n\nint a[] = {1, 2, 3, 4, 5};\nint *p = &a[4];\nprintf(\"%d\", p - a);",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "16",
+        "hi": null
+      },
+      {
+        "en": "5",
+        "hi": null
+      },
+      {
+        "en": "4",
+        "hi": null
+      },
+      {
+        "en": "20",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Subtracting two pointers into the same array gives the number of elements between them, not bytes. p points to index 4 and a to index 0, so the difference is 4.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Pointers & arrays (C)",
+    "difficulty": "hard",
+    "question_en": "Given int a[5]; which of the following expressions is INVALID in C?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "a[2]",
+        "hi": null
+      },
+      {
+        "en": "a++",
+        "hi": null
+      },
+      {
+        "en": "*(a + 2)",
+        "hi": null
+      },
+      {
+        "en": "*a",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "An array name behaves like a constant pointer to its first element; it is not a modifiable lvalue, so a++ does not compile. The other three are all valid ways to access elements.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Pointers & arrays (C)",
+    "difficulty": "medium",
+    "question_en": "What is printed by the following C code?\n\nint a = 10;\nint *p = &a;\nint **q = &p;\nprintf(\"%d\", **q + *p);",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "10",
+        "hi": null
+      },
+      {
+        "en": "Compilation error",
+        "hi": null
+      },
+      {
+        "en": "Address of a",
+        "hi": null
+      },
+      {
+        "en": "20",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "q is a pointer to pointer: *q is p and **q is a (10). *p is also 10, so the sum is 20.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Pointers & arrays (C)",
+    "difficulty": "hard",
+    "question_en": "What does the following C code print?\n\nint a[] = {3, 6, 9};\nint *p = a;\nint v = *p++;\nprintf(\"%d %d\", v, *p);",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "4 4",
+        "hi": null
+      },
+      {
+        "en": "3 6",
+        "hi": null
+      },
+      {
+        "en": "6 6",
+        "hi": null
+      },
+      {
+        "en": "3 3",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "*p++ dereferences first and then increments the pointer (postfix ++ binds to p). So v = 3 and p now points to 6. (*p)++ would instead increment the value a[0].",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Pointers & arrays (C)",
+    "difficulty": "easy",
+    "question_en": "Which C library function allocates memory dynamically and initialises all its bytes to zero?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "malloc()",
+        "hi": null
+      },
+      {
+        "en": "realloc()",
+        "hi": null
+      },
+      {
+        "en": "calloc()",
+        "hi": null
+      },
+      {
+        "en": "free()",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "calloc(n, size) allocates n blocks of the given size and zeroes them; malloc leaves the memory uninitialised, realloc resizes, free releases.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Pointers & arrays (C)",
+    "difficulty": "easy",
+    "question_en": "A pointer that still points to a memory location that has already been freed is called a:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Null pointer",
+        "hi": null
+      },
+      {
+        "en": "Dangling pointer",
+        "hi": null
+      },
+      {
+        "en": "Void pointer",
+        "hi": null
+      },
+      {
+        "en": "Wild pointer",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "After free(p), p still holds the old address but the memory is no longer valid; using it is a dangling-pointer bug. A wild pointer is one that was never initialised.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Pointers & arrays (C)",
+    "difficulty": "medium",
+    "question_en": "What is the output of the following C code?\n\nint arr[3][2] = {1, 2, 3, 4, 5, 6};\nprintf(\"%d\", arr[2][0]);",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "3",
+        "hi": null
+      },
+      {
+        "en": "2",
+        "hi": null
+      },
+      {
+        "en": "6",
+        "hi": null
+      },
+      {
+        "en": "5",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "A 2-D array is stored row-wise: row 0 = {1,2}, row 1 = {3,4}, row 2 = {5,6}. arr[2][0] is the first element of row 2, which is 5.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Strings",
+    "difficulty": "easy",
+    "question_en": "What is printed by the following C code?\n\nchar s[] = \"DSSSB\";\nprintf(\"%d\", strlen(s));",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "6",
+        "hi": null
+      },
+      {
+        "en": "4",
+        "hi": null
+      },
+      {
+        "en": "5",
+        "hi": null
+      },
+      {
+        "en": "Address of s",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "strlen counts characters up to (not including) the terminating '\\0', so DSSSB gives 5. sizeof(s) would be 6.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Strings",
+    "difficulty": "medium",
+    "question_en": "What does this Python code print?\n\ns = \"Programming\"\nprint(s[3:7], s[-3:])",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "gram min",
+        "hi": null
+      },
+      {
+        "en": "gramm ing",
+        "hi": null
+      },
+      {
+        "en": "ogra ng",
+        "hi": null
+      },
+      {
+        "en": "gram ing",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Indices 3 to 6 give g, r, a, m = gram (index 7 is excluded). s[-3:] takes the last three characters, ing.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Strings",
+    "difficulty": "hard",
+    "question_en": "What is the output of the following Java code?\n\nString a = \"Hello\";\nString b = \"Hel\" + \"lo\";\nString c = new String(\"Hello\");\nSystem.out.println((a == b) + \" \" + (a == c) + \" \" + a.equals(c));",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "true true true",
+        "hi": null
+      },
+      {
+        "en": "false true false",
+        "hi": null
+      },
+      {
+        "en": "false false true",
+        "hi": null
+      },
+      {
+        "en": "true false true",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "\"Hel\" + \"lo\" is a compile-time constant, so b refers to the same pooled literal as a (a == b is true). new String creates a separate object, so a == c is false, but equals compares content and is true.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Strings",
+    "difficulty": "medium",
+    "question_en": "What is printed by the following C statement?\n\nprintf(\"%d\", strcmp(\"abc\", \"abd\") < 0);",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "0",
+        "hi": null
+      },
+      {
+        "en": "1",
+        "hi": null
+      },
+      {
+        "en": "-1",
+        "hi": null
+      },
+      {
+        "en": "abc",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "strcmp returns a negative value when the first string is lexicographically smaller: c (99) < d (100), so strcmp is negative and the comparison < 0 yields 1 (true).",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Strings",
+    "difficulty": "medium",
+    "question_en": "What does this Python code print?\n\ns = \"a,b,,c\"\nprint(len(s.split(\",\")))",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "3",
+        "hi": null
+      },
+      {
+        "en": "5",
+        "hi": null
+      },
+      {
+        "en": "4",
+        "hi": null
+      },
+      {
+        "en": "2",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "split(',') splits at every comma, including adjacent ones, giving ['a', 'b', '', 'c'] - an empty string between the two commas - so the length is 4.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Strings",
+    "difficulty": "medium",
+    "question_en": "What is the output of this C++ code?\n\nstring s = \"exam\";\ns += \"s\";\ncout << s.length() << s[0] << s.substr(1, 2);",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "4exa",
+        "hi": null
+      },
+      {
+        "en": "5exa",
+        "hi": null
+      },
+      {
+        "en": "5exam",
+        "hi": null
+      },
+      {
+        "en": "5xam",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "After appending, s is exams with length 5. s[0] is e and substr(1, 2) takes 2 characters from index 1: xa. Output: 5exa.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Strings",
+    "difficulty": "easy",
+    "question_en": "What does the following Python code print?\n\ns = \"Delhi\"\nprint(s[::-1], s.upper()[1], s * 2)",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Delhi E DelhiDelhi",
+        "hi": null
+      },
+      {
+        "en": "ihleD e Delhi Delhi",
+        "hi": null
+      },
+      {
+        "en": "ihleD E DelhiDelhi",
+        "hi": null
+      },
+      {
+        "en": "ihleD D DelhiDelhi",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "s[::-1] reverses the string (ihleD), s.upper()[1] is the second character of DELHI (E), and s * 2 repeats the string with no separator.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Strings",
+    "difficulty": "hard",
+    "question_en": "What is printed by the following Java code?\n\nString s = \"Teacher\";\nSystem.out.println(s.charAt(2) + s.indexOf('e') + s.length());",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "a17",
+        "hi": null
+      },
+      {
+        "en": "a8",
+        "hi": null
+      },
+      {
+        "en": "105",
+        "hi": null
+      },
+      {
+        "en": "Compilation error",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "charAt(2) is the char 'a' (ASCII 97), indexOf('e') is 1 and length() is 7. Because the left operand is a char and the others are int, + performs numeric addition: 97 + 1 + 7 = 105.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Strings",
+    "difficulty": "easy",
+    "question_en": "Which C library function copies the contents of one string into another?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "strcat()",
+        "hi": null
+      },
+      {
+        "en": "strcpy()",
+        "hi": null
+      },
+      {
+        "en": "strcmp()",
+        "hi": null
+      },
+      {
+        "en": "strlen()",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "strcpy(dest, src) copies src including its null terminator into dest. strcat appends, strcmp compares and strlen returns the length.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Strings",
+    "difficulty": "easy",
+    "question_en": "What is the result of running the following Python code?\n\ns = \"hello\"\ns[0] = \"H\"\nprint(s)",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Hello",
+        "hi": null
+      },
+      {
+        "en": "hello",
+        "hi": null
+      },
+      {
+        "en": "Hhello",
+        "hi": null
+      },
+      {
+        "en": "TypeError",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Python strings are immutable, so item assignment s[0] = 'H' raises TypeError. A new string must be built instead, e.g. 'H' + s[1:].",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Strings",
+    "difficulty": "hard",
+    "question_en": "What does the following Python code print?\n\ns = \"Mississippi\"\nprint(s.count(\"ss\"), s.find(\"sip\"), s.replace(\"i\", \"I\", 2))",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "4 6 MIssIssippi",
+        "hi": null
+      },
+      {
+        "en": "2 5 MIssIssIppI",
+        "hi": null
+      },
+      {
+        "en": "2 6 MIssIssippi",
+        "hi": null
+      },
+      {
+        "en": "2 6 MIssIssIppI",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "ss occurs twice. sip first appears at index 6 (M0 i1 s2 s3 i4 s5 s6 i7 p8). replace with count 2 changes only the first two i's.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Strings",
+    "difficulty": "easy",
+    "question_en": "What is the output of this C code?\n\nchar s[20] = \"Good\";\nstrcat(s, \" Day\");\nprintf(\"%s %d\", s, strlen(s));",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Good Day 8",
+        "hi": null
+      },
+      {
+        "en": "GoodDay 7",
+        "hi": null
+      },
+      {
+        "en": "Good Day 9",
+        "hi": null
+      },
+      {
+        "en": "Good 4",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "strcat appends \" Day\" (with a space) after Good, giving Good Day, which has 8 characters including the space.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Strings",
+    "difficulty": "medium",
+    "question_en": "What does the following Java code print?\n\nStringBuilder sb = new StringBuilder(\"abc\");\nsb.append(\"de\").reverse();\nSystem.out.println(sb);",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "abcde",
+        "hi": null
+      },
+      {
+        "en": "cbade",
+        "hi": null
+      },
+      {
+        "en": "edcba",
+        "hi": null
+      },
+      {
+        "en": "edc",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "StringBuilder is mutable: append gives abcde and reverse() reverses it in place to edcba. Method chaining works because each method returns the same builder.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Strings",
+    "difficulty": "easy",
+    "question_en": "What is printed by the following Python statement?\n\nprint(\"py\" in \"python\", \"Py\" in \"python\", \"a\" < \"b\")",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "True True True",
+        "hi": null
+      },
+      {
+        "en": "True False True",
+        "hi": null
+      },
+      {
+        "en": "True False False",
+        "hi": null
+      },
+      {
+        "en": "False False True",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The in operator is case-sensitive, so py is found but Py is not. String comparison uses Unicode order, in which a (97) is less than b (98).",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Strings",
+    "difficulty": "easy",
+    "question_en": "What does the following C code print?\n\nchar *s = \"hello\";\nprintf(\"%c%c\", *s, *(s + 4));",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "he",
+        "hi": null
+      },
+      {
+        "en": "hello",
+        "hi": null
+      },
+      {
+        "en": "hl",
+        "hi": null
+      },
+      {
+        "en": "ho",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "*s is the first character h and *(s + 4) is the fifth character o. %c prints single characters.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Strings",
+    "difficulty": "medium",
+    "question_en": "What is printed by the following Java code?\n\nString s = \"Java\";\ns.concat(\" Code\");\ns.toUpperCase();\nSystem.out.println(s);",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Java",
+        "hi": null
+      },
+      {
+        "en": "Java Code",
+        "hi": null
+      },
+      {
+        "en": "JAVA CODE",
+        "hi": null
+      },
+      {
+        "en": "JAVA",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "String objects are immutable: concat and toUpperCase return new strings, which are discarded because the results are not assigned back. s still refers to Java.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Strings",
+    "difficulty": "medium",
+    "question_en": "What does the following Python code print?\n\nprint(ord('a') - ord('A'), chr(66))",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "32 b",
+        "hi": null
+      },
+      {
+        "en": "26 b",
+        "hi": null
+      },
+      {
+        "en": "32 B",
+        "hi": null
+      },
+      {
+        "en": "1 B",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "ord gives the Unicode code: a = 97, A = 65, difference 32. chr(66) returns the character with code 66, which is B.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "OOP – classes, objects & constructors",
+    "difficulty": "medium",
+    "question_en": "What is the output of the following C++ program?\n\n#include <iostream>\nusing namespace std;\nclass A {\npublic:\n    A()  { cout << \"C\"; }\n    ~A() { cout << \"D\"; }\n};\nint main() {\n    A x;\n    {\n        A y;\n    }\n    cout << \"M\";\n    return 0;\n}",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "CDCMD",
+        "hi": null
+      },
+      {
+        "en": "CCMDD",
+        "hi": null
+      },
+      {
+        "en": "CCDDM",
+        "hi": null
+      },
+      {
+        "en": "CCDMD",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "x and y are constructed (CC); y is a local of the inner block, so its destructor runs when that block ends (D). Then M is printed, and x is destroyed when main returns (D). Destructors run as soon as an object goes out of scope, not all at the end.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "OOP – classes, objects & constructors",
+    "difficulty": "easy",
+    "question_en": "What does the following Java program print?\n\nclass Student {\n    static int count = 0;\n    int id;\n    Student() { count++; id = count; }\n}\npublic class Main {\n    public static void main(String[] args) {\n        Student a = new Student();\n        Student b = new Student();\n        Student c = new Student();\n        System.out.println(a.id + \" \" + Student.count);\n    }\n}",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "1 1",
+        "hi": null
+      },
+      {
+        "en": "1 3",
+        "hi": null
+      },
+      {
+        "en": "3 3",
+        "hi": null
+      },
+      {
+        "en": "0 3",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "count is static, so one copy is shared by all objects and reaches 3 after three constructions. id is an instance variable; object a stored the value of count at the time it was created, i.e. 1.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "OOP – classes, objects & constructors",
+    "difficulty": "easy",
+    "question_en": "Which statement about constructors in C++ and Java is correct?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "It is inherited by a derived class like other methods",
+        "hi": null
+      },
+      {
+        "en": "It must be declared with the return type void",
+        "hi": null
+      },
+      {
+        "en": "It has the same name as the class and no return type",
+        "hi": null
+      },
+      {
+        "en": "It must always take at least one parameter",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "A constructor is a special member with the class's name and no return type (not even void) that runs automatically when an object is created. It may have zero parameters (default constructor) and is not inherited.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "OOP – classes, objects & constructors",
+    "difficulty": "medium",
+    "question_en": "What does the following Java code print?\n\nclass Box {\n    int w, h;\n    Box()                 { this(5);    System.out.print(\"A\"); }\n    Box(int s)            { this(s, s); System.out.print(\"B\"); }\n    Box(int w, int h)     { this.w = w; this.h = h; System.out.print(\"C\"); }\n}\n// inside main():\nBox b = new Box();\nSystem.out.print(b.w * b.h);",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "ABC25",
+        "hi": null
+      },
+      {
+        "en": "A25",
+        "hi": null
+      },
+      {
+        "en": "CBA10",
+        "hi": null
+      },
+      {
+        "en": "CBA25",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "this(...) must be the first statement, so Box() calls Box(5), which calls Box(5, 5). The innermost constructor finishes first and prints C, then control returns to print B and then A. w = h = 5, so 25 is printed.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "OOP – classes, objects & constructors",
+    "difficulty": "medium",
+    "question_en": "In C++, a and b are two objects of class A that both already exist. Which of the following does NOT invoke the copy constructor of A?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "The declaration A c(a);",
+        "hi": null
+      },
+      {
+        "en": "The statement b = a;",
+        "hi": null
+      },
+      {
+        "en": "Passing a to a function that takes A by value",
+        "hi": null
+      },
+      {
+        "en": "The declaration A c = a;",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "When both objects already exist, b = a calls the copy assignment operator, not the copy constructor. The copy constructor runs only when a new object is created from an existing one: A c = a;, A c(a); or pass-by-value.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "OOP – classes, objects & constructors",
+    "difficulty": "hard",
+    "question_en": "What is the output of the following Python code?\n\nclass Counter:\n    total = 0\n    def __init__(self):\n        self.total += 1\n\nc1 = Counter()\nc2 = Counter()\nprint(c1.total, c2.total, Counter.total)",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "2 2 2",
+        "hi": null
+      },
+      {
+        "en": "1 2 2",
+        "hi": null
+      },
+      {
+        "en": "1 1 0",
+        "hi": null
+      },
+      {
+        "en": "1 1 2",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "self.total += 1 reads the class attribute (0) but assigns to self.total, creating a new instance attribute with value 1 in each object. The class attribute Counter.total is never changed, so it stays 0. To share a count you must write Counter.total += 1.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "OOP – classes, objects & constructors",
+    "difficulty": "easy",
+    "question_en": "In C++, members of a class that are declared without any access specifier are, by default:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "public",
+        "hi": null
+      },
+      {
+        "en": "protected",
+        "hi": null
+      },
+      {
+        "en": "private",
+        "hi": null
+      },
+      {
+        "en": "accessible only to friend classes",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "In a C++ class the default access is private; in a struct it is public. This is the only real difference between class and struct in C++.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "OOP – classes, objects & constructors",
+    "difficulty": "medium",
+    "question_en": "What does the following Python code print?\n\nclass Point:\n    def __init__(self, x=0, y=0):\n        self.x = x\n        self.y = y\n\np = Point(3)\nprint(p.x + p.y, type(p).__name__)",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "3 Point",
+        "hi": null
+      },
+      {
+        "en": "0 Point",
+        "hi": null
+      },
+      {
+        "en": "TypeError: missing argument y",
+        "hi": null
+      },
+      {
+        "en": "3 point",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "__init__ is Python's constructor; y takes its default 0, so p.x + p.y = 3 + 0 = 3. type(p).__name__ gives the class name exactly as written, Point.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "OOP – inheritance, overloading & overriding",
+    "difficulty": "medium",
+    "question_en": "What is the output of the following C++ program?\n\n#include <iostream>\nusing namespace std;\nclass Base {\npublic:\n    Base()  { cout << \"B\"; }\n    ~Base() { cout << \"~B\"; }\n};\nclass Derived : public Base {\npublic:\n    Derived()  { cout << \"D\"; }\n    ~Derived() { cout << \"~D\"; }\n};\nint main() {\n    Derived d;\n    return 0;\n}",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "BD~D~B",
+        "hi": null
+      },
+      {
+        "en": "DB~D~B",
+        "hi": null
+      },
+      {
+        "en": "DB~B~D",
+        "hi": null
+      },
+      {
+        "en": "BD~B~D",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Constructors run from base to derived (B then D); destructors run in the reverse order, derived first (~D then ~B).",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "OOP – inheritance, overloading & overriding",
+    "difficulty": "easy",
+    "question_en": "Java does not allow a class to extend more than one class. Multiple inheritance of type is achieved in Java by using:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Interfaces",
+        "hi": null
+      },
+      {
+        "en": "Packages",
+        "hi": null
+      },
+      {
+        "en": "Abstract classes",
+        "hi": null
+      },
+      {
+        "en": "Inner classes",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "A Java class can extend only one class but can implement any number of interfaces, e.g. class C extends A implements X, Y. Abstract classes are still classes, so only one can be extended.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "OOP – inheritance, overloading & overriding",
+    "difficulty": "hard",
+    "question_en": "What does the following Java code print?\n\nclass A {\n    int v = 10;\n    void show() { System.out.print(\"A\" + v); }\n}\nclass B extends A {\n    int v = 20;\n    void show() {\n        super.show();\n        System.out.print(\"B\" + v + super.v);\n    }\n}\n// inside main():\nnew B().show();",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "A10B30",
+        "hi": null
+      },
+      {
+        "en": "A20B2010",
+        "hi": null
+      },
+      {
+        "en": "A10B2010",
+        "hi": null
+      },
+      {
+        "en": "A20B30",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Fields are not overridden, only hidden: inside A.show(), v means A's field, so A10 is printed. In B, \"B\" + v gives the string B20 and + super.v appends 10 (string concatenation, not addition), giving B2010.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "OOP – inheritance, overloading & overriding",
+    "difficulty": "hard",
+    "question_en": "What does the following Java program print?\n\nstatic void f(int x)    { System.out.print(\"int \"); }\nstatic void f(long x)   { System.out.print(\"long \"); }\nstatic void f(double x) { System.out.print(\"double \"); }\n\npublic static void main(String[] args) {\n    byte b = 5;\n    f(b);\n    f(5L);\n    f(5.0f);\n}",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "int long double",
+        "hi": null
+      },
+      {
+        "en": "double long double",
+        "hi": null
+      },
+      {
+        "en": "int int double",
+        "hi": null
+      },
+      {
+        "en": "Compilation error: ambiguous call",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "With no exact match, Java picks the most specific widening conversion: byte widens to int first, 5L matches long exactly, and a float widens to double. So the calls print int, long, double.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "OOP – inheritance, overloading & overriding",
+    "difficulty": "medium",
+    "question_en": "Which of the following statements about method overloading and method overriding is TRUE?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Overloading is resolved at compile time, overriding at run time",
+        "hi": null
+      },
+      {
+        "en": "Overloaded methods may differ only in their return type",
+        "hi": null
+      },
+      {
+        "en": "Overloading requires inheritance, but overriding does not",
+        "hi": null
+      },
+      {
+        "en": "Overriding methods must differ in their parameter lists",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Overloading (same name, different parameter lists, usually in one class) is static/compile-time polymorphism. Overriding (same signature in a subclass) is dynamic/run-time polymorphism. A change in return type alone is not enough to overload.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "OOP – inheritance, overloading & overriding",
+    "difficulty": "medium",
+    "question_en": "In C++, if class D is derived as class D : protected B, the public members of B become ______ members of D.",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "inaccessible",
+        "hi": null
+      },
+      {
+        "en": "public",
+        "hi": null
+      },
+      {
+        "en": "private",
+        "hi": null
+      },
+      {
+        "en": "protected",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "In protected inheritance, public and protected members of the base both become protected in the derived class. Private members of the base are never directly accessible in the derived class.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "OOP – inheritance, overloading & overriding",
+    "difficulty": "medium",
+    "question_en": "What does the following Python code print?\n\nclass A:\n    def greet(self):\n        return \"A\"\nclass B(A):\n    def greet(self):\n        return \"B\" + super().greet()\nclass C(B):\n    pass\n\nprint(C().greet(), issubclass(C, A))",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "BA True",
+        "hi": null
+      },
+      {
+        "en": "A True",
+        "hi": null
+      },
+      {
+        "en": "BA False",
+        "hi": null
+      },
+      {
+        "en": "B False",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "C inherits greet() from B. B's greet returns \"B\" plus A's greet via super(), i.e. \"BA\". Inheritance is transitive, so C is a subclass of A and issubclass returns True.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "OOP – inheritance, overloading & overriding",
+    "difficulty": "medium",
+    "question_en": "What is the output of the following C++ program?\n\n#include <iostream>\nusing namespace std;\nvoid show(int x)    { cout << \"I\" << x; }\nvoid show(double x) { cout << \"D\" << x; }\nvoid show(char x)   { cout << \"C\" << x; }\nint main() {\n    show('A');\n    show(7);\n    show(2.5);\n    return 0;\n}",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "C65I7D2.5",
+        "hi": null
+      },
+      {
+        "en": "I65I7D2.5",
+        "hi": null
+      },
+      {
+        "en": "CAI7I2",
+        "hi": null
+      },
+      {
+        "en": "CAI7D2.5",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Overload resolution picks the exact match for each argument: 'A' is a char, so show(char) prints CA; 7 is an int, printing I7; 2.5 is a double, printing D2.5. The character is printed as a character, not as its ASCII code 65.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "OOP – inheritance, overloading & overriding",
+    "difficulty": "hard",
+    "question_en": "What does the following Python code print?\n\nclass Calc:\n    def add(self, a, b):\n        return a + b\n    def add(self, a, b, c=0):\n        return a + b + c + 1\n\nprint(Calc().add(2, 3))",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "SyntaxError: duplicate method",
+        "hi": null
+      },
+      {
+        "en": "5",
+        "hi": null
+      },
+      {
+        "en": "TypeError: add() is defined twice",
+        "hi": null
+      },
+      {
+        "en": "6",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Python does not support method overloading by signature. The second def simply rebinds the name add, replacing the first. So add(2, 3) runs the second version: 2 + 3 + 0 + 1 = 6.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "OOP – polymorphism & virtual functions",
+    "difficulty": "medium",
+    "question_en": "What is the output of the following C++ program?\n\n#include <iostream>\nusing namespace std;\nclass Shape {\npublic:\n    void name()         { cout << \"Shape \"; }\n    virtual void draw() { cout << \"drawShape \"; }\n};\nclass Circle : public Shape {\npublic:\n    void name() { cout << \"Circle \"; }\n    void draw() { cout << \"drawCircle \"; }\n};\nint main() {\n    Shape *s = new Circle();\n    s->name();\n    s->draw();\n    return 0;\n}",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Circle drawCircle",
+        "hi": null
+      },
+      {
+        "en": "Shape drawShape",
+        "hi": null
+      },
+      {
+        "en": "Shape drawCircle",
+        "hi": null
+      },
+      {
+        "en": "Circle drawShape",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "name() is non-virtual, so the call is bound at compile time using the pointer type (Shape*) and prints Shape. draw() is virtual, so it is bound at run time to the actual object type (Circle) and prints drawCircle.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "OOP – polymorphism & virtual functions",
+    "difficulty": "easy",
+    "question_en": "In C++, a pure virtual function is declared as:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "pure virtual void f();",
+        "hi": null
+      },
+      {
+        "en": "abstract void f();",
+        "hi": null
+      },
+      {
+        "en": "virtual void f() = 0;",
+        "hi": null
+      },
+      {
+        "en": "virtual void f() {}",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Writing = 0 after a virtual function declaration makes it pure virtual. A class with at least one pure virtual function becomes abstract and cannot be instantiated. C++ has no 'abstract' or 'pure' keyword.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "OOP – polymorphism & virtual functions",
+    "difficulty": "medium",
+    "question_en": "Run-time polymorphism through virtual functions in C++ is usually implemented by the compiler using:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "A virtual table (vtable) and a hidden virtual pointer (vptr)",
+        "hi": null
+      },
+      {
+        "en": "Template instantiation at compile time",
+        "hi": null
+      },
+      {
+        "en": "Inline expansion of all member functions",
+        "hi": null
+      },
+      {
+        "en": "A separate copy of each function for every object",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Each class with virtual functions gets a vtable of function addresses, and each object carries a hidden vptr pointing to its class's vtable. A virtual call looks up the address through the vptr at run time. Templates and inlining are compile-time mechanisms.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "OOP – polymorphism & virtual functions",
+    "difficulty": "hard",
+    "question_en": "Why should a C++ base class that is meant to be used polymorphically have a virtual destructor?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "So that the constructor of the derived class becomes virtual",
+        "hi": null
+      },
+      {
+        "en": "So that deleting a derived object through a base-class pointer also runs the derived destructor",
+        "hi": null
+      },
+      {
+        "en": "So that objects of the base class cannot be created",
+        "hi": null
+      },
+      {
+        "en": "So that the base-class destructor is never called",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "If the destructor is not virtual, delete basePtr calls only the base destructor (formally undefined behaviour), so resources owned by the derived part leak. A virtual destructor makes the derived destructor run first, then the base destructor. Constructors cannot be virtual in C++.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "OOP – polymorphism & virtual functions",
+    "difficulty": "easy",
+    "question_en": "What does the following Java code print?\n\nclass Animal { String sound() { return \"Hmm\"; } }\nclass Dog extends Animal { String sound() { return \"Woof\"; } }\nclass Cat extends Animal { String sound() { return \"Meow\"; } }\n\n// inside main():\nAnimal[] zoo = { new Dog(), new Cat(), new Animal() };\nfor (Animal a : zoo)\n    System.out.print(a.sound() + \" \");",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Woof Meow Meow",
+        "hi": null
+      },
+      {
+        "en": "Compilation error: Dog cannot be stored in Animal[]",
+        "hi": null
+      },
+      {
+        "en": "Woof Meow Hmm",
+        "hi": null
+      },
+      {
+        "en": "Hmm Hmm Hmm",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "A superclass reference may hold a subclass object. Java instance methods are virtual by default, so dynamic method dispatch calls the version of the actual object: Woof, Meow and then Hmm.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "OOP – polymorphism & virtual functions",
+    "difficulty": "hard",
+    "question_en": "What does the following Java code print?\n\nclass P {\n    static String s() { return \"Ps\"; }\n    String i()        { return \"Pi\"; }\n}\nclass Q extends P {\n    static String s() { return \"Qs\"; }\n    String i()        { return \"Qi\"; }\n}\n// inside main():\nP obj = new Q();\nSystem.out.println(obj.s() + \" \" + obj.i());",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Qs Pi",
+        "hi": null
+      },
+      {
+        "en": "Qs Qi",
+        "hi": null
+      },
+      {
+        "en": "Ps Pi",
+        "hi": null
+      },
+      {
+        "en": "Ps Qi",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Static methods are not overridden but hidden; the call obj.s() is resolved at compile time from the reference type P, giving Ps. The instance method i() is overridden, so the run-time object type Q decides, giving Qi.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "OOP – polymorphism & virtual functions",
+    "difficulty": "medium",
+    "question_en": "What is the output of the following C++ program?\n\n#include <iostream>\nusing namespace std;\nclass Vec {\npublic:\n    int x, y;\n    Vec(int a, int b) : x(a), y(b) {}\n    Vec operator+(const Vec &o) { return Vec(x + o.x, y + o.y); }\n};\nint main() {\n    Vec p(1, 2), q(3, 4);\n    Vec r = p + q + p;\n    cout << r.x << \",\" << r.y;\n    return 0;\n}",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "5,8",
+        "hi": null
+      },
+      {
+        "en": "6,10",
+        "hi": null
+      },
+      {
+        "en": "Compilation error: + cannot be applied to class objects",
+        "hi": null
+      },
+      {
+        "en": "4,6",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The overloaded operator+ adds component-wise. p + q gives (4, 6); adding p again gives (5, 8). Operator overloading is a form of compile-time polymorphism.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "OOP – polymorphism & virtual functions",
+    "difficulty": "medium",
+    "question_en": "What does the following Python code print?\n\nclass Duck:\n    def speak(self): return \"Quack\"\nclass Robot:\n    def speak(self): return \"Beep\"\n\nfor obj in (Duck(), Robot()):\n    print(obj.speak(), end=\" \")\nprint(len(\"abc\"), len([1, 2]))",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Quack Beep 3 2",
+        "hi": null
+      },
+      {
+        "en": "Quack Beep 3 3",
+        "hi": null
+      },
+      {
+        "en": "AttributeError: Robot is not a Duck",
+        "hi": null
+      },
+      {
+        "en": "Quack Quack 3 2",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Python uses duck typing: any object that has a speak() method can be used in the loop, even without a common base class. len() is itself polymorphic and works on both a string (3) and a list (2).",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "OOP – polymorphism & virtual functions",
+    "difficulty": "easy",
+    "question_en": "Which of the following operators can NOT be overloaded in C++?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "+  (addition)",
+        "hi": null
+      },
+      {
+        "en": "::  (scope resolution)",
+        "hi": null
+      },
+      {
+        "en": "[]  (subscript)",
+        "hi": null
+      },
+      {
+        "en": "<<  (left shift / insertion)",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "C++ does not allow overloading of ::, . (member access), .*, ?: and sizeof. Operators such as +, [] and << are commonly overloaded, e.g. << for printing objects with cout.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "OOP – abstraction, encapsulation & interfaces",
+    "difficulty": "easy",
+    "question_en": "Bundling data and the functions that operate on that data into a single unit (a class), while restricting direct outside access to the data, is called:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Encapsulation",
+        "hi": null
+      },
+      {
+        "en": "Inheritance",
+        "hi": null
+      },
+      {
+        "en": "Abstraction",
+        "hi": null
+      },
+      {
+        "en": "Polymorphism",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Encapsulation wraps data and methods together and hides the data (data hiding) using private access, exposing it only through public methods. Abstraction is about showing only essential features and hiding implementation details.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "OOP – abstraction, encapsulation & interfaces",
+    "difficulty": "medium",
+    "question_en": "What does the following Java code print?\n\nabstract class Shape {\n    abstract double area();\n    void info() { System.out.print(\"Shape \"); }\n}\nclass Sq extends Shape {\n    double side = 2;\n    double area() { return side * side; }\n}\n// inside main():\nShape s = new Sq();\ns.info();\nSystem.out.print(s.area());",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "4.0 Shape",
+        "hi": null
+      },
+      {
+        "en": "Shape 4.0",
+        "hi": null
+      },
+      {
+        "en": "Compilation error: Shape is abstract",
+        "hi": null
+      },
+      {
+        "en": "Shape 4",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "An abstract class cannot be instantiated, but a reference of its type can point to a concrete subclass object. info() is inherited and area() is Sq's implementation; side * side is a double, so 4.0 is printed.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "OOP – abstraction, encapsulation & interfaces",
+    "difficulty": "medium",
+    "question_en": "A variable declared inside a Java interface is implicitly:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "private and static",
+        "hi": null
+      },
+      {
+        "en": "public, static and final",
+        "hi": null
+      },
+      {
+        "en": "public and abstract",
+        "hi": null
+      },
+      {
+        "en": "protected and final",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Interface fields are constants: they are automatically public static final and must be initialised where declared. Interface methods (without a body) are implicitly public abstract.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "OOP – abstraction, encapsulation & interfaces",
+    "difficulty": "medium",
+    "question_en": "What does the following Java (Java 8 or later) code print?\n\ninterface Greet {\n    default String hello() { return \"Hi\"; }\n    String name();\n}\nclass T implements Greet {\n    public String name() { return \"Ravi\"; }\n}\n// inside main():\nGreet g = new T();\nSystem.out.println(g.hello() + \" \" + g.name());",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "null Ravi",
+        "hi": null
+      },
+      {
+        "en": "Compilation error: interface methods cannot have a body",
+        "hi": null
+      },
+      {
+        "en": "Hi null",
+        "hi": null
+      },
+      {
+        "en": "Hi Ravi",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Since Java 8, an interface may contain default methods with a body; implementing classes inherit them. T only has to implement the abstract method name(), so the output is Hi Ravi.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "OOP – abstraction, encapsulation & interfaces",
+    "difficulty": "medium",
+    "question_en": "What happens when the following Java program is compiled and run?\n\nclass Account {\n    private int balance = 500;\n    public int getBalance() { return balance; }\n}\npublic class Main {\n    public static void main(String[] args) {\n        Account a = new Account();\n        a.balance = 1000;              // Line X\n        System.out.println(a.getBalance());\n    }\n}",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Compilation error at Line X",
+        "hi": null
+      },
+      {
+        "en": "It prints 500",
+        "hi": null
+      },
+      {
+        "en": "Runtime exception at Line X",
+        "hi": null
+      },
+      {
+        "en": "It prints 1000",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "balance is private, so it is visible only inside class Account. Accessing it from Main is caught by the compiler (balance has private access in Account). This is encapsulation: outside code must use public methods such as getBalance().",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "OOP – abstraction, encapsulation & interfaces",
+    "difficulty": "hard",
+    "question_en": "What does the following Python code print?\n\nclass Bank:\n    def __init__(self):\n        self._branch = \"Delhi\"\n        self.__pin = 1234\n\nb = Bank()\nprint(b._branch, hasattr(b, \"__pin\"), hasattr(b, \"_Bank__pin\"))",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "AttributeError: _branch is protected",
+        "hi": null
+      },
+      {
+        "en": "Delhi True False",
+        "hi": null
+      },
+      {
+        "en": "Delhi False True",
+        "hi": null
+      },
+      {
+        "en": "Delhi True True",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "A single underscore is only a convention, so _branch is accessible. A double-underscore name is mangled to _ClassName__name, so the object has _Bank__pin but no attribute literally called __pin.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "OOP – abstraction, encapsulation & interfaces",
+    "difficulty": "medium",
+    "question_en": "Which statement correctly compares an abstract class and an interface in Java (Java 8 or later)?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Methods of an interface are private by default",
+        "hi": null
+      },
+      {
+        "en": "A class can implement many interfaces but can extend only one abstract class",
+        "hi": null
+      },
+      {
+        "en": "An abstract class cannot have a constructor",
+        "hi": null
+      },
+      {
+        "en": "An abstract class may contain only abstract methods",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Java allows single class inheritance but multiple interface implementation. An abstract class can have constructors, instance fields and concrete methods; interface methods are public by default.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "OOP – abstraction, encapsulation & interfaces",
+    "difficulty": "medium",
+    "question_en": "A friend function of a class in C++:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Can access only the public members of the class",
+        "hi": null
+      },
+      {
+        "en": "Is a member function that can be called without an object",
+        "hi": null
+      },
+      {
+        "en": "Is not a member of the class but can access its private and protected members",
+        "hi": null
+      },
+      {
+        "en": "Is automatically inherited by every derived class",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "A function declared with the keyword friend inside a class is granted access to that class's private and protected members, though it is not a member and is called without the dot operator. Friendship is neither inherited nor transitive.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "OOP – abstraction, encapsulation & interfaces",
+    "difficulty": "hard",
+    "question_en": "What happens when the following Python code runs?\n\nfrom abc import ABC, abstractmethod\n\nclass Shape(ABC):\n    @abstractmethod\n    def area(self):\n        pass\n\nclass Sq(Shape):\n    pass\n\ns = Sq()",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "A NameError is raised because ABC is undefined",
+        "hi": null
+      },
+      {
+        "en": "An object of Sq is created successfully",
+        "hi": null
+      },
+      {
+        "en": "A TypeError is raised because Sq does not implement area()",
+        "hi": null
+      },
+      {
+        "en": "A SyntaxError is raised because area() has an empty body",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Sq inherits the abstract method area() without overriding it, so Sq is still abstract. Python raises TypeError (Can't instantiate abstract class Sq...) when you try to create an object of it.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Exception handling",
+    "difficulty": "medium",
+    "question_en": "What does the following Java code print?\n\nstatic int test() {\n    try {\n        return 1;\n    } finally {\n        System.out.print(\"F \");\n    }\n}\n// inside main():\nSystem.out.println(test());",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "F 1",
+        "hi": null
+      },
+      {
+        "en": "1 F",
+        "hi": null
+      },
+      {
+        "en": "F",
+        "hi": null
+      },
+      {
+        "en": "1",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The finally block runs before the method actually returns, even when the try block executes return. So F is printed first and then main prints the returned value 1.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Exception handling",
+    "difficulty": "hard",
+    "question_en": "What value does the following Java method return?\n\nstatic int calc() {\n    int x = 10;\n    try {\n        x = 20;\n        return x;\n    } finally {\n        x = 30;\n    }\n}",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "10",
+        "hi": null
+      },
+      {
+        "en": "30",
+        "hi": null
+      },
+      {
+        "en": "The code does not compile",
+        "hi": null
+      },
+      {
+        "en": "20",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "When return x executes, the value 20 is saved as the return value. finally then runs and changes the local x to 30, but that does not alter the already-saved return value. (A return statement inside finally would override it.)",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Exception handling",
+    "difficulty": "hard",
+    "question_en": "What is the output of the following Python code?\n\ndef f(a, b):\n    try:\n        r = a // b\n    except ZeroDivisionError:\n        print(\"Z\", end=\"\")\n        r = -1\n    else:\n        print(\"E\", end=\"\")\n    finally:\n        print(\"F\", end=\"\")\n    return r\n\nprint(f(7, 2), f(1, 0))",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "EZF3 -1",
+        "hi": null
+      },
+      {
+        "en": "3 -1EFZF",
+        "hi": null
+      },
+      {
+        "en": "EFZF3 -1",
+        "hi": null
+      },
+      {
+        "en": "EF3 ZF-1",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Both arguments of print are evaluated before print outputs anything. f(7, 2) succeeds: else prints E, finally prints F. f(1, 0) raises ZeroDivisionError: except prints Z, finally prints F. Then print shows the returned values 3 and -1.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Exception handling",
+    "difficulty": "easy",
+    "question_en": "Which of the following is a checked exception in Java?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "ArithmeticException",
+        "hi": null
+      },
+      {
+        "en": "NullPointerException",
+        "hi": null
+      },
+      {
+        "en": "IOException",
+        "hi": null
+      },
+      {
+        "en": "ArrayIndexOutOfBoundsException",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Checked exceptions (such as IOException, SQLException, FileNotFoundException) must be caught or declared with throws, and the compiler enforces this. The other three are subclasses of RuntimeException and are unchecked.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Exception handling",
+    "difficulty": "medium",
+    "question_en": "What does the following Java code print?\n\ntry {\n    int[] a = new int[3];\n    a[3] = 10 / 2;\n    System.out.print(\"A\");\n} catch (ArithmeticException e) {\n    System.out.print(\"B\");\n} catch (ArrayIndexOutOfBoundsException e) {\n    System.out.print(\"C\");\n} finally {\n    System.out.print(\"D\");\n}\nSystem.out.print(\"E\");",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "CDE",
+        "hi": null
+      },
+      {
+        "en": "BDE",
+        "hi": null
+      },
+      {
+        "en": "CD",
+        "hi": null
+      },
+      {
+        "en": "ACDE",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "10 / 2 is a valid division, but valid indices of a are 0 to 2, so a[3] throws ArrayIndexOutOfBoundsException. A is skipped, the matching catch prints C, finally prints D and normal flow continues to print E.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Exception handling",
+    "difficulty": "medium",
+    "question_en": "What is the output of the following C++ program?\n\n#include <iostream>\nusing namespace std;\nint main() {\n    try {\n        cout << \"1\";\n        throw 'x';\n        cout << \"2\";\n    }\n    catch (int e)  { cout << \"3\"; }\n    catch (char e) { cout << \"4\"; }\n    catch (...)    { cout << \"5\"; }\n    cout << \"6\";\n    return 0;\n}",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "12346",
+        "hi": null
+      },
+      {
+        "en": "1456",
+        "hi": null
+      },
+      {
+        "en": "146",
+        "hi": null
+      },
+      {
+        "en": "1346",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "After printing 1, a char is thrown, so the rest of the try block is skipped. C++ matches handlers by exact type without promotion: catch(int) does not match a char, catch(char) does and prints 4. Only the first matching handler runs, so catch(...) is skipped, then 6 is printed.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Exception handling",
+    "difficulty": "easy",
+    "question_en": "In Java, which keyword is used in a method header to declare the exceptions that the method may pass on to its caller?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "finally",
+        "hi": null
+      },
+      {
+        "en": "throw",
+        "hi": null
+      },
+      {
+        "en": "catch",
+        "hi": null
+      },
+      {
+        "en": "throws",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "throws appears in the method signature, e.g. void read() throws IOException. throw is a statement that actually raises an exception object, e.g. throw new IOException();.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Exception handling",
+    "difficulty": "medium",
+    "question_en": "What does the following Python code print?\n\ntry:\n    d = {\"a\": 1}\n    print(d[\"b\"])\nexcept (KeyError, IndexError) as e:\n    print(type(e).__name__)",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "ValueError",
+        "hi": null
+      },
+      {
+        "en": "KeyError",
+        "hi": null
+      },
+      {
+        "en": "None",
+        "hi": null
+      },
+      {
+        "en": "IndexError",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Looking up a missing key in a dictionary raises KeyError. One except clause can handle several exception types given as a tuple, and type(e).__name__ gives the exception's class name.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Exception handling",
+    "difficulty": "hard",
+    "question_en": "What happens when the following Java code is compiled?\n\ntry {\n    int x = 5 / 0;\n} catch (Exception e) {\n    System.out.print(\"E\");\n} catch (ArithmeticException e) {\n    System.out.print(\"A\");\n}",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "It compiles and prints A",
+        "hi": null
+      },
+      {
+        "en": "Compilation error: ArithmeticException has already been caught",
+        "hi": null
+      },
+      {
+        "en": "It compiles and prints E",
+        "hi": null
+      },
+      {
+        "en": "It compiles and prints EA",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "ArithmeticException is a subclass of Exception, so the first catch already handles it and the second catch can never be reached. Java reports this as a compile-time error; catch blocks must be ordered from most specific to most general.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Exception handling",
+    "difficulty": "medium",
+    "question_en": "What does the following Python code print?\n\ndef check(age):\n    if age < 18:\n        raise ValueError(\"minor\")\n    return \"ok\"\n\ntry:\n    print(check(20), end=\" \")\n    print(check(15), end=\" \")\nexcept ValueError as e:\n    print(e)",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "ok minor",
+        "hi": null
+      },
+      {
+        "en": "minor",
+        "hi": null
+      },
+      {
+        "en": "ok ValueError",
+        "hi": null
+      },
+      {
+        "en": "ok ok",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "check(20) returns ok, which is printed. check(15) executes raise, so the second print never runs and control jumps to except, where printing the exception object shows its message, minor.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Python lists, tuples & slicing",
+    "difficulty": "medium",
+    "question_en": "What does the following Python code print?\n\na = [1, 2, 3]\nb = a\nc = a[:]\na.append(4)\nprint(len(b), len(c))",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "4 3",
+        "hi": null
+      },
+      {
+        "en": "4 4",
+        "hi": null
+      },
+      {
+        "en": "3 3",
+        "hi": null
+      },
+      {
+        "en": "3 4",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "b = a makes b another name for the same list object, so b sees the appended element (length 4). a[:] creates a new shallow copy, so c keeps its original 3 elements.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Python lists, tuples & slicing",
+    "difficulty": "medium",
+    "question_en": "What is the output of the following Python code?\n\nL = [10, 20, 30, 40, 50, 60]\nprint(L[1:5:2], L[::-2])",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "[20, 40] [50, 30, 10]",
+        "hi": null
+      },
+      {
+        "en": "[20, 40, 60] [60, 40, 20]",
+        "hi": null
+      },
+      {
+        "en": "[20, 40] [60, 40, 20]",
+        "hi": null
+      },
+      {
+        "en": "[20, 30, 40] [60, 40, 20]",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "L[1:5:2] takes indices 1 and 3 (5 is excluded): [20, 40]. With a negative step and no start, slicing begins at the last index 5 and moves back by 2: indices 5, 3, 1, giving [60, 40, 20].",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Python lists, tuples & slicing",
+    "difficulty": "medium",
+    "question_en": "What does the following Python code print?\n\nx = [1, 2]\nx.append([3, 4])\nx.extend([5, 6])\nprint(len(x), x[2])",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "6 3",
+        "hi": null
+      },
+      {
+        "en": "6 [3, 4]",
+        "hi": null
+      },
+      {
+        "en": "4 [3, 4]",
+        "hi": null
+      },
+      {
+        "en": "5 [3, 4]",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "append adds its argument as one single element (the whole list [3, 4]), while extend adds each element of the iterable separately. x becomes [1, 2, [3, 4], 5, 6]: length 5, and x[2] is [3, 4].",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Python lists, tuples & slicing",
+    "difficulty": "medium",
+    "question_en": "What does the following Python code print?\n\nt = (5)\nu = (5,)\nprint(type(t).__name__, type(u).__name__)",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "int tuple",
+        "hi": null
+      },
+      {
+        "en": "tuple tuple",
+        "hi": null
+      },
+      {
+        "en": "int int",
+        "hi": null
+      },
+      {
+        "en": "tuple int",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Parentheses alone only group an expression, so (5) is just the integer 5. A one-element tuple needs a trailing comma: (5,) or simply 5,.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Python lists, tuples & slicing",
+    "difficulty": "hard",
+    "question_en": "What is the result of running the following Python code?\n\nt = (1, [2, 3], 4)\nt[1].append(5)\nprint(t)",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "TypeError: 'tuple' object does not support item assignment",
+        "hi": null
+      },
+      {
+        "en": "(1, [2, 3], 4)",
+        "hi": null
+      },
+      {
+        "en": "(1, [2, 3], 4, 5)",
+        "hi": null
+      },
+      {
+        "en": "(1, [2, 3, 5], 4)",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "A tuple is immutable: it cannot be made to refer to different objects. But t[1] is a mutable list, and append modifies that list in place without reassigning any tuple element, so no error occurs.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Python lists, tuples & slicing",
+    "difficulty": "hard",
+    "question_en": "What does the following Python code print?\n\ngrid = [[0] * 2] * 3\ngrid[0][1] = 7\nprint(grid)",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "[[0, 7], [0, 7], [0, 7]]",
+        "hi": null
+      },
+      {
+        "en": "[[0, 7, 0, 7, 0, 7]]",
+        "hi": null
+      },
+      {
+        "en": "[[0, 7], [0, 0], [0, 0]]",
+        "hi": null
+      },
+      {
+        "en": "[[7, 7], [0, 0], [0, 0]]",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Multiplying the outer list by 3 copies the reference to the same inner list three times, so all three rows are one object and the change shows in each. Use [[0] * 2 for _ in range(3)] to create independent rows.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Python lists, tuples & slicing",
+    "difficulty": "medium",
+    "question_en": "What does the following Python code print?\n\nnums = [x * x for x in range(1, 8) if x % 2 == 1]\nprint(nums, sum(nums))",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "[1, 9, 25, 49] 84",
+        "hi": null
+      },
+      {
+        "en": "[1, 9, 25, 49, 81] 165",
+        "hi": null
+      },
+      {
+        "en": "[1, 9, 25] 35",
+        "hi": null
+      },
+      {
+        "en": "[4, 16, 36] 56",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "range(1, 8) gives 1 to 7; the condition keeps the odd values 1, 3, 5, 7, whose squares are 1, 9, 25, 49. Their sum is 84.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Python lists, tuples & slicing",
+    "difficulty": "easy",
+    "question_en": "Which of the following built-in Python data types is immutable?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "tuple",
+        "hi": null
+      },
+      {
+        "en": "set",
+        "hi": null
+      },
+      {
+        "en": "list",
+        "hi": null
+      },
+      {
+        "en": "dict",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Once created, a tuple's elements cannot be added, removed or reassigned, so tuples (like str, int and frozenset) are immutable and hashable. Lists, dictionaries and sets can be changed in place.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Python lists, tuples & slicing",
+    "difficulty": "medium",
+    "question_en": "What does the following Python code print?\n\na = [3, 1, 2]\nb = a.sort()\nprint(a, b)",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "[1, 2, 3] None",
+        "hi": null
+      },
+      {
+        "en": "[1, 2, 3] [1, 2, 3]",
+        "hi": null
+      },
+      {
+        "en": "None [1, 2, 3]",
+        "hi": null
+      },
+      {
+        "en": "[3, 1, 2] [1, 2, 3]",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "list.sort() sorts the list in place and returns None, so b is None and a becomes [1, 2, 3]. The built-in sorted(a) would instead return a new sorted list and leave a unchanged.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Python dictionaries & sets",
+    "difficulty": "easy",
+    "question_en": "What does the following Python code print?\n\nd = {\"a\": 1, \"b\": 2}\nd[\"c\"] = 3\nd[\"a\"] = 10\nprint(len(d), list(d.keys())[0], d.get(\"z\", 0))",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "3 c None",
+        "hi": null
+      },
+      {
+        "en": "3 a 0",
+        "hi": null
+      },
+      {
+        "en": "4 a 0",
+        "hi": null
+      },
+      {
+        "en": "3 a KeyError",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Assigning to an existing key updates its value without adding a new entry, so there are 3 keys. Dictionaries keep insertion order (Python 3.7+), so the first key is still a. get() returns the default 0 for a missing key instead of raising KeyError.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Python dictionaries & sets",
+    "difficulty": "medium",
+    "question_en": "What does the following Python code print?\n\nA = {1, 2, 3, 4}\nB = {3, 4, 5}\nprint(A & B, A - B, len(A | B))",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "{3, 4} {1, 2, 5} 7",
+        "hi": null
+      },
+      {
+        "en": "{3, 4} {5} 5",
+        "hi": null
+      },
+      {
+        "en": "{3, 4} {1, 2} 5",
+        "hi": null
+      },
+      {
+        "en": "{1, 2, 3, 4, 5} {1, 2} 5",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "& is intersection {3, 4}; A - B keeps elements of A not in B, {1, 2}; | is union {1, 2, 3, 4, 5} whose size is 5. The symmetric difference would be A ^ B = {1, 2, 5}.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Python dictionaries & sets",
+    "difficulty": "easy",
+    "question_en": "What does the following Python code print?\n\nprint(len(set(\"banana\")), sorted(set([3, 1, 3, 2, 1])))",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "4 [1, 2, 3]",
+        "hi": null
+      },
+      {
+        "en": "6 [1, 1, 2, 3, 3]",
+        "hi": null
+      },
+      {
+        "en": "3 [1, 2, 3]",
+        "hi": null
+      },
+      {
+        "en": "3 {1, 2, 3}",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "A set keeps only unique elements: the letters of banana give {b, a, n}, size 3. The duplicates in the list are removed and sorted() returns a list, [1, 2, 3].",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Python dictionaries & sets",
+    "difficulty": "medium",
+    "question_en": "Which of the following can NOT be used as a key in a Python dictionary?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "A frozenset such as frozenset({1, 2})",
+        "hi": null
+      },
+      {
+        "en": "A tuple such as (1, 2)",
+        "hi": null
+      },
+      {
+        "en": "A list such as [1, 2]",
+        "hi": null
+      },
+      {
+        "en": "A string such as \"roll\"",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Dictionary keys must be hashable (immutable). A list is mutable and unhashable, so d[[1, 2]] = 0 raises TypeError. Tuples of immutable items, strings and frozensets are valid keys.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Python dictionaries & sets",
+    "difficulty": "medium",
+    "question_en": "What does the following Python code print?\n\nmarks = {\"Asha\": 78, \"Ravi\": 91, \"Neha\": 85}\ntop = max(marks, key=marks.get)\nprint(top, sum(marks.values()))",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Neha 254",
+        "hi": null
+      },
+      {
+        "en": "Ravi 91",
+        "hi": null
+      },
+      {
+        "en": "91 254",
+        "hi": null
+      },
+      {
+        "en": "Ravi 254",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Iterating over a dictionary gives its keys; key=marks.get compares them by their values, so the key with the largest value, Ravi, is returned. values() gives 78, 91 and 85, which sum to 254.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Python dictionaries & sets",
+    "difficulty": "hard",
+    "question_en": "What does the following Python code print?\n\nd = {k: k * 2 for k in range(1, 5)}\nd.pop(2)\nd.update({5: 0, 1: 9})\nprint(d)",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "{3: 6, 4: 8, 5: 0, 1: 9}",
+        "hi": null
+      },
+      {
+        "en": "{1: 9, 3: 6, 4: 8, 5: 0}",
+        "hi": null
+      },
+      {
+        "en": "{1: 9, 2: 4, 3: 6, 4: 8, 5: 0}",
+        "hi": null
+      },
+      {
+        "en": "{1: 2, 3: 6, 4: 8, 5: 0, 1: 9}",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The comprehension builds {1: 2, 2: 4, 3: 6, 4: 8}; pop(2) removes key 2. update() overwrites the existing key 1 in its original position and appends the new key 5 at the end. Keys are never duplicated.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Python dictionaries & sets",
+    "difficulty": "medium",
+    "question_en": "What does the following Python code print?\n\ncount = {}\nfor ch in \"hello\":\n    count[ch] = count.get(ch, 0) + 1\nprint(count[\"l\"], len(count))",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "2 5",
+        "hi": null
+      },
+      {
+        "en": "2 3",
+        "hi": null
+      },
+      {
+        "en": "2 4",
+        "hi": null
+      },
+      {
+        "en": "1 4",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "get(ch, 0) returns 0 for a new character, so the loop builds a frequency table {h: 1, e: 1, l: 2, o: 1}. The letter l occurs twice and there are 4 distinct keys.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Python file handling",
+    "difficulty": "medium",
+    "question_en": "Which Python file mode opens a text file for appending, creates the file if it does not exist, and also allows reading from it?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "'w+'",
+        "hi": null
+      },
+      {
+        "en": "'a'",
+        "hi": null
+      },
+      {
+        "en": "'r+'",
+        "hi": null
+      },
+      {
+        "en": "'a+'",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "'a+' = append and read; writes always go to the end and a missing file is created. 'a' allows appending only, 'r+' needs the file to already exist, and 'w+' truncates the existing contents.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Python file handling",
+    "difficulty": "hard",
+    "question_en": "What does the following Python code print?\n\nwith open(\"s.txt\", \"w\") as f:\n    f.writelines([\"a\\n\", \"b\\n\", \"c\"])\n\nwith open(\"s.txt\") as f:\n    lines = f.readlines()\nprint(len(lines), lines[-1])",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "3 c",
+        "hi": null
+      },
+      {
+        "en": "2 c",
+        "hi": null
+      },
+      {
+        "en": "1 c",
+        "hi": null
+      },
+      {
+        "en": "3 b",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "writelines() writes the strings exactly as given and adds no newlines of its own, so the file holds a, b and c on three lines (the last without a newline). readlines() returns a list of 3 lines, the last being 'c'.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Python file handling",
+    "difficulty": "hard",
+    "question_en": "What does the following Python code print?\n\nwith open(\"t.txt\", \"w\") as f:\n    f.write(\"abc\\n\")\n    f.write(\"de\")\nwith open(\"t.txt\", \"w\") as f:\n    f.write(\"XY\")\nwith open(\"t.txt\") as f:\n    print(len(f.read()))",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "8",
+        "hi": null
+      },
+      {
+        "en": "2",
+        "hi": null
+      },
+      {
+        "en": "4",
+        "hi": null
+      },
+      {
+        "en": "6",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Opening an existing file in 'w' mode truncates it to zero length, so the earlier 6 characters (abc, newline, de) are lost. Only XY remains and read() returns a 2-character string. Mode 'a' would have kept the old data.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Python file handling",
+    "difficulty": "hard",
+    "question_en": "What does the following Python code print?\n\nwith open(\"data.txt\", \"w\") as f:\n    f.write(\"Hello\\nWorld\\n\")\n\nwith open(\"data.txt\") as f:\n    first = f.readline()\n    rest = f.read()\nprint(len(first), rest.strip())",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "5 Hello",
+        "hi": null
+      },
+      {
+        "en": "6 Hello World",
+        "hi": null
+      },
+      {
+        "en": "6 World",
+        "hi": null
+      },
+      {
+        "en": "5 World",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "readline() returns one line including its trailing newline, so first is 'Hello\\n' of length 6. read() then continues from the current position and returns the remaining text 'World\\n', which strip() cleans to World.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Python file handling",
+    "difficulty": "hard",
+    "question_en": "What does the following Python code print?\n\nwith open(\"n.txt\", \"w\") as f:\n    f.write(\"0123456789\")\n\nwith open(\"n.txt\") as f:\n    f.seek(4)\n    print(f.read(3), f.tell())",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "567 8",
+        "hi": null
+      },
+      {
+        "en": "456 7",
+        "hi": null
+      },
+      {
+        "en": "345 7",
+        "hi": null
+      },
+      {
+        "en": "456 4",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "seek(4) moves the file pointer to offset 4 (counting from 0), so read(3) returns the characters at positions 4, 5 and 6: 456. The pointer is then at offset 7, which tell() reports.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Python file handling",
+    "difficulty": "hard",
+    "question_en": "What does the following Python code print?\n\nwith open(\"m.txt\", \"w\") as f:\n    f.write(\"ABCDEF\")\nwith open(\"m.txt\", \"r+\") as f:\n    f.write(\"xy\")\nwith open(\"m.txt\") as f:\n    print(f.read())",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "xy",
+        "hi": null
+      },
+      {
+        "en": "ABCDEFxy",
+        "hi": null
+      },
+      {
+        "en": "xyCDEF",
+        "hi": null
+      },
+      {
+        "en": "xyABCDEF",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Mode 'r+' opens an existing file for reading and writing without truncating it, with the pointer at the start. Writing xy overwrites the first two characters, leaving xyCDEF. 'w+' would have erased the file, and 'a+' would have appended.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_prog",
+    "subtopic": "Python file handling",
+    "difficulty": "medium",
+    "question_en": "In Python, which function is used to write (serialise) an object such as a dictionary into a binary file opened in 'wb' mode?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "pickle.dump()",
+        "hi": null
+      },
+      {
+        "en": "pickle.load()",
+        "hi": null
+      },
+      {
+        "en": "json.loads()",
+        "hi": null
+      },
+      {
+        "en": "csv.writer()",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "pickle.dump(obj, file) serialises a Python object into a binary file and pickle.load(file) reads it back. csv.writer() writes text rows, and json.loads() parses a JSON string rather than writing a file.",
+    "explanation_hi": null,
+    "expected": false
+  }
+]

@@ -1,0 +1,3482 @@
+[
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Number System",
+  "difficulty": "easy",
+  "question_en": "What is the sum of the first 20 natural numbers?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "200",
+    "hi": null
+   },
+   {
+    "en": "220",
+    "hi": null
+   },
+   {
+    "en": "190",
+    "hi": null
+   },
+   {
+    "en": "210",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Sum = n(n + 1)/2 = 20 × 21 / 2 = 210.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Number System",
+  "difficulty": "medium",
+  "question_en": "What is the unit digit of 7^243?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "1",
+    "hi": null
+   },
+   {
+    "en": "3",
+    "hi": null
+   },
+   {
+    "en": "7",
+    "hi": null
+   },
+   {
+    "en": "9",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Unit digits of powers of 7 repeat in a cycle of 4: 7, 9, 3, 1. 243 = 4 × 60 + 3, so the unit digit is the 3rd in the cycle, 3.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Number System",
+  "difficulty": "easy",
+  "question_en": "Which of the following numbers is divisible by 11?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "3685",
+    "hi": null
+   },
+   {
+    "en": "4372",
+    "hi": null
+   },
+   {
+    "en": "5281",
+    "hi": null
+   },
+   {
+    "en": "6153",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Test: (sum of digits at odd places) − (sum at even places) should be 0 or a multiple of 11. For 3685: (3 + 8) − (6 + 5) = 0, so it is divisible (3685 = 11 × 335). The others give differences of 6 (4372), 10 (5281) and 7 (6153), so they are not divisible.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Number System",
+  "difficulty": "easy",
+  "question_en": "What is the greatest 4-digit number divisible by 12?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "9998",
+    "hi": null
+   },
+   {
+    "en": "9990",
+    "hi": null
+   },
+   {
+    "en": "9996",
+    "hi": null
+   },
+   {
+    "en": "9984",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "9999 ÷ 12 leaves remainder 3, so subtract 3: 9996 = 12 × 833.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Number System",
+  "difficulty": "medium",
+  "question_en": "What is the remainder when 2^50 is divided by 7?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "4",
+    "hi": null
+   },
+   {
+    "en": "1",
+    "hi": null
+   },
+   {
+    "en": "2",
+    "hi": null
+   },
+   {
+    "en": "3",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "2^3 = 8 leaves remainder 1 when divided by 7. 2^50 = (2^3)^16 × 2^2 = 1 × 4, so the remainder is 4.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Number System",
+  "difficulty": "easy",
+  "question_en": "How many prime numbers are there between 1 and 30?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "9",
+    "hi": null
+   },
+   {
+    "en": "11",
+    "hi": null
+   },
+   {
+    "en": "10",
+    "hi": null
+   },
+   {
+    "en": "12",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The primes are 2, 3, 5, 7, 11, 13, 17, 19, 23, 29 — ten in all.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Number System",
+  "difficulty": "medium",
+  "question_en": "How many numbers between 100 and 200 are divisible by 7?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "13",
+    "hi": null
+   },
+   {
+    "en": "15",
+    "hi": null
+   },
+   {
+    "en": "12",
+    "hi": null
+   },
+   {
+    "en": "14",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The first multiple is 105 = 7 × 15 and the last is 196 = 7 × 28. Count = 28 − 15 + 1 = 14.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Number System",
+  "difficulty": "hard",
+  "question_en": "What is the smallest positive number which leaves remainder 3 when divided by 5 and remainder 5 when divided by 7?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "28",
+    "hi": null
+   },
+   {
+    "en": "33",
+    "hi": null
+   },
+   {
+    "en": "38",
+    "hi": null
+   },
+   {
+    "en": "23",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Numbers leaving remainder 5 with 7 are 5, 12, 19, 26, 33, ... Checking remainder 3 with 5: 33 = 5 × 6 + 3. So the smallest is 33.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "LCM & HCF",
+  "difficulty": "easy",
+  "question_en": "What is the HCF of 36 and 84?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "12",
+    "hi": null
+   },
+   {
+    "en": "6",
+    "hi": null
+   },
+   {
+    "en": "18",
+    "hi": null
+   },
+   {
+    "en": "24",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "36 = 2^2 × 3^2 and 84 = 2^2 × 3 × 7. Common part = 2^2 × 3 = 12.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "LCM & HCF",
+  "difficulty": "easy",
+  "question_en": "What is the LCM of 12, 18 and 24?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "36",
+    "hi": null
+   },
+   {
+    "en": "72",
+    "hi": null
+   },
+   {
+    "en": "144",
+    "hi": null
+   },
+   {
+    "en": "48",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "12 = 2^2 × 3, 18 = 2 × 3^2, 24 = 2^3 × 3. LCM = 2^3 × 3^2 = 72.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "LCM & HCF",
+  "difficulty": "medium",
+  "question_en": "The product of two numbers is 1620 and their HCF is 9. What is their LCM?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "162",
+    "hi": null
+   },
+   {
+    "en": "90",
+    "hi": null
+   },
+   {
+    "en": "180",
+    "hi": null
+   },
+   {
+    "en": "270",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "HCF × LCM = product of the numbers. LCM = 1620 / 9 = 180.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "LCM & HCF",
+  "difficulty": "medium",
+  "question_en": "What is the smallest number which, when divided by 8, 12 and 15, leaves a remainder of 5 in each case?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "120",
+    "hi": null
+   },
+   {
+    "en": "245",
+    "hi": null
+   },
+   {
+    "en": "115",
+    "hi": null
+   },
+   {
+    "en": "125",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "LCM of 8, 12, 15 = 120. The required number = 120 + 5 = 125.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "LCM & HCF",
+  "difficulty": "medium",
+  "question_en": "Three bells ring at intervals of 12, 18 and 30 minutes. If they ring together at 8:00 a.m., when will they next ring together?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "10:00 a.m.",
+    "hi": null
+   },
+   {
+    "en": "11:30 a.m.",
+    "hi": null
+   },
+   {
+    "en": "12:00 noon",
+    "hi": null
+   },
+   {
+    "en": "11:00 a.m.",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "LCM of 12, 18, 30 = 180 minutes = 3 hours. So they ring together again at 11:00 a.m.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "LCM & HCF",
+  "difficulty": "hard",
+  "question_en": "What is the greatest number that divides 70 and 125, leaving remainders 5 and 8 respectively?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "11",
+    "hi": null
+   },
+   {
+    "en": "17",
+    "hi": null
+   },
+   {
+    "en": "13",
+    "hi": null
+   },
+   {
+    "en": "9",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The number divides 70 − 5 = 65 and 125 − 8 = 117. HCF(65, 117) = 13, and 13 is greater than both remainders.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "LCM & HCF",
+  "difficulty": "medium",
+  "question_en": "The HCF and LCM of two numbers are 12 and 144 respectively. If one number is 48, the other is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "72",
+    "hi": null
+   },
+   {
+    "en": "36",
+    "hi": null
+   },
+   {
+    "en": "24",
+    "hi": null
+   },
+   {
+    "en": "60",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Product of the numbers = HCF × LCM = 12 × 144 = 1728. Other number = 1728 / 48 = 36.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "LCM & HCF",
+  "difficulty": "medium",
+  "question_en": "What is the HCF of 2/3, 4/9 and 8/27?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "2/27",
+    "hi": null
+   },
+   {
+    "en": "8/3",
+    "hi": null
+   },
+   {
+    "en": "4/27",
+    "hi": null
+   },
+   {
+    "en": "2/3",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "HCF of fractions = HCF of numerators / LCM of denominators = HCF(2, 4, 8) / LCM(3, 9, 27) = 2/27. (8/3 is their LCM.)",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Simplification & BODMAS",
+  "difficulty": "easy",
+  "question_en": "Simplify: 15 + 3 × 12 ÷ 4 − 6",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "18",
+    "hi": null
+   },
+   {
+    "en": "27",
+    "hi": null
+   },
+   {
+    "en": "12",
+    "hi": null
+   },
+   {
+    "en": "21",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "By BODMAS: 3 × 12 = 36, 36 ÷ 4 = 9; then 15 + 9 − 6 = 18.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Simplification & BODMAS",
+  "difficulty": "easy",
+  "question_en": "Simplify: 0.25 × 0.4 + 0.5",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "0.75",
+    "hi": null
+   },
+   {
+    "en": "0.6",
+    "hi": null
+   },
+   {
+    "en": "0.9",
+    "hi": null
+   },
+   {
+    "en": "0.35",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "0.25 × 0.4 = 0.1. Adding 0.5 gives 0.6.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Simplification & BODMAS",
+  "difficulty": "medium",
+  "question_en": "What is the value of (25² − 15²) ÷ 40?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "15",
+    "hi": null
+   },
+   {
+    "en": "20",
+    "hi": null
+   },
+   {
+    "en": "10",
+    "hi": null
+   },
+   {
+    "en": "5",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "25² − 15² = (25 − 15)(25 + 15) = 10 × 40 = 400. Dividing by 40 gives 10.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Simplification & BODMAS",
+  "difficulty": "medium",
+  "question_en": "Simplify: √1521 ÷ 13 + 2^5",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "41",
+    "hi": null
+   },
+   {
+    "en": "67",
+    "hi": null
+   },
+   {
+    "en": "44",
+    "hi": null
+   },
+   {
+    "en": "35",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "√1521 = 39 (39² = 1521). 39 ÷ 13 = 3, and 2^5 = 32, so the value is 35.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Percentage",
+  "difficulty": "easy",
+  "question_en": "What is 35% of 240?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "84",
+    "hi": null
+   },
+   {
+    "en": "80",
+    "hi": null
+   },
+   {
+    "en": "72",
+    "hi": null
+   },
+   {
+    "en": "90",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "35% of 240 = 35/100 × 240 = 84.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Percentage",
+  "difficulty": "medium",
+  "question_en": "A number is first increased by 20% and then decreased by 20%. What is the net change?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "No change",
+    "hi": null
+   },
+   {
+    "en": "4% increase",
+    "hi": null
+   },
+   {
+    "en": "4% decrease",
+    "hi": null
+   },
+   {
+    "en": "2% decrease",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Let the number be 100. After +20% → 120. After −20% of 120 (= 24) → 96. Net = 4% decrease. (Rule: x − y − xy/100 = 20 − 20 − 4 = −4.)",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Percentage",
+  "difficulty": "medium",
+  "question_en": "The population of a town is 25,000. If it increases by 10% every year, what will it be after 2 years?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "30,000",
+    "hi": null
+   },
+   {
+    "en": "30,250",
+    "hi": null
+   },
+   {
+    "en": "27,500",
+    "hi": null
+   },
+   {
+    "en": "31,000",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Population = 25000 × (1.1)² = 25000 × 1.21 = 30,250. (30,000 is what simple growth would give; 27,500 is only one year's growth.)",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Percentage",
+  "difficulty": "medium",
+  "question_en": "In an examination, the pass mark is 40%. A student scores 120 marks and fails by 20 marks. What are the maximum marks?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "300",
+    "hi": null
+   },
+   {
+    "en": "400",
+    "hi": null
+   },
+   {
+    "en": "325",
+    "hi": null
+   },
+   {
+    "en": "350",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Pass marks = 120 + 20 = 140. 40% of M = 140, so M = 140 × 100 / 40 = 350.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Percentage",
+  "difficulty": "medium",
+  "question_en": "The price of sugar increases by 25%. By what percentage must a family cut its consumption so that its expenditure remains unchanged?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "25%",
+    "hi": null
+   },
+   {
+    "en": "16.67%",
+    "hi": null
+   },
+   {
+    "en": "30%",
+    "hi": null
+   },
+   {
+    "en": "20%",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Reduction % = r / (100 + r) × 100 = 25/125 × 100 = 20%. (Taking 25% is the common mistake.)",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Percentage",
+  "difficulty": "hard",
+  "question_en": "If x is 20% more than y, then y is what percent less than x?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "16 2/3%",
+    "hi": null
+   },
+   {
+    "en": "20%",
+    "hi": null
+   },
+   {
+    "en": "15%",
+    "hi": null
+   },
+   {
+    "en": "18 1/3%",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Let y = 100, so x = 120. y is less than x by 20, i.e. 20/120 × 100 = 16 2/3%.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Percentage",
+  "difficulty": "hard",
+  "question_en": "Ravi spends 80% of his income. If his income increases by 20% and his expenditure increases by 10%, what is the percentage increase in his savings?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "40%",
+    "hi": null
+   },
+   {
+    "en": "60%",
+    "hi": null
+   },
+   {
+    "en": "50%",
+    "hi": null
+   },
+   {
+    "en": "75%",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Take income = 100: expenditure 80, saving 20. New income 120, new expenditure 88, new saving 32. Increase = 12/20 × 100 = 60%.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Percentage",
+  "difficulty": "medium",
+  "question_en": "In an election between two candidates, the winner got 55% of the valid votes and won by 400 votes. How many valid votes were polled?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "3600",
+    "hi": null
+   },
+   {
+    "en": "4400",
+    "hi": null
+   },
+   {
+    "en": "4000",
+    "hi": null
+   },
+   {
+    "en": "5000",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The loser got 45%. The margin 55% − 45% = 10% of valid votes = 400, so total valid votes = 4000.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Ratio & Proportion",
+  "difficulty": "easy",
+  "question_en": "₹1,200 is divided between A and B in the ratio 3 : 5. What is B's share?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "₹450",
+    "hi": null
+   },
+   {
+    "en": "₹750",
+    "hi": null
+   },
+   {
+    "en": "₹600",
+    "hi": null
+   },
+   {
+    "en": "₹800",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Total parts = 8, so one part = 1200/8 = 150. B gets 5 × 150 = ₹750.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Ratio & Proportion",
+  "difficulty": "medium",
+  "question_en": "If A : B = 2 : 3 and B : C = 4 : 5, then A : B : C is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "2 : 3 : 5",
+    "hi": null
+   },
+   {
+    "en": "8 : 6 : 5",
+    "hi": null
+   },
+   {
+    "en": "10 : 15 : 12",
+    "hi": null
+   },
+   {
+    "en": "8 : 12 : 15",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Make B equal: multiply the first ratio by 4 and the second by 3. A : B = 8 : 12 and B : C = 12 : 15, so A : B : C = 8 : 12 : 15.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Ratio & Proportion",
+  "difficulty": "easy",
+  "question_en": "What is the mean proportional between 4 and 36?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "20",
+    "hi": null
+   },
+   {
+    "en": "18",
+    "hi": null
+   },
+   {
+    "en": "12",
+    "hi": null
+   },
+   {
+    "en": "9",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Mean proportional = √(4 × 36) = √144 = 12.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Ratio & Proportion",
+  "difficulty": "easy",
+  "question_en": "What is the fourth proportional to 3, 8 and 15?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "40",
+    "hi": null
+   },
+   {
+    "en": "45",
+    "hi": null
+   },
+   {
+    "en": "30",
+    "hi": null
+   },
+   {
+    "en": "24",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "3 : 8 :: 15 : x gives x = (8 × 15)/3 = 40.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Ratio & Proportion",
+  "difficulty": "medium",
+  "question_en": "Two numbers are in the ratio 3 : 5. If 10 is added to each, the ratio becomes 5 : 7. What is the smaller number?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "9",
+    "hi": null
+   },
+   {
+    "en": "12",
+    "hi": null
+   },
+   {
+    "en": "18",
+    "hi": null
+   },
+   {
+    "en": "15",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Let the numbers be 3x and 5x. (3x + 10)/(5x + 10) = 5/7 gives 21x + 70 = 25x + 50, so x = 5. Smaller number = 15 (the numbers are 15 and 25).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Ratio & Proportion",
+  "difficulty": "medium",
+  "question_en": "₹810 is divided among A, B and C in the ratio 1/2 : 1/3 : 1/6. What is A's share?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "₹270",
+    "hi": null
+   },
+   {
+    "en": "₹135",
+    "hi": null
+   },
+   {
+    "en": "₹405",
+    "hi": null
+   },
+   {
+    "en": "₹300",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Multiply by 6: 3 : 2 : 1 (sum 6). A's share = 3/6 × 810 = ₹405.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Ratio & Proportion",
+  "difficulty": "easy",
+  "question_en": "What is the third proportional to 4 and 12?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "36",
+    "hi": null
+   },
+   {
+    "en": "24",
+    "hi": null
+   },
+   {
+    "en": "48",
+    "hi": null
+   },
+   {
+    "en": "18",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "4 : 12 :: 12 : x gives x = 12²/4 = 36.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Ratio & Proportion",
+  "difficulty": "hard",
+  "question_en": "The incomes of A and B are in the ratio 5 : 4 and their expenditures are in the ratio 3 : 2. If each saves ₹1,600, what is A's income?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "₹3,200",
+    "hi": null
+   },
+   {
+    "en": "₹4,000",
+    "hi": null
+   },
+   {
+    "en": "₹5,000",
+    "hi": null
+   },
+   {
+    "en": "₹2,400",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Let incomes be 5x, 4x and expenses 3y, 2y. 5x − 3y = 1600 and 4x − 2y = 1600. From the second, y = 2x − 800. Substituting: 5x − 6x + 2400 = 1600, so x = 800. A's income = 5 × 800 = ₹4,000 (B's income is ₹3,200).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Average",
+  "difficulty": "easy",
+  "question_en": "What is the average of the first 10 even natural numbers?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "11",
+    "hi": null
+   },
+   {
+    "en": "10",
+    "hi": null
+   },
+   {
+    "en": "12",
+    "hi": null
+   },
+   {
+    "en": "10.5",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The numbers 2, 4, ..., 20 sum to 110. Average = 110/10 = 11.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Average",
+  "difficulty": "medium",
+  "question_en": "The average of 5 numbers is 27. If one number is excluded, the average of the remaining numbers becomes 25. What is the excluded number?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "30",
+    "hi": null
+   },
+   {
+    "en": "32",
+    "hi": null
+   },
+   {
+    "en": "27",
+    "hi": null
+   },
+   {
+    "en": "35",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Total of 5 = 135. Total of remaining 4 = 100. Excluded number = 135 − 100 = 35.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Average",
+  "difficulty": "medium",
+  "question_en": "The average age of 40 students is 15 years. When the teacher's age is included, the average rises to 16 years. What is the teacher's age?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "45 years",
+    "hi": null
+   },
+   {
+    "en": "56 years",
+    "hi": null
+   },
+   {
+    "en": "50 years",
+    "hi": null
+   },
+   {
+    "en": "41 years",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Total with teacher = 41 × 16 = 656. Total of students = 40 × 15 = 600. Teacher's age = 656 − 600 = 56 years.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Average",
+  "difficulty": "hard",
+  "question_en": "The average of 11 results is 50. The average of the first six is 49 and of the last six is 52. What is the sixth result?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "52",
+    "hi": null
+   },
+   {
+    "en": "60",
+    "hi": null
+   },
+   {
+    "en": "56",
+    "hi": null
+   },
+   {
+    "en": "54",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Sum of first six + sum of last six = 6 × 49 + 6 × 52 = 294 + 312 = 606. This counts the sixth result twice. Total of all 11 = 550, so sixth result = 606 − 550 = 56.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Average",
+  "difficulty": "easy",
+  "question_en": "The average of 7 consecutive integers is 20. What is the largest of them?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "23",
+    "hi": null
+   },
+   {
+    "en": "24",
+    "hi": null
+   },
+   {
+    "en": "22",
+    "hi": null
+   },
+   {
+    "en": "26",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "For consecutive integers the average is the middle (4th) number, 20. The largest is 3 more: 23.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Average",
+  "difficulty": "medium",
+  "question_en": "A batsman scores 61 runs in his 12th innings and thereby raises his average by 3. What is his average after the 12th innings?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "25",
+    "hi": null
+   },
+   {
+    "en": "31",
+    "hi": null
+   },
+   {
+    "en": "28",
+    "hi": null
+   },
+   {
+    "en": "30",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Let the average after 11 innings be x. 11x + 61 = 12(x + 3) gives x = 25. New average = 28.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Average",
+  "difficulty": "medium",
+  "question_en": "The average weight of 8 persons increases by 2.5 kg when a new person replaces one weighing 65 kg. What is the weight of the new person?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "80 kg",
+    "hi": null
+   },
+   {
+    "en": "85 kg",
+    "hi": null
+   },
+   {
+    "en": "82.5 kg",
+    "hi": null
+   },
+   {
+    "en": "90 kg",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Total weight increases by 8 × 2.5 = 20 kg. New person's weight = 65 + 20 = 85 kg.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Average",
+  "difficulty": "medium",
+  "question_en": "The average of the first three of four numbers is 7 and the average of the last three is 5. If the last number is 4, what is the first number?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "8",
+    "hi": null
+   },
+   {
+    "en": "9",
+    "hi": null
+   },
+   {
+    "en": "12",
+    "hi": null
+   },
+   {
+    "en": "10",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Sum of first three = 21; sum of last three = 15. Last number = 4, so the 2nd + 3rd = 11. First number = 21 − 11 = 10.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Profit, Loss & Discount",
+  "difficulty": "easy",
+  "question_en": "An article costing ₹500 is sold for ₹575. What is the profit percentage?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "12.5%",
+    "hi": null
+   },
+   {
+    "en": "13%",
+    "hi": null
+   },
+   {
+    "en": "15%",
+    "hi": null
+   },
+   {
+    "en": "17.5%",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Profit = 575 − 500 = 75. Profit % = 75/500 × 100 = 15%.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Profit, Loss & Discount",
+  "difficulty": "easy",
+  "question_en": "A trader sells an article at a loss of 20% for ₹640. What is its cost price?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "₹768",
+    "hi": null
+   },
+   {
+    "en": "₹720",
+    "hi": null
+   },
+   {
+    "en": "₹850",
+    "hi": null
+   },
+   {
+    "en": "₹800",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "SP = 80% of CP, so CP = 640 / 0.8 = ₹800.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Profit, Loss & Discount",
+  "difficulty": "easy",
+  "question_en": "The marked price of a shirt is ₹800. A discount of 15% is given. What is the selling price?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "₹680",
+    "hi": null
+   },
+   {
+    "en": "₹720",
+    "hi": null
+   },
+   {
+    "en": "₹660",
+    "hi": null
+   },
+   {
+    "en": "₹700",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Discount = 15% of 800 = 120. SP = 800 − 120 = ₹680.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Profit, Loss & Discount",
+  "difficulty": "medium",
+  "question_en": "What single discount is equivalent to successive discounts of 20% and 10%?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "30%",
+    "hi": null
+   },
+   {
+    "en": "28%",
+    "hi": null
+   },
+   {
+    "en": "27%",
+    "hi": null
+   },
+   {
+    "en": "25%",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Net multiplier = 0.8 × 0.9 = 0.72, so the net discount = 28%. (Adding to 30% is the common mistake.)",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Profit, Loss & Discount",
+  "difficulty": "medium",
+  "question_en": "A shopkeeper marks his goods 25% above the cost price and allows a discount of 10%. What is his profit percentage?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "15%",
+    "hi": null
+   },
+   {
+    "en": "12.5%",
+    "hi": null
+   },
+   {
+    "en": "10%",
+    "hi": null
+   },
+   {
+    "en": "13.5%",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Let CP = 100. Marked price = 125. SP = 125 × 0.9 = 112.5. Profit = 12.5%.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Profit, Loss & Discount",
+  "difficulty": "medium",
+  "question_en": "Two articles are sold at ₹1,200 each, one at a profit of 20% and the other at a loss of 20%. What is the overall result?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "No profit, no loss",
+    "hi": null
+   },
+   {
+    "en": "Profit of 4%",
+    "hi": null
+   },
+   {
+    "en": "Loss of 2%",
+    "hi": null
+   },
+   {
+    "en": "Loss of 4%",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "CP of first = 1200/1.2 = 1000; CP of second = 1200/0.8 = 1500. Total CP = 2500, total SP = 2400. Loss = 100, i.e. 4% of 2500 (formula: loss % = (20/10)² = 4%).",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Profit, Loss & Discount",
+  "difficulty": "medium",
+  "question_en": "The cost price of 12 articles is equal to the selling price of 10 articles. What is the profit percentage?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "16.67%",
+    "hi": null
+   },
+   {
+    "en": "25%",
+    "hi": null
+   },
+   {
+    "en": "20%",
+    "hi": null
+   },
+   {
+    "en": "15%",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "12 CP = 10 SP, so SP/CP = 12/10 = 1.2. Profit = 20%.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Profit, Loss & Discount",
+  "difficulty": "hard",
+  "question_en": "A man sells an article at a loss of 10%. Had he sold it for ₹150 more, he would have gained 5%. What is the cost price?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "₹1,000",
+    "hi": null
+   },
+   {
+    "en": "₹1,200",
+    "hi": null
+   },
+   {
+    "en": "₹1,500",
+    "hi": null
+   },
+   {
+    "en": "₹900",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The difference between 105% and 90% of CP is 15% of CP = ₹150. So CP = 150/0.15 = ₹1,000.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Simple & Compound Interest",
+  "difficulty": "easy",
+  "question_en": "What is the simple interest on ₹5,000 at 8% per annum for 3 years?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "₹1,000",
+    "hi": null
+   },
+   {
+    "en": "₹1,240",
+    "hi": null
+   },
+   {
+    "en": "₹1,200",
+    "hi": null
+   },
+   {
+    "en": "₹1,500",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "SI = P × R × T / 100 = 5000 × 8 × 3 / 100 = ₹1,200.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Simple & Compound Interest",
+  "difficulty": "medium",
+  "question_en": "A sum of money amounts to ₹6,600 in 5 years at 10% per annum simple interest. What is the sum?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "₹4,400",
+    "hi": null
+   },
+   {
+    "en": "₹5,000",
+    "hi": null
+   },
+   {
+    "en": "₹5,500",
+    "hi": null
+   },
+   {
+    "en": "₹4,000",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Amount = P(1 + RT/100) = P(1 + 0.5) = 1.5P. P = 6600 / 1.5 = ₹4,400.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Simple & Compound Interest",
+  "difficulty": "easy",
+  "question_en": "What is the compound interest on ₹10,000 at 10% per annum for 2 years?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "₹2,000",
+    "hi": null
+   },
+   {
+    "en": "₹2,200",
+    "hi": null
+   },
+   {
+    "en": "₹1,100",
+    "hi": null
+   },
+   {
+    "en": "₹2,100",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Amount = 10000 × 1.1² = 12,100. CI = 12,100 − 10,000 = ₹2,100.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Simple & Compound Interest",
+  "difficulty": "medium",
+  "question_en": "What is the difference between the compound interest and simple interest on ₹5,000 at 10% per annum for 2 years?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "₹25",
+    "hi": null
+   },
+   {
+    "en": "₹50",
+    "hi": null
+   },
+   {
+    "en": "₹100",
+    "hi": null
+   },
+   {
+    "en": "₹500",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "For 2 years the difference = P(R/100)² = 5000 × (0.1)² = ₹50. (CI = 1050, SI = 1000.)",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Simple & Compound Interest",
+  "difficulty": "medium",
+  "question_en": "At what rate of simple interest per annum will a sum of money double itself in 8 years?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "12.5%",
+    "hi": null
+   },
+   {
+    "en": "10%",
+    "hi": null
+   },
+   {
+    "en": "8%",
+    "hi": null
+   },
+   {
+    "en": "15%",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Interest = P in 8 years, so P = P × R × 8 / 100, giving R = 100/8 = 12.5%.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Simple & Compound Interest",
+  "difficulty": "medium",
+  "question_en": "A sum of money invested at 8% compound interest per annum amounts to ₹5,832 in 2 years. What is the sum?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "₹5,200",
+    "hi": null
+   },
+   {
+    "en": "₹4,800",
+    "hi": null
+   },
+   {
+    "en": "₹5,000",
+    "hi": null
+   },
+   {
+    "en": "₹5,400",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "P × 1.08² = 5832 and 1.08² = 1.1664. P = 5832 / 1.1664 = ₹5,000.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Simple & Compound Interest",
+  "difficulty": "hard",
+  "question_en": "What is the compound interest on ₹12,000 for 1.5 years at 10% per annum, compounded half-yearly?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "₹1,800",
+    "hi": null
+   },
+   {
+    "en": "₹1,900",
+    "hi": null
+   },
+   {
+    "en": "₹1,860",
+    "hi": null
+   },
+   {
+    "en": "₹1,891.50",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Rate per half-year = 5%, number of half-years = 3. Amount = 12000 × 1.05³ = 12000 × 1.157625 = 13,891.50. CI = ₹1,891.50. (₹1,800 is the simple interest.)",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Simple & Compound Interest",
+  "difficulty": "hard",
+  "question_en": "The simple interest on a sum of money for 2 years at 5% per annum is ₹500. What is the compound interest on the same sum at the same rate for 2 years?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "₹525",
+    "hi": null
+   },
+   {
+    "en": "₹512.50",
+    "hi": null
+   },
+   {
+    "en": "₹500",
+    "hi": null
+   },
+   {
+    "en": "₹550",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "P = 500 / (0.05 × 2) = ₹5,000. CI = 5000 × (1.05² − 1) = 5000 × 0.1025 = ₹512.50.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Time & Work",
+  "difficulty": "easy",
+  "question_en": "A can complete a piece of work in 10 days and B in 15 days. In how many days can they complete it working together?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "5 days",
+    "hi": null
+   },
+   {
+    "en": "8 days",
+    "hi": null
+   },
+   {
+    "en": "12.5 days",
+    "hi": null
+   },
+   {
+    "en": "6 days",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Combined one-day work = 1/10 + 1/15 = 5/30 = 1/6. So they finish in 6 days.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Time & Work",
+  "difficulty": "medium",
+  "question_en": "A and B together can do a job in 12 days. A alone can do it in 20 days. In how many days can B alone do it?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "32 days",
+    "hi": null
+   },
+   {
+    "en": "24 days",
+    "hi": null
+   },
+   {
+    "en": "30 days",
+    "hi": null
+   },
+   {
+    "en": "36 days",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "B's one-day work = 1/12 − 1/20 = (5 − 3)/60 = 1/30. So B alone takes 30 days.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Time & Work",
+  "difficulty": "easy",
+  "question_en": "12 men can complete a work in 18 days. In how many days can 9 men complete the same work?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "24 days",
+    "hi": null
+   },
+   {
+    "en": "27 days",
+    "hi": null
+   },
+   {
+    "en": "20 days",
+    "hi": null
+   },
+   {
+    "en": "22 days",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Men × days is constant: 12 × 18 = 216. Days for 9 men = 216/9 = 24.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Time & Work",
+  "difficulty": "medium",
+  "question_en": "A can do a work in 15 days. He works for 5 days and then B finishes the remaining work in 10 days. In how many days can B alone do the whole work?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "12 days",
+    "hi": null
+   },
+   {
+    "en": "15 days",
+    "hi": null
+   },
+   {
+    "en": "20 days",
+    "hi": null
+   },
+   {
+    "en": "18 days",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "A's 5 days = 5/15 = 1/3 of the work. Remaining 2/3 is done by B in 10 days, so the whole work takes B 10 × 3/2 = 15 days.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Time & Work",
+  "difficulty": "medium",
+  "question_en": "A and B can do a work in 8 days, B and C in 12 days, and A and C in 24 days. In how many days can all three together do the work?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "6 days",
+    "hi": null
+   },
+   {
+    "en": "8 days",
+    "hi": null
+   },
+   {
+    "en": "10 days",
+    "hi": null
+   },
+   {
+    "en": "12 days",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Adding: 2(A + B + C) = 1/8 + 1/12 + 1/24 = (3 + 2 + 1)/24 = 1/4. So A + B + C = 1/8 per day, i.e. 8 days.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Time & Work",
+  "difficulty": "medium",
+  "question_en": "A is twice as efficient as B. Together they complete a work in 14 days. In how many days can B alone complete it?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "28 days",
+    "hi": null
+   },
+   {
+    "en": "21 days",
+    "hi": null
+   },
+   {
+    "en": "36 days",
+    "hi": null
+   },
+   {
+    "en": "42 days",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Let B's rate be b, so A's is 2b. 3b = 1/14, so b = 1/42. B alone takes 42 days.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Time & Work",
+  "difficulty": "medium",
+  "question_en": "A and B can complete a work in 12 days and 18 days respectively. They work together and are paid ₹3,000 in all. What is A's share?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "₹1,800",
+    "hi": null
+   },
+   {
+    "en": "₹1,500",
+    "hi": null
+   },
+   {
+    "en": "₹1,200",
+    "hi": null
+   },
+   {
+    "en": "₹2,000",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Shares are in the ratio of work done = 1/12 : 1/18 = 3 : 2. A gets 3/5 × 3000 = ₹1,800.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Time & Work",
+  "difficulty": "hard",
+  "question_en": "A can do a work in 20 days and B in 30 days. They start together, but A leaves 5 days before the work is completed. In how many days is the whole work completed?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "12 days",
+    "hi": null
+   },
+   {
+    "en": "18 days",
+    "hi": null
+   },
+   {
+    "en": "15 days",
+    "hi": null
+   },
+   {
+    "en": "14 days",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Let the total time be x days. B works for x days and A for (x − 5) days: (x − 5)/20 + x/30 = 1. Multiply by 60: 3(x − 5) + 2x = 60, so 5x = 75 and x = 15.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Pipes & Cisterns",
+  "difficulty": "medium",
+  "question_en": "Pipe A can fill a tank in 12 hours and pipe B in 18 hours. If both are opened together, how long will they take to fill the tank?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "6 hours",
+    "hi": null
+   },
+   {
+    "en": "7.2 hours",
+    "hi": null
+   },
+   {
+    "en": "7.5 hours",
+    "hi": null
+   },
+   {
+    "en": "8 hours",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Combined rate = 1/12 + 1/18 = 5/36 per hour. Time = 36/5 = 7.2 hours.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Pipes & Cisterns",
+  "difficulty": "medium",
+  "question_en": "A pipe can fill a tank in 6 hours. A leak at the bottom can empty the full tank in 8 hours. If both are open, how long will the tank take to fill?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "24 hours",
+    "hi": null
+   },
+   {
+    "en": "14 hours",
+    "hi": null
+   },
+   {
+    "en": "12 hours",
+    "hi": null
+   },
+   {
+    "en": "18 hours",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Net rate = 1/6 − 1/8 = (4 − 3)/24 = 1/24 per hour. So it takes 24 hours.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Pipes & Cisterns",
+  "difficulty": "medium",
+  "question_en": "Pipes A and B can fill a tank in 10 and 15 minutes respectively, while pipe C can empty it in 30 minutes. If all three are opened together, in how much time will the empty tank be full?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "8 minutes",
+    "hi": null
+   },
+   {
+    "en": "6 minutes",
+    "hi": null
+   },
+   {
+    "en": "7.5 minutes",
+    "hi": null
+   },
+   {
+    "en": "9 minutes",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Net rate = 1/10 + 1/15 − 1/30 = (3 + 2 − 1)/30 = 4/30 = 2/15. Time = 15/2 = 7.5 minutes.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Pipes & Cisterns",
+  "difficulty": "medium",
+  "question_en": "A tank can be filled by a pipe in 4 hours and emptied by another pipe in 6 hours. If both are opened together, how long will it take to fill half of the empty tank?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "12 hours",
+    "hi": null
+   },
+   {
+    "en": "8 hours",
+    "hi": null
+   },
+   {
+    "en": "3 hours",
+    "hi": null
+   },
+   {
+    "en": "6 hours",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Net rate = 1/4 − 1/6 = 1/12 per hour, so the full tank takes 12 hours. Half the tank takes 6 hours.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Pipes & Cisterns",
+  "difficulty": "medium",
+  "question_en": "A pipe can fill a tank in 15 hours. Because of a leak, it takes 20 hours. How long will the leak take to empty the full tank?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "45 hours",
+    "hi": null
+   },
+   {
+    "en": "60 hours",
+    "hi": null
+   },
+   {
+    "en": "75 hours",
+    "hi": null
+   },
+   {
+    "en": "50 hours",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Leak rate = 1/15 − 1/20 = (4 − 3)/60 = 1/60. The leak empties the full tank in 60 hours.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Pipes & Cisterns",
+  "difficulty": "hard",
+  "question_en": "Pipes A and B can fill a tank in 12 and 16 minutes respectively. Both are opened together, but A is closed after 4 minutes. How much more time will B need to fill the rest?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "6 min",
+    "hi": null
+   },
+   {
+    "en": "5 min 20 sec",
+    "hi": null
+   },
+   {
+    "en": "6 min 40 sec",
+    "hi": null
+   },
+   {
+    "en": "7 min",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "In 4 minutes both fill 4 × (1/12 + 1/16) = 4 × 7/48 = 7/12 of the tank. Remaining 5/12 is filled by B at 1/16 per minute: (5/12) × 16 = 20/3 min = 6 min 40 sec.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Pipes & Cisterns",
+  "difficulty": "easy",
+  "question_en": "A tap can fill a tank in 8 hours. What part of the tank is filled in 3 hours?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "3/8",
+    "hi": null
+   },
+   {
+    "en": "5/8",
+    "hi": null
+   },
+   {
+    "en": "1/3",
+    "hi": null
+   },
+   {
+    "en": "3/5",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "In 1 hour it fills 1/8 of the tank, so in 3 hours it fills 3/8.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Pipes & Cisterns",
+  "difficulty": "hard",
+  "question_en": "Three pipes A, B and C can together fill a tank in 6 hours. After working together for 2 hours, C is closed and A and B take 7 more hours to fill the rest. In how many hours can C alone fill the tank?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "12 hours",
+    "hi": null
+   },
+   {
+    "en": "16 hours",
+    "hi": null
+   },
+   {
+    "en": "10 hours",
+    "hi": null
+   },
+   {
+    "en": "14 hours",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "In 2 hours, 2/6 = 1/3 is filled; 2/3 remains. A + B fill it in 7 hours, so A + B = (2/3)/7 = 2/21 per hour. C = 1/6 − 2/21 = (7 − 4)/42 = 1/14. So C alone takes 14 hours.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Time, Speed & Distance",
+  "difficulty": "easy",
+  "question_en": "Convert 54 km/h into metres per second.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "12 m/s",
+    "hi": null
+   },
+   {
+    "en": "18 m/s",
+    "hi": null
+   },
+   {
+    "en": "20 m/s",
+    "hi": null
+   },
+   {
+    "en": "15 m/s",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "To convert km/h to m/s multiply by 5/18: 54 × 5/18 = 15 m/s.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Time, Speed & Distance",
+  "difficulty": "easy",
+  "question_en": "A car covers 360 km in 4.5 hours. What is its speed?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "80 km/h",
+    "hi": null
+   },
+   {
+    "en": "75 km/h",
+    "hi": null
+   },
+   {
+    "en": "90 km/h",
+    "hi": null
+   },
+   {
+    "en": "72 km/h",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Speed = distance / time = 360 / 4.5 = 80 km/h.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Time, Speed & Distance",
+  "difficulty": "medium",
+  "question_en": "A man goes from his house to his office at 40 km/h and returns at 60 km/h. What is his average speed for the whole journey?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "50 km/h",
+    "hi": null
+   },
+   {
+    "en": "52 km/h",
+    "hi": null
+   },
+   {
+    "en": "48 km/h",
+    "hi": null
+   },
+   {
+    "en": "45 km/h",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "For equal distances the average speed = 2xy/(x + y) = 2 × 40 × 60 / 100 = 48 km/h. (The arithmetic mean 50 is the usual wrong answer.)",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Time, Speed & Distance",
+  "difficulty": "medium",
+  "question_en": "Walking at 5/6 of his usual speed, a man reaches his office 12 minutes late. What is his usual time to reach the office?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "50 minutes",
+    "hi": null
+   },
+   {
+    "en": "60 minutes",
+    "hi": null
+   },
+   {
+    "en": "72 minutes",
+    "hi": null
+   },
+   {
+    "en": "48 minutes",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "At 5/6 speed the time becomes 6/5 of the usual. So 6/5 T − T = T/5 = 12 min, giving T = 60 minutes.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Time, Speed & Distance",
+  "difficulty": "easy",
+  "question_en": "Two persons start from the same point and walk in opposite directions at 5 km/h and 7 km/h. How far apart will they be after 3 hours?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "36 km",
+    "hi": null
+   },
+   {
+    "en": "6 km",
+    "hi": null
+   },
+   {
+    "en": "30 km",
+    "hi": null
+   },
+   {
+    "en": "42 km",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "In opposite directions the speeds add: relative speed = 12 km/h. Distance = 12 × 3 = 36 km.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Time, Speed & Distance",
+  "difficulty": "medium",
+  "question_en": "A cyclist covers 24 km at 12 km/h and then 36 km at 18 km/h. What is his average speed for the whole journey?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "14 km/h",
+    "hi": null
+   },
+   {
+    "en": "15 km/h",
+    "hi": null
+   },
+   {
+    "en": "16 km/h",
+    "hi": null
+   },
+   {
+    "en": "15.5 km/h",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Time for the first part = 24/12 = 2 h; second part = 36/18 = 2 h. Total distance = 60 km and total time = 4 h, so average speed = 15 km/h.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Time, Speed & Distance",
+  "difficulty": "hard",
+  "question_en": "A policeman spots a thief 200 m away. The thief starts running at 10 km/h and the policeman chases him at 11 km/h. How far does the thief run before he is caught?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "1800 m",
+    "hi": null
+   },
+   {
+    "en": "2200 m",
+    "hi": null
+   },
+   {
+    "en": "2000 m",
+    "hi": null
+   },
+   {
+    "en": "2400 m",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Relative speed = 1 km/h = 1000 m per hour. To close 200 m takes 0.2 hour. The thief runs 10 × 0.2 = 2 km = 2000 m (the policeman runs 2200 m).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Time, Speed & Distance",
+  "difficulty": "hard",
+  "question_en": "Ramesh walks to school at 4 km/h and reaches 5 minutes late. At 5 km/h he reaches 10 minutes early. What is the distance to school?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "4 km",
+    "hi": null
+   },
+   {
+    "en": "6 km",
+    "hi": null
+   },
+   {
+    "en": "3 km",
+    "hi": null
+   },
+   {
+    "en": "5 km",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The difference in time = 15 min = 1/4 h. d/4 − d/5 = 1/4, so d/20 = 1/4 and d = 5 km.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Trains",
+  "difficulty": "easy",
+  "question_en": "A 120 m long train crosses a pole in 6 seconds. What is the speed of the train?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "60 km/h",
+    "hi": null
+   },
+   {
+    "en": "72 km/h",
+    "hi": null
+   },
+   {
+    "en": "54 km/h",
+    "hi": null
+   },
+   {
+    "en": "80 km/h",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Speed = 120/6 = 20 m/s. In km/h = 20 × 18/5 = 72 km/h.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Trains",
+  "difficulty": "medium",
+  "question_en": "A 180 m long train crosses a 270 m long platform in 30 seconds. What is the speed of the train?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "48 km/h",
+    "hi": null
+   },
+   {
+    "en": "60 km/h",
+    "hi": null
+   },
+   {
+    "en": "36 km/h",
+    "hi": null
+   },
+   {
+    "en": "54 km/h",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Distance covered = 180 + 270 = 450 m in 30 s, so speed = 15 m/s = 15 × 18/5 = 54 km/h.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Trains",
+  "difficulty": "medium",
+  "question_en": "Two trains of length 140 m and 160 m run on parallel tracks in opposite directions at 60 km/h and 40 km/h. In how many seconds will they cross each other?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "12 seconds",
+    "hi": null
+   },
+   {
+    "en": "9 seconds",
+    "hi": null
+   },
+   {
+    "en": "10.8 seconds",
+    "hi": null
+   },
+   {
+    "en": "14.4 seconds",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Relative speed = 100 km/h = 100 × 5/18 = 250/9 m/s. Distance = 300 m. Time = 300 × 9/250 = 10.8 s.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Trains",
+  "difficulty": "medium",
+  "question_en": "Two trains of length 100 m and 150 m run in the same direction at 72 km/h and 54 km/h respectively. How long does the faster train take to completely overtake the slower one?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "50 seconds",
+    "hi": null
+   },
+   {
+    "en": "40 seconds",
+    "hi": null
+   },
+   {
+    "en": "25 seconds",
+    "hi": null
+   },
+   {
+    "en": "60 seconds",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Relative speed = 18 km/h = 5 m/s. Distance to be covered = 100 + 150 = 250 m. Time = 250/5 = 50 s.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Trains",
+  "difficulty": "hard",
+  "question_en": "A 110 m long train passes a man walking in the opposite direction at 6 km/h in 6 seconds. What is the speed of the train?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "66 km/h",
+    "hi": null
+   },
+   {
+    "en": "54 km/h",
+    "hi": null
+   },
+   {
+    "en": "72 km/h",
+    "hi": null
+   },
+   {
+    "en": "60 km/h",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Relative speed = 110/6 m/s = 110/6 × 18/5 = 66 km/h. Since they move in opposite directions, train speed = 66 − 6 = 60 km/h.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Trains",
+  "difficulty": "medium",
+  "question_en": "A train running at 54 km/h takes 20 seconds to cross a platform and 12 seconds to pass a man standing on the platform. What is the length of the platform?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "150 m",
+    "hi": null
+   },
+   {
+    "en": "180 m",
+    "hi": null
+   },
+   {
+    "en": "120 m",
+    "hi": null
+   },
+   {
+    "en": "100 m",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Speed = 54 × 5/18 = 15 m/s. Train length = 15 × 12 = 180 m. Platform + train = 15 × 20 = 300 m, so platform = 120 m.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Trains",
+  "difficulty": "medium",
+  "question_en": "Two trains of equal length 120 m take 10 s and 15 s respectively to cross a pole. If they run in opposite directions, in how much time will they cross each other?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "10 seconds",
+    "hi": null
+   },
+   {
+    "en": "12 seconds",
+    "hi": null
+   },
+   {
+    "en": "15 seconds",
+    "hi": null
+   },
+   {
+    "en": "12.5 seconds",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Speeds are 120/10 = 12 m/s and 120/15 = 8 m/s. Opposite directions: relative speed = 20 m/s. Distance = 240 m, so time = 12 s.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Trains",
+  "difficulty": "hard",
+  "question_en": "A train travelling at 48 km/h crosses another train, half its length and travelling in the opposite direction at 42 km/h, in 12 seconds. It also passes a platform in 45 seconds. What is the length of the platform?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "400 m",
+    "hi": null
+   },
+   {
+    "en": "350 m",
+    "hi": null
+   },
+   {
+    "en": "450 m",
+    "hi": null
+   },
+   {
+    "en": "300 m",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Relative speed = 90 km/h = 25 m/s. Distance in 12 s = 300 m = L + L/2, so L = 200 m. Train speed = 48 × 5/18 = 40/3 m/s; in 45 s it covers 600 m = L + platform, so platform = 600 − 200 = 400 m.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Boats & Streams",
+  "difficulty": "easy",
+  "question_en": "The speed of a boat in still water is 9 km/h and the speed of the stream is 3 km/h. What is the downstream speed?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "6 km/h",
+    "hi": null
+   },
+   {
+    "en": "12 km/h",
+    "hi": null
+   },
+   {
+    "en": "9 km/h",
+    "hi": null
+   },
+   {
+    "en": "15 km/h",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Downstream speed = boat speed + stream speed = 9 + 3 = 12 km/h.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Boats & Streams",
+  "difficulty": "medium",
+  "question_en": "A boat covers 18 km downstream in 2 hours and 12 km upstream in 2 hours. What is the speed of the stream?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "1.5 km/h",
+    "hi": null
+   },
+   {
+    "en": "3 km/h",
+    "hi": null
+   },
+   {
+    "en": "1 km/h",
+    "hi": null
+   },
+   {
+    "en": "2 km/h",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Downstream = 9 km/h, upstream = 6 km/h. Stream = (9 − 6)/2 = 1.5 km/h (still-water speed = 7.5 km/h).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Boats & Streams",
+  "difficulty": "medium",
+  "question_en": "A boat's speed in still water is 15 km/h and the stream flows at 5 km/h. How much time does it take to go 60 km downstream and come back?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "8 hours",
+    "hi": null
+   },
+   {
+    "en": "10 hours",
+    "hi": null
+   },
+   {
+    "en": "7.5 hours",
+    "hi": null
+   },
+   {
+    "en": "9 hours",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Downstream speed = 20 km/h, time = 3 h. Upstream speed = 10 km/h, time = 6 h. Total = 9 hours.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Boats & Streams",
+  "difficulty": "easy",
+  "question_en": "A boat's downstream speed is 15 km/h and its upstream speed is 9 km/h. What is the speed of the stream?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "6 km/h",
+    "hi": null
+   },
+   {
+    "en": "12 km/h",
+    "hi": null
+   },
+   {
+    "en": "3 km/h",
+    "hi": null
+   },
+   {
+    "en": "2 km/h",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Stream = (15 − 9)/2 = 3 km/h. (Still-water speed = (15 + 9)/2 = 12 km/h.)",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Boats & Streams",
+  "difficulty": "easy",
+  "question_en": "A boat takes 4 hours to travel 48 km downstream and 8 hours to travel the same distance upstream. What is the speed of the boat in still water?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "12 km/h",
+    "hi": null
+   },
+   {
+    "en": "6 km/h",
+    "hi": null
+   },
+   {
+    "en": "9 km/h",
+    "hi": null
+   },
+   {
+    "en": "10 km/h",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Downstream = 48/4 = 12 km/h, upstream = 48/8 = 6 km/h. Still water = (12 + 6)/2 = 9 km/h.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Boats & Streams",
+  "difficulty": "medium",
+  "question_en": "A man can row at 6 km/h in still water. In a river flowing at 2 km/h it takes him 3 hours to row to a place and come back. How far is the place?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "9 km",
+    "hi": null
+   },
+   {
+    "en": "7.5 km",
+    "hi": null
+   },
+   {
+    "en": "6 km",
+    "hi": null
+   },
+   {
+    "en": "8 km",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Downstream speed = 8 km/h, upstream = 4 km/h. d/8 + d/4 = 3 gives 3d/8 = 3, so d = 8 km.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Boats & Streams",
+  "difficulty": "hard",
+  "question_en": "A boat takes 1 hour to go downstream a certain distance but 1.5 hours to come back upstream. If the speed of the boat in still water is 5 km/h, what is the speed of the stream?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "2 km/h",
+    "hi": null
+   },
+   {
+    "en": "1 km/h",
+    "hi": null
+   },
+   {
+    "en": "1.5 km/h",
+    "hi": null
+   },
+   {
+    "en": "0.5 km/h",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Let the distance be d. Downstream speed = d, upstream = d/1.5 = 2d/3. Still water = (d + 2d/3)/2 = 5d/6 = 5, so d = 6. Downstream 6 km/h, upstream 4 km/h, stream = (6 − 4)/2 = 1 km/h.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Boats & Streams",
+  "difficulty": "hard",
+  "question_en": "A boat goes 30 km upstream and 44 km downstream in 10 hours. It goes 40 km upstream and 55 km downstream in 13 hours. What is the speed of the boat in still water?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "8 km/h",
+    "hi": null
+   },
+   {
+    "en": "6 km/h",
+    "hi": null
+   },
+   {
+    "en": "9 km/h",
+    "hi": null
+   },
+   {
+    "en": "10 km/h",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Let upstream speed u and downstream speed d. 30/u + 44/d = 10 and 40/u + 55/d = 13. Multiply the first by 4 and the second by 3: 120/u + 176/d = 40 and 120/u + 165/d = 39. Subtracting: 11/d = 1, so d = 11. Then 30/u = 10 − 4 = 6, so u = 5. Boat speed = (11 + 5)/2 = 8 km/h (stream = 3 km/h).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Simplification & BODMAS",
+  "difficulty": "medium",
+  "question_en": "What is the value of (0.8 × 0.8 + 0.2 × 0.2 + 2 × 0.8 × 0.2)?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "0.8",
+    "hi": null
+   },
+   {
+    "en": "1",
+    "hi": null
+   },
+   {
+    "en": "1.2",
+    "hi": null
+   },
+   {
+    "en": "0.64",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The expression is a² + b² + 2ab with a = 0.8, b = 0.2, which equals (a + b)² = (1.0)² = 1. Directly: 0.64 + 0.04 + 0.32 = 1.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Simplification & BODMAS",
+  "difficulty": "easy",
+  "question_en": "Simplify: 7/8 of 96 − 5/6 of 72",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "28",
+    "hi": null
+   },
+   {
+    "en": "30",
+    "hi": null
+   },
+   {
+    "en": "24",
+    "hi": null
+   },
+   {
+    "en": "18",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "7/8 of 96 = 84 and 5/6 of 72 = 60. The difference is 84 − 60 = 24.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Simplification & BODMAS",
+  "difficulty": "hard",
+  "question_en": "Simplify: 2/3 ÷ 4/9 × 3/4 − 1/2",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "9/8",
+    "hi": null
+   },
+   {
+    "en": "3/8",
+    "hi": null
+   },
+   {
+    "en": "7/8",
+    "hi": null
+   },
+   {
+    "en": "5/8",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "BODMAS: ÷ and × from left to right. 2/3 ÷ 4/9 = 2/3 × 9/4 = 3/2. Then 3/2 × 3/4 = 9/8. Finally 9/8 − 1/2 = 9/8 − 4/8 = 5/8.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Simplification & BODMAS",
+  "difficulty": "medium",
+  "question_en": "Find the value of 48.5% of 1200 + 12.5% of 640.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "662",
+    "hi": null
+   },
+   {
+    "en": "582",
+    "hi": null
+   },
+   {
+    "en": "680",
+    "hi": null
+   },
+   {
+    "en": "650",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "48.5% of 1200 = 582 and 12.5% of 640 = 80. Sum = 662.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Mixtures & Alligation",
+  "difficulty": "medium",
+  "question_en": "In what ratio must rice at ₹40 per kg be mixed with rice at ₹55 per kg so that the mixture is worth ₹46 per kg?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "2 : 3",
+    "hi": null
+   },
+   {
+    "en": "1 : 1",
+    "hi": null
+   },
+   {
+    "en": "4 : 5",
+    "hi": null
+   },
+   {
+    "en": "3 : 2",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "By alligation, the ratio of cheaper : dearer = (55 − 46) : (46 − 40) = 9 : 6 = 3 : 2.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Mixtures & Alligation",
+  "difficulty": "easy",
+  "question_en": "A 40-litre mixture contains milk and water in the ratio 3 : 1. How much water must be added to make the ratio 3 : 2?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "10 litres",
+    "hi": null
+   },
+   {
+    "en": "20 litres",
+    "hi": null
+   },
+   {
+    "en": "5 litres",
+    "hi": null
+   },
+   {
+    "en": "15 litres",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Milk = 30 L, water = 10 L. For ratio 3 : 2 the water must be 30 × 2/3 = 20 L. Water to add = 20 − 10 = 10 L.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Mixtures & Alligation",
+  "difficulty": "hard",
+  "question_en": "A vessel contains 60 litres of pure milk. 12 litres are drawn out and replaced by water. The process is repeated once more. How much milk is now in the vessel?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "36 litres",
+    "hi": null
+   },
+   {
+    "en": "40 litres",
+    "hi": null
+   },
+   {
+    "en": "38.4 litres",
+    "hi": null
+   },
+   {
+    "en": "43.2 litres",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Milk left = 60 × (1 − 12/60)² = 60 × (4/5)² = 60 × 16/25 = 38.4 litres. (48 L after the first step; 48 × 4/5 = 38.4 after the second.)",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Mixtures & Alligation",
+  "difficulty": "hard",
+  "question_en": "Two vessels contain milk and water in the ratios 2 : 3 and 3 : 4. If equal quantities of the two mixtures are poured into a third vessel, what is the ratio of milk to water in it?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "5 : 7",
+    "hi": null
+   },
+   {
+    "en": "29 : 41",
+    "hi": null
+   },
+   {
+    "en": "1 : 1",
+    "hi": null
+   },
+   {
+    "en": "31 : 39",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Take 35 units from each vessel. Vessel 1: milk 14, water 21. Vessel 2: milk 15, water 20. Total milk = 29, water = 41. Ratio = 29 : 41.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Mixtures & Alligation",
+  "difficulty": "medium",
+  "question_en": "A milkman mixes water with milk and sells the mixture at the cost price of pure milk. If his gain is 20%, what is the ratio of water to milk in the mixture?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "1 : 4",
+    "hi": null
+   },
+   {
+    "en": "1 : 5",
+    "hi": null
+   },
+   {
+    "en": "1 : 6",
+    "hi": null
+   },
+   {
+    "en": "1 : 3",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "For every 5 litres of milk bought (cost 5), he sells 6 litres of mixture (revenue 6), a gain of 1/5 = 20%. So 1 litre of water is added to 5 litres of milk: water : milk = 1 : 5.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Mixtures & Alligation",
+  "difficulty": "easy",
+  "question_en": "20 kg of sugar costing ₹30 per kg is mixed with 30 kg of sugar costing ₹40 per kg. What is the average cost per kg of the mixture?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "₹36",
+    "hi": null
+   },
+   {
+    "en": "₹35",
+    "hi": null
+   },
+   {
+    "en": "₹37",
+    "hi": null
+   },
+   {
+    "en": "₹38",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Total cost = 20 × 30 + 30 × 40 = 600 + 1200 = ₹1,800 for 50 kg. Average = ₹36 per kg.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Mixtures & Alligation",
+  "difficulty": "medium",
+  "question_en": "In what ratio should water be mixed with milk costing ₹12 per litre so that the mixture is worth ₹8 per litre?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "2 : 1",
+    "hi": null
+   },
+   {
+    "en": "1 : 3",
+    "hi": null
+   },
+   {
+    "en": "3 : 1",
+    "hi": null
+   },
+   {
+    "en": "1 : 2",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Water costs 0. Alligation: water : milk = (12 − 8) : (8 − 0) = 4 : 8 = 1 : 2.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Mixtures & Alligation",
+  "difficulty": "hard",
+  "question_en": "Two alloys contain gold and silver in the ratios 5 : 3 and 1 : 3. They are mixed in equal weights. What is the ratio of gold to silver in the new alloy?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "8 : 7",
+    "hi": null
+   },
+   {
+    "en": "1 : 1",
+    "hi": null
+   },
+   {
+    "en": "7 : 9",
+    "hi": null
+   },
+   {
+    "en": "5 : 6",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Take 8 units of each alloy. Alloy 1: gold 5, silver 3. Alloy 2: gold 2, silver 6. Total gold = 7, silver = 9. Ratio = 7 : 9.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Ages",
+  "difficulty": "easy",
+  "question_en": "A father is 3 times as old as his son. After 12 years he will be twice as old as his son. What is the present age of the son?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "10 years",
+    "hi": null
+   },
+   {
+    "en": "14 years",
+    "hi": null
+   },
+   {
+    "en": "16 years",
+    "hi": null
+   },
+   {
+    "en": "12 years",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Let the son be S, father 3S. 3S + 12 = 2(S + 12), so S = 12 (father is 36).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Ages",
+  "difficulty": "easy",
+  "question_en": "The ages of two persons are in the ratio 4 : 5 and their sum is 45 years. What is the age of the elder?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "20 years",
+    "hi": null
+   },
+   {
+    "en": "25 years",
+    "hi": null
+   },
+   {
+    "en": "24 years",
+    "hi": null
+   },
+   {
+    "en": "27 years",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Parts = 9, one part = 45/9 = 5 years. Elder = 5 × 5 = 25 years.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Ages",
+  "difficulty": "medium",
+  "question_en": "The present ages of A and B are in the ratio 5 : 7. After 6 years the ratio will be 3 : 4. What is the present age of A?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "30 years",
+    "hi": null
+   },
+   {
+    "en": "35 years",
+    "hi": null
+   },
+   {
+    "en": "25 years",
+    "hi": null
+   },
+   {
+    "en": "36 years",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Let the ages be 5x and 7x. (5x + 6)/(7x + 6) = 3/4 gives 20x + 24 = 21x + 18, so x = 6. A = 30 years (B = 42 years).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Ages",
+  "difficulty": "hard",
+  "question_en": "The average age of a family of 5 members is 24 years. The youngest member is 8 years old. What was the average age of the family at the time of the birth of the youngest member?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "16 years",
+    "hi": null
+   },
+   {
+    "en": "18 years",
+    "hi": null
+   },
+   {
+    "en": "20 years",
+    "hi": null
+   },
+   {
+    "en": "22 years",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Present total = 120. Excluding the youngest, the other four total 112 now. Eight years ago they totalled 112 − 4 × 8 = 80. Average of those four = 20 years.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Ages",
+  "difficulty": "medium",
+  "question_en": "The sum of the ages of a mother and her daughter is 56 years. Four years ago the mother's age was 7 times the daughter's age. What is the mother's present age?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "44 years",
+    "hi": null
+   },
+   {
+    "en": "46 years",
+    "hi": null
+   },
+   {
+    "en": "48 years",
+    "hi": null
+   },
+   {
+    "en": "42 years",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Let the daughter be D, mother M = 56 − D. M − 4 = 7(D − 4) gives 52 − D = 7D − 28, so D = 10 and M = 46. Check: 42 = 7 × 6.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Ages",
+  "difficulty": "medium",
+  "question_en": "After 15 years Rohit will be 4 times as old as he was 6 years ago. What is his present age?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "15 years",
+    "hi": null
+   },
+   {
+    "en": "12 years",
+    "hi": null
+   },
+   {
+    "en": "18 years",
+    "hi": null
+   },
+   {
+    "en": "13 years",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Let the present age be x. x + 15 = 4(x − 6) gives 3x = 39, so x = 13. Check: 28 = 4 × 7.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Ages",
+  "difficulty": "medium",
+  "question_en": "The ratio of the present ages of A and B is 3 : 5. After 5 years the ratio will be 2 : 3. What is the present age of B?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "25 years",
+    "hi": null
+   },
+   {
+    "en": "15 years",
+    "hi": null
+   },
+   {
+    "en": "20 years",
+    "hi": null
+   },
+   {
+    "en": "30 years",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Let the ages be 3x and 5x. (3x + 5)/(5x + 5) = 2/3 gives 9x + 15 = 10x + 10, so x = 5. B = 25 years (A = 15).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "num_arith",
+  "subtopic": "Ages",
+  "difficulty": "hard",
+  "question_en": "Six years ago the ratio of the ages of A and B was 6 : 5. Four years from now it will be 11 : 10. What is the present age of B?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "18 years",
+    "hi": null
+   },
+   {
+    "en": "14 years",
+    "hi": null
+   },
+   {
+    "en": "16 years",
+    "hi": null
+   },
+   {
+    "en": "20 years",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Let their ages six years ago be 6k and 5k. Four years hence: (6k + 10)/(5k + 10) = 11/10, so 60k + 100 = 55k + 110 and k = 2. Present ages: A = 18, B = 16.",
+  "explanation_hi": null,
+  "expected": false
+ }
+]

@@ -1,0 +1,3192 @@
+[
+  {
+    "chapter_key": "teach",
+    "subtopic": "Objectives of teaching CS",
+    "difficulty": "easy",
+    "question_en": "Which of the following is the most important objective of teaching Computer Science at the secondary stage?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Making every student a professional programmer",
+        "hi": null
+      },
+      {
+        "en": "Developing computational thinking and problem-solving ability",
+        "hi": null
+      },
+      {
+        "en": "Memorising the syntax of several languages",
+        "hi": null
+      },
+      {
+        "en": "Preparing students only for board examinations",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "NCF and the CBSE Class 11–12 CS curriculum state that the core aim is computational thinking (decomposition, abstraction, algorithms) and logical problem solving. Syntax memorisation and professional programming are narrow, instrumental aims.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Objectives of teaching CS",
+    "difficulty": "medium",
+    "question_en": "'The student will be able to write a Python function that returns the factorial of a given number.' This instructional objective belongs to which domain of educational objectives?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Affective domain",
+        "hi": null
+      },
+      {
+        "en": "Psychomotor domain",
+        "hi": null
+      },
+      {
+        "en": "Cognitive domain",
+        "hi": null
+      },
+      {
+        "en": "Social domain",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Writing a function requires understanding and applying knowledge, i.e. intellectual activity, which is the cognitive domain. Psychomotor covers physical skills such as typing speed; affective covers attitudes and values.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Objectives of teaching CS",
+    "difficulty": "medium",
+    "question_en": "Which statement about general aims and specific (instructional) objectives of teaching Computer Science is correct?\nI. Aims are long-term and broad; objectives are short-term and achievable in a lesson.\nII. Objectives are written in terms of observable student behaviour.",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Only I",
+        "hi": null
+      },
+      {
+        "en": "Only II",
+        "hi": null
+      },
+      {
+        "en": "Both I and II",
+        "hi": null
+      },
+      {
+        "en": "Neither I nor II",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Aims (e.g. digital literacy for citizenship) are broad goals of the subject, while instructional objectives are specific, measurable statements of what a learner will do after a lesson, written as observable behaviour (Mager). Both statements are correct.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Bloom's taxonomy",
+    "difficulty": "easy",
+    "question_en": "In the revised Bloom's taxonomy (Anderson and Krathwohl, 2001), the highest level of the cognitive domain is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Evaluating",
+        "hi": null
+      },
+      {
+        "en": "Synthesising",
+        "hi": null
+      },
+      {
+        "en": "Creating",
+        "hi": null
+      },
+      {
+        "en": "Analysing",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "The revised taxonomy reorders the top levels to Remember, Understand, Apply, Analyse, Evaluate, Create, with 'Create' at the top. 'Synthesis' was the fifth level in the original 1956 version and is replaced by Create.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Bloom's taxonomy",
+    "difficulty": "medium",
+    "question_en": "A teacher asks: 'Compare the time complexity of bubble sort and merge sort and explain which is better for large inputs.' This question mainly tests which level of Bloom's taxonomy?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Remembering",
+        "hi": null
+      },
+      {
+        "en": "Understanding",
+        "hi": null
+      },
+      {
+        "en": "Analysing",
+        "hi": null
+      },
+      {
+        "en": "Applying",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Comparing two algorithms, breaking them into parts and relating them is Analysis. Recalling the formula would be Remembering; using an algorithm on a given list would be Applying.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Bloom's taxonomy",
+    "difficulty": "medium",
+    "question_en": "Which of the following verbs is most appropriate for writing an objective at the 'Evaluate' level of the cognitive domain?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "List",
+        "hi": null
+      },
+      {
+        "en": "Describe",
+        "hi": null
+      },
+      {
+        "en": "Justify",
+        "hi": null
+      },
+      {
+        "en": "Execute",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "'Justify', 'critique', 'judge' and 'defend' indicate making a judgement based on criteria, i.e. Evaluation. 'List' is Remember, 'Describe' is Understand and 'Execute' is Apply.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Lesson planning",
+    "difficulty": "easy",
+    "question_en": "The five formal steps of lesson planning — Preparation, Presentation, Association (Comparison), Generalisation and Application — were given by followers of:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "John Dewey",
+        "hi": null
+      },
+      {
+        "en": "J. F. Herbart",
+        "hi": null
+      },
+      {
+        "en": "Maria Montessori",
+        "hi": null
+      },
+      {
+        "en": "Friedrich Froebel",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "These are the Herbartian steps, formulated by Herbart's followers (Ziller and Rein) from his four steps. Dewey is associated with the project/problem method and Montessori with sense training.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Lesson planning",
+    "difficulty": "medium",
+    "question_en": "In a lesson on 'Loops in Python', the teacher starts by asking students how they would print the numbers 1 to 100 without writing 100 print statements. This activity corresponds to which Herbartian step?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Presentation",
+        "hi": null
+      },
+      {
+        "en": "Preparation",
+        "hi": null
+      },
+      {
+        "en": "Generalisation",
+        "hi": null
+      },
+      {
+        "en": "Application",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Preparation (introduction) links previous knowledge to the new topic and creates curiosity; the question makes students feel the need for loops before the concept is presented. Presentation is the actual teaching of the loop syntax.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Teaching methods",
+    "difficulty": "easy",
+    "question_en": "Which teaching method is most suitable for teaching the procedure of installing an operating system to a class of 40 students with only two computers?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Lecture method",
+        "hi": null
+      },
+      {
+        "en": "Demonstration method",
+        "hi": null
+      },
+      {
+        "en": "Project method",
+        "hi": null
+      },
+      {
+        "en": "Heuristic method",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "In the demonstration method the teacher performs the activity while students observe, which suits limited equipment and a procedural skill. Laboratory/heuristic methods need every student to work hands-on.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Teaching methods",
+    "difficulty": "medium",
+    "question_en": "A teacher first shows students several Python programs in which a 'for' loop iterates over a list and then lets them frame the general rule of how iteration works. The teacher is using:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Deductive method",
+        "hi": null
+      },
+      {
+        "en": "Inductive method",
+        "hi": null
+      },
+      {
+        "en": "Lecture method",
+        "hi": null
+      },
+      {
+        "en": "Supervised study",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Moving from specific examples to a general rule is induction. The deductive method would state the rule first and then apply it to examples.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Teaching methods",
+    "difficulty": "hard",
+    "question_en": "Match the teaching method with its originator.\nA. Project method   1. Socrates\nB. Heuristic method   2. W. H. Kilpatrick\nC. Question–answer (dialectic) method   3. H. E. Armstrong",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "A-2, B-3, C-1",
+        "hi": null
+      },
+      {
+        "en": "A-3, B-2, C-1",
+        "hi": null
+      },
+      {
+        "en": "A-1, B-3, C-2",
+        "hi": null
+      },
+      {
+        "en": "A-2, B-1, C-3",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Kilpatrick (a student of Dewey) gave the project method, H. E. Armstrong introduced the heuristic method of teaching science, and the questioning method goes back to Socrates. Hence A-2, B-3, C-1.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Micro-teaching",
+    "difficulty": "easy",
+    "question_en": "Micro-teaching was first developed at Stanford University in 1963 by:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "B. F. Skinner",
+        "hi": null
+      },
+      {
+        "en": "Dwight Allen and his team",
+        "hi": null
+      },
+      {
+        "en": "Benjamin Bloom",
+        "hi": null
+      },
+      {
+        "en": "Jerome Bruner",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Dwight W. Allen and his associates (Acheson, Bush) developed micro-teaching at Stanford in 1963 as a scaled-down teaching encounter for practising single skills.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Micro-teaching",
+    "difficulty": "medium",
+    "question_en": "The correct sequence of the micro-teaching cycle is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Plan → Teach → Feedback → Re-plan → Re-teach → Re-feedback",
+        "hi": null
+      },
+      {
+        "en": "Teach → Plan → Feedback → Re-teach → Re-plan → Re-feedback",
+        "hi": null
+      },
+      {
+        "en": "Plan → Feedback → Teach → Re-plan → Re-feedback → Re-teach",
+        "hi": null
+      },
+      {
+        "en": "Plan → Teach → Re-teach → Feedback → Re-plan → Re-feedback",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The micro-teaching cycle is plan, teach (about 6 minutes to 5–10 pupils), feedback, re-plan, re-teach, re-feedback. Feedback must come immediately after teaching and before re-planning.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Teaching aids & ICT",
+    "difficulty": "easy",
+    "question_en": "Edgar Dale's 'Cone of Experience' places which of the following at the base (most concrete) level?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Verbal symbols",
+        "hi": null
+      },
+      {
+        "en": "Visual symbols",
+        "hi": null
+      },
+      {
+        "en": "Direct purposeful experiences",
+        "hi": null
+      },
+      {
+        "en": "Motion pictures",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Dale's cone runs from the most concrete direct purposeful experiences at the base to the most abstract verbal symbols at the apex. Students learn and retain more from concrete experiences.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Teaching aids & ICT",
+    "difficulty": "medium",
+    "question_en": "Which of the following is an example of a Learning Management System (LMS)?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Scratch",
+        "hi": null
+      },
+      {
+        "en": "Moodle",
+        "hi": null
+      },
+      {
+        "en": "Python IDLE",
+        "hi": null
+      },
+      {
+        "en": "Tinkercad",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Moodle is an open-source LMS used to host courses, assignments and quizzes. Scratch is a block-based programming environment, IDLE is a Python editor and Tinkercad is a 3D design/electronics tool.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Teaching aids & ICT",
+    "difficulty": "medium",
+    "question_en": "SWAYAM, the Government of India's MOOC platform, is closely associated with which of the following?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "PM e-VIDYA DTH channels",
+        "hi": null
+      },
+      {
+        "en": "NPTEL and UGC courses with credit transfer",
+        "hi": null
+      },
+      {
+        "en": "DIKSHA energised textbooks",
+        "hi": null
+      },
+      {
+        "en": "National Digital Library of India",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "SWAYAM hosts online courses from NPTEL, UGC, NCERT, IGNOU etc., and UGC regulations allow up to 40% of credits in a programme to be earned through SWAYAM. DIKSHA is the school-level platform; PM e-VIDYA refers to the one-class-one-channel TV initiative.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Evaluation",
+    "difficulty": "easy",
+    "question_en": "Evaluation carried out during the teaching–learning process to give feedback and improve learning is called:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Summative evaluation",
+        "hi": null
+      },
+      {
+        "en": "Formative evaluation",
+        "hi": null
+      },
+      {
+        "en": "Diagnostic evaluation",
+        "hi": null
+      },
+      {
+        "en": "Placement evaluation",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Formative evaluation (Scriven, 1967) happens during instruction and is 'assessment for learning'. Summative is at the end for grading; diagnostic identifies specific learning difficulties; placement happens before instruction.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Evaluation",
+    "difficulty": "medium",
+    "question_en": "Which of the following is NOT a characteristic of a good test?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Validity",
+        "hi": null
+      },
+      {
+        "en": "Reliability",
+        "hi": null
+      },
+      {
+        "en": "Objectivity",
+        "hi": null
+      },
+      {
+        "en": "Subjectivity",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "A good test is valid (measures what it claims), reliable (consistent), objective (scorer-independent), usable and discriminating. Subjectivity in scoring reduces reliability and is a defect.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Evaluation",
+    "difficulty": "hard",
+    "question_en": "A test of 'Python programming' is found to give almost the same scores when the same students take it again after a week, but its items mostly test English vocabulary. The test is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Reliable but not valid",
+        "hi": null
+      },
+      {
+        "en": "Valid but not reliable",
+        "hi": null
+      },
+      {
+        "en": "Both reliable and valid",
+        "hi": null
+      },
+      {
+        "en": "Neither reliable nor valid",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Consistent scores across two administrations show test–retest reliability. But the items do not measure what the test claims (programming), so content validity is poor. A test can be reliable without being valid, though not the reverse.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Learning theories",
+    "difficulty": "easy",
+    "question_en": "According to Piaget, a child who can think logically about concrete objects but not about abstract hypotheses is in the:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Sensorimotor stage",
+        "hi": null
+      },
+      {
+        "en": "Pre-operational stage",
+        "hi": null
+      },
+      {
+        "en": "Concrete operational stage",
+        "hi": null
+      },
+      {
+        "en": "Formal operational stage",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "The concrete operational stage (about 7–11 years) brings conservation, reversibility and logical thought about concrete things; abstract, hypothetical reasoning appears in the formal operational stage (11+).",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Learning theories",
+    "difficulty": "medium",
+    "question_en": "The 'Zone of Proximal Development' (ZPD) refers to:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Tasks a child can do independently",
+        "hi": null
+      },
+      {
+        "en": "The gap between what a learner can do alone and what he can do with guidance",
+        "hi": null
+      },
+      {
+        "en": "The stage at which abstract thinking begins",
+        "hi": null
+      },
+      {
+        "en": "The period of maximum physical growth",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Vygotsky defined ZPD as the distance between actual development (independent problem solving) and potential development (with adult guidance or peer collaboration). Teaching is most effective within this zone through scaffolding.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Learning theories",
+    "difficulty": "medium",
+    "question_en": "Bruner's three modes of representation in the correct developmental order are:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Iconic, Enactive, Symbolic",
+        "hi": null
+      },
+      {
+        "en": "Enactive, Iconic, Symbolic",
+        "hi": null
+      },
+      {
+        "en": "Symbolic, Iconic, Enactive",
+        "hi": null
+      },
+      {
+        "en": "Enactive, Symbolic, Iconic",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Bruner proposed enactive (action-based), iconic (image-based) and symbolic (language/symbol-based) representation. A CS teacher may first let students physically sort cards (enactive), then show flowcharts (iconic), then write code (symbolic).",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Classroom & lab management",
+    "difficulty": "easy",
+    "question_en": "The most effective way to prevent loss of practical time in a school computer lab is to:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Let students log in whenever they wish",
+        "hi": null
+      },
+      {
+        "en": "Prepare and test the required software and files before the period starts",
+        "hi": null
+      },
+      {
+        "en": "Allow only the brightest students to use computers",
+        "hi": null
+      },
+      {
+        "en": "Keep the lab locked except during examinations",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Advance preparation (booting systems, checking software, loading sample files) is a proactive management practice that avoids wastage and indiscipline. The other options either waste time or deny access.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Classroom & lab management",
+    "difficulty": "medium",
+    "question_en": "Which of the following is an example of a preventive (proactive) classroom management strategy rather than a reactive one?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Sending a disruptive student out of the lab",
+        "hi": null
+      },
+      {
+        "en": "Establishing clear lab rules and routines on the first day",
+        "hi": null
+      },
+      {
+        "en": "Deducting marks after a student damages a keyboard",
+        "hi": null
+      },
+      {
+        "en": "Scolding students who talk during the demonstration",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Preventive strategies (Kounin's 'withitness', clear rules, routines, engaging lessons) stop problems before they occur. The other three are reactions after misbehaviour has already happened.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "NEP 2020",
+    "difficulty": "easy",
+    "question_en": "The National Education Policy 2020 replaces the 10+2 school structure with the:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "5+3+3+4 structure",
+        "hi": null
+      },
+      {
+        "en": "4+4+4 structure",
+        "hi": null
+      },
+      {
+        "en": "6+3+3 structure",
+        "hi": null
+      },
+      {
+        "en": "5+5+2 structure",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "NEP 2020 proposes 5+3+3+4: Foundational (3 years pre-primary + Classes 1–2), Preparatory (3–5), Middle (6–8) and Secondary (9–12), covering ages 3–18.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Objectives of teaching CS",
+    "difficulty": "easy",
+    "question_en": "Which of the following objectives of teaching Computer Science belongs to the affective domain?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Developing a respect for intellectual property and ethical use of software",
+        "hi": null
+      },
+      {
+        "en": "Writing an SQL query to retrieve records",
+        "hi": null
+      },
+      {
+        "en": "Typing 40 words per minute without errors",
+        "hi": null
+      },
+      {
+        "en": "Explaining the difference between RAM and ROM",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Values, attitudes and appreciation (e.g. ethics, respecting copyright) are affective objectives. Typing speed is psychomotor; writing queries and explaining concepts are cognitive.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Objectives of teaching CS",
+    "difficulty": "hard",
+    "question_en": "Robert Mager's three essential components of a well-written instructional objective are:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Aim, method and evaluation",
+        "hi": null
+      },
+      {
+        "en": "Performance, condition and criterion",
+        "hi": null
+      },
+      {
+        "en": "Knowledge, skill and attitude",
+        "hi": null
+      },
+      {
+        "en": "Input, process and output",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Mager (1962) said an objective must state the observable performance, the condition under which it is shown, and the criterion of acceptable performance, e.g. 'Given a flowchart (condition), the student will write the C code (performance) with no syntax errors (criterion)'.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Objectives of teaching CS",
+    "difficulty": "medium",
+    "question_en": "Which of the following is a correctly written behavioural (specific) objective for a lesson on data types?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "To make students understand data types",
+        "hi": null
+      },
+      {
+        "en": "The student will be able to classify given literals as int, float or string",
+        "hi": null
+      },
+      {
+        "en": "To teach the concept of data types",
+        "hi": null
+      },
+      {
+        "en": "The student will appreciate data types",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "A behavioural objective is stated from the learner's side, uses an action verb and is observable ('classify given literals'). 'Understand', 'appreciate' and teacher-centred 'to teach' are vague and not directly observable.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Bloom's taxonomy",
+    "difficulty": "easy",
+    "question_en": "Bloom's taxonomy of educational objectives (1956) classifies objectives into how many domains?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Two",
+        "hi": null
+      },
+      {
+        "en": "Three",
+        "hi": null
+      },
+      {
+        "en": "Four",
+        "hi": null
+      },
+      {
+        "en": "Six",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Bloom and co-workers proposed three domains: cognitive (Bloom, 1956), affective (Krathwohl, 1964) and psychomotor (Simpson/Harrow/Dave). Six is the number of levels within the cognitive domain, a common confusion.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Bloom's taxonomy",
+    "difficulty": "hard",
+    "question_en": "Which option lists the levels of the affective domain (Krathwohl) in the correct ascending order?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Receiving, Responding, Valuing, Organising, Characterising",
+        "hi": null
+      },
+      {
+        "en": "Responding, Receiving, Valuing, Characterising, Organising",
+        "hi": null
+      },
+      {
+        "en": "Receiving, Valuing, Responding, Organising, Characterising",
+        "hi": null
+      },
+      {
+        "en": "Valuing, Receiving, Responding, Characterising, Organising",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The affective hierarchy moves from merely attending (Receiving) to actively Responding, attaching worth (Valuing), building a value system (Organising) and finally acting consistently by it (Characterising by a value complex).",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Bloom's taxonomy",
+    "difficulty": "medium",
+    "question_en": "'Given a buggy C program, the student will locate the logical error.' The level of the cognitive domain tested here is primarily:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Remembering",
+        "hi": null
+      },
+      {
+        "en": "Understanding",
+        "hi": null
+      },
+      {
+        "en": "Applying",
+        "hi": null
+      },
+      {
+        "en": "Analysing",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Debugging requires breaking the program into parts, tracing relationships and finding what does not fit — the hallmarks of Analysis (differentiating, organising, attributing). Simply running a known algorithm would be Applying.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Lesson planning",
+    "difficulty": "easy",
+    "question_en": "A lesson plan mainly helps the teacher to:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Replace the textbook completely",
+        "hi": null
+      },
+      {
+        "en": "Proceed in an organised, systematic manner within the time available",
+        "hi": null
+      },
+      {
+        "en": "Avoid asking questions in class",
+        "hi": null
+      },
+      {
+        "en": "Teach without stating objectives",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "A lesson plan sets objectives, sequences content and activities, chooses aids and plans evaluation so that teaching is purposeful and economical. It does not replace the textbook or remove questioning.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Lesson planning",
+    "difficulty": "medium",
+    "question_en": "In the Herbartian approach, 'Recapitulation' at the end of a lesson on 'Primary keys' usually takes the form of:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Short questions to check what students have grasped",
+        "hi": null
+      },
+      {
+        "en": "Introducing the next topic of foreign keys",
+        "hi": null
+      },
+      {
+        "en": "Writing the aim of the lesson on the board",
+        "hi": null
+      },
+      {
+        "en": "Distributing the home assignment only",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Recapitulation (sometimes merged with Application) is a quick check of the lesson's outcomes through oral or written questions. Stating the aim happens after preparation; the new topic belongs to the next lesson.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Lesson planning",
+    "difficulty": "hard",
+    "question_en": "Which of the following statements about a unit plan and a lesson plan is correct?\nI. A unit plan covers a larger chunk of content and spans several periods.\nII. A lesson plan is prepared first and unit plans are derived from it.",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Only I",
+        "hi": null
+      },
+      {
+        "en": "Only II",
+        "hi": null
+      },
+      {
+        "en": "Both I and II",
+        "hi": null
+      },
+      {
+        "en": "Neither I nor II",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "A unit plan (H. C. Morrison) organises a related body of content over several lessons; daily lesson plans are then derived from the unit plan, not the other way round. So only I is correct.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Teaching methods",
+    "difficulty": "medium",
+    "question_en": "Which of the following is a limitation of the lecture method in teaching Computer Science?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "It cannot cover a large syllabus in limited time",
+        "hi": null
+      },
+      {
+        "en": "It keeps the learner passive and gives little scope for hands-on practice",
+        "hi": null
+      },
+      {
+        "en": "It is not suitable for large classes",
+        "hi": null
+      },
+      {
+        "en": "It cannot be used to introduce a new topic",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The lecture method is economical for large classes and wide syllabi and is fine for introductions; its real weakness is passive listening with no activity, which is a serious drawback for a skill-based subject like CS.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Teaching methods",
+    "difficulty": "hard",
+    "question_en": "In Dewey's problem-solving method, the correct sequence of steps is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Collecting data → Sensing the problem → Hypothesis → Verification → Defining the problem",
+        "hi": null
+      },
+      {
+        "en": "Sensing the problem → Defining the problem → Formulating hypotheses → Collecting and testing data → Drawing conclusions",
+        "hi": null
+      },
+      {
+        "en": "Formulating hypotheses → Sensing the problem → Defining the problem → Conclusion → Testing",
+        "hi": null
+      },
+      {
+        "en": "Defining the problem → Sensing the problem → Conclusion → Hypotheses → Testing",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Dewey's reflective thinking proceeds from feeling a difficulty, locating and defining it, suggesting possible solutions (hypotheses), reasoning out and testing them with data, and finally accepting or rejecting the hypothesis.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Micro-teaching",
+    "difficulty": "easy",
+    "question_en": "In a micro-teaching session the usual duration of the teaching phase and the number of pupils are approximately:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "35–40 minutes, 30–40 pupils",
+        "hi": null
+      },
+      {
+        "en": "5–10 minutes, 5–10 pupils",
+        "hi": null
+      },
+      {
+        "en": "20 minutes, 15–20 pupils",
+        "hi": null
+      },
+      {
+        "en": "1–2 minutes, 1 pupil",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Micro-teaching scales down the class size to 5–10 pupils, time to about 5–10 minutes (often 6 minutes) and content to a single concept so that a single skill can be practised and observed.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Micro-teaching",
+    "difficulty": "medium",
+    "question_en": "Which of the following is NOT a micro-teaching skill?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Skill of probing questions",
+        "hi": null
+      },
+      {
+        "en": "Skill of stimulus variation",
+        "hi": null
+      },
+      {
+        "en": "Skill of reinforcement",
+        "hi": null
+      },
+      {
+        "en": "Skill of syllabus framing",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Core micro-teaching skills include introducing a lesson, explaining, illustrating with examples, probing questions, stimulus variation, reinforcement, blackboard writing and achieving closure. Framing a syllabus is a curriculum task, not a classroom skill.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Micro-teaching",
+    "difficulty": "hard",
+    "question_en": "While teaching 'binary number system' a trainee teacher moves around the class, changes voice pitch, pauses, and shifts from board to chart. The trainee is practising the skill of:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Reinforcement",
+        "hi": null
+      },
+      {
+        "en": "Stimulus variation",
+        "hi": null
+      },
+      {
+        "en": "Probing questioning",
+        "hi": null
+      },
+      {
+        "en": "Closure",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Stimulus variation includes teacher movement, gestures, change in speech pattern, pausing, focusing and shifting sensory channels to hold attention. Reinforcement is rewarding responses; closure is summarising at the end.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Teaching aids & ICT",
+    "difficulty": "medium",
+    "question_en": "DIKSHA (Digital Infrastructure for Knowledge Sharing) is best described as:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "A national platform for school education with QR-coded energised textbooks and teacher resources",
+        "hi": null
+      },
+      {
+        "en": "A hardware scheme for distributing laptops to teachers",
+        "hi": null
+      },
+      {
+        "en": "A university-level MOOC platform with credit transfer",
+        "hi": null
+      },
+      {
+        "en": "A satellite television channel for Class 12",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "DIKSHA, launched in 2017 by MoE/NCERT, hosts e-content linked to textbook QR codes, teacher training courses (NISHTHA) and state-wise resources. SWAYAM is the MOOC platform and PM e-VIDYA/SWAYAM Prabha are TV channels.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Teaching aids & ICT",
+    "difficulty": "hard",
+    "question_en": "The TPACK framework (Mishra and Koehler) suggests that effective technology integration requires the teacher to combine:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Technology, Pedagogy and Content knowledge",
+        "hi": null
+      },
+      {
+        "en": "Testing, Planning and Classroom knowledge",
+        "hi": null
+      },
+      {
+        "en": "Teaching, Practice and Assessment skills",
+        "hi": null
+      },
+      {
+        "en": "Theory, Project and Application knowledge",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "TPACK = Technological Pedagogical Content Knowledge; it extends Shulman's PCK by adding technology, emphasising that knowing a tool alone is not enough — the teacher must know how it fits the content and the pedagogy.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Evaluation",
+    "difficulty": "easy",
+    "question_en": "Which of the following is a norm-referenced interpretation of a test score?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Rohan has mastered 90% of the loop concepts",
+        "hi": null
+      },
+      {
+        "en": "Rohan scored higher than 85% of his classmates",
+        "hi": null
+      },
+      {
+        "en": "Rohan can write a program for the given flowchart",
+        "hi": null
+      },
+      {
+        "en": "Rohan needs remedial teaching on arrays",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Norm-referenced tests compare a student with the group (percentile ranks, class ranking). Criterion-referenced tests report mastery against a fixed standard, as in the other three options.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Evaluation",
+    "difficulty": "medium",
+    "question_en": "Under the CCE scheme introduced by CBSE in 2009, 'Continuous' and 'Comprehensive' respectively refer to:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Regular unit tests only; scholastic subjects only",
+        "hi": null
+      },
+      {
+        "en": "Assessment spread over the whole year; coverage of both scholastic and co-scholastic areas",
+        "hi": null
+      },
+      {
+        "en": "Daily homework; coverage of all textbook chapters",
+        "hi": null
+      },
+      {
+        "en": "Term-end examination; covering the complete syllabus",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "In CCE 'continuous' means assessment is regular and integrated with teaching (formative and summative across the year) and 'comprehensive' means it covers scholastic (academic) as well as co-scholastic (life skills, attitudes, co-curricular) growth.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Learning theories",
+    "difficulty": "medium",
+    "question_en": "Gagne's hierarchy of learning places which type of learning at the highest level?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Signal learning",
+        "hi": null
+      },
+      {
+        "en": "Concept learning",
+        "hi": null
+      },
+      {
+        "en": "Problem solving",
+        "hi": null
+      },
+      {
+        "en": "Chain learning",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Gagne's eight types of learning, from simplest to most complex, are signal, stimulus–response, chaining, verbal association, discrimination, concept, rule learning and finally problem solving.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Learning theories",
+    "difficulty": "hard",
+    "question_en": "A CS teacher gives a worked example of a recursive function, then a partially completed example, and finally lets students solve one independently, gradually withdrawing support. This practice is best described as:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Scaffolding",
+        "hi": null
+      },
+      {
+        "en": "Shaping",
+        "hi": null
+      },
+      {
+        "en": "Programmed instruction",
+        "hi": null
+      },
+      {
+        "en": "Discovery learning",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Scaffolding (Wood, Bruner and Ross; based on Vygotsky's ZPD) means giving temporary support that is faded as competence grows. Shaping is a Skinnerian reinforcement of successive approximations; discovery learning gives minimal initial support.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Classroom & lab management",
+    "difficulty": "medium",
+    "question_en": "To avoid electrical hazards and maintain equipment in a school computer laboratory, which practice is correct?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Switch off the UPS first, then the computers",
+        "hi": null
+      },
+      {
+        "en": "Shut down systems properly, then switch off the mains; keep cables away from walkways",
+        "hi": null
+      },
+      {
+        "en": "Leave systems on standby overnight to save boot time",
+        "hi": null
+      },
+      {
+        "en": "Clean monitors with a wet cloth while the system is on",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "A safe lab routine is to shut down the operating system, switch off monitors and CPUs, then the UPS/mains, and to keep cables tidy and dry. Switching off the UPS first can corrupt files; wet cleaning of powered equipment is hazardous.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Classroom & lab management",
+    "difficulty": "hard",
+    "question_en": "Kounin's term 'withitness' in classroom management refers to a teacher's ability to:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Be aware of everything happening in the class and communicate that awareness to students",
+        "hi": null
+      },
+      {
+        "en": "Handle several administrative files at the same time",
+        "hi": null
+      },
+      {
+        "en": "Use ICT tools fluently during a lesson",
+        "hi": null
+      },
+      {
+        "en": "Remain strict and punish every misbehaviour",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Jacob Kounin (1970) found that teachers who seem to 'have eyes at the back of their head' (withitness) and can attend to overlapping events (overlapping) prevent misbehaviour better than those who merely react with punishment.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "NEP 2020",
+    "difficulty": "easy",
+    "question_en": "NEP 2020 recommends that coding be introduced to students from which class onwards?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Class 3",
+        "hi": null
+      },
+      {
+        "en": "Class 6",
+        "hi": null
+      },
+      {
+        "en": "Class 9",
+        "hi": null
+      },
+      {
+        "en": "Class 11",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "NEP 2020 (para 4.25) states that coding will be introduced at the Middle Stage, i.e. from Class 6, along with vocational exposure and 'bagless' internship days.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "NEP 2020",
+    "difficulty": "medium",
+    "question_en": "Which of the following targets is stated in NEP 2020?\nI. Achieving universal Foundational Literacy and Numeracy (FLN) in primary school.\nII. Raising the Gross Enrolment Ratio in higher education to 50% by 2035.",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Only I",
+        "hi": null
+      },
+      {
+        "en": "Only II",
+        "hi": null
+      },
+      {
+        "en": "Both I and II",
+        "hi": null
+      },
+      {
+        "en": "Neither I nor II",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "NEP 2020 makes FLN by Grade 3 an urgent national mission (implemented as NIPUN Bharat, 2021) and targets a 50% GER in higher education by 2035 (from about 26% in 2018). Both statements are correct.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "NEP 2020",
+    "difficulty": "medium",
+    "question_en": "According to NEP 2020, the new national assessment centre to set standards for student assessment is called:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "NISHTHA",
+        "hi": null
+      },
+      {
+        "en": "PARAKH",
+        "hi": null
+      },
+      {
+        "en": "NIPUN",
+        "hi": null
+      },
+      {
+        "en": "SAMAGRA",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "PARAKH (Performance Assessment, Review and Analysis of Knowledge for Holistic Development) was proposed by NEP 2020 and set up under NCERT in 2023. NISHTHA is a teacher training programme and NIPUN Bharat is the FLN mission.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Objectives of teaching CS",
+    "difficulty": "easy",
+    "question_en": "'Developing the ability to type a program accurately and operate the keyboard and mouse efficiently' is an objective of which domain?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Cognitive",
+        "hi": null
+      },
+      {
+        "en": "Affective",
+        "hi": null
+      },
+      {
+        "en": "Psychomotor",
+        "hi": null
+      },
+      {
+        "en": "Conative",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Manual and physical skills such as keyboarding, handling hardware and connecting cables fall in the psychomotor domain (Simpson's taxonomy). Cognitive deals with knowledge, affective with attitudes.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Objectives of teaching CS",
+    "difficulty": "medium",
+    "question_en": "Which of the following best explains why Computer Science is taught as a school subject rather than merely as 'computer literacy'?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Because every student must learn a specific programming language",
+        "hi": null
+      },
+      {
+        "en": "Because it develops transferable skills of abstraction, algorithmic thinking and logical reasoning",
+        "hi": null
+      },
+      {
+        "en": "Because computers are expensive and must be used",
+        "hi": null
+      },
+      {
+        "en": "Because it reduces the load of other subjects",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The disciplinary value of CS lies in computational thinking — abstraction, decomposition, pattern recognition and algorithm design — which transfers to other domains. Literacy (using a word processor) is only a utilitarian aim.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Bloom's taxonomy",
+    "difficulty": "medium",
+    "question_en": "Which pair of verbs is correctly matched with the level of the revised Bloom's taxonomy?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Remember — Design",
+        "hi": null
+      },
+      {
+        "en": "Understand — Summarise",
+        "hi": null
+      },
+      {
+        "en": "Apply — Recall",
+        "hi": null
+      },
+      {
+        "en": "Create — Define",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "'Summarise', 'explain', 'classify' and 'paraphrase' are Understand-level verbs. 'Design' belongs to Create, 'Recall' to Remember and 'Define' to Remember — so the other three pairs are mismatched.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Bloom's taxonomy",
+    "difficulty": "hard",
+    "question_en": "In the revised Bloom's taxonomy, the knowledge dimension includes factual, conceptual, procedural and ______ knowledge.",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Metacognitive",
+        "hi": null
+      },
+      {
+        "en": "Behavioural",
+        "hi": null
+      },
+      {
+        "en": "Affective",
+        "hi": null
+      },
+      {
+        "en": "Experiential",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Anderson and Krathwohl added a separate knowledge dimension with four types; metacognitive knowledge (knowledge about one's own cognition and strategies) is the fourth. The cognitive-process dimension has the six levels.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Lesson planning",
+    "difficulty": "easy",
+    "question_en": "Which of the following items is usually written FIRST in a lesson plan?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Home assignment",
+        "hi": null
+      },
+      {
+        "en": "Blackboard summary",
+        "hi": null
+      },
+      {
+        "en": "General and specific objectives",
+        "hi": null
+      },
+      {
+        "en": "Recapitulation questions",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "A lesson plan begins with identifying data (class, subject, topic, time) and the general and specific objectives, because the content, methods, aids and evaluation are all chosen to achieve those objectives.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Lesson planning",
+    "difficulty": "medium",
+    "question_en": "In the Herbartian step of 'Association (Comparison)' while teaching 'Linear search', the teacher would most appropriately:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Define linear search and write its algorithm",
+        "hi": null
+      },
+      {
+        "en": "Relate linear search with the way students search for a name in an unsorted attendance list",
+        "hi": null
+      },
+      {
+        "en": "Give the students a program to write at home",
+        "hi": null
+      },
+      {
+        "en": "Announce the objectives of the lesson",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Association links the newly presented idea with familiar experiences or earlier knowledge so that it is assimilated (Herbart's apperception). Defining and stating the algorithm is Presentation; homework belongs to Application.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Lesson planning",
+    "difficulty": "hard",
+    "question_en": "Bloom's 'mastery learning' and Morrison's unit plan both share which assumption?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Students should not be tested at all",
+        "hi": null
+      },
+      {
+        "en": "Almost all students can master a unit if given enough time and appropriate instruction",
+        "hi": null
+      },
+      {
+        "en": "Only gifted students can master abstract units",
+        "hi": null
+      },
+      {
+        "en": "Teaching should be identical for all students regardless of feedback",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Morrison's unit method (pretest → teach → test → re-teach → retest) and Bloom's mastery learning both hold that with suitable time and corrective instruction nearly all learners can achieve mastery before moving to the next unit.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Teaching methods",
+    "difficulty": "easy",
+    "question_en": "In the 'project method', the role of the teacher is mainly that of a:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Dictator who fixes every step",
+        "hi": null
+      },
+      {
+        "en": "Guide and facilitator",
+        "hi": null
+      },
+      {
+        "en": "Examiner who only grades",
+        "hi": null
+      },
+      {
+        "en": "Passive observer who never intervenes",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Kilpatrick's project method is learner-centred: students choose, plan, execute and evaluate a purposeful activity while the teacher guides, suggests resources and helps when needed.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Teaching methods",
+    "difficulty": "medium",
+    "question_en": "Which sequence of steps is correct for the project method?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Planning → Providing a situation → Choosing the project → Executing → Evaluating → Recording",
+        "hi": null
+      },
+      {
+        "en": "Providing a situation → Choosing the project → Planning → Executing → Evaluating → Recording",
+        "hi": null
+      },
+      {
+        "en": "Choosing the project → Providing a situation → Executing → Planning → Recording → Evaluating",
+        "hi": null
+      },
+      {
+        "en": "Executing → Planning → Choosing → Providing a situation → Evaluating → Recording",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The teacher first creates a situation that raises a need, students choose and purpose the project, plan it, execute it, evaluate the outcome and finally record the whole work in a project report.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Teaching methods",
+    "difficulty": "hard",
+    "question_en": "A teacher states the general rule 'Every recursive function must have a base case' and then applies it to several examples such as factorial and Fibonacci. Which statement about this approach is correct?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "It is inductive and therefore slow but develops discovery skills",
+        "hi": null
+      },
+      {
+        "en": "It is deductive, economical in time, but gives less scope for discovery",
+        "hi": null
+      },
+      {
+        "en": "It is the heuristic method as students discover the rule",
+        "hi": null
+      },
+      {
+        "en": "It is the project method since examples are purposeful",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Starting from a rule and moving to particular cases is deduction. It saves time and is useful for revision and application, but students accept the rule on authority rather than discovering it, unlike the inductive or heuristic approach.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Micro-teaching",
+    "difficulty": "easy",
+    "question_en": "Micro-teaching is primarily used for:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Teaching a complete chapter to a full class",
+        "hi": null
+      },
+      {
+        "en": "Developing specific teaching skills of trainee teachers",
+        "hi": null
+      },
+      {
+        "en": "Evaluating students at the end of a term",
+        "hi": null
+      },
+      {
+        "en": "Preparing question papers",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Micro-teaching is a teacher-training technique that reduces class size, time and content so that a trainee can practise one skill at a time under observation and feedback.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Micro-teaching",
+    "difficulty": "medium",
+    "question_en": "Which of the following is a component of the skill of 'probing questions'?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Prompting, seeking further information, refocusing, redirection and increasing critical awareness",
+        "hi": null
+      },
+      {
+        "en": "Writing legibly, drawing neat figures and using coloured chalk",
+        "hi": null
+      },
+      {
+        "en": "Teacher movement, gestures and change in speech pattern",
+        "hi": null
+      },
+      {
+        "en": "Positive verbal and non-verbal reinforcement",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Probing questions help a student go deeper when the first response is incomplete or wrong, using prompting, seeking further information, refocusing, redirection and raising critical awareness. The other options describe blackboard writing, stimulus variation and reinforcement.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Micro-teaching",
+    "difficulty": "hard",
+    "question_en": "The phase of micro-teaching in which a trainee combines several individually practised skills while teaching a normal-length lesson is called:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Link practice (integration of skills)",
+        "hi": null
+      },
+      {
+        "en": "Simulated teaching",
+        "hi": null
+      },
+      {
+        "en": "Team teaching",
+        "hi": null
+      },
+      {
+        "en": "Programmed instruction",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "After mastering individual skills in isolation, the trainee goes through 'link practice' or integration, where two or more skills are combined in longer lessons to bridge the gap between micro-lessons and real classroom teaching.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Teaching aids & ICT",
+    "difficulty": "easy",
+    "question_en": "Which of the following is a projected teaching aid?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Flannel board",
+        "hi": null
+      },
+      {
+        "en": "Chalkboard",
+        "hi": null
+      },
+      {
+        "en": "LCD projector",
+        "hi": null
+      },
+      {
+        "en": "Flash cards",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Projected aids need a projection device and screen (LCD/overhead projector, film strips), while chalkboards, flannel boards and flash cards are non-projected aids.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Teaching aids & ICT",
+    "difficulty": "medium",
+    "question_en": "A CS teacher records a video explaining 'normalisation' for students to watch at home and uses class time for solving problems and clearing doubts. This approach is known as:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Team teaching",
+        "hi": null
+      },
+      {
+        "en": "Flipped classroom",
+        "hi": null
+      },
+      {
+        "en": "Programmed learning",
+        "hi": null
+      },
+      {
+        "en": "Supervised study",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "In a flipped classroom direct instruction is shifted outside the class through videos and class time is used for higher-order activities, practice and interaction. It is a form of blended learning.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Teaching aids & ICT",
+    "difficulty": "hard",
+    "question_en": "Which of the following features correctly describes an Open Educational Resource (OER)?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Content that may be freely used, adapted and redistributed under an open licence such as Creative Commons",
+        "hi": null
+      },
+      {
+        "en": "Any resource that is available on the Internet for a fee",
+        "hi": null
+      },
+      {
+        "en": "A software purchased by the school for teaching",
+        "hi": null
+      },
+      {
+        "en": "A video that can be viewed but never downloaded",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "OERs are teaching, learning and research materials in the public domain or released under an open licence permitting free use, adaptation and sharing (the '5 Rs': retain, reuse, revise, remix, redistribute). NROER and DIKSHA host Indian OERs.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Evaluation",
+    "difficulty": "easy",
+    "question_en": "Which of the following is the best example of a diagnostic test in Computer Science?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "A board examination at the end of Class 12",
+        "hi": null
+      },
+      {
+        "en": "A test to find out exactly which steps in writing a SQL JOIN a student gets wrong",
+        "hi": null
+      },
+      {
+        "en": "A weekly quiz to award marks",
+        "hi": null
+      },
+      {
+        "en": "An entrance test for admission to Class 11",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "A diagnostic test locates the specific weaknesses behind a learning difficulty so that remedial teaching can be planned. Board examinations are summative; entrance tests are for placement/selection.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Evaluation",
+    "difficulty": "medium",
+    "question_en": "A rubric used to evaluate a student's Python project lists criteria such as 'correctness', 'code readability' and 'documentation', each with four performance levels. Such a rubric is called:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Holistic rubric",
+        "hi": null
+      },
+      {
+        "en": "Analytic rubric",
+        "hi": null
+      },
+      {
+        "en": "Checklist",
+        "hi": null
+      },
+      {
+        "en": "Anecdotal record",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "An analytic rubric scores each criterion separately on a scale, giving detailed feedback; a holistic rubric gives one overall score. A checklist records only presence/absence, with no performance levels.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Evaluation",
+    "difficulty": "hard",
+    "question_en": "The discrimination index of a multiple-choice item is 0.05 and its difficulty value is 0.92. The best interpretation is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "The item is very hard and discriminates well",
+        "hi": null
+      },
+      {
+        "en": "The item is very easy and does not discriminate between high and low scorers",
+        "hi": null
+      },
+      {
+        "en": "The item is of average difficulty and should be retained",
+        "hi": null
+      },
+      {
+        "en": "The item is negatively discriminating and must be reversed",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Difficulty value 0.92 means 92% answered correctly — a very easy item. A discrimination index near zero (0.05) shows high and low groups perform almost equally, so the item does not separate able from weak students and should be revised.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Learning theories",
+    "difficulty": "easy",
+    "question_en": "'Learning by doing' and 'education as life itself, not a preparation for life' are ideas associated with:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "John Dewey",
+        "hi": null
+      },
+      {
+        "en": "Ivan Pavlov",
+        "hi": null
+      },
+      {
+        "en": "Edward Thorndike",
+        "hi": null
+      },
+      {
+        "en": "Jean Piaget",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "John Dewey's pragmatism emphasises experiential learning, learning by doing and the school as a miniature society. Pavlov and Thorndike are behaviourists; Piaget is a cognitive developmentalist.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Learning theories",
+    "difficulty": "medium",
+    "question_en": "Thorndike's 'law of effect' implies that a Computer Science teacher should:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Make students practise the same program repeatedly without feedback",
+        "hi": null
+      },
+      {
+        "en": "Ensure that a student's correct response is followed by a satisfying result such as praise or a working program",
+        "hi": null
+      },
+      {
+        "en": "Present abstract concepts before concrete examples",
+        "hi": null
+      },
+      {
+        "en": "Teach only when students are physically ready",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Law of effect: responses followed by satisfaction are strengthened and those followed by annoyance are weakened. Immediate positive feedback (a running program, praise) strengthens the correct behaviour. Repetition without feedback relates to the law of exercise alone.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Classroom & lab management",
+    "difficulty": "easy",
+    "question_en": "In a computer lab with 20 computers and 40 students, the most practical seating arrangement for a programming practical is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Let the first 20 students work and the rest watch from the back",
+        "hi": null
+      },
+      {
+        "en": "Pair programming — two students per computer with alternating 'driver' and 'navigator' roles",
+        "hi": null
+      },
+      {
+        "en": "Each student works for 5 minutes and leaves",
+        "hi": null
+      },
+      {
+        "en": "Cancel the practical until more computers arrive",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Pair programming keeps all students actively engaged, encourages peer learning and is a recognised practice in CS pedagogy. Passive watching or very short turns waste the period.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Classroom & lab management",
+    "difficulty": "medium",
+    "question_en": "Which of the following is the most appropriate first response when a student is found accessing a non-educational website during a lab class?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Immediately file a police complaint",
+        "hi": null
+      },
+      {
+        "en": "Calmly redirect the student to the task and remind the class of the acceptable-use policy",
+        "hi": null
+      },
+      {
+        "en": "Ignore it to avoid confrontation",
+        "hi": null
+      },
+      {
+        "en": "Permanently ban the student from the lab",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Effective lab management uses a graded response: a calm, low-key redirection and reference to pre-agreed rules handles most incidents. Ignoring reinforces misbehaviour, while extreme punishment is disproportionate.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "NEP 2020",
+    "difficulty": "easy",
+    "question_en": "Under NEP 2020, the Foundational Stage covers:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Three years of pre-school and Classes 1 and 2 (ages 3–8)",
+        "hi": null
+      },
+      {
+        "en": "Classes 1 to 5 (ages 6–11)",
+        "hi": null
+      },
+      {
+        "en": "Classes 3 to 5 (ages 8–11)",
+        "hi": null
+      },
+      {
+        "en": "Pre-school only (ages 3–6)",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The Foundational Stage of the 5+3+3+4 design is five years long: three years of Anganwadi/pre-school (ages 3–6) plus Classes 1 and 2 (ages 6–8), supported by the NCF for Foundational Stage 2022.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "NEP 2020",
+    "difficulty": "medium",
+    "question_en": "NEP 2020 recommends that the medium of instruction, wherever possible, should be the home language/mother tongue at least till:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Class 2",
+        "hi": null
+      },
+      {
+        "en": "Class 5, preferably till Class 8 and beyond",
+        "hi": null
+      },
+      {
+        "en": "Class 10",
+        "hi": null
+      },
+      {
+        "en": "Class 12",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Para 4.11 of NEP 2020 says the medium of instruction will be the home language/mother tongue/local language until at least Grade 5, but preferably till Grade 8 and beyond, with the three-language formula retained flexibly.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "NEP 2020",
+    "difficulty": "easy",
+    "question_en": "The National Education Policy 2020 was approved by the Union Cabinet on:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "29 July 2020",
+        "hi": null
+      },
+      {
+        "en": "15 August 2020",
+        "hi": null
+      },
+      {
+        "en": "5 September 2020",
+        "hi": null
+      },
+      {
+        "en": "26 January 2020",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The Union Cabinet approved NEP 2020 on 29 July 2020. It replaced the National Policy on Education of 1986 (modified in 1992).",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "NEP 2020",
+    "difficulty": "medium",
+    "question_en": "The draft of the National Education Policy 2020 was prepared by a committee chaired by:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "T. S. R. Subramanian",
+        "hi": null
+      },
+      {
+        "en": "Yash Pal",
+        "hi": null
+      },
+      {
+        "en": "K. Kasturirangan",
+        "hi": null
+      },
+      {
+        "en": "D. S. Kothari",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Former ISRO chairman Dr K. Kasturirangan chaired the drafting committee (draft submitted 2019). T. S. R. Subramanian chaired an earlier 2016 committee; Kothari headed the 1964–66 Education Commission.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "NEP 2020",
+    "difficulty": "medium",
+    "question_en": "In the 5+3+3+4 curricular structure of NEP 2020, the Middle Stage corresponds to:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Classes 3 to 5",
+        "hi": null
+      },
+      {
+        "en": "Classes 9 and 10",
+        "hi": null
+      },
+      {
+        "en": "Classes 9 to 12",
+        "hi": null
+      },
+      {
+        "en": "Classes 6 to 8",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Foundational (age 3–8: pre-school + Classes 1–2), Preparatory (Classes 3–5), Middle (Classes 6–8) and Secondary (Classes 9–12). Classes 3–5 form the Preparatory Stage.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "NEP 2020",
+    "difficulty": "medium",
+    "question_en": "NEP 2020 reaffirms that public investment in education by the Centre and States together should reach:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "6% of GDP",
+        "hi": null
+      },
+      {
+        "en": "3% of GDP",
+        "hi": null
+      },
+      {
+        "en": "10% of GDP",
+        "hi": null
+      },
+      {
+        "en": "4% of the Union Budget",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "NEP 2020 commits to raising combined public expenditure on education to 6% of GDP, a target first set by the Kothari Commission. Current spending is around 4% of GDP.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "NEP 2020",
+    "difficulty": "hard",
+    "question_en": "Under NEP 2020, the '10-day bagless period' during which students intern with local vocational experts such as carpenters, gardeners and potters is recommended for:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Classes 1 to 3",
+        "hi": null
+      },
+      {
+        "en": "Classes 6 to 8",
+        "hi": null
+      },
+      {
+        "en": "Classes 9 and 10",
+        "hi": null
+      },
+      {
+        "en": "Classes 11 and 12",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "NEP 2020 (para 4.26) says every student in Grades 6–8 will take a fun course giving hands-on experience of vocational crafts, with a 10-day bagless period. It is not meant for the foundational or secondary classes.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "NEP 2020",
+    "difficulty": "medium",
+    "question_en": "Which reform of board examinations is proposed in NEP 2020?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Board examinations to be abolished completely",
+        "hi": null
+      },
+      {
+        "en": "Board examinations to be held only in Class 12",
+        "hi": null
+      },
+      {
+        "en": "Students allowed to take board exams on up to two occasions in a school year",
+        "hi": null
+      },
+      {
+        "en": "Board results to be based only on attendance",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "NEP 2020 keeps board exams for Classes 10 and 12 but makes them 'easier', testing core capacities, and allows two attempts in a year (one main and one for improvement). It does not abolish them.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "NEP 2020",
+    "difficulty": "medium",
+    "question_en": "The 'Holistic Progress Card' recommended by NEP 2020 is best described as:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "A 360-degree, multidimensional report including self-, peer and teacher assessment",
+        "hi": null
+      },
+      {
+        "en": "A card showing only the marks scored in term-end examinations",
+        "hi": null
+      },
+      {
+        "en": "An identity card required for appearing in board examinations",
+        "hi": null
+      },
+      {
+        "en": "A record of fees paid and attendance only",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "NEP 2020 replaces the marks-only report card with a holistic, 360-degree progress card covering cognitive, affective and psychomotor progress, including self- and peer assessment. Marks alone would be the old summative report card.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "NEP 2020",
+    "difficulty": "hard",
+    "question_en": "According to NEP 2020, by 2030 the minimum degree qualification for school teaching will be:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "A two-year D.El.Ed. after Class 12",
+        "hi": null
+      },
+      {
+        "en": "A one-year B.Ed. after any degree",
+        "hi": null
+      },
+      {
+        "en": "A Master's degree in the subject",
+        "hi": null
+      },
+      {
+        "en": "A four-year integrated B.Ed. degree",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "NEP 2020 (para 5.23) states that by 2030 the minimum qualification for teaching will be a 4-year integrated B.Ed. covering content, pedagogy and practice. Two-year and one-year B.Ed. remain only for graduates and postgraduates respectively.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Teaching aids & ICT",
+    "difficulty": "easy",
+    "question_en": "A Computer Science teacher wants a free online tool to create a quiz, share a link with students and get responses graded automatically. The most suitable tool is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Google Forms",
+        "hi": null
+      },
+      {
+        "en": "Notepad",
+        "hi": null
+      },
+      {
+        "en": "Microsoft Paint",
+        "hi": null
+      },
+      {
+        "en": "Windows Media Player",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Google Forms can create quiz-type forms with answer keys, auto-grading and response summaries. Notepad, Paint and Media Player cannot collect or score responses.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Teaching aids & ICT",
+    "difficulty": "medium",
+    "question_en": "To introduce sequencing, loops and events to Class 6 students without the burden of syntax errors, the most suitable ICT tool is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "MySQL Workbench",
+        "hi": null
+      },
+      {
+        "en": "Wireshark",
+        "hi": null
+      },
+      {
+        "en": "Scratch (block-based programming)",
+        "hi": null
+      },
+      {
+        "en": "A command-line C compiler",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Scratch, developed at the MIT Media Lab, uses drag-and-drop blocks, so children learn programming logic without syntax errors. MySQL Workbench and Wireshark are database and network tools, and a C compiler demands precise syntax.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Teaching aids & ICT",
+    "difficulty": "medium",
+    "question_en": "The feature that distinguishes an interactive whiteboard from an ordinary projector screen is that it:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Works without electricity",
+        "hi": null
+      },
+      {
+        "en": "Can only display still images",
+        "hi": null
+      },
+      {
+        "en": "Needs no computer connected to it",
+        "hi": null
+      },
+      {
+        "en": "Has a touch surface on which content can be controlled, annotated and saved",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "An interactive (smart) board is connected to a computer and projector; its touch surface lets the teacher drag objects, annotate and save the board. A plain screen only displays the projected image.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Teaching aids & ICT",
+    "difficulty": "medium",
+    "question_en": "A teacher wants students to see, line by line, how variables and the call stack change while a recursive Python function runs. The most useful ICT tool is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "An online code visualiser such as Python Tutor",
+        "hi": null
+      },
+      {
+        "en": "A spreadsheet chart",
+        "hi": null
+      },
+      {
+        "en": "A word processor with track changes",
+        "hi": null
+      },
+      {
+        "en": "A presentation with a single static slide",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Code visualisers step through execution and draw frames, variables and the stack, making abstract recursion concrete. Charts, word processors and static slides cannot show program state as it changes.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Teaching aids & ICT",
+    "difficulty": "medium",
+    "question_en": "The e-Pathshala portal and mobile app, which provide e-books and e-resources of school textbooks, have been developed by:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "UGC",
+        "hi": null
+      },
+      {
+        "en": "AICTE",
+        "hi": null
+      },
+      {
+        "en": "NCERT",
+        "hi": null
+      },
+      {
+        "en": "NIOS",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "e-Pathshala was launched by the Ministry of Education and developed by NCERT (through CIET) to host NCERT e-textbooks and audio-video resources. UGC and AICTE deal with higher and technical education.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Teaching aids & ICT",
+    "difficulty": "hard",
+    "question_en": "SWAYAM PRABHA, an ICT initiative of the Ministry of Education, is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "A portal for online teacher recruitment",
+        "hi": null
+      },
+      {
+        "en": "A national scholarship portal",
+        "hi": null
+      },
+      {
+        "en": "A digital library of university theses",
+        "hi": null
+      },
+      {
+        "en": "A group of DTH channels telecasting educational programmes 24x7",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "SWAYAM PRABHA is a group of DTH educational TV channels (34 originally, expanded under PM eVIDYA) broadcasting curriculum content round the clock. Theses are hosted on Shodhganga, not SWAYAM PRABHA.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Classroom & lab management",
+    "difficulty": "easy",
+    "question_en": "If a small fire starts in a computer laboratory because of an electrical short circuit, the correct type of fire extinguisher to use after switching off the mains is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Water-type extinguisher",
+        "hi": null
+      },
+      {
+        "en": "Carbon dioxide (CO2) extinguisher",
+        "hi": null
+      },
+      {
+        "en": "A bucket of water mixed with sand",
+        "hi": null
+      },
+      {
+        "en": "Water-based foam extinguisher",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "CO2 (or dry chemical powder) extinguishers do not conduct electricity and leave no residue on equipment. Water and water-based foam conduct electricity and can cause electrocution.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Classroom & lab management",
+    "difficulty": "medium",
+    "question_en": "To prevent students from installing unauthorised software or changing system settings on lab computers, the lab in-charge should:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Give every student the administrator password",
+        "hi": null
+      },
+      {
+        "en": "Remove the keyboards after each period",
+        "hi": null
+      },
+      {
+        "en": "Create limited user accounts for students and keep admin rights with the teacher",
+        "hi": null
+      },
+      {
+        "en": "Disconnect all computers from power permanently",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Limited (standard) user accounts allow students to run permitted software but not install programs or alter settings, while the in-charge keeps admin rights. Sharing admin passwords defeats the purpose; the other options stop learning altogether.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Classroom & lab management",
+    "difficulty": "easy",
+    "question_en": "The main purpose of maintaining a computer-usage log book (register) in a school lab is to:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Record which student used which computer and when, so faults and misuse can be traced",
+        "hi": null
+      },
+      {
+        "en": "Record the marks scored in theory examinations",
+        "hi": null
+      },
+      {
+        "en": "Store the passwords of all students",
+        "hi": null
+      },
+      {
+        "en": "Keep the fee record of students",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "A lab log links each system to its user for every period, helping trace damage, faults and misuse and supporting maintenance records. Passwords must never be written in a shared register.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Classroom & lab management",
+    "difficulty": "medium",
+    "question_en": "For good ergonomics in a school computer lab, a monitor should be placed so that:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Its top is well above the student's head",
+        "hi": null
+      },
+      {
+        "en": "It faces a bright window directly behind it",
+        "hi": null
+      },
+      {
+        "en": "It is as close to the eyes as possible",
+        "hi": null
+      },
+      {
+        "en": "Its top is at or slightly below eye level and about an arm's length away",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Standard ergonomic guidance places the top of the screen at or just below eye level at roughly 50–70 cm, reducing neck strain and eye fatigue. Glare from a window behind the screen strains the eyes.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Classroom & lab management",
+    "difficulty": "hard",
+    "question_en": "Networked software that lets a teacher view all student screens from one console, lock them, and broadcast the teacher's screen during a lab class is called:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "A compiler suite",
+        "hi": null
+      },
+      {
+        "en": "An antivirus program",
+        "hi": null
+      },
+      {
+        "en": "A database management system",
+        "hi": null
+      },
+      {
+        "en": "Classroom (lab) management software such as Veyon or NetSupport School",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Classroom management software works over the lab LAN to monitor, lock, broadcast and distribute files, helping the teacher keep a large lab on task. Compilers, antivirus and DBMS have no screen-monitoring role.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Evaluation",
+    "difficulty": "easy",
+    "question_en": "A term-end examination conducted to award grades and decide promotion to the next class is an example of:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Diagnostic evaluation",
+        "hi": null
+      },
+      {
+        "en": "Formative evaluation",
+        "hi": null
+      },
+      {
+        "en": "Placement evaluation",
+        "hi": null
+      },
+      {
+        "en": "Summative evaluation",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Summative evaluation comes at the end of a unit, term or course to judge and certify achievement. Formative evaluation happens during teaching to improve learning, not to certify it.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Evaluation",
+    "difficulty": "medium",
+    "question_en": "A short test given at the start of a course to decide whether a student should join the beginner or the advanced Python batch is an example of:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Summative evaluation",
+        "hi": null
+      },
+      {
+        "en": "Formative evaluation",
+        "hi": null
+      },
+      {
+        "en": "Placement evaluation",
+        "hi": null
+      },
+      {
+        "en": "Diagnostic evaluation",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Placement evaluation checks entry behaviour before instruction to place learners at the right level. Diagnostic evaluation, by contrast, locates the specific causes of persistent learning difficulty.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Evaluation",
+    "difficulty": "medium",
+    "question_en": "In criterion-referenced testing, a student's performance is compared with:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "A predetermined standard or mastery criterion",
+        "hi": null
+      },
+      {
+        "en": "The performance of the other students in the group",
+        "hi": null
+      },
+      {
+        "en": "The student's own previous year's marks only",
+        "hi": null
+      },
+      {
+        "en": "The national average of all candidates",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Criterion-referenced tests interpret a score against a fixed standard (e.g. 'writes a correct SELECT query in 4 of 5 tasks'). Comparing with other students is norm-referenced interpretation.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Evaluation",
+    "difficulty": "medium",
+    "question_en": "Students use a checklist to judge their own Python code, reflect on their mistakes and set goals for the next program. This practice is best described as:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Assessment of learning",
+        "hi": null
+      },
+      {
+        "en": "Norm-referenced assessment",
+        "hi": null
+      },
+      {
+        "en": "Summative assessment",
+        "hi": null
+      },
+      {
+        "en": "Assessment as learning",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Assessment as learning makes students active assessors of their own work through self-assessment and reflection. Assessment of learning and summative assessment are used to grade at the end of instruction.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Evaluation",
+    "difficulty": "medium",
+    "question_en": "In an item analysis, 60 students attempted an MCQ and 45 of them answered it correctly. The difficulty index (p) of the item is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "0.25",
+        "hi": null
+      },
+      {
+        "en": "0.45",
+        "hi": null
+      },
+      {
+        "en": "0.60",
+        "hi": null
+      },
+      {
+        "en": "0.75",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Difficulty index p = number correct / number attempted = 45/60 = 0.75. A p of 0.75 means a fairly easy item; 0.25 would be the proportion who got it wrong.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Evaluation",
+    "difficulty": "hard",
+    "question_en": "For an MCQ, the upper group (20 students) had 16 correct answers and the lower group (20 students) had 6 correct answers. The discrimination index D is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "0.25",
+        "hi": null
+      },
+      {
+        "en": "0.50",
+        "hi": null
+      },
+      {
+        "en": "0.55",
+        "hi": null
+      },
+      {
+        "en": "1.10",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "D = (RU − RL) / n = (16 − 6) / 20 = 0.50, which indicates very good discrimination (0.40 and above is considered excellent). 1.10 adds the two groups wrongly; D can never exceed 1.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Evaluation",
+    "difficulty": "medium",
+    "question_en": "A purposeful collection of a student's programs, project reports and reflections gathered over the whole session to show growth is called a:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Blueprint",
+        "hi": null
+      },
+      {
+        "en": "Cumulative record of marks only",
+        "hi": null
+      },
+      {
+        "en": "Portfolio",
+        "hi": null
+      },
+      {
+        "en": "Question bank",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "A portfolio is a systematic collection of student work over time that shows progress and is used in authentic assessment. A blueprint is the design plan of a question paper.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Evaluation",
+    "difficulty": "easy",
+    "question_en": "The three-dimensional chart that shows the weightage given to objectives, content units and forms of questions while setting a question paper is called the:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Blueprint",
+        "hi": null
+      },
+      {
+        "en": "Rubric",
+        "hi": null
+      },
+      {
+        "en": "Anecdotal record",
+        "hi": null
+      },
+      {
+        "en": "Rating scale",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "A blueprint (design of the question paper) specifies weightage to objectives, content and question types, ensuring content validity. A rubric is a scoring guide for performance tasks.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Evaluation",
+    "difficulty": "medium",
+    "question_en": "A Computer Science test that samples questions from all units of the syllabus in proportion to their weightage is said to have high:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Inter-rater reliability",
+        "hi": null
+      },
+      {
+        "en": "Predictive validity",
+        "hi": null
+      },
+      {
+        "en": "Objectivity",
+        "hi": null
+      },
+      {
+        "en": "Content validity",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Content validity is the extent to which a test adequately represents the whole content and objectives taught. Predictive validity concerns how well scores forecast future performance.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Learning theories",
+    "difficulty": "easy",
+    "question_en": "Classical conditioning was experimentally demonstrated by:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "B. F. Skinner",
+        "hi": null
+      },
+      {
+        "en": "Wolfgang Kohler",
+        "hi": null
+      },
+      {
+        "en": "Ivan Pavlov",
+        "hi": null
+      },
+      {
+        "en": "Edward Thorndike",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Ivan Pavlov showed that dogs learnt to salivate at the sound of a bell paired with food (classical conditioning). Skinner is associated with operant conditioning and Kohler with insight learning.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Learning theories",
+    "difficulty": "medium",
+    "question_en": "Programmed instruction and the 'teaching machine', in which content is broken into small steps with immediate reinforcement, are based on the work of:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "B. F. Skinner",
+        "hi": null
+      },
+      {
+        "en": "Jean Piaget",
+        "hi": null
+      },
+      {
+        "en": "Lev Vygotsky",
+        "hi": null
+      },
+      {
+        "en": "Howard Gardner",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Skinner's operant conditioning led to linear programmed instruction: small frames, active response and immediate reinforcement. This idea is also behind many e-learning drill modules.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Learning theories",
+    "difficulty": "medium",
+    "question_en": "A student stares at a failing loop for a long time and then suddenly 'sees' the complete solution at once. This type of learning was explained by:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Ivan Pavlov's classical conditioning",
+        "hi": null
+      },
+      {
+        "en": "Edward Thorndike's trial and error",
+        "hi": null
+      },
+      {
+        "en": "B. F. Skinner's reinforcement",
+        "hi": null
+      },
+      {
+        "en": "Wolfgang Kohler's insight learning",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Kohler (Gestalt school) showed with the chimpanzee Sultan that learners may perceive the whole relationship suddenly ('aha' moment). Trial and error involves gradual, random attempts instead.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Learning theories",
+    "difficulty": "medium",
+    "question_en": "Before teaching 'linked lists', a teacher gives a brief overview relating them to arrays that students already know. According to David Ausubel, this introductory material is called a/an:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Advance organiser",
+        "hi": null
+      },
+      {
+        "en": "Discovery task",
+        "hi": null
+      },
+      {
+        "en": "Reinforcement schedule",
+        "hi": null
+      },
+      {
+        "en": "Operant response",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Ausubel's meaningful reception learning uses advance organisers to link new content to existing cognitive structure. Discovery tasks belong to Bruner's approach.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Learning theories",
+    "difficulty": "hard",
+    "question_en": "A student who believes that 'every sequence in Python can be changed in place' discovers that strings are immutable and revises this idea. In Piaget's terms, the revision of the existing schema is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Assimilation",
+        "hi": null
+      },
+      {
+        "en": "Conservation",
+        "hi": null
+      },
+      {
+        "en": "Accommodation",
+        "hi": null
+      },
+      {
+        "en": "Object permanence",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Accommodation is changing an existing schema to fit new information that does not match it. Assimilation would be fitting new information into the schema without changing it.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Learning theories",
+    "difficulty": "easy",
+    "question_en": "The theory of Multiple Intelligences, which includes logical–mathematical, linguistic and spatial intelligence, was proposed by:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Lev Vygotsky",
+        "hi": null
+      },
+      {
+        "en": "Howard Gardner",
+        "hi": null
+      },
+      {
+        "en": "Albert Bandura",
+        "hi": null
+      },
+      {
+        "en": "Jean Piaget",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Howard Gardner proposed Multiple Intelligences in 'Frames of Mind' (1983), originally listing seven and later eight intelligences. Programming draws strongly on logical–mathematical intelligence.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "teach",
+    "subtopic": "Learning theories",
+    "difficulty": "medium",
+    "question_en": "Students start imitating the systematic debugging habits that their teacher models aloud while fixing code. This is best explained by:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Albert Bandura's observational (social) learning",
+        "hi": null
+      },
+      {
+        "en": "Ivan Pavlov's classical conditioning",
+        "hi": null
+      },
+      {
+        "en": "Jean Piaget's stage theory",
+        "hi": null
+      },
+      {
+        "en": "Lawrence Kohlberg's moral development theory",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Bandura's social learning theory holds that people learn by observing and imitating models (attention, retention, reproduction, motivation). Classical conditioning involves associating stimuli, not imitation.",
+    "explanation_hi": null,
+    "expected": false
+  }
+]

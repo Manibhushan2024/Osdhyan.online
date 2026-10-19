@@ -1,0 +1,20 @@
+{
+  "2024_02_07_s2": [
+    {"page": 3, "section": "General intelligence and Reasoning Ability", "number": 3, "question_id": "630680600059", "question": "A series is given with one term missing. Select the correct alternative from the given ones that will complete the series.\nNRCH, IYNJ, FJUE, AQFB, ?", "options": ["XBMW", "QRST", "XTQR", "XMNO"], "correct": 1, "has_figure": false},
+    {"page": 3, "section": "General intelligence and Reasoning Ability", "number": 4, "question_id": "630680600057", "question": "In the following, select the odd letter/letters from the given alternatives.", "options": ["MKH", "MPR", "WUR", "KIF"], "correct": 2, "has_figure": false},
+    {"page": 3, "section": "General intelligence and Reasoning Ability", "number": 5, "question_id": "630680600048", "question": "In a certain code language, 'STOPWARS' is written as 'POTSSRAW', 'LOGIPERT' is written as 'IGOLTREP'. What is the code for 'LAPTOPST' in that code language?", "options": ["TATPOTSP", "TATPPOTS", "TAPTSOPS", "TPALTSPO"], "correct": 4, "has_figure": false}
+  ],
+  "2023_06_24_s3": [
+    {"page": 3, "section": "General intelligence and Reasoning Ability", "number": 3, "question_id": "630680256026", "question": "Which of the following letters is the 7th to the left of the 11th letter from the right end of the series?\n(Left) A D F G W R W S F G B C S X A D G H J K L Y O R E D H K H (Right)", "options": ["B", "C", "G", "S"], "correct": 2, "has_figure": false},
+    {"page": 3, "section": "General intelligence and Reasoning Ability", "number": 4, "question_id": "630680256040", "question": "Select the correct combination of mathematical signs that can sequentially replace the * signs and balance the given equation.\n19 * 23 * 221 * 17 * 89 * 361", "options": ["÷, +, ×, −, =", "+, ÷, ×, −, =", "×, +, ÷, −, =", "−, +, ÷, ×, ="], "correct": 3, "has_figure": false},
+    {"page": 3, "section": "General intelligence and Reasoning Ability", "number": 5, "question_id": "630680256037", "question": "Select the correct combination of mathematical signs that can sequentially replace the * signs and balance the following equation.\n45 * 45 * 45 * 45 * 45 * 1979", "options": ["+, ÷, =, ×, −", "−, ÷, =, +, ×", "÷, +, ×, −, =", "×, +, ÷, −, ="], "correct": 1, "has_figure": false}
+  ],
+  "2023_06_25_s1": [
+    {"page": 3, "section": "General intelligence and Reasoning Ability", "number": 3, "question_id": "630680256231", "question": "If\nA + B means A is the brother of B,\nA − B means A is the sister of B and\nA × B means A is the father of B,\nthen how is P related to S in the expression 'P × Q − R + S'?", "options": ["P is the father of S", "P is the son of S", "P is the brother of S", "P is the uncle of S"], "correct": 1, "has_figure": false}
+  ],
+  "2023_06_25_s2": [
+    {"page": 3, "section": "General intelligence and Reasoning Ability", "number": 3, "question_id": "630680256514", "question": "Which two signs should be interchanged to make the following equation correct?\n56 − 74 × 17 + 391 ÷ 23 = 1297", "options": ["÷ and ×", "+ and −", "× and −", "÷ and +"], "correct": 2, "has_figure": false},
+    {"page": 3, "section": "General intelligence and Reasoning Ability", "number": 4, "question_id": "630680256499", "question": "Select the term from among the given options that can replace the question mark (?) in the following series.\nPMT, QOW, RQZ, SSC, ?", "options": ["TVG", "TUF", "TVF", "TVE"], "correct": 2, "has_figure": false},
+    {"page": 3, "section": "General intelligence and Reasoning Ability", "number": 5, "question_id": "630680256495", "question": "A person placed the 9 letters from A to I of the English alphabet into a row such that\n• There is exactly two letters' gap between two vowels.\n• I and B are placed at the extreme ends.\n• D and F are placed between A and E.\n• C is placed to the right of B and second to the left of D.\n• E is placed exactly between A and I.\nWhich letter is placed in the middle of the row?", "options": ["F", "E", "G", "D"], "correct": 1, "has_figure": false}
+  ]
+}

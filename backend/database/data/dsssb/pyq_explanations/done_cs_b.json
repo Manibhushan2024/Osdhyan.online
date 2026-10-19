@@ -1,0 +1,1248 @@
+{
+ "630680256206": {
+  "explanation_en": "Per standard KM texts (Awad & Ghaziri), in-house development uses the organisation's existing IT staff, tools and knowledge of its own processes, so no vendor licence, consultancy or customisation fees are paid; this is treated as the lowest-cost route. An off-the-shelf solution looks cheap but adds licence cost plus the expense of adapting a generic product, while outsourcing pays an external firm's margin. End-user development is cheap to start but usually yields poorly integrated systems.",
+  "chapter_key": "cs_it",
+  "subtopic": "KM system development options",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256174": {
+  "explanation_en": "An operating system provides services such as program execution, resource management, I/O, file handling and inter-process communication. Translating source code into machine code is done by a compiler/interpreter (a language processor), not by the OS. Hence option 3 is the service the OS does NOT provide.",
+  "chapter_key": "cs_os",
+  "subtopic": "OS services",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256154": {
+  "explanation_en": "Computer (hardware) architecture is classified into types such as Instruction Set Architecture (ISA), micro-architecture (implementation of the ISA), Harvard and von Neumann architectures. Software architecture describes the high-level structure of a software system and belongs to software engineering, not computer hardware architecture.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Computer architecture types",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256152": {
+  "explanation_en": "A virtual-circuit network (connection-oriented) must set up a path before data transfer and tear it down afterwards. A datagram network is connectionless: each packet is routed independently and no setup phase is needed. So only option 3 is true; option 2 is wrong because datagram networks need no setup.",
+  "chapter_key": "cs_net",
+  "subtopic": "Datagram vs virtual-circuit networks",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256139": {
+  "explanation_en": "111111 in binary = 32+16+8+4+2+1 = 63 (equivalently 2^6 - 1 = 63). None of the other values matches this positional sum.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Binary to decimal",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256182": {
+  "explanation_en": "In .NET, source code is compiled into MSIL (Microsoft Intermediate Language), a CPU- and platform-independent instruction set. At run time the JIT compiler converts MSIL into native machine code. JIT is the converter, not the code itself, so MSIL is the answer.",
+  "chapter_key": "cs_prog",
+  "subtopic": ".NET MSIL",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256179": {
+  "explanation_en": "Marginal revenue is the additional revenue from selling one more unit: MR = ΔTR / ΔQ, i.e. change in total revenue divided by change in output quantity. Option 2 (ΔTC/ΔQ) is marginal cost, and option 1 is the inverted ratio.",
+  "chapter_key": "cs_it",
+  "subtopic": "Marginal revenue",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256138": {
+  "explanation_en": "istream::ignore(n, delim) extracts and discards up to n characters from the input stream, stopping earlier if the delimiter character is encountered (the delimiter is also discarded). So ignore(x, y) skips the first x characters and stops at character y. It works on the next (first) characters in the stream, not the last ones.",
+  "chapter_key": "cs_prog",
+  "subtopic": "C++ cin.ignore()",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256165": {
+  "explanation_en": "Cash or goods withdrawn by the proprietor for personal use are recorded as Drawings, which reduce the owner's capital. They are not business expenses, because they do not help earn revenue for the business.",
+  "chapter_key": "cs_it",
+  "subtopic": "Accounting - drawings",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256136": {
+  "explanation_en": "A try block may be followed by multiple catch blocks (one per exception type) but at most one finally block. Option 1 is false because try-finally without any catch is legal, and options 2 and 4 wrongly allow multiple finally blocks.",
+  "chapter_key": "cs_prog",
+  "subtopic": "Exception handling try-catch-finally",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256133": {
+  "explanation_en": "The CMOS chip stores BIOS settings and the real-time clock and is kept powered by a small coin-cell battery on the motherboard. POST runs at start-up, not after shutdown; the bootstrap loader is stored in ROM, not RAM; and BIOS has nothing to do with Charles Babbage.",
+  "chapter_key": "cs_fund",
+  "subtopic": "BIOS, POST and CMOS",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256186": {
+  "explanation_en": "/usr holds user programs, libraries and documentation; temporary files are kept in /tmp. /bin holds essential executable commands, /dev holds device files, and /etc holds configuration/administration files. So the statement about usr is NOT true.",
+  "chapter_key": "cs_os",
+  "subtopic": "Linux directory structure",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256209": {
+  "explanation_en": "FORTRAN stands for FORmula TRANslation, developed by John Backus's team at IBM (1957) for scientific and numeric computation. The other expansions are distractors.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Programming language history",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256207": {
+  "explanation_en": "In knowledge management, businesses are categorised by what drives their value: expert-driven, experience-driven and efficiency-driven businesses. 'Expense driven' is not one of these categories, so it is the odd one out.",
+  "chapter_key": "cs_it",
+  "subtopic": "KM - types of business",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256192": {
+  "explanation_en": "Binary search, quick sort and Strassen's matrix multiplication all split the problem into sub-problems and combine the results (divide and conquer). The all-pairs shortest path problem is solved by Floyd-Warshall, a dynamic programming algorithm, so it is not a divide-and-conquer application.",
+  "chapter_key": "cs_dsa",
+  "subtopic": "Divide and conquer applications",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256172": {
+  "explanation_en": "target=\"_top\" opens the linked document in the full body of the window, breaking out of all frames. _self opens in the same frame, _blank in a new window/tab, and _parent only in the immediate parent frame.",
+  "chapter_key": "cs_web",
+  "subtopic": "HTML target attribute",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256201": {
+  "explanation_en": "An external stylesheet is attached in the <head> with <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">. The <style> tag is for internal CSS and has no href attribute, and <a> creates a hyperlink, not a stylesheet link.",
+  "chapter_key": "cs_web",
+  "subtopic": "External CSS linking",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256199": {
+  "explanation_en": "Liang-Barsky is a parametric line-clipping algorithm (like Cohen-Sutherland). Simple DDA, Bresenham's and the mid-point algorithm are scan-conversion algorithms used to draw lines/circles, not to clip them.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Computer graphics - clipping",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256185": {
+  "explanation_en": "A new regular file gets 666 masked by the usual umask 022, giving 644 = rw- r-- r--. Text files do not get execute permission by default, so rwx r-- r-- (744) is wrong.",
+  "chapter_key": "cs_os",
+  "subtopic": "Linux file permissions",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256143": {
+  "explanation_en": "Eg = hc/λ. Using hc ≈ 12400 eV·Å, Eg = 12400 / 5511.11 ≈ 2.25 eV. Option 3 (3.606 eV) would correspond to about 3440 Å (ultraviolet), not green light.",
+  "chapter_key": "cs_fund",
+  "subtopic": "LED band gap",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256210": {
+  "explanation_en": "Pseudo-code is written in structured, programming-like statements (IF, WHILE, etc.), so it maps almost line-by-line to real code. An algorithm in plain prose or a flowchart needs more translation effort before coding.",
+  "chapter_key": "cs_dsa",
+  "subtopic": "Algorithm representation",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256202": {
+  "explanation_en": "The CSS filter property with the grayscale() function converts an image to grey: img { filter: grayscale(100%); }. There is no graycolor() function, and the value must not be quoted as a string (option 4).",
+  "chapter_key": "cs_web",
+  "subtopic": "CSS filter",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256203": {
+  "explanation_en": "DOM (tree-based), SAX (event-based) and JDOM (Java-oriented) are XML parsers/APIs. 'Shell' is a command interpreter, not an XML parser.",
+  "chapter_key": "cs_web",
+  "subtopic": "XML parsers",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256132": {
+  "explanation_en": "1 KB = 1024 bytes, so 4 KB = 4096 bytes, not 4069; hence option 3 is NOT true. Checks: 5 KB = 5120 bytes = 10,240 nibbles (half bytes); 3 KB = 3072 × 8 = 24,576 bits; 2 KB = 2048 bytes = 4096 nibbles.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Memory units conversion",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256147": {
+  "explanation_en": "When counters are cascaded, their moduli multiply: Mod-6 × Mod-8 = Mod-48 counter. Adding them (Mod-14) is the common mistake.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Cascaded counters",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256204": {
+  "explanation_en": "An external DTD is referenced as <!DOCTYPE root-element SYSTEM \"file-name\">: the root element name comes first, then the keyword SYSTEM and the DTD file path. Options 1 and 3 omit or misplace the root element, and ROOT is not a DTD keyword.",
+  "chapter_key": "cs_web",
+  "subtopic": "XML external DTD",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256213": {
+  "explanation_en": "Fit a quadratic through (1,1), (3,27), (4,64) using Lagrange's formula; simplifying gives f(x) = 8x^2 - 19x + 12. Check: x=1 gives 8-19+12 = 1; x=3 gives 72-57+12 = 27; x=4 gives 128-76+12 = 64. Option 3 (8x^2 - 9x + 12) gives 11 at x=1, so it fails.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Lagrange interpolation",
+  "difficulty": "hard",
+  "key_doubt": false
+ },
+ "630680256125": {
+  "explanation_en": "dy/dx = e^x·e^y, so e^(-y) dy = e^x dx. Integrating: -e^(-y) = e^x + k, i.e. e^x + e^(-y) = c. Option 1 has the sign of e^(-x) wrong; differentiating it does not give back the original equation.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Differential equations - variable separable",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256150": {
+  "explanation_en": "Attributes attached to a relationship set (e.g. 'since' on works_for) are called descriptive attributes; they record information about the relationship itself, not about the participating entities. Information about entities is held by the entities' own attributes.",
+  "chapter_key": "cs_dbms",
+  "subtopic": "ER model - descriptive attributes",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256166": {
+  "explanation_en": "Packages DO provide controlled access through access modifiers (default/package-private and protected), so statement 1 is FALSE. Packages also prevent naming conflicts and support encapsulation by grouping related classes.",
+  "chapter_key": "cs_prog",
+  "subtopic": "Java packages",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256208": {
+  "explanation_en": "Knowledge management systems aim to drive strategy, integrate knowledge across the organisation, and enable sharing of knowledge to improve decisions and innovation. Portability is a software quality attribute (ability to run on different platforms), not a purpose of a KMS.",
+  "chapter_key": "cs_it",
+  "subtopic": "Purpose of KM systems",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256187": {
+  "explanation_en": "Common UNIX/Linux shells are the Bourne shell (sh), C shell (csh), Korn shell (ksh) and Bourne-Again shell (bash). 'Alpha cell' is not a shell at all; it is a distractor.",
+  "chapter_key": "cs_os",
+  "subtopic": "Linux shells",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256167": {
+  "explanation_en": "The RAD model phases are business modelling, data modelling, process modelling, application generation, and testing & turnover. 'Development modelling' is not a phase of RAD.",
+  "chapter_key": "cs_se",
+  "subtopic": "RAD model phases",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256180": {
+  "explanation_en": "Demand-pull inflation occurs when aggregate demand exceeds supply, pulling prices up. Cost-push inflation is caused by rising input costs (wages, raw materials), and built-in inflation comes from wage-price expectations. 'Demand-push' is not a standard term.",
+  "chapter_key": "cs_it",
+  "subtopic": "Types of inflation",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256141": {
+  "explanation_en": "Web surfing (browsing) is moving from one website to another on the internet, usually by following hyperlinks. Searching means using a search engine to find specific information, and chatting is real-time messaging.",
+  "chapter_key": "cs_net",
+  "subtopic": "Internet - web surfing",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256190": {
+  "explanation_en": "K. Vaitheeswaran, co-founder of Fabmall/Indiaplaza (1999), is widely called the father of e-commerce in India. Michael Aldrich invented online shopping in the UK (1979), so he is the father of e-commerce globally, not of Indian e-commerce.",
+  "chapter_key": "cs_it",
+  "subtopic": "E-commerce history",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256155": {
+  "explanation_en": "In ADD R1, [R2], the square brackets mean R2 holds the memory address of the operand, which is register indirect addressing. Plain register mode would use the contents of R2 itself as the operand (ADD R1, R2).",
+  "chapter_key": "cs_fund",
+  "subtopic": "Addressing modes",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256131": {
+  "explanation_en": "An organisation structure defines authority and responsibility relationships among people, the work they do and the resources they use. The other options describe external relationships (environment, customers, society), which are not set by internal structure.",
+  "chapter_key": "cs_it",
+  "subtopic": "Organisation structure",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256130": {
+  "explanation_en": "A sole proprietorship is a business owned, managed and controlled by one person who bears all risks and profits. A partnership needs two or more persons and a cooperative is a voluntary association of members.",
+  "chapter_key": "cs_it",
+  "subtopic": "Forms of business organisation",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256205": {
+  "explanation_en": "Knowledge management is the set of processes to create, gather, store, transfer (share) and apply knowledge in an organisation. Organisational memory is only the stored knowledge, and a knowledge asset is the knowledge itself, not the processes.",
+  "chapter_key": "cs_it",
+  "subtopic": "Knowledge management definition",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256183": {
+  "explanation_en": "Microsoft lists the key features of ADO.NET as interoperability (XML based), maintainability, programmability, performance and scalability. 'Reachability' is not one of them.",
+  "chapter_key": "cs_web",
+  "subtopic": "ADO.NET features",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256144": {
+  "explanation_en": "Light travels through an optical fibre by total internal reflection, which needs light to go from a denser medium (core) to a rarer medium (cladding) at more than the critical angle. Hence the core's refractive index is kept higher than the cladding's; option 4 is the opposite of what is desired.",
+  "chapter_key": "cs_net",
+  "subtopic": "Optical fibre principle",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256214": {
+  "explanation_en": "μ = (E^(1/2) + E^(-1/2))/2 and δ = E^(1/2) - E^(-1/2). Then μ^2 = (E + 2 + E^(-1))/4 and δ^2 = E - 2 + E^(-1), so μ^2 = (δ^2 + 4)/4 = 1 + δ^2/4. The other options use wrong constants.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Finite difference operators",
+  "difficulty": "hard",
+  "key_doubt": false
+ },
+ "630680256194": {
+  "explanation_en": "From {2,7,8,9,15} the subsets summing to 17 are {2,7,8} = 11100, {2,15} = 10001 and {8,9} = 00110. Option 1's 10101 = 2+8+15 = 25 and option 4's 00111 = 8+9+15 = 32, so they are wrong.",
+  "chapter_key": "cs_dsa",
+  "subtopic": "Sum of subsets (backtracking)",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256333": {
+  "explanation_en": "When too many packets are present in (part of) a network, queues build up and packets are delayed or dropped; this is congestion. Choke packets and throttling are techniques to control congestion, and congestion collapse is its extreme outcome.",
+  "chapter_key": "cs_net",
+  "subtopic": "Congestion",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256353": {
+  "explanation_en": "Software Configuration Management (SCM) is the umbrella activity that identifies, controls, audits and reports changes to software during development and after release. SQA focuses on quality assurance activities, not change tracking.",
+  "chapter_key": "cs_se",
+  "subtopic": "Software configuration management",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256327": {
+  "explanation_en": "!= (not equal to) is a relational operator in C, along with <, >, <=, >= and ==. &&, || and ! are logical operators.",
+  "chapter_key": "cs_prog",
+  "subtopic": "C operators",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256415": {
+  "explanation_en": "From the management point of view, KM focuses on determining, organising, directing, facilitating and monitoring knowledge-related practices to achieve business strategies. The business point of view is about why/where the organisation should invest in knowledge, and the hands-on operational view is about applying expertise in daily work.",
+  "chapter_key": "cs_it",
+  "subtopic": "KM viewpoints",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256401": {
+  "explanation_en": "For an ordinary user, the bash shell shows the $ prompt by default. # is shown for the root (super) user, and % is the default C-shell prompt.",
+  "chapter_key": "cs_os",
+  "subtopic": "Linux shell prompt",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256382": {
+  "explanation_en": "Quadratic equations are solved by factorisation, completing the square, or the quadratic formula (also graphically). 'Convergence' refers to iterative numerical behaviour of sequences/series and is not a method of solving quadratics.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Quadratic equations",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256344": {
+  "explanation_en": "Front-end development tools (e.g. Bootstrap, Sass, VS Code extensions) help developers build attractive layouts and user interfaces for websites and apps. Back-end tools deal with servers and databases, and database design tools model data.",
+  "chapter_key": "cs_web",
+  "subtopic": "Front-end development tools",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256369": {
+  "explanation_en": "An element is declared in a DTD as <!ELEMENT element-name category> (or (content)). <!ATTLIST ...> declares attributes and <!ENTITY ...> declares entities, so they are valid but not for elements; <#ELEMENT> is invalid syntax.",
+  "chapter_key": "cs_web",
+  "subtopic": "DTD element declaration",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256352": {
+  "explanation_en": "Sequential (linear) process models such as the waterfall model are the oldest paradigm; they assume a linear flow that rarely matches real projects where requirements change. Incremental, evolutionary and concurrent models were introduced to handle iteration and change.",
+  "chapter_key": "cs_se",
+  "subtopic": "Prescriptive process models",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256400": {
+  "explanation_en": "Demand is perfectly elastic (Ed = ∞) when a negligible change in price causes an infinite change in quantity demanded; the demand curve is horizontal. Perfectly inelastic (Ed = 0) is the opposite case where quantity does not change at all.",
+  "chapter_key": "cs_it",
+  "subtopic": "Elasticity of demand",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256378": {
+  "explanation_en": "Range = maximum - minimum = 101 - 6 = 95. Option 4 (101) is just the maximum value.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Statistics - range",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256331": {
+  "explanation_en": "In a connectionless network-layer service, independently routed packets are called datagrams and the network is a datagram network. Virtual-circuit networks are connection-oriented, so options using 'virtual circuit' are wrong.",
+  "chapter_key": "cs_net",
+  "subtopic": "Network layer - datagram service",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256336": {
+  "explanation_en": "IMAP servers listen on TCP port 143 (993 for IMAPS). Port 80 is HTTP, 443 is HTTPS and 20 is FTP data.",
+  "chapter_key": "cs_net",
+  "subtopic": "Well-known ports",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256354": {
+  "explanation_en": "In ISO 9126, Efficiency covers time behaviour and resource behaviour, i.e. optimal use of system resources. Maintainability, usability and portability have different sub-attributes (analysability, learnability, adaptability etc.).",
+  "chapter_key": "cs_se",
+  "subtopic": "Software quality factors (ISO 9126)",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256407": {
+  "explanation_en": "In Mobile IP, the foreign agent is the router in the visited (foreign) network that serves the mobile node and delivers tunnelled packets to it. The home agent sits in the home network, and a care-of address (COA) is an address, not a router.",
+  "chapter_key": "cs_net",
+  "subtopic": "Mobile IP",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256365": {
+  "explanation_en": "A Bezier curve is a spline defined by a set of control points, built from Bernstein polynomial blending functions. 'Parametric' describes a general way of representing curves, not a specific spline generated from control points.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Computer graphics - curves",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256397": {
+  "explanation_en": "Microeconomics studies the behaviour of individual units such as a consumer, household or firm. Macroeconomics studies the economy as a whole (national income, inflation, unemployment).",
+  "chapter_key": "cs_it",
+  "subtopic": "Microeconomics",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256330": {
+  "explanation_en": "y = &x, so *y = 8. The expression x * *y * x + *y = 8 * 8 * 8 + 8 = 512 + 8 = 520. There is no compilation or runtime error because y is a valid pointer to x.",
+  "chapter_key": "cs_prog",
+  "subtopic": "C pointers - output trace",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256416": {
+  "explanation_en": "Knowledge refining adds value to captured knowledge by discovering relationships, abstracting, synthesising and sharing it. Gathering/acquisition only collects knowledge, and organisation only stores/structures it.",
+  "chapter_key": "cs_it",
+  "subtopic": "KM process steps",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256396": {
+  "explanation_en": "In ASP.NET, an event is an action or occurrence such as a mouse click, key press, mouse movement or a system-generated notification, which triggers an event handler. Directives give compiler instructions, validators check input, and controls are UI elements.",
+  "chapter_key": "cs_web",
+  "subtopic": "ASP.NET events",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256409": {
+  "explanation_en": "Estimating y for an x lying between the given tabulated points x0 ... xn is interpolation. Estimating outside that range is extrapolation; bias, variance and hypothesis are statistics terms.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Numerical methods - interpolation",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256388": {
+  "explanation_en": "Key doubt: the standard accounting cycle is Transactions → Journal → Ledger → Trial Balance → Adjustment Entries → Adjusted Trial Balance → Financial Statements → Closing Entries, which is option 4. Financial statements are prepared from the adjusted trial balance BEFORE closing entries, because closing entries reset revenue, expense and drawing accounts to zero. The official option 2 puts closing entries before financial statements, which is not the textbook order.",
+  "chapter_key": "cs_it",
+  "subtopic": "Accounting cycle",
+  "difficulty": "medium",
+  "key_doubt": true
+ },
+ "630680256363": {
+  "explanation_en": "In the Wang-Strong framework, representational quality covers interpretability, ease of understanding, format/concise representation, coherence/consistency and compatibility. Intrinsic quality covers accuracy and believability, contextual quality covers relevance and timeliness, and accessibility covers access and security.",
+  "chapter_key": "cs_it",
+  "subtopic": "MIS - information quality dimensions",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256387": {
+  "explanation_en": "This is the AICPA definition of accounting, which describes financial accounting: recording, classifying and summarising financial transactions in money terms and interpreting the results. Book keeping only records transactions and does not interpret results; cost and management accounting focus on internal cost control and decision making.",
+  "chapter_key": "cs_it",
+  "subtopic": "Accounting definition",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256405": {
+  "explanation_en": "Packing, loading and shipping goods to the customer happen in the delivery/fulfilment step of the e-commerce process. Contract conclusion is placing/accepting the order, billing is invoicing and payment, and service/support is after-sales.",
+  "chapter_key": "cs_it",
+  "subtopic": "E-commerce primary processes",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256343": {
+  "explanation_en": "Sass (Syntactically Awesome Style Sheets) is a widely used CSS extension language that adds variables, nesting and mixins. VS Code is an editor, Git is version control and TypeScript extends JavaScript, not CSS.",
+  "chapter_key": "cs_web",
+  "subtopic": "CSS preprocessors",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256408": {
+  "explanation_en": "TDMA lets several users share one wide frequency channel by giving each user a different time slot. FDMA instead divides the bandwidth into separate frequency bands; NDMA and PDMA are not standard schemes.",
+  "chapter_key": "cs_net",
+  "subtopic": "Multiple access - TDMA",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256347": {
+  "explanation_en": "A queue follows FIFO: the first element inserted is the first one removed. A stack follows LIFO, where the last inserted element is removed first.",
+  "chapter_key": "cs_dsa",
+  "subtopic": "Queue - FIFO",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256398": {
+  "explanation_en": "A capitalist (free-market) economy is characterised by private ownership, free markets and little or no government intervention. A socialist economy has state ownership and planning, while a mixed economy combines both.",
+  "chapter_key": "cs_it",
+  "subtopic": "Economic systems",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256332": {
+  "explanation_en": "The routing algorithm is the part of network-layer software that decides on which output line an incoming packet should be sent, and builds/maintains routing tables. The other names are not standard terms.",
+  "chapter_key": "cs_net",
+  "subtopic": "Routing algorithms",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256371": {
+  "explanation_en": "DRAM stores each bit as charge on a tiny capacitor (with one access transistor), which leaks and must be refreshed periodically. SRAM stores bits in flip-flops, which is why it is faster but costlier.",
+  "chapter_key": "cs_fund",
+  "subtopic": "DRAM vs SRAM",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256384": {
+  "explanation_en": "A tangent is perpendicular to the radius at the point of contact, so triangle OBA is right-angled at B. AO = √(OB² + AB²) = √(40² + 150²) = √(1600 + 22500) = √24100 ≈ 155.2 mm. Option 4 (235.6) is not consistent with Pythagoras.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Geometry - tangent to circle",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256345": {
+  "explanation_en": "Definiteness means every instruction of an algorithm is clear, precise and unambiguous. Finiteness means it terminates after a finite number of steps, and effectiveness means each step is basic enough to be carried out.",
+  "chapter_key": "cs_dsa",
+  "subtopic": "Characteristics of an algorithm",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256402": {
+  "explanation_en": "rm deletes files, and the wildcard doc* matches every name that begins with 'doc' followed by any characters. To match names ending in doc you would write *doc; listing would need ls, not rm.",
+  "chapter_key": "cs_os",
+  "subtopic": "Linux rm with wildcard",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256350": {
+  "explanation_en": "A relationship is an association among two or more entities (e.g. Student ENROLLS-IN Course). An instance is a single occurrence, a key identifies entities uniquely, and participation describes whether every entity takes part in a relationship.",
+  "chapter_key": "cs_dbms",
+  "subtopic": "ER model - relationship",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256349": {
+  "explanation_en": "The Insert key toggles between insert mode (new characters push existing text to the right) and overwrite mode (new characters replace existing text). Backspace and Delete are separate keys that erase characters.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Keyboard - Insert key",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256373": {
+  "explanation_en": "A variable is a symbolic name given to a memory location whose value can change during program execution. A constant/literal is a fixed value, and an attribute is a property of an object or entity.",
+  "chapter_key": "cs_prog",
+  "subtopic": "Variables",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256383": {
+  "explanation_en": "An angle measures the amount of rotation between two straight lines (rays) meeting at a point. A degree is only a unit for measuring angles, and a transversal is a line cutting two or more lines.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Geometry - angle",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256328": {
+  "explanation_en": "C has four storage classes: auto, register, static and extern. 'intern' is not a storage class or keyword in C.",
+  "chapter_key": "cs_prog",
+  "subtopic": "C storage classes",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256329": {
+  "explanation_en": "In a queue, insertion (enqueue) happens at the rear and deletion (dequeue) happens at the front. Statement (i) puts insertion at the front and (ii) puts deletion at the rear, so both are false: neither (i) nor (ii).",
+  "chapter_key": "cs_dsa",
+  "subtopic": "Queue operations",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256346": {
+  "explanation_en": "In the CGS system heat is measured in calories, in the FPS system in British Thermal Units (BTU), and in the SI system in joules. Hence (a)-(iii), (b)-(i), (c)-(ii).",
+  "chapter_key": "cs_fund",
+  "subtopic": "Units of heat",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256411": {
+  "explanation_en": "An optimisation problem asks for the best solution (minimum or maximum by some measure) from the set of feasible solutions, e.g. shortest path. A decision problem has a yes/no answer and a counting problem asks how many solutions exist.",
+  "chapter_key": "cs_dsa",
+  "subtopic": "Problem types - optimisation",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256404": {
+  "explanation_en": "In B2B/B2C notation, 'B' stands for business organisations such as producers, manufacturers, wholesalers and retailers. Consumers/customers are 'C' and government is 'G'.",
+  "chapter_key": "cs_it",
+  "subtopic": "E-commerce stakeholders",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256360": {
+  "explanation_en": "A Management Information System is a planned system for collecting, storing and disseminating data as information needed by managers to plan, organise and control. A DBMS only manages data storage and retrieval; it does not by itself serve management functions.",
+  "chapter_key": "cs_it",
+  "subtopic": "MIS definition",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256340": {
+  "explanation_en": "In a client/server network the central computer that provides services and controls resources is the server, and the other computers that request services are clients. 'Peers' are used in peer-to-peer networks where all nodes are equal.",
+  "chapter_key": "cs_net",
+  "subtopic": "Client-server network",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256637": {
+  "explanation_en": "Key doubt: the Common Gateway Interface (CGI) is the standard that defines how a web server communicates with application programs (Silberschatz, Database System Concepts), so option 3 should be correct. HTTP is the protocol between the browser (client) and the web server, not between the web server and application programs. JDBC/ODBC connect applications to databases.",
+  "chapter_key": "cs_web",
+  "subtopic": "CGI",
+  "difficulty": "medium",
+  "key_doubt": true
+ },
+ "630680256642": {
+  "explanation_en": "Linear sequential models such as waterfall assume requirements are fixed and fully known at the start, so they cope poorly when requirements change during development. Evolutionary, incremental and agile models are designed to accommodate changing requirements.",
+  "chapter_key": "cs_se",
+  "subtopic": "Linear (waterfall) model",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256612": {
+  "explanation_en": "A compiler translates the entire high-level source program into object (target) code before execution. An interpreter executes line by line without producing an object program, and an assembler translates assembly language only.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Language translators",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256626": {
+  "explanation_en": "RISC processors use simple, fixed-length instructions that execute in one cycle with fewer transistors, so they consume less power; this is why ARM (RISC) dominates mobile devices. CISC needs complex decoding hardware and more power, while IANA and ISA are not architecture styles to compare here.",
+  "chapter_key": "cs_fund",
+  "subtopic": "RISC vs CISC",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256661": {
+  "explanation_en": "Selection sort always scans the remaining unsorted part to find the minimum, making n(n-1)/2 comparisons regardless of input order. So both best and worst case are O(n^2). O(n) best case applies to insertion/bubble sort with a sorted input, not selection sort.",
+  "chapter_key": "cs_dsa",
+  "subtopic": "Selection sort complexity",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256597": {
+  "explanation_en": "Key doubt: Σ 1/∛(n^2) = Σ 1/n^(2/3) is a p-series with p = 2/3. A p-series converges only when p > 1, so here (p ≤ 1) the series diverges and option 2 is correct. The official 'convergent' contradicts the p-series test; compare with Σ 1/n, which also diverges.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Series convergence (p-series)",
+  "difficulty": "medium",
+  "key_doubt": true
+ },
+ "630680256632": {
+  "explanation_en": "TCP, UDP and SCTP are transport-layer protocols. FTP, DNS and Telnet are application-layer, ICMP is network-layer, and ARP/RARP work between the network and data-link layers.",
+  "chapter_key": "cs_net",
+  "subtopic": "Transport layer protocols",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256643": {
+  "explanation_en": "Functional requirements describe what the system must do and are at the core of completing the project's work tasks, so they are mandatory. Non-functional requirements (performance, usability, etc.) describe qualities and are treated in this question as not mandatory. Framework/umbrella (option 2) describes process activities, and umbrella activities are not optional, so it does not fit the 'not mandatory' clue.",
+  "chapter_key": "cs_se",
+  "subtopic": "Requirements - functional vs non-functional",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256602": {
+  "explanation_en": "Sole proprietorship is the most common form of business organisation because it is easy to start, needs little capital and has few legal formalities. Partnerships and companies require more agreements and registration.",
+  "chapter_key": "cs_it",
+  "subtopic": "Forms of business organisation",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256622": {
+  "explanation_en": "DDL (CREATE, ALTER, DROP) defines relation schemas, deletes relations and modifies schemas. DML (SELECT, INSERT, UPDATE, DELETE) works on data inside the tables, not on their structure.",
+  "chapter_key": "cs_dbms",
+  "subtopic": "SQL - DDL",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256676": {
+  "explanation_en": "An XML processor (parser) reads an XML document and gives applications access to its content and structure. An XML schema only defines the allowed structure; it does not read documents.",
+  "chapter_key": "cs_web",
+  "subtopic": "XML processor",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256609": {
+  "explanation_en": "An array stores elements in contiguous, sequential order, the basic example of a linear list. Trees and graphs are non-linear because an element can link to several others. A circular queue is also linear but is a restricted structure built on an array/list, so the expected answer is the array.",
+  "chapter_key": "cs_dsa",
+  "subtopic": "Linear data structures",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256667": {
+  "explanation_en": "BTS stands for Base Transceiver Station, the equipment (with antennas) that sends and receives radio signals between mobile phones and the cellular network. It transmits and receives (transceiver), not just transfers.",
+  "chapter_key": "cs_net",
+  "subtopic": "Mobile communication - BTS",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256616": {
+  "explanation_en": "The ground state is the lowest energy level and is stable: an atom stays there indefinitely unless it absorbs energy, so its lifetime is taken as infinite. Excited states have lifetimes around 10^-8 s and metastable states around 10^-3 s.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Lasers - atomic states",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256620": {
+  "explanation_en": "A BCD adder takes two 4-bit inputs, giving 2^4 × 2^4 = 256 input combinations. Only digits 0-9 are valid for each input, so valid combinations = 10 × 10 = 100. Invalid combinations = 256 - 100 = 156 (ignoring the carry-in).",
+  "chapter_key": "cs_fund",
+  "subtopic": "BCD adder",
+  "difficulty": "hard",
+  "key_doubt": false
+ },
+ "630680256675": {
+  "explanation_en": "The second string starts with a newline character. When written into HTML, a newline is treated as whitespace and rendered as a single space, so the page shows 'Hello India'. 'HelloIndia' would appear only if there were no whitespace between the strings.",
+  "chapter_key": "cs_web",
+  "subtopic": "JavaScript document.write",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256621": {
+  "explanation_en": "A relational database stores data in tables (relations) of rows and columns, linked by keys; that is what makes it relational. Fields, records and tuples are just the parts of a table.",
+  "chapter_key": "cs_dbms",
+  "subtopic": "Relational model",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256651": {
+  "explanation_en": "The opinion survey method includes the sales-force composite (collective opinion) method, where salespeople's estimates of expected sales are combined. The consumer interview method surveys buyers directly, and the evolutionary/substitute approaches are for new products.",
+  "chapter_key": "cs_it",
+  "subtopic": "Demand forecasting methods",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256664": {
+  "explanation_en": "An organisation is a formal social unit (a group of people) deliberately structured to achieve specified goals. Management is the process of directing that unit, and marketing is one of its functions.",
+  "chapter_key": "cs_it",
+  "subtopic": "MIS - organisation",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256673": {
+  "explanation_en": "The worldwide interconnection of networks (the internet) exists primarily to carry messages for communication between computers and people, e.g. email and messaging. File sharing, market analysis and transactions are applications built on top of this communication capability.",
+  "chapter_key": "cs_net",
+  "subtopic": "Purpose of internetworking",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256611": {
+  "explanation_en": "Static memory (e.g. SRAM) keeps its contents as long as power is supplied without needing refresh, so its contents do not change due to external causes. Dynamic memory (DRAM) loses charge and must be refreshed, and temporary memory is not a standard term.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Static memory",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256656": {
+  "explanation_en": "/etc holds system-wide configuration files such as /etc/passwd, /etc/fstab and /etc/hosts. /dev holds device files, /bin essential binaries and /root is the root user's home directory.",
+  "chapter_key": "cs_os",
+  "subtopic": "Linux /etc directory",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256659": {
+  "explanation_en": "OLX is a classifieds platform where individuals sell used goods directly to other individuals, so it is Consumer-to-Consumer (C2C). B2C examples are Amazon/Flipkart retail and B2B examples are IndiaMART.",
+  "chapter_key": "cs_it",
+  "subtopic": "E-commerce models - C2C",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256683": {
+  "explanation_en": "Interpolation estimates intermediate values from known data points, so it relies on curve fitting through the points and, in the simplest case, linear (straight-line) analysis between them. Regression analysis models general trends with error rather than passing through the given points, so it is not the basis of interpolation.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Interpolation",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256599": {
+  "explanation_en": "The classical definition of probability, P(E) = favourable outcomes / total equally likely outcomes, was formalised by Pierre-Simon Laplace. Euclid worked in geometry and Einstein in physics.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Probability - classical definition",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256639": {
+  "explanation_en": "Net profit is found in the Profit and Loss Account, which deducts indirect expenses from gross profit. The Trading Account gives gross profit, and the Balance Sheet is a statement of assets and liabilities, not an account.",
+  "chapter_key": "cs_it",
+  "subtopic": "Final accounts - net profit",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256636": {
+  "explanation_en": "Application programs communicate with a database server through standard APIs such as ODBC (C and other languages) or JDBC (Java). HTTP and a web server connect browsers to web applications, not applications to databases.",
+  "chapter_key": "cs_dbms",
+  "subtopic": "Database connectivity - ODBC/JDBC",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256662": {
+  "explanation_en": "Merge sort divides the array into two halves, recursively sorts each half, and merges the sorted halves: divide and conquer. It makes no greedy choices and does no backtracking.",
+  "chapter_key": "cs_dsa",
+  "subtopic": "Merge sort - divide and conquer",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256600": {
+  "explanation_en": "The Poisson distribution is defined for discrete random variables (counts 0, 1, 2, ...), with P(X=k) = e^(-λ)λ^k/k!. Gaussian (normal) and Rayleigh distributions are continuous, and the cumulative distribution is a function type, not a specific discrete distribution.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Probability distributions",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256648": {
+  "explanation_en": "fork() starts a concurrent child computation and join() waits for it to finish and recombines it with the parent; used together they form a complete process subroutine. sleep() only suspends execution for a time. Option 4 lists join before fork, which is the wrong order.",
+  "chapter_key": "cs_os",
+  "subtopic": "Process creation - fork/join",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256625": {
+  "explanation_en": "Routing (inter- and intra-domain) and congestion control are network-layer functions. Error control and flow control are mainly responsibilities of the data link layer (hop-to-hop) and transport layer (end-to-end).",
+  "chapter_key": "cs_net",
+  "subtopic": "Network layer functions",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256604": {
+  "explanation_en": "Under the Companies Act, 2013, a public company needs at least 7 members (a private company needs 2, a One Person Company needs 1). Option 3 (2) is the minimum for a private company.",
+  "chapter_key": "cs_it",
+  "subtopic": "Company law - minimum members",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256624": {
+  "explanation_en": "A 4-byte (32-bit) IPv4 address has two parts: the network address (netid) and the host address (hostid). Port numbers belong to the transport layer and MAC addresses to the data link layer.",
+  "chapter_key": "cs_net",
+  "subtopic": "IPv4 addressing",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256628": {
+  "explanation_en": "A bus is a set of parallel wires (lines) that carry data, address and control signals between CPU, memory and I/O devices. Registers, accumulators and RAM/ROM are components connected by the bus, not what it is made of.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Computer bus",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256603": {
+  "explanation_en": "A company is a separate legal entity, so its members' liability is limited to the unpaid amount on their shares. Sole proprietors and (general) partners have unlimited liability; a cooperative society may also have limited liability, but the company is the classic answer.",
+  "chapter_key": "cs_it",
+  "subtopic": "Limited liability",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256645": {
+  "explanation_en": "Key doubt: from strictest to least strict, Java access levels are private (class only) > package/default (same package) > protected (same package + subclasses) > public (everywhere), which is option 4. Protected is less strict than package access because it adds subclass access outside the package. The official option 2 wrongly ranks protected as stricter than package.",
+  "chapter_key": "cs_prog",
+  "subtopic": "Java access modifiers",
+  "difficulty": "medium",
+  "key_doubt": true
+ },
+ "630680256650": {
+  "explanation_en": "Joel Dean's methods for forecasting demand for new products include the evolutionary approach, substitute approach, opinion polling approach, growth-curve approach and vicarious approach. Since all three listed approaches are valid, option 1 (all of them) is correct; picking only one is incomplete.",
+  "chapter_key": "cs_it",
+  "subtopic": "Demand forecasting for new products",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256654": {
+  "explanation_en": "rm (with -r, as in rm -r dirname) removes directories along with their contents (rmdir removes empty ones). 'Delete' and 'Erase' are DOS/Windows-style commands that do not exist in Linux, so option 4 is wrong.",
+  "chapter_key": "cs_os",
+  "subtopic": "Linux directory removal",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256663": {
+  "explanation_en": "Merge sort always splits the array into halves (log n levels) and merges in O(n) per level, so best, average and worst case are all O(n log n). O(n^2) is the worst case of quick sort, not merge sort.",
+  "chapter_key": "cs_dsa",
+  "subtopic": "Merge sort complexity",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256679": {
+  "explanation_en": "Virtual reality systems use interactive graphics software and hardware (head-mounted displays, gloves) to create computer-generated simulations of real-world activities. Genetic algorithms, fuzzy neural networks and hybrid systems are AI techniques, not simulation environments.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Virtual reality",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256638": {
+  "explanation_en": "Long-term assets are fixed (non-current) assets such as land, buildings and machinery, held for more than one year to run the business. Liabilities are obligations, not assets; intangible assets are one sub-type, while 'fixed assets' is the general term.",
+  "chapter_key": "cs_it",
+  "subtopic": "Accounting - fixed assets",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256641": {
+  "explanation_en": "Polymorphism ('many forms') lets the same name/operator behave differently; operator overloading is a compile-time form of polymorphism where one operator works on many types. 'Operator overriding' is not a standard term, and multiple inheritance or nested classes are not about many forms.",
+  "chapter_key": "cs_prog",
+  "subtopic": "OOP polymorphism",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256634": {
+  "explanation_en": "A socket is an endpoint of communication between two processes, identified by an IP address and a port number. A port is only a number identifying a service, and a pipe is a channel connecting two processes rather than an endpoint.",
+  "chapter_key": "cs_os",
+  "subtopic": "IPC - sockets",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256627": {
+  "explanation_en": "The accumulator's size equals the processor's word length; for a typical 32-bit processor it is 32 bits = 4 bytes. 8 KB is far too large for a register, and 16 bytes is not a standard general-purpose word size.",
+  "chapter_key": "cs_fund",
+  "subtopic": "CPU registers - accumulator",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256613": {
+  "explanation_en": "System software (operating system, drivers, utilities) provides the instructions that control and coordinate the computer's own operations. A utility is only one type of system software, and a magnetic card is hardware.",
+  "chapter_key": "cs_fund",
+  "subtopic": "System software",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598502": {
+  "explanation_en": "Exploratory Data Analysis is flexible and visual, letting analysts discover patterns and generate new hypotheses before formal modelling. Not giving definitive answers and less realistic statements of accuracy are drawbacks of EDA, not advantages.",
+  "chapter_key": "cs_it",
+  "subtopic": "Exploratory data analysis",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598497": {
+  "explanation_en": "In SQL Server, GETDATE() returns the current database system timestamp as a datetime value without the time-zone offset (SYSDATETIMEOFFSET includes it). GETTIME, CASTDATE and CASTTIME are not standard functions.",
+  "chapter_key": "cs_dbms",
+  "subtopic": "SQL date functions",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598445": {
+  "explanation_en": "Communication system calls include create/delete connection, send/receive messages, transfer status information, and attach or detach remote devices. Request/release device belongs to device management, allocate/free memory to process control, and read/write/reposition to file management.",
+  "chapter_key": "cs_os",
+  "subtopic": "System calls - communication",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680598503": {
+  "explanation_en": "Many AI models, especially deep neural networks, are 'black boxes': their internal reasoning is hard to interpret, so hidden biases are difficult to detect. Deepfakes are AI-generated fake media and k-anonymity is a privacy technique, so only II is correct.",
+  "chapter_key": "cs_it",
+  "subtopic": "AI bias - black box",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598513": {
+  "explanation_en": "Cyber laws such as the IT Act, 2000 provide legal remedies including penalties, compensation and imprisonment for cyber offences. Technologies and computer networks are tools, not legal remedies, and an apology is not a remedy provided by law.",
+  "chapter_key": "cs_it",
+  "subtopic": "Cyber law remedies",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598463": {
+  "explanation_en": "ord() returns the integer Unicode code of a character, e.g. ord('A') = 65 (chr() does the reverse). tuple(), dict() and set() convert iterables into those collection types.",
+  "chapter_key": "cs_prog",
+  "subtopic": "Python type conversion",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598465": {
+  "explanation_en": "str.strip() returns a copy of the string with leading and trailing whitespace removed. split() returns a list based on a delimiter (option 2), pow() gives power (option 3), and capitalize() uppercases the first character (option 4).",
+  "chapter_key": "cs_prog",
+  "subtopic": "Python string methods",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598469": {
+  "explanation_en": "Error control in the data link layer is based on Automatic Repeat reQuest (ARQ): damaged or lost frames are detected and retransmitted. Flow control only regulates how much data the sender can send before waiting for acknowledgement.",
+  "chapter_key": "cs_net",
+  "subtopic": "Data link layer - error control",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598479": {
+  "explanation_en": "The ALU contains the circuitry to perform arithmetic (binary addition, subtraction) and logical and shift operations. The control unit only directs operations, and registers only hold data temporarily.",
+  "chapter_key": "cs_fund",
+  "subtopic": "CPU - ALU",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598527": {
+  "explanation_en": "print() on a tuple shows it in parentheses with strings in quotes: ('Example', 1, 'Tuple'). Curly braces indicate a set/dict and square brackets a list, and Python preserves the case of 'Tuple'.",
+  "chapter_key": "cs_prog",
+  "subtopic": "Python tuples - output",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598457": {
+  "explanation_en": "The volume control block (superblock in UNIX, master file table in NTFS) holds volume details such as the number of blocks in the partition, block size, free-block count and pointers. Booting information is in the boot control block (option 4), and a unique identifier per file is in the FCB/inode (option 2).",
+  "chapter_key": "cs_os",
+  "subtopic": "File system - volume control block",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680598449": {
+  "explanation_en": "RISC processors use fixed-length, easily decoded instructions, few addressing modes, hardwired control and load/store-only memory access. Microprogrammed control, memory-operand instructions and 100-250 instructions are CISC characteristics.",
+  "chapter_key": "cs_fund",
+  "subtopic": "RISC characteristics",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598451": {
+  "explanation_en": "In register indirect mode the instruction specifies a CPU register whose contents are the memory address of the operand. In indirect address mode the address field points to a memory word that holds the effective address, and immediate mode has the operand in the instruction itself.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Addressing modes - register indirect",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598448": {
+  "explanation_en": "Both statements are correct: an assembler translates symbolic assembly code into equivalent machine code, and assembly language is machine-dependent because its mnemonics map directly onto a specific processor's instruction set.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Assembly language",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598515": {
+  "explanation_en": "Under the Digital Personal Data Protection Act, 2023, a 'child' is an individual who has not completed eighteen years of age. Digital personal data means personal data in digital form (not physical), and 'Chairperson' does refer to the Chairperson of the Data Protection Board.",
+  "chapter_key": "cs_it",
+  "subtopic": "DPDP Act 2023",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598446": {
+  "explanation_en": "The Instruction Register (IR) holds the instruction currently being executed so that the control unit can decode it. The accumulator holds operands/results, and the memory data register buffers data moving to and from memory.",
+  "chapter_key": "cs_fund",
+  "subtopic": "CPU registers - instruction register",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598481": {
+  "explanation_en": "The dispatcher gives control of the CPU to the process selected by the short-term scheduler: it performs the context switch, switches to user mode and jumps to the right location. The scheduler only decides which process runs next; the dispatcher actually allocates the CPU.",
+  "chapter_key": "cs_os",
+  "subtopic": "Dispatcher",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598474": {
+  "explanation_en": "A point-to-point connection provides a dedicated link between exactly two devices, so statement I is correct. A timeshared link is a feature of multipoint (multidrop) connections, where several devices share one link, so II is false.",
+  "chapter_key": "cs_net",
+  "subtopic": "Line configuration - point-to-point",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598492": {
+  "explanation_en": "1NF requires atomic attribute values; it disallows multivalued and composite attributes, i.e. relations within relations (nested relations) as attribute values. 2NF and 3NF deal with partial and transitive dependencies.",
+  "chapter_key": "cs_dbms",
+  "subtopic": "First normal form",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598510": {
+  "explanation_en": "Key doubt: the statement is the WIPO description of intellectual property rights - IP is protected by patents, copyright and trademarks, which 'enable people to earn recognition or financial benefit from what they invent or create'. Because it covers inventions as well as creations, option 3 (intellectual property right) is the correct general answer. Copyright protects only original creative works, not inventions (those are patented), so the official key is too narrow.",
+  "chapter_key": "cs_it",
+  "subtopic": "Intellectual property rights",
+  "difficulty": "medium",
+  "key_doubt": true
+ },
+ "630680598520": {
+  "explanation_en": "A DataFrame is a two-dimensional labelled data structure with rows and columns, where columns may hold different data types (like a spreadsheet or SQL table). A Series is one-dimensional.",
+  "chapter_key": "cs_prog",
+  "subtopic": "Pandas DataFrame",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598501": {
+  "explanation_en": "Security (and privacy) is a major challenge of IoT adoption, because many connected devices have weak authentication and are hard to patch. Deepfakes and black-box models are AI issues, and cloud storage is a supporting technology, not an IoT challenge.",
+  "chapter_key": "cs_it",
+  "subtopic": "IoT challenges",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598517": {
+  "explanation_en": "Discarded, unusable or irreparable computers, phones and other electronic goods are called electronic waste (e-waste). They contain hazardous materials such as lead and mercury and need special recycling.",
+  "chapter_key": "cs_it",
+  "subtopic": "E-waste",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598516": {
+  "explanation_en": "The E-Waste (Management) Rules, 2016 cover IT and telecom equipment and consumer electrical and electronics, and they also brought compact fluorescent lamps and other mercury-containing lamps under their scope. So both fluorescent and mercury items are included.",
+  "chapter_key": "cs_it",
+  "subtopic": "E-waste Management Rules 2016",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680598523": {
+  "explanation_en": "An ImportError/ModuleNotFoundError while doing import pandas means Python could not find the pandas package among installed libraries (e.g. it is not installed). Statement I says it could find pandas, and II refers to 'python' instead of the library, so only III is correct.",
+  "chapter_key": "cs_prog",
+  "subtopic": "Python ImportError",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598461": {
+  "explanation_en": "A Python identifier can contain letters, digits and the underscore (_), and may start with an underscore. Keywords cannot be used as identifiers, there is no length limit, and an identifier cannot start with a digit.",
+  "chapter_key": "cs_prog",
+  "subtopic": "Python identifiers",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598512": {
+  "explanation_en": "Intellectual property rights are granted to the creator or inventor of the work, giving them exclusive rights over its use for a period of time. Employees, sellers or buyers get rights only if transferred by the creator.",
+  "chapter_key": "cs_it",
+  "subtopic": "Intellectual property rights holder",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598522": {
+  "explanation_en": "Pandas provides database-style operations to combine tables: merge() (join on keys) and concat() for row-wise or column-wise joining. Among the options, MERGE is the combining operation; SUM, GROUP BY and SELECT aggregate or filter data rather than combining tables.",
+  "chapter_key": "cs_prog",
+  "subtopic": "Pandas merge/concat",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680598519": {
+  "explanation_en": "Exposure to e-waste hazards varies mainly with the type of e-waste (what device and which toxic components, e.g. lead, mercury, cadmium), along with how it is processed. Air pollutant quantities and air-pollution management are outcomes rather than the source of variability, and medical waste is a separate category.",
+  "chapter_key": "cs_it",
+  "subtopic": "E-waste exposure",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680598498": {
+  "explanation_en": "CEILING(x) returns the smallest integer greater than or equal to x, e.g. CEILING(4.2) = 5. FLOOR returns the largest integer less than or equal to x, ROUND rounds to the nearest value, and ABS gives the absolute value.",
+  "chapter_key": "cs_dbms",
+  "subtopic": "SQL math functions",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598526": {
+  "explanation_en": "A string is a sequence of characters, which can include letters, digits (numbers as characters) and symbols such as @, # or spaces. So all three - I, II and III - are correct.",
+  "chapter_key": "cs_prog",
+  "subtopic": "Strings",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598506": {
+  "explanation_en": "UTF-8 is the most widely used Unicode encoding scheme (variable length, 1-4 bytes, ASCII-compatible). The other standard encodings are UTF-16 and UTF-32; UTF-17, UTF-61 and UTF-35 do not exist.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Unicode encodings",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598444": {
+  "explanation_en": "The semantic analyzer checks the parse tree for semantic consistency (type checking) and gathers type information, storing it in the syntax tree or symbol table for intermediate code generation. The syntax analyzer only builds the parse tree, and the lexical analyzer produces tokens.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Compiler phases - semantic analysis",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680598489": {
+  "explanation_en": "The set difference R - S contains tuples that are in R but not in S. R ∩ S gives tuples in both, R ∪ S tuples in either, and R × S is the Cartesian product.",
+  "chapter_key": "cs_dbms",
+  "subtopic": "Relational algebra - set difference",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598505": {
+  "explanation_en": "Unicode assigns a unique number (code point) to every character of every written language, regardless of platform, device or program. ASCII covers only 128 English characters and ISCII covers only Indian scripts.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Unicode",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598475": {
+  "explanation_en": "In Elmasri-Navathe's terminology, an entity type defines a collection of entities that have the same attributes (e.g. EMPLOYEE). An entity set is the collection of entities of that type present in the database at a particular moment, and a value set is the domain of an attribute.",
+  "chapter_key": "cs_dbms",
+  "subtopic": "ER model - entity type",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680598454": {
+  "explanation_en": "During a context switch the kernel saves the old process's state (registers, PC, etc.) in its PCB and loads the new process's saved state. Context-switch time is pure overhead because no useful user work is done during the switch. Both statements are correct.",
+  "chapter_key": "cs_os",
+  "subtopic": "Context switching",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598477": {
+  "explanation_en": "In ER-to-relational mapping, a 1:1 or 1:N relationship type corresponds to a foreign key (or a relationship relation). An M:N relationship type needs a separate relationship relation with two foreign keys, and composite attributes map to sets of simple attributes.",
+  "chapter_key": "cs_dbms",
+  "subtopic": "ER to relational mapping",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680598453": {
+  "explanation_en": "New: the process is being created (3). Running: instructions are being executed (2). Ready: the process is waiting to be assigned to a processor (1). So I-3, II-2, III-1.",
+  "chapter_key": "cs_os",
+  "subtopic": "Process states",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598471": {
+  "explanation_en": "Unguided (wireless) media carry electromagnetic waves without a physical conductor, so I is true. Wireless signals propagate by ground propagation, sky propagation or line-of-sight, so II is also true. Hence both I and II.",
+  "chapter_key": "cs_net",
+  "subtopic": "Unguided media",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598472": {
+  "explanation_en": "A sine wave is fully described by three parameters: peak amplitude, frequency (or period) and phase. Wavelength is a derived characteristic (propagation speed ÷ frequency), not one of the three describing parameters.",
+  "chapter_key": "cs_net",
+  "subtopic": "Sine wave parameters",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598478": {
+  "explanation_en": "Schema evolution commands include DROP SCHEMA name RESTRICT, which drops the schema only if it has no elements, and CASCADE, which drops it with all its elements. ALTER modifies existing schema elements but has no RESTRICT schema-drop behaviour, and DELETE/UPDATE are DML commands.",
+  "chapter_key": "cs_dbms",
+  "subtopic": "SQL DROP SCHEMA",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680598509": {
+  "explanation_en": "Unicode is commonly represented with UTF-8, an 8-bit (byte-based) encoding format; UTF-16 and UTF-32 are the other standard forms. 17-, 65- and 9-bit formats do not exist for Unicode.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Unicode bit formats",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598460": {
+  "explanation_en": "Process-control system calls include end/abort, load/execute, create/terminate process, get/set attributes, wait for time, wait event/signal event, and allocate/free memory. Device management handles request/release device, and file management handles open/read/write files.",
+  "chapter_key": "cs_os",
+  "subtopic": "System calls - process control",
+  "difficulty": "easy",
+  "key_doubt": false
+ }
+}

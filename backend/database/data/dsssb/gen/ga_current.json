@@ -1,0 +1,2467 @@
+[
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Sports",
+  "difficulty": "easy",
+  "question_en": "Which country won the ICC Men's T20 World Cup 2026, co-hosted by India and Sri Lanka?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "New Zealand",
+    "hi": null
+   },
+   {
+    "en": "India",
+    "hi": null
+   },
+   {
+    "en": "England",
+    "hi": null
+   },
+   {
+    "en": "Australia",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "India beat New Zealand by 96 runs in the final on 8 March 2026 at Ahmedabad, becoming the first team to win three T20 World Cup titles.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Sports",
+  "difficulty": "medium",
+  "question_en": "The final of the ICC Men's T20 World Cup 2026 was played at which venue?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Eden Gardens, Kolkata",
+    "hi": null
+   },
+   {
+    "en": "Wankhede Stadium, Mumbai",
+    "hi": null
+   },
+   {
+    "en": "R. Premadasa Stadium, Colombo",
+    "hi": null
+   },
+   {
+    "en": "Narendra Modi Stadium, Ahmedabad",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The 8 March 2026 final between India and New Zealand was held at the Narendra Modi Stadium, Ahmedabad.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Sports",
+  "difficulty": "hard",
+  "question_en": "Who was named Player of the Tournament at the ICC Men's T20 World Cup 2026?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Sanju Samson",
+    "hi": null
+   },
+   {
+    "en": "Jasprit Bumrah",
+    "hi": null
+   },
+   {
+    "en": "Suryakumar Yadav",
+    "hi": null
+   },
+   {
+    "en": "Abhishek Sharma",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Sanju Samson topped the batting with 321 runs at an average of about 80; Bumrah was Player of the Match in the final (4/15).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Sports",
+  "difficulty": "easy",
+  "question_en": "Whom did India defeat in the final of the ICC Women's ODI World Cup 2025 to win its first title?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Australia",
+    "hi": null
+   },
+   {
+    "en": "England",
+    "hi": null
+   },
+   {
+    "en": "South Africa",
+    "hi": null
+   },
+   {
+    "en": "New Zealand",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "India beat South Africa by 52 runs at DY Patil Stadium, Navi Mumbai on 2 November 2025.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Sports",
+  "difficulty": "medium",
+  "question_en": "Who captained India's women's team to the 2025 ICC Women's ODI World Cup triumph?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Smriti Mandhana",
+    "hi": null
+   },
+   {
+    "en": "Deepti Sharma",
+    "hi": null
+   },
+   {
+    "en": "Jemimah Rodrigues",
+    "hi": null
+   },
+   {
+    "en": "Harmanpreet Kaur",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Harmanpreet Kaur led India to its maiden Women's World Cup title in November 2025 (earlier finals lost in 2005 and 2017).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Sports",
+  "difficulty": "easy",
+  "question_en": "Which franchise won the IPL 2026 title, defending the crown it won in 2025?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Royal Challengers Bengaluru",
+    "hi": null
+   },
+   {
+    "en": "Gujarat Titans",
+    "hi": null
+   },
+   {
+    "en": "Mumbai Indians",
+    "hi": null
+   },
+   {
+    "en": "Chennai Super Kings",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "RCB beat Gujarat Titans by five wickets in the final at Ahmedabad, their second consecutive title.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Sports",
+  "difficulty": "hard",
+  "question_en": "Who won the Orange Cap in IPL 2026 with 776 runs?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Shubman Gill",
+    "hi": null
+   },
+   {
+    "en": "Virat Kohli",
+    "hi": null
+   },
+   {
+    "en": "Vaibhav Sooryavanshi",
+    "hi": null
+   },
+   {
+    "en": "Sai Sudharsan",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Teenage opener Vaibhav Sooryavanshi finished as the leading run-scorer of IPL 2026 with 776 runs; Kagiso Rabada took the Purple Cap (29 wickets).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Sports",
+  "difficulty": "easy",
+  "question_en": "Which country won the FIFA World Cup 2026?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Argentina",
+    "hi": null
+   },
+   {
+    "en": "Spain",
+    "hi": null
+   },
+   {
+    "en": "France",
+    "hi": null
+   },
+   {
+    "en": "England",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Spain beat Argentina 1-0 after extra time in the final at MetLife Stadium on 19 July 2026, their second World Cup after 2010.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Sports",
+  "difficulty": "medium",
+  "question_en": "The FIFA World Cup 2026, the first with 48 teams, was jointly hosted by:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "USA, Brazil and Mexico",
+    "hi": null
+   },
+   {
+    "en": "USA and Canada only",
+    "hi": null
+   },
+   {
+    "en": "USA, Canada and Mexico",
+    "hi": null
+   },
+   {
+    "en": "Mexico, Argentina and Canada",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "FIFA's first three-nation World Cup was co-hosted by the USA, Canada and Mexico, with the final in New Jersey.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Sports",
+  "difficulty": "hard",
+  "question_en": "Who scored the only goal in the FIFA World Cup 2026 final?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Lamine Yamal",
+    "hi": null
+   },
+   {
+    "en": "Ferran Torres",
+    "hi": null
+   },
+   {
+    "en": "Lautaro Martinez",
+    "hi": null
+   },
+   {
+    "en": "Kylian Mbappe",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Ferran Torres scored in the 106th minute of extra time to give Spain a 1-0 win over Argentina.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Sports",
+  "difficulty": "easy",
+  "question_en": "The 2026 Asian Games were held in which Japanese region?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Tokyo-Osaka",
+    "hi": null
+   },
+   {
+    "en": "Sapporo",
+    "hi": null
+   },
+   {
+    "en": "Fukuoka-Kyoto",
+    "hi": null
+   },
+   {
+    "en": "Aichi-Nagoya",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The 20th Asian Games were held at Aichi-Nagoya, Japan from 19 September to 4 October 2026.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Sports",
+  "difficulty": "medium",
+  "question_en": "How many medals did India win at the 2026 Asian Games (Aichi-Nagoya), finishing fourth in the table?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "85",
+    "hi": null
+   },
+   {
+    "en": "107",
+    "hi": null
+   },
+   {
+    "en": "95",
+    "hi": null
+   },
+   {
+    "en": "72",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "India won 85 medals (21 gold, 27 silver, 37 bronze); its record 107 medals came at Hangzhou 2022.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Sports",
+  "difficulty": "easy",
+  "question_en": "Which country topped the medal table at the 2026 Asian Games?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "China",
+    "hi": null
+   },
+   {
+    "en": "Japan",
+    "hi": null
+   },
+   {
+    "en": "South Korea",
+    "hi": null
+   },
+   {
+    "en": "India",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "China topped the Asian Games medal table yet again, with Japan second and South Korea third.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Sports",
+  "difficulty": "easy",
+  "question_en": "The XXV Olympic Winter Games, held in February 2026, were hosted by:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Sapporo, Japan",
+    "hi": null
+   },
+   {
+    "en": "Salt Lake City, USA",
+    "hi": null
+   },
+   {
+    "en": "Milano Cortina, Italy",
+    "hi": null
+   },
+   {
+    "en": "Beijing, China",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The 2026 Winter Olympics were co-hosted by Milan and Cortina d'Ampezzo in Italy; the next Winter Games (2030) go to the French Alps.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Sports",
+  "difficulty": "easy",
+  "question_en": "Which country finished first in the medal table of the 2026 Winter Olympics?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "United States",
+    "hi": null
+   },
+   {
+    "en": "Norway",
+    "hi": null
+   },
+   {
+    "en": "Netherlands",
+    "hi": null
+   },
+   {
+    "en": "Italy",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Norway topped the table with 18 golds and 41 medals; the USA was second and the Netherlands third.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Sports",
+  "difficulty": "easy",
+  "question_en": "Which Indian city has been awarded the 2030 Commonwealth Games, the centenary edition?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Delhi",
+    "hi": null
+   },
+   {
+    "en": "Mumbai",
+    "hi": null
+   },
+   {
+    "en": "Hyderabad",
+    "hi": null
+   },
+   {
+    "en": "Ahmedabad",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The Commonwealth Sport General Assembly in Glasgow (Nov 2025) chose Ahmedabad over Abuja; India last hosted in Delhi in 2010.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Sports",
+  "difficulty": "easy",
+  "question_en": "Who won the men's singles title at Wimbledon 2026?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Carlos Alcaraz",
+    "hi": null
+   },
+   {
+    "en": "Jannik Sinner",
+    "hi": null
+   },
+   {
+    "en": "Alexander Zverev",
+    "hi": null
+   },
+   {
+    "en": "Novak Djokovic",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Sinner defended his Wimbledon title, beating Alexander Zverev in four sets in the July 2026 final.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Sports",
+  "difficulty": "hard",
+  "question_en": "Who won the women's singles title at Wimbledon 2026, her first Grand Slam singles title?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Karolina Muchova",
+    "hi": null
+   },
+   {
+    "en": "Aryna Sabalenka",
+    "hi": null
+   },
+   {
+    "en": "Elena Rybakina",
+    "hi": null
+   },
+   {
+    "en": "Linda Noskova",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The 9th-seeded Czech Linda Noskova beat compatriot Karolina Muchova 6-2, 5-7, 6-3.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Sports",
+  "difficulty": "easy",
+  "question_en": "Who won the men's singles title at the Australian Open 2026 by beating Novak Djokovic in the final?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Carlos Alcaraz",
+    "hi": null
+   },
+   {
+    "en": "Jannik Sinner",
+    "hi": null
+   },
+   {
+    "en": "Daniil Medvedev",
+    "hi": null
+   },
+   {
+    "en": "Alexander Zverev",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Alcaraz won his first Australian Open title in January-February 2026, completing a career Grand Slam.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Awards",
+  "difficulty": "medium",
+  "question_en": "The 60th Jnanpith Award (for 2025), announced in March 2026, was given to which writer?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Vinod Kumar Shukla",
+    "hi": null
+   },
+   {
+    "en": "Amitav Ghosh",
+    "hi": null
+   },
+   {
+    "en": "R. Vairamuthu",
+    "hi": null
+   },
+   {
+    "en": "Gulzar",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Tamil poet-lyricist R. Vairamuthu won the 2025 Jnanpith, becoming the first Tamil poet to receive it; the award carries Rs 11 lakh and a Vagdevi statuette.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Awards",
+  "difficulty": "medium",
+  "question_en": "The 59th Jnanpith Award (for 2024) was given to which Hindi writer?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Kedarnath Singh",
+    "hi": null
+   },
+   {
+    "en": "Krishna Sobti",
+    "hi": null
+   },
+   {
+    "en": "Ashapurna Devi",
+    "hi": null
+   },
+   {
+    "en": "Vinod Kumar Shukla",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Vinod Kumar Shukla, author of 'Naukar Ki Kameez', received the 59th Jnanpith Award.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Awards",
+  "difficulty": "medium",
+  "question_en": "How many persons were honoured with the Padma Awards announced on 25 January 2026?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "131",
+    "hi": null
+   },
+   {
+    "en": "139",
+    "hi": null
+   },
+   {
+    "en": "132",
+    "hi": null
+   },
+   {
+    "en": "120",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The 2026 list had 131 awardees (5 Vibhushan, 13 Bhushan, 113 Shri per most reports); 2025 had 139 and 2024 had 132.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Awards",
+  "difficulty": "easy",
+  "question_en": "Which veteran actor was honoured posthumously with the Padma Vibhushan in 2026?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Manoj Kumar",
+    "hi": null
+   },
+   {
+    "en": "Pran",
+    "hi": null
+   },
+   {
+    "en": "Dharmendra",
+    "hi": null
+   },
+   {
+    "en": "Rajesh Khanna",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Dharmendra and former Kerala CM V. S. Achuthanandan were among the posthumous Padma Vibhushan recipients of 2026.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Awards",
+  "difficulty": "medium",
+  "question_en": "Which former tennis star received the Padma Bhushan in 2026?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Leander Paes",
+    "hi": null
+   },
+   {
+    "en": "Vijay Amritraj",
+    "hi": null
+   },
+   {
+    "en": "Ramanathan Krishnan",
+    "hi": null
+   },
+   {
+    "en": "Mahesh Bhupathi",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Vijay Amritraj was among the 2026 Padma Bhushan awardees along with Mammootty, Alka Yagnik and Uday Kotak.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Budget & Economy",
+  "difficulty": "medium",
+  "question_en": "With the Union Budget 2026-27 presented on 1 February 2026, how many consecutive Union Budgets has Nirmala Sitharaman presented?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Seven",
+    "hi": null
+   },
+   {
+    "en": "Eight",
+    "hi": null
+   },
+   {
+    "en": "Nine",
+    "hi": null
+   },
+   {
+    "en": "Ten",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The 2026-27 Budget was her ninth in a row, counting the July 2019 budget and both 2024 budgets (interim and full).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Budget & Economy",
+  "difficulty": "medium",
+  "question_en": "The Union Budget 2026-27 estimated the fiscal deficit for FY 2026-27 at about:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "4.8% of GDP",
+    "hi": null
+   },
+   {
+    "en": "4.3% of GDP",
+    "hi": null
+   },
+   {
+    "en": "5.1% of GDP",
+    "hi": null
+   },
+   {
+    "en": "3.5% of GDP",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The Budget put the 2026-27 fiscal deficit at 4.3% of GDP, down from 4.4% in the revised estimates for 2025-26.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Budget & Economy",
+  "difficulty": "medium",
+  "question_en": "The new Income Tax Act, 2025 replacing the Income-tax Act, 1961 came into effect from:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "1 April 2025",
+    "hi": null
+   },
+   {
+    "en": "1 January 2026",
+    "hi": null
+   },
+   {
+    "en": "1 April 2027",
+    "hi": null
+   },
+   {
+    "en": "1 April 2026",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The Income Tax Act, 2025 is in force from 1 April 2026 and introduces 'tax year' in place of previous year/assessment year.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Budget & Economy",
+  "difficulty": "medium",
+  "question_en": "Which scheme/mission did Union Budget 2026-27 announce as the next phase of India's chip-making push?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "India Semiconductor Mission 2.0",
+    "hi": null
+   },
+   {
+    "en": "National Quantum Mission",
+    "hi": null
+   },
+   {
+    "en": "IndiaAI Mission 2.0",
+    "hi": null
+   },
+   {
+    "en": "Mission Karmayogi 2.0",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Budget 2026-27 announced India Semiconductor Mission 2.0 to deepen the domestic chip ecosystem.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Budget & Economy",
+  "difficulty": "hard",
+  "question_en": "'Biopharma SHAKTI', announced in the Union Budget 2026-27, aims to position India as a global hub for:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Biopharmaceuticals",
+    "hi": null
+   },
+   {
+    "en": "Green hydrogen",
+    "hi": null
+   },
+   {
+    "en": "Shipbuilding",
+    "hi": null
+   },
+   {
+    "en": "Electric vehicles",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Biopharma SHAKTI is the Budget 2026-27 initiative to build India into a global biopharmaceutical manufacturing and research hub.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Budget & Economy",
+  "difficulty": "medium",
+  "question_en": "In its October 2026 policy, the RBI's Monetary Policy Committee raised the repo rate to:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "5.25%",
+    "hi": null
+   },
+   {
+    "en": "5.75%",
+    "hi": null
+   },
+   {
+    "en": "5.50%",
+    "hi": null
+   },
+   {
+    "en": "6.00%",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "On 7 October 2026 the MPC hiked the repo rate by 25 bps from 5.25% to 5.50%, the first increase since February 2023.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Budget & Economy",
+  "difficulty": "hard",
+  "question_en": "In October 2026 the MPC changed its policy stance from neutral to:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Accommodative",
+    "hi": null
+   },
+   {
+    "en": "Calibrated tightening",
+    "hi": null
+   },
+   {
+    "en": "Withdrawal of accommodation",
+    "hi": null
+   },
+   {
+    "en": "Aggressive easing",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Along with the 25 bps repo hike, the stance was shifted to 'calibrated tightening'; the SDF rate became 5.25% and MSF 5.75%.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Budget & Economy",
+  "difficulty": "easy",
+  "question_en": "Who is the Governor of the Reserve Bank of India (as of October 2026)?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Shaktikanta Das",
+    "hi": null
+   },
+   {
+    "en": "Urjit Patel",
+    "hi": null
+   },
+   {
+    "en": "Raghuram Rajan",
+    "hi": null
+   },
+   {
+    "en": "Sanjay Malhotra",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Sanjay Malhotra took over as the 26th RBI Governor in December 2024 and chairs the MPC.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Government Schemes",
+  "difficulty": "medium",
+  "question_en": "The VB-G RAM G Act, 2025 replaced which rural employment law?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "PM-KISAN Act",
+    "hi": null
+   },
+   {
+    "en": "MGNREGA",
+    "hi": null
+   },
+   {
+    "en": "National Food Security Act",
+    "hi": null
+   },
+   {
+    "en": "Right to Education Act",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The Viksit Bharat - Guarantee for Rozgar and Ajeevika Mission (Gramin) Act received Presidential assent in Dec 2025 and replaced MGNREGA from 1 July 2026.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Government Schemes",
+  "difficulty": "medium",
+  "question_en": "How many days of guaranteed wage employment per rural household per year does the VB-G RAM G Act provide?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "100 days",
+    "hi": null
+   },
+   {
+    "en": "150 days",
+    "hi": null
+   },
+   {
+    "en": "90 days",
+    "hi": null
+   },
+   {
+    "en": "125 days",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The new Act raises the guarantee from 100 days under MGNREGA to 125 days per financial year.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Government Schemes",
+  "difficulty": "hard",
+  "question_en": "Under the VB-G RAM G Act, what share of the programme cost do most states have to bear?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "40%",
+    "hi": null
+   },
+   {
+    "en": "25%",
+    "hi": null
+   },
+   {
+    "en": "10%",
+    "hi": null
+   },
+   {
+    "en": "60%",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Unlike MGNREGA (Centre paid the full wage bill), most states now bear 40%; North-Eastern and Himalayan states bear only 10%.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Census & Governance",
+  "difficulty": "medium",
+  "question_en": "Census 2027, whose first phase (houselisting) began in April 2026, is India's first:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Caste-free census",
+    "hi": null
+   },
+   {
+    "en": "Census on paper forms",
+    "hi": null
+   },
+   {
+    "en": "Digital census",
+    "hi": null
+   },
+   {
+    "en": "Census by postal survey",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Houselisting ran April-September 2026 using mobile apps and online self-enumeration; population enumeration follows in early 2027.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Census & Governance",
+  "difficulty": "hard",
+  "question_en": "What is the reference date for population enumeration of Census 2027 in most of India?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "1 January 2027",
+    "hi": null
+   },
+   {
+    "en": "1 April 2027",
+    "hi": null
+   },
+   {
+    "en": "1 October 2026",
+    "hi": null
+   },
+   {
+    "en": "1 March 2027",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The reference date is 00:00 hours of 1 March 2027 (1 October 2026 for snow-bound areas such as Ladakh and Himachal's high-altitude parts).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Census & Governance",
+  "difficulty": "hard",
+  "question_en": "Census 2027 will, for the first time since 1931, enumerate which category of data for the whole population?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Caste",
+    "hi": null
+   },
+   {
+    "en": "Mother tongue only",
+    "hi": null
+   },
+   {
+    "en": "Income tax status",
+    "hi": null
+   },
+   {
+    "en": "Religion of ancestors",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The Union government decided in 2025 to include caste enumeration in the upcoming Census.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Budget & Economy",
+  "difficulty": "medium",
+  "question_en": "How many Labour Codes were brought into effect on 21 November 2025, consolidating 29 central labour laws?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Two",
+    "hi": null
+   },
+   {
+    "en": "Three",
+    "hi": null
+   },
+   {
+    "en": "Four",
+    "hi": null
+   },
+   {
+    "en": "Six",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The codes on Wages, Industrial Relations, Social Security and Occupational Safety, Health & Working Conditions were notified together.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Budget & Economy",
+  "difficulty": "medium",
+  "question_en": "After the GST reform effective 22 September 2025, the two main GST rate slabs are:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "12% and 28%",
+    "hi": null
+   },
+   {
+    "en": "5% and 18%",
+    "hi": null
+   },
+   {
+    "en": "3% and 12%",
+    "hi": null
+   },
+   {
+    "en": "5% and 28%",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "'GST 2.0' merged 12% and 28% slabs into 5% and 18%, with a special 40% rate for sin and luxury goods.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "International Relations",
+  "difficulty": "medium",
+  "question_en": "India and the European Union announced the conclusion of free trade agreement negotiations in:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "July 2025",
+    "hi": null
+   },
+   {
+    "en": "March 2026",
+    "hi": null
+   },
+   {
+    "en": "January 2026",
+    "hi": null
+   },
+   {
+    "en": "December 2024",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The India-EU FTA, called the 'mother of all deals', was concluded on 27 January 2026 after nearly two decades of talks.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "International Relations",
+  "difficulty": "medium",
+  "question_en": "Who were the chief guests at India's 77th Republic Day celebrations in 2026?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Emmanuel Macron and Olaf Scholz",
+    "hi": null
+   },
+   {
+    "en": "Ursula von der Leyen and Antonio Costa",
+    "hi": null
+   },
+   {
+    "en": "Joe Biden and Ursula von der Leyen",
+    "hi": null
+   },
+   {
+    "en": "Prabowo Subianto and Shehbaz Sharif",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The Presidents of the European Commission and European Council were the guests of honour on 26 January 2026.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "International Relations",
+  "difficulty": "medium",
+  "question_en": "In February 2026 the US announced an interim trade deal with India reducing its tariff on Indian goods to:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "25%",
+    "hi": null
+   },
+   {
+    "en": "10%",
+    "hi": null
+   },
+   {
+    "en": "50%",
+    "hi": null
+   },
+   {
+    "en": "18%",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "President Trump announced on 2 February 2026 a cut in US reciprocal tariffs on Indian goods to 18%; Modi confirmed the rate.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "National Events",
+  "difficulty": "easy",
+  "question_en": "Nationwide commemoration of 150 years of which national song began on 7 November 2025?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Vande Mataram",
+    "hi": null
+   },
+   {
+    "en": "Jana Gana Mana",
+    "hi": null
+   },
+   {
+    "en": "Saare Jahan Se Achha",
+    "hi": null
+   },
+   {
+    "en": "Vaishnav Jan To",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Vande Mataram, composed by Bankim Chandra Chatterjee in 1875, completed 150 years; the yearlong celebration began on 7 November 2025.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "National Events",
+  "difficulty": "easy",
+  "question_en": "India observed the 150th birth anniversary of which leader on 31 October 2025, celebrated as Rashtriya Ekta Diwas?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Sardar Vallabhbhai Patel",
+    "hi": null
+   },
+   {
+    "en": "Jawaharlal Nehru",
+    "hi": null
+   },
+   {
+    "en": "Birsa Munda",
+    "hi": null
+   },
+   {
+    "en": "Subhas Chandra Bose",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Sardar Patel, born 31 October 1875, was the 'Iron Man of India'; the Statue of Unity honours him.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Appointments",
+  "difficulty": "medium",
+  "question_en": "Who took oath as the 53rd Chief Justice of India on 24 November 2025?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "B. R. Gavai",
+    "hi": null
+   },
+   {
+    "en": "D. Y. Chandrachud",
+    "hi": null
+   },
+   {
+    "en": "Surya Kant",
+    "hi": null
+   },
+   {
+    "en": "Sanjiv Khanna",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Justice Surya Kant succeeded Justice B. R. Gavai and is due to retire on 9 February 2027.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Appointments",
+  "difficulty": "easy",
+  "question_en": "Who is the Vice President of India (elected in September 2025 after Jagdeep Dhankhar's resignation)?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Venkaiah Naidu",
+    "hi": null
+   },
+   {
+    "en": "C. P. Radhakrishnan",
+    "hi": null
+   },
+   {
+    "en": "Jagdeep Dhankhar",
+    "hi": null
+   },
+   {
+    "en": "Om Birla",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "C. P. Radhakrishnan, former Maharashtra Governor, was elected the 15th Vice President on 9 September 2025.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Appointments",
+  "difficulty": "easy",
+  "question_en": "Who was sworn in as Chief Minister of Bihar for the tenth time after the NDA's win in the November 2025 election?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Tejashwi Yadav",
+    "hi": null
+   },
+   {
+    "en": "Samrat Choudhary",
+    "hi": null
+   },
+   {
+    "en": "Sushil Modi",
+    "hi": null
+   },
+   {
+    "en": "Nitish Kumar",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The NDA won a landslide in the November 2025 Bihar Assembly election and Nitish Kumar took oath on 20 November 2025.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "State Elections",
+  "difficulty": "medium",
+  "question_en": "Which state elected its first BJP government in the Assembly election results declared in May 2026?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Kerala",
+    "hi": null
+   },
+   {
+    "en": "West Bengal",
+    "hi": null
+   },
+   {
+    "en": "Tamil Nadu",
+    "hi": null
+   },
+   {
+    "en": "Puducherry",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The BJP won about 206-207 of 294 seats in West Bengal, ending the Trinamool Congress's 15-year rule; Suvendu Adhikari was sworn in on 9 May 2026.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "State Elections",
+  "difficulty": "hard",
+  "question_en": "Against which sitting Chief Minister did Suvendu Adhikari win the Bhabanipur seat in 2026?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Himanta Biswa Sarma",
+    "hi": null
+   },
+   {
+    "en": "M. K. Stalin",
+    "hi": null
+   },
+   {
+    "en": "Pinarayi Vijayan",
+    "hi": null
+   },
+   {
+    "en": "Mamata Banerjee",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Mamata Banerjee lost Bhabanipur to Suvendu Adhikari by 15,105 votes in the 2026 West Bengal election.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "State Elections",
+  "difficulty": "medium",
+  "question_en": "Vijay, who took oath as Tamil Nadu Chief Minister in May 2026, heads which party?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Tamilaga Vettri Kazhagam (TVK)",
+    "hi": null
+   },
+   {
+    "en": "Dravida Munnetra Kazhagam (DMK)",
+    "hi": null
+   },
+   {
+    "en": "AIADMK",
+    "hi": null
+   },
+   {
+    "en": "Pattali Makkal Katchi",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Actor-politician Vijay's TVK won 107 seats and displaced the DMK; he was sworn in on 10 May 2026 with outside support from allies.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "State Elections",
+  "difficulty": "medium",
+  "question_en": "Who became the Chief Minister of Kerala after the Congress-led UDF's win in the 2026 Assembly election?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Pinarayi Vijayan",
+    "hi": null
+   },
+   {
+    "en": "Ramesh Chennithala",
+    "hi": null
+   },
+   {
+    "en": "V. D. Satheesan",
+    "hi": null
+   },
+   {
+    "en": "K. Muraleedharan",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The UDF secured a big majority in May 2026 and Congress named V. D. Satheesan as CM.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "World Affairs",
+  "difficulty": "medium",
+  "question_en": "Who became the Prime Minister of Bangladesh after the BNP's victory in the February 2026 general election?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Sheikh Hasina",
+    "hi": null
+   },
+   {
+    "en": "Muhammad Yunus",
+    "hi": null
+   },
+   {
+    "en": "Shafiqur Rahman",
+    "hi": null
+   },
+   {
+    "en": "Tarique Rahman",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The BNP, led by Tarique Rahman, son of Khaleda Zia, won the first election after the 2024 uprising.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "World Affairs",
+  "difficulty": "easy",
+  "question_en": "Who became Japan's first woman Prime Minister in October 2025?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Sanae Takaichi",
+    "hi": null
+   },
+   {
+    "en": "Yuriko Koike",
+    "hi": null
+   },
+   {
+    "en": "Fumio Kishida",
+    "hi": null
+   },
+   {
+    "en": "Shigeru Ishiba",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Sanae Takaichi of the LDP was elected Prime Minister of Japan in October 2025.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Awards",
+  "difficulty": "medium",
+  "question_en": "The Nobel Peace Prize 2025 was awarded to which Venezuelan opposition leader?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Alexei Navalny",
+    "hi": null
+   },
+   {
+    "en": "Juan Guaido",
+    "hi": null
+   },
+   {
+    "en": "Maria Corina Machado",
+    "hi": null
+   },
+   {
+    "en": "Nicolas Maduro",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Machado was honoured for her work promoting democratic rights in Venezuela (announced 10 October 2025).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Awards",
+  "difficulty": "medium",
+  "question_en": "The Nobel Peace Prize 2026 was awarded to which former UN human rights chief of South African origin?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Michelle Bachelet",
+    "hi": null
+   },
+   {
+    "en": "Navanethem Pillay",
+    "hi": null
+   },
+   {
+    "en": "Louise Arbour",
+    "hi": null
+   },
+   {
+    "en": "Malala Yousafzai",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Navi Pillay, also a former ICC and ICJ judge, was announced as the 2026 peace laureate on 9 October 2026.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Awards",
+  "difficulty": "hard",
+  "question_en": "The Nobel Prize in Economic Sciences 2026 was awarded to which pair of American economists?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Daron Acemoglu and Simon Johnson",
+    "hi": null
+   },
+   {
+    "en": "Claudia Goldin and Ben Bernanke",
+    "hi": null
+   },
+   {
+    "en": "Robert E. Hall and Michael Woodford",
+    "hi": null
+   },
+   {
+    "en": "Joshua Angrist and Guido Imbens",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The Royal Swedish Academy honoured them on 12 October 2026 for their work on macroeconomic stabilisation.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Awards",
+  "difficulty": "hard",
+  "question_en": "The Nobel Prize in Physiology or Medicine 2026 was awarded for pioneering work on:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "mRNA vaccines",
+    "hi": null
+   },
+   {
+    "en": "Optogenetics (light-gated ion channels)",
+    "hi": null
+   },
+   {
+    "en": "CRISPR gene editing",
+    "hi": null
+   },
+   {
+    "en": "Immune checkpoint therapy",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Karl Deisseroth, Peter Hegemann and Georg Nagel were honoured for light-controlled ion channel research.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Summits",
+  "difficulty": "medium",
+  "question_en": "India hosted the first global AI summit in the Global South in February 2026. It was called the:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "AI Safety Summit",
+    "hi": null
+   },
+   {
+    "en": "AI Action Summit",
+    "hi": null
+   },
+   {
+    "en": "AI Everywhere Summit",
+    "hi": null
+   },
+   {
+    "en": "AI Impact Summit",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The India AI Impact Summit 2026 at Bharat Mandapam, New Delhi ended with the adoption of the New Delhi Declaration on AI Impact.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Summits",
+  "difficulty": "medium",
+  "question_en": "The India AI Impact Summit 2026 was organised around three 'Sutras'. These were:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "People, Planet and Progress",
+    "hi": null
+   },
+   {
+    "en": "Peace, Prosperity and Power",
+    "hi": null
+   },
+   {
+    "en": "People, Policy and Profit",
+    "hi": null
+   },
+   {
+    "en": "Progress, Privacy and Protection",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The three foundational pillars of the summit were People, Planet and Progress.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Summits",
+  "difficulty": "easy",
+  "question_en": "Which country holds the BRICS chairship for 2026, hosting the 18th summit in New Delhi in September 2026?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "India",
+    "hi": null
+   },
+   {
+    "en": "Brazil",
+    "hi": null
+   },
+   {
+    "en": "South Africa",
+    "hi": null
+   },
+   {
+    "en": "Russia",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "India chairs BRICS in 2026 under the theme of resilience, innovation, cooperation and sustainability; Brazil chaired in 2025.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Summits",
+  "difficulty": "medium",
+  "question_en": "COP30, the UN climate conference of November 2025, was hosted in which city?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Baku, Azerbaijan",
+    "hi": null
+   },
+   {
+    "en": "Dubai, UAE",
+    "hi": null
+   },
+   {
+    "en": "Belem, Brazil",
+    "hi": null
+   },
+   {
+    "en": "Sharm el-Sheikh, Egypt",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "COP30 was held in Belem in the Brazilian Amazon region; COP29 was in Baku and COP28 in Dubai.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Summits",
+  "difficulty": "medium",
+  "question_en": "Which country holds the G20 presidency for 2026?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "India",
+    "hi": null
+   },
+   {
+    "en": "United States",
+    "hi": null
+   },
+   {
+    "en": "South Africa",
+    "hi": null
+   },
+   {
+    "en": "Brazil",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The USA took over the G20 presidency from South Africa (Johannesburg summit, Nov 2025) for 2026.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Delhi",
+  "difficulty": "easy",
+  "question_en": "Who is the Chief Minister of Delhi (as of October 2026)?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Atishi",
+    "hi": null
+   },
+   {
+    "en": "Arvind Kejriwal",
+    "hi": null
+   },
+   {
+    "en": "Sushma Swaraj",
+    "hi": null
+   },
+   {
+    "en": "Rekha Gupta",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Rekha Gupta of the BJP took oath on 20 February 2025 after the BJP won the Delhi Assembly election, ending AAP's rule.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Delhi",
+  "difficulty": "medium",
+  "question_en": "Rekha Gupta is the how-manyth woman Chief Minister of Delhi?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "First",
+    "hi": null
+   },
+   {
+    "en": "Fourth",
+    "hi": null
+   },
+   {
+    "en": "Second",
+    "hi": null
+   },
+   {
+    "en": "Third",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "After Sushma Swaraj (1998), Sheila Dikshit (1998-2013) and Atishi (2024-25), Rekha Gupta became the fourth woman CM of Delhi.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Delhi",
+  "difficulty": "medium",
+  "question_en": "The Delhi Budget 2026-27, presented on 24 March 2026, was projected as a:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Digital budget",
+    "hi": null
+   },
+   {
+    "en": "Defence budget",
+    "hi": null
+   },
+   {
+    "en": "Farm budget",
+    "hi": null
+   },
+   {
+    "en": "Green budget",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "CM Rekha Gupta presented a roughly Rs 1.04 lakh crore budget with heavy focus on pollution control and environment.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Delhi",
+  "difficulty": "easy",
+  "question_en": "Who presented the Delhi Budget 2026-27 in the Delhi Assembly?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Chief Minister Rekha Gupta",
+    "hi": null
+   },
+   {
+    "en": "Lieutenant Governor",
+    "hi": null
+   },
+   {
+    "en": "Speaker Vijender Gupta",
+    "hi": null
+   },
+   {
+    "en": "Education Minister Ashish Sood",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Rekha Gupta holds the Finance portfolio and presented her second budget on 24 March 2026.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Delhi",
+  "difficulty": "hard",
+  "question_en": "In the Delhi Budget 2026-27, which sector received the largest allocation (about Rs 19,300 crore)?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Health",
+    "hi": null
+   },
+   {
+    "en": "Transport",
+    "hi": null
+   },
+   {
+    "en": "Education",
+    "hi": null
+   },
+   {
+    "en": "Water supply",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Education got about Rs 19,326 crore, followed by health at about Rs 13,034 crore.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Delhi",
+  "difficulty": "medium",
+  "question_en": "Under the Mahila Samriddhi Yojana approved by the Delhi Cabinet, eligible women are to receive a monthly assistance of:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Rs 1,000",
+    "hi": null
+   },
+   {
+    "en": "Rs 2,100",
+    "hi": null
+   },
+   {
+    "en": "Rs 5,000",
+    "hi": null
+   },
+   {
+    "en": "Rs 2,500",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The BJP's manifesto promise of Rs 2,500 a month was cleared by the Delhi cabinet on 8 March 2025 for women aged 18-60 with limited family income.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Delhi",
+  "difficulty": "medium",
+  "question_en": "Delhi conducted its first cloud-seeding trial in October 2025 in collaboration with which institution?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "IIT Kanpur",
+    "hi": null
+   },
+   {
+    "en": "IIT Delhi",
+    "hi": null
+   },
+   {
+    "en": "IISc Bengaluru",
+    "hi": null
+   },
+   {
+    "en": "ISRO",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The artificial-rain trials aimed at easing post-Diwali smog were conducted with IIT Kanpur using silver iodide and sodium chloride.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Delhi",
+  "difficulty": "hard",
+  "question_en": "In Census 2027 houselisting, which Delhi areas were among the first to open self-enumeration?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Only Old Delhi",
+    "hi": null
+   },
+   {
+    "en": "Only East Delhi",
+    "hi": null
+   },
+   {
+    "en": "NDMC area and Delhi Cantonment",
+    "hi": null
+   },
+   {
+    "en": "Only Dwarka",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The first self-enumeration phase covered some states/UTs plus areas under NDMC and the Delhi Cantonment Board.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Science & Space",
+  "difficulty": "easy",
+  "question_en": "ISRO's first uncrewed Gaganyaan mission (G1) is to carry which humanoid robot?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Rakesh",
+    "hi": null
+   },
+   {
+    "en": "Vyommitra",
+    "hi": null
+   },
+   {
+    "en": "Maitri",
+    "hi": null
+   },
+   {
+    "en": "Aditya",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Vyommitra, a half-humanoid, will test life-support and re-entry systems; G1 has been targeted for late 2026 (subject to delays).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Science & Space",
+  "difficulty": "easy",
+  "question_en": "Who is the Chairman of ISRO?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "S. Somanath",
+    "hi": null
+   },
+   {
+    "en": "K. Sivan",
+    "hi": null
+   },
+   {
+    "en": "V. Narayanan",
+    "hi": null
+   },
+   {
+    "en": "A. S. Kiran Kumar",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "V. Narayanan took charge in January 2025, succeeding S. Somanath.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Science & Space",
+  "difficulty": "medium",
+  "question_en": "NISAR, launched in July 2025 on a GSLV-F16 rocket, is a joint earth-observation satellite of ISRO and:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "ESA",
+    "hi": null
+   },
+   {
+    "en": "NASA",
+    "hi": null
+   },
+   {
+    "en": "JAXA",
+    "hi": null
+   },
+   {
+    "en": "Roscosmos",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "NASA-ISRO Synthetic Aperture Radar maps Earth's land and ice changes with dual-frequency L and S band radar.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Defence",
+  "difficulty": "easy",
+  "question_en": "Operation Sindoor, launched on 7 May 2025, was India's military response to which attack?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Pulwama attack",
+    "hi": null
+   },
+   {
+    "en": "Uri attack",
+    "hi": null
+   },
+   {
+    "en": "Parliament attack 2001",
+    "hi": null
+   },
+   {
+    "en": "Pahalgam terror attack",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "India struck terror infrastructure in Pakistan and PoK after the 22 April 2025 Pahalgam attack on tourists.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Defence",
+  "difficulty": "easy",
+  "question_en": "Who is the Chief of the Naval Staff of the Indian Navy (as of 2026)?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Admiral Dinesh K. Tripathi",
+    "hi": null
+   },
+   {
+    "en": "Admiral R. Hari Kumar",
+    "hi": null
+   },
+   {
+    "en": "Admiral Karambir Singh",
+    "hi": null
+   },
+   {
+    "en": "Admiral Sunil Lanba",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Admiral Dinesh Kumar Tripathi took over as Navy chief on 30 April 2024.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Defence",
+  "difficulty": "medium",
+  "question_en": "'Mission Sudarshan Chakra', announced by PM Modi on Independence Day 2025, is aimed at building:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "A national air-defence shield by 2035",
+    "hi": null
+   },
+   {
+    "en": "A moon-landing programme",
+    "hi": null
+   },
+   {
+    "en": "A coastal highway network",
+    "hi": null
+   },
+   {
+    "en": "A rural broadband grid",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The mission envisages an indigenous multi-layered air defence system to protect strategic and civilian sites by 2035.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Defence",
+  "difficulty": "hard",
+  "question_en": "INS Mangrol, commissioned in October 2026, is which type of Indian Navy vessel?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Nuclear submarine",
+    "hi": null
+   },
+   {
+    "en": "Aircraft carrier",
+    "hi": null
+   },
+   {
+    "en": "Anti-Submarine Warfare Shallow Water Craft",
+    "hi": null
+   },
+   {
+    "en": "Fleet tanker",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "INS Mangrol is the third ASW Shallow Water Craft built in India (the Mahe class) and was commissioned on 12 October 2026.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Books & Literature",
+  "difficulty": "easy",
+  "question_en": "Who received the Dadasaheb Phalke Award announced in September 2025, India's highest cinema honour?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Amitabh Bachchan",
+    "hi": null
+   },
+   {
+    "en": "Mohanlal",
+    "hi": null
+   },
+   {
+    "en": "Rajinikanth",
+    "hi": null
+   },
+   {
+    "en": "Mithun Chakraborty",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Malayalam superstar Mohanlal received the award for 2023 at the 71st National Film Awards ceremony.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Books & Literature",
+  "difficulty": "medium",
+  "question_en": "The 2025 Booker Prize was won by David Szalay for which novel?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Orbital",
+    "hi": null
+   },
+   {
+    "en": "Intermezzo",
+    "hi": null
+   },
+   {
+    "en": "The Safekeep",
+    "hi": null
+   },
+   {
+    "en": "Flesh",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Hungarian-British author David Szalay won the 2025 Booker Prize (announced November 2025) for 'Flesh'.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Books & Literature",
+  "difficulty": "medium",
+  "question_en": "The Nobel Prize in Literature 2025 was awarded to which Hungarian author?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Han Kang",
+    "hi": null
+   },
+   {
+    "en": "Laszlo Krasznahorkai",
+    "hi": null
+   },
+   {
+    "en": "Jon Fosse",
+    "hi": null
+   },
+   {
+    "en": "Annie Ernaux",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The Swedish Academy honoured Laszlo Krasznahorkai in October 2025 for his compelling and visionary oeuvre.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Books & Literature",
+  "difficulty": "medium",
+  "question_en": "Navtej Sarna won the Sahitya Akademi Award 2025 (English), announced in March 2026, for which novel?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "The Exile",
+    "hi": null
+   },
+   {
+    "en": "Winter in Tabriz",
+    "hi": null
+   },
+   {
+    "en": "Midnight's Children",
+    "hi": null
+   },
+   {
+    "en": "Crimson Spring",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Former diplomat Navtej Sarna won for 'Crimson Spring', a novel on the 1919 Jallianwala Bagh massacre.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Books & Literature",
+  "difficulty": "hard",
+  "question_en": "The Sahitya Akademi Award 2025 in Hindi (announced March 2026) went to Mamta Kalia for her memoir:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Jeete Jee Allahabad",
+    "hi": null
+   },
+   {
+    "en": "Kitne Pakistan",
+    "hi": null
+   },
+   {
+    "en": "Bahut Door Kitna Door Hota Hai",
+    "hi": null
+   },
+   {
+    "en": "Narak Masiha",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Mamta Kalia received the Rs 1 lakh award for the memoir 'Jeete Jee Allahabad'.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Awards",
+  "difficulty": "hard",
+  "question_en": "Runa Khan, a 2026 Ramon Magsaysay Award winner announced on 31 August 2026, is from which country?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Myanmar",
+    "hi": null
+   },
+   {
+    "en": "Singapore",
+    "hi": null
+   },
+   {
+    "en": "Bangladesh",
+    "hi": null
+   },
+   {
+    "en": "Philippines",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The 2026 awardees: Tommy Koh (Singapore), Runa Khan (Bangladesh) and Bo Kyi (Myanmar).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "ga_current",
+  "subtopic": "Sports",
+  "difficulty": "medium",
+  "question_en": "Who won the FIDE Women's Chess World Cup in July 2025, also earning the Grandmaster title?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Koneru Humpy",
+    "hi": null
+   },
+   {
+    "en": "R. Vaishali",
+    "hi": null
+   },
+   {
+    "en": "Harika Dronavalli",
+    "hi": null
+   },
+   {
+    "en": "Divya Deshmukh",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Teenager Divya Deshmukh beat Koneru Humpy in an all-Indian final at Batumi, Georgia, becoming India's 88th Grandmaster.",
+  "explanation_hi": null,
+  "expected": false
+ }
+]

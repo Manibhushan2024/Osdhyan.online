@@ -1,0 +1,2032 @@
+[
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "SDLC models",
+  "difficulty": "easy",
+  "question_en": "Which SDLC model is a linear, sequential approach in which each phase must be completed before the next one begins and there is no overlapping of phases?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Waterfall model",
+    "hi": null
+   },
+   {
+    "en": "Spiral model",
+    "hi": null
+   },
+   {
+    "en": "Prototyping model",
+    "hi": null
+   },
+   {
+    "en": "Agile model",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The classical waterfall model moves strictly from requirements to design, coding, testing and maintenance with no overlap. Spiral and agile are iterative, and prototyping builds a working mock-up first.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "SDLC models",
+  "difficulty": "easy",
+  "question_en": "The spiral model of software development was proposed by:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Winston Royce",
+    "hi": null
+   },
+   {
+    "en": "Ken Schwaber",
+    "hi": null
+   },
+   {
+    "en": "Barry Boehm",
+    "hi": null
+   },
+   {
+    "en": "Ivar Jacobson",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Barry Boehm described the risk-driven spiral model in 1986 (published widely in 1988). Royce is linked with the waterfall paper of 1970, Schwaber co-created Scrum, and Jacobson is known for use cases and UML.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "SDLC models",
+  "difficulty": "medium",
+  "question_en": "The most distinguishing feature of the spiral model, compared with the waterfall model, is its explicit emphasis on:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Risk analysis in every loop",
+    "hi": null
+   },
+   {
+    "en": "Writing code before design",
+    "hi": null
+   },
+   {
+    "en": "Avoiding all documentation",
+    "hi": null
+   },
+   {
+    "en": "Fixed-price contracts",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Each loop (cycle) of the spiral includes a dedicated risk-identification and risk-resolution step, so the spiral model is called a risk-driven model. The waterfall model has no explicit risk-handling phase.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "SDLC models",
+  "difficulty": "medium",
+  "question_en": "Why is the spiral model often called a 'meta model'?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "It is used only to model metadata",
+    "hi": null
+   },
+   {
+    "en": "It skips the testing phase",
+    "hi": null
+   },
+   {
+    "en": "It is meant only for small projects",
+    "hi": null
+   },
+   {
+    "en": "It can incorporate features of other SDLC models",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The spiral model subsumes other models: a single loop resembles the waterfall model, its early loops use prototyping, and its loop-by-loop growth resembles the incremental/evolutionary approach. Hence it is termed a meta model.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "SDLC models",
+  "difficulty": "easy",
+  "question_en": "Which SDLC model is most suitable when the customer is unable to state requirements clearly at the start of the project?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Prototyping model",
+    "hi": null
+   },
+   {
+    "en": "Classical waterfall model",
+    "hi": null
+   },
+   {
+    "en": "V-model",
+    "hi": null
+   },
+   {
+    "en": "Big-bang model",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A prototype gives users something concrete to react to, which helps them discover and refine vague requirements. Waterfall and V-model assume requirements are frozen at the beginning.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "SDLC models",
+  "difficulty": "medium",
+  "question_en": "In a 'throwaway' prototyping approach, what happens to the prototype after the requirements are finalised?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "It is discarded and the real system is built afresh",
+    "hi": null
+   },
+   {
+    "en": "It is delivered to the customer as the final product",
+    "hi": null
+   },
+   {
+    "en": "It is converted into the test plan",
+    "hi": null
+   },
+   {
+    "en": "It replaces the SRS document permanently",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A throwaway (rapid) prototype exists only to clarify requirements; once they are understood it is thrown away and the actual system is engineered properly. In evolutionary prototyping, by contrast, the prototype is refined into the final product.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "SDLC models",
+  "difficulty": "easy",
+  "question_en": "The Agile Manifesto (2001) values 'working software' over:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Customer collaboration",
+    "hi": null
+   },
+   {
+    "en": "Comprehensive documentation",
+    "hi": null
+   },
+   {
+    "en": "Responding to change",
+    "hi": null
+   },
+   {
+    "en": "Individuals and interactions",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The four Agile values are: individuals and interactions over processes and tools, working software over comprehensive documentation, customer collaboration over contract negotiation, and responding to change over following a plan. The other three options are themselves values on the preferred side.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "SDLC models",
+  "difficulty": "medium",
+  "question_en": "In Scrum, a time-boxed iteration of usually one to four weeks, at the end of which a usable increment is produced, is called a:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Sprint",
+    "hi": null
+   },
+   {
+    "en": "Epic",
+    "hi": null
+   },
+   {
+    "en": "Backlog",
+    "hi": null
+   },
+   {
+    "en": "Milestone",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A sprint is the fixed-length iteration of Scrum (at most one month). An epic is a large user story, and the product backlog is the ordered list of work items, not a time box.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "SDLC models",
+  "difficulty": "medium",
+  "question_en": "Which Scrum role is responsible for maximising the value of the product and ordering the product backlog?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Product Owner",
+    "hi": null
+   },
+   {
+    "en": "Scrum Master",
+    "hi": null
+   },
+   {
+    "en": "Developers",
+    "hi": null
+   },
+   {
+    "en": "Project sponsor",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The Product Owner owns and prioritises the product backlog. The Scrum Master coaches the team and removes impediments, while Developers build the increment; 'project sponsor' is not a Scrum role.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "SDLC models",
+  "difficulty": "medium",
+  "question_en": "The Daily Scrum (stand-up) meeting is time-boxed to:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "15 minutes",
+    "hi": null
+   },
+   {
+    "en": "1 hour",
+    "hi": null
+   },
+   {
+    "en": "4 hours",
+    "hi": null
+   },
+   {
+    "en": "Half a day",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The Scrum Guide time-boxes the Daily Scrum to 15 minutes so developers can inspect progress toward the sprint goal and plan the next 24 hours. Longer time boxes belong to sprint planning, review and retrospective.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "SDLC models",
+  "difficulty": "medium",
+  "question_en": "In the V-model, unit testing is planned and carried out against which development phase on the left arm of the 'V'?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Requirement analysis",
+    "hi": null
+   },
+   {
+    "en": "System (high-level) design",
+    "hi": null
+   },
+   {
+    "en": "Detailed (module/low-level) design",
+    "hi": null
+   },
+   {
+    "en": "Feasibility study",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The V-model pairs each development phase with a test phase: requirements ↔ acceptance testing, system/high-level design ↔ system or integration testing, and detailed module design ↔ unit testing.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "SDLC models",
+  "difficulty": "easy",
+  "question_en": "The V-model is also known as the:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Version and Variant model",
+    "hi": null
+   },
+   {
+    "en": "Visual modelling model",
+    "hi": null
+   },
+   {
+    "en": "Verification and Validation model",
+    "hi": null
+   },
+   {
+    "en": "Vector model",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The 'V' stands for Verification and Validation: every development stage on the left arm has a matching testing stage on the right arm, so test planning starts early.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "SDLC models",
+  "difficulty": "hard",
+  "question_en": "A project has well-understood requirements, but the client wants a basic working version early and additional features delivered in successive releases. Which model fits best?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Classical waterfall model",
+    "hi": null
+   },
+   {
+    "en": "Throwaway prototyping",
+    "hi": null
+   },
+   {
+    "en": "Big-bang model",
+    "hi": null
+   },
+   {
+    "en": "Incremental model",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The incremental model delivers the core product first and adds functionality in planned increments, each a mini-waterfall. Waterfall delivers only once at the end, and throwaway prototyping is for unclear requirements.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "SDLC models",
+  "difficulty": "hard",
+  "question_en": "Which statement about the Rapid Application Development (RAD) model is correct?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "It is ideal for large, high-risk projects using new technology",
+    "hi": null
+   },
+   {
+    "en": "It forbids any user involvement until final delivery",
+    "hi": null
+   },
+   {
+    "en": "It is the same as the classical waterfall model",
+    "hi": null
+   },
+   {
+    "en": "It relies on component reuse and short time-boxed cycles, so it needs highly skilled developers and active users",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "RAD (James Martin) achieves speed through reusable components, time-boxing (typically 60–90 days) and strong user involvement; it is unsuitable for high technical risk or when the system cannot be modularised.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "SDLC models",
+  "difficulty": "hard",
+  "question_en": "In Boehm's spiral model diagram, what does the radial distance from the centre represent?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Number of defects found",
+    "hi": null
+   },
+   {
+    "en": "Cumulative cost incurred so far",
+    "hi": null
+   },
+   {
+    "en": "Number of team members",
+    "hi": null
+   },
+   {
+    "en": "Remaining schedule time",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "In the spiral diagram the radius shows the cumulative cost of the project to date, while the angular dimension shows progress made in completing each cycle.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Requirement engineering",
+  "difficulty": "easy",
+  "question_en": "The document that formally records what a software system must do, and which acts as an agreement between client and developer, is the:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Test summary report",
+    "hi": null
+   },
+   {
+    "en": "Software Requirements Specification (SRS)",
+    "hi": null
+   },
+   {
+    "en": "Source code listing",
+    "hi": null
+   },
+   {
+    "en": "User manual",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The SRS states the functional and non-functional requirements of the system and serves as the baseline contract. Test reports and user manuals come much later in the life cycle.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Requirement engineering",
+  "difficulty": "easy",
+  "question_en": "'The system shall respond to any search query within 2 seconds' is an example of a:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Functional requirement",
+    "hi": null
+   },
+   {
+    "en": "Domain-independent design decision",
+    "hi": null
+   },
+   {
+    "en": "Coding standard",
+    "hi": null
+   },
+   {
+    "en": "Non-functional (performance) requirement",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "It constrains how well the system behaves (response time), not what function it provides, so it is a non-functional performance requirement. A functional requirement would be 'the system shall allow a user to search books by title'.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Requirement engineering",
+  "difficulty": "medium",
+  "question_en": "A good SRS should describe:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "The detailed algorithms and data structures to be used",
+    "hi": null
+   },
+   {
+    "en": "The source code of critical modules",
+    "hi": null
+   },
+   {
+    "en": "The salary and roles of the developers",
+    "hi": null
+   },
+   {
+    "en": "What the system should do, not how it should be implemented",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "An SRS is a black-box description of required behaviour; implementation details (how) belong to the design document. Mixing design into the SRS reduces flexibility for designers.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Requirement engineering",
+  "difficulty": "medium",
+  "question_en": "An SRS is said to be 'verifiable' when:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Every requirement has been approved by the government",
+    "hi": null
+   },
+   {
+    "en": "It is written in a programming language",
+    "hi": null
+   },
+   {
+    "en": "It contains no non-functional requirements",
+    "hi": null
+   },
+   {
+    "en": "There is a finite, cost-effective way to check that the software meets each requirement",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Verifiability means each requirement can be tested objectively; vague terms like 'user-friendly' or 'fast' make an SRS unverifiable. Approval or language of writing have nothing to do with verifiability.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Requirement engineering",
+  "difficulty": "medium",
+  "question_en": "Which of the following is NOT a requirement elicitation technique?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Interviews",
+    "hi": null
+   },
+   {
+    "en": "Brainstorming",
+    "hi": null
+   },
+   {
+    "en": "Regression testing",
+    "hi": null
+   },
+   {
+    "en": "Questionnaires",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Interviews, brainstorming, questionnaires, observation and JAD sessions are used to gather requirements. Regression testing is a testing activity performed after changes to code.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Requirement engineering",
+  "difficulty": "medium",
+  "question_en": "A feasibility study that checks whether the expected benefits of the proposed system outweigh its costs is called:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Economic feasibility",
+    "hi": null
+   },
+   {
+    "en": "Technical feasibility",
+    "hi": null
+   },
+   {
+    "en": "Operational feasibility",
+    "hi": null
+   },
+   {
+    "en": "Schedule feasibility",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Economic feasibility is a cost–benefit analysis. Technical feasibility checks whether the technology and skills exist, and operational feasibility checks whether users will actually accept and use the system.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Requirement engineering",
+  "difficulty": "hard",
+  "question_en": "In structured analysis, a Level-0 DFD that shows the entire system as a single process interacting with external entities is known as the:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Structure chart",
+    "hi": null
+   },
+   {
+    "en": "State chart",
+    "hi": null
+   },
+   {
+    "en": "Context diagram",
+    "hi": null
+   },
+   {
+    "en": "Entity–relationship diagram",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The Level-0 DFD, or context diagram, represents the whole system as one bubble with its inputs and outputs to external entities; lower levels decompose this bubble. A structure chart is a design-phase tool.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Requirement engineering",
+  "difficulty": "hard",
+  "question_en": "In a Data Flow Diagram (DFD), which of the following is NOT shown?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Control flow such as loops and decisions",
+    "hi": null
+   },
+   {
+    "en": "Processes",
+    "hi": null
+   },
+   {
+    "en": "Data stores",
+    "hi": null
+   },
+   {
+    "en": "External entities",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A DFD shows how data moves between processes, data stores and external entities; it deliberately omits control logic such as sequence, loops and conditions, which belong to flowcharts.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Software design (cohesion & coupling)",
+  "difficulty": "easy",
+  "question_en": "A well-designed software system should have:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Low cohesion and high coupling",
+    "hi": null
+   },
+   {
+    "en": "High cohesion and low coupling",
+    "hi": null
+   },
+   {
+    "en": "High cohesion and high coupling",
+    "hi": null
+   },
+   {
+    "en": "Low cohesion and low coupling",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "High cohesion keeps each module focused on a single task, and low coupling keeps modules independent, making the system easier to understand, test and maintain.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Software design (cohesion & coupling)",
+  "difficulty": "medium",
+  "question_en": "Which type of cohesion is considered the BEST (most desirable)?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Coincidental cohesion",
+    "hi": null
+   },
+   {
+    "en": "Logical cohesion",
+    "hi": null
+   },
+   {
+    "en": "Temporal cohesion",
+    "hi": null
+   },
+   {
+    "en": "Functional cohesion",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "In functional cohesion all elements contribute to one well-defined task. The order from best to worst is functional, sequential, communicational, procedural, temporal, logical, coincidental.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Software design (cohesion & coupling)",
+  "difficulty": "medium",
+  "question_en": "A module whose elements are grouped only because they all execute at the same time — for example, an 'initialise everything at start-up' routine — exhibits:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Functional cohesion",
+    "hi": null
+   },
+   {
+    "en": "Temporal cohesion",
+    "hi": null
+   },
+   {
+    "en": "Sequential cohesion",
+    "hi": null
+   },
+   {
+    "en": "Communicational cohesion",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Temporal cohesion groups activities related only by when they occur (start-up, shutdown). Sequential cohesion would require the output of one element to be the input of the next.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Software design (cohesion & coupling)",
+  "difficulty": "medium",
+  "question_en": "Which type of coupling is the WORST (most undesirable)?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Data coupling",
+    "hi": null
+   },
+   {
+    "en": "Stamp coupling",
+    "hi": null
+   },
+   {
+    "en": "Content coupling",
+    "hi": null
+   },
+   {
+    "en": "Control coupling",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Content coupling occurs when one module directly modifies or depends on the internal workings of another, so a change in one breaks the other. From best to worst: data, stamp, control, external, common, content.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Software design (cohesion & coupling)",
+  "difficulty": "hard",
+  "question_en": "Module A passes an entire student record structure to module B, but B uses only the roll number field. This is an example of:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Data coupling",
+    "hi": null
+   },
+   {
+    "en": "Content coupling",
+    "hi": null
+   },
+   {
+    "en": "Common coupling",
+    "hi": null
+   },
+   {
+    "en": "Stamp coupling",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Passing a composite data structure when only part of it is needed is stamp coupling. Pure data coupling would pass only the roll number as an elementary parameter.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Software design (cohesion & coupling)",
+  "difficulty": "medium",
+  "question_en": "When two modules communicate by sharing the same global variables, the coupling between them is called:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Data coupling",
+    "hi": null
+   },
+   {
+    "en": "Common coupling",
+    "hi": null
+   },
+   {
+    "en": "Stamp coupling",
+    "hi": null
+   },
+   {
+    "en": "Message coupling",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Common (global) coupling arises when modules read and write shared global data, so a change to that data can have unexpected effects in many modules. It is worse than data and stamp coupling.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Software design (cohesion & coupling)",
+  "difficulty": "medium",
+  "question_en": "Module A passes a flag to module B that decides which part of B's logic will execute. This is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Data coupling",
+    "hi": null
+   },
+   {
+    "en": "Coincidental cohesion",
+    "hi": null
+   },
+   {
+    "en": "Functional cohesion",
+    "hi": null
+   },
+   {
+    "en": "Control coupling",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Passing a control element (flag, switch) that directs another module's internal logic is control coupling. Cohesion terms describe the inside of a single module, not the link between two modules.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Software design (cohesion & coupling)",
+  "difficulty": "hard",
+  "question_en": "In a structure chart, a well-designed system generally shows:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Low fan-in and very high fan-out for every module",
+    "hi": null
+   },
+   {
+    "en": "High fan-in for utility modules and low-to-moderate fan-out",
+    "hi": null
+   },
+   {
+    "en": "Zero fan-in for all modules",
+    "hi": null
+   },
+   {
+    "en": "Equal fan-in and fan-out for all modules",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Fan-in is the number of modules that call a given module; high fan-in means good reuse. Fan-out is the number of modules a module calls; very high fan-out suggests poor decomposition and complexity.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Software design (cohesion & coupling)",
+  "difficulty": "easy",
+  "question_en": "Breaking a large software system into smaller, separately named and addressable components is called:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Compilation",
+    "hi": null
+   },
+   {
+    "en": "Modularity",
+    "hi": null
+   },
+   {
+    "en": "Debugging",
+    "hi": null
+   },
+   {
+    "en": "Normalisation",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Modularity divides a system into modules that can be designed, tested and maintained independently. Normalisation is a database design concept, not a software-design principle.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Software testing",
+  "difficulty": "easy",
+  "question_en": "Testing in which the tester designs test cases only from the specification, without looking at the internal code, is called:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "White-box testing",
+    "hi": null
+   },
+   {
+    "en": "Glass-box testing",
+    "hi": null
+   },
+   {
+    "en": "Black-box testing",
+    "hi": null
+   },
+   {
+    "en": "Structural testing",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Black-box (functional/behavioural) testing treats the program as a closed box and checks outputs for given inputs. White-box, glass-box and structural testing are names for code-based testing.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Software testing",
+  "difficulty": "easy",
+  "question_en": "Statement coverage, branch coverage and path coverage are criteria used in:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Black-box testing",
+    "hi": null
+   },
+   {
+    "en": "Acceptance testing",
+    "hi": null
+   },
+   {
+    "en": "White-box testing",
+    "hi": null
+   },
+   {
+    "en": "Beta testing",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "These coverage criteria measure how much of the internal code structure is exercised, so they belong to white-box testing. Acceptance and beta testing are done by users from an external viewpoint.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Software testing",
+  "difficulty": "easy",
+  "question_en": "Alpha testing is performed:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "At the developer's site by selected users or in-house testers",
+    "hi": null
+   },
+   {
+    "en": "At the customer's site by end users without developers",
+    "hi": null
+   },
+   {
+    "en": "Only by automated tools after deployment",
+    "hi": null
+   },
+   {
+    "en": "By the compiler during compilation",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Alpha testing happens in a controlled environment at the developer's site. Beta testing is done later by real users in their own environment, with developers absent.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Software testing",
+  "difficulty": "easy",
+  "question_en": "What is the correct order of testing levels in a typical project?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "System → Unit → Acceptance → Integration",
+    "hi": null
+   },
+   {
+    "en": "Unit → Integration → System → Acceptance",
+    "hi": null
+   },
+   {
+    "en": "Integration → Unit → System → Acceptance",
+    "hi": null
+   },
+   {
+    "en": "Acceptance → System → Integration → Unit",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Individual modules are tested first (unit), then combined (integration), then the whole system is tested against the SRS (system), and finally the customer validates it (acceptance).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Software testing",
+  "difficulty": "medium",
+  "question_en": "'Are we building the product right?' is a question answered by:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Validation",
+    "hi": null
+   },
+   {
+    "en": "Verification",
+    "hi": null
+   },
+   {
+    "en": "Acceptance testing",
+    "hi": null
+   },
+   {
+    "en": "Beta testing",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Verification (Boehm's definition) checks that each phase's output conforms to its specification — building the product right. Validation asks 'are we building the right product?', i.e. does it meet the user's real needs.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Software testing",
+  "difficulty": "medium",
+  "question_en": "An input field accepts ages from 18 to 60 (inclusive). Which set of values best represents boundary value analysis test inputs?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "18, 30, 45, 60, 75, 90",
+    "hi": null
+   },
+   {
+    "en": "17, 18, 19, 59, 60, 61",
+    "hi": null
+   },
+   {
+    "en": "0, 18, 60, 100, 200, 300",
+    "hi": null
+   },
+   {
+    "en": "20, 25, 30, 35, 40, 45",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Boundary value analysis tests just below, at and just above each boundary: min−1, min, min+1 and max−1, max, max+1, giving 17, 18, 19, 59, 60, 61. Errors cluster at boundaries, such as writing 'less than' where 'less than or equal to' was needed.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Software testing",
+  "difficulty": "medium",
+  "question_en": "For an input field that accepts integers from 1 to 100, equivalence class partitioning yields how many classes?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "2 (one valid, one invalid)",
+    "hi": null
+   },
+   {
+    "en": "3 (one valid, two invalid)",
+    "hi": null
+   },
+   {
+    "en": "100 (one per valid value)",
+    "hi": null
+   },
+   {
+    "en": "6 (three valid, three invalid)",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The range splits into one valid class (1–100) and two invalid classes (less than 1 and greater than 100). One representative value from each class is enough.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Software testing",
+  "difficulty": "medium",
+  "question_en": "In top-down integration testing, the lower-level modules that are not yet developed are replaced by:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Drivers",
+    "hi": null
+   },
+   {
+    "en": "Oracles",
+    "hi": null
+   },
+   {
+    "en": "Stubs",
+    "hi": null
+   },
+   {
+    "en": "Mutants",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "A stub is a dummy called module that simulates a lower-level module. In bottom-up integration, drivers are written instead to call the modules being tested.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Software testing",
+  "difficulty": "medium",
+  "question_en": "Re-running previously passed test cases after a code change, to make sure the change has not broken existing functionality, is called:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Smoke testing",
+    "hi": null
+   },
+   {
+    "en": "Stress testing",
+    "hi": null
+   },
+   {
+    "en": "Alpha testing",
+    "hi": null
+   },
+   {
+    "en": "Regression testing",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Regression testing detects new defects introduced into previously working features. Smoke testing is a quick check that a new build is stable enough for further testing.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Software testing",
+  "difficulty": "medium",
+  "question_en": "Testing a system beyond its normal operational limits — for example, with far more simultaneous users than specified — to find its breaking point is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Stress testing",
+    "hi": null
+   },
+   {
+    "en": "Unit testing",
+    "hi": null
+   },
+   {
+    "en": "Usability testing",
+    "hi": null
+   },
+   {
+    "en": "Regression testing",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Stress testing pushes the system beyond its specified load to see how and when it fails. Load testing, by contrast, checks behaviour at the expected peak load.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Software testing",
+  "difficulty": "medium",
+  "question_en": "Which statement about coverage criteria is TRUE?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "100% statement coverage guarantees 100% branch coverage",
+    "hi": null
+   },
+   {
+    "en": "Path coverage is weaker than statement coverage",
+    "hi": null
+   },
+   {
+    "en": "100% branch coverage guarantees 100% statement coverage",
+    "hi": null
+   },
+   {
+    "en": "Branch coverage cannot be measured for if-statements",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "If every branch (true and false outcome of every decision) is exercised, every statement is executed too. The reverse fails: an if without an else can have all statements run without ever taking the false branch.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Software testing",
+  "difficulty": "hard",
+  "question_en": "A developer types 'i < n' where 'i <= n' was needed, and the program later gives a wrong result for one input. In standard IEEE terminology, the wrong result observed at run time is the:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Failure",
+    "hi": null
+   },
+   {
+    "en": "Fault",
+    "hi": null
+   },
+   {
+    "en": "Error (mistake)",
+    "hi": null
+   },
+   {
+    "en": "Bug report",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The human mistake is the error, the resulting defect in the code is the fault, and the observable deviation of output from expected behaviour during execution is the failure.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Software testing",
+  "difficulty": "hard",
+  "question_en": "Deliberately introducing small changes (such as replacing '+' with '-') into a program to check whether the existing test suite detects them is called:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Mutation testing",
+    "hi": null
+   },
+   {
+    "en": "Beta testing",
+    "hi": null
+   },
+   {
+    "en": "Sanity testing",
+    "hi": null
+   },
+   {
+    "en": "Smoke testing",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Mutation testing creates 'mutants' of the program; a good test suite should 'kill' (detect) them. It measures the effectiveness of the test cases rather than the program itself.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Software testing",
+  "difficulty": "hard",
+  "question_en": "Which black-box technique represents combinations of input conditions (causes) and actions (effects) in tabular form to derive test cases?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Basis path testing",
+    "hi": null
+   },
+   {
+    "en": "Statement coverage",
+    "hi": null
+   },
+   {
+    "en": "Decision table testing",
+    "hi": null
+   },
+   {
+    "en": "Data flow testing",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Decision tables list every combination of conditions and the corresponding actions; each column becomes a test case. Basis path, statement coverage and data-flow testing are white-box techniques.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Software maintenance",
+  "difficulty": "easy",
+  "question_en": "Modifying software so that it works on a new operating system or hardware platform is called:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Corrective maintenance",
+    "hi": null
+   },
+   {
+    "en": "Perfective maintenance",
+    "hi": null
+   },
+   {
+    "en": "Preventive maintenance",
+    "hi": null
+   },
+   {
+    "en": "Adaptive maintenance",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Adaptive maintenance adapts software to changes in its environment. Corrective fixes bugs, perfective adds or improves features, and preventive improves future maintainability.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Software maintenance",
+  "difficulty": "medium",
+  "question_en": "Which type of maintenance usually accounts for the LARGEST share of maintenance effort?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Perfective maintenance",
+    "hi": null
+   },
+   {
+    "en": "Corrective maintenance",
+    "hi": null
+   },
+   {
+    "en": "Adaptive maintenance",
+    "hi": null
+   },
+   {
+    "en": "Preventive maintenance",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Studies (e.g. Lientz and Swanson) show that roughly half of maintenance effort goes into perfective work — enhancements and performance improvements requested by users — rather than bug fixing.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Software maintenance",
+  "difficulty": "easy",
+  "question_en": "Fixing a bug reported by a user after the software has been delivered is an example of:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Adaptive maintenance",
+    "hi": null
+   },
+   {
+    "en": "Corrective maintenance",
+    "hi": null
+   },
+   {
+    "en": "Perfective maintenance",
+    "hi": null
+   },
+   {
+    "en": "Preventive maintenance",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Corrective maintenance removes faults discovered after delivery. Adaptive deals with environment changes and perfective with new or improved features.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Software maintenance",
+  "difficulty": "medium",
+  "question_en": "Analysing an existing program to recover its design and specification, usually when documentation is missing, is called:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Forward engineering",
+    "hi": null
+   },
+   {
+    "en": "Requirement elicitation",
+    "hi": null
+   },
+   {
+    "en": "Code inspection",
+    "hi": null
+   },
+   {
+    "en": "Reverse engineering",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Reverse engineering moves from code back to higher levels of abstraction (design, specification). Forward engineering goes the normal way, from requirements to code.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Software maintenance",
+  "difficulty": "hard",
+  "question_en": "Over the whole life of a typical long-lived software product, which phase usually consumes the largest share of total cost?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Coding",
+    "hi": null
+   },
+   {
+    "en": "Requirement analysis",
+    "hi": null
+   },
+   {
+    "en": "Unit testing",
+    "hi": null
+   },
+   {
+    "en": "Maintenance",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Maintenance commonly consumes around 60% or more of total life-cycle cost because software stays in use for years and keeps being corrected, adapted and enhanced. Coding is a comparatively small portion.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "UML diagrams",
+  "difficulty": "easy",
+  "question_en": "Which UML diagram shows the actors of a system and the services (functionalities) the system provides to them?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Use case diagram",
+    "hi": null
+   },
+   {
+    "en": "Class diagram",
+    "hi": null
+   },
+   {
+    "en": "Deployment diagram",
+    "hi": null
+   },
+   {
+    "en": "Component diagram",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A use case diagram captures functional requirements from the user's point of view through actors and use cases. Class diagrams show static structure and deployment diagrams show hardware nodes.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "UML diagrams",
+  "difficulty": "medium",
+  "question_en": "Which UML diagram emphasises the time ordering of messages exchanged between objects, using vertical lifelines?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Communication (collaboration) diagram",
+    "hi": null
+   },
+   {
+    "en": "Class diagram",
+    "hi": null
+   },
+   {
+    "en": "Package diagram",
+    "hi": null
+   },
+   {
+    "en": "Sequence diagram",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "A sequence diagram arranges objects horizontally and time vertically, so the order of messages is easy to read. A communication diagram shows the same interactions but emphasises links between objects rather than time.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "UML diagrams",
+  "difficulty": "medium",
+  "question_en": "In a UML class diagram, the symbols +, − and # placed before an attribute name denote respectively:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "public, private, protected",
+    "hi": null
+   },
+   {
+    "en": "private, public, protected",
+    "hi": null
+   },
+   {
+    "en": "protected, private, public",
+    "hi": null
+   },
+   {
+    "en": "public, protected, package",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "UML visibility markers are + public, − private, # protected and ~ package. They map directly to access specifiers in languages such as C++ and Java.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "UML diagrams",
+  "difficulty": "medium",
+  "question_en": "A 'whole–part' relationship in which the part cannot exist without the whole (e.g. a Room in a House) is shown in a UML class diagram by:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "A line with a hollow diamond at the whole's end",
+    "hi": null
+   },
+   {
+    "en": "A line with a hollow triangle arrowhead",
+    "hi": null
+   },
+   {
+    "en": "A line with a filled (solid) diamond at the whole's end",
+    "hi": null
+   },
+   {
+    "en": "A dashed line with an open arrowhead",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "A filled diamond denotes composition, a strong ownership where parts die with the whole. A hollow diamond is aggregation (weaker), and a hollow triangle shows generalisation (inheritance).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "UML diagrams",
+  "difficulty": "easy",
+  "question_en": "UML (Unified Modeling Language) is standardised and maintained by:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "IEEE Computer Society",
+    "hi": null
+   },
+   {
+    "en": "World Wide Web Consortium (W3C)",
+    "hi": null
+   },
+   {
+    "en": "ISO technical committee for C++",
+    "hi": null
+   },
+   {
+    "en": "Object Management Group (OMG)",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "UML was created by Booch, Rumbaugh and Jacobson and adopted as a standard by the OMG in 1997; it was later also published as ISO/IEC 19501. W3C standardises web technologies such as HTML.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "UML diagrams",
+  "difficulty": "hard",
+  "question_en": "In a use case diagram, a relationship where a base use case ALWAYS incorporates the behaviour of another use case (for example, 'Withdraw Cash' always uses 'Authenticate User') is shown with the stereotype:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "«extend»",
+    "hi": null
+   },
+   {
+    "en": "«include»",
+    "hi": null
+   },
+   {
+    "en": "«generalize»",
+    "hi": null
+   },
+   {
+    "en": "«realize»",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "«include» denotes mandatory reuse of common behaviour. «extend» is for optional or conditional behaviour that is added to a base use case only under certain conditions.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "UML diagrams",
+  "difficulty": "medium",
+  "question_en": "Which UML diagram shows the physical hardware nodes and how software artefacts are distributed across them?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Activity diagram",
+    "hi": null
+   },
+   {
+    "en": "State machine diagram",
+    "hi": null
+   },
+   {
+    "en": "Deployment diagram",
+    "hi": null
+   },
+   {
+    "en": "Use case diagram",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Deployment diagrams model the run-time configuration: servers, devices and the artefacts deployed on them. Activity and state machine diagrams model behaviour, not physical layout.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Project metrics (COCOMO, LOC)",
+  "difficulty": "easy",
+  "question_en": "The COCOMO cost-estimation model was developed by:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Allan Albrecht",
+    "hi": null
+   },
+   {
+    "en": "Barry Boehm",
+    "hi": null
+   },
+   {
+    "en": "Maurice Halstead",
+    "hi": null
+   },
+   {
+    "en": "Thomas McCabe",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Boehm introduced COCOMO (Constructive Cost Model) in 1981. Albrecht proposed function points, Halstead proposed software science metrics, and McCabe proposed cyclomatic complexity.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Project metrics (COCOMO, LOC)",
+  "difficulty": "medium",
+  "question_en": "According to Basic COCOMO, a project developed by a small, experienced team on a familiar, well-understood application is classified as:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Organic",
+    "hi": null
+   },
+   {
+    "en": "Semi-detached",
+    "hi": null
+   },
+   {
+    "en": "Embedded",
+    "hi": null
+   },
+   {
+    "en": "Detached",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Organic projects are small, simple and done by experienced teams in a familiar environment. Embedded projects operate under tight hardware/software constraints, and semi-detached projects are in between. 'Detached' is not a COCOMO mode.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Project metrics (COCOMO, LOC)",
+  "difficulty": "hard",
+  "question_en": "In Basic COCOMO, effort E = a(KLOC)^b. For an organic project (a = 2.4, b = 1.05) estimated at 10 KLOC, the effort is approximately:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "24.0 person-months",
+    "hi": null
+   },
+   {
+    "en": "36.0 person-months",
+    "hi": null
+   },
+   {
+    "en": "26.9 person-months",
+    "hi": null
+   },
+   {
+    "en": "12.6 person-months",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "10^1.05 = 10 × 10^0.05 ≈ 10 × 1.122 = 11.22. E = 2.4 × 11.22 ≈ 26.9 person-months. Using b = 1 by mistake would give 24.0.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Project metrics (COCOMO, LOC)",
+  "difficulty": "medium",
+  "question_en": "A project needs an estimated effort of 120 person-months and its development time is 12 months. The average staff size required is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "12 persons",
+    "hi": null
+   },
+   {
+    "en": "1,440 persons",
+    "hi": null
+   },
+   {
+    "en": "120 persons",
+    "hi": null
+   },
+   {
+    "en": "10 persons",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Average staffing = Effort ÷ Development time = 120 PM ÷ 12 months = 10 persons. Multiplying the two values (1,440) is a common slip.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Project metrics (COCOMO, LOC)",
+  "difficulty": "medium",
+  "question_en": "The cyclomatic complexity of a control flow graph with 11 edges, 9 nodes and 1 connected component is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "3",
+    "hi": null
+   },
+   {
+    "en": "4",
+    "hi": null
+   },
+   {
+    "en": "2",
+    "hi": null
+   },
+   {
+    "en": "20",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "McCabe's formula V(G) = E − N + 2P = 11 − 9 + 2(1) = 4. It also equals the number of independent paths, i.e. the minimum number of test cases for basis path testing.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Project metrics (COCOMO, LOC)",
+  "difficulty": "medium",
+  "question_en": "A function contains two independent 'if' statements and one 'while' loop, with no compound conditions. Its cyclomatic complexity is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "3",
+    "hi": null
+   },
+   {
+    "en": "2",
+    "hi": null
+   },
+   {
+    "en": "4",
+    "hi": null
+   },
+   {
+    "en": "5",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "For structured code, V(G) = number of decision (predicate) nodes + 1. Here there are 3 decisions (two ifs and one while), so V(G) = 3 + 1 = 4.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Project metrics (COCOMO, LOC)",
+  "difficulty": "hard",
+  "question_en": "In function point analysis, the Unadjusted Function Points are 300 and the sum of the 14 general system characteristic ratings (ΣFi) is 45. The adjusted function point count is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "330",
+    "hi": null
+   },
+   {
+    "en": "300",
+    "hi": null
+   },
+   {
+    "en": "345",
+    "hi": null
+   },
+   {
+    "en": "435",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Value adjustment factor VAF = 0.65 + 0.01 × ΣFi = 0.65 + 0.45 = 1.10. FP = UFP × VAF = 300 × 1.10 = 330.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Project metrics (COCOMO, LOC)",
+  "difficulty": "medium",
+  "question_en": "A major drawback of using Lines of Code (LOC) as a size metric is that it:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Can be counted only after the requirements phase",
+    "hi": null
+   },
+   {
+    "en": "Depends heavily on the programming language and coding style",
+    "hi": null
+   },
+   {
+    "en": "Is identical for every program",
+    "hi": null
+   },
+   {
+    "en": "Measures only the number of test cases",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The same functionality may need very different LOC in assembly and in Python, and programmers' styles differ, so LOC penalises high-level languages. Function points were proposed partly to overcome this language dependence.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Version control",
+  "difficulty": "easy",
+  "question_en": "Git, the widely used distributed version control system, was originally created by:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Richard Stallman",
+    "hi": null
+   },
+   {
+    "en": "Guido van Rossum",
+    "hi": null
+   },
+   {
+    "en": "Linus Torvalds",
+    "hi": null
+   },
+   {
+    "en": "James Gosling",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Linus Torvalds wrote Git in 2005 to manage Linux kernel development. Stallman founded the GNU project, van Rossum created Python and Gosling created Java.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Version control",
+  "difficulty": "easy",
+  "question_en": "Which Git command creates a local copy of an existing remote repository?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "git init",
+    "hi": null
+   },
+   {
+    "en": "git commit",
+    "hi": null
+   },
+   {
+    "en": "git clone",
+    "hi": null
+   },
+   {
+    "en": "git merge",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "git clone copies a remote repository, including its full history, to the local machine. git init creates a new empty repository, and git commit records staged changes locally.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Version control",
+  "difficulty": "medium",
+  "question_en": "In Git, 'git pull' is essentially equivalent to:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "git add followed by git commit",
+    "hi": null
+   },
+   {
+    "en": "git clone followed by git init",
+    "hi": null
+   },
+   {
+    "en": "git push followed by git fetch",
+    "hi": null
+   },
+   {
+    "en": "git fetch followed by git merge",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "git pull downloads new commits from the remote (fetch) and integrates them into the current branch (merge, or rebase if configured). git push does the opposite, sending local commits to the remote.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_se",
+  "subtopic": "Version control",
+  "difficulty": "medium",
+  "question_en": "Which of the following is a key difference between centralised (e.g. SVN) and distributed (e.g. Git) version control systems?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "A distributed VCS cannot handle branches",
+    "hi": null
+   },
+   {
+    "en": "In a distributed VCS every developer has a full copy of the repository history",
+    "hi": null
+   },
+   {
+    "en": "A centralised VCS stores no history",
+    "hi": null
+   },
+   {
+    "en": "A centralised VCS requires no server",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "In Git each clone is a complete repository, so commits, history and branching work offline. SVN keeps the full history on one central server that developers must contact for most operations.",
+  "explanation_hi": null,
+  "expected": false
+ }
+]

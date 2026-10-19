@@ -1,0 +1,4497 @@
+[
+  {
+    "chapter_key": "hindi",
+    "subtopic": "संधि",
+    "difficulty": "easy",
+    "question_en": "'विद्यालय' शब्द का सही संधि-विच्छेद क्या है?",
+    "question_hi": "'विद्यालय' शब्द का सही संधि-विच्छेद क्या है?",
+    "options": [
+      {
+        "en": "विद्या + लय",
+        "hi": "विद्या + लय"
+      },
+      {
+        "en": "विद्या + आलय",
+        "hi": "विद्या + आलय"
+      },
+      {
+        "en": "विद + आलय",
+        "hi": "विद + आलय"
+      },
+      {
+        "en": "विद्य + आलय",
+        "hi": "विद्य + आलय"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Vidya + aalay = Vidyalay; aa + aa gives aa (deergh swar sandhi).",
+    "explanation_hi": "विद्या + आलय = विद्यालय। यहाँ आ + आ मिलकर 'आ' बनता है, अतः यह दीर्घ स्वर संधि है।",
+    "expected": true
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "संधि",
+    "difficulty": "easy",
+    "question_en": "'सूर्योदय' शब्द में कौन-सी संधि है?",
+    "question_hi": "'सूर्योदय' शब्द में कौन-सी संधि है?",
+    "options": [
+      {
+        "en": "दीर्घ संधि",
+        "hi": "दीर्घ संधि"
+      },
+      {
+        "en": "गुण संधि",
+        "hi": "गुण संधि"
+      },
+      {
+        "en": "वृद्धि संधि",
+        "hi": "वृद्धि संधि"
+      },
+      {
+        "en": "यण संधि",
+        "hi": "यण संधि"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Surya + uday: a + u = o, so it is gun sandhi.",
+    "explanation_hi": "सूर्य + उदय = सूर्योदय। अ + उ = ओ होने से यह गुण संधि है। दीर्घ संधि में समान स्वर मिलते हैं, इसलिए वह विकल्प गलत है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "संधि",
+    "difficulty": "medium",
+    "question_en": "'इत्यादि' शब्द का संधि-विच्छेद और संधि का प्रकार चुनिए।",
+    "question_hi": "'इत्यादि' शब्द का संधि-विच्छेद और संधि का प्रकार चुनिए।",
+    "options": [
+      {
+        "en": "इत + यादि — दीर्घ संधि",
+        "hi": "इत + यादि — दीर्घ संधि"
+      },
+      {
+        "en": "इति + यादि — अयादि संधि",
+        "hi": "इति + यादि — अयादि संधि"
+      },
+      {
+        "en": "इत्य + आदि — गुण संधि",
+        "hi": "इत्य + आदि — गुण संधि"
+      },
+      {
+        "en": "इति + आदि — यण संधि",
+        "hi": "इति + आदि — यण संधि"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Iti + aadi: i before a different vowel becomes y — yan sandhi.",
+    "explanation_hi": "इति + आदि = इत्यादि। इ के बाद भिन्न स्वर 'आ' आने पर इ का 'य्' हो जाता है, यह यण संधि का नियम है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "संधि",
+    "difficulty": "medium",
+    "question_en": "'नयन' शब्द में कौन-सी स्वर संधि है?",
+    "question_hi": "'नयन' शब्द में कौन-सी स्वर संधि है?",
+    "options": [
+      {
+        "en": "गुण संधि",
+        "hi": "गुण संधि"
+      },
+      {
+        "en": "वृद्धि संधि",
+        "hi": "वृद्धि संधि"
+      },
+      {
+        "en": "अयादि संधि",
+        "hi": "अयादि संधि"
+      },
+      {
+        "en": "यण संधि",
+        "hi": "यण संधि"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Ne + an = nayan; e changes to ay before a vowel — ayadi sandhi.",
+    "explanation_hi": "ने + अन = नयन। 'ए' के बाद कोई भिन्न स्वर आने पर 'ए' का 'अय्' हो जाता है; यह अयादि संधि है। गुण संधि में अ/आ के साथ इ, उ, ऋ मिलते हैं।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "संधि",
+    "difficulty": "medium",
+    "question_en": "'महर्षि' शब्द का सही संधि-विच्छेद क्या है?",
+    "question_hi": "'महर्षि' शब्द का सही संधि-विच्छेद क्या है?",
+    "options": [
+      {
+        "en": "महा + ऋषि",
+        "hi": "महा + ऋषि"
+      },
+      {
+        "en": "मह + ऋषि",
+        "hi": "मह + ऋषि"
+      },
+      {
+        "en": "महा + रिषि",
+        "hi": "महा + रिषि"
+      },
+      {
+        "en": "महर + षि",
+        "hi": "महर + षि"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Maha + rishi = maharshi; aa + ri = ar (gun sandhi).",
+    "explanation_hi": "महा + ऋषि = महर्षि। आ + ऋ = अर् होता है, यह गुण संधि का उदाहरण है (जैसे राजा + ऋषि = राजर्षि)।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "संधि",
+    "difficulty": "medium",
+    "question_en": "'निश्चल' शब्द में कौन-सी संधि है?",
+    "question_hi": "'निश्चल' शब्द में कौन-सी संधि है?",
+    "options": [
+      {
+        "en": "स्वर संधि",
+        "hi": "स्वर संधि"
+      },
+      {
+        "en": "व्यंजन संधि",
+        "hi": "व्यंजन संधि"
+      },
+      {
+        "en": "विसर्ग संधि",
+        "hi": "विसर्ग संधि"
+      },
+      {
+        "en": "दीर्घ संधि",
+        "hi": "दीर्घ संधि"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Nih + chal: visarga becomes sh before ch — visarga sandhi.",
+    "explanation_hi": "निः + चल = निश्चल। विसर्ग के बाद 'च' आने पर विसर्ग 'श्' में बदल जाता है; यह विसर्ग संधि का नियम है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "संधि",
+    "difficulty": "easy",
+    "question_en": "'जगन्नाथ' शब्द का संधि-विच्छेद क्या होगा?",
+    "question_hi": "'जगन्नाथ' शब्द का संधि-विच्छेद क्या होगा?",
+    "options": [
+      {
+        "en": "जगः + नाथ",
+        "hi": "जगः + नाथ"
+      },
+      {
+        "en": "जग + नाथ",
+        "hi": "जग + नाथ"
+      },
+      {
+        "en": "जगत् + नाथ",
+        "hi": "जगत् + नाथ"
+      },
+      {
+        "en": "जगन + नाथ",
+        "hi": "जगन + नाथ"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Jagat + nath: t before n becomes n — vyanjan sandhi.",
+    "explanation_hi": "जगत् + नाथ = जगन्नाथ। 'त्' के बाद 'न' आने पर 'त्' का 'न्' हो जाता है; यह व्यंजन संधि है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "संधि",
+    "difficulty": "medium",
+    "question_en": "'वाग्दान' शब्द में कौन-सी संधि है?",
+    "question_hi": "'वाग्दान' शब्द में कौन-सी संधि है?",
+    "options": [
+      {
+        "en": "यण संधि",
+        "hi": "यण संधि"
+      },
+      {
+        "en": "दीर्घ संधि",
+        "hi": "दीर्घ संधि"
+      },
+      {
+        "en": "व्यंजन संधि",
+        "hi": "व्यंजन संधि"
+      },
+      {
+        "en": "विसर्ग संधि",
+        "hi": "विसर्ग संधि"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Vaak + daan: k becomes g before a voiced consonant — vyanjan sandhi.",
+    "explanation_hi": "वाक् + दान = वाग्दान। 'क्' के बाद सघोष व्यंजन 'द' आने से 'क्' का 'ग्' हो गया; यह व्यंजन संधि है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "संधि",
+    "difficulty": "medium",
+    "question_en": "'एकैक' शब्द में कौन-सी संधि है?",
+    "question_hi": "'एकैक' शब्द में कौन-सी संधि है?",
+    "options": [
+      {
+        "en": "दीर्घ संधि",
+        "hi": "दीर्घ संधि"
+      },
+      {
+        "en": "वृद्धि संधि",
+        "hi": "वृद्धि संधि"
+      },
+      {
+        "en": "अयादि संधि",
+        "hi": "अयादि संधि"
+      },
+      {
+        "en": "गुण संधि",
+        "hi": "गुण संधि"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Ek + ek: a + e = ai — vriddhi sandhi.",
+    "explanation_hi": "एक + एक = एकैक। अ + ए = ऐ होता है, जो वृद्धि संधि का नियम है (जैसे सदा + एव = सदैव)।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "संधि",
+    "difficulty": "easy",
+    "question_en": "'मनोरथ' शब्द का सही संधि-विच्छेद चुनिए।",
+    "question_hi": "'मनोरथ' शब्द का सही संधि-विच्छेद चुनिए।",
+    "options": [
+      {
+        "en": "मनो + रथ",
+        "hi": "मनो + रथ"
+      },
+      {
+        "en": "मना + रथ",
+        "hi": "मना + रथ"
+      },
+      {
+        "en": "मन + रथ",
+        "hi": "मन + रथ"
+      },
+      {
+        "en": "मनः + रथ",
+        "hi": "मनः + रथ"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Manah + rath: visarga becomes o — visarga sandhi.",
+    "explanation_hi": "मनः + रथ = मनोरथ। विसर्ग से पहले 'अ' और बाद में सघोष व्यंजन 'र' होने पर विसर्ग 'ओ' में बदलता है; यह विसर्ग संधि है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "संधि",
+    "difficulty": "hard",
+    "question_en": "'पवन' शब्द में कौन-सी संधि है?",
+    "question_hi": "'पवन' शब्द में कौन-सी संधि है?",
+    "options": [
+      {
+        "en": "यण संधि",
+        "hi": "यण संधि"
+      },
+      {
+        "en": "वृद्धि संधि",
+        "hi": "वृद्धि संधि"
+      },
+      {
+        "en": "गुण संधि",
+        "hi": "गुण संधि"
+      },
+      {
+        "en": "अयादि संधि",
+        "hi": "अयादि संधि"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Po + an = pavan; o becomes av before a vowel — ayadi sandhi.",
+    "explanation_hi": "पो + अन = पवन। 'ओ' के बाद भिन्न स्वर आने पर 'ओ' का 'अव्' हो जाता है; यह अयादि संधि है। इसी प्रकार भो + अन = भवन।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "संधि",
+    "difficulty": "hard",
+    "question_en": "'उल्लेख' शब्द का सही संधि-विच्छेद क्या है?",
+    "question_hi": "'उल्लेख' शब्द का सही संधि-विच्छेद क्या है?",
+    "options": [
+      {
+        "en": "उल + लेख",
+        "hi": "उल + लेख"
+      },
+      {
+        "en": "उत् + लेख",
+        "hi": "उत् + लेख"
+      },
+      {
+        "en": "उल् + लेख",
+        "hi": "उल् + लेख"
+      },
+      {
+        "en": "उः + लेख",
+        "hi": "उः + लेख"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Ut + lekh: t before l becomes l — vyanjan sandhi.",
+    "explanation_hi": "उत् + लेख = उल्लेख। 'त्' के बाद 'ल' आने पर 'त्' का 'ल्' हो जाता है; यह व्यंजन संधि है। इसी नियम से उत् + लास = उल्लास।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "समास",
+    "difficulty": "easy",
+    "question_en": "'पीतांबर' शब्द में कौन-सा समास है?",
+    "question_hi": "'पीतांबर' शब्द में कौन-सा समास है?",
+    "options": [
+      {
+        "en": "कर्मधारय",
+        "hi": "कर्मधारय"
+      },
+      {
+        "en": "तत्पुरुष",
+        "hi": "तत्पुरुष"
+      },
+      {
+        "en": "बहुव्रीहि",
+        "hi": "बहुव्रीहि"
+      },
+      {
+        "en": "द्विगु",
+        "hi": "द्विगु"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Pitambar refers to Vishnu (one whose garment is yellow) — bahuvrihi.",
+    "explanation_hi": "पीतांबर = पीला है अंबर (वस्त्र) जिसका, अर्थात् विष्णु। जब दोनों पद मिलकर किसी तीसरे की ओर संकेत करें तो बहुव्रीहि समास होता है। 'पीला अंबर' मात्र अर्थ लेने पर कर्मधारय होता, पर यहाँ विष्णु अभिप्रेत हैं।",
+    "expected": true
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "समास",
+    "difficulty": "easy",
+    "question_en": "'राजपुत्र' शब्द में कौन-सा समास है?",
+    "question_hi": "'राजपुत्र' शब्द में कौन-सा समास है?",
+    "options": [
+      {
+        "en": "तत्पुरुष",
+        "hi": "तत्पुरुष"
+      },
+      {
+        "en": "अव्ययीभाव",
+        "hi": "अव्ययीभाव"
+      },
+      {
+        "en": "द्विगु",
+        "hi": "द्विगु"
+      },
+      {
+        "en": "द्वंद्व",
+        "hi": "द्वंद्व"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Rajputra = son of the king; genitive marker dropped — tatpurush.",
+    "explanation_hi": "राजपुत्र = राजा का पुत्र। 'का' विभक्ति का लोप होने से यह संबंध (षष्ठी) तत्पुरुष समास है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "समास",
+    "difficulty": "easy",
+    "question_en": "'यथाशक्ति' शब्द में कौन-सा समास है?",
+    "question_hi": "'यथाशक्ति' शब्द में कौन-सा समास है?",
+    "options": [
+      {
+        "en": "कर्मधारय",
+        "hi": "कर्मधारय"
+      },
+      {
+        "en": "अव्ययीभाव",
+        "hi": "अव्ययीभाव"
+      },
+      {
+        "en": "तत्पुरुष",
+        "hi": "तत्पुरुष"
+      },
+      {
+        "en": "बहुव्रीहि",
+        "hi": "बहुव्रीहि"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "First member 'yatha' is an indeclinable — avyayibhav samas.",
+    "explanation_hi": "यथाशक्ति = शक्ति के अनुसार। पहला पद 'यथा' अव्यय है और पूरा पद भी अव्यय की तरह प्रयुक्त होता है, अतः अव्ययीभाव समास है।",
+    "expected": true
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "समास",
+    "difficulty": "easy",
+    "question_en": "'नीलकमल' शब्द में कौन-सा समास है?",
+    "question_hi": "'नीलकमल' शब्द में कौन-सा समास है?",
+    "options": [
+      {
+        "en": "द्विगु",
+        "hi": "द्विगु"
+      },
+      {
+        "en": "कर्मधारय",
+        "hi": "कर्मधारय"
+      },
+      {
+        "en": "द्वंद्व",
+        "hi": "द्वंद्व"
+      },
+      {
+        "en": "बहुव्रीहि",
+        "hi": "बहुव्रीहि"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Adjective + noun relation (blue lotus) — karmadharaya.",
+    "explanation_hi": "नीलकमल = नीला है जो कमल। यहाँ विशेषण (नील) और विशेष्य (कमल) का संबंध है, अतः कर्मधारय समास है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "समास",
+    "difficulty": "easy",
+    "question_en": "'त्रिभुवन' शब्द में कौन-सा समास है?",
+    "question_hi": "'त्रिभुवन' शब्द में कौन-सा समास है?",
+    "options": [
+      {
+        "en": "तत्पुरुष",
+        "hi": "तत्पुरुष"
+      },
+      {
+        "en": "अव्ययीभाव",
+        "hi": "अव्ययीभाव"
+      },
+      {
+        "en": "द्विगु",
+        "hi": "द्विगु"
+      },
+      {
+        "en": "बहुव्रीहि",
+        "hi": "बहुव्रीहि"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "First member is a numeral denoting a group of three worlds — dvigu.",
+    "explanation_hi": "त्रिभुवन = तीन भुवनों का समाहार। पहला पद संख्यावाचक होने और समूह का बोध कराने से यह द्विगु समास है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "समास",
+    "difficulty": "easy",
+    "question_en": "'माता-पिता' शब्द में कौन-सा समास है?",
+    "question_hi": "'माता-पिता' शब्द में कौन-सा समास है?",
+    "options": [
+      {
+        "en": "बहुव्रीहि",
+        "hi": "बहुव्रीहि"
+      },
+      {
+        "en": "कर्मधारय",
+        "hi": "कर्मधारय"
+      },
+      {
+        "en": "द्वंद्व",
+        "hi": "द्वंद्व"
+      },
+      {
+        "en": "तत्पुरुष",
+        "hi": "तत्पुरुष"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Both members are equally principal (mother and father) — dvandva.",
+    "explanation_hi": "माता-पिता = माता और पिता। दोनों पद प्रधान हैं और बीच में 'और' का लोप है, अतः द्वंद्व समास है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "समास",
+    "difficulty": "medium",
+    "question_en": "'चंद्रमुख' शब्द में कौन-सा समास है?",
+    "question_hi": "'चंद्रमुख' शब्द में कौन-सा समास है?",
+    "options": [
+      {
+        "en": "कर्मधारय",
+        "hi": "कर्मधारय"
+      },
+      {
+        "en": "द्विगु",
+        "hi": "द्विगु"
+      },
+      {
+        "en": "बहुव्रीहि",
+        "hi": "बहुव्रीहि"
+      },
+      {
+        "en": "तत्पुरुष",
+        "hi": "तत्पुरुष"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Moon-like face: upaman–upamey relation — karmadharaya.",
+    "explanation_hi": "चंद्रमुख = चंद्र के समान मुख। यहाँ उपमान (चंद्र) और उपमेय (मुख) का संबंध है, जो कर्मधारय समास का एक भेद है। यदि अर्थ 'चंद्र-जैसा मुख है जिसका' लिया जाए तो बहुव्रीहि होता, पर सामान्य विग्रह कर्मधारय का ही है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "समास",
+    "difficulty": "medium",
+    "question_en": "'दशानन' शब्द में कौन-सा समास है?",
+    "question_hi": "'दशानन' शब्द में कौन-सा समास है?",
+    "options": [
+      {
+        "en": "कर्मधारय",
+        "hi": "कर्मधारय"
+      },
+      {
+        "en": "तत्पुरुष",
+        "hi": "तत्पुरुष"
+      },
+      {
+        "en": "द्विगु",
+        "hi": "द्विगु"
+      },
+      {
+        "en": "बहुव्रीहि",
+        "hi": "बहुव्रीहि"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Dashanan denotes Ravana (one with ten faces) — bahuvrihi, not dvigu.",
+    "explanation_hi": "दशानन = दस हैं आनन (मुख) जिसके, अर्थात् रावण। पद किसी अन्य (रावण) की ओर संकेत करता है, अतः बहुव्रीहि है। केवल 'दस मुखों का समूह' अर्थ होता तो द्विगु होता।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "समास",
+    "difficulty": "medium",
+    "question_en": "निम्नलिखित में से करण तत्पुरुष समास का उदाहरण कौन-सा है?",
+    "question_hi": "निम्नलिखित में से करण तत्पुरुष समास का उदाहरण कौन-सा है?",
+    "options": [
+      {
+        "en": "गंगाजल",
+        "hi": "गंगाजल"
+      },
+      {
+        "en": "हस्तलिखित",
+        "hi": "हस्तलिखित"
+      },
+      {
+        "en": "राजमहल",
+        "hi": "राजमहल"
+      },
+      {
+        "en": "देशनिकाला",
+        "hi": "देशनिकाला"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Hastalikhit = written by hand; instrumental marker dropped — karan tatpurush.",
+    "explanation_hi": "हस्तलिखित = हाथ से लिखा हुआ; 'से' (करण) विभक्ति का लोप है। राजमहल और गंगाजल संबंध तत्पुरुष हैं, देशनिकाला अपादान तत्पुरुष है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "समास",
+    "difficulty": "medium",
+    "question_en": "'आजन्म' शब्द में कौन-सा समास है?",
+    "question_hi": "'आजन्म' शब्द में कौन-सा समास है?",
+    "options": [
+      {
+        "en": "द्विगु",
+        "hi": "द्विगु"
+      },
+      {
+        "en": "तत्पुरुष",
+        "hi": "तत्पुरुष"
+      },
+      {
+        "en": "कर्मधारय",
+        "hi": "कर्मधारय"
+      },
+      {
+        "en": "अव्ययीभाव",
+        "hi": "अव्ययीभाव"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Aajanma = since birth; indeclinable compound — avyayibhav.",
+    "explanation_hi": "आजन्म = जन्म से लेकर (जन्म पर्यंत)। 'आ' उपसर्ग/अव्यय पहला पद है और समस्त पद क्रिया-विशेषण की तरह प्रयुक्त होता है, अतः अव्ययीभाव समास है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "समास",
+    "difficulty": "medium",
+    "question_en": "'शरणागत' शब्द में कौन-सा समास है?",
+    "question_hi": "'शरणागत' शब्द में कौन-सा समास है?",
+    "options": [
+      {
+        "en": "कर्म तत्पुरुष",
+        "hi": "कर्म तत्पुरुष"
+      },
+      {
+        "en": "करण तत्पुरुष",
+        "hi": "करण तत्पुरुष"
+      },
+      {
+        "en": "संप्रदान तत्पुरुष",
+        "hi": "संप्रदान तत्पुरुष"
+      },
+      {
+        "en": "अधिकरण तत्पुरुष",
+        "hi": "अधिकरण तत्पुरुष"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Sharanagat = come to refuge; accusative marker dropped — karm tatpurush.",
+    "explanation_hi": "शरणागत = शरण को आया हुआ। 'को' (कर्म कारक) विभक्ति का लोप है, अतः कर्म तत्पुरुष समास है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "समास",
+    "difficulty": "hard",
+    "question_en": "'नरोत्तम' शब्द में कौन-सा समास है?",
+    "question_hi": "'नरोत्तम' शब्द में कौन-सा समास है?",
+    "options": [
+      {
+        "en": "कर्मधारय",
+        "hi": "कर्मधारय"
+      },
+      {
+        "en": "बहुव्रीहि",
+        "hi": "बहुव्रीहि"
+      },
+      {
+        "en": "संबंध तत्पुरुष",
+        "hi": "संबंध तत्पुरुष"
+      },
+      {
+        "en": "अधिकरण तत्पुरुष",
+        "hi": "अधिकरण तत्पुरुष"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Narottam = best among men; locative marker dropped — adhikaran tatpurush.",
+    "explanation_hi": "नरोत्तम = नरों में उत्तम। 'में' (अधिकरण) विभक्ति का लोप है, अतः अधिकरण तत्पुरुष समास है। इसी प्रकार 'पुरुषोत्तम' और 'कविश्रेष्ठ' भी अधिकरण तत्पुरुष हैं।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "उपसर्ग–प्रत्यय",
+    "difficulty": "easy",
+    "question_en": "'प्रतिकूल' शब्द में कौन-सा उपसर्ग है?",
+    "question_hi": "'प्रतिकूल' शब्द में कौन-सा उपसर्ग है?",
+    "options": [
+      {
+        "en": "प्र",
+        "hi": "प्र"
+      },
+      {
+        "en": "प्रति",
+        "hi": "प्रति"
+      },
+      {
+        "en": "परि",
+        "hi": "परि"
+      },
+      {
+        "en": "प्रत",
+        "hi": "प्रत"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Pratikool = prati + kool; 'prati' is the prefix.",
+    "explanation_hi": "प्रतिकूल = प्रति + कूल। 'प्रति' संस्कृत उपसर्ग है जिसका अर्थ 'विरुद्ध/उलटा' होता है, जैसे प्रतिध्वनि, प्रतिदिन।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "उपसर्ग–प्रत्यय",
+    "difficulty": "medium",
+    "question_en": "'अभ्यागत' शब्द में कौन-सा उपसर्ग है?",
+    "question_hi": "'अभ्यागत' शब्द में कौन-सा उपसर्ग है?",
+    "options": [
+      {
+        "en": "अभि",
+        "hi": "अभि"
+      },
+      {
+        "en": "अभ्य",
+        "hi": "अभ्य"
+      },
+      {
+        "en": "अ",
+        "hi": "अ"
+      },
+      {
+        "en": "आ",
+        "hi": "आ"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Abhyagat = abhi + aagat; the prefix is 'abhi'.",
+    "explanation_hi": "अभ्यागत = अभि + आगत (आ + गत)। 'अभि' उपसर्ग के 'इ' का यण संधि से 'य्' हो गया है। अतः उपसर्ग 'अभि' है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "उपसर्ग–प्रत्यय",
+    "difficulty": "easy",
+    "question_en": "'निर्धन' शब्द में कौन-सा उपसर्ग है?",
+    "question_hi": "'निर्धन' शब्द में कौन-सा उपसर्ग है?",
+    "options": [
+      {
+        "en": "न",
+        "hi": "न"
+      },
+      {
+        "en": "नि",
+        "hi": "नि"
+      },
+      {
+        "en": "निर्",
+        "hi": "निर्"
+      },
+      {
+        "en": "निः",
+        "hi": "निः"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Nirdhan = nir + dhan; 'nir' means without.",
+    "explanation_hi": "निर्धन = निर् + धन, अर्थात् जिसके पास धन न हो। 'निर्' उपसर्ग का अर्थ 'रहित/बाहर' है, जैसे निर्भय, निर्दोष।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "उपसर्ग–प्रत्यय",
+    "difficulty": "easy",
+    "question_en": "'अनुवाद' शब्द में कौन-सा उपसर्ग है?",
+    "question_hi": "'अनुवाद' शब्द में कौन-सा उपसर्ग है?",
+    "options": [
+      {
+        "en": "अनु",
+        "hi": "अनु"
+      },
+      {
+        "en": "अन्",
+        "hi": "अन्"
+      },
+      {
+        "en": "अ",
+        "hi": "अ"
+      },
+      {
+        "en": "अन",
+        "hi": "अन"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Anuvaad = anu + vaad; 'anu' means after/following.",
+    "explanation_hi": "अनुवाद = अनु + वाद। 'अनु' उपसर्ग का अर्थ 'पीछे/बाद में' है, जैसे अनुकरण, अनुशासन, अनुज।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "उपसर्ग–प्रत्यय",
+    "difficulty": "medium",
+    "question_en": "'बेईमान' शब्द में प्रयुक्त उपसर्ग किस भाषा का है?",
+    "question_hi": "'बेईमान' शब्द में प्रयुक्त उपसर्ग किस भाषा का है?",
+    "options": [
+      {
+        "en": "हिंदी",
+        "hi": "हिंदी"
+      },
+      {
+        "en": "फ़ारसी/उर्दू",
+        "hi": "फ़ारसी/उर्दू"
+      },
+      {
+        "en": "अंग्रेज़ी",
+        "hi": "अंग्रेज़ी"
+      },
+      {
+        "en": "संस्कृत",
+        "hi": "संस्कृत"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "'Be' (without) is a Persian/Urdu prefix.",
+    "explanation_hi": "'बे' उपसर्ग फ़ारसी/उर्दू का है जिसका अर्थ 'बिना' होता है, जैसे बेकार, बेखबर, बेवक्त। संस्कृत में इसके समकक्ष 'निर्' या 'अ' उपसर्ग हैं।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "उपसर्ग–प्रत्यय",
+    "difficulty": "easy",
+    "question_en": "'लिखावट' शब्द में कौन-सा प्रत्यय है?",
+    "question_hi": "'लिखावट' शब्द में कौन-सा प्रत्यय है?",
+    "options": [
+      {
+        "en": "आवट",
+        "hi": "आवट"
+      },
+      {
+        "en": "ट",
+        "hi": "ट"
+      },
+      {
+        "en": "अट",
+        "hi": "अट"
+      },
+      {
+        "en": "वट",
+        "hi": "वट"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Likhavat = likh + aavat; 'aavat' forms abstract nouns from verbs.",
+    "explanation_hi": "लिखावट = लिख + आवट। 'आवट' कृत् प्रत्यय है जो क्रिया से भाववाचक संज्ञा बनाता है, जैसे सजावट, बनावट, रुकावट।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "उपसर्ग–प्रत्यय",
+    "difficulty": "medium",
+    "question_en": "'दयालु' शब्द में कौन-सा प्रत्यय है?",
+    "question_hi": "'दयालु' शब्द में कौन-सा प्रत्यय है?",
+    "options": [
+      {
+        "en": "अलु",
+        "hi": "अलु"
+      },
+      {
+        "en": "ालु",
+        "hi": "ालु"
+      },
+      {
+        "en": "लु",
+        "hi": "लु"
+      },
+      {
+        "en": "आलु",
+        "hi": "आलु"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Dayalu = daya + aalu; 'aalu' forms adjectives from nouns.",
+    "explanation_hi": "दयालु = दया + आलु। 'आलु' तद्धित प्रत्यय है जो संज्ञा से विशेषण बनाता है, जैसे कृपालु, श्रद्धालु, ईर्ष्यालु।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "उपसर्ग–प्रत्यय",
+    "difficulty": "medium",
+    "question_en": "'मानवता' शब्द में प्रयुक्त प्रत्यय किस प्रकार का है?",
+    "question_hi": "'मानवता' शब्द में प्रयुक्त प्रत्यय किस प्रकार का है?",
+    "options": [
+      {
+        "en": "उपसर्ग",
+        "hi": "उपसर्ग"
+      },
+      {
+        "en": "विभक्ति",
+        "hi": "विभक्ति"
+      },
+      {
+        "en": "कृत् प्रत्यय",
+        "hi": "कृत् प्रत्यय"
+      },
+      {
+        "en": "तद्धित प्रत्यय",
+        "hi": "तद्धित प्रत्यय"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "'Ta' is added to a noun, so it is a taddhit (noun-derived) suffix.",
+    "explanation_hi": "मानवता = मानव + ता। 'ता' प्रत्यय संज्ञा शब्द (मानव) में जुड़ा है, इसलिए यह तद्धित प्रत्यय है। कृत् प्रत्यय क्रिया-धातु में जुड़ते हैं।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "उपसर्ग–प्रत्यय",
+    "difficulty": "medium",
+    "question_en": "'भुलक्कड़' शब्द में कौन-सा प्रत्यय है?",
+    "question_hi": "'भुलक्कड़' शब्द में कौन-सा प्रत्यय है?",
+    "options": [
+      {
+        "en": "क्कड़",
+        "hi": "क्कड़"
+      },
+      {
+        "en": "ड़",
+        "hi": "ड़"
+      },
+      {
+        "en": "कड़",
+        "hi": "कड़"
+      },
+      {
+        "en": "अक्कड़",
+        "hi": "अक्कड़"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Bhulakkad = bhool + akkad; 'akkad' forms agent adjectives.",
+    "explanation_hi": "भुलक्कड़ = भूल + अक्कड़। 'अक्कड़' कृत् प्रत्यय से कर्तृवाचक विशेषण बनता है, जैसे पियक्कड़, घुमक्कड़।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "उपसर्ग–प्रत्यय",
+    "difficulty": "easy",
+    "question_en": "'सुयोग' शब्द में उपसर्ग अलग कीजिए।",
+    "question_hi": "'सुयोग' शब्द में उपसर्ग अलग कीजिए।",
+    "options": [
+      {
+        "en": "स्व",
+        "hi": "स्व"
+      },
+      {
+        "en": "स",
+        "hi": "स"
+      },
+      {
+        "en": "सु",
+        "hi": "सु"
+      },
+      {
+        "en": "सुय",
+        "hi": "सुय"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Suyog = su + yog; 'su' means good.",
+    "explanation_hi": "सुयोग = सु + योग। 'सु' उपसर्ग का अर्थ 'अच्छा' है, जैसे सुपुत्र, सुगम, सुलभ।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "उपसर्ग–प्रत्यय",
+    "difficulty": "hard",
+    "question_en": "निम्नलिखित में से किस शब्द में दो उपसर्ग प्रयुक्त हुए हैं?",
+    "question_hi": "निम्नलिखित में से किस शब्द में दो उपसर्ग प्रयुक्त हुए हैं?",
+    "options": [
+      {
+        "en": "अपमान",
+        "hi": "अपमान"
+      },
+      {
+        "en": "निरभिमान",
+        "hi": "निरभिमान"
+      },
+      {
+        "en": "सम्मान",
+        "hi": "सम्मान"
+      },
+      {
+        "en": "अभिमान",
+        "hi": "अभिमान"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Nirabhimaan has two prefixes: nir + abhi + maan.",
+    "explanation_hi": "निरभिमान = निर् + अभि + मान, जिसमें 'निर्' और 'अभि' दो उपसर्ग हैं। शेष शब्दों में एक-एक उपसर्ग (अभि, अप, सम्) है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "उपसर्ग–प्रत्यय",
+    "difficulty": "medium",
+    "question_en": "'ऐतिहासिक' शब्द में कौन-सा प्रत्यय है?",
+    "question_hi": "'ऐतिहासिक' शब्द में कौन-सा प्रत्यय है?",
+    "options": [
+      {
+        "en": "ऐ",
+        "hi": "ऐ"
+      },
+      {
+        "en": "सिक",
+        "hi": "सिक"
+      },
+      {
+        "en": "इ",
+        "hi": "इ"
+      },
+      {
+        "en": "इक",
+        "hi": "इक"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Aitihasik = itihas + ik; the 'ik' suffix causes vowel strengthening.",
+    "explanation_hi": "ऐतिहासिक = इतिहास + इक। 'इक' तद्धित प्रत्यय लगने पर शब्द के पहले स्वर की वृद्धि हो जाती है (इ → ऐ), जैसे समाज + इक = सामाजिक।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "पर्यायवाची",
+    "difficulty": "easy",
+    "question_en": "निम्नलिखित में से कौन-सा शब्द 'कमल' का पर्यायवाची नहीं है?",
+    "question_hi": "निम्नलिखित में से कौन-सा शब्द 'कमल' का पर्यायवाची नहीं है?",
+    "options": [
+      {
+        "en": "पंकज",
+        "hi": "पंकज"
+      },
+      {
+        "en": "जलज",
+        "hi": "जलज"
+      },
+      {
+        "en": "सरोज",
+        "hi": "सरोज"
+      },
+      {
+        "en": "नीरद",
+        "hi": "नीरद"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Neerad means cloud, not lotus; the other three are synonyms of lotus.",
+    "explanation_hi": "पंकज, जलज और सरोज तीनों 'कमल' के पर्यायवाची हैं। 'नीरद' का अर्थ बादल (नीर देने वाला) है, कमल नहीं।",
+    "expected": true
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "पर्यायवाची",
+    "difficulty": "easy",
+    "question_en": "'सूर्य' का पर्यायवाची शब्द कौन-सा है?",
+    "question_hi": "'सूर्य' का पर्यायवाची शब्द कौन-सा है?",
+    "options": [
+      {
+        "en": "दिनकर",
+        "hi": "दिनकर"
+      },
+      {
+        "en": "रजनीश",
+        "hi": "रजनीश"
+      },
+      {
+        "en": "सुधाकर",
+        "hi": "सुधाकर"
+      },
+      {
+        "en": "निशाकर",
+        "hi": "निशाकर"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Dinkar means sun; the other options are names of the moon.",
+    "explanation_hi": "दिनकर (दिन को बनाने वाला) सूर्य का पर्यायवाची है। निशाकर, रजनीश और सुधाकर तीनों चंद्रमा के पर्यायवाची हैं।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "पर्यायवाची",
+    "difficulty": "medium",
+    "question_en": "'पवन' का पर्यायवाची शब्द कौन-सा है?",
+    "question_hi": "'पवन' का पर्यायवाची शब्द कौन-सा है?",
+    "options": [
+      {
+        "en": "नलिन",
+        "hi": "नलिन"
+      },
+      {
+        "en": "अनल",
+        "hi": "अनल"
+      },
+      {
+        "en": "अनिल",
+        "hi": "अनिल"
+      },
+      {
+        "en": "सलिल",
+        "hi": "सलिल"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Anil means wind; anal is fire, salil is water, nalin is lotus.",
+    "explanation_hi": "अनिल का अर्थ वायु/पवन है। 'अनल' अग्नि, 'सलिल' जल और 'नलिन' कमल का पर्यायवाची है। अनल–अनिल में भ्रम न करें।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "पर्यायवाची",
+    "difficulty": "hard",
+    "question_en": "निम्नलिखित में से कौन-सा शब्द 'समुद्र' का पर्यायवाची नहीं है?",
+    "question_hi": "निम्नलिखित में से कौन-सा शब्द 'समुद्र' का पर्यायवाची नहीं है?",
+    "options": [
+      {
+        "en": "पयोद",
+        "hi": "पयोद"
+      },
+      {
+        "en": "रत्नाकर",
+        "hi": "रत्नाकर"
+      },
+      {
+        "en": "जलधि",
+        "hi": "जलधि"
+      },
+      {
+        "en": "पयोधि",
+        "hi": "पयोधि"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Payod means cloud (water-giver); the others mean ocean.",
+    "explanation_hi": "रत्नाकर, जलधि और पयोधि (पयः = जल, धि = भंडार) समुद्र के पर्यायवाची हैं। 'पयोद' का अर्थ जल देने वाला अर्थात् बादल है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "पर्यायवाची",
+    "difficulty": "easy",
+    "question_en": "'पृथ्वी' का पर्यायवाची शब्द चुनिए।",
+    "question_hi": "'पृथ्वी' का पर्यायवाची शब्द चुनिए।",
+    "options": [
+      {
+        "en": "वारिद",
+        "hi": "वारिद"
+      },
+      {
+        "en": "व्योम",
+        "hi": "व्योम"
+      },
+      {
+        "en": "विपिन",
+        "hi": "विपिन"
+      },
+      {
+        "en": "वसुंधरा",
+        "hi": "वसुंधरा"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Vasundhara means earth; varid is cloud, vyom is sky, vipin is forest.",
+    "explanation_hi": "वसुंधरा (वसु = धन, धरा = धारण करने वाली) पृथ्वी का पर्यायवाची है। वारिद = बादल, व्योम = आकाश, विपिन = वन।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "पर्यायवाची",
+    "difficulty": "easy",
+    "question_en": "निम्नलिखित में से कौन-सा शब्द 'घर' का पर्यायवाची नहीं है?",
+    "question_hi": "निम्नलिखित में से कौन-सा शब्द 'घर' का पर्यायवाची नहीं है?",
+    "options": [
+      {
+        "en": "सदन",
+        "hi": "सदन"
+      },
+      {
+        "en": "गृह",
+        "hi": "गृह"
+      },
+      {
+        "en": "कानन",
+        "hi": "कानन"
+      },
+      {
+        "en": "आलय",
+        "hi": "आलय"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Kanan means forest; the rest mean house.",
+    "explanation_hi": "आलय, सदन और गृह 'घर' के पर्यायवाची हैं। 'कानन' का अर्थ वन/जंगल है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "पर्यायवाची",
+    "difficulty": "medium",
+    "question_en": "'अमृत' का पर्यायवाची शब्द कौन-सा है?",
+    "question_hi": "'अमृत' का पर्यायवाची शब्द कौन-सा है?",
+    "options": [
+      {
+        "en": "गरल",
+        "hi": "गरल"
+      },
+      {
+        "en": "नीर",
+        "hi": "नीर"
+      },
+      {
+        "en": "हलाहल",
+        "hi": "हलाहल"
+      },
+      {
+        "en": "सुधा",
+        "hi": "सुधा"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Sudha means nectar; halahal and garal mean poison, neer means water.",
+    "explanation_hi": "सुधा और पीयूष अमृत के पर्यायवाची हैं। हलाहल और गरल 'विष' के पर्यायवाची हैं, नीर का अर्थ जल है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "पर्यायवाची",
+    "difficulty": "medium",
+    "question_en": "निम्नलिखित में से कौन-सा शब्द 'हाथी' का पर्यायवाची नहीं है?",
+    "question_hi": "निम्नलिखित में से कौन-सा शब्द 'हाथी' का पर्यायवाची नहीं है?",
+    "options": [
+      {
+        "en": "कुंजर",
+        "hi": "कुंजर"
+      },
+      {
+        "en": "मतंग",
+        "hi": "मतंग"
+      },
+      {
+        "en": "केसरी",
+        "hi": "केसरी"
+      },
+      {
+        "en": "गज",
+        "hi": "गज"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Kesari means lion; gaj, kunjar and matang mean elephant.",
+    "explanation_hi": "गज, कुंजर, मतंग, हस्ती और करी हाथी के पर्यायवाची हैं। 'केसरी' सिंह का पर्यायवाची है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "पर्यायवाची",
+    "difficulty": "hard",
+    "question_en": "निम्नलिखित में से कौन-सा शब्द 'गंगा' का पर्यायवाची नहीं है?",
+    "question_hi": "निम्नलिखित में से कौन-सा शब्द 'गंगा' का पर्यायवाची नहीं है?",
+    "options": [
+      {
+        "en": "सुरसरि",
+        "hi": "सुरसरि"
+      },
+      {
+        "en": "भागीरथी",
+        "hi": "भागीरथी"
+      },
+      {
+        "en": "जाह्नवी",
+        "hi": "जाह्नवी"
+      },
+      {
+        "en": "कालिंदी",
+        "hi": "कालिंदी"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Kalindi is a name of the Yamuna, not the Ganga.",
+    "explanation_hi": "भागीरथी, जाह्नवी, सुरसरि, देवनदी और मंदाकिनी गंगा के पर्यायवाची हैं। 'कालिंदी' यमुना का पर्यायवाची है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "पर्यायवाची",
+    "difficulty": "medium",
+    "question_en": "निम्नलिखित में से कौन-सा शब्द 'रात' का पर्यायवाची नहीं है?",
+    "question_hi": "निम्नलिखित में से कौन-सा शब्द 'रात' का पर्यायवाची नहीं है?",
+    "options": [
+      {
+        "en": "यामिनी",
+        "hi": "यामिनी"
+      },
+      {
+        "en": "विभावरी",
+        "hi": "विभावरी"
+      },
+      {
+        "en": "वासर",
+        "hi": "वासर"
+      },
+      {
+        "en": "रजनी",
+        "hi": "रजनी"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Vasar means day; the others mean night.",
+    "explanation_hi": "रजनी, यामिनी, विभावरी, निशा और रात्रि 'रात' के पर्यायवाची हैं। 'वासर' का अर्थ दिन है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "पर्यायवाची",
+    "difficulty": "easy",
+    "question_en": "निम्नलिखित में से कौन-सा शब्द 'आँख' का पर्यायवाची नहीं है?",
+    "question_hi": "निम्नलिखित में से कौन-सा शब्द 'आँख' का पर्यायवाची नहीं है?",
+    "options": [
+      {
+        "en": "नेत्र",
+        "hi": "नेत्र"
+      },
+      {
+        "en": "लोचन",
+        "hi": "लोचन"
+      },
+      {
+        "en": "कपोल",
+        "hi": "कपोल"
+      },
+      {
+        "en": "दृग",
+        "hi": "दृग"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Kapol means cheek; the others mean eye.",
+    "explanation_hi": "नेत्र, लोचन, दृग, नयन और चक्षु 'आँख' के पर्यायवाची हैं। 'कपोल' का अर्थ गाल है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "पर्यायवाची",
+    "difficulty": "medium",
+    "question_en": "निम्नलिखित में से कौन-सा शब्द 'पक्षी' का पर्यायवाची नहीं है?",
+    "question_hi": "निम्नलिखित में से कौन-सा शब्द 'पक्षी' का पर्यायवाची नहीं है?",
+    "options": [
+      {
+        "en": "खग",
+        "hi": "खग"
+      },
+      {
+        "en": "विहग",
+        "hi": "विहग"
+      },
+      {
+        "en": "अहि",
+        "hi": "अहि"
+      },
+      {
+        "en": "पखेरू",
+        "hi": "पखेरू"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Ahi means snake; khag, vihag and pakheru mean bird.",
+    "explanation_hi": "खग, विहग, पखेरू, नभचर और द्विज 'पक्षी' के पर्यायवाची हैं। 'अहि' का अर्थ सर्प है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "विलोम",
+    "difficulty": "medium",
+    "question_en": "'उत्कर्ष' का विलोम शब्द क्या है?",
+    "question_hi": "'उत्कर्ष' का विलोम शब्द क्या है?",
+    "options": [
+      {
+        "en": "निष्कर्ष",
+        "hi": "निष्कर्ष"
+      },
+      {
+        "en": "आकर्ष",
+        "hi": "आकर्ष"
+      },
+      {
+        "en": "विकर्ष",
+        "hi": "विकर्ष"
+      },
+      {
+        "en": "अपकर्ष",
+        "hi": "अपकर्ष"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Utkarsh (rise) is opposed by apkarsh (decline).",
+    "explanation_hi": "उत्कर्ष (उन्नति) का विलोम अपकर्ष (अवनति) है। निष्कर्ष का अर्थ परिणाम है, वह विलोम नहीं।",
+    "expected": true
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "विलोम",
+    "difficulty": "medium",
+    "question_en": "'सापेक्ष' का विलोम शब्द चुनिए।",
+    "question_hi": "'सापेक्ष' का विलोम शब्द चुनिए।",
+    "options": [
+      {
+        "en": "निरपेक्ष",
+        "hi": "निरपेक्ष"
+      },
+      {
+        "en": "अपेक्ष",
+        "hi": "अपेक्ष"
+      },
+      {
+        "en": "परोक्ष",
+        "hi": "परोक्ष"
+      },
+      {
+        "en": "उपेक्ष",
+        "hi": "उपेक्ष"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Sapeksh (relative) vs nirpeksh (absolute).",
+    "explanation_hi": "सापेक्ष (किसी पर निर्भर) का विलोम निरपेक्ष (निर्भर न रहने वाला) है। परोक्ष का विलोम प्रत्यक्ष है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "विलोम",
+    "difficulty": "easy",
+    "question_en": "'कृतज्ञ' का विलोम शब्द क्या है?",
+    "question_hi": "'कृतज्ञ' का विलोम शब्द क्या है?",
+    "options": [
+      {
+        "en": "अकृतज्ञ",
+        "hi": "अकृतज्ञ"
+      },
+      {
+        "en": "विज्ञ",
+        "hi": "विज्ञ"
+      },
+      {
+        "en": "अज्ञ",
+        "hi": "अज्ञ"
+      },
+      {
+        "en": "कृतघ्न",
+        "hi": "कृतघ्न"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Kritagya (grateful) vs kritaghna (ungrateful).",
+    "explanation_hi": "कृतज्ञ (उपकार मानने वाला) का विलोम कृतघ्न (उपकार न मानने वाला) है। 'अकृतज्ञ' प्रचलित मानक विलोम नहीं है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "विलोम",
+    "difficulty": "easy",
+    "question_en": "'आस्तिक' का विलोम शब्द क्या है?",
+    "question_hi": "'आस्तिक' का विलोम शब्द क्या है?",
+    "options": [
+      {
+        "en": "अनास्तिक",
+        "hi": "अनास्तिक"
+      },
+      {
+        "en": "नास्तिक",
+        "hi": "नास्तिक"
+      },
+      {
+        "en": "निरास्तिक",
+        "hi": "निरास्तिक"
+      },
+      {
+        "en": "अस्तिक",
+        "hi": "अस्तिक"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Aastik (theist) vs nastik (atheist).",
+    "explanation_hi": "आस्तिक (ईश्वर को मानने वाला) का विलोम नास्तिक (ईश्वर को न मानने वाला) है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "विलोम",
+    "difficulty": "medium",
+    "question_en": "'अनुराग' का विलोम शब्द क्या है?",
+    "question_hi": "'अनुराग' का विलोम शब्द क्या है?",
+    "options": [
+      {
+        "en": "प्रेम",
+        "hi": "प्रेम"
+      },
+      {
+        "en": "विराग",
+        "hi": "विराग"
+      },
+      {
+        "en": "राग",
+        "hi": "राग"
+      },
+      {
+        "en": "अनुरक्ति",
+        "hi": "अनुरक्ति"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Anurag (attachment) vs virag (detachment).",
+    "explanation_hi": "अनुराग (प्रेम/आसक्ति) का विलोम विराग (वैराग्य/अनासक्ति) है। राग और अनुरक्ति अनुराग के पर्यायवाची हैं।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "विलोम",
+    "difficulty": "medium",
+    "question_en": "'सृष्टि' का विलोम शब्द क्या है?",
+    "question_hi": "'सृष्टि' का विलोम शब्द क्या है?",
+    "options": [
+      {
+        "en": "मृत्यु",
+        "hi": "मृत्यु"
+      },
+      {
+        "en": "विनाश",
+        "hi": "विनाश"
+      },
+      {
+        "en": "प्रलय",
+        "hi": "प्रलय"
+      },
+      {
+        "en": "संहार",
+        "hi": "संहार"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Srishti (creation) is paired with pralay (dissolution).",
+    "explanation_hi": "सृष्टि (रचना) का मानक विलोम प्रलय है। विनाश और संहार अर्थ में निकट होते हुए भी परीक्षाओं में 'सृष्टि–प्रलय' युग्म ही मान्य है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "विलोम",
+    "difficulty": "easy",
+    "question_en": "'उन्नति' का विलोम शब्द चुनिए।",
+    "question_hi": "'उन्नति' का विलोम शब्द चुनिए।",
+    "options": [
+      {
+        "en": "विनति",
+        "hi": "विनति"
+      },
+      {
+        "en": "अवनति",
+        "hi": "अवनति"
+      },
+      {
+        "en": "प्रगति",
+        "hi": "प्रगति"
+      },
+      {
+        "en": "दुर्गति",
+        "hi": "दुर्गति"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Unnati (progress) vs avnati (decline).",
+    "explanation_hi": "उन्नति (उत्थान) का विलोम अवनति (पतन) है। प्रगति पर्यायवाची है और विनति का अर्थ प्रार्थना है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "विलोम",
+    "difficulty": "easy",
+    "question_en": "'मौखिक' का विलोम शब्द क्या है?",
+    "question_hi": "'मौखिक' का विलोम शब्द क्या है?",
+    "options": [
+      {
+        "en": "शाब्दिक",
+        "hi": "शाब्दिक"
+      },
+      {
+        "en": "मूक",
+        "hi": "मूक"
+      },
+      {
+        "en": "वाचिक",
+        "hi": "वाचिक"
+      },
+      {
+        "en": "लिखित",
+        "hi": "लिखित"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Maukhik (oral) vs likhit (written).",
+    "explanation_hi": "मौखिक (मुँह से कहा गया) का विलोम लिखित है। वाचिक मौखिक का पर्यायवाची है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "विलोम",
+    "difficulty": "hard",
+    "question_en": "'स्थावर' का विलोम शब्द क्या है?",
+    "question_hi": "'स्थावर' का विलोम शब्द क्या है?",
+    "options": [
+      {
+        "en": "गतिशील",
+        "hi": "गतिशील"
+      },
+      {
+        "en": "अस्थिर",
+        "hi": "अस्थिर"
+      },
+      {
+        "en": "चल",
+        "hi": "चल"
+      },
+      {
+        "en": "जंगम",
+        "hi": "जंगम"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Sthavar (immovable) vs jangam (movable) — a fixed pair.",
+    "explanation_hi": "स्थावर (अचल, जैसे वृक्ष/भूमि) का शास्त्रीय विलोम जंगम (चलने-फिरने वाला) है। 'स्थावर–जंगम' एक रूढ़ युग्म है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "विलोम",
+    "difficulty": "easy",
+    "question_en": "'आदान' का विलोम शब्द क्या है?",
+    "question_hi": "'आदान' का विलोम शब्द क्या है?",
+    "options": [
+      {
+        "en": "अनुदान",
+        "hi": "अनुदान"
+      },
+      {
+        "en": "निदान",
+        "hi": "निदान"
+      },
+      {
+        "en": "प्रदान",
+        "hi": "प्रदान"
+      },
+      {
+        "en": "विदान",
+        "hi": "विदान"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Aadaan (taking) vs pradaan (giving).",
+    "explanation_hi": "आदान (लेना) का विलोम प्रदान (देना) है; 'आदान-प्रदान' युग्म प्रसिद्ध है। अनुदान का अर्थ सहायता-राशि और निदान का अर्थ रोग-पहचान है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "विलोम",
+    "difficulty": "hard",
+    "question_en": "'अनुलोम' का विलोम शब्द क्या है?",
+    "question_hi": "'अनुलोम' का विलोम शब्द क्या है?",
+    "options": [
+      {
+        "en": "प्रतिलोम",
+        "hi": "प्रतिलोम"
+      },
+      {
+        "en": "अलोम",
+        "hi": "अलोम"
+      },
+      {
+        "en": "सुलोम",
+        "hi": "सुलोम"
+      },
+      {
+        "en": "विलोम",
+        "hi": "विलोम"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Anulom (in order) vs pratilom (reverse order).",
+    "explanation_hi": "अनुलोम (क्रम के अनुसार) का विलोम प्रतिलोम (उल्टे क्रम में) है; जैसे अनुलोम-प्रतिलोम प्राणायाम। 'विलोम' सामान्य शब्द है, पर 'अनुलोम' का मानक जोड़ा 'प्रतिलोम' है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "विलोम",
+    "difficulty": "hard",
+    "question_en": "'ऋजु' का विलोम शब्द क्या है?",
+    "question_hi": "'ऋजु' का विलोम शब्द क्या है?",
+    "options": [
+      {
+        "en": "सरल",
+        "hi": "सरल"
+      },
+      {
+        "en": "वक्र",
+        "hi": "वक्र"
+      },
+      {
+        "en": "कुटिल",
+        "hi": "कुटिल"
+      },
+      {
+        "en": "तिर्यक",
+        "hi": "तिर्यक"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Riju (straight) vs vakra (crooked).",
+    "explanation_hi": "ऋजु (सीधा/सरल) का विलोम वक्र (टेढ़ा) है। 'सरल' ऋजु का पर्यायवाची है; 'कुटिल' स्वभाव के लिए अधिक प्रयुक्त होता है, पर मानक विलोम युग्म 'ऋजु–वक्र' है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "अनेक शब्दों के लिए एक शब्द",
+    "difficulty": "easy",
+    "question_en": "'जिसे जीता न जा सके' — इस वाक्यांश के लिए एक शब्द चुनिए।",
+    "question_hi": "'जिसे जीता न जा सके' — इस वाक्यांश के लिए एक शब्द चुनिए।",
+    "options": [
+      {
+        "en": "अजेय",
+        "hi": "अजेय"
+      },
+      {
+        "en": "अजित",
+        "hi": "अजित"
+      },
+      {
+        "en": "विजेता",
+        "hi": "विजेता"
+      },
+      {
+        "en": "अपराजित",
+        "hi": "अपराजित"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "One who cannot be conquered = ajey.",
+    "explanation_hi": "जिसे जीता न जा सके = अजेय। 'अजित' का अर्थ 'जो जीता नहीं गया' है, 'अपराजित' = जो हारा नहीं; परीक्षा में मानक उत्तर 'अजेय' है।",
+    "expected": true
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "अनेक शब्दों के लिए एक शब्द",
+    "difficulty": "easy",
+    "question_en": "'जो कहा न जा सके' — इसके लिए एक शब्द क्या है?",
+    "question_hi": "'जो कहा न जा सके' — इसके लिए एक शब्द क्या है?",
+    "options": [
+      {
+        "en": "अकथनीय",
+        "hi": "अकथनीय"
+      },
+      {
+        "en": "अश्रव्य",
+        "hi": "अश्रव्य"
+      },
+      {
+        "en": "अदृश्य",
+        "hi": "अदृश्य"
+      },
+      {
+        "en": "अलिखित",
+        "hi": "अलिखित"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "That which cannot be said = akathaniya.",
+    "explanation_hi": "जो कहा न जा सके = अकथनीय (या अवर्णनीय)। अश्रव्य = जो सुना न जा सके, अदृश्य = जो दिखाई न दे।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "अनेक शब्दों के लिए एक शब्द",
+    "difficulty": "easy",
+    "question_en": "'जिसकी उपमा न दी जा सके' — इसके लिए एक शब्द चुनिए।",
+    "question_hi": "'जिसकी उपमा न दी जा सके' — इसके लिए एक शब्द चुनिए।",
+    "options": [
+      {
+        "en": "अद्भुत",
+        "hi": "अद्भुत"
+      },
+      {
+        "en": "अनुपम",
+        "hi": "अनुपम"
+      },
+      {
+        "en": "उपमेय",
+        "hi": "उपमेय"
+      },
+      {
+        "en": "अतुल",
+        "hi": "अतुल"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "That which has no comparison = anupam.",
+    "explanation_hi": "जिसकी उपमा न हो = अनुपम (या अनुपमेय)। 'अतुल' = जिसकी तुलना न हो, अर्थ में निकट है पर मानक उत्तर 'अनुपम' है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "अनेक शब्दों के लिए एक शब्द",
+    "difficulty": "easy",
+    "question_en": "'जानने की इच्छा' — इसके लिए एक शब्द क्या है?",
+    "question_hi": "'जानने की इच्छा' — इसके लिए एक शब्द क्या है?",
+    "options": [
+      {
+        "en": "अभिलाषा",
+        "hi": "अभिलाषा"
+      },
+      {
+        "en": "जिज्ञासा",
+        "hi": "जिज्ञासा"
+      },
+      {
+        "en": "पिपासा",
+        "hi": "पिपासा"
+      },
+      {
+        "en": "लालसा",
+        "hi": "लालसा"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Desire to know = jigyasa.",
+    "explanation_hi": "जानने की इच्छा = जिज्ञासा। पिपासा = पीने की इच्छा, लालसा/अभिलाषा = सामान्य इच्छा।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "अनेक शब्दों के लिए एक शब्द",
+    "difficulty": "easy",
+    "question_en": "'जिसके आने की कोई तिथि न हो' — इसके लिए एक शब्द है:",
+    "question_hi": "'जिसके आने की कोई तिथि न हो' — इसके लिए एक शब्द है:",
+    "options": [
+      {
+        "en": "अतिथि",
+        "hi": "अतिथि"
+      },
+      {
+        "en": "आगंतुक",
+        "hi": "आगंतुक"
+      },
+      {
+        "en": "अभ्यागत",
+        "hi": "अभ्यागत"
+      },
+      {
+        "en": "मेहमान",
+        "hi": "मेहमान"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "One whose date of arrival is not fixed = atithi.",
+    "explanation_hi": "अ + तिथि = अतिथि, अर्थात् जिसके आने की तिथि निश्चित न हो। आगंतुक और अभ्यागत का अर्थ 'आया हुआ' है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "अनेक शब्दों के लिए एक शब्द",
+    "difficulty": "easy",
+    "question_en": "'रात में घूमने वाला' — इसके लिए एक शब्द चुनिए।",
+    "question_hi": "'रात में घूमने वाला' — इसके लिए एक शब्द चुनिए।",
+    "options": [
+      {
+        "en": "रजनीश",
+        "hi": "रजनीश"
+      },
+      {
+        "en": "निशाकर",
+        "hi": "निशाकर"
+      },
+      {
+        "en": "नभचर",
+        "hi": "नभचर"
+      },
+      {
+        "en": "निशाचर",
+        "hi": "निशाचर"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "One who roams at night = nishachar.",
+    "explanation_hi": "निशा (रात) + चर (चलने वाला) = निशाचर। निशाकर और रजनीश चंद्रमा के पर्यायवाची हैं, नभचर = आकाश में विचरने वाला।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "अनेक शब्दों के लिए एक शब्द",
+    "difficulty": "medium",
+    "question_en": "'जो थोड़ा जानता हो' — इसके लिए एक शब्द क्या है?",
+    "question_hi": "'जो थोड़ा जानता हो' — इसके लिए एक शब्द क्या है?",
+    "options": [
+      {
+        "en": "अल्पज्ञ",
+        "hi": "अल्पज्ञ"
+      },
+      {
+        "en": "अज्ञ",
+        "hi": "अज्ञ"
+      },
+      {
+        "en": "सर्वज्ञ",
+        "hi": "सर्वज्ञ"
+      },
+      {
+        "en": "विज्ञ",
+        "hi": "विज्ञ"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "One who knows little = alpagya.",
+    "explanation_hi": "जो थोड़ा जानता हो = अल्पज्ञ। अज्ञ = जो कुछ न जानता हो, सर्वज्ञ = सब कुछ जानने वाला, विज्ञ = विशेष जानकार।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "अनेक शब्दों के लिए एक शब्द",
+    "difficulty": "hard",
+    "question_en": "'जिसका कोई शत्रु पैदा ही न हुआ हो' — इसके लिए एक शब्द चुनिए।",
+    "question_hi": "'जिसका कोई शत्रु पैदा ही न हुआ हो' — इसके लिए एक शब्द चुनिए।",
+    "options": [
+      {
+        "en": "शत्रुहीन",
+        "hi": "शत्रुहीन"
+      },
+      {
+        "en": "अजातशत्रु",
+        "hi": "अजातशत्रु"
+      },
+      {
+        "en": "निर्भय",
+        "hi": "निर्भय"
+      },
+      {
+        "en": "अजेय",
+        "hi": "अजेय"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "One with no enemy ever born = ajatshatru.",
+    "explanation_hi": "अजातशत्रु = जिसका शत्रु जन्मा ही न हो (अ + जात + शत्रु)। 'शत्रुहीन' शाब्दिक अनुवाद है, मानक एक-शब्द 'अजातशत्रु' है, जो युधिष्ठिर का विशेषण भी है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "अनेक शब्दों के लिए एक शब्द",
+    "difficulty": "medium",
+    "question_en": "'जो कम बोलता हो' — इसके लिए एक शब्द क्या है?",
+    "question_hi": "'जो कम बोलता हो' — इसके लिए एक शब्द क्या है?",
+    "options": [
+      {
+        "en": "मूक",
+        "hi": "मूक"
+      },
+      {
+        "en": "मितभाषी",
+        "hi": "मितभाषी"
+      },
+      {
+        "en": "मृदुभाषी",
+        "hi": "मृदुभाषी"
+      },
+      {
+        "en": "वाचाल",
+        "hi": "वाचाल"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "One who speaks little = mitbhashi.",
+    "explanation_hi": "मित (कम/सीमित) + भाषी = मितभाषी। मृदुभाषी = मीठा बोलने वाला, वाचाल = अधिक बोलने वाला, मूक = न बोलने वाला।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "अनेक शब्दों के लिए एक शब्द",
+    "difficulty": "hard",
+    "question_en": "'दूसरों के दोष खोजने वाला' — इसके लिए एक शब्द चुनिए।",
+    "question_hi": "'दूसरों के दोष खोजने वाला' — इसके लिए एक शब्द चुनिए।",
+    "options": [
+      {
+        "en": "आलोचक",
+        "hi": "आलोचक"
+      },
+      {
+        "en": "निंदक",
+        "hi": "निंदक"
+      },
+      {
+        "en": "दोषदर्शी",
+        "hi": "दोषदर्शी"
+      },
+      {
+        "en": "छिद्रान्वेषी",
+        "hi": "छिद्रान्वेषी"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "One who looks for faults in others = chhidranveshi.",
+    "explanation_hi": "छिद्र (दोष) + अन्वेषी (खोजने वाला) = छिद्रान्वेषी। आलोचक गुण-दोष दोनों देखता है; निंदक बुराई करता है; मानक उत्तर 'छिद्रान्वेषी' है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "अनेक शब्दों के लिए एक शब्द",
+    "difficulty": "medium",
+    "question_en": "'जो पहले कभी न हुआ हो' — इसके लिए एक शब्द क्या है?",
+    "question_hi": "'जो पहले कभी न हुआ हो' — इसके लिए एक शब्द क्या है?",
+    "options": [
+      {
+        "en": "अभूतपूर्व",
+        "hi": "अभूतपूर्व"
+      },
+      {
+        "en": "अपूर्व",
+        "hi": "अपूर्व"
+      },
+      {
+        "en": "अनोखा",
+        "hi": "अनोखा"
+      },
+      {
+        "en": "भूतपूर्व",
+        "hi": "भूतपूर्व"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Unprecedented = abhootpoorv; bhootpoorv means former.",
+    "explanation_hi": "अ + भूतपूर्व = अभूतपूर्व, अर्थात् जो पहले कभी न हुआ हो। 'भूतपूर्व' का अर्थ 'पहले रह चुका' (जैसे भूतपूर्व प्रधानाचार्य) है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "अनेक शब्दों के लिए एक शब्द",
+    "difficulty": "medium",
+    "question_en": "'जिसकी आशा न की गई हो' — इसके लिए एक शब्द चुनिए।",
+    "question_hi": "'जिसकी आशा न की गई हो' — इसके लिए एक शब्द चुनिए।",
+    "options": [
+      {
+        "en": "आशातीत",
+        "hi": "आशातीत"
+      },
+      {
+        "en": "अप्रत्याशित",
+        "hi": "अप्रत्याशित"
+      },
+      {
+        "en": "अनपेक्षित",
+        "hi": "अनपेक्षित"
+      },
+      {
+        "en": "निराश",
+        "hi": "निराश"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Unexpected = apratyashit.",
+    "explanation_hi": "जिसकी आशा न की गई हो = अप्रत्याशित। 'आशातीत' = आशा से अधिक; 'अनपेक्षित' = जिसकी अपेक्षा न हो, निकट है पर मानक उत्तर 'अप्रत्याशित' है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "अलंकार",
+    "difficulty": "easy",
+    "question_en": "'चारु चंद्र की चंचल किरणें, खेल रही हैं जल-थल में' — इस पंक्ति में कौन-सा अलंकार है?",
+    "question_hi": "'चारु चंद्र की चंचल किरणें, खेल रही हैं जल-थल में' — इस पंक्ति में कौन-सा अलंकार है?",
+    "options": [
+      {
+        "en": "अनुप्रास",
+        "hi": "अनुप्रास"
+      },
+      {
+        "en": "यमक",
+        "hi": "यमक"
+      },
+      {
+        "en": "श्लेष",
+        "hi": "श्लेष"
+      },
+      {
+        "en": "उपमा",
+        "hi": "उपमा"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Repetition of the consonant 'ch' makes it Anupras (alliteration).",
+    "explanation_hi": "इस पंक्ति में 'च' वर्ण की बार-बार आवृत्ति हुई है (चारु, चंद्र, चंचल), अतः यहाँ अनुप्रास अलंकार है। यमक में पूरा शब्द भिन्न अर्थ में दोहराया जाता है, जो यहाँ नहीं है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "अलंकार",
+    "difficulty": "easy",
+    "question_en": "'पीपर पात सरिस मन डोला' — इस पंक्ति में कौन-सा अलंकार है?",
+    "question_hi": "'पीपर पात सरिस मन डोला' — इस पंक्ति में कौन-सा अलंकार है?",
+    "options": [
+      {
+        "en": "रूपक",
+        "hi": "रूपक"
+      },
+      {
+        "en": "उपमा",
+        "hi": "उपमा"
+      },
+      {
+        "en": "उत्प्रेक्षा",
+        "hi": "उत्प्रेक्षा"
+      },
+      {
+        "en": "अतिशयोक्ति",
+        "hi": "अतिशयोक्ति"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The mind is compared to a peepal leaf using the comparison word 'saris', so it is Upama (simile).",
+    "explanation_hi": "मन (उपमेय) की तुलना पीपल के पत्ते (उपमान) से 'सरिस' (समान) वाचक शब्द द्वारा की गई है, अतः उपमा अलंकार है। रूपक में वाचक शब्द नहीं होता और अभेद दिखाया जाता है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "अलंकार",
+    "difficulty": "medium",
+    "question_en": "'चरण-कमल बंदौं हरि राई' — इस पंक्ति में कौन-सा अलंकार है?",
+    "question_hi": "'चरण-कमल बंदौं हरि राई' — इस पंक्ति में कौन-सा अलंकार है?",
+    "options": [
+      {
+        "en": "उपमा",
+        "hi": "उपमा"
+      },
+      {
+        "en": "उत्प्रेक्षा",
+        "hi": "उत्प्रेक्षा"
+      },
+      {
+        "en": "रूपक",
+        "hi": "रूपक"
+      },
+      {
+        "en": "अनुप्रास",
+        "hi": "अनुप्रास"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Feet are identified with lotuses without a comparison word, which is Rupak (metaphor).",
+    "explanation_hi": "यहाँ चरणों (उपमेय) पर कमल (उपमान) का अभेद आरोप किया गया है — 'कमल रूपी चरण'। बिना वाचक शब्द के उपमेय-उपमान को एक मान लेना रूपक अलंकार है।",
+    "expected": true
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "अलंकार",
+    "difficulty": "medium",
+    "question_en": "'कनक कनक ते सौ गुनी, मादकता अधिकाय' — इस पंक्ति में कौन-सा अलंकार है?",
+    "question_hi": "'कनक कनक ते सौ गुनी, मादकता अधिकाय' — इस पंक्ति में कौन-सा अलंकार है?",
+    "options": [
+      {
+        "en": "श्लेष",
+        "hi": "श्लेष"
+      },
+      {
+        "en": "अनुप्रास",
+        "hi": "अनुप्रास"
+      },
+      {
+        "en": "उपमा",
+        "hi": "उपमा"
+      },
+      {
+        "en": "यमक",
+        "hi": "यमक"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "'Kanak' is repeated with two meanings (datura, gold), so it is Yamak.",
+    "explanation_hi": "'कनक' शब्द दो बार आया है और दोनों बार अर्थ भिन्न है — पहला 'धतूरा', दूसरा 'सोना'। एक ही शब्द की भिन्न अर्थों में आवृत्ति यमक अलंकार है; श्लेष में शब्द एक ही बार आता है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "अलंकार",
+    "difficulty": "medium",
+    "question_en": "'पानी गए न ऊबरै, मोती मानुष चून' — इस पंक्ति में 'पानी' शब्द के प्रयोग के कारण कौन-सा अलंकार है?",
+    "question_hi": "'पानी गए न ऊबरै, मोती मानुष चून' — इस पंक्ति में 'पानी' शब्द के प्रयोग के कारण कौन-सा अलंकार है?",
+    "options": [
+      {
+        "en": "यमक",
+        "hi": "यमक"
+      },
+      {
+        "en": "श्लेष",
+        "hi": "श्लेष"
+      },
+      {
+        "en": "रूपक",
+        "hi": "रूपक"
+      },
+      {
+        "en": "उत्प्रेक्षा",
+        "hi": "उत्प्रेक्षा"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "One word 'paani' carries three meanings at once (lustre, honour, water), so it is Shlesh (pun).",
+    "explanation_hi": "यहाँ 'पानी' शब्द एक बार प्रयुक्त होकर तीन अर्थ दे रहा है — मोती के लिए चमक, मनुष्य के लिए सम्मान और चूने के लिए जल। एक शब्द में अनेक अर्थ चिपके हों तो श्लेष अलंकार होता है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "अलंकार",
+    "difficulty": "medium",
+    "question_en": "'सोहत ओढ़े पीत पट, स्याम सलोने गात। मनहुँ नीलमनि सैल पर, आतप परयौ प्रभात॥' — इसमें कौन-सा अलंकार है?",
+    "question_hi": "'सोहत ओढ़े पीत पट, स्याम सलोने गात। मनहुँ नीलमनि सैल पर, आतप परयौ प्रभात॥' — इसमें कौन-सा अलंकार है?",
+    "options": [
+      {
+        "en": "उत्प्रेक्षा",
+        "hi": "उत्प्रेक्षा"
+      },
+      {
+        "en": "उपमा",
+        "hi": "उपमा"
+      },
+      {
+        "en": "रूपक",
+        "hi": "रूपक"
+      },
+      {
+        "en": "यमक",
+        "hi": "यमक"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The word 'manahun' (as if) expresses imagined likeness, so it is Utpreksha.",
+    "explanation_hi": "पीले वस्त्र ओढ़े श्याम शरीर में नीलमणि पर्वत पर सुबह की धूप पड़ने की संभावना व्यक्त की गई है। 'मनहुँ' संभावना-सूचक वाचक शब्द है, अतः उत्प्रेक्षा अलंकार है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "अलंकार",
+    "difficulty": "hard",
+    "question_en": "'हनुमान की पूँछ में लगन न पाई आग, लंका सिगरी जल गई, गए निसाचर भाग' — इसमें कौन-सा अलंकार है?",
+    "question_hi": "'हनुमान की पूँछ में लगन न पाई आग, लंका सिगरी जल गई, गए निसाचर भाग' — इसमें कौन-सा अलंकार है?",
+    "options": [
+      {
+        "en": "उत्प्रेक्षा",
+        "hi": "उत्प्रेक्षा"
+      },
+      {
+        "en": "मानवीकरण",
+        "hi": "मानवीकरण"
+      },
+      {
+        "en": "अतिशयोक्ति",
+        "hi": "अतिशयोक्ति"
+      },
+      {
+        "en": "अनुप्रास",
+        "hi": "अनुप्रास"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Lanka burning even before the tail caught fire is exaggeration, i.e. Atishayokti (hyperbole).",
+    "explanation_hi": "पूँछ में आग लगने से पहले ही पूरी लंका का जल जाना लोक-सीमा से बढ़ाकर किया गया वर्णन है। किसी बात को बहुत बढ़ा-चढ़ाकर कहना अतिशयोक्ति अलंकार है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "अलंकार",
+    "difficulty": "medium",
+    "question_en": "निम्नलिखित में से कौन-सा शब्द उत्प्रेक्षा अलंकार का वाचक शब्द है?",
+    "question_hi": "निम्नलिखित में से कौन-सा शब्द उत्प्रेक्षा अलंकार का वाचक शब्द है?",
+    "options": [
+      {
+        "en": "सम",
+        "hi": "सम"
+      },
+      {
+        "en": "सरिस",
+        "hi": "सरिस"
+      },
+      {
+        "en": "मानो",
+        "hi": "मानो"
+      },
+      {
+        "en": "सा",
+        "hi": "सा"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "'Mano' (as if) signals Utpreksha; sam, saris and sa are simile markers.",
+    "explanation_hi": "उत्प्रेक्षा में संभावना दिखाने के लिए मनु, मनहुँ, जनु, जनहुँ, मानो, जानो आदि वाचक शब्द आते हैं। सम, सरिस, सा आदि उपमा अलंकार के वाचक शब्द हैं।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "अलंकार",
+    "difficulty": "hard",
+    "question_en": "'उदित उदयगिरि मंच पर, रघुवर बाल पतंग। बिकसे संत सरोज सब, हरषे लोचन भृंग॥' — इसमें कौन-सा अलंकार है?",
+    "question_hi": "'उदित उदयगिरि मंच पर, रघुवर बाल पतंग। बिकसे संत सरोज सब, हरषे लोचन भृंग॥' — इसमें कौन-सा अलंकार है?",
+    "options": [
+      {
+        "en": "सांगरूपक",
+        "hi": "सांगरूपक"
+      },
+      {
+        "en": "उपमा",
+        "hi": "उपमा"
+      },
+      {
+        "en": "उत्प्रेक्षा",
+        "hi": "उत्प्रेक्षा"
+      },
+      {
+        "en": "यमक",
+        "hi": "यमक"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Several parts are identified with parts of a sunrise scene, so it is Sangrupak (extended metaphor).",
+    "explanation_hi": "यहाँ मंच पर उदयगिरि, रघुवर पर बाल सूर्य, संतों पर कमल और नेत्रों पर भौंरों का अंगों सहित आरोप किया गया है। उपमेय पर उपमान का अंग-उपांग सहित आरोप सांगरूपक (रूपक का भेद) कहलाता है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "अलंकार",
+    "difficulty": "hard",
+    "question_en": "'मेघ आए बड़े बन-ठन के सँवर के' — इस पंक्ति में मुख्य रूप से कौन-सा अलंकार है?",
+    "question_hi": "'मेघ आए बड़े बन-ठन के सँवर के' — इस पंक्ति में मुख्य रूप से कौन-सा अलंकार है?",
+    "options": [
+      {
+        "en": "अतिशयोक्ति",
+        "hi": "अतिशयोक्ति"
+      },
+      {
+        "en": "मानवीकरण",
+        "hi": "मानवीकरण"
+      },
+      {
+        "en": "उत्प्रेक्षा",
+        "hi": "उत्प्रेक्षा"
+      },
+      {
+        "en": "श्लेष",
+        "hi": "श्लेष"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Clouds are shown dressing up like a person, so it is personification (Manvikaran).",
+    "explanation_hi": "यहाँ बादलों (प्रकृति) को मनुष्य की तरह सज-धजकर आते हुए दिखाया गया है। प्राकृतिक वस्तु पर मानवीय भावों और क्रियाओं का आरोप मानवीकरण अलंकार है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "अलंकार",
+    "difficulty": "medium",
+    "question_en": "'काली घटा का घमंड घटा' — इस पंक्ति में मुख्य रूप से कौन-सा अलंकार है?",
+    "question_hi": "'काली घटा का घमंड घटा' — इस पंक्ति में मुख्य रूप से कौन-सा अलंकार है?",
+    "options": [
+      {
+        "en": "श्लेष",
+        "hi": "श्लेष"
+      },
+      {
+        "en": "रूपक",
+        "hi": "रूपक"
+      },
+      {
+        "en": "यमक",
+        "hi": "यमक"
+      },
+      {
+        "en": "उपमा",
+        "hi": "उपमा"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "'Ghata' is repeated with two meanings (clouds, decreased), so it is Yamak.",
+    "explanation_hi": "'घटा' शब्द दो बार आया है — पहली बार 'बादलों का समूह' और दूसरी बार 'कम हुआ' अर्थ में। भिन्न अर्थों में शब्द की आवृत्ति के कारण यमक अलंकार है ('घ' की आवृत्ति से अनुप्रास भी है, पर मुख्य यमक है)।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "अलंकार",
+    "difficulty": "easy",
+    "question_en": "निम्नलिखित में से कौन-सा शब्दालंकार है?",
+    "question_hi": "निम्नलिखित में से कौन-सा शब्दालंकार है?",
+    "options": [
+      {
+        "en": "उपमा",
+        "hi": "उपमा"
+      },
+      {
+        "en": "रूपक",
+        "hi": "रूपक"
+      },
+      {
+        "en": "उत्प्रेक्षा",
+        "hi": "उत्प्रेक्षा"
+      },
+      {
+        "en": "श्लेष",
+        "hi": "श्लेष"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Shlesh depends on the word itself, so it is a shabdalankar; the rest are arthalankars.",
+    "explanation_hi": "शब्दालंकार में चमत्कार शब्द पर निर्भर होता है — अनुप्रास, यमक, श्लेष इसके मुख्य भेद हैं। उपमा, रूपक और उत्प्रेक्षा अर्थालंकार हैं क्योंकि उनका सौंदर्य अर्थ पर टिका है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "तत्सम–तद्भव",
+    "difficulty": "easy",
+    "question_en": "'अग्नि' शब्द का तद्भव रूप क्या है?",
+    "question_hi": "'अग्नि' शब्द का तद्भव रूप क्या है?",
+    "options": [
+      {
+        "en": "आग",
+        "hi": "आग"
+      },
+      {
+        "en": "ज्वाला",
+        "hi": "ज्वाला"
+      },
+      {
+        "en": "अनल",
+        "hi": "अनल"
+      },
+      {
+        "en": "पावक",
+        "hi": "पावक"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Aag is the tadbhav form of agni; the other options are Sanskrit synonyms.",
+    "explanation_hi": "संस्कृत 'अग्नि' से विकसित होकर हिंदी में 'आग' बना है, अतः 'आग' तद्भव है। ज्वाला, अनल और पावक अग्नि के तत्सम पर्यायवाची हैं, तद्भव रूप नहीं।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "तत्सम–तद्भव",
+    "difficulty": "easy",
+    "question_en": "'हाथ' शब्द का तत्सम रूप क्या है?",
+    "question_hi": "'हाथ' शब्द का तत्सम रूप क्या है?",
+    "options": [
+      {
+        "en": "हत्थ",
+        "hi": "हत्थ"
+      },
+      {
+        "en": "हस्त",
+        "hi": "हस्त"
+      },
+      {
+        "en": "कर्ण",
+        "hi": "कर्ण"
+      },
+      {
+        "en": "हस्ती",
+        "hi": "हस्ती"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The tatsam form of haath is hast.",
+    "explanation_hi": "'हाथ' संस्कृत 'हस्त' से बना तद्भव शब्द है, अतः इसका तत्सम रूप 'हस्त' है। 'हस्ती' का अर्थ हाथी है और 'कर्ण' कान का तत्सम है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "तत्सम–तद्भव",
+    "difficulty": "medium",
+    "question_en": "निम्नलिखित में से कौन-सा तत्सम–तद्भव युग्म सही नहीं है?",
+    "question_hi": "निम्नलिखित में से कौन-सा तत्सम–तद्भव युग्म सही नहीं है?",
+    "options": [
+      {
+        "en": "कर्म – काम",
+        "hi": "कर्म – काम"
+      },
+      {
+        "en": "दुग्ध – दूध",
+        "hi": "दुग्ध – दूध"
+      },
+      {
+        "en": "क्षेत्र – खेत",
+        "hi": "क्षेत्र – खेत"
+      },
+      {
+        "en": "सर्प – साँस",
+        "hi": "सर्प – साँस"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Sarp becomes saanp, not saans (which comes from shvaas).",
+    "explanation_hi": "'सर्प' का तद्भव 'साँप' होता है, 'साँस' नहीं; 'साँस' का तत्सम 'श्वास' है। शेष युग्म — कर्म-काम, दुग्ध-दूध, क्षेत्र-खेत — सही हैं।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "तत्सम–तद्भव",
+    "difficulty": "medium",
+    "question_en": "'घी' शब्द का तत्सम रूप क्या है?",
+    "question_hi": "'घी' शब्द का तत्सम रूप क्या है?",
+    "options": [
+      {
+        "en": "घर्त",
+        "hi": "घर्त"
+      },
+      {
+        "en": "घृति",
+        "hi": "घृति"
+      },
+      {
+        "en": "घृत",
+        "hi": "घृत"
+      },
+      {
+        "en": "घीत",
+        "hi": "घीत"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "The tatsam form of ghee is ghrit.",
+    "explanation_hi": "'घी' संस्कृत 'घृत' से बना तद्भव शब्द है। 'घृति' और 'घर्त' अशुद्ध/भिन्न रूप हैं, इसलिए सही तत्सम 'घृत' है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "तत्सम–तद्भव",
+    "difficulty": "medium",
+    "question_en": "'स्वप्न' शब्द का तद्भव रूप क्या है?",
+    "question_hi": "'स्वप्न' शब्द का तद्भव रूप क्या है?",
+    "options": [
+      {
+        "en": "सपना",
+        "hi": "सपना"
+      },
+      {
+        "en": "नींद",
+        "hi": "नींद"
+      },
+      {
+        "en": "स्वप्निल",
+        "hi": "स्वप्निल"
+      },
+      {
+        "en": "ख़्वाब",
+        "hi": "ख़्वाब"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Sapna is the tadbhav of svapna; khwab is a Persian loanword.",
+    "explanation_hi": "संस्कृत 'स्वप्न' से हिंदी का 'सपना' बना है। 'ख़्वाब' फ़ारसी (विदेशज) शब्द है और 'स्वप्निल' विशेषण है, तद्भव नहीं।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "तत्सम–तद्भव",
+    "difficulty": "medium",
+    "question_en": "निम्नलिखित में से तत्सम शब्द कौन-सा है?",
+    "question_hi": "निम्नलिखित में से तत्सम शब्द कौन-सा है?",
+    "options": [
+      {
+        "en": "कपूर",
+        "hi": "कपूर"
+      },
+      {
+        "en": "खेत",
+        "hi": "खेत"
+      },
+      {
+        "en": "आँसू",
+        "hi": "आँसू"
+      },
+      {
+        "en": "कर्पूर",
+        "hi": "कर्पूर"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Karpoor is the original Sanskrit word; the others are tadbhav forms.",
+    "explanation_hi": "'कर्पूर' संस्कृत का मूल (तत्सम) शब्द है, जिससे 'कपूर' बना। 'खेत' (क्षेत्र) और 'आँसू' (अश्रु) तद्भव शब्द हैं।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "तत्सम–तद्भव",
+    "difficulty": "medium",
+    "question_en": "निम्नलिखित में से तद्भव शब्द कौन-सा है?",
+    "question_hi": "निम्नलिखित में से तद्भव शब्द कौन-सा है?",
+    "options": [
+      {
+        "en": "पुष्प",
+        "hi": "पुष्प"
+      },
+      {
+        "en": "ग्राम",
+        "hi": "ग्राम"
+      },
+      {
+        "en": "सूरज",
+        "hi": "सूरज"
+      },
+      {
+        "en": "नेत्र",
+        "hi": "नेत्र"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Suraj is the tadbhav of surya; the others are tatsam.",
+    "explanation_hi": "'सूरज' संस्कृत 'सूर्य' से विकसित तद्भव शब्द है। पुष्प, ग्राम और नेत्र संस्कृत से ज्यों-के-त्यों लिए गए तत्सम शब्द हैं।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "तत्सम–तद्भव",
+    "difficulty": "hard",
+    "question_en": "'कोयल' शब्द का तत्सम रूप क्या है?",
+    "question_hi": "'कोयल' शब्द का तत्सम रूप क्या है?",
+    "options": [
+      {
+        "en": "काकी",
+        "hi": "काकी"
+      },
+      {
+        "en": "कोकिल",
+        "hi": "कोकिल"
+      },
+      {
+        "en": "कोयली",
+        "hi": "कोयली"
+      },
+      {
+        "en": "कुहुक",
+        "hi": "कुहुक"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The tatsam form of koyal is kokil.",
+    "explanation_hi": "'कोयल' संस्कृत 'कोकिल' का तद्भव रूप है। 'काकी' कौए की मादा के लिए प्रयुक्त होता है और 'कुहुक' कोयल की बोली है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "तत्सम–तद्भव",
+    "difficulty": "hard",
+    "question_en": "'भतीजा' शब्द का तत्सम रूप क्या है?",
+    "question_hi": "'भतीजा' शब्द का तत्सम रूप क्या है?",
+    "options": [
+      {
+        "en": "भ्राता",
+        "hi": "भ्राता"
+      },
+      {
+        "en": "भ्रातृजा",
+        "hi": "भ्रातृजा"
+      },
+      {
+        "en": "भातृज",
+        "hi": "भातृज"
+      },
+      {
+        "en": "भ्रातृज",
+        "hi": "भ्रातृज"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Bhatija comes from bhraatrij; bhraatrija means niece.",
+    "explanation_hi": "'भ्रातृज' (भाई से उत्पन्न) से 'भतीजा' बना है। 'भ्रातृजा' का अर्थ भतीजी है और 'भ्राता' भाई का तत्सम है; 'भातृज' वर्तनी की दृष्टि से अशुद्ध है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "तत्सम–तद्भव",
+    "difficulty": "medium",
+    "question_en": "'होंठ' शब्द का तत्सम रूप क्या है?",
+    "question_hi": "'होंठ' शब्द का तत्सम रूप क्या है?",
+    "options": [
+      {
+        "en": "ओष्ट",
+        "hi": "ओष्ट"
+      },
+      {
+        "en": "ओष्ठ",
+        "hi": "ओष्ठ"
+      },
+      {
+        "en": "उष्ठ",
+        "hi": "उष्ठ"
+      },
+      {
+        "en": "होष्ठ",
+        "hi": "होष्ठ"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The tatsam form of honth is oshth.",
+    "explanation_hi": "'होंठ/ओठ' संस्कृत 'ओष्ठ' से बने हैं। 'ओष्ट' में 'ठ' के स्थान पर 'ट' लिखना सामान्य वर्तनी-भूल है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "तत्सम–तद्भव",
+    "difficulty": "easy",
+    "question_en": "'तद्भव' शब्द का शाब्दिक अर्थ क्या है?",
+    "question_hi": "'तद्भव' शब्द का शाब्दिक अर्थ क्या है?",
+    "options": [
+      {
+        "en": "उससे (संस्कृत से) उत्पन्न",
+        "hi": "उससे (संस्कृत से) उत्पन्न"
+      },
+      {
+        "en": "उसके (संस्कृत के) समान",
+        "hi": "उसके (संस्कृत के) समान"
+      },
+      {
+        "en": "देश में ही उत्पन्न",
+        "hi": "देश में ही उत्पन्न"
+      },
+      {
+        "en": "विदेश से आया हुआ",
+        "hi": "विदेश से आया हुआ"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Tadbhav literally means 'born from it' (from Sanskrit).",
+    "explanation_hi": "तत् + भव = उससे उत्पन्न; अर्थात् संस्कृत से विकसित होकर रूप बदल चुके शब्द तद्भव कहलाते हैं। 'उसके समान' तत्सम का अर्थ है, जबकि देश में उत्पन्न शब्द देशज कहलाते हैं।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "लिंग–वचन–कारक",
+    "difficulty": "easy",
+    "question_en": "निम्नलिखित में से कौन-सा शब्द स्त्रीलिंग है?",
+    "question_hi": "निम्नलिखित में से कौन-सा शब्द स्त्रीलिंग है?",
+    "options": [
+      {
+        "en": "दही",
+        "hi": "दही"
+      },
+      {
+        "en": "पानी",
+        "hi": "पानी"
+      },
+      {
+        "en": "मोती",
+        "hi": "मोती"
+      },
+      {
+        "en": "चाय",
+        "hi": "चाय"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Chai is feminine; dahi, paani and moti are masculine despite ending in -i.",
+    "explanation_hi": "'चाय' स्त्रीलिंग है — 'चाय ठंडी हो गई'। दही, पानी और मोती ईकारांत होते हुए भी पुल्लिंग हैं — 'दही खट्टा है', 'पानी ठंडा है'।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "लिंग–वचन–कारक",
+    "difficulty": "medium",
+    "question_en": "'विद्वान' शब्द का स्त्रीलिंग रूप क्या है?",
+    "question_hi": "'विद्वान' शब्द का स्त्रीलिंग रूप क्या है?",
+    "options": [
+      {
+        "en": "विद्वानी",
+        "hi": "विद्वानी"
+      },
+      {
+        "en": "विदुषी",
+        "hi": "विदुषी"
+      },
+      {
+        "en": "विद्वत्ता",
+        "hi": "विद्वत्ता"
+      },
+      {
+        "en": "विदुषा",
+        "hi": "विदुषा"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The feminine of vidvaan is vidushi.",
+    "explanation_hi": "'विद्वान' का स्त्रीलिंग 'विदुषी' होता है। 'विद्वत्ता' भाववाचक संज्ञा (विद्वान होने का भाव) है, स्त्रीलिंग रूप नहीं।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "लिंग–वचन–कारक",
+    "difficulty": "hard",
+    "question_en": "निम्नलिखित में से कौन-सा शब्द पुल्लिंग है?",
+    "question_hi": "निम्नलिखित में से कौन-सा शब्द पुल्लिंग है?",
+    "options": [
+      {
+        "en": "आत्मा",
+        "hi": "आत्मा"
+      },
+      {
+        "en": "सरसों",
+        "hi": "सरसों"
+      },
+      {
+        "en": "हस्ताक्षर",
+        "hi": "हस्ताक्षर"
+      },
+      {
+        "en": "आयु",
+        "hi": "आयु"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Hastakshar is masculine; aatma, sarson and aayu are feminine.",
+    "explanation_hi": "'हस्ताक्षर' पुल्लिंग है — 'मेरे हस्ताक्षर'। आत्मा, सरसों और आयु स्त्रीलिंग हैं — 'आत्मा अमर है', 'लंबी आयु'।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "लिंग–वचन–कारक",
+    "difficulty": "medium",
+    "question_en": "'कवि' शब्द का शुद्ध स्त्रीलिंग रूप क्या है?",
+    "question_hi": "'कवि' शब्द का शुद्ध स्त्रीलिंग रूप क्या है?",
+    "options": [
+      {
+        "en": "कवियित्री",
+        "hi": "कवियित्री"
+      },
+      {
+        "en": "कविनी",
+        "hi": "कविनी"
+      },
+      {
+        "en": "कविता",
+        "hi": "कविता"
+      },
+      {
+        "en": "कवयित्री",
+        "hi": "कवयित्री"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "The correct feminine of kavi is kavayitri.",
+    "explanation_hi": "'कवि' का स्त्रीलिंग 'कवयित्री' है। 'कवियित्री' लिखना प्रचलित भूल है, और 'कविता' रचना का नाम है, स्त्रीलिंग रूप नहीं।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "लिंग–वचन–कारक",
+    "difficulty": "easy",
+    "question_en": "'नदी' शब्द का बहुवचन (बिना विभक्ति) रूप क्या है?",
+    "question_hi": "'नदी' शब्द का बहुवचन (बिना विभक्ति) रूप क्या है?",
+    "options": [
+      {
+        "en": "नदियाँ",
+        "hi": "नदियाँ"
+      },
+      {
+        "en": "नदीयाँ",
+        "hi": "नदीयाँ"
+      },
+      {
+        "en": "नदियों",
+        "hi": "नदियों"
+      },
+      {
+        "en": "नदें",
+        "hi": "नदें"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Nadi becomes nadiyaan; nadiyon is the oblique form used before postpositions.",
+    "explanation_hi": "ईकारांत स्त्रीलिंग शब्दों में 'ई' को 'इ' करके 'याँ' जोड़ा जाता है — नदी → नदियाँ। 'नदियों' विभक्ति सहित (तिर्यक) रूप है, जैसे 'नदियों में'।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "लिंग–वचन–कारक",
+    "difficulty": "medium",
+    "question_en": "निम्नलिखित में से कौन-सा शब्द सदा बहुवचन में प्रयुक्त होता है?",
+    "question_hi": "निम्नलिखित में से कौन-सा शब्द सदा बहुवचन में प्रयुक्त होता है?",
+    "options": [
+      {
+        "en": "पुस्तक",
+        "hi": "पुस्तक"
+      },
+      {
+        "en": "प्राण",
+        "hi": "प्राण"
+      },
+      {
+        "en": "लड़का",
+        "hi": "लड़का"
+      },
+      {
+        "en": "घोड़ा",
+        "hi": "घोड़ा"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Praan is always used in the plural.",
+    "explanation_hi": "'प्राण' सदैव बहुवचन में प्रयुक्त होता है — 'उसके प्राण निकल गए'। इसी प्रकार दर्शन, हस्ताक्षर, होश, आँसू भी प्रायः बहुवचन में आते हैं।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "लिंग–वचन–कारक",
+    "difficulty": "medium",
+    "question_en": "'माला' शब्द का बहुवचन (बिना विभक्ति) रूप क्या है?",
+    "question_hi": "'माला' शब्द का बहुवचन (बिना विभक्ति) रूप क्या है?",
+    "options": [
+      {
+        "en": "मालाओं",
+        "hi": "मालाओं"
+      },
+      {
+        "en": "मालाएँ",
+        "hi": "मालाएँ"
+      },
+      {
+        "en": "मालियाँ",
+        "hi": "मालियाँ"
+      },
+      {
+        "en": "मालें",
+        "hi": "मालें"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Mala becomes maalaayen in the direct plural.",
+    "explanation_hi": "आकारांत स्त्रीलिंग शब्दों में 'एँ' जोड़कर बहुवचन बनता है — माला → मालाएँ। 'मालाओं' विभक्ति लगने पर बनने वाला रूप है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "लिंग–वचन–कारक",
+    "difficulty": "hard",
+    "question_en": "निम्नलिखित में से किस वाक्य में आदरार्थ बहुवचन का प्रयोग हुआ है?",
+    "question_hi": "निम्नलिखित में से किस वाक्य में आदरार्थ बहुवचन का प्रयोग हुआ है?",
+    "options": [
+      {
+        "en": "लड़के मैदान में खेल रहे हैं।",
+        "hi": "लड़के मैदान में खेल रहे हैं।"
+      },
+      {
+        "en": "पेड़ आँधी में हिल रहे हैं।",
+        "hi": "पेड़ आँधी में हिल रहे हैं।"
+      },
+      {
+        "en": "पिताजी दफ़्तर से आ रहे हैं।",
+        "hi": "पिताजी दफ़्तर से आ रहे हैं।"
+      },
+      {
+        "en": "बच्चे कमरे में सो रहे हैं।",
+        "hi": "बच्चे कमरे में सो रहे हैं।"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Pitaji is one person but takes a plural verb out of respect.",
+    "explanation_hi": "'पिताजी' एक ही व्यक्ति हैं, पर सम्मान प्रकट करने के लिए क्रिया बहुवचन ('आ रहे हैं') में प्रयुक्त हुई है — यही आदरार्थ बहुवचन है। अन्य वाक्यों में कर्ता वास्तव में अनेक हैं।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "लिंग–वचन–कारक",
+    "difficulty": "easy",
+    "question_en": "'ने' परसर्ग (विभक्ति-चिह्न) किस कारक का है?",
+    "question_hi": "'ने' परसर्ग (विभक्ति-चिह्न) किस कारक का है?",
+    "options": [
+      {
+        "en": "कर्म",
+        "hi": "कर्म"
+      },
+      {
+        "en": "कर्ता",
+        "hi": "कर्ता"
+      },
+      {
+        "en": "करण",
+        "hi": "करण"
+      },
+      {
+        "en": "संप्रदान",
+        "hi": "संप्रदान"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "'Ne' marks the karta (subject/agent) case.",
+    "explanation_hi": "'ने' कर्ता कारक का चिह्न है — 'राम ने पत्र लिखा'। कर्म का चिह्न 'को', करण का 'से/के द्वारा' और संप्रदान का 'को/के लिए' है।",
+    "expected": true
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "लिंग–वचन–कारक",
+    "difficulty": "medium",
+    "question_en": "'वह कलम से पत्र लिखता है।' — इस वाक्य में 'कलम से' में कौन-सा कारक है?",
+    "question_hi": "'वह कलम से पत्र लिखता है।' — इस वाक्य में 'कलम से' में कौन-सा कारक है?",
+    "options": [
+      {
+        "en": "अपादान",
+        "hi": "अपादान"
+      },
+      {
+        "en": "कर्म",
+        "hi": "कर्म"
+      },
+      {
+        "en": "अधिकरण",
+        "hi": "अधिकरण"
+      },
+      {
+        "en": "करण",
+        "hi": "करण"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "The pen is the instrument, so 'se' here is karan (instrumental) case.",
+    "explanation_hi": "कलम क्रिया (लिखना) का साधन है; साधन बताने वाला 'से' करण कारक का चिह्न है। अलग होने के अर्थ में आने वाला 'से' अपादान कारक का होता है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "लिंग–वचन–कारक",
+    "difficulty": "medium",
+    "question_en": "'पेड़ से पत्ता गिरा।' — इस वाक्य में 'पेड़ से' में कौन-सा कारक है?",
+    "question_hi": "'पेड़ से पत्ता गिरा।' — इस वाक्य में 'पेड़ से' में कौन-सा कारक है?",
+    "options": [
+      {
+        "en": "अपादान",
+        "hi": "अपादान"
+      },
+      {
+        "en": "करण",
+        "hi": "करण"
+      },
+      {
+        "en": "संबंध",
+        "hi": "संबंध"
+      },
+      {
+        "en": "अधिकरण",
+        "hi": "अधिकरण"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "'Se' showing separation is apaadaan (ablative) case.",
+    "explanation_hi": "पत्ता पेड़ से अलग हो रहा है; अलगाव (पृथकता) के अर्थ में 'से' अपादान कारक का चिह्न है। साधन के अर्थ वाला 'से' करण कारक होता है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "लिंग–वचन–कारक",
+    "difficulty": "hard",
+    "question_en": "'गरीबों को कंबल दो।' — इस वाक्य में 'गरीबों को' में कौन-सा कारक है?",
+    "question_hi": "'गरीबों को कंबल दो।' — इस वाक्य में 'गरीबों को' में कौन-सा कारक है?",
+    "options": [
+      {
+        "en": "कर्म",
+        "hi": "कर्म"
+      },
+      {
+        "en": "अपादान",
+        "hi": "अपादान"
+      },
+      {
+        "en": "संप्रदान",
+        "hi": "संप्रदान"
+      },
+      {
+        "en": "संबंध",
+        "hi": "संबंध"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "'Ko' in the sense of giving marks sampradaan (dative) case; the object is the blanket.",
+    "explanation_hi": "जिसके लिए कुछ किया जाए या जिसे कुछ दिया जाए, वह संप्रदान कारक होता है; देने के अर्थ में 'को' संप्रदान का चिह्न है। यहाँ कर्म 'कंबल' है, 'गरीबों' नहीं।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "वर्तनी",
+    "difficulty": "easy",
+    "question_en": "'चमकदार/स्वच्छ' अर्थ वाले शब्द की शुद्ध वर्तनी चुनिए।",
+    "question_hi": "'चमकदार/स्वच्छ' अर्थ वाले शब्द की शुद्ध वर्तनी चुनिए।",
+    "options": [
+      {
+        "en": "उज्ज्वल",
+        "hi": "उज्ज्वल"
+      },
+      {
+        "en": "उज्वल",
+        "hi": "उज्वल"
+      },
+      {
+        "en": "उजवल",
+        "hi": "उजवल"
+      },
+      {
+        "en": "उज्जवल",
+        "hi": "उज्जवल"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Correct spelling is ujjval (ut + jval).",
+    "explanation_hi": "शुद्ध शब्द 'उज्ज्वल' है (उत् + ज्वल)। संधि के कारण 'ज्' के बाद 'ज्व' आता है, इसलिए 'ज्ज्व' लिखा जाता है; 'उज्जवल' सबसे आम भूल है।",
+    "expected": true
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "वर्तनी",
+    "difficulty": "easy",
+    "question_en": "'बड़ों द्वारा दी गई शुभकामना' अर्थ वाले शब्द की शुद्ध वर्तनी चुनिए।",
+    "question_hi": "'बड़ों द्वारा दी गई शुभकामना' अर्थ वाले शब्द की शुद्ध वर्तनी चुनिए।",
+    "options": [
+      {
+        "en": "आर्शीवाद",
+        "hi": "आर्शीवाद"
+      },
+      {
+        "en": "आशीर्वाद",
+        "hi": "आशीर्वाद"
+      },
+      {
+        "en": "आशिर्वाद",
+        "hi": "आशिर्वाद"
+      },
+      {
+        "en": "आशीरवाद",
+        "hi": "आशीरवाद"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Correct spelling is aashirvaad with the r-sign above 'va'.",
+    "explanation_hi": "शुद्ध रूप 'आशीर्वाद' है (आशीः + वाद)। रेफ़ (र्) 'व' के ऊपर लगता है, इसलिए 'आर्शीवाद' अशुद्ध है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "वर्तनी",
+    "difficulty": "medium",
+    "question_en": "'बहुत अधिक' अर्थ वाले शब्द की शुद्ध वर्तनी कौन-सी है?",
+    "question_hi": "'बहुत अधिक' अर्थ वाले शब्द की शुद्ध वर्तनी कौन-सी है?",
+    "options": [
+      {
+        "en": "अत्याधिक",
+        "hi": "अत्याधिक"
+      },
+      {
+        "en": "अत्यधीक",
+        "hi": "अत्यधीक"
+      },
+      {
+        "en": "अत्यधिक",
+        "hi": "अत्यधिक"
+      },
+      {
+        "en": "अतयधिक",
+        "hi": "अतयधिक"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Ati + adhik = atyadhik (yan sandhi), not atyaadhik.",
+    "explanation_hi": "अति + अधिक = अत्यधिक (यण संधि)। 'इ' का 'य्' हो जाता है और 'अ' ज्यों-का-त्यों रहता है, इसलिए 'अत्याधिक' अशुद्ध है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "वर्तनी",
+    "difficulty": "hard",
+    "question_en": "'ऊपर कहा गया' अर्थ वाले शब्द का शुद्ध रूप चुनिए।",
+    "question_hi": "'ऊपर कहा गया' अर्थ वाले शब्द का शुद्ध रूप चुनिए।",
+    "options": [
+      {
+        "en": "उपरोक्त",
+        "hi": "उपरोक्त"
+      },
+      {
+        "en": "उपर्युक्त",
+        "hi": "उपर्युक्त"
+      },
+      {
+        "en": "उपर्यूक्त",
+        "hi": "उपर्यूक्त"
+      },
+      {
+        "en": "ऊपर्युक्त",
+        "hi": "ऊपर्युक्त"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Upari + ukt = uparyukt; 'uparokt' is a common but incorrect form.",
+    "explanation_hi": "उपरि + उक्त = उपर्युक्त (यण संधि)। 'उपरोक्त' बोलचाल में प्रचलित है, पर व्याकरण की दृष्टि से अशुद्ध है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "वर्तनी",
+    "difficulty": "medium",
+    "question_en": "'सुंदरता' के अर्थ वाले शब्द की शुद्ध वर्तनी कौन-सी है?",
+    "question_hi": "'सुंदरता' के अर्थ वाले शब्द की शुद्ध वर्तनी कौन-सी है?",
+    "options": [
+      {
+        "en": "सोंदर्य",
+        "hi": "सोंदर्य"
+      },
+      {
+        "en": "सौदर्य",
+        "hi": "सौदर्य"
+      },
+      {
+        "en": "सौंन्दर्य",
+        "hi": "सौंन्दर्य"
+      },
+      {
+        "en": "सौंदर्य",
+        "hi": "सौंदर्य"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Correct spelling is saundarya.",
+    "explanation_hi": "शुद्ध रूप 'सौंदर्य' (सौन्दर्य) है — 'सुंदर' में 'उ' की वृद्धि होकर 'औ' बनता है। अनुस्वार और पंचमाक्षर दोनों एक साथ ('सौंन्') लगाना अशुद्ध है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "वर्तनी",
+    "difficulty": "medium",
+    "question_en": "'प्रमाण से सिद्ध' अर्थ वाले विशेषण की शुद्ध वर्तनी चुनिए।",
+    "question_hi": "'प्रमाण से सिद्ध' अर्थ वाले विशेषण की शुद्ध वर्तनी चुनिए।",
+    "options": [
+      {
+        "en": "प्रामाणिक",
+        "hi": "प्रामाणिक"
+      },
+      {
+        "en": "प्रमाणिक",
+        "hi": "प्रमाणिक"
+      },
+      {
+        "en": "प्रामाणीक",
+        "hi": "प्रामाणीक"
+      },
+      {
+        "en": "परामाणिक",
+        "hi": "परामाणिक"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Adding -ik lengthens the first vowel: pramaan becomes praamaanik.",
+    "explanation_hi": "'प्रमाण' में 'इक' प्रत्यय जुड़ने पर पहले स्वर की वृद्धि होती है — प्रमाण → प्रामाणिक। इसी नियम से इतिहास → ऐतिहासिक, समाज → सामाजिक।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "वर्तनी",
+    "difficulty": "hard",
+    "question_en": "निम्नलिखित में से अशुद्ध वर्तनी वाला शब्द चुनिए।",
+    "question_hi": "निम्नलिखित में से अशुद्ध वर्तनी वाला शब्द चुनिए।",
+    "options": [
+      {
+        "en": "श्रीमती",
+        "hi": "श्रीमती"
+      },
+      {
+        "en": "द्वंद्व",
+        "hi": "द्वंद्व"
+      },
+      {
+        "en": "ऐतिहासिक",
+        "hi": "ऐतिहासिक"
+      },
+      {
+        "en": "अंतर्ध्यान",
+        "hi": "अंतर्ध्यान"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "The correct word is antardhaan (to vanish), not antardhyaan.",
+    "explanation_hi": "शुद्ध शब्द 'अंतर्धान' (अंतः + धान, अर्थात् लुप्त होना) है; इसमें 'ध्यान' नहीं आता। शेष तीनों शब्द शुद्ध हैं।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "वर्तनी",
+    "difficulty": "hard",
+    "question_en": "'बिना अधिकार के' अर्थ वाले शब्द की शुद्ध वर्तनी चुनिए।",
+    "question_hi": "'बिना अधिकार के' अर्थ वाले शब्द की शुद्ध वर्तनी चुनिए।",
+    "options": [
+      {
+        "en": "अनाधिकार",
+        "hi": "अनाधिकार"
+      },
+      {
+        "en": "अनधिकार",
+        "hi": "अनधिकार"
+      },
+      {
+        "en": "अनधीकार",
+        "hi": "अनधीकार"
+      },
+      {
+        "en": "अनाधीकार",
+        "hi": "अनाधीकार"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "An + adhikaar = anadhikaar; no long 'aa' is formed.",
+    "explanation_hi": "अन् + अधिकार = अनधिकार। 'अन्' उपसर्ग के बाद 'अ' जुड़ता है, दीर्घ 'आ' नहीं बनता; इसलिए 'अनाधिकार' अशुद्ध है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "वर्तनी",
+    "difficulty": "hard",
+    "question_en": "'संसार त्याग देने वाला' अर्थ वाले शब्द की शुद्ध वर्तनी कौन-सी है?",
+    "question_hi": "'संसार त्याग देने वाला' अर्थ वाले शब्द की शुद्ध वर्तनी कौन-सी है?",
+    "options": [
+      {
+        "en": "सन्यासी",
+        "hi": "सन्यासी"
+      },
+      {
+        "en": "संन्यासी",
+        "hi": "संन्यासी"
+      },
+      {
+        "en": "सन्यासि",
+        "hi": "सन्यासि"
+      },
+      {
+        "en": "सनयासी",
+        "hi": "सनयासी"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Sam + nyaas gives sannyaas, so sannyaasi needs both n-sounds.",
+    "explanation_hi": "सम् + न्यास = संन्यास, इसलिए शुद्ध रूप 'संन्यासी' (या सन्न्यासी) है। 'सन्यासी' में एक 'न्' छूट जाता है, यह अशुद्ध है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "वर्तनी",
+    "difficulty": "easy",
+    "question_en": "'इम्तिहान' के अर्थ वाले तत्सम शब्द की शुद्ध वर्तनी चुनिए।",
+    "question_hi": "'इम्तिहान' के अर्थ वाले तत्सम शब्द की शुद्ध वर्तनी चुनिए।",
+    "options": [
+      {
+        "en": "परीक्षा",
+        "hi": "परीक्षा"
+      },
+      {
+        "en": "परिक्षा",
+        "hi": "परिक्षा"
+      },
+      {
+        "en": "परीछा",
+        "hi": "परीछा"
+      },
+      {
+        "en": "परिक्शा",
+        "hi": "परिक्शा"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Pari + iksha = pariksha with a long 'ee'.",
+    "explanation_hi": "परि + ईक्षा = परीक्षा (दीर्घ संधि), इसलिए 'री' दीर्घ होता है और 'क्ष' संयुक्ताक्षर आता है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "वर्तनी",
+    "difficulty": "medium",
+    "question_en": "निम्नलिखित में से किस शब्द की वर्तनी अशुद्ध है?",
+    "question_hi": "निम्नलिखित में से किस शब्द की वर्तनी अशुद्ध है?",
+    "options": [
+      {
+        "en": "पूज्य",
+        "hi": "पूज्य"
+      },
+      {
+        "en": "मंत्रिमंडल",
+        "hi": "मंत्रिमंडल"
+      },
+      {
+        "en": "पूज्यनीय",
+        "hi": "पूज्यनीय"
+      },
+      {
+        "en": "कृपया",
+        "hi": "कृपया"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Pujyaniya wrongly doubles two suffixes; pujya or pujaniya is correct.",
+    "explanation_hi": "'पूज्य' और 'पूजनीय' दोनों शुद्ध हैं, पर 'पूज्यनीय' में 'य' और 'अनीय' दोनों प्रत्ययों का दोहराव है, अतः यह अशुद्ध है। 'मंत्रिमंडल' (मंत्री का 'ई' ह्रस्व) शुद्ध है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "वाक्य शुद्धि",
+    "difficulty": "easy",
+    "question_en": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (मुझे/मेरे को)",
+    "question_hi": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (मुझे/मेरे को)",
+    "options": [
+      {
+        "en": "मेरे को घर जाना है।",
+        "hi": "मेरे को घर जाना है।"
+      },
+      {
+        "en": "मुझे घर जाना है।",
+        "hi": "मुझे घर जाना है।"
+      },
+      {
+        "en": "मुझको को घर जाना है।",
+        "hi": "मुझको को घर जाना है।"
+      },
+      {
+        "en": "मेरे से घर जाना है।",
+        "hi": "मेरे से घर जाना है।"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Standard Hindi uses 'mujhe', not 'mere ko'.",
+    "explanation_hi": "मानक हिंदी में 'मेरे को' का प्रयोग अशुद्ध माना जाता है; 'मुझे' या 'मुझको' लिखा जाता है। 'मुझको को' में परसर्ग का दोहराव है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "वाक्य शुद्धि",
+    "difficulty": "medium",
+    "question_en": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (प्रातःकाल)",
+    "question_hi": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (प्रातःकाल)",
+    "options": [
+      {
+        "en": "वह प्रातःकाल के समय टहलता है।",
+        "hi": "वह प्रातःकाल के समय टहलता है।"
+      },
+      {
+        "en": "वह प्रातःकाल में समय टहलता है।",
+        "hi": "वह प्रातःकाल में समय टहलता है।"
+      },
+      {
+        "en": "वह प्रातःकाल टहलता है।",
+        "hi": "वह प्रातःकाल टहलता है।"
+      },
+      {
+        "en": "वह सुबह प्रातःकाल टहलता है।",
+        "hi": "वह सुबह प्रातःकाल टहलता है।"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Praatahkaal already means morning time, so adding 'ke samay' is redundant.",
+    "explanation_hi": "'प्रातःकाल' में 'काल' का अर्थ ही समय है, इसलिए 'के समय' या 'सुबह' जोड़ना पुनरुक्ति दोष है। शुद्ध वाक्य है — 'वह प्रातःकाल टहलता है।'",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "वाक्य शुद्धि",
+    "difficulty": "medium",
+    "question_en": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (अवकाश हेतु प्रार्थना)",
+    "question_hi": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (अवकाश हेतु प्रार्थना)",
+    "options": [
+      {
+        "en": "कृपया आज अवकाश देने की कृपा करें।",
+        "hi": "कृपया आज अवकाश देने की कृपा करें।"
+      },
+      {
+        "en": "आज अवकाश देने की कृपा करें।",
+        "hi": "आज अवकाश देने की कृपा करें।"
+      },
+      {
+        "en": "कृपया आज की अवकाश दें।",
+        "hi": "कृपया आज की अवकाश दें।"
+      },
+      {
+        "en": "कृपा करके कृपया अवकाश दें।",
+        "hi": "कृपा करके कृपया अवकाश दें।"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Using both kripaya and kripa karein is redundant.",
+    "explanation_hi": "'कृपया' और 'कृपा करें' एक साथ लिखना पुनरुक्ति है। 'अवकाश' पुल्लिंग है, इसलिए 'आज की अवकाश' भी अशुद्ध है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "वाक्य शुद्धि",
+    "difficulty": "medium",
+    "question_en": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (दही)",
+    "question_hi": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (दही)",
+    "options": [
+      {
+        "en": "मेरा दही खट्टी है।",
+        "hi": "मेरा दही खट्टी है।"
+      },
+      {
+        "en": "मेरी दही खट्टा है।",
+        "hi": "मेरी दही खट्टा है।"
+      },
+      {
+        "en": "मेरा दही खट्टा है।",
+        "hi": "मेरा दही खट्टा है।"
+      },
+      {
+        "en": "मेरी दही खट्टी है।",
+        "hi": "मेरी दही खट्टी है।"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Dahi is masculine, so both modifiers must be masculine.",
+    "explanation_hi": "मानक हिंदी में 'दही' पुल्लिंग है, इसलिए सर्वनाम और विशेषण दोनों पुल्लिंग होंगे — 'मेरा दही खट्टा है।'",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "वाक्य शुद्धि",
+    "difficulty": "medium",
+    "question_en": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (रहस्य)",
+    "question_hi": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (रहस्य)",
+    "options": [
+      {
+        "en": "उसने एक गोपनीय रहस्य बताया।",
+        "hi": "उसने एक गोपनीय रहस्य बताया।"
+      },
+      {
+        "en": "उसने एक रहस्य बताया।",
+        "hi": "उसने एक रहस्य बताया।"
+      },
+      {
+        "en": "उसने रहस्य को बताई।",
+        "hi": "उसने रहस्य को बताई।"
+      },
+      {
+        "en": "उसने एक रहस्य बताई।",
+        "hi": "उसने एक रहस्य बताई।"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "A secret is already confidential; rahasya is masculine, so 'bataya'.",
+    "explanation_hi": "'रहस्य' स्वयं गोपनीय बात है, इसलिए 'गोपनीय रहस्य' पुनरुक्ति है। 'रहस्य' पुल्लिंग है, अतः क्रिया 'बताया' होगी, 'बताई' नहीं।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "वाक्य शुद्धि",
+    "difficulty": "medium",
+    "question_en": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (प्रत्येक)",
+    "question_hi": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (प्रत्येक)",
+    "options": [
+      {
+        "en": "प्रत्येक व्यक्ति को अपना कर्तव्य निभाना चाहिए।",
+        "hi": "प्रत्येक व्यक्ति को अपना कर्तव्य निभाना चाहिए।"
+      },
+      {
+        "en": "प्रत्येक व्यक्तियों को अपना कर्तव्य निभाना चाहिए।",
+        "hi": "प्रत्येक व्यक्तियों को अपना कर्तव्य निभाना चाहिए।"
+      },
+      {
+        "en": "हर एक व्यक्तियों को अपने कर्तव्य निभाने चाहिए।",
+        "hi": "हर एक व्यक्तियों को अपने कर्तव्य निभाने चाहिए।"
+      },
+      {
+        "en": "प्रत्येक व्यक्ति को अपने कर्तव्य निभानी चाहिए।",
+        "hi": "प्रत्येक व्यक्ति को अपने कर्तव्य निभानी चाहिए।"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "'Pratyek' takes a singular noun.",
+    "explanation_hi": "'प्रत्येक' और 'हर एक' के साथ संज्ञा सदा एकवचन में आती है, इसलिए 'प्रत्येक व्यक्तियों' अशुद्ध है। 'कर्तव्य' पुल्लिंग है, अतः 'निभानी' भी अशुद्ध है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "वाक्य शुद्धि",
+    "difficulty": "medium",
+    "question_en": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (सज्जन)",
+    "question_hi": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (सज्जन)",
+    "options": [
+      {
+        "en": "वह एक सज्जन पुरुष है।",
+        "hi": "वह एक सज्जन पुरुष है।"
+      },
+      {
+        "en": "वह एक सज्जन है।",
+        "hi": "वह एक सज्जन है।"
+      },
+      {
+        "en": "वह एक सज्जन व्यक्ति पुरुष है।",
+        "hi": "वह एक सज्जन व्यक्ति पुरुष है।"
+      },
+      {
+        "en": "वे एक सज्जन है।",
+        "hi": "वे एक सज्जन है।"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Sajjan already means a good man, so 'purush' is redundant.",
+    "explanation_hi": "'सज्जन' का अर्थ ही 'भला पुरुष' है, इसलिए 'सज्जन पुरुष' में पुनरुक्ति है। 'वे' के साथ 'है' लगाना वचन-दोष है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "वाक्य शुद्धि",
+    "difficulty": "medium",
+    "question_en": "निम्नलिखित में से अशुद्ध वाक्य चुनिए।",
+    "question_hi": "निम्नलिखित में से अशुद्ध वाक्य चुनिए।",
+    "options": [
+      {
+        "en": "मैं आपका आभारी हूँ।",
+        "hi": "मैं आपका आभारी हूँ।"
+      },
+      {
+        "en": "उसने कल पुस्तक पढ़ी।",
+        "hi": "उसने कल पुस्तक पढ़ी।"
+      },
+      {
+        "en": "सीता ने गीत गाया।",
+        "hi": "सीता ने गीत गाया।"
+      },
+      {
+        "en": "राम ने रोटी खाया।",
+        "hi": "राम ने रोटी खाया।"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "With 'ne', the verb agrees with the object; roti is feminine, so 'khaayi'.",
+    "explanation_hi": "'ने' लगने पर सकर्मक क्रिया कर्म के लिंग-वचन के अनुसार चलती है। 'रोटी' स्त्रीलिंग है, इसलिए शुद्ध वाक्य होगा — 'राम ने रोटी खाई।'",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "वाक्य शुद्धि",
+    "difficulty": "medium",
+    "question_en": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (तुलना)",
+    "question_hi": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (तुलना)",
+    "options": [
+      {
+        "en": "राम श्याम से अधिक बुद्धिमान है।",
+        "hi": "राम श्याम से अधिक बुद्धिमान है।"
+      },
+      {
+        "en": "राम श्याम से अधिक बुद्धिमानतर है।",
+        "hi": "राम श्याम से अधिक बुद्धिमानतर है।"
+      },
+      {
+        "en": "राम श्याम की अपेक्षा अधिक बुद्धिमानतम है।",
+        "hi": "राम श्याम की अपेक्षा अधिक बुद्धिमानतम है।"
+      },
+      {
+        "en": "राम श्याम से सबसे बुद्धिमान है।",
+        "hi": "राम श्याम से सबसे बुद्धिमान है।"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "'Se adhik' alone marks comparison; adding -tar or -tam is double comparison.",
+    "explanation_hi": "दो के बीच तुलना में 'से अधिक' पर्याप्त है; 'अधिक' के साथ 'तर' जोड़ना दोहरी तुलना है। 'सबसे' या 'तम' तीन या अधिक की तुलना में आते हैं।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "वाक्य शुद्धि",
+    "difficulty": "hard",
+    "question_en": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (चुकना)",
+    "question_hi": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (चुकना)",
+    "options": [
+      {
+        "en": "मैं यह पुस्तक पढ़ चुका हूँ।",
+        "hi": "मैं यह पुस्तक पढ़ चुका हूँ।"
+      },
+      {
+        "en": "मैंने यह पुस्तक पढ़ चुका हूँ।",
+        "hi": "मैंने यह पुस्तक पढ़ चुका हूँ।"
+      },
+      {
+        "en": "मैंने यह पुस्तक पढ़ चुकी है।",
+        "hi": "मैंने यह पुस्तक पढ़ चुकी है।"
+      },
+      {
+        "en": "मुझे यह पुस्तक पढ़ चुका।",
+        "hi": "मुझे यह पुस्तक पढ़ चुका।"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Compound verbs with 'chukna' do not take 'ne' with the subject.",
+    "explanation_hi": "'चुकना', 'सकना', 'लगना' जैसी सहायक क्रियाओं वाली संयुक्त क्रिया में कर्ता के साथ 'ने' नहीं लगता। अतः 'मैं ... पढ़ चुका हूँ' शुद्ध है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "वाक्य शुद्धि",
+    "difficulty": "easy",
+    "question_en": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (आदरसूचक 'आप')",
+    "question_hi": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (आदरसूचक 'आप')",
+    "options": [
+      {
+        "en": "आप कल आना।",
+        "hi": "आप कल आना।"
+      },
+      {
+        "en": "आप कल आइएगा।",
+        "hi": "आप कल आइएगा।"
+      },
+      {
+        "en": "आप कल आ।",
+        "hi": "आप कल आ।"
+      },
+      {
+        "en": "आप कल आओगा।",
+        "hi": "आप कल आओगा।"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Respectful 'aap' takes the polite verb form 'aaiyega'.",
+    "explanation_hi": "'आप' आदरसूचक सर्वनाम है, इसलिए इसके साथ आदरसूचक क्रिया रूप 'आइए/आइएगा' आता है। 'आना' 'तुम' के साथ और 'आ' 'तू' के साथ प्रयुक्त होता है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "वाक्य शुद्धि",
+    "difficulty": "medium",
+    "question_en": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (अनेक)",
+    "question_hi": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (अनेक)",
+    "options": [
+      {
+        "en": "देश में अनेकों समस्याएँ हैं।",
+        "hi": "देश में अनेकों समस्याएँ हैं।"
+      },
+      {
+        "en": "देश में अनेक समस्याएँ हैं।",
+        "hi": "देश में अनेक समस्याएँ हैं।"
+      },
+      {
+        "en": "देश में अनेक समस्याओं हैं।",
+        "hi": "देश में अनेक समस्याओं हैं।"
+      },
+      {
+        "en": "देश में अनेकों समस्या है।",
+        "hi": "देश में अनेकों समस्या है।"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "'Anek' is already plural, so 'anekon' is incorrect.",
+    "explanation_hi": "'अनेक' स्वयं बहुवचन (एक से अधिक) का बोध कराता है, इसलिए 'अनेकों' अशुद्ध है। 'समस्याओं' विभक्ति-रहित स्थिति में प्रयोग नहीं होगा।",
+    "expected": true
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "मुहावरे–लोकोक्तियाँ",
+    "difficulty": "easy",
+    "question_en": "'आँख का तारा' मुहावरे का अर्थ क्या है?",
+    "question_hi": "'आँख का तारा' मुहावरे का अर्थ क्या है?",
+    "options": [
+      {
+        "en": "बहुत प्यारा",
+        "hi": "बहुत प्यारा"
+      },
+      {
+        "en": "कट्टर शत्रु",
+        "hi": "कट्टर शत्रु"
+      },
+      {
+        "en": "घमंडी व्यक्ति",
+        "hi": "घमंडी व्यक्ति"
+      },
+      {
+        "en": "चालाक व्यक्ति",
+        "hi": "चालाक व्यक्ति"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Aankh ka taara means a very dear person.",
+    "explanation_hi": "'आँख का तारा' का अर्थ है अत्यंत प्रिय व्यक्ति — 'इकलौता बेटा माँ की आँख का तारा है।'",
+    "expected": true
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "मुहावरे–लोकोक्तियाँ",
+    "difficulty": "easy",
+    "question_en": "'नौ दो ग्यारह होना' मुहावरे का अर्थ क्या है?",
+    "question_hi": "'नौ दो ग्यारह होना' मुहावरे का अर्थ क्या है?",
+    "options": [
+      {
+        "en": "हिसाब लगाना",
+        "hi": "हिसाब लगाना"
+      },
+      {
+        "en": "भाग जाना",
+        "hi": "भाग जाना"
+      },
+      {
+        "en": "लाभ होना",
+        "hi": "लाभ होना"
+      },
+      {
+        "en": "धोखा देना",
+        "hi": "धोखा देना"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Nau do gyarah hona means to run away.",
+    "explanation_hi": "'नौ दो ग्यारह होना' का अर्थ है चुपके से भाग जाना — 'पुलिस को देखते ही चोर नौ दो ग्यारह हो गया।'",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "मुहावरे–लोकोक्तियाँ",
+    "difficulty": "medium",
+    "question_en": "'दाँतों तले उँगली दबाना' मुहावरे का अर्थ क्या है?",
+    "question_hi": "'दाँतों तले उँगली दबाना' मुहावरे का अर्थ क्या है?",
+    "options": [
+      {
+        "en": "डर जाना",
+        "hi": "डर जाना"
+      },
+      {
+        "en": "पछताना",
+        "hi": "पछताना"
+      },
+      {
+        "en": "आश्चर्यचकित होना",
+        "hi": "आश्चर्यचकित होना"
+      },
+      {
+        "en": "क्रोध करना",
+        "hi": "क्रोध करना"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "It means to be astonished.",
+    "explanation_hi": "'दाँतों तले उँगली दबाना' का अर्थ है बहुत अचंभित होना — 'बालक की प्रतिभा देखकर सब दाँतों तले उँगली दबा गए।' पछताने के लिए 'हाथ मलना' मुहावरा है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "मुहावरे–लोकोक्तियाँ",
+    "difficulty": "medium",
+    "question_en": "'ऊँट के मुँह में जीरा' लोकोक्ति का अर्थ क्या है?",
+    "question_hi": "'ऊँट के मुँह में जीरा' लोकोक्ति का अर्थ क्या है?",
+    "options": [
+      {
+        "en": "अत्यधिक लाभ होना",
+        "hi": "अत्यधिक लाभ होना"
+      },
+      {
+        "en": "बड़े व्यक्ति का छोटा काम",
+        "hi": "बड़े व्यक्ति का छोटा काम"
+      },
+      {
+        "en": "स्वाद बिगड़ जाना",
+        "hi": "स्वाद बिगड़ जाना"
+      },
+      {
+        "en": "आवश्यकता से बहुत कम वस्तु मिलना",
+        "hi": "आवश्यकता से बहुत कम वस्तु मिलना"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "It means getting far too little compared with the need.",
+    "explanation_hi": "विशाल ऊँट के मुँह में एक जीरे का दाना कुछ भी नहीं होता; अतः इसका अर्थ है आवश्यकता की तुलना में बहुत थोड़ी वस्तु मिलना।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "मुहावरे–लोकोक्तियाँ",
+    "difficulty": "medium",
+    "question_en": "'अधजल गगरी छलकत जाय' लोकोक्ति का अर्थ क्या है?",
+    "question_hi": "'अधजल गगरी छलकत जाय' लोकोक्ति का अर्थ क्या है?",
+    "options": [
+      {
+        "en": "कम ज्ञान वाला अधिक दिखावा करता है",
+        "hi": "कम ज्ञान वाला अधिक दिखावा करता है"
+      },
+      {
+        "en": "धीरे-धीरे काम पूरा होता है",
+        "hi": "धीरे-धीरे काम पूरा होता है"
+      },
+      {
+        "en": "आधा काम करके छोड़ देना",
+        "hi": "आधा काम करके छोड़ देना"
+      },
+      {
+        "en": "संचय करने से धन बढ़ता है",
+        "hi": "संचय करने से धन बढ़ता है"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "A person with little knowledge shows off the most.",
+    "explanation_hi": "आधी भरी गगरी अधिक छलकती है; इसी प्रकार अल्पज्ञ व्यक्ति अपने थोड़े ज्ञान का अधिक प्रदर्शन करता है, जबकि ज्ञानी गंभीर रहता है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "मुहावरे–लोकोक्तियाँ",
+    "difficulty": "medium",
+    "question_en": "'घी के दीये जलाना' मुहावरे का अर्थ क्या है?",
+    "question_hi": "'घी के दीये जलाना' मुहावरे का अर्थ क्या है?",
+    "options": [
+      {
+        "en": "धन बर्बाद करना",
+        "hi": "धन बर्बाद करना"
+      },
+      {
+        "en": "खुशियाँ मनाना",
+        "hi": "खुशियाँ मनाना"
+      },
+      {
+        "en": "पूजा-पाठ करना",
+        "hi": "पूजा-पाठ करना"
+      },
+      {
+        "en": "अंधकार दूर करना",
+        "hi": "अंधकार दूर करना"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "It means to celebrate joyfully.",
+    "explanation_hi": "'घी के दीये जलाना' का अर्थ है अत्यधिक प्रसन्न होकर उत्सव मनाना — 'बेटे के लौटने पर घर में घी के दीये जलाए गए।'",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "मुहावरे–लोकोक्तियाँ",
+    "difficulty": "hard",
+    "question_en": "'अंधों में काना राजा' लोकोक्ति का सही अर्थ क्या है?",
+    "question_hi": "'अंधों में काना राजा' लोकोक्ति का सही अर्थ क्या है?",
+    "options": [
+      {
+        "en": "अंधे व्यक्ति की सहायता करना",
+        "hi": "अंधे व्यक्ति की सहायता करना"
+      },
+      {
+        "en": "शासक का पक्षपात करना",
+        "hi": "शासक का पक्षपात करना"
+      },
+      {
+        "en": "मूर्खों के बीच थोड़ा जानने वाला भी श्रेष्ठ माना जाता है",
+        "hi": "मूर्खों के बीच थोड़ा जानने वाला भी श्रेष्ठ माना जाता है"
+      },
+      {
+        "en": "दोषी को राजा बना देना",
+        "hi": "दोषी को राजा बना देना"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Among the ignorant, a person with a little knowledge is treated as superior.",
+    "explanation_hi": "जहाँ सब अंधे हों वहाँ एक आँख वाला भी राजा बन जाता है; अर्थात् अज्ञानियों के बीच अल्प ज्ञानी भी विद्वान समझा जाता है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "मुहावरे–लोकोक्तियाँ",
+    "difficulty": "medium",
+    "question_en": "'आस्तीन का साँप' मुहावरे का अर्थ क्या है?",
+    "question_hi": "'आस्तीन का साँप' मुहावरे का अर्थ क्या है?",
+    "options": [
+      {
+        "en": "ज़हरीला जीव",
+        "hi": "ज़हरीला जीव"
+      },
+      {
+        "en": "अत्यंत क्रोधी व्यक्ति",
+        "hi": "अत्यंत क्रोधी व्यक्ति"
+      },
+      {
+        "en": "छिपा हुआ ख़ज़ाना",
+        "hi": "छिपा हुआ ख़ज़ाना"
+      },
+      {
+        "en": "मित्र बनकर धोखा देने वाला",
+        "hi": "मित्र बनकर धोखा देने वाला"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "It means a friend who betrays, a snake in the sleeve.",
+    "explanation_hi": "आस्तीन (बाँह) में छिपा साँप पास रहकर ही डसता है; अतः यह मुहावरा कपटी मित्र या अपने बीच के धोखेबाज़ के लिए प्रयुक्त होता है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "मुहावरे–लोकोक्तियाँ",
+    "difficulty": "easy",
+    "question_en": "'टेढ़ी खीर' मुहावरे का अर्थ क्या है?",
+    "question_hi": "'टेढ़ी खीर' मुहावरे का अर्थ क्या है?",
+    "options": [
+      {
+        "en": "कठिन कार्य",
+        "hi": "कठिन कार्य"
+      },
+      {
+        "en": "स्वादिष्ट भोजन",
+        "hi": "स्वादिष्ट भोजन"
+      },
+      {
+        "en": "बेकार वस्तु",
+        "hi": "बेकार वस्तु"
+      },
+      {
+        "en": "उलझी हुई बात कहना",
+        "hi": "उलझी हुई बात कहना"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Tedhi kheer means a very difficult task.",
+    "explanation_hi": "'टेढ़ी खीर' का अर्थ है ऐसा कार्य जो बहुत कठिन हो — 'बिना तैयारी के यह परीक्षा पास करना टेढ़ी खीर है।'",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "मुहावरे–लोकोक्तियाँ",
+    "difficulty": "hard",
+    "question_en": "निम्नलिखित में से कौन-सा मुहावरा–अर्थ युग्म सही नहीं है?",
+    "question_hi": "निम्नलिखित में से कौन-सा मुहावरा–अर्थ युग्म सही नहीं है?",
+    "options": [
+      {
+        "en": "हाथ मलना – पछताना",
+        "hi": "हाथ मलना – पछताना"
+      },
+      {
+        "en": "गागर में सागर भरना – व्यर्थ परिश्रम करना",
+        "hi": "गागर में सागर भरना – व्यर्थ परिश्रम करना"
+      },
+      {
+        "en": "पानी-पानी होना – लज्जित होना",
+        "hi": "पानी-पानी होना – लज्जित होना"
+      },
+      {
+        "en": "कान भरना – चुगली करना",
+        "hi": "कान भरना – चुगली करना"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Gaagar mein saagar means saying much in few words, not wasted effort.",
+    "explanation_hi": "'गागर में सागर भरना' का अर्थ है थोड़े शब्दों में बहुत अधिक बात कह देना (जैसे बिहारी के दोहे), व्यर्थ परिश्रम नहीं। शेष तीनों युग्म सही हैं।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "मुहावरे–लोकोक्तियाँ",
+    "difficulty": "hard",
+    "question_en": "'का बरखा जब कृषी सुखाने' लोकोक्ति का अर्थ क्या है?",
+    "question_hi": "'का बरखा जब कृषी सुखाने' लोकोक्ति का अर्थ क्या है?",
+    "options": [
+      {
+        "en": "वर्षा से फ़सल नष्ट होना",
+        "hi": "वर्षा से फ़सल नष्ट होना"
+      },
+      {
+        "en": "परिश्रम का फल मीठा होना",
+        "hi": "परिश्रम का फल मीठा होना"
+      },
+      {
+        "en": "अवसर निकल जाने पर सहायता व्यर्थ है",
+        "hi": "अवसर निकल जाने पर सहायता व्यर्थ है"
+      },
+      {
+        "en": "किसान का भाग्य कठोर होना",
+        "hi": "किसान का भाग्य कठोर होना"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Help that comes after the moment has passed is useless.",
+    "explanation_hi": "खेती सूख जाने के बाद वर्षा का कोई लाभ नहीं; अर्थात् समय बीत जाने पर किया गया उपाय या मिली सहायता व्यर्थ होती है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "गद्यांश",
+    "difficulty": "easy",
+    "question_en": "निम्नलिखित गद्यांश को पढ़कर प्रश्न का उत्तर दीजिए।\n\nपुस्तकें मनुष्य की सबसे अच्छी मित्र होती हैं। वे बिना किसी स्वार्थ के हमें ज्ञान देती हैं और कठिन समय में धैर्य बँधाती हैं। जो व्यक्ति नियमित रूप से अच्छी पुस्तकें पढ़ता है, उसके विचारों में गहराई आती है तथा उसकी भाषा समृद्ध होती है। आज के डिजिटल युग में भी पुस्तकों का महत्त्व कम नहीं हुआ है, केवल उनका रूप बदल गया है। अब ई-पुस्तकें और ऑडियो-पुस्तकें भी पाठकों तक पहुँच रही हैं। आवश्यकता इस बात की है कि विद्यार्थी केवल परीक्षा के लिए नहीं, बल्कि आनंद और जिज्ञासा के लिए भी पढ़ें।\n\nप्रश्न: गद्यांश के अनुसार पुस्तकें मनुष्य की क्या होती हैं?",
+    "question_hi": "निम्नलिखित गद्यांश को पढ़कर प्रश्न का उत्तर दीजिए।\n\nपुस्तकें मनुष्य की सबसे अच्छी मित्र होती हैं। वे बिना किसी स्वार्थ के हमें ज्ञान देती हैं और कठिन समय में धैर्य बँधाती हैं। जो व्यक्ति नियमित रूप से अच्छी पुस्तकें पढ़ता है, उसके विचारों में गहराई आती है तथा उसकी भाषा समृद्ध होती है। आज के डिजिटल युग में भी पुस्तकों का महत्त्व कम नहीं हुआ है, केवल उनका रूप बदल गया है। अब ई-पुस्तकें और ऑडियो-पुस्तकें भी पाठकों तक पहुँच रही हैं। आवश्यकता इस बात की है कि विद्यार्थी केवल परीक्षा के लिए नहीं, बल्कि आनंद और जिज्ञासा के लिए भी पढ़ें।\n\nप्रश्न: गद्यांश के अनुसार पुस्तकें मनुष्य की क्या होती हैं?",
+    "options": [
+      {
+        "en": "सबसे अच्छी मित्र",
+        "hi": "सबसे अच्छी मित्र"
+      },
+      {
+        "en": "केवल परीक्षा का साधन",
+        "hi": "केवल परीक्षा का साधन"
+      },
+      {
+        "en": "मनोरंजन का एकमात्र साधन",
+        "hi": "मनोरंजन का एकमात्र साधन"
+      },
+      {
+        "en": "धन कमाने का माध्यम",
+        "hi": "धन कमाने का माध्यम"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The first sentence calls books man's best friends.",
+    "explanation_hi": "गद्यांश के पहले ही वाक्य में कहा गया है कि 'पुस्तकें मनुष्य की सबसे अच्छी मित्र होती हैं।'",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "गद्यांश",
+    "difficulty": "medium",
+    "question_en": "निम्नलिखित गद्यांश को पढ़कर प्रश्न का उत्तर दीजिए।\n\nपुस्तकें मनुष्य की सबसे अच्छी मित्र होती हैं। वे बिना किसी स्वार्थ के हमें ज्ञान देती हैं और कठिन समय में धैर्य बँधाती हैं। जो व्यक्ति नियमित रूप से अच्छी पुस्तकें पढ़ता है, उसके विचारों में गहराई आती है तथा उसकी भाषा समृद्ध होती है। आज के डिजिटल युग में भी पुस्तकों का महत्त्व कम नहीं हुआ है, केवल उनका रूप बदल गया है। अब ई-पुस्तकें और ऑडियो-पुस्तकें भी पाठकों तक पहुँच रही हैं। आवश्यकता इस बात की है कि विद्यार्थी केवल परीक्षा के लिए नहीं, बल्कि आनंद और जिज्ञासा के लिए भी पढ़ें।\n\nप्रश्न: डिजिटल युग में पुस्तकों के विषय में लेखक का क्या मत है?",
+    "question_hi": "निम्नलिखित गद्यांश को पढ़कर प्रश्न का उत्तर दीजिए।\n\nपुस्तकें मनुष्य की सबसे अच्छी मित्र होती हैं। वे बिना किसी स्वार्थ के हमें ज्ञान देती हैं और कठिन समय में धैर्य बँधाती हैं। जो व्यक्ति नियमित रूप से अच्छी पुस्तकें पढ़ता है, उसके विचारों में गहराई आती है तथा उसकी भाषा समृद्ध होती है। आज के डिजिटल युग में भी पुस्तकों का महत्त्व कम नहीं हुआ है, केवल उनका रूप बदल गया है। अब ई-पुस्तकें और ऑडियो-पुस्तकें भी पाठकों तक पहुँच रही हैं। आवश्यकता इस बात की है कि विद्यार्थी केवल परीक्षा के लिए नहीं, बल्कि आनंद और जिज्ञासा के लिए भी पढ़ें।\n\nप्रश्न: डिजिटल युग में पुस्तकों के विषय में लेखक का क्या मत है?",
+    "options": [
+      {
+        "en": "पुस्तकों का महत्त्व समाप्त हो गया है",
+        "hi": "पुस्तकों का महत्त्व समाप्त हो गया है"
+      },
+      {
+        "en": "पुस्तकों का महत्त्व बना हुआ है, केवल रूप बदला है",
+        "hi": "पुस्तकों का महत्त्व बना हुआ है, केवल रूप बदला है"
+      },
+      {
+        "en": "केवल छपी पुस्तकें ही उपयोगी हैं",
+        "hi": "केवल छपी पुस्तकें ही उपयोगी हैं"
+      },
+      {
+        "en": "ई-पुस्तकें पढ़ना हानिकारक है",
+        "hi": "ई-पुस्तकें पढ़ना हानिकारक है"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Books remain important; only their form has changed.",
+    "explanation_hi": "लेखक के अनुसार डिजिटल युग में भी पुस्तकों का महत्त्व कम नहीं हुआ, केवल उनका रूप बदलकर ई-पुस्तक और ऑडियो-पुस्तक हो गया है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "गद्यांश",
+    "difficulty": "medium",
+    "question_en": "निम्नलिखित गद्यांश को पढ़कर प्रश्न का उत्तर दीजिए।\n\nपुस्तकें मनुष्य की सबसे अच्छी मित्र होती हैं। वे बिना किसी स्वार्थ के हमें ज्ञान देती हैं और कठिन समय में धैर्य बँधाती हैं। जो व्यक्ति नियमित रूप से अच्छी पुस्तकें पढ़ता है, उसके विचारों में गहराई आती है तथा उसकी भाषा समृद्ध होती है। आज के डिजिटल युग में भी पुस्तकों का महत्त्व कम नहीं हुआ है, केवल उनका रूप बदल गया है। अब ई-पुस्तकें और ऑडियो-पुस्तकें भी पाठकों तक पहुँच रही हैं। आवश्यकता इस बात की है कि विद्यार्थी केवल परीक्षा के लिए नहीं, बल्कि आनंद और जिज्ञासा के लिए भी पढ़ें।\n\nप्रश्न: गद्यांश में प्रयुक्त 'समृद्ध' शब्द का विलोम क्या है?",
+    "question_hi": "निम्नलिखित गद्यांश को पढ़कर प्रश्न का उत्तर दीजिए।\n\nपुस्तकें मनुष्य की सबसे अच्छी मित्र होती हैं। वे बिना किसी स्वार्थ के हमें ज्ञान देती हैं और कठिन समय में धैर्य बँधाती हैं। जो व्यक्ति नियमित रूप से अच्छी पुस्तकें पढ़ता है, उसके विचारों में गहराई आती है तथा उसकी भाषा समृद्ध होती है। आज के डिजिटल युग में भी पुस्तकों का महत्त्व कम नहीं हुआ है, केवल उनका रूप बदल गया है। अब ई-पुस्तकें और ऑडियो-पुस्तकें भी पाठकों तक पहुँच रही हैं। आवश्यकता इस बात की है कि विद्यार्थी केवल परीक्षा के लिए नहीं, बल्कि आनंद और जिज्ञासा के लिए भी पढ़ें।\n\nप्रश्न: गद्यांश में प्रयुक्त 'समृद्ध' शब्द का विलोम क्या है?",
+    "options": [
+      {
+        "en": "संपन्न",
+        "hi": "संपन्न"
+      },
+      {
+        "en": "वैभवशाली",
+        "hi": "वैभवशाली"
+      },
+      {
+        "en": "विपन्न",
+        "hi": "विपन्न"
+      },
+      {
+        "en": "सशक्त",
+        "hi": "सशक्त"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "The antonym of samriddh (prosperous) is vipann (destitute).",
+    "explanation_hi": "'समृद्ध' का अर्थ है संपन्न या भरा-पूरा; इसका विलोम 'विपन्न' (अभावग्रस्त) है। संपन्न और वैभवशाली इसके पर्यायवाची हैं।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "गद्यांश",
+    "difficulty": "medium",
+    "question_en": "निम्नलिखित गद्यांश को पढ़कर प्रश्न का उत्तर दीजिए।\n\nपुस्तकें मनुष्य की सबसे अच्छी मित्र होती हैं। वे बिना किसी स्वार्थ के हमें ज्ञान देती हैं और कठिन समय में धैर्य बँधाती हैं। जो व्यक्ति नियमित रूप से अच्छी पुस्तकें पढ़ता है, उसके विचारों में गहराई आती है तथा उसकी भाषा समृद्ध होती है। आज के डिजिटल युग में भी पुस्तकों का महत्त्व कम नहीं हुआ है, केवल उनका रूप बदल गया है। अब ई-पुस्तकें और ऑडियो-पुस्तकें भी पाठकों तक पहुँच रही हैं। आवश्यकता इस बात की है कि विद्यार्थी केवल परीक्षा के लिए नहीं, बल्कि आनंद और जिज्ञासा के लिए भी पढ़ें।\n\nप्रश्न: गद्यांश में आए 'स्वार्थ' शब्द का सही संधि-विच्छेद और संधि का प्रकार क्या है?",
+    "question_hi": "निम्नलिखित गद्यांश को पढ़कर प्रश्न का उत्तर दीजिए।\n\nपुस्तकें मनुष्य की सबसे अच्छी मित्र होती हैं। वे बिना किसी स्वार्थ के हमें ज्ञान देती हैं और कठिन समय में धैर्य बँधाती हैं। जो व्यक्ति नियमित रूप से अच्छी पुस्तकें पढ़ता है, उसके विचारों में गहराई आती है तथा उसकी भाषा समृद्ध होती है। आज के डिजिटल युग में भी पुस्तकों का महत्त्व कम नहीं हुआ है, केवल उनका रूप बदल गया है। अब ई-पुस्तकें और ऑडियो-पुस्तकें भी पाठकों तक पहुँच रही हैं। आवश्यकता इस बात की है कि विद्यार्थी केवल परीक्षा के लिए नहीं, बल्कि आनंद और जिज्ञासा के लिए भी पढ़ें।\n\nप्रश्न: गद्यांश में आए 'स्वार्थ' शब्द का सही संधि-विच्छेद और संधि का प्रकार क्या है?",
+    "options": [
+      {
+        "en": "स्वा + अर्थ — गुण संधि",
+        "hi": "स्वा + अर्थ — गुण संधि"
+      },
+      {
+        "en": "स्व + आर्थ — यण संधि",
+        "hi": "स्व + आर्थ — यण संधि"
+      },
+      {
+        "en": "स्वा + र्थ — व्यंजन संधि",
+        "hi": "स्वा + र्थ — व्यंजन संधि"
+      },
+      {
+        "en": "स्व + अर्थ — दीर्घ संधि",
+        "hi": "स्व + अर्थ — दीर्घ संधि"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Sva + arth = svaarth; a + a gives aa (deergh sandhi).",
+    "explanation_hi": "स्व + अर्थ = स्वार्थ; यहाँ अ + अ मिलकर 'आ' बना है, इसलिए दीर्घ स्वर संधि है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "गद्यांश",
+    "difficulty": "medium",
+    "question_en": "निम्नलिखित गद्यांश को पढ़कर प्रश्न का उत्तर दीजिए।\n\nपुस्तकें मनुष्य की सबसे अच्छी मित्र होती हैं। वे बिना किसी स्वार्थ के हमें ज्ञान देती हैं और कठिन समय में धैर्य बँधाती हैं। जो व्यक्ति नियमित रूप से अच्छी पुस्तकें पढ़ता है, उसके विचारों में गहराई आती है तथा उसकी भाषा समृद्ध होती है। आज के डिजिटल युग में भी पुस्तकों का महत्त्व कम नहीं हुआ है, केवल उनका रूप बदल गया है। अब ई-पुस्तकें और ऑडियो-पुस्तकें भी पाठकों तक पहुँच रही हैं। आवश्यकता इस बात की है कि विद्यार्थी केवल परीक्षा के लिए नहीं, बल्कि आनंद और जिज्ञासा के लिए भी पढ़ें।\n\nप्रश्न: गद्यांश के लिए सबसे उपयुक्त शीर्षक कौन-सा है?",
+    "question_hi": "निम्नलिखित गद्यांश को पढ़कर प्रश्न का उत्तर दीजिए।\n\nपुस्तकें मनुष्य की सबसे अच्छी मित्र होती हैं। वे बिना किसी स्वार्थ के हमें ज्ञान देती हैं और कठिन समय में धैर्य बँधाती हैं। जो व्यक्ति नियमित रूप से अच्छी पुस्तकें पढ़ता है, उसके विचारों में गहराई आती है तथा उसकी भाषा समृद्ध होती है। आज के डिजिटल युग में भी पुस्तकों का महत्त्व कम नहीं हुआ है, केवल उनका रूप बदल गया है। अब ई-पुस्तकें और ऑडियो-पुस्तकें भी पाठकों तक पहुँच रही हैं। आवश्यकता इस बात की है कि विद्यार्थी केवल परीक्षा के लिए नहीं, बल्कि आनंद और जिज्ञासा के लिए भी पढ़ें।\n\nप्रश्न: गद्यांश के लिए सबसे उपयुक्त शीर्षक कौन-सा है?",
+    "options": [
+      {
+        "en": "पुस्तकें: हमारी सच्ची मित्र",
+        "hi": "पुस्तकें: हमारी सच्ची मित्र"
+      },
+      {
+        "en": "डिजिटल युग की चुनौतियाँ",
+        "hi": "डिजिटल युग की चुनौतियाँ"
+      },
+      {
+        "en": "परीक्षा की तैयारी कैसे करें",
+        "hi": "परीक्षा की तैयारी कैसे करें"
+      },
+      {
+        "en": "ऑडियो-पुस्तकों का बाज़ार",
+        "hi": "ऑडियो-पुस्तकों का बाज़ार"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The passage is about books being our true friends.",
+    "explanation_hi": "पूरा गद्यांश पुस्तकों के महत्त्व और उन्हें मित्र के रूप में अपनाने पर केंद्रित है; अन्य विकल्प गद्यांश के केवल किसी एक अंश को छूते हैं या उससे बाहर हैं।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "गद्यांश",
+    "difficulty": "easy",
+    "question_en": "निम्नलिखित गद्यांश को पढ़कर प्रश्न का उत्तर दीजिए।\n\nएक अच्छा शिक्षक केवल पाठ्यपुस्तक का ज्ञान नहीं देता, बल्कि विद्यार्थियों में सोचने की क्षमता जगाता है। वह प्रश्न पूछने को प्रोत्साहित करता है और गलती को सीखने का अवसर मानता है। कक्षा में भय का वातावरण होने पर विद्यार्थी अपनी शंकाएँ व्यक्त नहीं कर पाते, इसलिए शिक्षक को मित्रवत् व्यवहार करना चाहिए। राष्ट्रीय शिक्षा नीति 2020 भी रटने के स्थान पर समझ पर आधारित शिक्षा पर बल देती है। वास्तव में शिक्षक वह दीपक है जो स्वयं जलकर दूसरों का मार्ग आलोकित करता है।\n\nप्रश्न: गद्यांश के अनुसार एक अच्छा शिक्षक विद्यार्थियों में क्या जगाता है?",
+    "question_hi": "निम्नलिखित गद्यांश को पढ़कर प्रश्न का उत्तर दीजिए।\n\nएक अच्छा शिक्षक केवल पाठ्यपुस्तक का ज्ञान नहीं देता, बल्कि विद्यार्थियों में सोचने की क्षमता जगाता है। वह प्रश्न पूछने को प्रोत्साहित करता है और गलती को सीखने का अवसर मानता है। कक्षा में भय का वातावरण होने पर विद्यार्थी अपनी शंकाएँ व्यक्त नहीं कर पाते, इसलिए शिक्षक को मित्रवत् व्यवहार करना चाहिए। राष्ट्रीय शिक्षा नीति 2020 भी रटने के स्थान पर समझ पर आधारित शिक्षा पर बल देती है। वास्तव में शिक्षक वह दीपक है जो स्वयं जलकर दूसरों का मार्ग आलोकित करता है।\n\nप्रश्न: गद्यांश के अनुसार एक अच्छा शिक्षक विद्यार्थियों में क्या जगाता है?",
+    "options": [
+      {
+        "en": "रटने की आदत",
+        "hi": "रटने की आदत"
+      },
+      {
+        "en": "सोचने की क्षमता",
+        "hi": "सोचने की क्षमता"
+      },
+      {
+        "en": "परीक्षा का भय",
+        "hi": "परीक्षा का भय"
+      },
+      {
+        "en": "प्रतियोगिता की भावना",
+        "hi": "प्रतियोगिता की भावना"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "A good teacher awakens the ability to think.",
+    "explanation_hi": "पहले वाक्य में स्पष्ट है कि अच्छा शिक्षक केवल पाठ्यपुस्तक का ज्ञान नहीं देता, बल्कि 'सोचने की क्षमता जगाता है।'",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "गद्यांश",
+    "difficulty": "easy",
+    "question_en": "निम्नलिखित गद्यांश को पढ़कर प्रश्न का उत्तर दीजिए।\n\nएक अच्छा शिक्षक केवल पाठ्यपुस्तक का ज्ञान नहीं देता, बल्कि विद्यार्थियों में सोचने की क्षमता जगाता है। वह प्रश्न पूछने को प्रोत्साहित करता है और गलती को सीखने का अवसर मानता है। कक्षा में भय का वातावरण होने पर विद्यार्थी अपनी शंकाएँ व्यक्त नहीं कर पाते, इसलिए शिक्षक को मित्रवत् व्यवहार करना चाहिए। राष्ट्रीय शिक्षा नीति 2020 भी रटने के स्थान पर समझ पर आधारित शिक्षा पर बल देती है। वास्तव में शिक्षक वह दीपक है जो स्वयं जलकर दूसरों का मार्ग आलोकित करता है।\n\nप्रश्न: गद्यांश के अनुसार विद्यार्थी अपनी शंकाएँ कब व्यक्त नहीं कर पाते?",
+    "question_hi": "निम्नलिखित गद्यांश को पढ़कर प्रश्न का उत्तर दीजिए।\n\nएक अच्छा शिक्षक केवल पाठ्यपुस्तक का ज्ञान नहीं देता, बल्कि विद्यार्थियों में सोचने की क्षमता जगाता है। वह प्रश्न पूछने को प्रोत्साहित करता है और गलती को सीखने का अवसर मानता है। कक्षा में भय का वातावरण होने पर विद्यार्थी अपनी शंकाएँ व्यक्त नहीं कर पाते, इसलिए शिक्षक को मित्रवत् व्यवहार करना चाहिए। राष्ट्रीय शिक्षा नीति 2020 भी रटने के स्थान पर समझ पर आधारित शिक्षा पर बल देती है। वास्तव में शिक्षक वह दीपक है जो स्वयं जलकर दूसरों का मार्ग आलोकित करता है।\n\nप्रश्न: गद्यांश के अनुसार विद्यार्थी अपनी शंकाएँ कब व्यक्त नहीं कर पाते?",
+    "options": [
+      {
+        "en": "जब पाठ्यपुस्तक कठिन हो",
+        "hi": "जब पाठ्यपुस्तक कठिन हो"
+      },
+      {
+        "en": "जब परीक्षा निकट हो",
+        "hi": "जब परीक्षा निकट हो"
+      },
+      {
+        "en": "जब कक्षा में भय का वातावरण हो",
+        "hi": "जब कक्षा में भय का वातावरण हो"
+      },
+      {
+        "en": "जब शिक्षक प्रश्न पूछे",
+        "hi": "जब शिक्षक प्रश्न पूछे"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Students hold back doubts when the classroom feels fearful.",
+    "explanation_hi": "गद्यांश कहता है कि 'कक्षा में भय का वातावरण होने पर विद्यार्थी अपनी शंकाएँ व्यक्त नहीं कर पाते', इसीलिए शिक्षक को मित्रवत् होना चाहिए।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "गद्यांश",
+    "difficulty": "medium",
+    "question_en": "निम्नलिखित गद्यांश को पढ़कर प्रश्न का उत्तर दीजिए।\n\nएक अच्छा शिक्षक केवल पाठ्यपुस्तक का ज्ञान नहीं देता, बल्कि विद्यार्थियों में सोचने की क्षमता जगाता है। वह प्रश्न पूछने को प्रोत्साहित करता है और गलती को सीखने का अवसर मानता है। कक्षा में भय का वातावरण होने पर विद्यार्थी अपनी शंकाएँ व्यक्त नहीं कर पाते, इसलिए शिक्षक को मित्रवत् व्यवहार करना चाहिए। राष्ट्रीय शिक्षा नीति 2020 भी रटने के स्थान पर समझ पर आधारित शिक्षा पर बल देती है। वास्तव में शिक्षक वह दीपक है जो स्वयं जलकर दूसरों का मार्ग आलोकित करता है।\n\nप्रश्न: गद्यांश के अनुसार राष्ट्रीय शिक्षा नीति 2020 किस पर बल देती है?",
+    "question_hi": "निम्नलिखित गद्यांश को पढ़कर प्रश्न का उत्तर दीजिए।\n\nएक अच्छा शिक्षक केवल पाठ्यपुस्तक का ज्ञान नहीं देता, बल्कि विद्यार्थियों में सोचने की क्षमता जगाता है। वह प्रश्न पूछने को प्रोत्साहित करता है और गलती को सीखने का अवसर मानता है। कक्षा में भय का वातावरण होने पर विद्यार्थी अपनी शंकाएँ व्यक्त नहीं कर पाते, इसलिए शिक्षक को मित्रवत् व्यवहार करना चाहिए। राष्ट्रीय शिक्षा नीति 2020 भी रटने के स्थान पर समझ पर आधारित शिक्षा पर बल देती है। वास्तव में शिक्षक वह दीपक है जो स्वयं जलकर दूसरों का मार्ग आलोकित करता है।\n\nप्रश्न: गद्यांश के अनुसार राष्ट्रीय शिक्षा नीति 2020 किस पर बल देती है?",
+    "options": [
+      {
+        "en": "रटने पर आधारित शिक्षा",
+        "hi": "रटने पर आधारित शिक्षा"
+      },
+      {
+        "en": "केवल परीक्षा-परिणाम",
+        "hi": "केवल परीक्षा-परिणाम"
+      },
+      {
+        "en": "अधिक गृहकार्य",
+        "hi": "अधिक गृहकार्य"
+      },
+      {
+        "en": "समझ पर आधारित शिक्षा",
+        "hi": "समझ पर आधारित शिक्षा"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "NEP 2020 stresses understanding over rote learning.",
+    "explanation_hi": "गद्यांश के अनुसार NEP 2020 'रटने के स्थान पर समझ पर आधारित शिक्षा' पर बल देती है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "गद्यांश",
+    "difficulty": "medium",
+    "question_en": "निम्नलिखित गद्यांश को पढ़कर प्रश्न का उत्तर दीजिए।\n\nएक अच्छा शिक्षक केवल पाठ्यपुस्तक का ज्ञान नहीं देता, बल्कि विद्यार्थियों में सोचने की क्षमता जगाता है। वह प्रश्न पूछने को प्रोत्साहित करता है और गलती को सीखने का अवसर मानता है। कक्षा में भय का वातावरण होने पर विद्यार्थी अपनी शंकाएँ व्यक्त नहीं कर पाते, इसलिए शिक्षक को मित्रवत् व्यवहार करना चाहिए। राष्ट्रीय शिक्षा नीति 2020 भी रटने के स्थान पर समझ पर आधारित शिक्षा पर बल देती है। वास्तव में शिक्षक वह दीपक है जो स्वयं जलकर दूसरों का मार्ग आलोकित करता है।\n\nप्रश्न: 'शिक्षक वह दीपक है जो स्वयं जलकर दूसरों का मार्ग आलोकित करता है' — इस वाक्य में कौन-सा अलंकार है?",
+    "question_hi": "निम्नलिखित गद्यांश को पढ़कर प्रश्न का उत्तर दीजिए।\n\nएक अच्छा शिक्षक केवल पाठ्यपुस्तक का ज्ञान नहीं देता, बल्कि विद्यार्थियों में सोचने की क्षमता जगाता है। वह प्रश्न पूछने को प्रोत्साहित करता है और गलती को सीखने का अवसर मानता है। कक्षा में भय का वातावरण होने पर विद्यार्थी अपनी शंकाएँ व्यक्त नहीं कर पाते, इसलिए शिक्षक को मित्रवत् व्यवहार करना चाहिए। राष्ट्रीय शिक्षा नीति 2020 भी रटने के स्थान पर समझ पर आधारित शिक्षा पर बल देती है। वास्तव में शिक्षक वह दीपक है जो स्वयं जलकर दूसरों का मार्ग आलोकित करता है।\n\nप्रश्न: 'शिक्षक वह दीपक है जो स्वयं जलकर दूसरों का मार्ग आलोकित करता है' — इस वाक्य में कौन-सा अलंकार है?",
+    "options": [
+      {
+        "en": "रूपक",
+        "hi": "रूपक"
+      },
+      {
+        "en": "यमक",
+        "hi": "यमक"
+      },
+      {
+        "en": "अनुप्रास",
+        "hi": "अनुप्रास"
+      },
+      {
+        "en": "श्लेष",
+        "hi": "श्लेष"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The teacher is directly called a lamp, so it is Rupak (metaphor).",
+    "explanation_hi": "यहाँ शिक्षक (उपमेय) को सीधे दीपक (उपमान) कह दिया गया है, बिना किसी वाचक शब्द के; उपमेय पर उपमान का अभेद आरोप रूपक अलंकार है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "गद्यांश",
+    "difficulty": "hard",
+    "question_en": "निम्नलिखित गद्यांश को पढ़कर प्रश्न का उत्तर दीजिए।\n\nएक अच्छा शिक्षक केवल पाठ्यपुस्तक का ज्ञान नहीं देता, बल्कि विद्यार्थियों में सोचने की क्षमता जगाता है। वह प्रश्न पूछने को प्रोत्साहित करता है और गलती को सीखने का अवसर मानता है। कक्षा में भय का वातावरण होने पर विद्यार्थी अपनी शंकाएँ व्यक्त नहीं कर पाते, इसलिए शिक्षक को मित्रवत् व्यवहार करना चाहिए। राष्ट्रीय शिक्षा नीति 2020 भी रटने के स्थान पर समझ पर आधारित शिक्षा पर बल देती है। वास्तव में शिक्षक वह दीपक है जो स्वयं जलकर दूसरों का मार्ग आलोकित करता है।\n\nप्रश्न: गद्यांश में प्रयुक्त 'आलोकित' शब्द का अर्थ क्या है?",
+    "question_hi": "निम्नलिखित गद्यांश को पढ़कर प्रश्न का उत्तर दीजिए।\n\nएक अच्छा शिक्षक केवल पाठ्यपुस्तक का ज्ञान नहीं देता, बल्कि विद्यार्थियों में सोचने की क्षमता जगाता है। वह प्रश्न पूछने को प्रोत्साहित करता है और गलती को सीखने का अवसर मानता है। कक्षा में भय का वातावरण होने पर विद्यार्थी अपनी शंकाएँ व्यक्त नहीं कर पाते, इसलिए शिक्षक को मित्रवत् व्यवहार करना चाहिए। राष्ट्रीय शिक्षा नीति 2020 भी रटने के स्थान पर समझ पर आधारित शिक्षा पर बल देती है। वास्तव में शिक्षक वह दीपक है जो स्वयं जलकर दूसरों का मार्ग आलोकित करता है।\n\nप्रश्न: गद्यांश में प्रयुक्त 'आलोकित' शब्द का अर्थ क्या है?",
+    "options": [
+      {
+        "en": "अंधकारमय",
+        "hi": "अंधकारमय"
+      },
+      {
+        "en": "प्रकाशित",
+        "hi": "प्रकाशित"
+      },
+      {
+        "en": "आलोचित",
+        "hi": "आलोचित"
+      },
+      {
+        "en": "अवलोकित",
+        "hi": "अवलोकित"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Aalokit means illuminated (from aalok, light).",
+    "explanation_hi": "'आलोक' का अर्थ है प्रकाश, इसलिए 'आलोकित' का अर्थ है प्रकाशित या रोशन। 'आलोचित' (जिसकी आलोचना हुई हो) और 'अवलोकित' (देखा गया) मिलती-जुलती ध्वनि वाले भ्रामक विकल्प हैं।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "गद्यांश",
+    "difficulty": "easy",
+    "question_en": "निम्नलिखित गद्यांश को पढ़कर प्रश्न का उत्तर दीजिए।\n\nपरिश्रम ही सफलता की कुंजी है। इतिहास साक्षी है कि जिन लोगों ने कठिन परिश्रम किया, वे साधनों के अभाव में भी ऊँचाइयों तक पहुँचे। भाग्य के भरोसे बैठे रहने वाला व्यक्ति अवसर आने पर भी उसका लाभ नहीं उठा पाता। परिश्रमी व्यक्ति असफलता से निराश नहीं होता; वह अपनी भूलों से सीखकर फिर प्रयास करता है। आलस्य मनुष्य का सबसे बड़ा शत्रु है, जो उसकी प्रतिभा को धीरे-धीरे नष्ट कर देता है।\n\nप्रश्न: गद्यांश के अनुसार मनुष्य का सबसे बड़ा शत्रु कौन है?",
+    "question_hi": "निम्नलिखित गद्यांश को पढ़कर प्रश्न का उत्तर दीजिए।\n\nपरिश्रम ही सफलता की कुंजी है। इतिहास साक्षी है कि जिन लोगों ने कठिन परिश्रम किया, वे साधनों के अभाव में भी ऊँचाइयों तक पहुँचे। भाग्य के भरोसे बैठे रहने वाला व्यक्ति अवसर आने पर भी उसका लाभ नहीं उठा पाता। परिश्रमी व्यक्ति असफलता से निराश नहीं होता; वह अपनी भूलों से सीखकर फिर प्रयास करता है। आलस्य मनुष्य का सबसे बड़ा शत्रु है, जो उसकी प्रतिभा को धीरे-धीरे नष्ट कर देता है।\n\nप्रश्न: गद्यांश के अनुसार मनुष्य का सबसे बड़ा शत्रु कौन है?",
+    "options": [
+      {
+        "en": "असफलता",
+        "hi": "असफलता"
+      },
+      {
+        "en": "भाग्य",
+        "hi": "भाग्य"
+      },
+      {
+        "en": "आलस्य",
+        "hi": "आलस्य"
+      },
+      {
+        "en": "साधनों का अभाव",
+        "hi": "साधनों का अभाव"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Laziness is called man's greatest enemy.",
+    "explanation_hi": "अंतिम वाक्य में कहा गया है कि 'आलस्य मनुष्य का सबसे बड़ा शत्रु है', जो प्रतिभा को धीरे-धीरे नष्ट कर देता है।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "गद्यांश",
+    "difficulty": "medium",
+    "question_en": "निम्नलिखित गद्यांश को पढ़कर प्रश्न का उत्तर दीजिए।\n\nपरिश्रम ही सफलता की कुंजी है। इतिहास साक्षी है कि जिन लोगों ने कठिन परिश्रम किया, वे साधनों के अभाव में भी ऊँचाइयों तक पहुँचे। भाग्य के भरोसे बैठे रहने वाला व्यक्ति अवसर आने पर भी उसका लाभ नहीं उठा पाता। परिश्रमी व्यक्ति असफलता से निराश नहीं होता; वह अपनी भूलों से सीखकर फिर प्रयास करता है। आलस्य मनुष्य का सबसे बड़ा शत्रु है, जो उसकी प्रतिभा को धीरे-धीरे नष्ट कर देता है।\n\nप्रश्न: गद्यांश के अनुसार परिश्रमी व्यक्ति असफल होने पर क्या करता है?",
+    "question_hi": "निम्नलिखित गद्यांश को पढ़कर प्रश्न का उत्तर दीजिए।\n\nपरिश्रम ही सफलता की कुंजी है। इतिहास साक्षी है कि जिन लोगों ने कठिन परिश्रम किया, वे साधनों के अभाव में भी ऊँचाइयों तक पहुँचे। भाग्य के भरोसे बैठे रहने वाला व्यक्ति अवसर आने पर भी उसका लाभ नहीं उठा पाता। परिश्रमी व्यक्ति असफलता से निराश नहीं होता; वह अपनी भूलों से सीखकर फिर प्रयास करता है। आलस्य मनुष्य का सबसे बड़ा शत्रु है, जो उसकी प्रतिभा को धीरे-धीरे नष्ट कर देता है।\n\nप्रश्न: गद्यांश के अनुसार परिश्रमी व्यक्ति असफल होने पर क्या करता है?",
+    "options": [
+      {
+        "en": "भाग्य को दोष देता है",
+        "hi": "भाग्य को दोष देता है"
+      },
+      {
+        "en": "अपनी भूलों से सीखकर फिर प्रयास करता है",
+        "hi": "अपनी भूलों से सीखकर फिर प्रयास करता है"
+      },
+      {
+        "en": "कार्य बदल लेता है",
+        "hi": "कार्य बदल लेता है"
+      },
+      {
+        "en": "दूसरों से सहायता माँगता है",
+        "hi": "दूसरों से सहायता माँगता है"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "He learns from mistakes and tries again.",
+    "explanation_hi": "गद्यांश कहता है कि परिश्रमी व्यक्ति असफलता से निराश नहीं होता, बल्कि 'अपनी भूलों से सीखकर फिर प्रयास करता है।'",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "गद्यांश",
+    "difficulty": "medium",
+    "question_en": "निम्नलिखित गद्यांश को पढ़कर प्रश्न का उत्तर दीजिए।\n\nपरिश्रम ही सफलता की कुंजी है। इतिहास साक्षी है कि जिन लोगों ने कठिन परिश्रम किया, वे साधनों के अभाव में भी ऊँचाइयों तक पहुँचे। भाग्य के भरोसे बैठे रहने वाला व्यक्ति अवसर आने पर भी उसका लाभ नहीं उठा पाता। परिश्रमी व्यक्ति असफलता से निराश नहीं होता; वह अपनी भूलों से सीखकर फिर प्रयास करता है। आलस्य मनुष्य का सबसे बड़ा शत्रु है, जो उसकी प्रतिभा को धीरे-धीरे नष्ट कर देता है।\n\nप्रश्न: गद्यांश में आए 'परिश्रम' शब्द में कौन-सा उपसर्ग है?",
+    "question_hi": "निम्नलिखित गद्यांश को पढ़कर प्रश्न का उत्तर दीजिए।\n\nपरिश्रम ही सफलता की कुंजी है। इतिहास साक्षी है कि जिन लोगों ने कठिन परिश्रम किया, वे साधनों के अभाव में भी ऊँचाइयों तक पहुँचे। भाग्य के भरोसे बैठे रहने वाला व्यक्ति अवसर आने पर भी उसका लाभ नहीं उठा पाता। परिश्रमी व्यक्ति असफलता से निराश नहीं होता; वह अपनी भूलों से सीखकर फिर प्रयास करता है। आलस्य मनुष्य का सबसे बड़ा शत्रु है, जो उसकी प्रतिभा को धीरे-धीरे नष्ट कर देता है।\n\nप्रश्न: गद्यांश में आए 'परिश्रम' शब्द में कौन-सा उपसर्ग है?",
+    "options": [
+      {
+        "en": "परी",
+        "hi": "परी"
+      },
+      {
+        "en": "पर",
+        "hi": "पर"
+      },
+      {
+        "en": "प्र",
+        "hi": "प्र"
+      },
+      {
+        "en": "परि",
+        "hi": "परि"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Parishram = pari + shram; the prefix is 'pari'.",
+    "explanation_hi": "परि + श्रम = परिश्रम। 'परि' संस्कृत उपसर्ग है जिसका अर्थ 'चारों ओर/पूर्ण रूप से' है; इसी से परिक्रमा, परिपूर्ण जैसे शब्द बनते हैं।",
+    "expected": false
+  },
+  {
+    "chapter_key": "hindi",
+    "subtopic": "गद्यांश",
+    "difficulty": "hard",
+    "question_en": "निम्नलिखित गद्यांश को पढ़कर प्रश्न का उत्तर दीजिए।\n\nपरिश्रम ही सफलता की कुंजी है। इतिहास साक्षी है कि जिन लोगों ने कठिन परिश्रम किया, वे साधनों के अभाव में भी ऊँचाइयों तक पहुँचे। भाग्य के भरोसे बैठे रहने वाला व्यक्ति अवसर आने पर भी उसका लाभ नहीं उठा पाता। परिश्रमी व्यक्ति असफलता से निराश नहीं होता; वह अपनी भूलों से सीखकर फिर प्रयास करता है। आलस्य मनुष्य का सबसे बड़ा शत्रु है, जो उसकी प्रतिभा को धीरे-धीरे नष्ट कर देता है।\n\nप्रश्न: गद्यांश का केंद्रीय भाव क्या है?",
+    "question_hi": "निम्नलिखित गद्यांश को पढ़कर प्रश्न का उत्तर दीजिए।\n\nपरिश्रम ही सफलता की कुंजी है। इतिहास साक्षी है कि जिन लोगों ने कठिन परिश्रम किया, वे साधनों के अभाव में भी ऊँचाइयों तक पहुँचे। भाग्य के भरोसे बैठे रहने वाला व्यक्ति अवसर आने पर भी उसका लाभ नहीं उठा पाता। परिश्रमी व्यक्ति असफलता से निराश नहीं होता; वह अपनी भूलों से सीखकर फिर प्रयास करता है। आलस्य मनुष्य का सबसे बड़ा शत्रु है, जो उसकी प्रतिभा को धीरे-धीरे नष्ट कर देता है।\n\nप्रश्न: गद्यांश का केंद्रीय भाव क्या है?",
+    "options": [
+      {
+        "en": "निरंतर परिश्रम से ही सफलता मिलती है, आलस्य उसका बाधक है",
+        "hi": "निरंतर परिश्रम से ही सफलता मिलती है, आलस्य उसका बाधक है"
+      },
+      {
+        "en": "सफलता केवल भाग्य से मिलती है",
+        "hi": "सफलता केवल भाग्य से मिलती है"
+      },
+      {
+        "en": "इतिहास का अध्ययन आवश्यक है",
+        "hi": "इतिहास का अध्ययन आवश्यक है"
+      },
+      {
+        "en": "साधनों के बिना सफलता असंभव है",
+        "hi": "साधनों के बिना सफलता असंभव है"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Sustained hard work brings success; laziness blocks it.",
+    "explanation_hi": "पूरा गद्यांश परिश्रम को सफलता की कुंजी और आलस्य को सबसे बड़ा शत्रु बताता है। अंतिम विकल्प गद्यांश के विपरीत है, क्योंकि उसमें कहा गया है कि परिश्रमी लोग साधनों के अभाव में भी सफल हुए।",
+    "expected": false
+  }
+]

@@ -1,0 +1,1524 @@
+{
+ "630680256026": {
+  "explanation_en": "Count the series: it has 29 letters (A D F G W R W S F G B C S X A D G H J K L Y O R E D H K H). The 11th letter from the right end is at position 29 − 11 + 1 = 19 from the left, which is J. The 7th letter to the left of position 19 is at position 19 − 7 = 12, which is C.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Letter series – position counting",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256040": {
+  "explanation_en": "Try option 3: 19 × 23 + 221 ÷ 17 − 89 = 361. Apply BODMAS: 19 × 23 = 437 and 221 ÷ 17 = 13. Then 437 + 13 − 89 = 361, which equals the right-hand side, so the sequence ×, +, ÷, −, = balances the equation. The other options give values far from 361 (e.g. option 1: 19 ÷ 23 is a fraction).",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Mathematical operations – sign replacement",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256037": {
+  "explanation_en": "Try option 1: 45 + 45 ÷ 45 = 45 × 45 − 1979. Left side: 45 ÷ 45 = 1, so 45 + 1 = 46. Right side: 45 × 45 = 2025, and 2025 − 1979 = 46. Both sides equal 46, so the combination +, ÷, =, ×, − is correct. Option 2 gives 45 − 1 = 44 on the left but 45 + 45 × 1979 on the right, which is far larger.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Mathematical operations – sign replacement",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256028": {
+  "explanation_en": "In the evening the sun is in the west, so a shadow falls towards the east. The right-hand side of east is south, so X initially faces south. Turn right → west, walk 20 m; turn right → north, walk 10 m; turn left → west, walk 10 m; turn right → north, walk 20 m; turn right → east, walk 30 m. Net east-west movement: 20 + 10 west and 30 east = 0; net north movement: 10 + 20 = 30 m. So X is 30 m north of the start.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Direction sense with shadow",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256031": {
+  "explanation_en": "Decode: C $ E means C ≥ E; F # C means F > C; D = E means D < E. Combining: F > C ≥ E > D. Conclusion I (C # D, i.e. C > D): since C ≥ E and E > D, C > D is definite — follows. Conclusion II (E # D, i.e. E > D): given directly — follows. Hence both conclusions follow.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Coded inequalities",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256039": {
+  "explanation_en": "In each pair the second number is 4.5 times the first: 16 × 4.5 = 72, 24 × 4.5 = 108, 18 × 4.5 = 81. For 22, 22 × 4.5 = 99, but the pair gives 97, so 22 − 97 does not follow the pattern and is the odd one out.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Odd one out – number pairs",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256041": {
+  "explanation_en": "Round off the numbers: 23.87 ÷ 12.19 ≈ 24 ÷ 12 = 2; 76.69 ÷ 29.89 ≈ 77 ÷ 30 ≈ 2.57; 2.57 × 17.37 ≈ 44.6. As printed, 2 − 44.6 ≈ −43, which matches no option, so an operator has evidently been misprinted in the paper. The official key is 435; a form such as 23.87 × 17.37 + 12.19 … ≈ 415 + 12 + … lands near 435, so treat the official key as the reference. Note: question appears garbled; the method (round each number, then apply BODMAS) is what matters.",
+  "chapter_key": "num_arith",
+  "subtopic": "Approximation / simplification",
+  "difficulty": "medium",
+  "key_doubt": false,
+  "note": "Expression as printed gives a negative value; operator likely misprinted. Official key 435 retained."
+ },
+ "630680256030": {
+  "explanation_en": "After the interchange, Khalid occupies Kapil's old seat, which is 29th from the right. Sham is 34th from the left and sits 5 places to the left of Khalid, so Khalid's new seat is 34 + 5 = 39th from the left. Total persons = (position from left) + (position from right) − 1 = 39 + 29 − 1 = 67.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Ranking / seating in a row",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256038": {
+  "explanation_en": "In every pair the second number is 3 times the first (13 × 3 = 39, 27 × 3 = 81, 23 × 3 = 69, 17 × 3 = 51), so the multiplication rule alone does not separate them. Look at the first numbers: 13, 23 and 17 are prime numbers, whereas 27 is composite (3 × 9). Hence 27 − 81 is the odd pair.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Odd one out – number pairs",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256024": {
+  "explanation_en": "Draw the Venn picture: dogs partly overlap goats; goats sit entirely inside peacocks; peacocks sit entirely inside eagles. Conclusion I (some peacocks are dogs): the dogs that are goats are also peacocks — follows. Conclusion II (all dogs are peacocks): only some dogs are goats, so not definite — does not follow. Conclusion III (all eagles are peacocks): the statement is the reverse (all peacocks are eagles) — does not follow. Only I follows.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Syllogism",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256023": {
+  "explanation_en": "Rohit is 40th from the right in a row of 80, so from the left he is 80 − 40 + 1 = 41st. Ram is 15 places to his right (i.e. further from the left end), so Ram's position from the left = 41 + 15 = 56th.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Ranking in a row",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256029": {
+  "explanation_en": "Decode A # B @ C & D # E: A is the brother of B; B is the father of C; C is the sister of D; D is the brother of E. So B is the father of C, D and E (they are siblings). A is the brother of B, i.e. brother of E's father — A is E's paternal uncle.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Blood relations – coded",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256027": {
+  "explanation_en": "Compare each letter's place in the string with its alphabet number. A is at position 1 (A = 1) ✓. M is at position 13 (M = 13) ✓, N at position 14 (N = 14) ✓, and Y at position 25 (Y = 25) ✓. No other letter matches (e.g. O at 2, D at 10, C at 26). So four letters — A, M, N, Y — occupy their natural alphabetical positions.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Alphabet test",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256032": {
+  "explanation_en": "The problem is the rise in false dowry cases. Course I (proper verification of complaints before FIR) directly prevents false cases from being registered — it follows. Course II (strict action against those filing false cases) acts as a deterrent and is a practical, legal measure — it also follows. As both address the problem, the official key is that both I and II follow.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Courses of action",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256053": {
+  "explanation_en": "Pandit Bhajan Sopori was a renowned santoor maestro from Kashmir, not a veena player, so pair 3 is wrongly matched. The others are correct: Zakir Hussain – tabla, Ustad Bismillah Khan – shehnai, Pandit Hari Prasad Chaurasia – bansuri (flute).",
+  "chapter_key": "ga_static",
+  "subtopic": "Indian music – personalities and instruments",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256061": {
+  "explanation_en": "The Constitution (Seventh Amendment) Act, 1956 — enacted alongside the States Reorganisation Act — amended Article 153 to allow the same person to be appointed Governor of two or more states. It also reorganised states on a linguistic basis and abolished the Part A/B/C/D classification.",
+  "chapter_key": "ga_static",
+  "subtopic": "Constitutional amendments",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256043": {
+  "explanation_en": "India's first Dark Sky Reserve is being set up at Hanle in Ladakh, within the Changthang Wildlife Sanctuary, around the Indian Astronomical Observatory. It was announced in 2022 by the UT administration with the Indian Institute of Astrophysics to promote astro-tourism and protect the night sky from light pollution.",
+  "chapter_key": "ga_current",
+  "subtopic": "Science & environment – current affairs 2022",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256051": {
+  "explanation_en": "Buddhist architecture in India consists of stupas (relic mounds), chaityas (prayer halls with a stupa at one end) and viharas (monasteries where monks lived). 'Monkas' is not a Buddhist structure — it is simply a distractor word — so it is the correct choice.",
+  "chapter_key": "ga_static",
+  "subtopic": "Indian art and architecture",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256044": {
+  "explanation_en": "Jahnavi Dangeti, a student from Andhra Pradesh, became the first Indian to complete NASA's International Air and Space Program (IASP) in 2022, held at the Kennedy Space Center, USA. The other names are not associated with this programme.",
+  "chapter_key": "ga_current",
+  "subtopic": "Persons in news 2022",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256048": {
+  "explanation_en": "The FIFA World Cup 2022 was hosted by Qatar (20 November – 18 December 2022), the first World Cup held in the Middle East and the first played in November–December. Argentina won the final against France on penalties.",
+  "chapter_key": "ga_current",
+  "subtopic": "Sports – current affairs 2022",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256057": {
+  "explanation_en": "According to the Ministry of Mines Annual Report 2021-22, Madhya Pradesh had the highest number of reporting (operating) mines in the country, followed by Gujarat, Karnataka and Odisha. Odisha leads in the value of mineral production, but by number of mines Madhya Pradesh is first.",
+  "chapter_key": "ga_static",
+  "subtopic": "Indian economy – minerals",
+  "difficulty": "hard",
+  "key_doubt": false
+ },
+ "630680256062": {
+  "explanation_en": "Vinai Kumar Saxena took over as the 22nd Lieutenant Governor of Delhi on 26 May 2022, succeeding Anil Baijal, and was therefore the LG in December 2022. Najeeb Jung and Tajendra Khanna were earlier LGs of Delhi.",
+  "chapter_key": "ga_current",
+  "subtopic": "Appointments 2022",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256059": {
+  "explanation_en": "Amoebiasis (amoebic dysentery) is caused by the protozoan Entamoeba histolytica and spreads through contaminated food and water, not by sexual contact. AIDS (HIV), gonorrhoea and syphilis are all sexually transmitted diseases.",
+  "chapter_key": "ga_static",
+  "subtopic": "Biology – diseases",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256049": {
+  "explanation_en": "The Battle of Khanwa (17 March 1527) was fought near Fatehpur Sikri between Babur and the Rajput confederacy led by Rana Sanga of Mewar. Babur's victory, following Panipat (1526) against Ibrahim Lodi, consolidated Mughal rule in north India.",
+  "chapter_key": "ga_static",
+  "subtopic": "Medieval Indian history – Mughals",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256058": {
+  "explanation_en": "The Mesozoic Era (about 252 to 66 million years ago, comprising the Triassic, Jurassic and Cretaceous periods) is called the 'Age of Reptiles' or age of the dinosaurs. The Cenozoic that followed is the age of mammals, while the Palaeozoic preceded the dinosaurs.",
+  "chapter_key": "ga_static",
+  "subtopic": "Geography / geology – geological time scale",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256052": {
+  "explanation_en": "Buiya is a folk dance of the Digaru Mishmi tribe of Arunachal Pradesh, performed on festive occasions. Other Arunachal dances include Ponung, Wancho and Bardo Chham.",
+  "chapter_key": "ga_static",
+  "subtopic": "Indian culture – folk dances",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256050": {
+  "explanation_en": "Operation Vijay (December 1961) was the Indian armed forces' action that liberated Goa, Daman and Diu from Portuguese rule. Operation Polo (1948) was the annexation of Hyderabad, and Operation Searchlight (1971) was a Pakistani army action in East Pakistan.",
+  "chapter_key": "ga_static",
+  "subtopic": "Modern Indian history – post-independence",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256045": {
+  "explanation_en": "Kanya Shiksha Pravesh Utsav was launched in March 2022 by the Ministry of Women and Child Development with the Ministry of Education and UNICEF, to bring out-of-school adolescent girls (11–14 years) back into formal education or skilling, using the Anganwadi network under Mission Shakti.",
+  "chapter_key": "ga_current",
+  "subtopic": "Government schemes 2022",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256046": {
+  "explanation_en": "NAMASTE (National Action for Mechanised Sanitation Ecosystem), launched in 2022, is a joint initiative of the Ministry of Social Justice and Empowerment and the Ministry of Housing and Urban Affairs. It aims to end hazardous manual cleaning of sewers and septic tanks by promoting mechanised sanitation and skilling sanitation workers.",
+  "chapter_key": "ga_current",
+  "subtopic": "Government schemes 2022",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256060": {
+  "explanation_en": "A primary rainbow forms by one internal reflection inside each raindrop, while a secondary rainbow forms by two internal reflections. The extra reflection makes the secondary bow fainter, larger and with its colour order reversed.",
+  "chapter_key": "ga_static",
+  "subtopic": "Physics – optics",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256055": {
+  "explanation_en": "As per Census 2011, about 68.8% of India's population (83.3 crore people) lived in rural areas and 31.2% in urban areas. The urban share rose from 27.8% in 2001, showing gradual urbanisation.",
+  "chapter_key": "ga_static",
+  "subtopic": "Census 2011 – rural/urban population",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256054": {
+  "explanation_en": "Net National Product (NNP) = Gross National Product (GNP) − Depreciation. Depreciation (consumption of fixed capital) is the wear and tear of capital goods; subtracting it from GNP gives the net value of output produced by a country's residents.",
+  "chapter_key": "ga_static",
+  "subtopic": "National income – NNP",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256056": {
+  "explanation_en": "According to Census 2011, Meghalaya recorded the highest decadal population growth rate among the given states, about 27.9% during 2001–2011 (Bihar ~25.4%, UP ~20.2%, Himachal ~12.9%). Nagaland was the only state to record negative growth in that decade.",
+  "chapter_key": "ga_static",
+  "subtopic": "Census 2011 – decadal growth",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256047": {
+  "explanation_en": "Legendary sprinter P.T. Usha became the first woman president of the Indian Olympic Association, elected unopposed in December 2022. Known as the 'Payyoli Express', she finished fourth in the 400 m hurdles at the 1984 Los Angeles Olympics.",
+  "chapter_key": "ga_current",
+  "subtopic": "Sports personalities – IOA",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256068": {
+  "explanation_en": "A = 116% of B, so B = 12528 ÷ 1.16 = ₹10,800. A = 80% of C, so C = 12528 ÷ 0.8 = ₹15,660. B + C = 10,800 + 15,660 = ₹26,460.",
+  "chapter_key": "num_arith",
+  "subtopic": "Percentage – comparison",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256063": {
+  "explanation_en": "Apply 'of' before ÷. Numerator: 5 1/3 of 4 1/2 = 16/3 × 9/2 = 24, so 32/5 ÷ 24 = 4/15; 3 3/5 of 5/6 = 3, so 4/3 ÷ 3 = 4/9; 4/15 − 4/9 + 2/5 = (12 − 20 + 18)/45 = 2/9. Denominator: 1 1/5 of 5/9 = 2/3, so 8/3 ÷ 2/3 = 4; 3/4 − 4 + 17/4 = 1. Value = (2/9)/1 = 2/9.",
+  "chapter_key": "num_arith",
+  "subtopic": "Simplification – BODMAS with fractions",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256073": {
+  "explanation_en": "A = kB/C. From 20 = k × 25/18, k = 20 × 18/25 = 14.4. For B = 35 and C = 16: A = 14.4 × 35/16 = 31.5.",
+  "chapter_key": "num_arith",
+  "subtopic": "Variation – direct and inverse",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256071": {
+  "explanation_en": "Let ages 6 years ago be 5x and 11x. Six years from now (12 years later) they are 5x + 12 and 11x + 12, and (5x + 12)/(11x + 12) = 11/17 gives 85x + 204 = 121x + 132, so x = 2. Present ages are 16 and 28, and their sum is 44.",
+  "chapter_key": "num_arith",
+  "subtopic": "Problems on ages",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256070": {
+  "explanation_en": "Let CP = 100, so MP = 160. After successive discounts of 25% and 5%: SP = 160 × 0.75 × 0.95 = 114. Profit = 114 − 100 = 14, i.e. 14%.",
+  "chapter_key": "num_arith",
+  "subtopic": "Profit & loss – successive discounts",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256067": {
+  "explanation_en": "In 7 L of A (2 : 5), acid = 2 L. In 9 L of B (6 : 7), acid = 9 × 6/13 = 54/13 L. Total acid = 2 + 54/13 = 80/13 L in 16 L of mixture, so the acid fraction is 80/(13 × 16) = 5/13. Acid in 312 mL = 312 × 5/13 = 120 mL.",
+  "chapter_key": "num_arith",
+  "subtopic": "Mixture & alligation",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256064": {
+  "explanation_en": "88 = 8 × 11. For 8, the last three digits 7y4 must be divisible by 8, so y = 0, 4 or 8 (704, 744, 784). For 11: (9+4+5+7+4) − (2+x+9+y) = 18 − x − y must be 0 or a multiple of 11, so x + y = 7 (x + y = 18 is impossible with valid digits). Pairs: (x, y) = (7, 0) gives 5x − 3y = 35; (3, 4) gives 3. Maximum = 35.",
+  "chapter_key": "num_arith",
+  "subtopic": "Number system – divisibility",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256069": {
+  "explanation_en": "Selling at 11/25 of SP gives a 34% loss: (11/25)SP = 0.66 CP, so SP = 1.5 CP. Selling at 80% of SP gives 0.8 × 1.5 CP = 1.2 CP, i.e. a profit of 20%.",
+  "chapter_key": "num_arith",
+  "subtopic": "Profit & loss",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256076": {
+  "explanation_en": "Speed is constant, so (L + 900)/75 = (L + 420)/50. Cross-multiplying: 50L + 45000 = 75L + 31500, so 25L = 13500 and L = 540 m.",
+  "chapter_key": "num_arith",
+  "subtopic": "Trains – crossing bridges",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256077": {
+  "explanation_en": "Net filling rate with both pipes open = 1/20 − 1/40 = 1/40 per hour, so in 30 hours 30/40 = 3/4 of the tank is filled. The remaining 1/4 is filled by A alone in (1/4) × 20 = 5 hours. Total time = 30 + 5 = 35 hours.",
+  "chapter_key": "num_arith",
+  "subtopic": "Pipes & cisterns",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256080": {
+  "explanation_en": "Ring area = π(R² − r²) = 1540, so R² − r² = 1540 × 7/22 = 490. Since R − r = 7, R + r = 490/7 = 70, which gives R = 38.5 cm. The outer circle is inscribed in the square, so side = 2R = 77 cm and perimeter = 4 × 77 = 308 cm.",
+  "chapter_key": "num_adv",
+  "subtopic": "Mensuration – circle and square",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256075": {
+  "explanation_en": "Balance after down payment = 1600 − 700 = ₹900, repaid as 3 × 310 = ₹930. Equate amounts at the end of 3 months at r% p.a.: 900 + 900 × r × 3/1200 = 930 + 310 × r × (2 + 1)/1200. So 2700r − 930r = 36000, giving r = 36000/1770 ≈ 20.3%.",
+  "chapter_key": "num_arith",
+  "subtopic": "Simple interest – instalments",
+  "difficulty": "hard",
+  "key_doubt": false
+ },
+ "630680256074": {
+  "explanation_en": "Interest for the extra 1.5 years = 7410 − 6747 = ₹663, so yearly SI = ₹442. Principal = 6747 − 3.5 × 442 = 6747 − 1547 = ₹5,200. Rate = 442/5200 × 100 = 8.5% p.a.",
+  "chapter_key": "num_arith",
+  "subtopic": "Simple interest",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256079": {
+  "explanation_en": "Total volume of the cones = (1/3)π × 21² × (31 + 53) = (1/3)π × 441 × 84 = 12348π. Setting (4/3)πR³ = 12348π gives R³ = 9261, so R = 21 cm. Surface area of the sphere = 4πR² = 4π × 441 = 1764π cm².",
+  "chapter_key": "num_adv",
+  "subtopic": "Mensuration – cone to sphere",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256078": {
+  "explanation_en": "A does 1/14 per day. B is 33⅓% less efficient, so B does (2/3)(1/14) = 1/21 per day. Let total time be T: A works T − 2 days and B works T days. (T − 2)/14 + T/21 = 1 gives 3(T − 2) + 2T = 42, so 5T = 48 and T = 9.6 = 9 3/5 days.",
+  "chapter_key": "num_arith",
+  "subtopic": "Time & work – efficiency",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256072": {
+  "explanation_en": "Capital ratio 2/3 : 3/8 = 16 : 9. A: 16 × 4 + 8 × 8 = 128 (halved after 4 months). B: 9 × 4 + 12 × 8 = 132 (raised by one-third). Profit ratio = 128 : 132 = 32 : 33, so B's share = 39 × 33/65 = ₹19.8 lakh.",
+  "chapter_key": "num_arith",
+  "subtopic": "Partnership",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256065": {
+  "explanation_en": "n is the HCF of the differences: 2178 − 1529 = 649 = 59 × 11 and 2886 − 2178 = 708 = 59 × 12, so n = 59. The remainder is r = 1529 − 59 × 25 = 54. So 3n − 2r = 177 − 108 = 69.",
+  "chapter_key": "num_arith",
+  "subtopic": "HCF – same remainder",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256066": {
+  "explanation_en": "Distances: 80 × 45/60 = 60 km and 48 × 40/60 = 32 km, and the third part is 35x/60 = 7x/12 km. Total time = 120 min = 2 h, so total distance = 72.25 × 2 = 144.5 km. Then 92 + 7x/12 = 144.5, so 7x/12 = 52.5 and x = 90 km/h.",
+  "chapter_key": "num_arith",
+  "subtopic": "Speed – average speed",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256231": {
+  "explanation_en": "P × Q: P is the father of Q. Q − R: Q is the sister of R. R + S: R is the brother of S. So Q, R and S are siblings, all children of P, which makes P the father of S.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Coded blood relations",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256235": {
+  "explanation_en": "The statement says health matters more than wealth. Such advice is usually given because people tend to neglect health while chasing money, so conclusion I is accepted as implied. Conclusion II goes too far: calling health the 'best' wealth does not mean wealth is of 'no use' without it. Hence only conclusion I follows (as per the official key).",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Statement & conclusions",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256244": {
+  "explanation_en": "Swap × and +: 105 ÷ 21 × 67 − 64 + 16. By BODMAS: 105 ÷ 21 = 5, then 5 × 67 = 335, then 335 − 64 + 16 = 287, which equals the right-hand side.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Mathematical operations – sign interchange",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256229": {
+  "explanation_en": "The chosen letters are A(1), C(3), E(5), H(8), L(12), O(15) and R(18). They form the disease name CHOLERA. The word has 7 letters, so the middle (4th) letter is L.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Meaningful word formation",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256234": {
+  "explanation_en": "In options 1, 3 and 4 the letters change alternately by +2 and −1 (e.g. INSPIRING: I+2=K, N−1=M, S+2=U, P−1=O …; ABANDONED: A+2=C, B−1=A …). In CABALETTA : ABZBJFRUY the pattern is reversed, −2 and +1 (C−2=A, A+1=B, B−2=Z, A+1=B …). So option 2 is the odd one.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Odd one out – letter coding",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256225": {
+  "explanation_en": "Ramesh is 15th from the top and 3 places behind Arvind, so Arvind is 15 − 3 = 12th from the top. Rank from bottom = total − rank from top + 1 = 50 − 12 + 1 = 39th.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Ranking & order",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256240": {
+  "explanation_en": "In each pair the second number is 5 times the first: 55 × 5 = 275, 35 × 5 = 175 and 25 × 5 = 125. But 45 × 5 = 225, not 235, so 45-235 is the odd one.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Odd one out – number pairs",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256242": {
+  "explanation_en": "Try option 4: 37 + 42 ÷ 21 × 37 − 67 = 44. By BODMAS, 42 ÷ 21 = 2, then 2 × 37 = 74, then 37 + 74 − 67 = 44. Both sides are equal, so the sign sequence +, ÷, ×, −, = balances the equation.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Mathematical operations – sign replacement",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256232": {
+  "explanation_en": "Statement I gives only Mohan < Sachin < Vipin. Statement II gives only Devika < Gangan. There is no link between the two groups, so even together they cannot tell us who is shortest of all. Both statements are insufficient.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Data sufficiency – comparison",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256236": {
+  "explanation_en": "Course II is a practical step that tackles the problem through regular inspection and maintenance of roads. Course I is too harsh and unfair: punishing every employee without fixing responsibility is not a sensible remedy. So only II follows.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Statement & course of action",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256228": {
+  "explanation_en": "Scan each even number and check two things: the next number is odd and the previous number is not even. The qualifying ones are the 4 (2nd), 2 (4th), 6 (6th), 4 (8th), 4 (10th), 6 (12th), 8 (14th), 6 (16th), 4 (18th), 6 (24th), 8 (26th), 6 (33rd) and 4 (35th). Cases like '2 4 5' and '6 0 7' fail because the even number is preceded by an even number. Total = 13.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Number series – counting",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256243": {
+  "explanation_en": "Round to the nearest whole numbers: 56 ÷ 28 − 68 + 98 × 14 = 2 − 68 + 1372 = 1306. (Exact working gives about 1276, and 1306 is still the nearest option.)",
+  "chapter_key": "num_arith",
+  "subtopic": "Approximation",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256230": {
+  "explanation_en": "Just after sunrise the sun is in the east, so shadows fall towards the west. The coach's shadow falls westward and lies in front of Messi, so Messi stands west of the coach and faces him, i.e. Messi faces East.",
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Direction sense – shadows",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256227": {
+  "explanation_en": "T is older than no one, so T is the youngest. U is older than T but younger than Q, so U is second youngest in the intended order. From S > P > Q and S > R, the order taken is S > R/P > Q > U > T, which makes Q the third youngest (as per the official key).",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Ordering – age comparison",
+  "difficulty": "medium",
+  "key_doubt": false,
+  "note": "R's position is fixed only as younger than S; strictly R could also lie between Q and U, so the question is slightly ambiguous. The key assumes R is older than Q."
+ },
+ "630680256233": {
+  "explanation_en": "MATTER: shift each letter +1 to get NBUUFS, then swap each pair of letters (NB→BN, UU→UU, FS→SF) to get BNUUSF. HOTELS +1 = IPUFMT; swapping pairs (IP→PI, UF→FU, MT→TM) gives PIFUTM.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Letter analogy – coding",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256246": {
+  "explanation_en": "The Digital India Awards are instituted by the Ministry of Electronics and Information Technology (MeitY), with the National e-Governance Division (NeGD) running them. They honour exemplary digital initiatives by government bodies at all levels.",
+  "chapter_key": "ga_current",
+  "subtopic": "Awards – Digital India Awards",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256245": {
+  "explanation_en": "The Shanti Swarup Bhatnagar Prize for Science and Technology 2021 was announced by CSIR for 11 scientists across seven disciplines. It is India's top multidisciplinary science award for scientists below 45, named after CSIR's founding director.",
+  "chapter_key": "ga_current",
+  "subtopic": "Awards – science",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256257": {
+  "explanation_en": "The repo (repurchase) rate is the rate at which commercial banks borrow short-term funds from the RBI by selling government securities with an agreement to buy them back. The reverse repo rate is the opposite: the rate at which the RBI borrows from banks.",
+  "chapter_key": "ga_static",
+  "subtopic": "Banking – monetary policy rates",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256250": {
+  "explanation_en": "The official key gives Mubarak Shah Khalji (1316–1320), during whose reign Devagiri (Yadava kingdom) was formally annexed to the Delhi Sultanate in 1318. Under Alauddin Khalji, southern kingdoms such as Devagiri, Warangal and Dwarasamudra had only been made to pay tribute, not annexed.",
+  "chapter_key": "ga_static",
+  "subtopic": "Medieval history – Delhi Sultanate",
+  "difficulty": "hard",
+  "key_doubt": false
+ },
+ "630680256258": {
+  "explanation_en": "The 'Ubharte Sitaare' Fund was set up by Exim Bank and SIDBI in 2021 to find and support mid-sized and small Indian companies that could become future export champions. It provides equity, debt and technical help to such firms.",
+  "chapter_key": "ga_current",
+  "subtopic": "Economy – government schemes",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256263": {
+  "explanation_en": "Uttar Pradesh has the largest legislative assembly in India with 403 constituencies. Maharashtra has 288, Tamil Nadu 234 and Gujarat 182.",
+  "chapter_key": "ga_static",
+  "subtopic": "Polity – state legislatures",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256264": {
+  "explanation_en": "Under Article 243F, a person must be at least 21 years old to be chosen as a member of a Panchayat. This minimum age for Panchayat elections was introduced by the 73rd Amendment Act, 1992.",
+  "chapter_key": "ga_static",
+  "subtopic": "Polity – Panchayati Raj",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256261": {
+  "explanation_en": "Malaria is a vector-borne disease: the Plasmodium parasite is spread by the bite of an infected female Anopheles mosquito. Diabetes and cancer are non-communicable diseases, and Covid-19 spreads directly through respiratory droplets.",
+  "chapter_key": "ga_static",
+  "subtopic": "Biology – diseases",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256248": {
+  "explanation_en": "France's Kylian Mbappé won the Golden Boot at the 2022 FIFA World Cup in Qatar with 8 goals, including a hat-trick in the final. Lionel Messi won the Golden Ball and Emiliano Martínez the Golden Glove.",
+  "chapter_key": "ga_current",
+  "subtopic": "Sports – FIFA World Cup 2022",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256249": {
+  "explanation_en": "The 2022 Ranji Trophy final was played between Madhya Pradesh and Mumbai in Bengaluru. Madhya Pradesh won by 6 wickets to lift its first Ranji Trophy title.",
+  "chapter_key": "ga_current",
+  "subtopic": "Sports – cricket",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256262": {
+  "explanation_en": "Under Articles 64 and 89, the Vice-President of India is the ex-officio Chairman of the Rajya Sabha. The Deputy Chairman is elected by the members of the House.",
+  "chapter_key": "ga_static",
+  "subtopic": "Polity – Parliament",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256260": {
+  "explanation_en": "NASA's Voyager 1, launched in 1977, was the first man-made object to cross the heliopause into interstellar space, in August 2012. Voyager 2 followed in 2018.",
+  "chapter_key": "ga_static",
+  "subtopic": "Space science",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256247": {
+  "explanation_en": "Mission Karmayogi (the National Programme for Civil Services Capacity Building), launched in 2020, aims to build a competent, citizen-centric civil service rooted in Indian ethos. It relies on online training through the iGOT Karmayogi platform.",
+  "chapter_key": "ga_current",
+  "subtopic": "Government schemes – governance",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256256": {
+  "explanation_en": "The Trinity of Carnatic music is Tyagaraja, Muthuswami Dikshitar and Syama Sastri, all 18th–19th century composers from Thiruvarur. Tenali Raman was a poet and wit in the court of Vijayanagara ruler Krishnadevaraya, not a Carnatic composer.",
+  "chapter_key": "ga_static",
+  "subtopic": "Art & culture – music",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256251": {
+  "explanation_en": "Muhammad bin Tughluq planned an expedition to conquer Khurasan (in Central Asia) and raised a large army for it, but the plan was dropped and the army disbanded. It is often counted among his 'ambitious projects', along with shifting the capital to Daulatabad and issuing token currency.",
+  "chapter_key": "ga_static",
+  "subtopic": "Medieval history – Tughluq dynasty",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256252": {
+  "explanation_en": "The Koya Rebellion (1879–80) in the Godavari hill tracts was led by Tomma Dora, so pair i is correct. The Kharwar uprising was led by Bhagirath Manjhi, and the Pabna peasant uprising (1873) by leaders like Ishan Chandra Roy, Shambhu Pal and Keshab Chandra Roy. Pairs ii and iii have their leaders swapped, so only i is matched correctly.",
+  "chapter_key": "ga_static",
+  "subtopic": "Modern history – tribal & peasant movements",
+  "difficulty": "hard",
+  "key_doubt": false
+ },
+ "630680256254": {
+  "explanation_en": "The Khajuraho group of temples (Madhya Pradesh) was built by the Chandela Rajputs, mainly between 950 and 1050 CE. They are famous for their Nagara-style architecture and intricate sculptures, and became a UNESCO World Heritage Site in 1986.",
+  "chapter_key": "ga_static",
+  "subtopic": "Art & culture – temple architecture",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256255": {
+  "explanation_en": "'Pada Bheda' (foot movements), 'Chalis' (gaits) and 'Bhramaris' (turns) are technical elements of Odissi, the classical dance of Odisha. Odissi is known for its tribhangi (three-bend) posture and the chowk stance.",
+  "chapter_key": "ga_static",
+  "subtopic": "Art & culture – classical dance",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256253": {
+  "explanation_en": "The Charminar in Hyderabad (built in 1591 by Muhammad Quli Qutb Shah) is not a UNESCO World Heritage Site. The Red Fort Complex, Taj Mahal and Humayun's Tomb are all inscribed World Heritage Sites.",
+  "chapter_key": "ga_static",
+  "subtopic": "Heritage – UNESCO sites in India",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256259": {
+  "explanation_en": "According to MNRE's Annual Report 2021-22, solar power had the largest installed renewable capacity in India (about 50 GW), ahead of wind (about 40 GW), bio-energy and small hydro. Solar overtook wind as the top renewable source around 2020.",
+  "chapter_key": "ga_current",
+  "subtopic": "Economy – renewable energy",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256269": {
+  "explanation_en": "In 5 L of A (3 : 4): spirit = 15/7 L, water = 20/7 L. In 6 L of B (5 : 9): spirit = 15/7 L, water = 27/7 L. The mix has spirit : water = 30 : 47 (total 77 parts). In 462 mL, spirit = 180 mL and water = 282 mL. For a 1 : 2 ratio, water must be 360 mL, so add 360 − 282 = 78 mL.",
+  "chapter_key": "num_arith",
+  "subtopic": "Mixture & alligation",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256267": {
+  "explanation_en": "p must divide the differences: 4188 − 3336 = 852 = 4 × 213 and 5679 − 4188 = 1491 = 7 × 213, so the HCF is 213 = 3 × 71. The only 2-digit divisor is p = 71. The remainder is q = 3336 − 71 × 46 = 70. So p − q = 71 − 70 = 1.",
+  "chapter_key": "num_arith",
+  "subtopic": "HCF – same remainder",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256271": {
+  "explanation_en": "Let B = 100, so A = 160. A − B = 60, so C = 1.55 × 60 = 93. New A = 160 × 0.6 = 96 and new C = 93 × 4/3 = 124. C exceeds A by (124 − 96)/96 × 100 = 29.17%, which is about 29.2%.",
+  "chapter_key": "num_arith",
+  "subtopic": "Percentage – successive change",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256284": {
+  "explanation_en": "Company B (2018): profit = 45% of the expenditure of ₹300 cr = ₹135 cr. Company A (2018): income = 1.30 × expenditure = 390, so expenditure = ₹300 cr and profit = ₹90 cr. B's profit is more than A's by (135 − 90)/90 × 100 = 50%.",
+  "chapter_key": "num_arith",
+  "subtopic": "Data interpretation – line graph",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256281": {
+  "explanation_en": "Cylinder volume = π × 18² × 32 = 10368π. For the cone, (1/3)πr² × 24 = 10368π gives r² = 1296, so r = 36 cm. Slant height l = √(36² + 24²) = √1872 = 12√13. Curved surface area = πrl = π × 36 × 12√13 = 432√13π cm².",
+  "chapter_key": "num_adv",
+  "subtopic": "Mensuration – cylinder and cone",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256265": {
+  "explanation_en": "First part: 7 7/8 ÷ 9 9/20 = 63/8 × 20/189 = 5/6; then 46/9 − 5/6 = 77/18; and 1.2̄ = 11/9, so 77/18 ÷ 11/9 = 7/2. Second part: 3/7 of 1/4 = 3/28; 21/4 ÷ 3/28 = 49; 49 × 2/7 = 14; 14 × 3/14 = 3. Value = 7/2 − 3 + 3/4 = 5/4 = 1 1/4.",
+  "chapter_key": "num_arith",
+  "subtopic": "Simplification – BODMAS with fractions",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256274": {
+  "explanation_en": "P = kQ/R. From 4.5 = k × 2.7/1.6, k = 7.2/2.7 = 8/3. For P = 6 and Q = 15: 6 = (8/3) × 15/R = 40/R, so R = 40/6 = 20/3.",
+  "chapter_key": "num_arith",
+  "subtopic": "Variation – direct and inverse",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256272": {
+  "explanation_en": "A 10% loss means ₹2,070 = 90% of CP, so CP of the 46 articles = ₹2,300. For a 20% profit, SP = 1.2 × 2300 = ₹2,760.",
+  "chapter_key": "num_arith",
+  "subtopic": "Profit & loss",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256273": {
+  "explanation_en": "2500 × (1 − x/100) × 0.90 × 0.88 = 1683, so (1 − x/100) × 1980 = 1683. This gives 1 − x/100 = 0.85, so x = 15. A single discount of 3x = 45% gives SP = 2500 × 0.55 = ₹1,375.",
+  "chapter_key": "num_arith",
+  "subtopic": "Discount – successive discounts",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256280": {
+  "explanation_en": "28² + 45² = 784 + 2025 = 2809 = 53², so the triangle is right-angled. The circumcircle of a right triangle has the hypotenuse as its diameter, so R = 53/2 = 26.5 cm. Area = π × 26.5² = 702.25π cm².",
+  "chapter_key": "num_adv",
+  "subtopic": "Geometry – circumcircle of triangle",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256283": {
+  "explanation_en": "Exports in 2017 and 2019 = 170 + 190 + 220 + 320 = 900. Production in 2018 and 2020 = 340 + 360 + 450 + 470 = 1620. Percentage less = (1620 − 900)/1620 × 100 = 720/1620 × 100 ≈ 44.4%.",
+  "chapter_key": "num_arith",
+  "subtopic": "Data interpretation – table",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256268": {
+  "explanation_en": "Times taken: 180/45 = 4 h and 150/50 = 3 h, and the third part takes 120/x h. Total distance = 450 km and average speed = 900/19 km/h, so total time = 450 × 19/900 = 9.5 h. Then 120/x = 9.5 − 7 = 2.5, which gives x = 48 km/h.",
+  "chapter_key": "num_arith",
+  "subtopic": "Speed – average speed",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256282": {
+  "explanation_en": "Cylinder height h = 1.2 × 10 = 12 cm, so half-height = 6. The cylinder's radius r satisfies r² = 10² − 6² = 64, so r = 8. Cylinder volume = π × 64 × 12 = 768π. Sphere volume = (4/3)π × 1000 = 4000π/3. x = 768π ÷ (4000π/3) × 100 = 57.6.",
+  "chapter_key": "num_adv",
+  "subtopic": "Mensuration – cylinder in sphere",
+  "difficulty": "hard",
+  "key_doubt": false
+ },
+ "630680256277": {
+  "explanation_en": "Let each instalment be X. Then 13500 = X/1.16 + X/1.16² = X × 2.16/1.3456, so X = 13500 × 1.3456/2.16 = ₹8,410. Total paid = 2 × 8410 = ₹16,820, so the interest = 16820 − 13500 = ₹3,320.",
+  "chapter_key": "num_arith",
+  "subtopic": "Compound interest – instalments",
+  "difficulty": "hard",
+  "key_doubt": false
+ },
+ "630680256275": {
+  "explanation_en": "Capital ratio 5/8 : 3/5 = 25 : 24. A: 25 × 6 + 20 × 6 = 270 (reduced by 20%). B: 24 × 6 + 36 × 6 = 360 (raised by 50%). Profit ratio = 270 : 360 = 3 : 4. A's share 3 parts = 15 lakh, so the total of 7 parts = ₹35 lakh.",
+  "chapter_key": "num_arith",
+  "subtopic": "Partnership",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256278": {
+  "explanation_en": "Let the downstream speed be d, so upstream = 0.4d. Then 15/(0.4d) + 15/d = 14/3, i.e. 52.5/d = 14/3, so d = 11.25 km/h and upstream = 4.5 km/h. Speed in still water = (11.25 + 4.5)/2 = 7.875 = 7 7/8 km/h.",
+  "chapter_key": "num_arith",
+  "subtopic": "Boats & streams",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256279": {
+  "explanation_en": "A + B fill 1/18 + 1/27 = 5/54 per hour. With C open, 5/36 is filled in 15 h, so the net rate = 1/108 per hour. C's emptying rate = 5/54 − 1/108 = 9/108 = 1/12, so C empties the full tank in 12 h and one-third of it in 4 h.",
+  "chapter_key": "num_arith",
+  "subtopic": "Pipes & cisterns",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256270": {
+  "explanation_en": "64% of 150 = 96 correct answers are needed. He has 60% of 90 = 54 correct already, so he needs 96 − 54 = 42 more from the remaining 60 questions. 42/60 × 100 = 70%.",
+  "chapter_key": "num_arith",
+  "subtopic": "Percentage",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256266": {
+  "explanation_en": "19 + 4√15 = 15 + 4 + 2 × 2 × √15 = (√15 + 2)², and similarly 19 − 4√15 = (√15 − 2)². So x = (√15 + 2) − (√15 − 2) = 4.",
+  "chapter_key": "num_adv",
+  "subtopic": "Algebra – surds",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256276": {
+  "explanation_en": "4 years 4 months = 13/3 years, so the amount = P(1 + 0.10 × 13/3) = 43P/30 = 9417, giving P = ₹6,570. At 12½% for 2 2/5 years: SI = 6570 × 0.125 × 2.4 = ₹1,971. Amount = 6570 + 1971 = ₹8,541.",
+  "chapter_key": "num_arith",
+  "subtopic": "Simple interest",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256514": {
+  "explanation_en": "Swap + and −: 56 + 74 × 17 − 391 ÷ 23. By BODMAS: 74 × 17 = 1258 and 391 ÷ 23 = 17. Then 56 + 1258 − 17 = 1297, which equals the right-hand side.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Mathematical operations – sign interchange",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256499": {
+  "explanation_en": "Treat each letter position as its own series. First letters P, Q, R, S, T (+1); second letters M, O, Q, S, U (+2); third letters T, W, Z, C, F (+3, wrapping from Z to C). The next term is TUF.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Letter series",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256495": {
+  "explanation_en": "C must be to the right of B, so B is at the left end (position 1) and I at the right end (9). E is midway between A and I with two letters between each vowel, so E is at 6 and A at 3. D and F lie between A and E (positions 4 and 5), and C is second to the left of D, so C = 2 and D = 4, F = 5. The row is B C A D F E _ _ I, and the middle (5th) letter is F.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Linear arrangement",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256505": {
+  "explanation_en": "If physical exercise is good for health, then players, whose profession involves regular exercise, are likely to be healthy, so conclusion I follows. Conclusion II is about one particular person (Ravinder) and has no link to the statement. Only I follows.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Statement & conclusions",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256506": {
+  "explanation_en": "Argument I is vague: unaffiliated courses do not create real opportunities, because their degrees are not recognised. Argument II rests on an assumption (that the college lacks equipment and resources) rather than on the actual purpose of affiliation, which is academic recognition and standards. As per the official key, neither argument is strong.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Statement & arguments",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256510": {
+  "explanation_en": "In each pair the second number is 7 times the first: 59 × 7 = 413, 61 × 7 = 427 and 47 × 7 = 329. But 37 × 7 = 259, not 269, so 37-269 is the odd one.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Odd one out – number pairs",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256513": {
+  "explanation_en": "The key's value 454 comes from reading the first operator as '+': 79 + 29 × 13 − 46 ÷ 23 = 79 + 377 − 2 = 454. As printed (78.69 ÷ 29.19 × 13.17 − 45.67 ÷ 22.89), the expression gives only about 2.7 × 13.17 − 2 ≈ 34, which matches no option.",
+  "chapter_key": "num_arith",
+  "subtopic": "Approximation",
+  "difficulty": "easy",
+  "key_doubt": false,
+  "note": "Question appears garbled: the first sign should be '+' (78.69 + 29.19 × 13.17 − 45.67 ÷ 22.89) for the options to make sense."
+ },
+ "630680256502": {
+  "explanation_en": "Rule from IMAGINE: split it as IMA | G | INE. Change each 3-letter block by +1, −1, +1 and reverse it (IMA → JLB → BLJ; INE → JMF → FMJ), keeping the middle letter G. Apply it to COLLEGE: COL → DNM → MND, L stays, EGE → FFF → FFF, giving MNDLFFF. The other options break the rule (e.g. SUCCESS should be DTTCTRF, not DTTCTRE).",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Letter analogy – coding",
+  "difficulty": "hard",
+  "key_doubt": false
+ },
+ "630680256496": {
+  "explanation_en": "Rashmi is 25th from the left and Kajal is 8 places to her left, so Kajal is 25 − 8 = 17th from the left. Position from the right = 50 − 17 + 1 = 34th.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Ranking & order",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256501": {
+  "explanation_en": "Statement I: FAHAD → 6 1 8 1 4, i.e. each letter is replaced by its alphabet position. Statement II: WATER → 23 1 20 5 18, which shows the same rule. Either statement alone reveals the rule, giving HUMAN = 8 21 13 1 14 (82113114). So either statement alone is sufficient.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Data sufficiency – coding",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256503": {
+  "explanation_en": "Rule: split the word into 3 letters + middle letter + 3 letters; change each block by +1, −1, +1 and reverse it, keeping the middle letter. IMAGINE → BLJGFMJ, SUCCESS → DTTCTRF and COLLEGE → MNDLFFF follow it. For COMMAND, AND → BME → EMB, so the code should be NNDMEMB, not NNDMENB. Option 3 is the odd one.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Odd one out – letter coding",
+  "difficulty": "hard",
+  "key_doubt": false
+ },
+ "630680256512": {
+  "explanation_en": "Try option 3: 34 − 69 ÷ 23 + 37 × 23 = 882. By BODMAS: 69 ÷ 23 = 3 and 37 × 23 = 851. Then 34 − 3 + 851 = 882, which balances the equation.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Mathematical operations – sign replacement",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256504": {
+  "explanation_en": "Rule: shift each letter by +1, then swap each adjacent pair. HOTELS → IPUFMT → PIFUTM; MATTER → NBUUFS → BNUUSF; ACTING → BDUJOH → DBJUHO. ACTUAL → BDUVBM → DBVUMB, but the given code is DBUVMB, so option 4 is the odd one.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Odd one out – letter coding",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256511": {
+  "explanation_en": "The rule is second = 3 × first + 2: 19 × 3 + 2 = 59, 17 × 3 + 2 = 53 and 23 × 3 + 2 = 71. But 29 × 3 + 2 = 89, not 91, so 29-91 is the odd one.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Odd one out – number pairs",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256498": {
+  "explanation_en": "From the clues: Q < R < P, P < T, U < Q and S < U. Combined, S < U < Q < R < P < T, so T is the heaviest.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Ordering – comparison",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256529": {
+  "explanation_en": "As per Census 2011, Kerala had the highest sex ratio among Scheduled Castes (1057 females per 1000 males), followed by Puducherry (about 1056). Tamil Nadu came next at about 1007.",
+  "chapter_key": "ga_static",
+  "subtopic": "Census 2011 – SC sex ratio",
+  "difficulty": "hard",
+  "key_doubt": false
+ },
+ "630680256532": {
+  "explanation_en": "Johannes Kepler gave the three laws of planetary motion (1609–1619): planets move in elliptical orbits (law of orbits), sweep equal areas in equal times (law of areas), and T² ∝ a³ (law of periods). Newton later explained them with his law of gravitation.",
+  "chapter_key": "ga_static",
+  "subtopic": "Physics – gravitation",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256531": {
+  "explanation_en": "In malaria, the Plasmodium parasite first multiplies in the liver and then invades and multiplies inside red blood cells. The bursting of these RBCs causes the periodic fever and chills. Dengue, Covid-19 and avian influenza are viral diseases.",
+  "chapter_key": "ga_static",
+  "subtopic": "Biology – diseases",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256523": {
+  "explanation_en": "The Ajanta caves (Aurangabad district, Maharashtra) are Buddhist rock-cut caves, made from about the 2nd century BCE to the 6th century CE. They are famous for murals depicting Jataka tales and became a UNESCO World Heritage Site in 1983.",
+  "chapter_key": "ga_static",
+  "subtopic": "Art & culture – cave architecture",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256520": {
+  "explanation_en": "Dharmapala (c. 770–810 CE), the Pala ruler, founded the Vikramashila Mahavihara (Bihar) and the Somapura Mahavihara (Paharpur, Bangladesh), which became great centres of Vajrayana Buddhism. He was the son of Gopala, the founder of the Pala dynasty.",
+  "chapter_key": "ga_static",
+  "subtopic": "Ancient history – Pala dynasty",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256534": {
+  "explanation_en": "Article 275 of the Constitution provides statutory grants-in-aid from the Union to states that need assistance, charged on the Consolidated Fund of India. These grants are given on the recommendation of the Finance Commission, unlike the discretionary grants under Article 282.",
+  "chapter_key": "ga_static",
+  "subtopic": "Polity – Centre-state financial relations",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256524": {
+  "explanation_en": "Bharatanatyam was earlier known as 'Dasi Attam' or 'Sadir', because it was performed by devadasis in the temples of Tamil Nadu. It was renamed and revived in the 20th century by E. Krishna Iyer and Rukmini Devi Arundale.",
+  "chapter_key": "ga_static",
+  "subtopic": "Art & culture – classical dance",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256516": {
+  "explanation_en": "Agni-5 is a three-stage, solid-fuel intercontinental-range ballistic missile developed by DRDO, with a range above 5,000 km. Solid fuel lets it be stored and launched quickly from a canister.",
+  "chapter_key": "ga_current",
+  "subtopic": "Defence – missiles",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256525": {
+  "explanation_en": "Ustad Zakir Hussain, son of Ustad Alla Rakha, was a world-renowned tabla maestro. He received the Padma Vibhushan (2023) and several Grammy Awards.",
+  "chapter_key": "ga_static",
+  "subtopic": "Art & culture – musicians",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256526": {
+  "explanation_en": "Revenue receipts are government receipts that neither create a liability nor reduce assets, for example tax revenue, and non-tax revenue such as fees, dividends and interest. Capital receipts, such as borrowings or disinvestment, either create a liability or reduce assets.",
+  "chapter_key": "ga_static",
+  "subtopic": "Economy – government budget",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256533": {
+  "explanation_en": "Madhya Pradesh notified its PESA rules on 15 November 2022 (Janjatiya Gaurav Divas) to implement the Panchayats (Extension to Scheduled Areas) Act, 1996. The Act gives gram sabhas in Fifth Schedule areas powers over local resources and governance.",
+  "chapter_key": "ga_current",
+  "subtopic": "Polity – PESA Act",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256515": {
+  "explanation_en": "In December 2022, Science & Technology Australia named Dr. Indrani Mukherjee, Neelima Kadiyala and Dr. Ana Baburamani, all of Indian origin, among its 'Superstars of STEM'. Shruthi Bishnoi was not among them.",
+  "chapter_key": "ga_current",
+  "subtopic": "Persons in news – awards",
+  "difficulty": "hard",
+  "key_doubt": false
+ },
+ "630680256530": {
+  "explanation_en": "Tamil Nadu holds India's largest lignite (brown coal) reserves, mainly at Neyveli, where NLC India uses it for thermal power generation. Lignite is a low-grade coal with high moisture and low carbon content.",
+  "chapter_key": "ga_static",
+  "subtopic": "Geography – minerals & energy",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256527": {
+  "explanation_en": "As per the RBI Handbook of Statistics on the Indian Economy 2019-20, Maharashtra had the highest Gross State Domestic Product (GSDP) among Indian states, followed by Tamil Nadu and Uttar Pradesh/Karnataka.",
+  "chapter_key": "ga_static",
+  "subtopic": "Economy – state GDP",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256518": {
+  "explanation_en": "The 2023 IBA Women's World Boxing Championships were held at the K.D. Jadhav Indoor Hall in New Delhi in March 2023. India won four golds, through Nikhat Zareen, Lovlina Borgohain, Nitu Ghanghas and Saweety Boora.",
+  "chapter_key": "ga_current",
+  "subtopic": "Sports – boxing",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256522": {
+  "explanation_en": "Bibi ka Maqbara is in Aurangabad (Chhatrapati Sambhajinagar), Maharashtra. It was built by Aurangzeb's son Azam Shah in memory of his mother and is called the 'Taj of the Deccan'. The Qutub Minar, the Alai Minar and Balban's tomb are all in Mehrauli, Delhi.",
+  "chapter_key": "ga_static",
+  "subtopic": "Art & culture – monuments",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256521": {
+  "explanation_en": "Dadabhai Naoroji, the 'Grand Old Man of India', was elected to the British House of Commons in 1892 from Finsbury Central as a Liberal Party candidate, becoming the first Asian MP. He is known for the 'Drain Theory' of colonial economic exploitation.",
+  "chapter_key": "ga_static",
+  "subtopic": "Modern history – personalities",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256528": {
+  "explanation_en": "Alluvial soil is divided into Bangar (older alluvium, found on higher ground, with kankar nodules) and Khadar (newer alluvium, found in the floodplains and more fertile). It is the most widespread soil in India, covering the northern plains.",
+  "chapter_key": "ga_static",
+  "subtopic": "Geography – soils",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256519": {
+  "explanation_en": "Manika Batra became the first Indian woman to win a medal (bronze) in women's singles at the ITTF-ATTU Asian Cup, in Bangkok in November 2022. She beat world No. 6 Hina Hayata of Japan in the bronze-medal match.",
+  "chapter_key": "ga_current",
+  "subtopic": "Sports – table tennis",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256517": {
+  "explanation_en": "As per the SRS Statistical Report 2019, Madhya Pradesh had the highest infant mortality rate (46 per 1,000 live births), and Kerala had the lowest. The national IMR in 2019 was 30.",
+  "chapter_key": "ga_current",
+  "subtopic": "Social indicators – IMR",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256535": {
+  "explanation_en": "Numerator: 7 1/2 of 2/5 = 3, and 3 ÷ 3/8 = 8; 2/5 of 5/16 = 1/8, so 3/8 × 5/4 ÷ 1/8 = 15/4; 8 − 15/4 + 1/4 = 9/2. Denominator: 2/3 of 13/6 = 13/9; 13/9 ÷ 4/3 = 13/12; 13/12 × 1/3 = 13/36; 13/36 − 1/36 = 1/3. Value = (9/2) ÷ (1/3) = 27/2 = 13 1/2.",
+  "chapter_key": "num_arith",
+  "subtopic": "Simplification – BODMAS with fractions",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256549": {
+  "explanation_en": "Passing a pole: L = 20v. Passing the tunnel: L + 200 = 36v. Subtracting, 16v = 200, so v = 12.5 m/s = 12.5 × 18/5 = 45 km/h. Time for 333 km = 333/45 = 7.4 hours.",
+  "chapter_key": "num_arith",
+  "subtopic": "Trains",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256546": {
+  "explanation_en": "Capital ratio 1/2 : 5/6 = 3 : 5. Ravi: 3 × 4 + 6 × 8 = 60 (doubled after 4 months). Gaurav: 5 × 4 + 3 × 8 = 44 (cut by 40%). Profit ratio = 60 : 44 = 15 : 11. Gaurav's 11 parts = ₹1,32,000, so one part = ₹12,000 and Ravi's share = 15 × 12000 = ₹1,80,000.",
+  "chapter_key": "num_arith",
+  "subtopic": "Partnership",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256540": {
+  "explanation_en": "Overall multiplier = 1.20 × 1.10 × 1.05 × 0.60 = 0.8316. Initial price = 415.80 ÷ 0.8316 = ₹500.",
+  "chapter_key": "num_arith",
+  "subtopic": "Percentage – successive change",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256536": {
+  "explanation_en": "23 + 6√10 = 18 + 5 + 2√90 = (3√2 + √5)², and similarly 23 − 6√10 = (3√2 − √5)². So x = (3√2 + √5) − (3√2 − √5) = 2√5 ≈ 4.47, which lies between 4 and 4.5.",
+  "chapter_key": "num_adv",
+  "subtopic": "Algebra – surds",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256552": {
+  "explanation_en": "Curved surface area = 440 ÷ 80 × 100 = 550 m². Since πrl = 550, (22/7) × r × 25 = 550, so r = 7 m. Height h = √(25² − 7²) = 24 m. Volume = (1/3) × (22/7) × 49 × 24 = 1232 m³.",
+  "chapter_key": "num_adv",
+  "subtopic": "Mensuration – cone",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256542": {
+  "explanation_en": "A 6.5% loss means ₹374 = 93.5% of CP, so CP = 374/0.935 = ₹400. For a 9.5% gain, SP = 400 × 1.095 = ₹438.",
+  "chapter_key": "num_arith",
+  "subtopic": "Profit & loss",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256543": {
+  "explanation_en": "After 16% and 20% discounts: 600 × 0.84 × 0.80 = ₹403.20. Then 403.20 × (1 − x/100) = 342.72 gives 1 − x/100 = 0.85, so x = 15. A single discount of 2x = 30% gives SP = 600 × 0.70 = ₹420.",
+  "chapter_key": "num_arith",
+  "subtopic": "Discount – successive discounts",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256554": {
+  "explanation_en": "In 2019, A's profit was 40% and B's was 30%. Let the expenditures be 2k and 3k. Total income = 1.4 × 2k + 1.3 × 3k = 6.7k = 428.8, so k = 64. A's expenditure = 2 × 64 = ₹128 crore.",
+  "chapter_key": "num_arith",
+  "subtopic": "Data interpretation – line graph",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256548": {
+  "explanation_en": "Balance = 75300 − 25740 = ₹49,560. The half-yearly rate is 10%, so 49560 = X/1.1 + X/1.21 = 2.1X/1.21, giving X = 49560 × 1.21/2.1 = ₹28,556. Total instalments = 2 × 28556 = ₹57,112, so interest = 57112 − 49560 = ₹7,552.",
+  "chapter_key": "num_arith",
+  "subtopic": "Compound interest – instalments",
+  "difficulty": "hard",
+  "key_doubt": false
+ },
+ "630680256544": {
+  "explanation_en": "a : (b + c) = 3 : 8, so a = 3/11 × 3960 = 1080. c : (a + b) = 4 : 5, so c = 4/9 × 3960 = 1760. Then b = 3960 − 1080 − 1760 = 1120.",
+  "chapter_key": "num_arith",
+  "subtopic": "Ratio & proportion",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256550": {
+  "explanation_en": "The net emptying rate is 1/6 tank in 4 h = 1/24 per hour. So 1/10 − 1/40 − 1/x = 1/24, which gives 1/x = 3/40 − 1/24 = (9 − 5)/120 = 1/30. Hence x = 30.",
+  "chapter_key": "num_arith",
+  "subtopic": "Pipes & cisterns",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256551": {
+  "explanation_en": "Side of the rhombus = 116/4 = 29 m. Half of the known diagonal = 21, so the other half = √(29² − 21²) = 20, making the other diagonal 40 m. Area = (42 × 40)/2 = 840 m². For the rectangle, 30k × 7k = 840 gives k = 2, so the sides are 60 m and 14 m and the perimeter = 2(60 + 14) = 148 m.",
+  "chapter_key": "num_adv",
+  "subtopic": "Mensuration – rhombus and rectangle",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256541": {
+  "explanation_en": "Let B = 100, so A = 68 and their average = 84 = 80% of C, giving C = 105. New A = 68 × 1.25 = 85 and new B = 90, so the new total = 175. C is less by (175 − 105)/175 × 100 = 40%.",
+  "chapter_key": "num_arith",
+  "subtopic": "Percentage – comparison",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256539": {
+  "explanation_en": "Alcohol in each part: A = 4 × 3/10 = 1.2 L, B = 5 × 4/15 = 4/3 ≈ 1.333 L and C = 3 × 2/5 = 1.2 L. Total alcohol ≈ 3.733 L in 12 L. Percentage = 3.733/12 × 100 ≈ 31.1%, which is closest to 31%.",
+  "chapter_key": "num_arith",
+  "subtopic": "Mixture & alligation",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256545": {
+  "explanation_en": "A = k/(BC). From 12 = k/(9 × 5), k = 540. For B = 15 and C = 4: A = 540/60 = 9.",
+  "chapter_key": "num_arith",
+  "subtopic": "Variation – inverse",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256553": {
+  "explanation_en": "Total surface area 2πr(h + r) = 370π gives r(32 + r) = 185, so r = 5 cm (since 5 × 37 = 185). Cylinder volume = π × 25 × 32 = 800π. Then 800π = (3/5) × (4/3)πR³ = (4/5)πR³, so R³ = 1000 and R = 10 cm. Diameter = 20 cm.",
+  "chapter_key": "num_adv",
+  "subtopic": "Mensuration – cylinder and sphere",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256547": {
+  "explanation_en": "Amount at 7.4% for 2.5 years = P(1 + 0.185) = 1.185P. SI at 15% for 10 years = 1.5P. Since 1.5P − 1.185P = 0.315P = 1701, P = ₹5,400.",
+  "chapter_key": "num_arith",
+  "subtopic": "Simple interest",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256537": {
+  "explanation_en": "LCM(30, 36, 40, 54) = 2³ × 3³ × 5 = 1080, so x = 1080k + 4. Since 1080 = 23 × 47 − 1, x ≡ −k + 4 (mod 23), and x is divisible by 23 when k = 4. So x = 4324 (= 23 × 188), and the digit sum is 4 + 3 + 2 + 4 = 13.",
+  "chapter_key": "num_arith",
+  "subtopic": "LCM – remainder with divisibility",
+  "difficulty": "hard",
+  "key_doubt": false
+ },
+ "630680256538": {
+  "explanation_en": "Let PQ = d and QR = 2d, so PR = 3d and the total distance = 6d. Total time = d/50 + 2d/60 + 3d/45 = d(3 + 5 + 10)/150 = 3d/25. Average speed = 6d ÷ (3d/25) = 50 km/h.",
+  "chapter_key": "num_arith",
+  "subtopic": "Speed – average speed",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680600059": {
+  "explanation_en": "Check each letter position. 1st letters N, I, F, A go −5, −3, −5, so the next is −3: X. 2nd letters R, Y, J, Q go +7, +11, +7, so the next is +11: B. 3rd letters C, N, U, F go +11, +7, +11, so the next is +7: M. Only XBMW starts with XBM (its 4th letter W continues H, J, E, B with a −5 step).",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Letter series",
+  "difficulty": "hard",
+  "key_doubt": false
+ },
+ "630680600057": {
+  "explanation_en": "MKH (13→11→8), WUR (23→21→18) and KIF (11→9→6) all step backwards by −2 and then −3. MPR (13→16→18) steps forwards by +3 and then +2, so it is the odd one.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Odd one out – letter groups",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680600048": {
+  "explanation_en": "The word is split into two halves of 4 letters and each half is reversed: STOP|WARS → POTS|SRAW and LOGI|PERT → IGOL|TREP. So LAPT|OPST → TPAL|TSPO = TPALTSPO.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Coding–decoding",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680600061": {
+  "explanation_en": "The father advising daily exercise shows that he cares about his daughter's health, so conclusion I follows. Nothing in the statement suggests any disease (people exercise to stay fit), so conclusion II does not follow. Only I follows.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Statement & conclusions",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680600064": {
+  "explanation_en": "Replacing the signs gives 38 ÷ 57 × 9 + 18 − 12. By BODMAS: 38/57 = 2/3, then 2/3 × 9 = 6, then 6 + 18 − 12 = 12.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Mathematical operations – symbol substitution",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680600067": {
+  "explanation_en": "The second number is the first plus 191: 442 + 191 = 633 and 186 + 191 = 377. Checking the options, 313 + 191 = 504, so 313 : 504 fits. The others differ by 201, 181 and 190.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Number analogy",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680600045": {
+  "explanation_en": "Q is 2nd from the left and immediately left of R, so R = 3 and S (immediately right of R) = 4. P is at the right end (7), and U, whose neighbours are T and P, is at 6 with T at 5. V takes position 1. The immediate left of P is U.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Linear arrangement",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680600052": {
+  "explanation_en": "'Some C are D' and 'Some D are E' are two particular statements, so no definite link between C and E follows (I fails). 'No E is G' only separates the D that are E from G; other D may or may not be G (II fails). Nothing at all links G with C (III fails). Hence no conclusion follows.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Syllogism",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680600046": {
+  "explanation_en": "Position from the left = total − position from the right + 1 = 40 − 13 + 1 = 28th.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Ranking & order",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680600066": {
+  "explanation_en": "The differences are −3, +9, −27, +81, i.e. powers of 3 with alternating signs. The next difference is −243, so the missing term = 260 − 243 = 17.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Number series",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680600058": {
+  "explanation_en": "WXUZ (23, 24, 21, 26), NOLQ (14, 15, 12, 17) and IJGL (9, 10, 7, 12) all follow +1, −3, +5. EFCG (5, 6, 3, 7) follows +1, −3, +4, so it is the odd one.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Odd one out – letter groups",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680600055": {
+  "explanation_en": "Each letter of NQT moves +1 to give ORU. Applying +1 to ADH gives BEI.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Letter analogy",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680600050": {
+  "explanation_en": "J ÷ P: J is the son of P. P + K: P is the husband of K. K × M: K is the mother of M, so P is M's father. M − R: M is the wife of R. So P is the father of R's wife, i.e. R's wife's father (father-in-law).",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Coded blood relations",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680600065": {
+  "explanation_en": "Interchange 7 and 9 in each equation. (1) 7 − 9 + 3 = 1 ✓; (3) 7 × 1 − 9 × 2 = −11 ✓; (4) 9 × 2 + 7 − 4 = 21 ✓. But (2) becomes 7 × 4 − 9 × 3 = 28 − 27 = 1, not 4, so it is the equation that is not correct.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Mathematical operations – interchange",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680600068": {
+  "explanation_en": "The rule is n³ − n²: 6³ − 6² = 216 − 36 = 180 and 8³ − 8² = 512 − 64 = 448. So 10³ − 10² = 1000 − 100 = 900.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Number analogy",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680600060": {
+  "explanation_en": "After a bridge collapse, the immediate need is to rescue people who may be trapped or injured, so course I follows. Asking people to leave the whole town is impractical and out of proportion to the problem, so course II does not follow.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Statement & course of action",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680600063": {
+  "explanation_en": "Planning to expand operations to reach the world market shows that the corporation wants a global presence, so conclusion II follows. Nothing in the statement suggests it is uncompetitive; if anything it suggests the opposite. Only II follows.",
+  "chapter_key": "rea_verbal",
+  "subtopic": "Statement & conclusions",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680599869": {
+  "explanation_en": "H.S. Prannoy won bronze in men's singles at the BWF World Championships 2023 in Copenhagen, losing the semi-final to Kunlavut Vitidsarn. It was his first World Championships medal.",
+  "chapter_key": "ga_current",
+  "subtopic": "Sports – badminton",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680599871": {
+  "explanation_en": "In January 2023, ISRO signed an MoU with Microsoft to support space-tech startups in India, giving them access to Microsoft's tools, cloud platform (Azure) and mentorship. The move is part of opening up India's space sector to private players.",
+  "chapter_key": "ga_current",
+  "subtopic": "Science & tech – space agreements",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680599879": {
+  "explanation_en": "Article 343(1) says the official language of the Union shall be Hindi in the Devanagari script, with the international form of Indian numerals. Part XVII (Articles 343–351) deals with official languages.",
+  "chapter_key": "ga_static",
+  "subtopic": "Polity – official language",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680599881": {
+  "explanation_en": "The Narmada rises at Amarkantak on the Maikal range/Amarkantak plateau in Anuppur district, Madhya Pradesh. It flows west through a rift valley between the Vindhyas and Satpuras into the Gulf of Khambhat (Arabian Sea).",
+  "chapter_key": "ga_static",
+  "subtopic": "Geography – rivers",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680599877": {
+  "explanation_en": "The Battle (Siege) of Seringapatam in 1799 was the decisive battle of the Fourth Anglo-Mysore War. Tipu Sultan was killed defending his capital, and the British restored the Wodeyars to a reduced Mysore.",
+  "chapter_key": "ga_static",
+  "subtopic": "Modern history – Anglo-Mysore wars",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680599885": {
+  "explanation_en": "Article 315 provides for a Public Service Commission for the Union (UPSC) and a Public Service Commission for each state. The Finance Commission is under Article 280 and the Election Commission under Article 324.",
+  "chapter_key": "ga_static",
+  "subtopic": "Polity – constitutional bodies",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680599880": {
+  "explanation_en": "The Nalwari Fair is an annual cattle fair held in March at Bilaspur, Himachal Pradesh, on the Luhnu ground. It features trade in cattle along with wrestling and cultural events.",
+  "chapter_key": "ga_static",
+  "subtopic": "Art & culture – fairs & festivals",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680599884": {
+  "explanation_en": "Article 21 states that no person shall be deprived of life or personal liberty except according to procedure established by law. Courts have widened it to include rights such as privacy, livelihood and a clean environment.",
+  "chapter_key": "ga_static",
+  "subtopic": "Polity – fundamental rights",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680599878": {
+  "explanation_en": "Silappadikaram, one of the five great Tamil epics, was composed by Ilango Adigal, a Chera prince turned Jain monk. It tells the story of Kovalan, Kannagi and Madhavi. Its sequel Manimekalai was written by Sattanar.",
+  "chapter_key": "ga_static",
+  "subtopic": "Ancient history – Sangam literature",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680599873": {
+  "explanation_en": "In its December 2023 policy, the RBI Monetary Policy Committee kept the repo rate unchanged at 6.5%. The rate had stayed at 6.5% since February 2023.",
+  "chapter_key": "ga_current",
+  "subtopic": "Banking – monetary policy",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680599875": {
+  "explanation_en": "The Indian National Congress was founded in December 1885 at Gokuldas Tejpal Sanskrit College, Bombay, with A.O. Hume's initiative. W.C. Bonnerjee presided over its first session, attended by 72 delegates.",
+  "chapter_key": "ga_static",
+  "subtopic": "Modern history – national movement",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680599883": {
+  "explanation_en": "As per Census 2011, Uttar Pradesh was the most populous state with about 19.98 crore people (16.5% of India), followed by Maharashtra and Bihar.",
+  "chapter_key": "ga_static",
+  "subtopic": "Census 2011 – population",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680599872": {
+  "explanation_en": "The Ministry of Social Justice and Empowerment signed an MoU with ISKCON on 23 November 2023 to spread awareness under the Nasha Mukt Bharat Abhiyaan (NMBA). The NMBA, launched in 2020, is run by this ministry.",
+  "chapter_key": "ga_current",
+  "subtopic": "Government schemes – MoUs",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680599870": {
+  "explanation_en": "In December 2023, Akash Ambani announced that Jio is building 'BharatGPT', a large language model AI project, with IIT Bombay. It is aimed at Indian languages and India-specific use cases.",
+  "chapter_key": "ga_current",
+  "subtopic": "Science & tech – AI",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680599887": {
+  "explanation_en": "Amla (Indian gooseberry) is famous as a rich source of Vitamin C, not Vitamin A. Carrot, mango and papaya are rich in beta-carotene, which the body converts to Vitamin A.",
+  "chapter_key": "ga_static",
+  "subtopic": "Biology – vitamins",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680599876": {
+  "explanation_en": "The Young Bengal Movement was started by Henry Louis Vivian Derozio, a teacher at Hindu College, Calcutta, in the late 1820s. His students, the Derozians, encouraged free thinking and questioned social and religious orthodoxy.",
+  "chapter_key": "ga_static",
+  "subtopic": "Modern history – socio-religious reform",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680599888": {
+  "explanation_en": "Oranges and other citrus fruits contain citric acid, which gives them their sour taste. Oxalic acid is found in tomatoes and spinach, methanoic (formic) acid in ant stings, and lactic acid in curd.",
+  "chapter_key": "ga_static",
+  "subtopic": "Chemistry – natural acids",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680599886": {
+  "explanation_en": "Article 65 lets the Vice-President act as President when the office falls vacant (death, resignation, removal) until a new President is elected. It also lets the Vice-President discharge the President's functions during the President's absence or illness.",
+  "chapter_key": "ga_static",
+  "subtopic": "Polity – Vice-President",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680599882": {
+  "explanation_en": "The Purvanchal (eastern hills) include the Patkai Bum, Naga hills, Manipur hills and Mizo hills along India's north-eastern border. The Shevaroy Hills are part of the Eastern Ghats in Tamil Nadu (Salem district), with Yercaud as the hill station.",
+  "chapter_key": "ga_static",
+  "subtopic": "Geography – physiography",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680599874": {
+  "explanation_en": "ICICI (Industrial Credit and Investment Corporation of India) was set up in 1955 at the initiative of the World Bank, the Government of India and Indian industry representatives. Its purpose was to provide project finance to Indian industry. It later became ICICI Bank.",
+  "chapter_key": "ga_static",
+  "subtopic": "Banking – financial institutions",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680600116": {
+  "explanation_en": "The age difference is 13 − 10 = 3 parts = 18 years, so 1 part = 6. Present ages are 60 and 78. After 12 years they will be 72 and 90, a ratio of 72 : 90 = 4 : 5.",
+  "chapter_key": "num_arith",
+  "subtopic": "Problems on ages",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680600110": {
+  "explanation_en": "'8 times more than E2' means E1 = E2 + 8E2 = 9E2. E2 is less than E1 by (9 − 1)/9 × 100 = 800/9 = 88.88%.",
+  "chapter_key": "num_arith",
+  "subtopic": "Percentage",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680600098": {
+  "explanation_en": "The correct total is 10 more than the recorded total (30 − 20 = 10), so the average rises by 10/40 = 0.25. Correct average = 21 + 0.25 = 21.25 years.",
+  "chapter_key": "num_arith",
+  "subtopic": "Average – correction",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680600114": {
+  "explanation_en": "Let P = 6k, Q = 5k and R = 3k. Then (P + Q) − R = 11k − 3k = 8k = 32, so k = 4 and Q = 5 × 4 = 20.",
+  "chapter_key": "num_arith",
+  "subtopic": "Ratio & proportion",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680600102": {
+  "explanation_en": "Amount = 14400 × (1.1)³ = 14400 × 1.331 = ₹19,166.40. Compound interest = 19166.40 − 14400 = ₹4,766.40.",
+  "chapter_key": "num_arith",
+  "subtopic": "Compound interest",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680600120": {
+  "explanation_en": "Surface area varies as the square of the linear dimensions. With each dimension multiplied by 0.88, the area becomes 0.88² = 0.7744 of the original. Decrease = 1 − 0.7744 = 0.2256, i.e. 22.56%.",
+  "chapter_key": "num_adv",
+  "subtopic": "Mensuration – cuboid percentage change",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680600108": {
+  "explanation_en": "A number is divisible by 9 if its digit sum is divisible by 9. 8 + 5 + 9 + M = 22 + M, and the next multiple of 9 is 27, so M = 5.",
+  "chapter_key": "num_arith",
+  "subtopic": "Number system – divisibility",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680600112": {
+  "explanation_en": "Profit = 12% of CP = 0.12 × 230 = ₹27.6.",
+  "chapter_key": "num_arith",
+  "subtopic": "Profit & loss",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680600113": {
+  "explanation_en": "After a 25% discount, SP = 75% of MP. So MP = 7200 ÷ 0.75 = ₹9,600.",
+  "chapter_key": "num_arith",
+  "subtopic": "Discount",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680600100": {
+  "explanation_en": "SI for 2 years = 28800, so the interest for one year = 14400. CI − SI = 36000 − 28800 = 7200, which is the interest on the first year's interest (14400) for one year, so r = 7200/14400 = 50%. Principal = 14400 ÷ 0.50 = ₹28,800.",
+  "chapter_key": "num_arith",
+  "subtopic": "CI and SI difference",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680600119": {
+  "explanation_en": "Distance to cover = train + platform = 210 + 390 = 600 m. Speed = 54 × 5/18 = 15 m/s. Time = 600/15 = 40 seconds.",
+  "chapter_key": "num_arith",
+  "subtopic": "Trains – crossing platform",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680600109": {
+  "explanation_en": "Do division and multiplication left to right first: 33 ÷ 11 = 3; 75 ÷ 5 × 2 = 15 × 2 = 30; 6 ÷ 12 × 30 = 0.5 × 30 = 15. Then 3 + 30 − 15 = 18.",
+  "chapter_key": "num_arith",
+  "subtopic": "Simplification – BODMAS",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680600111": {
+  "explanation_en": "Population after 3 years = 30000 × (1.2)³ = 30000 × 1.728 = 51,840.",
+  "chapter_key": "num_arith",
+  "subtopic": "Percentage – population growth",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680600107": {
+  "explanation_en": "12 = 2² × 3, 36 = 2² × 3² and 240 = 2⁴ × 3 × 5. The common factors with the lowest powers are 2² × 3 = 12. Also, 12 divides both 36 and 240, so the HCF is 12.",
+  "chapter_key": "num_arith",
+  "subtopic": "HCF",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680600122": {
+  "explanation_en": "Let length = L, so breadth = 5L/8. Then L × 5L/8 = 160, so L² = 256 and L = 16 m, breadth = 10 m. Difference = 16 − 10 = 6 m.",
+  "chapter_key": "num_adv",
+  "subtopic": "Mensuration – rectangle",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680600117": {
+  "explanation_en": "Z = (X + Y + Z) − (X + Y) = 1/45 − 1/60 = 1/180 per day. X = (X + Y + Z) − (Y + Z) = 1/45 − 1/90 = 1/90 per day. X + Z = 1/90 + 1/180 = 3/180 = 1/60, so they take 60 days.",
+  "chapter_key": "num_arith",
+  "subtopic": "Time & work",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680600118": {
+  "explanation_en": "Let the usual speed be v. Leaving 8 hours early and arriving on time means 600/(v − 20) − 600/v = 8, so 12000 = 8v(v − 20), i.e. v² − 20v − 1500 = 0. This gives (v − 50)(v + 30) = 0, so v = 50 km/h.",
+  "chapter_key": "num_arith",
+  "subtopic": "Speed, time & distance",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680600099": {
+  "explanation_en": "Total rate over 11 years = 4 × 3% + 7 × 9% = 12% + 63% = 75% of the sum. So 0.75P = 42000 and P = ₹56,000.",
+  "chapter_key": "num_arith",
+  "subtopic": "Simple interest – varying rates",
+  "difficulty": "easy",
+  "key_doubt": false
+ }
+}

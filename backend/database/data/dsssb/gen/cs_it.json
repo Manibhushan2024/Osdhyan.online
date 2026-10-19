@@ -1,0 +1,2467 @@
+[
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "MS Word",
+    "difficulty": "easy",
+    "question_en": "In MS Word, which keyboard shortcut centre-aligns the selected paragraph?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Ctrl + E",
+        "hi": null
+      },
+      {
+        "en": "Ctrl + L",
+        "hi": null
+      },
+      {
+        "en": "Ctrl + J",
+        "hi": null
+      },
+      {
+        "en": "Ctrl + C",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Ctrl + E centres text. Ctrl + L is left align, Ctrl + J justifies and Ctrl + C copies the selection.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "MS Word",
+    "difficulty": "easy",
+    "question_en": "A document saved in MS Word 2007 or any later version has the default file extension:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": ".dotx",
+        "hi": null
+      },
+      {
+        "en": ".txt",
+        "hi": null
+      },
+      {
+        "en": ".doc",
+        "hi": null
+      },
+      {
+        "en": ".docx",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Since Word 2007 the default XML-based format is .docx. .doc is the older Word 97–2003 format and .dotx is a Word template.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "MS Word",
+    "difficulty": "easy",
+    "question_en": "Which shortcut opens the Find and Replace dialog box with the Replace tab active in MS Word?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Ctrl + G",
+        "hi": null
+      },
+      {
+        "en": "Ctrl + H",
+        "hi": null
+      },
+      {
+        "en": "Ctrl + R",
+        "hi": null
+      },
+      {
+        "en": "Ctrl + F",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Ctrl + H opens Replace. Ctrl + F opens Find (Navigation pane), Ctrl + G opens Go To and Ctrl + R right-aligns text.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "MS Word",
+    "difficulty": "medium",
+    "question_en": "Pressing Shift + F3 on selected text in MS Word:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Opens the Thesaurus",
+        "hi": null
+      },
+      {
+        "en": "Inserts the current date",
+        "hi": null
+      },
+      {
+        "en": "Cycles the text through UPPERCASE, lowercase and Capitalise Each Word",
+        "hi": null
+      },
+      {
+        "en": "Applies bold and italic together",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Shift + F3 toggles the case of the selection among the case options. Shift + F7 opens the Thesaurus.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "MS Word",
+    "difficulty": "medium",
+    "question_en": "Which key combination inserts a manual page break in an MS Word document?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Ctrl + Shift + B",
+        "hi": null
+      },
+      {
+        "en": "Alt + Enter",
+        "hi": null
+      },
+      {
+        "en": "Shift + Enter",
+        "hi": null
+      },
+      {
+        "en": "Ctrl + Enter",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Ctrl + Enter starts a new page at the cursor. Shift + Enter inserts only a line break within the same paragraph.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "MS Word",
+    "difficulty": "medium",
+    "question_en": "A principal wants to send the same invitation letter to 300 parents, each letter showing the parent's own name and address. The MS Word feature to use is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Track Changes",
+        "hi": null
+      },
+      {
+        "en": "Mail Merge",
+        "hi": null
+      },
+      {
+        "en": "Format Painter",
+        "hi": null
+      },
+      {
+        "en": "Macro Recorder",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Mail Merge combines a main document with a data source (a list of names and addresses) to produce a personalised copy for every record.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "MS Word",
+    "difficulty": "medium",
+    "question_en": "In MS Word, F7 starts the Spelling & Grammar check. What does Shift + F7 open?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Word Count",
+        "hi": null
+      },
+      {
+        "en": "Save As dialog",
+        "hi": null
+      },
+      {
+        "en": "Thesaurus",
+        "hi": null
+      },
+      {
+        "en": "Print Preview",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Shift + F7 opens the Thesaurus to find synonyms for the selected word. F12 opens Save As and Ctrl + P opens Print.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "MS Word",
+    "difficulty": "medium",
+    "question_en": "The Format Painter tool in MS Word is used to:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Copy formatting from one piece of text and apply it to another",
+        "hi": null
+      },
+      {
+        "en": "Paint a watermark across every page",
+        "hi": null
+      },
+      {
+        "en": "Draw shapes and freehand pictures",
+        "hi": null
+      },
+      {
+        "en": "Change the colour of the page background",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Format Painter picks up font, size, colour and paragraph formatting from the selection and applies it to the next text you select; double-clicking it keeps it active for repeated use.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "MS Word",
+    "difficulty": "medium",
+    "question_en": "Which feature on the Review tab of MS Word records every insertion, deletion and formatting change made by a reviewer so that the author can accept or reject each one?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "AutoCorrect",
+        "hi": null
+      },
+      {
+        "en": "Track Changes",
+        "hi": null
+      },
+      {
+        "en": "Restrict Editing",
+        "hi": null
+      },
+      {
+        "en": "Compare Fonts",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Track Changes (Ctrl + Shift + E) marks every edit with the reviewer's name; the author then accepts or rejects changes individually.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "MS Word",
+    "difficulty": "hard",
+    "question_en": "While typing the chemical formula H2O in MS Word, the digit 2 should be lowered below the line. Which shortcut applies this formatting?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Ctrl + ]",
+        "hi": null
+      },
+      {
+        "en": "Ctrl + 2",
+        "hi": null
+      },
+      {
+        "en": "Ctrl + Shift + =",
+        "hi": null
+      },
+      {
+        "en": "Ctrl + =",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Ctrl + = toggles subscript (H₂O). Ctrl + Shift + = gives superscript (x²), Ctrl + ] increases font size by 1 point and Ctrl + 2 sets double line spacing.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "MS Word",
+    "difficulty": "hard",
+    "question_en": "The MS Word paragraph option 'Widow/Orphan control' ensures that:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Every page has a header and footer",
+        "hi": null
+      },
+      {
+        "en": "Tables are not split across columns",
+        "hi": null
+      },
+      {
+        "en": "A single line of a paragraph is not left alone at the top or bottom of a page",
+        "hi": null
+      },
+      {
+        "en": "Hyphenation is turned off for short words",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "With widow/orphan control on, Word moves lines so that the first or last line of a paragraph does not sit by itself at the bottom or top of a page. It is found under Paragraph > Line and Page Breaks.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "MS PowerPoint",
+    "difficulty": "easy",
+    "question_en": "Which shortcut inserts a new slide in MS PowerPoint?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Ctrl + M",
+        "hi": null
+      },
+      {
+        "en": "Ctrl + N",
+        "hi": null
+      },
+      {
+        "en": "Ctrl + D",
+        "hi": null
+      },
+      {
+        "en": "Ctrl + S",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Ctrl + M adds a new slide after the current one. Ctrl + N creates a new presentation, Ctrl + S saves and Ctrl + D duplicates the selected object or slide.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "MS PowerPoint",
+    "difficulty": "easy",
+    "question_en": "Which PowerPoint view shows miniature versions of all slides together so that they can be easily rearranged by dragging?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Outline view",
+        "hi": null
+      },
+      {
+        "en": "Slide Sorter view",
+        "hi": null
+      },
+      {
+        "en": "Notes Page view",
+        "hi": null
+      },
+      {
+        "en": "Reading view",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Slide Sorter displays thumbnails of every slide, making it easy to reorder, delete or apply transitions to many slides at once.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "MS PowerPoint",
+    "difficulty": "medium",
+    "question_en": "In MS PowerPoint, F5 starts the slide show from the first slide. Which shortcut starts the show from the CURRENT slide?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Alt + F5",
+        "hi": null
+      },
+      {
+        "en": "Ctrl + F5",
+        "hi": null
+      },
+      {
+        "en": "Shift + F5",
+        "hi": null
+      },
+      {
+        "en": "F7",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Shift + F5 begins the presentation at the currently selected slide, which is useful for rehearsing a particular section. F7 runs the spell check.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "MS PowerPoint",
+    "difficulty": "medium",
+    "question_en": "A teacher wants the school logo, font style and colour scheme to appear identically on every slide of a 40-slide presentation without editing each slide. She should use the:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Animation Pane",
+        "hi": null
+      },
+      {
+        "en": "Slide Sorter",
+        "hi": null
+      },
+      {
+        "en": "Custom Slide Show",
+        "hi": null
+      },
+      {
+        "en": "Slide Master",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Changes made in the Slide Master are applied to all slides based on its layouts, ensuring a uniform design. The Animation Pane only controls effects on objects.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "MS Excel",
+    "difficulty": "easy",
+    "question_en": "Every formula entered in an MS Excel cell must begin with which symbol?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "= (equal sign)",
+        "hi": null
+      },
+      {
+        "en": "# (hash)",
+        "hi": null
+      },
+      {
+        "en": "@ (at sign)",
+        "hi": null
+      },
+      {
+        "en": "$ (dollar)",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Excel treats an entry starting with = as a formula, e.g. =SUM(A1:A5). The $ sign is used inside formulas to make references absolute.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "MS Excel",
+    "difficulty": "easy",
+    "question_en": "Which of the following is an absolute cell reference in MS Excel that does not change when the formula is copied?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "$C$5",
+        "hi": null
+      },
+      {
+        "en": "C$5",
+        "hi": null
+      },
+      {
+        "en": "C5",
+        "hi": null
+      },
+      {
+        "en": "$C5",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Placing $ before both the column letter and the row number locks both, so $C$5 always points to C5. $C5 and C$5 are mixed references and C5 is relative.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "MS Excel",
+    "difficulty": "easy",
+    "question_en": "In MS Excel, the error value #DIV/0! is displayed when a formula:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Contains a misspelled function name",
+        "hi": null
+      },
+      {
+        "en": "Divides a number by zero or by an empty cell",
+        "hi": null
+      },
+      {
+        "en": "Produces a result too wide for the column",
+        "hi": null
+      },
+      {
+        "en": "Refers to a deleted cell",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "#DIV/0! appears when the divisor is 0 or blank. A deleted reference gives #REF!, a misspelled function gives #NAME? and a too-narrow column shows #####.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "MS Excel",
+    "difficulty": "easy",
+    "question_en": "Which keyboard shortcut enters the current date into the active cell in MS Excel?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Ctrl + T",
+        "hi": null
+      },
+      {
+        "en": "Ctrl + Shift + D",
+        "hi": null
+      },
+      {
+        "en": "Ctrl + D",
+        "hi": null
+      },
+      {
+        "en": "Ctrl + ;",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Ctrl + ; (semicolon) inserts today's date as a fixed value; Ctrl + Shift + ; inserts the current time. Ctrl + D fills down and Ctrl + T creates a table.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "MS Excel",
+    "difficulty": "medium",
+    "question_en": "Cells A1:A5 contain 10, the text \"Delhi\", a blank cell, 25 and 0. What do =COUNT(A1:A5) and =COUNTA(A1:A5) return?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "4 and 4",
+        "hi": null
+      },
+      {
+        "en": "3 and 5",
+        "hi": null
+      },
+      {
+        "en": "3 and 4",
+        "hi": null
+      },
+      {
+        "en": "2 and 4",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "COUNT counts only numeric cells: 10, 25 and 0 = 3 (zero is a number). COUNTA counts all non-empty cells: 10, Delhi, 25, 0 = 4. The blank cell is ignored by both.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "MS Excel",
+    "difficulty": "medium",
+    "question_en": "What does the Excel formula =MID(\"COMPUTER\",4,3) return?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "MPU",
+        "hi": null
+      },
+      {
+        "en": "COM",
+        "hi": null
+      },
+      {
+        "en": "PUT",
+        "hi": null
+      },
+      {
+        "en": "UTE",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "MID(text, start, count) extracts count characters starting at position start. Starting at the 4th letter (P) and taking 3 characters gives PUT.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "MS Excel",
+    "difficulty": "medium",
+    "question_en": "Cells A1:A5 contain 40, 60, 75, 50 and 90. What is the result of =SUMIF(A1:A5,\">50\")?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "175",
+        "hi": null
+      },
+      {
+        "en": "225",
+        "hi": null
+      },
+      {
+        "en": "275",
+        "hi": null
+      },
+      {
+        "en": "315",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Only values strictly greater than 50 are added: 60 + 75 + 90 = 225. Including 50 (as '>=50' would) gives 275.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "MS Excel",
+    "difficulty": "medium",
+    "question_en": "In =VLOOKUP(E2, A2:C100, 3, FALSE), what is the purpose of the last argument FALSE?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "It forces an exact match of E2 in the first column",
+        "hi": null
+      },
+      {
+        "en": "It searches the table from right to left",
+        "hi": null
+      },
+      {
+        "en": "It returns the value from the 3rd row",
+        "hi": null
+      },
+      {
+        "en": "It sorts the table before searching",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The fourth argument range_lookup = FALSE (or 0) requests an exact match and returns #N/A if none is found; TRUE gives an approximate match on a sorted first column. The 3 is the column index, not a row.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "MS Excel",
+    "difficulty": "medium",
+    "question_en": "A student types =SUMM(B2:B10) in MS Excel. Which error is displayed?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "#REF!",
+        "hi": null
+      },
+      {
+        "en": "#N/A",
+        "hi": null
+      },
+      {
+        "en": "#VALUE!",
+        "hi": null
+      },
+      {
+        "en": "#NAME?",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Excel does not recognise SUMM as a function name, so it returns #NAME?. #VALUE! arises from a wrong data type and #N/A when a lookup value is not found.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "MS Excel",
+    "difficulty": "medium",
+    "question_en": "Cell C1 contains =A1*$B$1. If C1 is copied to C3, the formula in C3 becomes:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "=C3*$B$1",
+        "hi": null
+      },
+      {
+        "en": "=A3*$B$1",
+        "hi": null
+      },
+      {
+        "en": "=A3*$B$3",
+        "hi": null
+      },
+      {
+        "en": "=A1*$B$1",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Copying two rows down adjusts the relative reference A1 to A3, while the absolute reference $B$1 stays fixed.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "MS Excel",
+    "difficulty": "medium",
+    "question_en": "Which shortcut in MS Excel inserts the AutoSum (SUM) function for the adjacent range?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Ctrl + Shift + S",
+        "hi": null
+      },
+      {
+        "en": "Ctrl + =",
+        "hi": null
+      },
+      {
+        "en": "Shift + S",
+        "hi": null
+      },
+      {
+        "en": "Alt + =",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Alt + = inserts =SUM() with a suggested range of adjacent numbers. Ctrl + = is not AutoSum in Excel.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "MS Excel",
+    "difficulty": "medium",
+    "question_en": "How many rows and columns does a worksheet have in MS Excel 2007 and later versions?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "1,048,576 rows and 16,384 columns",
+        "hi": null
+      },
+      {
+        "en": "16,384 rows and 1,048,576 columns",
+        "hi": null
+      },
+      {
+        "en": "1,048,576 rows and 256 columns",
+        "hi": null
+      },
+      {
+        "en": "65,536 rows and 256 columns",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Since Excel 2007 a sheet has 2^20 = 1,048,576 rows and 2^14 = 16,384 columns (last column XFD). 65,536 × 256 was the limit of Excel 2003.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "MS Excel",
+    "difficulty": "hard",
+    "question_en": "Cell C2 contains the formula =$A1+B$1. If it is copied to cell D4, the formula in D4 will be:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "=$A1+C$1",
+        "hi": null
+      },
+      {
+        "en": "=$A3+B$1",
+        "hi": null
+      },
+      {
+        "en": "=$A3+C$1",
+        "hi": null
+      },
+      {
+        "en": "=$B3+C$3",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Moving from C2 to D4 shifts one column right and two rows down. In $A1 the column is locked and the row changes to 3 → $A3; in B$1 the row is locked and the column changes to C → C$1.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "MS Excel",
+    "difficulty": "hard",
+    "question_en": "What is the value of =ROUND(1234.567, -2) in MS Excel?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "1200",
+        "hi": null
+      },
+      {
+        "en": "1230",
+        "hi": null
+      },
+      {
+        "en": "1234.57",
+        "hi": null
+      },
+      {
+        "en": "1234.6",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "A negative num_digits rounds to the left of the decimal point; −2 rounds to the nearest hundred, so 1234.567 becomes 1200. ROUND(…,2) would give 1234.57.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "MS Excel",
+    "difficulty": "hard",
+    "question_en": "What does the Excel formula =INT(-7.4) return?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "-7.4",
+        "hi": null
+      },
+      {
+        "en": "-7",
+        "hi": null
+      },
+      {
+        "en": "-8",
+        "hi": null
+      },
+      {
+        "en": "7",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "INT rounds a number DOWN to the nearest integer, i.e. towards minus infinity, so −7.4 becomes −8. TRUNC(−7.4) would give −7 by simply removing the decimal part.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "MS PowerPoint",
+    "difficulty": "easy",
+    "question_en": "In MS PowerPoint, the visual effect that appears when the presentation moves from one slide to the next is called a:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Theme",
+        "hi": null
+      },
+      {
+        "en": "Transition",
+        "hi": null
+      },
+      {
+        "en": "Layout",
+        "hi": null
+      },
+      {
+        "en": "Animation",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "A transition applies between slides (e.g. Fade, Push). An animation applies to individual objects such as text boxes or pictures within a slide.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "MS PowerPoint",
+    "difficulty": "medium",
+    "question_en": "During a PowerPoint slide show, pressing the B key:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Makes the selected text bold",
+        "hi": null
+      },
+      {
+        "en": "Jumps back to the first slide",
+        "hi": null
+      },
+      {
+        "en": "Opens the slide in Backstage view",
+        "hi": null
+      },
+      {
+        "en": "Turns the screen black until a key is pressed",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "B (or the full stop) blacks out the screen and W (or comma) turns it white, letting the presenter draw attention away from the slides. Pressing the key again resumes the show.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "MS PowerPoint",
+    "difficulty": "hard",
+    "question_en": "A PowerPoint file is to be shared so that, when double-clicked, it opens directly in Slide Show mode instead of Normal (editing) view. It should be saved with the extension:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": ".potx",
+        "hi": null
+      },
+      {
+        "en": ".pptm",
+        "hi": null
+      },
+      {
+        "en": ".ppsx",
+        "hi": null
+      },
+      {
+        "en": ".pptx",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": ".ppsx is the PowerPoint Show format that launches straight into the slide show. .pptx is the normal presentation, .potx a template and .pptm a macro-enabled presentation.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "Cyber security and cyber crimes",
+    "difficulty": "easy",
+    "question_en": "An e-mail that pretends to come from a bank and asks the user to click a link and 'verify' the account password is an example of:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Spamming",
+        "hi": null
+      },
+      {
+        "en": "Hacking by brute force",
+        "hi": null
+      },
+      {
+        "en": "Cyber squatting",
+        "hi": null
+      },
+      {
+        "en": "Phishing",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Phishing uses fake but genuine-looking messages and websites to trick users into revealing passwords, OTPs or card details. Cyber squatting is registering a domain name similar to a famous brand in bad faith.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "Cyber security and cyber crimes",
+    "difficulty": "easy",
+    "question_en": "Malware that encrypts the victim's files and demands payment, often in cryptocurrency, to restore access is called:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Rootkit",
+        "hi": null
+      },
+      {
+        "en": "Ransomware",
+        "hi": null
+      },
+      {
+        "en": "Adware",
+        "hi": null
+      },
+      {
+        "en": "Spyware",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Ransomware (e.g. WannaCry, 2017) locks or encrypts data and demands a ransom for the decryption key. Adware shows unwanted ads and spyware secretly collects information.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "Cyber security and cyber crimes",
+    "difficulty": "easy",
+    "question_en": "A program that appears to be a useful free game but secretly gives an attacker access to the computer is known as a:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Trojan horse",
+        "hi": null
+      },
+      {
+        "en": "Cookie",
+        "hi": null
+      },
+      {
+        "en": "Worm",
+        "hi": null
+      },
+      {
+        "en": "Firewall",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Like the wooden horse of legend, a Trojan disguises itself as legitimate software; unlike a worm, it does not replicate on its own.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "Cyber security and cyber crimes",
+    "difficulty": "medium",
+    "question_en": "The key difference between a computer virus and a worm is that a worm:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Cannot cause any damage to data",
+        "hi": null
+      },
+      {
+        "en": "Spreads by itself across networks without attaching to a host file",
+        "hi": null
+      },
+      {
+        "en": "Needs the user to run an infected program to spread",
+        "hi": null
+      },
+      {
+        "en": "Can infect only text documents",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "A virus attaches to a host program or file and spreads when that file is executed. A worm is standalone and self-replicates over networks, exploiting vulnerabilities without user action.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "Cyber security and cyber crimes",
+    "difficulty": "medium",
+    "question_en": "A fraudulent SMS saying 'Your electricity connection will be cut tonight, call this number' that aims to steal money or details is called:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Pharming",
+        "hi": null
+      },
+      {
+        "en": "Vishing",
+        "hi": null
+      },
+      {
+        "en": "Smishing",
+        "hi": null
+      },
+      {
+        "en": "Spoofing of IP addresses",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Smishing is phishing through SMS text messages. Vishing uses voice calls, while pharming redirects users to fake websites without any message.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "Cyber security and cyber crimes",
+    "difficulty": "medium",
+    "question_en": "Thousands of compromised computers (a botnet) are made to flood a government website with requests so that genuine users cannot access it. This attack is called:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Distributed Denial of Service (DDoS)",
+        "hi": null
+      },
+      {
+        "en": "SQL injection",
+        "hi": null
+      },
+      {
+        "en": "Man-in-the-middle",
+        "hi": null
+      },
+      {
+        "en": "Salami attack",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "A DDoS attack exhausts the server's bandwidth or resources using traffic from many sources at once. A salami attack steals tiny amounts repeatedly, and SQL injection targets a database through input fields.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "Cyber security and cyber crimes",
+    "difficulty": "medium",
+    "question_en": "In India, victims of online financial fraud can report it on the national cyber-crime helpline number:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "112",
+        "hi": null
+      },
+      {
+        "en": "1098",
+        "hi": null
+      },
+      {
+        "en": "1800",
+        "hi": null
+      },
+      {
+        "en": "1930",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "The Citizen Financial Cyber Fraud Reporting helpline is 1930, linked with the portal cybercrime.gov.in under the Ministry of Home Affairs. 1098 is Childline and 112 is the general emergency number.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "Cyber security and cyber crimes",
+    "difficulty": "hard",
+    "question_en": "An attacker poisons a DNS server so that users typing the correct address of a bank are silently redirected to a fake look-alike website. This attack is known as:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Cyber stalking",
+        "hi": null
+      },
+      {
+        "en": "Spamming",
+        "hi": null
+      },
+      {
+        "en": "Pharming",
+        "hi": null
+      },
+      {
+        "en": "Phishing",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Pharming manipulates DNS or the hosts file so even a correctly typed URL leads to a fraudulent site. Phishing, by contrast, relies on luring the user to click a deceptive link.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "IT Act 2000",
+    "difficulty": "easy",
+    "question_en": "The Information Technology Act, 2000 of India came into force on:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "17 October 2000",
+        "hi": null
+      },
+      {
+        "en": "26 January 2000",
+        "hi": null
+      },
+      {
+        "en": "9 June 2000",
+        "hi": null
+      },
+      {
+        "en": "27 October 2009",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The Act received Presidential assent on 9 June 2000 and was brought into force on 17 October 2000. 27 October 2009 is when the IT (Amendment) Act 2008 came into force.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "IT Act 2000",
+    "difficulty": "medium",
+    "question_en": "Which section of the IT Act, 2000 punishes identity theft, such as fraudulently using another person's password or electronic signature?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Section 67",
+        "hi": null
+      },
+      {
+        "en": "Section 43A",
+        "hi": null
+      },
+      {
+        "en": "Section 66A",
+        "hi": null
+      },
+      {
+        "en": "Section 66C",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Section 66C covers identity theft, punishable with imprisonment up to 3 years and fine up to ₹1 lakh. Section 67 relates to obscene material and 43A to compensation for failure to protect data.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "IT Act 2000",
+    "difficulty": "medium",
+    "question_en": "Section 66A of the IT Act, which punished sending 'offensive' messages through communication services, was struck down by the Supreme Court in:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "K.S. Puttaswamy v. Union of India (2017)",
+        "hi": null
+      },
+      {
+        "en": "Shreya Singhal v. Union of India (2015)",
+        "hi": null
+      },
+      {
+        "en": "Vishaka v. State of Rajasthan (1997)",
+        "hi": null
+      },
+      {
+        "en": "Kesavananda Bharati v. State of Kerala (1973)",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "In Shreya Singhal (2015) the Court held Section 66A unconstitutional for violating freedom of speech under Article 19(1)(a). Puttaswamy (2017) recognised the right to privacy.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "IT Act 2000",
+    "difficulty": "hard",
+    "question_en": "Under the IT Act, 2000 (as amended in 2008), cyber terrorism is covered by Section 66F and the maximum punishment is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Imprisonment up to 7 years",
+        "hi": null
+      },
+      {
+        "en": "Imprisonment up to 3 years",
+        "hi": null
+      },
+      {
+        "en": "Imprisonment for life",
+        "hi": null
+      },
+      {
+        "en": "Fine up to ₹5 lakh only",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Section 66F, inserted by the 2008 amendment, prescribes imprisonment which may extend to imprisonment for life for acts threatening the unity, integrity, security or sovereignty of India through computer resources.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "IT Act 2000",
+    "difficulty": "easy",
+    "question_en": "The primary purpose of the Information Technology Act, 2000 was to:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Give legal recognition to electronic records, digital signatures and e-commerce",
+        "hi": null
+      },
+      {
+        "en": "Fix the prices of computers sold in India",
+        "hi": null
+      },
+      {
+        "en": "Regulate television broadcasting",
+        "hi": null
+      },
+      {
+        "en": "Make computer education compulsory in schools",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The Act provides legal recognition for transactions carried out by electronic data interchange and electronic records, authenticates them with digital signatures, and defines cyber offences.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "IT Act 2000",
+    "difficulty": "medium",
+    "question_en": "The IT Act, 2000 was based on which international model law?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "WIPO Copyright Treaty, 1996",
+        "hi": null
+      },
+      {
+        "en": "EU General Data Protection Regulation, 2016",
+        "hi": null
+      },
+      {
+        "en": "Budapest Convention on Cybercrime, 2001",
+        "hi": null
+      },
+      {
+        "en": "UNCITRAL Model Law on Electronic Commerce, 1996",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "India enacted the IT Act following the United Nations Commission on International Trade Law (UNCITRAL) Model Law on E-Commerce adopted by the UN General Assembly in 1997 (model law of 1996). India is not a party to the Budapest Convention.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "IT Act 2000",
+    "difficulty": "medium",
+    "question_en": "A programmer deliberately alters the source code of a company's billing software that is required to be maintained by law. This is an offence under which section of the IT Act?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Section 66E – violation of privacy",
+        "hi": null
+      },
+      {
+        "en": "Section 65 – tampering with computer source documents",
+        "hi": null
+      },
+      {
+        "en": "Section 79 – intermediary liability",
+        "hi": null
+      },
+      {
+        "en": "Section 72 – breach of confidentiality",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Section 65 punishes knowingly concealing, destroying or altering computer source code, with imprisonment up to 3 years or fine up to ₹2 lakh or both.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "IT Act 2000",
+    "difficulty": "medium",
+    "question_en": "A fraudster calls people pretending to be a bank's customer-care executive and uses an online form to cheat them of money. The specific IT Act section for 'cheating by personation by using computer resource' is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Section 43",
+        "hi": null
+      },
+      {
+        "en": "Section 66B",
+        "hi": null
+      },
+      {
+        "en": "Section 66D",
+        "hi": null
+      },
+      {
+        "en": "Section 67A",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Section 66D punishes cheating by personation using a computer resource with imprisonment up to 3 years and fine up to ₹1 lakh. Section 66B concerns receiving stolen computer resources.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "IT Act 2000",
+    "difficulty": "hard",
+    "question_en": "The Indian Computer Emergency Response Team (CERT-In), which acts as the national agency for responding to cyber-security incidents, derives its statutory role from which section of the IT Act?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Section 70B",
+        "hi": null
+      },
+      {
+        "en": "Section 48",
+        "hi": null
+      },
+      {
+        "en": "Section 70A",
+        "hi": null
+      },
+      {
+        "en": "Section 69",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Section 70B designates CERT-In (under MeitY) as the national agency for incident response. Section 70A relates to the nodal agency for critical information infrastructure (NCIIPC) and Section 69 to interception and decryption.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "IT Act 2000",
+    "difficulty": "hard",
+    "question_en": "The Government of India's orders blocking public access to certain mobile apps and websites in the interest of sovereignty and security are issued under:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Section 4 of the IT Act",
+        "hi": null
+      },
+      {
+        "en": "Section 66F of the IT Act",
+        "hi": null
+      },
+      {
+        "en": "Section 43A of the IT Act",
+        "hi": null
+      },
+      {
+        "en": "Section 69A of the IT Act",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Section 69A empowers the Central Government to direct blocking of public access to information through any computer resource; it was used, for example, for the app bans of 2020. Section 4 gives legal recognition to electronic records.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "Cloud computing (IaaS/PaaS/SaaS)",
+    "difficulty": "easy",
+    "question_en": "Using Gmail or Google Docs through a web browser, without installing or maintaining any software, is an example of which cloud service model?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Platform as a Service (PaaS)",
+        "hi": null
+      },
+      {
+        "en": "Software as a Service (SaaS)",
+        "hi": null
+      },
+      {
+        "en": "Infrastructure as a Service (IaaS)",
+        "hi": null
+      },
+      {
+        "en": "Network as a Service (NaaS)",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "In SaaS the provider runs the complete application and the user simply uses it over the Internet. IaaS gives raw virtual machines and storage; PaaS gives a platform for developing and deploying one's own applications.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "Cloud computing (IaaS/PaaS/SaaS)",
+    "difficulty": "easy",
+    "question_en": "The cloud characteristic under which a customer is billed only for the computing resources actually consumed is known as:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Pay-as-you-go (measured service)",
+        "hi": null
+      },
+      {
+        "en": "Fixed licensing",
+        "hi": null
+      },
+      {
+        "en": "Resource ownership",
+        "hi": null
+      },
+      {
+        "en": "Perpetual subscription",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Cloud services are metered, so usage of storage, processing and bandwidth is measured and charged like an electricity bill, turning capital expenditure into operating expenditure.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "Cloud computing (IaaS/PaaS/SaaS)",
+    "difficulty": "medium",
+    "question_en": "Renting virtual machines, storage and networks from a provider such as Amazon EC2, on which the customer installs and manages its own operating system, is an example of:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "DaaS",
+        "hi": null
+      },
+      {
+        "en": "SaaS",
+        "hi": null
+      },
+      {
+        "en": "PaaS",
+        "hi": null
+      },
+      {
+        "en": "IaaS",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Infrastructure as a Service offers the basic computing infrastructure; the customer remains responsible for the OS, middleware and applications. With PaaS the provider would also manage the OS and runtime.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "Cloud computing (IaaS/PaaS/SaaS)",
+    "difficulty": "medium",
+    "question_en": "A student team wants to deploy its web application without managing servers or operating systems, simply uploading code to an environment such as Google App Engine or Heroku. This model is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Infrastructure as a Service (IaaS)",
+        "hi": null
+      },
+      {
+        "en": "Software as a Service (SaaS)",
+        "hi": null
+      },
+      {
+        "en": "Platform as a Service (PaaS)",
+        "hi": null
+      },
+      {
+        "en": "On-premise hosting",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "PaaS provides a ready runtime, databases and development tools; developers manage only their application code and data. IaaS would require them to manage the OS themselves.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "Cloud computing (IaaS/PaaS/SaaS)",
+    "difficulty": "medium",
+    "question_en": "An organisation keeps sensitive student records on its own private cloud but uses a public cloud to handle heavy traffic during result declaration. This deployment model is a:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Community cloud",
+        "hi": null
+      },
+      {
+        "en": "Hybrid cloud",
+        "hi": null
+      },
+      {
+        "en": "Private cloud",
+        "hi": null
+      },
+      {
+        "en": "Public cloud",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "A hybrid cloud combines private and public clouds, letting workloads move between them (cloud bursting). A community cloud is shared by organisations with common concerns.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "Cloud computing (IaaS/PaaS/SaaS)",
+    "difficulty": "medium",
+    "question_en": "The Government of India's initiative to use cloud computing for delivering e-services, under which a National Cloud is provided by NIC, is named:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "MeghRaj (GI Cloud)",
+        "hi": null
+      },
+      {
+        "en": "BharatNet",
+        "hi": null
+      },
+      {
+        "en": "Aadhaar Vault",
+        "hi": null
+      },
+      {
+        "en": "Sampark",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "MeghRaj, the GI Cloud initiative of MeitY, aims to accelerate delivery of e-services through cloud infrastructure with the National Cloud operated by NIC. BharatNet is the rural broadband project.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "Cloud computing (IaaS/PaaS/SaaS)",
+    "difficulty": "hard",
+    "question_en": "The ability of a cloud system to automatically add resources when demand rises and release them when demand falls is called:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Multi-tenancy",
+        "hi": null
+      },
+      {
+        "en": "Rapid elasticity",
+        "hi": null
+      },
+      {
+        "en": "Broad network access",
+        "hi": null
+      },
+      {
+        "en": "Resource pooling",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Rapid elasticity (a NIST essential characteristic) lets capacity scale out and in quickly, appearing unlimited to the user. Resource pooling refers to serving many customers from shared physical resources.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "AI and machine learning",
+    "difficulty": "easy",
+    "question_en": "The test proposed by Alan Turing in 1950 to judge whether a machine can exhibit intelligent behaviour indistinguishable from a human is called the:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Touring Machine Test",
+        "hi": null
+      },
+      {
+        "en": "Church Test",
+        "hi": null
+      },
+      {
+        "en": "Turing Test",
+        "hi": null
+      },
+      {
+        "en": "Imitation Algorithm",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "In the Turing Test (the 'imitation game'), a human judge converses with a machine and a person; if the judge cannot reliably tell them apart, the machine is said to pass.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "AI and machine learning",
+    "difficulty": "medium",
+    "question_en": "Who coined the term 'Artificial Intelligence' at the Dartmouth Conference in 1956?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Alan Turing",
+        "hi": null
+      },
+      {
+        "en": "Tim Berners-Lee",
+        "hi": null
+      },
+      {
+        "en": "Charles Babbage",
+        "hi": null
+      },
+      {
+        "en": "John McCarthy",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "John McCarthy coined the term for the 1956 Dartmouth summer research project and later created the LISP language. Turing proposed the Turing Test earlier, in 1950.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "AI and machine learning",
+    "difficulty": "easy",
+    "question_en": "A model is trained on thousands of e-mails, each already labelled 'spam' or 'not spam', so that it can classify new e-mails. This is an example of:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Rule-based expert system",
+        "hi": null
+      },
+      {
+        "en": "Reinforcement learning",
+        "hi": null
+      },
+      {
+        "en": "Supervised learning",
+        "hi": null
+      },
+      {
+        "en": "Unsupervised learning",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Supervised learning learns from input–output pairs (labelled data). Unsupervised learning finds patterns in unlabelled data and reinforcement learning learns from rewards and penalties.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "AI and machine learning",
+    "difficulty": "medium",
+    "question_en": "An online store groups its customers into segments by buying behaviour without any predefined labels. Which type of machine learning technique is this?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Classification (supervised learning)",
+        "hi": null
+      },
+      {
+        "en": "Clustering (unsupervised learning)",
+        "hi": null
+      },
+      {
+        "en": "Reinforcement learning",
+        "hi": null
+      },
+      {
+        "en": "Regression (supervised learning)",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Grouping unlabelled data by similarity, e.g. using k-means, is clustering, an unsupervised technique. Classification and regression both need labelled training data.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "AI and machine learning",
+    "difficulty": "medium",
+    "question_en": "A program learns to play chess by playing many games against itself, receiving a positive reward for a win and a negative reward for a loss. This approach is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Reinforcement learning",
+        "hi": null
+      },
+      {
+        "en": "Supervised learning",
+        "hi": null
+      },
+      {
+        "en": "Data mining by association rules",
+        "hi": null
+      },
+      {
+        "en": "Unsupervised learning",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "In reinforcement learning an agent interacts with an environment and improves its policy to maximise cumulative reward, as in AlphaZero. No labelled examples are given.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "AI and machine learning",
+    "difficulty": "medium",
+    "question_en": "The IndiaAI Mission approved by the Union Cabinet in March 2024 to build India's AI ecosystem (compute capacity, datasets, start-ups) has a budget outlay of about:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "₹3,700 crore",
+        "hi": null
+      },
+      {
+        "en": "₹50,000 crore",
+        "hi": null
+      },
+      {
+        "en": "₹1,037 crore",
+        "hi": null
+      },
+      {
+        "en": "₹10,372 crore",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "The Cabinet approved the IndiaAI Mission with an outlay of ₹10,371.92 crore over five years, including a large public AI compute infrastructure of GPUs.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "AI and machine learning",
+    "difficulty": "hard",
+    "question_en": "A machine-learning model scores 99% accuracy on its training data but only 60% on new, unseen test data. The model is most likely suffering from:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Data normalisation",
+        "hi": null
+      },
+      {
+        "en": "Feature scaling",
+        "hi": null
+      },
+      {
+        "en": "Underfitting",
+        "hi": null
+      },
+      {
+        "en": "Overfitting",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Overfitting means the model has memorised noise in the training set and fails to generalise. Underfitting would show poor accuracy on both training and test data.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "Internet of Things (IoT)",
+    "difficulty": "easy",
+    "question_en": "Which of the following is the best example of the Internet of Things (IoT)?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "A calculator performing arithmetic",
+        "hi": null
+      },
+      {
+        "en": "A smart energy meter that sends electricity readings over the Internet to the supplier",
+        "hi": null
+      },
+      {
+        "en": "A printed timetable on a notice board",
+        "hi": null
+      },
+      {
+        "en": "A standalone desktop running a word processor offline",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "IoT refers to everyday physical devices fitted with sensors, software and connectivity so that they collect and exchange data over the Internet, such as smart meters, smart watches and connected cameras.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "Internet of Things (IoT)",
+    "difficulty": "medium",
+    "question_en": "In an IoT-based automatic irrigation system, the component that physically opens the water valve when soil moisture is low is the:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Gateway",
+        "hi": null
+      },
+      {
+        "en": "Sensor",
+        "hi": null
+      },
+      {
+        "en": "Actuator",
+        "hi": null
+      },
+      {
+        "en": "Cloud dashboard",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "A sensor measures the soil moisture; an actuator converts the controller's command into physical action, such as opening a valve or starting a motor.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "Internet of Things (IoT)",
+    "difficulty": "medium",
+    "question_en": "The term 'Internet of Things' is credited to which person, who used it in 1999 in connection with RFID-based supply chains?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Kevin Ashton",
+        "hi": null
+      },
+      {
+        "en": "Satoshi Nakamoto",
+        "hi": null
+      },
+      {
+        "en": "Mark Weiser",
+        "hi": null
+      },
+      {
+        "en": "Vint Cerf",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Kevin Ashton of MIT's Auto-ID Center coined 'Internet of Things' in 1999. Vint Cerf co-designed TCP/IP and Mark Weiser is associated with ubiquitous computing.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "Internet of Things (IoT)",
+    "difficulty": "hard",
+    "question_en": "Which lightweight publish–subscribe messaging protocol is widely used by low-power IoT devices on unreliable networks?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "MQTT",
+        "hi": null
+      },
+      {
+        "en": "SMTP",
+        "hi": null
+      },
+      {
+        "en": "Telnet",
+        "hi": null
+      },
+      {
+        "en": "FTP",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "MQTT (Message Queuing Telemetry Transport) uses a broker and very small headers, making it ideal for constrained IoT sensors. FTP, SMTP and Telnet are heavy, general-purpose protocols.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "Big data",
+    "difficulty": "easy",
+    "question_en": "Big data is commonly characterised by the '3 Vs'. These are:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Value, Vision and Validity",
+        "hi": null
+      },
+      {
+        "en": "Volume, Visibility and Version",
+        "hi": null
+      },
+      {
+        "en": "Volume, Velocity and Variety",
+        "hi": null
+      },
+      {
+        "en": "Velocity, Virtualisation and Vectors",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Doug Laney's 3 Vs are Volume (huge size), Velocity (speed of generation) and Variety (many formats). Veracity and Value are often added as the 4th and 5th Vs.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "Big data",
+    "difficulty": "easy",
+    "question_en": "Which of the following is an example of unstructured data?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "A table of student roll numbers and marks",
+        "hi": null
+      },
+      {
+        "en": "Videos and images posted on social media",
+        "hi": null
+      },
+      {
+        "en": "A spreadsheet of monthly salaries",
+        "hi": null
+      },
+      {
+        "en": "Rows of a railway reservation database",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Unstructured data has no predefined row–column schema, such as photos, videos, audio and free text. Database tables and spreadsheets are structured data.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "Big data",
+    "difficulty": "medium",
+    "question_en": "Apache Hadoop, an open-source big-data framework, stores data across a cluster using HDFS and processes it in parallel using:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "SQL triggers",
+        "hi": null
+      },
+      {
+        "en": "Virtual memory paging",
+        "hi": null
+      },
+      {
+        "en": "Spooling",
+        "hi": null
+      },
+      {
+        "en": "MapReduce",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Hadoop's two core components are HDFS (Hadoop Distributed File System) for storage and MapReduce for parallel processing; YARN manages cluster resources.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "Big data",
+    "difficulty": "medium",
+    "question_en": "UPI processes billions of transactions every month, with data arriving continuously in real time. Which 'V' of big data does the speed of this data generation represent?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Variety",
+        "hi": null
+      },
+      {
+        "en": "Veracity",
+        "hi": null
+      },
+      {
+        "en": "Volume",
+        "hi": null
+      },
+      {
+        "en": "Velocity",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Velocity refers to the speed at which data is generated and must be processed. Volume is the total amount, Variety the range of formats and Veracity the trustworthiness of the data.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "Blockchain",
+    "difficulty": "easy",
+    "question_en": "The cryptocurrency Bitcoin, the first major application of blockchain technology, was introduced in 2008–09 by a person or group using the name:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Linus Torvalds",
+        "hi": null
+      },
+      {
+        "en": "Satoshi Nakamoto",
+        "hi": null
+      },
+      {
+        "en": "Tim Berners-Lee",
+        "hi": null
+      },
+      {
+        "en": "Vitalik Buterin",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Satoshi Nakamoto published the Bitcoin white paper in 2008 and launched the network in January 2009. Vitalik Buterin co-founded Ethereum.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "Blockchain",
+    "difficulty": "medium",
+    "question_en": "Records in a blockchain are considered tamper-resistant mainly because:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Each block stores the cryptographic hash of the previous block, so altering one block breaks the chain",
+        "hi": null
+      },
+      {
+        "en": "Blocks are deleted automatically after one day",
+        "hi": null
+      },
+      {
+        "en": "Only the government can read the records",
+        "hi": null
+      },
+      {
+        "en": "All data is stored on one highly secure central server",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Changing a block changes its hash, which no longer matches the value stored in the next block; an attacker would have to recompute all later blocks on most copies of the distributed ledger.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "Blockchain",
+    "difficulty": "medium",
+    "question_en": "Self-executing programs stored on a blockchain such as Ethereum, which automatically carry out the terms of an agreement when preset conditions are met, are called:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Mining pools",
+        "hi": null
+      },
+      {
+        "en": "Digital wallets",
+        "hi": null
+      },
+      {
+        "en": "Smart contracts",
+        "hi": null
+      },
+      {
+        "en": "Genesis blocks",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Smart contracts run on the blockchain and execute automatically, e.g. releasing payment when delivery is confirmed. The genesis block is simply the first block of a chain.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "Blockchain",
+    "difficulty": "hard",
+    "question_en": "In the Bitcoin network, 'miners' compete to solve a computationally hard puzzle in order to add the next block. This consensus mechanism is called:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Proof of Work",
+        "hi": null
+      },
+      {
+        "en": "Round-robin scheduling",
+        "hi": null
+      },
+      {
+        "en": "Proof of Stake",
+        "hi": null
+      },
+      {
+        "en": "Byzantine voting",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Proof of Work requires finding a nonce whose block hash meets a difficulty target, which costs real computing effort and secures the chain. Proof of Stake (used by Ethereum since 2022) selects validators by staked coins instead.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "Digital India and e-governance",
+    "difficulty": "easy",
+    "question_en": "The Digital India programme, which aims to transform India into a digitally empowered society and knowledge economy, was launched on:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "15 August 2014",
+        "hi": null
+      },
+      {
+        "en": "1 July 2015",
+        "hi": null
+      },
+      {
+        "en": "26 January 2016",
+        "hi": null
+      },
+      {
+        "en": "2 October 2014",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Digital India was launched by the Prime Minister on 1 July 2015. Its three vision areas are digital infrastructure as a utility, governance and services on demand, and digital empowerment of citizens. 2 October 2014 marks the launch of Swachh Bharat.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "Digital India and e-governance",
+    "difficulty": "easy",
+    "question_en": "DigiLocker, a flagship initiative of MeitY under Digital India, is used to:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Make UPI payments to merchants",
+        "hi": null
+      },
+      {
+        "en": "Book railway tickets online",
+        "hi": null
+      },
+      {
+        "en": "File FIRs with the police",
+        "hi": null
+      },
+      {
+        "en": "Store and share authentic digital copies of documents such as mark sheets and driving licences",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "DigiLocker gives citizens a cloud account where issuers (CBSE, transport departments, UIDAI) push documents digitally; such documents are treated as valid originals under the IT rules.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "Digital India and e-governance",
+    "difficulty": "easy",
+    "question_en": "The Unified Payments Interface (UPI) was developed and is operated by:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Unique Identification Authority of India",
+        "hi": null
+      },
+      {
+        "en": "Reserve Bank Information Technology Pvt. Ltd.",
+        "hi": null
+      },
+      {
+        "en": "National Payments Corporation of India (NPCI)",
+        "hi": null
+      },
+      {
+        "en": "State Bank of India",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "NPCI, an initiative of RBI and the Indian Banks' Association, launched UPI in 2016 for instant mobile-based transfers between bank accounts. It also runs RuPay, BHIM and IMPS.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "Digital India and e-governance",
+    "difficulty": "easy",
+    "question_en": "An Aadhaar number issued by the Unique Identification Authority of India (UIDAI) consists of:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "10 digits",
+        "hi": null
+      },
+      {
+        "en": "12 digits",
+        "hi": null
+      },
+      {
+        "en": "14 digits",
+        "hi": null
+      },
+      {
+        "en": "16 digits",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Aadhaar is a 12-digit random number linked to the resident's biometric and demographic data. The 10-character PAN is issued by the Income Tax Department.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "Digital India and e-governance",
+    "difficulty": "medium",
+    "question_en": "The single mobile app that gives citizens access to hundreds of central and state government services (EPFO, Income Tax, gas booking, etc.) is called:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "UMANG",
+        "hi": null
+      },
+      {
+        "en": "e-Pathshala",
+        "hi": null
+      },
+      {
+        "en": "Aarogya Setu",
+        "hi": null
+      },
+      {
+        "en": "SWAYAM",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "UMANG (Unified Mobile Application for New-age Governance), launched in 2017 by MeitY and NeGD, integrates many government services in one app. SWAYAM is a MOOC platform and e-Pathshala hosts NCERT e-books.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "Digital India and e-governance",
+    "difficulty": "medium",
+    "question_en": "A company filing its GST returns on the government's online portal is an example of which e-governance interaction model?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Government to Citizen (G2C)",
+        "hi": null
+      },
+      {
+        "en": "Government to Employee (G2E)",
+        "hi": null
+      },
+      {
+        "en": "Government to Business (G2B)",
+        "hi": null
+      },
+      {
+        "en": "Government to Government (G2G)",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Interactions between government and businesses, such as tax filing, licensing and e-procurement, are G2B. A citizen applying for a birth certificate online would be G2C.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "Digital India and e-governance",
+    "difficulty": "medium",
+    "question_en": "The BharatNet project under Digital India aims to:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Issue digital identity cards to rural citizens",
+        "hi": null
+      },
+      {
+        "en": "Set up a national cryptocurrency exchange",
+        "hi": null
+      },
+      {
+        "en": "Build satellite television for schools",
+        "hi": null
+      },
+      {
+        "en": "Provide optical-fibre broadband connectivity to all Gram Panchayats",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "BharatNet, implemented by Bharat Broadband Network Ltd., lays optical fibre to connect Gram Panchayats with high-speed broadband, forming the backbone for rural e-services.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_it",
+    "subtopic": "Digital India and e-governance",
+    "difficulty": "hard",
+    "question_en": "The online platform launched in 2016 through which central and state government departments procure goods and services transparently is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Common Service Centre (CSC)",
+        "hi": null
+      },
+      {
+        "en": "Government e-Marketplace (GeM)",
+        "hi": null
+      },
+      {
+        "en": "e-Office",
+        "hi": null
+      },
+      {
+        "en": "Public Financial Management System (PFMS)",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "GeM, under the Ministry of Commerce and Industry, is the national public procurement portal. PFMS tracks government fund flows, e-Office digitises file work and CSCs are rural service delivery points.",
+    "explanation_hi": null,
+    "expected": false
+  }
+]

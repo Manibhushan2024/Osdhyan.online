@@ -1,0 +1,2902 @@
+[
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Arrays",
+  "difficulty": "medium",
+  "question_en": "A 2-D array A[0..4][0..9] of integers (4 bytes each) is stored in row-major order starting at address 1000. What is the address of A[3][7]?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "1152",
+    "hi": null
+   },
+   {
+    "en": "1144",
+    "hi": null
+   },
+   {
+    "en": "1037",
+    "hi": null
+   },
+   {
+    "en": "1148",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Row-major: address = base + (i × number of columns + j) × size = 1000 + (3 × 10 + 7) × 4 = 1000 + 148 = 1148. Column-major would give 1000 + (7 × 5 + 3) × 4 = 1152.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Arrays",
+  "difficulty": "hard",
+  "question_en": "An array A[1..6][1..8] with 2-byte elements is stored in COLUMN-major order from base address 2000. The address of A[4][5] is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "2056",
+    "hi": null
+   },
+   {
+    "en": "2052",
+    "hi": null
+   },
+   {
+    "en": "2058",
+    "hi": null
+   },
+   {
+    "en": "2054",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Column-major: base + ((j − 1) × rows + (i − 1)) × size = 2000 + ((5 − 1) × 6 + (4 − 1)) × 2 = 2000 + 27 × 2 = 2054. Row-major would be 2000 + ((4 − 1) × 8 + 4) × 2 = 2056.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Arrays",
+  "difficulty": "easy",
+  "question_en": "What is the time complexity of accessing the element at a given index i of an array?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "O(log n)",
+    "hi": null
+   },
+   {
+    "en": "O(1)",
+    "hi": null
+   },
+   {
+    "en": "O(n)",
+    "hi": null
+   },
+   {
+    "en": "O(i²)",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Because elements are stored contiguously, the address is computed directly as base + i × size, so access takes constant time regardless of n.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Arrays",
+  "difficulty": "easy",
+  "question_en": "The elements of a one-dimensional array are stored in memory:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "In contiguous (consecutive) locations",
+    "hi": null
+   },
+   {
+    "en": "At random locations linked by pointers",
+    "hi": null
+   },
+   {
+    "en": "Only in CPU registers",
+    "hi": null
+   },
+   {
+    "en": "In a tree structure",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "An array occupies one continuous block of memory, which is what makes index arithmetic possible. Elements linked by pointers describe a linked list.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Arrays",
+  "difficulty": "medium",
+  "question_en": "To insert a new element at the FIRST position of an unsorted array that currently holds n elements (with spare capacity), the worst-case time complexity is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "O(1)",
+    "hi": null
+   },
+   {
+    "en": "O(n)",
+    "hi": null
+   },
+   {
+    "en": "O(log n)",
+    "hi": null
+   },
+   {
+    "en": "O(n log n)",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "All n existing elements must be shifted one place to the right to make room at index 0, so the work grows linearly. Inserting at the end would be O(1).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Arrays",
+  "difficulty": "medium",
+  "question_en": "How many elements does the array declared with index ranges A[−3..5][2..9] contain?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "63",
+    "hi": null
+   },
+   {
+    "en": "72",
+    "hi": null
+   },
+   {
+    "en": "80",
+    "hi": null
+   },
+   {
+    "en": "56",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Number of rows = 5 − (−3) + 1 = 9; number of columns = 9 − 2 + 1 = 8; total = 9 × 8 = 72. A common slip is to forget the '+1' in each range.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Arrays",
+  "difficulty": "medium",
+  "question_en": "In a 10 × 10 lower-triangular matrix (all elements above the main diagonal are zero), how many elements can be non-zero?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "50",
+    "hi": null
+   },
+   {
+    "en": "45",
+    "hi": null
+   },
+   {
+    "en": "55",
+    "hi": null
+   },
+   {
+    "en": "100",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Row i (1 to 10) has i possibly non-zero elements, so the total is 1 + 2 + … + 10 = n(n + 1)/2 = 10 × 11 / 2 = 55. Storing only these saves almost half the memory.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Stacks",
+  "difficulty": "easy",
+  "question_en": "A stack follows which order of insertion and deletion?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "First In, First Out (FIFO)",
+    "hi": null
+   },
+   {
+    "en": "Insertion at both ends",
+    "hi": null
+   },
+   {
+    "en": "Deletion by priority",
+    "hi": null
+   },
+   {
+    "en": "Last In, First Out (LIFO)",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Both push and pop happen at the same end (the top), so the element inserted last is removed first. FIFO describes a queue.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Stacks",
+  "difficulty": "medium",
+  "question_en": "The postfix form of the infix expression A + B * C − D / E is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "A B + C * D E / −",
+    "hi": null
+   },
+   {
+    "en": "A B C * + D E − /",
+    "hi": null
+   },
+   {
+    "en": "A B C * + D E / −",
+    "hi": null
+   },
+   {
+    "en": "A B C + * D E / −",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "* and / bind tighter than + and −: B * C → B C *, D / E → D E /. Then left-to-right: (A + BC*) − DE/ → A B C * + D E / −.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Stacks",
+  "difficulty": "medium",
+  "question_en": "Evaluate the postfix expression  5 3 + 8 2 − * 4 /  using a stack.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "12",
+    "hi": null
+   },
+   {
+    "en": "16",
+    "hi": null
+   },
+   {
+    "en": "8",
+    "hi": null
+   },
+   {
+    "en": "24",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "5 3 + → 8; 8 2 − → 6; 8 6 * → 48; 48 4 / → 12. For each operator, the top element is the RIGHT operand and the one below it is the LEFT operand.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Stacks",
+  "difficulty": "medium",
+  "question_en": "The prefix (Polish) form of the infix expression (A + B) * (C − D) is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "+ A B * − C D",
+    "hi": null
+   },
+   {
+    "en": "* A + B − C D",
+    "hi": null
+   },
+   {
+    "en": "A B + C D − *",
+    "hi": null
+   },
+   {
+    "en": "* + A B − C D",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Each sub-expression becomes operator-first: A + B → + A B, C − D → − C D; then the outer * is placed before both → * + A B − C D. A B + C D − * is the postfix form.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Stacks",
+  "difficulty": "easy",
+  "question_en": "Which of the following is NOT a typical application of a stack?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Managing function calls and returns",
+    "hi": null
+   },
+   {
+    "en": "Breadth-first search of a graph",
+    "hi": null
+   },
+   {
+    "en": "Checking balanced parentheses",
+    "hi": null
+   },
+   {
+    "en": "Undo operation in a text editor",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "BFS processes vertices level by level and therefore uses a queue. Function calls (call stack), bracket matching and undo all rely on LIFO order.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Stacks",
+  "difficulty": "hard",
+  "question_en": "The numbers 1, 2, 3, 4 are pushed onto a stack in this order, and pops may be performed at any time. Which output sequence is IMPOSSIBLE?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "2, 4, 3, 1",
+    "hi": null
+   },
+   {
+    "en": "1, 3, 2, 4",
+    "hi": null
+   },
+   {
+    "en": "3, 1, 2, 4",
+    "hi": null
+   },
+   {
+    "en": "4, 3, 2, 1",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "To output 3 first, 1 and 2 must already be on the stack with 2 on top, so 2 must come out before 1; '3, 1' is therefore impossible. 2,4,3,1 = push1 push2 pop push3 push4 pop pop pop; the other two are similarly achievable.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Stacks",
+  "difficulty": "easy",
+  "question_en": "Attempting to perform a POP operation on an empty stack results in:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Overflow",
+    "hi": null
+   },
+   {
+    "en": "Underflow",
+    "hi": null
+   },
+   {
+    "en": "Garbage collection",
+    "hi": null
+   },
+   {
+    "en": "Segmentation of the stack",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Underflow means removing from an empty structure; overflow means pushing onto a full (fixed-size) stack. A correct implementation checks top == −1 before popping.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Stacks",
+  "difficulty": "hard",
+  "question_en": "Considering that ^ (exponent) has the highest precedence and is right-associative, the postfix form of A + B ^ C ^ D * E is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "A B C ^ D ^ E * +",
+    "hi": null
+   },
+   {
+    "en": "A B C D ^ ^ * E +",
+    "hi": null
+   },
+   {
+    "en": "A B C D ^ ^ E * +",
+    "hi": null
+   },
+   {
+    "en": "A B + C D ^ ^ E *",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Right associativity makes B ^ C ^ D = B ^ (C ^ D) → B C D ^ ^. That result is multiplied by E → B C D ^ ^ E *, and finally added to A → A B C D ^ ^ E * +. Treating ^ as left-associative gives A B C ^ D ^ E * +.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Stacks",
+  "difficulty": "medium",
+  "question_en": "What is the minimum number of stacks needed to implement a queue (without using any other data structure)?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "2",
+    "hi": null
+   },
+   {
+    "en": "1",
+    "hi": null
+   },
+   {
+    "en": "3",
+    "hi": null
+   },
+   {
+    "en": "4",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "One stack receives enqueued items; when a dequeue is needed and the second stack is empty, all items are popped from the first and pushed onto the second, reversing them into FIFO order. A single stack can only give LIFO order.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Stacks",
+  "difficulty": "medium",
+  "question_en": "A stack is used to check the bracket string  ( ( ) ( ( )  for balance. After the whole string is scanned, how many '(' symbols remain on the stack?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "1",
+    "hi": null
+   },
+   {
+    "en": "2",
+    "hi": null
+   },
+   {
+    "en": "0",
+    "hi": null
+   },
+   {
+    "en": "3",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Push, push, pop (1 left), push, push (3), pop (2). Two unmatched '(' remain, so the string is NOT balanced; a balanced string leaves the stack empty.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Stacks",
+  "difficulty": "easy",
+  "question_en": "Starting with an empty stack, the operations push(10), push(20), pop(), push(30), push(40), pop(), pop(), push(50) are performed. The stack contents from bottom to top are:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "10, 30, 50",
+    "hi": null
+   },
+   {
+    "en": "10, 50",
+    "hi": null
+   },
+   {
+    "en": "50, 10",
+    "hi": null
+   },
+   {
+    "en": "10, 20, 50",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "After push 10, 20 and pop → [10]; push 30, 40 → [10, 30, 40]; two pops → [10]; push 50 → [10, 50].",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Queues",
+  "difficulty": "easy",
+  "question_en": "In a queue, elements are inserted at the ______ and deleted from the ______.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "front, rear",
+    "hi": null
+   },
+   {
+    "en": "top, top",
+    "hi": null
+   },
+   {
+    "en": "middle, front",
+    "hi": null
+   },
+   {
+    "en": "rear, front",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "A queue is FIFO: new elements join at the rear and the oldest element leaves from the front, like a line at a ticket counter.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Queues",
+  "difficulty": "medium",
+  "question_en": "A circular queue is implemented in an array of size N, keeping one slot always empty to distinguish full from empty. The queue is FULL when:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "rear == N − 1",
+    "hi": null
+   },
+   {
+    "en": "front == rear",
+    "hi": null
+   },
+   {
+    "en": "(rear + 1) % N == front",
+    "hi": null
+   },
+   {
+    "en": "front == (rear − 1) % N",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "When rear is just one position behind front (moving circularly) no more insertions are allowed. front == rear means EMPTY under this convention, and rear == N − 1 is the full test of a simple linear queue.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Queues",
+  "difficulty": "medium",
+  "question_en": "A circular queue uses an array of size 5 (indices 0–4), with front = 0 and the first element stored at index 0. A, B, C, D are enqueued, two elements are dequeued, and then E and F are enqueued. At which index is F stored?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "5",
+    "hi": null
+   },
+   {
+    "en": "0",
+    "hi": null
+   },
+   {
+    "en": "4",
+    "hi": null
+   },
+   {
+    "en": "2",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "A–D occupy 0–3; two dequeues move front to 2. E goes to index 4, and F goes to (4 + 1) % 5 = 0, reusing the freed slot — the advantage of a circular queue over a linear one.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Queues",
+  "difficulty": "easy",
+  "question_en": "A data structure in which elements can be inserted and deleted at BOTH ends but not in the middle is called a:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Priority queue",
+    "hi": null
+   },
+   {
+    "en": "Deque",
+    "hi": null
+   },
+   {
+    "en": "Circular queue",
+    "hi": null
+   },
+   {
+    "en": "Stack",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "A deque (double-ended queue) supports insertion and deletion at both front and rear. A stack and a simple queue each restrict operations to particular ends.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Queues",
+  "difficulty": "medium",
+  "question_en": "An input-restricted deque is one in which:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Deletion is allowed at only one end, but insertion at both ends",
+    "hi": null
+   },
+   {
+    "en": "Both insertion and deletion are allowed at only one end",
+    "hi": null
+   },
+   {
+    "en": "Insertion is allowed at only one end, but deletion at both ends",
+    "hi": null
+   },
+   {
+    "en": "Insertion and deletion are allowed only in the middle",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "'Input-restricted' limits the input operation (insertion) to one end while deletions may happen at either end. The reverse arrangement is an output-restricted deque.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Queues",
+  "difficulty": "medium",
+  "question_en": "A priority queue is most efficiently implemented using a binary heap. The time complexity of inserting an element into such a priority queue of n elements is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "O(log n)",
+    "hi": null
+   },
+   {
+    "en": "O(1)",
+    "hi": null
+   },
+   {
+    "en": "O(n)",
+    "hi": null
+   },
+   {
+    "en": "O(n log n)",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The new element is placed at the end of the heap and moved up (heapify-up) at most the height of the tree, which is ⌊log₂ n⌋. A sorted array would need O(n) shifting per insertion.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Queues",
+  "difficulty": "hard",
+  "question_en": "A queue is implemented with two stacks: enqueue pushes onto S1; dequeue pops from S2, first moving ALL elements of S1 into S2 (pop then push) if S2 is empty. For the sequence enqueue 1, enqueue 2, enqueue 3, dequeue, enqueue 4, enqueue 5, dequeue, dequeue, dequeue — how many push operations are performed in total on both stacks?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "8",
+    "hi": null
+   },
+   {
+    "en": "10",
+    "hi": null
+   },
+   {
+    "en": "12",
+    "hi": null
+   },
+   {
+    "en": "5",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Enqueue 1–3: 3 pushes. First dequeue: move 3 items to S2 (3 pushes), pop 1. Enqueue 4, 5: 2 pushes. Next two dequeues pop 2 and 3 from S2. Last dequeue: S2 empty, move 4 and 5 (2 pushes), pop 4. Total = 3 + 3 + 2 + 2 = 10.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Linked lists",
+  "difficulty": "easy",
+  "question_en": "Each node of a singly linked list contains:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Only data",
+    "hi": null
+   },
+   {
+    "en": "Data and a pointer to the next node",
+    "hi": null
+   },
+   {
+    "en": "Data and pointers to the previous and next nodes",
+    "hi": null
+   },
+   {
+    "en": "An index and a key",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "A singly linked list node has a data field and one link (next). A node with both previous and next links belongs to a doubly linked list.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Linked lists",
+  "difficulty": "medium",
+  "question_en": "A singly linked list has only a head pointer (no tail pointer). Which operation takes O(n) time?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Inserting a node at the beginning",
+    "hi": null
+   },
+   {
+    "en": "Deleting the first node",
+    "hi": null
+   },
+   {
+    "en": "Reading the data of the first node",
+    "hi": null
+   },
+   {
+    "en": "Deleting the last node",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "To delete the last node we must reach its predecessor, which requires traversing the whole list. All operations at the head are O(1).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Linked lists",
+  "difficulty": "medium",
+  "question_en": "Which is a key advantage of a doubly linked list over a singly linked list?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "It needs less memory per node",
+    "hi": null
+   },
+   {
+    "en": "A node can be deleted in O(1) time when only a pointer to that node is given",
+    "hi": null
+   },
+   {
+    "en": "Random access to the k-th element in O(1)",
+    "hi": null
+   },
+   {
+    "en": "It cannot contain cycles",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The prev link gives direct access to the predecessor, so links can be fixed without a traversal; it also allows backward traversal. The price is an extra pointer per node, and access by position is still O(n).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Linked lists",
+  "difficulty": "medium",
+  "question_en": "What does the following C function print when called with the head of the list 1 → 2 → 3 → 4?\n\nvoid f(struct node *p) {\n  if (p == NULL) return;\n  f(p->next);\n  printf(\"%d \", p->data);\n}",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "4 3 2 1",
+    "hi": null
+   },
+   {
+    "en": "1 2 3 4",
+    "hi": null
+   },
+   {
+    "en": "1 2 3 4 4 3 2 1",
+    "hi": null
+   },
+   {
+    "en": "4",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The recursive call happens BEFORE the printf, so printing is done while the calls unwind: the last node prints first. This prints the list in reverse without changing it.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Linked lists",
+  "difficulty": "hard",
+  "question_en": "In the list 1 → 2 → 3 → 4 → 5 → 6 → 7, pointers slow and fast both start at the head. In each loop step slow moves 1 node and fast moves 2 nodes; the loop runs while fast != NULL and fast->next != NULL. When the loop ends, slow points to the node with value:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "3",
+    "hi": null
+   },
+   {
+    "en": "4",
+    "hi": null
+   },
+   {
+    "en": "5",
+    "hi": null
+   },
+   {
+    "en": "7",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Positions (slow, fast): (1,1) → (2,3) → (3,5) → (4,7); now fast->next is NULL, so the loop stops with slow at 4, the middle of 7 nodes. The same two-pointer idea (Floyd's) detects cycles.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Linked lists",
+  "difficulty": "easy",
+  "question_en": "In a singly circular linked list, the next pointer of the last node points to:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "NULL",
+    "hi": null
+   },
+   {
+    "en": "The first node",
+    "hi": null
+   },
+   {
+    "en": "Itself",
+    "hi": null
+   },
+   {
+    "en": "The second-last node",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Making the last node point back to the first closes the circle, so traversal can start anywhere and continue round. NULL marks the end of an ordinary (non-circular) linked list.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Linked lists",
+  "difficulty": "medium",
+  "question_en": "Why is binary search NOT efficient on a sorted singly linked list?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Linked lists cannot store sorted data",
+    "hi": null
+   },
+   {
+    "en": "The middle element cannot be reached in constant time because there is no random access",
+    "hi": null
+   },
+   {
+    "en": "Binary search needs the data to be in a stack",
+    "hi": null
+   },
+   {
+    "en": "Comparisons are not allowed on linked-list nodes",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Binary search relies on jumping to the middle in O(1). In a linked list, reaching the middle needs a traversal of n/2 nodes, so the overall cost becomes O(n) and linear search is just as good.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Linked lists",
+  "difficulty": "medium",
+  "question_en": "Reversing a singly linked list of n nodes in place (by changing the next pointers with three pointer variables) requires:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "O(n) time and O(n) extra space",
+    "hi": null
+   },
+   {
+    "en": "O(n) time and O(1) extra space",
+    "hi": null
+   },
+   {
+    "en": "O(n²) time and O(1) extra space",
+    "hi": null
+   },
+   {
+    "en": "O(log n) time and O(1) extra space",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "One pass reverses each link using prev, curr and next pointers, so time is linear and only a constant number of extra pointers is used. A recursive or stack-based reversal would use O(n) extra space.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Trees & BST",
+  "difficulty": "easy",
+  "question_en": "Which traversal of a binary search tree visits the keys in ascending sorted order?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Preorder",
+    "hi": null
+   },
+   {
+    "en": "Postorder",
+    "hi": null
+   },
+   {
+    "en": "Inorder",
+    "hi": null
+   },
+   {
+    "en": "Level order",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Inorder visits left subtree, root, right subtree; since left keys < root < right keys in a BST, the output is sorted. This is the basis of 'tree sort'.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Trees & BST",
+  "difficulty": "medium",
+  "question_en": "A binary tree has root A with left child B and right child C. B has left child D and right child E; C has only a right child F. The postorder traversal is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "D E B F C A",
+    "hi": null
+   },
+   {
+    "en": "D B E A C F",
+    "hi": null
+   },
+   {
+    "en": "A B D E C F",
+    "hi": null
+   },
+   {
+    "en": "D E F B C A",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Postorder = left, right, root. Left subtree of A gives D E B; right subtree gives F C; then A → D E B F C A. D B E A C F is inorder and A B D E C F is preorder.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Trees & BST",
+  "difficulty": "hard",
+  "question_en": "The preorder traversal of a binary tree is P Q S T R U and its inorder traversal is S Q T P U R. What is its postorder traversal?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "S Q T U R P",
+    "hi": null
+   },
+   {
+    "en": "T S Q U R P",
+    "hi": null
+   },
+   {
+    "en": "S T Q R U P",
+    "hi": null
+   },
+   {
+    "en": "S T Q U R P",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Preorder's first node P is the root; inorder splits into left {S, Q, T} and right {U, R}. Left subtree: root Q (next in preorder) with S left and T right. Right subtree: root R with U as its left child. Postorder = S T Q, U R, P.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Trees & BST",
+  "difficulty": "medium",
+  "question_en": "What is the maximum number of nodes in a binary tree of height 4, if a tree with only the root has height 0?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "15",
+    "hi": null
+   },
+   {
+    "en": "16",
+    "hi": null
+   },
+   {
+    "en": "32",
+    "hi": null
+   },
+   {
+    "en": "31",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Levels 0 to 4 can hold 1 + 2 + 4 + 8 + 16 = 2^(h+1) − 1 = 2^5 − 1 = 31 nodes. 15 would be the answer if the root were counted as height 1.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Trees & BST",
+  "difficulty": "medium",
+  "question_en": "In a binary tree, every internal node has exactly two children. If there are 10 internal nodes, the number of leaf nodes is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "10",
+    "hi": null
+   },
+   {
+    "en": "20",
+    "hi": null
+   },
+   {
+    "en": "9",
+    "hi": null
+   },
+   {
+    "en": "11",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "For a full binary tree, leaves L = internal nodes I + 1. Reason: edges = 2I (two per internal node) and also n − 1 = I + L − 1, so 2I = I + L − 1 → L = I + 1 = 11.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Trees & BST",
+  "difficulty": "easy",
+  "question_en": "Keys 45, 20, 60, 10, 30, 50, 70, 25 are inserted in this order into an empty binary search tree. Which node is the parent of 25?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "20",
+    "hi": null
+   },
+   {
+    "en": "10",
+    "hi": null
+   },
+   {
+    "en": "30",
+    "hi": null
+   },
+   {
+    "en": "50",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "25 < 45 → go left to 20; 25 > 20 → go right to 30; 25 < 30 → becomes the left child of 30.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Trees & BST",
+  "difficulty": "hard",
+  "question_en": "Keys 45, 20, 60, 10, 30, 50, 70, 25 are inserted into an empty BST. The root 45 is then deleted, replacing it with its INORDER SUCCESSOR. What is the new root?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "50",
+    "hi": null
+   },
+   {
+    "en": "30",
+    "hi": null
+   },
+   {
+    "en": "60",
+    "hi": null
+   },
+   {
+    "en": "25",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A node with two children is replaced by the smallest key of its right subtree: from 60 go left to 50, which has no left child → 50 becomes the root. 30 is the inorder PREDECESSOR (largest key in the left subtree).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Trees & BST",
+  "difficulty": "medium",
+  "question_en": "The worst-case time complexity of searching for a key in a binary search tree with n nodes (not necessarily balanced) is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "O(n)",
+    "hi": null
+   },
+   {
+    "en": "O(log n)",
+    "hi": null
+   },
+   {
+    "en": "O(1)",
+    "hi": null
+   },
+   {
+    "en": "O(n log n)",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "If keys are inserted in sorted order the BST degenerates into a chain (skewed tree) of height n − 1, so a search may visit every node. O(log n) holds only for balanced trees such as AVL or red-black trees.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Trees & BST",
+  "difficulty": "easy",
+  "question_en": "A tree with n nodes has exactly how many edges?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "n",
+    "hi": null
+   },
+   {
+    "en": "n − 1",
+    "hi": null
+   },
+   {
+    "en": "n + 1",
+    "hi": null
+   },
+   {
+    "en": "2n",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Every node except the root has exactly one edge to its parent, so there are n − 1 edges. Adding any further edge would create a cycle.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Trees & BST",
+  "difficulty": "medium",
+  "question_en": "How many structurally different binary search trees can be built using the three keys 1, 2 and 3?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "5",
+    "hi": null
+   },
+   {
+    "en": "6",
+    "hi": null
+   },
+   {
+    "en": "3",
+    "hi": null
+   },
+   {
+    "en": "9",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The count is the Catalan number C(3) = (1/(3+1)) × 6C3 = 20/4 = 5: root 1 (2 shapes), root 2 (1 shape), root 3 (2 shapes). 6 = 3! counts insertion orders, but two orders (2,1,3 and 2,3,1) give the same tree.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Trees & BST",
+  "difficulty": "easy",
+  "question_en": "Level-order traversal of a binary tree is implemented using which data structure?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Queue",
+    "hi": null
+   },
+   {
+    "en": "Stack",
+    "hi": null
+   },
+   {
+    "en": "Heap",
+    "hi": null
+   },
+   {
+    "en": "Hash table",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Nodes are enqueued level by level: dequeue a node, visit it, enqueue its children. This is BFS applied to a tree. Preorder, inorder and postorder use a stack (explicitly or via recursion).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Trees & BST",
+  "difficulty": "medium",
+  "question_en": "In an AVL tree, the balance factor (height of left subtree − height of right subtree) of every node must be:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Exactly 0",
+    "hi": null
+   },
+   {
+    "en": "Between −2 and +2",
+    "hi": null
+   },
+   {
+    "en": "−1, 0 or +1",
+    "hi": null
+   },
+   {
+    "en": "Any non-negative value",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "An AVL tree is height-balanced: subtree heights may differ by at most 1. When an insertion or deletion makes a balance factor ±2, rotations (LL, RR, LR, RL) restore balance, keeping height O(log n).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Trees & BST",
+  "difficulty": "hard",
+  "question_en": "A complete binary tree contains 100 nodes. How many of them are leaf nodes?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "51",
+    "hi": null
+   },
+   {
+    "en": "49",
+    "hi": null
+   },
+   {
+    "en": "50",
+    "hi": null
+   },
+   {
+    "en": "64",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Store the tree in an array with indices 1–100. Node i has a child only if 2i ≤ 100, i.e. i ≤ 50, so nodes 1–50 are internal and nodes 51–100 are leaves: 50 leaves. In general a complete binary tree with n nodes has ⌈n/2⌉ leaves.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Heaps",
+  "difficulty": "easy",
+  "question_en": "In a max-heap, which property holds for every node?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Its key is smaller than the keys of its children",
+    "hi": null
+   },
+   {
+    "en": "Its left child is smaller than its right child",
+    "hi": null
+   },
+   {
+    "en": "Its key is greater than or equal to the keys of its children",
+    "hi": null
+   },
+   {
+    "en": "All keys in its left subtree are smaller than all keys in its right subtree",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The max-heap property orders each parent above its children, so the maximum is always at the root. There is no left–right ordering between siblings; that kind of ordering belongs to a BST.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Heaps",
+  "difficulty": "easy",
+  "question_en": "A binary heap is stored in an array starting at index 1. The children of the node at index i are found at indices:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "i + 1 and i + 2",
+    "hi": null
+   },
+   {
+    "en": "2i − 1 and 2i",
+    "hi": null
+   },
+   {
+    "en": "i/2 and i/2 + 1",
+    "hi": null
+   },
+   {
+    "en": "2i and 2i + 1",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "With 1-based indexing, left = 2i, right = 2i + 1 and parent = ⌊i/2⌋. With 0-based indexing they become 2i + 1, 2i + 2 and ⌊(i − 1)/2⌋.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Heaps",
+  "difficulty": "medium",
+  "question_en": "Which of the following arrays (0-based, level order) represents a valid max-heap?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "90, 80, 70, 85, 60, 50, 40",
+    "hi": null
+   },
+   {
+    "en": "90, 70, 80, 30, 60, 50, 40",
+    "hi": null
+   },
+   {
+    "en": "70, 90, 80, 30, 60, 50, 40",
+    "hi": null
+   },
+   {
+    "en": "90, 70, 80, 75, 60, 50, 40",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Check each parent i against children 2i + 1 and 2i + 2: 90 ≥ 70, 80; 70 ≥ 30, 60; 80 ≥ 50, 40 — valid. In the others 85 sits below 80, 90 sits below 70, or 75 sits below 70.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Heaps",
+  "difficulty": "hard",
+  "question_en": "The key 95 is inserted into the max-heap stored as [90, 70, 80, 30, 60, 50, 40]. After the heap is restored, the array is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "[90, 95, 80, 70, 60, 50, 40, 30]",
+    "hi": null
+   },
+   {
+    "en": "[95, 90, 80, 30, 60, 50, 40, 70]",
+    "hi": null
+   },
+   {
+    "en": "[95, 90, 80, 70, 60, 50, 40, 30]",
+    "hi": null
+   },
+   {
+    "en": "[95, 70, 90, 30, 60, 50, 40, 80]",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "95 is placed at index 7 (child of 30 at index 3) and sifted up: swap with 30 → index 3; swap with its parent 70 → index 1; swap with 90 → root. Result [95, 90, 80, 70, 60, 50, 40, 30].",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Heaps",
+  "difficulty": "medium",
+  "question_en": "The time required to build a binary heap from an unordered array of n elements using the bottom-up (heapify) method is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "O(n log n)",
+    "hi": null
+   },
+   {
+    "en": "O(log n)",
+    "hi": null
+   },
+   {
+    "en": "O(n²)",
+    "hi": null
+   },
+   {
+    "en": "O(n)",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Most nodes are near the bottom and sift down only a little; summing the heights gives a total that is bounded by 2n, i.e. O(n). Inserting the n elements one at a time would cost O(n log n).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Heaps",
+  "difficulty": "medium",
+  "question_en": "The root is deleted from the max-heap [90, 70, 80, 30, 60, 50, 40]. After re-heapification, the array becomes:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "[80, 70, 40, 30, 60, 50]",
+    "hi": null
+   },
+   {
+    "en": "[70, 80, 50, 30, 60, 40]",
+    "hi": null
+   },
+   {
+    "en": "[80, 70, 50, 30, 60, 40]",
+    "hi": null
+   },
+   {
+    "en": "[80, 60, 50, 30, 70, 40]",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The last element 40 moves to the root → [40, 70, 80, 30, 60, 50]. Sift down: swap with the larger child 80 → [80, 70, 40, 30, 60, 50]; 40 at index 2 has child 50 → swap → [80, 70, 50, 30, 60, 40].",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Graphs",
+  "difficulty": "easy",
+  "question_en": "Breadth-first search (BFS) of a graph is normally implemented with the help of a:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Stack",
+    "hi": null
+   },
+   {
+    "en": "Queue",
+    "hi": null
+   },
+   {
+    "en": "Priority queue",
+    "hi": null
+   },
+   {
+    "en": "Binary search tree",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "BFS visits all neighbours of a vertex before going deeper, which is FIFO behaviour, so a queue is used. DFS uses a stack (or recursion).",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Graphs",
+  "difficulty": "medium",
+  "question_en": "For a graph with V vertices and E edges, the space needed by an adjacency matrix and by an adjacency list is respectively:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "O(V²) and O(V + E)",
+    "hi": null
+   },
+   {
+    "en": "O(V + E) and O(V²)",
+    "hi": null
+   },
+   {
+    "en": "O(E) and O(V)",
+    "hi": null
+   },
+   {
+    "en": "O(V²) and O(E²)",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A matrix has a V × V cell for every vertex pair whether or not an edge exists. A list stores each vertex plus one entry per edge (two for undirected), which is far smaller for sparse graphs.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Graphs",
+  "difficulty": "medium",
+  "question_en": "An undirected graph has 6 vertices with degrees 3, 3, 2, 2, 2 and 2. How many edges does it have?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "7",
+    "hi": null
+   },
+   {
+    "en": "14",
+    "hi": null
+   },
+   {
+    "en": "6",
+    "hi": null
+   },
+   {
+    "en": "12",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "By the handshaking lemma, the sum of degrees = 2E. Sum = 3 + 3 + 2 + 2 + 2 + 2 = 14, so E = 14 / 2 = 7. 14 forgets that each edge is counted at both ends.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Graphs",
+  "difficulty": "medium",
+  "question_en": "What is the maximum number of edges in a simple undirected graph with 8 vertices?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "56",
+    "hi": null
+   },
+   {
+    "en": "64",
+    "hi": null
+   },
+   {
+    "en": "36",
+    "hi": null
+   },
+   {
+    "en": "28",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Each pair of distinct vertices can have at most one edge: 8C2 = 8 × 7 / 2 = 28. 56 would be the maximum for a simple DIRECTED graph.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Graphs",
+  "difficulty": "hard",
+  "question_en": "An undirected graph has edges A–B, A–C, B–D, C–D, C–E, D–F and E–F. Starting from A and always visiting neighbours in alphabetical order, what is the DFS order?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "A B C D E F",
+    "hi": null
+   },
+   {
+    "en": "A B D C E F",
+    "hi": null
+   },
+   {
+    "en": "A C E F D B",
+    "hi": null
+   },
+   {
+    "en": "A B D F E C",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "A → B (first neighbour) → D (B's only unvisited neighbour) → C (D's neighbours B, C, F: C first) → E (C's unvisited neighbour) → F. A B C D E F is the BFS order from A.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Graphs",
+  "difficulty": "medium",
+  "question_en": "Using adjacency lists, the time complexity of BFS or DFS on a graph with V vertices and E edges is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "O(V × E)",
+    "hi": null
+   },
+   {
+    "en": "O(V + E)",
+    "hi": null
+   },
+   {
+    "en": "O(V²)",
+    "hi": null
+   },
+   {
+    "en": "O(E log V)",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Each vertex is enqueued/visited once (O(V)) and each adjacency list is scanned once (O(E) in total). With an adjacency matrix the cost rises to O(V²).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Graphs",
+  "difficulty": "easy",
+  "question_en": "A directed graph that contains no cycles is called a:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Complete graph",
+    "hi": null
+   },
+   {
+    "en": "Bipartite graph",
+    "hi": null
+   },
+   {
+    "en": "Directed acyclic graph (DAG)",
+    "hi": null
+   },
+   {
+    "en": "Strongly connected graph",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "A DAG has directed edges and no directed cycle; such graphs model task dependencies and admit a topological order. A strongly connected graph, by contrast, has a path between every ordered pair and therefore has cycles.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Graphs",
+  "difficulty": "medium",
+  "question_en": "Tasks have dependencies A → B, A → C, B → D and C → D (X → Y means X must come before Y). Which of the following is a valid topological order?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "A, C, B, D",
+    "hi": null
+   },
+   {
+    "en": "B, A, C, D",
+    "hi": null
+   },
+   {
+    "en": "A, D, B, C",
+    "hi": null
+   },
+   {
+    "en": "C, A, B, D",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A must be first (no incoming edges) and D last (it depends on B and C); B and C may come in either order. Every other option places some vertex before one of its prerequisites.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Graphs",
+  "difficulty": "medium",
+  "question_en": "A weighted undirected graph has edges A–B (4), A–C (1), B–C (2), B–D (5), C–D (8) and A–D (7). What is the total weight of its minimum spanning tree found by Kruskal's algorithm?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "7",
+    "hi": null
+   },
+   {
+    "en": "11",
+    "hi": null
+   },
+   {
+    "en": "12",
+    "hi": null
+   },
+   {
+    "en": "8",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Sort edges by weight and add those that do not form a cycle: A–C (1), B–C (2), skip A–B (4, would close A–B–C), B–D (5). Three edges join four vertices: 1 + 2 + 5 = 8.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Searching",
+  "difficulty": "easy",
+  "question_en": "Binary search can be applied correctly only when the list is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Stored in a linked list",
+    "hi": null
+   },
+   {
+    "en": "Sorted",
+    "hi": null
+   },
+   {
+    "en": "Of even length",
+    "hi": null
+   },
+   {
+    "en": "Free of negative numbers",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Binary search discards half the list after comparing with the middle element, which is valid only if the elements are in sorted order. It also needs random access, so an array is the usual structure.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Searching",
+  "difficulty": "medium",
+  "question_en": "What is the maximum number of comparisons binary search needs to find a key (or report failure) in a sorted array of 1000 elements?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "10",
+    "hi": null
+   },
+   {
+    "en": "9",
+    "hi": null
+   },
+   {
+    "en": "11",
+    "hi": null
+   },
+   {
+    "en": "500",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Worst case = ⌊log₂ n⌋ + 1 = ⌊log₂ 1000⌋ + 1 = 9 + 1 = 10, because 2^10 = 1024 ≥ 1000. 500 is the average for linear search, not binary search.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Searching",
+  "difficulty": "medium",
+  "question_en": "Binary search for 38 is performed on the sorted array [3, 8, 12, 17, 23, 31, 38, 45, 52] (indices 0–8, mid = ⌊(low + high)/2⌋). Which elements are compared with 38, in order?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "23, 38",
+    "hi": null
+   },
+   {
+    "en": "23, 31, 38",
+    "hi": null
+   },
+   {
+    "en": "17, 31, 38",
+    "hi": null
+   },
+   {
+    "en": "23, 45, 38",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "low = 0, high = 8 → mid = 4 (23); 38 > 23 so low = 5. mid = ⌊(5 + 8)/2⌋ = 6 → 38, found after 2 comparisons.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Searching",
+  "difficulty": "medium",
+  "question_en": "In a successful linear search of n elements, where the key is equally likely to be at any position, the average number of comparisons is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "n / 4",
+    "hi": null
+   },
+   {
+    "en": "log₂ n",
+    "hi": null
+   },
+   {
+    "en": "n²",
+    "hi": null
+   },
+   {
+    "en": "(n + 1) / 2",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "If the key is at position i, i comparisons are made. Average = (1 + 2 + … + n)/n = n(n + 1)/(2n) = (n + 1)/2. The worst case is n comparisons.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Searching",
+  "difficulty": "hard",
+  "question_en": "For a sorted array whose values are uniformly distributed, interpolation search has an average-case time complexity of:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "O(log n)",
+    "hi": null
+   },
+   {
+    "en": "O(log log n)",
+    "hi": null
+   },
+   {
+    "en": "O(√n)",
+    "hi": null
+   },
+   {
+    "en": "O(1)",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Interpolation search estimates the probe position from the key's value instead of always using the middle, which on uniform data shrinks the range much faster, giving O(log log n). Its worst case, on skewed data, degrades to O(n).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Searching",
+  "difficulty": "easy",
+  "question_en": "The worst-case time complexity of binary search on a sorted array of n elements is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "O(log n)",
+    "hi": null
+   },
+   {
+    "en": "O(n)",
+    "hi": null
+   },
+   {
+    "en": "O(1)",
+    "hi": null
+   },
+   {
+    "en": "O(n log n)",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Each comparison halves the remaining range, so at most about log₂ n + 1 comparisons are needed. Linear search needs O(n).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Sorting",
+  "difficulty": "medium",
+  "question_en": "Quick sort that always picks the FIRST element as pivot shows its worst-case O(n²) behaviour when the input array is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Randomly ordered",
+    "hi": null
+   },
+   {
+    "en": "Already sorted",
+    "hi": null
+   },
+   {
+    "en": "Made up of distinct prime numbers",
+    "hi": null
+   },
+   {
+    "en": "Of even length",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "On sorted input the first element is the smallest, so every partition is maximally unbalanced (0 and n − 1 elements), giving n + (n − 1) + … ≈ n²/2 comparisons. Random or median-of-three pivots avoid this in practice.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Sorting",
+  "difficulty": "easy",
+  "question_en": "What is the time complexity of merge sort in the best, average and worst cases?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "O(n) best, O(n²) worst",
+    "hi": null
+   },
+   {
+    "en": "O(n²) in all three cases",
+    "hi": null
+   },
+   {
+    "en": "O(log n) in all three cases",
+    "hi": null
+   },
+   {
+    "en": "O(n log n) in all three cases",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Merge sort always halves the array (log n levels) and merges each level in O(n), whatever the input order. Its drawback is the O(n) extra space needed for merging.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Sorting",
+  "difficulty": "medium",
+  "question_en": "Which of the following sorting algorithms is NOT stable in its standard form?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Merge sort",
+    "hi": null
+   },
+   {
+    "en": "Insertion sort",
+    "hi": null
+   },
+   {
+    "en": "Heap sort",
+    "hi": null
+   },
+   {
+    "en": "Bubble sort",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "A stable sort keeps equal keys in their original relative order. Heap sort's swaps with the root can move equal keys past each other; quick sort and selection sort are also unstable, while merge, insertion and bubble sort are stable.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Sorting",
+  "difficulty": "medium",
+  "question_en": "After the FIRST pass of bubble sort (ascending, adjacent swaps from left to right) on [6, 2, 9, 4, 1], the array becomes:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "[1, 2, 4, 6, 9]",
+    "hi": null
+   },
+   {
+    "en": "[2, 6, 9, 1, 4]",
+    "hi": null
+   },
+   {
+    "en": "[2, 4, 6, 1, 9]",
+    "hi": null
+   },
+   {
+    "en": "[2, 6, 4, 1, 9]",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Compare 6,2 → swap [2,6,9,4,1]; 6,9 → no swap; 9,4 → swap [2,6,4,9,1]; 9,1 → swap [2,6,4,1,9]. The largest element 9 'bubbles' to the end after one pass.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Sorting",
+  "difficulty": "medium",
+  "question_en": "Selection sort (ascending) is applied to [29, 10, 14, 37, 13]. What is the array after the first TWO passes?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "[10, 14, 29, 37, 13]",
+    "hi": null
+   },
+   {
+    "en": "[10, 13, 29, 37, 14]",
+    "hi": null
+   },
+   {
+    "en": "[10, 13, 14, 37, 29]",
+    "hi": null
+   },
+   {
+    "en": "[10, 29, 14, 37, 13]",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Pass 1: minimum 10 swaps with 29 → [10, 29, 14, 37, 13]. Pass 2: minimum of the rest is 13, swapped with 29 → [10, 13, 14, 37, 29].",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Sorting",
+  "difficulty": "hard",
+  "question_en": "Insertion sort is applied to [4, 3, 1, 2]. How many element shifts (moves of an element one place to the right) are performed in total?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "3",
+    "hi": null
+   },
+   {
+    "en": "6",
+    "hi": null
+   },
+   {
+    "en": "5",
+    "hi": null
+   },
+   {
+    "en": "4",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Insertion sort makes exactly one shift per inversion. Inversions: (4,3), (4,1), (4,2), (3,1), (3,2) = 5. Trace: insert 3 (1 shift), insert 1 (2 shifts), insert 2 (2 shifts) → 5.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Sorting",
+  "difficulty": "easy",
+  "question_en": "The best-case time complexity of insertion sort, which occurs when the input is already sorted, is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "O(n log n)",
+    "hi": null
+   },
+   {
+    "en": "O(n²)",
+    "hi": null
+   },
+   {
+    "en": "O(log n)",
+    "hi": null
+   },
+   {
+    "en": "O(n)",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "On sorted input each new element needs only one comparison with its left neighbour and no shifts, so the total work is linear. This makes insertion sort good for nearly sorted data.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Sorting",
+  "difficulty": "hard",
+  "question_en": "Quick sort with the Lomuto partition scheme (pivot = LAST element) partitions [7, 2, 9, 1, 5]. What is the array right after this first partition?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "[2, 1, 5, 7, 9]",
+    "hi": null
+   },
+   {
+    "en": "[1, 2, 5, 9, 7]",
+    "hi": null
+   },
+   {
+    "en": "[2, 1, 5, 9, 7]",
+    "hi": null
+   },
+   {
+    "en": "[1, 2, 5, 7, 9]",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Pivot = 5, i = −1. j=0: 7 > 5 skip; j=1: 2 ≤ 5 → i=0, swap → [2,7,9,1,5]; j=2: 9 skip; j=3: 1 ≤ 5 → i=1, swap → [2,1,9,7,5]; finally swap a[2] with the pivot → [2,1,5,7,9]. The pivot 5 is now at its final index 2.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Sorting",
+  "difficulty": "easy",
+  "question_en": "Which sorting algorithm repeatedly finds the minimum element of the unsorted part and swaps it into the first position of that part?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Insertion sort",
+    "hi": null
+   },
+   {
+    "en": "Selection sort",
+    "hi": null
+   },
+   {
+    "en": "Bubble sort",
+    "hi": null
+   },
+   {
+    "en": "Merge sort",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Selection sort 'selects' the smallest remaining element on each pass. Insertion sort instead takes the next element and inserts it into the already sorted left part.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Sorting",
+  "difficulty": "medium",
+  "question_en": "In the worst case, how many swaps does selection sort perform on an array of n elements?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "n(n − 1)/2, i.e. O(n²)",
+    "hi": null
+   },
+   {
+    "en": "n log n",
+    "hi": null
+   },
+   {
+    "en": "n − 1, i.e. O(n)",
+    "hi": null
+   },
+   {
+    "en": "1",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Selection sort performs at most one swap per pass and there are n − 1 passes, so swaps are O(n) even though comparisons are O(n²). This makes it useful when writes are expensive.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Sorting",
+  "difficulty": "hard",
+  "question_en": "Any sorting algorithm that sorts only by comparing pairs of elements must make, in the worst case, at least:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Ω(n) comparisons",
+    "hi": null
+   },
+   {
+    "en": "Ω(n log n) comparisons",
+    "hi": null
+   },
+   {
+    "en": "Ω(n²) comparisons",
+    "hi": null
+   },
+   {
+    "en": "Ω(log n) comparisons",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "A comparison sort is a binary decision tree with at least n! leaves, so its height is at least log₂(n!) = Θ(n log n). Counting and radix sort beat this only because they do not rely on comparisons.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Sorting",
+  "difficulty": "medium",
+  "question_en": "Counting sort on n integers whose values lie in the range 0 to k has time complexity:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "O(n + k)",
+    "hi": null
+   },
+   {
+    "en": "O(n log n)",
+    "hi": null
+   },
+   {
+    "en": "O(n²)",
+    "hi": null
+   },
+   {
+    "en": "O(k log n)",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Counting sort counts occurrences of each value (O(n)), accumulates the counts over the range (O(k)) and places the elements (O(n)). It is not comparison-based, so the Ω(n log n) bound does not apply, but it needs O(k) extra space.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Hashing",
+  "difficulty": "easy",
+  "question_en": "In hashing, a 'collision' occurs when:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "The hash table becomes completely full",
+    "hi": null
+   },
+   {
+    "en": "A key is searched for but not found",
+    "hi": null
+   },
+   {
+    "en": "Two different keys are mapped by the hash function to the same index",
+    "hi": null
+   },
+   {
+    "en": "The hash function returns a negative value",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Since many possible keys map onto a small number of slots, different keys can share a home address. Collisions are resolved by chaining or by open addressing (linear, quadratic probing, double hashing).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Hashing",
+  "difficulty": "medium",
+  "question_en": "Keys 14, 25, 36 and 47 are inserted in this order into a hash table of size 11 using h(k) = k mod 11 and linear probing. At which index is 47 stored?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "3",
+    "hi": null
+   },
+   {
+    "en": "6",
+    "hi": null
+   },
+   {
+    "en": "5",
+    "hi": null
+   },
+   {
+    "en": "7",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "All four keys hash to 3 (14, 25, 36, 47 mod 11 = 3). 14 → 3; 25 → 3 taken → 4; 36 → 3, 4 taken → 5; 47 → 3, 4, 5 taken → 6.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Hashing",
+  "difficulty": "hard",
+  "question_en": "A hash table of size 10 uses h(k) = k mod 10 with quadratic probing: the i-th probe is (h(k) + i²) mod 10. Keys 23, 43, 13 and 33 are inserted in this order. At which index is 33 stored?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "6",
+    "hi": null
+   },
+   {
+    "en": "5",
+    "hi": null
+   },
+   {
+    "en": "8",
+    "hi": null
+   },
+   {
+    "en": "2",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "23 → 3. 43 → 3 busy, 3 + 1 = 4. 13 → 3, 4 busy, 3 + 4 = 7. 33 → 3, 4, 7 busy, then (3 + 9) mod 10 = 2 → index 2. Linear probing would have put 33 at 5.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Hashing",
+  "difficulty": "easy",
+  "question_en": "A hash table has 60 slots and currently stores 45 keys. Its load factor is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "1.33",
+    "hi": null
+   },
+   {
+    "en": "0.75",
+    "hi": null
+   },
+   {
+    "en": "0.25",
+    "hi": null
+   },
+   {
+    "en": "45",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Load factor α = number of keys / number of slots = 45 / 60 = 0.75. A larger α means more collisions; with open addressing α can never exceed 1.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Hashing",
+  "difficulty": "medium",
+  "question_en": "In separate chaining, each slot of the hash table stores:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Exactly one key, with collisions sent to the next free slot",
+    "hi": null
+   },
+   {
+    "en": "The hash function itself",
+    "hi": null
+   },
+   {
+    "en": "A linked list of all keys that hash to that slot",
+    "hi": null
+   },
+   {
+    "en": "A pointer to the next empty slot",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Chaining keeps every colliding key in a list attached to its home slot, so the table never 'fills up' and the load factor can exceed 1. Moving to the next free slot describes open addressing.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Hashing",
+  "difficulty": "medium",
+  "question_en": "The tendency of occupied slots to form long consecutive runs, which slows down insertion and search, is called primary clustering. It is mainly caused by:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Linear probing",
+    "hi": null
+   },
+   {
+    "en": "Separate chaining",
+    "hi": null
+   },
+   {
+    "en": "Double hashing",
+    "hi": null
+   },
+   {
+    "en": "Perfect hashing",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "With linear probing any key hashing into a run lands at its end and lengthens it. Quadratic probing removes primary clustering (but suffers secondary clustering) and double hashing reduces both.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Hashing",
+  "difficulty": "hard",
+  "question_en": "A hash table of size 7 uses double hashing with h1(k) = k mod 7 and h2(k) = 5 − (k mod 5); the i-th probe is (h1(k) + i × h2(k)) mod 7. After 10 is inserted, where is 17 placed?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "4",
+    "hi": null
+   },
+   {
+    "en": "6",
+    "hi": null
+   },
+   {
+    "en": "3",
+    "hi": null
+   },
+   {
+    "en": "2",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "10 mod 7 = 3, so 10 occupies slot 3. For 17: h1 = 17 mod 7 = 3 (collision); h2 = 5 − (17 mod 5) = 5 − 2 = 3; first probe (3 + 1 × 3) mod 7 = 6, which is free. Linear probing would have chosen 4.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Recursion",
+  "difficulty": "medium",
+  "question_en": "What value does f(7) return?\n\nint f(int n) {\n  if (n <= 1) return 1;\n  return n * f(n - 2);\n}",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "105",
+    "hi": null
+   },
+   {
+    "en": "5040",
+    "hi": null
+   },
+   {
+    "en": "35",
+    "hi": null
+   },
+   {
+    "en": "15",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "f(7) = 7 × f(5) = 7 × 5 × f(3) = 7 × 5 × 3 × f(1) = 7 × 5 × 3 × 1 = 105 (the product of odd numbers, a 'double factorial'). 5040 = 7! would need n − 1 instead of n − 2.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Recursion",
+  "difficulty": "hard",
+  "question_en": "The naive recursive Fibonacci function  int fib(int n){ if(n <= 1) return n; return fib(n-1) + fib(n-2); }  is called as fib(5). How many calls to fib are made in total, including the first one?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "9",
+    "hi": null
+   },
+   {
+    "en": "8",
+    "hi": null
+   },
+   {
+    "en": "31",
+    "hi": null
+   },
+   {
+    "en": "15",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Let C(n) = 1 + C(n − 1) + C(n − 2) with C(0) = C(1) = 1. Then C(2) = 3, C(3) = 5, C(4) = 9, C(5) = 1 + 9 + 5 = 15. This exponential growth is why memoisation or iteration is preferred.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Recursion",
+  "difficulty": "easy",
+  "question_en": "A recursive function that has no reachable base case will, when run, most likely end with:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "A compilation error",
+    "hi": null
+   },
+   {
+    "en": "An infinitely long but correct output",
+    "hi": null
+   },
+   {
+    "en": "An automatic conversion to a loop",
+    "hi": null
+   },
+   {
+    "en": "A stack overflow error",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Each call pushes a new activation record on the call stack; without a terminating condition the calls never return and the stack space runs out. The compiler cannot detect this in general.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Recursion",
+  "difficulty": "easy",
+  "question_en": "Which data structure does the system use to keep track of active function calls during recursion?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Queue",
+    "hi": null
+   },
+   {
+    "en": "Stack",
+    "hi": null
+   },
+   {
+    "en": "Heap (priority queue)",
+    "hi": null
+   },
+   {
+    "en": "Graph",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Each call's parameters, local variables and return address form an activation record pushed on the call stack; the most recent call returns first (LIFO).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Recursion",
+  "difficulty": "medium",
+  "question_en": "What is the minimum number of moves needed to solve the Tower of Hanoi puzzle with 5 discs?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "31",
+    "hi": null
+   },
+   {
+    "en": "32",
+    "hi": null
+   },
+   {
+    "en": "25",
+    "hi": null
+   },
+   {
+    "en": "63",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Moves satisfy M(n) = 2M(n − 1) + 1 with M(1) = 1, giving M(n) = 2^n − 1 = 2^5 − 1 = 31. 63 is the answer for 6 discs.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Recursion",
+  "difficulty": "medium",
+  "question_en": "What is printed by the call p(3)?\n\nvoid p(int n) {\n  if (n == 0) return;\n  printf(\"%d \", n);\n  p(n - 1);\n  printf(\"%d \", n);\n}",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "3 2 1 1 2 3",
+    "hi": null
+   },
+   {
+    "en": "3 2 1 0 1 2 3",
+    "hi": null
+   },
+   {
+    "en": "1 2 3 3 2 1",
+    "hi": null
+   },
+   {
+    "en": "3 2 1",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The first printf runs on the way down (3, 2, 1); p(0) returns without printing; the second printf runs as the calls unwind (1, 2, 3). Output: 3 2 1 1 2 3.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Big-O analysis",
+  "difficulty": "easy",
+  "question_en": "What is the time complexity of the following code?\n\nfor (i = 0; i < n; i++)\n  for (j = 0; j < n; j++)\n    sum = sum + a[i][j];",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "O(n²)",
+    "hi": null
+   },
+   {
+    "en": "O(n)",
+    "hi": null
+   },
+   {
+    "en": "O(2n)",
+    "hi": null
+   },
+   {
+    "en": "O(n log n)",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The inner statement executes n times for each of the n outer iterations, i.e. n × n = n² times. Two loops one AFTER another would be O(n), but nested loops multiply.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Big-O analysis",
+  "difficulty": "medium",
+  "question_en": "What is the time complexity of this loop?\n\nfor (i = 1; i < n; i = i * 2)\n  count++;",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "O(n)",
+    "hi": null
+   },
+   {
+    "en": "O(log n)",
+    "hi": null
+   },
+   {
+    "en": "O(n/2)",
+    "hi": null
+   },
+   {
+    "en": "O(√n)",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "i takes the values 1, 2, 4, 8, … and stops once 2^k ≥ n, so the loop runs about log₂ n times. Doubling (or halving) a loop variable gives logarithmic complexity.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Big-O analysis",
+  "difficulty": "hard",
+  "question_en": "What is the time complexity of the following code?\n\nfor (i = 1; i <= n; i++)\n  for (j = 1; j <= n; j = j * 2)\n    count++;",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "O(n²)",
+    "hi": null
+   },
+   {
+    "en": "O(log² n)",
+    "hi": null
+   },
+   {
+    "en": "O(n log n)",
+    "hi": null
+   },
+   {
+    "en": "O(n)",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The outer loop runs n times; for each, the inner loop doubles j and so runs about log₂ n + 1 times. Total ≈ n(log₂ n + 1) = O(n log n).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Big-O analysis",
+  "difficulty": "hard",
+  "question_en": "Using the Master theorem, the recurrence T(n) = 4T(n/2) + n solves to:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Θ(n log n)",
+    "hi": null
+   },
+   {
+    "en": "Θ(n)",
+    "hi": null
+   },
+   {
+    "en": "Θ(n² log n)",
+    "hi": null
+   },
+   {
+    "en": "Θ(n²)",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Here a = 4, b = 2, f(n) = n, and n^(log_b a) = n^(log₂ 4) = n². Since f(n) = n grows polynomially slower than n², case 1 applies: T(n) = Θ(n²). T(n) = 2T(n/2) + n (merge sort) would give Θ(n log n).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Big-O analysis",
+  "difficulty": "easy",
+  "question_en": "Which of the following lists functions in correct INCREASING order of growth rate?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "n < log n < n log n < 2ⁿ < n²",
+    "hi": null
+   },
+   {
+    "en": "log n < n < n log n < n² < 2ⁿ",
+    "hi": null
+   },
+   {
+    "en": "log n < n log n < n < n² < 2ⁿ",
+    "hi": null
+   },
+   {
+    "en": "log n < n < n² < n log n < 2ⁿ",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Logarithmic grows slowest, then linear, then n log n, then polynomial n², and exponential 2ⁿ eventually overtakes every polynomial.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Asymptotic notations",
+  "difficulty": "easy",
+  "question_en": "Big-O notation, f(n) = O(g(n)), expresses that g(n) is an asymptotic ______ of f(n).",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "upper bound",
+    "hi": null
+   },
+   {
+    "en": "lower bound",
+    "hi": null
+   },
+   {
+    "en": "tight (exact) bound",
+    "hi": null
+   },
+   {
+    "en": "average value",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "f(n) = O(g(n)) if f(n) ≤ c·g(n) for some constant c > 0 and all n ≥ n₀. Ω gives a lower bound and Θ gives a tight bound (both upper and lower).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Asymptotic notations",
+  "difficulty": "medium",
+  "question_en": "For f(n) = 3n² + 5n + 2, which statement is correct?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "f(n) = O(n)",
+    "hi": null
+   },
+   {
+    "en": "f(n) = Θ(n³)",
+    "hi": null
+   },
+   {
+    "en": "f(n) = Θ(n²)",
+    "hi": null
+   },
+   {
+    "en": "f(n) = Ω(n³)",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The highest-order term dominates: for n ≥ 1, 3n² ≤ f(n) ≤ 10n², so f(n) is both O(n²) and Ω(n²), i.e. Θ(n²). It is O(n³) but not Θ(n³) or Ω(n³), and it is not O(n).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_dsa",
+  "subtopic": "Asymptotic notations",
+  "difficulty": "hard",
+  "question_en": "Which of the following statements is FALSE?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "n² = O(n³)",
+    "hi": null
+   },
+   {
+    "en": "2^(n+1) = O(2^n)",
+    "hi": null
+   },
+   {
+    "en": "log(n²) = Θ(log n)",
+    "hi": null
+   },
+   {
+    "en": "2^(2n) = O(2^n)",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "2^(2n) = 4^n, and 4^n / 2^n = 2^n grows without bound, so no constant c makes 4^n ≤ c·2^n. By contrast 2^(n+1) = 2·2^n (constant factor 2) and log(n²) = 2 log n, so those are true.",
+  "explanation_hi": null,
+  "expected": false
+ }
+]

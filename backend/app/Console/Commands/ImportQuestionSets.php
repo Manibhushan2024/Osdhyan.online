@@ -2,8 +2,10 @@
 
 namespace App\Console\Commands;
 
+use App\Models\Chapter;
 use App\Models\Exam;
 use App\Models\Question;
+use App\Models\StudyMaterial;
 use App\Models\Subject;
 use App\Models\Test;
 use App\Models\TestSeries;
@@ -82,6 +84,10 @@ class ImportQuestionSets extends Command
                 $stats['tests'] += count($testIds);
             }
 
+            if (!empty($examSpec['materials'])) {
+                $this->line('  materials: ' . $this->importMaterials($exam, $examSpec['materials']));
+            }
+
             Cache::forget("exam_{$exam->id}_subjects");
             Cache::forget("exam_{$exam->id}_full_v2");
         }
@@ -132,26 +138,74 @@ class ImportQuestionSets extends Command
         );
     }
 
+    private array $chapterCache = [];
+
+    private function chapter(Subject $subject, string $name): Chapter
+    {
+        $key = $subject->id . '|' . mb_strtolower($name);
+
+        return $this->chapterCache[$key] ??= (
+            Chapter::where('subject_id', $subject->id)->whereRaw('LOWER(name_en) = ?', [mb_strtolower($name)])->first()
+            ?? Chapter::create([
+                'subject_id' => $subject->id,
+                'name_en'    => $name,
+                'slug'       => Slug::unique('chapters', $subject->name_en . ' ' . $name, 'chapter'),
+            ])
+        );
+    }
+
+    /**
+     * Study materials: files already placed under storage/app/public (file_path
+     * relative to that disk), linked to subject/chapter by name.
+     */
+    private function importMaterials(Exam $exam, array $materials): int
+    {
+        $n = 0;
+        foreach ($materials as $m) {
+            $subject = $this->subject($exam, $m['subject'] ?? 'General Studies');
+            $chapter = !empty($m['chapter']) ? $this->chapter($subject, $m['chapter']) : null;
+            StudyMaterial::updateOrCreate(
+                ['title' => $m['title'], 'subject_id' => $subject->id],
+                [
+                    'chapter_id'   => $chapter?->id,
+                    'description'  => $m['description'] ?? null,
+                    'file_path'    => $m['file_path'],
+                    'type'         => $m['type'] ?? 'pdf',
+                    'is_published' => true,
+                ]
+            );
+            $n++;
+        }
+
+        return $n;
+    }
+
     private function importTest(Exam $exam, TestSeries $series, array $seriesSpec, array $spec, bool $publish, array &$stats): Test
     {
         $subject = $this->subject($exam, $spec['subject'] ?? 'General Studies');
         $negative = (float) ($seriesSpec['negative_marking'] ?? 0.25);
 
-        $test = Test::firstOrCreate(
-            ['exam_id' => $exam->id, 'name_en' => $spec['title']],
-            [
-                'name_hi'          => $spec['title_hi'] ?? $spec['title'],
-                'subject_id'       => $subject->id,
-                'mode'             => $seriesSpec['mode'] ?? 'mock',
-                'category'         => $seriesSpec['mode'] ?? 'mock',
-                'status'           => $publish ? 'published' : 'draft',
-                'duration_sec'     => (int) ($spec['duration_min'] ?? 60) * 60,
-                'question_mark'    => 1,
-                'negative_marking' => $negative,
-                'total_marks'      => 0,
-                'is_free'          => true,
-            ]
-        );
+        $chapter = !empty($spec['chapter']) ? $this->chapter($subject, $spec['chapter']) : null;
+        $attrs = [
+            'name_hi'          => $spec['title_hi'] ?? $spec['title'],
+            'description_en'   => $spec['description'] ?? null,
+            'subject_id'       => $subject->id,
+            'chapter_id'       => $chapter?->id,
+            'mode'             => $spec['mode'] ?? $seriesSpec['mode'] ?? 'mock',
+            'category'         => $spec['category'] ?? $seriesSpec['category'] ?? $seriesSpec['mode'] ?? 'mock',
+            'status'           => $publish ? 'published' : 'draft',
+            'duration_sec'     => (int) ($spec['duration_min'] ?? 60) * 60,
+            'question_mark'    => (float) ($spec['question_mark'] ?? 1),
+            'negative_marking' => (float) ($spec['negative_marking'] ?? $negative),
+            'total_marks'      => 0,
+            'is_free'          => true,
+            'paper_type'       => $spec['paper_type'] ?? null,
+            'year'             => $spec['year'] ?? null,
+        ];
+        $test = Test::firstOrCreate(['exam_id' => $exam->id, 'name_en' => $spec['title']], $attrs);
+        if (!$test->wasRecentlyCreated) {
+            $test->update(array_intersect_key($attrs, array_flip(['mode', 'category', 'duration_sec', 'negative_marking', 'description_en', 'subject_id', 'chapter_id', 'paper_type', 'year'])));
+        }
 
         $ids = [];
         foreach ($spec['questions'] as $q) {
@@ -170,10 +224,15 @@ class ImportQuestionSets extends Command
 
     private function importQuestion(Exam $exam, array $q, array &$stats): int
     {
-        $textEn = $q['question_en'] ?: $q['question_hi'];
+        $textEn = $this->text($q['question_en'] ?? null, $q['question_hi'] ?? null);
         $hash = Question::fingerprint((string) $textEn);
 
-        $existing = Question::where('content_hash', $hash)->orderBy('id')->first();
+        // Same stem is not enough: generic stems ("select the odd one out") repeat
+        // with different options, so an existing row is reused only when its
+        // options match too.
+        $wanted = array_map(fn ($o) => $this->normOption($this->text($o['en'] ?? null, $o['hi'] ?? null)), $q['options']);
+        $existing = Question::where('content_hash', $hash)->orderBy('id')->with('options')->get()
+            ->first(fn ($cand) => $cand->options->sortBy('label')->map(fn ($o) => $this->normOption((string) $o->option_en))->values()->all() === $wanted);
         if ($existing) {
             $stats['questions_reused']++;
             // Fill in explanations/Hindi that the earlier copy may lack.
@@ -188,13 +247,15 @@ class ImportQuestionSets extends Command
         }
 
         $subject = $this->subject($exam, $q['category'] ?: 'General Studies');
+        $chapter = !empty($q['chapter']) ? $this->chapter($subject, $q['chapter']) : null;
         $question = Question::create([
             'subject_id'     => $subject->id,
+            'chapter_id'     => $chapter?->id,
             'question_en'    => $textEn,
             'question_hi'    => $q['question_hi'] ?? null,
             'explanation_en' => $q['explanation_en'] ?? null,
             'explanation_hi' => $q['explanation_hi'] ?? null,
-            'difficulty'     => 'medium',
+            'difficulty'     => in_array($q['difficulty'] ?? '', ['easy', 'medium', 'hard'], true) ? $q['difficulty'] : 'medium',
         ]);
 
         $labels = ['A', 'B', 'C', 'D', 'E', 'F'];
@@ -203,7 +264,7 @@ class ImportQuestionSets extends Command
             $rows[] = [
                 'question_id' => $question->id,
                 'label'       => $labels[$i] ?? chr(65 + $i),
-                'option_en'   => $opt['en'] ?: $opt['hi'],
+                'option_en'   => $this->text($opt['en'] ?? null, $opt['hi'] ?? null),
                 'option_hi'   => $opt['hi'] ?? null,
                 'is_correct'  => $i === (int) $q['answer_index'],
                 'created_at'  => now(),
@@ -214,5 +275,22 @@ class ImportQuestionSets extends Command
         $stats['questions_new']++;
 
         return $question->id;
+    }
+
+    private function normOption(string $text): string
+    {
+        return mb_strtolower(preg_replace('/\s+/u', ' ', trim($text)));
+    }
+
+    /** First non-blank text. Not `?:` — an option such as "0" is falsy in PHP. */
+    private function text(?string ...$candidates): string
+    {
+        foreach ($candidates as $c) {
+            if ($c !== null && trim($c) !== '') {
+                return $c;
+            }
+        }
+
+        return '';
     }
 }

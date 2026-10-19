@@ -1,0 +1,2902 @@
+[
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Types of OS",
+  "difficulty": "easy",
+  "question_en": "In which type of operating system are jobs with similar needs grouped together and executed one after another without any user interaction during execution?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Batch operating system",
+    "hi": null
+   },
+   {
+    "en": "Time-sharing operating system",
+    "hi": null
+   },
+   {
+    "en": "Real-time operating system",
+    "hi": null
+   },
+   {
+    "en": "Distributed operating system",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A batch OS collects similar jobs into batches and runs them sequentially with no interaction while they execute; the operator, not the user, submits them. Time-sharing systems are built precisely for interactive use, which rules out option 2.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Types of OS",
+  "difficulty": "easy",
+  "question_en": "A system that gives each user a small slice of CPU time in rotation so that many users at terminals feel they have the machine to themselves is called a:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Batch system",
+    "hi": null
+   },
+   {
+    "en": "Time-sharing system",
+    "hi": null
+   },
+   {
+    "en": "Embedded system",
+    "hi": null
+   },
+   {
+    "en": "Single-user system",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Time-sharing (multitasking) is a logical extension of multiprogramming in which the CPU switches among jobs so frequently that users can interact with each program while it runs. Batch systems have no such interaction.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Types of OS",
+  "difficulty": "medium",
+  "question_en": "Which statement correctly distinguishes a hard real-time system from a soft real-time system?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "A hard real-time system has no deadlines; a soft real-time system has strict deadlines",
+    "hi": null
+   },
+   {
+    "en": "In a hard real-time system a missed deadline is a total system failure; in a soft real-time system a late result only degrades service",
+    "hi": null
+   },
+   {
+    "en": "Hard real-time systems use virtual memory extensively, soft real-time systems never do",
+    "hi": null
+   },
+   {
+    "en": "Soft real-time systems are used in aircraft control; hard real-time systems in video streaming",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "In a hard real-time system (pacemaker, flight control, airbag) a missed deadline is unacceptable; a soft real-time system (multimedia streaming) tolerates occasional lateness with reduced quality. Option 4 swaps the examples.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Types of OS",
+  "difficulty": "medium",
+  "question_en": "Which of the following best describes multiprogramming?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Running one program on several processors at the same time",
+    "hi": null
+   },
+   {
+    "en": "Keeping several programs in main memory so the CPU always has a job to execute when one job waits for I/O",
+    "hi": null
+   },
+   {
+    "en": "Allowing a single program to create several threads",
+    "hi": null
+   },
+   {
+    "en": "Executing programs on several computers connected by a network",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Multiprogramming increases CPU utilisation by keeping several jobs in memory; when the running job blocks for I/O the OS switches to another. Option 1 is multiprocessing, option 3 multithreading and option 4 distributed computing.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Types of OS",
+  "difficulty": "medium",
+  "question_en": "In a microkernel design of an operating system, which of the following normally runs in user space rather than inside the kernel?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Inter-process communication",
+    "hi": null
+   },
+   {
+    "en": "Basic CPU scheduling",
+    "hi": null
+   },
+   {
+    "en": "Low-level address-space management",
+    "hi": null
+   },
+   {
+    "en": "The file system and device drivers",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "A microkernel keeps only the essentials in kernel mode: IPC, basic scheduling and low-level memory management. Services such as file systems and device drivers run as user-level server processes, which makes the kernel smaller and more reliable but adds message-passing overhead.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Types of OS",
+  "difficulty": "easy",
+  "question_en": "SPOOL in the context of operating systems stands for:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Simultaneous Peripheral Operation On-Line",
+    "hi": null
+   },
+   {
+    "en": "Sequential Process Output Of Lines",
+    "hi": null
+   },
+   {
+    "en": "System Process Ordering Of Loads",
+    "hi": null
+   },
+   {
+    "en": "Shared Printer Output Organisation Layer",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Spooling (Simultaneous Peripheral Operation On-Line) buffers data for a slow device such as a printer on disk so that the CPU and other programs need not wait for the device.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Types of OS",
+  "difficulty": "hard",
+  "question_en": "Consider the statements about operating-system structure:\nI. A monolithic kernel runs all OS services in a single address space in kernel mode, so a bug in a driver can crash the whole system.\nII. Android uses a modified Linux kernel while iOS is derived from the Darwin (BSD-based) kernel.\nWhich is/are correct?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Only I",
+    "hi": null
+   },
+   {
+    "en": "Only II",
+    "hi": null
+   },
+   {
+    "en": "Both I and II",
+    "hi": null
+   },
+   {
+    "en": "Neither I nor II",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Both are correct. Monolithic kernels (traditional UNIX, Linux) have everything in kernel space, so a faulty module has full privileges. Android is built on the Linux kernel; iOS is built on Darwin, which is BSD/Mach based.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Types of OS",
+  "difficulty": "medium",
+  "question_en": "Which of the following is the main difference between a network operating system and a distributed operating system?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "A distributed OS makes a collection of machines appear as a single system to the user; in a network OS each machine runs its own OS and users are aware of the separate machines",
+    "hi": null
+   },
+   {
+    "en": "A network OS cannot share files whereas a distributed OS can",
+    "hi": null
+   },
+   {
+    "en": "A distributed OS works only on a single computer",
+    "hi": null
+   },
+   {
+    "en": "There is no difference; the two terms are synonyms",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The key idea of a distributed OS is transparency: processes and resources on many machines look like one system. A network OS (e.g., Windows Server with file/print sharing) lets autonomous machines share resources, but each is managed separately and visible to the user.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Process vs thread",
+  "difficulty": "easy",
+  "question_en": "A process is best defined as:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "A program stored on the disk",
+    "hi": null
+   },
+   {
+    "en": "A program in execution, including its current activity",
+    "hi": null
+   },
+   {
+    "en": "A set of instructions written in a high-level language",
+    "hi": null
+   },
+   {
+    "en": "A collection of files belonging to one user",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "A program is a passive entity (a file on disk); a process is that program in execution together with its program counter, registers, stack, heap and data section. The same program run twice gives two processes.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Process vs thread",
+  "difficulty": "medium",
+  "question_en": "Which of the following is shared by all threads of the same process?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Program counter",
+    "hi": null
+   },
+   {
+    "en": "Register set",
+    "hi": null
+   },
+   {
+    "en": "Stack",
+    "hi": null
+   },
+   {
+    "en": "Code section, data section and open files",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Threads of one process share the address space (code and global data), heap and OS resources such as open files. Each thread has its own thread ID, program counter, register set and stack, so options 1-3 are per-thread items.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Process vs thread",
+  "difficulty": "medium",
+  "question_en": "Why is a thread called a 'lightweight process'?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "It uses fewer CPU instructions than a process",
+    "hi": null
+   },
+   {
+    "en": "Creating and switching between threads is cheaper because threads share the process's address space and resources",
+    "hi": null
+   },
+   {
+    "en": "It always runs with lower priority than a process",
+    "hi": null
+   },
+   {
+    "en": "It cannot perform I/O operations",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Thread creation needs no new address space and a thread switch does not change the memory map, so both are much faster than the corresponding process operations. Threads can do I/O and have no inherent priority penalty.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Process vs thread",
+  "difficulty": "hard",
+  "question_en": "In the many-to-one multithreading model, if one user-level thread makes a blocking system call, what happens?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Only that thread blocks; the other threads of the process keep running",
+    "hi": null
+   },
+   {
+    "en": "The entire process blocks because all user threads are mapped to a single kernel thread",
+    "hi": null
+   },
+   {
+    "en": "The kernel automatically creates a new kernel thread for the remaining user threads",
+    "hi": null
+   },
+   {
+    "en": "The blocking call is converted to a non-blocking one by the thread library",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Many-to-one maps all user threads onto one kernel thread, so the kernel sees a single schedulable entity; a blocking call by any thread blocks the whole process, and the threads cannot run in parallel on multiple cores. One-to-one and many-to-many models avoid this problem.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Process vs thread",
+  "difficulty": "medium",
+  "question_en": "Which statement about kernel-level threads compared with user-level threads is correct?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Kernel-level threads are managed by a user library without OS support",
+    "hi": null
+   },
+   {
+    "en": "Kernel-level threads can be scheduled on different processors, but their creation and switching are slower than for user-level threads",
+    "hi": null
+   },
+   {
+    "en": "User-level threads are always faster to execute once running",
+    "hi": null
+   },
+   {
+    "en": "User-level threads can be scheduled directly by the OS scheduler",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Kernel threads are known to the OS, so they can be scheduled on separate cores and a blocking thread does not stop the others, but each operation needs a mode switch. User-level threads are managed by a library, are cheap to create and switch, but are invisible to the kernel scheduler.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Process vs thread",
+  "difficulty": "easy",
+  "question_en": "The data structure in which the operating system stores the state, program counter, registers, scheduling information and accounting information of a process is the:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Page table",
+    "hi": null
+   },
+   {
+    "en": "File control block",
+    "hi": null
+   },
+   {
+    "en": "Process control block (PCB)",
+    "hi": null
+   },
+   {
+    "en": "Interrupt vector table",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Every process is represented in the OS by a process control block (also called a task control block) holding its state, PC, CPU registers, scheduling and memory-management information, accounting data and I/O status. The page table only maps the process's memory.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Process vs thread",
+  "difficulty": "hard",
+  "question_en": "A C program on Linux executes the statement fork() three times in sequence (none of the calls fails). How many processes exist in total after the third call, counting the original?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "3",
+    "hi": null
+   },
+   {
+    "en": "4",
+    "hi": null
+   },
+   {
+    "en": "6",
+    "hi": null
+   },
+   {
+    "en": "8",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Each fork() duplicates every existing process, so n sequential forks produce 2^n processes: 2 after the first, 4 after the second and 8 after the third (7 children plus the original).",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Process states",
+  "difficulty": "easy",
+  "question_en": "A process that is waiting to be assigned to the CPU and has everything it needs except the processor is in which state?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "New",
+    "hi": null
+   },
+   {
+    "en": "Ready",
+    "hi": null
+   },
+   {
+    "en": "Waiting (blocked)",
+    "hi": null
+   },
+   {
+    "en": "Terminated",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The ready state means the process is in main memory and runnable, only waiting for the scheduler to dispatch it. A waiting/blocked process cannot run until an event such as I/O completion occurs.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Process states",
+  "difficulty": "medium",
+  "question_en": "Which of the following state transitions is NOT possible in the five-state process model?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Running → Ready",
+    "hi": null
+   },
+   {
+    "en": "Running → Waiting",
+    "hi": null
+   },
+   {
+    "en": "Waiting → Running",
+    "hi": null
+   },
+   {
+    "en": "Waiting → Ready",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "When the awaited event occurs, a blocked process moves to Ready, never straight to Running; only the dispatcher moves a process from Ready to Running. Running → Ready happens on a timer interrupt (preemption) and Running → Waiting on an I/O request.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Process states",
+  "difficulty": "medium",
+  "question_en": "A process is moved from the Running state to the Ready state when:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "It requests an I/O operation",
+    "hi": null
+   },
+   {
+    "en": "Its time quantum expires or a higher-priority process arrives",
+    "hi": null
+   },
+   {
+    "en": "Its I/O operation is completed",
+    "hi": null
+   },
+   {
+    "en": "It calls exit()",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Preemption (quantum expiry in round robin, or arrival of a higher-priority process in preemptive priority scheduling) takes the CPU away from a process that can still run, so it returns to the ready queue. An I/O request sends it to Waiting; exit() sends it to Terminated.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Process states",
+  "difficulty": "medium",
+  "question_en": "The medium-term scheduler is responsible for:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Selecting which ready process gets the CPU next",
+    "hi": null
+   },
+   {
+    "en": "Deciding which new jobs are admitted into the system",
+    "hi": null
+   },
+   {
+    "en": "Swapping processes out of memory and later back in to control the degree of multiprogramming",
+    "hi": null
+   },
+   {
+    "en": "Handling the hardware interrupt from the system timer",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The medium-term scheduler performs swapping, temporarily removing partially executed processes from memory to reduce the multiprogramming level. The short-term scheduler picks the next ready process (option 1) and the long-term scheduler admits jobs (option 2).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Process states",
+  "difficulty": "hard",
+  "question_en": "A child process on UNIX/Linux has finished executing, but its parent has not yet called wait() to read its exit status. The child is now a:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Orphan process",
+    "hi": null
+   },
+   {
+    "en": "Zombie process",
+    "hi": null
+   },
+   {
+    "en": "Daemon process",
+    "hi": null
+   },
+   {
+    "en": "Suspended process",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "A terminated process whose entry still remains in the process table because the parent has not collected its status is a zombie. An orphan is the opposite situation: the parent terminates first and the child is adopted by init/systemd. A daemon is a background service process.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Process states",
+  "difficulty": "easy",
+  "question_en": "The act of saving the state of the currently running process and loading the saved state of the next process is called:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Swapping",
+    "hi": null
+   },
+   {
+    "en": "Context switching",
+    "hi": null
+   },
+   {
+    "en": "Thrashing",
+    "hi": null
+   },
+   {
+    "en": "Spooling",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "A context switch saves the old process's context in its PCB and restores the new process's context. It is pure overhead, since no useful user work is done during the switch, and its cost depends on hardware (register count, memory-management support).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Process states",
+  "difficulty": "hard",
+  "question_en": "Which of the following best explains why the long-term scheduler should select a good mix of I/O-bound and CPU-bound processes?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "I/O-bound processes need more memory than CPU-bound processes",
+    "hi": null
+   },
+   {
+    "en": "If all processes are I/O-bound the ready queue is often empty and the CPU idles; if all are CPU-bound the I/O devices sit idle, so a mix keeps both busy",
+    "hi": null
+   },
+   {
+    "en": "CPU-bound processes cannot be preempted, so they must be balanced with I/O-bound ones",
+    "hi": null
+   },
+   {
+    "en": "The dispatcher can handle only a fixed number of each type",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "An I/O-bound process spends most of its time waiting for devices, while a CPU-bound process spends it computing. Balancing the two keeps both the CPU and the devices utilised; otherwise one resource is idle while the other is a bottleneck.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Scheduling algorithms",
+  "difficulty": "easy",
+  "question_en": "Three processes P1, P2, P3 arrive at time 0 in that order with CPU burst times 10, 4 and 6 ms. Under FCFS scheduling the average waiting time is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "6 ms",
+    "hi": null
+   },
+   {
+    "en": "8 ms",
+    "hi": null
+   },
+   {
+    "en": "10 ms",
+    "hi": null
+   },
+   {
+    "en": "14.67 ms",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "FCFS runs P1 (0-10), P2 (10-14), P3 (14-20). Waiting times: P1 = 0, P2 = 10, P3 = 14; total 24, average 24/3 = 8 ms. 14.67 ms is the average turnaround time (10+14+20)/3, a common mix-up.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Scheduling algorithms",
+  "difficulty": "medium",
+  "question_en": "Four processes arrive at time 0 with burst times P1 = 5, P2 = 2, P3 = 8, P4 = 3 ms. With non-preemptive SJF scheduling, the average waiting time is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "3.75 ms",
+    "hi": null
+   },
+   {
+    "en": "4.25 ms",
+    "hi": null
+   },
+   {
+    "en": "5.50 ms",
+    "hi": null
+   },
+   {
+    "en": "6.25 ms",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "SJF order: P2 (2) → P4 (3) → P1 (5) → P3 (8). Start times are 0, 2, 5, 10, so waiting times are P2 = 0, P4 = 2, P1 = 5, P3 = 10. Total = 17; average = 17/4 = 4.25 ms.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Scheduling algorithms",
+  "difficulty": "hard",
+  "question_en": "Processes arrive as follows: P1 at 0 (burst 6), P2 at 1 (burst 3), P3 at 2 (burst 8), P4 at 3 (burst 2). Using Shortest Remaining Time First (preemptive SJF), the average waiting time is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "2.75 ms",
+    "hi": null
+   },
+   {
+    "en": "3.75 ms",
+    "hi": null
+   },
+   {
+    "en": "4.50 ms",
+    "hi": null
+   },
+   {
+    "en": "8.50 ms",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Gantt: P1 (0-1), P2 (1-4, it preempts P1 since 3 < 5 remaining), P4 (4-6), P1 (6-11), P3 (11-19). Completion: P1 = 11, P2 = 4, P3 = 19, P4 = 6. Waiting = completion − arrival − burst: P1 = 5, P2 = 0, P3 = 9, P4 = 1; total 15; average 15/4 = 3.75 ms. (8.5 ms is the average turnaround time.)",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Scheduling algorithms",
+  "difficulty": "medium",
+  "question_en": "Processes P1, P2, P3 with burst times 10, 5 and 8 ms all arrive at time 0. Using Round Robin with a time quantum of 4 ms, the average turnaround time is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "12.67 ms",
+    "hi": null
+   },
+   {
+    "en": "17 ms",
+    "hi": null
+   },
+   {
+    "en": "20.33 ms",
+    "hi": null
+   },
+   {
+    "en": "23 ms",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Gantt: P1 (0-4), P2 (4-8), P3 (8-12), P1 (12-16), P2 (16-17), P3 (17-21), P1 (21-23). Completion times: P1 = 23, P2 = 17, P3 = 21 (all arrived at 0, so turnaround = completion). Average = (23+17+21)/3 = 61/3 = 20.33 ms. Average waiting time would be 12.67 ms.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Scheduling algorithms",
+  "difficulty": "medium",
+  "question_en": "Four processes arrive at time 0: P1 (burst 6, priority 2), P2 (burst 3, priority 1), P3 (burst 8, priority 4), P4 (burst 2, priority 3). A smaller number means higher priority. With non-preemptive priority scheduling the average waiting time is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "4.75 ms",
+    "hi": null
+   },
+   {
+    "en": "5.75 ms",
+    "hi": null
+   },
+   {
+    "en": "6.25 ms",
+    "hi": null
+   },
+   {
+    "en": "7.50 ms",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Order by priority: P2 → P1 → P4 → P3, starting at 0, 3, 9, 11. Waiting times: P2 = 0, P1 = 3, P4 = 9, P3 = 11; total 23; average 23/4 = 5.75 ms.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Scheduling algorithms",
+  "difficulty": "hard",
+  "question_en": "P1 arrives at 0 (burst 5, priority 3), P2 at 1 (burst 3, priority 1), P3 at 2 (burst 4, priority 2); lower number = higher priority. Under preemptive priority scheduling the average waiting time is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "2 ms",
+    "hi": null
+   },
+   {
+    "en": "3 ms",
+    "hi": null
+   },
+   {
+    "en": "4 ms",
+    "hi": null
+   },
+   {
+    "en": "5 ms",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Gantt: P1 (0-1), P2 preempts at 1 and runs 1-4, then P3 (priority 2 beats P1's 3) runs 4-8, finally P1 runs 8-12. Waiting: P1 = 12 − 0 − 5 = 7, P2 = 0, P3 = 8 − 2 − 4 = 2. Average = 9/3 = 3 ms.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Scheduling algorithms",
+  "difficulty": "medium",
+  "question_en": "P1 arrives at time 0 with burst 4, P2 at time 1 with burst 3, P3 at time 2 with burst 1. Under FCFS, the average turnaround time is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "2.67 ms",
+    "hi": null
+   },
+   {
+    "en": "4.33 ms",
+    "hi": null
+   },
+   {
+    "en": "5.33 ms",
+    "hi": null
+   },
+   {
+    "en": "6.33 ms",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "FCFS completion times: P1 = 4, P2 = 7, P3 = 8. Turnaround = completion − arrival: 4, 6, 6 → total 16, average 16/3 = 5.33 ms. The average waiting time is (0+3+5)/3 = 2.67 ms.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Scheduling algorithms",
+  "difficulty": "easy",
+  "question_en": "Which CPU scheduling algorithm gives the minimum average waiting time for a given set of processes that all arrive at the same time?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "First Come First Served",
+    "hi": null
+   },
+   {
+    "en": "Shortest Job First",
+    "hi": null
+   },
+   {
+    "en": "Round Robin",
+    "hi": null
+   },
+   {
+    "en": "Multilevel queue",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "SJF is provably optimal for average waiting time because moving a short job before a long one reduces the waiting of the short job more than it increases the waiting of the long one. Its practical problem is that CPU burst lengths must be predicted.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Scheduling algorithms",
+  "difficulty": "medium",
+  "question_en": "The 'convoy effect', in which many short processes wait behind one long CPU-bound process, is a drawback mainly of:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Round Robin",
+    "hi": null
+   },
+   {
+    "en": "Shortest Remaining Time First",
+    "hi": null
+   },
+   {
+    "en": "First Come First Served",
+    "hi": null
+   },
+   {
+    "en": "Multilevel feedback queue",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "In FCFS a long job that gets the CPU first holds it until completion, so all I/O-bound jobs queue up behind it and devices sit idle. Preemptive schemes like RR and SRTF avoid this by not letting one process monopolise the CPU.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Scheduling algorithms",
+  "difficulty": "medium",
+  "question_en": "In Round Robin scheduling, if the time quantum is made very large (larger than every CPU burst), the algorithm behaves like:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "FCFS",
+    "hi": null
+   },
+   {
+    "en": "SJF",
+    "hi": null
+   },
+   {
+    "en": "Priority scheduling",
+    "hi": null
+   },
+   {
+    "en": "Multilevel queue",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "With a quantum longer than any burst no process is ever preempted, so processes run to completion in arrival order, exactly FCFS. A very small quantum, on the other hand, causes excessive context-switch overhead.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Scheduling algorithms",
+  "difficulty": "hard",
+  "question_en": "SJF predicts the next CPU burst by exponential averaging: τ(n+1) = α·t(n) + (1 − α)·τ(n). If α = 0.5, the previous predicted burst τ(n) = 10 ms and the actual last burst t(n) = 6 ms, the next predicted burst is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "6 ms",
+    "hi": null
+   },
+   {
+    "en": "7 ms",
+    "hi": null
+   },
+   {
+    "en": "8 ms",
+    "hi": null
+   },
+   {
+    "en": "10 ms",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "τ(n+1) = 0.5 × 6 + 0.5 × 10 = 3 + 5 = 8 ms. With α = 0 the prediction would ignore recent history (stay 10); with α = 1 it would equal the last burst (6).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Scheduling algorithms",
+  "difficulty": "medium",
+  "question_en": "Processes P1, P2, P3 with bursts 10, 5, 8 ms arrive at time 0 and are scheduled by Round Robin with quantum 4 ms. The response time of P3 (time from arrival until it first gets the CPU) is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "4 ms",
+    "hi": null
+   },
+   {
+    "en": "8 ms",
+    "hi": null
+   },
+   {
+    "en": "12 ms",
+    "hi": null
+   },
+   {
+    "en": "17 ms",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "P1 runs 0-4 and P2 runs 4-8, so P3 first receives the CPU at time 8; response time = 8 − 0 = 8 ms. Response time matters for interactive systems and is what RR is designed to keep small.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Scheduling algorithms",
+  "difficulty": "easy",
+  "question_en": "The component of the operating system that actually gives control of the CPU to the process selected by the short-term scheduler is called the:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Loader",
+    "hi": null
+   },
+   {
+    "en": "Dispatcher",
+    "hi": null
+   },
+   {
+    "en": "Linker",
+    "hi": null
+   },
+   {
+    "en": "Interrupt handler",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The dispatcher performs the context switch, switches to user mode and jumps to the proper location in the user program. The time it takes to stop one process and start another is the dispatch latency.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Scheduling algorithms",
+  "difficulty": "hard",
+  "question_en": "In a multilevel feedback queue scheduler, a process that uses its entire time quantum in a high-priority queue is usually:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Terminated for over-use of the CPU",
+    "hi": null
+   },
+   {
+    "en": "Moved to a lower-priority queue with a larger quantum",
+    "hi": null
+   },
+   {
+    "en": "Moved to a higher-priority queue",
+    "hi": null
+   },
+   {
+    "en": "Kept in the same queue permanently",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "MLFQ demotes CPU-hungry processes to lower queues (often with longer quanta or FCFS) and leaves short/interactive jobs in the high-priority queues; ageing may later promote a starved process. Unlike a plain multilevel queue, processes can move between queues.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Synchronisation",
+  "difficulty": "easy",
+  "question_en": "A situation in which the final result depends on the exact order in which several processes access and modify shared data is called a:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Deadlock",
+    "hi": null
+   },
+   {
+    "en": "Race condition",
+    "hi": null
+   },
+   {
+    "en": "Starvation",
+    "hi": null
+   },
+   {
+    "en": "Context switch",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "A race condition arises when concurrent processes access shared data without proper synchronisation, so the outcome depends on timing. The critical-section problem is about preventing exactly this.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Synchronisation",
+  "difficulty": "medium",
+  "question_en": "Which of the following is NOT one of the three requirements that a solution to the critical-section problem must satisfy?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Mutual exclusion",
+    "hi": null
+   },
+   {
+    "en": "Progress",
+    "hi": null
+   },
+   {
+    "en": "Bounded waiting",
+    "hi": null
+   },
+   {
+    "en": "Priority inheritance",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The three requirements are mutual exclusion (only one process in its critical section), progress (selection of the next entrant cannot be postponed indefinitely by processes outside the section) and bounded waiting (a limit on how many times others can enter before a waiting process). Priority inheritance is a separate protocol against priority inversion.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Synchronisation",
+  "difficulty": "medium",
+  "question_en": "A counting semaphore S is initialised to 5. Three processes execute wait(S) and then one process executes signal(S). The value of S is now:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "1",
+    "hi": null
+   },
+   {
+    "en": "2",
+    "hi": null
+   },
+   {
+    "en": "3",
+    "hi": null
+   },
+   {
+    "en": "7",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Each wait() decrements and each signal() increments the semaphore: 5 − 3 + 1 = 3. No process blocks because the value never went below zero.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Synchronisation",
+  "difficulty": "hard",
+  "question_en": "A binary semaphore (mutex) is initialised to 1. Four processes execute wait() on it one after another and none has yet executed signal(). In the classical implementation that keeps a waiting list, the semaphore value and the number of blocked processes are:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Value 0, 3 blocked",
+    "hi": null
+   },
+   {
+    "en": "Value −3, 3 blocked",
+    "hi": null
+   },
+   {
+    "en": "Value −4, 4 blocked",
+    "hi": null
+   },
+   {
+    "en": "Value 1, 0 blocked",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The first wait() takes the value from 1 to 0 and the process enters. Each further wait() decrements and blocks the caller: value becomes −1, −2, −3 with 3 processes on the waiting list. The magnitude of a negative semaphore value equals the number of blocked processes.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Synchronisation",
+  "difficulty": "medium",
+  "question_en": "In the producer–consumer (bounded buffer) problem with a buffer of n slots, the semaphores 'empty' and 'full' are initialised to:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "empty = 0, full = n",
+    "hi": null
+   },
+   {
+    "en": "empty = n, full = 0",
+    "hi": null
+   },
+   {
+    "en": "empty = 1, full = 1",
+    "hi": null
+   },
+   {
+    "en": "empty = n, full = n",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Initially all n slots are empty and none is full, so empty = n and full = 0. The producer does wait(empty) before inserting and signal(full) afterwards; the consumer does the reverse. A separate mutex (initialised to 1) guards the buffer itself.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Synchronisation",
+  "difficulty": "medium",
+  "question_en": "Peterson's solution to the two-process critical-section problem uses which shared variables?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "A single semaphore",
+    "hi": null
+   },
+   {
+    "en": "A boolean array flag[2] and an integer variable turn",
+    "hi": null
+   },
+   {
+    "en": "A test-and-set hardware lock",
+    "hi": null
+   },
+   {
+    "en": "A monitor with one condition variable",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Peterson's algorithm is a pure software solution: flag[i] shows that process i wants to enter, and turn indicates whose turn it is; a process waits while flag[j] is true and turn == j. It satisfies all three requirements but assumes loads and stores are atomic.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Synchronisation",
+  "difficulty": "hard",
+  "question_en": "A high-priority process H is waiting for a resource held by a low-priority process L, while a medium-priority process M keeps preempting L. H therefore waits indefinitely. This problem and its standard remedy are:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Deadlock; resolved by Banker's algorithm",
+    "hi": null
+   },
+   {
+    "en": "Priority inversion; resolved by priority-inheritance protocol",
+    "hi": null
+   },
+   {
+    "en": "Starvation; resolved by round robin",
+    "hi": null
+   },
+   {
+    "en": "Thrashing; resolved by increasing memory",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "This is priority inversion: a low-priority process effectively blocks a high-priority one. With priority inheritance, L temporarily inherits H's priority until it releases the resource, so M can no longer preempt it. The Mars Pathfinder incident is the famous example.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Synchronisation",
+  "difficulty": "easy",
+  "question_en": "A lock in which a waiting process repeatedly tests the lock variable in a loop, consuming CPU cycles, is called a:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Spinlock",
+    "hi": null
+   },
+   {
+    "en": "Monitor",
+    "hi": null
+   },
+   {
+    "en": "Condition variable",
+    "hi": null
+   },
+   {
+    "en": "Message queue",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A spinlock uses busy waiting. It wastes CPU on a single processor but is useful on multiprocessors for short critical sections because it avoids the cost of a context switch. Monitors and condition variables block the waiting thread instead.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Deadlock",
+  "difficulty": "easy",
+  "question_en": "Which of the following is NOT one of the four necessary (Coffman) conditions for a deadlock?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Preemption of resources",
+    "hi": null
+   },
+   {
+    "en": "Mutual exclusion",
+    "hi": null
+   },
+   {
+    "en": "Hold and wait",
+    "hi": null
+   },
+   {
+    "en": "Circular wait",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The four necessary conditions are mutual exclusion, hold and wait, NO preemption and circular wait. If resources can be preempted, the 'no preemption' condition fails and deadlock cannot arise, so 'preemption of resources' is not a condition.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Deadlock",
+  "difficulty": "easy",
+  "question_en": "The Banker's algorithm is used by an operating system for deadlock:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Avoidance",
+    "hi": null
+   },
+   {
+    "en": "Prevention",
+    "hi": null
+   },
+   {
+    "en": "Detection only",
+    "hi": null
+   },
+   {
+    "en": "Recovery",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The Banker's algorithm grants a request only if the system stays in a safe state, i.e. it avoids deadlock dynamically using the declared maximum needs. Prevention instead structurally denies one of the four conditions.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Deadlock",
+  "difficulty": "medium",
+  "question_en": "A system has 15 units of a single resource type. Current allocation / maximum need: P1 4/9, P2 3/6, P3 4/8, P4 1/5. Which of the following is a safe sequence?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "P2, P1, P3, P4",
+    "hi": null
+   },
+   {
+    "en": "P1, P2, P3, P4",
+    "hi": null
+   },
+   {
+    "en": "P4, P2, P1, P3",
+    "hi": null
+   },
+   {
+    "en": "P3, P2, P1, P4",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Allocated = 4+3+4+1 = 12, so Available = 3. Need = Max − Alloc = P1 5, P2 3, P3 4, P4 4. Only P2 (need 3) can start; it finishes → Available 6 → P1 (5) → Available 10 → P3, P4. The other sequences start with a process whose need exceeds 3.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Deadlock",
+  "difficulty": "medium",
+  "question_en": "Four processes share a resource type, and each process may need at most 3 units of it. What is the minimum number of units that guarantees the system can never deadlock?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "9",
+    "hi": null
+   },
+   {
+    "en": "8",
+    "hi": null
+   },
+   {
+    "en": "12",
+    "hi": null
+   },
+   {
+    "en": "10",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Worst case: every process holds (3 − 1) = 2 units and waits for one more → 4 × 2 = 8 units are stuck. One extra unit lets someone finish, so minimum = 4 × (3 − 1) + 1 = 9. With 8 units deadlock is possible.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Deadlock",
+  "difficulty": "hard",
+  "question_en": "A system has 6 identical units of a resource. Each process needs at most 2 units to complete. What is the maximum number of processes that can run concurrently with a guarantee of no deadlock?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "6",
+    "hi": null
+   },
+   {
+    "en": "3",
+    "hi": null
+   },
+   {
+    "en": "4",
+    "hi": null
+   },
+   {
+    "en": "5",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Deadlock-free condition: n(2 − 1) + 1 ≤ 6 → n + 1 ≤ 6 → n ≤ 5. With 6 processes each could hold 1 unit and wait for a second, causing deadlock.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Deadlock",
+  "difficulty": "medium",
+  "question_en": "In a resource-allocation graph in which every resource type has exactly ONE instance, the presence of a cycle means:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "A deadlock definitely exists",
+    "hi": null
+   },
+   {
+    "en": "A deadlock may or may not exist",
+    "hi": null
+   },
+   {
+    "en": "The system is in a safe state",
+    "hi": null
+   },
+   {
+    "en": "Starvation exists but not deadlock",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "With single-instance resources a cycle is both necessary and sufficient for deadlock. Only when resource types have multiple instances is a cycle necessary but not sufficient, so 'may or may not exist' applies to that case, not this one.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Deadlock",
+  "difficulty": "medium",
+  "question_en": "Numbering all resource types and forcing every process to request resources only in increasing order of their numbers prevents deadlock by eliminating which condition?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Hold and wait",
+    "hi": null
+   },
+   {
+    "en": "Mutual exclusion",
+    "hi": null
+   },
+   {
+    "en": "No preemption",
+    "hi": null
+   },
+   {
+    "en": "Circular wait",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "If requests always go up the numbering, a cycle P1→P2→…→P1 would need a resource number to be both larger and smaller than another, which is impossible, so circular wait cannot occur.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Deadlock",
+  "difficulty": "easy",
+  "question_en": "Requiring a process to request and be allocated ALL the resources it needs before it begins execution is a deadlock-prevention technique that breaks:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Circular wait",
+    "hi": null
+   },
+   {
+    "en": "Mutual exclusion",
+    "hi": null
+   },
+   {
+    "en": "Hold and wait",
+    "hi": null
+   },
+   {
+    "en": "No preemption",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "A process that already holds everything never waits while holding, so the hold-and-wait condition is denied. Its drawbacks are low resource utilisation and possible starvation.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Scheduling algorithms",
+  "difficulty": "medium",
+  "question_en": "Processes P1, P2, P3 arrive at time 0 in that order with burst times 6, 3 and 1 ms. Using Round Robin with a time quantum of 2 ms, the average waiting time is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "5.00 ms",
+    "hi": null
+   },
+   {
+    "en": "7.67 ms",
+    "hi": null
+   },
+   {
+    "en": "3.67 ms",
+    "hi": null
+   },
+   {
+    "en": "4.33 ms",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Gantt: P1 0–2, P2 2–4, P3 4–5 (done), P1 5–7, P2 7–8 (done), P1 8–10 (done). Completion 10, 8, 5 → WT = 10−6, 8−3, 5−1 = 4, 5, 4 → 13/3 = 4.33 ms. 5.00 ms is FCFS (0, 6, 9) and 7.67 ms is the average turnaround time.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Scheduling algorithms",
+  "difficulty": "hard",
+  "question_en": "P1 arrives at 0 (burst 8), P2 at 1 (burst 4) and P3 at 2 (burst 2). Under Shortest Remaining Time First scheduling, the average turnaround time is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "9.67 ms",
+    "hi": null
+   },
+   {
+    "en": "2.67 ms",
+    "hi": null
+   },
+   {
+    "en": "8.00 ms",
+    "hi": null
+   },
+   {
+    "en": "7.33 ms",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "P1 0–1 (rem 7); P2 preempts 1–2 (rem 3); P3 preempts 2–4 (done); P2 4–7 (done); P1 7–14. TAT = 14−0, 7−1, 4−2 = 14, 6, 2 → 22/3 = 7.33 ms. Non-preemptive SJF gives 9.67 ms and 2.67 ms is the average waiting time.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Scheduling algorithms",
+  "difficulty": "medium",
+  "question_en": "Processes arrive: P1 at 0 (burst 7), P2 at 2 (burst 4), P3 at 4 (burst 1), P4 at 5 (burst 4). Using non-preemptive SJF (ties broken by arrival), the average waiting time is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "4.75 ms",
+    "hi": null
+   },
+   {
+    "en": "3 ms",
+    "hi": null
+   },
+   {
+    "en": "4 ms",
+    "hi": null
+   },
+   {
+    "en": "5.5 ms",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "P1 runs 0–7 (only one present). At 7: P3 (1) 7–8, then P2 and P4 tie at 4 → P2 8–12, P4 12–16. WT = 0, 8−2, 7−4, 12−5 = 0, 6, 3, 7 → 16/4 = 4 ms. FCFS gives 4.75 ms and preemptive SRTF gives 3 ms.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Scheduling algorithms",
+  "difficulty": "medium",
+  "question_en": "In Round Robin scheduling the time quantum is 20 ms and each context switch costs 5 ms. If every process always uses its full quantum, the fraction of CPU time spent on useful work is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "80%",
+    "hi": null
+   },
+   {
+    "en": "75%",
+    "hi": null
+   },
+   {
+    "en": "20%",
+    "hi": null
+   },
+   {
+    "en": "25%",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Each cycle = 20 ms of work + 5 ms switch = 25 ms, so useful fraction = 20/25 = 80%. 20% is the overhead fraction, not the useful fraction.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Scheduling algorithms",
+  "difficulty": "medium",
+  "question_en": "Under Highest Response Ratio Next (HRRN), response ratio = (waiting time + burst time) / burst time. At a scheduling instant the ready processes are A (waited 10, burst 5), B (waited 12, burst 8), C (waited 6, burst 2) and D (waited 14, burst 7). Which is selected next?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "A",
+    "hi": null
+   },
+   {
+    "en": "B",
+    "hi": null
+   },
+   {
+    "en": "D",
+    "hi": null
+   },
+   {
+    "en": "C",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Ratios: A = 15/5 = 3, B = 20/8 = 2.5, C = 8/2 = 4, D = 21/7 = 3. C has the highest ratio. HRRN favours short jobs but also ages long waiters, avoiding starvation.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Memory management",
+  "difficulty": "easy",
+  "question_en": "Wasted memory INSIDE an allocated partition, because the partition is larger than the process placed in it, is called:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "External fragmentation",
+    "hi": null
+   },
+   {
+    "en": "Thrashing",
+    "hi": null
+   },
+   {
+    "en": "Compaction",
+    "hi": null
+   },
+   {
+    "en": "Internal fragmentation",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Fixed-size partitions/pages leave unused space inside the block — internal fragmentation. External fragmentation is free memory scattered in small holes BETWEEN allocations.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Memory management",
+  "difficulty": "hard",
+  "question_en": "Free memory holes, in order, are 150K, 400K, 250K, 600K and 350K. Requests arrive for 230K, 380K, 120K and 500K in that order. Which placement strategy can satisfy ALL four requests?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Best fit only",
+    "hi": null
+   },
+   {
+    "en": "First fit only",
+    "hi": null
+   },
+   {
+    "en": "Worst fit only",
+    "hi": null
+   },
+   {
+    "en": "Both first fit and best fit",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Best fit: 230→250, 380→400, 120→150, 500→600 — all placed. First fit: 230→400, 380→600, 120→150, leaving 30, 170, 250, 220, 350 → 500K fails. Worst fit: 230→600 (370 left), 380→400, 120→370, then largest hole is 350 → 500K fails.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Memory management",
+  "difficulty": "easy",
+  "question_en": "The technique of shuffling memory contents so that all free memory is brought together into one large block is called:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Compaction",
+    "hi": null
+   },
+   {
+    "en": "Swapping",
+    "hi": null
+   },
+   {
+    "en": "Paging",
+    "hi": null
+   },
+   {
+    "en": "Overlaying",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Compaction moves allocated blocks together to merge scattered holes, curing external fragmentation. It is possible only when relocation is dynamic (done at run time).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Memory management",
+  "difficulty": "medium",
+  "question_en": "A CPU uses a relocation (base) register = 24000 and a limit register = 5000. A process generates the logical address 4200. The resulting physical address is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "19800",
+    "hi": null
+   },
+   {
+    "en": "29000",
+    "hi": null
+   },
+   {
+    "en": "Trap: addressing error",
+    "hi": null
+   },
+   {
+    "en": "28200",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The MMU first checks 4200 < limit 5000 (valid), then adds the base: 24000 + 4200 = 28200. A trap would occur only for a logical address of 5000 or more.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Memory management",
+  "difficulty": "easy",
+  "question_en": "Temporarily moving a whole process from main memory to a backing store (disk) and later bringing it back for continued execution is called:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Swapping",
+    "hi": null
+   },
+   {
+    "en": "Spooling",
+    "hi": null
+   },
+   {
+    "en": "Caching",
+    "hi": null
+   },
+   {
+    "en": "Buffering",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Swapping lets the OS run more processes than fit in RAM by moving entire processes between memory and the swap area. Spooling refers to queuing I/O for devices such as printers.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Memory management",
+  "difficulty": "medium",
+  "question_en": "Which technique lets a program larger than the available memory run by keeping in memory only those instructions and data needed at a given time, with the PROGRAMMER designing which parts replace each other?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Demand paging",
+    "hi": null
+   },
+   {
+    "en": "Dynamic linking",
+    "hi": null
+   },
+   {
+    "en": "Overlays",
+    "hi": null
+   },
+   {
+    "en": "Segmentation",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Overlays are programmer-managed: independent sections are loaded over one another. Demand paging achieves a similar effect automatically by the OS and hardware, without programmer design.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Memory management",
+  "difficulty": "medium",
+  "question_en": "In dynamic linking, the small piece of code included in the program image for each library-routine reference, which locates the memory-resident routine at run time, is called a:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Stub",
+    "hi": null
+   },
+   {
+    "en": "Loader",
+    "hi": null
+   },
+   {
+    "en": "Thunk table",
+    "hi": null
+   },
+   {
+    "en": "Linker map",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "On the first call the stub finds (or loads) the shared library routine and replaces itself with the routine's address, so all programs can share one copy of the library.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Paging & segmentation",
+  "difficulty": "easy",
+  "question_en": "Paging as a memory-management scheme completely eliminates:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Internal fragmentation",
+    "hi": null
+   },
+   {
+    "en": "Page faults",
+    "hi": null
+   },
+   {
+    "en": "External fragmentation",
+    "hi": null
+   },
+   {
+    "en": "The need for a page table",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Any free frame can hold any page, so there are no unusable holes between allocations. Internal fragmentation remains because the last page of a process is usually only partly filled.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Paging & segmentation",
+  "difficulty": "medium",
+  "question_en": "A system uses 32-bit logical addresses and a page size of 4 KB. How many entries does a single-level page table of a process have, at most?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "2^12",
+    "hi": null
+   },
+   {
+    "en": "2^32",
+    "hi": null
+   },
+   {
+    "en": "2^22",
+    "hi": null
+   },
+   {
+    "en": "2^20",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "4 KB = 2^12, so 12 bits form the offset and the remaining 32 − 12 = 20 bits form the page number → 2^20 (about one million) entries. 2^12 is the number of bytes in a page.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Paging & segmentation",
+  "difficulty": "hard",
+  "question_en": "Page size is 4 KB (4096 bytes) and page 3 of a process is loaded in frame 7. What physical address corresponds to the logical address 13000 (decimal)?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "28672",
+    "hi": null
+   },
+   {
+    "en": "13712",
+    "hi": null
+   },
+   {
+    "en": "29384",
+    "hi": null
+   },
+   {
+    "en": "29000",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Page = 13000 ÷ 4096 = 3 (3 × 4096 = 12288), offset = 13000 − 12288 = 712. Physical = 7 × 4096 + 712 = 28672 + 712 = 29384. 28672 is only the frame's base address without the offset.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Paging & segmentation",
+  "difficulty": "medium",
+  "question_en": "With 32-bit logical addresses, a 4 KB page size and 4-byte page-table entries, the size of a single-level page table for one process is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "1 MB",
+    "hi": null
+   },
+   {
+    "en": "4 KB",
+    "hi": null
+   },
+   {
+    "en": "16 MB",
+    "hi": null
+   },
+   {
+    "en": "4 MB",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Entries = 2^32 / 2^12 = 2^20. Size = 2^20 × 4 bytes = 2^22 bytes = 4 MB. 1 MB would be the result with 1-byte entries.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Paging & segmentation",
+  "difficulty": "hard",
+  "question_en": "Main-memory access time is 100 ns and TLB lookup time is 20 ns. If the TLB hit ratio is 80%, the effective memory access time with single-level paging is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "120 ns",
+    "hi": null
+   },
+   {
+    "en": "136 ns",
+    "hi": null
+   },
+   {
+    "en": "140 ns",
+    "hi": null
+   },
+   {
+    "en": "160 ns",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Hit: 20 + 100 = 120 ns. Miss: 20 + 100 (page table) + 100 (data) = 220 ns. EAT = 0.8 × 120 + 0.2 × 220 = 96 + 44 = 140 ns. 136 ns results from forgetting the TLB search time on a miss.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Paging & segmentation",
+  "difficulty": "medium",
+  "question_en": "A segment table has: segment 0 (base 2000, length 600), segment 1 (base 5200, length 300), segment 2 (base 3100, length 900). Which logical address (segment, offset) causes an addressing trap?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "(0, 599)",
+    "hi": null
+   },
+   {
+    "en": "(2, 750)",
+    "hi": null
+   },
+   {
+    "en": "(1, 299)",
+    "hi": null
+   },
+   {
+    "en": "(1, 320)",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "An offset must be smaller than the segment length. Segment 1 has length 300, so offset 320 is illegal → trap. The others are legal: (0,599) → 2599, (2,750) → 3850, (1,299) → 5499.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Paging & segmentation",
+  "difficulty": "easy",
+  "question_en": "Which memory-management scheme divides a program into variable-sized logical units such as main program, functions, stack and arrays, matching the programmer's view of memory?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Segmentation",
+    "hi": null
+   },
+   {
+    "en": "Paging",
+    "hi": null
+   },
+   {
+    "en": "Fixed partitioning",
+    "hi": null
+   },
+   {
+    "en": "Buddy system",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Segments are variable-length logical units addressed as (segment number, offset). Paging uses fixed-size pages that have no relation to the program's logical structure.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Paging & segmentation",
+  "difficulty": "medium",
+  "question_en": "An inverted page table differs from a conventional page table because it has:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "One entry for each physical frame of memory",
+    "hi": null
+   },
+   {
+    "en": "One entry for each page of each process",
+    "hi": null
+   },
+   {
+    "en": "One entry for each segment",
+    "hi": null
+   },
+   {
+    "en": "One entry for each TLB line",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "An inverted table has one entry per real frame, storing (process-id, page number), so its size depends on physical memory rather than on the logical address space. The cost is slower lookup, usually helped by hashing.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Paging & segmentation",
+  "difficulty": "easy",
+  "question_en": "A machine has 64 MB of physical memory and a frame size of 4 KB. How many frames does physical memory contain?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "65536",
+    "hi": null
+   },
+   {
+    "en": "16384",
+    "hi": null
+   },
+   {
+    "en": "4096",
+    "hi": null
+   },
+   {
+    "en": "8192",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Frames = 64 MB / 4 KB = 2^26 / 2^12 = 2^14 = 16384. So a frame number needs 14 bits.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Paging & segmentation",
+  "difficulty": "medium",
+  "question_en": "Why do modern systems use multi-level (hierarchical) paging?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "To avoid having to keep a huge page table in one contiguous block of memory",
+    "hi": null
+   },
+   {
+    "en": "To eliminate internal fragmentation",
+    "hi": null
+   },
+   {
+    "en": "To remove the need for a TLB",
+    "hi": null
+   },
+   {
+    "en": "To let pages have different sizes",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "With large address spaces a single-level table becomes megabytes long. Paging the page table itself lets only the needed parts of it be kept in memory, in non-contiguous frames. Internal fragmentation and the need for a TLB remain.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Virtual memory & page replacement",
+  "difficulty": "medium",
+  "question_en": "Using FIFO page replacement with 3 frames (initially empty), how many page faults occur for the reference string 5, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 1, 2?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "12",
+    "hi": null
+   },
+   {
+    "en": "11",
+    "hi": null
+   },
+   {
+    "en": "8",
+    "hi": null
+   },
+   {
+    "en": "10",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Frames after each fault: [5] [5,0] [5,0,1] → 2 replaces 5 → 0 hit → 3 replaces 0 → 0 replaces 1 → 4 replaces 2 → 2 replaces 3 → 3 replaces 0 → 0 replaces 4 → 3 hit → 1 replaces 2 → 2 replaces 3. Only 2 hits out of 14 references → 12 faults. LRU would give 11 and Optimal 8.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Virtual memory & page replacement",
+  "difficulty": "medium",
+  "question_en": "With 3 frames (initially empty) and LRU page replacement, the reference string 2, 3, 2, 1, 5, 2, 4, 5, 3, 2, 5, 2 produces how many page faults?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "9",
+    "hi": null
+   },
+   {
+    "en": "6",
+    "hi": null
+   },
+   {
+    "en": "8",
+    "hi": null
+   },
+   {
+    "en": "7",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Faults on 2, 3, 1 (frames 2,3,1); 5 evicts 3 (least recently used); 2 hit; 4 evicts 1; 5 hit; 3 evicts 2; 2 evicts 4; 5 and 2 hit → 7 faults. FIFO gives 9 and Optimal gives 6 on this string.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Virtual memory & page replacement",
+  "difficulty": "medium",
+  "question_en": "Using the Optimal (OPT) page-replacement algorithm with 3 frames, how many page faults occur for the reference string 5, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 1, 2?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "11",
+    "hi": null
+   },
+   {
+    "en": "12",
+    "hi": null
+   },
+   {
+    "en": "8",
+    "hi": null
+   },
+   {
+    "en": "9",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "5, 0, 1 fault; 2 evicts 5 (never used again); 0 hit; 3 evicts 1 (used farthest); 0 hit; 4 evicts 0 (next use farthest); 2, 3 hit; 0 evicts 4; 3 hit; 1 evicts 3; 2 hit → 8 faults, the minimum possible. 12 and 11 are the FIFO and LRU counts.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Virtual memory & page replacement",
+  "difficulty": "easy",
+  "question_en": "Belady's anomaly — the number of page faults increasing when the number of allocated frames is increased — can occur with which page-replacement algorithm?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "LRU",
+    "hi": null
+   },
+   {
+    "en": "Optimal",
+    "hi": null
+   },
+   {
+    "en": "FIFO",
+    "hi": null
+   },
+   {
+    "en": "Any stack algorithm",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "FIFO is not a stack algorithm, so the set of pages held with n frames need not be a subset of those held with n+1 frames. LRU and Optimal are stack algorithms and never show the anomaly.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Virtual memory & page replacement",
+  "difficulty": "hard",
+  "question_en": "Under FIFO, the reference string 1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5 causes 9 page faults with 3 frames. How many page faults does the same string cause with 4 frames?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "10",
+    "hi": null
+   },
+   {
+    "en": "8",
+    "hi": null
+   },
+   {
+    "en": "9",
+    "hi": null
+   },
+   {
+    "en": "6",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "With 4 frames: 1,2,3,4 fault (4); 1, 2 hit; 5 replaces 1 (5); 1 replaces 2 (6); 2 replaces 3 (7); 3 replaces 4 (8); 4 replaces 5 (9); 5 replaces 1 (10). More frames gave more faults — Belady's anomaly. 8 is the LRU count for 4 frames.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Virtual memory & page replacement",
+  "difficulty": "easy",
+  "question_en": "A situation in which a process spends more time swapping pages in and out than executing, causing CPU utilisation to drop sharply, is called:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Starvation",
+    "hi": null
+   },
+   {
+    "en": "Thrashing",
+    "hi": null
+   },
+   {
+    "en": "Deadlock",
+    "hi": null
+   },
+   {
+    "en": "Spooling",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Thrashing happens when processes do not have enough frames for their working sets, so page faults occur continuously. Raising the degree of multiprogramming at this point makes it worse.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Virtual memory & page replacement",
+  "difficulty": "easy",
+  "question_en": "In a demand-paging system, a page fault occurs when:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "A process references a page that is in the TLB",
+    "hi": null
+   },
+   {
+    "en": "Two processes share the same frame",
+    "hi": null
+   },
+   {
+    "en": "A process references a page that is not currently in main memory",
+    "hi": null
+   },
+   {
+    "en": "The page table becomes full",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The valid–invalid bit of the page-table entry shows the page is not resident, so the hardware traps to the OS, which loads the page from disk and restarts the instruction.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Virtual memory & page replacement",
+  "difficulty": "hard",
+  "question_en": "Memory access time is 100 ns and servicing a page fault takes 10 ms on average. If one access in every 1,000 causes a page fault, the effective access time is approximately:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "10.1 µs",
+    "hi": null
+   },
+   {
+    "en": "100.1 ns",
+    "hi": null
+   },
+   {
+    "en": "1.01 µs",
+    "hi": null
+   },
+   {
+    "en": "20.1 µs",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "EAT = (1 − p) × 100 ns + p × 10 ms = 0.999 × 100 + 0.001 × 10,000,000 ns = 99.9 + 10,000 = 10,099.9 ns ≈ 10.1 µs — about 100 times slower than memory, which is why the fault rate must be kept very low.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Virtual memory & page replacement",
+  "difficulty": "medium",
+  "question_en": "The working-set model of memory management is based on which property of program behaviour?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Belady's anomaly",
+    "hi": null
+   },
+   {
+    "en": "Mutual exclusion",
+    "hi": null
+   },
+   {
+    "en": "Spatial fragmentation",
+    "hi": null
+   },
+   {
+    "en": "Locality of reference",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Programs tend to reference a small set of pages (a locality) over a period of time. The working set is the set of pages used in the last Δ references; giving each process enough frames for its working set prevents thrashing.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Virtual memory & page replacement",
+  "difficulty": "medium",
+  "question_en": "What is the purpose of the modify (dirty) bit kept for each page in memory?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "To mark pages that are shared between processes",
+    "hi": null
+   },
+   {
+    "en": "To record how recently a page was referenced",
+    "hi": null
+   },
+   {
+    "en": "To avoid writing a victim page back to disk if it has not been changed",
+    "hi": null
+   },
+   {
+    "en": "To show that a page belongs to the kernel",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "If the dirty bit of the page chosen for replacement is 0, its disk copy is still valid, so the write-back can be skipped, halving the page-fault service I/O. Recency of use is tracked by the reference bit, not the dirty bit.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "File systems",
+  "difficulty": "easy",
+  "question_en": "Which file-allocation method suffers from external fragmentation and makes it difficult for a file to grow?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Linked allocation",
+    "hi": null
+   },
+   {
+    "en": "Indexed allocation",
+    "hi": null
+   },
+   {
+    "en": "Contiguous allocation",
+    "hi": null
+   },
+   {
+    "en": "FAT-based allocation",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Contiguous allocation needs a run of consecutive free blocks, leaving scattered holes, and a file cannot easily extend if the next block is occupied. It does, however, give fast sequential and direct access.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "File systems",
+  "difficulty": "medium",
+  "question_en": "The File Allocation Table (FAT) used by MS-DOS and many USB drives is a variation of which allocation method?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Contiguous allocation",
+    "hi": null
+   },
+   {
+    "en": "Indexed allocation",
+    "hi": null
+   },
+   {
+    "en": "Linked allocation",
+    "hi": null
+   },
+   {
+    "en": "Multilevel indexed allocation",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "FAT keeps the 'next block' pointers of linked allocation together in one table at the start of the volume instead of inside each data block, which speeds up random access.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "File systems",
+  "difficulty": "medium",
+  "question_en": "In a UNIX/Linux file system, which of the following is NOT stored in a file's inode?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "The file name",
+    "hi": null
+   },
+   {
+    "en": "The file size",
+    "hi": null
+   },
+   {
+    "en": "The owner and permissions",
+    "hi": null
+   },
+   {
+    "en": "Pointers to the data blocks",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The inode holds metadata — type, permissions, owner, size, timestamps, link count and block pointers. The name is stored in the directory entry, which maps the name to the inode number; that is why one inode can have several hard-link names.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "File systems",
+  "difficulty": "medium",
+  "question_en": "An inode has 12 direct block pointers and one single-indirect pointer. The block size is 4 KB and each block pointer is 4 bytes. Ignoring double and triple indirect pointers, the maximum file size is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "4144 KB",
+    "hi": null
+   },
+   {
+    "en": "4096 KB",
+    "hi": null
+   },
+   {
+    "en": "4192 KB",
+    "hi": null
+   },
+   {
+    "en": "52 KB",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "One 4 KB indirect block holds 4096 / 4 = 1024 pointers. Direct: 12 × 4 KB = 48 KB; single indirect: 1024 × 4 KB = 4096 KB. Total = 48 + 4096 = 4144 KB. 4096 KB forgets the direct blocks.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "File systems",
+  "difficulty": "easy",
+  "question_en": "Which of the following is NOT a standard file-access method?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Sequential access",
+    "hi": null
+   },
+   {
+    "en": "Cyclic access",
+    "hi": null
+   },
+   {
+    "en": "Direct (random) access",
+    "hi": null
+   },
+   {
+    "en": "Indexed sequential access",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Files are accessed sequentially (record after record), directly (any block by number) or through an index (indexed sequential). 'Cyclic access' is not a file-access method.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Linux commands & shell",
+  "difficulty": "medium",
+  "question_en": "After the Linux command chmod 754 report.sh, the permissions of report.sh are:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "rwxr-x--x",
+    "hi": null
+   },
+   {
+    "en": "rwxrw-r--",
+    "hi": null
+   },
+   {
+    "en": "rw-r-xr--",
+    "hi": null
+   },
+   {
+    "en": "rwxr-xr--",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Each octal digit is r = 4, w = 2, x = 1 for owner, group, others: 7 = rwx, 5 = r-x, 4 = r--. So the owner can do everything, the group can read and execute, others can only read.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Linux commands & shell",
+  "difficulty": "easy",
+  "question_en": "Which Linux command displays the full path of the current working directory?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "pwd",
+    "hi": null
+   },
+   {
+    "en": "cd",
+    "hi": null
+   },
+   {
+    "en": "ls",
+    "hi": null
+   },
+   {
+    "en": "whoami",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "pwd (print working directory) prints the absolute path such as /home/teacher/notes. cd changes the directory, ls lists its contents and whoami prints the user name.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Linux commands & shell",
+  "difficulty": "medium",
+  "question_en": "In the output of ls -l a file is shown as -rw-r-----. The equivalent numeric (octal) permission is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "640",
+    "hi": null
+   },
+   {
+    "en": "644",
+    "hi": null
+   },
+   {
+    "en": "750",
+    "hi": null
+   },
+   {
+    "en": "460",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The leading '-' means a regular file. Owner rw- = 4+2 = 6, group r-- = 4, others --- = 0 → 640. 644 would give others read permission too.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Linux commands & shell",
+  "difficulty": "easy",
+  "question_en": "Which Linux command is used to search for lines matching a text pattern inside files?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "find",
+    "hi": null
+   },
+   {
+    "en": "locate",
+    "hi": null
+   },
+   {
+    "en": "sort",
+    "hi": null
+   },
+   {
+    "en": "grep",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "grep 'pattern' file prints every line that contains the pattern (e.g. grep -i 'error' log.txt). find and locate search for files by name or attributes, not for text inside them.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Linux commands & shell",
+  "difficulty": "hard",
+  "question_en": "A user's umask is 022. With the usual base permission of 666 for regular files, what permissions does a newly created regular file receive?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "644 (rw-r--r--)",
+    "hi": null
+   },
+   {
+    "en": "755 (rwxr-xr-x)",
+    "hi": null
+   },
+   {
+    "en": "022 (----w--w-)",
+    "hi": null
+   },
+   {
+    "en": "666 (rw-rw-rw-)",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "umask removes bits: 666 with the 022 bits cleared = 644, i.e. rw-r--r--. 755 is what a new DIRECTORY gets (777 minus 022); files start from 666 so execute is never set by default.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Linux commands & shell",
+  "difficulty": "medium",
+  "question_en": "What does the shell command  ls | wc -l  display?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "The word count of every file in the directory",
+    "hi": null
+   },
+   {
+    "en": "A long listing of the current directory",
+    "hi": null
+   },
+   {
+    "en": "The number of lines in the file named ls",
+    "hi": null
+   },
+   {
+    "en": "The number of entries listed in the current directory",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The pipe '|' sends the output of ls (one name per line when piped) as the input of wc -l, which counts lines. So the result is the number of entries. ls -l alone would give the long listing.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "Linux commands & shell",
+  "difficulty": "medium",
+  "question_en": "The command  kill -9 2345  sends which signal to process 2345?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "SIGTERM — asks the process to terminate gracefully",
+    "hi": null
+   },
+   {
+    "en": "SIGSTOP — pauses the process temporarily",
+    "hi": null
+   },
+   {
+    "en": "SIGHUP — tells the process its terminal was closed",
+    "hi": null
+   },
+   {
+    "en": "SIGKILL — terminates the process immediately and cannot be caught",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Signal 9 is SIGKILL, which the process cannot catch, block or ignore. Plain kill without a number sends SIGTERM (15), which a program may handle to clean up first.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "System calls",
+  "difficulty": "easy",
+  "question_en": "A system call is best described as:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "The programming interface through which a user program requests a service from the operating-system kernel",
+    "hi": null
+   },
+   {
+    "en": "A call from one user function to another in the same program",
+    "hi": null
+   },
+   {
+    "en": "A hardware interrupt generated by an I/O device",
+    "hi": null
+   },
+   {
+    "en": "A command typed by the user at the shell prompt",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "System calls (e.g. open, read, fork) are the entry points into the kernel; they switch the CPU from user mode to kernel mode through a trap. Shell commands are programs that themselves use system calls.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "System calls",
+  "difficulty": "easy",
+  "question_en": "The system calls open(), read(), write() and close() belong to which category?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Process control",
+    "hi": null
+   },
+   {
+    "en": "Device-independent communication",
+    "hi": null
+   },
+   {
+    "en": "File management",
+    "hi": null
+   },
+   {
+    "en": "Information maintenance",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "File-management calls create, open, read, write, close and delete files. Process control includes fork, exec, exit and wait; information maintenance includes getpid, time and date calls.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "System calls",
+  "difficulty": "medium",
+  "question_en": "In UNIX/Linux, what happens when a process successfully calls one of the exec() family of system calls?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "A new child process is created that is a copy of the caller",
+    "hi": null
+   },
+   {
+    "en": "The process terminates and returns a status to its parent",
+    "hi": null
+   },
+   {
+    "en": "The process waits until one of its children terminates",
+    "hi": null
+   },
+   {
+    "en": "Its memory image is replaced by a new program, while the process ID stays the same",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "exec loads a new program into the CURRENT process, replacing its code, data and stack; the PID is unchanged and exec does not return on success. Creating a copy is fork(), ending is exit() and waiting is wait().",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_os",
+  "subtopic": "System calls",
+  "difficulty": "hard",
+  "question_en": "What is printed by this C program on Linux (assume fork() succeeds)?\n\nint x = 5;\nif (fork() == 0) { x = x + 10; printf(\"%d \", x); }\nelse { wait(NULL); x = x - 2; printf(\"%d \", x); }",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "3 15",
+    "hi": null
+   },
+   {
+    "en": "15 13",
+    "hi": null
+   },
+   {
+    "en": "15 3",
+    "hi": null
+   },
+   {
+    "en": "13 15",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "fork() returns 0 in the child, which sets ITS copy of x to 15 and prints it. The parent waits for the child, then changes its own separate copy: 5 − 2 = 3. Parent and child do not share variables after fork, so 13 is wrong, and wait() fixes the order.",
+  "explanation_hi": null,
+  "expected": false
+ }
+]

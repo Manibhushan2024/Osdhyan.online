@@ -1,0 +1,2316 @@
+[
+{
+"qid": "630680256206",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "The lowest cost solution to developing a KM system is:",
+"options": [
+"in-house development",
+"outsourcing",
+"development by end users",
+"off-the shelf solution"
+],
+"answer": 1
+},
+{
+"qid": "630680256174",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "Which of the following services is NOT provided by the operating system?",
+"options": [
+"Resource management",
+"Inter process for communication",
+"Translate source into machine code",
+"Program execution"
+],
+"answer": 3
+},
+{
+"qid": "630680256154",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "Which of the following is NOT a type of computer architecture?",
+"options": [
+"Micro Architecture",
+"Harvard Architecture",
+"Software Architecture",
+"Instruction Set Architecture"
+],
+"answer": 3
+},
+{
+"qid": "630680256152",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "Which of the following statements is true?",
+"options": [
+"Circuit setup is not required in both a datagram network and virtual-circuit network.",
+"Circuit setup is required in both a datagram network and virtual-circuit network.",
+"Circuit setup is required in a virtual-circuit network.",
+"Circuit setup is required in a datagram network."
+],
+"answer": 3
+},
+{
+"qid": "630680256139",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "The decimal equivalent of the binary number 111111 is:",
+"options": [
+"46",
+"63",
+"52",
+"36"
+],
+"answer": 2
+},
+{
+"qid": "630680256182",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "_____ is a code that consists of CPU and platform-independent set of instructions, which can be easily converted to the native code.",
+"options": [
+"DLL",
+"FCL",
+"JIT",
+"MSIL"
+],
+"answer": 4
+},
+{
+"qid": "630680256179",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "Marginal revenue is calculated by _____.",
+"options": [
+"dividing the change in total output quantity by the change in total revenue",
+"dividing the change in total cost by the change in total output quantity",
+"dividing the change in total revenue by the change in total output quantity",
+"dividing the change in total revenue by the change in total profit"
+],
+"answer": 3
+},
+{
+"qid": "630680256138",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "In C++ language, the instruction 'ignore(x,y);' _______ .",
+"options": [
+"skips the last x characters and stops if character y is encountered",
+"skips the first y characters and stops if character x is encountered",
+"skips the first x characters and stops if character y is encountered",
+"skips the last y characters and stops if character x is encountered"
+],
+"answer": 3
+},
+{
+"qid": "630680256165",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "Any account or goods used by the owner of the business for his personal use is called as:",
+"options": [
+"sales",
+"drawings",
+"general expenses",
+"expenses"
+],
+"answer": 2
+},
+{
+"qid": "630680256136",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "Select the true statement about try-catch blocks.",
+"options": [
+"A try block must have at least 1 catch to have a finally block.",
+"A try block must have only 1 finally block for each catch block.",
+"A try block can have many catches but only 1 finally block.",
+"A try block can have many catches and many finally blocks."
+],
+"answer": 3
+},
+{
+"qid": "630680256133",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "Which of the following statements is true?",
+"options": [
+"POST is the process performed by BIOS immediately after the system is shutdown.",
+"The bootstrap program is stored in RAM.",
+"CMOS chip is powered by the battery located in the mother board.",
+"BIOS was developed by Charles Babbage."
+],
+"answer": 3
+},
+{
+"qid": "630680256186",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "Which of the following statements is NOT true?",
+"options": [
+"etc: It contains other additional commands that are related to system maintenance and administration.",
+"usr: It contains temporary files created by Linux or other users.",
+"bin: It contains executable files for the UNIX commands.",
+"dev: It contains device drivers that control various peripherals that are connected with the system."
+],
+"answer": 2
+},
+{
+"qid": "630680256209",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "'FORTRAN' stands for _____.",
+"options": [
+"Format Translation",
+"Format Transfer",
+"Formula Translation",
+"Formula Transfer"
+],
+"answer": 3
+},
+{
+"qid": "630680256207",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "Which of the following is NOT a type of business?",
+"options": [
+"Experience driven",
+"Expense driven",
+"Efficiency driven",
+"Expert driven"
+],
+"answer": 2
+},
+{
+"qid": "630680256192",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "Which of the following is NOT the application of Divide and Conquer?",
+"options": [
+"Binary Search",
+"All Pairs Shortest Path Problem",
+"Quick Sort",
+"Strassen's Matrix Multiplication"
+],
+"answer": 2
+},
+{
+"qid": "630680256172",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "Which of the following opens the linked document in the windows full body among the target values?",
+"options": [
+"_self",
+"_top",
+"_blank",
+"_parent"
+],
+"answer": 2
+},
+{
+"qid": "630680256201",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "Which of the following is the syntax to write an external CSS?",
+"options": [
+"<style rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">",
+"<style> href=\"style.css\" </style>",
+"<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">",
+"<a href=\"style.css\" rel=\"stylesheet\" type=\"text/css\" >"
+],
+"answer": 3
+},
+{
+"qid": "630680256199",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "Which of the following is a clipping algorithm?",
+"options": [
+"Simple DDA",
+"Liang Barsky's algorithm",
+"Bresenham's algorithm",
+"Mid-point Algorithm"
+],
+"answer": 2
+},
+{
+"qid": "630680256185",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "Which of the following is a default permission for the text file in Linux?",
+"options": [
+"rwx r-- r--",
+"rw- r-- r--",
+"rwx rwx rwx",
+"rwx --- ---"
+],
+"answer": 2
+},
+{
+"qid": "630680256143",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "An LED emits green light of wavelength λ = 5511.11 Å. Find the value of Eg.",
+"options": [
+"1.25 eV",
+"2.25 eV",
+"3.606 eV",
+"36.06 eV"
+],
+"answer": 2
+},
+{
+"qid": "630680256210",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "Which of the following is the easiest to be transformed into a computer program?",
+"options": [
+"Pseudo-code",
+"Algorithm",
+"Flowchart",
+"None of the above"
+],
+"answer": 1
+},
+{
+"qid": "630680256202",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "How to change all images to black and white (100% grey)?",
+"options": [
+"img { filter: graycolor(100%);}",
+"img { filter: grayscale(100%);}",
+"img { graycolor(100%);}",
+"img { filter: \"grayscale(100%)\";}"
+],
+"answer": 2
+},
+{
+"qid": "630680256203",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "Which of the following is NOT an XML Parser?",
+"options": [
+"Shell",
+"JDOM",
+"DOM",
+"SAX"
+],
+"answer": 1
+},
+{
+"qid": "630680256132",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "Which of the following statements is NOT true?",
+"options": [
+"5 kilobytes is equal to 10,240 half bytes",
+"3 kilobytes is equal to 24,576 bits",
+"4 kilobytes is equal to 4069 bytes",
+"2 kilobytes is equal to 4096 nibbles"
+],
+"answer": 3
+},
+{
+"qid": "630680256147",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "A Mod-6 counter and a Mod-8 counter in cascade give a _____ counter.",
+"options": [
+"Mod-14",
+"Mod-68",
+"Mod-2",
+"Mod-48"
+],
+"answer": 4
+},
+{
+"qid": "630680256204",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "How to write the external DTD?",
+"options": [
+"<!DOCTYPE SYSTEM \"file-name\">",
+"<!DOCTYPE element ROOT \"file-name\">",
+"<!DOCTYPE SYSTEM \"file-name\" root-element>",
+"<!DOCTYPE root-element SYSTEM \"file-name\">"
+],
+"answer": 4
+},
+{
+"qid": "630680256213",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "The values of x are 1, 3, 4 and those of f(x) are 1, 27, 64. What is the polynomial equation by using the Lagrange interpolation formula?",
+"options": [
+"8x^2 − 19x + 12",
+"8x^2 + 9x + 12",
+"8x^2 − 9x + 12",
+"8x^2 + 9x + 12"
+],
+"answer": 1
+},
+{
+"qid": "630680256125",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "The general solution of dy/dx = e^(x + y) is:",
+"options": [
+"e^(−x) − e^(−y) = c",
+"e^(−x) + e^(y) = c",
+"e^x + e^(−y) = c",
+"e^(−x) + e^(y) = c"
+],
+"answer": 3
+},
+{
+"qid": "630680256150",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "Descriptive attributes are used to:",
+"options": [
+"record the information about relationships",
+"record the information about attributes",
+"record the information about participating entities",
+"record the information about data"
+],
+"answer": 1
+},
+{
+"qid": "630680256166",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "Which of the following is FALSE about packages?",
+"options": [
+"Packages cannot provide controlled access.",
+"Packages are used to prevent naming conflicts.",
+"Packages are considered data encapsulation.",
+"Packages are used to prevent naming conflicts, and packages are considered data encapsulation."
+],
+"answer": 1
+},
+{
+"qid": "630680256208",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "Which of the following is NOT the purpose of knowledge management system?",
+"options": [
+"Driving strategy",
+"Integration",
+"Sharing of knowledge",
+"Portability"
+],
+"answer": 4
+},
+{
+"qid": "630680256187",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "Which of the following is NOT a shell in Linux?",
+"options": [
+"C shell",
+"Korn shell",
+"Bourne shell",
+"Alpha cell"
+],
+"answer": 4
+},
+{
+"qid": "630680256167",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "Which of the following is NOT a phase of the RAD model?",
+"options": [
+"Development modelling",
+"Business modelling",
+"Process modelling",
+"Data modelling"
+],
+"answer": 1
+},
+{
+"qid": "630680256180",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "Which of the following inflations describes how demand for goods and services can drive up their prices?",
+"options": [
+"Cost-push inflation",
+"Built-in Inflation",
+"Demand-pull inflation",
+"Demand-push inflation"
+],
+"answer": 3
+},
+{
+"qid": "630680256141",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "_____ is the process of visiting different web sites on the internet hosted by various companies, organisations, educational institutions, magazines, individuals, etc.",
+"options": [
+"Webbing",
+"Searching",
+"Chatting",
+"Web surfing"
+],
+"answer": 4
+},
+{
+"qid": "630680256190",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "Who is the father of e-commerce in India?",
+"options": [
+"Bryan Eisenberg",
+"Michael Aldrich",
+"K Vaitheeswaran",
+"Tim Ferris"
+],
+"answer": 3
+},
+{
+"qid": "630680256155",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "Which of the following is an addressing mode used in an instruction of the form ADD R1, [R2]?",
+"options": [
+"Register Indirect",
+"Register",
+"Indexed Register",
+"Assembly Register"
+],
+"answer": 1
+},
+{
+"qid": "630680256131",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "An organisation structure establishes relationships between:",
+"options": [
+"people, work and resources",
+"organisations and environment",
+"suppliers and customers",
+"organisations and society"
+],
+"answer": 1
+},
+{
+"qid": "630680256130",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "_____ is a person who carries on business by himself/herself.",
+"options": [
+"Cooperative",
+"Sole proprietorship",
+"Partnership",
+"Trader"
+],
+"answer": 2
+},
+{
+"qid": "630680256205",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "The set of processes developed in an organisation to create, gather, store, transfer and apply knowledge best describes:",
+"options": [
+"knowledge management",
+"organisational learnings",
+"knowledge asset",
+"organisational memory"
+],
+"answer": 1
+},
+{
+"qid": "630680256183",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "Which of the following is NOT a feature of ADO.net?",
+"options": [
+"Maintainability",
+"Interoperability",
+"Reachability",
+"Scalability"
+],
+"answer": 3
+},
+{
+"qid": "630680256144",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "The refractive index of the core of an optical fibre is greater than that of cladding because:",
+"options": [
+"the light gets reflected at the entrance end of the optical fibre",
+"the light gets totally internally reflected into the core",
+"the light gets restricted at the entrance end of the optical fibre",
+"the light gets refracted into cladding"
+],
+"answer": 2
+},
+{
+"qid": "630680256214",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "If μ is an averaging operator and δ^n is the n^th central difference operator, then what is the value of μ^2?",
+"options": [
+"μ^2 = 1/4 (δ^2 + 4)",
+"μ^2 = 1/2 (δ^2 + 4)",
+"μ^2 = 1/4 (δ^2 + 6)",
+"μ^2 = 1/4 (δ^2 + 8)"
+],
+"answer": 1
+},
+{
+"qid": "630680256194",
+"paper": "2023_06_24_s3",
+"section": "Computer Science",
+"question": "What are the solutions for the following sum of a subset problem?\nw[1:5]={2,7,8,9,15}; Sum required = 17\n1 means the item is included.\n0 means the item is excluded.",
+"options": [
+"11100; 10101; 00110",
+"11100; 10001; 00110",
+"11000; 10001; 00110",
+"11100; 10101; 00111"
+],
+"answer": 2
+},
+{
+"qid": "630680256333",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "Too many packets present in (a part of) the network causes packet delay and loss that degrades performance. This situation is referred to as ______.",
+"options": [
+"throttling",
+"chocking",
+"congestion",
+"collapse"
+],
+"answer": 3
+},
+{
+"qid": "630680256353",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "Which of the following identifies, controls, audits and reports modifications that invariably occur while software is being developed and after it has been released to a customer?",
+"options": [
+"Software Process Model",
+"Software Quality Assurance",
+"Software Cost Estimation",
+"Software Configuration Management"
+],
+"answer": 4
+},
+{
+"qid": "630680256327",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "Which of the following is a relational operator in the C programming language?",
+"options": [
+"&&",
+"!",
+"!=",
+"||"
+],
+"answer": 3
+},
+{
+"qid": "630680256415",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "Which of the following refers to focusing on determining, organising, directing, facilitating and monitoring knowledge-related practices and activities required to achieve the desired business strategies and objectives with reference to knowledge management in organisations?",
+"options": [
+"Business point of view",
+"Education point of view",
+"Hands-on operational point of view",
+"Management point of view"
+],
+"answer": 4
+},
+{
+"qid": "630680256401",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "By default, the BASH shell of the Linux environment has a ______ prompt.",
+"options": [
+"#",
+"&",
+"$",
+"%"
+],
+"answer": 3
+},
+{
+"qid": "630680256382",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "Which of the following is NOT a method of solving quadratic equations?",
+"options": [
+"By completing the square",
+"By using the quadratic formula",
+"By factorisation",
+"By using convergence"
+],
+"answer": 4
+},
+{
+"qid": "630680256344",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "Which of the following is a software application that helps developers to build attractive website layouts and apps with ease?",
+"options": [
+"Database design tools",
+"Front-end development tools",
+"Logic programming tools",
+"Back-end development tools"
+],
+"answer": 2
+},
+{
+"qid": "630680256369",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "Which of the following is a valid syntax for the XML element in a DTD?",
+"options": [
+"<!ELEMENT element-name category>",
+"<!ATTLIST element-name attribute-name attribute-type attribute-value>",
+"<#ELEMENT element-name category>",
+"<!ENTITY entity-name \"entity-value\">"
+],
+"answer": 1
+},
+{
+"qid": "630680256352",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "Which of the following process models are the oldest software engineering paradigms and suggest a linear process flow that is often inconsistent with modern realities?",
+"options": [
+"Incremental Process Models",
+"Sequential Process Models",
+"Evolutionary Process Models",
+"Concurrent Process Models"
+],
+"answer": 2
+},
+{
+"qid": "630680256400",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "The demand is said to be ______ when a very insignificant change in price leads to an infinite change in quantity demanded.",
+"options": [
+"perfectly inelastic",
+"relatively elastic",
+"relatively inelastic",
+"perfectly elastic"
+],
+"answer": 4
+},
+{
+"qid": "630680256378",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "Consider the following data set: 6, 20, 25, 63, 92, 101. What is the range of the data set?",
+"options": [
+"63",
+"6",
+"95",
+"101"
+],
+"answer": 3
+},
+{
+"qid": "630680256331",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "In connectionless services offered by the network layer, packets are injected into the network individually and routed independently of each other. In this context, the packets are frequently called ______, and the network is called a ______ network.",
+"options": [
+"datagrams; virtual-circuit",
+"datagrams; datagram",
+"virtual circuits; datagram",
+"virtual circuits; virtual-circuit"
+],
+"answer": 2
+},
+{
+"qid": "630680256336",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "Any process in the transport layer wishing to remotely retrieve mail from a host can connect to the destination host’s port ______ to contact its IMAP daemon.",
+"options": [
+"443",
+"80",
+"143",
+"20"
+],
+"answer": 3
+},
+{
+"qid": "630680256354",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "Which of the following software quality factors refers to the degree to which the software makes optimal use of system resources as indicated by the sub-attributes time behaviour and resource behaviour?",
+"options": [
+"Maintainability",
+"Usability",
+"Portability",
+"Efficiency"
+],
+"answer": 4
+},
+{
+"qid": "630680256407",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "Which of the following is a router in a foreign network to which the mobile node is currently connected with reference to mobile communication?",
+"options": [
+"Foreign agent",
+"Home agent",
+"Foreign agent COA",
+"Co-located COA"
+],
+"answer": 1
+},
+{
+"qid": "630680256365",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "Which of the following curves is particularly a kind of spline generated from a set of control points by forming a set of polynomial functions with reference to computer graphics?",
+"options": [
+"Explicit",
+"Parametric",
+"Implicit",
+"Bezier"
+],
+"answer": 4
+},
+{
+"qid": "630680256397",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "Which of the following is defined as that branch of economic analysis that studies the economic behaviour of the individual unit and may be a person, a particular household or a particular firm?",
+"options": [
+"International Economics",
+"Macro Economics",
+"Environmental Economics",
+"Micro Economics"
+],
+"answer": 4
+},
+{
+"qid": "630680256330",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "What is the output of following C program?\n#include<stdio.h>\nint main()\n{\n    int x = 8, *y, z;\n    y = &x;\n    printf(\"%d\n\", x * *y * x + *y);\n    return 0;\n}",
+"options": [
+"8",
+"Runtime error",
+"520",
+"Compilation error"
+],
+"answer": 3
+},
+{
+"qid": "630680256416",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "Which step of the knowledge management process involves adding value by discovering relationships, abstracting and sharing?",
+"options": [
+"Knowledge refining",
+"Knowledge gathering or acquisition",
+"Knowledge organisation",
+"Knowledge sharing"
+],
+"answer": 1
+},
+{
+"qid": "630680256396",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "Which of the following is an action or occurrence such as a mouse click, a key press, mouse movements or any system-generated notification in ASP.NET?",
+"options": [
+"Directive",
+"Validator",
+"Control",
+"Event"
+],
+"answer": 4
+},
+{
+"qid": "630680256409",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "Suppose we are given values of y = f(x) for a set of values of x, the process of finding the value of y corresponding to any value of x = x_i between x_0 and x_n is called ______.",
+"options": [
+"bias",
+"variance",
+"hypothesis",
+"interpolation"
+],
+"answer": 4
+},
+{
+"qid": "630680256388",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "Which of the following is the proper sequence of the accounting cycle?",
+"options": [
+"Recording of Transaction → Journal → Ledger → Trial Balance → Adjusted Trial Balance → Adjustment Entries → Closing Entries → Financial Statement",
+"Recording of Transaction → Journal → Ledger → Trial Balance → Adjustment Entries → Adjusted Trial Balance → Closing Entries → Financial Statement",
+"Recording of Transaction → Journal → Ledger → Trial Balance → Adjustment Entries → Closing Entries → Adjusted Trial Balance → Financial Statement",
+"Recording of Transaction → Journal → Ledger → Trial Balance → Adjustment Entries → Adjusted Trial Balance → Financial Statement → Closing Entries"
+],
+"answer": 2
+},
+{
+"qid": "630680256363",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "Interpretability, Format, Coherence and Compatibility refer to which quality of information with reference to Management Information System?",
+"options": [
+"Contextual",
+"Representational",
+"Intrinsic",
+"Accessibility"
+],
+"answer": 2
+},
+{
+"qid": "630680256387",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "Which of the following refers to the art of recoding, classifying and summarising in a significant manner, and in terms of money, transactions and events that are in part at least of a financial character, and interpreting the results thereof?",
+"options": [
+"Financial Accounting",
+"Cost Accounting",
+"Management Accounting",
+"Book Keeping"
+],
+"answer": 1
+},
+{
+"qid": "630680256405",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "Activities like packing goods, loading goods and shipping goods belong to which step of the e-commerce primary process?",
+"options": [
+"Contract conclusion",
+"Delivery/fulfilment",
+"Billing/invoice",
+"Service/support"
+],
+"answer": 2
+},
+{
+"qid": "630680256343",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "Which of the following front-end tools is one of the most widely used CSS extension languages across the world?",
+"options": [
+"Visual Studio Code",
+"Git",
+"TypeScript",
+"Sass"
+],
+"answer": 4
+},
+{
+"qid": "630680256408",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "In which of the following radio channel sharing methods several users share the same frequency channel of higher bandwidth by dividing it into different time slots?",
+"options": [
+"Time Division Multiple Access",
+"Network Division Multiple Access",
+"Frequency Division Multiple Access",
+"Packet Division Multiple Access"
+],
+"answer": 1
+},
+{
+"qid": "630680256347",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "The operations of a ______ require that the first element that is inserted is the first one to be removed?",
+"options": [
+"union",
+"graph",
+"stack",
+"queue"
+],
+"answer": 4
+},
+{
+"qid": "630680256398",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "The ______ economic system is characterised by free markets and the absence of government intervention in the economy.",
+"options": [
+"private",
+"capitalist",
+"public",
+"socialist"
+],
+"answer": 2
+},
+{
+"qid": "630680256332",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "The algorithm that manages routing tables and makes routing decisions in the network layer of the ISO/OSI model is called ______.",
+"options": [
+"network algorithm",
+"routing algorithm",
+"table algorithm",
+"IP algorithm"
+],
+"answer": 2
+},
+{
+"qid": "630680256371",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "The semiconductor memory Dynamic RAM (DRAM) stores each bit of information in a/an ______.",
+"options": [
+"diode",
+"electrical capacitor",
+"flip-flop",
+"resistor"
+],
+"answer": 2
+},
+{
+"qid": "630680256384",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "AB is a tangent to a circle at B. O is the centre of the circle. If the circle radius is 40 mm and AB = 150 mm, calculate the length of AO.",
+"options": [
+"57.30 mm",
+"962 mm",
+"155.2 mm",
+"235.6 mm"
+],
+"answer": 3
+},
+{
+"qid": "630680256345",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "Which characteristic of an algorithm refers to ‘each instruction is clear and unambiguous’?",
+"options": [
+"Definiteness",
+"Finiteness",
+"Effectiveness",
+"Indefiniteness"
+],
+"answer": 1
+},
+{
+"qid": "630680256402",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "What will be the output of the Linux shell command ‘rm doc*’?",
+"options": [
+"Erase all files beginning with the pattern ‘doc’",
+"Erase all files ending with the pattern ‘doc’",
+"List filenames ending with the pattern ‘doc’",
+"List filenames beginning with the pattern ‘doc’"
+],
+"answer": 1
+},
+{
+"qid": "630680256350",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "Which of the following is known as an association among several entities?",
+"options": [
+"Instance",
+"Key",
+"Relationship",
+"Participation"
+],
+"answer": 3
+},
+{
+"qid": "630680256349",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "The Insert key in a keyboard of a computer system is used to toggle between ______ and ______ modes during data entry.",
+"options": [
+"backspace; overwrite",
+"delete; overwrite",
+"insert; overwrite",
+"delete; replace"
+],
+"answer": 3
+},
+{
+"qid": "630680256373",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "Which of the following is a symbolic name given to a memory location in any programming language?",
+"options": [
+"Variable",
+"Constant",
+"Literal",
+"Attribute"
+],
+"answer": 1
+},
+{
+"qid": "630680256383",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "What is the amount of rotation between two straight lines?",
+"options": [
+"Revolution",
+"Degree",
+"Transversal",
+"Angle"
+],
+"answer": 4
+},
+{
+"qid": "630680256328",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "Which of the following is NOT a storage class in the C programming language?",
+"options": [
+"Register",
+"Extern",
+"Auto",
+"Intern"
+],
+"answer": 4
+},
+{
+"qid": "630680256329",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "Which of the following is true with reference to Queue Data Structure in the C programming language?\n(i) Insertion can take place from the front end.\n(ii) Deletion can take place from the rear end.",
+"options": [
+"Neither (i) nor (ii)",
+"Both (i) and (ii)",
+"Only (i)",
+"Only (ii)"
+],
+"answer": 1
+},
+{
+"qid": "630680256346",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "Match the system with the respective unit to represent heat.\nSystem | Unit\n(a) CGS | (i) BTU\n(b) FPS | (ii) Joule\n(c) SI | (iii) Calorie",
+"options": [
+"(a)-(iii), (b)-(i), (c)-(ii)",
+"(a)-(ii), (b)-(i), (c)-(iii)",
+"(a)-(i), (b)-(ii), (c)-(iii)",
+"(a)-(ii), (b)-(iii), (c)-(i)"
+],
+"answer": 1
+},
+{
+"qid": "630680256411",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "Which of the following refers to the kind of problems that require the identification of the best solution to a search problem from a given set of solutions?",
+"options": [
+"Training",
+"Optimisation",
+"Counting",
+"Decision"
+],
+"answer": 2
+},
+{
+"qid": "630680256404",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "With reference to stakeholders of e-commerce, business organisations abbreviated by ‘B’ may include ______.",
+"options": [
+"government",
+"consumers",
+"customers",
+"producers"
+],
+"answer": 4
+},
+{
+"qid": "630680256360",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "Which of the following refers to a planned system of collecting, storing and disseminating data in the form of information needed to carry out the functions of management?",
+"options": [
+"Computer Networks",
+"Software Engineering",
+"Management Information System",
+"Database Management System"
+],
+"answer": 3
+},
+{
+"qid": "630680256340",
+"paper": "2023_06_25_s1",
+"section": "Computer Science",
+"question": "In a Client/Server network, the central controller is known as a ______, while all other computers in the network are called ______.",
+"options": [
+"peer; servers",
+"client; servers",
+"server; clients",
+"server; peers"
+],
+"answer": 3
+},
+{
+"qid": "630680256637",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "______ is the standard that defines how web servers and application programs communicate.",
+"options": [
+"JDBC",
+"ODBC",
+"CGI",
+"HTTP"
+],
+"answer": 4
+},
+{
+"qid": "630680256642",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "Within software engineering, which prescriptive model is INCOMPATIBLE with circumstances in which the requirements alter throughout development?",
+"options": [
+"Linear models",
+"Evolutionary models",
+"Agile models",
+"Incremental models"
+],
+"answer": 1
+},
+{
+"qid": "630680256612",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "Which of the following is a translator that translates source code into object target code?",
+"options": [
+"Language processor",
+"Interpreter",
+"Compiler",
+"Assembler"
+],
+"answer": 3
+},
+{
+"qid": "630680256626",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "Which architecture is the most energy efficient?",
+"options": [
+"CISC",
+"IANA",
+"ISA",
+"RISC"
+],
+"answer": 4
+},
+{
+"qid": "630680256661",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "What is the best case and worst-case complexity of selection sort?",
+"options": [
+"O(nlogn)",
+"O(n)",
+"O(n^2)",
+"O(logn)"
+],
+"answer": 3
+},
+{
+"qid": "630680256597",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "The series ∑ 1/∛(n^2) is:",
+"options": [
+"None of the given options",
+"divergent",
+"oscillatory convergent",
+"convergent"
+],
+"answer": 4
+},
+{
+"qid": "630680256632",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "Which of the following are networking transport layer protocols?",
+"options": [
+"FTP and DNS",
+"Telnet and ICMP",
+"TCP, UDP and SCTP",
+"ARP and RARP"
+],
+"answer": 3
+},
+{
+"qid": "630680256643",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "______ activities are at the very core of project completion work tasks, whereas ______ activities are not mandatory.",
+"options": [
+"Requirements, arbitrary",
+"Framework, umbrella",
+"Functional, non-functional",
+"Non-functional, functional"
+],
+"answer": 3
+},
+{
+"qid": "630680256602",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "The most common type of business organisation is:",
+"options": [
+"partnership",
+"sole proprietorship",
+"NGO",
+"corporation"
+],
+"answer": 2
+},
+{
+"qid": "630680256622",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "Which of the following is used to define the structure of a relation as well as delete relations and relate schemas?",
+"options": [
+"Integrity constraint",
+"View",
+"DML (Data Manipulation Language)",
+"DDL (Data Definition Language)"
+],
+"answer": 4
+},
+{
+"qid": "630680256676",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "______ reads XML documents and provides access to their content and structure.",
+"options": [
+"XML schema",
+"XML pre-processor",
+"XML processor",
+"XML codes"
+],
+"answer": 3
+},
+{
+"qid": "630680256609",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "What are the data structures categorised as a linear list?",
+"options": [
+"Binary tree",
+"Graphs",
+"Circular queue",
+"Array"
+],
+"answer": 4
+},
+{
+"qid": "630680256667",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "BTS stands for ________.",
+"options": [
+"Base Transfer Station",
+"Base Transceiver Station",
+"Basic Transfer System",
+"Basic Transceiver Station"
+],
+"answer": 2
+},
+{
+"qid": "630680256616",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "What is the lifetime of an atom's ground state in Stimulated Absorption?",
+"options": [
+"2 minutes",
+"11 hours",
+"5 seconds",
+"Infinity"
+],
+"answer": 4
+},
+{
+"qid": "630680256620",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "How many INVALID input combinations occur at the input of a BCD adder?",
+"options": [
+"58",
+"56",
+"156",
+"256"
+],
+"answer": 3
+},
+{
+"qid": "630680256675",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "What will the output of the following code snippet be?\n<script>\ndocument.write (\"Hello\")\ndocument.write (\"\nIndia\")\n</script>",
+"options": [
+"Hello",
+"HelloIndia",
+"India",
+"Hello India"
+],
+"answer": 4
+},
+{
+"qid": "630680256621",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "What makes a database a relational database?",
+"options": [
+"Tables",
+"Field",
+"Records",
+"Tuple"
+],
+"answer": 1
+},
+{
+"qid": "630680256651",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "______ is also referred to as the Sales-Force-Composite method or the Collective Opinion Method.",
+"options": [
+"Consumer interview method",
+"Substitute approach",
+"Evolutionary approach",
+"Opinion survey"
+],
+"answer": 4
+},
+{
+"qid": "630680256664",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "In a management information system, what is/are the formal social unit that is/are devoted to attaining specified goals?",
+"options": [
+"Organisation, management and marketing",
+"Organisation",
+"Management",
+"Marketing"
+],
+"answer": 2
+},
+{
+"qid": "630680256673",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "In a global system of world-wide computer networks, interconnection is essential for which purpose of computations?",
+"options": [
+"Market data analysis",
+"Messages for communication",
+"Sharing files of different types",
+"Data for transactions"
+],
+"answer": 2
+},
+{
+"qid": "630680256611",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "Memory that does not change its contents due to external causes is referred to as:",
+"options": [
+"dynamic memory",
+"fixed memory",
+"static memory",
+"temporary memory"
+],
+"answer": 3
+},
+{
+"qid": "630680256656",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "In which of the following directories are the configuration files found?",
+"options": [
+"/dev",
+"/root",
+"/etc/",
+"/bin"
+],
+"answer": 3
+},
+{
+"qid": "630680256659",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "The ______ E-commerce segment(s) is/are represented by OLX.",
+"options": [
+"C2C, B2C and B2B",
+"B2B",
+"C2C",
+"B2C"
+],
+"answer": 3
+},
+{
+"qid": "630680256683",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "Interpolation is carried out using data from:",
+"options": [
+"regression analysis",
+"curve fitting and regression analysis",
+"linear interpolation",
+"curve fitting and linear analysis"
+],
+"answer": 4
+},
+{
+"qid": "630680256599",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "Who invented the probability definition?",
+"options": [
+"Simon Laplace",
+"Euclid",
+"None of the given answer",
+"Einstein"
+],
+"answer": 1
+},
+{
+"qid": "630680256639",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "Which of the following accounts is/are prepared for net profit?",
+"options": [
+"Profit and loss account",
+"Trading account, profit and loss account and balance sheet",
+"Trading account",
+"Balance sheet"
+],
+"answer": 1
+},
+{
+"qid": "630680256636",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "Communication between an application program and a database server occur via:",
+"options": [
+"ODBC OR JDBC",
+"API",
+"web server",
+"HTTP"
+],
+"answer": 1
+},
+{
+"qid": "630680256662",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "Which of the following algorithm design techniques is used in the merge sort algorithm * Mcq?",
+"options": [
+"Greedy algorithm",
+"Backtracking",
+"Divide and conquer",
+"Divide and conquer, backtracking and greedy algorithm"
+],
+"answer": 3
+},
+{
+"qid": "630680256600",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "Identify the generic probability density function that corresponds with discrete random variables.",
+"options": [
+"Cumulative distribution",
+"Gaussian distribution",
+"Poisson distribution",
+"Rayleigh distribution"
+],
+"answer": 3
+},
+{
+"qid": "630680256648",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "______ and ______ are used in conjunction for making a complete process subroutine.",
+"options": [
+"fork(), join()",
+"fork(), sleep()",
+"sleep(), join()",
+"join(), fork()"
+],
+"answer": 1
+},
+{
+"qid": "630680256625",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "Which of the following is NOT a network layer function?",
+"options": [
+"Error control and flow control",
+"Intra-routing",
+"Routing",
+"Congestion control"
+],
+"answer": 1
+},
+{
+"qid": "630680256604",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "A public company must have at least ______ members.",
+"options": [
+"14",
+"7",
+"2",
+"3"
+],
+"answer": 2
+},
+{
+"qid": "630680256624",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "Which of the following 4-byte IP addresses are used for internet protocol layer?",
+"options": [
+"Network address and port address",
+"Network address and MAC address",
+"Network address and host address",
+"Host address and port address"
+],
+"answer": 3
+},
+{
+"qid": "630680256628",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "A computer bus line is made up of which of the following components?",
+"options": [
+"Registers",
+"Set of parallel lines",
+"Accumulators",
+"RAM and ROM"
+],
+"answer": 2
+},
+{
+"qid": "630680256603",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "Which of the following business structures has limited liability to its members?",
+"options": [
+"Partnership",
+"Cooperative society",
+"Company",
+"Sole proprietorship"
+],
+"answer": 3
+},
+{
+"qid": "630680256645",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "Identify the descending order of strict access protection.",
+"options": [
+"Public, protected, private, package",
+"Private, protected, package, public",
+"Public, private, protected, package",
+"Private, package, protected, public"
+],
+"answer": 2
+},
+{
+"qid": "630680256650",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "Which method is used for demand forecasting of new products?",
+"options": [
+"Evolutionary approach, opinion polling approach and vicarious approach",
+"Opinion polling approach",
+"Evolutionary approach",
+"Vicarious approach"
+],
+"answer": 1
+},
+{
+"qid": "630680256654",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "Which command is used to remove a directory in Linux?",
+"options": [
+"Rm",
+"Delete",
+"Erase",
+"Rm, Delete and Erase"
+],
+"answer": 1
+},
+{
+"qid": "630680256663",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "What is the average case time complexity of merge sort?",
+"options": [
+"O(n log n)",
+"O(n)",
+"O(1)",
+"O(n^2 log n)"
+],
+"answer": 1
+},
+{
+"qid": "630680256679",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "The construction of computer-generated simulations that simulate real-world activities using interactive graphics software and hardware is called:",
+"options": [
+"virtual reality systems",
+"hybrid systems",
+"genetic algorithms",
+"fuzzy neural networks"
+],
+"answer": 1
+},
+{
+"qid": "630680256638",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "What is a long-term asset in accounting?",
+"options": [
+"Intangible assets",
+"Current liabilities",
+"Fixed liabilities",
+"Fixed assets"
+],
+"answer": 4
+},
+{
+"qid": "630680256641",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "What feature of OOP allows an instance of a class to take on many forms?",
+"options": [
+"Operator overriding",
+"Multiple inheritance",
+"Nested class",
+"Operator overloading"
+],
+"answer": 4
+},
+{
+"qid": "630680256634",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "What is an endpoint of an inter-process communication?",
+"options": [
+"Tunnel",
+"Port",
+"Socket",
+"Pipe"
+],
+"answer": 3
+},
+{
+"qid": "630680256627",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "What is the size of the computer accumulator register?",
+"options": [
+"8 bytes",
+"16 bytes",
+"8 KB",
+"4 bytes"
+],
+"answer": 4
+},
+{
+"qid": "630680256613",
+"paper": "2023_06_25_s2",
+"section": "Computer Science",
+"question": "Which of the following computer programs provides instructions for computer operations?",
+"options": [
+"System software",
+"System utility",
+"Magnetic card",
+"System application"
+],
+"answer": 1
+},
+{
+"qid": "630680598502",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "What is the advantage of exploratory Data Analysis in Big Data and Analytics?",
+"options": [
+"Less realistic statements of accuracy",
+"Flexible ways to generate hypotheses",
+"Usually does not provide definitive answers",
+"More realistic statements of accuracy"
+],
+"answer": 2
+},
+{
+"qid": "630680598497",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "Which of the following data function in SQL returns the current database system timestamp as a 'datetime' value without the database time zone offset?",
+"options": [
+"GETTIME",
+"GETDATE",
+"CASTDATE",
+"CASTTIME"
+],
+"answer": 2
+},
+{
+"qid": "630680598445",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "Which of the following command is used in the communication system call of an operating system?",
+"options": [
+"Request device, release device",
+"Attach or detach remote devices",
+"Allocate and free memory",
+"Read, write, reposition"
+],
+"answer": 2
+},
+{
+"qid": "630680598503",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "In AI biases many AI models are ______.\nI. deepfakes\nII. Black boxes\nIII. K-anonymity",
+"options": [
+"Only II",
+"Only I",
+"I, II and III",
+"Only I and III"
+],
+"answer": 1
+},
+{
+"qid": "630680598513",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "In cyber security, what remedy does the law provide?",
+"options": [
+"Apology",
+"Imprisonment",
+"Technologies",
+"Computer networks"
+],
+"answer": 2
+},
+{
+"qid": "630680598463",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "Which of the following type conversion function in the Python language, is used to convert a character into an integer?",
+"options": [
+"tuple ()",
+"dict ()",
+"set ()",
+"ord ()"
+],
+"answer": 4
+},
+{
+"qid": "630680598465",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "In Python language, which of the following is correct for 'strip ( )' function?",
+"options": [
+"It returns the string by removing trailing and leading white spaces",
+"It returns a list from the string depending upon the delimiter that we specify",
+"It returns the power of values passed",
+"It returns the string with the first character in upper case and lowering the case for rest of the string"
+],
+"answer": 1
+},
+{
+"qid": "630680598469",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "In the data link layer, _____ is based on automatic repeat request, which is the retransmission of data.",
+"options": [
+"Framing",
+"Physical addressing",
+"Error control",
+"Flow control"
+],
+"answer": 3
+},
+{
+"qid": "630680598479",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "Which of the following part of the CPU has the necessary electronic circuitry to perform binary addition and shift operations in computer system?",
+"options": [
+"Arithmetic Logic Unit (ALU)",
+"Memory Buses",
+"Registers",
+"Control Unit"
+],
+"answer": 1
+},
+{
+"qid": "630680598527",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "Choose the correct output for the following Python code.\ntuple_var_mix = (\"Example\", 1, \"Tuple\")\nprint (tuple_var_mix)",
+"options": [
+"{Example, 1, Tuple}",
+"(Example, 1, tuple)",
+"('Example', 1, 'Tuple')",
+"[Example, 1, 'Tuple']"
+],
+"answer": 3
+},
+{
+"qid": "630680598457",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "Which of the following statement is correct for a 'Volume Control block' in File-System Implementation?",
+"options": [
+"It is used to organize the files",
+"It has a unique identifier number to allow association with a directory entry",
+"It contains the number of block in the partition",
+"It can contain information needed by the system to boot an operating system from that volume"
+],
+"answer": 3
+},
+{
+"qid": "630680598449",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "Which of the following is characteristic of a RISC (Reduced Instruction Set Computer) processor?",
+"options": [
+"Microprogrammed control",
+"Instruction that manipulate operands in memory",
+"Fixed-length, easily decoded instruction format",
+"A large number (typically from 100 to 250) of instructions"
+],
+"answer": 3
+},
+{
+"qid": "630680598451",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "In which of the following type of addressing mode, the instruction specifies a register in the CPU whose contents give the address of the operand in memory?",
+"options": [
+"Register indirect mode",
+"Indirect address mode",
+"Implied mode",
+"Immediate mode"
+],
+"answer": 1
+},
+{
+"qid": "630680598448",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "Which of the following statement(s) is/are correct regarding Assembly language?\nI. An assembler converts (or assembles) the symbolic program of an Assembly language into its equivalent machine program.\nII. A program written in an assembly language is machine dependent.",
+"options": [
+"Both I and II",
+"Only II",
+"Only I",
+"Neither I nor II"
+],
+"answer": 1
+},
+{
+"qid": "630680598515",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "In context of the Digital Personal Data Protection Act, 2023, which of the given following is correct?",
+"options": [
+"“Child” means an individual who has not completed the age of eighteen years",
+"“Digital personal data” means personal data in physical form",
+"“Chairperson” does not mean the chairperson of the board",
+"“Data” means representation of facts only"
+],
+"answer": 1
+},
+{
+"qid": "630680598446",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "In CPU, which of the following type of register is required by the control unit and contains the instruction currently being executed?",
+"options": [
+"Instruction register",
+"Accumulator",
+"Program register",
+"Memory data register"
+],
+"answer": 1
+},
+{
+"qid": "630680598481",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "Which of the following part of operating system allocates the CPU to next scheduled process in the system?",
+"options": [
+"File manager",
+"Dispatcher",
+"Scheduler",
+"Input/output handler"
+],
+"answer": 2
+},
+{
+"qid": "630680598474",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "Which of the following statement is correct regarding point-to-point connection in the data communication?\nI. It provides a dedicated link between two devices.\nII. It is a timeshared connection.",
+"options": [
+"Only II",
+"Both I and II",
+"Neither I nor II",
+"Only I"
+],
+"answer": 4
+},
+{
+"qid": "630680598492",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "Which of the following normal form of normalization in relational model, disallows relations within relations or relations as attribute values within tuples?",
+"options": [
+"Fourth",
+"First",
+"Second",
+"Third"
+],
+"answer": 2
+},
+{
+"qid": "630680598510",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "______ enables the creator owner to earn recognition or financial benefit by using their creation or invention.",
+"options": [
+"Patent",
+"Copyright",
+"Intellectual property right",
+"Data protection"
+],
+"answer": 2
+},
+{
+"qid": "630680598520",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "______ is a two-dimensional labelled data structure with columns of potentially different type, in data handling with pandas.",
+"options": [
+"Series",
+"Missing data",
+"Iteration",
+"Data frames"
+],
+"answer": 4
+},
+{
+"qid": "630680598501",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "From the challenges given below, which of the challenge does IoT adoption include?",
+"options": [
+"Deepfake",
+"Black box",
+"Security",
+"Cloud storage"
+],
+"answer": 3
+},
+{
+"qid": "630680598517",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "Irreparable computer and other electronic goods are known as ______ in tech world.",
+"options": [
+"Man made waste",
+"Natural waste",
+"Waste",
+"Electronic waste"
+],
+"answer": 4
+},
+{
+"qid": "630680598516",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "The E-waste (management) rules 2016 of India, recognizes two broad categories: IT and telecommunication equipment and consumer electrical and electronics including which of the following material?\nI. Fluorescent\nII. Mercury",
+"options": [
+"Only I",
+"Only II",
+"Both I and II",
+"Neither I nor II"
+],
+"answer": 3
+},
+{
+"qid": "630680598523",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "If you encounter an import Error, what does it mean?\nI. Python could find pandas in list of available libraries\nII. Python couldn't find python in list of available libraries\nIII. Python couldn't find Pandas in list of available libraries",
+"options": [
+"Only III",
+"I, II and III",
+"Only I",
+"Only I and III"
+],
+"answer": 1
+},
+{
+"qid": "630680598461",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "Which of the following is correct for Identifiers name used in Python language?",
+"options": [
+"An identifier can have underscore (_) symbol",
+"We must use keywords as identifier",
+"There is restriction the length of an identifier",
+"An identifier must start with a digit"
+],
+"answer": 1
+},
+{
+"qid": "630680598512",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "In digital realm, which refers to the legal rights to protect invention or creation in intellectual property, are given to whom?",
+"options": [
+"Employee",
+"Seller",
+"Creator/invertor",
+"Buyers"
+],
+"answer": 3
+},
+{
+"qid": "630680598522",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "Which operation is provided in Pandas, when multiple tables can be concatenated both column wise and row wise as database?",
+"options": [
+"SUM",
+"MERGE",
+"GROUP BY",
+"SELECT"
+],
+"answer": 2
+},
+{
+"qid": "630680598519",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "In E-waste management, from which factors, there comes the exposure variability in electronic waste?",
+"options": [
+"Type of E-waste",
+"Quantity of the Pollutants in air",
+"Management processes of the air pollution",
+"Medical waste"
+],
+"answer": 1
+},
+{
+"qid": "630680598498",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "Which of the following maths function in SQL returns the smallest integer greater than, or equal to, the specified numeric expression?",
+"options": [
+"ROUND",
+"CEILING",
+"ABS",
+"FLOOR"
+],
+"answer": 2
+},
+{
+"qid": "630680598526",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "String is a collection of one or more character which consists of ______ in programming language.\nI. Letters\nII. Numbers\nIII. Symbols",
+"options": [
+"I, II and III",
+"Only I",
+"Only I and III",
+"Only II"
+],
+"answer": 1
+},
+{
+"qid": "630680598506",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "Which of the following is commonly used in UNICODE encoding schemes and number system in computer science?",
+"options": [
+"UTF-17",
+"UTF-61",
+"UTF-8",
+"UTF-35"
+],
+"answer": 3
+},
+{
+"qid": "630680598444",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "Which of the following phase of the compiler, gathers type information and saves it in either the syntax tree or the symbol table, for subsequent use during intermediate code generation?",
+"options": [
+"Semantic Analyzer",
+"Code Analyzer",
+"Syntax Analyzer",
+"Lexical Analyzer"
+],
+"answer": 1
+},
+{
+"qid": "630680598489",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "Which of the following operation includes all tuples that are in R-set but not in S-set?",
+"options": [
+"R – S",
+"R ∩ S",
+"R ∪ S",
+"R × S"
+],
+"answer": 1
+},
+{
+"qid": "630680598505",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "______ has been developed to incorporate all the character of every written language of the world. It provides a unique number for every character, irrespective of device [server, desktop, mob], OS [linux, win] or software application",
+"options": [
+"UNICODE",
+"Binary Code",
+"ISCII",
+"ASCII"
+],
+"answer": 1
+},
+{
+"qid": "630680598475",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "In Database Management System (DBMS), which of the following term defines a collection of entities that have the same attributes in the database?",
+"options": [
+"Entity type",
+"Value set",
+"Entity set",
+"Value type"
+],
+"answer": 1
+},
+{
+"qid": "630680598454",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "Which of the following statement(s) is/are correct for context switching in Operating System?\nI. When a context switch occurs, the kernel saves the context of the old process in its PCB (Process Control Block).\nII. Context-Switch time is pure overhead, because the system does no useful work while switching.",
+"options": [
+"Neither I nor II",
+"Only I",
+"Only II",
+"Both I and II"
+],
+"answer": 4
+},
+{
+"qid": "630680598477",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "Which of the following term of ER model (Entity – Relationship) is corresponding to the foreign key (or relationship relation) in the relational model of database?",
+"options": [
+"Composite attribute",
+"Entity type",
+"1 : 1 (one to one) or 1 : N (one to many) relationship type",
+"M : N (many to many) relationship type"
+],
+"answer": 3
+},
+{
+"qid": "630680598453",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "Match the following Process states of Operating System with their definitions.\nState | Definition\nI. New | 1. The process is waiting to be assigned to a processor\nII. Running | 2. Instructions are being executed\nIII. Ready | 3. The process is being created",
+"options": [
+"I-3, II-1, III-2",
+"I-1, II-3, III-2",
+"I-1, II-2, III-3",
+"I-3, II-2, III-1"
+],
+"answer": 4
+},
+{
+"qid": "630680598471",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "Which of the following statement is correct regarding unguided media (wireless)?\nI. Unguided media transport electromagnetic waves without using a physical conductor.\nII. Unguided signals can travel from the source to destination in ground propagation way.",
+"options": [
+"Only II",
+"Both I and II",
+"Only I",
+"Neither I nor II"
+],
+"answer": 2
+},
+{
+"qid": "630680598472",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "In periodic analog signals, which of the following is NOT a parameter to describe a sine wave in data communication?",
+"options": [
+"Wavelength",
+"Phase",
+"Frequency",
+"Peak amplitude"
+],
+"answer": 1
+},
+{
+"qid": "630680598478",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "In SQL, which of the following is correct command for schema evolution, if the RESTRICT option is chosen than the schema is dropped only if schema has no element in it?",
+"options": [
+"DELETE",
+"UPDATE",
+"ALTER",
+"DROP"
+],
+"answer": 4
+},
+{
+"qid": "630680598509",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "Unicode in the programming language can be represented using which of the bit format standards in computer science?",
+"options": [
+"8-bit",
+"17-bit",
+"65-bit",
+"9-bit"
+],
+"answer": 1
+},
+{
+"qid": "630680598460",
+"paper": "2024_02_07_s2",
+"section": "Computer Science",
+"question": "Which of the following system call include 'wait for time' operation command in Operating System?",
+"options": [
+"Process Control",
+"Device Management",
+"File Management",
+"Communications"
+],
+"answer": 1
+}
+]

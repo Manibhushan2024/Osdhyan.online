@@ -1,0 +1,4497 @@
+[
+ {
+  "chapter_key": "english",
+  "subtopic": "Tenses",
+  "difficulty": "easy",
+  "question_en": "She ______ in Delhi since 2015.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "is living",
+    "hi": null
+   },
+   {
+    "en": "lived",
+    "hi": null
+   },
+   {
+    "en": "was living",
+    "hi": null
+   },
+   {
+    "en": "has been living",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "“Since 2015” marks a period continuing up to now, so the present perfect continuous (has been living) is used. Simple past “lived” would mean she no longer lives there.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Tenses",
+  "difficulty": "medium",
+  "question_en": "By the time the police arrived, the thieves ______.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "had escaped",
+    "hi": null
+   },
+   {
+    "en": "have escaped",
+    "hi": null
+   },
+   {
+    "en": "would escape",
+    "hi": null
+   },
+   {
+    "en": "are escaping",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Of two past actions, the earlier one takes the past perfect (had + V3). Escaping happened before the police arrived.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Tenses",
+  "difficulty": "medium",
+  "question_en": "I ______ the report by tomorrow evening.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "will have finished",
+    "hi": null
+   },
+   {
+    "en": "would finish",
+    "hi": null
+   },
+   {
+    "en": "have finished",
+    "hi": null
+   },
+   {
+    "en": "had finished",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "“By + future time” shows completion before a future moment, which needs the future perfect (will have + V3).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Tenses",
+  "difficulty": "easy",
+  "question_en": "Look! The children ______ in the garden.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "play",
+    "hi": null
+   },
+   {
+    "en": "played",
+    "hi": null
+   },
+   {
+    "en": "have played",
+    "hi": null
+   },
+   {
+    "en": "are playing",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "“Look!” signals an action happening at this moment, so the present continuous is required.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Tenses",
+  "difficulty": "medium",
+  "question_en": "If I ______ you, I would accept the offer.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "were",
+    "hi": null
+   },
+   {
+    "en": "am",
+    "hi": null
+   },
+   {
+    "en": "was",
+    "hi": null
+   },
+   {
+    "en": "will be",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "In an unreal (second) conditional, the if-clause takes the subjunctive “were” for all persons: If I were you, ... would.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Tenses",
+  "difficulty": "easy",
+  "question_en": "The train ______ before we reached the station.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "has left",
+    "hi": null
+   },
+   {
+    "en": "leaves",
+    "hi": null
+   },
+   {
+    "en": "was leaving",
+    "hi": null
+   },
+   {
+    "en": "had left",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The train’s departure happened earlier than our arrival (both in the past), so the past perfect is used for the earlier action.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Tenses",
+  "difficulty": "hard",
+  "question_en": "The teacher told the class that the earth ______ round the sun.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "moves",
+    "hi": null
+   },
+   {
+    "en": "moved",
+    "hi": null
+   },
+   {
+    "en": "had moved",
+    "hi": null
+   },
+   {
+    "en": "was moving",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A universal or scientific truth stays in the simple present even after a past-tense reporting verb.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Tenses",
+  "difficulty": "hard",
+  "question_en": "Hardly ______ the room when the phone rang.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "she had entered",
+    "hi": null
+   },
+   {
+    "en": "did she enter",
+    "hi": null
+   },
+   {
+    "en": "she entered",
+    "hi": null
+   },
+   {
+    "en": "had she entered",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "“Hardly/Scarcely/No sooner” is followed by the past perfect, with auxiliary–subject inversion: Hardly had she entered ... when ...",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Tenses",
+  "difficulty": "easy",
+  "question_en": "I ______ this film three times.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "saw",
+    "hi": null
+   },
+   {
+    "en": "am seeing",
+    "hi": null
+   },
+   {
+    "en": "have seen",
+    "hi": null
+   },
+   {
+    "en": "see",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Repeated experience up to the present with no fixed past time takes the present perfect (have seen).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Tenses",
+  "difficulty": "medium",
+  "question_en": "How long ______ you ______ for the bus?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "did; wait",
+    "hi": null
+   },
+   {
+    "en": "are; waiting",
+    "hi": null
+   },
+   {
+    "en": "do; wait",
+    "hi": null
+   },
+   {
+    "en": "have; been waiting",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "“How long” with an action that began in the past and continues now takes the present perfect continuous: have you been waiting.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Tenses",
+  "difficulty": "hard",
+  "question_en": "This time next week, we ______ on the beach in Goa.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "will be lying",
+    "hi": null
+   },
+   {
+    "en": "will lie",
+    "hi": null
+   },
+   {
+    "en": "will have lain",
+    "hi": null
+   },
+   {
+    "en": "would lie",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "“This time next week” refers to an action in progress at a specific future moment, so the future continuous (will be lying) is used.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Articles",
+  "difficulty": "easy",
+  "question_en": "He is ______ honest man.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "a",
+    "hi": null
+   },
+   {
+    "en": "the",
+    "hi": null
+   },
+   {
+    "en": "an",
+    "hi": null
+   },
+   {
+    "en": "no article",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "“Honest” begins with a silent h, so it has a vowel sound and takes “an”.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Articles",
+  "difficulty": "easy",
+  "question_en": "______ Ganga is the holiest river of India.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "The",
+    "hi": null
+   },
+   {
+    "en": "A",
+    "hi": null
+   },
+   {
+    "en": "An",
+    "hi": null
+   },
+   {
+    "en": "No article",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Names of rivers take the definite article “the”.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Articles",
+  "difficulty": "medium",
+  "question_en": "She plays ______ guitar very well.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "a",
+    "hi": null
+   },
+   {
+    "en": "an",
+    "hi": null
+   },
+   {
+    "en": "no article",
+    "hi": null
+   },
+   {
+    "en": "the",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "“The” is used before the names of musical instruments when we speak of playing them: play the guitar.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Articles",
+  "difficulty": "medium",
+  "question_en": "My brother is studying at ______ university in Pune.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "a",
+    "hi": null
+   },
+   {
+    "en": "an",
+    "hi": null
+   },
+   {
+    "en": "the",
+    "hi": null
+   },
+   {
+    "en": "no article",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "“University” begins with the consonant sound /yu/, so the article is “a”, not “an”.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Articles",
+  "difficulty": "medium",
+  "question_en": "She has ______ MBA degree from a reputed institute.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "a",
+    "hi": null
+   },
+   {
+    "en": "the",
+    "hi": null
+   },
+   {
+    "en": "no article",
+    "hi": null
+   },
+   {
+    "en": "an",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "“MBA” is pronounced “em-bee-ay”, beginning with a vowel sound, so “an” is used.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Articles",
+  "difficulty": "medium",
+  "question_en": "Rohan goes to ______ school by bus every day.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "a",
+    "hi": null
+   },
+   {
+    "en": "no article",
+    "hi": null
+   },
+   {
+    "en": "an",
+    "hi": null
+   },
+   {
+    "en": "the",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "When a place is visited for its primary purpose (school for studying), no article is used: goes to school.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Articles",
+  "difficulty": "easy",
+  "question_en": "What ______ pity that he failed again!",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "the",
+    "hi": null
+   },
+   {
+    "en": "an",
+    "hi": null
+   },
+   {
+    "en": "a",
+    "hi": null
+   },
+   {
+    "en": "no article",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "In exclamations with a singular countable noun, “What a/an + noun” is used: What a pity!",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Articles",
+  "difficulty": "hard",
+  "question_en": "She is ______ European who has settled in Chennai.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "an",
+    "hi": null
+   },
+   {
+    "en": "the",
+    "hi": null
+   },
+   {
+    "en": "a",
+    "hi": null
+   },
+   {
+    "en": "no article",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "“European” starts with the consonant sound /yoo/, so “a” is correct despite the initial vowel letter.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Prepositions",
+  "difficulty": "easy",
+  "question_en": "She is very good ______ mathematics.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "at",
+    "hi": null
+   },
+   {
+    "en": "in",
+    "hi": null
+   },
+   {
+    "en": "on",
+    "hi": null
+   },
+   {
+    "en": "with",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The fixed phrase is “good at” a subject or skill.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Prepositions",
+  "difficulty": "easy",
+  "question_en": "The teacher congratulated him ______ his success.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "for",
+    "hi": null
+   },
+   {
+    "en": "at",
+    "hi": null
+   },
+   {
+    "en": "by",
+    "hi": null
+   },
+   {
+    "en": "on",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The verb “congratulate” takes “on” with the achievement: congratulated him on his success.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Prepositions",
+  "difficulty": "medium",
+  "question_en": "She is married ______ a doctor.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "with",
+    "hi": null
+   },
+   {
+    "en": "to",
+    "hi": null
+   },
+   {
+    "en": "by",
+    "hi": null
+   },
+   {
+    "en": "from",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "“Married to” a person is the correct collocation.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Prepositions",
+  "difficulty": "medium",
+  "question_en": "She is suffering ______ high fever.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "from",
+    "hi": null
+   },
+   {
+    "en": "with",
+    "hi": null
+   },
+   {
+    "en": "by",
+    "hi": null
+   },
+   {
+    "en": "of",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "We suffer from a disease or illness, so “suffering from” is used.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Prepositions",
+  "difficulty": "medium",
+  "question_en": "The Principal was annoyed ______ the students for coming late.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "on",
+    "hi": null
+   },
+   {
+    "en": "with",
+    "hi": null
+   },
+   {
+    "en": "to",
+    "hi": null
+   },
+   {
+    "en": "from",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "“Annoyed with” is used for a person (annoyed at/about a thing).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Prepositions",
+  "difficulty": "medium",
+  "question_en": "Divide the sweets ______ the three children equally.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "between",
+    "hi": null
+   },
+   {
+    "en": "in",
+    "hi": null
+   },
+   {
+    "en": "into",
+    "hi": null
+   },
+   {
+    "en": "among",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "“Among” is used for more than two persons or things; “between” is for two.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Prepositions",
+  "difficulty": "medium",
+  "question_en": "Aman is senior ______ me by two years.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "than",
+    "hi": null
+   },
+   {
+    "en": "from",
+    "hi": null
+   },
+   {
+    "en": "to",
+    "hi": null
+   },
+   {
+    "en": "over",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Words such as senior, junior, superior, inferior, prefer take “to”, not “than”.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Prepositions",
+  "difficulty": "medium",
+  "question_en": "The old man was accused ______ theft.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "for",
+    "hi": null
+   },
+   {
+    "en": "of",
+    "hi": null
+   },
+   {
+    "en": "with",
+    "hi": null
+   },
+   {
+    "en": "about",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "“Accuse” is followed by “of”: accused of theft.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Prepositions",
+  "difficulty": "easy",
+  "question_en": "I prefer tea ______ coffee.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "to",
+    "hi": null
+   },
+   {
+    "en": "than",
+    "hi": null
+   },
+   {
+    "en": "over",
+    "hi": null
+   },
+   {
+    "en": "from",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "“Prefer” is always followed by “to”, never “than”.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Prepositions",
+  "difficulty": "hard",
+  "question_en": "Beware ______ pickpockets in crowded places.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "from",
+    "hi": null
+   },
+   {
+    "en": "against",
+    "hi": null
+   },
+   {
+    "en": "of",
+    "hi": null
+   },
+   {
+    "en": "at",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The verb “beware” takes “of”: Beware of pickpockets.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Subject–verb agreement",
+  "difficulty": "medium",
+  "question_en": "Neither the manager nor the employees ______ present in the meeting.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "was",
+    "hi": null
+   },
+   {
+    "en": "is",
+    "hi": null
+   },
+   {
+    "en": "has been",
+    "hi": null
+   },
+   {
+    "en": "were",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "In “neither...nor”, the verb agrees with the noun nearest to it. “Employees” is plural, so “were”.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Subject–verb agreement",
+  "difficulty": "easy",
+  "question_en": "Each of the boys ______ given a prize.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "were",
+    "hi": null
+   },
+   {
+    "en": "was",
+    "hi": null
+   },
+   {
+    "en": "are",
+    "hi": null
+   },
+   {
+    "en": "have been",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "“Each” is singular and takes a singular verb, even when followed by “of + plural noun”.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Subject–verb agreement",
+  "difficulty": "easy",
+  "question_en": "Mathematics ______ my favourite subject.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "is",
+    "hi": null
+   },
+   {
+    "en": "are",
+    "hi": null
+   },
+   {
+    "en": "were",
+    "hi": null
+   },
+   {
+    "en": "have been",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Subjects ending in -ics (mathematics, physics, economics) are treated as singular.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Subject–verb agreement",
+  "difficulty": "medium",
+  "question_en": "The number of applicants ______ increasing every year.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "are",
+    "hi": null
+   },
+   {
+    "en": "were",
+    "hi": null
+   },
+   {
+    "en": "is",
+    "hi": null
+   },
+   {
+    "en": "have been",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "“The number of” is singular (the number is increasing); “a number of” would be plural.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Subject–verb agreement",
+  "difficulty": "medium",
+  "question_en": "Either of the two answers ______ correct.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "are",
+    "hi": null
+   },
+   {
+    "en": "were",
+    "hi": null
+   },
+   {
+    "en": "have been",
+    "hi": null
+   },
+   {
+    "en": "is",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "“Either” means one of the two and is singular, so it takes “is”.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Subject–verb agreement",
+  "difficulty": "hard",
+  "question_en": "Bread and butter ______ my usual breakfast.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "are",
+    "hi": null
+   },
+   {
+    "en": "were",
+    "hi": null
+   },
+   {
+    "en": "is",
+    "hi": null
+   },
+   {
+    "en": "have been",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Two nouns that form one idea (bread and butter, rice and curry) take a singular verb.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Subject–verb agreement",
+  "difficulty": "medium",
+  "question_en": "Ten kilometres ______ a long distance to walk.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "is",
+    "hi": null
+   },
+   {
+    "en": "are",
+    "hi": null
+   },
+   {
+    "en": "were",
+    "hi": null
+   },
+   {
+    "en": "have been",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A plural expression of distance, money, time or weight used as a single unit takes a singular verb.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Subject–verb agreement",
+  "difficulty": "hard",
+  "question_en": "The Principal as well as the teachers ______ invited to the function.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "were",
+    "hi": null
+   },
+   {
+    "en": "was",
+    "hi": null
+   },
+   {
+    "en": "are",
+    "hi": null
+   },
+   {
+    "en": "have been",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "With “as well as”, “along with”, “together with”, the verb agrees with the first subject (Principal – singular).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Subject–verb agreement",
+  "difficulty": "hard",
+  "question_en": "Many a student ______ failed in this test.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "have",
+    "hi": null
+   },
+   {
+    "en": "are",
+    "hi": null
+   },
+   {
+    "en": "were",
+    "hi": null
+   },
+   {
+    "en": "has",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "“Many a” is followed by a singular noun and a singular verb: Many a student has failed.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Subject–verb agreement",
+  "difficulty": "medium",
+  "question_en": "The police ______ investigating the case.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "is",
+    "hi": null
+   },
+   {
+    "en": "are",
+    "hi": null
+   },
+   {
+    "en": "was",
+    "hi": null
+   },
+   {
+    "en": "has been",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "“Police” is a collective noun that is always plural in usage, so it takes a plural verb.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Error spotting",
+  "difficulty": "medium",
+  "question_en": "Identify the segment that contains an error.\nDespite of the heavy rain / the match / was played / as scheduled.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Despite of the heavy rain",
+    "hi": null
+   },
+   {
+    "en": "the match",
+    "hi": null
+   },
+   {
+    "en": "was played",
+    "hi": null
+   },
+   {
+    "en": "as scheduled",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "“Despite” is never followed by “of”. Correct: Despite the heavy rain (or In spite of the heavy rain).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Error spotting",
+  "difficulty": "easy",
+  "question_en": "Identify the segment that contains an error.\nShe told me / that she / didn’t knew / the answer.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "She told me",
+    "hi": null
+   },
+   {
+    "en": "that she",
+    "hi": null
+   },
+   {
+    "en": "didn’t knew",
+    "hi": null
+   },
+   {
+    "en": "the answer",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "After “did/didn’t”, the main verb takes its base form: didn’t know.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Error spotting",
+  "difficulty": "medium",
+  "question_en": "Identify the segment that contains an error.\nThe furniture in the new office / are made / of teak wood / and looks elegant.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "The furniture in the new office",
+    "hi": null
+   },
+   {
+    "en": "are made",
+    "hi": null
+   },
+   {
+    "en": "of teak wood",
+    "hi": null
+   },
+   {
+    "en": "and looks elegant",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "“Furniture” is an uncountable, singular noun, so the verb should be “is made”.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Error spotting",
+  "difficulty": "medium",
+  "question_en": "Identify the segment that contains an error. If there is no error, select option 4.\nHe is taller / than any other boy / in his class.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "He is taller",
+    "hi": null
+   },
+   {
+    "en": "than any other boy",
+    "hi": null
+   },
+   {
+    "en": "in his class",
+    "hi": null
+   },
+   {
+    "en": "No error",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The comparative with “any other + singular noun” is correct, so the sentence has no error.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Error spotting",
+  "difficulty": "easy",
+  "question_en": "Identify the segment that contains an error.\nI have been knowing / him since / we were children / in the same school.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "I have been knowing",
+    "hi": null
+   },
+   {
+    "en": "him since",
+    "hi": null
+   },
+   {
+    "en": "we were children",
+    "hi": null
+   },
+   {
+    "en": "in the same school",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "“Know” is a stative verb and is not used in continuous tenses. Correct: I have known him since ...",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Error spotting",
+  "difficulty": "hard",
+  "question_en": "Identify the segment that contains an error.\nHardly had he reached / the station / than the train / left without him.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Hardly had he reached",
+    "hi": null
+   },
+   {
+    "en": "the station",
+    "hi": null
+   },
+   {
+    "en": "than the train",
+    "hi": null
+   },
+   {
+    "en": "left without him",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "“Hardly” is followed by “when”, not “than” (“No sooner” takes “than”).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Error spotting",
+  "difficulty": "hard",
+  "question_en": "Identify the segment that contains an error.\nRahul is one of the boys / who has / won medals / in the national games.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Rahul is one of the boys",
+    "hi": null
+   },
+   {
+    "en": "who has",
+    "hi": null
+   },
+   {
+    "en": "won medals",
+    "hi": null
+   },
+   {
+    "en": "in the national games",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "In “one of the + plural noun + who”, the relative pronoun refers to the plural noun, so the verb is “have”.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Error spotting",
+  "difficulty": "medium",
+  "question_en": "Identify the segment that contains an error.\nShe gave me / a very good advices / on how to / prepare for the interview.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "She gave me",
+    "hi": null
+   },
+   {
+    "en": "a very good advices",
+    "hi": null
+   },
+   {
+    "en": "on how to",
+    "hi": null
+   },
+   {
+    "en": "prepare for the interview",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "“Advice” is uncountable and has no plural form. Correct: a piece of advice / very good advice.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Error spotting",
+  "difficulty": "medium",
+  "question_en": "Identify the segment that contains an error.\nThe Principal, along with / the teachers, / are planning / a farewell party.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "The Principal, along with",
+    "hi": null
+   },
+   {
+    "en": "the teachers,",
+    "hi": null
+   },
+   {
+    "en": "are planning",
+    "hi": null
+   },
+   {
+    "en": "a farewell party",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The subject “Principal” is singular; “along with” does not make it plural. Use “is planning”.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Error spotting",
+  "difficulty": "medium",
+  "question_en": "Identify the segment that contains an error.\nBetween you and I, / the project / is not likely / to succeed.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Between you and I,",
+    "hi": null
+   },
+   {
+    "en": "the project",
+    "hi": null
+   },
+   {
+    "en": "is not likely",
+    "hi": null
+   },
+   {
+    "en": "to succeed",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A preposition takes the objective case: “Between you and me”.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Error spotting",
+  "difficulty": "easy",
+  "question_en": "Identify the segment that contains an error. If there is no error, select option 4.\nThe book that / I bought yesterday / is very interesting.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "The book that",
+    "hi": null
+   },
+   {
+    "en": "I bought yesterday",
+    "hi": null
+   },
+   {
+    "en": "is very interesting",
+    "hi": null
+   },
+   {
+    "en": "No error",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The sentence is grammatically correct; the relative clause and verb agree properly.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Error spotting",
+  "difficulty": "medium",
+  "question_en": "Identify the segment that contains an error.\nMy uncle / is working / in this company / since 2010.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "My uncle",
+    "hi": null
+   },
+   {
+    "en": "is working",
+    "hi": null
+   },
+   {
+    "en": "in this company",
+    "hi": null
+   },
+   {
+    "en": "since 2010",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "“Since 2010” needs the present perfect continuous: has been working.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Error spotting",
+  "difficulty": "easy",
+  "question_en": "Identify the segment that contains an error.\nThough he was tired, / but he / continued working / on the project.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Though he was tired,",
+    "hi": null
+   },
+   {
+    "en": "but he",
+    "hi": null
+   },
+   {
+    "en": "continued working",
+    "hi": null
+   },
+   {
+    "en": "on the project",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "“Though” and “but” should not be used together in one sentence. Remove “but”.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Error spotting",
+  "difficulty": "medium",
+  "question_en": "Identify the segment that contains an error.\nI prefer / walking than / driving to / the office.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "I prefer",
+    "hi": null
+   },
+   {
+    "en": "walking than",
+    "hi": null
+   },
+   {
+    "en": "driving to",
+    "hi": null
+   },
+   {
+    "en": "the office",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "“Prefer” takes “to”: I prefer walking to driving.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Sentence improvement",
+  "difficulty": "medium",
+  "question_en": "Select the option that best replaces the part in square brackets. If no change is needed, select ‘No improvement’.\nShe [hardly never] visits her native village.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "No improvement",
+    "hi": null
+   },
+   {
+    "en": "hardly not",
+    "hi": null
+   },
+   {
+    "en": "hardly ever",
+    "hi": null
+   },
+   {
+    "en": "not hardly",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "“Hardly” already has a negative sense, so “never” cannot be added. The correct idiom is “hardly ever”.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Sentence improvement",
+  "difficulty": "easy",
+  "question_en": "Select the option that best replaces the part in square brackets. If no change is needed, select ‘No improvement’.\nI [am living] in Jaipur since my childhood.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "No improvement",
+    "hi": null
+   },
+   {
+    "en": "had lived",
+    "hi": null
+   },
+   {
+    "en": "live",
+    "hi": null
+   },
+   {
+    "en": "have been living",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "“Since + point of time” with an action continuing now needs the present perfect continuous: have been living.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Sentence improvement",
+  "difficulty": "medium",
+  "question_en": "Select the option that best replaces the part in square brackets. If no change is needed, select ‘No improvement’.\nThe teacher asked the boy [why was he late].",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "why he was late",
+    "hi": null
+   },
+   {
+    "en": "No improvement",
+    "hi": null
+   },
+   {
+    "en": "why he is late",
+    "hi": null
+   },
+   {
+    "en": "that why was he late",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "In reported questions the word order becomes that of a statement (subject before verb): why he was late.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Sentence improvement",
+  "difficulty": "hard",
+  "question_en": "Select the option that best replaces the part in square brackets. If no change is needed, select ‘No improvement’.\nHe suggested [me to take] a taxi.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "No improvement",
+    "hi": null
+   },
+   {
+    "en": "me for taking",
+    "hi": null
+   },
+   {
+    "en": "that I take",
+    "hi": null
+   },
+   {
+    "en": "me taking",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "“Suggest” is not followed by an object + to-infinitive. It takes a that-clause (that I take / that I should take) or a gerund.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Sentence improvement",
+  "difficulty": "easy",
+  "question_en": "Select the option that best replaces the part in square brackets. If no change is needed, select ‘No improvement’.\nEach of the girls [have] brought her own lunch.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "No improvement",
+    "hi": null
+   },
+   {
+    "en": "has",
+    "hi": null
+   },
+   {
+    "en": "are",
+    "hi": null
+   },
+   {
+    "en": "were",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "“Each” is singular and needs “has”.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Sentence improvement",
+  "difficulty": "easy",
+  "question_en": "Select the option that best replaces the part in square brackets. If no change is needed, select ‘No improvement’.\nThe cost of living [have risen] sharply this year.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "has risen",
+    "hi": null
+   },
+   {
+    "en": "No improvement",
+    "hi": null
+   },
+   {
+    "en": "are rising",
+    "hi": null
+   },
+   {
+    "en": "were risen",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The subject “cost” is singular, so the verb must be “has risen”.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Sentence improvement",
+  "difficulty": "hard",
+  "question_en": "Select the option that best replaces the part in square brackets. If no change is needed, select ‘No improvement’.\nI would have helped you [if you would have asked].",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "No improvement",
+    "hi": null
+   },
+   {
+    "en": "if you will ask",
+    "hi": null
+   },
+   {
+    "en": "if you asked",
+    "hi": null
+   },
+   {
+    "en": "if you had asked",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "In the third conditional, the if-clause uses the past perfect (if + had + V3) and the main clause uses would have + V3.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Sentence improvement",
+  "difficulty": "easy",
+  "question_en": "Select the option that best replaces the part in square brackets. If no change is needed, select ‘No improvement’.\nShe is [more taller] than her sister.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "No improvement",
+    "hi": null
+   },
+   {
+    "en": "most taller",
+    "hi": null
+   },
+   {
+    "en": "taller",
+    "hi": null
+   },
+   {
+    "en": "more tall",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "A one-syllable adjective forms the comparative with -er; “more” must not be added (double comparative).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Sentence improvement",
+  "difficulty": "easy",
+  "question_en": "Select the option that best replaces the part in square brackets. If no change is needed, select ‘No improvement’.\nHe [is knowing] the answer to every question.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "knows",
+    "hi": null
+   },
+   {
+    "en": "No improvement",
+    "hi": null
+   },
+   {
+    "en": "has been knowing",
+    "hi": null
+   },
+   {
+    "en": "was knowing",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "“Know” is a stative verb and is not used in continuous forms; use the simple present.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Sentence improvement",
+  "difficulty": "medium",
+  "question_en": "Select the option that best replaces the part in square brackets. If no change is needed, select ‘No improvement’.\nNeither the teacher [or the students] were aware of the changes.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "No improvement",
+    "hi": null
+   },
+   {
+    "en": "nor the student",
+    "hi": null
+   },
+   {
+    "en": "and the students",
+    "hi": null
+   },
+   {
+    "en": "nor the students",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "“Neither” is paired with “nor”, not “or”.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Synonyms",
+  "difficulty": "easy",
+  "question_en": "Select the word closest in meaning to BENEVOLENT.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "hostile",
+    "hi": null
+   },
+   {
+    "en": "kind",
+    "hi": null
+   },
+   {
+    "en": "careless",
+    "hi": null
+   },
+   {
+    "en": "stingy",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Benevolent means well-meaning and kindly.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Synonyms",
+  "difficulty": "easy",
+  "question_en": "Select the word closest in meaning to CANDID.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "frank",
+    "hi": null
+   },
+   {
+    "en": "secretive",
+    "hi": null
+   },
+   {
+    "en": "polite",
+    "hi": null
+   },
+   {
+    "en": "shy",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Candid means truthful and straightforward, i.e. frank.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Synonyms",
+  "difficulty": "medium",
+  "question_en": "Select the word closest in meaning to OBSOLETE.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "modern",
+    "hi": null
+   },
+   {
+    "en": "valuable",
+    "hi": null
+   },
+   {
+    "en": "fragile",
+    "hi": null
+   },
+   {
+    "en": "outdated",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Obsolete describes something no longer in use or out of date.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Synonyms",
+  "difficulty": "medium",
+  "question_en": "Select the word closest in meaning to METICULOUS.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "careless",
+    "hi": null
+   },
+   {
+    "en": "hasty",
+    "hi": null
+   },
+   {
+    "en": "painstaking",
+    "hi": null
+   },
+   {
+    "en": "lazy",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Meticulous means showing great attention to detail; painstaking is the nearest synonym.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Synonyms",
+  "difficulty": "medium",
+  "question_en": "Select the word closest in meaning to EPHEMERAL.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "eternal",
+    "hi": null
+   },
+   {
+    "en": "short-lived",
+    "hi": null
+   },
+   {
+    "en": "harmful",
+    "hi": null
+   },
+   {
+    "en": "ancient",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Ephemeral things last for a very short time.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Synonyms",
+  "difficulty": "medium",
+  "question_en": "Select the word closest in meaning to ABATE.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "increase",
+    "hi": null
+   },
+   {
+    "en": "begin",
+    "hi": null
+   },
+   {
+    "en": "subside",
+    "hi": null
+   },
+   {
+    "en": "provoke",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "To abate is to become less intense, e.g. the storm abated; subside is closest.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Synonyms",
+  "difficulty": "medium",
+  "question_en": "Select the word closest in meaning to ARDENT.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "indifferent",
+    "hi": null
+   },
+   {
+    "en": "passionate",
+    "hi": null
+   },
+   {
+    "en": "weak",
+    "hi": null
+   },
+   {
+    "en": "calm",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Ardent means enthusiastic and passionate.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Synonyms",
+  "difficulty": "easy",
+  "question_en": "Select the word closest in meaning to FRUGAL.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "wasteful",
+    "hi": null
+   },
+   {
+    "en": "greedy",
+    "hi": null
+   },
+   {
+    "en": "generous",
+    "hi": null
+   },
+   {
+    "en": "thrifty",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Frugal means careful about spending money, i.e. thrifty.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Synonyms",
+  "difficulty": "hard",
+  "question_en": "Select the word closest in meaning to PERNICIOUS.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "harmful",
+    "hi": null
+   },
+   {
+    "en": "delicious",
+    "hi": null
+   },
+   {
+    "en": "trivial",
+    "hi": null
+   },
+   {
+    "en": "helpful",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Pernicious means having a gradual but destructive, harmful effect.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Synonyms",
+  "difficulty": "hard",
+  "question_en": "Select the word closest in meaning to CAPRICIOUS.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "steady",
+    "hi": null
+   },
+   {
+    "en": "cheerful",
+    "hi": null
+   },
+   {
+    "en": "fickle",
+    "hi": null
+   },
+   {
+    "en": "brave",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Capricious means given to sudden changes of mood or behaviour, i.e. fickle.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Synonyms",
+  "difficulty": "hard",
+  "question_en": "Select the word closest in meaning to SAGACIOUS.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "wise",
+    "hi": null
+   },
+   {
+    "en": "foolish",
+    "hi": null
+   },
+   {
+    "en": "greedy",
+    "hi": null
+   },
+   {
+    "en": "timid",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Sagacious means having sound judgement; wise is its synonym.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Synonyms",
+  "difficulty": "medium",
+  "question_en": "Select the word closest in meaning to TENACIOUS.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "flexible",
+    "hi": null
+   },
+   {
+    "en": "gentle",
+    "hi": null
+   },
+   {
+    "en": "fragile",
+    "hi": null
+   },
+   {
+    "en": "persistent",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Tenacious means holding firmly to a purpose; persistent is nearest.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Antonyms",
+  "difficulty": "easy",
+  "question_en": "Select the word opposite in meaning to GENEROUS.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "kind",
+    "hi": null
+   },
+   {
+    "en": "stingy",
+    "hi": null
+   },
+   {
+    "en": "liberal",
+    "hi": null
+   },
+   {
+    "en": "wealthy",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Generous means giving freely; its antonym is stingy (unwilling to give).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Antonyms",
+  "difficulty": "easy",
+  "question_en": "Select the word opposite in meaning to SCARCE.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "rare",
+    "hi": null
+   },
+   {
+    "en": "abundant",
+    "hi": null
+   },
+   {
+    "en": "limited",
+    "hi": null
+   },
+   {
+    "en": "costly",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Scarce means in short supply; abundant means plentiful.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Antonyms",
+  "difficulty": "easy",
+  "question_en": "Select the word opposite in meaning to EXPAND.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "contract",
+    "hi": null
+   },
+   {
+    "en": "extend",
+    "hi": null
+   },
+   {
+    "en": "grow",
+    "hi": null
+   },
+   {
+    "en": "spread",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Expand means to become larger; contract means to become smaller.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Antonyms",
+  "difficulty": "easy",
+  "question_en": "Select the word opposite in meaning to AMATEUR.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "beginner",
+    "hi": null
+   },
+   {
+    "en": "novice",
+    "hi": null
+   },
+   {
+    "en": "learner",
+    "hi": null
+   },
+   {
+    "en": "professional",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "An amateur is non-professional; the opposite is professional.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Antonyms",
+  "difficulty": "medium",
+  "question_en": "Select the word opposite in meaning to VERBOSE.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "wordy",
+    "hi": null
+   },
+   {
+    "en": "talkative",
+    "hi": null
+   },
+   {
+    "en": "concise",
+    "hi": null
+   },
+   {
+    "en": "lengthy",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Verbose means using more words than needed; concise means brief and to the point.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Antonyms",
+  "difficulty": "medium",
+  "question_en": "Select the word opposite in meaning to TRANSPARENT.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "clear",
+    "hi": null
+   },
+   {
+    "en": "thin",
+    "hi": null
+   },
+   {
+    "en": "opaque",
+    "hi": null
+   },
+   {
+    "en": "visible",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Transparent allows light to pass through; opaque does not.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Antonyms",
+  "difficulty": "medium",
+  "question_en": "Select the word opposite in meaning to DILIGENT.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "industrious",
+    "hi": null
+   },
+   {
+    "en": "indolent",
+    "hi": null
+   },
+   {
+    "en": "careful",
+    "hi": null
+   },
+   {
+    "en": "sincere",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Diligent means hard-working; indolent means habitually lazy.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Antonyms",
+  "difficulty": "medium",
+  "question_en": "Select the word opposite in meaning to BENIGN.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "malignant",
+    "hi": null
+   },
+   {
+    "en": "gentle",
+    "hi": null
+   },
+   {
+    "en": "harmless",
+    "hi": null
+   },
+   {
+    "en": "kind",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Benign means harmless or gentle; malignant means harmful or disease-causing (e.g. a malignant tumour).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Antonyms",
+  "difficulty": "medium",
+  "question_en": "Select the word opposite in meaning to INEVITABLE.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "certain",
+    "hi": null
+   },
+   {
+    "en": "unavoidable",
+    "hi": null
+   },
+   {
+    "en": "sure",
+    "hi": null
+   },
+   {
+    "en": "avoidable",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Inevitable means unable to be avoided; avoidable is its opposite.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Antonyms",
+  "difficulty": "hard",
+  "question_en": "Select the word opposite in meaning to ZENITH.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "summit",
+    "hi": null
+   },
+   {
+    "en": "peak",
+    "hi": null
+   },
+   {
+    "en": "nadir",
+    "hi": null
+   },
+   {
+    "en": "apex",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Zenith is the highest point; nadir is the lowest point.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Antonyms",
+  "difficulty": "hard",
+  "question_en": "Select the word opposite in meaning to TACITURN.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "reserved",
+    "hi": null
+   },
+   {
+    "en": "talkative",
+    "hi": null
+   },
+   {
+    "en": "silent",
+    "hi": null
+   },
+   {
+    "en": "stern",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Taciturn means habitually silent; talkative is its antonym.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Antonyms",
+  "difficulty": "hard",
+  "question_en": "Select the word opposite in meaning to MAGNANIMOUS.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "petty",
+    "hi": null
+   },
+   {
+    "en": "generous",
+    "hi": null
+   },
+   {
+    "en": "noble",
+    "hi": null
+   },
+   {
+    "en": "forgiving",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Magnanimous means generous and forgiving; petty means small-minded and mean.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "One-word substitution",
+  "difficulty": "easy",
+  "question_en": "Select the one word that can replace: ‘That which cannot be read’.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Illiterate",
+    "hi": null
+   },
+   {
+    "en": "Invisible",
+    "hi": null
+   },
+   {
+    "en": "Incorrigible",
+    "hi": null
+   },
+   {
+    "en": "Illegible",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Illegible means impossible to read because of poor handwriting or print; illiterate refers to a person who cannot read.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "One-word substitution",
+  "difficulty": "easy",
+  "question_en": "Select the one word that can replace: ‘That which cannot be avoided’.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Inevitable",
+    "hi": null
+   },
+   {
+    "en": "Invincible",
+    "hi": null
+   },
+   {
+    "en": "Incredible",
+    "hi": null
+   },
+   {
+    "en": "Inaudible",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Inevitable means certain to happen and unavoidable.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "One-word substitution",
+  "difficulty": "medium",
+  "question_en": "Select the one word that can replace: ‘One who devotes his life to the welfare of others’.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Egoist",
+    "hi": null
+   },
+   {
+    "en": "Optimist",
+    "hi": null
+   },
+   {
+    "en": "Pessimist",
+    "hi": null
+   },
+   {
+    "en": "Altruist",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "An altruist is selflessly concerned for the well-being of others; an egoist is self-centred.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "One-word substitution",
+  "difficulty": "medium",
+  "question_en": "Select the one word that can replace: ‘Government by a small group of people’.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Democracy",
+    "hi": null
+   },
+   {
+    "en": "Oligarchy",
+    "hi": null
+   },
+   {
+    "en": "Monarchy",
+    "hi": null
+   },
+   {
+    "en": "Autocracy",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Oligarchy = rule by a few; democracy = by the people; monarchy/autocracy = by one.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "One-word substitution",
+  "difficulty": "medium",
+  "question_en": "Select the one word that can replace: ‘The scientific study of birds’.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Entomology",
+    "hi": null
+   },
+   {
+    "en": "Zoology",
+    "hi": null
+   },
+   {
+    "en": "Ornithology",
+    "hi": null
+   },
+   {
+    "en": "Etymology",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Ornithology is the study of birds; entomology is of insects, etymology of word origins.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "One-word substitution",
+  "difficulty": "medium",
+  "question_en": "Select the one word that can replace: ‘One who knows everything’.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Omniscient",
+    "hi": null
+   },
+   {
+    "en": "Omnipotent",
+    "hi": null
+   },
+   {
+    "en": "Omnipresent",
+    "hi": null
+   },
+   {
+    "en": "Omnivorous",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Omniscient = all-knowing; omnipotent = all-powerful; omnipresent = present everywhere.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "One-word substitution",
+  "difficulty": "medium",
+  "question_en": "Select the one word that can replace: ‘A place where bees are kept’.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Aviary",
+    "hi": null
+   },
+   {
+    "en": "Apiary",
+    "hi": null
+   },
+   {
+    "en": "Aquarium",
+    "hi": null
+   },
+   {
+    "en": "Armoury",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "An apiary houses bees; an aviary houses birds.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "One-word substitution",
+  "difficulty": "hard",
+  "question_en": "Select the one word that can replace: ‘The killing of a king’.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Fratricide",
+    "hi": null
+   },
+   {
+    "en": "Suicide",
+    "hi": null
+   },
+   {
+    "en": "Homicide",
+    "hi": null
+   },
+   {
+    "en": "Regicide",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Regicide (Latin rex = king) is the killing of a king; fratricide is killing of a brother.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "One-word substitution",
+  "difficulty": "hard",
+  "question_en": "Select the one word that can replace: ‘An abnormal fear of open or crowded places’.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Claustrophobia",
+    "hi": null
+   },
+   {
+    "en": "Hydrophobia",
+    "hi": null
+   },
+   {
+    "en": "Agoraphobia",
+    "hi": null
+   },
+   {
+    "en": "Xenophobia",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Agoraphobia is fear of open spaces; claustrophobia is fear of closed spaces.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "One-word substitution",
+  "difficulty": "hard",
+  "question_en": "Select the one word that can replace: ‘A person who hates mankind’.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Philanthropist",
+    "hi": null
+   },
+   {
+    "en": "Misogynist",
+    "hi": null
+   },
+   {
+    "en": "Misanthrope",
+    "hi": null
+   },
+   {
+    "en": "Pedant",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "A misanthrope hates or distrusts people in general; a misogynist hates women.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Idioms and phrases",
+  "difficulty": "easy",
+  "question_en": "Select the meaning of the idiom: ‘To break the ice’.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "To damage something",
+    "hi": null
+   },
+   {
+    "en": "To feel very cold",
+    "hi": null
+   },
+   {
+    "en": "To end a friendship",
+    "hi": null
+   },
+   {
+    "en": "To start a conversation in a social setting",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "“Break the ice” means to ease the initial awkwardness between people who have just met.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Idioms and phrases",
+  "difficulty": "easy",
+  "question_en": "Select the meaning of the idiom: ‘Once in a blue moon’.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Every month",
+    "hi": null
+   },
+   {
+    "en": "Very rarely",
+    "hi": null
+   },
+   {
+    "en": "At night",
+    "hi": null
+   },
+   {
+    "en": "Very frequently",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "“Once in a blue moon” means something that happens extremely rarely.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Idioms and phrases",
+  "difficulty": "easy",
+  "question_en": "Select the meaning of the idiom: ‘A piece of cake’.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Something very easy",
+    "hi": null
+   },
+   {
+    "en": "A small gift",
+    "hi": null
+   },
+   {
+    "en": "A sweet dish",
+    "hi": null
+   },
+   {
+    "en": "A difficult task",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The idiom describes a task that is very easy to do.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Idioms and phrases",
+  "difficulty": "medium",
+  "question_en": "Select the meaning of the idiom: ‘To bite the bullet’.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "To face a painful situation with courage",
+    "hi": null
+   },
+   {
+    "en": "To eat quickly",
+    "hi": null
+   },
+   {
+    "en": "To use force",
+    "hi": null
+   },
+   {
+    "en": "To avoid a problem",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The phrase means to endure a painful or unpleasant situation bravely.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Idioms and phrases",
+  "difficulty": "medium",
+  "question_en": "Select the meaning of the idiom: ‘To burn the midnight oil’.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "To waste resources",
+    "hi": null
+   },
+   {
+    "en": "To light a lamp",
+    "hi": null
+   },
+   {
+    "en": "To cause a fire",
+    "hi": null
+   },
+   {
+    "en": "To work late into the night",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The idiom refers to studying or working until late at night.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Idioms and phrases",
+  "difficulty": "medium",
+  "question_en": "Select the meaning of the idiom: ‘Under the weather’.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Standing in the rain",
+    "hi": null
+   },
+   {
+    "en": "Very cheerful",
+    "hi": null
+   },
+   {
+    "en": "Feeling unwell",
+    "hi": null
+   },
+   {
+    "en": "Highly successful",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "“Under the weather” means slightly ill or in low spirits.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Idioms and phrases",
+  "difficulty": "medium",
+  "question_en": "Select the meaning of the idiom: ‘To beat around the bush’.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "To search for something",
+    "hi": null
+   },
+   {
+    "en": "To avoid coming to the main point",
+    "hi": null
+   },
+   {
+    "en": "To hunt animals",
+    "hi": null
+   },
+   {
+    "en": "To clear the garden",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The idiom means to talk about unimportant things instead of getting to the point.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Idioms and phrases",
+  "difficulty": "medium",
+  "question_en": "Select the meaning of the idiom: ‘A blessing in disguise’.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Something good that seemed bad at first",
+    "hi": null
+   },
+   {
+    "en": "A secret prayer",
+    "hi": null
+   },
+   {
+    "en": "A hidden fear",
+    "hi": null
+   },
+   {
+    "en": "A fake gift",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "It describes a misfortune that eventually turns out to be beneficial.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Idioms and phrases",
+  "difficulty": "medium",
+  "question_en": "Select the meaning of the idiom: ‘To cry over spilt milk’.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "To waste food",
+    "hi": null
+   },
+   {
+    "en": "To behave like a child",
+    "hi": null
+   },
+   {
+    "en": "To regret something that cannot be undone",
+    "hi": null
+   },
+   {
+    "en": "To mourn a death",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The idiom warns against useless grief over past mistakes that cannot be corrected.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Idioms and phrases",
+  "difficulty": "hard",
+  "question_en": "Select the meaning of the idiom: ‘Achilles’ heel’.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "A strong ally",
+    "hi": null
+   },
+   {
+    "en": "A person’s weak point",
+    "hi": null
+   },
+   {
+    "en": "A hidden talent",
+    "hi": null
+   },
+   {
+    "en": "An old injury",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "From Greek myth, Achilles was vulnerable only at his heel; the idiom means a fatal weakness in an otherwise strong person.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Idioms and phrases",
+  "difficulty": "hard",
+  "question_en": "Select the meaning of the idiom: ‘Swan song’.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "A beautiful melody",
+    "hi": null
+   },
+   {
+    "en": "A sad rumour",
+    "hi": null
+   },
+   {
+    "en": "A new beginning",
+    "hi": null
+   },
+   {
+    "en": "A final performance or act before retirement",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "A swan song is the last work or appearance of a person before retirement or death.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Idioms and phrases",
+  "difficulty": "hard",
+  "question_en": "Select the meaning of the idiom: ‘The elephant in the room’.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "A very large object",
+    "hi": null
+   },
+   {
+    "en": "A famous guest",
+    "hi": null
+   },
+   {
+    "en": "An obvious problem that people avoid discussing",
+    "hi": null
+   },
+   {
+    "en": "A simple solution",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The idiom refers to a major issue everyone knows about but nobody wants to talk about.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Spelling",
+  "difficulty": "easy",
+  "question_en": "Choose the correctly spelt word.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Consience",
+    "hi": null
+   },
+   {
+    "en": "Conscinece",
+    "hi": null
+   },
+   {
+    "en": "Concience",
+    "hi": null
+   },
+   {
+    "en": "Conscience",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The correct spelling is C-O-N-S-C-I-E-N-C-E.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Spelling",
+  "difficulty": "medium",
+  "question_en": "Choose the correctly spelt word.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Accomodation",
+    "hi": null
+   },
+   {
+    "en": "Accommodation",
+    "hi": null
+   },
+   {
+    "en": "Acommodation",
+    "hi": null
+   },
+   {
+    "en": "Accommodetion",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "“Accommodation” has double c and double m.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Spelling",
+  "difficulty": "medium",
+  "question_en": "Choose the correctly spelt word.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Embarrassment",
+    "hi": null
+   },
+   {
+    "en": "Embarassment",
+    "hi": null
+   },
+   {
+    "en": "Embarrasment",
+    "hi": null
+   },
+   {
+    "en": "Embaressment",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "“Embarrassment” has double r and double s.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Spelling",
+  "difficulty": "medium",
+  "question_en": "Choose the correctly spelt word.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Maintainance",
+    "hi": null
+   },
+   {
+    "en": "Maintenence",
+    "hi": null
+   },
+   {
+    "en": "Maintenance",
+    "hi": null
+   },
+   {
+    "en": "Maintanance",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The noun of “maintain” is spelt maintenance (-tenance, not -tainance).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Spelling",
+  "difficulty": "medium",
+  "question_en": "Choose the correctly spelt word.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Occurence",
+    "hi": null
+   },
+   {
+    "en": "Occurrence",
+    "hi": null
+   },
+   {
+    "en": "Occurrance",
+    "hi": null
+   },
+   {
+    "en": "Ocurrence",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "“Occurrence” has double c, double r and ends in -ence.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Spelling",
+  "difficulty": "easy",
+  "question_en": "Choose the INCORRECTLY spelt word.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Necessary",
+    "hi": null
+   },
+   {
+    "en": "Recieve",
+    "hi": null
+   },
+   {
+    "en": "Believe",
+    "hi": null
+   },
+   {
+    "en": "Achieve",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "“Receive” follows the rule ‘i before e except after c’, so ‘Recieve’ is wrong.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Spelling",
+  "difficulty": "medium",
+  "question_en": "Choose the correctly spelt word.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Privilege",
+    "hi": null
+   },
+   {
+    "en": "Priviledge",
+    "hi": null
+   },
+   {
+    "en": "Privelege",
+    "hi": null
+   },
+   {
+    "en": "Previlege",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The correct spelling is P-R-I-V-I-L-E-G-E; there is no d.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Spelling",
+  "difficulty": "hard",
+  "question_en": "Choose the correctly spelt word.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Questionaire",
+    "hi": null
+   },
+   {
+    "en": "Quesionnaire",
+    "hi": null
+   },
+   {
+    "en": "Questionnare",
+    "hi": null
+   },
+   {
+    "en": "Questionnaire",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "“Questionnaire” has double n, derived from French.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Spelling",
+  "difficulty": "easy",
+  "question_en": "Choose the INCORRECTLY spelt word.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Government",
+    "hi": null
+   },
+   {
+    "en": "Environment",
+    "hi": null
+   },
+   {
+    "en": "Separate",
+    "hi": null
+   },
+   {
+    "en": "Seperate",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The correct spelling is “separate” (sep-a-rate), so ‘Seperate’ is wrong.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Cloze test",
+  "difficulty": "easy",
+  "question_en": "Read the passage and answer the question.\n\nWater is (1) ______ for all living beings. However, in recent years many cities have been (2) ______ from acute water shortage. The main reason is the (3) ______ use of groundwater by industries and households. If we do not take steps to (4) ______ water, future generations will have to pay a heavy price. Every citizen should therefore (5) ______ responsibility and avoid wastage.\n\nSelect the most appropriate option to fill blank (1).\nRelevant sentence: Water is (1) ______ for all living beings.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "essential",
+    "hi": null
+   },
+   {
+    "en": "optional",
+    "hi": null
+   },
+   {
+    "en": "harmful",
+    "hi": null
+   },
+   {
+    "en": "unknown",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Water is necessary for all life, so “essential” fits the context.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Cloze test",
+  "difficulty": "medium",
+  "question_en": "Read the passage and answer the question.\n\nWater is (1) ______ for all living beings. However, in recent years many cities have been (2) ______ from acute water shortage. The main reason is the (3) ______ use of groundwater by industries and households. If we do not take steps to (4) ______ water, future generations will have to pay a heavy price. Every citizen should therefore (5) ______ responsibility and avoid wastage.\n\nSelect the most appropriate option to fill blank (2).\nRelevant sentence: ... many cities have been (2) ______ from acute water shortage.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "escaping",
+    "hi": null
+   },
+   {
+    "en": "suffering",
+    "hi": null
+   },
+   {
+    "en": "benefiting",
+    "hi": null
+   },
+   {
+    "en": "preferring",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "“Suffer from” is the correct collocation, and the sense (problems of shortage) is negative.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Cloze test",
+  "difficulty": "medium",
+  "question_en": "Read the passage and answer the question.\n\nWater is (1) ______ for all living beings. However, in recent years many cities have been (2) ______ from acute water shortage. The main reason is the (3) ______ use of groundwater by industries and households. If we do not take steps to (4) ______ water, future generations will have to pay a heavy price. Every citizen should therefore (5) ______ responsibility and avoid wastage.\n\nSelect the most appropriate option to fill blank (3).\nRelevant sentence: The main reason is the (3) ______ use of groundwater by industries and households.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "careful",
+    "hi": null
+   },
+   {
+    "en": "limited",
+    "hi": null
+   },
+   {
+    "en": "excessive",
+    "hi": null
+   },
+   {
+    "en": "rare",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "A ‘reason’ for shortage must be over-use, hence “excessive”.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Cloze test",
+  "difficulty": "easy",
+  "question_en": "Read the passage and answer the question.\n\nWater is (1) ______ for all living beings. However, in recent years many cities have been (2) ______ from acute water shortage. The main reason is the (3) ______ use of groundwater by industries and households. If we do not take steps to (4) ______ water, future generations will have to pay a heavy price. Every citizen should therefore (5) ______ responsibility and avoid wastage.\n\nSelect the most appropriate option to fill blank (4).\nRelevant sentence: If we do not take steps to (4) ______ water, future generations will have to pay a heavy price.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "waste",
+    "hi": null
+   },
+   {
+    "en": "pollute",
+    "hi": null
+   },
+   {
+    "en": "conserve",
+    "hi": null
+   },
+   {
+    "en": "ignore",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The sentence calls for steps to save water, so “conserve” fits.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Cloze test",
+  "difficulty": "hard",
+  "question_en": "Read the passage and answer the question.\n\nWater is (1) ______ for all living beings. However, in recent years many cities have been (2) ______ from acute water shortage. The main reason is the (3) ______ use of groundwater by industries and households. If we do not take steps to (4) ______ water, future generations will have to pay a heavy price. Every citizen should therefore (5) ______ responsibility and avoid wastage.\n\nSelect the most appropriate option to fill blank (5).\nRelevant sentence: Every citizen should therefore (5) ______ responsibility and avoid wastage.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "make",
+    "hi": null
+   },
+   {
+    "en": "do",
+    "hi": null
+   },
+   {
+    "en": "give",
+    "hi": null
+   },
+   {
+    "en": "take",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The fixed collocation is “take responsibility”.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Cloze test",
+  "difficulty": "easy",
+  "question_en": "Read the passage and answer the question.\n\nReading is a habit that (1) ______ the mind and improves imagination. A student who reads regularly (2) ______ better vocabulary and writing skills than one who does not. Unfortunately, the (3) ______ of mobile phones has reduced the time young people (4) ______ on books. Teachers should (5) ______ students to visit libraries and discuss what they read.\n\nSelect the most appropriate option to fill blank (1).\nRelevant sentence: Reading is a habit that (1) ______ the mind and improves imagination.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "destroys",
+    "hi": null
+   },
+   {
+    "en": "enriches",
+    "hi": null
+   },
+   {
+    "en": "confuses",
+    "hi": null
+   },
+   {
+    "en": "tires",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "“Enriches” is the positive verb that agrees with “improves imagination”.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Cloze test",
+  "difficulty": "medium",
+  "question_en": "Read the passage and answer the question.\n\nReading is a habit that (1) ______ the mind and improves imagination. A student who reads regularly (2) ______ better vocabulary and writing skills than one who does not. Unfortunately, the (3) ______ of mobile phones has reduced the time young people (4) ______ on books. Teachers should (5) ______ students to visit libraries and discuss what they read.\n\nSelect the most appropriate option to fill blank (2).\nRelevant sentence: A student who reads regularly (2) ______ better vocabulary and writing skills than one who does not.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "avoids",
+    "hi": null
+   },
+   {
+    "en": "loses",
+    "hi": null
+   },
+   {
+    "en": "develops",
+    "hi": null
+   },
+   {
+    "en": "forgets",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "A regular reader develops better vocabulary; the other options are illogical.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Cloze test",
+  "difficulty": "medium",
+  "question_en": "Read the passage and answer the question.\n\nReading is a habit that (1) ______ the mind and improves imagination. A student who reads regularly (2) ______ better vocabulary and writing skills than one who does not. Unfortunately, the (3) ______ of mobile phones has reduced the time young people (4) ______ on books. Teachers should (5) ______ students to visit libraries and discuss what they read.\n\nSelect the most appropriate option to fill blank (3).\nRelevant sentence: Unfortunately, the (3) ______ of mobile phones has reduced the time ...",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "absence",
+    "hi": null
+   },
+   {
+    "en": "shortage",
+    "hi": null
+   },
+   {
+    "en": "popularity",
+    "hi": null
+   },
+   {
+    "en": "dislike",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Only the growing popularity of phones could reduce time for books; “absence/shortage/dislike” would not.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Cloze test",
+  "difficulty": "medium",
+  "question_en": "Read the passage and answer the question.\n\nReading is a habit that (1) ______ the mind and improves imagination. A student who reads regularly (2) ______ better vocabulary and writing skills than one who does not. Unfortunately, the (3) ______ of mobile phones has reduced the time young people (4) ______ on books. Teachers should (5) ______ students to visit libraries and discuss what they read.\n\nSelect the most appropriate option to fill blank (4).\nRelevant sentence: ... the time young people (4) ______ on books.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "spending",
+    "hi": null
+   },
+   {
+    "en": "spends",
+    "hi": null
+   },
+   {
+    "en": "spend",
+    "hi": null
+   },
+   {
+    "en": "to spend",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "“Time (that) young people spend on books”: the relative clause has a plural subject, so the base form “spend” is correct.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Cloze test",
+  "difficulty": "medium",
+  "question_en": "Read the passage and answer the question.\n\nReading is a habit that (1) ______ the mind and improves imagination. A student who reads regularly (2) ______ better vocabulary and writing skills than one who does not. Unfortunately, the (3) ______ of mobile phones has reduced the time young people (4) ______ on books. Teachers should (5) ______ students to visit libraries and discuss what they read.\n\nSelect the most appropriate option to fill blank (5).\nRelevant sentence: Teachers should (5) ______ students to visit libraries and discuss what they read.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "discourage",
+    "hi": null
+   },
+   {
+    "en": "encourage",
+    "hi": null
+   },
+   {
+    "en": "prevent",
+    "hi": null
+   },
+   {
+    "en": "forbid",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The passage’s message supports reading, so teachers should “encourage” students.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Reading comprehension",
+  "difficulty": "easy",
+  "question_en": "Read the passage and answer the question.\n\nSleep is often treated as a luxury by students and working adults, yet scientists consider it as essential as food and water. During sleep the brain does not simply switch off; it sorts the information gathered during the day, stores important memories and clears away harmful chemicals that accumulate while we are awake. Children who sleep for less than eight hours are more likely to have difficulty in concentrating and to show poor results in examinations. Adults who regularly sleep for only five or six hours face a higher risk of heart disease and depression. Experts therefore advise a fixed bedtime, avoiding screens an hour before sleeping and keeping the bedroom dark and quiet. Contrary to popular belief, sleeping late on weekends cannot fully repay the “sleep debt” collected during the week.\n\nWhat is the main idea of the passage?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Students should study at night.",
+    "hi": null
+   },
+   {
+    "en": "Weekends are meant for rest only.",
+    "hi": null
+   },
+   {
+    "en": "Sleep is essential for health and learning.",
+    "hi": null
+   },
+   {
+    "en": "Screens improve sleep quality.",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The passage opens by calling sleep as essential as food and water, then describes its effects on the brain, children and adults.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Reading comprehension",
+  "difficulty": "medium",
+  "question_en": "Read the passage and answer the question.\n\nSleep is often treated as a luxury by students and working adults, yet scientists consider it as essential as food and water. During sleep the brain does not simply switch off; it sorts the information gathered during the day, stores important memories and clears away harmful chemicals that accumulate while we are awake. Children who sleep for less than eight hours are more likely to have difficulty in concentrating and to show poor results in examinations. Adults who regularly sleep for only five or six hours face a higher risk of heart disease and depression. Experts therefore advise a fixed bedtime, avoiding screens an hour before sleeping and keeping the bedroom dark and quiet. Contrary to popular belief, sleeping late on weekends cannot fully repay the “sleep debt” collected during the week.\n\nWhich of the following is NOT mentioned as something the brain does during sleep?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Sorts information gathered in the day",
+    "hi": null
+   },
+   {
+    "en": "Strengthens the bones",
+    "hi": null
+   },
+   {
+    "en": "Stores important memories",
+    "hi": null
+   },
+   {
+    "en": "Clears away harmful chemicals",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The passage lists sorting information, storing memories and clearing chemicals. Bone strength is never mentioned.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Reading comprehension",
+  "difficulty": "medium",
+  "question_en": "Read the passage and answer the question.\n\nSleep is often treated as a luxury by students and working adults, yet scientists consider it as essential as food and water. During sleep the brain does not simply switch off; it sorts the information gathered during the day, stores important memories and clears away harmful chemicals that accumulate while we are awake. Children who sleep for less than eight hours are more likely to have difficulty in concentrating and to show poor results in examinations. Adults who regularly sleep for only five or six hours face a higher risk of heart disease and depression. Experts therefore advise a fixed bedtime, avoiding screens an hour before sleeping and keeping the bedroom dark and quiet. Contrary to popular belief, sleeping late on weekends cannot fully repay the “sleep debt” collected during the week.\n\nChoose the word closest in meaning to ‘accumulate’ as used in the passage.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "gather",
+    "hi": null
+   },
+   {
+    "en": "disappear",
+    "hi": null
+   },
+   {
+    "en": "reduce",
+    "hi": null
+   },
+   {
+    "en": "dissolve",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "“Accumulate” means to build up gradually, i.e. gather.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Reading comprehension",
+  "difficulty": "medium",
+  "question_en": "Read the passage and answer the question.\n\nSleep is often treated as a luxury by students and working adults, yet scientists consider it as essential as food and water. During sleep the brain does not simply switch off; it sorts the information gathered during the day, stores important memories and clears away harmful chemicals that accumulate while we are awake. Children who sleep for less than eight hours are more likely to have difficulty in concentrating and to show poor results in examinations. Adults who regularly sleep for only five or six hours face a higher risk of heart disease and depression. Experts therefore advise a fixed bedtime, avoiding screens an hour before sleeping and keeping the bedroom dark and quiet. Contrary to popular belief, sleeping late on weekends cannot fully repay the “sleep debt” collected during the week.\n\nAccording to the passage, what can sleeping late on weekends NOT do?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Improve examination results",
+    "hi": null
+   },
+   {
+    "en": "Reduce the need for food",
+    "hi": null
+   },
+   {
+    "en": "Cure heart disease",
+    "hi": null
+   },
+   {
+    "en": "Fully repay the sleep debt of the week",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The last sentence says weekend sleep cannot fully repay the sleep debt collected during the week.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Reading comprehension",
+  "difficulty": "medium",
+  "question_en": "Read the passage and answer the question.\n\nSleep is often treated as a luxury by students and working adults, yet scientists consider it as essential as food and water. During sleep the brain does not simply switch off; it sorts the information gathered during the day, stores important memories and clears away harmful chemicals that accumulate while we are awake. Children who sleep for less than eight hours are more likely to have difficulty in concentrating and to show poor results in examinations. Adults who regularly sleep for only five or six hours face a higher risk of heart disease and depression. Experts therefore advise a fixed bedtime, avoiding screens an hour before sleeping and keeping the bedroom dark and quiet. Contrary to popular belief, sleeping late on weekends cannot fully repay the “sleep debt” collected during the week.\n\nThe tone of the author in the passage is best described as:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "humorous and casual",
+    "hi": null
+   },
+   {
+    "en": "informative and advisory",
+    "hi": null
+   },
+   {
+    "en": "sarcastic and critical",
+    "hi": null
+   },
+   {
+    "en": "nostalgic and emotional",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The author presents scientific facts and gives expert advice, so the tone is informative and advisory.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Reading comprehension",
+  "difficulty": "easy",
+  "question_en": "Read the passage and answer the question.\n\nTrees in cities do much more than make streets look pleasant. A single mature tree can absorb about twenty kilograms of carbon dioxide in a year and release enough oxygen for two people. Their leaves trap dust, while their shade can lower the temperature of a neighbourhood by several degrees, reducing the need for air conditioners. In many Indian cities, however, trees are felled for widening roads and constructing flyovers, often without any plan to replace them. Urban planners argue that development and greenery are not enemies; roads can be designed around existing trees, and every felled tree can be compensated by planting several saplings. Citizens, too, must take the initiative by protecting trees in their own colony instead of waiting for the government to act.\n\nWhat is the central theme of the passage?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Roads are more important than trees.",
+    "hi": null
+   },
+   {
+    "en": "Air conditioners are harmful.",
+    "hi": null
+   },
+   {
+    "en": "Saplings grow very fast.",
+    "hi": null
+   },
+   {
+    "en": "Urban trees are valuable and should be protected.",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The passage details the benefits of city trees and urges planners and citizens to protect them.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Reading comprehension",
+  "difficulty": "easy",
+  "question_en": "Read the passage and answer the question.\n\nTrees in cities do much more than make streets look pleasant. A single mature tree can absorb about twenty kilograms of carbon dioxide in a year and release enough oxygen for two people. Their leaves trap dust, while their shade can lower the temperature of a neighbourhood by several degrees, reducing the need for air conditioners. In many Indian cities, however, trees are felled for widening roads and constructing flyovers, often without any plan to replace them. Urban planners argue that development and greenery are not enemies; roads can be designed around existing trees, and every felled tree can be compensated by planting several saplings. Citizens, too, must take the initiative by protecting trees in their own colony instead of waiting for the government to act.\n\nAccording to the passage, how does the shade of trees help a neighbourhood?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "It traps dust in the air.",
+    "hi": null
+   },
+   {
+    "en": "It releases oxygen at night.",
+    "hi": null
+   },
+   {
+    "en": "It reduces the need for air conditioners.",
+    "hi": null
+   },
+   {
+    "en": "It makes roads wider.",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The passage says shade lowers the temperature and reduces the need for air conditioners; trapping dust is done by leaves.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Reading comprehension",
+  "difficulty": "medium",
+  "question_en": "Read the passage and answer the question.\n\nTrees in cities do much more than make streets look pleasant. A single mature tree can absorb about twenty kilograms of carbon dioxide in a year and release enough oxygen for two people. Their leaves trap dust, while their shade can lower the temperature of a neighbourhood by several degrees, reducing the need for air conditioners. In many Indian cities, however, trees are felled for widening roads and constructing flyovers, often without any plan to replace them. Urban planners argue that development and greenery are not enemies; roads can be designed around existing trees, and every felled tree can be compensated by planting several saplings. Citizens, too, must take the initiative by protecting trees in their own colony instead of waiting for the government to act.\n\nThe word ‘felled’ in the passage means:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "cut down",
+    "hi": null
+   },
+   {
+    "en": "planted",
+    "hi": null
+   },
+   {
+    "en": "watered",
+    "hi": null
+   },
+   {
+    "en": "trimmed",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "To fell a tree is to cut it down.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Reading comprehension",
+  "difficulty": "medium",
+  "question_en": "Read the passage and answer the question.\n\nTrees in cities do much more than make streets look pleasant. A single mature tree can absorb about twenty kilograms of carbon dioxide in a year and release enough oxygen for two people. Their leaves trap dust, while their shade can lower the temperature of a neighbourhood by several degrees, reducing the need for air conditioners. In many Indian cities, however, trees are felled for widening roads and constructing flyovers, often without any plan to replace them. Urban planners argue that development and greenery are not enemies; roads can be designed around existing trees, and every felled tree can be compensated by planting several saplings. Citizens, too, must take the initiative by protecting trees in their own colony instead of waiting for the government to act.\n\nWhat is the view of urban planners according to the passage?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Trees should be removed for flyovers.",
+    "hi": null
+   },
+   {
+    "en": "Development and greenery can go together.",
+    "hi": null
+   },
+   {
+    "en": "Only the government can protect trees.",
+    "hi": null
+   },
+   {
+    "en": "Saplings are not useful.",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Planners argue that development and greenery are not enemies, since roads can be designed around trees.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Reading comprehension",
+  "difficulty": "hard",
+  "question_en": "Read the passage and answer the question.\n\nTrees in cities do much more than make streets look pleasant. A single mature tree can absorb about twenty kilograms of carbon dioxide in a year and release enough oxygen for two people. Their leaves trap dust, while their shade can lower the temperature of a neighbourhood by several degrees, reducing the need for air conditioners. In many Indian cities, however, trees are felled for widening roads and constructing flyovers, often without any plan to replace them. Urban planners argue that development and greenery are not enemies; roads can be designed around existing trees, and every felled tree can be compensated by planting several saplings. Citizens, too, must take the initiative by protecting trees in their own colony instead of waiting for the government to act.\n\nWhich of the following can be inferred from the passage?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Citizens are not interested in trees.",
+    "hi": null
+   },
+   {
+    "en": "One tree supplies oxygen for a whole colony.",
+    "hi": null
+   },
+   {
+    "en": "The government has banned flyovers.",
+    "hi": null
+   },
+   {
+    "en": "Many Indian cities cut trees without a replacement plan.",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The phrase “often without any plan to replace them” supports this inference; the other options exaggerate or contradict the text.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Active and passive voice",
+  "difficulty": "easy",
+  "question_en": "Change the voice: ‘The police arrested the thief.’",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "The thief was arrested by the police.",
+    "hi": null
+   },
+   {
+    "en": "The thief is arrested by the police.",
+    "hi": null
+   },
+   {
+    "en": "The thief had been arrested by the police.",
+    "hi": null
+   },
+   {
+    "en": "The police was arrested by the thief.",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Simple past active becomes was/were + V3 in the passive; the object becomes the subject.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Active and passive voice",
+  "difficulty": "easy",
+  "question_en": "Change the voice: ‘The students completed the project.’",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "The project is completed by the students.",
+    "hi": null
+   },
+   {
+    "en": "The project has been completed by the students.",
+    "hi": null
+   },
+   {
+    "en": "The project was completed by the students.",
+    "hi": null
+   },
+   {
+    "en": "The students were completed by the project.",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Simple past: object + was/were + V3 + by + agent.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Active and passive voice",
+  "difficulty": "medium",
+  "question_en": "Change the voice: ‘Who wrote this letter?’",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Who was written this letter?",
+    "hi": null
+   },
+   {
+    "en": "By whom is this letter written?",
+    "hi": null
+   },
+   {
+    "en": "Whom was this letter written by?",
+    "hi": null
+   },
+   {
+    "en": "By whom was this letter written?",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "For a ‘Who’ question in the active voice, the passive begins ‘By whom’, with the tense kept (simple past → was written).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Active and passive voice",
+  "difficulty": "medium",
+  "question_en": "Change the voice: ‘She is writing a novel.’",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "A novel is being written by her.",
+    "hi": null
+   },
+   {
+    "en": "A novel is written by her.",
+    "hi": null
+   },
+   {
+    "en": "A novel was being written by her.",
+    "hi": null
+   },
+   {
+    "en": "A novel has been written by her.",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Present continuous passive = is/am/are + being + V3.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Active and passive voice",
+  "difficulty": "hard",
+  "question_en": "Change the voice: ‘They will have finished the work by noon.’",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "The work will be finished by them by noon.",
+    "hi": null
+   },
+   {
+    "en": "The work will have been finished by them by noon.",
+    "hi": null
+   },
+   {
+    "en": "The work would have been finished by them by noon.",
+    "hi": null
+   },
+   {
+    "en": "The work has been finished by them by noon.",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Future perfect passive = will have been + V3.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Active and passive voice",
+  "difficulty": "medium",
+  "question_en": "Change the voice: ‘Someone has stolen my bicycle.’",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "My bicycle was stolen by someone.",
+    "hi": null
+   },
+   {
+    "en": "My bicycle is stolen.",
+    "hi": null
+   },
+   {
+    "en": "My bicycle has been stolen.",
+    "hi": null
+   },
+   {
+    "en": "My bicycle had been stolen.",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Present perfect passive = has/have been + V3; the vague agent ‘someone’ is normally omitted.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Active and passive voice",
+  "difficulty": "medium",
+  "question_en": "Change the voice: ‘Do it at once.’",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "It should do at once.",
+    "hi": null
+   },
+   {
+    "en": "It is done at once.",
+    "hi": null
+   },
+   {
+    "en": "Let it be done at once.",
+    "hi": null
+   },
+   {
+    "en": "Let it done at once.",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Imperative sentences become passive with ‘Let + object + be + V3’.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Active and passive voice",
+  "difficulty": "easy",
+  "question_en": "Change into the active voice: ‘The window was broken by the boy.’",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "The boy has broken the window.",
+    "hi": null
+   },
+   {
+    "en": "The boy broke the window.",
+    "hi": null
+   },
+   {
+    "en": "The boy breaks the window.",
+    "hi": null
+   },
+   {
+    "en": "The boy was breaking the window.",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Simple past passive (was broken) becomes simple past active (broke).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Active and passive voice",
+  "difficulty": "medium",
+  "question_en": "Change into the active voice: ‘A letter was being written by Neha.’",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Neha wrote a letter.",
+    "hi": null
+   },
+   {
+    "en": "Neha has written a letter.",
+    "hi": null
+   },
+   {
+    "en": "Neha is writing a letter.",
+    "hi": null
+   },
+   {
+    "en": "Neha was writing a letter.",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Past continuous passive (was being written) corresponds to past continuous active (was writing).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Direct and indirect speech",
+  "difficulty": "easy",
+  "question_en": "Change into indirect speech: He said, “I am happy.”",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "He said that he was happy.",
+    "hi": null
+   },
+   {
+    "en": "He said that he is happy.",
+    "hi": null
+   },
+   {
+    "en": "He said that I was happy.",
+    "hi": null
+   },
+   {
+    "en": "He said that he had been happy.",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Present simple becomes past simple in reported speech when the reporting verb is in the past; pronoun I changes to he.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Direct and indirect speech",
+  "difficulty": "medium",
+  "question_en": "Change into indirect speech: She said to me, “Where do you live?”",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "She asked me where I lived.",
+    "hi": null
+   },
+   {
+    "en": "She told me where did I live.",
+    "hi": null
+   },
+   {
+    "en": "She asked me where do you live.",
+    "hi": null
+   },
+   {
+    "en": "She asked me that where I lived.",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A wh-question is reported with ‘asked’, statement word order and no ‘that’.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Direct and indirect speech",
+  "difficulty": "medium",
+  "question_en": "Change into indirect speech: The teacher said, “The earth moves round the sun.”",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "The teacher said that the earth moved round the sun.",
+    "hi": null
+   },
+   {
+    "en": "The teacher said that the earth had moved round the sun.",
+    "hi": null
+   },
+   {
+    "en": "The teacher told that the earth moves round the sun.",
+    "hi": null
+   },
+   {
+    "en": "The teacher said that the earth moves round the sun.",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "A universal truth does not change tense in indirect speech.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Direct and indirect speech",
+  "difficulty": "medium",
+  "question_en": "Change into indirect speech: He said to her, “Please help me.”",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "He ordered her to help him.",
+    "hi": null
+   },
+   {
+    "en": "He requested her to help him.",
+    "hi": null
+   },
+   {
+    "en": "He said her to help me.",
+    "hi": null
+   },
+   {
+    "en": "He asked that she helps him.",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "A polite request with ‘please’ is reported with ‘requested’ + to-infinitive.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Direct and indirect speech",
+  "difficulty": "medium",
+  "question_en": "Change into indirect speech: “Alas! I have failed,” said the boy.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "The boy said that alas he has failed.",
+    "hi": null
+   },
+   {
+    "en": "The boy exclaimed that I had failed.",
+    "hi": null
+   },
+   {
+    "en": "The boy exclaimed sorrowfully that he had failed.",
+    "hi": null
+   },
+   {
+    "en": "The boy asked sorrowfully whether he had failed.",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Exclamations are reported with ‘exclaimed with joy/sorrow’; present perfect shifts to past perfect.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Direct and indirect speech",
+  "difficulty": "medium",
+  "question_en": "Change into direct speech: He asked me if I had finished my work.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "He said to me, “Did you finish your work?”",
+    "hi": null
+   },
+   {
+    "en": "He said to me, “Had I finished my work?”",
+    "hi": null
+   },
+   {
+    "en": "He said to me, “Have you finished your work?”",
+    "hi": null
+   },
+   {
+    "en": "He said to me, “Have I finished your work?”",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The ‘if’ clause shows a yes/no question; past perfect in the report returns to present perfect, and I changes to you.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Direct and indirect speech",
+  "difficulty": "easy",
+  "question_en": "Change into indirect speech: She said, “I will come tomorrow.”",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "She said that she would come the next day.",
+    "hi": null
+   },
+   {
+    "en": "She said that she will come tomorrow.",
+    "hi": null
+   },
+   {
+    "en": "She said that I would come tomorrow.",
+    "hi": null
+   },
+   {
+    "en": "She said that she would come tomorrow.",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Will becomes would and tomorrow becomes the next day / the following day.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "english",
+  "subtopic": "Direct and indirect speech",
+  "difficulty": "hard",
+  "question_en": "Change into indirect speech: The captain said to the team, “Let us play carefully.”",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "The captain said to the team that let us play carefully.",
+    "hi": null
+   },
+   {
+    "en": "The captain proposed to the team that they should play carefully.",
+    "hi": null
+   },
+   {
+    "en": "The captain ordered the team to play carefully.",
+    "hi": null
+   },
+   {
+    "en": "The captain asked the team that we play carefully.",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "‘Let us’ expresses a suggestion and is reported with ‘proposed/suggested that ... should’.",
+  "explanation_hi": null,
+  "expected": false
+ }
+]

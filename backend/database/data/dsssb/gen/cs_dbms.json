@@ -1,0 +1,3192 @@
+[
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "ER model",
+    "difficulty": "easy",
+    "question_en": "In an Entity–Relationship diagram, an entity set is drawn as a:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Double line",
+        "hi": null
+      },
+      {
+        "en": "Diamond",
+        "hi": null
+      },
+      {
+        "en": "Rectangle",
+        "hi": null
+      },
+      {
+        "en": "Ellipse",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Chen notation uses a rectangle for an entity set, a diamond for a relationship set and an ellipse for an attribute. A double line shows total participation.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "ER model",
+    "difficulty": "easy",
+    "question_en": "Which symbol represents a relationship set in an ER diagram?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Rectangle",
+        "hi": null
+      },
+      {
+        "en": "Ellipse",
+        "hi": null
+      },
+      {
+        "en": "Dashed ellipse",
+        "hi": null
+      },
+      {
+        "en": "Diamond",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Relationships (e.g., 'Enrols', 'Works_for') are drawn as diamonds connecting the participating entity rectangles. A dashed ellipse denotes a derived attribute.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "ER model",
+    "difficulty": "medium",
+    "question_en": "An attribute 'Age' that is computed from 'Date_of_Birth' is shown in an ER diagram as a:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Double ellipse",
+        "hi": null
+      },
+      {
+        "en": "Dashed (dotted) ellipse",
+        "hi": null
+      },
+      {
+        "en": "Shaded rectangle",
+        "hi": null
+      },
+      {
+        "en": "Underlined ellipse",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "A derived attribute is drawn as a dashed ellipse. A double ellipse is a multivalued attribute (e.g., phone numbers), and an underlined attribute is the key attribute.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "ER model",
+    "difficulty": "medium",
+    "question_en": "A 'Phone_numbers' attribute that can hold several values for one student is called a:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Key attribute",
+        "hi": null
+      },
+      {
+        "en": "Derived attribute",
+        "hi": null
+      },
+      {
+        "en": "Multivalued attribute",
+        "hi": null
+      },
+      {
+        "en": "Composite attribute",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "An attribute with more than one value per entity instance is multivalued and is drawn as a double ellipse. A composite attribute (e.g., Name = First + Last) is divided into parts, not repeated.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "ER model",
+    "difficulty": "medium",
+    "question_en": "An entity type that has no key attribute of its own and depends on an owner entity for identification is a:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Recursive entity",
+        "hi": null
+      },
+      {
+        "en": "Weak entity",
+        "hi": null
+      },
+      {
+        "en": "Strong entity",
+        "hi": null
+      },
+      {
+        "en": "Derived entity",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "A weak entity (e.g., Dependent of an Employee) is identified by a partial key plus the owner's key; it is drawn as a double rectangle with a double-diamond identifying relationship.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "ER model",
+    "difficulty": "medium",
+    "question_en": "Total participation of an entity set in a relationship is shown in an ER diagram by:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "An arrow towards the relationship",
+        "hi": null
+      },
+      {
+        "en": "A dotted rectangle",
+        "hi": null
+      },
+      {
+        "en": "A double line connecting entity and relationship",
+        "hi": null
+      },
+      {
+        "en": "A dashed line",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "A double line means every entity instance must participate in the relationship (total participation); a single line means partial participation. Arrows are used for cardinality (one side) in some notations.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "ER model",
+    "difficulty": "hard",
+    "question_en": "In the relationship 'Department HAS Employees' where one department has many employees and every employee belongs to exactly one department, the cardinality ratio Department : Employee is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "N : 1",
+        "hi": null
+      },
+      {
+        "en": "1 : 1",
+        "hi": null
+      },
+      {
+        "en": "M : N",
+        "hi": null
+      },
+      {
+        "en": "1 : N",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "One department maps to many employees and each employee to one department, so Department : Employee is one-to-many (1 : N). N : 1 would be the same relationship read from the Employee side.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "ER model",
+    "difficulty": "hard",
+    "question_en": "When converting an ER model to tables, which relationship type always needs its own separate table?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Identifying relationship",
+        "hi": null
+      },
+      {
+        "en": "M : N (many-to-many)",
+        "hi": null
+      },
+      {
+        "en": "1 : N (one-to-many)",
+        "hi": null
+      },
+      {
+        "en": "1 : 1 with total participation",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "A many-to-many relationship cannot be represented by placing a foreign key in either entity table, so a new relationship table with both keys (composite primary key) is created. 1 : N and 1 : 1 are handled by adding a foreign key to one side.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "ER model",
+    "difficulty": "medium",
+    "question_en": "The 'Employee SUPERVISES Employee' relationship, where both roles come from the same entity set, is an example of a:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Ternary relationship",
+        "hi": null
+      },
+      {
+        "en": "Identifying relationship",
+        "hi": null
+      },
+      {
+        "en": "Recursive (unary) relationship",
+        "hi": null
+      },
+      {
+        "en": "Weak relationship",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "A relationship between instances of the same entity set is recursive (unary) and role names such as 'supervisor' and 'supervisee' are added. A ternary relationship involves three entity sets.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Keys",
+    "difficulty": "easy",
+    "question_en": "A candidate key that is chosen by the designer to uniquely identify tuples in a relation is called the:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Super key",
+        "hi": null
+      },
+      {
+        "en": "Alternate key",
+        "hi": null
+      },
+      {
+        "en": "Foreign key",
+        "hi": null
+      },
+      {
+        "en": "Primary key",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Among the candidate keys one is selected as the primary key; the remaining candidate keys are alternate (secondary) keys. A super key may contain extra attributes.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Keys",
+    "difficulty": "easy",
+    "question_en": "A candidate key that is not selected as the primary key is called a/an:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Composite key",
+        "hi": null
+      },
+      {
+        "en": "Alternate key",
+        "hi": null
+      },
+      {
+        "en": "Super key",
+        "hi": null
+      },
+      {
+        "en": "Foreign key",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Candidate keys not chosen as primary key are alternate keys. For example, if Student has Roll_No and Aadhaar as candidate keys and Roll_No is the primary key, Aadhaar is an alternate key.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Keys",
+    "difficulty": "medium",
+    "question_en": "Relation STUDENT(Roll, Name, Email, Phone) has candidate keys Roll and Email. Which of the following is a super key but NOT a candidate key?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Name",
+        "hi": null
+      },
+      {
+        "en": "Roll",
+        "hi": null
+      },
+      {
+        "en": "Email",
+        "hi": null
+      },
+      {
+        "en": "(Roll, Name)",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "A super key is any attribute set that uniquely identifies tuples; (Roll, Name) does so but contains an unnecessary attribute, so it is not minimal and hence not a candidate key. Roll and Email are candidate keys; Name alone is not unique.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Keys",
+    "difficulty": "medium",
+    "question_en": "An attribute in one relation that refers to the primary key of another relation is a:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Unique key",
+        "hi": null
+      },
+      {
+        "en": "Super key",
+        "hi": null
+      },
+      {
+        "en": "Foreign key",
+        "hi": null
+      },
+      {
+        "en": "Candidate key",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "A foreign key enforces referential integrity: its values must match a primary-key value in the referenced table or be NULL. Example: Dept_ID in EMPLOYEE referring to DEPARTMENT(Dept_ID).",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Keys",
+    "difficulty": "medium",
+    "question_en": "In relation ENROL(Student_ID, Course_ID, Grade) where a student can take many courses, the primary key is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Student_ID only",
+        "hi": null
+      },
+      {
+        "en": "Grade",
+        "hi": null
+      },
+      {
+        "en": "(Student_ID, Course_ID) together",
+        "hi": null
+      },
+      {
+        "en": "Course_ID only",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Neither Student_ID nor Course_ID alone is unique because a student takes many courses and a course has many students; the combination is unique, giving a composite primary key.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Keys",
+    "difficulty": "hard",
+    "question_en": "A relation has 4 attributes A, B, C, D with the single candidate key A. How many super keys does the relation have?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "4",
+        "hi": null
+      },
+      {
+        "en": "15",
+        "hi": null
+      },
+      {
+        "en": "16",
+        "hi": null
+      },
+      {
+        "en": "8",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "A super key must contain A; the other 3 attributes may each be present or absent, giving 2^3 = 8 super keys. 16 would count all subsets including those without A.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Keys",
+    "difficulty": "medium",
+    "question_en": "Which statement about a primary key is correct?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "It cannot contain NULL values and must be unique",
+        "hi": null
+      },
+      {
+        "en": "It can contain NULL in at most one row",
+        "hi": null
+      },
+      {
+        "en": "It may have duplicate values if the table is small",
+        "hi": null
+      },
+      {
+        "en": "It must always be a single attribute",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The entity integrity rule says no part of a primary key may be NULL, and values must be unique. A primary key can be composite (more than one attribute). A UNIQUE constraint, by contrast, usually permits NULLs.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Keys",
+    "difficulty": "hard",
+    "question_en": "If the primary key of DEPARTMENT is referenced by EMPLOYEE(Dept_ID) and a department row is deleted with ON DELETE SET NULL, what happens?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Dept_ID of the matching employee rows becomes NULL",
+        "hi": null
+      },
+      {
+        "en": "The employee rows move to a default department",
+        "hi": null
+      },
+      {
+        "en": "The matching employee rows are deleted",
+        "hi": null
+      },
+      {
+        "en": "The deletion is rejected",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "ON DELETE SET NULL keeps the child rows but clears the foreign-key column. ON DELETE CASCADE would delete the child rows, and the default (RESTRICT/NO ACTION) would reject the deletion.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Keys",
+    "difficulty": "easy",
+    "question_en": "A key made up of two or more attributes is known as a:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Secondary key",
+        "hi": null
+      },
+      {
+        "en": "Composite key",
+        "hi": null
+      },
+      {
+        "en": "Surrogate key",
+        "hi": null
+      },
+      {
+        "en": "Natural key",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "A composite (compound) key uses several columns together, such as (Order_ID, Item_No). A surrogate key is an artificial single column like an auto-increment ID.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Relational model",
+    "difficulty": "easy",
+    "question_en": "In the relational model, a row of a table is called a ______ and a column is called a/an ______.",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "relation, domain",
+        "hi": null
+      },
+      {
+        "en": "tuple, attribute",
+        "hi": null
+      },
+      {
+        "en": "domain, tuple",
+        "hi": null
+      },
+      {
+        "en": "attribute, tuple",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "A relation (table) consists of tuples (rows) and attributes (columns). The set of permitted values of an attribute is its domain.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Relational model",
+    "difficulty": "easy",
+    "question_en": "The number of attributes in a relation is called its:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Arity count of tuples",
+        "hi": null
+      },
+      {
+        "en": "Cardinality",
+        "hi": null
+      },
+      {
+        "en": "Domain",
+        "hi": null
+      },
+      {
+        "en": "Degree",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Degree (or arity) is the number of columns; cardinality is the number of tuples (rows). A relation EMP(ID, Name, Salary) has degree 3.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Relational model",
+    "difficulty": "easy",
+    "question_en": "The relational model of databases was proposed by:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "E. F. Codd",
+        "hi": null
+      },
+      {
+        "en": "Peter Chen",
+        "hi": null
+      },
+      {
+        "en": "Charles Bachman",
+        "hi": null
+      },
+      {
+        "en": "Edgar Dijkstra",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "E. F. Codd of IBM proposed the relational model in 1970 and later gave the 12 rules for relational DBMS. Peter Chen introduced the ER model (1976) and Bachman the network model.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Relational model",
+    "difficulty": "medium",
+    "question_en": "Which relational-algebra operator is used to select a subset of columns (attributes) of a relation?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Selection (σ)",
+        "hi": null
+      },
+      {
+        "en": "Projection (π)",
+        "hi": null
+      },
+      {
+        "en": "Cartesian product (×)",
+        "hi": null
+      },
+      {
+        "en": "Union (∪)",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Projection picks columns (and removes duplicate rows); selection picks rows that satisfy a condition. Students often confuse the two: σ is 'horizontal', π is 'vertical'.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Relational model",
+    "difficulty": "medium",
+    "question_en": "Relation R has 5 tuples and relation S has 4 tuples. The Cartesian product R × S contains how many tuples?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "5",
+        "hi": null
+      },
+      {
+        "en": "9",
+        "hi": null
+      },
+      {
+        "en": "1",
+        "hi": null
+      },
+      {
+        "en": "20",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Cartesian product pairs every tuple of R with every tuple of S, giving 5 × 4 = 20 tuples. Its degree is the sum of the degrees of R and S.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Relational model",
+    "difficulty": "medium",
+    "question_en": "For the UNION of two relations to be valid, the relations must be:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Having the same primary key",
+        "hi": null
+      },
+      {
+        "en": "Union-compatible (same number of attributes with compatible domains)",
+        "hi": null
+      },
+      {
+        "en": "Stored in the same file",
+        "hi": null
+      },
+      {
+        "en": "Of the same cardinality",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Union, intersection and difference need the operands to have the same degree and corresponding attributes from compatible domains. The number of rows may differ.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Relational model",
+    "difficulty": "hard",
+    "question_en": "Which of the following is NOT a fundamental (basic) operation of relational algebra?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Set difference",
+        "hi": null
+      },
+      {
+        "en": "Natural join",
+        "hi": null
+      },
+      {
+        "en": "Selection",
+        "hi": null
+      },
+      {
+        "en": "Cartesian product",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The six basic operations are select, project, union, set difference, Cartesian product and rename. Join, intersection and division are derived operations (join = select on a Cartesian product).",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Relational model",
+    "difficulty": "medium",
+    "question_en": "Which integrity rule states that no primary-key attribute can be NULL?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Key uniqueness rule",
+        "hi": null
+      },
+      {
+        "en": "Referential integrity",
+        "hi": null
+      },
+      {
+        "en": "Domain integrity",
+        "hi": null
+      },
+      {
+        "en": "Entity integrity",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Entity integrity guarantees every tuple is identifiable. Referential integrity concerns foreign keys matching a referenced primary key, and domain integrity concerns valid attribute values.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Relational model",
+    "difficulty": "hard",
+    "question_en": "The relational-algebra expression σ_Salary>50000 (π_Name,Salary (EMP)) returns:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Name and Salary of employees earning more than 50000",
+        "hi": null
+      },
+      {
+        "en": "All columns of employees earning more than 50000",
+        "hi": null
+      },
+      {
+        "en": "A count of employees with Salary > 50000",
+        "hi": null
+      },
+      {
+        "en": "Only Names of all employees",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The inner projection keeps only Name and Salary; the outer selection then filters rows by Salary > 50000. Relational algebra never returns a count — that is an aggregate function.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Normalisation",
+    "difficulty": "easy",
+    "question_en": "A relation is in First Normal Form (1NF) if:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Every attribute holds only atomic (indivisible) values",
+        "hi": null
+      },
+      {
+        "en": "It has no partial dependency",
+        "hi": null
+      },
+      {
+        "en": "It has no transitive dependency",
+        "hi": null
+      },
+      {
+        "en": "Every determinant is a candidate key",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "1NF forbids repeating groups and multivalued cells; each cell must contain a single atomic value. Removing partial dependency gives 2NF, transitive dependency 3NF, and 'every determinant is a candidate key' is BCNF.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Normalisation",
+    "difficulty": "medium",
+    "question_en": "Second Normal Form (2NF) removes which kind of dependency from a 1NF relation?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Multivalued dependency",
+        "hi": null
+      },
+      {
+        "en": "Transitive dependency",
+        "hi": null
+      },
+      {
+        "en": "Join dependency",
+        "hi": null
+      },
+      {
+        "en": "Partial dependency of non-key attributes on part of a composite key",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "2NF requires every non-prime attribute to be fully functionally dependent on the whole primary key. Partial dependency can only exist when the key is composite, so a 1NF relation with a single-attribute key is automatically in 2NF.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Normalisation",
+    "difficulty": "medium",
+    "question_en": "Relation ORDER(Order_No, Item_No, Qty, Item_Name) has key (Order_No, Item_No). Item_Name depends only on Item_No. The highest normal form of ORDER is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "2NF",
+        "hi": null
+      },
+      {
+        "en": "1NF",
+        "hi": null
+      },
+      {
+        "en": "3NF",
+        "hi": null
+      },
+      {
+        "en": "BCNF",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Item_Name is a non-prime attribute depending on part of the composite key (Item_No), which is a partial dependency. Such a relation is in 1NF but not 2NF; splitting into ORDER(Order_No, Item_No, Qty) and ITEM(Item_No, Item_Name) fixes it.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Normalisation",
+    "difficulty": "medium",
+    "question_en": "Relation EMP(Emp_ID, Dept_ID, Dept_Name) with Emp_ID → Dept_ID and Dept_ID → Dept_Name violates which normal form?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "BCNF only; it is in 3NF",
+        "hi": null
+      },
+      {
+        "en": "2NF, because of a partial dependency",
+        "hi": null
+      },
+      {
+        "en": "1NF, because Dept_Name is multivalued",
+        "hi": null
+      },
+      {
+        "en": "3NF, because of the transitive dependency Emp_ID → Dept_ID → Dept_Name",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Dept_Name depends on the key only through the non-key attribute Dept_ID — a transitive dependency. The key is single-attribute so 2NF holds; decomposing into EMP(Emp_ID, Dept_ID) and DEPT(Dept_ID, Dept_Name) gives 3NF.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Normalisation",
+    "difficulty": "hard",
+    "question_en": "A relation is in BCNF if for every non-trivial functional dependency X → Y:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "X is a super key",
+        "hi": null
+      },
+      {
+        "en": "X is a prime attribute",
+        "hi": null
+      },
+      {
+        "en": "Y is a prime attribute",
+        "hi": null
+      },
+      {
+        "en": "Y is a candidate key",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "BCNF requires every determinant to be a super key. 3NF is weaker: it also allows X → Y when Y is a prime attribute, which is why every BCNF relation is in 3NF but not vice versa.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Normalisation",
+    "difficulty": "hard",
+    "question_en": "Relation R(A, B, C) has functional dependencies AB → C and C → B. Candidate keys are AB and AC. The highest normal form of R is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "1NF only",
+        "hi": null
+      },
+      {
+        "en": "BCNF",
+        "hi": null
+      },
+      {
+        "en": "3NF but not BCNF",
+        "hi": null
+      },
+      {
+        "en": "2NF but not 3NF",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "C → B has a determinant (C) that is not a super key, so BCNF fails. But B is a prime attribute (part of key AB), which 3NF permits, so R is in 3NF. This is the classic 3NF-but-not-BCNF example.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Normalisation",
+    "difficulty": "medium",
+    "question_en": "Fourth Normal Form (4NF) is concerned with removing:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Partial dependencies",
+        "hi": null
+      },
+      {
+        "en": "Atomicity violations",
+        "hi": null
+      },
+      {
+        "en": "Multivalued dependencies",
+        "hi": null
+      },
+      {
+        "en": "Transitive dependencies",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "4NF requires that every non-trivial multivalued dependency X →→ Y has X as a super key. Partial and transitive dependencies are handled by 2NF and 3NF; join dependencies belong to 5NF.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Normalisation",
+    "difficulty": "easy",
+    "question_en": "The main purpose of normalisation in database design is to:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Increase the speed of every query",
+        "hi": null
+      },
+      {
+        "en": "Encrypt sensitive columns",
+        "hi": null
+      },
+      {
+        "en": "Reduce redundancy and avoid insertion, deletion and update anomalies",
+        "hi": null
+      },
+      {
+        "en": "Reduce the number of users",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Normalisation decomposes relations to eliminate redundant data and the anomalies it causes. It can actually slow some queries because more joins are needed, which is why denormalisation is sometimes used for reporting.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Normalisation",
+    "difficulty": "medium",
+    "question_en": "Given functional dependencies A → B and B → C, which dependency follows by the transitivity rule of Armstrong's axioms?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "C → A",
+        "hi": null
+      },
+      {
+        "en": "C → B",
+        "hi": null
+      },
+      {
+        "en": "A → C",
+        "hi": null
+      },
+      {
+        "en": "B → A",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Transitivity: if A → B and B → C then A → C. Armstrong's three primary axioms are reflexivity, augmentation and transitivity; reversing a dependency is never implied.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Normalisation",
+    "difficulty": "hard",
+    "question_en": "A decomposition of R into R1 and R2 is lossless if:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "R1 ∩ R2 is a super key of R1 or of R2",
+        "hi": null
+      },
+      {
+        "en": "R1 ∪ R2 has fewer attributes than R",
+        "hi": null
+      },
+      {
+        "en": "R1 ∩ R2 is empty",
+        "hi": null
+      },
+      {
+        "en": "Both R1 and R2 have the same number of tuples",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Lossless-join condition: the common attributes must functionally determine all attributes of at least one of the two sub-relations, i.e., be a key of R1 or R2. If the intersection is empty, the natural join becomes a Cartesian product and spurious tuples appear.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Normalisation",
+    "difficulty": "easy",
+    "question_en": "Which anomaly occurs when deleting the only tuple that stores a department's name also loses the department's information?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Update anomaly",
+        "hi": null
+      },
+      {
+        "en": "Insertion anomaly",
+        "hi": null
+      },
+      {
+        "en": "Join anomaly",
+        "hi": null
+      },
+      {
+        "en": "Deletion anomaly",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "A deletion anomaly is the unintended loss of facts when a row is removed. An insertion anomaly is being unable to add a fact (e.g., a new department) without an unrelated fact (an employee).",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "SQL DDL/DML/DCL",
+    "difficulty": "easy",
+    "question_en": "Which of the following SQL commands belongs to DDL (Data Definition Language)?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "ALTER",
+        "hi": null
+      },
+      {
+        "en": "INSERT",
+        "hi": null
+      },
+      {
+        "en": "UPDATE",
+        "hi": null
+      },
+      {
+        "en": "GRANT",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "DDL commands define or change structure: CREATE, ALTER, DROP, TRUNCATE. INSERT and UPDATE are DML (data manipulation), GRANT is DCL.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "SQL DDL/DML/DCL",
+    "difficulty": "easy",
+    "question_en": "GRANT and REVOKE statements are part of which category of SQL?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "DCL (Data Control Language)",
+        "hi": null
+      },
+      {
+        "en": "DML",
+        "hi": null
+      },
+      {
+        "en": "TCL",
+        "hi": null
+      },
+      {
+        "en": "DDL",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "DCL controls access rights: GRANT gives privileges and REVOKE takes them back. TCL (COMMIT, ROLLBACK, SAVEPOINT) controls transactions.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "SQL DDL/DML/DCL",
+    "difficulty": "medium",
+    "question_en": "What is the key difference between DELETE and TRUNCATE in SQL?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "DELETE can use a WHERE clause and can be rolled back; TRUNCATE removes all rows and is DDL",
+        "hi": null
+      },
+      {
+        "en": "DELETE is faster than TRUNCATE for large tables",
+        "hi": null
+      },
+      {
+        "en": "TRUNCATE removes the table structure; DELETE does not",
+        "hi": null
+      },
+      {
+        "en": "There is no difference; they are synonyms",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "DELETE is row-level DML, logs each row, allows WHERE and ROLLBACK. TRUNCATE is DDL that deallocates all data pages quickly and in most systems cannot be rolled back. DROP is the command that removes the structure.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "SQL DDL/DML/DCL",
+    "difficulty": "medium",
+    "question_en": "Which statement adds a new column 'Email VARCHAR(50)' to an existing table STUDENT?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "MODIFY TABLE STUDENT ADD Email VARCHAR(50);",
+        "hi": null
+      },
+      {
+        "en": "INSERT INTO STUDENT COLUMN Email VARCHAR(50);",
+        "hi": null
+      },
+      {
+        "en": "ALTER TABLE STUDENT ADD Email VARCHAR(50);",
+        "hi": null
+      },
+      {
+        "en": "UPDATE STUDENT ADD Email VARCHAR(50);",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Structural changes use ALTER TABLE ... ADD / DROP / MODIFY (or CHANGE in MySQL). UPDATE and INSERT only change data, not the schema.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "SQL DDL/DML/DCL",
+    "difficulty": "medium",
+    "question_en": "Table EMP(ID, Name, Salary). The statement UPDATE EMP SET Salary = Salary * 1.10; (without WHERE) will:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Create a new column Salary",
+        "hi": null
+      },
+      {
+        "en": "Return an error because WHERE is mandatory",
+        "hi": null
+      },
+      {
+        "en": "Increase the salary of every row by 10%",
+        "hi": null
+      },
+      {
+        "en": "Increase only the first row's salary",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "An UPDATE without a WHERE clause applies the SET expression to every row of the table. This is a frequent cause of accidental data changes; WHERE is optional, not mandatory.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "SQL DDL/DML/DCL",
+    "difficulty": "easy",
+    "question_en": "Which SQL statement is used to insert a new record into a table?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "APPEND",
+        "hi": null
+      },
+      {
+        "en": "CREATE ROW",
+        "hi": null
+      },
+      {
+        "en": "INSERT INTO",
+        "hi": null
+      },
+      {
+        "en": "ADD RECORD",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "INSERT INTO table_name (col1, col2) VALUES (v1, v2); adds a row. MySQL also allows INSERT ... SELECT to copy rows from another table.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "SQL DDL/DML/DCL",
+    "difficulty": "medium",
+    "question_en": "Which of the following is a TCL (Transaction Control Language) command?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "SAVEPOINT",
+        "hi": null
+      },
+      {
+        "en": "REVOKE",
+        "hi": null
+      },
+      {
+        "en": "SELECT",
+        "hi": null
+      },
+      {
+        "en": "TRUNCATE",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "TCL includes COMMIT, ROLLBACK and SAVEPOINT. TRUNCATE is DDL, REVOKE is DCL and SELECT is DQL/DML.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "SQL DDL/DML/DCL",
+    "difficulty": "hard",
+    "question_en": "Which statement removes the whole table BOOKS, including its structure, from the database?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "TRUNCATE TABLE BOOKS;",
+        "hi": null
+      },
+      {
+        "en": "DELETE TABLE BOOKS;",
+        "hi": null
+      },
+      {
+        "en": "REMOVE TABLE BOOKS;",
+        "hi": null
+      },
+      {
+        "en": "DROP TABLE BOOKS;",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "DROP TABLE deletes the data and the table definition. TRUNCATE empties the table but keeps the structure; DELETE TABLE and REMOVE TABLE are not valid SQL.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "SQL DDL/DML/DCL",
+    "difficulty": "medium",
+    "question_en": "In the statement SELECT Name FROM STUDENT WHERE Marks BETWEEN 60 AND 80;, which rows are returned?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Rows with Marks from 60 to 80, both inclusive",
+        "hi": null
+      },
+      {
+        "en": "Rows with Marks strictly between 60 and 80",
+        "hi": null
+      },
+      {
+        "en": "Rows with Marks less than 60 or more than 80",
+        "hi": null
+      },
+      {
+        "en": "Rows with Marks 60 or 80 only",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "BETWEEN is inclusive of both boundary values, equivalent to Marks >= 60 AND Marks <= 80. NOT BETWEEN gives the rows outside the range.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Joins",
+    "difficulty": "medium",
+    "question_en": "Table A has rows with ID values 1, 2, 3 and table B has rows with ID values 2, 3, 4. How many rows does SELECT * FROM A INNER JOIN B ON A.ID = B.ID; return?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "6",
+        "hi": null
+      },
+      {
+        "en": "2",
+        "hi": null
+      },
+      {
+        "en": "4",
+        "hi": null
+      },
+      {
+        "en": "3",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "An inner join keeps only matching IDs: 2 and 3, i.e., 2 rows. A LEFT JOIN would give 3 rows, a FULL OUTER JOIN 4 rows and a CROSS JOIN 9 rows.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Joins",
+    "difficulty": "medium",
+    "question_en": "Using the same tables (A.ID = 1, 2, 3; B.ID = 2, 3, 4), SELECT * FROM A LEFT JOIN B ON A.ID = B.ID; returns how many rows and what is B.ID for A.ID = 1?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "3 rows; NULL",
+        "hi": null
+      },
+      {
+        "en": "2 rows; 1",
+        "hi": null
+      },
+      {
+        "en": "4 rows; NULL",
+        "hi": null
+      },
+      {
+        "en": "3 rows; 1",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "LEFT JOIN keeps every row of the left table A (3 rows). Row ID 1 has no match in B, so its B columns are filled with NULL.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Joins",
+    "difficulty": "hard",
+    "question_en": "Tables EMP(E_ID, Name, D_ID) with 5 rows and DEPT(D_ID, D_Name) with 3 rows. The query SELECT * FROM EMP, DEPT; (no WHERE clause) returns:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "15 rows",
+        "hi": null
+      },
+      {
+        "en": "3 rows",
+        "hi": null
+      },
+      {
+        "en": "5 rows",
+        "hi": null
+      },
+      {
+        "en": "8 rows",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Listing two tables without a join condition produces a Cartesian product (cross join): 5 × 3 = 15 rows. Adding WHERE EMP.D_ID = DEPT.D_ID turns it into an equi-join.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Joins",
+    "difficulty": "medium",
+    "question_en": "A join that automatically matches all columns having the same name in both tables and shows the common column only once is a:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Right outer join",
+        "hi": null
+      },
+      {
+        "en": "Self join",
+        "hi": null
+      },
+      {
+        "en": "Cross join",
+        "hi": null
+      },
+      {
+        "en": "Natural join",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "NATURAL JOIN uses all same-named columns as the join condition and removes the duplicate column from the result. An equi-join written with ON keeps both copies of the column.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Joins",
+    "difficulty": "medium",
+    "question_en": "Which join returns all rows from the right table and the matching rows from the left table, with NULLs where there is no match?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "LEFT OUTER JOIN",
+        "hi": null
+      },
+      {
+        "en": "INNER JOIN",
+        "hi": null
+      },
+      {
+        "en": "CROSS JOIN",
+        "hi": null
+      },
+      {
+        "en": "RIGHT OUTER JOIN",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "RIGHT (OUTER) JOIN preserves every row of the table named on the right of the JOIN keyword. LEFT JOIN preserves the left table; INNER JOIN keeps only matches.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Joins",
+    "difficulty": "hard",
+    "question_en": "EMP table: (101, Asha, Mgr=NULL), (102, Ravi, Mgr=101), (103, Neha, Mgr=101). Query: SELECT e.Name, m.Name AS Manager FROM EMP e JOIN EMP m ON e.Mgr = m.E_ID; What is the output?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Asha–Ravi, Asha–Neha (2 rows)",
+        "hi": null
+      },
+      {
+        "en": "Ravi–Asha, Neha–Asha (2 rows)",
+        "hi": null
+      },
+      {
+        "en": "No rows, since a table cannot join itself",
+        "hi": null
+      },
+      {
+        "en": "Asha–NULL, Ravi–Asha, Neha–Asha (3 rows)",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "This is a self join: each employee row is matched to the row whose E_ID equals its Mgr. Asha has Mgr NULL, which matches nothing in an inner join, so only Ravi and Neha appear with Manager = Asha. A LEFT JOIN would give 3 rows including Asha–NULL.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Joins",
+    "difficulty": "easy",
+    "question_en": "The join condition in an equi-join uses which comparison operator?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "<> (not equal)",
+        "hi": null
+      },
+      {
+        "en": "LIKE",
+        "hi": null
+      },
+      {
+        "en": "> (greater than)",
+        "hi": null
+      },
+      {
+        "en": "= (equality)",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "An equi-join compares columns with '='. A join using any other operator (<, >, <>) is a non-equi join or theta join.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Joins",
+    "difficulty": "medium",
+    "question_en": "To list every department even if it has no employee, along with employee names where present, which query is correct?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "SELECT D.D_Name, E.Name FROM DEPT D INNER JOIN EMP E ON D.D_ID = E.D_ID;",
+        "hi": null
+      },
+      {
+        "en": "SELECT D.D_Name, E.Name FROM DEPT D RIGHT JOIN EMP E ON D.D_ID = E.D_ID;",
+        "hi": null
+      },
+      {
+        "en": "SELECT D.D_Name, E.Name FROM DEPT D, EMP E;",
+        "hi": null
+      },
+      {
+        "en": "SELECT D.D_Name, E.Name FROM DEPT D LEFT JOIN EMP E ON D.D_ID = E.D_ID;",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "DEPT is the left table, so LEFT JOIN keeps all departments and shows NULL for Name where no employee exists. INNER JOIN drops empty departments; RIGHT JOIN would keep all employees instead.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Subqueries",
+    "difficulty": "medium",
+    "question_en": "EMP(Name, Salary): (Amit 30000), (Bela 50000), (Chand 40000), (Dev 60000). Output of SELECT Name FROM EMP WHERE Salary > (SELECT AVG(Salary) FROM EMP); is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Dev only",
+        "hi": null
+      },
+      {
+        "en": "Amit, Chand",
+        "hi": null
+      },
+      {
+        "en": "Chand, Bela, Dev",
+        "hi": null
+      },
+      {
+        "en": "Bela, Dev",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Average salary = (30000+50000+40000+60000)/4 = 45000. Rows with Salary > 45000 are Bela (50000) and Dev (60000).",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Subqueries",
+    "difficulty": "medium",
+    "question_en": "Which query returns the second highest salary from EMP?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "SELECT MIN(Salary) FROM EMP WHERE Salary < (SELECT MAX(Salary) FROM EMP);",
+        "hi": null
+      },
+      {
+        "en": "SELECT MAX(Salary) FROM EMP WHERE Salary > (SELECT MAX(Salary) FROM EMP);",
+        "hi": null
+      },
+      {
+        "en": "SELECT Salary FROM EMP ORDER BY Salary LIMIT 1;",
+        "hi": null
+      },
+      {
+        "en": "SELECT MAX(Salary) FROM EMP WHERE Salary < (SELECT MAX(Salary) FROM EMP);",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "The subquery finds the top salary; the outer MAX picks the largest value below it, i.e., the second highest. Using MIN instead of MAX returns the lowest salary, and ORDER BY Salary LIMIT 1 without DESC also returns the lowest.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Subqueries",
+    "difficulty": "hard",
+    "question_en": "A subquery that refers to a column of the outer query and is therefore re-evaluated for each outer row is called a:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Correlated subquery",
+        "hi": null
+      },
+      {
+        "en": "Derived table",
+        "hi": null
+      },
+      {
+        "en": "Nested view",
+        "hi": null
+      },
+      {
+        "en": "Scalar subquery",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "A correlated subquery depends on the outer row (e.g., WHERE e.Salary > (SELECT AVG(Salary) FROM EMP WHERE D_ID = e.D_ID)). A non-correlated subquery runs once; a scalar subquery returns a single value.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Subqueries",
+    "difficulty": "medium",
+    "question_en": "Which operator is used with a subquery that returns multiple values, e.g., WHERE D_ID ______ (SELECT D_ID FROM DEPT WHERE City = 'Delhi')?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "IN",
+        "hi": null
+      },
+      {
+        "en": "=",
+        "hi": null
+      },
+      {
+        "en": "BETWEEN",
+        "hi": null
+      },
+      {
+        "en": "LIKE",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "'=' works only with a single-row subquery; a multi-row subquery needs IN, ANY/SOME, ALL or EXISTS. Using '=' with multiple rows raises 'subquery returns more than 1 row'.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Subqueries",
+    "difficulty": "hard",
+    "question_en": "EMP(Name, Salary): (Amit 30000), (Bela 50000), (Chand 40000). Output of SELECT Name FROM EMP WHERE Salary > ALL (SELECT Salary FROM EMP WHERE Name IN ('Amit','Chand')); is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Amit, Chand",
+        "hi": null
+      },
+      {
+        "en": "Chand, Bela",
+        "hi": null
+      },
+      {
+        "en": "Bela",
+        "hi": null
+      },
+      {
+        "en": "No rows",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "The subquery returns 30000 and 40000. '> ALL' means greater than every value, i.e., > 40000, which only Bela (50000) satisfies. '> ANY' would return Chand and Bela.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Subqueries",
+    "difficulty": "medium",
+    "question_en": "The EXISTS operator in a WHERE clause returns TRUE when:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "The subquery returns at least one row",
+        "hi": null
+      },
+      {
+        "en": "The subquery returns NULL",
+        "hi": null
+      },
+      {
+        "en": "The subquery returns exactly one row",
+        "hi": null
+      },
+      {
+        "en": "All rows of the outer table match",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "EXISTS tests for the presence of any row in the subquery result, regardless of the column values. NOT EXISTS is true when the subquery is empty.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Subqueries",
+    "difficulty": "easy",
+    "question_en": "A subquery placed in the FROM clause and used as a temporary table is called a/an:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Stored procedure",
+        "hi": null
+      },
+      {
+        "en": "Derived table (inline view)",
+        "hi": null
+      },
+      {
+        "en": "Correlated subquery",
+        "hi": null
+      },
+      {
+        "en": "Trigger",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "A subquery in FROM is a derived table and in MySQL it must be given an alias. Subqueries can appear in SELECT, FROM, WHERE and HAVING clauses.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Aggregate & GROUP BY/HAVING",
+    "difficulty": "medium",
+    "question_en": "Table MARKS(Student, Score): (A, 80), (B, NULL), (C, 60). What do SELECT COUNT(*), COUNT(Score), AVG(Score) FROM MARKS; return?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "2, 2, 70",
+        "hi": null
+      },
+      {
+        "en": "3, 2, 46.67",
+        "hi": null
+      },
+      {
+        "en": "3, 2, 70",
+        "hi": null
+      },
+      {
+        "en": "3, 3, 46.67",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "COUNT(*) counts all rows (3). COUNT(Score) and AVG(Score) ignore NULLs, so they use only 80 and 60: count 2, average 70. Treating NULL as 0 is the common mistake.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Aggregate & GROUP BY/HAVING",
+    "difficulty": "medium",
+    "question_en": "SALES(City, Amount): (Delhi 100), (Mumbai 200), (Delhi 300), (Pune 150), (Mumbai 50). Output of SELECT City, SUM(Amount) FROM SALES GROUP BY City HAVING SUM(Amount) > 200; is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Mumbai 250 only",
+        "hi": null
+      },
+      {
+        "en": "Delhi 400, Mumbai 250",
+        "hi": null
+      },
+      {
+        "en": "Delhi 400 only",
+        "hi": null
+      },
+      {
+        "en": "Delhi 400, Mumbai 250, Pune 150",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Group totals: Delhi 400, Mumbai 250, Pune 150. HAVING filters groups after aggregation, keeping those above 200 — Delhi and Mumbai.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Aggregate & GROUP BY/HAVING",
+    "difficulty": "easy",
+    "question_en": "Which clause is used to filter groups after GROUP BY has been applied?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "ORDER BY",
+        "hi": null
+      },
+      {
+        "en": "WHERE",
+        "hi": null
+      },
+      {
+        "en": "DISTINCT",
+        "hi": null
+      },
+      {
+        "en": "HAVING",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "WHERE filters individual rows before grouping and cannot contain aggregate functions; HAVING filters the groups produced by GROUP BY and may use aggregates like COUNT or SUM.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Aggregate & GROUP BY/HAVING",
+    "difficulty": "medium",
+    "question_en": "What is the logical order in which SQL processes these clauses?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "WHERE → FROM → SELECT → GROUP BY → ORDER BY → HAVING",
+        "hi": null
+      },
+      {
+        "en": "FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY",
+        "hi": null
+      },
+      {
+        "en": "FROM → GROUP BY → WHERE → HAVING → SELECT → ORDER BY",
+        "hi": null
+      },
+      {
+        "en": "SELECT → FROM → WHERE → GROUP BY → HAVING → ORDER BY",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Rows are fetched (FROM), filtered (WHERE), grouped (GROUP BY), groups filtered (HAVING), columns projected (SELECT) and finally sorted (ORDER BY). This is why a column alias from SELECT cannot be used in WHERE but can be used in ORDER BY.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Aggregate & GROUP BY/HAVING",
+    "difficulty": "hard",
+    "question_en": "STUDENT(Class, Name): (10, Asha), (10, Ravi), (11, Neha), (12, Dev), (11, Om), (10, Tara). Output of SELECT Class, COUNT(*) FROM STUDENT GROUP BY Class ORDER BY COUNT(*) DESC, Class; is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "12–1, 11–2, 10–3",
+        "hi": null
+      },
+      {
+        "en": "10–3, 11–2, 12–1",
+        "hi": null
+      },
+      {
+        "en": "11–2, 10–3, 12–1",
+        "hi": null
+      },
+      {
+        "en": "10–3, 12–1, 11–2",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Counts: Class 10 has 3, Class 11 has 2, Class 12 has 1. ORDER BY COUNT(*) DESC sorts from largest group to smallest, giving 10, 11, 12.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Aggregate & GROUP BY/HAVING",
+    "difficulty": "medium",
+    "question_en": "Which of the following queries is INVALID in standard SQL?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "SELECT Dept, Name, COUNT(*) FROM EMP GROUP BY Dept;",
+        "hi": null
+      },
+      {
+        "en": "SELECT Dept, COUNT(*) FROM EMP GROUP BY Dept;",
+        "hi": null
+      },
+      {
+        "en": "SELECT Dept FROM EMP GROUP BY Dept HAVING COUNT(*) > 2;",
+        "hi": null
+      },
+      {
+        "en": "SELECT COUNT(DISTINCT Dept) FROM EMP;",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Every non-aggregated column in SELECT must appear in GROUP BY; Name is neither grouped nor aggregated, so the query is invalid (MySQL in ONLY_FULL_GROUP_BY mode rejects it). The other three are well-formed.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Aggregate & GROUP BY/HAVING",
+    "difficulty": "easy",
+    "question_en": "Which aggregate function returns the number of rows in a result set, including duplicates?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "MAX",
+        "hi": null
+      },
+      {
+        "en": "COUNT(*)",
+        "hi": null
+      },
+      {
+        "en": "COUNT(DISTINCT col)",
+        "hi": null
+      },
+      {
+        "en": "SUM",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "COUNT(*) counts every row, including rows with NULLs and duplicates. COUNT(DISTINCT col) counts unique non-NULL values of a column.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Aggregate & GROUP BY/HAVING",
+    "difficulty": "hard",
+    "question_en": "PRODUCT(Cat, Price): (Pen 10), (Pen 20), (Book 100), (Book 300), (Bag 500). Output of SELECT Cat, MAX(Price) - MIN(Price) FROM PRODUCT GROUP BY Cat HAVING COUNT(*) >= 2; is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Pen 10, Book 200, Bag 0",
+        "hi": null
+      },
+      {
+        "en": "Pen 10, Book 200",
+        "hi": null
+      },
+      {
+        "en": "Pen 20, Book 300, Bag 500",
+        "hi": null
+      },
+      {
+        "en": "Book 200 only",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Groups with at least 2 rows are Pen and Book. Pen: 20 − 10 = 10; Book: 300 − 100 = 200. Bag has one row and is removed by HAVING.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Aggregate & GROUP BY/HAVING",
+    "difficulty": "medium",
+    "question_en": "The query SELECT DISTINCT City FROM CUSTOMER; on a table with cities Delhi, Pune, Delhi, Goa, Pune returns how many rows?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "2",
+        "hi": null
+      },
+      {
+        "en": "1",
+        "hi": null
+      },
+      {
+        "en": "3",
+        "hi": null
+      },
+      {
+        "en": "5",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "DISTINCT removes duplicate values, leaving Delhi, Pune and Goa — 3 rows. Without DISTINCT all 5 rows are returned.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Constraints",
+    "difficulty": "easy",
+    "question_en": "Which constraint ensures that a column cannot store an empty (missing) value?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "CHECK",
+        "hi": null
+      },
+      {
+        "en": "DEFAULT",
+        "hi": null
+      },
+      {
+        "en": "NOT NULL",
+        "hi": null
+      },
+      {
+        "en": "UNIQUE",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "NOT NULL forces every row to supply a value for the column. UNIQUE prevents duplicates (but usually allows NULL), CHECK validates a condition and DEFAULT supplies a value when none is given.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Constraints",
+    "difficulty": "easy",
+    "question_en": "The constraint CHECK (Age >= 18) on table VOTER will:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Automatically set Age to 18 when it is lower",
+        "hi": null
+      },
+      {
+        "en": "Reject any insert or update where Age is less than 18",
+        "hi": null
+      },
+      {
+        "en": "Only warn the user but allow the row",
+        "hi": null
+      },
+      {
+        "en": "Delete rows whose Age is below 18",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "A CHECK constraint is a rule evaluated on INSERT/UPDATE; rows that make it false are rejected with an error. It never modifies or deletes data.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Constraints",
+    "difficulty": "medium",
+    "question_en": "What is the difference between a UNIQUE constraint and a PRIMARY KEY constraint in MySQL?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "There is no difference",
+        "hi": null
+      },
+      {
+        "en": "A PRIMARY KEY can be duplicated but UNIQUE cannot",
+        "hi": null
+      },
+      {
+        "en": "UNIQUE disallows NULL while PRIMARY KEY allows it",
+        "hi": null
+      },
+      {
+        "en": "A table can have many UNIQUE constraints that allow NULL, but only one PRIMARY KEY that disallows NULL",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Both enforce uniqueness, but PRIMARY KEY also implies NOT NULL and a table may have only one; UNIQUE columns may hold NULLs (multiple NULLs in MySQL) and several UNIQUE constraints can exist.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Constraints",
+    "difficulty": "medium",
+    "question_en": "CREATE TABLE ORDERS (O_ID INT PRIMARY KEY, C_ID INT, FOREIGN KEY (C_ID) REFERENCES CUSTOMER(C_ID)); Inserting an ORDERS row with C_ID = 99 when no customer 99 exists will:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Succeed and mark the row as orphan",
+        "hi": null
+      },
+      {
+        "en": "Succeed and create customer 99 automatically",
+        "hi": null
+      },
+      {
+        "en": "Fail with a referential integrity (foreign key) error",
+        "hi": null
+      },
+      {
+        "en": "Succeed with C_ID stored as NULL",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "A foreign key value must exist in the referenced parent table (or be NULL). InnoDB rejects the insert; the DBMS never auto-creates parent rows.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Constraints",
+    "difficulty": "medium",
+    "question_en": "Which constraint supplies a value for a column automatically when INSERT does not mention that column?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "DEFAULT",
+        "hi": null
+      },
+      {
+        "en": "NOT NULL",
+        "hi": null
+      },
+      {
+        "en": "CHECK",
+        "hi": null
+      },
+      {
+        "en": "FOREIGN KEY",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "DEFAULT 'Delhi' on a City column stores 'Delhi' when the insert omits City. NOT NULL would instead cause an error if no value and no default exist.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Constraints",
+    "difficulty": "hard",
+    "question_en": "Table T(ID INT PRIMARY KEY, Code VARCHAR(5) UNIQUE). Two rows are inserted: (1, NULL) and (2, NULL). In MySQL InnoDB this:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Fails, because NULL = NULL violates UNIQUE",
+        "hi": null
+      },
+      {
+        "en": "Succeeds only for the first row",
+        "hi": null
+      },
+      {
+        "en": "Succeeds, because UNIQUE allows multiple NULLs",
+        "hi": null
+      },
+      {
+        "en": "Fails, because UNIQUE implies NOT NULL",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "In SQL, NULL is not equal to anything including NULL, so a UNIQUE index in MySQL permits any number of NULLs. A PRIMARY KEY column, however, cannot be NULL at all.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Constraints",
+    "difficulty": "medium",
+    "question_en": "The AUTO_INCREMENT attribute in MySQL is typically used on a column that is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "A DATE column storing the current date",
+        "hi": null
+      },
+      {
+        "en": "A VARCHAR column storing names",
+        "hi": null
+      },
+      {
+        "en": "A column with a CHECK constraint",
+        "hi": null
+      },
+      {
+        "en": "An integer primary key generating 1, 2, 3, … automatically",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "AUTO_INCREMENT generates a new sequential integer for each inserted row and must be on an indexed (usually PRIMARY KEY) integer column. CURRENT_DATE/NOW() is used for date defaults.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Views",
+    "difficulty": "easy",
+    "question_en": "A view in SQL is best described as a:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Backup of a database",
+        "hi": null
+      },
+      {
+        "en": "Virtual table defined by a stored SELECT query",
+        "hi": null
+      },
+      {
+        "en": "Index on a table",
+        "hi": null
+      },
+      {
+        "en": "Physical copy of a table on disk",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "A view stores only the query definition; its rows are computed each time it is referenced. A materialised view (not supported natively in MySQL) would store the data physically.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Views",
+    "difficulty": "easy",
+    "question_en": "Which statement creates a view showing only employees of department 10?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "CREATE TABLE D10 AS VIEW EMP WHERE D_ID = 10;",
+        "hi": null
+      },
+      {
+        "en": "CREATE VIEW D10 AS SELECT * FROM EMP WHERE D_ID = 10;",
+        "hi": null
+      },
+      {
+        "en": "MAKE VIEW D10 FROM EMP WHERE D_ID = 10;",
+        "hi": null
+      },
+      {
+        "en": "CREATE VIEW D10 ON EMP (D_ID = 10);",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The syntax is CREATE [OR REPLACE] VIEW view_name AS SELECT ...; The view is then queried like any table: SELECT * FROM D10;",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Views",
+    "difficulty": "medium",
+    "question_en": "Which of the following is an advantage of using views?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "They can hide sensitive columns and simplify complex queries for users",
+        "hi": null
+      },
+      {
+        "en": "They always make queries run faster than base tables",
+        "hi": null
+      },
+      {
+        "en": "They permanently store a snapshot of the data",
+        "hi": null
+      },
+      {
+        "en": "They remove the need for primary keys",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Views provide security (exposing only selected columns/rows) and logical data independence. Because a view re-runs its query, it does not by itself improve speed or store data.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Views",
+    "difficulty": "hard",
+    "question_en": "Which of these views is NOT updatable (rows cannot be inserted/updated through it) in MySQL?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "CREATE VIEW V AS SELECT E_ID, Name FROM EMP;",
+        "hi": null
+      },
+      {
+        "en": "CREATE VIEW V AS SELECT E_ID, Salary FROM EMP WHERE D_ID = 5;",
+        "hi": null
+      },
+      {
+        "en": "CREATE VIEW V AS SELECT * FROM EMP WHERE Salary > 20000;",
+        "hi": null
+      },
+      {
+        "en": "CREATE VIEW V AS SELECT D_ID, COUNT(*) FROM EMP GROUP BY D_ID;",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "A view containing aggregate functions, GROUP BY, DISTINCT, UNION or subqueries in SELECT cannot be mapped back to individual base rows, so it is read-only. Simple single-table projections/selections remain updatable.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Views",
+    "difficulty": "medium",
+    "question_en": "If the base table EMP is modified after a view V on EMP was created, a subsequent SELECT * FROM V will:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Show the old data until the view is recreated",
+        "hi": null
+      },
+      {
+        "en": "Show the updated data, because the view query runs on the current table",
+        "hi": null
+      },
+      {
+        "en": "Return an error",
+        "hi": null
+      },
+      {
+        "en": "Show only the rows that existed at creation time",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "A standard view is not a stored copy; it executes its defining SELECT each time, so it always reflects the current contents of the base table.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Transactions ACID",
+    "difficulty": "easy",
+    "question_en": "In the ACID properties of a transaction, 'A' stands for:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Accuracy",
+        "hi": null
+      },
+      {
+        "en": "Availability",
+        "hi": null
+      },
+      {
+        "en": "Atomicity",
+        "hi": null
+      },
+      {
+        "en": "Authorisation",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "ACID = Atomicity, Consistency, Isolation, Durability. Atomicity means all operations of a transaction complete or none do ('all or nothing').",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Transactions ACID",
+    "difficulty": "medium",
+    "question_en": "Which ACID property guarantees that once a transaction is committed, its changes survive a system crash or power failure?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Consistency",
+        "hi": null
+      },
+      {
+        "en": "Atomicity",
+        "hi": null
+      },
+      {
+        "en": "Durability",
+        "hi": null
+      },
+      {
+        "en": "Isolation",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Durability is ensured by writing to a log/journal before confirming the commit, so committed data can be recovered. Atomicity deals with partial failures within a transaction, not persistence.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Transactions ACID",
+    "difficulty": "medium",
+    "question_en": "A money transfer debits Rs 500 from Account A and the system crashes before crediting Account B. Which property ensures the debit is undone?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Isolation",
+        "hi": null
+      },
+      {
+        "en": "Atomicity",
+        "hi": null
+      },
+      {
+        "en": "Durability",
+        "hi": null
+      },
+      {
+        "en": "Serialisability",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Atomicity makes the transaction all-or-nothing: the recovery manager rolls back the partial debit so the database returns to its state before the transaction began.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Transactions ACID",
+    "difficulty": "easy",
+    "question_en": "Which command undoes all changes made in the current transaction since the last COMMIT?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "RESTORE",
+        "hi": null
+      },
+      {
+        "en": "DELETE",
+        "hi": null
+      },
+      {
+        "en": "ROLLBACK",
+        "hi": null
+      },
+      {
+        "en": "REVOKE",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "ROLLBACK discards uncommitted changes; ROLLBACK TO SAVEPOINT name undoes only up to a savepoint. REVOKE withdraws privileges and is unrelated to transactions.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Transactions ACID",
+    "difficulty": "medium",
+    "question_en": "The 'Isolation' property of transactions means that:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Data is encrypted during the transaction",
+        "hi": null
+      },
+      {
+        "en": "Each transaction runs on a separate server",
+        "hi": null
+      },
+      {
+        "en": "A transaction cannot read any table that another user owns",
+        "hi": null
+      },
+      {
+        "en": "Concurrent transactions do not see each other's intermediate (uncommitted) results",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Isolation makes concurrent execution appear as if transactions ran one after another (serially). It is implemented by locking or multiversion concurrency control, not by separate hardware.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Transactions ACID",
+    "difficulty": "hard",
+    "question_en": "A transaction has executed its last statement but has not yet been committed. According to the transaction state diagram it is in the ______ state.",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Partially committed",
+        "hi": null
+      },
+      {
+        "en": "Failed",
+        "hi": null
+      },
+      {
+        "en": "Committed",
+        "hi": null
+      },
+      {
+        "en": "Active",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "States: Active → Partially committed (after final statement) → Committed (after commit succeeds). If something goes wrong in active or partially committed state it moves to Failed → Aborted.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Transactions ACID",
+    "difficulty": "medium",
+    "question_en": "In MySQL, which setting makes every single statement a separate transaction that is committed immediately?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "ISOLATION = SERIALIZABLE",
+        "hi": null
+      },
+      {
+        "en": "LOCK TABLES",
+        "hi": null
+      },
+      {
+        "en": "AUTOCOMMIT = 1",
+        "hi": null
+      },
+      {
+        "en": "SAVEPOINT = ON",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "With autocommit on (the default), each statement is committed as soon as it executes. START TRANSACTION or SET AUTOCOMMIT = 0 is needed to group several statements and use ROLLBACK.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Concurrency",
+    "difficulty": "medium",
+    "question_en": "T1 reads a value X = 100 and updates it to 150 without committing. T2 then reads X and gets 150. T1 is rolled back. The problem T2 faces is called:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Lost update",
+        "hi": null
+      },
+      {
+        "en": "Phantom read",
+        "hi": null
+      },
+      {
+        "en": "Non-repeatable read",
+        "hi": null
+      },
+      {
+        "en": "Dirty read",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Reading uncommitted data that is later rolled back is a dirty read (uncommitted dependency). A lost update happens when two transactions overwrite each other's writes.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Concurrency",
+    "difficulty": "medium",
+    "question_en": "Two transactions both read Balance = 1000; T1 adds 200 and writes 1200, then T2 subtracts 100 and writes 900. The final value 900 illustrates:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Phantom read",
+        "hi": null
+      },
+      {
+        "en": "Lost update problem",
+        "hi": null
+      },
+      {
+        "en": "Deadlock",
+        "hi": null
+      },
+      {
+        "en": "Dirty read",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "T1's update is overwritten by T2, which worked from the stale value; the correct result should have been 1100. Locking the row before reading prevents this.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Concurrency",
+    "difficulty": "hard",
+    "question_en": "In the two-phase locking (2PL) protocol, a transaction:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Locks items in alphabetical order",
+        "hi": null
+      },
+      {
+        "en": "Releases every lock immediately after each read",
+        "hi": null
+      },
+      {
+        "en": "Acquires all its locks in a growing phase and releases them in a shrinking phase, never acquiring a lock after releasing one",
+        "hi": null
+      },
+      {
+        "en": "Must lock only two data items",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "2PL guarantees conflict serialisability by separating lock acquisition (growing phase) from release (shrinking phase). Strict 2PL additionally holds exclusive locks until commit to avoid cascading rollbacks.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Concurrency",
+    "difficulty": "easy",
+    "question_en": "A shared (S) lock on a data item allows other transactions to:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Neither read nor write the item",
+        "hi": null
+      },
+      {
+        "en": "Read the item but not write it",
+        "hi": null
+      },
+      {
+        "en": "Delete the item",
+        "hi": null
+      },
+      {
+        "en": "Write the item but not read it",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Many transactions may hold shared (read) locks simultaneously, but an exclusive (X) lock, needed for writing, cannot be granted while any S lock exists.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Concurrency",
+    "difficulty": "medium",
+    "question_en": "A schedule of concurrent transactions is said to be serialisable if:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Its result is equivalent to some serial execution of the same transactions",
+        "hi": null
+      },
+      {
+        "en": "Every transaction reads the same data",
+        "hi": null
+      },
+      {
+        "en": "All transactions execute one after the other",
+        "hi": null
+      },
+      {
+        "en": "No transaction uses locks",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Serialisability is the correctness criterion for concurrency control: an interleaved schedule is acceptable if it yields the same database state as a serial schedule (conflict or view serialisable).",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Concurrency",
+    "difficulty": "medium",
+    "question_en": "T1 runs SELECT COUNT(*) FROM EMP WHERE D_ID = 5 twice; between the two reads T2 inserts and commits a new row with D_ID = 5. T1 sees different counts. This anomaly is a:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Lost update",
+        "hi": null
+      },
+      {
+        "en": "Write skew",
+        "hi": null
+      },
+      {
+        "en": "Phantom read",
+        "hi": null
+      },
+      {
+        "en": "Dirty read",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "New rows appearing in a repeated range query are phantoms; the SERIALIZABLE isolation level prevents them. A non-repeatable read concerns a changed value of an existing row.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Concurrency",
+    "difficulty": "hard",
+    "question_en": "Which SQL isolation level is the strictest and prevents dirty reads, non-repeatable reads and phantom reads?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "SERIALIZABLE",
+        "hi": null
+      },
+      {
+        "en": "READ COMMITTED",
+        "hi": null
+      },
+      {
+        "en": "READ UNCOMMITTED",
+        "hi": null
+      },
+      {
+        "en": "REPEATABLE READ (standard definition)",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "SERIALIZABLE forbids all three anomalies. READ UNCOMMITTED allows all; READ COMMITTED prevents dirty reads only; standard REPEATABLE READ still permits phantoms (InnoDB's implementation largely prevents them, but the standard does not).",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Indexing basics",
+    "difficulty": "easy",
+    "question_en": "The main purpose of creating an index on a table column is to:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Normalise the table",
+        "hi": null
+      },
+      {
+        "en": "Speed up searching and retrieval of rows",
+        "hi": null
+      },
+      {
+        "en": "Enforce the ACID properties",
+        "hi": null
+      },
+      {
+        "en": "Reduce the storage size of the table",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "An index is an auxiliary structure (usually a B+ tree) that lets the DBMS locate rows without a full table scan. It uses extra storage and slows inserts/updates slightly.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Indexing basics",
+    "difficulty": "medium",
+    "question_en": "An index whose search key order is the same as the physical order of records in the file is called a:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Hash index",
+        "hi": null
+      },
+      {
+        "en": "Bitmap index",
+        "hi": null
+      },
+      {
+        "en": "Secondary index",
+        "hi": null
+      },
+      {
+        "en": "Clustered (primary) index",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "A clustered index determines the physical arrangement of rows, so a table can have only one. Secondary (non-clustered) indexes point to rows stored in a different order and can be many.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Indexing basics",
+    "difficulty": "medium",
+    "question_en": "Which data structure is most commonly used to implement indexes in relational databases such as MySQL InnoDB?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Binary search tree",
+        "hi": null
+      },
+      {
+        "en": "Linked list",
+        "hi": null
+      },
+      {
+        "en": "Stack",
+        "hi": null
+      },
+      {
+        "en": "B+ tree",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "B+ trees are balanced, keep all keys in leaf nodes linked together (good for range queries) and have high fan-out, which minimises disk reads. Hash indexes support only equality lookups.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Indexing basics",
+    "difficulty": "hard",
+    "question_en": "A dense index differs from a sparse index in that a dense index:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Must be a hash index",
+        "hi": null
+      },
+      {
+        "en": "Has an entry for every search-key value in the file",
+        "hi": null
+      },
+      {
+        "en": "Can only be built on the primary key",
+        "hi": null
+      },
+      {
+        "en": "Has entries only for some blocks of the file",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "A dense index contains one entry per record (or per distinct key), while a sparse index stores entries only for some records (typically the first of each block) and requires the file to be sorted on the key.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "Indexing basics",
+    "difficulty": "easy",
+    "question_en": "Which MySQL statement creates an index named idx_name on the Name column of STUDENT?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "INDEX STUDENT ON Name idx_name;",
+        "hi": null
+      },
+      {
+        "en": "ALTER INDEX STUDENT ADD Name;",
+        "hi": null
+      },
+      {
+        "en": "CREATE INDEX STUDENT(Name) AS idx_name;",
+        "hi": null
+      },
+      {
+        "en": "CREATE INDEX idx_name ON STUDENT(Name);",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "The standard syntax is CREATE [UNIQUE] INDEX index_name ON table_name (column_list). MySQL also accepts ALTER TABLE STUDENT ADD INDEX idx_name (Name).",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "MySQL functions",
+    "difficulty": "easy",
+    "question_en": "Which MySQL function returns the current date and time together?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "CURDATE()",
+        "hi": null
+      },
+      {
+        "en": "DATE()",
+        "hi": null
+      },
+      {
+        "en": "SYSTIME()",
+        "hi": null
+      },
+      {
+        "en": "NOW()",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "NOW() (also SYSDATE(), CURRENT_TIMESTAMP) returns date and time, e.g., '2026-10-19 10:30:00'. CURDATE() returns only the date and CURTIME() only the time.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "MySQL functions",
+    "difficulty": "medium",
+    "question_en": "What does SELECT ROUND(15.678, 1), TRUNCATE(15.678, 1); return in MySQL?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "16 and 15",
+        "hi": null
+      },
+      {
+        "en": "15.68 and 15.67",
+        "hi": null
+      },
+      {
+        "en": "15.7 and 15.6",
+        "hi": null
+      },
+      {
+        "en": "15.6 and 15.7",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "ROUND rounds to the nearest value at 1 decimal (15.678 → 15.7); TRUNCATE simply cuts off digits after the first decimal (15.6) without rounding.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "MySQL functions",
+    "difficulty": "medium",
+    "question_en": "What is the output of SELECT MOD(17, 5), POWER(2, 5), SQRT(49); in MySQL?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "2, 25, 7",
+        "hi": null
+      },
+      {
+        "en": "3, 10, 7",
+        "hi": null
+      },
+      {
+        "en": "2, 32, 24.5",
+        "hi": null
+      },
+      {
+        "en": "2, 32, 7",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "MOD gives the remainder 17 ÷ 5 = 3 remainder 2; POWER(2,5) = 2^5 = 32; SQRT(49) = 7.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "MySQL functions",
+    "difficulty": "medium",
+    "question_en": "What does SELECT SUBSTR('COMPUTER', 4, 3); return?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "MPU",
+        "hi": null
+      },
+      {
+        "en": "COM",
+        "hi": null
+      },
+      {
+        "en": "UTE",
+        "hi": null
+      },
+      {
+        "en": "PUT",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "SUBSTR(string, start, length) with 1-based positions: characters 4, 5, 6 of 'COMPUTER' are P, U, T → 'PUT'. Starting at position 0 is the common error.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "MySQL functions",
+    "difficulty": "easy",
+    "question_en": "Which MySQL function removes leading and trailing spaces from a string?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "LTRIM()",
+        "hi": null
+      },
+      {
+        "en": "TRIM()",
+        "hi": null
+      },
+      {
+        "en": "CLEAN()",
+        "hi": null
+      },
+      {
+        "en": "STRIP()",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "TRIM removes spaces from both ends; LTRIM only from the left and RTRIM only from the right. STRIP and CLEAN are not MySQL functions (strip is Python).",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "MySQL functions",
+    "difficulty": "hard",
+    "question_en": "What is the output of SELECT CONCAT(UPPER(LEFT('delhi', 1)), LOWER(RIGHT('DELHI', 4)));?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Delhi",
+        "hi": null
+      },
+      {
+        "en": "dELHI",
+        "hi": null
+      },
+      {
+        "en": "DELHI",
+        "hi": null
+      },
+      {
+        "en": "delhi",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "LEFT('delhi',1) = 'd' → UPPER → 'D'; RIGHT('DELHI',4) = 'ELHI' → LOWER → 'elhi'; CONCAT joins them into 'Delhi'.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "MySQL functions",
+    "difficulty": "medium",
+    "question_en": "Which function returns the number of characters in the string 'DSSSB TGT'?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "LENGTH('DSSSB TGT') or CHAR_LENGTH('DSSSB TGT') → 9",
+        "hi": null
+      },
+      {
+        "en": "LEN('DSSSB TGT') → 8",
+        "hi": null
+      },
+      {
+        "en": "SIZE('DSSSB TGT') → 8",
+        "hi": null
+      },
+      {
+        "en": "COUNT('DSSSB TGT') → 9",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "CHAR_LENGTH counts characters and LENGTH counts bytes; for ASCII text both give 9 (the space is counted). COUNT is an aggregate over rows, and SIZE/LEN are not MySQL functions.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_dbms",
+    "subtopic": "MySQL functions",
+    "difficulty": "medium",
+    "question_en": "What does SELECT MONTH('2026-10-19'), DAYNAME('2026-10-19'); return? (19 October 2026 is a Monday.)",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "October and 19",
+        "hi": null
+      },
+      {
+        "en": "10 and Monday",
+        "hi": null
+      },
+      {
+        "en": "10 and 19",
+        "hi": null
+      },
+      {
+        "en": "19 and Monday",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "MONTH() extracts the numeric month (10) and DAYNAME() returns the weekday name. MONTHNAME() would return 'October' and DAY() would return 19.",
+    "explanation_hi": null,
+    "expected": false
+  }
+]

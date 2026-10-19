@@ -1,0 +1,3482 @@
+[
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Analogy",
+  "difficulty": "easy",
+  "question_en": "Pen is to Write as Knife is to:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Sharp",
+    "hi": null
+   },
+   {
+    "en": "Steel",
+    "hi": null
+   },
+   {
+    "en": "Kitchen",
+    "hi": null
+   },
+   {
+    "en": "Cut",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "A pen is used to write; a knife is used to cut. The relation is instrument : function.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Analogy",
+  "difficulty": "easy",
+  "question_en": "Judge : Court :: Chef : ?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Hotel",
+    "hi": null
+   },
+   {
+    "en": "Kitchen",
+    "hi": null
+   },
+   {
+    "en": "Food",
+    "hi": null
+   },
+   {
+    "en": "Menu",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "A judge works in a court; a chef works in a kitchen (person : place of work).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Analogy",
+  "difficulty": "medium",
+  "question_en": "7 : 56 :: 9 : ?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "90",
+    "hi": null
+   },
+   {
+    "en": "72",
+    "hi": null
+   },
+   {
+    "en": "81",
+    "hi": null
+   },
+   {
+    "en": "99",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "7 x 8 = 56, i.e. n x (n + 1). So 9 x 10 = 90. The option 72 comes from wrongly using 9 x 8.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Analogy",
+  "difficulty": "medium",
+  "question_en": "CAT : DBU :: DOG : ?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "ENF",
+    "hi": null
+   },
+   {
+    "en": "DPH",
+    "hi": null
+   },
+   {
+    "en": "EPH",
+    "hi": null
+   },
+   {
+    "en": "EOH",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Every letter moves one step forward: C-D, A-B, T-U. So D-E, O-P, G-H gives EPH.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Analogy",
+  "difficulty": "medium",
+  "question_en": "ACE : FHJ :: BDF : ?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "GIK",
+    "hi": null
+   },
+   {
+    "en": "GHK",
+    "hi": null
+   },
+   {
+    "en": "FHJ",
+    "hi": null
+   },
+   {
+    "en": "HJL",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Each letter is shifted 5 places ahead (A-F, C-H, E-J). B-G, D-I, F-K gives GIK.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Analogy",
+  "difficulty": "easy",
+  "question_en": "Sculptor : Statue :: Poet : ?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Novel",
+    "hi": null
+   },
+   {
+    "en": "Paint",
+    "hi": null
+   },
+   {
+    "en": "Poem",
+    "hi": null
+   },
+   {
+    "en": "Stage",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "A sculptor creates a statue; a poet creates a poem (creator : creation).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Analogy",
+  "difficulty": "hard",
+  "question_en": "3 : 28 :: 5 : ?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "124",
+    "hi": null
+   },
+   {
+    "en": "120",
+    "hi": null
+   },
+   {
+    "en": "130",
+    "hi": null
+   },
+   {
+    "en": "126",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "3^3 + 1 = 28, so the rule is n^3 + 1. For 5: 125 + 1 = 126.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Analogy",
+  "difficulty": "easy",
+  "question_en": "Heart : Circulation :: Lungs : ?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Digestion",
+    "hi": null
+   },
+   {
+    "en": "Respiration",
+    "hi": null
+   },
+   {
+    "en": "Excretion",
+    "hi": null
+   },
+   {
+    "en": "Reproduction",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The heart is the main organ of circulation; the lungs are the main organs of respiration.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Classification",
+  "difficulty": "easy",
+  "question_en": "Select the odd one out: Mango, Banana, Potato, Apple",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Potato",
+    "hi": null
+   },
+   {
+    "en": "Mango",
+    "hi": null
+   },
+   {
+    "en": "Banana",
+    "hi": null
+   },
+   {
+    "en": "Apple",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Mango, banana and apple are fruits; potato is a vegetable (a tuber).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Classification",
+  "difficulty": "easy",
+  "question_en": "Select the odd one out (capitals of states): Lucknow, Jaipur, Surat, Bhopal",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Lucknow",
+    "hi": null
+   },
+   {
+    "en": "Surat",
+    "hi": null
+   },
+   {
+    "en": "Jaipur",
+    "hi": null
+   },
+   {
+    "en": "Bhopal",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Lucknow, Jaipur and Bhopal are state capitals. Surat is a city in Gujarat but not the capital (Gandhinagar is).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Classification",
+  "difficulty": "medium",
+  "question_en": "Select the odd number: 16, 25, 36, 48",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "16",
+    "hi": null
+   },
+   {
+    "en": "25",
+    "hi": null
+   },
+   {
+    "en": "48",
+    "hi": null
+   },
+   {
+    "en": "36",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "16 = 4^2, 25 = 5^2, 36 = 6^2 are perfect squares. 48 is not a perfect square.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Classification",
+  "difficulty": "medium",
+  "question_en": "Select the odd number: 17, 23, 29, 39",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "17",
+    "hi": null
+   },
+   {
+    "en": "23",
+    "hi": null
+   },
+   {
+    "en": "29",
+    "hi": null
+   },
+   {
+    "en": "39",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "17, 23 and 29 are prime. 39 = 3 x 13 is composite.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Classification",
+  "difficulty": "medium",
+  "question_en": "Select the odd letter group: BDF, HJL, NPR, TVW",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "BDF",
+    "hi": null
+   },
+   {
+    "en": "HJL",
+    "hi": null
+   },
+   {
+    "en": "NPR",
+    "hi": null
+   },
+   {
+    "en": "TVW",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "BDF, HJL and NPR skip one letter each time (+2, +2). In TVW the gaps are +2, +1, so it is the odd one.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Classification",
+  "difficulty": "medium",
+  "question_en": "Select the odd pair: (8, 64), (5, 25), (7, 49), (6, 48)",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "(8, 64)",
+    "hi": null
+   },
+   {
+    "en": "(5, 25)",
+    "hi": null
+   },
+   {
+    "en": "(6, 48)",
+    "hi": null
+   },
+   {
+    "en": "(7, 49)",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "In the other pairs the second number is the square of the first (8^2 = 64, 5^2 = 25, 7^2 = 49). 6^2 = 36, not 48.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Classification",
+  "difficulty": "medium",
+  "question_en": "Select the odd one out: Whale, Dolphin, Shark, Seal",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Whale",
+    "hi": null
+   },
+   {
+    "en": "Shark",
+    "hi": null
+   },
+   {
+    "en": "Dolphin",
+    "hi": null
+   },
+   {
+    "en": "Seal",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Whale, dolphin and seal are mammals. A shark is a fish.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Classification",
+  "difficulty": "hard",
+  "question_en": "Select the odd number: 24, 35, 48, 62",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "62",
+    "hi": null
+   },
+   {
+    "en": "24",
+    "hi": null
+   },
+   {
+    "en": "35",
+    "hi": null
+   },
+   {
+    "en": "48",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "24 = 5^2 - 1, 35 = 6^2 - 1, 48 = 7^2 - 1. The next such number is 8^2 - 1 = 63, so 62 does not fit.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Number Series",
+  "difficulty": "easy",
+  "question_en": "Find the next term: 4, 9, 16, 25, 36, ?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "49",
+    "hi": null
+   },
+   {
+    "en": "42",
+    "hi": null
+   },
+   {
+    "en": "48",
+    "hi": null
+   },
+   {
+    "en": "64",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "These are squares of 2, 3, 4, 5, 6. Next is 7^2 = 49.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Number Series",
+  "difficulty": "medium",
+  "question_en": "Find the next term: 2, 6, 12, 20, 30, ?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "40",
+    "hi": null
+   },
+   {
+    "en": "42",
+    "hi": null
+   },
+   {
+    "en": "44",
+    "hi": null
+   },
+   {
+    "en": "36",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Differences are 4, 6, 8, 10, so the next difference is 12: 30 + 12 = 42. (Also n(n+1): 6 x 7 = 42.)",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Number Series",
+  "difficulty": "medium",
+  "question_en": "Find the next term: 3, 6, 11, 18, 27, ?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "36",
+    "hi": null
+   },
+   {
+    "en": "37",
+    "hi": null
+   },
+   {
+    "en": "38",
+    "hi": null
+   },
+   {
+    "en": "39",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Differences are 3, 5, 7, 9, so the next is 11: 27 + 11 = 38.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Number Series",
+  "difficulty": "hard",
+  "question_en": "Find the next term: 2, 3, 5, 9, 17, ?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "31",
+    "hi": null
+   },
+   {
+    "en": "34",
+    "hi": null
+   },
+   {
+    "en": "32",
+    "hi": null
+   },
+   {
+    "en": "33",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Differences are 1, 2, 4, 8, so the next is 16: 17 + 16 = 33.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Number Series",
+  "difficulty": "medium",
+  "question_en": "Find the next term: 1, 2, 6, 24, 120, ?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "720",
+    "hi": null
+   },
+   {
+    "en": "600",
+    "hi": null
+   },
+   {
+    "en": "480",
+    "hi": null
+   },
+   {
+    "en": "840",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Each term is multiplied by 1, 2, 3, 4, 5 in turn (factorials). Next: 120 x 6 = 720.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Number Series",
+  "difficulty": "easy",
+  "question_en": "Find the next term: 1, 8, 27, 64, 125, ?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "196",
+    "hi": null
+   },
+   {
+    "en": "256",
+    "hi": null
+   },
+   {
+    "en": "216",
+    "hi": null
+   },
+   {
+    "en": "243",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "These are cubes of 1 to 5, so the next is 6^3 = 216.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Number Series",
+  "difficulty": "medium",
+  "question_en": "Find the next term: 100, 91, 83, 76, 70, ?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "64",
+    "hi": null
+   },
+   {
+    "en": "65",
+    "hi": null
+   },
+   {
+    "en": "66",
+    "hi": null
+   },
+   {
+    "en": "60",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Differences are -9, -8, -7, -6, so the next is -5: 70 - 5 = 65.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Number Series",
+  "difficulty": "hard",
+  "question_en": "Find the next term: 5, 6, 14, 45, 184, ?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "920",
+    "hi": null
+   },
+   {
+    "en": "900",
+    "hi": null
+   },
+   {
+    "en": "936",
+    "hi": null
+   },
+   {
+    "en": "925",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Rule: multiply by n and add n. 5x1+1 = 6, 6x2+2 = 14, 14x3+3 = 45, 45x4+4 = 184, so 184x5+5 = 925. Option 920 forgets the +5.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Letter Series",
+  "difficulty": "medium",
+  "question_en": "Find the next letter: A, C, F, J, O, ?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "T",
+    "hi": null
+   },
+   {
+    "en": "V",
+    "hi": null
+   },
+   {
+    "en": "S",
+    "hi": null
+   },
+   {
+    "en": "U",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Position gaps are +2, +3, +4, +5, then +6. O is the 15th letter; 15 + 6 = 21 = U.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Letter Series",
+  "difficulty": "easy",
+  "question_en": "Find the next letter: B, E, H, K, N, ?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Q",
+    "hi": null
+   },
+   {
+    "en": "P",
+    "hi": null
+   },
+   {
+    "en": "R",
+    "hi": null
+   },
+   {
+    "en": "O",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Each letter moves 3 steps ahead; N + 3 = Q.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Letter Series",
+  "difficulty": "easy",
+  "question_en": "Complete the series: AZ, BY, CX, DW, ?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "EW",
+    "hi": null
+   },
+   {
+    "en": "EV",
+    "hi": null
+   },
+   {
+    "en": "FV",
+    "hi": null
+   },
+   {
+    "en": "EU",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The first letter goes forward (A, B, C, D, E) and the second goes backward (Z, Y, X, W, V). So EV.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Letter Series",
+  "difficulty": "medium",
+  "question_en": "Complete the series: ACE, FHJ, KMO, ?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "PQR",
+    "hi": null
+   },
+   {
+    "en": "OQS",
+    "hi": null
+   },
+   {
+    "en": "PRT",
+    "hi": null
+   },
+   {
+    "en": "PRS",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Each letter in a group moves 5 places ahead of the same position in the previous group: K+5 = P, M+5 = R, O+5 = T.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Letter Series",
+  "difficulty": "easy",
+  "question_en": "Complete the series: ZYX, WVU, TSR, ?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "QOP",
+    "hi": null
+   },
+   {
+    "en": "QPO",
+    "hi": null
+   },
+   {
+    "en": "RQP",
+    "hi": null
+   },
+   {
+    "en": "PQO",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Letters run backwards continuously: ZYX, WVU, TSR, then QPO.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Letter Series",
+  "difficulty": "medium",
+  "question_en": "Complete the series: AB, DE, HI, MN, ?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "RS",
+    "hi": null
+   },
+   {
+    "en": "SU",
+    "hi": null
+   },
+   {
+    "en": "TU",
+    "hi": null
+   },
+   {
+    "en": "ST",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "First letters are at positions 1, 4, 8, 13 (gaps 3, 4, 5); next gap is 6, giving 19 = S. Second letter follows it: T. So ST.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Letter Series",
+  "difficulty": "hard",
+  "question_en": "Find the next letter: Z, X, U, Q, L, ?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "G",
+    "hi": null
+   },
+   {
+    "en": "E",
+    "hi": null
+   },
+   {
+    "en": "F",
+    "hi": null
+   },
+   {
+    "en": "H",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Positions: 26, 24, 21, 17, 12 with decreases 2, 3, 4, 5. Next decrease is 6: 12 - 6 = 6 = F.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Letter Series",
+  "difficulty": "hard",
+  "question_en": "Complete the series: AMZ, BNY, COX, ?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "DPW",
+    "hi": null
+   },
+   {
+    "en": "DOW",
+    "hi": null
+   },
+   {
+    "en": "DPV",
+    "hi": null
+   },
+   {
+    "en": "EPW",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The first letters go A, B, C, D; the middle letters M, N, O, P; the last letters go backward Z, Y, X, W. So DPW.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Coding-Decoding",
+  "difficulty": "easy",
+  "question_en": "If TABLE is coded as UBCMF, then how is CHAIR coded?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "DIBJR",
+    "hi": null
+   },
+   {
+    "en": "BGZHQ",
+    "hi": null
+   },
+   {
+    "en": "DHBJS",
+    "hi": null
+   },
+   {
+    "en": "DIBJS",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Each letter is shifted one step forward: C-D, H-I, A-B, I-J, R-S. So DIBJS.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Coding-Decoding",
+  "difficulty": "easy",
+  "question_en": "In a code, PAPER is written as OZODQ. How is STONE written in that code?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "TUPOF",
+    "hi": null
+   },
+   {
+    "en": "RSNMF",
+    "hi": null
+   },
+   {
+    "en": "RSNMD",
+    "hi": null
+   },
+   {
+    "en": "RTNMD",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Each letter is moved one step backward: S-R, T-S, O-N, N-M, E-D. So RSNMD.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Coding-Decoding",
+  "difficulty": "easy",
+  "question_en": "If CAT is coded as 24 (using the alphabet positions A = 1, B = 2, ...), then DOG will be coded as:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "26",
+    "hi": null
+   },
+   {
+    "en": "25",
+    "hi": null
+   },
+   {
+    "en": "27",
+    "hi": null
+   },
+   {
+    "en": "28",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "CAT = 3 + 1 + 20 = 24, i.e. the sum of positions. DOG = 4 + 15 + 7 = 26.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Coding-Decoding",
+  "difficulty": "medium",
+  "question_en": "In a code, FRUIT is written as UJVSG. How is LEMON written in that code?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "NPOFM",
+    "hi": null
+   },
+   {
+    "en": "OPNFM",
+    "hi": null
+   },
+   {
+    "en": "MFNPO",
+    "hi": null
+   },
+   {
+    "en": "OPNEM",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The word is reversed and each letter is moved one step forward. FRUIT reversed = TIURF, +1 gives UJVSG. LEMON reversed = NOMEL, +1 gives OPNFM.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Coding-Decoding",
+  "difficulty": "hard",
+  "question_en": "In a code language, 'sky is blue' is written as 'ro mi ta', 'blue sea deep' as 'la mi su' and 'deep sky' as 'ta la'. What is the code for 'sea'?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "su",
+    "hi": null
+   },
+   {
+    "en": "mi",
+    "hi": null
+   },
+   {
+    "en": "la",
+    "hi": null
+   },
+   {
+    "en": "ro",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Common word in statements 2 and 3 is 'deep' = 'la'. Common word in 1 and 3 is 'sky' = 'ta'. Common in 1 and 2 is 'blue' = 'mi'. In statement 2 the remaining code 'su' stands for 'sea'.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Coding-Decoding",
+  "difficulty": "medium",
+  "question_en": "If DELHI is coded as 73541 and CALCUTTA as 82589662, then CALICUT will be coded as:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "8251869",
+    "hi": null
+   },
+   {
+    "en": "8215896",
+    "hi": null
+   },
+   {
+    "en": "8251966",
+    "hi": null
+   },
+   {
+    "en": "8251896",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "From the codes: C=8, A=2, L=5, U=9, T=6, I=1. CALICUT = 8-2-5-1-8-9-6 = 8251896.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Coding-Decoding",
+  "difficulty": "medium",
+  "question_en": "In a code, FAN is written as GCQ. How will BAT be written in that code?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "CBW",
+    "hi": null
+   },
+   {
+    "en": "CCW",
+    "hi": null
+   },
+   {
+    "en": "CCV",
+    "hi": null
+   },
+   {
+    "en": "DCW",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The letters are shifted +1, +2, +3: F-G, A-C, N-Q. So BAT: B+1 = C, A+2 = C, T+3 = W, giving CCW.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Coding-Decoding",
+  "difficulty": "hard",
+  "question_en": "In a code, DELHI is written as EGOLN. How will PUNE be written in that code?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "QVQI",
+    "hi": null
+   },
+   {
+    "en": "QWQJ",
+    "hi": null
+   },
+   {
+    "en": "QWQI",
+    "hi": null
+   },
+   {
+    "en": "RWQI",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The shifts are +1, +2, +3, +4, +5 from left to right: D+1 = E, E+2 = G, L+3 = O, H+4 = L, I+5 = N. For PUNE: P+1 = Q, U+2 = W, N+3 = Q, E+4 = I, giving QWQI.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Syllogism",
+  "difficulty": "easy",
+  "question_en": "Statements: All cats are dogs. All dogs are birds.\nConclusions: I. All cats are birds. II. Some birds are dogs.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Both I and II follow",
+    "hi": null
+   },
+   {
+    "en": "Only I follows",
+    "hi": null
+   },
+   {
+    "en": "Only II follows",
+    "hi": null
+   },
+   {
+    "en": "Neither I nor II follows",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Cats lie inside dogs, and dogs lie inside birds, so all cats are birds (I). Since all dogs are birds, at least some birds are dogs (II). Both follow.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Syllogism",
+  "difficulty": "medium",
+  "question_en": "Statements: Some pens are books. All books are tables.\nConclusions: I. Some pens are tables. II. All pens are tables.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Only II follows",
+    "hi": null
+   },
+   {
+    "en": "Both I and II follow",
+    "hi": null
+   },
+   {
+    "en": "Only I follows",
+    "hi": null
+   },
+   {
+    "en": "Neither I nor II follows",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The pens that are books are also tables, so some pens are tables (I). Only some pens are known to be books, so 'all pens are tables' (II) cannot be concluded.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Syllogism",
+  "difficulty": "hard",
+  "question_en": "Statements: No flower is a stone. All stones are rocks.\nConclusions: I. No flower is a rock. II. Some rocks are not flowers.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Only I follows",
+    "hi": null
+   },
+   {
+    "en": "Only II follows",
+    "hi": null
+   },
+   {
+    "en": "Both I and II follow",
+    "hi": null
+   },
+   {
+    "en": "Neither I nor II follows",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Stones are rocks and no stone is a flower, so those rocks (the stones) are not flowers: II follows. A flower may still be a rock that is not a stone, so I does not follow.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Syllogism",
+  "difficulty": "medium",
+  "question_en": "Statements: All teachers are scholars. Some scholars are doctors.\nConclusions: I. Some teachers are doctors. II. Some doctors are scholars.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Only I follows",
+    "hi": null
+   },
+   {
+    "en": "Both I and II follow",
+    "hi": null
+   },
+   {
+    "en": "Neither I nor II follows",
+    "hi": null
+   },
+   {
+    "en": "Only II follows",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "'Some scholars are doctors' converts to 'Some doctors are scholars', so II follows. The doctors may be scholars who are not teachers, so I is not certain.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Syllogism",
+  "difficulty": "medium",
+  "question_en": "Statements: Some men are kings. No king is a thief.\nConclusions: I. Some men are not thieves. II. No man is a thief.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Only II follows",
+    "hi": null
+   },
+   {
+    "en": "Both I and II follow",
+    "hi": null
+   },
+   {
+    "en": "Only I follows",
+    "hi": null
+   },
+   {
+    "en": "Neither I nor II follows",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The men who are kings are not thieves, so some men are not thieves (I). Nothing is known about the other men, so II does not follow.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Syllogism",
+  "difficulty": "hard",
+  "question_en": "Statements: Some tables are chairs. Some chairs are fans.\nConclusions: I. Some tables are fans. II. No table is a fan.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Only I follows",
+    "hi": null
+   },
+   {
+    "en": "Only II follows",
+    "hi": null
+   },
+   {
+    "en": "Neither I nor II follows",
+    "hi": null
+   },
+   {
+    "en": "Either I or II follows",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Two 'some' statements give no definite relation, so neither conclusion follows on its own. But I (Some tables are fans) and II (No table is a fan) are contradictories, exactly one of which must be true, so either I or II follows.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Syllogism",
+  "difficulty": "medium",
+  "question_en": "Statements: All roses are flowers. All flowers are plants. Some plants are trees.\nConclusions: I. Some plants are roses. II. Some trees are roses.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Only I follows",
+    "hi": null
+   },
+   {
+    "en": "Only II follows",
+    "hi": null
+   },
+   {
+    "en": "Both I and II follow",
+    "hi": null
+   },
+   {
+    "en": "Neither I nor II follows",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Roses are inside flowers, which are inside plants, so all roses are plants and hence some plants are roses (I). The trees need not overlap with roses, so II does not follow.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Syllogism",
+  "difficulty": "easy",
+  "question_en": "Statements: All pencils are pens. No pen is a rubber.\nConclusions: I. No pencil is a rubber. II. No rubber is a pencil.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Only I follows",
+    "hi": null
+   },
+   {
+    "en": "Both I and II follow",
+    "hi": null
+   },
+   {
+    "en": "Only II follows",
+    "hi": null
+   },
+   {
+    "en": "Neither I nor II follows",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Pencils lie inside pens, and pens have no overlap with rubbers, so no pencil is a rubber (I). A universal negative converts, so no rubber is a pencil (II).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Blood Relation",
+  "difficulty": "easy",
+  "question_en": "Pointing to a photograph, Ravi says, 'She is the daughter of my grandfather's only son.' How is the girl related to Ravi?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Cousin",
+    "hi": null
+   },
+   {
+    "en": "Sister",
+    "hi": null
+   },
+   {
+    "en": "Aunt",
+    "hi": null
+   },
+   {
+    "en": "Mother",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Ravi's grandfather's only son is Ravi's father. The daughter of Ravi's father is Ravi's sister.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Blood Relation",
+  "difficulty": "medium",
+  "question_en": "A is the sister of B. C is the mother of B. D is the father of C. How is A related to D?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Daughter",
+    "hi": null
+   },
+   {
+    "en": "Niece",
+    "hi": null
+   },
+   {
+    "en": "Sister",
+    "hi": null
+   },
+   {
+    "en": "Granddaughter",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "A and B are children of C. D is C's father, so A is D's granddaughter.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Blood Relation",
+  "difficulty": "medium",
+  "question_en": "Pointing to a man, a woman says, 'His mother is the only daughter of my mother.' How is the woman related to the man?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Sister",
+    "hi": null
+   },
+   {
+    "en": "Aunt",
+    "hi": null
+   },
+   {
+    "en": "Mother",
+    "hi": null
+   },
+   {
+    "en": "Grandmother",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The only daughter of the woman's mother is the woman herself. So the man's mother is the woman: she is his mother.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Blood Relation",
+  "difficulty": "easy",
+  "question_en": "Pointing to a lady, Anil said, 'She is the wife of my mother's only brother.' How is the lady related to Anil?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Maternal aunt (Mami)",
+    "hi": null
+   },
+   {
+    "en": "Paternal aunt",
+    "hi": null
+   },
+   {
+    "en": "Sister-in-law",
+    "hi": null
+   },
+   {
+    "en": "Mother-in-law",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Anil's mother's only brother is his maternal uncle (Mama). The uncle's wife is Anil's Mami, i.e. maternal aunt.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Blood Relation",
+  "difficulty": "medium",
+  "question_en": "P is the father of Q. Q is the sister of R. R is the mother of S. How is P related to S?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Paternal grandfather",
+    "hi": null
+   },
+   {
+    "en": "Father",
+    "hi": null
+   },
+   {
+    "en": "Maternal grandfather",
+    "hi": null
+   },
+   {
+    "en": "Maternal uncle",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "P is father of both Q and R. R is S's mother, so P is the father of S's mother: maternal grandfather.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Blood Relation",
+  "difficulty": "hard",
+  "question_en": "In a certain notation, A + B means A is the mother of B; A - B means A is the brother of B; A x B means A is the father of B. What does P - Q x R mean?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "P is the paternal uncle of R",
+    "hi": null
+   },
+   {
+    "en": "P is the maternal uncle of R",
+    "hi": null
+   },
+   {
+    "en": "P is the father of R",
+    "hi": null
+   },
+   {
+    "en": "P is the grandfather of R",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "P - Q: P is the brother of Q. Q x R: Q is the father of R. So P is the brother of R's father: paternal uncle.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Blood Relation",
+  "difficulty": "hard",
+  "question_en": "Pointing to a photograph, a man said, 'I have no brother or sister, but that man's father is my father's son.' Whose photograph was it?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "His father",
+    "hi": null
+   },
+   {
+    "en": "His own",
+    "hi": null
+   },
+   {
+    "en": "His nephew",
+    "hi": null
+   },
+   {
+    "en": "His son",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The man has no brother, so 'my father's son' is the man himself. Hence 'that man's father' is the speaker, so the photograph is of his son.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Blood Relation",
+  "difficulty": "medium",
+  "question_en": "Pointing to a boy, Meena said, 'He is the son of my mother's only son.' How is the boy related to Meena?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Cousin",
+    "hi": null
+   },
+   {
+    "en": "Nephew",
+    "hi": null
+   },
+   {
+    "en": "Son",
+    "hi": null
+   },
+   {
+    "en": "Brother",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Meena's mother's only son is Meena's brother. The brother's son is Meena's nephew.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Direction & Distance",
+  "difficulty": "easy",
+  "question_en": "A man walks 5 km east, turns left and walks 3 km, then turns left again and walks 5 km. How far and in which direction is he from the starting point?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "3 km north",
+    "hi": null
+   },
+   {
+    "en": "3 km south",
+    "hi": null
+   },
+   {
+    "en": "5 km north",
+    "hi": null
+   },
+   {
+    "en": "8 km north-east",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "East 5, left turn faces north (3 km), left again faces west (5 km). The east and west movements cancel, leaving 3 km north of the start.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Direction & Distance",
+  "difficulty": "medium",
+  "question_en": "A person walks 8 km north, then turns right and walks 6 km. How far and in which direction is he from the starting point?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "14 km north-east",
+    "hi": null
+   },
+   {
+    "en": "10 km north-west",
+    "hi": null
+   },
+   {
+    "en": "10 km north-east",
+    "hi": null
+   },
+   {
+    "en": "10 km south-east",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "North 8 and east 6 form a right triangle. Distance = sqrt(8^2 + 6^2) = sqrt(100) = 10 km, and he lies to the north-east of the start.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Direction & Distance",
+  "difficulty": "hard",
+  "question_en": "Rahul faces east. He turns 90 degrees clockwise and then 135 degrees anticlockwise. In which direction is he facing now?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "North-west",
+    "hi": null
+   },
+   {
+    "en": "South-east",
+    "hi": null
+   },
+   {
+    "en": "South-west",
+    "hi": null
+   },
+   {
+    "en": "North-east",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "East turned 90 degrees clockwise is south. Turning 135 degrees anticlockwise from south passes east (90 degrees) and reaches north-east (a further 45 degrees).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Direction & Distance",
+  "difficulty": "medium",
+  "question_en": "One morning after sunrise, Mohan stood facing a pole. The shadow of the pole fell on his right side. Which direction was he facing?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "South",
+    "hi": null
+   },
+   {
+    "en": "North",
+    "hi": null
+   },
+   {
+    "en": "East",
+    "hi": null
+   },
+   {
+    "en": "West",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "In the morning the sun is in the east, so shadows fall towards the west. The shadow was on his right, so west is on his right: he faced north.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Direction & Distance",
+  "difficulty": "medium",
+  "question_en": "Ram walks 10 m south, turns left and walks 8 m, then turns left again and walks 4 m. How far is he from the starting point and in which direction?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "10 m, south-west",
+    "hi": null
+   },
+   {
+    "en": "12 m, south-east",
+    "hi": null
+   },
+   {
+    "en": "8 m, east",
+    "hi": null
+   },
+   {
+    "en": "10 m, south-east",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Take the start as (0, 0). South 10 gives (0, -10); left (east) 8 gives (8, -10); left (north) 4 gives (8, -6). Distance = sqrt(8^2 + 6^2) = 10 m, and the point lies south-east of the start.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Direction & Distance",
+  "difficulty": "easy",
+  "question_en": "Sunita is facing north-west. She turns 90 degrees clockwise and then 180 degrees anticlockwise. In which direction is she facing now?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "North-east",
+    "hi": null
+   },
+   {
+    "en": "South-east",
+    "hi": null
+   },
+   {
+    "en": "South-west",
+    "hi": null
+   },
+   {
+    "en": "North-west",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "North-west turned 90 degrees clockwise is north-east. Turning 180 degrees from north-east gives the opposite direction, south-west.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Direction & Distance",
+  "difficulty": "medium",
+  "question_en": "A is 5 m east of B. C is 5 m north of B. D is 5 m west of C. In which direction is D with respect to A?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "North-west",
+    "hi": null
+   },
+   {
+    "en": "West",
+    "hi": null
+   },
+   {
+    "en": "North",
+    "hi": null
+   },
+   {
+    "en": "South-west",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Take B at (0, 0): A = (5, 0), C = (0, 5), D = (-5, 5). D is 10 m west and 5 m north of A, so it lies north-west of A.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Direction & Distance",
+  "difficulty": "hard",
+  "question_en": "A man walks 15 m towards the west, turns right and walks 12 m, turns right again and walks 15 m, then turns left and walks 6 m. How far is he from the starting point and in which direction?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "12 m, north",
+    "hi": null
+   },
+   {
+    "en": "18 m, north",
+    "hi": null
+   },
+   {
+    "en": "18 m, east",
+    "hi": null
+   },
+   {
+    "en": "27 m, north-east",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "West 15 gives (-15, 0); right (north) 12 gives (-15, 12); right (east) 15 gives (0, 12); left (north) 6 gives (0, 18). The east-west displacement cancels, leaving 18 m due north.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Ranking & Ordering",
+  "difficulty": "easy",
+  "question_en": "Rohan ranks 12th from the top in a class of 40 students. What is his rank from the bottom?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "28th",
+    "hi": null
+   },
+   {
+    "en": "29th",
+    "hi": null
+   },
+   {
+    "en": "30th",
+    "hi": null
+   },
+   {
+    "en": "27th",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Rank from bottom = total - rank from top + 1 = 40 - 12 + 1 = 29.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Ranking & Ordering",
+  "difficulty": "easy",
+  "question_en": "In a row of girls, Neha is 7th from the left end and 12th from the right end. How many girls are there in the row?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "19",
+    "hi": null
+   },
+   {
+    "en": "20",
+    "hi": null
+   },
+   {
+    "en": "17",
+    "hi": null
+   },
+   {
+    "en": "18",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Total = 7 + 12 - 1 = 18 (Neha is counted in both ranks).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Ranking & Ordering",
+  "difficulty": "medium",
+  "question_en": "In a row of 40 students, Aman is 14th from the left and Bharat is 18th from the right. How many students are between them?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "8",
+    "hi": null
+   },
+   {
+    "en": "7",
+    "hi": null
+   },
+   {
+    "en": "9",
+    "hi": null
+   },
+   {
+    "en": "10",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Bharat's position from the left = 40 - 18 + 1 = 23. Students between = 23 - 14 - 1 = 8.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Ranking & Ordering",
+  "difficulty": "medium",
+  "question_en": "A is taller than B, B is taller than C, D is taller than A, and E is shorter than C. Who is the second tallest?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "B",
+    "hi": null
+   },
+   {
+    "en": "D",
+    "hi": null
+   },
+   {
+    "en": "A",
+    "hi": null
+   },
+   {
+    "en": "C",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The order is D > A > B > C > E. D is the tallest, so A is second tallest.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Ranking & Ordering",
+  "difficulty": "hard",
+  "question_en": "Raj is 9th from the top in a class. Amit is 14th from the bottom. If they exchange positions, Raj becomes 19th from the top. How many students are in the class?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "33",
+    "hi": null
+   },
+   {
+    "en": "32",
+    "hi": null
+   },
+   {
+    "en": "31",
+    "hi": null
+   },
+   {
+    "en": "34",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Raj now stands where Amit stood, so Amit's original position is 19th from the top and 14th from the bottom. Total = 19 + 14 - 1 = 32.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Ranking & Ordering",
+  "difficulty": "medium",
+  "question_en": "P is heavier than Q but lighter than R. S is heavier than R. T is lighter than Q. Who is the second heaviest?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "R",
+    "hi": null
+   },
+   {
+    "en": "P",
+    "hi": null
+   },
+   {
+    "en": "S",
+    "hi": null
+   },
+   {
+    "en": "Q",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Order from heaviest: S > R > P > Q > T. So R is second heaviest.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Ranking & Ordering",
+  "difficulty": "hard",
+  "question_en": "Kiran ranks 15th from the top and 25th from the bottom in a class. Divya ranks 7 places above Kiran. What is Divya's rank from the bottom?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "31st",
+    "hi": null
+   },
+   {
+    "en": "33rd",
+    "hi": null
+   },
+   {
+    "en": "32nd",
+    "hi": null
+   },
+   {
+    "en": "30th",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Total = 15 + 25 - 1 = 39. Divya's rank from top = 15 - 7 = 8. From the bottom = 39 - 8 + 1 = 32.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Statement-Conclusion",
+  "difficulty": "medium",
+  "question_en": "Statement: Ravi scored 95% in Mathematics this year, whereas last year he scored 60%.\nConclusions: I. Ravi worked harder this year. II. Ravi's marks in Mathematics improved this year.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Only I follows",
+    "hi": null
+   },
+   {
+    "en": "Both I and II follow",
+    "hi": null
+   },
+   {
+    "en": "Neither I nor II follows",
+    "hi": null
+   },
+   {
+    "en": "Only II follows",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The improvement in marks is stated directly (II). The reason for it (harder work) is an assumption; he could have improved for other reasons, so I does not follow.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Statement-Conclusion",
+  "difficulty": "medium",
+  "question_en": "Statement: The government has increased the tax on cigarettes by 50%.\nConclusions: I. The price of cigarettes is likely to rise. II. Every smoker will quit smoking.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Only II follows",
+    "hi": null
+   },
+   {
+    "en": "Only I follows",
+    "hi": null
+   },
+   {
+    "en": "Both I and II follow",
+    "hi": null
+   },
+   {
+    "en": "Neither I nor II follows",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "A higher tax raises the cost to sellers, so a price rise is a reasonable conclusion. 'Every smoker will quit' is an extreme claim that cannot be drawn.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Statement-Conclusion",
+  "difficulty": "easy",
+  "question_en": "Statement: All the roads leading to the stadium were blocked after heavy rain.\nConclusions: I. People found it difficult to reach the stadium by road. II. The match was cancelled.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Only II follows",
+    "hi": null
+   },
+   {
+    "en": "Both I and II follow",
+    "hi": null
+   },
+   {
+    "en": "Only I follows",
+    "hi": null
+   },
+   {
+    "en": "Neither I nor II follows",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Blocked roads make road access difficult (I). Nothing in the statement says the match was cancelled (II).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Statement-Conclusion",
+  "difficulty": "easy",
+  "question_en": "Statement: Only candidates holding a graduate degree can apply for the post of TGT.\nConclusions: I. A person without a graduate degree cannot apply for the post. II. Every graduate will get the post.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Only I follows",
+    "hi": null
+   },
+   {
+    "en": "Only II follows",
+    "hi": null
+   },
+   {
+    "en": "Both I and II follow",
+    "hi": null
+   },
+   {
+    "en": "Neither I nor II follows",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The statement sets a necessary condition, so I follows. Being eligible to apply does not guarantee selection, so II does not follow.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Statement-Conclusion",
+  "difficulty": "easy",
+  "question_en": "Statement: Many students of Class X prefer science to arts.\nConclusions: I. All students of Class X prefer science. II. Some students of Class X prefer science.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Only I follows",
+    "hi": null
+   },
+   {
+    "en": "Both I and II follow",
+    "hi": null
+   },
+   {
+    "en": "Neither I nor II follows",
+    "hi": null
+   },
+   {
+    "en": "Only II follows",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "'Many' implies at least some, so II follows. 'All' is too strong, so I does not follow.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Statement-Conclusion",
+  "difficulty": "medium",
+  "question_en": "Statement: In the last election the voter turnout in the city was 62%, compared with 55% five years earlier.\nConclusions: I. A larger share of voters turned out than five years ago. II. The number of voters has doubled.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Only II follows",
+    "hi": null
+   },
+   {
+    "en": "Both I and II follow",
+    "hi": null
+   },
+   {
+    "en": "Neither I nor II follows",
+    "hi": null
+   },
+   {
+    "en": "Only I follows",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "62% against 55% shows a higher turnout rate (I). Turnout rates alone say nothing about the doubling of voters (II).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Statement-Conclusion",
+  "difficulty": "hard",
+  "question_en": "Statement: A leading newspaper reported that the price of onions has fallen in the wholesale market.\nConclusions: I. The retail price of onions has also fallen. II. Farmers will earn less from onions.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Neither I nor II follows",
+    "hi": null
+   },
+   {
+    "en": "Only I follows",
+    "hi": null
+   },
+   {
+    "en": "Only II follows",
+    "hi": null
+   },
+   {
+    "en": "Both I and II follow",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A wholesale fall does not guarantee a retail fall because retailers may not pass on the drop, and farmers' income depends on the quantity sold as well as price. Neither can be concluded.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Statement-Argument",
+  "difficulty": "medium",
+  "question_en": "Statement: Should plastic bags be banned in India?\nArguments: I. Yes, they cause pollution and clog drains. II. No, because they are cheap.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Only II is strong",
+    "hi": null
+   },
+   {
+    "en": "Both I and II are strong",
+    "hi": null
+   },
+   {
+    "en": "Only I is strong",
+    "hi": null
+   },
+   {
+    "en": "Neither I nor II is strong",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Environmental damage is a valid and weighty reason (strong). Low cost is not a sufficient reason to keep a harmful item, so II is weak.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Statement-Argument",
+  "difficulty": "medium",
+  "question_en": "Statement: Should smoking be banned in public places?\nArguments: I. Yes, passive smoking harms the health of non-smokers. II. No, smokers have the right to smoke anywhere they like.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Only II is strong",
+    "hi": null
+   },
+   {
+    "en": "Only I is strong",
+    "hi": null
+   },
+   {
+    "en": "Both I and II are strong",
+    "hi": null
+   },
+   {
+    "en": "Neither I nor II is strong",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "I gives a strong public-health reason. II claims an unlimited right, which ignores harm to others, so it is weak.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Statement-Argument",
+  "difficulty": "medium",
+  "question_en": "Statement: Should online classes completely replace classroom teaching?\nArguments: I. Yes, because they save travel time. II. No, because face-to-face interaction is essential for the social and emotional development of children.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Only II is strong",
+    "hi": null
+   },
+   {
+    "en": "Only I is strong",
+    "hi": null
+   },
+   {
+    "en": "Both I and II are strong",
+    "hi": null
+   },
+   {
+    "en": "Neither I nor II is strong",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Saving travel time is too minor to justify a complete replacement, so I is weak. Social and emotional development is a weighty educational concern, so II is strong.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Statement-Argument",
+  "difficulty": "easy",
+  "question_en": "Statement: Should students be given homework daily?\nArguments: I. Yes, it helps them revise and practise concepts. II. No, because teachers do not like checking it.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Only II is strong",
+    "hi": null
+   },
+   {
+    "en": "Only I is strong",
+    "hi": null
+   },
+   {
+    "en": "Both I and II are strong",
+    "hi": null
+   },
+   {
+    "en": "Neither I nor II is strong",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Learning value is a valid educational reason (strong). The convenience of teachers is not a good reason against a practice that helps students, so II is weak.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Statement-Argument",
+  "difficulty": "medium",
+  "question_en": "Statement: Should the government provide free education up to Class 12?\nArguments: I. Yes, education is a basic need and builds the nation's human capital. II. Yes, because everything should be free.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Only II is strong",
+    "hi": null
+   },
+   {
+    "en": "Both I and II are strong",
+    "hi": null
+   },
+   {
+    "en": "Only I is strong",
+    "hi": null
+   },
+   {
+    "en": "Neither I nor II is strong",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "I gives a specific, relevant reason. II is a vague overgeneralisation that does not relate to education, so it is weak.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Statement-Argument",
+  "difficulty": "medium",
+  "question_en": "Statement: Should the retirement age of teachers be raised?\nArguments: I. Yes, experienced teachers can continue to contribute and ease the shortage of teachers. II. No, it will reduce job opportunities for young graduates.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Only I is strong",
+    "hi": null
+   },
+   {
+    "en": "Only II is strong",
+    "hi": null
+   },
+   {
+    "en": "Neither I nor II is strong",
+    "hi": null
+   },
+   {
+    "en": "Both I and II are strong",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Each argument raises a real, relevant consequence: teacher shortage and fewer vacancies for the young. Both are strong.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Statement-Argument",
+  "difficulty": "medium",
+  "question_en": "Statement: Should school uniforms be abolished?\nArguments: I. Yes, because uniforms are old-fashioned. II. No, because a particular tailor will lose business.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Only I is strong",
+    "hi": null
+   },
+   {
+    "en": "Neither I nor II is strong",
+    "hi": null
+   },
+   {
+    "en": "Only II is strong",
+    "hi": null
+   },
+   {
+    "en": "Both I and II are strong",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "'Old-fashioned' is a matter of opinion and not a sound reason. The business of one tailor is a narrow, personal concern. Neither argument is strong.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Course of Action",
+  "difficulty": "easy",
+  "question_en": "Statement: Many people in a colony are suffering from dengue.\nCourses of action: I. The municipal corporation should start fogging and remove stagnant water. II. People should be asked to leave the colony permanently.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Only II follows",
+    "hi": null
+   },
+   {
+    "en": "Both I and II follow",
+    "hi": null
+   },
+   {
+    "en": "Neither I nor II follows",
+    "hi": null
+   },
+   {
+    "en": "Only I follows",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Fogging and removing breeding sites tackle the cause (I). Asking people to leave permanently is impractical and extreme (II).",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Course of Action",
+  "difficulty": "easy",
+  "question_en": "Statement: The number of road accidents on a highway has increased due to over-speeding.\nCourses of action: I. Speed cameras and fines should be introduced. II. The highway should be closed forever.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Only II follows",
+    "hi": null
+   },
+   {
+    "en": "Both I and II follow",
+    "hi": null
+   },
+   {
+    "en": "Only I follows",
+    "hi": null
+   },
+   {
+    "en": "Neither I nor II follows",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Speed monitoring and penalties directly address over-speeding. Closing the highway forever is an extreme step.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Course of Action",
+  "difficulty": "easy",
+  "question_en": "Statement: A large number of students of a school failed in Mathematics in the Class X examination.\nCourses of action: I. The school should arrange remedial classes. II. The school should stop teaching Mathematics.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Only I follows",
+    "hi": null
+   },
+   {
+    "en": "Only II follows",
+    "hi": null
+   },
+   {
+    "en": "Both I and II follow",
+    "hi": null
+   },
+   {
+    "en": "Neither I nor II follows",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Remedial classes help weak students improve (I). Dropping a compulsory subject is not a solution (II).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Course of Action",
+  "difficulty": "medium",
+  "question_en": "Statement: A major fire broke out in a market due to a short circuit.\nCourses of action: I. A fire-safety audit of the market should be conducted. II. The electrical wiring of the shops should be inspected and repaired.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Only I follows",
+    "hi": null
+   },
+   {
+    "en": "Only II follows",
+    "hi": null
+   },
+   {
+    "en": "Neither I nor II follows",
+    "hi": null
+   },
+   {
+    "en": "Both I and II follow",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The cause is faulty wiring, so inspecting the wiring (II) and auditing fire safety to prevent a repeat (I) are both practical and relevant.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Course of Action",
+  "difficulty": "medium",
+  "question_en": "Statement: The prices of vegetables have shot up due to poor supply.\nCourses of action: I. All vegetable shops should be closed. II. People should stop eating vegetables.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Only I follows",
+    "hi": null
+   },
+   {
+    "en": "Only II follows",
+    "hi": null
+   },
+   {
+    "en": "Neither I nor II follows",
+    "hi": null
+   },
+   {
+    "en": "Both I and II follow",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Closing shops would worsen the problem, and stopping vegetables from diets is impractical and harmful. Neither is a sensible course of action.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Course of Action",
+  "difficulty": "medium",
+  "question_en": "Statement: Public toilets at the railway station are very dirty.\nCourses of action: I. Railway should ask passengers to avoid using them. II. Railway authorities should appoint more cleaners and monitor cleanliness regularly.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Only I follows",
+    "hi": null
+   },
+   {
+    "en": "Only II follows",
+    "hi": null
+   },
+   {
+    "en": "Both I and II follow",
+    "hi": null
+   },
+   {
+    "en": "Neither I nor II follows",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Toilets exist to be used, so telling passengers to avoid them does not solve the problem (I). More cleaners and monitoring directly remove the problem (II).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Course of Action",
+  "difficulty": "hard",
+  "question_en": "Statement: A survey shows that school students spend more than five hours daily on mobile phones.\nCourses of action: I. Parents and teachers should guide students on limited and productive use of mobiles. II. Mobile phones should be completely banned for all citizens.",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Only I follows",
+    "hi": null
+   },
+   {
+    "en": "Only II follows",
+    "hi": null
+   },
+   {
+    "en": "Both I and II follow",
+    "hi": null
+   },
+   {
+    "en": "Neither I nor II follows",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Guidance targets the problem group in a realistic way (I). A complete ban for all citizens is out of proportion to a problem concerning students (II).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Venn Diagram",
+  "difficulty": "easy",
+  "question_en": "Which Venn diagram best represents the relationship among Doctors, Surgeons and Teachers?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Three completely separate circles",
+    "hi": null
+   },
+   {
+    "en": "Surgeons lie wholly inside Doctors; Teachers form a separate circle outside both",
+    "hi": null
+   },
+   {
+    "en": "Three circles overlapping at a common region",
+    "hi": null
+   },
+   {
+    "en": "Doctors lie inside Surgeons, and Teachers lie inside Doctors",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Every surgeon is a doctor, so Surgeons is a subset of Doctors. A teacher is a different profession, so Teachers is a separate set.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Venn Diagram",
+  "difficulty": "easy",
+  "question_en": "Which Venn diagram best represents the relationship among Pen, Pencil and Stationery?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Pen and Pencil as two separate circles, both inside the Stationery circle",
+    "hi": null
+   },
+   {
+    "en": "Pen inside Pencil inside Stationery",
+    "hi": null
+   },
+   {
+    "en": "Pen and Pencil overlapping each other and outside Stationery",
+    "hi": null
+   },
+   {
+    "en": "Three separate circles",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A pen is not a pencil, so they are separate sets, but both are stationery items and so lie inside the larger Stationery set.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Venn Diagram",
+  "difficulty": "medium",
+  "question_en": "In a class of 50 students, 30 play cricket, 25 play football and 10 play both. How many students play neither game?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "10",
+    "hi": null
+   },
+   {
+    "en": "15",
+    "hi": null
+   },
+   {
+    "en": "0",
+    "hi": null
+   },
+   {
+    "en": "5",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Students playing at least one game = 30 + 25 - 10 = 45. Neither = 50 - 45 = 5.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Venn Diagram",
+  "difficulty": "medium",
+  "question_en": "In a group of 100 people, 60 speak Hindi, 45 speak English and 15 speak both. How many speak only English?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "45",
+    "hi": null
+   },
+   {
+    "en": "15",
+    "hi": null
+   },
+   {
+    "en": "30",
+    "hi": null
+   },
+   {
+    "en": "25",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Only English = total English - both = 45 - 15 = 30. (45 is the number speaking only Hindi.)",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Venn Diagram",
+  "difficulty": "medium",
+  "question_en": "In a survey of 120 students, 70 like tea, 60 like coffee and 30 like both. How many students like exactly one of the two drinks?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "90",
+    "hi": null
+   },
+   {
+    "en": "100",
+    "hi": null
+   },
+   {
+    "en": "70",
+    "hi": null
+   },
+   {
+    "en": "40",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Only tea = 70 - 30 = 40; only coffee = 60 - 30 = 30. Exactly one = 40 + 30 = 70.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Venn Diagram",
+  "difficulty": "hard",
+  "question_en": "In a class of 60 students, 30 study Physics, 25 Chemistry and 20 Mathematics. 10 study Physics and Chemistry, 8 Chemistry and Mathematics, 6 Physics and Mathematics, and 4 study all three. How many students study at least one of the three subjects?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "59",
+    "hi": null
+   },
+   {
+    "en": "51",
+    "hi": null
+   },
+   {
+    "en": "45",
+    "hi": null
+   },
+   {
+    "en": "55",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "By inclusion-exclusion: 30 + 25 + 20 - 10 - 8 - 6 + 4 = 55.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Venn Diagram",
+  "difficulty": "medium",
+  "question_en": "Which Venn diagram best represents the relationship among Mothers, Sisters and Women?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Mothers and Sisters as two separate circles, both inside Women",
+    "hi": null
+   },
+   {
+    "en": "Mothers and Sisters as two partly overlapping circles, both inside the Women circle",
+    "hi": null
+   },
+   {
+    "en": "Mothers inside Sisters inside Women",
+    "hi": null
+   },
+   {
+    "en": "Three separate circles",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "All mothers and all sisters are women. A woman can be both a mother and a sister, so the two circles overlap partly inside Women.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Mathematical Operations",
+  "difficulty": "medium",
+  "question_en": "If + means ×, × means −, − means ÷ and ÷ means +, then the value of 12 + 3 × 5 − 5 ÷ 4 is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "39",
+    "hi": null
+   },
+   {
+    "en": "35",
+    "hi": null
+   },
+   {
+    "en": "43",
+    "hi": null
+   },
+   {
+    "en": "31",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Substitute the real signs: 12 × 3 − 5 ÷ 5 + 4. BODMAS: 12 × 3 = 36 and 5 ÷ 5 = 1, so 36 − 1 + 4 = 39.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Mathematical Operations",
+  "difficulty": "easy",
+  "question_en": "If P means +, Q means −, R means × and S means ÷, then 20 R 3 P 8 S 4 Q 5 = ?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "63",
+    "hi": null
+   },
+   {
+    "en": "57",
+    "hi": null
+   },
+   {
+    "en": "51",
+    "hi": null
+   },
+   {
+    "en": "47",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Replace the letters: 20 × 3 + 8 ÷ 4 − 5. By BODMAS: 60 + 2 − 5 = 57.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Mathematical Operations",
+  "difficulty": "medium",
+  "question_en": "If + and − are interchanged, and × and ÷ are interchanged, then 24 ÷ 6 + 8 × 2 − 3 = ?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "23",
+    "hi": null
+   },
+   {
+    "en": "149",
+    "hi": null
+   },
+   {
+    "en": "143",
+    "hi": null
+   },
+   {
+    "en": "137",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "After interchanging the signs the expression is 24 × 6 − 8 ÷ 2 + 3. BODMAS: 144 − 4 + 3 = 143.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Mathematical Operations",
+  "difficulty": "medium",
+  "question_en": "If the numbers 3 and 5 are interchanged and the signs + and × are interchanged, then the value of 3 + 5 × 4 is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "23",
+    "hi": null
+   },
+   {
+    "en": "32",
+    "hi": null
+   },
+   {
+    "en": "17",
+    "hi": null
+   },
+   {
+    "en": "19",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Interchanging 3 and 5 gives 5 + 3 × 4; interchanging the signs gives 5 × 3 + 4. So 15 + 4 = 19.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Mathematical Operations",
+  "difficulty": "easy",
+  "question_en": "If 2 # 3 = 8, 4 # 5 = 24 and 6 # 7 = 48, then 8 # 9 = ?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "80",
+    "hi": null
+   },
+   {
+    "en": "72",
+    "hi": null
+   },
+   {
+    "en": "81",
+    "hi": null
+   },
+   {
+    "en": "90",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The rule is a # b = a × (b + 1): 2 × 4 = 8, 4 × 6 = 24, 6 × 8 = 48. So 8 × 10 = 80. (72 is 8 × 9, which ignores the +1.)",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Mathematical Operations",
+  "difficulty": "medium",
+  "question_en": "Select the correct combination of signs to fill the blanks in order: 12 _ 4 _ 3 _ 6 = 15",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "×, ÷, +",
+    "hi": null
+   },
+   {
+    "en": "+, ÷, ×",
+    "hi": null
+   },
+   {
+    "en": "÷, +, ×",
+    "hi": null
+   },
+   {
+    "en": "÷, ×, +",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Test the options with BODMAS: 12 ÷ 4 × 3 + 6 = 3 × 3 + 6 = 15 ✓. Option 2 gives 22, option 3 gives 20 and option 4 gives 21.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Mathematical Operations",
+  "difficulty": "hard",
+  "question_en": "If + means ÷, − means ×, × means + and ÷ means −, then 36 + 9 − 4 × 5 ÷ 3 = ?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "18",
+    "hi": null
+   },
+   {
+    "en": "20",
+    "hi": null
+   },
+   {
+    "en": "17",
+    "hi": null
+   },
+   {
+    "en": "23",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Replace the signs: 36 ÷ 9 × 4 + 5 − 3. BODMAS: 36 ÷ 9 = 4, then 4 × 4 = 16, so 16 + 5 − 3 = 18.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Clock & Calendar",
+  "difficulty": "medium",
+  "question_en": "What is the angle between the hands of a clock at 3:30?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "90°",
+    "hi": null
+   },
+   {
+    "en": "60°",
+    "hi": null
+   },
+   {
+    "en": "75°",
+    "hi": null
+   },
+   {
+    "en": "105°",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Angle = |30H − 5.5M| = |30 × 3 − 5.5 × 30| = |90 − 165| = 75°.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Clock & Calendar",
+  "difficulty": "hard",
+  "question_en": "What is the angle between the hour hand and the minute hand at 4:20?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "20°",
+    "hi": null
+   },
+   {
+    "en": "10°",
+    "hi": null
+   },
+   {
+    "en": "0°",
+    "hi": null
+   },
+   {
+    "en": "30°",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Angle = |30H − 5.5M| = |120 − 5.5 × 20| = |120 − 110| = 10°.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Clock & Calendar",
+  "difficulty": "hard",
+  "question_en": "At what time between 4 and 5 o'clock will the two hands of a clock coincide?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "20 minutes past 4",
+    "hi": null
+   },
+   {
+    "en": "21 9/11 minutes past 4",
+    "hi": null
+   },
+   {
+    "en": "22 minutes past 4",
+    "hi": null
+   },
+   {
+    "en": "21 1/11 minutes past 4",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Hands coincide when M = (60 × H) / 11 minutes past H. For H = 4: 240/11 = 21 9/11 minutes past 4.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Clock & Calendar",
+  "difficulty": "easy",
+  "question_en": "A watch gains 2 minutes every hour. It was set right at 6:00 a.m. on Monday. What time will it show at the true time of 6:00 p.m. on the same day?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "6:24 p.m.",
+    "hi": null
+   },
+   {
+    "en": "6:12 p.m.",
+    "hi": null
+   },
+   {
+    "en": "6:20 p.m.",
+    "hi": null
+   },
+   {
+    "en": "6:48 p.m.",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "From 6 a.m. to 6 p.m. is 12 hours. Gain = 12 × 2 = 24 minutes, so the watch shows 6:24 p.m.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Clock & Calendar",
+  "difficulty": "medium",
+  "question_en": "On which day of the week did India become independent on 15 August 1947?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Thursday",
+    "hi": null
+   },
+   {
+    "en": "Saturday",
+    "hi": null
+   },
+   {
+    "en": "Sunday",
+    "hi": null
+   },
+   {
+    "en": "Friday",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Odd-day method: 1600 years = 0, next 300 years = 1, next 46 years (11 leap years) = 57 days = 1, so 1946 years = 2 odd days. Days from 1 Jan to 15 Aug 1947 = 227 = 3 odd days. Total 5 odd days, and 5 corresponds to Friday (0 = Sunday).",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Clock & Calendar",
+  "difficulty": "medium",
+  "question_en": "If 26 January 2026 was a Monday, what day of the week was 15 August 2026?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Friday",
+    "hi": null
+   },
+   {
+    "en": "Sunday",
+    "hi": null
+   },
+   {
+    "en": "Saturday",
+    "hi": null
+   },
+   {
+    "en": "Thursday",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "From 26 January to 15 August 2026 (a non-leap year): remaining days of January 5, February 28, March 31, April 30, May 31, June 30, July 31, plus 15 in August = 201 days. 201 = 28 × 7 + 5, so 5 days after Monday = Saturday.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Clock & Calendar",
+  "difficulty": "medium",
+  "question_en": "How many odd days are there in 200 years?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "5",
+    "hi": null
+   },
+   {
+    "en": "0",
+    "hi": null
+   },
+   {
+    "en": "1",
+    "hi": null
+   },
+   {
+    "en": "3",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "100 years have 5 odd days, so 200 years have 10 odd days = 10 − 7 = 3 odd days.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Alphabet Test",
+  "difficulty": "easy",
+  "question_en": "Which letter is the 7th to the right of the 12th letter from the left end of the English alphabet?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "R",
+    "hi": null
+   },
+   {
+    "en": "S",
+    "hi": null
+   },
+   {
+    "en": "T",
+    "hi": null
+   },
+   {
+    "en": "Q",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The 12th letter is L. Moving 7 to the right gives the 19th letter, S.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Alphabet Test",
+  "difficulty": "medium",
+  "question_en": "Which letter is the 5th to the left of the 15th letter from the right end of the English alphabet?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "G",
+    "hi": null
+   },
+   {
+    "en": "F",
+    "hi": null
+   },
+   {
+    "en": "H",
+    "hi": null
+   },
+   {
+    "en": "I",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The 15th letter from the right is the 26 − 15 + 1 = 12th from the left, L. The 5th to its left is the 7th letter, G.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Alphabet Test",
+  "difficulty": "easy",
+  "question_en": "If the letters of the word DELHI are arranged in alphabetical order, which letter will be in the middle?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "E",
+    "hi": null
+   },
+   {
+    "en": "L",
+    "hi": null
+   },
+   {
+    "en": "H",
+    "hi": null
+   },
+   {
+    "en": "I",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Alphabetical order: D, E, H, I, L. The middle (third) letter is H.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Alphabet Test",
+  "difficulty": "medium",
+  "question_en": "Which letter is the 8th to the right of the letter that is 5th to the left of M in the English alphabet?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "O",
+    "hi": null
+   },
+   {
+    "en": "P",
+    "hi": null
+   },
+   {
+    "en": "Q",
+    "hi": null
+   },
+   {
+    "en": "N",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "M is the 13th letter. 5th to its left is the 8th letter, H. 8th to the right of H is the 16th letter, P.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Alphabet Test",
+  "difficulty": "medium",
+  "question_en": "How many letters of the English alphabet lie between the 8th letter from the left end and the 8th letter from the right end?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "9",
+    "hi": null
+   },
+   {
+    "en": "11",
+    "hi": null
+   },
+   {
+    "en": "8",
+    "hi": null
+   },
+   {
+    "en": "10",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The 8th from the left is H (8th). The 8th from the right is the 19th from the left, S. Letters between them = 19 − 8 − 1 = 10.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Alphabet Test",
+  "difficulty": "medium",
+  "question_en": "If the letters of the word FRIEND are arranged in alphabetical order, how many letters remain in the same position as in the original word?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "One",
+    "hi": null
+   },
+   {
+    "en": "None",
+    "hi": null
+   },
+   {
+    "en": "Two",
+    "hi": null
+   },
+   {
+    "en": "Three",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "FRIEND sorted is D, E, F, I, N, R. Comparing position by position with F, R, I, E, N, D, only the fifth letter (N) is unchanged.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "rea_verbal",
+  "subtopic": "Alphabet Test",
+  "difficulty": "hard",
+  "question_en": "In the word STORM, how many pairs of letters are there such that the gap between their positions in the word equals the gap between their positions in the English alphabet?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "2",
+    "hi": null
+   },
+   {
+    "en": "4",
+    "hi": null
+   },
+   {
+    "en": "3",
+    "hi": null
+   },
+   {
+    "en": "1",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "S(1)-T(2): word gap 1, alphabet gap 1. T(2)-R(4): word gap 2, alphabet gap 20 − 18 = 2. O(3)-M(5): word gap 2, alphabet gap 15 − 13 = 2. No other pair matches. Total 3.",
+  "explanation_hi": null,
+  "expected": false
+ }
+]

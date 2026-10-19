@@ -1,0 +1,3192 @@
+[
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "OSI and TCP/IP layers",
+    "difficulty": "easy",
+    "question_en": "How many layers does the OSI reference model have?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "4",
+        "hi": null
+      },
+      {
+        "en": "5",
+        "hi": null
+      },
+      {
+        "en": "7",
+        "hi": null
+      },
+      {
+        "en": "9",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "The OSI model has seven layers: Physical, Data Link, Network, Transport, Session, Presentation and Application. The TCP/IP model is usually described with four layers, which is the common distractor.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "OSI and TCP/IP layers",
+    "difficulty": "easy",
+    "question_en": "Which OSI layer is responsible for routing packets from the source host to the destination host across multiple networks?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Data Link layer",
+        "hi": null
+      },
+      {
+        "en": "Network layer",
+        "hi": null
+      },
+      {
+        "en": "Transport layer",
+        "hi": null
+      },
+      {
+        "en": "Session layer",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Routing and logical (IP) addressing belong to the Network layer (layer 3). The Data Link layer delivers frames only within one physical network segment.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "OSI and TCP/IP layers",
+    "difficulty": "medium",
+    "question_en": "Segmentation of application data, end-to-end error recovery and flow control between two hosts are functions of the:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Physical layer",
+        "hi": null
+      },
+      {
+        "en": "Data Link layer",
+        "hi": null
+      },
+      {
+        "en": "Transport layer",
+        "hi": null
+      },
+      {
+        "en": "Presentation layer",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "The Transport layer (layer 4, e.g. TCP) breaks data into segments and provides process-to-process reliable delivery. The Data Link layer also does error detection, but only hop-to-hop, not end-to-end.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "OSI and TCP/IP layers",
+    "difficulty": "medium",
+    "question_en": "The protocol data unit (PDU) handled at the Data Link layer is called a:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Bit",
+        "hi": null
+      },
+      {
+        "en": "Frame",
+        "hi": null
+      },
+      {
+        "en": "Packet",
+        "hi": null
+      },
+      {
+        "en": "Segment",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Data Link layer PDU = frame; Network layer = packet (datagram); Transport layer = segment; Physical layer = bits.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "OSI and TCP/IP layers",
+    "difficulty": "medium",
+    "question_en": "Data compression, encryption and conversion between character encodings (e.g. ASCII to Unicode) are services of which OSI layer?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Session",
+        "hi": null
+      },
+      {
+        "en": "Presentation",
+        "hi": null
+      },
+      {
+        "en": "Application",
+        "hi": null
+      },
+      {
+        "en": "Transport",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The Presentation layer (layer 6) is the 'translator' of the OSI model: it handles data format, compression and encryption. The Session layer manages dialogues, not data representation.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "OSI and TCP/IP layers",
+    "difficulty": "medium",
+    "question_en": "Which OSI layer establishes, maintains, synchronises and terminates the dialogue between two communicating applications?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Transport layer",
+        "hi": null
+      },
+      {
+        "en": "Session layer",
+        "hi": null
+      },
+      {
+        "en": "Network layer",
+        "hi": null
+      },
+      {
+        "en": "Application layer",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Dialogue control, synchronisation points and session management are Session layer (layer 5) functions.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "OSI and TCP/IP layers",
+    "difficulty": "hard",
+    "question_en": "Which of the following is NOT a function of the Data Link layer?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Framing",
+        "hi": null
+      },
+      {
+        "en": "Physical (MAC) addressing",
+        "hi": null
+      },
+      {
+        "en": "Error detection using CRC",
+        "hi": null
+      },
+      {
+        "en": "Logical addressing",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Logical addressing (IP addresses) is a Network layer function. Framing, MAC addressing, error detection and media access control are all Data Link layer responsibilities.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "OSI and TCP/IP layers",
+    "difficulty": "medium",
+    "question_en": "The Session, Presentation and Application layers of the OSI model together correspond to which single layer of the TCP/IP model?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Transport layer",
+        "hi": null
+      },
+      {
+        "en": "Internet layer",
+        "hi": null
+      },
+      {
+        "en": "Application layer",
+        "hi": null
+      },
+      {
+        "en": "Network Access layer",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "The four-layer TCP/IP model merges OSI layers 5, 6 and 7 into one Application layer, and merges OSI layers 1 and 2 into the Network Access (Link) layer.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "OSI and TCP/IP layers",
+    "difficulty": "easy",
+    "question_en": "ICMP, the protocol used by the ping command to report errors and reachability, operates at which layer?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Application layer",
+        "hi": null
+      },
+      {
+        "en": "Transport layer",
+        "hi": null
+      },
+      {
+        "en": "Network (Internet) layer",
+        "hi": null
+      },
+      {
+        "en": "Data Link layer",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "ICMP is carried inside IP packets and is considered part of the Network/Internet layer along with IP, ARP and IGMP.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "OSI and TCP/IP layers",
+    "difficulty": "medium",
+    "question_en": "When data moves down the protocol stack at the sending host, the correct order of encapsulation is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Frame → Packet → Segment → Bits",
+        "hi": null
+      },
+      {
+        "en": "Segment → Packet → Frame → Bits",
+        "hi": null
+      },
+      {
+        "en": "Packet → Segment → Frame → Bits",
+        "hi": null
+      },
+      {
+        "en": "Bits → Frame → Packet → Segment",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Transport layer creates segments, Network layer wraps them in packets, Data Link layer wraps packets in frames, and the Physical layer transmits bits. Option 4 is the de-encapsulation order at the receiver.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "OSI and TCP/IP layers",
+    "difficulty": "hard",
+    "question_en": "Which networking device can operate at all seven layers of the OSI model, translating between entirely different protocol suites?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Switch",
+        "hi": null
+      },
+      {
+        "en": "Router",
+        "hi": null
+      },
+      {
+        "en": "Gateway",
+        "hi": null
+      },
+      {
+        "en": "Bridge",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "A gateway performs protocol conversion and may work up to the Application layer. A switch works at layer 2, a bridge at layer 2 and a router at layer 3.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "OSI and TCP/IP layers",
+    "difficulty": "medium",
+    "question_en": "In the TCP/IP model, the layer that combines the functions of the OSI Physical and Data Link layers is the:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Internet layer",
+        "hi": null
+      },
+      {
+        "en": "Transport layer",
+        "hi": null
+      },
+      {
+        "en": "Network Access (Link) layer",
+        "hi": null
+      },
+      {
+        "en": "Host-to-host layer",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "The Network Access or Link layer of TCP/IP handles hardware addressing, framing and physical transmission, i.e. OSI layers 1 and 2. The Internet layer corresponds to OSI layer 3.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "OSI and TCP/IP layers",
+    "difficulty": "medium",
+    "question_en": "The address used by the Transport layer to deliver data to the correct application process on a host is the:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "MAC address",
+        "hi": null
+      },
+      {
+        "en": "IP address",
+        "hi": null
+      },
+      {
+        "en": "Port number",
+        "hi": null
+      },
+      {
+        "en": "Domain name",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Port numbers identify processes (services) on a host. MAC addresses are Data Link addresses and IP addresses are Network layer addresses.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Network topologies",
+    "difficulty": "easy",
+    "question_en": "In which topology is every node connected by its own cable to a central device such as a hub or switch?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Bus",
+        "hi": null
+      },
+      {
+        "en": "Ring",
+        "hi": null
+      },
+      {
+        "en": "Star",
+        "hi": null
+      },
+      {
+        "en": "Mesh",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Star topology uses a central connecting device. It is the most common LAN topology today because one cable fault isolates only one node.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Network topologies",
+    "difficulty": "medium",
+    "question_en": "A fully connected mesh network has 10 computers. How many point-to-point links are required?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "10",
+        "hi": null
+      },
+      {
+        "en": "20",
+        "hi": null
+      },
+      {
+        "en": "45",
+        "hi": null
+      },
+      {
+        "en": "90",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "A full mesh of n nodes needs n(n−1)/2 links = 10×9/2 = 45. Option 4 counts each link twice (n(n−1)).",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Network topologies",
+    "difficulty": "medium",
+    "question_en": "In which topology does data travel in one direction from node to node, and a single node or cable failure can bring down the entire network unless a dual ring is used?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Star",
+        "hi": null
+      },
+      {
+        "en": "Ring",
+        "hi": null
+      },
+      {
+        "en": "Tree",
+        "hi": null
+      },
+      {
+        "en": "Bus",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "In a ring, each node is connected to exactly two neighbours and data (often a token) circulates in one direction, so one break can disable the whole ring.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Network topologies",
+    "difficulty": "easy",
+    "question_en": "A bus topology requires a terminator at each end of the main cable in order to:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Supply power to the nodes",
+        "hi": null
+      },
+      {
+        "en": "Prevent signal reflection",
+        "hi": null
+      },
+      {
+        "en": "Assign IP addresses",
+        "hi": null
+      },
+      {
+        "en": "Encrypt the data",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Terminators absorb the signal at the ends of the backbone cable so that it does not bounce back and corrupt new transmissions.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Network topologies",
+    "difficulty": "medium",
+    "question_en": "Which topology offers the highest fault tolerance and privacy but also the highest cabling cost?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Bus",
+        "hi": null
+      },
+      {
+        "en": "Star",
+        "hi": null
+      },
+      {
+        "en": "Ring",
+        "hi": null
+      },
+      {
+        "en": "Mesh",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Mesh has dedicated links between every pair of nodes, so there are always alternative paths and traffic is not shared, but the number of cables and ports grows rapidly with n.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Network topologies",
+    "difficulty": "hard",
+    "question_en": "In a full mesh network of 8 devices, how many I/O ports must each device have, and what is the total number of links?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "8 ports, 28 links",
+        "hi": null
+      },
+      {
+        "en": "7 ports, 28 links",
+        "hi": null
+      },
+      {
+        "en": "7 ports, 56 links",
+        "hi": null
+      },
+      {
+        "en": "8 ports, 64 links",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Each device connects to the other n−1 = 7 devices, so it needs 7 ports. Total links = n(n−1)/2 = 8×7/2 = 28.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Network topologies",
+    "difficulty": "medium",
+    "question_en": "A hierarchical topology in which several star networks are connected to a linear backbone is called a:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Tree (hybrid star-bus) topology",
+        "hi": null
+      },
+      {
+        "en": "Ring topology",
+        "hi": null
+      },
+      {
+        "en": "Full mesh topology",
+        "hi": null
+      },
+      {
+        "en": "Point-to-point topology",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Tree topology combines star groups joined through a bus backbone; it is widely used in large buildings and campus networks.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Network topologies",
+    "difficulty": "medium",
+    "question_en": "In a star topology, what is the effect of a failure of the central hub, and of a failure of a single cable?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Both bring the whole network down",
+        "hi": null
+      },
+      {
+        "en": "Hub failure brings the whole network down; a cable failure isolates only one node",
+        "hi": null
+      },
+      {
+        "en": "Hub failure isolates one node; cable failure brings the whole network down",
+        "hi": null
+      },
+      {
+        "en": "Neither affects the network",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The hub is a single point of failure, but each node has its own cable, so a cable break affects only that node. This is why star is easy to troubleshoot.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Transmission media",
+    "difficulty": "easy",
+    "question_en": "Which transmission medium carries data as pulses of light and is immune to electromagnetic interference?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Coaxial cable",
+        "hi": null
+      },
+      {
+        "en": "Shielded twisted pair",
+        "hi": null
+      },
+      {
+        "en": "Optical fibre",
+        "hi": null
+      },
+      {
+        "en": "Microwave link",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Optical fibre transmits light through a glass or plastic core using total internal reflection, so electrical noise cannot affect it and it supports the highest bandwidth over long distances.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Transmission media",
+    "difficulty": "medium",
+    "question_en": "The two wires of each pair in a twisted-pair cable are twisted around each other mainly to:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Increase the cable's tensile strength",
+        "hi": null
+      },
+      {
+        "en": "Reduce crosstalk and external electromagnetic interference",
+        "hi": null
+      },
+      {
+        "en": "Allow full-duplex transmission",
+        "hi": null
+      },
+      {
+        "en": "Double the data rate",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Twisting makes both wires pick up nearly equal noise, which cancels out at the receiver (differential signalling), reducing crosstalk and EMI.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Transmission media",
+    "difficulty": "medium",
+    "question_en": "Which cable has a central copper conductor surrounded by an insulating layer, a braided metallic shield and an outer plastic jacket?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Unshielded twisted pair",
+        "hi": null
+      },
+      {
+        "en": "Coaxial cable",
+        "hi": null
+      },
+      {
+        "en": "Single-mode fibre",
+        "hi": null
+      },
+      {
+        "en": "Ribbon cable",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "This layered construction describes coaxial cable, used in cable TV and older Ethernet (10BASE2/10BASE5). UTP has no metallic shield and fibre has a glass core.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Transmission media",
+    "difficulty": "medium",
+    "question_en": "The connector normally used to terminate Cat 5e / Cat 6 twisted-pair Ethernet cables is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "RJ11",
+        "hi": null
+      },
+      {
+        "en": "RJ45",
+        "hi": null
+      },
+      {
+        "en": "BNC",
+        "hi": null
+      },
+      {
+        "en": "SC",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "RJ45 is the 8-pin connector for Ethernet twisted-pair cables. RJ11 is for telephone lines, BNC for coaxial cable and SC/ST/LC for optical fibre.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Transmission media",
+    "difficulty": "hard",
+    "question_en": "Which statement correctly contrasts single-mode and multimode optical fibre?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Single-mode has a larger core and uses LEDs; multimode uses lasers for long distances",
+        "hi": null
+      },
+      {
+        "en": "Single-mode has a very thin core, is usually driven by a laser and supports longer distances; multimode has a wider core and is used for shorter runs",
+        "hi": null
+      },
+      {
+        "en": "Both have identical cores; they differ only in jacket colour",
+        "hi": null
+      },
+      {
+        "en": "Multimode can carry only one wavelength while single-mode carries many",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Single-mode fibre (core ≈ 8–10 µm) carries a single light path with very low dispersion, so it works over tens of kilometres. Multimode (core ≈ 50–62.5 µm) allows many paths, causing modal dispersion, so it suits short campus/building links.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Transmission media",
+    "difficulty": "medium",
+    "question_en": "Which of the following is an unguided (wireless) transmission medium?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Twisted pair",
+        "hi": null
+      },
+      {
+        "en": "Coaxial cable",
+        "hi": null
+      },
+      {
+        "en": "Optical fibre",
+        "hi": null
+      },
+      {
+        "en": "Microwave",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Guided media use a physical conductor (copper or glass). Microwave, radio waves and infrared travel through free space and are unguided media.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Transmission media",
+    "difficulty": "medium",
+    "question_en": "A geostationary communication satellite appears fixed above one point on the equator because it orbits at a height of approximately:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "360 km",
+        "hi": null
+      },
+      {
+        "en": "2,000 km",
+        "hi": null
+      },
+      {
+        "en": "36,000 km",
+        "hi": null
+      },
+      {
+        "en": "360,000 km",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "At about 35,786 km (≈36,000 km) a satellite's orbital period equals the Earth's rotation period (24 h), so it stays over the same spot; this is why a fixed dish antenna works.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Transmission media",
+    "difficulty": "medium",
+    "question_en": "Infrared communication (as used in TV remote controls) is limited because infrared signals:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Need a licence from the government",
+        "hi": null
+      },
+      {
+        "en": "Cannot pass through walls and require line of sight",
+        "hi": null
+      },
+      {
+        "en": "Travel only through copper",
+        "hi": null
+      },
+      {
+        "en": "Have a very low frequency",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Infrared waves are blocked by opaque objects, so they work only over short, unobstructed distances, which also makes them secure within a room.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Transmission media",
+    "difficulty": "hard",
+    "question_en": "In the Ethernet designation 100BASE-TX, what do '100', 'BASE' and 'T' indicate respectively?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "100 m length, baseband, thick coaxial",
+        "hi": null
+      },
+      {
+        "en": "100 Mbps, baseband signalling, twisted-pair cable",
+        "hi": null
+      },
+      {
+        "en": "100 MHz, broadband, telephone line",
+        "hi": null
+      },
+      {
+        "en": "100 nodes, basic, token ring",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The number is the data rate in Mbps, BASE means baseband (the whole cable carries one digital signal) and T stands for twisted pair; F would mean fibre and 2/5 referred to thin/thick coaxial lengths.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Transmission media",
+    "difficulty": "medium",
+    "question_en": "Compared with unshielded twisted pair (UTP), shielded twisted pair (STP):",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Is cheaper and thinner",
+        "hi": null
+      },
+      {
+        "en": "Has a metallic foil or braid that gives better protection against EMI but makes it costlier and bulkier",
+        "hi": null
+      },
+      {
+        "en": "Uses glass fibres instead of copper",
+        "hi": null
+      },
+      {
+        "en": "Supports only half-duplex transmission",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "STP adds a shield around the pairs to resist electromagnetic interference, at the cost of price, weight and ease of installation. UTP is the usual choice for office LANs.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Network devices",
+    "difficulty": "easy",
+    "question_en": "A hub forwards every incoming signal to all of its ports and operates at the ______ layer of the OSI model.",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Physical",
+        "hi": null
+      },
+      {
+        "en": "Data Link",
+        "hi": null
+      },
+      {
+        "en": "Network",
+        "hi": null
+      },
+      {
+        "en": "Transport",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "A hub is a multi-port repeater: it regenerates electrical signals without reading addresses, so it belongs to layer 1 and creates one large collision domain.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Network devices",
+    "difficulty": "medium",
+    "question_en": "A switch forwards a frame only to the port on which the destination is located. To do this it maintains a table of:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "IP addresses",
+        "hi": null
+      },
+      {
+        "en": "MAC addresses",
+        "hi": null
+      },
+      {
+        "en": "Port numbers of applications",
+        "hi": null
+      },
+      {
+        "en": "Domain names",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "A switch is a layer-2 device; it learns the source MAC address of each frame and builds a MAC (CAM) address table that maps addresses to ports. Routers use IP addresses.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Network devices",
+    "difficulty": "medium",
+    "question_en": "A router makes its forwarding decision by examining the:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Source MAC address of the frame",
+        "hi": null
+      },
+      {
+        "en": "Destination IP address of the packet",
+        "hi": null
+      },
+      {
+        "en": "Destination port number of the segment",
+        "hi": null
+      },
+      {
+        "en": "Checksum of the frame",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Routers work at the Network layer and consult a routing table using the destination IP address. Switches use MAC addresses and firewalls may look at port numbers.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Network devices",
+    "difficulty": "medium",
+    "question_en": "A device that connects two LAN segments and filters traffic by MAC address, thereby dividing one collision domain into two, is called a:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Repeater",
+        "hi": null
+      },
+      {
+        "en": "Bridge",
+        "hi": null
+      },
+      {
+        "en": "Modem",
+        "hi": null
+      },
+      {
+        "en": "Gateway",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "A bridge is a two-port layer-2 device that forwards frames between segments only when needed; a switch is essentially a multi-port bridge. A repeater does not filter anything.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Network devices",
+    "difficulty": "hard",
+    "question_en": "Twenty-four PCs are connected to a single 24-port switch, which is connected to a router. How many collision domains and broadcast domains does the switch create among the PCs?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "1 collision domain, 24 broadcast domains",
+        "hi": null
+      },
+      {
+        "en": "24 collision domains, 1 broadcast domain",
+        "hi": null
+      },
+      {
+        "en": "1 collision domain, 1 broadcast domain",
+        "hi": null
+      },
+      {
+        "en": "24 collision domains, 24 broadcast domains",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Each switch port is its own collision domain (24), but a switch forwards broadcasts to all ports, so all PCs share one broadcast domain. Only a router (or VLANs) separates broadcast domains; a hub would give 1 collision domain.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Network devices",
+    "difficulty": "medium",
+    "question_en": "To connect an organisation's IPX-based legacy network to a TCP/IP network, converting between the two protocol stacks, the appropriate device is a:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Hub",
+        "hi": null
+      },
+      {
+        "en": "Repeater",
+        "hi": null
+      },
+      {
+        "en": "Gateway",
+        "hi": null
+      },
+      {
+        "en": "Switch",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "A gateway translates between different protocol architectures and can operate up to the Application layer; the other devices work within a single protocol family.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Network devices",
+    "difficulty": "medium",
+    "question_en": "A modem is required for a dial-up or DSL connection because it:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Assigns IP addresses to computers",
+        "hi": null
+      },
+      {
+        "en": "Converts digital signals of the computer to analog signals for the telephone line and back",
+        "hi": null
+      },
+      {
+        "en": "Blocks viruses coming from the Internet",
+        "hi": null
+      },
+      {
+        "en": "Increases the clock speed of the processor",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "MODEM = MOdulator-DEModulator. It modulates digital data onto an analog carrier for transmission and demodulates the received signal.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Network devices",
+    "difficulty": "medium",
+    "question_en": "The MAC address burnt into a Network Interface Card (NIC) is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "32 bits long, written in dotted decimal",
+        "hi": null
+      },
+      {
+        "en": "48 bits long, written as 12 hexadecimal digits",
+        "hi": null
+      },
+      {
+        "en": "64 bits long, written in binary",
+        "hi": null
+      },
+      {
+        "en": "128 bits long, written in hexadecimal groups",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "A MAC address is 48 bits (6 bytes), e.g. 3C:5A:B4:12:9F:01; the first 3 bytes identify the manufacturer (OUI). 32-bit dotted decimal describes IPv4 and 128-bit hex describes IPv6.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Network devices",
+    "difficulty": "easy",
+    "question_en": "Which device simply regenerates and retimes a weakened signal so that it can travel a longer distance on the same network?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Repeater",
+        "hi": null
+      },
+      {
+        "en": "Router",
+        "hi": null
+      },
+      {
+        "en": "Firewall",
+        "hi": null
+      },
+      {
+        "en": "Gateway",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "A repeater is a layer-1 device that extends the physical length of a network by amplifying/regenerating the signal; it does not look at addresses.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Network devices",
+    "difficulty": "hard",
+    "question_en": "The Sales and Accounts departments are on the same switched LAN and broadcast traffic from one department is slowing the other. Which solution would confine broadcasts to each department?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Replace the switch with a hub",
+        "hi": null
+      },
+      {
+        "en": "Add a repeater between the departments",
+        "hi": null
+      },
+      {
+        "en": "Separate the departments with a router or configure VLANs on the switch",
+        "hi": null
+      },
+      {
+        "en": "Install a faster NIC in every PC",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Broadcast domains are bounded by routers (layer 3) or by VLANs on a managed switch. Hubs and repeaters enlarge the collision domain and do nothing to limit broadcasts.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Network devices",
+    "difficulty": "medium",
+    "question_en": "A wireless access point (AP) is used to:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Convert optical signals to electrical signals",
+        "hi": null
+      },
+      {
+        "en": "Connect Wi-Fi client devices to a wired LAN",
+        "hi": null
+      },
+      {
+        "en": "Provide domain name resolution",
+        "hi": null
+      },
+      {
+        "en": "Replace the need for a router on the Internet",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "An access point bridges the wireless (802.11) medium and the wired Ethernet LAN; home 'Wi-Fi routers' combine an AP, a switch and a router in one box.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "IP addressing and subnetting",
+    "difficulty": "easy",
+    "question_en": "The IPv4 address 172.16.5.4 belongs to which address class?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Class B",
+        "hi": null
+      },
+      {
+        "en": "Class D",
+        "hi": null
+      },
+      {
+        "en": "Class C",
+        "hi": null
+      },
+      {
+        "en": "Class A",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The first octet 172 lies in the range 128–191, which is Class B. Class A is 1–126 and Class C is 192–223.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "IP addressing and subnetting",
+    "difficulty": "easy",
+    "question_en": "What is the default subnet mask of a Class C IPv4 address?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "255.255.255.0",
+        "hi": null
+      },
+      {
+        "en": "255.0.0.0",
+        "hi": null
+      },
+      {
+        "en": "255.255.0.0",
+        "hi": null
+      },
+      {
+        "en": "255.255.255.255",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Class C uses the first 24 bits for the network, so the default mask is 255.255.255.0 (/24). 255.255.0.0 is the Class B default.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "IP addressing and subnetting",
+    "difficulty": "easy",
+    "question_en": "Which of the following is the IPv4 loopback address used to test the TCP/IP stack on the local machine?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "127.0.0.1",
+        "hi": null
+      },
+      {
+        "en": "0.0.0.0",
+        "hi": null
+      },
+      {
+        "en": "255.255.255.255",
+        "hi": null
+      },
+      {
+        "en": "192.168.0.1",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The whole 127.0.0.0/8 block is reserved for loopback and 127.0.0.1 is the conventional address. 192.168.0.1 is a private address and 255.255.255.255 is the limited broadcast.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "IP addressing and subnetting",
+    "difficulty": "easy",
+    "question_en": "IPv4 addresses whose first octet lies between 224 and 239 belong to Class D and are used for:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Multicasting",
+        "hi": null
+      },
+      {
+        "en": "Unicast host addressing",
+        "hi": null
+      },
+      {
+        "en": "Private networks",
+        "hi": null
+      },
+      {
+        "en": "Experimental research only",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Class D (224.0.0.0–239.255.255.255) is reserved for multicast groups. Class E (240–255) is the experimental class.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "IP addressing and subnetting",
+    "difficulty": "easy",
+    "question_en": "The subnet mask written in CIDR notation as /26 is equivalent to:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "255.255.255.192",
+        "hi": null
+      },
+      {
+        "en": "255.255.255.240",
+        "hi": null
+      },
+      {
+        "en": "255.255.255.128",
+        "hi": null
+      },
+      {
+        "en": "255.255.255.224",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "/26 means 26 one-bits: 24 bits give 255.255.255 and the remaining 2 bits in the last octet give 128 + 64 = 192. /25 is .128 and /27 is .224.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "IP addressing and subnetting",
+    "difficulty": "medium",
+    "question_en": "How many usable host addresses are available in a subnet with prefix /27?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "14",
+        "hi": null
+      },
+      {
+        "en": "30",
+        "hi": null
+      },
+      {
+        "en": "32",
+        "hi": null
+      },
+      {
+        "en": "62",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Host bits = 32 − 27 = 5, so 2^5 = 32 addresses. Subtracting the network and broadcast addresses gives 32 − 2 = 30 usable hosts.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "IP addressing and subnetting",
+    "difficulty": "medium",
+    "question_en": "A host has the address 10.1.1.130 with mask 255.255.255.128. What is the broadcast address of its subnet?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "10.1.1.255",
+        "hi": null
+      },
+      {
+        "en": "10.1.1.127",
+        "hi": null
+      },
+      {
+        "en": "10.1.1.128",
+        "hi": null
+      },
+      {
+        "en": "10.1.1.254",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Block size = 256 − 128 = 128, so the subnets are .0–.127 and .128–.255. Host .130 lies in the second block, whose last address 10.1.1.255 is the broadcast; .128 is that subnet's network address.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "IP addressing and subnetting",
+    "difficulty": "medium",
+    "question_en": "The Class C network 192.168.1.0 is subnetted with prefix /28. How many subnets are created and how many usable hosts does each have?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "8 subnets, 30 hosts each",
+        "hi": null
+      },
+      {
+        "en": "14 subnets, 16 hosts each",
+        "hi": null
+      },
+      {
+        "en": "16 subnets, 16 hosts each",
+        "hi": null
+      },
+      {
+        "en": "16 subnets, 14 hosts each",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "From the default /24, 4 bits are borrowed: 2^4 = 16 subnets. 4 host bits remain: 2^4 − 2 = 14 usable hosts per subnet.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "IP addressing and subnetting",
+    "difficulty": "medium",
+    "question_en": "The prefix /20 corresponds to which dotted-decimal subnet mask?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "255.255.248.0",
+        "hi": null
+      },
+      {
+        "en": "255.255.224.0",
+        "hi": null
+      },
+      {
+        "en": "255.255.255.240",
+        "hi": null
+      },
+      {
+        "en": "255.255.240.0",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "/20 = 16 bits (255.255) plus 4 more one-bits in the third octet: 128 + 64 + 32 + 16 = 240. Hence 255.255.240.0.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "IP addressing and subnetting",
+    "difficulty": "medium",
+    "question_en": "How many usable host addresses does a /22 network provide?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "510",
+        "hi": null
+      },
+      {
+        "en": "1022",
+        "hi": null
+      },
+      {
+        "en": "1024",
+        "hi": null
+      },
+      {
+        "en": "2046",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Host bits = 32 − 22 = 10, giving 2^10 = 1024 addresses; removing the network and broadcast addresses leaves 1022 usable hosts.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "IP addressing and subnetting",
+    "difficulty": "medium",
+    "question_en": "Which of the following IPv4 addresses is a private (RFC 1918) address that is not routed on the public Internet?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "192.169.1.10",
+        "hi": null
+      },
+      {
+        "en": "172.32.14.5",
+        "hi": null
+      },
+      {
+        "en": "172.20.14.5",
+        "hi": null
+      },
+      {
+        "en": "11.0.0.25",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Private ranges are 10.0.0.0/8, 172.16.0.0–172.31.255.255 and 192.168.0.0/16. 172.20.x.x falls in the 172.16–31 block; 172.32 and 192.169 are just outside the private ranges.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "IP addressing and subnetting",
+    "difficulty": "medium",
+    "question_en": "A Windows PC that cannot reach a DHCP server automatically assigns itself an address such as 169.254.23.7. This address range is called:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "NAT public addressing",
+        "hi": null
+      },
+      {
+        "en": "Multicast addressing",
+        "hi": null
+      },
+      {
+        "en": "Loopback addressing",
+        "hi": null
+      },
+      {
+        "en": "APIPA (link-local) addressing",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "169.254.0.0/16 is the link-local range used by Automatic Private IP Addressing when DHCP fails; it only works on the local segment.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "IP addressing and subnetting",
+    "difficulty": "medium",
+    "question_en": "A default Class B network (mask 255.255.0.0) can have at most how many usable hosts?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "254",
+        "hi": null
+      },
+      {
+        "en": "65,534",
+        "hi": null
+      },
+      {
+        "en": "65,536",
+        "hi": null
+      },
+      {
+        "en": "16,777,214",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Class B leaves 16 host bits: 2^16 = 65,536 addresses minus 2 (network and broadcast) = 65,534. 16,777,214 is the Class A figure and 254 is Class C.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "IP addressing and subnetting",
+    "difficulty": "hard",
+    "question_en": "What is the network (subnet) address of the host 192.168.10.77/26?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "192.168.10.0",
+        "hi": null
+      },
+      {
+        "en": "192.168.10.76",
+        "hi": null
+      },
+      {
+        "en": "192.168.10.128",
+        "hi": null
+      },
+      {
+        "en": "192.168.10.64",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "A /26 mask is 255.255.255.192, block size 64. The subnets in the last octet are 0, 64, 128, 192; 77 falls in 64–127, so the network address is 192.168.10.64 (broadcast 192.168.10.127).",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "IP addressing and subnetting",
+    "difficulty": "hard",
+    "question_en": "An organisation has the Class C block 200.10.5.0/24 and needs at least 6 subnets. Using the smallest suitable mask, what is the mask and the number of usable hosts per subnet?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "255.255.255.192, 62 hosts",
+        "hi": null
+      },
+      {
+        "en": "255.255.255.240, 14 hosts",
+        "hi": null
+      },
+      {
+        "en": "255.255.255.224, 30 hosts",
+        "hi": null
+      },
+      {
+        "en": "255.255.255.248, 6 hosts",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "2 borrowed bits give only 4 subnets, so 3 bits are needed (2^3 = 8 ≥ 6). Mask = /27 = 255.255.255.224, leaving 5 host bits: 2^5 − 2 = 30 hosts per subnet.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "IP addressing and subnetting",
+    "difficulty": "hard",
+    "question_en": "With subnet mask 255.255.255.240, which pair of hosts lies in the SAME subnet?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "192.168.5.30 and 192.168.5.33",
+        "hi": null
+      },
+      {
+        "en": "192.168.5.47 and 192.168.5.48",
+        "hi": null
+      },
+      {
+        "en": "192.168.5.14 and 192.168.5.17",
+        "hi": null
+      },
+      {
+        "en": "192.168.5.18 and 192.168.5.29",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Block size = 256 − 240 = 16, so subnets are .0–.15, .16–.31, .32–.47, .48–.63. Both .18 and .29 fall in .16–.31; every other pair straddles a block boundary.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "IP addressing and subnetting",
+    "difficulty": "hard",
+    "question_en": "The four networks 192.168.0.0/24, 192.168.1.0/24, 192.168.2.0/24 and 192.168.3.0/24 are to be advertised as one summary (supernet) route. The summary route is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "192.168.0.0/22",
+        "hi": null
+      },
+      {
+        "en": "192.168.0.0/23",
+        "hi": null
+      },
+      {
+        "en": "192.168.3.0/22",
+        "hi": null
+      },
+      {
+        "en": "192.168.0.0/21",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Four contiguous /24 networks = 2^2, so 2 bits are removed from the prefix: /24 − 2 = /22. The third octets 0–3 share the first 6 bits (000000xx), giving 192.168.0.0/22.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "IPv4 and IPv6",
+    "difficulty": "easy",
+    "question_en": "What is the length of an IPv6 address?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "32 bits",
+        "hi": null
+      },
+      {
+        "en": "48 bits",
+        "hi": null
+      },
+      {
+        "en": "64 bits",
+        "hi": null
+      },
+      {
+        "en": "128 bits",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "IPv6 addresses are 128 bits long, written as eight groups of four hexadecimal digits. IPv4 addresses are 32 bits and MAC addresses are 48 bits.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "IPv4 and IPv6",
+    "difficulty": "easy",
+    "question_en": "An IPv4 address is written in dotted-decimal notation as four numbers. Each of these numbers can range from:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "0 to 127",
+        "hi": null
+      },
+      {
+        "en": "0 to 999",
+        "hi": null
+      },
+      {
+        "en": "0 to 255",
+        "hi": null
+      },
+      {
+        "en": "1 to 256",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Each of the four parts is one octet (8 bits), so its value ranges from 0 to 2^8 − 1 = 255. That is why an address such as 192.168.300.1 is invalid.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "IPv4 and IPv6",
+    "difficulty": "easy",
+    "question_en": "The theoretical total number of IPv4 addresses is approximately:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "3.4 × 10^38",
+        "hi": null
+      },
+      {
+        "en": "65 thousand",
+        "hi": null
+      },
+      {
+        "en": "16.7 million",
+        "hi": null
+      },
+      {
+        "en": "4.3 billion",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "IPv4 uses 32 bits, so there are 2^32 ≈ 4.29 billion addresses. 3.4 × 10^38 (2^128) is the IPv6 address space, which is why IPv6 was introduced.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "IPv4 and IPv6",
+    "difficulty": "medium",
+    "question_en": "Which of the following is a correctly written IPv6 address?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "2001:db8:g12::1",
+        "hi": null
+      },
+      {
+        "en": "2001.db8.0.0.8.800.200c.417a",
+        "hi": null
+      },
+      {
+        "en": "2001::db8::417a",
+        "hi": null
+      },
+      {
+        "en": "2001:db8::8:800:200c:417a",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "The double colon (::) may replace one run of zero groups and can appear only once, and only hexadecimal digits 0–9 and a–f are allowed. The second option uses :: twice and the third contains the non-hex letter g.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "IPv4 and IPv6",
+    "difficulty": "medium",
+    "question_en": "The IPv6 loopback address is written as:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "::1",
+        "hi": null
+      },
+      {
+        "en": "127.0.0.1",
+        "hi": null
+      },
+      {
+        "en": "FF02::1",
+        "hi": null
+      },
+      {
+        "en": "FE80::",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "In IPv6 the loopback is 0:0:0:0:0:0:0:1, abbreviated ::1. 127.0.0.1 is the IPv4 loopback; FF02::1 is the all-nodes multicast and FE80:: begins link-local addresses.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "IPv4 and IPv6",
+    "difficulty": "hard",
+    "question_en": "Which type of address exists in IPv4 but has been removed in IPv6?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Broadcast",
+        "hi": null
+      },
+      {
+        "en": "Multicast",
+        "hi": null
+      },
+      {
+        "en": "Anycast",
+        "hi": null
+      },
+      {
+        "en": "Unicast",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "IPv6 defines unicast, multicast and anycast addresses only; the functions of broadcast are carried out using multicast groups such as FF02::1.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "IPv4 and IPv6",
+    "difficulty": "hard",
+    "question_en": "Which statement correctly compares the IPv4 and IPv6 headers?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "IPv6 header is variable while IPv4 header is fixed at 40 bytes",
+        "hi": null
+      },
+      {
+        "en": "Both headers are fixed at 20 bytes",
+        "hi": null
+      },
+      {
+        "en": "IPv4 header is variable (20–60 bytes); IPv6 base header is fixed at 40 bytes",
+        "hi": null
+      },
+      {
+        "en": "IPv6 header contains a header checksum, IPv4 does not",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "IPv4 has a 20-byte minimum header that can grow to 60 bytes with options, while IPv6 uses a simplified fixed 40-byte base header with extension headers. IPv6 removed the header checksum to speed up routing.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "IPv4 and IPv6",
+    "difficulty": "medium",
+    "question_en": "The purpose of the Time To Live (TTL) field in an IPv4 packet is to:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Record the time at which the packet was created",
+        "hi": null
+      },
+      {
+        "en": "Stop a packet from circulating endlessly; each router decrements it and discards the packet at 0",
+        "hi": null
+      },
+      {
+        "en": "Give the priority of the packet in a router queue",
+        "hi": null
+      },
+      {
+        "en": "Indicate how long a TCP connection may remain idle",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Every router reduces TTL by 1 and drops the packet when it reaches 0, preventing routing loops from flooding the network. The traceroute command exploits this behaviour. IPv6 calls the same field Hop Limit.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "TCP and UDP",
+    "difficulty": "easy",
+    "question_en": "Which transport-layer protocol is connection-oriented and guarantees reliable, in-order delivery of data?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "IP",
+        "hi": null
+      },
+      {
+        "en": "TCP",
+        "hi": null
+      },
+      {
+        "en": "UDP",
+        "hi": null
+      },
+      {
+        "en": "ICMP",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "TCP sets up a connection, numbers segments, uses acknowledgements and retransmission, so delivery is reliable and ordered. UDP is connectionless and gives no such guarantee; IP and ICMP are network-layer protocols.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "TCP and UDP",
+    "difficulty": "medium",
+    "question_en": "The correct sequence of segments in the TCP three-way handshake is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "SYN → ACK → FIN",
+        "hi": null
+      },
+      {
+        "en": "SYN → FIN → ACK",
+        "hi": null
+      },
+      {
+        "en": "ACK → SYN → SYN-ACK",
+        "hi": null
+      },
+      {
+        "en": "SYN → SYN-ACK → ACK",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "The client sends SYN, the server replies SYN-ACK, and the client confirms with ACK; the connection is then established. FIN is used to close a connection, not to open one.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "TCP and UDP",
+    "difficulty": "medium",
+    "question_en": "Which application is generally best served by UDP rather than TCP?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Live voice call over the Internet (VoIP)",
+        "hi": null
+      },
+      {
+        "en": "Sending an e-mail with attachments",
+        "hi": null
+      },
+      {
+        "en": "Loading a banking web page",
+        "hi": null
+      },
+      {
+        "en": "Downloading a software installer",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Real-time voice tolerates the loss of a few packets but not the delay caused by retransmission, so UDP's low overhead suits it. Downloads, e-mail and banking pages need every byte to arrive correctly, so they use TCP.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "TCP and UDP",
+    "difficulty": "hard",
+    "question_en": "What are the header sizes of UDP and of TCP (without options)?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "UDP 20 bytes; TCP 8 bytes",
+        "hi": null
+      },
+      {
+        "en": "UDP 8 bytes; TCP 20 bytes",
+        "hi": null
+      },
+      {
+        "en": "UDP 16 bytes; TCP 32 bytes",
+        "hi": null
+      },
+      {
+        "en": "Both 20 bytes",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The UDP header has only four 2-byte fields (source port, destination port, length, checksum) = 8 bytes. The TCP header has a minimum of 20 bytes because it carries sequence and acknowledgement numbers, flags and window size.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "TCP and UDP",
+    "difficulty": "medium",
+    "question_en": "TCP prevents a fast sender from overwhelming a slow receiver by using the:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Port number",
+        "hi": null
+      },
+      {
+        "en": "Sliding window mechanism advertised by the receiver",
+        "hi": null
+      },
+      {
+        "en": "Checksum field",
+        "hi": null
+      },
+      {
+        "en": "Time To Live field",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The receiver advertises a window size indicating how much data it can buffer, and the sender limits unacknowledged data to that window; this is TCP flow control. Checksum is for error detection and TTL belongs to IP.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Protocols at each layer",
+    "difficulty": "medium",
+    "question_en": "The Address Resolution Protocol (ARP) is used to:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Find the IP address when only the MAC address is known",
+        "hi": null
+      },
+      {
+        "en": "Find the MAC address of a host whose IP address is known",
+        "hi": null
+      },
+      {
+        "en": "Find the IP address of a host whose domain name is known",
+        "hi": null
+      },
+      {
+        "en": "Assign IP addresses automatically to hosts",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "ARP broadcasts 'who has this IP?' and the owner replies with its MAC address so a frame can be built. Name-to-IP is DNS, automatic assignment is DHCP and MAC-to-IP is the older RARP.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Protocols at each layer",
+    "difficulty": "hard",
+    "question_en": "Which protocol–layer pairing (in the TCP/IP model) is INCORRECT?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "UDP – Internet layer",
+        "hi": null
+      },
+      {
+        "en": "IP – Internet layer",
+        "hi": null
+      },
+      {
+        "en": "Ethernet – Network Access layer",
+        "hi": null
+      },
+      {
+        "en": "SMTP – Application layer",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "UDP, like TCP, is a Transport-layer protocol. SMTP is an application protocol, IP works at the Internet layer, and Ethernet operates at the Network Access (link) layer.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Protocols at each layer",
+    "difficulty": "hard",
+    "question_en": "Which routing protocol is used to exchange routes between different autonomous systems (for example, between ISPs) on the Internet?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "RIP",
+        "hi": null
+      },
+      {
+        "en": "OSPF",
+        "hi": null
+      },
+      {
+        "en": "BGP",
+        "hi": null
+      },
+      {
+        "en": "ARP",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Border Gateway Protocol is the exterior gateway protocol that connects autonomous systems. RIP and OSPF are interior protocols used within one organisation, and ARP is not a routing protocol at all.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Protocols at each layer",
+    "difficulty": "hard",
+    "question_en": "In the Routing Information Protocol (RIP), a destination whose hop count is 16 is treated as:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "A directly connected network",
+        "hi": null
+      },
+      {
+        "en": "Unreachable",
+        "hi": null
+      },
+      {
+        "en": "A default route",
+        "hi": null
+      },
+      {
+        "en": "The best route",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "RIP is a distance-vector protocol whose maximum valid hop count is 15; a metric of 16 means 'infinity', i.e. unreachable. This limit keeps RIP suitable only for small networks.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Protocols at each layer",
+    "difficulty": "easy",
+    "question_en": "The ping utility checks whether a remote host is reachable by sending messages of which protocol?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "UDP datagram on port 53",
+        "hi": null
+      },
+      {
+        "en": "ICMP Echo Request",
+        "hi": null
+      },
+      {
+        "en": "TCP SYN",
+        "hi": null
+      },
+      {
+        "en": "HTTP GET",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "ping sends ICMP Echo Request messages and waits for Echo Reply messages, reporting round-trip time and loss. It does not use TCP, DNS's UDP port or HTTP.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Port numbers",
+    "difficulty": "easy",
+    "question_en": "By default, a web server serving HTTPS pages listens on TCP port:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "21",
+        "hi": null
+      },
+      {
+        "en": "80",
+        "hi": null
+      },
+      {
+        "en": "443",
+        "hi": null
+      },
+      {
+        "en": "8080",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "HTTPS (HTTP over TLS) uses well-known port 443. Port 80 is plain HTTP, 8080 is a common alternate HTTP port and 21 is FTP control.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Port numbers",
+    "difficulty": "easy",
+    "question_en": "The well-known port number of HTTP is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "25",
+        "hi": null
+      },
+      {
+        "en": "53",
+        "hi": null
+      },
+      {
+        "en": "80",
+        "hi": null
+      },
+      {
+        "en": "110",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "HTTP servers listen on port 80 by default. Port 25 is SMTP, 110 is POP3 and 53 is DNS.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Port numbers",
+    "difficulty": "medium",
+    "question_en": "FTP uses two TCP connections. Which ports are used for the control connection and the data connection (active mode) respectively?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "20 and 21",
+        "hi": null
+      },
+      {
+        "en": "69 and 68",
+        "hi": null
+      },
+      {
+        "en": "22 and 23",
+        "hi": null
+      },
+      {
+        "en": "21 and 20",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "FTP sends commands over port 21 (control) and transfers file contents over port 20 (data) in active mode. 22/23 are SSH/Telnet and 69 is TFTP.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Port numbers",
+    "difficulty": "medium",
+    "question_en": "Match the protocol with its default port: SMTP, POP3, IMAP.",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "25, 143, 110",
+        "hi": null
+      },
+      {
+        "en": "110, 25, 143",
+        "hi": null
+      },
+      {
+        "en": "21, 110, 143",
+        "hi": null
+      },
+      {
+        "en": "25, 110, 143",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "SMTP (sending mail) uses port 25, POP3 (downloading mail) uses 110 and IMAP (accessing mail on the server) uses 143.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Port numbers",
+    "difficulty": "medium",
+    "question_en": "DNS queries are normally sent to which port?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "53",
+        "hi": null
+      },
+      {
+        "en": "67",
+        "hi": null
+      },
+      {
+        "en": "123",
+        "hi": null
+      },
+      {
+        "en": "161",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "DNS uses port 53 (UDP for ordinary queries, TCP for zone transfers and large replies). 67 is DHCP server, 123 is NTP and 161 is SNMP.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Port numbers",
+    "difficulty": "medium",
+    "question_en": "Which pair of remote-login protocols and ports is correct?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "SSH – 23 (encrypted), Telnet – 22 (plain text)",
+        "hi": null
+      },
+      {
+        "en": "SSH – 22 (plain text), Telnet – 23 (encrypted)",
+        "hi": null
+      },
+      {
+        "en": "SSH – 443, Telnet – 80",
+        "hi": null
+      },
+      {
+        "en": "SSH – 22 (encrypted), Telnet – 23 (plain text)",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "SSH on port 22 encrypts the whole session, while Telnet on port 23 sends everything, including passwords, as clear text. That is why SSH has replaced Telnet for remote administration.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Port numbers",
+    "difficulty": "medium",
+    "question_en": "Port numbers are 16-bit values. The range 0–1023 is known as:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Well-known ports",
+        "hi": null
+      },
+      {
+        "en": "Reserved IP ports",
+        "hi": null
+      },
+      {
+        "en": "Dynamic or private ports",
+        "hi": null
+      },
+      {
+        "en": "Registered ports",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "IANA classifies ports as well-known (0–1023, e.g. 80, 443), registered (1024–49151) and dynamic/ephemeral (49152–65535). Being 16-bit, there are 65,536 ports in total.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Port numbers",
+    "difficulty": "hard",
+    "question_en": "DHCP uses UDP ports 67 and 68, and SNMP uses UDP port 161. Which of the following also runs over UDP on port 69?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "FTP",
+        "hi": null
+      },
+      {
+        "en": "HTTP",
+        "hi": null
+      },
+      {
+        "en": "SFTP",
+        "hi": null
+      },
+      {
+        "en": "TFTP",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Trivial File Transfer Protocol is a simple, no-authentication file transfer protocol that uses UDP port 69. FTP uses TCP 20/21 and SFTP runs over SSH on TCP 22.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Application protocols (DNS/HTTP/FTP/SMTP/POP/IMAP)",
+    "difficulty": "easy",
+    "question_en": "Which service translates a domain name such as www.education.delhi.gov.in into an IP address?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "ARP",
+        "hi": null
+      },
+      {
+        "en": "FTP",
+        "hi": null
+      },
+      {
+        "en": "DHCP",
+        "hi": null
+      },
+      {
+        "en": "DNS",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "The Domain Name System resolves human-readable names to IP addresses. DHCP assigns IP addresses, FTP transfers files and ARP maps IP addresses to MAC addresses.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Application protocols (DNS/HTTP/FTP/SMTP/POP/IMAP)",
+    "difficulty": "easy",
+    "question_en": "Which protocol is used to SEND e-mail from a mail client to a mail server and between mail servers?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "SMTP",
+        "hi": null
+      },
+      {
+        "en": "IMAP",
+        "hi": null
+      },
+      {
+        "en": "HTTP",
+        "hi": null
+      },
+      {
+        "en": "POP3",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Simple Mail Transfer Protocol is a 'push' protocol used for sending and relaying mail. POP3 and IMAP are used by clients to retrieve mail from the server.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Application protocols (DNS/HTTP/FTP/SMTP/POP/IMAP)",
+    "difficulty": "easy",
+    "question_en": "Which protocol automatically assigns an IP address, subnet mask, default gateway and DNS server to a computer when it joins a network?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "DHCP",
+        "hi": null
+      },
+      {
+        "en": "SNMP",
+        "hi": null
+      },
+      {
+        "en": "SMTP",
+        "hi": null
+      },
+      {
+        "en": "DNS",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Dynamic Host Configuration Protocol leases IP configuration to clients automatically, avoiding manual setup. DNS only resolves names.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Application protocols (DNS/HTTP/FTP/SMTP/POP/IMAP)",
+    "difficulty": "easy",
+    "question_en": "HTTPS differs from HTTP mainly because HTTPS:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Does not need a web server",
+        "hi": null
+      },
+      {
+        "en": "Can transfer only text, not images",
+        "hi": null
+      },
+      {
+        "en": "Uses UDP instead of TCP",
+        "hi": null
+      },
+      {
+        "en": "Encrypts the data using SSL/TLS",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "HTTPS is HTTP carried inside an SSL/TLS encrypted channel, protecting data from eavesdropping and tampering and authenticating the server through a certificate. It still uses TCP.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Application protocols (DNS/HTTP/FTP/SMTP/POP/IMAP)",
+    "difficulty": "medium",
+    "question_en": "A teacher reads her school e-mail on a laptop, a phone and a desktop and wants every folder and 'read' status to stay synchronised on all of them. The retrieval protocol best suited is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "IMAP",
+        "hi": null
+      },
+      {
+        "en": "POP3",
+        "hi": null
+      },
+      {
+        "en": "SMTP",
+        "hi": null
+      },
+      {
+        "en": "FTP",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "IMAP keeps messages and folders on the server and synchronises state across devices. POP3 usually downloads and removes mail from the server, so the devices fall out of sync; SMTP only sends mail.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Application protocols (DNS/HTTP/FTP/SMTP/POP/IMAP)",
+    "difficulty": "medium",
+    "question_en": "HTTP is called a 'stateless' protocol because:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "It does not use any port number",
+        "hi": null
+      },
+      {
+        "en": "It works without a TCP connection",
+        "hi": null
+      },
+      {
+        "en": "It cannot carry images or video",
+        "hi": null
+      },
+      {
+        "en": "The server does not retain information about previous requests from the same client",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Each HTTP request is processed independently; the server keeps no memory of earlier requests. Websites therefore use cookies or sessions to remember logged-in users.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Application protocols (DNS/HTTP/FTP/SMTP/POP/IMAP)",
+    "difficulty": "easy",
+    "question_en": "A browser displays the HTTP status code 404. This means:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "The request succeeded",
+        "hi": null
+      },
+      {
+        "en": "The server had an internal error",
+        "hi": null
+      },
+      {
+        "en": "The page has moved permanently",
+        "hi": null
+      },
+      {
+        "en": "The requested page was not found on the server",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "404 Not Found is a client-error code meaning the resource does not exist at that URL. 200 means OK, 500 is Internal Server Error and 301 is Moved Permanently.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Application protocols (DNS/HTTP/FTP/SMTP/POP/IMAP)",
+    "difficulty": "medium",
+    "question_en": "Which DNS resource record identifies the mail server responsible for accepting e-mail for a domain?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "MX record",
+        "hi": null
+      },
+      {
+        "en": "CNAME record",
+        "hi": null
+      },
+      {
+        "en": "PTR record",
+        "hi": null
+      },
+      {
+        "en": "A record",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "An MX (Mail Exchanger) record names the mail server for a domain. An A record maps a name to an IPv4 address, CNAME creates an alias and PTR is used for reverse lookup.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Application protocols (DNS/HTTP/FTP/SMTP/POP/IMAP)",
+    "difficulty": "medium",
+    "question_en": "In the Domain Name System, the label '.in' in 'ncert.nic.in' is called a:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Second-level domain",
+        "hi": null
+      },
+      {
+        "en": "Generic top-level domain",
+        "hi": null
+      },
+      {
+        "en": "Country-code top-level domain",
+        "hi": null
+      },
+      {
+        "en": "Root server",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "The right-most label is the top-level domain; '.in' is India's country-code TLD (ccTLD). Generic TLDs include .com, .org and .edu.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Network security (firewall, encryption, VPN)",
+    "difficulty": "easy",
+    "question_en": "A firewall protects a network mainly by:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Converting digital signals to analog signals",
+        "hi": null
+      },
+      {
+        "en": "Increasing the bandwidth of the Internet connection",
+        "hi": null
+      },
+      {
+        "en": "Assigning IP addresses to computers",
+        "hi": null
+      },
+      {
+        "en": "Allowing or blocking traffic according to a set of security rules",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "A firewall (hardware or software) inspects incoming and outgoing traffic and permits or denies it based on rules such as IP address, port and protocol. Address assignment is DHCP's job and signal conversion is a modem's.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Network security (firewall, encryption, VPN)",
+    "difficulty": "easy",
+    "question_en": "A Virtual Private Network (VPN) allows a teacher working from home to access the school server securely because it:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Creates an encrypted tunnel across the public Internet",
+        "hi": null
+      },
+      {
+        "en": "Gives the laptop a faster processor",
+        "hi": null
+      },
+      {
+        "en": "Connects directly by a dedicated physical cable",
+        "hi": null
+      },
+      {
+        "en": "Removes the need for any password",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "A VPN encapsulates and encrypts traffic between the remote user and the private network, so the public Internet carries it privately. It still uses the ordinary Internet link, not a dedicated cable.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Network security (firewall, encryption, VPN)",
+    "difficulty": "medium",
+    "question_en": "In symmetric-key cryptography such as AES:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "A public key encrypts and a private key decrypts",
+        "hi": null
+      },
+      {
+        "en": "No key is needed for decryption",
+        "hi": null
+      },
+      {
+        "en": "Each message uses a key pair published in a directory",
+        "hi": null
+      },
+      {
+        "en": "The same secret key is used for encryption and decryption",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Symmetric algorithms (AES, DES) share one secret key between sender and receiver, making them fast but creating a key-distribution problem. Public/private key pairs are used in asymmetric systems such as RSA.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Network security (firewall, encryption, VPN)",
+    "difficulty": "medium",
+    "question_en": "Using a Caesar cipher with a shift of 3, the plaintext word NET is encrypted as:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "QHV",
+        "hi": null
+      },
+      {
+        "en": "KBQ",
+        "hi": null
+      },
+      {
+        "en": "QHW",
+        "hi": null
+      },
+      {
+        "en": "OFU",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Each letter is moved three places forward: N→Q, E→H, T→W, giving QHW. OFU uses a shift of 1 and KBQ shifts backward by 3.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Network security (firewall, encryption, VPN)",
+    "difficulty": "hard",
+    "question_en": "Alice wants to send Bob a message that only Bob can read, and also prove that she is the sender. She should:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Sign with her own private key and encrypt with Bob's public key",
+        "hi": null
+      },
+      {
+        "en": "Encrypt with a shared key and sign with Bob's public key",
+        "hi": null
+      },
+      {
+        "en": "Sign with her public key and encrypt with Bob's private key",
+        "hi": null
+      },
+      {
+        "en": "Sign with Bob's private key and encrypt with her own public key",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "A digital signature is created with the sender's private key and verified with her public key, proving authorship. Confidentiality comes from encrypting with the receiver's public key, since only Bob's private key can decrypt it.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Network security (firewall, encryption, VPN)",
+    "difficulty": "hard",
+    "question_en": "In network security, a DMZ (demilitarised zone) is best described as:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "A separate subnet holding public-facing servers, isolated from the internal LAN by firewalls",
+        "hi": null
+      },
+      {
+        "en": "A part of the LAN where no passwords are required",
+        "hi": null
+      },
+      {
+        "en": "A wireless zone in which encryption is disabled",
+        "hi": null
+      },
+      {
+        "en": "The range of private IP addresses reserved for routers",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Web, mail and DNS servers that must be reachable from the Internet are placed in a DMZ so that if one is compromised the attacker still faces a firewall before reaching the internal network.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Wireless (Wi-Fi, Bluetooth)",
+    "difficulty": "easy",
+    "question_en": "Wi-Fi wireless LANs are based on which IEEE standard family?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "IEEE 802.15",
+        "hi": null
+      },
+      {
+        "en": "IEEE 802.3",
+        "hi": null
+      },
+      {
+        "en": "IEEE 802.11",
+        "hi": null
+      },
+      {
+        "en": "IEEE 802.5",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Wi-Fi is the IEEE 802.11 family (a/b/g/n/ac/ax). 802.3 is wired Ethernet, 802.15 covers wireless PANs such as Bluetooth, and 802.5 is Token Ring.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Wireless (Wi-Fi, Bluetooth)",
+    "difficulty": "easy",
+    "question_en": "Bluetooth is primarily a technology for which type of network?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Campus backbone network",
+        "hi": null
+      },
+      {
+        "en": "Metropolitan Area Network (MAN)",
+        "hi": null
+      },
+      {
+        "en": "Wide Area Network (WAN)",
+        "hi": null
+      },
+      {
+        "en": "Personal Area Network (PAN)",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Bluetooth connects devices such as earphones, keyboards and phones over a short range (typically about 10 m) in the 2.4 GHz band, forming a PAN.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Wireless (Wi-Fi, Bluetooth)",
+    "difficulty": "easy",
+    "question_en": "The name of a Wi-Fi network that appears in the list of available networks on a phone is called its:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "IP address",
+        "hi": null
+      },
+      {
+        "en": "MAC address",
+        "hi": null
+      },
+      {
+        "en": "SSID",
+        "hi": null
+      },
+      {
+        "en": "WPA key",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "The Service Set Identifier is the human-readable network name broadcast by an access point. The WPA key is the password, and MAC/IP are device addresses.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Wireless (Wi-Fi, Bluetooth)",
+    "difficulty": "medium",
+    "question_en": "Which Wi-Fi security protocol is considered the weakest and should no longer be used?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "WPA3",
+        "hi": null
+      },
+      {
+        "en": "WPA2-Enterprise",
+        "hi": null
+      },
+      {
+        "en": "WPA2",
+        "hi": null
+      },
+      {
+        "en": "WEP",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Wired Equivalent Privacy has serious flaws and can be cracked in minutes. WPA2 with AES and the newer WPA3 are the recommended options.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Wireless (Wi-Fi, Bluetooth)",
+    "difficulty": "hard",
+    "question_en": "Wired Ethernet traditionally used CSMA/CD, but Wi-Fi uses CSMA/CA because:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "A wireless station cannot reliably detect collisions while transmitting, so it tries to avoid them",
+        "hi": null
+      },
+      {
+        "en": "CSMA/CA gives higher speed than CSMA/CD on cables",
+        "hi": null
+      },
+      {
+        "en": "Wireless signals never collide",
+        "hi": null
+      },
+      {
+        "en": "Wi-Fi uses token passing instead of carrier sensing",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "A radio cannot listen while it transmits and may not hear hidden stations, so collision detection is impractical. Wi-Fi therefore uses collision avoidance with random back-off and optional RTS/CTS.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Internet basics (URL, ISP, cookies)",
+    "difficulty": "easy",
+    "question_en": "In the URL https://www.cbse.gov.in/results/index.html, the part 'https' is the:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Protocol (scheme)",
+        "hi": null
+      },
+      {
+        "en": "Top-level domain",
+        "hi": null
+      },
+      {
+        "en": "Domain name",
+        "hi": null
+      },
+      {
+        "en": "Path of the file",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "A URL is made of the scheme (https), the host or domain (www.cbse.gov.in) and the path (/results/index.html). '.in' alone is the top-level domain.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Internet basics (URL, ISP, cookies)",
+    "difficulty": "easy",
+    "question_en": "Small pieces of data that a website stores in the user's browser to remember login status or preferences are called:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Plug-ins",
+        "hi": null
+      },
+      {
+        "en": "Bookmarks",
+        "hi": null
+      },
+      {
+        "en": "Cookies",
+        "hi": null
+      },
+      {
+        "en": "Cache servers",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Cookies are small text files sent by a website and stored by the browser, then returned with later requests so the stateless HTTP protocol can 'remember' the user. Bookmarks are saved links chosen by the user.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Internet basics (URL, ISP, cookies)",
+    "difficulty": "easy",
+    "question_en": "A company such as BSNL or Airtel that provides customers with access to the Internet is known as a(n):",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Internet Exchange Point",
+        "hi": null
+      },
+      {
+        "en": "Web hosting search engine",
+        "hi": null
+      },
+      {
+        "en": "Domain Name Registrar",
+        "hi": null
+      },
+      {
+        "en": "Internet Service Provider (ISP)",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "An ISP connects homes and organisations to the Internet. A registrar sells domain names and an Internet Exchange Point is where ISPs interconnect.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Internet basics (URL, ISP, cookies)",
+    "difficulty": "medium",
+    "question_en": "A school's private network that uses Internet technologies (web pages, e-mail) but is accessible only to its own staff is called a(n):",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Ethernet",
+        "hi": null
+      },
+      {
+        "en": "Internet",
+        "hi": null
+      },
+      {
+        "en": "Extranet",
+        "hi": null
+      },
+      {
+        "en": "Intranet",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "An intranet is an organisation-only network built on Internet protocols. An extranet extends controlled access to selected outsiders such as suppliers, and Ethernet is a LAN wiring standard.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_net",
+    "subtopic": "Internet basics (URL, ISP, cookies)",
+    "difficulty": "hard",
+    "question_en": "A 100 MB file is downloaded over a link with an effective speed of 8 Mbps. Ignoring overheads, the download time is approximately (take 1 MB = 8 Mb):",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "8 seconds",
+        "hi": null
+      },
+      {
+        "en": "12.5 seconds",
+        "hi": null
+      },
+      {
+        "en": "100 seconds",
+        "hi": null
+      },
+      {
+        "en": "800 seconds",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "100 MB = 100 × 8 = 800 megabits. Time = 800 Mb ÷ 8 Mbps = 100 s. Dividing 100 by 8 gives 12.5 s, the trap of forgetting that link speed is in bits and file size in bytes.",
+    "explanation_hi": null,
+    "expected": false
+  }
+]

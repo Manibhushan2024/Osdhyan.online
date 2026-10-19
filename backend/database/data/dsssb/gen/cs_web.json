@@ -1,0 +1,2467 @@
+[
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "HTML tags & attributes",
+  "difficulty": "easy",
+  "question_en": "Which attribute of the <img> tag provides alternative text that is displayed if the image cannot be loaded and is read aloud by screen readers?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "src",
+    "hi": null
+   },
+   {
+    "en": "title",
+    "hi": null
+   },
+   {
+    "en": "alt",
+    "hi": null
+   },
+   {
+    "en": "longdesc",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The alt attribute supplies a text alternative for the image, important for accessibility and for broken images. src gives the image path, and title only shows a tooltip on hover.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "HTML tags & attributes",
+  "difficulty": "easy",
+  "question_en": "Which of the following is an empty (void) HTML element that has no closing tag?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "<p>",
+    "hi": null
+   },
+   {
+    "en": "<br>",
+    "hi": null
+   },
+   {
+    "en": "<div>",
+    "hi": null
+   },
+   {
+    "en": "<span>",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Void elements such as <br>, <hr>, <img>, <input> and <meta> cannot have content, so they have no closing tag. <p>, <div> and <span> are container elements.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "HTML tags & attributes",
+  "difficulty": "easy",
+  "question_en": "Which attribute value of the <a> tag makes the linked page open in a new browser tab or window?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "target=\"_blank\"",
+    "hi": null
+   },
+   {
+    "en": "target=\"_self\"",
+    "hi": null
+   },
+   {
+    "en": "target=\"_parent\"",
+    "hi": null
+   },
+   {
+    "en": "rel=\"new\"",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "target=\"_blank\" opens the link in a new browsing context. _self (the default) opens it in the same tab, and _parent opens it in the parent frame.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "HTML tags & attributes",
+  "difficulty": "easy",
+  "question_en": "The declaration <!DOCTYPE html> at the top of a document tells the browser that the page is written in:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "HTML5",
+    "hi": null
+   },
+   {
+    "en": "HTML 4.01 Strict",
+    "hi": null
+   },
+   {
+    "en": "XHTML 1.0",
+    "hi": null
+   },
+   {
+    "en": "XML 1.1",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "HTML5 uses the short, case-insensitive <!DOCTYPE html>. HTML 4.01 and XHTML 1.0 required long doctypes referring to a DTD.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "HTML tags & attributes",
+  "difficulty": "medium",
+  "question_en": "What does the browser render for the following markup?\n<p>Water is H<sub>2</sub>O and E = mc<sup>2</sup></p>",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Water is H2O and E = mc2 with both 2s raised",
+    "hi": null
+   },
+   {
+    "en": "Water is H₂O and E = mc²",
+    "hi": null
+   },
+   {
+    "en": "Water is H²O and E = mc₂",
+    "hi": null
+   },
+   {
+    "en": "Water is H<sub>2</sub>O and E = mc<sup>2</sup> as plain text",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "<sub> lowers the text (subscript) and <sup> raises it (superscript), so the 2 in H₂O is lowered and the 2 in mc² is raised. Tags are interpreted, not shown as text.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "HTML tags & attributes",
+  "difficulty": "medium",
+  "question_en": "How is the following paragraph displayed by a browser?\n<p>India      is\n   great</p>",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "India is great (on one line with single spaces)",
+    "hi": null
+   },
+   {
+    "en": "India      is (line break) great, exactly as typed",
+    "hi": null
+   },
+   {
+    "en": "India is (line break) great",
+    "hi": null
+   },
+   {
+    "en": "Indiaisgreat (with all spaces removed)",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "HTML collapses any sequence of spaces, tabs and newlines inside normal text into a single space. To preserve the original spacing and line breaks, the <pre> element must be used.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "HTML tags & attributes",
+  "difficulty": "medium",
+  "question_en": "Which of the following HTML5 elements is used to define a block of navigation links?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "<aside>",
+    "hi": null
+   },
+   {
+    "en": "<section>",
+    "hi": null
+   },
+   {
+    "en": "<menuitem>",
+    "hi": null
+   },
+   {
+    "en": "<nav>",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "<nav> is the semantic element for major navigation blocks. <aside> holds tangential content such as sidebars, and <section> groups thematically related content.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "HTML tags & attributes",
+  "difficulty": "medium",
+  "question_en": "Which tag pair should be used to give text strong importance (semantic meaning), rather than merely making it look bold?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "<b>…</b>",
+    "hi": null
+   },
+   {
+    "en": "<big>…</big>",
+    "hi": null
+   },
+   {
+    "en": "<strong>…</strong>",
+    "hi": null
+   },
+   {
+    "en": "<font>…</font>",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "<strong> conveys importance to browsers and screen readers, which usually render it bold. <b> is purely presentational, and <big> and <font> are obsolete in HTML5.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "HTML tags & attributes",
+  "difficulty": "medium",
+  "question_en": "To display the text <html> literally on a web page (with the angle brackets visible), it should be written as:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "<html>",
+    "hi": null
+   },
+   {
+    "en": "&lt;html&gt;",
+    "hi": null
+   },
+   {
+    "en": "&lt;html&lt;",
+    "hi": null
+   },
+   {
+    "en": "/<html/>",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "&lt; and &gt; are the character entities for < and >. Writing <html> directly would be parsed as a tag and not displayed.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "HTML tags & attributes",
+  "difficulty": "hard",
+  "question_en": "By default, which pair contains one block-level element and one inline element, in that order?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "<span> and <a>",
+    "hi": null
+   },
+   {
+    "en": "<div> and <span>",
+    "hi": null
+   },
+   {
+    "en": "<p> and <h1>",
+    "hi": null
+   },
+   {
+    "en": "<img> and <em>",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "<div> starts on a new line and takes the full available width (block-level), whereas <span> flows within the line (inline). <span>/<a> are both inline, and <p>/<h1> are both block-level.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "HTML tags & attributes",
+  "difficulty": "hard",
+  "question_en": "Which attribute must be present in an <iframe> element to specify the URL of the page it embeds?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "href",
+    "hi": null
+   },
+   {
+    "en": "src",
+    "hi": null
+   },
+   {
+    "en": "data",
+    "hi": null
+   },
+   {
+    "en": "link",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Like <img> and <script>, an <iframe> loads its content from the URL in its src attribute. href is used by <a> and <link>, and data is used by the <object> element.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "HTML forms",
+  "difficulty": "easy",
+  "question_en": "Which value of the type attribute of <input> displays the typed characters as dots or asterisks?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "hidden",
+    "hi": null
+   },
+   {
+    "en": "password",
+    "hi": null
+   },
+   {
+    "en": "text",
+    "hi": null
+   },
+   {
+    "en": "secret",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "type=\"password\" masks the characters on screen (it does not encrypt them). type=\"hidden\" is not displayed at all, and 'secret' is not a valid input type.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "HTML forms",
+  "difficulty": "medium",
+  "question_en": "When a form is submitted with method=\"get\", the form data is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Appended to the URL as a query string",
+    "hi": null
+   },
+   {
+    "en": "Sent in the body of the HTTP request and never visible in the URL",
+    "hi": null
+   },
+   {
+    "en": "Stored in a cookie on the client",
+    "hi": null
+   },
+   {
+    "en": "Encrypted automatically by the browser",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "With GET, name=value pairs are added after a '?' in the URL, so they are visible, bookmarkable and limited in length. POST sends data in the request body, which is preferred for passwords and large data.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "HTML forms",
+  "difficulty": "medium",
+  "question_en": "To ensure that only ONE option in a group of radio buttons can be selected at a time, the radio buttons must have the same value for which attribute?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "name",
+    "hi": null
+   },
+   {
+    "en": "id",
+    "hi": null
+   },
+   {
+    "en": "value",
+    "hi": null
+   },
+   {
+    "en": "class",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Radio buttons sharing the same name form one group, and selecting one deselects the others. Each id must be unique, and value is what gets submitted for the chosen button.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "HTML forms",
+  "difficulty": "hard",
+  "question_en": "Which of the following form fields will NOT be sent to the server when the form is submitted?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "<input type=\"text\" name=\"city\" value=\"Delhi\" readonly>",
+    "hi": null
+   },
+   {
+    "en": "<input type=\"text\" name=\"city\" value=\"Delhi\" disabled>",
+    "hi": null
+   },
+   {
+    "en": "<input type=\"hidden\" name=\"city\" value=\"Delhi\">",
+    "hi": null
+   },
+   {
+    "en": "<input type=\"text\" name=\"city\" value=\"Delhi\">",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Disabled controls are excluded from form submission. A readonly field cannot be edited but its value is still submitted, and hidden fields are submitted even though they are not shown.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "HTML forms",
+  "difficulty": "easy",
+  "question_en": "Which attribute of the <form> element specifies the URL of the server-side program that will process the submitted data?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "action",
+    "hi": null
+   },
+   {
+    "en": "method",
+    "hi": null
+   },
+   {
+    "en": "target",
+    "hi": null
+   },
+   {
+    "en": "enctype",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "action holds the URL that receives the form data. method chooses GET or POST, and enctype sets how the data is encoded (e.g. multipart/form-data for file uploads).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "HTML forms",
+  "difficulty": "medium",
+  "question_en": "Which markup creates a drop-down list from which the user can select MORE than one option?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "<select name=\"s\" many>…</select>",
+    "hi": null
+   },
+   {
+    "en": "<input type=\"dropdown\" multiple>",
+    "hi": null
+   },
+   {
+    "en": "<list name=\"s\" select=\"many\">…</list>",
+    "hi": null
+   },
+   {
+    "en": "<select name=\"s\" multiple>…</select>",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Adding the boolean attribute multiple to <select> allows several <option> items to be chosen (with Ctrl/Shift). There is no 'dropdown' input type and no <list> element in HTML.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "HTML forms",
+  "difficulty": "medium",
+  "question_en": "In <label for=\"email\">Email</label>, the value of the for attribute must match which attribute of the related input control?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "name",
+    "hi": null
+   },
+   {
+    "en": "value",
+    "hi": null
+   },
+   {
+    "en": "id",
+    "hi": null
+   },
+   {
+    "en": "type",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The for attribute links the label to the control whose id is the same, so clicking the label focuses that control. name is used for submitting data and need not match.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "HTML tables & lists",
+  "difficulty": "easy",
+  "question_en": "Which tag defines a header cell in an HTML table, whose text is bold and centred by default?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "<td>",
+    "hi": null
+   },
+   {
+    "en": "<th>",
+    "hi": null
+   },
+   {
+    "en": "<thead>",
+    "hi": null
+   },
+   {
+    "en": "<tr>",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "<th> creates a table header cell. <td> is an ordinary data cell, <tr> is a row, and <thead> is a group wrapper for header rows, not a cell.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "HTML tables & lists",
+  "difficulty": "medium",
+  "question_en": "Which attribute of <td> makes a single cell stretch horizontally across three columns?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "colspan=\"3\"",
+    "hi": null
+   },
+   {
+    "en": "rowspan=\"3\"",
+    "hi": null
+   },
+   {
+    "en": "cellspan=\"3\"",
+    "hi": null
+   },
+   {
+    "en": "span=\"3\"",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "colspan merges cells across columns, while rowspan merges cells down across rows. cellspan does not exist, and span is used on <col>/<colgroup> elements, not on <td>.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "HTML tables & lists",
+  "difficulty": "hard",
+  "question_en": "How many data cells are actually written (created) in the following table?\n<table>\n<tr><td colspan=\"3\">Title</td></tr>\n<tr><td>A</td><td colspan=\"2\">B</td></tr>\n<tr><td>C</td><td>D</td><td>E</td></tr>\n</table>",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "9",
+    "hi": null
+   },
+   {
+    "en": "6",
+    "hi": null
+   },
+   {
+    "en": "3",
+    "hi": null
+   },
+   {
+    "en": "7",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Row 1 has 1 <td>, row 2 has 2 and row 3 has 3, so 1 + 2 + 3 = 6 cells are created, although the grid is 3 × 3 = 9 positions. colspan makes a cell occupy positions without creating extra cells.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "HTML tables & lists",
+  "difficulty": "hard",
+  "question_en": "How does the following table render?\n<table border=\"1\">\n<tr><td rowspan=\"2\">A</td><td>B</td></tr>\n<tr><td>C</td></tr>\n</table>",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "A, B and C appear side by side in one row",
+    "hi": null
+   },
+   {
+    "en": "A is on top spanning two columns; B and C are below it",
+    "hi": null
+   },
+   {
+    "en": "B and C are on the left, A is on the right spanning both rows",
+    "hi": null
+   },
+   {
+    "en": "A occupies the left column across both rows; B is top-right and C is bottom-right",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "rowspan=\"2\" makes A occupy the first column of both rows. In the second row, the first column is already filled by A, so C moves to the second column below B.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "HTML tables & lists",
+  "difficulty": "medium",
+  "question_en": "In older HTML, the table attribute cellpadding controls:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "The space between adjacent cells",
+    "hi": null
+   },
+   {
+    "en": "The thickness of the table border",
+    "hi": null
+   },
+   {
+    "en": "The width of the whole table",
+    "hi": null
+   },
+   {
+    "en": "The space between a cell's border and its content",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "cellpadding is the internal space inside each cell, whereas cellspacing is the gap between neighbouring cells. In modern pages both are done with CSS padding and border-spacing.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "HTML tables & lists",
+  "difficulty": "medium",
+  "question_en": "What will be the marker of the first list item?\n<ol type=\"a\" start=\"4\">\n<li>Apple</li>\n<li>Mango</li>\n</ol>",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "d.",
+    "hi": null
+   },
+   {
+    "en": "a.",
+    "hi": null
+   },
+   {
+    "en": "4.",
+    "hi": null
+   },
+   {
+    "en": "iv.",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "type=\"a\" chooses lowercase letters and start=\"4\" begins counting at the 4th value, so the items are labelled d. and e. The start value is always a number even when letters are displayed.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "HTML tables & lists",
+  "difficulty": "easy",
+  "question_en": "Which group of tags is used to create a description (definition) list in HTML?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "<dl>, <dt>, <dd>",
+    "hi": null
+   },
+   {
+    "en": "<ol>, <li>, <dd>",
+    "hi": null
+   },
+   {
+    "en": "<ul>, <dt>, <li>",
+    "hi": null
+   },
+   {
+    "en": "<dl>, <li>, <dd>",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A description list <dl> contains terms <dt> and their descriptions <dd>. <li> items belong only to ordered and unordered lists.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "CSS selectors",
+  "difficulty": "easy",
+  "question_en": "Which CSS selector selects the element having id=\"header\"?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": ".header",
+    "hi": null
+   },
+   {
+    "en": "header",
+    "hi": null
+   },
+   {
+    "en": "#header",
+    "hi": null
+   },
+   {
+    "en": "*header",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The hash (#) selects by id, the dot (.) selects by class, and a bare name such as header selects the element type <header>.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "CSS selectors",
+  "difficulty": "medium",
+  "question_en": "Which selector matches only the <p> elements that are DIRECT children of a <div>?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "div > p",
+    "hi": null
+   },
+   {
+    "en": "div p",
+    "hi": null
+   },
+   {
+    "en": "div + p",
+    "hi": null
+   },
+   {
+    "en": "div ~ p",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The child combinator (>) matches immediate children only. 'div p' (descendant) matches p at any depth, 'div + p' matches a p immediately after a div, and 'div ~ p' matches any following sibling p.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "CSS selectors",
+  "difficulty": "medium",
+  "question_en": "With the CSS below, what colour is the text of <p>Hello</p>?\np { color: red; }\np { color: blue; }",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Red",
+    "hi": null
+   },
+   {
+    "en": "Purple (a mix of both)",
+    "hi": null
+   },
+   {
+    "en": "Black (the rules cancel each other)",
+    "hi": null
+   },
+   {
+    "en": "Blue",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Both rules have equal specificity, so the cascade applies the one that appears later in the stylesheet, i.e. blue. Colours are never mixed.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "CSS selectors",
+  "difficulty": "hard",
+  "question_en": "Given <p id=\"intro\" class=\"note\">Hi</p> and the rules\n#intro { color: green; }\n.note { color: red; }\np { color: blue; }\nwhat colour is the text?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Red",
+    "hi": null
+   },
+   {
+    "en": "Green",
+    "hi": null
+   },
+   {
+    "en": "Blue",
+    "hi": null
+   },
+   {
+    "en": "Black",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Specificity decides, not order: an id selector (1,0,0) beats a class selector (0,1,0), which beats a type selector (0,0,1). Only inline styles or !important could override the id rule here.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "CSS selectors",
+  "difficulty": "medium",
+  "question_en": "Which CSS selector targets all <input> elements whose type attribute is exactly \"text\"?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "input.type.text",
+    "hi": null
+   },
+   {
+    "en": "input[type=\"text\"]",
+    "hi": null
+   },
+   {
+    "en": "input#text",
+    "hi": null
+   },
+   {
+    "en": "input:text",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Square brackets form an attribute selector: [type=\"text\"] matches the attribute value exactly. input.type.text would look for classes named type and text.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "CSS selectors",
+  "difficulty": "easy",
+  "question_en": "Which CSS pseudo-class applies a style when the user moves the mouse pointer over an element?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": ":active",
+    "hi": null
+   },
+   {
+    "en": ":focus",
+    "hi": null
+   },
+   {
+    "en": ":visited",
+    "hi": null
+   },
+   {
+    "en": ":hover",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": ":hover matches while the pointer is over the element. :active applies while it is being clicked, :focus when it has keyboard focus, and :visited to links already visited.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "CSS selectors",
+  "difficulty": "medium",
+  "question_en": "Which of the following is a pseudo-ELEMENT (not a pseudo-class) in CSS?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": ":first-child",
+    "hi": null
+   },
+   {
+    "en": "::first-letter",
+    "hi": null
+   },
+   {
+    "en": ":hover",
+    "hi": null
+   },
+   {
+    "en": ":checked",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Pseudo-elements style a part of an element (first letter, first line, ::before, ::after) and use a double colon in CSS3. :first-child, :hover and :checked are pseudo-classes describing the element's state or position.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "CSS selectors",
+  "difficulty": "medium",
+  "question_en": "In a list of 6 <li> items, the rule li:nth-child(2n) { color: red; } colours which items red?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "1st, 3rd and 5th",
+    "hi": null
+   },
+   {
+    "en": "2nd, 4th and 6th",
+    "hi": null
+   },
+   {
+    "en": "Only the 2nd",
+    "hi": null
+   },
+   {
+    "en": "1st, 2nd, 4th and 6th",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "2n takes n = 0, 1, 2, 3 … giving positions 0 (ignored), 2, 4, 6, i.e. the even children. 2n+1 (or odd) would select the 1st, 3rd and 5th.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "CSS selectors",
+  "difficulty": "hard",
+  "question_en": "The stylesheet contains (in this order)\n.a { color: red; }\n.b { color: green; }\nWhat colour is the text of <p class=\"b a\">Text</p>?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Green",
+    "hi": null
+   },
+   {
+    "en": "Red",
+    "hi": null
+   },
+   {
+    "en": "Black (conflicting classes are ignored)",
+    "hi": null
+   },
+   {
+    "en": "It depends on the browser",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Both selectors have equal specificity, so the rule that comes LATER in the stylesheet (.b, green) wins. The order of class names inside the class attribute has no effect.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "CSS properties & box model",
+  "difficulty": "easy",
+  "question_en": "Which HTML tag, placed in the <head>, correctly links an external stylesheet named style.css?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "<style src=\"style.css\">",
+    "hi": null
+   },
+   {
+    "en": "<stylesheet>style.css</stylesheet>",
+    "hi": null
+   },
+   {
+    "en": "<css href=\"style.css\">",
+    "hi": null
+   },
+   {
+    "en": "<link rel=\"stylesheet\" href=\"style.css\">",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "External CSS is attached with <link rel=\"stylesheet\" href=\"…\">. The <style> element holds internal CSS written directly in the page and has no src attribute.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "CSS properties & box model",
+  "difficulty": "medium",
+  "question_en": "With the default box-sizing (content-box), an element has width: 200px; padding: 10px; border: 5px solid; margin: 20px. What is the width of its visible box (from border edge to border edge)?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "200px",
+    "hi": null
+   },
+   {
+    "en": "270px",
+    "hi": null
+   },
+   {
+    "en": "215px",
+    "hi": null
+   },
+   {
+    "en": "230px",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Visible width = content + left/right padding + left/right border = 200 + 2×10 + 2×5 = 230px. Adding the margins (2×20) gives the 270px of space the element occupies, but margins are outside the border.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "CSS properties & box model",
+  "difficulty": "hard",
+  "question_en": "An element has box-sizing: border-box; width: 200px; padding: 20px; border: 2px solid. What is the width of its content area?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "200px",
+    "hi": null
+   },
+   {
+    "en": "244px",
+    "hi": null
+   },
+   {
+    "en": "156px",
+    "hi": null
+   },
+   {
+    "en": "178px",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "With border-box, the declared 200px includes padding and border. Content width = 200 − 2×20 − 2×2 = 156px. Under content-box, the visible width would have been 244px.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "CSS properties & box model",
+  "difficulty": "medium",
+  "question_en": "What is the difference between display: none and visibility: hidden?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Both remove the element and its space from the layout",
+    "hi": null
+   },
+   {
+    "en": "visibility: hidden removes the element from the DOM; display: none does not",
+    "hi": null
+   },
+   {
+    "en": "display: none only works on inline elements",
+    "hi": null
+   },
+   {
+    "en": "display: none removes the element from the layout; visibility: hidden hides it but keeps its space",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "With display: none the element takes no space and surrounding content closes the gap. With visibility: hidden the element is invisible but its box still occupies space. Neither removes it from the DOM.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "CSS properties & box model",
+  "difficulty": "hard",
+  "question_en": "An element with position: absolute is positioned relative to:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "The browser viewport, always",
+    "hi": null
+   },
+   {
+    "en": "Its own normal position in the flow",
+    "hi": null
+   },
+   {
+    "en": "Its nearest ancestor whose position is not static",
+    "hi": null
+   },
+   {
+    "en": "The previous sibling element",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "An absolutely positioned element is taken out of the flow and placed relative to its nearest positioned (relative, absolute, fixed or sticky) ancestor; if none exists, the initial containing block is used. 'Relative to the viewport, always' describes position: fixed.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "CSS properties & box model",
+  "difficulty": "medium",
+  "question_en": "What does margin: 10px 20px 30px; set?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Top 10px, right 20px, bottom 30px, left 0",
+    "hi": null
+   },
+   {
+    "en": "Top 10px, left and right 20px, bottom 30px",
+    "hi": null
+   },
+   {
+    "en": "Top and bottom 10px, left 20px, right 30px",
+    "hi": null
+   },
+   {
+    "en": "Left 10px, top 20px, right 30px",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "With three values, the first is top, the second applies to both left and right, and the third is bottom. Four values go clockwise: top, right, bottom, left.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "CSS properties & box model",
+  "difficulty": "medium",
+  "question_en": "The root <html> font-size is 16px. A <div> has font-size: 20px and its child <p> has font-size: 1.5em. What is the computed font size of the <p>?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "24px",
+    "hi": null
+   },
+   {
+    "en": "20px",
+    "hi": null
+   },
+   {
+    "en": "30px",
+    "hi": null
+   },
+   {
+    "en": "16px",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "em is relative to the parent element's font size: 1.5 × 20px = 30px. If rem had been used, it would be relative to the root: 1.5 × 16px = 24px.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "CSS properties & box model",
+  "difficulty": "easy",
+  "question_en": "Which CSS property converts all the text of an element to capital letters without changing the HTML?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "font-variant: capital",
+    "hi": null
+   },
+   {
+    "en": "text-style: upper",
+    "hi": null
+   },
+   {
+    "en": "text-transform: uppercase",
+    "hi": null
+   },
+   {
+    "en": "font-case: upper",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "text-transform: uppercase displays every letter in capitals; capitalize capitalises only the first letter of each word. The other properties shown do not exist in CSS.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "CSS properties & box model",
+  "difficulty": "easy",
+  "question_en": "What is the default value of the CSS position property for HTML elements?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "relative",
+    "hi": null
+   },
+   {
+    "en": "absolute",
+    "hi": null
+   },
+   {
+    "en": "fixed",
+    "hi": null
+   },
+   {
+    "en": "static",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Every element is position: static by default, meaning it follows normal document flow and ignores top/left/right/bottom offsets and z-index.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "JavaScript basics",
+  "difficulty": "medium",
+  "question_en": "What is the output of the following JavaScript?\nconsole.log(typeof null);",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "\"object\"",
+    "hi": null
+   },
+   {
+    "en": "\"null\"",
+    "hi": null
+   },
+   {
+    "en": "\"undefined\"",
+    "hi": null
+   },
+   {
+    "en": "\"number\"",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "typeof null returns \"object\" — a well-known legacy bug kept for backward compatibility. typeof undefined returns \"undefined\".",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "JavaScript basics",
+  "difficulty": "medium",
+  "question_en": "What does the following JavaScript code print?\nconsole.log(\"5\" + 3, \"5\" - 3);",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "53 2",
+    "hi": null
+   },
+   {
+    "en": "8 2",
+    "hi": null
+   },
+   {
+    "en": "53 53",
+    "hi": null
+   },
+   {
+    "en": "8 \"5-3\"",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "With +, if either operand is a string the other is converted to a string and concatenated, giving \"53\". The - operator works only on numbers, so \"5\" is converted to 5 and 5 − 3 = 2.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "JavaScript basics",
+  "difficulty": "easy",
+  "question_en": "JavaScript was originally created in 1995 by:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Tim Berners-Lee at CERN",
+    "hi": null
+   },
+   {
+    "en": "James Gosling at Sun Microsystems",
+    "hi": null
+   },
+   {
+    "en": "Brendan Eich at Netscape",
+    "hi": null
+   },
+   {
+    "en": "Bjarne Stroustrup at Bell Labs",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Brendan Eich wrote the first version of JavaScript (initially called Mocha, then LiveScript) at Netscape in 1995. Gosling created Java, which is an unrelated language despite the name.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "JavaScript basics",
+  "difficulty": "medium",
+  "question_en": "What is the output of the following code?\nif (true) { var a = 1; let b = 2; }\nconsole.log(typeof a, typeof b);",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "number undefined",
+    "hi": null
+   },
+   {
+    "en": "number number",
+    "hi": null
+   },
+   {
+    "en": "undefined undefined",
+    "hi": null
+   },
+   {
+    "en": "ReferenceError is thrown",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "var is function-scoped, so a is visible outside the block. let is block-scoped, so b does not exist outside; typeof on an undeclared name safely returns \"undefined\" instead of throwing.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "JavaScript basics",
+  "difficulty": "easy",
+  "question_en": "What does the following print?\nconsole.log(5 == \"5\", 5 === \"5\");",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "true true",
+    "hi": null
+   },
+   {
+    "en": "false false",
+    "hi": null
+   },
+   {
+    "en": "true false",
+    "hi": null
+   },
+   {
+    "en": "false true",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "== compares after type conversion, so the string \"5\" becomes 5 and the result is true. === is strict equality and also compares types (number vs string), so it gives false.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "JavaScript basics",
+  "difficulty": "hard",
+  "question_en": "What is the output of the following code?\nconsole.log(x);\nvar x = 7;",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "7",
+    "hi": null
+   },
+   {
+    "en": "ReferenceError: x is not defined",
+    "hi": null
+   },
+   {
+    "en": "undefined",
+    "hi": null
+   },
+   {
+    "en": "null",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Declarations made with var are hoisted to the top of their scope and initialised to undefined; only the assignment x = 7 stays in place. With let or const, the same code would throw a ReferenceError (temporal dead zone).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "JavaScript basics",
+  "difficulty": "hard",
+  "question_en": "What is printed by this code?\nlet a = [10, 1, 3];\na.sort();\nconsole.log(a.join(\" \"));",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "1 3 10",
+    "hi": null
+   },
+   {
+    "en": "10 3 1",
+    "hi": null
+   },
+   {
+    "en": "3 1 10",
+    "hi": null
+   },
+   {
+    "en": "1 10 3",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Without a compare function, sort() converts elements to strings and compares them in dictionary order: \"1\" < \"10\" < \"3\". For numeric order, use a.sort((x, y) => x - y).",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "JavaScript basics",
+  "difficulty": "medium",
+  "question_en": "What is the output?\nlet a = [1, 2, 3];\nlet b = a;\nb.push(4);\nconsole.log(a.length);",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "3",
+    "hi": null
+   },
+   {
+    "en": "undefined",
+    "hi": null
+   },
+   {
+    "en": "TypeError",
+    "hi": null
+   },
+   {
+    "en": "4",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Arrays are objects, so b = a copies only the reference; both names point to the same array. Pushing through b therefore changes a as well, making its length 4.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "JavaScript basics",
+  "difficulty": "medium",
+  "question_en": "What happens when the following code runs?\nconst x = 10;\nx = 20;",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "x becomes 20",
+    "hi": null
+   },
+   {
+    "en": "x stays 10 silently and no error occurs",
+    "hi": null
+   },
+   {
+    "en": "A TypeError is thrown because a const binding cannot be reassigned",
+    "hi": null
+   },
+   {
+    "en": "A SyntaxError is reported only in older browsers",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "A const variable must be initialised once and cannot be reassigned; the attempt throws 'TypeError: Assignment to constant variable'. (The contents of a const object or array can still be modified.)",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "JavaScript basics",
+  "difficulty": "hard",
+  "question_en": "What is the output of the following code?\nfunction counter() {\n  let c = 0;\n  return function () { c++; return c; };\n}\nconst f = counter();\nf(); f();\nconsole.log(f());",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "1",
+    "hi": null
+   },
+   {
+    "en": "3",
+    "hi": null
+   },
+   {
+    "en": "0",
+    "hi": null
+   },
+   {
+    "en": "undefined",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The inner function forms a closure over the variable c, which survives between calls. The three calls make c 1, 2 and 3, and the third return value, 3, is printed.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "JavaScript basics",
+  "difficulty": "medium",
+  "question_en": "What does the following print?\nconsole.log(parseInt(\"42px\") + 1);",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "\"42px1\"",
+    "hi": null
+   },
+   {
+    "en": "43",
+    "hi": null
+   },
+   {
+    "en": "NaN",
+    "hi": null
+   },
+   {
+    "en": "421",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "parseInt reads digits from the start of the string and stops at the first non-digit, giving the number 42. Adding 1 gives 43. Number(\"42px\") would instead return NaN.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "JavaScript DOM & events",
+  "difficulty": "easy",
+  "question_en": "The DOM method document.getElementById(\"demo\") returns:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "An array of all elements with class \"demo\"",
+    "hi": null
+   },
+   {
+    "en": "The single element whose id is \"demo\" (or null if none)",
+    "hi": null
+   },
+   {
+    "en": "The text typed inside the element",
+    "hi": null
+   },
+   {
+    "en": "A new element named demo",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Since ids are meant to be unique, getElementById returns one element object or null. getElementsByClassName and querySelectorAll return collections of elements.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "JavaScript DOM & events",
+  "difficulty": "medium",
+  "question_en": "Given <p id=\"m\">Hi</p>, what is DISPLAYED after this script runs?\ndocument.getElementById(\"m\").textContent = \"<b>Bye</b>\";",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Bye in bold",
+    "hi": null
+   },
+   {
+    "en": "Bye in normal weight",
+    "hi": null
+   },
+   {
+    "en": "The literal text <b>Bye</b> including the tags",
+    "hi": null
+   },
+   {
+    "en": "Hi (unchanged)",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "textContent inserts plain text, so the tags are shown literally and not parsed. Using innerHTML instead would parse the markup and show Bye in bold.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "JavaScript DOM & events",
+  "difficulty": "easy",
+  "question_en": "Which event fires when a web page (including its images and other resources) has completely finished loading?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "onload",
+    "hi": null
+   },
+   {
+    "en": "onclick",
+    "hi": null
+   },
+   {
+    "en": "onchange",
+    "hi": null
+   },
+   {
+    "en": "onblur",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The load event (onload) of window/body fires after the whole page and its resources are loaded. onchange fires when a form control's value changes, and onblur when an element loses focus.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "JavaScript DOM & events",
+  "difficulty": "medium",
+  "question_en": "Which statement correctly attaches the function show to the click event of a button referenced by btn?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "btn.addEventListener(\"onclick\", show());",
+    "hi": null
+   },
+   {
+    "en": "btn.attachEvent(click, show);",
+    "hi": null
+   },
+   {
+    "en": "btn.addEventListener(show, \"click\");",
+    "hi": null
+   },
+   {
+    "en": "btn.addEventListener(\"click\", show);",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "addEventListener takes the event name without the 'on' prefix and a reference to the handler. Writing show() would call the function immediately and pass its return value instead.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "JavaScript DOM & events",
+  "difficulty": "hard",
+  "question_en": "An inner <div id=\"in\"> is nested inside <div id=\"out\">. Both have click listeners added with addEventListener (default options) that log their id. When the inner div is clicked, what is logged?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "out, then in",
+    "hi": null
+   },
+   {
+    "en": "in, then out",
+    "hi": null
+   },
+   {
+    "en": "only in",
+    "hi": null
+   },
+   {
+    "en": "only out",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "By default listeners run in the bubbling phase: the event is handled first at the target (in) and then bubbles up through its ancestors (out). Calling event.stopPropagation() in the inner handler would stop it reaching out.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "JavaScript DOM & events",
+  "difficulty": "medium",
+  "question_en": "Inside a form's submit event handler, which call stops the browser from actually submitting the form and reloading the page?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "event.stopPropagation()",
+    "hi": null
+   },
+   {
+    "en": "event.cancelBubble()",
+    "hi": null
+   },
+   {
+    "en": "event.preventDefault()",
+    "hi": null
+   },
+   {
+    "en": "form.reset()",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "preventDefault() cancels the default action of the event (here, submission). stopPropagation() only stops the event from bubbling to ancestor elements; the form would still be submitted.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "JavaScript DOM & events",
+  "difficulty": "medium",
+  "question_en": "What does document.querySelector(\".item\") return when the page contains five elements with class=\"item\"?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Only the first element with class item",
+    "hi": null
+   },
+   {
+    "en": "All five elements as a NodeList",
+    "hi": null
+   },
+   {
+    "en": "The last element with class item",
+    "hi": null
+   },
+   {
+    "en": "null, because more than one element matches",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "querySelector returns the first element matching the CSS selector (or null if none). To get all five, use querySelectorAll, which returns a static NodeList.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "JavaScript DOM & events",
+  "difficulty": "easy",
+  "question_en": "Which DOM method adds a newly created node as the LAST child of a parent element?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "createElement()",
+    "hi": null
+   },
+   {
+    "en": "removeChild()",
+    "hi": null
+   },
+   {
+    "en": "appendChild()",
+    "hi": null
+   },
+   {
+    "en": "getElementsByTagName()",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "parent.appendChild(node) inserts the node at the end of the parent's children. createElement() only creates the node in memory; it is not visible until it is appended.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "Client–server model & HTTP",
+  "difficulty": "easy",
+  "question_en": "HTTP is called a 'stateless' protocol because:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "The server keeps no memory of previous requests from the same client",
+    "hi": null
+   },
+   {
+    "en": "It never uses TCP",
+    "hi": null
+   },
+   {
+    "en": "It cannot carry any data",
+    "hi": null
+   },
+   {
+    "en": "It works only on a local network",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Each HTTP request is independent; the server does not automatically remember earlier requests. Cookies, sessions and tokens are added on top to maintain state such as login status.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "Client–server model & HTTP",
+  "difficulty": "easy",
+  "question_en": "A browser shows HTTP status code 404. This means:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "The server encountered an internal error",
+    "hi": null
+   },
+   {
+    "en": "The request was successful",
+    "hi": null
+   },
+   {
+    "en": "Access is forbidden even with valid credentials",
+    "hi": null
+   },
+   {
+    "en": "The requested resource was not found on the server",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "404 Not Found means the server is reachable but the requested URL does not exist. 500 is an internal server error, 200 means OK, and 403 means forbidden.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "Client–server model & HTTP",
+  "difficulty": "easy",
+  "question_en": "Which of the following is a server-side scripting language?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "HTML",
+    "hi": null
+   },
+   {
+    "en": "CSS",
+    "hi": null
+   },
+   {
+    "en": "XML",
+    "hi": null
+   },
+   {
+    "en": "PHP",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "PHP code runs on the web server and sends generated HTML to the browser. HTML and CSS are markup/styling languages processed by the browser, and XML is a data-description language.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "Client–server model & HTTP",
+  "difficulty": "medium",
+  "question_en": "Which HTTP method asks for the same response headers as GET but WITHOUT the response body?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "OPTIONS",
+    "hi": null
+   },
+   {
+    "en": "TRACE",
+    "hi": null
+   },
+   {
+    "en": "HEAD",
+    "hi": null
+   },
+   {
+    "en": "PATCH",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "HEAD is used to check metadata such as content length or last-modified date without downloading the content. OPTIONS asks which methods the server supports for a URL.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "Client–server model & HTTP",
+  "difficulty": "medium",
+  "question_en": "Which HTTP status code tells the browser that a resource has been moved PERMANENTLY to a new URL?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "302",
+    "hi": null
+   },
+   {
+    "en": "304",
+    "hi": null
+   },
+   {
+    "en": "307",
+    "hi": null
+   },
+   {
+    "en": "301",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "301 Moved Permanently tells clients and search engines to use the new URL from now on. 302 and 307 are temporary redirects, and 304 Not Modified means the cached copy can be used.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "Client–server model & HTTP",
+  "difficulty": "medium",
+  "question_en": "Which HTTP method is typically used to REPLACE an existing resource entirely with the data sent in the request?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "GET",
+    "hi": null
+   },
+   {
+    "en": "PATCH",
+    "hi": null
+   },
+   {
+    "en": "PUT",
+    "hi": null
+   },
+   {
+    "en": "HEAD",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "PUT stores the enclosed representation at the given URL, replacing what was there. PATCH applies only a partial modification, and GET and HEAD only retrieve data.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "Client–server model & HTTP",
+  "difficulty": "hard",
+  "question_en": "An HTTP method is idempotent if making the same request many times has the same effect on the server as making it once. Which of these methods is NOT idempotent?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "POST",
+    "hi": null
+   },
+   {
+    "en": "GET",
+    "hi": null
+   },
+   {
+    "en": "PUT",
+    "hi": null
+   },
+   {
+    "en": "DELETE",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Sending the same POST twice may create two orders or two records, so POST is not idempotent. GET does not change state, and repeating a PUT or DELETE leaves the server in the same final state.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "Client–server model & HTTP",
+  "difficulty": "medium",
+  "question_en": "Where are HTTP cookies stored?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Only in the web server's database",
+    "hi": null
+   },
+   {
+    "en": "On the client, in the user's browser",
+    "hi": null
+   },
+   {
+    "en": "Inside the HTML file of the page",
+    "hi": null
+   },
+   {
+    "en": "In the DNS server",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "A cookie is a small piece of data the server asks the browser to store and send back with later requests to the same site. Server-side sessions, by contrast, keep data on the server and usually identify the user with a session-id cookie.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "E-commerce models",
+  "difficulty": "easy",
+  "question_en": "An online store such as Amazon or Flipkart selling products directly to individual shoppers is an example of which e-commerce model?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "B2B (Business-to-Business)",
+    "hi": null
+   },
+   {
+    "en": "C2C (Consumer-to-Consumer)",
+    "hi": null
+   },
+   {
+    "en": "C2B (Consumer-to-Business)",
+    "hi": null
+   },
+   {
+    "en": "B2C (Business-to-Consumer)",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "In B2C a business sells directly to end consumers. B2B is trade between businesses, such as a manufacturer buying from a wholesaler.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "E-commerce models",
+  "difficulty": "easy",
+  "question_en": "A platform such as OLX or Quikr, where individuals sell used goods to other individuals, follows which e-commerce model?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "B2C",
+    "hi": null
+   },
+   {
+    "en": "B2B",
+    "hi": null
+   },
+   {
+    "en": "B2G",
+    "hi": null
+   },
+   {
+    "en": "C2C",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Consumer-to-Consumer (C2C) platforms let individuals trade with each other, with the website acting only as an intermediary. B2G refers to businesses supplying to government.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "E-commerce models",
+  "difficulty": "hard",
+  "question_en": "A freelance photographer licenses her photos to companies through a stock-image website. Which e-commerce model does this represent?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "C2B (Consumer-to-Business)",
+    "hi": null
+   },
+   {
+    "en": "B2C (Business-to-Consumer)",
+    "hi": null
+   },
+   {
+    "en": "B2B (Business-to-Business)",
+    "hi": null
+   },
+   {
+    "en": "G2C (Government-to-Citizen)",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "In C2B the individual is the seller and the business is the buyer, reversing the usual B2C flow. Freelance services and reverse auctions are typical C2B examples.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "E-commerce models",
+  "difficulty": "medium",
+  "question_en": "Electronic Data Interchange (EDI), the computer-to-computer exchange of standard business documents such as purchase orders and invoices, is mainly used in:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "C2C e-commerce",
+    "hi": null
+   },
+   {
+    "en": "C2B e-commerce",
+    "hi": null
+   },
+   {
+    "en": "Social media marketing",
+    "hi": null
+   },
+   {
+    "en": "B2B e-commerce",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "EDI automates document exchange between the systems of trading partners — manufacturers, suppliers and retailers — which is business-to-business commerce.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "E-commerce models",
+  "difficulty": "medium",
+  "question_en": "The Government e-Marketplace (GeM) portal, through which government departments buy goods and services from registered sellers, is an example of which model?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "B2G (Business-to-Government)",
+    "hi": null
+   },
+   {
+    "en": "C2C (Consumer-to-Consumer)",
+    "hi": null
+   },
+   {
+    "en": "G2C (Government-to-Citizen)",
+    "hi": null
+   },
+   {
+    "en": "C2B (Consumer-to-Business)",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "On GeM, businesses sell to government buyers, which is B2G. G2C is the reverse direction of services, e.g. a citizen downloading a certificate from a government portal.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "Web security",
+  "difficulty": "easy",
+  "question_en": "An attack in which malicious JavaScript is injected into a trusted website so that it runs in other users' browsers is called:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "SQL injection",
+    "hi": null
+   },
+   {
+    "en": "Denial of Service (DoS)",
+    "hi": null
+   },
+   {
+    "en": "Brute-force attack",
+    "hi": null
+   },
+   {
+    "en": "Cross-Site Scripting (XSS)",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "XSS injects client-side script into pages viewed by others, often to steal cookies or session tokens. SQL injection targets the back-end database instead of the browser.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "Web security",
+  "difficulty": "easy",
+  "question_en": "HTTPS secures web traffic by running HTTP over which protocol, and on which default port?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "SSH, port 22",
+    "hi": null
+   },
+   {
+    "en": "FTP, port 21",
+    "hi": null
+   },
+   {
+    "en": "TLS (formerly SSL), port 443",
+    "hi": null
+   },
+   {
+    "en": "SMTP, port 25",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "HTTPS = HTTP over TLS/SSL, using port 443 by default, with the server's identity proved by a certificate. Plain HTTP uses port 80.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "Web security",
+  "difficulty": "medium",
+  "question_en": "A login form builds the query \"SELECT * FROM users WHERE name='\" + input + \"'\". An attacker enters  ' OR '1'='1  . What is the MOST effective defence against this attack?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Make the password field longer",
+    "hi": null
+   },
+   {
+    "en": "Switch from POST to GET",
+    "hi": null
+   },
+   {
+    "en": "Use parameterised queries (prepared statements)",
+    "hi": null
+   },
+   {
+    "en": "Hide the login page URL",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "This is SQL injection: the input changes the structure of the query so the WHERE condition is always true. Prepared statements send the query and data separately, so the input is always treated as a value, never as SQL code.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "Web security",
+  "difficulty": "medium",
+  "question_en": "An attack that tricks a logged-in user's browser into sending an unwanted request (such as a fund transfer) to a site where the user is already authenticated is:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Cross-Site Request Forgery (CSRF)",
+    "hi": null
+   },
+   {
+    "en": "Cross-Site Scripting (XSS)",
+    "hi": null
+   },
+   {
+    "en": "Phishing",
+    "hi": null
+   },
+   {
+    "en": "Man-in-the-middle attack",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "CSRF abuses the fact that the browser automatically attaches the user's cookies to requests. It is countered with anti-CSRF tokens and SameSite cookies. XSS, by contrast, injects script into the trusted site itself.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "Web security",
+  "difficulty": "hard",
+  "question_en": "Setting the HttpOnly flag on a session cookie mainly helps to:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Prevent client-side JavaScript from reading the cookie, reducing theft through XSS",
+    "hi": null
+   },
+   {
+    "en": "Force the cookie to be sent only over HTTP and never HTTPS",
+    "hi": null
+   },
+   {
+    "en": "Make the cookie expire when the browser closes",
+    "hi": null
+   },
+   {
+    "en": "Encrypt the cookie value on the server",
+    "hi": null
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "HttpOnly hides the cookie from document.cookie, so an injected script cannot steal it. The Secure flag (not HttpOnly) restricts a cookie to HTTPS connections.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "XML & JSON",
+  "difficulty": "easy",
+  "question_en": "JSON stands for:",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "Java Standard Object Network",
+    "hi": null
+   },
+   {
+    "en": "JavaScript Object Notation",
+    "hi": null
+   },
+   {
+    "en": "JavaScript Online Nodes",
+    "hi": null
+   },
+   {
+    "en": "Java Serialized Object Name",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "JSON (JavaScript Object Notation) is a lightweight, text-based data-interchange format based on JavaScript object literal syntax but usable from almost any language.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "XML & JSON",
+  "difficulty": "medium",
+  "question_en": "Which of the following is valid JSON?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "{'name': 'Asha', 'age': 25}",
+    "hi": null
+   },
+   {
+    "en": "{name: \"Asha\", age: 25}",
+    "hi": null
+   },
+   {
+    "en": "{\"name\": \"Asha\", \"age\": 25}",
+    "hi": null
+   },
+   {
+    "en": "{\"name\": \"Asha\", \"age\": 25,}",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "JSON requires keys and string values in double quotes and does not allow trailing commas. Single quotes and unquoted keys are allowed in JavaScript object literals but not in JSON.",
+  "explanation_hi": null,
+  "expected": true
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "XML & JSON",
+  "difficulty": "medium",
+  "question_en": "Which rule is necessary for an XML document to be well-formed?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "It must be validated against a DTD",
+    "hi": null
+   },
+   {
+    "en": "Tags must be written in uppercase",
+    "hi": null
+   },
+   {
+    "en": "It must have exactly one root element enclosing all other elements",
+    "hi": null
+   },
+   {
+    "en": "It must contain at least one attribute",
+    "hi": null
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "A well-formed XML document has one root element, properly nested and closed tags, quoted attribute values, and case-matching tags. Validation against a DTD or XSD is what makes it 'valid', a stricter extra condition.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "XML & JSON",
+  "difficulty": "medium",
+  "question_en": "Which statement correctly distinguishes XML from HTML?",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "XML has a fixed set of predefined tags, whereas HTML tags are user-defined",
+    "hi": null
+   },
+   {
+    "en": "XML is not case-sensitive, whereas HTML is strictly case-sensitive",
+    "hi": null
+   },
+   {
+    "en": "XML can only be used inside web browsers",
+    "hi": null
+   },
+   {
+    "en": "XML is designed to store and transport data with user-defined tags; HTML displays data using predefined tags",
+    "hi": null
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "XML describes what data is, using tags the author defines, and it is case-sensitive. HTML has predefined tags for how content is displayed and is case-insensitive.",
+  "explanation_hi": null,
+  "expected": false
+ },
+ {
+  "chapter_key": "cs_web",
+  "subtopic": "XML & JSON",
+  "difficulty": "hard",
+  "question_en": "What is the output of this JavaScript?\nconsole.log(JSON.stringify({a: 1, b: [true, null], c: undefined}));",
+  "question_hi": null,
+  "options": [
+   {
+    "en": "{\"a\":1,\"b\":[true,null],\"c\":undefined}",
+    "hi": null
+   },
+   {
+    "en": "{\"a\":1,\"b\":[true,null]}",
+    "hi": null
+   },
+   {
+    "en": "{a:1,b:[true,null],c:null}",
+    "hi": null
+   },
+   {
+    "en": "{\"a\":\"1\",\"b\":\"true,null\"}",
+    "hi": null
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "JSON has no undefined type, so properties whose value is undefined are omitted from objects by JSON.stringify. Keys are double-quoted, and numbers, booleans and null keep their types.",
+  "explanation_hi": null,
+  "expected": false
+ }
+]

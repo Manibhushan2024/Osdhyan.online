@@ -1,0 +1,2902 @@
+[
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Generations of computers",
+    "difficulty": "easy",
+    "question_en": "Which generation of computers used vacuum tubes as the main electronic component?",
+    "question_hi": "कंप्यूटर की किस पीढ़ी में मुख्य इलेक्ट्रॉनिक घटक के रूप में वैक्यूम ट्यूब का प्रयोग हुआ?",
+    "options": [
+      {
+        "en": "First generation",
+        "hi": "प्रथम पीढ़ी"
+      },
+      {
+        "en": "Second generation",
+        "hi": "द्वितीय पीढ़ी"
+      },
+      {
+        "en": "Third generation",
+        "hi": "तृतीय पीढ़ी"
+      },
+      {
+        "en": "Fourth generation",
+        "hi": "चतुर्थ पीढ़ी"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "First-generation machines (1940s–mid 1950s, e.g. ENIAC, UNIVAC I) were built from vacuum tubes, which were bulky, hot and unreliable. Transistors replaced them in the second generation, ICs in the third and microprocessors in the fourth.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Generations of computers",
+    "difficulty": "easy",
+    "question_en": "Integrated circuits (ICs) were first used as the main building block in which generation of computers?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Second generation",
+        "hi": null
+      },
+      {
+        "en": "Third generation",
+        "hi": null
+      },
+      {
+        "en": "Fourth generation",
+        "hi": null
+      },
+      {
+        "en": "Fifth generation",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Third-generation computers (1964–1971, e.g. IBM System/360) used small- and medium-scale integrated circuits. The second generation used discrete transistors, and the fourth moved to VLSI microprocessors.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Generations of computers",
+    "difficulty": "medium",
+    "question_en": "Which of the following is an example of a second-generation (transistor-based) computer?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "ENIAC",
+        "hi": null
+      },
+      {
+        "en": "IBM 1401",
+        "hi": null
+      },
+      {
+        "en": "IBM System/360",
+        "hi": null
+      },
+      {
+        "en": "Intel 4004-based microcomputer",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "IBM 1401 (1959) was a popular transistorised second-generation machine. ENIAC used vacuum tubes (first generation), System/360 used ICs (third) and the Intel 4004 is a microprocessor (fourth generation).",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Generations of computers",
+    "difficulty": "medium",
+    "question_en": "The fourth generation of computers is chiefly characterised by the use of:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Transistors and magnetic drums",
+        "hi": null
+      },
+      {
+        "en": "Small-scale integrated circuits",
+        "hi": null
+      },
+      {
+        "en": "Microprocessors built with VLSI technology",
+        "hi": null
+      },
+      {
+        "en": "Vacuum tubes and punched cards",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "From 1971 onward, VLSI technology put a whole CPU on a single chip (the microprocessor), making personal computers possible. Transistors belong to the second generation and SSI/MSI ICs to the third.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Generations of computers",
+    "difficulty": "medium",
+    "question_en": "Fifth-generation computing is most closely associated with which of the following?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Batch processing with magnetic tape",
+        "hi": null
+      },
+      {
+        "en": "Artificial intelligence and parallel processing using ULSI chips",
+        "hi": null
+      },
+      {
+        "en": "Time-sharing on mainframes using ICs",
+        "hi": null
+      },
+      {
+        "en": "Assembly-language programming on transistor machines",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The fifth generation (1980s onward) aims at machines that understand natural language and reason, using AI, parallel processing and Ultra Large Scale Integration. The other options describe earlier generations.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Generations of computers",
+    "difficulty": "hard",
+    "question_en": "Arrange the following computers in the correct chronological order of their introduction: IBM System/360, ENIAC, IBM 1401, UNIVAC I.",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "ENIAC → UNIVAC I → IBM 1401 → IBM System/360",
+        "hi": null
+      },
+      {
+        "en": "UNIVAC I → ENIAC → IBM System/360 → IBM 1401",
+        "hi": null
+      },
+      {
+        "en": "ENIAC → IBM 1401 → UNIVAC I → IBM System/360",
+        "hi": null
+      },
+      {
+        "en": "IBM 1401 → ENIAC → UNIVAC I → IBM System/360",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "ENIAC (1946) was the first general-purpose electronic computer, UNIVAC I (1951) the first commercial computer, IBM 1401 (1959) a transistor machine and IBM System/360 (1964) an IC-based third-generation family.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Hardware and peripherals",
+    "difficulty": "easy",
+    "question_en": "Which of the following is an output device?",
+    "question_hi": "निम्न में से कौन-सा आउटपुट डिवाइस है?",
+    "options": [
+      {
+        "en": "Optical Mark Reader",
+        "hi": "ऑप्टिकल मार्क रीडर"
+      },
+      {
+        "en": "Joystick",
+        "hi": "जॉयस्टिक"
+      },
+      {
+        "en": "Scanner",
+        "hi": "स्कैनर"
+      },
+      {
+        "en": "Plotter",
+        "hi": "प्लॉटर"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "A plotter draws vector graphics such as engineering drawings on paper, so it is an output device. OMR, joystick and scanner all send data into the computer and are input devices.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Hardware and peripherals",
+    "difficulty": "easy",
+    "question_en": "Which of the following devices works as both an input and an output device?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Light pen",
+        "hi": null
+      },
+      {
+        "en": "Projector",
+        "hi": null
+      },
+      {
+        "en": "Trackball",
+        "hi": null
+      },
+      {
+        "en": "Touch screen",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "A touch screen displays information (output) and accepts finger or stylus touches (input). A light pen and trackball are input-only; a projector is output-only.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Hardware and peripherals",
+    "difficulty": "medium",
+    "question_en": "Which of the following printers is a non-impact printer?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Dot-matrix printer",
+        "hi": null
+      },
+      {
+        "en": "Daisy-wheel printer",
+        "hi": null
+      },
+      {
+        "en": "Laser printer",
+        "hi": null
+      },
+      {
+        "en": "Drum (line) printer",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "A laser printer forms the image with a laser, toner and heat, with nothing striking the paper, so it is non-impact. Dot-matrix, daisy-wheel and drum printers all hammer pins or characters against a ribbon.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Hardware and peripherals",
+    "difficulty": "medium",
+    "question_en": "Which unit of the CPU fetches instructions from memory, decodes them and directs the other units to carry them out, without itself doing any arithmetic?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Arithmetic Logic Unit",
+        "hi": null
+      },
+      {
+        "en": "Control Unit",
+        "hi": null
+      },
+      {
+        "en": "Accumulator",
+        "hi": null
+      },
+      {
+        "en": "Memory Data Register",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The Control Unit sequences the fetch–decode–execute cycle and sends control signals to the ALU, registers and memory. The ALU performs the actual arithmetic and logic; the accumulator and MDR are registers that hold data.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Hardware and peripherals",
+    "difficulty": "medium",
+    "question_en": "Which CPU register holds the address of the next instruction to be fetched?",
+    "question_hi": "कौन-सा CPU रजिस्टर अगले निर्देश का पता (address) रखता है?",
+    "options": [
+      {
+        "en": "Instruction Register",
+        "hi": "इंस्ट्रक्शन रजिस्टर"
+      },
+      {
+        "en": "Memory Address Register",
+        "hi": "मेमोरी एड्रेस रजिस्टर"
+      },
+      {
+        "en": "Program Counter",
+        "hi": "प्रोग्राम काउंटर"
+      },
+      {
+        "en": "Accumulator",
+        "hi": "एक्युमुलेटर"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "The Program Counter (PC) always points to the next instruction and is incremented after each fetch. The Instruction Register holds the instruction currently being executed, and the MAR holds the address of whatever memory location is being accessed right now.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Hardware and peripherals",
+    "difficulty": "medium",
+    "question_en": "A processor has a 32-bit address bus and an 8-bit addressable memory. What is the maximum memory it can directly address?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "32 MB",
+        "hi": null
+      },
+      {
+        "en": "2 GB",
+        "hi": null
+      },
+      {
+        "en": "4 GB",
+        "hi": null
+      },
+      {
+        "en": "32 GB",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "With 32 address lines there are 2^32 = 4,294,967,296 distinct addresses; at one byte per address this is 4 GB. The width of the data bus does not change the number of addressable locations.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Hardware and peripherals",
+    "difficulty": "easy",
+    "question_en": "MICR technology, which reads characters printed with magnetic ink, is mainly used by:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Schools for grading OMR sheets",
+        "hi": null
+      },
+      {
+        "en": "Supermarkets for reading barcodes",
+        "hi": null
+      },
+      {
+        "en": "Hospitals for scanning X-ray films",
+        "hi": null
+      },
+      {
+        "en": "Banks for processing cheques",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Magnetic Ink Character Recognition reads the code line printed on cheques in iron-oxide ink, which stays readable even if the cheque is stamped over. OMR is used for answer sheets and barcode readers for retail.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Hardware and peripherals",
+    "difficulty": "hard",
+    "question_en": "A CPU runs at a clock frequency of 2.5 GHz. How long does one clock cycle last?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "0.25 ns",
+        "hi": null
+      },
+      {
+        "en": "0.4 ns",
+        "hi": null
+      },
+      {
+        "en": "2.5 ns",
+        "hi": null
+      },
+      {
+        "en": "4 ns",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Clock period = 1 / frequency = 1 / (2.5 × 10^9 Hz) = 0.4 × 10^-9 s = 0.4 ns. Option 4 (4 ns) would correspond to 250 MHz.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Hardware and peripherals",
+    "difficulty": "medium",
+    "question_en": "The number of bits that a CPU can process in a single operation is known as its:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Clock speed",
+        "hi": null
+      },
+      {
+        "en": "Word length",
+        "hi": null
+      },
+      {
+        "en": "Bus bandwidth",
+        "hi": null
+      },
+      {
+        "en": "Instruction count",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Word length (e.g. 32-bit or 64-bit) is the natural data width of the processor's registers and ALU. Clock speed measures cycles per second, not bits per operation.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Memory hierarchy",
+    "difficulty": "easy",
+    "question_en": "Which of the following is the fastest type of memory in a computer?",
+    "question_hi": "कंप्यूटर में निम्न में से सबसे तेज़ मेमोरी कौन-सी है?",
+    "options": [
+      {
+        "en": "Main memory (RAM)",
+        "hi": "मुख्य मेमोरी (RAM)"
+      },
+      {
+        "en": "Cache memory",
+        "hi": "कैश मेमोरी"
+      },
+      {
+        "en": "CPU registers",
+        "hi": "CPU रजिस्टर"
+      },
+      {
+        "en": "Solid-state drive",
+        "hi": "सॉलिड-स्टेट ड्राइव"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Registers sit inside the CPU and are accessed in a single clock cycle, making them the fastest (and smallest) level of the memory hierarchy. Cache is next, followed by RAM and then secondary storage.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Memory hierarchy",
+    "difficulty": "medium",
+    "question_en": "Which sequence correctly lists memory from fastest to slowest access time?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Cache → Register → RAM → Hard disk",
+        "hi": null
+      },
+      {
+        "en": "RAM → Cache → Register → Hard disk",
+        "hi": null
+      },
+      {
+        "en": "Register → RAM → Cache → Hard disk",
+        "hi": null
+      },
+      {
+        "en": "Register → Cache → RAM → Hard disk",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Moving down the hierarchy, each level is larger, cheaper per bit and slower: registers (fastest), then cache, then main memory, then secondary storage such as a hard disk.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Memory hierarchy",
+    "difficulty": "medium",
+    "question_en": "Which type of RAM stores each bit as a charge on a capacitor and therefore needs to be refreshed periodically?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "SRAM",
+        "hi": null
+      },
+      {
+        "en": "DRAM",
+        "hi": null
+      },
+      {
+        "en": "EEPROM",
+        "hi": null
+      },
+      {
+        "en": "Flash memory",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Dynamic RAM uses one transistor and one capacitor per bit; the charge leaks, so it must be refreshed thousands of times per second. SRAM uses flip-flops and holds data as long as power is on, which is why it is used for cache.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Memory hierarchy",
+    "difficulty": "medium",
+    "question_en": "Which type of ROM is erased by exposing the chip to ultraviolet light through a quartz window?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "PROM",
+        "hi": null
+      },
+      {
+        "en": "EPROM",
+        "hi": null
+      },
+      {
+        "en": "EEPROM",
+        "hi": null
+      },
+      {
+        "en": "Mask ROM",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "EPROM (Erasable Programmable ROM) is wiped by UV light and then reprogrammed. EEPROM is erased electrically, PROM can be programmed only once and Mask ROM is fixed at manufacture.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Memory hierarchy",
+    "difficulty": "easy",
+    "question_en": "Which of the following memories loses its contents when the power supply is switched off?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "ROM",
+        "hi": null
+      },
+      {
+        "en": "Hard disk",
+        "hi": null
+      },
+      {
+        "en": "RAM",
+        "hi": null
+      },
+      {
+        "en": "Flash drive",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "RAM is volatile: it needs continuous power to retain data. ROM, hard disks and flash drives are non-volatile and keep their contents without power.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Memory hierarchy",
+    "difficulty": "hard",
+    "question_en": "A memory chip has 12 address lines and 8 data lines. What is its storage capacity?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "12 KB",
+        "hi": null
+      },
+      {
+        "en": "4 KB",
+        "hi": null
+      },
+      {
+        "en": "96 bits",
+        "hi": null
+      },
+      {
+        "en": "32 KB",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "12 address lines give 2^12 = 4096 locations; each location stores 8 bits (1 byte), so capacity = 4096 × 1 byte = 4 KB. Multiplying 12 × 8 = 96 bits (option 3) is a common mistake.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Memory hierarchy",
+    "difficulty": "medium",
+    "question_en": "Flash memory used in pen drives and SSDs is technically a form of:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Dynamic RAM",
+        "hi": null
+      },
+      {
+        "en": "EEPROM",
+        "hi": null
+      },
+      {
+        "en": "Static RAM",
+        "hi": null
+      },
+      {
+        "en": "Magnetic storage",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Flash is electrically erasable programmable ROM that erases whole blocks at a time rather than single bytes, which makes it cheap and dense. It is non-volatile and solid-state, unlike DRAM/SRAM (volatile) or magnetic disks.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Cache memory",
+    "difficulty": "easy",
+    "question_en": "Cache memory is placed between which two components to reduce the average time to access data?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Main memory and hard disk",
+        "hi": null
+      },
+      {
+        "en": "Hard disk and DVD drive",
+        "hi": null
+      },
+      {
+        "en": "Keyboard and CPU",
+        "hi": null
+      },
+      {
+        "en": "CPU and main memory",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Cache is a small, fast SRAM buffer between the processor and the slower main memory; frequently used instructions and data are kept there so the CPU does not wait on RAM.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Cache memory",
+    "difficulty": "medium",
+    "question_en": "Among L1, L2 and L3 cache, which statement is correct?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "L3 is the smallest and fastest, located inside each core",
+        "hi": null
+      },
+      {
+        "en": "L1 is the largest and is shared by all cores",
+        "hi": null
+      },
+      {
+        "en": "L2 is always located on the motherboard, not the chip",
+        "hi": null
+      },
+      {
+        "en": "L1 is the smallest and fastest, located closest to the CPU core",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "L1 cache (typically 32–64 KB per core) is built into each core and has the lowest latency; L2 is larger and slightly slower; L3 is the largest and is usually shared among all cores on the chip.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Cache memory",
+    "difficulty": "medium",
+    "question_en": "Cache memory improves performance because programs tend to access the same or nearby memory locations repeatedly. This property is called:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Memory interleaving",
+        "hi": null
+      },
+      {
+        "en": "Direct memory access",
+        "hi": null
+      },
+      {
+        "en": "Virtual addressing",
+        "hi": null
+      },
+      {
+        "en": "Locality of reference",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Temporal locality (recently used data is reused soon) and spatial locality (neighbouring addresses are used together) are together called locality of reference; cache exploits both. DMA and interleaving are unrelated techniques.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Cache memory",
+    "difficulty": "hard",
+    "question_en": "A system has a cache access time of 10 ns and a cache hit ratio of 90%. On a miss, the total access time (cache check plus main memory) is 110 ns. What is the average memory access time?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "19 ns",
+        "hi": null
+      },
+      {
+        "en": "20 ns",
+        "hi": null
+      },
+      {
+        "en": "55 ns",
+        "hi": null
+      },
+      {
+        "en": "100 ns",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Average time = hit ratio × hit time + miss ratio × miss time = 0.9 × 10 + 0.1 × 110 = 9 + 11 = 20 ns. Option 1 (19 ns) results from using 100 ns for the miss instead of the full 110 ns.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Cache memory",
+    "difficulty": "medium",
+    "question_en": "In which cache mapping technique can each block of main memory be placed in exactly one cache line?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Fully associative mapping",
+        "hi": null
+      },
+      {
+        "en": "Direct mapping",
+        "hi": null
+      },
+      {
+        "en": "Set-associative mapping",
+        "hi": null
+      },
+      {
+        "en": "Random mapping",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "In direct mapping the cache line is fixed by (block number mod number of lines), so there is no choice of location; it is simple but causes conflict misses. Fully associative allows any line, and set-associative allows any line within one set.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Number systems and conversions",
+    "difficulty": "easy",
+    "question_en": "The binary number (1011)2 is equal to which decimal number?",
+    "question_hi": "बाइनरी संख्या (1011)2 का दशमलव मान क्या है?",
+    "options": [
+      {
+        "en": "9",
+        "hi": null
+      },
+      {
+        "en": "11",
+        "hi": null
+      },
+      {
+        "en": "13",
+        "hi": null
+      },
+      {
+        "en": "15",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "1011 = 1×8 + 0×4 + 1×2 + 1×1 = 8 + 2 + 1 = 11.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Number systems and conversions",
+    "difficulty": "easy",
+    "question_en": "What is the decimal value of the hexadecimal number (2F)16?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "35",
+        "hi": null
+      },
+      {
+        "en": "41",
+        "hi": null
+      },
+      {
+        "en": "47",
+        "hi": null
+      },
+      {
+        "en": "62",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "In hexadecimal F = 15, so 2F = 2×16 + 15 = 32 + 15 = 47.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Number systems and conversions",
+    "difficulty": "medium",
+    "question_en": "The decimal number 45 in binary is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "101101",
+        "hi": null
+      },
+      {
+        "en": "110101",
+        "hi": null
+      },
+      {
+        "en": "101011",
+        "hi": null
+      },
+      {
+        "en": "100111",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Repeated division by 2 gives remainders 1,0,1,1,0,1 (read bottom-up: 101101). Check: 32 + 8 + 4 + 1 = 45. Option 2 (110101) equals 53.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Number systems and conversions",
+    "difficulty": "medium",
+    "question_en": "The decimal fraction 0.625 expressed in binary is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "0.110",
+        "hi": null
+      },
+      {
+        "en": "0.011",
+        "hi": null
+      },
+      {
+        "en": "0.625",
+        "hi": null
+      },
+      {
+        "en": "0.101",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Multiply by 2 repeatedly: 0.625×2 = 1.25 (1), 0.25×2 = 0.5 (0), 0.5×2 = 1.0 (1). Reading the integer parts top-down gives 0.101, i.e. 1/2 + 1/8 = 0.625.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Number systems and conversions",
+    "difficulty": "medium",
+    "question_en": "The octal number (734)8 is equal to which hexadecimal number?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "(2E4)16",
+        "hi": null
+      },
+      {
+        "en": "(1CD)16",
+        "hi": null
+      },
+      {
+        "en": "(734)16",
+        "hi": null
+      },
+      {
+        "en": "(1DC)16",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Convert via binary: 7 3 4 → 111 011 100 = 111011100. Regroup in fours from the right: 1 1101 1100 = 1 D C. Check: 734 octal = 476 decimal = 256 + 208 + 12 = 1DC hex.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Number systems and conversions",
+    "difficulty": "medium",
+    "question_en": "The binary number 11010110 written in hexadecimal is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "B6",
+        "hi": null
+      },
+      {
+        "en": "D5",
+        "hi": null
+      },
+      {
+        "en": "C6",
+        "hi": null
+      },
+      {
+        "en": "D6",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Group into nibbles: 1101 0110. 1101 = 13 = D and 0110 = 6, so the number is D6 (214 in decimal).",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Number systems and conversions",
+    "difficulty": "hard",
+    "question_en": "Convert the decimal number 156 to octal.",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "(226)8",
+        "hi": null
+      },
+      {
+        "en": "(234)8",
+        "hi": null
+      },
+      {
+        "en": "(243)8",
+        "hi": null
+      },
+      {
+        "en": "(254)8",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "156 ÷ 8 = 19 remainder 4; 19 ÷ 8 = 2 remainder 3; 2 ÷ 8 = 0 remainder 2. Reading remainders bottom-up gives 234. Check: 2×64 + 3×8 + 4 = 128 + 24 + 4 = 156.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Number systems and conversions",
+    "difficulty": "medium",
+    "question_en": "Which of the following numbers has the largest value?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "(100)2",
+        "hi": null
+      },
+      {
+        "en": "(100)8",
+        "hi": null
+      },
+      {
+        "en": "(100)10",
+        "hi": null
+      },
+      {
+        "en": "(100)16",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "The same digits are worth more in a bigger base: (100)2 = 4, (100)8 = 64, (100)10 = 100 and (100)16 = 256.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Number systems and conversions",
+    "difficulty": "hard",
+    "question_en": "What is the decimal equivalent of the base-5 number (1234)5?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "1234",
+        "hi": null
+      },
+      {
+        "en": "169",
+        "hi": null
+      },
+      {
+        "en": "194",
+        "hi": null
+      },
+      {
+        "en": "214",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "(1234)5 = 1×125 + 2×25 + 3×5 + 4×1 = 125 + 50 + 15 + 4 = 194.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Number systems and conversions",
+    "difficulty": "hard",
+    "question_en": "If (121)b = (16)10, what is the value of the base b?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "4",
+        "hi": null
+      },
+      {
+        "en": "5",
+        "hi": null
+      },
+      {
+        "en": "6",
+        "hi": null
+      },
+      {
+        "en": "3",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "(121)b = b² + 2b + 1 = (b + 1)². Setting (b + 1)² = 16 gives b + 1 = 4, so b = 3. Check: 9 + 6 + 1 = 16.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Number systems and conversions",
+    "difficulty": "easy",
+    "question_en": "How many distinct values can be represented using 8 bits?",
+    "question_hi": "8 बिट्स से कितने भिन्न मान निरूपित किए जा सकते हैं?",
+    "options": [
+      {
+        "en": "8",
+        "hi": null
+      },
+      {
+        "en": "128",
+        "hi": null
+      },
+      {
+        "en": "255",
+        "hi": null
+      },
+      {
+        "en": "256",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "n bits give 2^n combinations, so 8 bits give 2^8 = 256 values (0 to 255 unsigned). 255 is the largest value, not the count of values.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Binary arithmetic and complements",
+    "difficulty": "easy",
+    "question_en": "What is the sum of the binary numbers 1011 and 0110?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "10101",
+        "hi": null
+      },
+      {
+        "en": "11101",
+        "hi": null
+      },
+      {
+        "en": "10001",
+        "hi": null
+      },
+      {
+        "en": "1111",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "1011 (11) + 0110 (6) = 17 = 10001. Column-wise: 1+0=1, 1+1=0 carry 1, 0+1+1=0 carry 1, 1+0+1=0 carry 1 → 10001.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Binary arithmetic and complements",
+    "difficulty": "medium",
+    "question_en": "What is the 1's complement of the 5-bit binary number 01101?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "10010",
+        "hi": null
+      },
+      {
+        "en": "10011",
+        "hi": null
+      },
+      {
+        "en": "01110",
+        "hi": null
+      },
+      {
+        "en": "11010",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The 1's complement simply inverts every bit: 01101 → 10010. Adding 1 to that (10011, option 2) would give the 2's complement.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Binary arithmetic and complements",
+    "difficulty": "medium",
+    "question_en": "The 2's complement of the 8-bit number 00101100 is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "11010011",
+        "hi": null
+      },
+      {
+        "en": "11010100",
+        "hi": null
+      },
+      {
+        "en": "11010101",
+        "hi": null
+      },
+      {
+        "en": "00101101",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Invert all bits: 11010011 (the 1's complement), then add 1: 11010100. Check: 00101100 = 44 and 11010100 = 212 = 256 − 44.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Binary arithmetic and complements",
+    "difficulty": "medium",
+    "question_en": "The range of integers that can be represented in 8-bit 2's complement form is:",
+    "question_hi": "8-बिट 2's complement में निरूपित की जा सकने वाली पूर्णांकों की सीमा है:",
+    "options": [
+      {
+        "en": "−127 to +127",
+        "hi": null
+      },
+      {
+        "en": "−128 to +127",
+        "hi": null
+      },
+      {
+        "en": "−128 to +128",
+        "hi": null
+      },
+      {
+        "en": "0 to 255",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "An n-bit 2's complement number spans −2^(n−1) to +2^(n−1) − 1, so for n = 8: −128 to +127. Only one zero exists, which is why the negative side has one extra value. −127 to +127 is the range of sign-magnitude and 1's complement.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Binary arithmetic and complements",
+    "difficulty": "hard",
+    "question_en": "The 8-bit pattern 11110100 is a 2's complement signed number. What is its decimal value?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "−116",
+        "hi": null
+      },
+      {
+        "en": "+244",
+        "hi": null
+      },
+      {
+        "en": "−11",
+        "hi": null
+      },
+      {
+        "en": "−12",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "The MSB is 1, so the number is negative. Take the 2's complement: invert → 00001011, add 1 → 00001100 = 12. Hence the value is −12. +244 would be the unsigned reading.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Binary arithmetic and complements",
+    "difficulty": "medium",
+    "question_en": "What is the product of the binary numbers 1101 and 101?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "1000101",
+        "hi": null
+      },
+      {
+        "en": "111001",
+        "hi": null
+      },
+      {
+        "en": "1000001",
+        "hi": null
+      },
+      {
+        "en": "1010101",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "1101 = 13 and 101 = 5; 13 × 5 = 65 = 64 + 1 = 1000001. Long multiplication: 1101 + 110100 = 1000001.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Binary arithmetic and complements",
+    "difficulty": "hard",
+    "question_en": "Using 4-bit 2's complement arithmetic, compute 1010 − 0110. What is the result?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "0100, with no carry generated",
+        "hi": null
+      },
+      {
+        "en": "1100, with the end carry discarded",
+        "hi": null
+      },
+      {
+        "en": "10100, keeping all five bits",
+        "hi": null
+      },
+      {
+        "en": "0100, with the end carry discarded",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "2's complement of 0110 is 1010. Adding: 1010 + 1010 = 10100. The fifth bit (end carry) is discarded, leaving 0100 = 4, which matches 10 − 6 = 4 for the unsigned interpretation.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Binary arithmetic and complements",
+    "difficulty": "medium",
+    "question_en": "What is the result of the binary subtraction 110111 − 10101?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "100110",
+        "hi": null
+      },
+      {
+        "en": "101010",
+        "hi": null
+      },
+      {
+        "en": "100010",
+        "hi": null
+      },
+      {
+        "en": "11010",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "110111 = 55 and 10101 = 21; 55 − 21 = 34 = 32 + 2 = 100010.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Binary arithmetic and complements",
+    "difficulty": "medium",
+    "question_en": "How many different bit patterns represent zero in 8-bit sign-magnitude representation?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "One",
+        "hi": null
+      },
+      {
+        "en": "Two",
+        "hi": null
+      },
+      {
+        "en": "Four",
+        "hi": null
+      },
+      {
+        "en": "Eight",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Sign-magnitude has +0 (00000000) and −0 (10000000); 1's complement also has two zeros. Only 2's complement has a single representation of zero, which is one reason computers use it.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Binary arithmetic and complements",
+    "difficulty": "hard",
+    "question_en": "In 8-bit 2's complement arithmetic, 01100100 (+100) is added to 00110010 (+50). What happens?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "The correct result +150 is stored as 10010110",
+        "hi": null
+      },
+      {
+        "en": "An end carry is generated and discarded, giving +22",
+        "hi": null
+      },
+      {
+        "en": "The ALU automatically extends the result to 9 bits",
+        "hi": null
+      },
+      {
+        "en": "Overflow occurs; the stored result 10010110 reads as −106",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "+150 exceeds the 8-bit signed maximum of +127. The sum 10010110 has its sign bit set, so it is interpreted as −(01101010) = −106. Two positive operands producing a negative result is the classic overflow signature.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Boolean algebra",
+    "difficulty": "easy",
+    "question_en": "According to De Morgan's theorem, the complement of (A·B) is equal to:",
+    "question_hi": "डी मॉर्गन प्रमेय के अनुसार (A·B) का पूरक (complement) किसके बराबर है?",
+    "options": [
+      {
+        "en": "A' + B'",
+        "hi": "A' + B'"
+      },
+      {
+        "en": "A' · B'",
+        "hi": "A' · B'"
+      },
+      {
+        "en": "A + B",
+        "hi": "A + B"
+      },
+      {
+        "en": "(A + B)'",
+        "hi": "(A + B)'"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "De Morgan's first theorem states (A·B)' = A' + B': the complement of a product is the sum of the complements. The second theorem is (A + B)' = A'·B'. Option 2 is the complement of (A + B), not of (A·B).",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Boolean algebra",
+    "difficulty": "easy",
+    "question_en": "The Boolean expression A + A'B simplifies to:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "A + B",
+        "hi": null
+      },
+      {
+        "en": "A",
+        "hi": null
+      },
+      {
+        "en": "B",
+        "hi": null
+      },
+      {
+        "en": "A'B",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "A + A'B = (A + A')(A + B) by the distributive law of + over ·, and A + A' = 1, so the result is A + B. This is the second absorption-type identity; the plain absorption law A + AB = A (option 2) is a different expression.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Boolean algebra",
+    "difficulty": "easy",
+    "question_en": "Which Boolean law is expressed by the identity A + AB = A?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Distributive law",
+        "hi": null
+      },
+      {
+        "en": "Associative law",
+        "hi": null
+      },
+      {
+        "en": "Absorption law",
+        "hi": null
+      },
+      {
+        "en": "Idempotent law",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "A + AB = A(1 + B) = A·1 = A. Because the term AB is 'absorbed' into A, this is called the absorption law. The idempotent law is A + A = A, and the distributive law is A(B + C) = AB + AC.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Boolean algebra",
+    "difficulty": "medium",
+    "question_en": "The expression AB + AB' simplifies to:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "B",
+        "hi": null
+      },
+      {
+        "en": "A + B",
+        "hi": null
+      },
+      {
+        "en": "1",
+        "hi": null
+      },
+      {
+        "en": "A",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Factor out A: AB + AB' = A(B + B') = A·1 = A. The variable B appears in both true and complemented form with the same companion, so it is eliminated.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Boolean algebra",
+    "difficulty": "medium",
+    "question_en": "The product-of-sums expression (A + B)(A + B') is equivalent to:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "B",
+        "hi": null
+      },
+      {
+        "en": "A + B",
+        "hi": null
+      },
+      {
+        "en": "A",
+        "hi": null
+      },
+      {
+        "en": "AB",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Expanding: AA + AB' + AB + BB' = A + A(B' + B) + 0 = A + A = A. Alternatively, by the dual of the distributive law, (A + B)(A + B') = A + BB' = A + 0 = A.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Boolean algebra",
+    "difficulty": "hard",
+    "question_en": "Simplify the Boolean function F = A'B'C + A'BC + AB'C + ABC.",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "A + C",
+        "hi": null
+      },
+      {
+        "en": "AC + B",
+        "hi": null
+      },
+      {
+        "en": "A'C + B'C",
+        "hi": null
+      },
+      {
+        "en": "C",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Group the terms: A'C(B' + B) + AC(B' + B) = A'C + AC = C(A' + A) = C. All four minterms share C = 1 and cover every combination of A and B, so the function depends on C alone.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Boolean algebra",
+    "difficulty": "medium",
+    "question_en": "The identity A(B + C) = AB + AC is an example of which Boolean law?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Commutative law",
+        "hi": null
+      },
+      {
+        "en": "Associative law",
+        "hi": null
+      },
+      {
+        "en": "Distributive law",
+        "hi": null
+      },
+      {
+        "en": "Complement law",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "The distributive law lets AND distribute over OR (and, unusually, in Boolean algebra OR also distributes over AND: A + BC = (A + B)(A + C)). The commutative law swaps operands (A + B = B + A) and the associative law regroups them.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Boolean algebra",
+    "difficulty": "hard",
+    "question_en": "How many distinct Boolean functions can be defined on three input variables?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "256",
+        "hi": null
+      },
+      {
+        "en": "8",
+        "hi": null
+      },
+      {
+        "en": "64",
+        "hi": null
+      },
+      {
+        "en": "512",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "A 3-variable truth table has 2^3 = 8 rows, and each row's output can independently be 0 or 1, giving 2^8 = 256 possible functions. In general the count is 2^(2^n); 8 (option 2) is only the number of input combinations.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Logic gates",
+    "difficulty": "easy",
+    "question_en": "Which logic gate produces an output of 1 only when all of its inputs are 1?",
+    "question_hi": "कौन-सा लॉजिक गेट केवल तभी आउटपुट 1 देता है जब उसके सभी इनपुट 1 हों?",
+    "options": [
+      {
+        "en": "OR gate",
+        "hi": "OR गेट"
+      },
+      {
+        "en": "NAND gate",
+        "hi": "NAND गेट"
+      },
+      {
+        "en": "XOR gate",
+        "hi": "XOR गेट"
+      },
+      {
+        "en": "AND gate",
+        "hi": "AND गेट"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "An AND gate implements logical multiplication: Y = A·B, which is 1 only for the input row 1,1. An OR gate gives 1 if any input is 1, and NAND gives 0 (not 1) for the all-ones input.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Logic gates",
+    "difficulty": "easy",
+    "question_en": "A two-input gate gives output 1 exactly when its two inputs are different. The gate is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "XNOR",
+        "hi": null
+      },
+      {
+        "en": "NOR",
+        "hi": null
+      },
+      {
+        "en": "XOR",
+        "hi": null
+      },
+      {
+        "en": "NAND",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "The exclusive-OR gate outputs 1 for inputs 01 and 10 and 0 for 00 and 11, so it detects inequality. XNOR is its complement and outputs 1 when the inputs are equal.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Logic gates",
+    "difficulty": "easy",
+    "question_en": "Which pair of gates is known as the universal gates?",
+    "question_hi": "गेटों के किस युग्म को यूनिवर्सल गेट कहा जाता है?",
+    "options": [
+      {
+        "en": "AND and OR",
+        "hi": "AND और OR"
+      },
+      {
+        "en": "XOR and XNOR",
+        "hi": "XOR और XNOR"
+      },
+      {
+        "en": "NOT and AND",
+        "hi": "NOT और AND"
+      },
+      {
+        "en": "NAND and NOR",
+        "hi": "NAND और NOR"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Any Boolean function can be realised using only NAND gates, or only NOR gates, so each is called universal. AND, OR and NOT individually cannot build every function (for example, AND and OR alone cannot produce an inverter).",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Logic gates",
+    "difficulty": "medium",
+    "question_en": "If both inputs of a two-input NAND gate are connected together to a single signal A, the gate behaves as:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "A NOT gate",
+        "hi": null
+      },
+      {
+        "en": "An AND gate",
+        "hi": null
+      },
+      {
+        "en": "A buffer",
+        "hi": null
+      },
+      {
+        "en": "An OR gate",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "With both inputs equal to A, the output is (A·A)' = A'. So a NAND (or NOR) gate with shorted inputs works as an inverter, which is the first step in proving that NAND is universal.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Logic gates",
+    "difficulty": "medium",
+    "question_en": "What is the output of a three-input XOR gate when all three inputs are 1?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "1",
+        "hi": null
+      },
+      {
+        "en": "0",
+        "hi": null
+      },
+      {
+        "en": "Undefined",
+        "hi": null
+      },
+      {
+        "en": "High impedance",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "A multi-input XOR outputs 1 when an odd number of inputs are 1 (it is an odd-parity function). Three 1s is odd, so the output is 1. Students often wrongly treat XOR as 'exactly one input is 1', which would give 0.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Logic gates",
+    "difficulty": "medium",
+    "question_en": "What is the minimum number of two-input NAND gates required to implement a two-input AND gate?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "2",
+        "hi": null
+      },
+      {
+        "en": "1",
+        "hi": null
+      },
+      {
+        "en": "3",
+        "hi": null
+      },
+      {
+        "en": "4",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "NAND gives (AB)'. Passing that through a second NAND with its inputs tied together inverts it, producing AB. Hence two NAND gates. A two-input OR needs three NANDs and XOR needs four.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Logic gates",
+    "difficulty": "hard",
+    "question_en": "An AND gate whose two inputs are both inverted (a 'bubbled' AND gate) is logically equivalent to:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "A NOR gate",
+        "hi": null
+      },
+      {
+        "en": "A NAND gate",
+        "hi": null
+      },
+      {
+        "en": "An OR gate",
+        "hi": null
+      },
+      {
+        "en": "An XNOR gate",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The output is A'·B', which by De Morgan's theorem equals (A + B)', the NOR function. Similarly a bubbled OR gate (A' + B') equals a NAND gate. This equivalence is the basis of converting AND-OR networks into NAND-NAND or NOR-NOR form.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Logic gates",
+    "difficulty": "medium",
+    "question_en": "The two inputs of a NOR gate are A and its complement A'. The output of the gate is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "Always 0",
+        "hi": null
+      },
+      {
+        "en": "Always 1",
+        "hi": null
+      },
+      {
+        "en": "Equal to A",
+        "hi": null
+      },
+      {
+        "en": "Equal to A'",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "NOR output = (A + A')' = (1)' = 0, because one of A or A' is always 1. The same inputs on a NAND gate would give (A·A')' = 0' = 1.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Karnaugh maps",
+    "difficulty": "easy",
+    "question_en": "How many cells does a Karnaugh map for a four-variable Boolean function contain?",
+    "question_hi": "चार चर वाले बूलियन फलन के कार्नो मैप (K-map) में कितने सेल होते हैं?",
+    "options": [
+      {
+        "en": "16",
+        "hi": "16"
+      },
+      {
+        "en": "8",
+        "hi": "8"
+      },
+      {
+        "en": "4",
+        "hi": "4"
+      },
+      {
+        "en": "32",
+        "hi": "32"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "A K-map has one cell per minterm, and n variables give 2^n minterms: 4 cells for 2 variables, 8 for 3 and 16 for 4 (arranged 4 × 4).",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Karnaugh maps",
+    "difficulty": "medium",
+    "question_en": "The function F(A, B, C) = Σm(1, 3, 5, 7) simplifies, using a K-map, to:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "C",
+        "hi": null
+      },
+      {
+        "en": "A",
+        "hi": null
+      },
+      {
+        "en": "B + C",
+        "hi": null
+      },
+      {
+        "en": "AC",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Minterms 1, 3, 5 and 7 are 001, 011, 101 and 111: every combination of A and B with C = 1. On the map they form one group of four cells that eliminates A and B, leaving F = C.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Karnaugh maps",
+    "difficulty": "hard",
+    "question_en": "Using a four-variable K-map, the minimal expression for F(A, B, C, D) = Σm(0, 2, 8, 10) is:",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "B'D'",
+        "hi": null
+      },
+      {
+        "en": "A'D'",
+        "hi": null
+      },
+      {
+        "en": "B'C'",
+        "hi": null
+      },
+      {
+        "en": "A'B' + AB'",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The minterms are 0000, 0010, 1000 and 1010. They occupy the four corner cells of the map, which are adjacent because the map wraps around. In all four, B = 0 and D = 0 while A and C vary, so the group gives B'D'.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Karnaugh maps",
+    "difficulty": "medium",
+    "question_en": "In a K-map, grouping eight adjacent 1s in a four-variable map eliminates how many variables from the resulting product term?",
+    "question_hi": null,
+    "options": [
+      {
+        "en": "3",
+        "hi": null
+      },
+      {
+        "en": "1",
+        "hi": null
+      },
+      {
+        "en": "2",
+        "hi": null
+      },
+      {
+        "en": "4",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "A group of 2^k cells eliminates k variables: a pair removes one, a quad removes two and an octet removes three. In a 4-variable map an octet therefore leaves a single-literal term; a group of all 16 cells would make F = 1.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Karnaugh maps",
+    "difficulty": "medium",
+    "question_en": "Using a K-map, the minimal form of F(A, B, C) = Σm(0, 2, 6) + d(4), where d denotes a don't-care, is:",
+    "question_hi": "K-मैप द्वारा F(A, B, C) = Σm(0, 2, 6) + d(4) (d = डोंट-केयर) का न्यूनतम रूप क्या है?",
+    "options": [
+      {
+        "en": "C'",
+        "hi": null
+      },
+      {
+        "en": "A'C'",
+        "hi": null
+      },
+      {
+        "en": "BC'",
+        "hi": null
+      },
+      {
+        "en": "A'B'",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Taking the don't-care m4 as 1 gives cells 0, 2, 4, 6 — all four cells where C = 0 — forming a quad, so F = C'. Without using the don't-care the best cover would be A'C' + BC', which is not minimal.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Karnaugh maps",
+    "difficulty": "easy",
+    "question_en": "The rows and columns of a Karnaugh map are labelled in Gray-code order (00, 01, 11, 10) so that:",
+    "question_hi": "कार्नो मैप की पंक्तियाँ और स्तंभ ग्रे कोड क्रम (00, 01, 11, 10) में क्यों लिखे जाते हैं?",
+    "options": [
+      {
+        "en": "Adjacent cells differ in only one variable",
+        "hi": null
+      },
+      {
+        "en": "The map has fewer cells to fill",
+        "hi": null
+      },
+      {
+        "en": "Don't-care conditions can be avoided",
+        "hi": null
+      },
+      {
+        "en": "Minterms appear in increasing order",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "In Gray-code ordering consecutive labels differ in exactly one bit, so physically adjacent cells differ in one variable and can be grouped to eliminate it. That is why cells 3 and 2 sit next to each other, not in numeric order.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Combinational circuits",
+    "difficulty": "easy",
+    "question_en": "For a half adder with inputs A and B, the Sum and Carry outputs are respectively:",
+    "question_hi": "इनपुट A और B वाले हाफ ऐडर के Sum और Carry आउटपुट क्रमशः क्या हैं?",
+    "options": [
+      {
+        "en": "A ⊕ B and A·B",
+        "hi": null
+      },
+      {
+        "en": "A·B and A ⊕ B",
+        "hi": null
+      },
+      {
+        "en": "A + B and A·B",
+        "hi": null
+      },
+      {
+        "en": "A ⊙ B and A + B",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "A half adder adds two bits: Sum is 1 when exactly one input is 1 (XOR) and Carry is 1 only when both are 1 (AND). Swapping them (option 2) is the common slip.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Combinational circuits",
+    "difficulty": "medium",
+    "question_en": "In a full adder with inputs A, B and carry-in Cin, the carry-out Cout can be written as:",
+    "question_hi": "इनपुट A, B और Cin वाले फुल ऐडर का कैरी-आउट Cout किस प्रकार लिखा जा सकता है?",
+    "options": [
+      {
+        "en": "AB + Cin(A ⊕ B)",
+        "hi": null
+      },
+      {
+        "en": "A ⊕ B ⊕ Cin",
+        "hi": null
+      },
+      {
+        "en": "AB + A'Cin",
+        "hi": null
+      },
+      {
+        "en": "(A + B)·Cin'",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Cout = AB + BCin + ACin, which is equivalently AB + Cin(A ⊕ B) — the form obtained when a full adder is built from two half adders. A ⊕ B ⊕ Cin is the Sum output, not the carry.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Combinational circuits",
+    "difficulty": "medium",
+    "question_en": "A full adder can be constructed using:",
+    "question_hi": "फुल ऐडर का निर्माण किससे किया जा सकता है?",
+    "options": [
+      {
+        "en": "Two half adders and one OR gate",
+        "hi": null
+      },
+      {
+        "en": "Two half adders and one AND gate",
+        "hi": null
+      },
+      {
+        "en": "Three half adders only",
+        "hi": null
+      },
+      {
+        "en": "One half adder and one XOR gate",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The first half adder adds A and B; the second adds that sum to Cin giving the final Sum. The two partial carries are combined with an OR gate to give Cout (they can never both be 1).",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Combinational circuits",
+    "difficulty": "easy",
+    "question_en": "How many select lines are required for an 8-to-1 multiplexer?",
+    "question_hi": "8-से-1 मल्टीप्लेक्सर के लिए कितनी सेलेक्ट लाइनें आवश्यक हैं?",
+    "options": [
+      {
+        "en": "2",
+        "hi": null
+      },
+      {
+        "en": "3",
+        "hi": null
+      },
+      {
+        "en": "4",
+        "hi": null
+      },
+      {
+        "en": "8",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "A MUX with 2^n data inputs needs n select lines; 8 = 2^3, so 3 select lines choose one of the 8 inputs. 8 is the number of data inputs, not select lines.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Combinational circuits",
+    "difficulty": "hard",
+    "question_en": "What is the minimum number of 2-to-4 decoders (each with an enable input) needed to build a 4-to-16 decoder?",
+    "question_hi": "4-से-16 डिकोडर बनाने के लिए एनेबल इनपुट वाले न्यूनतम कितने 2-से-4 डिकोडर चाहिए?",
+    "options": [
+      {
+        "en": "4",
+        "hi": null
+      },
+      {
+        "en": "5",
+        "hi": null
+      },
+      {
+        "en": "6",
+        "hi": null
+      },
+      {
+        "en": "8",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Four 2-to-4 decoders produce the 16 outputs using the two low-order inputs; a fifth 2-to-4 decoder driven by the two high-order inputs enables exactly one of them. Hence 4 + 1 = 5.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Combinational circuits",
+    "difficulty": "medium",
+    "question_en": "An 8-to-3 priority encoder gives highest priority to input D7. If only inputs D5 and D2 are 1, the output code is:",
+    "question_hi": "8-से-3 प्रायोरिटी एनकोडर में D7 को सर्वोच्च प्राथमिकता है। यदि केवल D5 और D2 इनपुट 1 हैं, तो आउटपुट कोड क्या होगा?",
+    "options": [
+      {
+        "en": "010",
+        "hi": null
+      },
+      {
+        "en": "111",
+        "hi": null
+      },
+      {
+        "en": "101",
+        "hi": null
+      },
+      {
+        "en": "011",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "A priority encoder outputs the binary code of the highest-priority active input; D5 outranks D2, so the output is 5 = 101. 010 would be the code for D2.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Combinational circuits",
+    "difficulty": "easy",
+    "question_en": "In a 4-to-1 multiplexer with data inputs I0–I3 and select lines S1 S0, which input reaches the output when S1 S0 = 10?",
+    "question_hi": "डेटा इनपुट I0–I3 और सेलेक्ट लाइन S1 S0 वाले 4-से-1 मल्टीप्लेक्सर में S1 S0 = 10 होने पर कौन-सा इनपुट आउटपुट पर जाता है?",
+    "options": [
+      {
+        "en": "I0",
+        "hi": null
+      },
+      {
+        "en": "I1",
+        "hi": null
+      },
+      {
+        "en": "I2",
+        "hi": null
+      },
+      {
+        "en": "I3",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "The select lines form the binary index of the chosen input: S1 S0 = 10 = 2, so I2 is routed to the output.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Combinational circuits",
+    "difficulty": "hard",
+    "question_en": "A 4-to-1 MUX has select inputs S1 = A and S0 = B, with data inputs I0 = 0, I1 = C, I2 = C' and I3 = 1. The function it realises is:",
+    "question_hi": "एक 4-से-1 MUX में S1 = A, S0 = B तथा डेटा इनपुट I0 = 0, I1 = C, I2 = C', I3 = 1 हैं। यह कौन-सा फलन बनाता है?",
+    "options": [
+      {
+        "en": "Σm(1, 2, 6, 7)",
+        "hi": null
+      },
+      {
+        "en": "Σm(3, 4, 6, 7)",
+        "hi": null
+      },
+      {
+        "en": "Σm(2, 5, 6, 7)",
+        "hi": null
+      },
+      {
+        "en": "Σm(3, 5, 6, 7)",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "F = A'B'·0 + A'B·C + AB'·C' + AB·1 = A'BC + AB'C' + AB. These give minterms 011 = 3, 100 = 4, 110 = 6 and 111 = 7.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Combinational circuits",
+    "difficulty": "medium",
+    "question_en": "The main drawback of an n-bit ripple-carry adder, which a carry look-ahead adder overcomes, is:",
+    "question_hi": "n-बिट रिपल-कैरी ऐडर की मुख्य कमी, जिसे कैरी लुक-अहेड ऐडर दूर करता है, क्या है?",
+    "options": [
+      {
+        "en": "Carry propagation delay grows with n",
+        "hi": null
+      },
+      {
+        "en": "It cannot add negative numbers",
+        "hi": null
+      },
+      {
+        "en": "It needs 2n full adders",
+        "hi": null
+      },
+      {
+        "en": "It produces wrong sums for odd n",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Each full adder must wait for the carry from the previous stage, so delay increases linearly with the number of bits. A carry look-ahead adder computes carries in parallel from generate/propagate terms. A ripple adder uses n (not 2n) full adders and handles 2's complement numbers fine.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Sequential circuits",
+    "difficulty": "easy",
+    "question_en": "A circuit whose output depends on the present inputs as well as on its past state (stored in memory elements) is called a:",
+    "question_hi": "वह परिपथ जिसका आउटपुट वर्तमान इनपुट के साथ-साथ पिछली अवस्था पर भी निर्भर करता है, क्या कहलाता है?",
+    "options": [
+      {
+        "en": "Combinational circuit",
+        "hi": null
+      },
+      {
+        "en": "Sequential circuit",
+        "hi": null
+      },
+      {
+        "en": "Multiplexer circuit",
+        "hi": null
+      },
+      {
+        "en": "Decoder circuit",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Sequential circuits (flip-flops, counters, registers) contain memory, so the output depends on the input history. Combinational circuits such as MUXes and decoders depend only on present inputs.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Sequential circuits",
+    "difficulty": "easy",
+    "question_en": "In an SR latch built from NOR gates, which input combination is invalid (forbidden)?",
+    "question_hi": "NOR गेट से बने SR लैच में कौन-सा इनपुट संयोजन अमान्य (वर्जित) है?",
+    "options": [
+      {
+        "en": "S = 0, R = 0",
+        "hi": null
+      },
+      {
+        "en": "S = 0, R = 1",
+        "hi": null
+      },
+      {
+        "en": "S = 1, R = 0",
+        "hi": null
+      },
+      {
+        "en": "S = 1, R = 1",
+        "hi": null
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "S = R = 1 forces both Q and Q' to 0, violating Q' being the complement of Q, and the next state is unpredictable when the inputs return to 0. S = R = 0 is simply the hold (no change) state.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Sequential circuits",
+    "difficulty": "medium",
+    "question_en": "When both inputs of a clocked JK flip-flop are held at 1 (J = K = 1), on each active clock edge the flip-flop:",
+    "question_hi": "क्लॉक्ड JK फ्लिप-फ्लॉप के दोनों इनपुट 1 (J = K = 1) होने पर प्रत्येक सक्रिय क्लॉक एज पर फ्लिप-फ्लॉप क्या करता है?",
+    "options": [
+      {
+        "en": "Holds its previous state",
+        "hi": null
+      },
+      {
+        "en": "Resets to 0",
+        "hi": null
+      },
+      {
+        "en": "Toggles its state",
+        "hi": null
+      },
+      {
+        "en": "Sets to 1",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "For J = K = 1 the JK flip-flop complements its output (Q+ = Q'), removing the invalid state of the SR flip-flop. J = K = 0 is the hold condition.",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Sequential circuits",
+    "difficulty": "easy",
+    "question_en": "The characteristic equation of a D flip-flop is:",
+    "question_hi": "D फ्लिप-फ्लॉप का अभिलाक्षणिक समीकरण क्या है?",
+    "options": [
+      {
+        "en": "Q(n+1) = D",
+        "hi": null
+      },
+      {
+        "en": "Q(n+1) = D ⊕ Q",
+        "hi": null
+      },
+      {
+        "en": "Q(n+1) = D'",
+        "hi": null
+      },
+      {
+        "en": "Q(n+1) = DQ'",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "A D (data/delay) flip-flop simply copies its input to the output at the clock edge, so Q(n+1) = D. D ⊕ Q is the T flip-flop equation with T replaced by D.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Sequential circuits",
+    "difficulty": "medium",
+    "question_en": "A T flip-flop has its T input permanently tied to 1 and is driven by a 10 kHz clock. The frequency of its output Q is:",
+    "question_hi": "एक T फ्लिप-फ्लॉप का T इनपुट स्थायी रूप से 1 है और उसे 10 kHz क्लॉक दी जाती है। आउटपुट Q की आवृत्ति क्या होगी?",
+    "options": [
+      {
+        "en": "20 kHz",
+        "hi": null
+      },
+      {
+        "en": "10 kHz",
+        "hi": null
+      },
+      {
+        "en": "5 kHz",
+        "hi": null
+      },
+      {
+        "en": "2.5 kHz",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "With T = 1 the output toggles on every clock edge, so one full output cycle takes two clock cycles; the frequency is divided by 2: 10/2 = 5 kHz. 2.5 kHz would need two cascaded toggling stages.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Sequential circuits",
+    "difficulty": "hard",
+    "question_en": "The race-around condition in a level-triggered JK flip-flop occurs when:",
+    "question_hi": "लेवल-ट्रिगर्ड JK फ्लिप-फ्लॉप में रेस-अराउंड स्थिति कब उत्पन्न होती है?",
+    "options": [
+      {
+        "en": "J = K = 0 and the clock is low",
+        "hi": null
+      },
+      {
+        "en": "J = K = 1 and the clock pulse is wider than the propagation delay",
+        "hi": null
+      },
+      {
+        "en": "J = 1, K = 0 and the clock is very fast",
+        "hi": null
+      },
+      {
+        "en": "J = K = 1 and the clock pulse is shorter than the propagation delay",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "With J = K = 1 the output keeps toggling as long as the clock stays high; if the pulse width exceeds the flip-flop's propagation delay it toggles several times and the final state is uncertain. Master–slave or edge-triggered designs remove it.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Sequential circuits",
+    "difficulty": "medium",
+    "question_en": "What is the minimum number of flip-flops required to build a mod-10 (decade) counter?",
+    "question_hi": "मॉड-10 (डिकेड) काउंटर बनाने के लिए न्यूनतम कितने फ्लिप-फ्लॉप चाहिए?",
+    "options": [
+      {
+        "en": "3",
+        "hi": null
+      },
+      {
+        "en": "4",
+        "hi": null
+      },
+      {
+        "en": "5",
+        "hi": null
+      },
+      {
+        "en": "10",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "n flip-flops give 2^n states; 2^3 = 8 is less than 10 but 2^4 = 16 is enough, so 4 flip-flops are needed (the counter is reset after 1001). 10 would be the requirement of a ring counter, not a binary counter.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Sequential circuits",
+    "difficulty": "hard",
+    "question_en": "How many distinct states does a 4-bit Johnson (twisted-ring) counter pass through?",
+    "question_hi": "4-बिट जॉनसन (ट्विस्टेड-रिंग) काउंटर कितनी भिन्न अवस्थाओं से गुजरता है?",
+    "options": [
+      {
+        "en": "4",
+        "hi": null
+      },
+      {
+        "en": "8",
+        "hi": null
+      },
+      {
+        "en": "15",
+        "hi": null
+      },
+      {
+        "en": "16",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "A Johnson counter feeds back the complement of the last flip-flop, giving 2n states — 8 for n = 4. A simple ring counter with 4 flip-flops has only n = 4 states, while a binary counter has 16.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Sequential circuits",
+    "difficulty": "medium",
+    "question_en": "An 8-bit shift register holds 00010110. After one shift-left operation (with 0 entering from the right), its contents and decimal value are:",
+    "question_hi": "एक 8-बिट शिफ्ट रजिस्टर में 00010110 है। एक बार बाएँ शिफ्ट करने (दाईं ओर से 0 प्रवेश) के बाद उसकी सामग्री और दशमलव मान क्या होंगे?",
+    "options": [
+      {
+        "en": "00101100 = 44",
+        "hi": null
+      },
+      {
+        "en": "00001011 = 11",
+        "hi": null
+      },
+      {
+        "en": "00101101 = 45",
+        "hi": null
+      },
+      {
+        "en": "00110110 = 54",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Shifting left by one bit multiplies an unsigned number by 2: 00010110 = 22 becomes 00101100 = 44. A right shift would give 00001011 = 11 (division by 2).",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Sequential circuits",
+    "difficulty": "hard",
+    "question_en": "According to the excitation table of a JK flip-flop, to make the output change from Q = 0 to Q = 1, the required inputs are:",
+    "question_hi": "JK फ्लिप-फ्लॉप की एक्साइटेशन तालिका के अनुसार आउटपुट को Q = 0 से Q = 1 करने के लिए आवश्यक इनपुट क्या हैं?",
+    "options": [
+      {
+        "en": "J = 1, K = 0 only",
+        "hi": null
+      },
+      {
+        "en": "J = X, K = 1",
+        "hi": null
+      },
+      {
+        "en": "J = 1, K = X",
+        "hi": null
+      },
+      {
+        "en": "J = 0, K = X",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "A 0→1 transition is achieved either by setting (J = 1, K = 0) or toggling (J = 1, K = 1), so K is a don't-care: J = 1, K = X. J = 0, K = X is the entry for 0→0.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Codes",
+    "difficulty": "medium",
+    "question_en": "The Gray code equivalent of the binary number 1011 is:",
+    "question_hi": "बाइनरी संख्या 1011 का ग्रे कोड क्या है?",
+    "options": [
+      {
+        "en": "1101",
+        "hi": null
+      },
+      {
+        "en": "1110",
+        "hi": null
+      },
+      {
+        "en": "1001",
+        "hi": null
+      },
+      {
+        "en": "0110",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Keep the MSB (1), then XOR each pair of adjacent binary bits: 1⊕0 = 1, 0⊕1 = 1, 1⊕1 = 0, giving 1110. 1101 is the result of converting 1011 the wrong way (Gray→binary).",
+    "explanation_hi": null,
+    "expected": true
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Codes",
+    "difficulty": "medium",
+    "question_en": "The Gray code 1101 corresponds to which binary number?",
+    "question_hi": "ग्रे कोड 1101 किस बाइनरी संख्या के संगत है?",
+    "options": [
+      {
+        "en": "1011",
+        "hi": null
+      },
+      {
+        "en": "1001",
+        "hi": null
+      },
+      {
+        "en": "1110",
+        "hi": null
+      },
+      {
+        "en": "0111",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Binary MSB = Gray MSB = 1; each next binary bit = previous binary bit ⊕ current Gray bit: 1⊕1 = 0, 0⊕0 = 0, 0⊕1 = 1, giving 1001. Check: binary 1001 → Gray 1, 1⊕0, 0⊕0, 0⊕1 = 1101.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Codes",
+    "difficulty": "easy",
+    "question_en": "The decimal number 59 in BCD (8421 code) is:",
+    "question_hi": "दशमलव संख्या 59 का BCD (8421 कोड) रूप क्या है?",
+    "options": [
+      {
+        "en": "0011 1011",
+        "hi": null
+      },
+      {
+        "en": "0101 1001",
+        "hi": null
+      },
+      {
+        "en": "0111 1011",
+        "hi": null
+      },
+      {
+        "en": "0101 1010",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "BCD encodes each decimal digit separately in 4 bits: 5 = 0101 and 9 = 1001, so 59 = 0101 1001. 0011 1011 is the pure binary value of 59 (111011) padded to 8 bits.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Codes",
+    "difficulty": "medium",
+    "question_en": "The Excess-3 code of the decimal number 47 is:",
+    "question_hi": "दशमलव संख्या 47 का एक्सेस-3 कोड क्या है?",
+    "options": [
+      {
+        "en": "0100 0111",
+        "hi": null
+      },
+      {
+        "en": "0111 1010",
+        "hi": null
+      },
+      {
+        "en": "0111 1011",
+        "hi": null
+      },
+      {
+        "en": "1000 1010",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Add 3 to each decimal digit and write it in 4-bit binary: 4 + 3 = 7 = 0111 and 7 + 3 = 10 = 1010, giving 0111 1010. 0100 0111 is plain BCD of 47.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Codes",
+    "difficulty": "easy",
+    "question_en": "Which of the following 4-bit groups is NOT a valid BCD digit?",
+    "question_hi": "निम्नलिखित में से कौन-सा 4-बिट समूह मान्य BCD अंक नहीं है?",
+    "options": [
+      {
+        "en": "1001",
+        "hi": null
+      },
+      {
+        "en": "0111",
+        "hi": null
+      },
+      {
+        "en": "1100",
+        "hi": null
+      },
+      {
+        "en": "1000",
+        "hi": null
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "BCD uses only 0000–1001 for the digits 0–9; the six patterns 1010–1111 are invalid. 1100 (decimal 12) is therefore not a BCD digit, while 1001 = 9 and 1000 = 8 are valid.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Codes",
+    "difficulty": "easy",
+    "question_en": "In the ASCII code, the uppercase letter 'A' has the decimal value 65. What is the decimal ASCII value of the lowercase letter 'a'?",
+    "question_hi": "ASCII कोड में बड़े अक्षर 'A' का दशमलव मान 65 है। छोटे अक्षर 'a' का दशमलव ASCII मान क्या है?",
+    "options": [
+      {
+        "en": "91",
+        "hi": null
+      },
+      {
+        "en": "97",
+        "hi": null
+      },
+      {
+        "en": "96",
+        "hi": null
+      },
+      {
+        "en": "129",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Lowercase letters are 32 positions after their uppercase forms in ASCII: 65 + 32 = 97. Standard ASCII is a 7-bit code (0–127), so 129 is impossible.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Codes",
+    "difficulty": "medium",
+    "question_en": "Which statement about Unicode and its UTF-8 encoding is correct?",
+    "question_hi": "यूनिकोड और उसकी UTF-8 एन्कोडिंग के बारे में कौन-सा कथन सही है?",
+    "options": [
+      {
+        "en": "UTF-8 uses a fixed 2 bytes for every character",
+        "hi": null
+      },
+      {
+        "en": "UTF-8 uses 1 to 4 bytes and keeps ASCII characters as 1 byte",
+        "hi": null
+      },
+      {
+        "en": "Unicode cannot represent Devanagari script",
+        "hi": null
+      },
+      {
+        "en": "UTF-8 is a 7-bit code identical to ASCII",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "UTF-8 is a variable-length encoding of Unicode using 1–4 bytes; the first 128 code points (ASCII) take one byte, so ASCII text is valid UTF-8. Unicode covers scripts such as Devanagari (U+0900–U+097F).",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Codes",
+    "difficulty": "medium",
+    "question_en": "An even-parity bit is attached to the 7-bit data 1100100 before transmission. The parity bit is:",
+    "question_hi": "7-बिट डेटा 1100100 के साथ ट्रांसमिशन से पहले सम-पैरिटी (even parity) बिट जोड़ा जाता है। पैरिटी बिट क्या होगा?",
+    "options": [
+      {
+        "en": "0",
+        "hi": null
+      },
+      {
+        "en": "1",
+        "hi": null
+      },
+      {
+        "en": "Either 0 or 1",
+        "hi": null
+      },
+      {
+        "en": "Parity cannot be applied to 7 bits",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The data contains three 1s (an odd count). For even parity the total number of 1s, including the parity bit, must be even, so the parity bit is 1. Odd parity would give 0.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Storage units",
+    "difficulty": "easy",
+    "question_en": "A group of 4 bits is called a:",
+    "question_hi": "4 बिट के समूह को क्या कहते हैं?",
+    "options": [
+      {
+        "en": "Byte",
+        "hi": null
+      },
+      {
+        "en": "Nibble",
+        "hi": null
+      },
+      {
+        "en": "Word",
+        "hi": null
+      },
+      {
+        "en": "Crumb",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "4 bits form a nibble (half a byte) and 8 bits form a byte. A word is machine-dependent (e.g. 32 or 64 bits).",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Storage units",
+    "difficulty": "easy",
+    "question_en": "Which of the following lists storage units in increasing order of size?",
+    "question_hi": "निम्नलिखित में से कौन-सा विकल्प भंडारण इकाइयों को बढ़ते क्रम में दर्शाता है?",
+    "options": [
+      {
+        "en": "GB < TB < PB < EB",
+        "hi": null
+      },
+      {
+        "en": "GB < PB < TB < EB",
+        "hi": null
+      },
+      {
+        "en": "TB < GB < EB < PB",
+        "hi": null
+      },
+      {
+        "en": "MB < GB < EB < TB",
+        "hi": null
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Each step is 1024× (binary) larger: KB → MB → GB → TB → PB → EB → ZB → YB. So GB < TB < PB < EB.",
+    "explanation_hi": null,
+    "expected": false
+  },
+  {
+    "chapter_key": "cs_fund",
+    "subtopic": "Storage units",
+    "difficulty": "medium",
+    "question_en": "According to IEC binary prefixes, which statement is correct?",
+    "question_hi": "IEC बाइनरी उपसर्गों के अनुसार कौन-सा कथन सही है?",
+    "options": [
+      {
+        "en": "1 KiB = 1000 bytes and 1 kB = 1024 bytes",
+        "hi": null
+      },
+      {
+        "en": "1 KiB = 1024 bytes and 1 kB = 1000 bytes",
+        "hi": null
+      },
+      {
+        "en": "1 KiB = 1 kB = 1024 bytes",
+        "hi": null
+      },
+      {
+        "en": "1 KiB = 1024 bits",
+        "hi": null
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The IEC introduced kibi (Ki), mebi (Mi), gibi (Gi) for powers of 2, so 1 KiB = 2^10 = 1024 bytes, while SI kilo means 1000, so 1 kB = 1000 bytes. Many exam questions still use KB = 1024 bytes in the traditional sense.",
+    "explanation_hi": null,
+    "expected": false
+  }
+]

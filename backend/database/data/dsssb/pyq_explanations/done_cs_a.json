@@ -1,0 +1,1248 @@
+{
+ "630680256170": {
+  "explanation_en": "Java's class loaders form a parent-child chain: Bootstrap (also called Primordial) is the parent of the Extension loader, and Extension is the parent of the System (Application) class loader. The System ClassLoader sits at the bottom of the built-in chain, so it has no child loaders of its own. Bootstrap/Primordial is the root, so it does have a child (Extension).",
+  "chapter_key": "cs_prog",
+  "subtopic": "Java ClassLoader hierarchy",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256195": {
+  "explanation_en": "An information system is a set of interrelated components (people, hardware, software, data, procedures) that collect, process, store and distribute information to support decision-making and control in an organisation. Information technology is only the hardware/software part of such a system, not the complete set of components. The 'mini/max model' options are not standard terms.",
+  "chapter_key": "cs_it",
+  "subtopic": "Information system definition",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256184": {
+  "explanation_en": "An ASP.NET server control is written as <asp:ControlType ID=\"...\" runat=\"server\" .../>. The runat=\"server\" attribute tells ASP.NET to process the control on the server instead of sending it to the browser as plain HTML. 'runin', 'runas' and 'run' are not valid attributes.",
+  "chapter_key": "cs_web",
+  "subtopic": "ASP.NET server control syntax",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256153": {
+  "explanation_en": "The mask 255.255.240.0 has 20 one-bits (8+8+4), which leaves 32 - 20 = 12 host bits. Usable hosts = 2^12 - 2 = 4096 - 2 = 4094, because the all-zeros (network) and all-ones (broadcast) addresses cannot be given to hosts. 2048 or 1024 would come from using too few host bits.",
+  "chapter_key": "cs_net",
+  "subtopic": "Subnetting - host count",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256189": {
+  "explanation_en": "The standard ways of handling a risk are avoidance, transfer (for example insurance or outsourcing), mitigation/reduction and acceptance. 'Risk generation' is not a risk management method; creating risk is the opposite of managing it. Acceptance and avoidance are both valid strategies.",
+  "chapter_key": "cs_se",
+  "subtopic": "Risk management strategies",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256196": {
+  "explanation_en": "A Decision Support System (DSS) is an interactive computer system that analyses data and models to help managers make better decisions. Its main job is to improve decision-making, not marketing, delegation or resource utilisation, even though better decisions can help those areas too.",
+  "chapter_key": "cs_it",
+  "subtopic": "Decision Support System",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256168": {
+  "explanation_en": "CMM stands for Capability Maturity Model, developed by SEI (Carnegie Mellon). It rates an organisation's software process on five maturity levels: Initial, Repeatable, Defined, Managed and Optimizing. The other expansions are made-up combinations of these words.",
+  "chapter_key": "cs_se",
+  "subtopic": "CMM",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256175": {
+  "explanation_en": "Burst time is the CPU time a process needs to finish its execution, not the time it takes to start. So statement 1 is false. The other definitions are correct: TAT = Completion time - Arrival time, Completion time is when the process finishes, and Arrival time is when it enters the ready queue.",
+  "chapter_key": "cs_os",
+  "subtopic": "CPU scheduling terms",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256176": {
+  "explanation_en": "A page fault happens when a program refers to a page that is not currently in main memory, so the OS must bring it in from disk. Fetching the page is the OS's response to the fault, not the fault itself. It is a normal event, not an error that always occurs.",
+  "chapter_key": "cs_os",
+  "subtopic": "Page fault",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256173": {
+  "explanation_en": "A hyperlink is made with the anchor tag and its href attribute, for example <a href=\"page.html\">Link</a>. href (hypertext reference) holds the destination URL. 'url', 'link' and 'path' are not attributes of the <a> tag.",
+  "chapter_key": "cs_web",
+  "subtopic": "HTML anchor href",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256156": {
+  "explanation_en": "The physical address space is 32 GB = 2^35 bytes, and since a word is 8 bits each byte is addressable, so the address is 35 bits. Block = 1 KB = 2^10, so offset = 10 bits. Lines = 32 KB / 1 KB = 32, and with 4-way sets there are 32/4 = 8 sets, so set index = 3 bits. Tag = 35 - 10 - 3 = 22 bits.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Cache mapping - tag bits",
+  "difficulty": "hard",
+  "key_doubt": false
+ },
+ "630680256142": {
+  "explanation_en": "For a spring-mass system T = 2*pi*sqrt(m/k), and the static stretch is x = mg/k. So x = g*T^2/(4*pi^2) = 9.8 x 0.36 / 39.48 = about 0.089 m. When the body is removed the spring shortens by this stretch. The mass value is not needed because it cancels out.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Physics - SHM spring (non-CS)",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256178": {
+  "explanation_en": "Price elasticity of demand measures the degree (how much) quantity demanded responds to a change in price, as % change in quantity divided by % change in price. It tells the strength of the relationship, not an 'angle' or 'level'.",
+  "chapter_key": "cs_it",
+  "subtopic": "Economics - elasticity of demand (non-CS)",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256137": {
+  "explanation_en": "A path graph on n vertices is v1-v2-...-vn. The two end vertices have degree 1 and every inner vertex has degree 2, so n - 2 vertices have degree 2. The answer '2' is the number of vertices of degree 1, not degree 2.",
+  "chapter_key": "cs_dsa",
+  "subtopic": "Graph theory - path graph degrees",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256128": {
+  "explanation_en": "A key property of the arithmetic mean is that the sum of deviations from it is zero: sum(x - mean) = sum(x) - n*mean = 0. The median minimises the sum of absolute deviations instead, and the geometric and harmonic means do not have this property.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Statistics - arithmetic mean property",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256127": {
+  "explanation_en": "The plane x/a + y/b + z/c = 1 cuts the axes at a, b and c, forming a tetrahedron with three perpendicular edges a, b, c at the origin. Volume = (1/3) x base area x height = (1/3)(ab/2)c = abc/6. abc/2 would be a triangular prism, not a tetrahedron.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Maths - triple integral volume",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256151": {
+  "explanation_en": "Draw the precedence graph. In S1, R1(B) comes before W2(B), giving T1->T2, and R2(A) comes before W1(A), giving T2->T1. That is a cycle, so S1 is not conflict serializable. In S2, R2(A) before W1(A) and W2(B) before R1(B) both give T2->T1 and there is no edge back, so S2 is equivalent to the serial order T2, T1.",
+  "chapter_key": "cs_dbms",
+  "subtopic": "Conflict serializability",
+  "difficulty": "hard",
+  "key_doubt": false
+ },
+ "630680256161": {
+  "explanation_en": "In jQuery, $(selector).slideDown(speed) shows a hidden element with a sliding-down animation, and slideUp()/slideToggle() are its partners. moveDown(), moveBelow() and slideBelow() are not jQuery methods.",
+  "chapter_key": "cs_web",
+  "subtopic": "jQuery effects",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256163": {
+  "explanation_en": "In the double entry system every transaction affects two accounts: one is debited and the other is credited with the same amount. The option written as 'Debt and Credit' means Debit and Credit. Right and left only describe the sides of a ledger account, not the entries.",
+  "chapter_key": "cs_it",
+  "subtopic": "Accounting - double entry (non-CS)",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256198": {
+  "explanation_en": "In GSM, the HLR is the permanent database of subscribers and the VLR holds temporary data for mobiles currently in its area. When a mobile station moves into a new area, the VLR updates the HLR about the new location. So the VLR is responsible for informing the HLR. Option 4 reverses the roles.",
+  "chapter_key": "cs_net",
+  "subtopic": "GSM - HLR and VLR",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256169": {
+  "explanation_en": "The Waterfall model is usually described as having a long duration, high risk (errors are found late) and low cost, because it is simple to plan and manage. So 'high cost' is the statement that is NOT true. High cost is a feature of models like Spiral, not Waterfall.",
+  "chapter_key": "cs_se",
+  "subtopic": "Waterfall model characteristics",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256191": {
+  "explanation_en": "For large n: log n < n < n log n < n^2 < n^2 log n < 2^n. Logarithmic grows slowest, polynomial terms grow next (multiplying by log n adds a little), and exponential 2^n eventually beats any polynomial. Only option 3 follows this order.",
+  "chapter_key": "cs_dsa",
+  "subtopic": "Asymptotic growth order",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256188": {
+  "explanation_en": "grep (global regular expression print) searches a file for a pattern and prints the lines that match. Changing case is done by tr, cutting columns by cut, and sending one command's output to another by the pipe (|).",
+  "chapter_key": "cs_os",
+  "subtopic": "Linux grep command",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256200": {
+  "explanation_en": "In computer graphics, the lighting (illumination) at a point depends on the light source, the surface properties (normal, reflectivity) and the position of the observer (for specular highlights). The rendering algorithm only decides how that lighting is computed and drawn, so it is not a lighting parameter.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Computer graphics - illumination",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256212": {
+  "explanation_en": "With step h, delta e^(ax+b) = e^(a(x+h)+b) - e^(ax+b) = (e^(ah) - 1)e^(ax+b). Each further application multiplies by the same factor (e^(ah) - 1), so delta^n e^(ax+b) = (e^(ah) - 1)^n e^(ax+b). The exponent stays ax + b, so the options with ax - b are wrong.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Numerical methods - forward difference",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256146": {
+  "explanation_en": "XNOR is the complement of XOR, so replacing one XOR with an XNOR complements the whole expression: A xor (B xnor C) = A xor (B xor C)' = (A xor B xor C)'. So option 4 gives the required function. Note: for an odd number of variables A xnor B xnor C equals A xor B xor C, so options 1 and 3 also simplify to the same function; the paper's key picks option 4 as the standard form.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Boolean algebra - XOR/XNOR",
+  "difficulty": "hard",
+  "key_doubt": false
+ },
+ "630680256149": {
+  "explanation_en": "Start with PQ. P -> RT adds R and T, giving PQRT. R -> PS adds S (Q -> S also adds S), giving PQRST. Now QS -> TU adds U, giving PQRSTU. So the closure contains every attribute and PQ is a superkey. Option 1 stops before using QS -> TU.",
+  "chapter_key": "cs_dbms",
+  "subtopic": "Attribute closure",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256129": {
+  "explanation_en": "With two dice there are 36 outcomes. Sum 5 comes from (1,4),(2,3),(3,2),(4,1) = 4 ways, and sum 9 from (3,6),(4,5),(5,4),(6,3) = 4 ways. P(5 or 9) = 8/36 = 2/9, so P(neither) = 1 - 2/9 = 7/9. 5/9 would come from a counting mistake.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Probability - two dice",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256159": {
+  "explanation_en": "Flow control (for example TCP's sliding window) stops a fast sender from overwhelming a slow receiver. Without it the receiver's buffer would overflow and data would be lost. Encryption gives confidentiality, and addressing and packet switching do not prevent loss.",
+  "chapter_key": "cs_net",
+  "subtopic": "Transport layer flow control",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256158": {
+  "explanation_en": "TCP is a connection-oriented protocol: it sets up a connection with a three-way handshake (SYN, SYN-ACK, ACK) and treats application data as a byte stream. So the statement that it is connection-less is false. UDP is the connection-less transport protocol.",
+  "chapter_key": "cs_net",
+  "subtopic": "TCP features",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256160": {
+  "explanation_en": "In slow start the congestion window grows by 1 MSS for every ACK received. Since a whole window's worth of ACKs arrives in one RTT, the window roughly doubles every round trip time (exponential growth). Option 1 (plus 1 MSS per RTT) describes congestion avoidance, which is linear growth.",
+  "chapter_key": "cs_net",
+  "subtopic": "TCP congestion control - slow start",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256135": {
+  "explanation_en": "As per the classic textbook view, system software (OS, assemblers, drivers) is written in low-level language close to the hardware, while application software is written in high-level languages. So 'system software is written in a high-level language' is the statement that is NOT true here. Option 4 states the textbook view, so it is true.",
+  "chapter_key": "cs_fund",
+  "subtopic": "System vs application software",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256140": {
+  "explanation_en": "Fifth-generation languages solve problems by stating constraints and rules instead of writing step-by-step algorithms, and they are used in AI. Prolog (logic programming) is the standard example. Java and Python are third-generation (high-level procedural/OOP) languages, and COBOL is also 3GL.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Generations of languages",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256126": {
+  "explanation_en": "u = tan^-1(y/x) is a function of y/x only, so it is homogeneous of degree 0. By Euler's theorem, x du/dx + y du/dy = n*u = 0. Directly: du/dx = -y/(x^2+y^2) and du/dy = x/(x^2+y^2), so x(-y) + y(x) = 0. sin 2u comes from a different function (like tan u homogeneous).",
+  "chapter_key": "cs_fund",
+  "subtopic": "Maths - Euler theorem for homogeneous functions",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256211": {
+  "explanation_en": "In a flowchart a small circle is the connector symbol. It joins parts of a flowchart that are far apart or on the same page without drawing long lines. Rectangles show processes, rhombuses (diamonds) show decisions, and parallelograms show input/output.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Flowchart symbols",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256164": {
+  "explanation_en": "Working capital (current assets minus current liabilities) is the money a firm needs for daily operations such as wages, raw material and bills. Fixed capital is invested in long-term assets like land and machinery, so it is not used for day-to-day expenses.",
+  "chapter_key": "cs_it",
+  "subtopic": "Business - working capital (non-CS)",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256177": {
+  "explanation_en": "SSTF always serves the request closest to the current head position, which reduces total head movement. So average response (seek) time decreases and throughput increases, which is its advantage. High variance (possible starvation) and the overhead of calculating seek times are its disadvantages.",
+  "chapter_key": "cs_os",
+  "subtopic": "Disk scheduling - SSTF",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256171": {
+  "explanation_en": "Integer and String are class names, not reserved keywords, so they can legally be used as variable names. The code prints the int 24 and then the char 'I' with print (no newline), so the output is 24I. There is no compiler error.",
+  "chapter_key": "cs_prog",
+  "subtopic": "Java identifiers and output",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256157": {
+  "explanation_en": "RSA is an asymmetric (public-key) algorithm that uses a public key to encrypt and a private key to decrypt. AES and DES are symmetric block ciphers and RC4 is a symmetric stream cipher, so they all use the same secret key on both sides.",
+  "chapter_key": "cs_net",
+  "subtopic": "Symmetric vs asymmetric cryptography",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256134": {
+  "explanation_en": "NTFS does support built-in compression of files and folders (and also encryption, ACLs and journaling). So the statement that it does not support compression is false. The other statements are true: it uses small clusters efficiently, has those attributes, and improved on FAT.",
+  "chapter_key": "cs_os",
+  "subtopic": "File systems - NTFS",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256181": {
+  "explanation_en": "The Common Language Runtime (CLR) is the .NET execution engine. It loads managed code, compiles it with the JIT compiler, and handles memory (garbage collection), security and exceptions, acting between the application and the OS. FCL is the class library, and CTS/CLS are type and language rules, not runtimes.",
+  "chapter_key": "cs_prog",
+  "subtopic": ".NET CLR",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256145": {
+  "explanation_en": "Apply distribution of OR over AND: xy + x'z = (xy + x')(xy + z) = (x + x')(y + x')(x + z)(y + z) = (x' + y)(x + z)(y + z). Since x + x' = 1, that factor drops out. The (y + z) term is the consensus term, so the product of sums still equals xy + x'z.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Boolean algebra - distributive law",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256162": {
+  "explanation_en": "In AngularJS, ng-model binds the value of an input/select/textarea to a property on the scope (two-way data binding), so the view and the model stay in sync. ng-app starts the application, and 'ng-model-view', 'ng-model-app' and 'ng-app-model' do not exist.",
+  "chapter_key": "cs_web",
+  "subtopic": "AngularJS directives",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256148": {
+  "explanation_en": "At 10 MHz the clock period is 1/10 MHz = 100 ns. In a ripple counter the delays add up, so the total delay of 10 flip-flops is 10 x tpd. A count is missed when this delay reaches the clock period: 10 x tpd = 100 ns, so tpd = 10 ns. 100 ns would be the total delay, not the delay per flip-flop.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Digital electronics - ripple counter delay",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256197": {
+  "explanation_en": "Office Automation Systems (OAS) help office work through word processing, electronic filing, e-mail, message switching, data storage and voice/data communication. DSS and ESS help managers make decisions, and CRM manages customer relationships.",
+  "chapter_key": "cs_it",
+  "subtopic": "Office Automation System",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256367": {
+  "explanation_en": "CSS transitions (the transition property) change a property's value smoothly over a set duration, for example transition: width 2s. Masking hides parts of an element, web fonts load custom fonts, and text effects style text. None of these animate value changes.",
+  "chapter_key": "cs_web",
+  "subtopic": "CSS transitions",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256357": {
+  "explanation_en": "Virtual memory uses part of the disk together with paging/segmentation so that programs see a memory much larger than the physical RAM. This is an illusion of a very large main memory. Cache memory is a small fast buffer, and the hard disk is the backing store, not the illusion itself.",
+  "chapter_key": "cs_os",
+  "subtopic": "Virtual memory",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256391": {
+  "explanation_en": "A servlet is a Java program that runs inside a web server or servlet container (such as Tomcat), so statement (i) is false. Statement (ii) is true: it receives client requests and sends responses, usually over HTTP. So only (ii) is correct.",
+  "chapter_key": "cs_web",
+  "subtopic": "Java servlets",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256355": {
+  "explanation_en": "Recovery testing deliberately makes the software fail in different ways (crashes, power loss, network failure) and checks that recovery is done properly. Stress testing checks behaviour under extreme load, not recovery from failure.",
+  "chapter_key": "cs_se",
+  "subtopic": "Types of system testing",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256348": {
+  "explanation_en": "Flash memory is non-volatile (NV) RAM-type storage that keeps its data without power, as in pen drives, SSDs and memory cards. Cache, registers and main memory (DRAM) are volatile, so they lose their contents when the power is turned off.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Memory types - flash",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256395": {
+  "explanation_en": "The .NET Framework was developed by Microsoft. Version 1.0 was released in 2002 (beta versions came out in 2000-2001). Oracle and Google did not build .NET, and 2010 is when .NET 4.0 came out, not the launch.",
+  "chapter_key": "cs_prog",
+  "subtopic": ".NET history",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256385": {
+  "explanation_en": "For a cube with edge x, volume = x * x * x = x^3. It has 6 square faces of area x^2 each, so total surface area = 6x^2. Option 2 swaps the powers.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Mensuration - cube",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256358": {
+  "explanation_en": "In a monolithic kernel, user services and kernel services all run in the same (kernel) address space, which makes it fast but hard to extend. Keeping them in separate address spaces is the feature of a microkernel. So statement 3 is false. The other statements are true.",
+  "chapter_key": "cs_os",
+  "subtopic": "Monolithic vs microkernel",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256390": {
+  "explanation_en": "In Java an integer literal that starts with 0 is octal, so 017 = 1*8 + 7 = 15 in decimal. The loop prints each element followed by a space: 121 201 15. (The curly quotes in the question are just printing errors for normal \" \" quotes.) Option 1 forgets the octal rule.",
+  "chapter_key": "cs_prog",
+  "subtopic": "Java octal literals",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256366": {
+  "explanation_en": "A random scan (vector) display moves the electron beam directly along the path of each line, like a pencil drawing, so only the needed parts of the screen are traced. A raster scan sweeps the whole screen row by row and builds the image from pixels. 'Roster' and 'Rotate' scan are not real display types.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Random scan vs raster scan display",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256372": {
+  "explanation_en": "A flowchart is a diagram that shows the steps of an algorithm using standard symbols joined by arrows. Pseudocode is a text form of an algorithm, and source code or a program is the actual implementation, not a graphical representation.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Flowchart",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256392": {
+  "explanation_en": "JavaScript runs in the browser and is used with HTML and CSS to build the front end (user interface). PHP and Django (Python) are server-side back-end technologies, and SQL is used to query databases.",
+  "chapter_key": "cs_web",
+  "subtopic": "Front-end vs back-end technologies",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256414": {
+  "explanation_en": "Knowledge is the expertise and skills a person gains through experience or education, that is, the theoretical or practical understanding of a subject. Synthesis means combining ideas, and problem solving is applying knowledge. Neither is the understanding itself.",
+  "chapter_key": "cs_it",
+  "subtopic": "Knowledge - definition",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256377": {
+  "explanation_en": "The Poisson distribution is discrete: it gives the probability of a whole number of events (0, 1, 2, ...) in a fixed interval. Normal, exponential and log-normal distributions are continuous because they take any real value in a range.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Probability distributions",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256403": {
+  "explanation_en": "chmod takes two arguments: the permission change (for example u+x or 755) and the file name(s) to apply it to, as in chmod 755 script.sh. User names are changed with chown, not chmod.",
+  "chapter_key": "cs_os",
+  "subtopic": "Linux chmod",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256334": {
+  "explanation_en": "In the OSI model the transport layer's data unit, exchanged between transport entities, is called a segment (also known as a TPDU). Packets belong to the network layer and frames to the data link layer.",
+  "chapter_key": "cs_net",
+  "subtopic": "OSI PDUs",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256364": {
+  "explanation_en": "Cohen-Sutherland gives each endpoint a 4-bit region code. If both codes are 0000 the line is fully inside and accepted. If the AND of the codes is non-zero it is fully outside and rejected. Otherwise the line intersects the window boundary, so it is partly visible and must be clipped.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Cohen-Sutherland line clipping",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256359": {
+  "explanation_en": "A good OS should finish many processes per unit time (high throughput) and finish each process quickly after it arrives (low turnaround time). High turnaround time means processes wait longer, which is not desirable.",
+  "chapter_key": "cs_os",
+  "subtopic": "Scheduling criteria",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256337": {
+  "explanation_en": "A transposition cipher only rearranges the order of the plaintext letters; the letters themselves stay the same. A substitution cipher replaces each letter with another symbol, so it disguises the letters but keeps their order.",
+  "chapter_key": "cs_net",
+  "subtopic": "Transposition vs substitution cipher",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256375": {
+  "explanation_en": "Interdependence means the parts of a business system (production, finance, marketing, HR) interact closely and depend on each other, so a change in one affects the others. Complexity refers to the large number of variables involved, not to this mutual dependence.",
+  "chapter_key": "cs_it",
+  "subtopic": "Characteristics of business systems",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256342": {
+  "explanation_en": "PHP is a server-side scripting language that runs on the web server, so it is a back-end tool. AngularJS and jQuery are JavaScript front-end libraries/frameworks, and Chrome DevTools is used to inspect and debug front-end pages.",
+  "chapter_key": "cs_web",
+  "subtopic": "Front-end tools",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256413": {
+  "explanation_en": "In C, parentheses () (function call/grouping) have the highest precedence. Next come unary operators, then *, /, %, and after them the relational, equality (!=) and bitwise XOR (^) operators. So () is evaluated first.",
+  "chapter_key": "cs_prog",
+  "subtopic": "C operator precedence",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256351": {
+  "explanation_en": "The DEFAULT constraint gives a column a value automatically when an INSERT does not supply one, for example city VARCHAR(20) DEFAULT 'Delhi'. NOT NULL stops NULL values, CHECK enforces a condition and UNIQUE keeps values different.",
+  "chapter_key": "cs_dbms",
+  "subtopic": "SQL constraints",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256368": {
+  "explanation_en": "A DOM (Document Object Model) parser loads the whole XML document into memory as a tree of node objects that can be navigated and changed. SAX is an event-based streaming parser that does not build a tree. DOS and SAY are not XML parsers.",
+  "chapter_key": "cs_web",
+  "subtopic": "XML parsers - DOM vs SAX",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256381": {
+  "explanation_en": "NAND = NOT(AND), so its output is (xy)'. (x + y)' is NOR, x + y is OR, and x*y is AND.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Logic gates - NAND",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256410": {
+  "explanation_en": "Newton's divided difference formula (and also Lagrange's formula) works for unequally spaced x values. Newton's forward/backward formulas and Gauss's formulas assume equally spaced points with a fixed step h, so they cannot be used here.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Interpolation - unequal intervals",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256379": {
+  "explanation_en": "A counter is a sequential circuit, built from flip-flops, that counts the number of clock pulses or events and stores (and can display) that count. A latch or flip-flop stores only one bit, and a register stores a word of data but does not count.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Digital electronics - counters",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256406": {
+  "explanation_en": "Mobile computing devices are grouped as fixed-wired (desktop), mobile-wired (laptop on a cable), fixed-wireless and mobile-wireless (smartphone). A Wi-Fi router stays in one place but gives wireless connectivity, so it is fixed and wireless. A Wi-Fi dongle is plugged into a portable device, so it is not a fixed device.",
+  "chapter_key": "cs_net",
+  "subtopic": "Mobile computing device categories",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256341": {
+  "explanation_en": "In a bus topology every station is connected to one shared cable called the backbone, with terminators at both ends. Star topology uses a central hub, ring connects each node to two neighbours in a loop, and mesh links nodes to many others.",
+  "chapter_key": "cs_net",
+  "subtopic": "Network topologies",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256361": {
+  "explanation_en": "Strategic information is used by top management for long-term policy decisions, such as setting business objectives and checking how well they are met. Tactical information is for middle management's medium-term control, and operational information is for day-to-day work.",
+  "chapter_key": "cs_it",
+  "subtopic": "MIS - levels of information",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256356": {
+  "explanation_en": "An inline function's body is copied into the place where it is called, which saves the cost of a call (pushing arguments, jumping, returning). This is worth it only for small functions. For large functions it bloats the code, and the compiler may ignore the inline request.",
+  "chapter_key": "cs_prog",
+  "subtopic": "C++ inline functions",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256386": {
+  "explanation_en": "The photoelectric effect is the emission of electrons from a metal surface when light of short enough wavelength (frequency above the threshold) falls on it, as explained by Einstein. The other terms are not names of physical effects.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Physics - photoelectric effect (non-CS)",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256389": {
+  "explanation_en": "Java has 8 primitive types: byte, short, int, long, float, double, char and boolean. Arrays, String and classes are reference (non-primitive) types. So byte is the primitive type here.",
+  "chapter_key": "cs_prog",
+  "subtopic": "Java primitive data types",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256370": {
+  "explanation_en": "The Tabular Data Control (TDC) is a Microsoft ActiveX control that reads a delimited text data file and binds its data to elements of a web page (data binding in DHTML). Dialog bars, control bars and dialog boxes are UI elements and do not read data files.",
+  "chapter_key": "cs_web",
+  "subtopic": "DHTML data binding - TDC",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256393": {
+  "explanation_en": "RadioButtons in a group are mutually exclusive, so the user can pick exactly one option from several choices. A ListBox can also allow multiple selection, a Label only displays text, and a Button triggers an action.",
+  "chapter_key": "cs_prog",
+  "subtopic": "VB.NET controls",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256362": {
+  "explanation_en": "The components of an MIS are people, hardware, software, data (database) and procedures. 'Education procedures' is not a component of MIS. People, software and data are core components.",
+  "chapter_key": "cs_it",
+  "subtopic": "MIS components",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256376": {
+  "explanation_en": "Inferential statistics uses sample data to make predictions or generalisations about a population, through estimation, hypothesis testing and regression. Descriptive statistics only summarises the data you already have (mean, charts) and does not predict.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Statistics - inferential vs descriptive",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256394": {
+  "explanation_en": "In C# a constructor cannot have any return type, not even void, so statement 1 is false. The other statements are true: a default constructor is provided if you write none, it has the same name as the class, and it runs when an object is created.",
+  "chapter_key": "cs_prog",
+  "subtopic": "C# constructors",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256339": {
+  "explanation_en": "A peer-to-peer network has no dedicated server; every computer is equal and can act as both client and server. So statement 1 is false. P2P suits small set-ups of about 10 computers, and each computer controls the sharing permissions for its own resources.",
+  "chapter_key": "cs_net",
+  "subtopic": "Peer-to-peer network",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256380": {
+  "explanation_en": "Integer part: 10 = 8 + 2 = 1010. Fraction: 0.25 x 2 = 0.5 gives bit 0, then 0.5 x 2 = 1.0 gives bit 1, so the fraction is .01. So 10.25 = 1010.01. Option 2 (1011.01) equals 11.25.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Number system - decimal to binary",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256338": {
+  "explanation_en": "Triple DES runs DES three times with three independent 56-bit keys, so the key length is 3 x 56 = 168 bits (112 bits in the two-key version). 56 bits is the key length of single DES.",
+  "chapter_key": "cs_net",
+  "subtopic": "Triple DES key length",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256335": {
+  "explanation_en": "UDP (User Datagram Protocol, written as 'Unit Datagram Protocol' in the question) lets applications send encapsulated IP datagrams without setting up a connection (RFC 768). TCP is connection-oriented, and Telnet and rlogin are remote login applications.",
+  "chapter_key": "cs_net",
+  "subtopic": "UDP",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256374": {
+  "explanation_en": "Trade, the buying and selling of goods and services, is the basic core activity of business. Industry produces goods, and supply and enterprise are broader or related ideas, not the act of sale and purchase itself.",
+  "chapter_key": "cs_it",
+  "subtopic": "Business - trade (non-CS)",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256399": {
+  "explanation_en": "The Law of Diminishing Marginal Utility says that as a consumer gets more units of a good, the extra satisfaction (marginal utility) from each additional unit falls. The Law of Demand links price and quantity demanded, not utility from stock held.",
+  "chapter_key": "cs_it",
+  "subtopic": "Economics - diminishing marginal utility (non-CS)",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256670": {
+  "explanation_en": "Animation in computer graphics moves objects by applying transformations (translation, rotation, scaling) step by step across frames. Line rasterisation, the Phong lighting model and eigenvalue calculations are not what makes objects move.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Computer graphics - transformations/animation",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256672": {
+  "explanation_en": "Software design goes from abstract to concrete. System (high-level) design gives the most abstract view of the whole system. Architectural design then splits it into subsystems and their interactions. Detailed design finally describes the implementation of each module. So the order is system, architectural, detailed.",
+  "chapter_key": "cs_se",
+  "subtopic": "Levels of software design",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256619": {
+  "explanation_en": "(743)8 in binary is 111 100 011 = 111100011. For Gray code, keep the first bit and XOR each pair of neighbouring bits: 1, 1^1=0, 1^1=0, 1^1=0, 1^0=1, 0^0=0, 0^0=0, 0^1=1, 1^1=0. This gives 100010010. Option 4 differs only in the second-last bit.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Number system - Gray code",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256660": {
+  "explanation_en": "In e-commerce the subscription revenue model charges customers a fixed amount every month, quarter or year to use a service (for example Netflix). Licensing gives the right to use software, and the affiliate model earns commission on referrals.",
+  "chapter_key": "cs_it",
+  "subtopic": "E-commerce revenue models",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256615": {
+  "explanation_en": "Retardation plates (quarter- and half-wave plates) are made of birefringent crystals. Double refraction splits light into ordinary and extraordinary rays that travel at different speeds, which creates the phase shift between them. Polaroid filters only polarise light and do not create this phase shift.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Physics - double refraction (non-CS)",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256668": {
+  "explanation_en": "A handover between two different kinds of network, such as from a satellite network to a land-based cellular network, is called an inter-system handover. Intra- and inter-satellite handovers stay within the satellite system, and gateway handover happens between ground gateways.",
+  "chapter_key": "cs_net",
+  "subtopic": "Satellite systems - handover types",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256685": {
+  "explanation_en": "'Softer' here means smoother. Piecewise constant (nearest-neighbour) interpolation produces a step function with jumps at the data points, so it is the least smooth method. Polynomial and especially spline interpolation produce smooth curves, so option 1 is the better answer. The official key (piecewise constant) looks wrong unless the question meant 'simplest'.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Interpolation methods - smoothness",
+  "difficulty": "hard",
+  "key_doubt": true
+ },
+ "630680256617": {
+  "explanation_en": "A CO2 laser works on transitions between the vibrational energy levels of the CO2 molecule (from the asymmetric stretch mode down to the symmetric stretch or bending modes), giving infrared output around 10.6 micrometres. 'Pulsed output' is an operating mode, not a transition.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Physics - CO2 laser (non-CS)",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256610": {
+  "explanation_en": "Checking that data is entered correctly is the job of input controls, which include validation checks, check digits, range checks and verification. A keyboard is only the device used to type the data and cannot check whether it is correct. The official key (Keyboards) looks wrong; option 3, input controls, is the right answer.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Input controls - data validation",
+  "difficulty": "medium",
+  "key_doubt": true
+ },
+ "630680256647": {
+  "explanation_en": "While a process is sleeping/waiting or ready it still owns its memory. Only when it moves from running to terminated (exits) does the OS take back all of its memory and other resources. The other transitions only change its scheduling state.",
+  "chapter_key": "cs_os",
+  "subtopic": "Process states and memory release",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256665": {
+  "explanation_en": "Operations research uses mathematical methods such as linear programming, queuing theory and simulation to make decisions better, so it is a branch of applied mathematics. Management accounting and organisation are management areas, and information processing is a computing activity.",
+  "chapter_key": "cs_it",
+  "subtopic": "Operations research",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256677": {
+  "explanation_en": "In Nonaka's SECI model, socialisation means people sharing experiences (observing, imitating, working together), and what passes between them is tacit knowledge: personal know-how that is hard to write down. Systematic (explicit) knowledge is produced by putting it into documents, not by shared experience.",
+  "chapter_key": "cs_it",
+  "subtopic": "Knowledge management - tacit knowledge",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256666": {
+  "explanation_en": "Value (for example customer value or the value of information) is qualitative and subjective, so it is hard to measure precisely with a number. Infrastructure and models can be described and counted more concretely.",
+  "chapter_key": "cs_it",
+  "subtopic": "Qualitative measures",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256646": {
+  "explanation_en": "A final method cannot be overridden in a subclass; that is the whole purpose of the final keyword. So statement 1 is false. The others are true: modifier order and varargs make 'static public void main(String... abcd)' valid, abstract classes cannot be instantiated, and Java 8+ interfaces allow default methods.",
+  "chapter_key": "cs_prog",
+  "subtopic": "Java final/abstract/interface",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256657": {
+  "explanation_en": "Ext4 (fourth extended file system) is the default file system in most modern Linux distributions. It replaced Ext3 by adding extents, larger file and volume sizes, and faster fsck. Ext2 and Ext3 were older defaults.",
+  "chapter_key": "cs_os",
+  "subtopic": "Linux file systems",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256623": {
+  "explanation_en": "The Internet layer of the TCP/IP model (IP) works with packets, also called datagrams. Segments belong to the transport layer, and frames belong to the network access/link layer.",
+  "chapter_key": "cs_net",
+  "subtopic": "TCP/IP PDUs",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256606": {
+  "explanation_en": "A Visual Display Unit (monitor) shows output from the computer to the user, so it is an output device. The mouse, light pen and keyboard are all input devices.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Input/output devices",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256607": {
+  "explanation_en": "The operating system is the program that acts as the interface between the user and the hardware: it manages resources and provides services to run programs. The kernel is the core part of the OS that talks to the hardware, but the complete user-to-hardware bridge is the OS as a whole.",
+  "chapter_key": "cs_os",
+  "subtopic": "Operating system definition",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256686": {
+  "explanation_en": "Armstrong's axioms proper are only three rules: reflexivity, augmentation and transitivity. Pseudo-transitivity (if X->Y and WY->Z then WX->Z) is not one of the axioms; it is a secondary rule derived from them. So it is the one that is not an Armstrong axiom, while reflexivity and transitivity are.",
+  "chapter_key": "cs_dbms",
+  "subtopic": "Armstrong axioms vs derived rules",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256649": {
+  "explanation_en": "In economics, effective desire means a desire backed by the ability to pay and the willingness to spend, and that is the definition of demand. Consumption is the actual use of goods, and utility is the satisfaction they give. The official key (Consumption) looks wrong; option 1, Demand, is the correct answer.",
+  "chapter_key": "cs_it",
+  "subtopic": "Economics - demand (non-CS)",
+  "difficulty": "easy",
+  "key_doubt": true
+ },
+ "630680256658": {
+  "explanation_en": "Commerce covers all activities involved in buying and selling goods and services, especially on a large scale, together with aids to trade such as transport, banking and insurance. Finance deals with managing money, and distribution or supply chain are only parts of commerce.",
+  "chapter_key": "cs_it",
+  "subtopic": "Business - commerce (non-CS)",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256682": {
+  "explanation_en": "As printed, the string literal \"Hello World is broken across a line. A C string literal cannot contain a raw newline, so the compiler reports a missing terminating quote, which is a compilation error. If it had been written with the escape \\n, then 6 + \"Hello World\\n\" would point 6 characters into the string and print 'World' (option 3).",
+  "chapter_key": "cs_prog",
+  "subtopic": "C string literals and pointer arithmetic",
+  "difficulty": "hard",
+  "key_doubt": false
+ },
+ "630680256601": {
+  "explanation_en": "Bayesian probability treats probability as a degree of belief (a 'view') and updates it with evidence using fixed rules: the probability axioms and Bayes' theorem. Frequency probability is defined as a long-run relative frequency, not as a view. Standard deviation and variance are measures of spread, not kinds of probability.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Bayesian probability",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256669": {
+  "explanation_en": "In Mobile IP the care-of address (COA) is the current tunnel end-point for the mobile node. It can be a foreign-agent COA or a co-located COA that the mobile node gets itself, for example through DHCP. The FA is an agent (router), not the address that DHCP assigns. The official key (FA) looks wrong; option 2, COA, is the right answer.",
+  "chapter_key": "cs_net",
+  "subtopic": "Mobile IP - care-of address",
+  "difficulty": "medium",
+  "key_doubt": true
+ },
+ "630680256674": {
+  "explanation_en": "To communicate over the internet a computer needs hardware to connect to the network, the Network Interface Card (NIC), and the common set of protocols, the TCP/IP suite. A monitor, keyboard, mouse, camera and microphone are I/O peripherals and are not needed for network communication.",
+  "chapter_key": "cs_net",
+  "subtopic": "Internet connectivity essentials",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256678": {
+  "explanation_en": "The most successful solutions or problem-solving methods developed by an organisation or industry are called best practices (Laudon's definition in knowledge management). Knowledge management is the overall process of creating, storing and sharing knowledge, not the name for those solutions. The official key (knowledge management) looks wrong; option 4 is correct.",
+  "chapter_key": "cs_it",
+  "subtopic": "Knowledge management - best practices",
+  "difficulty": "medium",
+  "key_doubt": true
+ },
+ "630680256671": {
+  "explanation_en": "An orthogonal (orthographic) projection is a parallel projection with the direction of projection fixed perpendicular to a principal plane (front, top or side). So it cannot also be framed as a separate horizontal viewing direction in the same view; you pick one orthographic view at a time. The question is loosely worded, and the official key is option 1.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Computer graphics - projections",
+  "difficulty": "hard",
+  "key_doubt": false
+ },
+ "630680256680": {
+  "explanation_en": "Variable argument lists in C (va_list, va_start, va_arg, va_end) are declared in the standard header <stdarg.h>. <stdio.h> only declares functions that use them, such as printf and vprintf. The official key (<stdio.h>) looks wrong; option 4, <stdarg.h>, is correct.",
+  "chapter_key": "cs_prog",
+  "subtopic": "C variadic functions - stdarg.h",
+  "difficulty": "medium",
+  "key_doubt": true
+ },
+ "630680256655": {
+  "explanation_en": "In Linux, rm removes files (rm -r also removes directories with their contents). rmdir removes only empty directories, and 'Delete' and 'Rdir' are not Linux commands.",
+  "chapter_key": "cs_os",
+  "subtopic": "Linux file commands",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256684": {
+  "explanation_en": "Gaussian process regression (kriging) is a nonlinear interpolation method that comes from probability theory and statistics: it models the unknown function as a random process with a covariance kernel. Linear, polynomial and spline interpolation are deterministic methods and are not based on probability.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Interpolation - Gaussian process",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256598": {
+  "explanation_en": "Normal = grad(phi) with phi = x^3 + y^3 + 3xyz - 3, so grad(phi) = (3x^2 + 3yz, 3y^2 + 3xz, 3xy). At (1,2,-1) this is (3 - 6, 12 - 3, 6) = (-3, 9, 6) = 3(-1, 3, 2). Its magnitude is 3*sqrt(14), so the unit normal is (1/sqrt(14))(-i + 3j + 2k). Option 2 has the wrong signs.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Vector calculus - gradient/unit normal",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256681": {
+  "explanation_en": "scanf() and printf() are standard input/output functions declared in <stdio.h>. <string.h> has string functions such as strlen, <ctype.h> has character tests such as isdigit, and <unistd.h> is a POSIX header.",
+  "chapter_key": "cs_prog",
+  "subtopic": "C header files",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256605": {
+  "explanation_en": "A software package is a set of related programs supplied together with the documentation needed to install and use them (for example MS Office). An application program is a single program for a task and does not necessarily include documentation.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Software packages",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256631": {
+  "explanation_en": "End systems usually agree on a temporary symmetric session key for one communication session (often exchanged using public-key cryptography) and encrypt the data with it. Public and private keys are long-term asymmetric keys and are mainly used to set up or sign the session, not to encrypt the bulk data.",
+  "chapter_key": "cs_net",
+  "subtopic": "Session keys",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256614": {
+  "explanation_en": "Polarisation, where the vibration has a particular direction perpendicular to the direction of travel, is possible only for transverse waves. That is why light can be polarised but sound (a longitudinal wave) cannot. The pass axis or polarising axis belong to a polariser, not to the wave.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Physics - polarisation (non-CS)",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680256652": {
+  "explanation_en": "In Joel Dean's methods for forecasting demand for a new product, the growth curve approach estimates the new product's demand from the growth pattern of an existing, established product. The substitute approach treats the new product as a replacement for an existing one and studies that product's demand instead. The official key (substitute) looks wrong; option 1 fits the question.",
+  "chapter_key": "cs_it",
+  "subtopic": "Economics - demand forecasting for new products (non-CS)",
+  "difficulty": "hard",
+  "key_doubt": true
+ },
+ "630680256629": {
+  "explanation_en": "Authentication is the process of checking that users are who they say they are, using passwords, OTPs, biometrics or certificates. Integrity makes sure data has not been changed, and confidentiality makes sure only authorised people can read it.",
+  "chapter_key": "cs_net",
+  "subtopic": "Security - authentication",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256635": {
+  "explanation_en": "Web browsers act as a universal front end (thin client): through the internet they connect to a web server, which talks to the back-end database. The web server and the web application sit on the server side, not at the user's end.",
+  "chapter_key": "cs_web",
+  "subtopic": "Web-based database front end",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256633": {
+  "explanation_en": "Sending data as a raw bit stream over the medium (voltages, light pulses, signals) is the job of the physical layer (layer 1). The data link layer groups bits into frames and handles error and flow control. The official key (data link layer) looks wrong; option 3, the physical layer, is the standard answer.",
+  "chapter_key": "cs_net",
+  "subtopic": "OSI layers - physical layer",
+  "difficulty": "easy",
+  "key_doubt": true
+ },
+ "630680256630": {
+  "explanation_en": "Encryption takes the original readable information, the plain text, and turns it into cipher text using an algorithm and a key. So the information being transformed is the plain text. Cipher text is what comes out of encryption, not what goes in.",
+  "chapter_key": "cs_net",
+  "subtopic": "Encryption basics",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256644": {
+  "explanation_en": "Good software design aims for low coupling (modules depend on each other as little as possible) and high cohesion (each module's parts work closely towards one purpose). This makes the system easier to maintain, test and reuse. Inheritance, aggregation and composition are design choices, not 'lower is better' measures.",
+  "chapter_key": "cs_se",
+  "subtopic": "Coupling and cohesion",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256608": {
+  "explanation_en": "Magnetic tape stores data one after another along the tape, so to reach a record you must pass all the records before it; this is sequential access only. Hard disks, CDs and DVDs allow direct (random) access to any block.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Storage access methods",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256618": {
+  "explanation_en": "'3's complement' is a misprint for 2's complement. 10100 in 5-bit 2's complement is -12. Dividing a signed number by 2 is an arithmetic right shift, which copies the sign bit: 10100 -> 11010 = -6. The official key 01010 (+10) is a logical shift that loses the sign; it is only right if 10100 is read as unsigned 20. So option 4 appears to be the correct answer.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Arithmetic shift - signed division",
+  "difficulty": "hard",
+  "key_doubt": true
+ },
+ "630680256640": {
+  "explanation_en": "Protected members can be accessed inside the class and in classes derived from it (subclasses), but not by unrelated outside code. Private members are not accessible in derived classes. Public members are accessible there too, but they are open to everyone, so protected is the modifier designed for derived-class access. Void is a return type, not an access modifier.",
+  "chapter_key": "cs_prog",
+  "subtopic": "Access modifiers - protected",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680256653": {
+  "explanation_en": "System.Collections.Hashtable stores key/value pairs and lets you get an element by its unique key, using hashing. ArrayList and linked lists are accessed by position (index or traversal), not by key.",
+  "chapter_key": "cs_prog",
+  "subtopic": ".NET collections - Hashtable",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598500": {
+  "explanation_en": "Data privacy involves a trade-off between how much data is collected and how well a product or service performs (I-2). K-anonymity measures how many records in a database share the same attribute values, so each person is hidden among at least k others (II-1). L-diversity extends k-anonymity by requiring diversity in the sensitive attributes of each group (III-3). So the match is I-2, II-1, III-3.",
+  "chapter_key": "cs_it",
+  "subtopic": "AI ethics - privacy models",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680598468": {
+  "explanation_en": "A repeater only regenerates and amplifies the signal bit by bit to extend the range of a cable. It does not read addresses, so it works only at the physical layer. Bridges and switches work at the data link layer, and routers at the network layer.",
+  "chapter_key": "cs_net",
+  "subtopic": "Network devices - repeater",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598464": {
+  "explanation_en": "When given a string, Python's max() returns the character with the highest ASCII/Unicode value, for example max('apple') = 'p'. len() returns the length, and hvalue() and long() are not Python built-ins for strings.",
+  "chapter_key": "cs_prog",
+  "subtopic": "Python string functions - max()",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598493": {
+  "explanation_en": "A primary index is an ordered file of fixed-length records with two fields: the primary key value of the first record in a data block (the anchor) and a pointer to that disk block. A clustering index is built on a non-key ordering field, and a secondary index is built on a non-ordering field.",
+  "chapter_key": "cs_dbms",
+  "subtopic": "Indexing - primary index",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680598529": {
+  "explanation_en": "a = 20 and b = 35, so a >= b is False and the else branch runs, printing No. The output keeps the capital N exactly as written in the string. The code is valid, so there is no syntax error.",
+  "chapter_key": "cs_prog",
+  "subtopic": "Python if-else",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598480": {
+  "explanation_en": "An Optical Mark Reader (OMR) detects whether pen or pencil marks are present in fixed positions, for example on exam answer sheets. OCR recognises actual printed or handwritten characters, and a light pen or digitiser is used for drawing or pointing.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Input devices - OMR",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598443": {
+  "explanation_en": "Minterms 0, 2, 4, 6 (000, 010, 100, 110) are all the cells with z = 0, so they group into z'. Minterm 5 (101) pairs with 4 (100) to give xy'. So F = z' + xy'. Option 4 (z' + xy) would need minterm 7, which is not in the function.",
+  "chapter_key": "cs_fund",
+  "subtopic": "K-map simplification",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680598496": {
+  "explanation_en": "DATEDIFF(datepart, startdate, enddate) returns the difference between the start date and the end date in the given unit, so statement I is true. In SQL Server the datepart (year, month, day, ...) must be written directly as a keyword and cannot be given in a variable, so II is false. So only I is correct.",
+  "chapter_key": "cs_dbms",
+  "subtopic": "SQL DATEDIFF function",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680598466": {
+  "explanation_en": "list.append(x) adds x at the end of the list. pop() removes (and returns) an element, sort() arranges the elements in order, and index() returns the position of a value.",
+  "chapter_key": "cs_prog",
+  "subtopic": "Python list methods",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598499": {
+  "explanation_en": "Artificial Narrow Intelligence systems appear intelligent but have no awareness of what they are doing (I-2). Artificial General Intelligence acts and thinks like a conscious, smart human (II-3). Super Intelligence goes beyond human intelligence (III-1). So the match is I-2, II-3, III-1.",
+  "chapter_key": "cs_it",
+  "subtopic": "AI - categories (ANI/AGI/ASI)",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598459": {
+  "explanation_en": "The mutual exclusion condition says at least one resource must be held in a non-sharable mode, so only one process can use it at a time. Hold and wait, no preemption and circular wait are the other three necessary conditions for deadlock.",
+  "chapter_key": "cs_os",
+  "subtopic": "Deadlock conditions",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598467": {
+  "explanation_en": "Mode 'r+' opens an existing file for both reading and writing with the file pointer at the beginning. 'a+' also allows reading and writing, but writes go to the end of the file. 'rb' is read-only binary and 'ab' is append-only binary.",
+  "chapter_key": "cs_prog",
+  "subtopic": "Python file modes",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598514": {
+  "explanation_en": "Children are especially at risk of privacy violations and cyberbullying, so what they share on social media should be monitored. The other options are false: social media addiction can hurt studies, and rumours, fake news and misuse of social media can disturb law and order.",
+  "chapter_key": "cs_it",
+  "subtopic": "Social media and privacy",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598487": {
+  "explanation_en": "In the <body> tag, LINK sets the colour of unvisited links, ALINK sets the colour of a link while it is being clicked (active), and VLINK sets the colour of links that have already been visited (after they are clicked). So VLINK is the colour after the click. HLINK is not an attribute.",
+  "chapter_key": "cs_web",
+  "subtopic": "HTML body link attributes",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680598450": {
+  "explanation_en": "One-address instructions (such as ADD X) use an implied accumulator: AC <- AC + M[X], so the AC is both the source and the result of every data operation. Zero-address instructions use a stack, and two- or three-address instructions name their operands explicitly.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Instruction formats",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598456": {
+  "explanation_en": "Repositioning within a file (file seek) only changes the current file-position pointer to a new value. It does not need any actual read or write on the disk. Reading, deleting and truncating all change or access the file's data or blocks.",
+  "chapter_key": "cs_os",
+  "subtopic": "File operations - seek",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598530": {
+  "explanation_en": "In a Python dictionary the values can repeat (for example {'a': 1, 'b': 1}), but the keys must be unique (and immutable). If a key is assigned again, the old value is replaced, so a key never appears twice.",
+  "chapter_key": "cs_prog",
+  "subtopic": "Python dictionaries",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598447": {
+  "explanation_en": "A dot matrix printer is an impact printer: tiny pins strike an inked ribbon against the paper to make dots. Ink-jet, laser and thermal printers are non-impact printers because nothing strikes the paper.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Printers - impact vs non-impact",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598452": {
+  "explanation_en": "In DMA burst transfer mode, the DMA controller takes the bus and transfers a whole block of memory words in one continuous burst before giving the bus back. In cycle stealing it transfers one word at a time, taking single bus cycles from the CPU.",
+  "chapter_key": "cs_fund",
+  "subtopic": "DMA transfer modes",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598486": {
+  "explanation_en": "The <HR> tag supports the attributes SIZE (thickness), WIDTH, ALIGN and NOSHADE (draws a solid line without shading). There is no attribute called SHADE; the real attribute is NOSHADE.",
+  "chapter_key": "cs_web",
+  "subtopic": "HTML HR tag attributes",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680598518": {
+  "explanation_en": "Studies on e-waste report that a large share of the e-waste from developed countries is shipped to developing countries, with India (along with China and parts of Africa) a major destination. There, metals such as copper, iron, nickel and gold are recovered, often by unsafe informal recycling.",
+  "chapter_key": "cs_it",
+  "subtopic": "E-waste management",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598458": {
+  "explanation_en": "Apart from initialisation, a semaphore S is accessed only through two atomic operations: wait() (P, decrement) and signal() (V, increment). acquire()/release() and lock() are names used by some libraries for locks, not the standard semaphore operations.",
+  "chapter_key": "cs_os",
+  "subtopic": "Semaphores - wait/signal",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598482": {
+  "explanation_en": "The <head> element is a container for metadata about the page: <title>, <meta>, <link>, <style> and <script>. <title> is only one tag inside the head, and <body> holds the visible content.",
+  "chapter_key": "cs_web",
+  "subtopic": "HTML head element",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598521": {
+  "explanation_en": "A pandas Series is a one-dimensional labelled array that can hold any data type, with an index as its labels. A DataFrame is two-dimensional (rows and columns, made of several Series).",
+  "chapter_key": "cs_prog",
+  "subtopic": "Pandas Series",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598483": {
+  "explanation_en": "An HTML comment is written as <!-- This is a comment -->: it starts with <!-- and ends with -->. Option 4 is this form (with spaces shown between the symbols). The other options either miss the ! at the start or wrongly put ! in the closing part.",
+  "chapter_key": "cs_web",
+  "subtopic": "HTML comments",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598524": {
+  "explanation_en": "DataFrame.set_index() takes a column name (or a list of column names for a MultiIndex) and returns a new DataFrame indexed by those columns. reset_index() does the reverse. data.index is an attribute, not a method that re-indexes, and 'dFb'/'dFmi' are just variable names.",
+  "chapter_key": "cs_prog",
+  "subtopic": "Pandas set_index",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680598485": {
+  "explanation_en": "XML naming rules: element names are case-sensitive, must start with a letter or underscore, cannot contain spaces, and must not start with the letters 'xml' (in any case), because that prefix is reserved. They can contain letters, digits, hyphens, underscores and periods, so the other options are false.",
+  "chapter_key": "cs_web",
+  "subtopic": "XML naming rules",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598462": {
+  "explanation_en": "In Python a single-line comment starts with the hash symbol #, and everything after it on the line is ignored. // is used for comments in C/C++/Java, but in Python it is the floor-division operator.",
+  "chapter_key": "cs_prog",
+  "subtopic": "Python comments",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598511": {
+  "explanation_en": "Intellectual property rights such as copyright, patents and designs, including those for digital works, are granted only for a limited, certain period. For example, a patent lasts 20 years and copyright lasts for the author's life plus 60 years in India. After that the work goes into the public domain, so the protection is not unlimited.",
+  "chapter_key": "cs_it",
+  "subtopic": "Intellectual Property Rights",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598484": {
+  "explanation_en": "<BR> is an empty tag that inserts a line break, so the following text starts on a new line. <B> makes text bold, and <BL> and <L> are not standard HTML tags.",
+  "chapter_key": "cs_web",
+  "subtopic": "HTML line break",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598455": {
+  "explanation_en": "Belady's anomaly means that giving a process more frames causes more page faults. FIFO can show this anomaly (for example the string 1,2,3,4,1,2,5,1,2,3,4,5 gives 9 faults with 3 frames and 10 with 4). LRU is a stack algorithm, so it never suffers from it. So only I is correct.",
+  "chapter_key": "cs_os",
+  "subtopic": "Belady's anomaly",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680598488": {
+  "explanation_en": "SELECT * FROM table returns all attributes (columns) of the selected rows; * is the wildcard for 'all columns'. % is the LIKE wildcard for any sequence of characters, and # and : have no such role in standard SQL.",
+  "chapter_key": "cs_dbms",
+  "subtopic": "SQL SELECT *",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598504": {
+  "explanation_en": ".txt, .py and .csv files store data as human-readable characters, so they are text files, unlike binary files such as .jpg or .exe. ASCII and Unicode are character encodings, not file types, and a text editor is a program used to edit these files.",
+  "chapter_key": "cs_prog",
+  "subtopic": "Python file handling - text files",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598525": {
+  "explanation_en": "Numbers with a decimal point (like 3.14) are fractional numbers, stored as floating-point (real) numbers in programming languages such as float in Python. Among the given options 'fractional point numbers' is the matching term. Integers have no fractional part, and complex/imaginary numbers have a different meaning.",
+  "chapter_key": "cs_prog",
+  "subtopic": "Numeric data types",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598491": {
+  "explanation_en": "SQL aggregate functions such as COUNT, SUM, AVG, MAX and MIN take a group of rows and return a single value. 'MAXIMUM' in the options refers to MAX. A cross product (Cartesian product) is a join operation that combines rows of two tables, not an aggregate function.",
+  "chapter_key": "cs_dbms",
+  "subtopic": "SQL aggregate functions",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598508": {
+  "explanation_en": "ASCII is a 7-bit code with only 128 characters, enough for the English alphabet, digits and symbols. So it can handle 1 language (English), or at most 2 with the extended 8-bit sets. It cannot represent scripts like Devanagari or Chinese, which is why Unicode was developed.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Character encoding - ASCII limits",
+  "difficulty": "medium",
+  "key_doubt": false
+ },
+ "630680598528": {
+  "explanation_en": "Python uses # for comments: everything after # on a line is ignored by the interpreter and is only for readers of the code. * is multiplication, - is subtraction and : starts a code block.",
+  "chapter_key": "cs_prog",
+  "subtopic": "Python comments",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598442": {
+  "explanation_en": "Both statements are true. An AND gate outputs 1 only when all inputs are 1, so A = B = 1 gives 1. AND is written like ordinary multiplication: A.B or AB. So the correct option is both I and II.",
+  "chapter_key": "cs_fund",
+  "subtopic": "Logic gates - AND",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598476": {
+  "explanation_en": "A referential integrity constraint is defined between two relations: a foreign key value in one table must match an existing primary key value in the referenced table (or be NULL). This keeps the tuples in the two relations consistent. Entity integrity applies within one relation (primary key not NULL).",
+  "chapter_key": "cs_dbms",
+  "subtopic": "Referential integrity",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598494": {
+  "explanation_en": "In standard SQL (Oracle, PostgreSQL) || is the string concatenation operator, for example 'Data' || 'base' gives 'Database'. MySQL uses CONCAT() and SQL Server uses +, while ++, ## and quotes are not concatenation operators.",
+  "chapter_key": "cs_dbms",
+  "subtopic": "SQL concatenation operator",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598473": {
+  "explanation_en": "Wavelength is the distance a signal travels in one period: lambda = propagation speed x period, which is the same as speed / frequency. Option 4 (speed x frequency) is wrong because frequency = 1/period, so the speed should be divided by it.",
+  "chapter_key": "cs_net",
+  "subtopic": "Signals - wavelength",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598495": {
+  "explanation_en": "LIKE is used in a WHERE clause to match a character pattern, with % standing for any sequence of characters and _ for exactly one character, for example WHERE name LIKE 'A%'. IN checks membership in a list of values, and IS NULL tests for missing values.",
+  "chapter_key": "cs_dbms",
+  "subtopic": "SQL LIKE operator",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598507": {
+  "explanation_en": "CSV (Comma-Separated Values) files are plain-text spreadsheet files in which each line is a row and the cell values are separated by a delimiter, usually a comma (sometimes a semicolon). 'CVS' is a misspelling, and 'Semi-colon Separated Values' is not the standard name of the format.",
+  "chapter_key": "cs_prog",
+  "subtopic": "CSV files",
+  "difficulty": "easy",
+  "key_doubt": false
+ },
+ "630680598470": {
+  "explanation_en": "Coaxial cables are classified by Radio Government (RG) ratings such as RG-59 (cable TV), RG-58 (thin Ethernet) and RG-11 (thick Ethernet). Each RG number specifies physical properties like conductor gauge and impedance. Twisted-pair cables are rated by categories (Cat 5, Cat 6) instead.",
+  "chapter_key": "cs_net",
+  "subtopic": "Guided media - coaxial cable",
+  "difficulty": "easy",
+  "key_doubt": false
+ }
+}
