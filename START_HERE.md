@@ -5,6 +5,7 @@
 | Start / stop the site on this laptop, get the public link | `scripts/host/HOSTING.md` |
 | Know what is built, what needs my accounts, the phase plan | `SCALING_AND_ROADMAP.md` (§7 = revenue modules) |
 | Upload questions / build tests from Excel or CSV | Admin → **Bulk import** (templates are downloadable there) |
+| Re-import the AEDO / BSSC CGL question sets on a new server | `cd backend && php artisan osdhyan:import-question-sets database/data/question_sets_aedo.json` (idempotent; rebuild the JSON from the app folder with `node scripts/content/extract-question-sets.js <folder> backend/database/data/question_sets_aedo.json`) |
 | Set prices on a test series | Admin → **Test Series** → Edit (Paid, price, MRP, validity) |
 | See money coming in | Admin → **Orders & revenue** |
 | Approve tutors for home tuition | Admin → **Teachers** |
