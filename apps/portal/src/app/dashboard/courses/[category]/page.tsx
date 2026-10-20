@@ -17,6 +17,7 @@ import {
     Sparkles,
 } from 'lucide-react';
 import api from '@/lib/api';
+import { asList } from '@/lib/courseContent';
 
 function formatCategoryName(value: string) {
     return value
@@ -43,7 +44,7 @@ export default function CategorySubjectsPage() {
     const fetchSubjects = async () => {
         try {
             const res = await api.get(`/courses/subjects?category=${category}`);
-            setSubjects(res.data);
+            setSubjects(asList(res.data));
         } catch (error) {
             console.error('Failed to fetch subjects', error);
         } finally {

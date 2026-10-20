@@ -23,6 +23,13 @@ class Subject extends Model
         'sort_order'   => 'integer',
     ];
 
+    protected static function booted(): void
+    {
+        // Course pages are cached; any change here must show up immediately.
+        static::saved(fn () => \App\Support\CourseContent::flushCache());
+        static::deleted(fn () => \App\Support\CourseContent::flushCache());
+    }
+
     public function exam()
     {
         return $this->belongsTo(Exam::class);

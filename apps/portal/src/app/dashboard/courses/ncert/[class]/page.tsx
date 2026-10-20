@@ -17,6 +17,7 @@ import {
     Sparkles,
 } from 'lucide-react';
 import api from '@/lib/api';
+import { asList } from '@/lib/courseContent';
 
 export default function NcertSubjectsPage() {
     const params = useParams();
@@ -33,7 +34,7 @@ export default function NcertSubjectsPage() {
     const fetchSubjects = async () => {
         try {
             const res = await api.get(`/courses/ncert/classes/${params.class}/subjects`);
-            setSubjects(res.data);
+            setSubjects(asList(res.data));
         } catch (error) {
             console.error('Failed to fetch subjects', error);
         } finally {
@@ -121,7 +122,7 @@ export default function NcertSubjectsPage() {
                                     {subject.name_en}
                                 </h3>
                                 <p className="text-xs font-bold text-foreground/40 uppercase tracking-wide mb-5">
-                                    {subject.exam?.name || 'Academic Domain'}
+                                    {subject.exam?.name_en || 'Academic Domain'}
                                 </p>
 
                                 <div className="flex gap-1.5 mb-5">

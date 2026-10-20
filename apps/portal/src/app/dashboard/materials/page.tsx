@@ -12,8 +12,11 @@ import {
     BookOpen,
     Filter,
     Maximize2,
-    CheckCircle
+    CheckCircle,
+    Video,
+    Headphones
 } from 'lucide-react';
+import { typeLabel } from '@/lib/courseContent';
 import { cn } from '@/lib/utils';
 import { useTheme } from '@/components/providers/ThemeProvider';
 import Link from 'next/link';
@@ -67,6 +70,9 @@ export default function MaterialsPage() {
         switch (type) {
             case 'pdf': return <FileText className="h-6 w-6 text-red-500" />;
             case 'image': return <ImageIcon className="h-6 w-6 text-blue-500" />;
+            case 'video':
+            case 'youtube': return <Video className="h-6 w-6 text-rose-500" />;
+            case 'audio': return <Headphones className="h-6 w-6 text-amber-500" />;
             default: return <File className="h-6 w-6 text-gray-500" />;
         }
     };
@@ -120,7 +126,7 @@ export default function MaterialsPage() {
                                     {getIcon(item.type)}
                                 </div>
                                 <span className="px-3 py-1 bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 text-xs font-black uppercase tracking-wide rounded-full">
-                                    {item.type}
+                                    {typeLabel(item.type)}
                                 </span>
                             </div>
 

@@ -41,7 +41,7 @@ function CopyButton({ value, label }: { value: string; label: string }) {
     );
 }
 
-/** Teacher-only side tab: who has a hand up + "join from another device". */
+/** Teacher-only side tab: who has a hand up + the link to share with students. */
 export default function HostPanel({ classId, status, participantsCount, handsRaised, joinLink, roomName, password, onChanged }: Props) {
     const [busyUser, setBusyUser] = useState<number | null>(null);
 
@@ -61,11 +61,11 @@ export default function HostPanel({ classId, status, participantsCount, handsRai
         <div className="h-full min-h-0 overflow-y-auto p-4 space-y-6">
             <section className="space-y-3">
                 <div className="flex items-center justify-between">
-                    <h4 className="text-[10px] font-black uppercase tracking-widest text-foreground/50 flex items-center gap-1.5"><Hand className="h-3.5 w-3.5" /> Hands raised</h4>
+                    <h4 className="text-[10px] font-black uppercase tracking-widest text-foreground/50 flex items-center gap-1.5"><Hand className="h-3.5 w-3.5" /> Raised hands</h4>
                     <span className="text-[10px] font-black text-foreground/50 flex items-center gap-1"><Users className="h-3 w-3" /> {participantsCount} in room</span>
                 </div>
                 {handsRaised.length === 0 ? (
-                    <p className="text-xs font-medium text-foreground/40">No hands up right now.</p>
+                    <p className="text-xs font-medium text-foreground/40">No raised hands. When a student presses &ldquo;Raise hand&rdquo; their name appears here, oldest first. Press &ldquo;Done&rdquo; after you have answered them.</p>
                 ) : (
                     <ul className="space-y-1.5">
                         {handsRaised.map((h, i) => (
@@ -78,7 +78,7 @@ export default function HostPanel({ classId, status, participantsCount, handsRai
                                     disabled={busyUser === h.user_id}
                                     className="text-[9px] font-black uppercase tracking-widest px-2 py-1 rounded-lg bg-foreground/5 hover:bg-foreground/10 text-foreground disabled:opacity-40"
                                 >
-                                    Lower
+                                    Done
                                 </button>
                             </li>
                         ))}
@@ -87,9 +87,9 @@ export default function HostPanel({ classId, status, participantsCount, handsRai
             </section>
 
             <section className="space-y-3">
-                <h4 className="text-[10px] font-black uppercase tracking-widest text-foreground/50 flex items-center gap-1.5"><Smartphone className="h-3.5 w-3.5" /> Join from another device</h4>
+                <h4 className="text-[10px] font-black uppercase tracking-widest text-foreground/50 flex items-center gap-1.5"><Smartphone className="h-3.5 w-3.5" /> Share the class link</h4>
                 <p className="text-xs font-medium text-foreground/50">
-                    Scan to open this classroom on your phone or tablet (for a second camera or to monitor chat). Students use the same link.
+                    Send this link to your students (WhatsApp, Telegram, SMS). Or scan the code to open the class on your own phone to watch the chat.
                 </p>
                 <div className="flex flex-col items-center gap-3 bg-white rounded-2xl p-3 border border-card-border">
                     <QrCode value={joinLink} size={176} />
@@ -116,8 +116,8 @@ export default function HostPanel({ classId, status, participantsCount, handsRai
                 </div>
                 <p className={cn('text-[10px] font-bold text-foreground/40', status !== 'live' && 'text-amber-600')}>
                     {status === 'live'
-                        ? 'The password is applied automatically when you join from the portal.'
-                        : 'Go live first — the room is created when the class starts.'}
+                        ? 'Students who join from this website get the password automatically.'
+                        : 'Students can open the link now; they will see a countdown until you press "Start class".'}
                 </p>
             </section>
         </div>

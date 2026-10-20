@@ -4,9 +4,16 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
+/**
+ * Soft-deleted so open chat windows learn about removals through
+ * state.removed_message_ids instead of keeping a deleted message on screen.
+ */
 class LiveClassMessage extends Model
 {
+    use SoftDeletes;
+
     public const MAX_LENGTH = 1000;
 
     protected $fillable = ['live_class_id', 'user_id', 'body', 'is_pinned', 'is_answered'];

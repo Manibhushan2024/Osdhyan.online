@@ -42,6 +42,16 @@ class JitsiProvider implements LiveProvider
         return $this->jaas !== null;
     }
 
+    /** jaas | self_hosted | public (meet.jit.si, needs a host sign-in). */
+    public function mode(): string
+    {
+        if ($this->jaas) {
+            return 'jaas';
+        }
+
+        return in_array(strtolower($this->domain), ['meet.jit.si', 'www.meet.jit.si'], true) ? 'public' : 'self_hosted';
+    }
+
     public function prepareForSchedule(array $input, ?LiveClass $existing = null): array
     {
         return ['youtube_video_id' => null];
@@ -78,6 +88,8 @@ class JitsiProvider implements LiveProvider
                 'room'             => "{$appId}/{$room}",
                 'jwt'              => $this->jaas->token($user, $room, $isModerator),
                 'password'         => null,
+                'needs_host_login' => false,
+                'web_url'          => null,
                 'is_moderator'     => $isModerator,
             ];
         }
@@ -85,6 +97,9 @@ class JitsiProvider implements LiveProvider
         return [
             'kind'             => 'jitsi',
             'mode'             => 'plain',
+            // public meet.jit.si: the host signs in inside the video before anyone can enter
+            'needs_host_login' => $this->mode() === 'public',
+            'web_url'          => "https://{$this->domain}/{$room}",
             'domain'           => $this->domain,
             'external_api_url' => "https://{$this->domain}/external_api.js",
             'room'             => $room,

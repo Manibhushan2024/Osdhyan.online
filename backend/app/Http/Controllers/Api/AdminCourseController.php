@@ -16,6 +16,8 @@ use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
+use App\Support\CourseContent;
 
 class AdminCourseController extends Controller
 {
@@ -85,9 +87,16 @@ class AdminCourseController extends Controller
         return response()->json(Subject::create($data), 201);
     }
 
+    /** Admin editor view of a subject: same shape as the student hierarchy, drafts included. */
+    public function subjectHierarchy(int $id): JsonResponse
+    {
+        return response()->json(CourseController::hierarchy(Subject::findOrFail($id), publishedOnly: false));
+    }
+
     public function updateSubject(Request $request, int $id): JsonResponse
     {
         $subject = Subject::findOrFail($id);
+        $request->validate(['is_published' => 'sometimes|boolean']);
         $subject->update($request->only([
             'name_en', 'name_hi', 'slug', 'code', 'category', 'class_level', 'sort_order', 'is_published',
         ]));
@@ -96,7 +105,12 @@ class AdminCourseController extends Controller
 
     public function deleteSubject(int $id): JsonResponse
     {
-        Subject::findOrFail($id)->delete();
+        $subject = Subject::findOrFail($id);
+        $chapterIds = Chapter::where('subject_id', $id)->pluck('id');
+        $this->purgeMaterials(StudyMaterial::where('subject_id', $id)
+            ->orWhereIn('chapter_id', $chapterIds)
+            ->orWhereIn('topic_id', Topic::whereIn('chapter_id', $chapterIds)->select('id')));
+        $subject->delete();
         return response()->json(['message' => 'Deleted.']);
     }
 
@@ -110,20 +124,31 @@ class AdminCourseController extends Controller
             'name_hi' => 'nullable|string|max:255',
             'slug' => 'nullable|string|unique:chapters,slug',
         ]);
-        $data['slug'] ??= \App\Support\Slug::unique('chapters', $data['name_en'], 'chapter');
-        return response()->json(['data' => Chapter::create($data)], 201);
+        if (Chapter::where('subject_id', $data['subject_id'])->whereRaw('LOWER(name_en) = ?', [mb_strtolower(trim($data['name_en']))])->exists()) {
+            return response()->json(['message' => 'This subject already has a chapter with that name.', 'errors' => ['name_en' => ['This subject already has a chapter with that name.']]], 422);
+        }
+
+        return response()->json(['data' => $this->createWithUniqueSlug(Chapter::class, 'chapters', 'chapter', $data)], 201);
     }
 
     public function updateChapter(Request $request, int $id): JsonResponse
     {
         $chapter = Chapter::findOrFail($id);
-        $chapter->update($request->only(['name_en', 'name_hi', 'slug']));
+        $request->validate([
+            'name_en'      => 'sometimes|required|string|max:255',
+            'name_hi'      => 'nullable|string|max:255',
+            'is_published' => 'sometimes|boolean',
+        ]);
+        $chapter->update($request->only(['name_en', 'name_hi', 'slug', 'is_published']));
         return response()->json(['data' => $chapter]);
     }
 
     public function deleteChapter(int $id): JsonResponse
     {
-        Chapter::findOrFail($id)->delete();
+        $chapter = Chapter::findOrFail($id);
+        $this->purgeMaterials(StudyMaterial::where('chapter_id', $id)
+            ->orWhereIn('topic_id', Topic::where('chapter_id', $id)->select('id')));
+        $chapter->delete();
         return response()->json(['message' => 'Deleted.']);
     }
 
@@ -137,61 +162,175 @@ class AdminCourseController extends Controller
             'name_hi' => 'nullable|string|max:255',
             'slug' => 'nullable|string|unique:topics,slug',
         ]);
-        $data['slug'] ??= \App\Support\Slug::unique('topics', $data['name_en'], 'topic');
-        return response()->json(['data' => Topic::create($data)], 201);
+        if (Topic::where('chapter_id', $data['chapter_id'])->whereRaw('LOWER(name_en) = ?', [mb_strtolower(trim($data['name_en']))])->exists()) {
+            return response()->json(['message' => 'This chapter already has a topic with that name.', 'errors' => ['name_en' => ['This chapter already has a topic with that name.']]], 422);
+        }
+
+        return response()->json(['data' => $this->createWithUniqueSlug(Topic::class, 'topics', 'topic', $data)], 201);
+    }
+
+    /**
+     * Two quick clicks can send two requests that pick the same slug; the
+     * unique index rejects the second. Retry with a fresh slug instead of a 500.
+     *
+     * @param class-string<\Illuminate\Database\Eloquent\Model> $model
+     */
+    private function createWithUniqueSlug(string $model, string $table, string $fallback, array $data)
+    {
+        $given = $data['slug'] ?? null;
+        for ($attempt = 0; ; $attempt++) {
+            $data['slug'] = $given ?? \App\Support\Slug::unique($table, $data['name_en'] . ($attempt ? ' ' . Str::lower(Str::random(4)) : ''), $fallback);
+            try {
+                return DB::transaction(fn () => $model::create($data));
+            } catch (\Illuminate\Database\UniqueConstraintViolationException $e) {
+                if ($given !== null || $attempt >= 3) {
+                    throw $e;
+                }
+            }
+        }
     }
 
     public function updateTopic(Request $request, int $id): JsonResponse
     {
         $topic = Topic::findOrFail($id);
-        $topic->update($request->only(['name_en', 'name_hi', 'slug']));
+        $request->validate([
+            'name_en'      => 'sometimes|required|string|max:255',
+            'name_hi'      => 'nullable|string|max:255',
+            'is_published' => 'sometimes|boolean',
+        ]);
+        $topic->update($request->only(['name_en', 'name_hi', 'slug', 'is_published']));
         return response()->json(['data' => $topic]);
     }
 
     public function deleteTopic(int $id): JsonResponse
     {
-        Topic::findOrFail($id)->delete();
+        $topic = Topic::findOrFail($id);
+        $this->purgeMaterials(StudyMaterial::where('topic_id', $id));
+        $topic->delete();
         return response()->json(['message' => 'Deleted.']);
     }
 
     // ─── Materials ────────────────────────────────────────────────────────────
 
+    /**
+     * Add content to a topic (or chapter / subject). Send either
+     *   file      — PDF, image, video (mp4/webm), audio (mp3/m4a/...) or Word/PowerPoint, up to 500 MB
+     *   video_url — a YouTube link (for long lectures that should not be uploaded)
+     * The stored type is worked out from the file; a `type` sent by older
+     * clients is ignored. New content is published unless is_published=false.
+     */
     public function uploadMaterial(Request $request): JsonResponse
     {
         $data = $request->validate([
-            'title'       => 'required|string|max:255',
-            'description' => 'nullable|string|max:1000',
-            'subject_id'  => 'nullable|exists:subjects,id',
-            'chapter_id'  => 'nullable|exists:chapters,id',
-            'topic_id'    => 'nullable|exists:topics,id',
-            'type'        => 'required|string|in:pdf,image,video,doc',
-            'file'        => 'required|file|max:51200', // 50 MB max
-            'is_published'=> 'nullable|boolean',
+            'title'        => 'nullable|string|max:255',
+            'description'  => 'nullable|string|max:1000',
+            'subject_id'   => 'nullable|exists:subjects,id',
+            'chapter_id'   => 'nullable|exists:chapters,id',
+            'topic_id'     => 'nullable|exists:topics,id',
+            'file'         => 'required_without:video_url|file|max:' . CourseContent::MAX_UPLOAD_KB,
+            'video_url'    => 'required_without:file|nullable|string|max:500',
+            'is_published' => 'nullable|boolean',
+        ], [
+            'file.required_without'      => 'Choose a file to upload or paste a YouTube link.',
+            'video_url.required_without' => 'Choose a file to upload or paste a YouTube link.',
+            'file.max'                   => 'The file is too large. The limit is 500 MB — for longer videos, paste a YouTube link instead.',
+            'file.uploaded'              => 'The file could not be uploaded. It may be larger than the server allows (500 MB).',
         ]);
 
-        $path = $request->file('file')->store("study-materials", 'public');
+        if (empty($data['topic_id']) && empty($data['chapter_id']) && empty($data['subject_id'])) {
+            return $this->invalid('topic_id', 'Pick the topic this content belongs to.');
+        }
 
-        $material = StudyMaterial::create([
-            'title'        => $data['title'],
+        // Fill in the parents so subject / chapter filters work everywhere.
+        $topicId = $data['topic_id'] ?? null;
+        $chapterId = $data['chapter_id'] ?? null;
+        $subjectId = $data['subject_id'] ?? null;
+        if ($topicId) {
+            $chapterId = Topic::whereKey($topicId)->value('chapter_id');
+        }
+        if ($chapterId) {
+            $subjectId = Chapter::whereKey($chapterId)->value('subject_id');
+        }
+
+        $attributes = [
             'description'  => $data['description'] ?? null,
-            'subject_id'   => $data['subject_id'] ?? null,
-            'chapter_id'   => $data['chapter_id'] ?? null,
-            'topic_id'     => $data['topic_id'] ?? null,
-            'type'         => $data['type'],
-            'file_path'    => $path,
-            'is_published' => (bool) ($data['is_published'] ?? false),
-        ]);
+            'subject_id'   => $subjectId,
+            'chapter_id'   => $chapterId,
+            'topic_id'     => $topicId,
+            'is_published' => (bool) ($data['is_published'] ?? true),
+        ];
 
-        return response()->json(['data' => $material], 201);
+        if ($request->hasFile('file')) {
+            $file = $request->file('file');
+            $type = CourseContent::typeForFile($file);
+            if ($type === null) {
+                return $this->invalid('file', 'This kind of file is not supported. Upload a PDF, an image (JPG, PNG, WEBP), a video (MP4, WEBM), audio (MP3, M4A, WAV) or a Word / PowerPoint file.');
+            }
+
+            $ext = strtolower($file->getClientOriginalExtension());
+            $path = $file->storeAs('study-materials', Str::random(40) . '.' . $ext, 'public');
+
+            $attributes += [
+                'title'     => $data['title'] ?? pathinfo($file->getClientOriginalName(), PATHINFO_FILENAME),
+                'type'      => $type,
+                'file_path' => $path,
+                'mime_type' => $file->getMimeType(),
+                'file_size' => $file->getSize(),
+            ];
+        } else {
+            $url = trim((string) $data['video_url']);
+            if (CourseContent::youtubeId($url) === null) {
+                return $this->invalid('video_url', 'That does not look like a YouTube video link. Paste a link like https://www.youtube.com/watch?v=... or https://youtu.be/...');
+            }
+
+            $attributes += [
+                'title'        => $data['title'] ?? 'Video lecture',
+                'type'         => 'youtube',
+                'external_url' => $url,
+            ];
+        }
+
+        $material = StudyMaterial::create($attributes);
+
+        return response()->json(['data' => $material->fresh()], 201);
+    }
+
+    /** Rename or show / hide a single piece of content. */
+    public function updateMaterial(Request $request, int $id): JsonResponse
+    {
+        $material = StudyMaterial::findOrFail($id);
+        $data = $request->validate([
+            'title'        => 'sometimes|required|string|max:255',
+            'description'  => 'nullable|string|max:1000',
+            'is_published' => 'sometimes|boolean',
+        ]);
+        $material->update($data);
+
+        return response()->json(['data' => $material->fresh()]);
     }
 
     public function deleteMaterial(int $id): JsonResponse
     {
-        $material = StudyMaterial::findOrFail($id);
-        Storage::disk('public')->delete($material->file_path);
-        $material->delete();
+        StudyMaterial::findOrFail($id);
+        $this->purgeMaterials(StudyMaterial::whereKey($id));
 
         return response()->json(['message' => 'Material deleted.']);
+    }
+
+    /** Delete materials together with their uploaded files. */
+    private function purgeMaterials($query): void
+    {
+        $query->get()->each(function (StudyMaterial $material) {
+            if ($material->file_path) {
+                Storage::disk('public')->delete($material->file_path);
+            }
+            $material->delete();
+        });
+    }
+
+    private function invalid(string $field, string $message): JsonResponse
+    {
+        return response()->json(['message' => $message, 'errors' => [$field => [$message]]], 422);
     }
 
     // ─── Test Series ──────────────────────────────────────────────────────────

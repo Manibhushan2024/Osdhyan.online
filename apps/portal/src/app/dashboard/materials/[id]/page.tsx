@@ -19,12 +19,13 @@ import {
 import { cn } from '@/lib/utils';
 import { useTheme } from '@/components/providers/ThemeProvider';
 import Link from 'next/link';
+import MaterialView from '@/components/courses/MaterialView';
+import { type CourseMaterial, materialUrl, typeLabel } from '@/lib/courseContent';
 
-type Material = {
+type Material = CourseMaterial & {
     id: number;
     title: string;
     description: string;
-    file_path: string;
     type: string;
     subject?: { name_en: string };
     chapter?: { name_en: string };
@@ -160,10 +161,13 @@ export default function MaterialViewerPage() {
 
     if (!material) return null;
 
-    const getBaseUrl = () =>
-        (process.env.NEXT_PUBLIC_STORAGE_URL ?? process.env.NEXT_PUBLIC_API_URL?.replace(/\/api$/, '') ?? '').replace(/\/$/, '');
+    const fileUrl = materialUrl(material);
+    const isMedia = ['video', 'audio', 'youtube'].includes(material.type);
 
-    const fileUrl = `${getBaseUrl()}/storage/${material.file_path}`;
+    const handleMarkDone = () => {
+        setIsCompleted(true);
+        syncProgress(0);
+    };
 
     return (
         <div className="flex flex-col h-[calc(100vh-6rem)] max-w-7xl mx-auto space-y-6 animate-in fade-in slide-in-from-bottom-6 duration-1000">
@@ -181,7 +185,7 @@ export default function MaterialViewerPage() {
                         <div className="flex items-center gap-3 mt-0.5">
                             <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">{material.subject?.name_en}</span>
                             <span className="h-1 w-1 rounded-full bg-card-border" />
-                            <span className="text-xs font-bold text-foreground/40 uppercase tracking-wide">{material.type}</span>
+                            <span className="text-xs font-bold text-foreground/40 uppercase tracking-wide">{typeLabel(material.type)}</span>
                         </div>
                     </div>
                 </div>
@@ -219,6 +223,14 @@ export default function MaterialViewerPage() {
                             >
                                 {isActive ? 'Pause' : 'Resume'}
                             </button>
+                            {!isCompleted && (
+                                <button
+                                    onClick={handleMarkDone}
+                                    className="px-4 py-1.5 bg-emerald-600 text-white rounded-lg text-xs font-black uppercase tracking-wide hover:bg-emerald-700 transition-all"
+                                >
+                                    Mark as done
+                                </button>
+                            )}
                             <button
                                 onClick={handleSaveAndClose}
                                 className="px-4 py-1.5 bg-gray-900 dark:bg-blue-600/20 text-white rounded-lg text-xs font-black uppercase tracking-wide hover:bg-blue-600 transition-all border border-card-border shadow-md"
@@ -229,17 +241,16 @@ export default function MaterialViewerPage() {
                     </div>
 
                     <div className="hidden lg:flex items-center gap-2 border-l border-card-border pl-8">
-                        <a
-                            href={fileUrl}
-                            download
-                            className="h-10 w-10 bg-background/50 text-foreground/40 rounded-xl flex items-center justify-center hover:text-blue-600 transition-all border border-card-border"
-                            title="Download Material"
-                        >
-                            <Download className="h-4 w-4" />
-                        </a>
-                        <button className="h-10 w-10 bg-background/50 rounded-xl flex items-center justify-center text-foreground/40 hover:text-blue-600 transition-all border border-card-border">
-                            <Maximize2 className="h-4 w-4" />
-                        </button>
+                        {fileUrl && (
+                            <a
+                                href={fileUrl}
+                                {...(material.type === 'youtube' ? { target: '_blank', rel: 'noopener noreferrer' } : { download: true })}
+                                className="h-10 w-10 bg-background/50 text-foreground/40 rounded-xl flex items-center justify-center hover:text-blue-600 transition-all border border-card-border"
+                                title={material.type === 'youtube' ? 'Open on YouTube' : 'Download'}
+                            >
+                                {material.type === 'youtube' ? <Maximize2 className="h-4 w-4" /> : <Download className="h-4 w-4" />}
+                            </a>
+                        )}
                     </div>
                 </div>
             </div>
@@ -258,36 +269,12 @@ export default function MaterialViewerPage() {
                     onScroll={handleScroll}
                     className="h-full overflow-y-auto p-4 md:p-8 custom-scrollbar"
                 >
-                    {material.type === 'pdf' ? (
-                        <div className="w-full h-full min-h-[800px]">
-                            <iframe
-                                src={`${fileUrl}#toolbar=0`}
-                                className="w-full h-full rounded-2xl border-0"
-                                title={material.title}
-                            />
-                        </div>
-                    ) : material.type === 'image' ? (
-                        <div className="flex justify-center py-10">
-                            <img
-                                src={fileUrl}
-                                alt={material.title}
-                                className="max-w-full rounded-3xl shadow-2xl border border-gray-100 dark:border-gray-700"
-                            />
-                        </div>
-                    ) : (
-                        <div className="flex flex-col items-center justify-center h-full py-20 text-center space-y-6">
-                            <div className="h-20 w-20 bg-blue-50 dark:bg-blue-900/20 rounded-2xl flex items-center justify-center text-blue-600">
-                                <FolderOpen className="h-10 w-10" />
-                            </div>
-                            <div>
-                                <h2 className="text-lg font-semibold text-foreground">Preview not available</h2>
-                                <p className="text-gray-500 dark:text-gray-400 mt-2 font-medium italic">This file type cannot be previewed. Please download it using the button above.</p>
-                            </div>
-                        </div>
-                    )}
+                    <div className="rounded-2xl overflow-hidden">
+                        <MaterialView material={material} fill={false} />
+                    </div>
 
                     {/* Completion Sensor at bottom */}
-                    {!isCompleted && (
+                    {!isCompleted && !isMedia && (
                         <div className="h-20 flex items-center justify-center text-gray-300 italic font-medium">
                             Scroll to the bottom to mark as mastered...
                         </div>
@@ -310,4 +297,3 @@ export default function MaterialViewerPage() {
     );
 }
 
-import { FolderOpen } from 'lucide-react';

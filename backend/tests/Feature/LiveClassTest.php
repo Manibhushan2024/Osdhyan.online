@@ -4,6 +4,7 @@ namespace Tests\Feature;
 
 use App\Models\LiveClass;
 use App\Models\LiveClassMessage;
+use App\Models\LiveClassParticipant;
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Cache;
@@ -470,7 +471,10 @@ PEM;
             ->assertJsonPath('pinned_messages.0.id', $id);
 
         $this->as($teacher)->deleteJson("/api/live-classes/{$class->id}/messages/{$id}")->assertOk();
-        $this->assertDatabaseMissing('live_class_messages', ['id' => $id]);
+        // Soft-deleted: hidden from chat, and listed so open chat windows drop it.
+        $this->assertSoftDeleted('live_class_messages', ['id' => $id]);
+        $this->as($student)->getJson("/api/live-classes/{$class->id}/messages?after=0")->assertOk()->assertJsonCount(0, 'messages');
+        $this->assertContains($id, $this->as($student)->getJson("/api/live-classes/{$class->id}/state")->json('removed_message_ids'));
     }
 
     // ── Hands ─────────────────────────────────────────────────────────────────
@@ -600,5 +604,144 @@ PEM;
         $this->as($student)->postJson("/api/live-classes/{$class->id}/messages", ['body' => 'late'])->assertStatus(403);
         $this->as($teacher)->postJson("/api/live-classes/{$class->id}/recording", ['recording_url' => 'https://cdn.test/v2.mp4'])
             ->assertOk()->assertJsonPath('class.recording_url', 'https://cdn.test/v2.mp4');
+    }
+
+    // ── Robustness (large classes) ───────────────────────────────────────────
+
+    public function test_first_chat_load_returns_the_newest_messages_and_paging_catches_up(): void
+    {
+        $class = $this->liveClass($this->teacher());
+        $student = $this->student();
+        $now = now();
+        $rows = [];
+        for ($i = 1; $i <= 130; $i++) {
+            $rows[] = ['live_class_id' => $class->id, 'user_id' => $student->id, 'body' => "m{$i}",
+                'is_pinned' => false, 'is_answered' => false, 'created_at' => $now, 'updated_at' => $now];
+        }
+        LiveClassMessage::insert($rows);
+        $ids = LiveClassMessage::where('live_class_id', $class->id)->orderBy('id')->pluck('id')->all();
+
+        // A late joiner sees the current conversation, not the first lines of the class.
+        $first = $this->as($student)->getJson("/api/live-classes/{$class->id}/messages?after=0&limit=50")->assertOk();
+        $this->assertSame('m81', $first->json('messages.0.body'));
+        $this->assertSame('m130', $first->json('messages.49.body'));
+        $this->assertSame($ids[129], $first->json('last_id'));
+        $this->assertSame($ids[129], $this->as($student)->getJson("/api/live-classes/{$class->id}/state")->json('latest_message_id'));
+
+        // Inside the cached window: served from the snapshot, has_more pages forward.
+        $page = $this->as($student)->getJson("/api/live-classes/{$class->id}/messages?after={$ids[49]}&limit=50")->assertOk();
+        $this->assertSame('m51', $page->json('messages.0.body'));
+        $this->assertTrue($page->json('has_more'));
+
+        // Older than the window: read from the table, still ordered and paged.
+        $old = $this->as($student)->getJson("/api/live-classes/{$class->id}/messages?after={$ids[4]}&limit=10")->assertOk();
+        $this->assertSame(['m6', 'm7', 'm8', 'm9', 'm10', 'm11', 'm12', 'm13', 'm14', 'm15'], array_column($old->json('messages'), 'body'));
+        $this->assertTrue($old->json('has_more'));
+
+        $done = $this->as($student)->getJson("/api/live-classes/{$class->id}/messages?after={$ids[120]}&limit=50")->assertOk();
+        $this->assertCount(9, $done->json('messages'));
+        $this->assertFalse($done->json('has_more'));
+    }
+
+    public function test_new_messages_and_answered_flags_reach_other_viewers_on_their_next_poll(): void
+    {
+        $teacher = $this->teacher();
+        $class = $this->liveClass($teacher);
+        $a = $this->student();
+        $b = $this->student();
+        $this->as($b)->getJson("/api/live-classes/{$class->id}/state")->assertOk(); // warms the cache
+
+        $id = $this->as($a)->postJson("/api/live-classes/{$class->id}/messages", ['body' => 'Doubt in Q5'])->assertCreated()->json('message.id');
+
+        $state = $this->as($b)->getJson("/api/live-classes/{$class->id}/state")->assertOk();
+        $this->assertSame($id, $state->json('latest_message_id'));
+        $this->as($b)->getJson("/api/live-classes/{$class->id}/messages?after=0")->assertJsonPath('messages.0.id', $id);
+
+        $this->as($teacher)->patchJson("/api/live-classes/{$class->id}/messages/{$id}/answered")->assertOk();
+        $this->assertSame([$id], $this->as($b)->getJson("/api/live-classes/{$class->id}/state")->json('answered_message_ids'));
+
+        // An open chat passes its cursor to state and gets new messages in the same response.
+        $next = $this->as($a)->postJson("/api/live-classes/{$class->id}/messages", ['body' => 'And Q6?'])->json('message.id');
+        $withChat = $this->as($b)->getJson("/api/live-classes/{$class->id}/state?after={$id}")->assertOk();
+        $this->assertSame([$next], array_column($withChat->json('messages'), 'id'));
+        $this->assertFalse($withChat->json('messages_has_more'));
+        $this->assertArrayNotHasKey('messages', $this->as($b)->getJson("/api/live-classes/{$class->id}/state")->json());
+    }
+
+    public function test_chat_is_rate_limited_per_user_with_a_friendly_message(): void
+    {
+        $class = $this->liveClass($this->teacher());
+        $spammer = $this->student();
+        for ($i = 0; $i < 20; $i++) {
+            $this->as($spammer)->postJson("/api/live-classes/{$class->id}/messages", ['body' => "hi {$i}"])->assertCreated();
+        }
+        $this->as($spammer)->postJson("/api/live-classes/{$class->id}/messages", ['body' => 'one more'])
+            ->assertStatus(429)
+            ->assertJsonPath('message', 'You are sending messages too fast. Please wait a few seconds.');
+
+        // Other students are not affected.
+        $this->as($this->student())->postJson("/api/live-classes/{$class->id}/messages", ['body' => 'hello'])->assertCreated();
+    }
+
+    public function test_a_student_who_vanished_stops_counting_and_frees_the_seat(): void
+    {
+        $teacher = $this->teacher();
+        $class = $this->liveClass($teacher, ['max_participants' => 1]);
+        $ghost = $this->student();
+        $this->as($ghost)->postJson("/api/live-classes/{$class->id}/join")->assertOk();
+
+        $this->as($this->student())->postJson("/api/live-classes/{$class->id}/join")
+            ->assertStatus(403)->assertJsonPath('code', 'full');
+
+        // Tab closed without "leave": no heartbeat for longer than the stale window.
+        LiveClassParticipant::where('user_id', $ghost->id)->update([
+            'last_seen_at' => now()->subSeconds(LiveClassParticipant::STALE_AFTER_SECONDS + 5),
+        ]);
+
+        $this->assertSame(0, $this->as($teacher)->getJson("/api/live-classes/{$class->id}/state")->json('participants_count'));
+        $this->as($this->student())->postJson("/api/live-classes/{$class->id}/join")->assertOk();
+    }
+
+    public function test_state_poll_is_the_heartbeat_and_hints_a_poll_interval(): void
+    {
+        $class = $this->liveClass($this->teacher());
+        $student = $this->student();
+        $this->as($student)->postJson("/api/live-classes/{$class->id}/join")->assertOk();
+        LiveClassParticipant::where('user_id', $student->id)->update(['last_seen_at' => now()->subMinutes(2)]);
+
+        $state = $this->as($student)->getJson("/api/live-classes/{$class->id}/state")->assertOk();
+        $this->assertSame(4000, $state->json('poll_ms'));
+        $this->assertTrue($state->json('me.joined'));
+        $this->assertTrue(LiveClassParticipant::where('user_id', $student->id)->first()->last_seen_at->gt(now()->subSeconds(10)));
+    }
+
+    public function test_public_jitsi_is_flagged_and_youtube_is_the_default_until_jaas_is_configured(): void
+    {
+        $teacher = $this->teacher();
+        config()->set('services.live.jitsi.domain', 'meet.jit.si');
+        config()->set('services.live.jaas', []);
+
+        $providers = $this->as($teacher)->getJson('/api/live-classes/my/classes')->assertOk()->json('providers');
+        $this->assertSame('youtube', $providers['default']);
+        $this->assertSame('public', $providers['jitsi']['mode']);
+        $this->assertNotNull($providers['jitsi']['warning']);
+
+        $class = $this->liveClass($teacher);
+        $this->as($this->student())->postJson("/api/live-classes/{$class->id}/join")
+            ->assertOk()
+            ->assertJsonPath('provider.needs_host_login', true)
+            ->assertJsonPath('provider.web_url', 'https://meet.jit.si/osdhyan-1-abcdefgh');
+    }
+
+    public function test_jitsi_is_the_default_once_jaas_keys_are_configured(): void
+    {
+        $teacher = $this->teacher();
+        config()->set('services.live.jaas', [
+            'app_id' => 'vpaas-magic-cookie-test', 'api_key_id' => 'vpaas-magic-cookie-test/abc', 'private_key' => self::TEST_PRIVATE_KEY,
+        ]);
+        $providers = $this->as($teacher)->getJson('/api/live-classes/my/classes')->assertOk()->json('providers');
+        $this->assertSame('jitsi', $providers['default']);
+        $this->assertSame('jaas', $providers['jitsi']['mode']);
+        $this->assertNull($providers['jitsi']['warning']);
     }
 }

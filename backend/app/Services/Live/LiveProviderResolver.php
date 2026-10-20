@@ -24,21 +24,35 @@ class LiveProviderResolver
         };
     }
 
-    /** Capabilities the portal shows on the schedule form. */
+    /**
+     * Capabilities the portal shows on the schedule form.
+     *
+     * `default` is what the form pre-selects: YouTube Live unless a Jitsi
+     * server that works when embedded is configured (JaaS keys, or a
+     * self-hosted JITSI_DOMAIN). On the free public meet.jit.si the host
+     * has to sign in with Google/GitHub/Facebook inside the video before
+     * anyone can enter, which is unreliable inside our page.
+     */
     public function describe(): array
     {
         $jitsi = $this->for(LiveClass::PROVIDER_JITSI);
+        $mode = $jitsi instanceof JitsiProvider ? $jitsi->mode() : 'public';
+        $jitsiReliable = $mode !== 'public';
 
         return [
+            'default' => $jitsiReliable ? LiveClass::PROVIDER_JITSI : LiveClass::PROVIDER_YOUTUBE,
             'jitsi' => [
-                'label'       => 'Interactive (Jitsi)',
-                'mode'        => $jitsi instanceof JitsiProvider && $jitsi->usesJaas() ? 'jaas' : 'plain',
-                'recommended' => 'Up to ~50 students. Camera, mic, screen share, two-way Q&A.',
+                'label'       => 'Small interactive class (Jitsi video call)',
+                'mode'        => $mode,
+                'recommended' => 'Best for up to ~50 students. Teacher and students can talk, share camera and screen.',
+                'warning'     => $jitsiReliable ? null
+                    : 'Uses the free public Jitsi server: when you start, Jitsi asks you (the teacher) to sign in with Google, GitHub or Facebook inside the video. Students wait until you do. For a smooth experience ask the admin to add JaaS keys, or use YouTube Live.',
             ],
             'youtube' => [
-                'label'       => 'Broadcast (YouTube Live)',
+                'label'       => 'Big class (YouTube Live + OSDHYAN chat)',
                 'mode'        => 'embed',
-                'recommended' => 'For 500+ students. Stream with OBS / YouTube Studio; chat and polls stay in-app.',
+                'recommended' => 'Best for 50 to 5,000+ students. You stream on YouTube (unlisted); students watch here and ask questions in our chat, polls and raise-hand.',
+                'warning'     => null,
             ],
         ];
     }

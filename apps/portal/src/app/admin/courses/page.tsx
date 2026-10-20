@@ -111,7 +111,7 @@ export default function AdminSubjectsPage() {
             });
         } catch (error) {
             console.error('Deployment Failed', error);
-            alert('Deployment Error: Verify unique code and required fields.');
+            alert('Could not create the subject. Check that the code is unique and all required fields are filled.');
         } finally {
             setIsDeploying(false);
         }
@@ -151,7 +151,7 @@ export default function AdminSubjectsPage() {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
                 {[
                     { label: 'Total Subjects', val: subjects.length, icon: BookOpen, color: 'text-blue-600', href: '/admin/courses' },
-                    { label: 'Live Domains', val: subjects.filter(s => s.is_published).length, icon: CheckCircle2, color: 'text-emerald-600', href: '/admin/courses' },
+                    { label: 'Visible subjects', val: subjects.filter(s => s.is_published).length, icon: CheckCircle2, color: 'text-emerald-600', href: '/admin/courses' },
                     { label: 'Test Series', val: 'MANAGE', icon: Rocket, color: 'text-indigo-600', href: '/admin/test-series' },
                     { label: 'General GS', val: subjects.filter(s => s.category !== 'NCERT').length, icon: Globe, color: 'text-indigo-600', href: '/admin/courses' },
                 ].map((stat, i) => (
@@ -173,7 +173,7 @@ export default function AdminSubjectsPage() {
                     <Search className="absolute left-6 top-1/2 -translate-y-1/2 h-4 w-4 text-foreground/20 group-focus-within:text-indigo-600 transition-colors" />
                     <input
                         type="text"
-                        placeholder="SCAN DOMAIN CODES OR NAMES..."
+                        placeholder="Search subjects by name or code..."
                         value={search}
                         onChange={(e) => setSearch(e.target.value)}
                         className="w-full bg-card-bg border border-card-border rounded-2xl py-5 pl-14 pr-6 text-xs font-black uppercase tracking-wide focus:outline-none focus:border-indigo-600/30 shadow-xl shadow-transparent focus:shadow-indigo-600/5 transition-all"
@@ -209,7 +209,7 @@ export default function AdminSubjectsPage() {
                             className="flex items-center gap-3 bg-indigo-600 text-white px-8 py-5 rounded-2xl text-xs font-black uppercase tracking-wide shadow-2xl shadow-indigo-500/20 hover:scale-[1.02] active:scale-95 transition-all group"
                         >
                             <Plus className="h-4 w-4 group-hover:rotate-12 transition-transform" />
-                            Deploy New Course
+                            New subject
                         </button>
                     </div>
                 </div>
@@ -255,7 +255,7 @@ export default function AdminSubjectsPage() {
                                                 : "bg-amber-600/10 text-amber-600 border-amber-600/20"
                                         )}>
                                             <div className={cn("h-1.5 w-1.5 rounded-full", subject.is_published ? "bg-emerald-500 animate-pulse" : "bg-amber-500")} />
-                                            {subject.is_published ? 'LIVE IN PORTAL' : 'SELECTION DRAFT'}
+                                            {subject.is_published ? 'Visible to students' : 'Hidden from students'}
                                         </div>
                                     </td>
                                     <td className="px-8 py-7">
@@ -306,7 +306,7 @@ export default function AdminSubjectsPage() {
                                         <Rocket className="text-white h-6 w-6" />
                                     </div>
                                     <div>
-                                        <h2 className="text-lg font-black text-foreground uppercase tracking-tight ">Deployment Wizard</h2>
+                                        <h2 className="text-lg font-black text-foreground uppercase tracking-tight ">Create a subject</h2>
                                         <p className="text-xs font-black text-indigo-600 uppercase tracking-wide">New subject</p>
                                     </div>
                                 </div>
@@ -345,7 +345,7 @@ export default function AdminSubjectsPage() {
                                 </div>
 
                                 <div className="space-y-2">
-                                    <label className="text-xs font-black text-foreground/40 uppercase tracking-wide block px-2">Strategic Key (Unique Code)</label>
+                                    <label className="text-xs font-black text-foreground/40 uppercase tracking-wide block px-2">Subject code (unique)</label>
                                     <input
                                         required
                                         type="text"
@@ -358,7 +358,7 @@ export default function AdminSubjectsPage() {
 
                                 <div className="grid grid-cols-2 gap-6">
                                     <div className="space-y-2">
-                                        <label className="text-xs font-black text-foreground/40 uppercase tracking-wide block px-2">Domain Name (English)</label>
+                                        <label className="text-xs font-black text-foreground/40 uppercase tracking-wide block px-2">Subject name (English)</label>
                                         <input
                                             required
                                             type="text"
@@ -369,7 +369,7 @@ export default function AdminSubjectsPage() {
                                         />
                                     </div>
                                     <div className="space-y-2">
-                                        <label className="text-xs font-black text-foreground/40 uppercase tracking-wide block px-2">Domain Name (Hindi)</label>
+                                        <label className="text-xs font-black text-foreground/40 uppercase tracking-wide block px-2">Subject name (Hindi)</label>
                                         <input
                                             required
                                             type="text"
@@ -383,7 +383,7 @@ export default function AdminSubjectsPage() {
 
                                 {wizardData.category === 'NCERT' && (
                                     <div className="space-y-2 animate-in slide-in-from-top-2 duration-300">
-                                        <label className="text-xs font-black text-foreground/40 uppercase tracking-wide block px-2">Grade Level</label>
+                                        <label className="text-xs font-black text-foreground/40 uppercase tracking-wide block px-2">Class</label>
                                         <input
                                             type="text"
                                             placeholder="e.g. 10th"
@@ -404,7 +404,7 @@ export default function AdminSubjectsPage() {
                                     ) : (
                                         <Rocket className="h-5 w-5 group-hover:-translate-y-1 transition-transform" />
                                     )}
-                                    {isDeploying ? 'Deploying...' : 'Initialize Deployment'}
+                                    {isDeploying ? 'Creating...' : 'Create subject'}
                                 </button>
                             </form>
                         </div>

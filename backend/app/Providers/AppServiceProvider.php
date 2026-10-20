@@ -50,6 +50,14 @@ class AppServiceProvider extends ServiceProvider
         RateLimiter::for('api', fn (Request $r) => Limit::perMinute(300)
             ->by('u:' . ($r->user()?->id ?: $r->ip())));
 
+        // Live class chat: a human types well under 20 messages a minute;
+        // this stops one student (or a script) flooding a 1,000-seat class.
+        RateLimiter::for('live-chat', fn (Request $r) => Limit::perMinute(20)
+            ->by('u:' . ($r->user()?->id ?: $r->ip()))
+            ->response(fn () => response()->json([
+                'message' => 'You are sending messages too fast. Please wait a few seconds.',
+            ], 429)));
+
         RateLimiter::for('answers', fn (Request $r) => Limit::perMinute(90)
             ->by('u:' . ($r->user()?->id ?: $r->ip())));
 

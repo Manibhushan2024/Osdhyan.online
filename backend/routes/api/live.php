@@ -49,7 +49,7 @@ Route::middleware(['auth:sanctum', 'throttle:api'])->group(function () {
     Route::post('/live-classes/{id}/leave', [LiveClassController::class, 'leave']);
     Route::get('/live-classes/{id}/state', [LiveClassController::class, 'state']);
     Route::get('/live-classes/{id}/messages', [LiveClassController::class, 'messages']);
-    Route::post('/live-classes/{id}/messages', [LiveClassController::class, 'sendMessage']);
+    Route::post('/live-classes/{id}/messages', [LiveClassController::class, 'sendMessage'])->middleware('throttle:live-chat');
     Route::post('/live-classes/{id}/raise-hand', [LiveClassController::class, 'raiseHand']);
     Route::post('/live-classes/{id}/lower-hand', [LiveClassController::class, 'lowerHand']);
     Route::post('/live-classes/{id}/polls/{poll}/vote', [LiveClassController::class, 'vote']);

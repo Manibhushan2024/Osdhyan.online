@@ -44,7 +44,7 @@ class LiveClassTeacherController extends Controller
     private function ownerArray(LiveClass $class): array
     {
         $class->loadMissing('teacher:id,name,avatar');
-        $class->loadCount(['participants as participants_count' => fn ($p) => $p->whereNull('left_at')]);
+        $class->loadCount(LiveClass::activeParticipantsCountConstraint());
 
         return array_merge($class->toPublicArray(), [
             'room_name'        => $class->room_name,
@@ -83,7 +83,7 @@ class LiveClassTeacherController extends Controller
         $classes = LiveClass::query()
             ->where('teacher_id', $request->user()->id)
             ->with('teacher:id,name,avatar')
-            ->withCount(['participants as participants_count' => fn ($p) => $p->whereNull('left_at')])
+            ->withCount(LiveClass::activeParticipantsCountConstraint())
             ->orderByRaw("case status when 'live' then 0 when 'scheduled' then 1 else 2 end")
             ->orderByDesc('scheduled_at')
             ->limit(200)
@@ -105,7 +105,7 @@ class LiveClassTeacherController extends Controller
         }
         $q = LiveClass::query()
             ->with('teacher:id,name,avatar')
-            ->withCount(['participants as participants_count' => fn ($p) => $p->whereNull('left_at')])
+            ->withCount(LiveClass::activeParticipantsCountConstraint())
             ->orderByDesc('scheduled_at');
         if ($status = $request->query('status')) {
             $q->where('status', $status);
@@ -249,7 +249,7 @@ class LiveClassTeacherController extends Controller
         $class = $this->owned($request, $id);
         $rows = LiveClassParticipant::query()
             ->where('live_class_id', $class->id)
-            ->whereNull('left_at')
+            ->active()
             ->with('user:id,name,avatar')
             ->orderByDesc('joined_at')
             ->limit(500)

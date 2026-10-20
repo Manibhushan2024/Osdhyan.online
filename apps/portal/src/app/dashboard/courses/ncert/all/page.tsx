@@ -17,6 +17,7 @@ import {
     Sparkles,
 } from 'lucide-react';
 import api from '@/lib/api';
+import { asList } from '@/lib/courseContent';
 
 export default function NcertAllSubjectsPage() {
     const router = useRouter();
@@ -30,7 +31,7 @@ export default function NcertAllSubjectsPage() {
     const fetchSubjects = async () => {
         try {
             const res = await api.get(`/courses/subjects?category=NCERT`);
-            setSubjects(res.data);
+            setSubjects(asList(res.data));
         } catch (error) {
             console.error('Failed to fetch subjects', error);
         } finally {

@@ -8,20 +8,17 @@ import {
     BookOpen,
     ChevronRight,
     CircleCheck,
-    FileText,
     LibraryBig,
     Loader2,
-    Map,
-    Mic,
-    Video,
     Zap,
-    Layers,
 } from 'lucide-react';
 import api from '@/lib/api';
 import { cn } from '@/lib/utils';
-import MultiModalPlayer from './MultiModalPlayer';
+import { isAxiosError } from 'axios';
+import { CONTENT_GROUPS, type ContentGroup, type CourseChapter, asList, materialsInGroup } from '@/lib/courseContent';
+import MultiModalPlayer, { groupIcons } from './MultiModalPlayer';
 
-type ContentType = 'text' | 'audio' | 'video' | 'mindmap' | 'infographic';
+type ContentType = ContentGroup;
 
 type BreadcrumbItem = {
     label: string;
@@ -39,17 +36,10 @@ const contentModes: Array<{
     id: ContentType;
     icon: ComponentType<{ className?: string }>;
     label: string;
-    short: string;
-}> = [
-    { id: 'text', icon: FileText, label: 'PDF Notes', short: 'PDF' },
-    { id: 'audio', icon: Mic, label: 'Audio Brief', short: 'Audio' },
-    { id: 'video', icon: Video, label: 'Video Class', short: 'Video' },
-    { id: 'mindmap', icon: Map, label: 'Mindmap', short: 'Map' },
-    { id: 'infographic', icon: Layers, label: 'Infographic', short: 'Info' },
-];
+}> = CONTENT_GROUPS.map((g) => ({ id: g.id, label: g.label, icon: groupIcons[g.id] }));
 
 function hasType(topic: any, type: ContentType) {
-    return !!topic?.materials?.some((m: any) => m.type === type);
+    return materialsInGroup(topic?.materials, type).length > 0;
 }
 
 export default function SubjectLearningConsole({
@@ -63,7 +53,8 @@ export default function SubjectLearningConsole({
     const [loading, setLoading] = useState(true);
     const [activeChapter, setActiveChapter] = useState<number | null>(null);
     const [selectedTopic, setSelectedTopic] = useState<any>(null);
-    const [contentType, setContentType] = useState<ContentType>('text');
+    const [contentType, setContentType] = useState<ContentType>('notes');
+    const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
         if (!subjectId) return;
@@ -73,18 +64,19 @@ export default function SubjectLearningConsole({
     const fetchHierarchy = async () => {
         try {
             const res = await api.get(`/courses/subjects/${subjectId}/hierarchy`);
-            const allChapters = res.data || [];
+            const allChapters = asList<CourseChapter>(res.data);
             setChapters(allChapters);
 
-            if (allChapters.length > 0) {
-                setActiveChapter(allChapters[0].id);
-                const firstTopic = allChapters[0]?.topics?.[0];
-                if (firstTopic) {
-                    setSelectedTopic(firstTopic);
-                }
+            // Open the first chapter that has topics.
+            const first = allChapters.find((c) => c.topics?.length) ?? allChapters[0];
+            if (first) {
+                setActiveChapter(first.id);
+                if (first.topics?.[0]) setSelectedTopic(first.topics[0]);
             }
-        } catch (error) {
-            console.error('Failed to fetch hierarchy', error);
+        } catch (err) {
+            setError(isAxiosError(err) && err.response?.status === 404
+                ? 'This subject is not available yet.'
+                : 'Could not load this subject. Please try again.');
         } finally {
             setLoading(false);
         }
@@ -111,8 +103,25 @@ export default function SubjectLearningConsole({
             <div className="flex flex-col items-center justify-center py-40 gap-4">
                 <Loader2 className="h-10 w-10 text-blue-600 animate-spin" />
                 <p className="text-[10px] font-black text-foreground/40 uppercase tracking-[0.3em]">
-                    Mapping {contextLabel} content...
+                    Loading {contextLabel}...
                 </p>
+            </div>
+        );
+    }
+
+    if (error || chapters.length === 0) {
+        return (
+            <div className="max-w-2xl mx-auto py-32 px-4 text-center space-y-4">
+                <BookOpen className="h-10 w-10 text-blue-600/60 mx-auto" />
+                <p className="text-base font-semibold text-foreground">
+                    {error ?? 'No chapters have been added to this subject yet.'}
+                </p>
+                <button
+                    onClick={() => router.back()}
+                    className="inline-flex items-center gap-2 rounded-xl border border-card-border px-4 py-2 text-sm font-semibold text-foreground/70 hover:text-blue-600"
+                >
+                    <ArrowLeft className="h-4 w-4" /> Go back
+                </button>
             </div>
         );
     }
@@ -150,7 +159,7 @@ export default function SubjectLearningConsole({
                                 {selectedTopic?.name_en || contextLabel}
                             </h1>
                             <p className="text-xs md:text-sm text-cyan-100/80 mt-1">
-                                {subtitle || 'Study with PDF, Audio, Video, Mindmap, and Infographic in one full-window console.'}
+                                {subtitle || 'Study each topic with notes, video, audio and mind maps.'}
                             </p>
                         </div>
                     </div>
@@ -163,7 +172,7 @@ export default function SubjectLearningConsole({
                             Topics: {totalTopics}
                         </span>
                         <span className="rounded-full border border-white/25 bg-white/10 px-3 py-1 text-cyan-100">
-                            Modes: {availableModeCount}/5
+                            Content types: {availableModeCount}/{contentModes.length}
                         </span>
                     </div>
                 </div>
@@ -172,11 +181,11 @@ export default function SubjectLearningConsole({
             <div className="grid grid-cols-1 xl:grid-cols-[330px_minmax(0,1fr)] gap-5 min-h-[calc(100vh-14rem)]">
                 <aside className="rounded-[2rem] border border-card-border bg-card-bg shadow-sm overflow-hidden flex flex-col xl:sticky xl:top-24 h-fit max-h-[calc(100vh-7rem)]">
                     <div className="p-5 border-b border-card-border">
-                        <h2 className="text-[10px] font-black text-foreground/40 uppercase tracking-[0.3em]">Chapter Navigator</h2>
-                        <p className="text-xs text-foreground/55 mt-2">Select chapter and topic to open full learning view.</p>
+                        <h2 className="text-[10px] font-black text-foreground/40 uppercase tracking-[0.3em]">Chapters</h2>
+                        <p className="text-xs text-foreground/55 mt-2">Pick a chapter, then a topic to study.</p>
                         {activeChapterInfo ? (
                             <div className="mt-3 rounded-xl border border-blue-200/40 bg-blue-50/70 px-3 py-2">
-                                <p className="text-[10px] font-black uppercase tracking-widest text-blue-700">Active Chapter</p>
+                                <p className="text-[10px] font-black uppercase tracking-widest text-blue-700">Current chapter</p>
                                 <p className="text-xs font-bold text-blue-900 mt-1 line-clamp-2">{activeChapterInfo.name_en}</p>
                             </div>
                         ) : null}
@@ -200,6 +209,9 @@ export default function SubjectLearningConsole({
 
                                 {activeChapter === chapter.id ? (
                                     <div className="space-y-1 px-1 pb-1 animate-in slide-in-from-top-2 duration-200">
+                                        {!chapter.topics?.length && (
+                                            <p className="px-3 py-2 text-xs text-foreground/45">No topics in this chapter yet.</p>
+                                        )}
                                         {chapter.topics?.map((topic: any) => (
                                             <button
                                                 key={topic.id}
@@ -212,7 +224,10 @@ export default function SubjectLearningConsole({
                                                 )}
                                             >
                                                 <Zap className={cn('h-3.5 w-3.5', selectedTopic?.id === topic.id ? 'text-white' : 'text-blue-600')} />
-                                                <span className="text-[11px] font-black uppercase tracking-wider truncate">{topic.name_en}</span>
+                                                <span className="text-[11px] font-black uppercase tracking-wider truncate flex-1">{topic.name_en}</span>
+                                                <span className={cn('text-[10px] font-bold', selectedTopic?.id === topic.id ? 'text-white/80' : 'text-foreground/40')}>
+                                                    {topic.materials?.length || 0}
+                                                </span>
                                             </button>
                                         ))}
                                     </div>
@@ -226,20 +241,21 @@ export default function SubjectLearningConsole({
                     <div className="border-b border-card-border p-4 md:p-5">
                         <div className="flex items-center justify-between gap-4 flex-wrap">
                             <div>
-                                <p className="text-[10px] font-black text-foreground/40 uppercase tracking-[0.3em]">Learning Modes</p>
+                                <p className="text-[10px] font-black text-foreground/40 uppercase tracking-[0.3em]">Content</p>
                                 <p className="text-sm text-foreground/60 mt-1">
-                                    All modes support full-window study and mini mode from the player controls.
+                                    Choose what to study. Use the buttons on the player for full screen or a small window.
                                 </p>
                             </div>
                             <div className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-foreground/55">
                                 <LibraryBig className="h-4 w-4 text-blue-600" />
-                                Topic-ready multimodal learning
+                                {selectedTopic?.materials?.length || 0} item(s) in this topic
                             </div>
                         </div>
 
-                        <div className="grid grid-cols-2 md:grid-cols-5 gap-2 mt-4">
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-4">
                             {contentModes.map((mode) => {
                                 const available = hasType(selectedTopic, mode.id);
+                                const count = materialsInGroup(selectedTopic?.materials, mode.id).length;
                                 return (
                                     <button
                                         key={mode.id}
@@ -258,15 +274,15 @@ export default function SubjectLearningConsole({
                                                 <CircleCheck className={cn('h-3.5 w-3.5', contentType === mode.id ? 'text-white' : 'text-emerald-600')} />
                                             ) : (
                                                 <span className={cn('text-[9px] font-black uppercase tracking-widest', contentType === mode.id ? 'text-white/90' : 'text-foreground/35')}>
-                                                    N/A
+                                                    None
                                                 </span>
                                             )}
                                         </div>
-                                        <div className={cn('mt-2 text-[10px] font-black uppercase tracking-wider', contentType === mode.id ? 'text-white' : 'text-foreground')}>
-                                            {mode.short}
+                                        <div className={cn('mt-2 text-xs font-black', contentType === mode.id ? 'text-white' : 'text-foreground')}>
+                                            {mode.label}
                                         </div>
                                         <div className={cn('text-[10px] mt-0.5', contentType === mode.id ? 'text-white/80' : 'text-foreground/50')}>
-                                            {mode.label}
+                                            {count ? `${count} item${count > 1 ? 's' : ''}` : 'Not added yet'}
                                         </div>
                                     </button>
                                 );
@@ -276,12 +292,12 @@ export default function SubjectLearningConsole({
 
                     <div className="flex-1 min-h-0 p-4 md:p-5">
                         {selectedTopic ? (
-                            <MultiModalPlayer type={contentType} topic={selectedTopic} />
+                            <MultiModalPlayer group={contentType} topic={selectedTopic} />
                         ) : (
                             <div className="h-full rounded-[1.5rem] border border-dashed border-card-border bg-background flex flex-col items-center justify-center text-center p-8">
                                 <BookOpen className="h-8 w-8 text-blue-600/60 mb-3" />
                                 <p className="text-sm font-black uppercase tracking-wider text-foreground/60">Select a topic from the left panel</p>
-                                <p className="text-xs text-foreground/45 mt-2">Then choose PDF, Audio, Video, Mindmap, or Infographic mode.</p>
+                                <p className="text-xs text-foreground/45 mt-2">Then choose notes, video, audio or mind maps.</p>
                             </div>
                         )}
                     </div>

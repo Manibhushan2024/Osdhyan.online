@@ -2,11 +2,12 @@ import type { useAuth } from '@/components/providers/AuthProvider';
 
 type AuthUser = NonNullable<ReturnType<typeof useAuth>['user']>;
 
-/** Teachers (users.role) and admins may run classes. */
+/** Teachers (users.role) and admins (root/editor, as the API checks) may run classes. */
 export function canTeach(user: AuthUser | null | undefined): boolean {
     if (!user) return false;
     const role = (user as { role?: string }).role;
-    return role === 'teacher' || !!user.is_teacher || !!user.is_admin;
+    const isAdmin = !!user.is_admin && (user.admin_role === 'root' || user.admin_role === 'editor');
+    return role === 'teacher' || !!user.is_teacher || isAdmin;
 }
 
 export function formatAgo(dateStr: string): string {

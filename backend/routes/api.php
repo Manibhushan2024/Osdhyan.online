@@ -192,6 +192,7 @@ Route::middleware(['auth:sanctum', 'throttle:api'])->group(function () {
 
         Route::get('/admin/subjects', [\App\Http\Controllers\Api\AdminCourseController::class, 'getSubjects']);
         Route::post('/admin/subjects', [\App\Http\Controllers\Api\AdminCourseController::class, 'storeSubject']);
+        Route::get('/admin/subjects/{id}/hierarchy', [\App\Http\Controllers\Api\AdminCourseController::class, 'subjectHierarchy']);
         Route::put('/admin/subjects/{id}', [\App\Http\Controllers\Api\AdminCourseController::class, 'updateSubject']);
         Route::delete('/admin/subjects/{id}', [\App\Http\Controllers\Api\AdminCourseController::class, 'deleteSubject'])
             ->middleware('root_admin');
@@ -207,6 +208,7 @@ Route::middleware(['auth:sanctum', 'throttle:api'])->group(function () {
             ->middleware('root_admin');
 
         Route::post('/admin/materials/upload', [\App\Http\Controllers\Api\AdminCourseController::class, 'uploadMaterial']);
+        Route::put('/admin/materials/{id}', [\App\Http\Controllers\Api\AdminCourseController::class, 'updateMaterial']);
         Route::delete('/admin/materials/{id}', [\App\Http\Controllers\Api\AdminCourseController::class, 'deleteMaterial'])
             ->middleware('root_admin');
 

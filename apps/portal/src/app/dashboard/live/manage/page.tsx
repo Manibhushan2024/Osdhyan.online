@@ -28,8 +28,8 @@ type FormState = {
     youtube_url: string;
 };
 
-const emptyForm = (): FormState => ({
-    title: '', description: '', subject: '', exam: '', provider: 'jitsi',
+const emptyForm = (provider: LiveProviderKey = 'youtube'): FormState => ({
+    title: '', description: '', subject: '', exam: '', provider,
     scheduled_at: isoToLocalInput(new Date(Date.now() + 60 * 60 * 1000).toISOString()),
     duration_min: '60', max_participants: '0', youtube_url: '',
 });
@@ -73,7 +73,7 @@ export default function ManageLiveClassesPage() {
 
     const act = async (cls: OwnedLiveClass, action: 'go-live' | 'end' | 'delete') => {
         if (busyId) return;
-        if (action === 'end' && !confirm(`End "${cls.title}" for everyone?`)) return;
+        if (action === 'end' && !confirm(`End "${cls.title}" for everyone?\n\nThe video, chat and polls close for all students. This cannot be undone.`)) return;
         if (action === 'delete' && !confirm(`Delete "${cls.title}"? This cannot be undone.`)) return;
         setBusyId(cls.id);
         try {
@@ -86,8 +86,8 @@ export default function ManageLiveClassesPage() {
                 const updated: OwnedLiveClass = res.data.class;
                 setClasses(prev => prev.map(c => (c.id === updated.id ? updated : c)));
                 if (action === 'go-live') {
-                    toast.success('You are live — opening the classroom');
-                    router.push(`/dashboard/live/${cls.id}`);
+                    toast.success('Class started. Opening the classroom…');
+                    router.push(`/dashboard/live/${cls.id}?autojoin=1`);
                 } else {
                     toast.success('Class ended');
                     setRecordingFor(updated);
@@ -156,15 +156,16 @@ export default function ManageLiveClassesPage() {
                 <div className="bg-card-bg border border-card-border rounded-[1.5rem] p-5 flex gap-4">
                     <div className="h-11 w-11 rounded-2xl bg-blue-500/10 flex items-center justify-center shrink-0"><Video className="h-5 w-5 text-blue-500" /></div>
                     <div>
-                        <p className="text-sm font-black text-foreground">Interactive (Jitsi)</p>
-                        <p className="text-xs text-foreground/60 mt-1">Up to ~50 students. Camera, mic, screen share, two-way doubts. Starts in one click from this panel — no extra software.</p>
+                        <p className="text-sm font-black text-foreground">{providers?.jitsi.label ?? 'Small interactive class (Jitsi video call)'}</p>
+                        <p className="text-xs text-foreground/60 mt-1">{providers?.jitsi.recommended ?? 'Best for up to ~50 students. Teacher and students can talk, share camera and screen.'}</p>
+                        {providers?.jitsi.warning && <p className="text-xs text-amber-600 mt-2">{providers.jitsi.warning}</p>}
                     </div>
                 </div>
                 <div className="bg-card-bg border border-card-border rounded-[1.5rem] p-5 flex gap-4">
                     <div className="h-11 w-11 rounded-2xl bg-red-500/10 flex items-center justify-center shrink-0"><Youtube className="h-5 w-5 text-red-500" /></div>
                     <div>
-                        <p className="text-sm font-black text-foreground">Broadcast (YouTube Live)</p>
-                        <p className="text-xs text-foreground/60 mt-1">For 500+ students. Stream with OBS / YouTube Studio and paste the Live URL here; chat, polls and hand-raise stay inside OSDHYAN.</p>
+                        <p className="text-sm font-black text-foreground">{providers?.youtube.label ?? 'Big class (YouTube Live + OSDHYAN chat)'} {providers?.default === 'youtube' && <span className="ml-1 text-[10px] font-bold text-emerald-600 bg-emerald-500/10 px-2 py-0.5 rounded-full align-middle">Recommended</span>}</p>
+                        <p className="text-xs text-foreground/60 mt-1">{providers?.youtube.recommended ?? 'Best for 50 to 5,000+ students. You stream on YouTube; students watch here and ask questions in our chat.'}</p>
                     </div>
                 </div>
             </div>
@@ -207,16 +208,16 @@ export default function ManageLiveClassesPage() {
                             <div className="flex items-center gap-2 flex-wrap md:justify-end">
                                 {cls.status === 'scheduled' && (
                                     <button onClick={() => act(cls, 'go-live')} disabled={busyId === cls.id} className="flex items-center gap-1.5 px-4 py-2.5 rounded-2xl bg-red-500 hover:bg-red-400 text-white text-[9px] font-black uppercase tracking-widest disabled:opacity-50">
-                                        <Radio className="h-3 w-3" /> Go live
+                                        <Radio className="h-3 w-3" /> Start class
                                     </button>
                                 )}
                                 {cls.status === 'live' && (
                                     <>
                                         <Link href={`/dashboard/live/${cls.id}`} className="flex items-center gap-1.5 px-4 py-2.5 rounded-2xl bg-red-500 hover:bg-red-400 text-white text-[9px] font-black uppercase tracking-widest">
-                                            <Radio className="h-3 w-3" /> Enter
+                                            <Radio className="h-3 w-3" /> Open classroom
                                         </Link>
                                         <button onClick={() => act(cls, 'end')} disabled={busyId === cls.id} className="flex items-center gap-1.5 px-4 py-2.5 rounded-2xl bg-foreground/5 hover:bg-foreground/10 text-foreground text-[9px] font-black uppercase tracking-widest disabled:opacity-50">
-                                            <Square className="h-3 w-3" /> End
+                                            <Square className="h-3 w-3" /> End class
                                         </button>
                                     </>
                                 )}
@@ -225,7 +226,7 @@ export default function ManageLiveClassesPage() {
                                         <Film className="h-3 w-3" /> {cls.recording_url ? 'Change recording' : 'Add recording'}
                                     </button>
                                 )}
-                                <IconButton title="Copy student link" onClick={() => copyLink(cls)}><Link2 className="h-3.5 w-3.5" /></IconButton>
+                                <IconButton title="Copy the link for students" onClick={() => copyLink(cls)}><Link2 className="h-3.5 w-3.5" /></IconButton>
                                 {cls.status !== 'ended' && (
                                     <IconButton title="Edit" onClick={() => setEditing(cls)}><Pencil className="h-3.5 w-3.5" /></IconButton>
                                 )}
@@ -308,7 +309,7 @@ function ScheduleModal({ existing, providers, onClose, onSaved }: {
         duration_min: existing.duration_min ? String(existing.duration_min) : '',
         max_participants: String(existing.max_participants ?? 0),
         youtube_url: existing.youtube_video_id ? `https://www.youtube.com/watch?v=${existing.youtube_video_id}` : '',
-    } : emptyForm());
+    } : emptyForm(providers?.default ?? 'youtube'));
     const [saving, setSaving] = useState(false);
     const set = <K extends keyof FormState>(k: K, v: FormState[K]) => setForm(f => ({ ...f, [k]: v }));
 
@@ -348,7 +349,7 @@ function ScheduleModal({ existing, providers, onClose, onSaved }: {
                 <div className="flex items-start justify-between">
                     <div>
                         <h2 className="text-xl font-black text-foreground tracking-tight">{existing ? 'Edit class' : 'Schedule a live class'}</h2>
-                        <p className="text-[10px] font-bold text-foreground/40 uppercase tracking-widest mt-1">Students see it under &ldquo;Upcoming&rdquo; immediately</p>
+                        <p className="text-[10px] font-bold text-foreground/40 uppercase tracking-widest mt-1">Students see it under &ldquo;Upcoming&rdquo; right away. You start it later with &ldquo;Start class&rdquo;.</p>
                     </div>
                     <button onClick={onClose} className="p-2 rounded-xl hover:bg-foreground/5 text-foreground/50" aria-label="Close"><X className="h-4 w-4" /></button>
                 </div>
@@ -369,13 +370,14 @@ function ScheduleModal({ existing, providers, onClose, onSaved }: {
                             >
                                 <div className="flex items-center gap-2">
                                     {p === 'youtube' ? <Youtube className="h-4 w-4 text-red-500" /> : <Video className="h-4 w-4 text-blue-500" />}
-                                    <span className="text-sm font-black text-foreground">{info?.label ?? (p === 'youtube' ? 'Broadcast (YouTube Live)' : 'Interactive (Jitsi)')}</span>
+                                    <span className="text-sm font-black text-foreground">{info?.label ?? (p === 'youtube' ? 'Big class (YouTube Live)' : 'Small interactive class (Jitsi)')}</span>
                                     {active && <Check className="h-4 w-4 text-red-500 ml-auto" />}
                                 </div>
                                 <p className="text-[11px] text-foreground/60 mt-1.5">
                                     {info?.recommended ?? (p === 'youtube'
-                                        ? 'For 500+ students. Stream with OBS / YouTube Studio; chat and polls stay in-app.'
-                                        : 'Up to ~50 students. Camera, mic, screen share, two-way Q&A.')}
+                                        ? 'Best for big batches. You stream on YouTube; chat and polls stay in OSDHYAN.'
+                                        : 'Best for up to ~50 students. Talk, camera and screen share.')}
+                                    {providers?.default === p && <span className="block mt-1 text-[10px] font-bold text-emerald-600">Recommended</span>}
                                 </p>
                             </button>
                         );
@@ -386,20 +388,29 @@ function ScheduleModal({ existing, providers, onClose, onSaved }: {
                     <div className="space-y-3">
                         <div className="flex gap-3 bg-amber-500/10 border border-amber-500/20 rounded-2xl p-4 text-xs text-foreground/80">
                             <Info className="h-4 w-4 text-amber-600 shrink-0 mt-0.5" />
-                            <p>
-                                Use <strong>OBS or YouTube Studio</strong> to broadcast. Create the live event in YouTube Studio (unlisted is fine), copy its URL and paste it below.
-                                Students watch the embedded stream here and interact through OSDHYAN chat and polls — great for batches of 500+.
-                            </p>
+                            <div className="space-y-1">
+                                <p className="font-bold">How to get the YouTube link (one-time: turn on live streaming for your channel; YouTube can take up to 24 hours):</p>
+                                <ol className="list-decimal ml-4 space-y-0.5">
+                                    <li>Open <strong>YouTube Studio &rarr; Create &rarr; Go live</strong> (or use OBS).</li>
+                                    <li>Set visibility to <strong>Unlisted</strong> and keep <strong>&ldquo;Allow embedding&rdquo;</strong> on.</li>
+                                    <li>Copy the share link (looks like youtube.com/live/&hellip; or youtu.be/&hellip;) and paste it below.</li>
+                                    <li>At class time press <strong>Go live</strong> in YouTube, then <strong>Start class</strong> here.</li>
+                                </ol>
+                                <p>Students watch inside OSDHYAN and ask questions in our chat. Turn off YouTube&rsquo;s own live chat so all questions come to one place.</p>
+                            </div>
                         </div>
-                        <Field label="YouTube Live / video URL *" hint="e.g. https://youtube.com/live/abc123 or https://youtu.be/abc123">
+                        <Field label="YouTube live link *" hint="e.g. https://youtube.com/live/abc123 or https://youtu.be/abc123">
                             <input value={form.youtube_url} onChange={e => set('youtube_url', e.target.value)} placeholder="https://youtube.com/live/…" className={inputCls} />
                         </Field>
                     </div>
                 )}
-                {form.provider === 'jitsi' && providers?.jitsi.mode === 'plain' && (
-                    <div className="flex gap-3 bg-blue-500/10 border border-blue-500/20 rounded-2xl p-4 text-xs text-foreground/80">
-                        <Info className="h-4 w-4 text-blue-500 shrink-0 mt-0.5" />
-                        <p>A private room with a password is created when you go live. On the public meet.jit.si server you may be asked to sign in once to start the meeting as host.</p>
+                {form.provider === 'jitsi' && (
+                    <div className={cn('flex gap-3 rounded-2xl p-4 text-xs text-foreground/80 border', providers?.jitsi.warning ? 'bg-amber-500/10 border-amber-500/20' : 'bg-blue-500/10 border-blue-500/20')}>
+                        <Info className={cn('h-4 w-4 shrink-0 mt-0.5', providers?.jitsi.warning ? 'text-amber-600' : 'text-blue-500')} />
+                        <p>
+                            A private video room with a password is created when you press <strong>Start class</strong>. Nothing to install.
+                            {providers?.jitsi.warning ? <> {providers.jitsi.warning}</> : null}
+                        </p>
                     </div>
                 )}
 
@@ -422,7 +433,7 @@ function ScheduleModal({ existing, providers, onClose, onSaved }: {
                         <Field label="Duration (min)">
                             <input type="number" min={5} max={600} value={form.duration_min} onChange={e => set('duration_min', e.target.value)} className={inputCls} />
                         </Field>
-                        <Field label="Max students" hint="0 = unlimited">
+                        <Field label="Max students" hint="0 = no limit">
                             <input type="number" min={0} value={form.max_participants} onChange={e => set('max_participants', e.target.value)} className={inputCls} />
                         </Field>
                     </div>

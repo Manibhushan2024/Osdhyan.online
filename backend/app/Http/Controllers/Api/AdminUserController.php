@@ -44,8 +44,19 @@ class AdminUserController extends Controller
             return response()->json(['message' => 'Cannot modify root admin.'], 403);
         }
 
-        $user->update($request->only(['name', 'email']));
-        return response()->json(['data' => $user]);
+        $data = $request->validate([
+            'name'     => 'sometimes|required|string|max:255',
+            'email'    => 'sometimes|required|email|unique:users,email,' . $user->id,
+            'password' => 'nullable|string|min:8',
+        ]);
+        if (!empty($data['password'])) {
+            $data['password'] = Hash::make($data['password']);
+        } else {
+            unset($data['password']);
+        }
+
+        $user->update($data);
+        return response()->json(['data' => $user->only(['id', 'name', 'email', 'admin_role'])]);
     }
 
     public function destroyEditor(User $user): JsonResponse

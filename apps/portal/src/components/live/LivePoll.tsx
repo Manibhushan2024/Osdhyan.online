@@ -68,7 +68,7 @@ export default function LivePoll({ classId, poll, myVote, canModerate, live, onC
                     <div className="flex flex-col items-center justify-center gap-3 py-12 text-center">
                         <BarChart2 className="h-8 w-8 text-foreground/20" />
                         <p className="text-[10px] font-black uppercase tracking-widest text-foreground/40">
-                            {canModerate ? 'No poll yet — launch one to check understanding' : 'No poll right now'}
+                            {canModerate ? 'No poll yet. Press "New poll" to ask the class a quick question.' : 'No poll right now'}
                         </p>
                     </div>
                 )}
@@ -131,18 +131,18 @@ export default function LivePoll({ classId, poll, myVote, canModerate, live, onC
                 <div className="shrink-0 border-t border-card-border p-3 flex flex-wrap gap-2">
                     {poll?.is_open && (
                         <button onClick={() => teacherAction('close')} disabled={busy} className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-foreground/5 hover:bg-foreground/10 text-[10px] font-black uppercase tracking-widest text-foreground disabled:opacity-40">
-                            <Lock className="h-3 w-3" /> Close
+                            <Lock className="h-3 w-3" /> Stop voting
                         </button>
                     )}
                     {poll && !poll.revealed_at && (
                         <button onClick={() => teacherAction('reveal')} disabled={busy} className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-[10px] font-black uppercase tracking-widest disabled:opacity-40">
-                            <Eye className="h-3 w-3" /> Reveal results
+                            <Eye className="h-3 w-3" /> Show results to students
                         </button>
                     )}
                     <button
                         onClick={() => setShowCreate(true)}
                         disabled={!live}
-                        title={live ? undefined : 'Go live to launch a poll'}
+                        title={live ? undefined : 'Start the class to launch a poll'}
                         className="ml-auto flex items-center gap-1.5 px-3 py-2 rounded-xl bg-red-500 hover:bg-red-400 text-white text-[10px] font-black uppercase tracking-widest disabled:opacity-40"
                     >
                         <Plus className="h-3 w-3" /> New poll

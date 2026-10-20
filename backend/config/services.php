@@ -88,6 +88,9 @@ return [
             'token_ttl'   => (int) env('JAAS_TOKEN_TTL', 10800),
         ],
         'state_cache_seconds' => (int) env('LIVE_STATE_CACHE_SECONDS', 2),
+        // Multiplies the poll interval sent to viewers (state.poll_ms). Raise
+        // it (e.g. 2) when the API runs on a small machine and classes are big.
+        'poll_scale'          => (float) env('LIVE_POLL_SCALE', 1),
     ],
 
 ];

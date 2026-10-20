@@ -73,6 +73,15 @@ export type LiveState = {
     pinned_messages: ChatMessage[];
     poll: Poll | null;
     latest_message_id: number;
+    /** messages the teacher deleted (newest 200) — drop them from open chats */
+    removed_message_ids?: number[];
+    /** messages the teacher marked answered (newest 200) */
+    answered_message_ids?: number[];
+    /** server hint: how often to poll state (bigger rooms poll less often) */
+    poll_ms?: number;
+    /** only when state was asked with ?after= (the open chat's cursor) */
+    messages?: ChatMessage[];
+    messages_has_more?: boolean;
     server_time: string;
     me: { joined: boolean; hand_raised: boolean; is_teacher: boolean };
     my_vote: string | null;
@@ -89,6 +98,10 @@ export type JitsiPayload = {
     jwt: string | null;
     password: string | null;
     is_moderator: boolean;
+    /** public meet.jit.si: the teacher must sign in inside the video before anyone can enter */
+    needs_host_login?: boolean;
+    /** the same room on the Jitsi website (fallback: open in a new tab) */
+    web_url?: string | null;
 };
 
 export type YoutubePayload = {
@@ -106,7 +119,18 @@ export type JoinResponse = {
     state: LiveState;
 };
 
-export type ProviderInfo = Record<LiveProviderKey, { label: string; mode: string; recommended: string }>;
+export type ProviderDetails = {
+    label: string;
+    /** jitsi: jaas | self_hosted | public; youtube: embed */
+    mode: string;
+    recommended: string;
+    warning?: string | null;
+};
+
+export type ProviderInfo = Record<LiveProviderKey, ProviderDetails> & {
+    /** what the schedule form pre-selects */
+    default?: LiveProviderKey;
+};
 
 export type Paginated<T> = {
     data: T[];

@@ -18,6 +18,17 @@ const hostname = storageHostname();
 // Backend origin for the same-origin proxy below (server-side only).
 const BACKEND_ORIGIN = (process.env.BACKEND_ORIGIN || "http://127.0.0.1:8000").replace(/\/$/, "");
 
+// Video-room origins for live classes: public Jitsi, JaaS (8x8.vc) and an
+// optional self-hosted Jitsi (NEXT_PUBLIC_JITSI_DOMAIN, same value as the
+// backend's JITSI_DOMAIN).
+const LIVE_VIDEO_ORIGINS = Array.from(
+  new Set(
+    ["meet.jit.si", "8x8.vc", (process.env.NEXT_PUBLIC_JITSI_DOMAIN || "").replace(/^https?:\/\//, "").replace(/\/.*$/, "")]
+      .filter(Boolean)
+      .map((d) => `"https://${d}"`),
+  ),
+).join(" ");
+
 const nextConfig: NextConfig = {
   reactCompiler: true,
   output: "standalone",
@@ -65,10 +76,13 @@ const nextConfig: NextConfig = {
           { key: "X-XSS-Protection", value: "1; mode=block" },
           // Control referrer information sent to third parties
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
-          // Permissions — disable unnecessary browser features
+          // Permissions — disable unnecessary browser features. Camera, mic and
+          // screen share must also be delegable to the embedded live-class
+          // video room (Jitsi / JaaS iframe), otherwise teachers cannot turn
+          // their camera on inside the classroom page.
           {
             key: "Permissions-Policy",
-            value: "camera=(self), microphone=(self), geolocation=(self), interest-cohort=()",
+            value: `camera=(self ${LIVE_VIDEO_ORIGINS}), microphone=(self ${LIVE_VIDEO_ORIGINS}), display-capture=(self ${LIVE_VIDEO_ORIGINS}), geolocation=(self), interest-cohort=()`,
           },
         ],
       },

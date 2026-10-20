@@ -22,8 +22,8 @@ class ContentController extends Controller
 
     public function getStudyMaterials(Request $request): JsonResponse
     {
-        $query = StudyMaterial::with(['subject:id,name_en', 'chapter:id,name_en'])
-            ->where('is_published', true);
+        $query = StudyMaterial::with(['subject:id,name_en', 'chapter:id,name_en', 'topic:id,name_en'])
+            ->visibleToStudents();
 
         if ($request->filled('subject_id')) {
             $query->where('subject_id', $request->subject_id);
@@ -54,7 +54,12 @@ class ContentController extends Controller
         }
 
         return response()->json([
-            'data' => $materials->items(),
+            'data'         => $materials->items(),
+            // Top-level paging keys (the Study Materials page reads these) plus the older meta block.
+            'current_page' => $materials->currentPage(),
+            'last_page'    => $materials->lastPage(),
+            'per_page'     => $materials->perPage(),
+            'total'        => $materials->total(),
             'meta' => [
                 'total'        => $materials->total(),
                 'current_page' => $materials->currentPage(),
@@ -65,8 +70,8 @@ class ContentController extends Controller
 
     public function getMaterialDetail(Request $request, int $id): JsonResponse
     {
-        $material = StudyMaterial::with(['subject:id,name_en', 'chapter:id,name_en'])
-            ->where('is_published', true)
+        $material = StudyMaterial::with(['subject:id,name_en', 'chapter:id,name_en', 'topic:id,name_en'])
+            ->visibleToStudents()
             ->findOrFail($id);
 
         $material->increment('view_count');
@@ -89,7 +94,7 @@ class ContentController extends Controller
             'is_completed' => 'nullable|boolean',
         ]);
 
-        StudyMaterial::where('is_published', true)->findOrFail($id);
+        StudyMaterial::visibleToStudents()->findOrFail($id);
 
         $progress = MaterialProgress::firstOrCreate(
             ['user_id' => $request->user()->id, 'material_id' => $id],

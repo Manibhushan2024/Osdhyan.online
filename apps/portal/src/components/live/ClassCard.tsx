@@ -50,7 +50,7 @@ export default function ClassCard({ cls, featured = false }: Props) {
                 </span>
                 {cls.status === 'live' && (
                     <>
-                        <span className="flex items-center gap-1"><Users className="h-3 w-3" /> {cls.participants_count} watching</span>
+                        <span className="flex items-center gap-1"><Users className="h-3 w-3" /> {cls.participants_count} in class</span>
                         {cls.started_at && <span className="flex items-center gap-1 text-red-500"><Clock className="h-3 w-3" /> started {formatAgo(cls.started_at)}</span>}
                     </>
                 )}
@@ -76,8 +76,8 @@ export default function ClassCard({ cls, featured = false }: Props) {
                                 : 'bg-foreground/5 text-foreground/40',
                 )}
             >
-                {cls.status === 'live' && <><Radio className="h-3.5 w-3.5" /> Join now</>}
-                {cls.status === 'scheduled' && <><Clock className="h-3.5 w-3.5" /> View details</>}
+                {cls.status === 'live' && <><Radio className="h-3.5 w-3.5" /> Join class</>}
+                {cls.status === 'scheduled' && <><Clock className="h-3.5 w-3.5" /> See details</>}
                 {cls.status === 'ended' && (cls.recording_url ? <><Play className="h-3.5 w-3.5" /> Watch recording</> : <>Recording coming soon</>)}
             </Link>
         </div>

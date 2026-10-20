@@ -71,10 +71,13 @@ export default function SyllabusPage() {
         setLoading(true);
         try {
             const res = await api.get(`/exams/${examId}/full`);
-            setSelectedExamData(res.data);
+            // The API returns the exam's subjects (with chapters and topics) as a list.
+            const subjects: Subject[] = Array.isArray(res.data) ? res.data : (res.data?.subjects ?? []);
+            const exam = exams.find(e => e.id === examId);
+            setSelectedExamData({ id: examId, name_en: exam?.name_en ?? '', name_hi: exam?.name_hi ?? '', subjects });
             // Auto-open first subject
-            if (res.data.subjects?.length > 0) {
-                setOpenSubjects([res.data.subjects[0].id]);
+            if (subjects.length > 0) {
+                setOpenSubjects([subjects[0].id]);
             }
         } catch (error) {
             console.error('Failed to fetch hierarchy', error);

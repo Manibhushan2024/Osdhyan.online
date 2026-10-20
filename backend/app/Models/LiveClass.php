@@ -84,10 +84,16 @@ class LiveClass extends Model
         return "live:{$this->id}:state";
     }
 
-    /** Count of people currently in the room (joined, not left). */
+    /** Count of people currently in the room (joined, not left, seen recently). */
     public function activeParticipantsCount(): int
     {
-        return $this->participants()->whereNull('left_at')->count();
+        return $this->participants()->active()->count();
+    }
+
+    /** withCount() constraint shared by every listing. */
+    public static function activeParticipantsCountConstraint(): array
+    {
+        return ['participants as participants_count' => fn ($p) => $p->active()];
     }
 
     /** Public, student-safe representation used by list/show. */
