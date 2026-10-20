@@ -60,6 +60,10 @@ class TestSeriesController extends Controller
 
     public function show(TestSeries $series)
     {
+        if (!$series->is_published && !Auth::user()?->isAdminUser()) {
+            abort(404);
+        }
+
         $series->load(['exam', 'tests' => function($query) {
             $query->where('status', 'published');
         }]);

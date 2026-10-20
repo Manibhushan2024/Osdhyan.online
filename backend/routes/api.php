@@ -76,6 +76,13 @@ Route::post('/auth/google/token', [AuthController::class, 'googleToken'])->middl
 // Tells the client which sign-in methods are available (OTP delivery, Google)
 Route::get('/auth/options', [AuthController::class, 'options']);
 
+// Test-series catalogue: open to guests so they can see what they would buy;
+// signed-in users (Bearer token) also get enrolment/access flags.
+Route::middleware(['auth.optional', 'throttle:api'])->group(function () {
+    Route::get('/test-series', [\App\Http\Controllers\Api\TestSeriesController::class, 'index']);
+    Route::get('/test-series/{series}', [\App\Http\Controllers\Api\TestSeriesController::class, 'show'])->whereNumber('series');
+});
+
 /*
 |--------------------------------------------------------------------------
 | Authenticated Routes
@@ -171,9 +178,7 @@ Route::middleware(['auth:sanctum', 'throttle:api'])->group(function () {
     Route::get('/courses/topics/{topic}/materials', [\App\Http\Controllers\Api\CourseController::class, 'getTopicMaterials']);
 
     // ── Test Series ───────────────────────────────────────────────────────────
-    Route::get('/test-series', [\App\Http\Controllers\Api\TestSeriesController::class, 'index']);
     Route::get('/test-series/enrolled', [\App\Http\Controllers\Api\TestSeriesController::class, 'enrolled']);
-    Route::get('/test-series/{series}', [\App\Http\Controllers\Api\TestSeriesController::class, 'show']);
     Route::post('/test-series/{series}/enroll', [\App\Http\Controllers\Api\TestSeriesController::class, 'enroll']);
     Route::post('/test-series/{series}/unenroll', [\App\Http\Controllers\Api\TestSeriesController::class, 'unenroll']);
 
