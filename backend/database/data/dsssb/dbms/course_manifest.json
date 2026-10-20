@@ -1,5 +1,6 @@
 {
  "subject": "DBMS (Database Management System)",
+ "subject_hi": "डीबीएमएस (डेटाबेस प्रबंधन प्रणाली)",
  "chapters": [
   {
    "key": "db_intro",
@@ -72,7 +73,7 @@
    ]
   },
   {
-   "key": "db_practice",
+   "key": "dbms_practice",
    "title": "8. Complete notes, previous-year questions & 200 most expected",
    "items": [
     {

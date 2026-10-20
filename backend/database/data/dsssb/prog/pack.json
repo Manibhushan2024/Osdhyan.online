@@ -1,0 +1,33 @@
+{
+ "name": "Programming",
+ "chapters": [
+  ["pg_basics", "Programming Basics: Data Types, Operators & Control Flow", "Basics"],
+  ["pg_functions", "Functions & Recursion", "Functions & Recursion"],
+  ["pg_arrays", "Arrays, Strings & Pointers (C/C++)", "Arrays, Strings & Pointers"],
+  ["pg_oop", "Object-Oriented Programming (C++ & Java)", "OOP"],
+  ["pg_exceptions", "Exception Handling", "Exception Handling"],
+  ["pg_python", "Python: Data Types, Collections, File Handling & Pandas", "Python"],
+  ["pg_dotnet", ".NET Framework, C# & VB.NET Basics", ".NET"]
+ ],
+ "pyq_file": "prog_pyq_analysis.json",
+ "pyq_rules": [
+  ["exception", "pg_exceptions"], ["importerror", "pg_exceptions"],
+  [".net", "pg_dotnet"], ["c#", "pg_dotnet"], ["vb.net", "pg_dotnet"], ["msil", "pg_dotnet"], ["clr", "pg_dotnet"],
+  ["python", "pg_python"], ["pandas", "pg_python"], ["csv", "pg_python"],
+  ["pointer", "pg_arrays"], ["string literal", "pg_arrays"], ["strings", "pg_arrays"],
+  ["variadic", "pg_functions"], ["inline", "pg_functions"],
+  ["oop", "pg_oop"], ["access modifier", "pg_oop"], ["java final", "pg_oop"], ["packages", "pg_oop"], ["classloader", "pg_oop"], ["c++ cin", "pg_oop"],
+  ["java", "pg_basics"], ["c ", "pg_basics"], ["operator", "pg_basics"], ["storage class", "pg_basics"], ["header", "pg_basics"],
+  ["variable", "pg_basics"], ["numeric", "pg_basics"], ["data type", "pg_basics"]
+ ],
+ "question_files": ["questions_core.json", "questions_oop_python.json"],
+ "series_name": "DSSSB TGT CS — Programming Complete (Notes + 200 Most Expected)",
+ "series_name_hi": "DSSSB TGT CS — प्रोग्रामिंग सम्पूर्ण",
+ "series_description": "Programming in C, C++, Java and Python from basics to exam level, plus the .NET and Pandas questions DSSSB asks: previous-year questions, chapter-wise practice with output-type questions, and the 200 most expected questions with solutions. Notes are in Courses → DSSSB TGT Computer Science → Programming.",
+ "course_subject": "Programming (C, C++, Java, Python)",
+ "course_subject_hi": "प्रोग्रामिंग (C, C++, Java, Python)",
+ "tagline": "Data types · operators · control flow · functions & recursion · arrays, strings & pointers · OOP · exceptions · Python & Pandas · .NET",
+ "intro": "In the 4 official DSSSB TGT Computer Science papers of 2023–24 there were <b>{n} programming questions</b>, about 11–12 per paper. About one in five is a 'What is the output?' question (C pointers, Java literals, Python tuples); the rest are one-line facts on C, C++, Java and Python, plus .NET (CLR, MSIL, C#, VB.NET) and Pandas, which DSSSB asks even though the syllabus line does not name them. Trace every output question line by line, as these notes show.",
+ "practice_split": 35,
+ "full_test_min_per_q": 0.9
+}

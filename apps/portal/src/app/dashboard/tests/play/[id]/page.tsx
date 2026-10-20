@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback, useRef } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import axios from 'axios';
 import api, { API_BASE_URL, getAuthToken } from '@/lib/api';
+import QuestionText from '@/components/tests/QuestionText';
 import { loginUrlWithRedirect } from '@/lib/redirect';
 import {
     ChevronRight,
@@ -1198,9 +1199,9 @@ export default function TestPlayer() {
 
                             {/* Question Text */}
                             <div className="space-y-8">
-                                <div
+                                <QuestionText
                                     className="text-lg sm:text-xl font-semibold text-foreground leading-relaxed"
-                                    dangerouslySetInnerHTML={{ __html: (language === 'en' ? currentQ?.question_en : currentQ?.question_hi) || '' }}
+                                    text={(language === 'en' ? currentQ?.question_en : currentQ?.question_hi) || currentQ?.question_en}
                                 />
 
                                 {currentQ?.image_path && (
@@ -1241,7 +1242,7 @@ export default function TestPlayer() {
                                                     "text-base font-medium",
                                                     isSelected ? "text-blue-600" : "text-foreground/60"
                                                 )}>
-                                                    {language === 'en' ? opt.option_en : opt.option_hi}
+                                                    <span className="whitespace-pre-wrap">{(language === 'en' ? opt.option_en : opt.option_hi) || opt.option_en}</span>
                                                 </span>
                                             </div>
 

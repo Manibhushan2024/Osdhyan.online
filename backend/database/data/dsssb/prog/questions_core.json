@@ -1,0 +1,2402 @@
+[
+ {
+  "chapter_key": "pg_basics",
+  "subtopic": "Java identifiers and output",
+  "difficulty": "medium",
+  "question_en": "What is the output of the following Java program?\n```java\npublic class Main {\n    public static void main(String[] args) {\n        int Double = 7;\n        String Main = \"X\";\n        System.out.print(Main + Double * 2);\n    }\n}\n```",
+  "options": [
+   {
+    "en": "Compilation error"
+   },
+   {
+    "en": "14X"
+   },
+   {
+    "en": "X14"
+   },
+   {
+    "en": "Runtime error"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Double and Main are class names, not reserved keywords, so they are legal variable names (the local variable Main simply hides the class name). The * operator has higher precedence than +, so Double * 2 = 14 is computed first. Then \"X\" + 14 is string concatenation, giving X14.",
+  "pyq_concept": true,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_basics",
+  "subtopic": "Java octal and hexadecimal literals",
+  "difficulty": "easy",
+  "question_en": "What is the output of the following Java program?\n```java\npublic class Main {\n    public static void main(String[] args) {\n        int a = 012, b = 0x1A;\n        System.out.println(a + b);\n    }\n}\n```",
+  "options": [
+   {
+    "en": "38"
+   },
+   {
+    "en": "22"
+   },
+   {
+    "en": "36"
+   },
+   {
+    "en": "Compilation error"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "A literal starting with 0 is octal, so 012 = 1*8 + 2 = 10. A literal starting with 0x is hexadecimal, so 0x1A = 1*16 + 10 = 26. The sum is 10 + 26 = 36.",
+  "pyq_concept": true,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_basics",
+  "subtopic": "Java octal literals - invalid digit",
+  "difficulty": "medium",
+  "question_en": "What happens when the following Java program is compiled and run?\n```java\npublic class Main {\n    public static void main(String[] args) {\n        int x = 019;\n        System.out.println(x + 1);\n    }\n}\n```",
+  "options": [
+   {
+    "en": "20"
+   },
+   {
+    "en": "Compilation error"
+   },
+   {
+    "en": "16"
+   },
+   {
+    "en": "Runtime error"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The leading 0 makes 019 an octal literal, and octal digits are only 0 to 7, so 019 is not a valid integer literal. The program does not compile (javac 21 actually reports \"';' expected\", because it reads 01 as an octal number and then finds a stray 9). Either way there is no output and no runtime error.",
+  "pyq_concept": true,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_basics",
+  "subtopic": "C format specifiers %o and %x",
+  "difficulty": "medium",
+  "question_en": "What is the output of the following C program?\n```c\n#include <stdio.h>\nint main() {\n    int n = 45;\n    printf(\"%d %o %x\", n, n, n);\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "45 55 2D"
+   },
+   {
+    "en": "45 55 2d"
+   },
+   {
+    "en": "45 53 2b"
+   },
+   {
+    "en": "45 45 45"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "%d prints decimal 45. %o prints octal: 45 = 5*8 + 5, so 55. %x prints hexadecimal in lowercase: 45 = 2*16 + 13, and 13 is d, so 2d (%X would print 2D).",
+  "pyq_concept": true,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_basics",
+  "subtopic": "Java primitive data types",
+  "difficulty": "easy",
+  "question_en": "How many primitive data types are defined in Java?",
+  "options": [
+   {
+    "en": "6"
+   },
+   {
+    "en": "7"
+   },
+   {
+    "en": "8"
+   },
+   {
+    "en": "9"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Java has exactly eight primitive types: byte, short, int, long, float, double, char and boolean. String, arrays and classes are reference types, not primitives.",
+  "pyq_concept": true,
+  "output_type": false
+ },
+ {
+  "chapter_key": "pg_basics",
+  "subtopic": "Java narrowing cast (int to byte)",
+  "difficulty": "medium",
+  "question_en": "What is the output of the following Java program?\n```java\npublic class Main {\n    public static void main(String[] args) {\n        int big = 200;\n        byte b = (byte) big;\n        System.out.println(b + \" \" + (byte) 130);\n    }\n}\n```",
+  "options": [
+   {
+    "en": "200 130"
+   },
+   {
+    "en": "-55 -125"
+   },
+   {
+    "en": "-56 -126"
+   },
+   {
+    "en": "Compilation error"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "A byte holds -128 to 127, and a narrowing cast keeps only the low 8 bits. 200 does not fit, so it wraps to 200 - 256 = -56. Likewise 130 becomes 130 - 256 = -126.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_basics",
+  "subtopic": "C integer division and modulo with negatives",
+  "difficulty": "medium",
+  "question_en": "What is the output of the following C program?\n```c\n#include <stdio.h>\nint main() {\n    int a = -23, b = 4;\n    printf(\"%d %d\", a / b, a % b);\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "-5 -3"
+   },
+   {
+    "en": "-6 1"
+   },
+   {
+    "en": "-5 3"
+   },
+   {
+    "en": "-6 -3"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "In C (C99 onwards) integer division truncates toward zero, so -23 / 4 = -5.75 becomes -5. The remainder follows a == (a/b)*b + a%b, so -23 % 4 = -23 - (-20) = -3. The remainder takes the sign of the dividend; -6 1 would be Python's floor-division result.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_basics",
+  "subtopic": "Python /, // and % operators",
+  "difficulty": "medium",
+  "question_en": "What is the output of the following Python 3 code?\n```python\nprint(7 / 2, -17 // 5, -17 % 5)\n```",
+  "options": [
+   {
+    "en": "3 -3 -2"
+   },
+   {
+    "en": "3.5 -4 3"
+   },
+   {
+    "en": "3.5 -3 -2"
+   },
+   {
+    "en": "3.5 -4 -2"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "In Python 3, / is true division, so 7 / 2 = 3.5. // is floor division: -17 / 5 = -3.4, floored down to -4. % takes the sign of the divisor, so -17 % 5 = -17 - (-4*5) = 3.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_basics",
+  "subtopic": "Java type promotion in assignment",
+  "difficulty": "medium",
+  "question_en": "In Java, given `byte b = 10;`, which of the following statements causes a compilation error?",
+  "options": [
+   {
+    "en": "b = b + 5;"
+   },
+   {
+    "en": "b += 5;"
+   },
+   {
+    "en": "b++;"
+   },
+   {
+    "en": "b = (byte) (b + 5);"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "In b + 5 the byte is promoted to int, so the result is an int, and an int cannot be assigned to a byte without an explicit cast. Compound assignment (+=) and ++ include an automatic cast back to byte, so they compile. The explicit (byte) cast also compiles.",
+  "pyq_concept": false,
+  "output_type": false
+ },
+ {
+  "chapter_key": "pg_basics",
+  "subtopic": "Java string concatenation order",
+  "difficulty": "easy",
+  "question_en": "What is the output of the following Java program?\n```java\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(1 + 2 + \"3\" + 4 + 5);\n    }\n}\n```",
+  "options": [
+   {
+    "en": "12345"
+   },
+   {
+    "en": "15"
+   },
+   {
+    "en": "339"
+   },
+   {
+    "en": "3345"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "+ is evaluated left to right. 1 + 2 are both ints, so they add to 3. 3 + \"3\" is a String, \"33\", and from then on every + is concatenation: \"334\", then \"3345\".",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_basics",
+  "subtopic": "C pre- and post-increment",
+  "difficulty": "easy",
+  "question_en": "What is the output of the following C program?\n```c\n#include <stdio.h>\nint main() {\n    int i = 10;\n    int j = i++;\n    int k = ++i;\n    printf(\"%d %d %d\", i, j, k);\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "12 11 12"
+   },
+   {
+    "en": "12 10 12"
+   },
+   {
+    "en": "11 10 11"
+   },
+   {
+    "en": "12 10 11"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "j = i++ stores the old value 10 in j, then i becomes 11. k = ++i first makes i 12, then stores 12 in k. So i = 12, j = 10, k = 12.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_basics",
+  "subtopic": "Java post-increment in self-assignment",
+  "difficulty": "hard",
+  "question_en": "What is the output of the following Java program?\n```java\npublic class Main {\n    public static void main(String[] args) {\n        int i = 0;\n        for (int k = 0; k < 4; k++) {\n            i = i++;\n        }\n        System.out.println(i);\n    }\n}\n```",
+  "options": [
+   {
+    "en": "0"
+   },
+   {
+    "en": "4"
+   },
+   {
+    "en": "3"
+   },
+   {
+    "en": "Compilation error"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "In Java, i = i++ first saves the old value of i (0), then increments i to 1, and finally assigns the saved 0 back to i. So each pass leaves i at 0. After four passes it is still 0.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_basics",
+  "subtopic": "C operator precedence and associativity",
+  "difficulty": "easy",
+  "question_en": "What is the output of the following C program?\n```c\n#include <stdio.h>\nint main() {\n    int a = 10, b = 4, c = 3;\n    printf(\"%d\", a - b * c / 2 + a % b);\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "8"
+   },
+   {
+    "en": "11"
+   },
+   {
+    "en": "6"
+   },
+   {
+    "en": "2"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "*, / and % have higher precedence than + and -, and they group left to right. b * c / 2 = 12 / 2 = 6 and a % b = 10 % 4 = 2. Then 10 - 6 + 2 = 6.",
+  "pyq_concept": true,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_basics",
+  "subtopic": "C relational operators and precedence",
+  "difficulty": "medium",
+  "question_en": "What is the output of the following C program?\n```c\n#include <stdio.h>\nint main() {\n    int x = 5;\n    printf(\"%d %d\", 10 > x > 2, 10 > x == 1);\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "0 1"
+   },
+   {
+    "en": "1 1"
+   },
+   {
+    "en": "1 0"
+   },
+   {
+    "en": "0 0"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Relational operators give 1 (true) or 0 (false) and group left to right. 10 > x > 2 is (10 > 5) > 2, which is 1 > 2, so 0. In the second expression > has higher precedence than ==, so it is (10 > 5) == 1, which is 1 == 1, so 1.",
+  "pyq_concept": true,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_basics",
+  "subtopic": "C logical short-circuit evaluation",
+  "difficulty": "hard",
+  "question_en": "What is the output of the following C program?\n```c\n#include <stdio.h>\nint main() {\n    int a = 2, b = 0, c;\n    c = (b++ || a--) && ++b;\n    printf(\"%d %d %d\", a, b, c);\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "2 1 1"
+   },
+   {
+    "en": "1 2 2"
+   },
+   {
+    "en": "1 1 0"
+   },
+   {
+    "en": "1 2 1"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "|| and && evaluate left to right with a sequence point after the left operand. b++ gives 0 (false) and b becomes 1, so a-- is evaluated: it gives 2 (true) and a becomes 1. The left side of && is therefore 1, so ++b runs: b becomes 2, which is true. A logical result is always 0 or 1, so c = 1, giving 1 2 1.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_basics",
+  "subtopic": "Java && versus &",
+  "difficulty": "medium",
+  "question_en": "What is the output of the following Java program?\n```java\npublic class Main {\n    public static void main(String[] args) {\n        int a = 3;\n        boolean r = (a > 5) && (++a > 3);\n        boolean s = (a > 5) & (++a > 3);\n        System.out.println(a + \" \" + r + \" \" + s);\n    }\n}\n```",
+  "options": [
+   {
+    "en": "5 false false"
+   },
+   {
+    "en": "4 false false"
+   },
+   {
+    "en": "3 false false"
+   },
+   {
+    "en": "4 false true"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "&& short-circuits: a > 5 is false, so ++a is skipped and a stays 3; r is false. & on booleans always evaluates both sides, so ++a runs and a becomes 4, but false & true is still false. Output: 4 false false.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_basics",
+  "subtopic": "C bitwise AND, OR, XOR",
+  "difficulty": "easy",
+  "question_en": "What is the output of the following C program?\n```c\n#include <stdio.h>\nint main() {\n    int a = 12, b = 10;\n    printf(\"%d %d %d\", a & b, a | b, a ^ b);\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "14 8 6"
+   },
+   {
+    "en": "8 14 2"
+   },
+   {
+    "en": "1 1 0"
+   },
+   {
+    "en": "8 14 6"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "In binary a = 1100 and b = 1010. AND gives 1000 = 8, OR gives 1110 = 14, and XOR (1 where the bits differ) gives 0110 = 6.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_basics",
+  "subtopic": "C bitwise NOT and shift operators",
+  "difficulty": "medium",
+  "question_en": "What is the output of the following C program?\n```c\n#include <stdio.h>\nint main() {\n    int x = 5;\n    printf(\"%d %d %d\", ~x, x << 3, x >> 1);\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "-5 40 2"
+   },
+   {
+    "en": "-6 15 2"
+   },
+   {
+    "en": "-6 40 3"
+   },
+   {
+    "en": "-6 40 2"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "In two's complement ~x equals -(x + 1), so ~5 = -6. x << 3 multiplies by 2^3: 5 * 8 = 40. x >> 1 divides a positive value by 2 and drops the fraction: 5 >> 1 = 2.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_basics",
+  "subtopic": "Java >> versus >>> shift",
+  "difficulty": "hard",
+  "question_en": "What is the output of the following Java program?\n```java\npublic class Main {\n    public static void main(String[] args) {\n        int n = -16;\n        System.out.println((n >> 2) + \" \" + (n >>> 28));\n    }\n}\n```",
+  "options": [
+   {
+    "en": "-4 -1"
+   },
+   {
+    "en": "4 15"
+   },
+   {
+    "en": "-4 15"
+   },
+   {
+    "en": "-4 0"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": ">> is the signed right shift: it copies the sign bit, so -16 >> 2 = -16 / 4 = -4. >>> is the unsigned right shift: it fills with zeros. -16 is 0xFFFFFFF0, and shifting it right by 28 leaves the top four 1-bits, 1111 = 15.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_basics",
+  "subtopic": "Python ** associativity and unary minus",
+  "difficulty": "medium",
+  "question_en": "What is the output of the following Python 3 code?\n```python\nprint(2 ** 3 ** 2, -2 ** 2)\n```",
+  "options": [
+   {
+    "en": "64 4"
+   },
+   {
+    "en": "512 4"
+   },
+   {
+    "en": "64 -4"
+   },
+   {
+    "en": "512 -4"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "** is right-associative, so 2 ** 3 ** 2 = 2 ** (3 ** 2) = 2 ** 9 = 512. ** also binds more tightly than unary minus, so -2 ** 2 = -(2 ** 2) = -4.",
+  "pyq_concept": true,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_basics",
+  "subtopic": "C integer division and type casting",
+  "difficulty": "medium",
+  "question_en": "What is the output of the following C program?\n```c\n#include <stdio.h>\nint main() {\n    int a = 7, b = 2;\n    float f = a / b;\n    printf(\"%.1f %.1f\", f, (float)a / b);\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "3.5 3.5"
+   },
+   {
+    "en": "3.0 3.0"
+   },
+   {
+    "en": "3.5 3.0"
+   },
+   {
+    "en": "3.0 3.5"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "a / b divides two ints, so the result is the int 3, which is then stored in f as 3.0. In (float)a / b the cast applies to a first, so 7.0 / 2 is a floating-point division giving 3.5. %.1f prints one decimal place: 3.0 3.5.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_basics",
+  "subtopic": "C scanf format specifiers",
+  "difficulty": "medium",
+  "question_en": "In C, which format specifier must be used with scanf() to read a value into a variable of type double?",
+  "options": [
+   {
+    "en": "%f"
+   },
+   {
+    "en": "%Lf"
+   },
+   {
+    "en": "%lf"
+   },
+   {
+    "en": "%d"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "scanf() needs a pointer of the exact type. %f expects a float *, %lf expects a double * and %Lf expects a long double *. (In printf(), %f works for double too, because float arguments are promoted to double.)",
+  "pyq_concept": false,
+  "output_type": false
+ },
+ {
+  "chapter_key": "pg_basics",
+  "subtopic": "C header files",
+  "difficulty": "easy",
+  "question_en": "In C, the library functions sqrt() and pow() are declared in which header file?",
+  "options": [
+   {
+    "en": "stdlib.h"
+   },
+   {
+    "en": "stdio.h"
+   },
+   {
+    "en": "math.h"
+   },
+   {
+    "en": "conio.h"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Mathematical functions such as sqrt(), pow(), sin() and floor() are declared in <math.h>. stdio.h holds input/output functions like printf() and scanf(), and stdlib.h holds functions like malloc() and atoi().",
+  "pyq_concept": true,
+  "output_type": false
+ },
+ {
+  "chapter_key": "pg_basics",
+  "subtopic": "C storage classes - register",
+  "difficulty": "medium",
+  "question_en": "In C, which operation is NOT allowed on a variable declared with the register storage class?",
+  "options": [
+   {
+    "en": "Taking its address with the & operator"
+   },
+   {
+    "en": "Assigning a new value to it"
+   },
+   {
+    "en": "Using it as a loop counter"
+   },
+   {
+    "en": "Passing its value to a function"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "register asks the compiler to keep the variable in a CPU register for fast access. Because a register has no memory address, the C standard forbids applying & to a register variable, even if the compiler actually keeps it in memory. Reading, assigning and passing its value are all allowed.",
+  "pyq_concept": true,
+  "output_type": false
+ },
+ {
+  "chapter_key": "pg_basics",
+  "subtopic": "C switch fall-through",
+  "difficulty": "easy",
+  "question_en": "What is the output of the following C program?\n```c\n#include <stdio.h>\nint main() {\n    int n = 2;\n    switch (n) {\n        case 1: printf(\"A\");\n        case 2: printf(\"B\");\n        case 3: printf(\"C\"); break;\n        case 4: printf(\"D\");\n        default: printf(\"E\");\n    }\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "BC"
+   },
+   {
+    "en": "B"
+   },
+   {
+    "en": "BCDE"
+   },
+   {
+    "en": "BE"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Control jumps to case 2 and prints B. There is no break after case 2, so execution falls through into case 3 and prints C. The break after case 3 then leaves the switch, so the output is BC.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_basics",
+  "subtopic": "C switch with default placed first",
+  "difficulty": "hard",
+  "question_en": "What is the output of the following C program?\n```c\n#include <stdio.h>\nint main() {\n    int k = 7;\n    switch (k % 4) {\n        default: printf(\"X\");\n        case 1: printf(\"Y\");\n        case 2: printf(\"Z\"); break;\n        case 0: printf(\"W\");\n    }\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "X"
+   },
+   {
+    "en": "XYZW"
+   },
+   {
+    "en": "Nothing is printed"
+   },
+   {
+    "en": "XYZ"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "k % 4 = 3, and there is no case 3, so control goes to default, wherever it is written. default prints X and has no break, so execution falls through case 1 (Y) and case 2 (Z). The break after Z ends the switch, giving XYZ.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_basics",
+  "subtopic": "C for loop tracing",
+  "difficulty": "easy",
+  "question_en": "How many times does the following C program print an asterisk?\n```c\n#include <stdio.h>\nint main() {\n    int i;\n    for (i = 1; i <= 20; i *= 3)\n        printf(\"*\");\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "2"
+   },
+   {
+    "en": "4"
+   },
+   {
+    "en": "7"
+   },
+   {
+    "en": "3"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "i takes the values 1, 3 and 9, and each of these is <= 20, so * is printed three times. The next value is 27, which fails the condition i <= 20, and the loop ends.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_basics",
+  "subtopic": "C break and continue",
+  "difficulty": "medium",
+  "question_en": "What is the output of the following C program?\n```c\n#include <stdio.h>\nint main() {\n    int i = 0, s = 0;\n    while (i < 10) {\n        i++;\n        if (i % 3 == 0) continue;\n        if (i == 8) break;\n        s += i;\n    }\n    printf(\"%d %d\", i, s);\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "10 37"
+   },
+   {
+    "en": "8 27"
+   },
+   {
+    "en": "7 19"
+   },
+   {
+    "en": "8 19"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "i is incremented at the top of each pass. For i = 3 and 6, continue skips the addition. For i = 1, 2, 4, 5, 7 the value is added, so s = 1+2+4+5+7 = 19. When i = 8 the loop breaks before adding, so the output is 8 19.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_basics",
+  "subtopic": "C keywords",
+  "difficulty": "medium",
+  "question_en": "Which of the following is NOT a keyword in C?",
+  "options": [
+   {
+    "en": "volatile"
+   },
+   {
+    "en": "sizeof"
+   },
+   {
+    "en": "register"
+   },
+   {
+    "en": "include"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "volatile, sizeof and register are all reserved C keywords (sizeof is a keyword that works as an operator). include is not a keyword; #include is a preprocessor directive handled before compilation.",
+  "pyq_concept": true,
+  "output_type": false
+ },
+ {
+  "chapter_key": "pg_basics",
+  "subtopic": "Java keywords and literals",
+  "difficulty": "hard",
+  "question_en": "Which of the following is NOT a reserved keyword in Java?",
+  "options": [
+   {
+    "en": "true"
+   },
+   {
+    "en": "goto"
+   },
+   {
+    "en": "const"
+   },
+   {
+    "en": "strictfp"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "true, false and null are literals, not keywords, although they still cannot be used as identifiers. goto and const are reserved keywords that Java does not use, and strictfp is a keyword for floating-point behaviour.",
+  "pyq_concept": false,
+  "output_type": false
+ },
+ {
+  "chapter_key": "pg_basics",
+  "subtopic": "C signed-unsigned comparison",
+  "difficulty": "hard",
+  "question_en": "What is the output of the following C program?\n```c\n#include <stdio.h>\nint main() {\n    unsigned int u = 1;\n    int i = -1;\n    if (i < u)\n        printf(\"less\");\n    else\n        printf(\"greater\");\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "less"
+   },
+   {
+    "en": "greater"
+   },
+   {
+    "en": "Compilation error"
+   },
+   {
+    "en": "Nothing is printed"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "When an int and an unsigned int are compared, the usual arithmetic conversions turn the int into unsigned int. -1 becomes the largest unsigned value, 4294967295 with a 32-bit int. 4294967295 < 1 is false, so the else part prints greater.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_basics",
+  "subtopic": "C sizeof a character constant",
+  "difficulty": "hard",
+  "question_en": "What is the output of the following C program (32-bit int)?\n```c\n#include <stdio.h>\nint main() {\n    char c = 'A';\n    printf(\"%zu %zu\", sizeof(c), sizeof('A'));\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "1 1"
+   },
+   {
+    "en": "4 4"
+   },
+   {
+    "en": "2 4"
+   },
+   {
+    "en": "1 4"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "sizeof(c) is the size of a char variable, which is always 1. In C a character constant such as 'A' has type int, not char, so sizeof('A') equals sizeof(int), which is 4. (In C++ a character literal is a char, so it would print 1 1.)",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_basics",
+  "subtopic": "Java literal assignment rules",
+  "difficulty": "medium",
+  "question_en": "Which of the following Java declarations compiles without error?",
+  "options": [
+   {
+    "en": "char c = 65;"
+   },
+   {
+    "en": "float f = 3.5;"
+   },
+   {
+    "en": "long n = 9999999999;"
+   },
+   {
+    "en": "byte b = 128;"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "An int constant can be assigned to a char, byte or short if its value fits, and 65 fits in char (it is 'A'). 3.5 is a double literal, so float needs 3.5f. 9999999999 is too big for an int literal and needs the L suffix. 128 is outside the byte range -128 to 127.",
+  "pyq_concept": false,
+  "output_type": false
+ },
+ {
+  "chapter_key": "pg_basics",
+  "subtopic": "C identifier rules",
+  "difficulty": "easy",
+  "question_en": "Which of the following is a valid identifier in C?",
+  "options": [
+   {
+    "en": "_total2"
+   },
+   {
+    "en": "2total"
+   },
+   {
+    "en": "total-2"
+   },
+   {
+    "en": "int"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "An identifier may contain letters, digits and underscores, but must not start with a digit and must not be a keyword. _total2 follows these rules. 2total starts with a digit, total-2 contains a minus sign, and int is a keyword.",
+  "pyq_concept": true,
+  "output_type": false
+ },
+ {
+  "chapter_key": "pg_basics",
+  "subtopic": "C storage classes - auto",
+  "difficulty": "easy",
+  "question_en": "What is the default storage class of a local variable declared inside a function in C?",
+  "options": [
+   {
+    "en": "static"
+   },
+   {
+    "en": "auto"
+   },
+   {
+    "en": "extern"
+   },
+   {
+    "en": "register"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Local variables are auto by default: they are created when the block is entered, destroyed when it ends, and hold garbage if not initialised. The auto keyword is therefore rarely written. static, extern and register must be written explicitly.",
+  "pyq_concept": true,
+  "output_type": false
+ },
+ {
+  "chapter_key": "pg_functions",
+  "subtopic": "C call by value",
+  "difficulty": "easy",
+  "question_en": "What is the output of the following C program?\n```c\n#include <stdio.h>\nvoid swap(int a, int b) {\n    int t = a;\n    a = b;\n    b = t;\n}\nint main() {\n    int x = 3, y = 9;\n    swap(x, y);\n    printf(\"%d %d\", x, y);\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "9 3"
+   },
+   {
+    "en": "3 9"
+   },
+   {
+    "en": "3 3"
+   },
+   {
+    "en": "9 9"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "C passes arguments by value, so a and b are copies of x and y. swap() exchanges only its own copies, which are destroyed when it returns. x and y in main() are unchanged, so 3 9 is printed. To swap them you must pass pointers (&x, &y).",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_functions",
+  "subtopic": "C++ default arguments",
+  "difficulty": "easy",
+  "question_en": "What is the output of the following C++ program?\n```cpp\n#include <iostream>\nusing namespace std;\nint vol(int l, int b = 2, int h = 3) {\n    return l * b * h;\n}\nint main() {\n    cout << vol(4) << \" \" << vol(4, 5) << \" \" << vol(1, 2, 7);\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "24 60 14"
+   },
+   {
+    "en": "24 40 14"
+   },
+   {
+    "en": "4 20 14"
+   },
+   {
+    "en": "Compilation error"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Arguments fill parameters from the left, and missing trailing ones take their defaults. vol(4) = 4*2*3 = 24. vol(4, 5) sets b = 5 and keeps h = 3, so 4*5*3 = 60. vol(1, 2, 7) = 1*2*7 = 14.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_functions",
+  "subtopic": "Python recursion on strings",
+  "difficulty": "easy",
+  "question_en": "What is the output of the following Python 3 code?\n```python\ndef g(s):\n    if len(s) <= 1:\n        return s\n    return g(s[1:]) + s[0]\n\nprint(g(\"exam\"))\n```",
+  "options": [
+   {
+    "en": "exam"
+   },
+   {
+    "en": "xame"
+   },
+   {
+    "en": "mexa"
+   },
+   {
+    "en": "maxe"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Each call moves the first character to the end of the reversed rest. g(\"exam\") = g(\"xam\") + \"e\" = (g(\"am\") + \"x\") + \"e\" = ((g(\"m\") + \"a\") + \"x\") + \"e\". g(\"m\") returns \"m\", so the result is \"maxe\", the reversed string.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_functions",
+  "subtopic": "Java recursion - return value",
+  "difficulty": "easy",
+  "question_en": "What value is printed by the following Java program?\n```java\npublic class Main {\n    static int m(int a, int b) {\n        if (b == 0) return a;\n        return m(b, a % b);\n    }\n    public static void main(String[] args) {\n        System.out.println(m(84, 36));\n    }\n}\n```",
+  "options": [
+   {
+    "en": "6"
+   },
+   {
+    "en": "12"
+   },
+   {
+    "en": "36"
+   },
+   {
+    "en": "252"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "m() is Euclid's GCD algorithm. m(84, 36) calls m(36, 84 % 36) = m(36, 12), which calls m(12, 36 % 12) = m(12, 0). Since b is 0, it returns 12, the greatest common divisor of 84 and 36.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_functions",
+  "subtopic": "Function overloading rules",
+  "difficulty": "easy",
+  "question_en": "In C++, two functions with the same name CANNOT be overloaded if they differ only in their",
+  "options": [
+   {
+    "en": "number of parameters"
+   },
+   {
+    "en": "types of parameters"
+   },
+   {
+    "en": "order of parameter types"
+   },
+   {
+    "en": "return type"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The compiler chooses an overload from the arguments in the call, and a call does not show which return type is wanted. So functions that differ only in return type cause a redeclaration error. They must differ in the number, types or order of their parameters.",
+  "pyq_concept": false,
+  "output_type": false
+ },
+ {
+  "chapter_key": "pg_functions",
+  "subtopic": "C++ call by reference",
+  "difficulty": "medium",
+  "question_en": "What is the output of the following C++ program?\n```cpp\n#include <iostream>\nusing namespace std;\nvoid update(int &r, int v) {\n    r += v;\n    v *= 2;\n}\nint main() {\n    int a = 4, b = 6;\n    update(a, b);\n    cout << a << \" \" << b;\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "10 12"
+   },
+   {
+    "en": "4 6"
+   },
+   {
+    "en": "4 12"
+   },
+   {
+    "en": "10 6"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "r is a reference, another name for a, so r += v changes a to 4 + 6 = 10. v is passed by value, so v *= 2 changes only the local copy and b stays 6. Output: 10 6.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_functions",
+  "subtopic": "Java pass-by-value of object references",
+  "difficulty": "medium",
+  "question_en": "What is the output of the following Java program?\n```java\npublic class Main {\n    static void change(int[] arr, int n) {\n        arr[0] = 99;\n        n = 99;\n        arr = new int[]{0, 0};\n        arr[1] = 77;\n    }\n    public static void main(String[] args) {\n        int[] a = {1, 2};\n        int n = 1;\n        change(a, n);\n        System.out.println(a[0] + \" \" + a[1] + \" \" + n);\n    }\n}\n```",
+  "options": [
+   {
+    "en": "99 77 99"
+   },
+   {
+    "en": "1 2 1"
+   },
+   {
+    "en": "99 2 1"
+   },
+   {
+    "en": "0 77 1"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Java always passes by value; for an array the value passed is a copy of the reference. arr[0] = 99 changes the caller's array through that copy. n = 99 changes only the local int. After arr is pointed at a new array, arr[1] = 77 changes the new array, not a. So a is {99, 2} and n is 1.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_functions",
+  "subtopic": "C++ inline functions",
+  "difficulty": "medium",
+  "question_en": "In C++, declaring a function with the inline keyword",
+  "options": [
+   {
+    "en": "forces the compiler to expand every call"
+   },
+   {
+    "en": "is only a request; the compiler may ignore it"
+   },
+   {
+    "en": "makes the function run in a separate thread"
+   },
+   {
+    "en": "is allowed only for recursive functions"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "inline asks the compiler to replace each call with the function body, which saves call overhead for small functions. It is only a request: the compiler may refuse, for example for large, recursive or complex functions. It has nothing to do with threads.",
+  "pyq_concept": true,
+  "output_type": false
+ },
+ {
+  "chapter_key": "pg_functions",
+  "subtopic": "C++ default argument rules",
+  "difficulty": "medium",
+  "question_en": "Which of the following C++ function declarations is INVALID?",
+  "options": [
+   {
+    "en": "int f(int a, int b = 1, int c = 2);"
+   },
+   {
+    "en": "int f(int a = 1, int b, int c = 2);"
+   },
+   {
+    "en": "int f(int a, int b, int c = 2);"
+   },
+   {
+    "en": "int f(int a = 0, int b = 1, int c = 2);"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Default arguments must be given from right to left: once a parameter has a default, every parameter after it must also have one. In int f(int a = 1, int b, int c = 2) the parameter b has no default although a, before it, has one, so the declaration is an error.",
+  "pyq_concept": false,
+  "output_type": false
+ },
+ {
+  "chapter_key": "pg_functions",
+  "subtopic": "C variadic functions - stdarg.h macros",
+  "difficulty": "medium",
+  "question_en": "In a C variadic function, which macro from <stdarg.h> is used to fetch the next unnamed argument?",
+  "options": [
+   {
+    "en": "va_start"
+   },
+   {
+    "en": "va_arg"
+   },
+   {
+    "en": "va_end"
+   },
+   {
+    "en": "va_list"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "va_list is the type of the argument pointer. va_start(ap, last) initialises it after the last named parameter, va_arg(ap, type) returns the next argument as the given type, and va_end(ap) cleans up. Only va_arg actually fetches an argument.",
+  "pyq_concept": true,
+  "output_type": false
+ },
+ {
+  "chapter_key": "pg_functions",
+  "subtopic": "C variadic function output",
+  "difficulty": "medium",
+  "question_en": "What is the output of the following C program?\n```c\n#include <stdio.h>\n#include <stdarg.h>\nint sum(int n, ...) {\n    va_list ap;\n    int s = 0;\n    va_start(ap, n);\n    for (int i = 0; i < n; i++)\n        s += va_arg(ap, int);\n    va_end(ap);\n    return s;\n}\nint main() {\n    printf(\"%d\", sum(3, 10, 20, 30, 40));\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "100"
+   },
+   {
+    "en": "103"
+   },
+   {
+    "en": "Compilation error"
+   },
+   {
+    "en": "60"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The first argument n = 3 tells sum() how many values to read. The loop calls va_arg three times and adds 10 + 20 + 30 = 60. The extra argument 40 is passed but never read, which is allowed.",
+  "pyq_concept": true,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_functions",
+  "subtopic": "C static local variables",
+  "difficulty": "medium",
+  "question_en": "What is the output of the following C program?\n```c\n#include <stdio.h>\nint f() {\n    static int s = 1;\n    int a = 1;\n    s++;\n    a++;\n    return s * 10 + a;\n}\nint main() {\n    printf(\"%d \", f());\n    printf(\"%d\", f());\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "22 22"
+   },
+   {
+    "en": "22 33"
+   },
+   {
+    "en": "22 32"
+   },
+   {
+    "en": "21 32"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "A static local is initialised only once and keeps its value between calls; an ordinary local is re-created each call. First call: s = 2, a = 2, returns 22. Second call: s = 3 but a starts again at 1 and becomes 2, so it returns 32.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_functions",
+  "subtopic": "C variable scope and shadowing",
+  "difficulty": "medium",
+  "question_en": "What is the output of the following C program?\n```c\n#include <stdio.h>\nint x = 10;\nvoid show() {\n    printf(\"%d\", x);\n}\nint main() {\n    int x = 20;\n    {\n        int x = 30;\n        printf(\"%d \", x);\n    }\n    printf(\"%d \", x);\n    show();\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "30 30 30"
+   },
+   {
+    "en": "30 20 20"
+   },
+   {
+    "en": "10 20 30"
+   },
+   {
+    "en": "30 20 10"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "An inner declaration hides an outer one only inside its own block. The inner block sees its own x = 30. After the block ends, main() sees its local x = 20. show() cannot see main()'s locals, so it uses the global x = 10.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_functions",
+  "subtopic": "C recursion - output trace",
+  "difficulty": "medium",
+  "question_en": "What is the output of the following C program?\n```c\n#include <stdio.h>\nvoid p(int n) {\n    if (n == 0) return;\n    printf(\"%d\", n);\n    p(n - 1);\n    printf(\"%d\", n);\n}\nint main() {\n    p(3);\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "123321"
+   },
+   {
+    "en": "321"
+   },
+   {
+    "en": "3210123"
+   },
+   {
+    "en": "321123"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Each call prints n before the recursive call and again after it returns. Going down, p(3), p(2), p(1) print 3, 2, 1; p(0) prints nothing and returns. Unwinding, p(1), p(2), p(3) print 1, 2, 3. Output: 321123.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_functions",
+  "subtopic": "Recursion - number of calls",
+  "difficulty": "hard",
+  "question_en": "How many times in total is fib() called (including the first call from main) when the following C program runs?\n```c\n#include <stdio.h>\nint fib(int n) {\n    if (n <= 1) return n;\n    return fib(n - 1) + fib(n - 2);\n}\nint main() {\n    printf(\"%d\", fib(5));\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "5"
+   },
+   {
+    "en": "15"
+   },
+   {
+    "en": "8"
+   },
+   {
+    "en": "9"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Let C(n) be the number of calls for fib(n): C(0) = C(1) = 1 and C(n) = 1 + C(n-1) + C(n-2). So C(2) = 3, C(3) = 5, C(4) = 9 and C(5) = 1 + 9 + 5 = 15. The program prints fib(5) = 5, but fib() is called 15 times.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_functions",
+  "subtopic": "Recursion versus iteration",
+  "difficulty": "easy",
+  "question_en": "Compared with an equivalent iterative (loop) solution, a recursive function usually",
+  "options": [
+   {
+    "en": "runs faster, because no loop is needed"
+   },
+   {
+    "en": "uses more memory, as every call adds a stack frame"
+   },
+   {
+    "en": "cannot return a value to its caller"
+   },
+   {
+    "en": "needs no terminating (base) condition"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Every recursive call pushes a new stack frame holding its parameters, locals and return address, so recursion needs more memory and has call overhead. Too deep a recursion can overflow the stack. Recursion can return values, and it always needs a base case to stop.",
+  "pyq_concept": false,
+  "output_type": false
+ },
+ {
+  "chapter_key": "pg_functions",
+  "subtopic": "Types of recursion",
+  "difficulty": "medium",
+  "question_en": "A recursive function whose recursive call is the very last operation it performs is said to use",
+  "options": [
+   {
+    "en": "head recursion"
+   },
+   {
+    "en": "indirect recursion"
+   },
+   {
+    "en": "nested recursion"
+   },
+   {
+    "en": "tail recursion"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "In tail recursion nothing is left to do after the recursive call returns, so compilers can reuse the same stack frame (tail-call optimisation). Head recursion makes the call first and works afterwards, indirect recursion is A calling B calling A, and nested recursion passes a recursive call as an argument.",
+  "pyq_concept": false,
+  "output_type": false
+ },
+ {
+  "chapter_key": "pg_functions",
+  "subtopic": "Python mutable default argument",
+  "difficulty": "hard",
+  "question_en": "What is the output of the following Python 3 code?\n```python\ndef add(x, lst=[]):\n    lst.append(x)\n    return lst\n\nadd(1)\nadd(2)\nprint(add(3))\n```",
+  "options": [
+   {
+    "en": "[3]"
+   },
+   {
+    "en": "[1, 2, 3]"
+   },
+   {
+    "en": "[1, 3]"
+   },
+   {
+    "en": "[]"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "A default value is evaluated only once, when the def statement runs, so all three calls share the same list object. add(1) makes it [1], add(2) makes it [1, 2], and add(3) makes it [1, 2, 3], which is printed. The usual fix is lst=None and creating a new list inside.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_functions",
+  "subtopic": "Nested recursion trace",
+  "difficulty": "hard",
+  "question_en": "What value is printed by the following C program?\n```c\n#include <stdio.h>\nint f(int n) {\n    if (n > 100)\n        return n - 10;\n    return f(f(n + 11));\n}\nint main() {\n    printf(\"%d\", f(95));\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "95"
+   },
+   {
+    "en": "96"
+   },
+   {
+    "en": "91"
+   },
+   {
+    "en": "106"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "f(95) = f(f(106)) = f(96), because f(106) = 96. In the same way f(96) = f(97) = f(98) = f(99) = f(100). Then f(100) = f(f(111)) = f(101) = 91. This is McCarthy's 91 function: it returns 91 for any n <= 100.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_functions",
+  "subtopic": "Java overloading - widening versus boxing",
+  "difficulty": "hard",
+  "question_en": "What is the output of the following Java program?\n```java\npublic class Main {\n    static void m(long x)    { System.out.print(\"long \"); }\n    static void m(Integer x) { System.out.print(\"Integer \"); }\n    static void m(int... x)  { System.out.print(\"varargs \"); }\n    public static void main(String[] args) {\n        m(5);\n        m(Integer.valueOf(5));\n    }\n}\n```",
+  "options": [
+   {
+    "en": "long Integer"
+   },
+   {
+    "en": "Integer Integer"
+   },
+   {
+    "en": "varargs Integer"
+   },
+   {
+    "en": "Compilation error"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Java resolves overloads in phases: first without boxing or varargs, then with boxing, then with varargs. For m(5) the first phase already finds m(long) by widening int to long, so long is printed. For m(Integer.valueOf(5)) the argument is already an Integer, so m(Integer) matches exactly.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_arrays",
+  "subtopic": "C array partial initialisation",
+  "difficulty": "easy",
+  "question_en": "What is the output of the following C program?\n```c\n#include <stdio.h>\nint main() {\n    int a[5] = {3, 7};\n    printf(\"%d %d\", a[1], a[4]);\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "3 0"
+   },
+   {
+    "en": "7 0"
+   },
+   {
+    "en": "7 7"
+   },
+   {
+    "en": "Compilation error"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "When an array has an initialiser list shorter than its size, the listed values go to the first elements and every remaining element is set to 0. So a = {3, 7, 0, 0, 0}, a[1] = 7 and a[4] = 0.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_arrays",
+  "subtopic": "2-D array address calculation - row-major",
+  "difficulty": "medium",
+  "question_en": "A 2-D array int A[10][20] is stored in row-major order starting at address 2000, and each int takes 4 bytes. What is the address of A[3][5] (indices start at 0)?",
+  "options": [
+   {
+    "en": "2260"
+   },
+   {
+    "en": "2212"
+   },
+   {
+    "en": "2256"
+   },
+   {
+    "en": "2065"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "In row-major order, Address = Base + (i * columns + j) * size. Here that is 2000 + (3 * 20 + 5) * 4 = 2000 + 65 * 4 = 2260. 2212 is the column-major answer, (5 * 10 + 3) * 4 + 2000.",
+  "pyq_concept": false,
+  "output_type": false
+ },
+ {
+  "chapter_key": "pg_arrays",
+  "subtopic": "2-D array address calculation - column-major",
+  "difficulty": "hard",
+  "question_en": "An array B[1..10][1..15] (10 rows, 15 columns) is stored in column-major order. The base address is 500 and each element takes 2 bytes. What is the address of B[4][6]?",
+  "options": [
+   {
+    "en": "600"
+   },
+   {
+    "en": "608"
+   },
+   {
+    "en": "606"
+   },
+   {
+    "en": "553"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "In column-major order with lower bounds 1, Address = Base + ((j - 1) * rows + (i - 1)) * size. That is 500 + ((6 - 1) * 10 + (4 - 1)) * 2 = 500 + 53 * 2 = 606. 600 is the row-major result, 500 + (3 * 15 + 5) * 2.",
+  "pyq_concept": false,
+  "output_type": false
+ },
+ {
+  "chapter_key": "pg_arrays",
+  "subtopic": "C sizeof to count array elements",
+  "difficulty": "easy",
+  "question_en": "What is the output of the following C program?\n```c\n#include <stdio.h>\nint main() {\n    int a[] = {4, 8, 15, 16, 23, 42};\n    printf(\"%zu\", sizeof(a) / sizeof(a[0]));\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "24"
+   },
+   {
+    "en": "6"
+   },
+   {
+    "en": "4"
+   },
+   {
+    "en": "5"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The array size is taken from the 6 initialisers. sizeof(a) is the whole array, 6 * 4 = 24 bytes, and sizeof(a[0]) is one int, 4 bytes. 24 / 4 = 6, the number of elements.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_arrays",
+  "subtopic": "C pointer arithmetic - scaling",
+  "difficulty": "easy",
+  "question_en": "In C, an int pointer p holds the address 1000. If sizeof(int) is 4, what address does p + 3 hold?",
+  "options": [
+   {
+    "en": "1012"
+   },
+   {
+    "en": "1003"
+   },
+   {
+    "en": "1004"
+   },
+   {
+    "en": "1024"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Adding n to a pointer moves it by n elements, not n bytes. For an int pointer each step is sizeof(int) = 4 bytes, so p + 3 = 1000 + 3 * 4 = 1012.",
+  "pyq_concept": false,
+  "output_type": false
+ },
+ {
+  "chapter_key": "pg_arrays",
+  "subtopic": "Array parameter decays to a pointer",
+  "difficulty": "medium",
+  "question_en": "In C, an array int a[10] is passed to a function declared as void f(int arr[]). What does sizeof(arr) give inside f()?",
+  "options": [
+   {
+    "en": "40, the size of the whole array"
+   },
+   {
+    "en": "10, the number of elements"
+   },
+   {
+    "en": "The size of an int pointer, not of the array"
+   },
+   {
+    "en": "0, because arrays are not copied"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "An array argument decays to a pointer to its first element, and a parameter written as int arr[] is really int *arr. So sizeof(arr) inside f() is the size of a pointer (4 or 8 bytes), not 10 * sizeof(int). That is why the length is usually passed as a separate argument.",
+  "pyq_concept": false,
+  "output_type": false
+ },
+ {
+  "chapter_key": "pg_arrays",
+  "subtopic": "C header files - string.h",
+  "difficulty": "easy",
+  "question_en": "Which C header file declares the functions strlen(), strcpy() and strcmp()?",
+  "options": [
+   {
+    "en": "stdio.h"
+   },
+   {
+    "en": "stdlib.h"
+   },
+   {
+    "en": "string.h"
+   },
+   {
+    "en": "ctype.h"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The string-handling functions such as strlen(), strcpy(), strcat(), strcmp() and strchr() are declared in <string.h>. ctype.h holds character tests like isdigit() and toupper(), and stdlib.h holds malloc(), atoi() and similar.",
+  "pyq_concept": true,
+  "output_type": false
+ },
+ {
+  "chapter_key": "pg_arrays",
+  "subtopic": "Dynamic memory - malloc versus calloc",
+  "difficulty": "easy",
+  "question_en": "What is the main difference between malloc() and calloc() in C?",
+  "options": [
+   {
+    "en": "malloc() sets the allocated bytes to zero; calloc() does not"
+   },
+   {
+    "en": "calloc() allocates on the stack; malloc() on the heap"
+   },
+   {
+    "en": "Only memory from malloc() has to be released with free()"
+   },
+   {
+    "en": "calloc() sets the allocated bytes to zero; malloc() does not"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Both allocate memory on the heap and both blocks must be released with free(). calloc(n, size) allocates n * size bytes and fills them with zero. malloc(size) leaves the contents uninitialised (garbage).",
+  "pyq_concept": false,
+  "output_type": false
+ },
+ {
+  "chapter_key": "pg_arrays",
+  "subtopic": "Dynamic memory - malloc failure",
+  "difficulty": "easy",
+  "question_en": "What does malloc() return in C when the requested memory cannot be allocated?",
+  "options": [
+   {
+    "en": "The address 0xFFFF"
+   },
+   {
+    "en": "A pointer to freed memory"
+   },
+   {
+    "en": "The integer value -1"
+   },
+   {
+    "en": "A NULL pointer"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "malloc(), calloc() and realloc() return NULL when they cannot allocate the requested block. A program should therefore check the returned pointer against NULL before using it.",
+  "pyq_concept": false,
+  "output_type": false
+ },
+ {
+  "chapter_key": "pg_arrays",
+  "subtopic": "Array name is not a modifiable lvalue",
+  "difficulty": "medium",
+  "question_en": "Given int a[5]; int *p = a; in C, which of the following statements is INVALID?",
+  "options": [
+   {
+    "en": "p++;"
+   },
+   {
+    "en": "*(a + 1) = 3;"
+   },
+   {
+    "en": "a[0] = a[1];"
+   },
+   {
+    "en": "a++;"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "An array name stands for the fixed address of its first element and is not a modifiable lvalue, so a++ (or a = p) is a compilation error. p is an ordinary pointer variable, so p++ is fine. *(a + 1) = 3 and a[0] = a[1] only change elements, which is allowed.",
+  "pyq_concept": false,
+  "output_type": false
+ },
+ {
+  "chapter_key": "pg_arrays",
+  "subtopic": "const pointer versus pointer to const",
+  "difficulty": "hard",
+  "question_en": "In C, what does the declaration int *const p = &x; mean?",
+  "options": [
+   {
+    "en": "*p cannot be changed, but p can point elsewhere"
+   },
+   {
+    "en": "p cannot be changed, but *p (the value of x) can"
+   },
+   {
+    "en": "Neither p nor *p can be changed"
+   },
+   {
+    "en": "p is a pointer to a constant integer"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Read the declaration from right to left: p is a const pointer to int. The pointer itself is fixed and must stay pointing at x, but *p = 5 is allowed. const int *p (pointer to const int) is the opposite: p can move but *p cannot be changed through it.",
+  "pyq_concept": false,
+  "output_type": false
+ },
+ {
+  "chapter_key": "pg_arrays",
+  "subtopic": "Modifying a string literal",
+  "difficulty": "medium",
+  "question_en": "In C, the statements char *s = \"hello\"; s[0] = 'H'; result in",
+  "options": [
+   {
+    "en": "undefined behaviour, as a string literal must not be modified"
+   },
+   {
+    "en": "s holding Hello on every compiler and system"
+   },
+   {
+    "en": "a compilation error on every C compiler"
+   },
+   {
+    "en": "s pointing to a fresh, writable copy of the string"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "s points to a string literal, which may be stored in read-only memory; trying to change it is undefined behaviour (often a crash). It still compiles, because in C a literal has type char[]. To get a modifiable string use an array: char s[] = \"hello\";",
+  "pyq_concept": false,
+  "output_type": false
+ },
+ {
+  "chapter_key": "pg_arrays",
+  "subtopic": "strcat and strlen",
+  "difficulty": "easy",
+  "question_en": "What is the output of the following C program?\n```c\n#include <stdio.h>\n#include <string.h>\nint main() {\n    char a[20] = \"Tea\";\n    char b[] = \"cher\";\n    strcat(a, b);\n    printf(\"%s %zu\", a, strlen(a));\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "Teacher 7"
+   },
+   {
+    "en": "Teacher 8"
+   },
+   {
+    "en": "Tea 3"
+   },
+   {
+    "en": "cherTea 7"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "strcat(a, b) appends b to the end of a, so a becomes \"Teacher\" (a[20] has room for it). strlen() counts characters up to, but not including, the terminating '\\0', so it returns 7.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_arrays",
+  "subtopic": "Java array default values",
+  "difficulty": "easy",
+  "question_en": "What is the output of the following Java program?\n```java\npublic class Main {\n    public static void main(String[] args) {\n        int[] a = new int[3];\n        String[] s = new String[2];\n        boolean[] f = new boolean[1];\n        double[] d = new double[1];\n        System.out.println(a[2] + \" \" + s[0] + \" \" + f[0] + \" \" + d[0]);\n    }\n}\n```",
+  "options": [
+   {
+    "en": "0 null true 0.0"
+   },
+   {
+    "en": "0 null false 0.0"
+   },
+   {
+    "en": "0 0 false 0"
+   },
+   {
+    "en": "Compilation error"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Java always initialises array elements to default values. Numeric types get 0 (0.0 for double), boolean gets false, and reference types such as String get null. So the line prints 0 null false 0.0.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_arrays",
+  "subtopic": "Java jagged 2-D arrays",
+  "difficulty": "easy",
+  "question_en": "What is the output of the following Java program?\n```java\npublic class Main {\n    public static void main(String[] args) {\n        int[][] m = {{1, 2, 3}, {4}, {5, 6}};\n        System.out.println(m.length + \" \" + m[2].length + \" \" + m[1][0]);\n    }\n}\n```",
+  "options": [
+   {
+    "en": "3 2 4"
+   },
+   {
+    "en": "3 3 4"
+   },
+   {
+    "en": "6 2 4"
+   },
+   {
+    "en": "3 2 2"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A Java 2-D array is an array of row arrays, and rows can have different lengths. m.length is the number of rows, 3. m[2] is {5, 6}, so m[2].length is 2, and m[1][0] is 4.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_arrays",
+  "subtopic": "C pointer arithmetic on arrays",
+  "difficulty": "medium",
+  "question_en": "What is the output of the following C program?\n```c\n#include <stdio.h>\nint main() {\n    int a[] = {10, 20, 30, 40, 50};\n    int *p = a + 1;\n    printf(\"%d %d %d\", *(p + 2), p[-1], *p + 2);\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "40 10 22"
+   },
+   {
+    "en": "30 10 22"
+   },
+   {
+    "en": "40 20 40"
+   },
+   {
+    "en": "40 10 40"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "p points to a[1]. *(p + 2) is a[3] = 40, and p[-1] means *(p - 1), which is a[0] = 10. In *p + 2 the * binds first, so it is a[1] + 2 = 22, not *(p + 2).",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_arrays",
+  "subtopic": "a[i] == *(a + i) == i[a]",
+  "difficulty": "medium",
+  "question_en": "What is the output of the following C program?\n```c\n#include <stdio.h>\nint main() {\n    int a[] = {2, 4, 6, 8};\n    printf(\"%d\", 2[a] + *(a + 1) * a[3]);\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "80"
+   },
+   {
+    "en": "Compilation error"
+   },
+   {
+    "en": "38"
+   },
+   {
+    "en": "14"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "a[i] is defined as *(a + i), and since addition is commutative, 2[a] = *(2 + a) = a[2] = 6. *(a + 1) is a[1] = 4 and a[3] = 8. Multiplication comes first: 6 + 4 * 8 = 38.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_arrays",
+  "subtopic": "Pointer to pointer",
+  "difficulty": "medium",
+  "question_en": "What is the output of the following C program?\n```c\n#include <stdio.h>\nint main() {\n    int x = 7;\n    int *p = &x;\n    int **q = &p;\n    **q = **q * 3;\n    *p += 1;\n    printf(\"%d %d\", x, **q == *p);\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "21 1"
+   },
+   {
+    "en": "22 0"
+   },
+   {
+    "en": "22 1"
+   },
+   {
+    "en": "8 1"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "q points to p and p points to x, so **q and *p both mean x. **q = **q * 3 makes x = 21, and *p += 1 makes x = 22. **q == *p compares x with x, which is true, so it prints 1.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_arrays",
+  "subtopic": "C pointer dereference trace",
+  "difficulty": "medium",
+  "question_en": "What is the output of the following C program?\n```c\n#include <stdio.h>\nint main() {\n    int m = 6, *p = &m, *q = p;\n    *q = *p + 4;\n    printf(\"%d %d\", m, *p * m / 5);\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "6 20"
+   },
+   {
+    "en": "10 2"
+   },
+   {
+    "en": "10 20"
+   },
+   {
+    "en": "10 12"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "p and q both point to m. *q = *p + 4 stores 6 + 4 = 10 into m. Then *p * m / 5 = 10 * 10 / 5 = 100 / 5 = 20 (the first * is dereference, the second is multiplication).",
+  "pyq_concept": true,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_arrays",
+  "subtopic": "strlen versus sizeof",
+  "difficulty": "medium",
+  "question_en": "What is the output of the following C program?\n```c\n#include <stdio.h>\n#include <string.h>\nint main() {\n    char s[20] = \"Delhi\";\n    char t[] = \"Delhi\";\n    printf(\"%zu %zu %zu\", strlen(s), sizeof(s), sizeof(t));\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "5 20 5"
+   },
+   {
+    "en": "6 20 6"
+   },
+   {
+    "en": "5 20 6"
+   },
+   {
+    "en": "5 5 6"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "strlen() counts characters before '\\0', so it is 5 for \"Delhi\". sizeof gives the size of the whole array: s was declared with 20 elements, so 20. t's size comes from the initialiser, 5 letters plus '\\0', so 6.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_arrays",
+  "subtopic": "C++ new[] and pointer traversal",
+  "difficulty": "medium",
+  "question_en": "What is the output of the following C++ program?\n```cpp\n#include <iostream>\nusing namespace std;\nint main() {\n    int *p = new int[4]{2, 4, 6, 8};\n    int s = 0;\n    for (int *q = p; q < p + 4; q += 2)\n        s += *q;\n    cout << s;\n    delete[] p;\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "20"
+   },
+   {
+    "en": "8"
+   },
+   {
+    "en": "12"
+   },
+   {
+    "en": "6"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "new int[4]{2, 4, 6, 8} allocates and initialises a dynamic array. q starts at p and moves 2 elements at a time, so it visits p[0] = 2 and p[2] = 6; at p + 4 the loop stops. s = 2 + 6 = 8, and delete[] frees the array.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_arrays",
+  "subtopic": "Size of a union",
+  "difficulty": "medium",
+  "question_en": "What is the output of the following C program (4-byte int, 8-byte double)?\n```c\n#include <stdio.h>\nunion U {\n    int i;\n    double d;\n    char c[6];\n};\nint main() {\n    printf(\"%zu\", sizeof(union U));\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "18"
+   },
+   {
+    "en": "8"
+   },
+   {
+    "en": "14"
+   },
+   {
+    "en": "6"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "All members of a union share the same memory, so its size is the size of the largest member, rounded up for alignment. The largest member is double (8 bytes); c[6] needs only 6. So sizeof(union U) is 8, whereas a struct with the same members would need at least 18.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_arrays",
+  "subtopic": "Java String == versus equals()",
+  "difficulty": "medium",
+  "question_en": "What is the output of the following Java program?\n```java\npublic class Main {\n    public static void main(String[] args) {\n        String a = \"java\";\n        String b = \"ja\" + \"va\";\n        String c = new String(\"java\");\n        System.out.println((a == b) + \" \" + (a == c) + \" \" + a.equals(c));\n    }\n}\n```",
+  "options": [
+   {
+    "en": "true false true"
+   },
+   {
+    "en": "false false true"
+   },
+   {
+    "en": "true true true"
+   },
+   {
+    "en": "true false false"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "== compares references, equals() compares contents. \"ja\" + \"va\" is a compile-time constant, so b refers to the same pooled literal as a, and a == b is true. new String() always creates a new object, so a == c is false, but a.equals(c) is true.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_arrays",
+  "subtopic": "Java String immutability",
+  "difficulty": "medium",
+  "question_en": "What is the output of the following Java program?\n```java\npublic class Main {\n    public static void main(String[] args) {\n        String s = \"abc\";\n        s.toUpperCase();\n        s.concat(\"d\");\n        System.out.println(s + s.length());\n    }\n}\n```",
+  "options": [
+   {
+    "en": "abc3"
+   },
+   {
+    "en": "ABCD4"
+   },
+   {
+    "en": "abcd4"
+   },
+   {
+    "en": "ABC3"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Java String objects are immutable. toUpperCase() and concat() return new String objects, but the results are thrown away because they are not assigned to anything. s still refers to \"abc\", so the output is abc followed by its length 3.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_arrays",
+  "subtopic": "2-D array access with pointers",
+  "difficulty": "medium",
+  "question_en": "What is the output of the following C program?\n```c\n#include <stdio.h>\nint main() {\n    int m[3][4] = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};\n    printf(\"%d %d\", *(*(m + 1) + 2), *(m[2] + 3));\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "6 11"
+   },
+   {
+    "en": "4 12"
+   },
+   {
+    "en": "7 12"
+   },
+   {
+    "en": "7 8"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "*(m + 1) is the row m[1], and adding 2 moves to its element at index 2, so *(*(m + 1) + 2) = m[1][2] = 7. m[2] + 3 points to m[2][3], so the second value is 12.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_arrays",
+  "subtopic": "Traversing a string with a char pointer",
+  "difficulty": "medium",
+  "question_en": "What is the output of the following C program?\n```c\n#include <stdio.h>\nint main() {\n    char s[] = \"a1b2c3d\";\n    int n = 0;\n    for (char *p = s; *p; p++)\n        if (*p >= '0' && *p <= '9')\n            n += *p - '0';\n    printf(\"%d\", n);\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "3"
+   },
+   {
+    "en": "150"
+   },
+   {
+    "en": "6"
+   },
+   {
+    "en": "7"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The loop moves p along the string until it reaches the terminating '\\0' (the condition *p becomes 0). For each digit character, *p - '0' converts it to its numeric value. The digits are 1, 2 and 3, so n = 6. Adding the ASCII codes instead (49 + 50 + 51) would give 150.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_arrays",
+  "subtopic": "*p++ versus (*p)++ versus ++*p",
+  "difficulty": "hard",
+  "question_en": "What is the output of the following C program?\n```c\n#include <stdio.h>\nint main() {\n    int a[] = {5, 10, 15};\n    int *p = a;\n    int x = *p++;\n    int y = (*p)++;\n    int z = ++*p;\n    printf(\"%d %d %d %d\", x, y, z, a[1]);\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "5 10 11 11"
+   },
+   {
+    "en": "6 10 12 12"
+   },
+   {
+    "en": "5 10 12 12"
+   },
+   {
+    "en": "5 11 12 12"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "*p++ means *(p++): it reads a[0] = 5 into x and then moves p to a[1]. (*p)++ reads a[1] = 10 into y and then increments a[1] to 11. ++*p increments a[1] again to 12 and gives 12 to z. So x = 5, y = 10, z = 12 and a[1] = 12.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_arrays",
+  "subtopic": "sizeof and strlen with an embedded null",
+  "difficulty": "hard",
+  "question_en": "What is the output of the following C program?\n```c\n#include <stdio.h>\n#include <string.h>\nint main() {\n    char s[] = \"ab\\0cd\";\n    printf(\"%zu %zu\", sizeof(s), strlen(s));\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "6 2"
+   },
+   {
+    "en": "5 2"
+   },
+   {
+    "en": "6 5"
+   },
+   {
+    "en": "5 5"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The literal holds a, b, '\\0', c, d plus the automatic terminating '\\0', so the array has 6 bytes and sizeof(s) is 6. strlen() stops at the first '\\0', which comes right after \"ab\", so it returns 2.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_arrays",
+  "subtopic": "Structure size and padding",
+  "difficulty": "hard",
+  "question_en": "What is the output of the following C program on a typical GCC system where int is 4 bytes and aligned on a 4-byte boundary?\n```c\n#include <stdio.h>\nstruct S {\n    char c;\n    int i;\n    char d;\n};\nint main() {\n    printf(\"%zu\", sizeof(struct S));\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "6"
+   },
+   {
+    "en": "9"
+   },
+   {
+    "en": "12"
+   },
+   {
+    "en": "8"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "c takes byte 0, then 3 padding bytes are added so that i starts at offset 4 (bytes 4 to 7). d takes byte 8. The total is then padded up to a multiple of 4, the struct's alignment, giving 12. Simply adding the members (1 + 4 + 1) would give 6.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_arrays",
+  "subtopic": "String literal pointer arithmetic in printf",
+  "difficulty": "hard",
+  "question_en": "What is the output of the following C program?\n```c\n#include <stdio.h>\nint main() {\n    int n = 3;\n    printf(n + \"Delhi%d\", n);\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "hi3"
+   },
+   {
+    "en": "Delhi3"
+   },
+   {
+    "en": "lhi3"
+   },
+   {
+    "en": "3Delhi3"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A string literal is a char array, so n + \"Delhi%d\" is a pointer 3 characters past its start. D, e and l are skipped, and the format string printf() receives is \"hi%d\". The %d is replaced by n, so the output is hi3.",
+  "pyq_concept": true,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_exceptions",
+  "subtopic": "Java finally with return",
+  "difficulty": "easy",
+  "question_en": "What is the output of the following Java program?\n```java\npublic class Main {\n    static int f() {\n        try {\n            return 1;\n        } finally {\n            System.out.print(\"F \");\n        }\n    }\n    public static void main(String[] args) {\n        System.out.println(f());\n    }\n}\n```",
+  "options": [
+   {
+    "en": "1 F"
+   },
+   {
+    "en": "1"
+   },
+   {
+    "en": "F"
+   },
+   {
+    "en": "F 1"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The return 1 in try is prepared first, but the finally block always runs before the method actually returns. So F is printed inside f(), and only then does main() receive 1 and print it, giving F 1.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_exceptions",
+  "subtopic": "Java finally cannot change a returned value",
+  "difficulty": "hard",
+  "question_en": "What is the output of the following Java program?\n```java\npublic class Main {\n    static int g() {\n        int x = 10;\n        try {\n            x = 20;\n            return x;\n        } finally {\n            x = 30;\n        }\n    }\n    public static void main(String[] args) {\n        System.out.println(g());\n    }\n}\n```",
+  "options": [
+   {
+    "en": "30"
+   },
+   {
+    "en": "10"
+   },
+   {
+    "en": "20"
+   },
+   {
+    "en": "Compilation error"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "When return x executes, the value 20 is saved as the return value. finally then runs and sets the local variable x to 30, but that does not change the value already saved. The method returns 20.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_exceptions",
+  "subtopic": "Java return in finally overrides",
+  "difficulty": "medium",
+  "question_en": "What is the output of the following Java program?\n```java\npublic class Main {\n    static int h() {\n        try {\n            throw new RuntimeException(\"boom\");\n        } catch (Exception e) {\n            return 2;\n        } finally {\n            return 3;\n        }\n    }\n    public static void main(String[] args) {\n        System.out.println(h());\n    }\n}\n```",
+  "options": [
+   {
+    "en": "2"
+   },
+   {
+    "en": "2 3"
+   },
+   {
+    "en": "3"
+   },
+   {
+    "en": "Compilation error"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The exception is caught and the catch block prepares to return 2. The finally block always runs afterwards, and its own return 3 replaces the pending return value. So h() returns 3. (A return in finally is legal but bad practice, as it can hide exceptions.)",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_exceptions",
+  "subtopic": "Java multiple catch blocks and finally",
+  "difficulty": "easy",
+  "question_en": "What is the output of the following Java program?\n```java\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            int[] a = new int[2];\n            a[2] = 5;\n            System.out.print(\"A\");\n        } catch (ArrayIndexOutOfBoundsException e) {\n            System.out.print(\"B\");\n        } catch (RuntimeException e) {\n            System.out.print(\"C\");\n        } finally {\n            System.out.print(\"D\");\n        }\n        System.out.print(\"E\");\n    }\n}\n```",
+  "options": [
+   {
+    "en": "ABDE"
+   },
+   {
+    "en": "BDE"
+   },
+   {
+    "en": "BCDE"
+   },
+   {
+    "en": "BD"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "a has indexes 0 and 1, so a[2] = 5 throws ArrayIndexOutOfBoundsException and A is skipped. Only the first matching catch runs, printing B. finally then prints D, and since the exception was handled, the program continues and prints E.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_exceptions",
+  "subtopic": "Java catch order - unreachable catch",
+  "difficulty": "medium",
+  "question_en": "What happens when the following Java program is compiled and run?\n```java\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            int x = 5 / 0;\n            System.out.print(x);\n        } catch (Exception e) {\n            System.out.print(\"E\");\n        } catch (ArithmeticException e) {\n            System.out.print(\"A\");\n        }\n    }\n}\n```",
+  "options": [
+   {
+    "en": "E"
+   },
+   {
+    "en": "Compilation error"
+   },
+   {
+    "en": "A"
+   },
+   {
+    "en": "Runtime error"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "ArithmeticException is a subclass of Exception, so any ArithmeticException is already caught by the first block. The compiler reports the second catch as unreachable (\"exception has already been caught\"). More specific exceptions must be caught before more general ones.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_exceptions",
+  "subtopic": "Checked versus unchecked exceptions",
+  "difficulty": "easy",
+  "question_en": "Which of the following is a checked exception in Java?",
+  "options": [
+   {
+    "en": "NullPointerException"
+   },
+   {
+    "en": "ArithmeticException"
+   },
+   {
+    "en": "ArrayIndexOutOfBoundsException"
+   },
+   {
+    "en": "IOException"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Checked exceptions are subclasses of Exception that are not subclasses of RuntimeException; the compiler forces you to catch or declare them. IOException is checked. NullPointerException, ArithmeticException and ArrayIndexOutOfBoundsException extend RuntimeException, so they are unchecked.",
+  "pyq_concept": false,
+  "output_type": false
+ },
+ {
+  "chapter_key": "pg_exceptions",
+  "subtopic": "Java exception class hierarchy",
+  "difficulty": "easy",
+  "question_en": "In Java, which class is the direct superclass of both Exception and Error?",
+  "options": [
+   {
+    "en": "RuntimeException"
+   },
+   {
+    "en": "Thread"
+   },
+   {
+    "en": "IOException"
+   },
+   {
+    "en": "Throwable"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "java.lang.Throwable is the root of everything that can be thrown or caught; it has two direct subclasses, Exception and Error. RuntimeException and IOException are subclasses of Exception, and Thread is unrelated.",
+  "pyq_concept": false,
+  "output_type": false
+ },
+ {
+  "chapter_key": "pg_exceptions",
+  "subtopic": "Java throw versus throws",
+  "difficulty": "medium",
+  "question_en": "In Java, the throws keyword is used to",
+  "options": [
+   {
+    "en": "declare in a method header the exceptions it may pass to its caller"
+   },
+   {
+    "en": "throw an exception object explicitly from inside a block"
+   },
+   {
+    "en": "catch every exception raised inside the method body"
+   },
+   {
+    "en": "run clean-up code whether or not an exception occurs"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "throws appears in a method declaration, for example void read() throws IOException, and tells callers which checked exceptions they must handle. throw (without s) is the statement that actually throws an exception object. Catching is done by catch, and clean-up by finally.",
+  "pyq_concept": false,
+  "output_type": false
+ },
+ {
+  "chapter_key": "pg_exceptions",
+  "subtopic": "C++ try, throw and catch matching",
+  "difficulty": "medium",
+  "question_en": "What is the output of the following C++ program?\n```cpp\n#include <iostream>\nusing namespace std;\nint main() {\n    try {\n        cout << \"1 \";\n        throw 5;\n        cout << \"2 \";\n    } catch (double d) {\n        cout << \"D\" << d;\n    } catch (int i) {\n        cout << \"I\" << i;\n    }\n    return 0;\n}\n```",
+  "options": [
+   {
+    "en": "1 I5"
+   },
+   {
+    "en": "1 D5"
+   },
+   {
+    "en": "1 2 I5"
+   },
+   {
+    "en": "I5"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "\"1 \" is printed, then throw 5 throws an int and the rest of the try block is skipped. Catch handlers are matched by type without the usual int-to-double conversion, so catch (double) is skipped and catch (int) receives 5. Output: 1 I5.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_exceptions",
+  "subtopic": "C++ uncaught exceptions",
+  "difficulty": "hard",
+  "question_en": "In C++, if a thrown exception is not caught by any handler, which function is called automatically?",
+  "options": [
+   {
+    "en": "std::exit()"
+   },
+   {
+    "en": "std::terminate()"
+   },
+   {
+    "en": "std::atexit()"
+   },
+   {
+    "en": "std::rethrow_exception()"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "When no matching catch is found, the C++ runtime calls std::terminate(), which by default calls std::abort() and ends the program abnormally. exit() and atexit() are for normal termination, and rethrow_exception() rethrows a stored exception.",
+  "pyq_concept": false,
+  "output_type": false
+ },
+ {
+  "chapter_key": "pg_exceptions",
+  "subtopic": "Python try-except-else-finally",
+  "difficulty": "medium",
+  "question_en": "What is the output of the following Python 3 code?\n```python\ndef test(x):\n    try:\n        r = 10 // x\n    except ZeroDivisionError:\n        print(\"Z\", end=\" \")\n    else:\n        print(\"E\", end=\" \")\n    finally:\n        print(\"F\", end=\" \")\n\ntest(2)\ntest(0)\n```",
+  "options": [
+   {
+    "en": "E F Z"
+   },
+   {
+    "en": "F Z F"
+   },
+   {
+    "en": "E F Z F"
+   },
+   {
+    "en": "E Z F"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "test(2): no exception occurs, so the else block prints E, then finally prints F. test(0): 10 // 0 raises ZeroDivisionError, so except prints Z and else is skipped; finally still prints F. Output: E F Z F.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_exceptions",
+  "subtopic": "Python KeyError and ValueError",
+  "difficulty": "medium",
+  "question_en": "What is the output of the following Python 3 code?\n```python\nd = {\"a\": \"5\", \"b\": \"x\"}\nout = \"\"\nfor k in [\"a\", \"b\", \"c\"]:\n    try:\n        out += str(10 // int(d[k]))\n    except KeyError:\n        out += \"K\"\n    except ValueError:\n        out += \"V\"\nprint(out)\n```",
+  "options": [
+   {
+    "en": "2KV"
+   },
+   {
+    "en": "2VK"
+   },
+   {
+    "en": "2VV"
+   },
+   {
+    "en": "2"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "For \"a\", int(\"5\") is 5 and 10 // 5 = 2. For \"b\", int(\"x\") raises ValueError (right type, invalid value), so V is added. For \"c\", d[\"c\"] raises KeyError because the key does not exist, so K is added. Result: 2VK.",
+  "pyq_concept": false,
+  "output_type": true
+ },
+ {
+  "chapter_key": "pg_exceptions",
+  "subtopic": "Python ImportError / ModuleNotFoundError",
+  "difficulty": "medium",
+  "question_en": "In Python 3, which exception is raised by the statement import xyzlib when no module named xyzlib is installed?",
+  "options": [
+   {
+    "en": "ModuleNotFoundError"
+   },
+   {
+    "en": "NameError"
+   },
+   {
+    "en": "FileNotFoundError"
+   },
+   {
+    "en": "AttributeError"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "When Python cannot find a module to import, it raises ModuleNotFoundError, which is a subclass of ImportError (so except ImportError also catches it). NameError is for an undefined name, FileNotFoundError for a missing file in open(), and AttributeError for a missing attribute.",
+  "pyq_concept": true,
+  "output_type": false
+ },
+ {
+  "chapter_key": "pg_exceptions",
+  "subtopic": "Java try block rules",
+  "difficulty": "medium",
+  "question_en": "In Java, an ordinary try block (not try-with-resources) must be followed by",
+  "options": [
+   {
+    "en": "at least one catch block, a finally block, or both"
+   },
+   {
+    "en": "exactly one catch block and exactly one finally block"
+   },
+   {
+    "en": "at least two catch blocks"
+   },
+   {
+    "en": "a throws clause on the enclosing method"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A plain try must have at least one catch or a finally (or both); a try alone is a compilation error. It may have many catch blocks but at most one finally. A throws clause is optional and unrelated to this rule.",
+  "pyq_concept": true,
+  "output_type": false
+ },
+ {
+  "chapter_key": "pg_exceptions",
+  "subtopic": "When finally does not run",
+  "difficulty": "hard",
+  "question_en": "In Java, in which of the following situations does the finally block NOT execute?",
+  "options": [
+   {
+    "en": "The try block executes a return statement"
+   },
+   {
+    "en": "An exception is caught by a catch block"
+   },
+   {
+    "en": "No exception is thrown in the try block"
+   },
+   {
+    "en": "System.exit(0) is called inside the try block"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "finally runs after normal completion, after a caught or uncaught exception, and even after return, break or continue. The main exception is System.exit(), which stops the JVM at once, so the finally block never runs (a JVM crash or power failure has the same effect).",
+  "pyq_concept": false,
+  "output_type": false
+ }
+]

@@ -3,6 +3,7 @@
 import { Fragment, ReactNode, useState, useEffect } from 'react';
 import { useParams } from 'next/navigation';
 import api from '@/lib/api';
+import QuestionText from '@/components/tests/QuestionText';
 import {
     ChevronLeft,
     ChevronRight,
@@ -384,7 +385,7 @@ export default function SolutionHub() {
                         </div>
 
                         <h2 className="text-lg sm:text-xl font-semibold text-foreground leading-relaxed">
-                            {language === 'en' ? currentQ.question_en : currentQ.question_hi}
+                            <QuestionText text={(language === 'en' ? currentQ.question_en : currentQ.question_hi) || currentQ.question_en} />
                         </h2>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -429,7 +430,7 @@ export default function SolutionHub() {
                         </div>
                         <div className="p-12 space-y-8">
                             <div className="prose prose-blue dark:prose-invert max-w-none text-foreground/70 font-medium uppercase tracking-wide leading-relaxed text-sm">
-                                {language === 'en' ? currentQ.explanation_en : currentQ.explanation_hi || "Detailed logic for this question is currently being indexed."}
+                                <span className="whitespace-pre-wrap">{language === 'en' ? currentQ.explanation_en : currentQ.explanation_hi || currentQ.explanation_en || "No explanation has been added for this question yet."}</span>
                             </div>
 
                             {/* Pro Tip/Concept */}

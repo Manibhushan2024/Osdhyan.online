@@ -1,0 +1,30 @@
+{
+ "name": "DBMS",
+ "chapters": [
+  ["db_intro", "Introduction & Database Architecture", "Introduction"],
+  ["db_er", "ER Model", "ER Model"],
+  ["db_relational", "Relational Model, Keys & Relational Algebra", "Relational Model & Keys"],
+  ["db_normal", "Functional Dependencies & Normalisation", "Normalisation"],
+  ["db_sql", "SQL", "SQL"],
+  ["db_txn", "Transactions & Concurrency Control", "Transactions"],
+  ["db_index", "Indexing & File Organisation", "Indexing"]
+ ],
+ "pyq_file": "dbms_pyq_analysis.json",
+ "pyq_rules": [
+  ["serializ", "db_txn"], ["transaction", "db_txn"], ["index", "db_index"],
+  ["closure", "db_normal"], ["armstrong", "db_normal"], ["normal form", "db_normal"], ["functional", "db_normal"],
+  ["er model", "db_er"], ["er to relational", "db_er"], ["entity", "db_er"],
+  ["relational algebra", "db_relational"], ["relational model", "db_relational"], ["integrity", "db_relational"], ["key", "db_relational"],
+  ["odbc", "db_intro"], ["connectivity", "db_intro"], ["sql", "db_sql"]
+ ],
+ "question_files": ["questions_theory.json", "questions_practical.json"],
+ "series_name": "DSSSB TGT CS — DBMS Complete (Notes + 200 Most Expected)",
+ "series_name_hi": "DSSSB TGT CS — DBMS सम्पूर्ण",
+ "series_description": "DBMS from basics to exam level: previous-year questions, chapter-wise practice and the 200 most expected questions with solutions. Notes are in Courses → DSSSB TGT Computer Science → DBMS.",
+ "course_subject": "DBMS (Database Management System)",
+ "course_subject_hi": "डीबीएमएस (डेटाबेस प्रबंधन प्रणाली)",
+ "tagline": "ER model · keys · relational model & algebra · normalisation 1NF–BCNF · SQL · transactions · indexing",
+ "intro": "In the 4 official DSSSB TGT Computer Science papers of 2023–24 there were <b>{n} DBMS questions</b>, about 6 per paper. Most are one-line definitions in textbook wording (Korth, Navathe), SQL syntax and built-in function questions, and a few short numericals (attribute closure, conflict serializability). Learn the exact definitions, the SQL functions table and the three numerical methods in these notes.",
+ "practice_split": 35,
+ "full_test_min_per_q": 0.75
+}

@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import api from '@/lib/api';
+import QuestionText from '@/components/tests/QuestionText';
 import {
     CheckCircle2,
     XCircle,
@@ -141,9 +142,7 @@ export default function FullSolutionPrint() {
                             </div>
 
                             {/* Question Text */}
-                            <div className="mb-6 text-xl font-bold leading-tight">
-                                {language === 'en' ? q.question_en : q.question_hi}
-                            </div>
+                            <QuestionText className="mb-6 text-xl font-bold leading-tight" text={(language === 'en' ? q.question_en : q.question_hi) || q.question_en} />
 
                             {/* Options */}
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">

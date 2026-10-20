@@ -2005,7 +2005,7 @@
   "section": "Discipline2",
   "number": 16,
   "question_id": "630680256330",
-  "question": "What is the output of following C program?\n#include<stdio.h>\nint main()\n{\n    int x = 8, *y, z;\n    y = &x;\n    printf(\"%d\n\", x * *y * x + *y);\n    return 0;\n}",
+  "question": "What is the output of following C program?\n#include<stdio.h>\nint main()\n{\n    int x = 8, *y, z;\n    y = &x;\n    printf(\"%d\\n\", x * *y * x + *y);\n    return 0;\n}",
   "options": [
    "8",
    "Runtime error",

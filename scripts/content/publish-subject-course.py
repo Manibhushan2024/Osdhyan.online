@@ -1,16 +1,15 @@
 #!/usr/bin/env python3
-"""Publish the DBMS notes as a course in the app, through the admin API.
+"""Publish a subject pack's notes as a course in the app, through the admin API.
 
-Creates (or reuses) the subject "DBMS (Database Management System)" in the
-DSSSB TGT Computer Science exam with category DSSSB, one chapter per notes
-chapter, a topic in each, and uploads the PDFs listed in
-backend/database/data/dsssb/dbms/course_manifest.json (built by
-build-dbms-pack.py). Re-running replaces files with the same title.
+Creates (or reuses) the subject named in backend/database/data/dsssb/<pack>/
+course_manifest.json (built by build-subject-pack.py) in the DSSSB TGT Computer
+Science exam with category DSSSB, one chapter per manifest chapter, a topic in
+each, and uploads the PDFs. Re-running replaces files with the same title.
 
 usage (root admin; the password is read from the environment, never stored):
   set OSDHYAN_ADMIN_EMAIL=admin@local.test
   set OSDHYAN_ADMIN_PASSWORD=...
-  python -I scripts/content/publish-dbms-course.py [--api http://127.0.0.1:3000/api]
+  python -I scripts/content/publish-subject-course.py <pack> [--api http://127.0.0.1:3000/api]
 """
 import argparse
 import json
@@ -22,7 +21,7 @@ import urllib.request
 import uuid
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-MANIFEST = os.path.join(ROOT, 'backend', 'database', 'data', 'dsssb', 'dbms', 'course_manifest.json')
+DATA = os.path.join(ROOT, 'backend', 'database', 'data', 'dsssb')
 TOPIC = 'Revision notes & practice'
 
 
@@ -63,13 +62,14 @@ class Api:
 
 def main():
     ap = argparse.ArgumentParser()
+    ap.add_argument('pack', help='pack folder name, e.g. dbms or prog')
     ap.add_argument('--api', default='http://127.0.0.1:3000/api')
     args = ap.parse_args()
     email = os.environ.get('OSDHYAN_ADMIN_EMAIL', 'admin@local.test')
     password = os.environ.get('OSDHYAN_ADMIN_PASSWORD')
     if not password:
         sys.exit('Set OSDHYAN_ADMIN_PASSWORD (root admin password) first.')
-    manifest = json.load(open(MANIFEST, encoding='utf-8'))
+    manifest = json.load(open(os.path.join(DATA, args.pack, 'course_manifest.json'), encoding='utf-8'))
 
     api = Api(args.api)
     login = api.call('POST', '/auth/admin/login', {'login': email, 'password': password})
@@ -81,7 +81,7 @@ def main():
     subject = next((s for s in subjects if s['exam_id'] == exam['id'] and s['name_en'] == manifest['subject']), None)
     if not subject:
         subject = api.call('POST', '/admin/subjects', {'exam_id': exam['id'], 'name_en': manifest['subject'],
-                                                       'name_hi': 'डीबीएमएस (डेटाबेस प्रबंधन प्रणाली)',
+                                                       'name_hi': manifest.get('subject_hi'),
                                                        'category': 'DSSSB', 'is_published': True})
         subject = subject.get('data', subject)
         print('created subject', subject['id'])

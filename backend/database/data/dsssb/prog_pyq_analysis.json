@@ -1,0 +1,738 @@
+[
+ {
+  "qid": "630680256170",
+  "paper": "2023_06_24_s3",
+  "question": "_____ does NOT have any child ClassLoaders.",
+  "options": [
+   "BootStrap ClassLoader",
+   "Extension ClassLoader",
+   "Primordial ClassLoader",
+   "System ClassLoader"
+  ],
+  "answer": 4,
+  "subtopic": "Java ClassLoader hierarchy",
+  "difficulty": "medium",
+  "explanation": "Java's class loaders form a parent-child chain: Bootstrap (also called Primordial) is the parent of the Extension loader, and Extension is the parent of the System (Application) class loader. The System ClassLoader sits at the bottom of the built-in chain, so it has no child loaders of its own. Bootstrap/Primordial is the root, so it does have a child (Extension).",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256171",
+  "paper": "2023_06_24_s3",
+  "question": "What is the output of the following code?\nint Integer = 24;\nchar String = 'I';\nSystem.out.print(Integer);\nSystem.out.print(String);",
+  "options": [
+   "I",
+   "Compiler Error",
+   "Throws Exception",
+   "24I"
+  ],
+  "answer": 4,
+  "subtopic": "Java identifiers and output",
+  "difficulty": "medium",
+  "explanation": "Integer and String are class names, not reserved keywords, so they can legally be used as variable names. The code prints the int 24 and then the char 'I' with print (no newline), so the output is 24I. There is no compiler error.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256181",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following is the execution engine for .NET applications and serves as the interface between .NET applications and the operating system.",
+  "options": [
+   "Framework Class Library (FCL)",
+   "Common Type System (CTS)",
+   "Common Language Specifications (CLS)",
+   "Common Language Runtime (CLR)"
+  ],
+  "answer": 4,
+  "subtopic": ".NET CLR",
+  "difficulty": "easy",
+  "explanation": "The Common Language Runtime (CLR) is the .NET execution engine. It loads managed code, compiles it with the JIT compiler, and handles memory (garbage collection), security and exceptions, acting between the application and the OS. FCL is the class library, and CTS/CLS are type and language rules, not runtimes.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256395",
+  "paper": "2023_06_25_s1",
+  "question": "The technology of .Net is developed by ______ and was launched in ______.",
+  "options": [
+   "Microsoft; 2002",
+   "Oracle; 2002",
+   "Microsoft; 2010",
+   "Google; 2002"
+  ],
+  "answer": 1,
+  "subtopic": ".NET history",
+  "difficulty": "easy",
+  "explanation": "The .NET Framework was developed by Microsoft. Version 1.0 was released in 2002 (beta versions came out in 2000-2001). Oracle and Google did not build .NET, and 2010 is when .NET 4.0 came out, not the launch.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256390",
+  "paper": "2023_06_25_s1",
+  "question": "What is the output of the following java program?\npublic class Solution{\n    public static void main(String[] args){\n        int[] p = {121, 201, 017};\n        for(int j = 0; j < p.length; j++){\n            System.out.print(p[j] + “ “);\n        }\n    }\n}",
+  "options": [
+   "121 201 17",
+   "121 201 15",
+   "Compilation error",
+   "Runtime error"
+  ],
+  "answer": 2,
+  "subtopic": "Java octal literals",
+  "difficulty": "medium",
+  "explanation": "In Java an integer literal that starts with 0 is octal, so 017 = 1*8 + 7 = 15 in decimal. The loop prints each element followed by a space: 121 201 15. (The curly quotes in the question are just printing errors for normal \" \" quotes.) Option 1 forgets the octal rule.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256413",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following operators has the highest precedence in the C programming language?",
+  "options": [
+   "^",
+   "!=",
+   "*",
+   "()"
+  ],
+  "answer": 4,
+  "subtopic": "C operator precedence",
+  "difficulty": "easy",
+  "explanation": "In C, parentheses () (function call/grouping) have the highest precedence. Next come unary operators, then *, /, %, and after them the relational, equality (!=) and bitwise XOR (^) operators. So () is evaluated first.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256356",
+  "paper": "2023_06_25_s1",
+  "question": "C++ provides inline functions to facilitate a reduced function call overhead mainly for ______.",
+  "options": [
+   "non-member functions",
+   "library functions",
+   "small functions",
+   "large functions"
+  ],
+  "answer": 3,
+  "subtopic": "C++ inline functions",
+  "difficulty": "easy",
+  "explanation": "An inline function's body is copied into the place where it is called, which saves the cost of a call (pushing arguments, jumping, returning). This is worth it only for small functions. For large functions it bloats the code, and the compiler may ignore the inline request.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256389",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following is a java primitive data type?",
+  "options": [
+   "Array",
+   "String",
+   "Classes",
+   "Byte"
+  ],
+  "answer": 4,
+  "subtopic": "Java primitive data types",
+  "difficulty": "easy",
+  "explanation": "Java has 8 primitive types: byte, short, int, long, float, double, char and boolean. Arrays, String and classes are reference (non-primitive) types. So byte is the primitive type here.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256393",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following controls in VB.NET is used to select one option from a number of choices?",
+  "options": [
+   "Label",
+   "Button",
+   "ListBox",
+   "RadioButton"
+  ],
+  "answer": 4,
+  "subtopic": "VB.NET controls",
+  "difficulty": "easy",
+  "explanation": "RadioButtons in a group are mutually exclusive, so the user can pick exactly one option from several choices. A ListBox can also allow multiple selection, a Label only displays text, and a Button triggers an action.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256394",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following is FALSE with reference to constructor in C#.NET?",
+  "options": [
+   "It can have a return type.",
+   "All classes have constructors by default.",
+   "Constructor name must match the class name.",
+   "The constructor is called when the object is created."
+  ],
+  "answer": 1,
+  "subtopic": "C# constructors",
+  "difficulty": "easy",
+  "explanation": "In C# a constructor cannot have any return type, not even void, so statement 1 is false. The other statements are true: a default constructor is provided if you write none, it has the same name as the class, and it runs when an object is created.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256646",
+  "paper": "2023_06_25_s2",
+  "question": "Which of the following statements is FALSE?",
+  "options": [
+   "Final methods can be overridden.",
+   "\"static public void main(String…abcd){}\" is a valid statement.",
+   "Abstract classes cannot be instantiated.",
+   "Interface allows default method definitions."
+  ],
+  "answer": 1,
+  "subtopic": "Java final/abstract/interface",
+  "difficulty": "medium",
+  "explanation": "A final method cannot be overridden in a subclass; that is the whole purpose of the final keyword. So statement 1 is false. The others are true: modifier order and varargs make 'static public void main(String... abcd)' valid, abstract classes cannot be instantiated, and Java 8+ interfaces allow default methods.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256682",
+  "paper": "2023_06_25_s2",
+  "question": "What will the output of the given program be?\n\n#include<stdio.h>\nmain()\n{\n    printf(6+\"Hello World\\n\");\n}",
+  "options": [
+   "6Hello World",
+   "Compilation error",
+   "World",
+   "Hello"
+  ],
+  "answer": 2,
+  "subtopic": "C string literals and pointer arithmetic",
+  "difficulty": "hard",
+  "explanation": "As printed, the string literal \"Hello World is broken across a line. A C string literal cannot contain a raw newline, so the compiler reports a missing terminating quote, which is a compilation error. If it had been written with the escape \\n, then 6 + \"Hello World\\n\" would point 6 characters into the string and print 'World' (option 3).",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256680",
+  "paper": "2023_06_25_s2",
+  "question": "In C, variable list arguments are denoted by the standard header:",
+  "options": [
+   "<unistd.h>",
+   "<string.h>",
+   "<stdio.h >",
+   "<stdarg.h>"
+  ],
+  "answer": 3,
+  "subtopic": "C variadic functions - stdarg.h",
+  "difficulty": "medium",
+  "explanation": "Variable argument lists in C (va_list, va_start, va_arg, va_end) are declared in the standard header <stdarg.h>. <stdio.h> only declares functions that use them, such as printf and vprintf. The official key (<stdio.h>) looks wrong; option 4, <stdarg.h>, is correct.",
+  "key_doubt": true
+ },
+ {
+  "qid": "630680256681",
+  "paper": "2023_06_25_s2",
+  "question": "scanf() is a predefined function in which of the following header files?",
+  "options": [
+   "ctype. h",
+   "stdio. h",
+   "unistd.h",
+   "string.h"
+  ],
+  "answer": 2,
+  "subtopic": "C header files",
+  "difficulty": "easy",
+  "explanation": "scanf() and printf() are standard input/output functions declared in <stdio.h>. <string.h> has string functions such as strlen, <ctype.h> has character tests such as isdigit, and <unistd.h> is a POSIX header.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256640",
+  "paper": "2023_06_25_s2",
+  "question": "Which access modifier can be used to access members in deriving class?",
+  "options": [
+   "Void",
+   "Protected",
+   "Private",
+   "Public"
+  ],
+  "answer": 2,
+  "subtopic": "Access modifiers - protected",
+  "difficulty": "easy",
+  "explanation": "Protected members can be accessed inside the class and in classes derived from it (subclasses), but not by unrelated outside code. Private members are not accessible in derived classes. Public members are accessible there too, but they are open to everyone, so protected is the modifier designed for derived-class access. Void is a return type, not an access modifier.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256653",
+  "paper": "2023_06_25_s2",
+  "question": "What is the name of the .NET collection class that enables an element to be accessed using a unique key?",
+  "options": [
+   "Linked list",
+   "Hashtable",
+   "Double linked list",
+   "Array list"
+  ],
+  "answer": 2,
+  "subtopic": ".NET collections - Hashtable",
+  "difficulty": "easy",
+  "explanation": "System.Collections.Hashtable stores key/value pairs and lets you get an element by its unique key, using hashing. ArrayList and linked lists are accessed by position (index or traversal), not by key.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598464",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following type of function used with strings in the Python language returns the character with the highest ASCII value?",
+  "options": [
+   "len ()",
+   "hvalue ()",
+   "max ()",
+   "long ()"
+  ],
+  "answer": 3,
+  "subtopic": "Python string functions - max()",
+  "difficulty": "easy",
+  "explanation": "When given a string, Python's max() returns the character with the highest ASCII/Unicode value, for example max('apple') = 'p'. len() returns the length, and hvalue() and long() are not Python built-ins for strings.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598529",
+  "paper": "2024_02_07_s2",
+  "question": "Select the correct output for the following python code?\na = 20\nb = 35\nif a >= b:\n    print(\"yes\")\nelse:\n    print(\"No\")",
+  "options": [
+   "Syntax",
+   "No",
+   "Yes",
+   "Error"
+  ],
+  "answer": 2,
+  "subtopic": "Python if-else",
+  "difficulty": "easy",
+  "explanation": "a = 20 and b = 35, so a >= b is False and the else branch runs, printing No. The output keeps the capital N exactly as written in the string. The code is valid, so there is no syntax error.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598466",
+  "paper": "2024_02_07_s2",
+  "question": "In Python language, which of the following method of lists is used to add an element to the end of the list?",
+  "options": [
+   "index ()",
+   "sort ()",
+   "pop ()",
+   "append ()"
+  ],
+  "answer": 4,
+  "subtopic": "Python list methods",
+  "difficulty": "easy",
+  "explanation": "list.append(x) adds x at the end of the list. pop() removes (and returns) an element, sort() arranges the elements in order, and index() returns the position of a value.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598467",
+  "paper": "2024_02_07_s2",
+  "question": "In Python language, which of following mode for opening the file, opens the file for both reading and writing and file pointer will be placed at the start of the file?",
+  "options": [
+   "ab",
+   "rb",
+   "r+",
+   "a+"
+  ],
+  "answer": 3,
+  "subtopic": "Python file modes",
+  "difficulty": "easy",
+  "explanation": "Mode 'r+' opens an existing file for both reading and writing with the file pointer at the beginning. 'a+' also allows reading and writing, but writes go to the end of the file. 'rb' is read-only binary and 'ab' is append-only binary.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598530",
+  "paper": "2024_02_07_s2",
+  "question": "The values in a dictionary can be ______ but the keys in the dictionary should be ______ in Python programming languages",
+  "options": [
+   "repeated, repeated",
+   "repeated, unique",
+   "unique, repeated",
+   "unique, unique"
+  ],
+  "answer": 2,
+  "subtopic": "Python dictionaries",
+  "difficulty": "easy",
+  "explanation": "In a Python dictionary the values can repeat (for example {'a': 1, 'b': 1}), but the keys must be unique (and immutable). If a key is assigned again, the old value is replaced, so a key never appears twice.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598521",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following is a one-dimensional labelled array capable of holding any data type (integers, strings, floating point numbers, python objects, etc) in data handling with pandas?",
+  "options": [
+   "Series",
+   "Missing data",
+   "Data frames",
+   "Iteration"
+  ],
+  "answer": 1,
+  "subtopic": "Pandas Series",
+  "difficulty": "easy",
+  "explanation": "A pandas Series is a one-dimensional labelled array that can hold any data type, with an index as its labels. A DataFrame is two-dimensional (rows and columns, made of several Series).",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598524",
+  "paper": "2024_02_07_s2",
+  "question": "Data frame in Pandas has a method which takes a column name (for a regular index) or a list of column names to create a new, re-indexed data frame, which of the following is correct method?",
+  "options": [
+   "dFb",
+   "data.index ( )",
+   "set_index ( )",
+   "dFmi"
+  ],
+  "answer": 3,
+  "subtopic": "Pandas set_index",
+  "difficulty": "medium",
+  "explanation": "DataFrame.set_index() takes a column name (or a list of column names for a MultiIndex) and returns a new DataFrame indexed by those columns. reset_index() does the reverse. data.index is an attribute, not a method that re-indexes, and 'dFb'/'dFmi' are just variable names.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598462",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following symbol is used to add comments in the Python language?",
+  "options": [
+   "*",
+   "#",
+   "!",
+   "//"
+  ],
+  "answer": 2,
+  "subtopic": "Python comments",
+  "difficulty": "easy",
+  "explanation": "In Python a single-line comment starts with the hash symbol #, and everything after it on the line is ignored. // is used for comments in C/C++/Java, but in Python it is the floor-division operator.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598504",
+  "paper": "2024_02_07_s2",
+  "question": "Extensions like .txt, .py, .CSV, etc in python language are example of ______.",
+  "options": [
+   "text files",
+   "text editor",
+   "UNI CODE",
+   "ASCII"
+  ],
+  "answer": 1,
+  "subtopic": "Python file handling - text files",
+  "difficulty": "easy",
+  "explanation": ".txt, .py and .csv files store data as human-readable characters, so they are text files, unlike binary files such as .jpg or .exe. ASCII and Unicode are character encodings, not file types, and a text editor is a program used to edit these files.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598525",
+  "paper": "2024_02_07_s2",
+  "question": "Number with decimal points is called ______ in programming language.",
+  "options": [
+   "Fractional point numbers",
+   "Complex numbers",
+   "Imaginary Numbers",
+   "Integer"
+  ],
+  "answer": 1,
+  "subtopic": "Numeric data types",
+  "difficulty": "easy",
+  "explanation": "Numbers with a decimal point (like 3.14) are fractional numbers, stored as floating-point (real) numbers in programming languages such as float in Python. Among the given options 'fractional point numbers' is the matching term. Integers have no fractional part, and complex/imaginary numbers have a different meaning.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598528",
+  "paper": "2024_02_07_s2",
+  "question": "Which symbol is used to add the comment in the code or program to make it more readable and understandable in Python programming language?",
+  "options": [
+   "#",
+   "*",
+   "–",
+   ":"
+  ],
+  "answer": 1,
+  "subtopic": "Python comments",
+  "difficulty": "easy",
+  "explanation": "Python uses # for comments: everything after # on a line is ignored by the interpreter and is only for readers of the code. * is multiplication, - is subtraction and : starts a code block.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598507",
+  "paper": "2024_02_07_s2",
+  "question": "______ files are spreadsheet files in a text format of data when cell contents are separated by a character for example a comma or semi-colon.",
+  "options": [
+   "Comma-Separated- Values",
+   "Semi-colon Separated Values",
+   "Column and Row Headers",
+   "CVS"
+  ],
+  "answer": 1,
+  "subtopic": "CSV files",
+  "difficulty": "easy",
+  "explanation": "CSV (Comma-Separated Values) files are plain-text spreadsheet files in which each line is a row and the cell values are separated by a delimiter, usually a comma (sometimes a semicolon). 'CVS' is a misspelling, and 'Semi-colon Separated Values' is not the standard name of the format.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256182",
+  "paper": "2023_06_24_s3",
+  "question": "_____ is a code that consists of CPU and platform-independent set of instructions, which can be easily converted to the native code.",
+  "options": [
+   "DLL",
+   "FCL",
+   "JIT",
+   "MSIL"
+  ],
+  "answer": 4,
+  "subtopic": ".NET MSIL",
+  "difficulty": "medium",
+  "explanation": "In .NET, source code is compiled into MSIL (Microsoft Intermediate Language), a CPU- and platform-independent instruction set. At run time the JIT compiler converts MSIL into native machine code. JIT is the converter, not the code itself, so MSIL is the answer.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256138",
+  "paper": "2023_06_24_s3",
+  "question": "In C++ language, the instruction 'ignore(x,y);' _______ .",
+  "options": [
+   "skips the last x characters and stops if character y is encountered",
+   "skips the first y characters and stops if character x is encountered",
+   "skips the first x characters and stops if character y is encountered",
+   "skips the last y characters and stops if character x is encountered"
+  ],
+  "answer": 3,
+  "subtopic": "C++ cin.ignore()",
+  "difficulty": "medium",
+  "explanation": "istream::ignore(n, delim) extracts and discards up to n characters from the input stream, stopping earlier if the delimiter character is encountered (the delimiter is also discarded). So ignore(x, y) skips the first x characters and stops at character y. It works on the next (first) characters in the stream, not the last ones.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256136",
+  "paper": "2023_06_24_s3",
+  "question": "Select the true statement about try-catch blocks.",
+  "options": [
+   "A try block must have at least 1 catch to have a finally block.",
+   "A try block must have only 1 finally block for each catch block.",
+   "A try block can have many catches but only 1 finally block.",
+   "A try block can have many catches and many finally blocks."
+  ],
+  "answer": 3,
+  "subtopic": "Exception handling try-catch-finally",
+  "difficulty": "easy",
+  "explanation": "A try block may be followed by multiple catch blocks (one per exception type) but at most one finally block. Option 1 is false because try-finally without any catch is legal, and options 2 and 4 wrongly allow multiple finally blocks.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256166",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following is FALSE about packages?",
+  "options": [
+   "Packages cannot provide controlled access.",
+   "Packages are used to prevent naming conflicts.",
+   "Packages are considered data encapsulation.",
+   "Packages are used to prevent naming conflicts, and packages are considered data encapsulation."
+  ],
+  "answer": 1,
+  "subtopic": "Java packages",
+  "difficulty": "easy",
+  "explanation": "Packages DO provide controlled access through access modifiers (default/package-private and protected), so statement 1 is FALSE. Packages also prevent naming conflicts and support encapsulation by grouping related classes.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256327",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following is a relational operator in the C programming language?",
+  "options": [
+   "&&",
+   "!",
+   "!=",
+   "||"
+  ],
+  "answer": 3,
+  "subtopic": "C operators",
+  "difficulty": "easy",
+  "explanation": "!= (not equal to) is a relational operator in C, along with <, >, <=, >= and ==. &&, || and ! are logical operators.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256330",
+  "paper": "2023_06_25_s1",
+  "question": "What is the output of following C program?\n#include<stdio.h>\nint main()\n{\n    int x = 8, *y, z;\n    y = &x;\n    printf(\"%d\\n\", x * *y * x + *y);\n    return 0;\n}",
+  "options": [
+   "8",
+   "Runtime error",
+   "520",
+   "Compilation error"
+  ],
+  "answer": 3,
+  "subtopic": "C pointers - output trace",
+  "difficulty": "easy",
+  "explanation": "y = &x, so *y = 8. The expression x * *y * x + *y = 8 * 8 * 8 + 8 = 512 + 8 = 520. There is no compilation or runtime error because y is a valid pointer to x.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256373",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following is a symbolic name given to a memory location in any programming language?",
+  "options": [
+   "Variable",
+   "Constant",
+   "Literal",
+   "Attribute"
+  ],
+  "answer": 1,
+  "subtopic": "Variables",
+  "difficulty": "easy",
+  "explanation": "A variable is a symbolic name given to a memory location whose value can change during program execution. A constant/literal is a fixed value, and an attribute is a property of an object or entity.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256328",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following is NOT a storage class in the C programming language?",
+  "options": [
+   "Register",
+   "Extern",
+   "Auto",
+   "Intern"
+  ],
+  "answer": 4,
+  "subtopic": "C storage classes",
+  "difficulty": "easy",
+  "explanation": "C has four storage classes: auto, register, static and extern. 'intern' is not a storage class or keyword in C.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256645",
+  "paper": "2023_06_25_s2",
+  "question": "Identify the descending order of strict access protection.",
+  "options": [
+   "Public, protected, private, package",
+   "Private, protected, package, public",
+   "Public, private, protected, package",
+   "Private, package, protected, public"
+  ],
+  "answer": 2,
+  "subtopic": "Java access modifiers",
+  "difficulty": "medium",
+  "explanation": "Key doubt: from strictest to least strict, Java access levels are private (class only) > package/default (same package) > protected (same package + subclasses) > public (everywhere), which is option 4. Protected is less strict than package access because it adds subclass access outside the package. The official option 2 wrongly ranks protected as stricter than package.",
+  "key_doubt": true
+ },
+ {
+  "qid": "630680256641",
+  "paper": "2023_06_25_s2",
+  "question": "What feature of OOP allows an instance of a class to take on many forms?",
+  "options": [
+   "Operator overriding",
+   "Multiple inheritance",
+   "Nested class",
+   "Operator overloading"
+  ],
+  "answer": 4,
+  "subtopic": "OOP polymorphism",
+  "difficulty": "medium",
+  "explanation": "Polymorphism ('many forms') lets the same name/operator behave differently; operator overloading is a compile-time form of polymorphism where one operator works on many types. 'Operator overriding' is not a standard term, and multiple inheritance or nested classes are not about many forms.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598463",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following type conversion function in the Python language, is used to convert a character into an integer?",
+  "options": [
+   "tuple ()",
+   "dict ()",
+   "set ()",
+   "ord ()"
+  ],
+  "answer": 4,
+  "subtopic": "Python type conversion",
+  "difficulty": "easy",
+  "explanation": "ord() returns the integer Unicode code of a character, e.g. ord('A') = 65 (chr() does the reverse). tuple(), dict() and set() convert iterables into those collection types.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598465",
+  "paper": "2024_02_07_s2",
+  "question": "In Python language, which of the following is correct for 'strip ( )' function?",
+  "options": [
+   "It returns the string by removing trailing and leading white spaces",
+   "It returns a list from the string depending upon the delimiter that we specify",
+   "It returns the power of values passed",
+   "It returns the string with the first character in upper case and lowering the case for rest of the string"
+  ],
+  "answer": 1,
+  "subtopic": "Python string methods",
+  "difficulty": "easy",
+  "explanation": "str.strip() returns a copy of the string with leading and trailing whitespace removed. split() returns a list based on a delimiter (option 2), pow() gives power (option 3), and capitalize() uppercases the first character (option 4).",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598527",
+  "paper": "2024_02_07_s2",
+  "question": "Choose the correct output for the following Python code.\ntuple_var_mix = (\"Example\", 1, \"Tuple\")\nprint (tuple_var_mix)",
+  "options": [
+   "{Example, 1, Tuple}",
+   "(Example, 1, tuple)",
+   "('Example', 1, 'Tuple')",
+   "[Example, 1, 'Tuple']"
+  ],
+  "answer": 3,
+  "subtopic": "Python tuples - output",
+  "difficulty": "easy",
+  "explanation": "print() on a tuple shows it in parentheses with strings in quotes: ('Example', 1, 'Tuple'). Curly braces indicate a set/dict and square brackets a list, and Python preserves the case of 'Tuple'.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598520",
+  "paper": "2024_02_07_s2",
+  "question": "______ is a two-dimensional labelled data structure with columns of potentially different type, in data handling with pandas.",
+  "options": [
+   "Series",
+   "Missing data",
+   "Iteration",
+   "Data frames"
+  ],
+  "answer": 4,
+  "subtopic": "Pandas DataFrame",
+  "difficulty": "easy",
+  "explanation": "A DataFrame is a two-dimensional labelled data structure with rows and columns, where columns may hold different data types (like a spreadsheet or SQL table). A Series is one-dimensional.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598523",
+  "paper": "2024_02_07_s2",
+  "question": "If you encounter an import Error, what does it mean?\nI. Python could find pandas in list of available libraries\nII. Python couldn't find python in list of available libraries\nIII. Python couldn't find Pandas in list of available libraries",
+  "options": [
+   "Only III",
+   "I, II and III",
+   "Only I",
+   "Only I and III"
+  ],
+  "answer": 1,
+  "subtopic": "Python ImportError",
+  "difficulty": "easy",
+  "explanation": "An ImportError/ModuleNotFoundError while doing import pandas means Python could not find the pandas package among installed libraries (e.g. it is not installed). Statement I says it could find pandas, and II refers to 'python' instead of the library, so only III is correct.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598461",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following is correct for Identifiers name used in Python language?",
+  "options": [
+   "An identifier can have underscore (_) symbol",
+   "We must use keywords as identifier",
+   "There is restriction the length of an identifier",
+   "An identifier must start with a digit"
+  ],
+  "answer": 1,
+  "subtopic": "Python identifiers",
+  "difficulty": "easy",
+  "explanation": "A Python identifier can contain letters, digits and the underscore (_), and may start with an underscore. Keywords cannot be used as identifiers, there is no length limit, and an identifier cannot start with a digit.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598522",
+  "paper": "2024_02_07_s2",
+  "question": "Which operation is provided in Pandas, when multiple tables can be concatenated both column wise and row wise as database?",
+  "options": [
+   "SUM",
+   "MERGE",
+   "GROUP BY",
+   "SELECT"
+  ],
+  "answer": 2,
+  "subtopic": "Pandas merge/concat",
+  "difficulty": "medium",
+  "explanation": "Pandas provides database-style operations to combine tables: merge() (join on keys) and concat() for row-wise or column-wise joining. Among the options, MERGE is the combining operation; SUM, GROUP BY and SELECT aggregate or filter data rather than combining tables.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598526",
+  "paper": "2024_02_07_s2",
+  "question": "String is a collection of one or more character which consists of ______ in programming language.\nI. Letters\nII. Numbers\nIII. Symbols",
+  "options": [
+   "I, II and III",
+   "Only I",
+   "Only I and III",
+   "Only II"
+  ],
+  "answer": 1,
+  "subtopic": "Strings",
+  "difficulty": "easy",
+  "explanation": "A string is a sequence of characters, which can include letters, digits (numbers as characters) and symbols such as @, # or spaces. So all three - I, II and III - are correct.",
+  "key_doubt": false
+ }
+]

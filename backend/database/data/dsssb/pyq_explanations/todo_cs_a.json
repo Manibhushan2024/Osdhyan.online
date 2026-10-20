@@ -1433,7 +1433,7 @@
 "qid": "630680256682",
 "paper": "2023_06_25_s2",
 "section": "Computer Science",
-"question": "What will the output of the given program be?\n\n#include<stdio.h>\nmain()\n{\n    printf(6+\"Hello World\n\");\n}",
+"question": "What will the output of the given program be?\n\n#include<stdio.h>\nmain()\n{\n    printf(6+\"Hello World\\n\");\n}",
 "options": [
 "6Hello World",
 "Compilation error",

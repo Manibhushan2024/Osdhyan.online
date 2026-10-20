@@ -1,0 +1,94 @@
+{
+ "subject": "Programming (C, C++, Java, Python)",
+ "subject_hi": "प्रोग्रामिंग (C, C++, Java, Python)",
+ "chapters": [
+  {
+   "key": "pg_basics",
+   "title": "1. Programming Basics: Data Types, Operators & Control Flow",
+   "items": [
+    {
+     "title": "Programming Basics: Data Types, Operators & Control Flow — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\prog\\pg_basics.pdf"
+    }
+   ]
+  },
+  {
+   "key": "pg_functions",
+   "title": "2. Functions & Recursion",
+   "items": [
+    {
+     "title": "Functions & Recursion — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\prog\\pg_functions.pdf"
+    }
+   ]
+  },
+  {
+   "key": "pg_arrays",
+   "title": "3. Arrays, Strings & Pointers (C/C++)",
+   "items": [
+    {
+     "title": "Arrays, Strings & Pointers (C/C++) — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\prog\\pg_arrays.pdf"
+    }
+   ]
+  },
+  {
+   "key": "pg_oop",
+   "title": "4. Object-Oriented Programming (C++ & Java)",
+   "items": [
+    {
+     "title": "Object-Oriented Programming (C++ & Java) — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\prog\\pg_oop.pdf"
+    }
+   ]
+  },
+  {
+   "key": "pg_exceptions",
+   "title": "5. Exception Handling",
+   "items": [
+    {
+     "title": "Exception Handling — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\prog\\pg_exceptions.pdf"
+    }
+   ]
+  },
+  {
+   "key": "pg_python",
+   "title": "6. Python: Data Types, Collections, File Handling & Pandas",
+   "items": [
+    {
+     "title": "Python: Data Types, Collections, File Handling & Pandas — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\prog\\pg_python.pdf"
+    }
+   ]
+  },
+  {
+   "key": "pg_dotnet",
+   "title": "7. .NET Framework, C# & VB.NET Basics",
+   "items": [
+    {
+     "title": ".NET Framework, C# & VB.NET Basics — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\prog\\pg_dotnet.pdf"
+    }
+   ]
+  },
+  {
+   "key": "prog_practice",
+   "title": "8. Complete notes, previous-year questions & 200 most expected",
+   "items": [
+    {
+     "title": "Programming — complete notes (all chapters in one PDF)",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\prog\\prog_complete_notes.pdf"
+    },
+    {
+     "title": "Programming — previous-year questions 2023–24 with solutions",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\prog\\prog_pyq_2023_24.pdf"
+    },
+    {
+     "title": "Programming — 200 most expected questions with answers",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\prog\\prog_200_most_expected.pdf"
+    }
+   ]
+  }
+ ]
+}
