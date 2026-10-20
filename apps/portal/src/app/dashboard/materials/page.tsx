@@ -43,8 +43,19 @@ export default function MaterialsPage() {
 
     const fetchMaterials = async () => {
         try {
-            const res = await api.get('/study-materials');
-            setMaterials(res.data);
+            // The API is paginated ({ data, current_page, last_page }); gather every page.
+            const all: Material[] = [];
+            for (let page = 1; page <= 25; page++) {
+                const res = await api.get('/study-materials', { params: { page } });
+                const body = res.data;
+                if (Array.isArray(body)) {
+                    all.push(...body);
+                    break;
+                }
+                all.push(...(Array.isArray(body?.data) ? body.data : []));
+                if (!body?.last_page || page >= body.last_page) break;
+            }
+            setMaterials(all);
         } catch {
             // silent;
         } finally {
@@ -64,7 +75,7 @@ export default function MaterialsPage() {
         (process.env.NEXT_PUBLIC_STORAGE_URL ?? process.env.NEXT_PUBLIC_API_URL?.replace(/\/api$/, '') ?? '').replace(/\/$/, '');
 
     const filteredMaterials = materials.filter(m =>
-        (m.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        ((m.title || '').toLowerCase().includes(searchTerm.toLowerCase()) ||
             m.description?.toLowerCase().includes(searchTerm.toLowerCase())) &&
         (selectedType === 'all' || m.type === selectedType)
     );
