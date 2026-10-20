@@ -20,6 +20,7 @@ return Application::configure(basePath: dirname(__DIR__))
             'root_admin' => \App\Http\Middleware\RootAdminMiddleware::class,
             'teacher' => \App\Http\Middleware\TeacherMiddleware::class,
             'auth.optional' => \App\Http\Middleware\OptionalSanctumAuth::class,
+            'live.host' => \App\Http\Middleware\LiveHostMiddleware::class,
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions): void {

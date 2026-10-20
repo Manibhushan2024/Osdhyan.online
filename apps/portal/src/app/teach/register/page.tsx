@@ -79,8 +79,8 @@ export default function TeacherRegisterPage() {
                 </p>
                 <ol className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs text-foreground/70">
                     <li className="rounded-xl bg-background border border-card-border p-3"><span className="font-bold text-foreground">1. Create profile</span><br />Subjects, exams, fee and city.</li>
-                    <li className="rounded-xl bg-background border border-card-border p-3"><span className="font-bold text-foreground">2. Get verified</span><br />Our team reviews new teachers.</li>
-                    <li className="rounded-xl bg-background border border-card-border p-3"><span className="font-bold text-foreground">3. Receive leads</span><br />Send proposals and chat with students.</li>
+                    <li className="rounded-xl bg-background border border-card-border p-3"><span className="font-bold text-foreground">2. Get approved</span><br />Our team checks every new teacher, usually within 2 working days.</li>
+                    <li className="rounded-xl bg-background border border-card-border p-3"><span className="font-bold text-foreground">3. Teach and earn</span><br />Run live classes, get home-tuition leads and chat with students.</li>
                 </ol>
             </div>
 

@@ -9,7 +9,7 @@ import {
     HelpCircle,
     Rocket,
     Cpu,
-    Upload, IndianRupee, GraduationCap } from 'lucide-react';
+    Upload, IndianRupee, GraduationCap, Radio } from 'lucide-react';
 import { usePathname, useRouter } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
@@ -24,6 +24,7 @@ const navigation = [
     { name: 'Bulk import', href: '/admin/bulk-import', icon: Upload },
     { name: 'Orders & revenue', href: '/admin/orders', icon: IndianRupee },
     { name: 'Teachers', href: '/admin/teachers', icon: GraduationCap },
+    { name: 'Live classes', href: '/admin/live', icon: Radio },
 ];
 
 export default function AdminSidebar() {

@@ -55,9 +55,17 @@ q6WLEHrBWtZVmjd63fljPk8=
 -----END PRIVATE KEY-----
 PEM;
 
-    protected function teacher(array $attributes = []): User
+    /** An approved teacher (verified profile) — the only kind that may host. */
+    protected function teacher(array $attributes = [], bool $approved = true): User
     {
-        return $this->student(array_merge(['role' => 'teacher'], $attributes));
+        $user = $this->student(array_merge(['role' => 'teacher'], $attributes));
+        \App\Models\TeacherProfile::create([
+            'user_id'     => $user->id,
+            'subjects'    => ['Computer Science'],
+            'verified_at' => $approved ? now() : null,
+        ]);
+
+        return $user;
     }
 
     protected function as(User $user): static
@@ -743,5 +751,57 @@ PEM;
         $this->assertSame('jitsi', $providers['default']);
         $this->assertSame('jaas', $providers['jitsi']['mode']);
         $this->assertNull($providers['jitsi']['warning']);
+    }
+
+    public function test_teacher_waiting_for_approval_cannot_host_and_is_told_why(): void
+    {
+        $pending = $this->teacher(approved: false);
+
+        $this->as($pending)->getJson('/api/live-classes/my/classes')
+            ->assertForbidden()->assertJsonPath('code', 'teacher_pending');
+        $this->as($pending)->postJson('/api/live-classes', $this->schedulePayload())->assertForbidden();
+    }
+
+    public function test_approving_the_teacher_in_admin_unlocks_hosting(): void
+    {
+        $pending = $this->teacher(approved: false);
+        $profile = \App\Models\TeacherProfile::where('user_id', $pending->id)->first();
+
+        $this->as($this->admin())->postJson("/api/admin/teachers/{$profile->id}/verify")->assertOk();
+
+        $this->as($pending)->postJson('/api/live-classes', $this->schedulePayload())->assertCreated();
+    }
+
+    public function test_admin_schedules_a_class_for_an_approved_teacher_and_controls_it(): void
+    {
+        $admin = $this->admin();
+        $teacher = $this->teacher();
+        $pending = $this->teacher(approved: false);
+
+        $this->as($admin)->getJson('/api/admin/live-classes/hosts')
+            ->assertOk()->assertJsonCount(1, 'data')->assertJsonPath('data.0.id', $teacher->id);
+
+        $this->as($admin)->postJson('/api/live-classes', $this->schedulePayload() + ['teacher_id' => $pending->id])
+            ->assertUnprocessable();
+
+        $id = $this->as($admin)->postJson('/api/live-classes', $this->schedulePayload() + ['teacher_id' => $teacher->id])
+            ->assertCreated()->json('class.id') ?? \App\Models\LiveClass::latest('id')->value('id');
+        $this->assertSame($teacher->id, \App\Models\LiveClass::find($id)->teacher_id);
+
+        // The teacher sees it in their panel; the admin can start and end it.
+        $this->as($teacher)->getJson('/api/live-classes/my/classes')->assertOk()->assertJsonCount(1, 'classes');
+        $this->as($admin)->postJson("/api/live-classes/{$id}/go-live")->assertOk();
+        $this->as($admin)->getJson('/api/admin/live-classes')->assertOk()->assertJsonPath('data.0.status', 'live')
+            ->assertJsonStructure(['data', 'providers', 'current_page', 'last_page']);
+        $this->as($admin)->postJson("/api/live-classes/{$id}/end")->assertOk();
+    }
+
+    public function test_a_teacher_cannot_schedule_for_someone_else(): void
+    {
+        $teacher = $this->teacher();
+        $other = $this->teacher();
+
+        $this->as($teacher)->postJson('/api/live-classes', $this->schedulePayload() + ['teacher_id' => $other->id])
+            ->assertUnprocessable();
     }
 }

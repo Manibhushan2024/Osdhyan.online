@@ -19,7 +19,8 @@ Route::middleware(['auth:sanctum', 'throttle:api'])->group(function () {
     Route::get('/live-classes', [LiveClassController::class, 'index']);
 
     // Teacher-only; declared before /live-classes/{id} so "my" never binds as an id.
-    Route::middleware('teacher')->group(function () {
+    // Hosting needs an approved teacher or an admin (LiveHostMiddleware).
+    Route::middleware('live.host')->group(function () {
         Route::get('/live-classes/my/classes', [LiveClassTeacherController::class, 'myClasses']);
         Route::post('/live-classes', [LiveClassTeacherController::class, 'store']);
         Route::patch('/live-classes/{id}', [LiveClassTeacherController::class, 'update']);
@@ -42,6 +43,7 @@ Route::middleware(['auth:sanctum', 'throttle:api'])->group(function () {
 
         // Admin overview (the controller re-checks isAdminUser()).
         Route::get('/admin/live-classes', [LiveClassTeacherController::class, 'adminIndex']);
+        Route::get('/admin/live-classes/hosts', [LiveClassTeacherController::class, 'adminHosts']);
     });
 
     Route::get('/live-classes/{id}', [LiveClassController::class, 'show'])->whereNumber('id');

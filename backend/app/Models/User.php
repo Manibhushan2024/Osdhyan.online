@@ -81,6 +81,24 @@ class User extends Authenticatable implements FilamentUser
         return $this->role === self::ROLE_TEACHER;
     }
 
+    public function teacherProfile()
+    {
+        return $this->hasOne(TeacherProfile::class);
+    }
+
+    /**
+     * Admins always; teachers only after an admin has approved (verified)
+     * their teacher profile in Admin → Teachers.
+     */
+    public function canHostLiveClasses(): bool
+    {
+        if ($this->isAdminUser()) {
+            return true;
+        }
+
+        return $this->isTeacher() && (bool) $this->teacherProfile()->whereNotNull('verified_at')->exists();
+    }
+
     public function isAdminUser(): bool
     {
         return $this->is_admin && in_array($this->admin_role, ['root', 'editor'], true);

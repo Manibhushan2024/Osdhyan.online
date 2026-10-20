@@ -113,7 +113,22 @@ class LiveClassTeacherController extends Controller
         $page = $q->paginate(min(100, max(1, (int) $request->query('per_page', 25))));
         $page->getCollection()->transform(fn (LiveClass $c) => $this->ownerArray($c));
 
-        return response()->json($page);
+        return response()->json($page->toArray() + ['providers' => $this->providers->describe()]);
+    }
+
+    /** GET /admin/live-classes/hosts — admins and approved teachers an admin can schedule for. */
+    public function adminHosts(Request $request): JsonResponse
+    {
+        if (!$request->user()->isAdminUser()) {
+            abort(403, 'Admin access required.');
+        }
+        $teachers = User::query()
+            ->where('role', User::ROLE_TEACHER)
+            ->whereHas('teacherProfile', fn ($q) => $q->whereNotNull('verified_at'))
+            ->orderBy('name')->limit(500)->get(['id', 'name', 'email'])
+            ->map(fn (User $u) => ['id' => $u->id, 'name' => $u->name, 'email' => $u->email]);
+
+        return response()->json(['data' => $teachers]);
     }
 
     // ── CRUD ──────────────────────────────────────────────────────────────────
@@ -121,7 +136,19 @@ class LiveClassTeacherController extends Controller
     /** POST /live-classes */
     public function store(Request $request): JsonResponse
     {
-        $data = $request->validate($this->scheduleRules(partial: false));
+        $data = $request->validate($this->scheduleRules(partial: false) + [
+            'teacher_id' => ['nullable', 'integer', 'exists:users,id'],
+        ]);
+        $teacherId = $request->user()->id;
+        if (!empty($data['teacher_id']) && (int) $data['teacher_id'] !== $teacherId) {
+            // Only admins may schedule on behalf of someone else, and only for a host.
+            $host = User::find($data['teacher_id']);
+            if (!$request->user()->isAdminUser() || !$host?->canHostLiveClasses()) {
+                return response()->json(['message' => 'Choose an approved teacher.', 'errors' => ['teacher_id' => ['Choose an approved teacher.']]], 422);
+            }
+            $teacherId = $host->id;
+        }
+        unset($data['teacher_id']);
         $provider = $this->providers->for($data['provider']);
         $providerAttrs = $provider->prepareForSchedule($data);
 
@@ -129,7 +156,7 @@ class LiveClassTeacherController extends Controller
             collect($data)->except('youtube_url')->all(),
             $providerAttrs,
             [
-                'teacher_id'       => $request->user()->id,
+                'teacher_id'       => $teacherId,
                 'status'           => LiveClass::STATUS_SCHEDULED,
                 'max_participants' => $data['max_participants'] ?? 0,
             ]

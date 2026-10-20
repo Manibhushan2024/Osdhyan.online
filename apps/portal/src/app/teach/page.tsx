@@ -119,9 +119,12 @@ export default function TeacherPanelPage() {
                     <div>
                         <p className="font-semibold text-green-800 dark:text-green-200">Verified teacher</p>
                         <p className="text-green-700/80 dark:text-green-300/80">
-                            Your profile is {profile.is_available ? 'visible to students' : 'hidden because you are marked as not accepting students'}. New leads appear below.
+                            Your profile is {profile.is_available ? 'visible to students' : 'hidden because you are marked as not accepting students'}. New leads appear below. You can also teach live classes.
                         </p>
                     </div>
+                    <Link href="/dashboard/live/manage" className="ml-auto shrink-0 rounded-xl bg-red-500 hover:bg-red-400 text-white px-4 py-2 text-xs font-semibold">
+                        My live classes
+                    </Link>
                 </div>
             ) : (
                 <div className="rounded-2xl bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 px-5 py-4 flex items-center gap-3 text-sm">
@@ -129,7 +132,7 @@ export default function TeacherPanelPage() {
                     <div>
                         <p className="font-semibold text-amber-800 dark:text-amber-200">Pending verification</p>
                         <p className="text-amber-700/80 dark:text-amber-300/80">
-                            The OSDHYAN team reviews new teacher profiles, usually within 2 working days. Complete your profile (qualifications, experience, subjects) to speed this up. Leads and proposals unlock once verified.
+                            The OSDHYAN team reviews new teacher profiles, usually within 2 working days. Complete your profile (qualifications, experience, subjects) to speed this up. Live classes, leads and proposals unlock once verified.
                         </p>
                     </div>
                 </div>

@@ -14,6 +14,27 @@ This guide is for teachers and the OSDHYAN team. No technical knowledge needed.
 
 **Why YouTube is recommended:** YouTube carries the heavy video for free and never runs out of seats. OSDHYAN only handles the chat, polls and raise-hand, which are light. The free public Jitsi server (meet.jit.si) makes the teacher sign in with Google, GitHub or Facebook inside the video before anyone can enter. That sign-in often fails inside our page, so until JaaS keys are added Jitsi is fine for small or test classes only.
 
+## How a teacher gets access
+
+1. The teacher signs in to OSDHYAN (mobile OTP or e-mail) and opens **Become a teacher** (`/teach/register`).
+2. They fill in their teacher profile: subjects, exams, qualifications, experience, city and fee.
+3. The profile waits for approval. Until then, the Teacher panel says *"Waiting for approval"* and live classes stay locked.
+4. An admin opens **Admin → Teachers**, checks the profile (phone and e-mail are shown there for a verification call) and presses **Verify**.
+5. The teacher can now schedule and run live classes from **Live Classes → Teacher panel**, or from the **My live classes** button on their teacher page.
+
+To take access away, press **Unverify** in Admin → Teachers. The teacher can no longer start or schedule classes.
+
+## Admin: full control of every class
+
+Open **Admin → Live classes** (`/admin/live`). Admins can:
+
+- See **every** class from every teacher, with the teacher's name, time, status and how many students are in.
+- **Schedule a class** for themselves or for any approved teacher (choose in the **Teacher** box). The teacher sees it in their own panel and can run it too.
+- **Start class**, **Open classroom**, **End class**, edit, delete and add a recording for any class.
+- Inside the classroom, the admin is a host: pin, mark answered, delete messages, see raised hands, run polls and end the class, exactly like the teacher.
+
+Admins stay signed in to the admin panel the whole time. The classroom opens at `/admin/live/<number>`. Students still join from the normal link (`/dashboard/live/<number>`), which the 🔗 button copies.
+
 ## Teacher: before the class (schedule it)
 
 1. Open **Live Classes → Teacher panel** (only teachers and admins see it).
