@@ -1,0 +1,93 @@
+{
+ "subject": "DBMS (Database Management System)",
+ "chapters": [
+  {
+   "key": "db_intro",
+   "title": "1. Introduction & Database Architecture",
+   "items": [
+    {
+     "title": "Introduction & Database Architecture — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\dbms\\db_intro.pdf"
+    }
+   ]
+  },
+  {
+   "key": "db_er",
+   "title": "2. ER Model",
+   "items": [
+    {
+     "title": "ER Model — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\dbms\\db_er.pdf"
+    }
+   ]
+  },
+  {
+   "key": "db_relational",
+   "title": "3. Relational Model, Keys & Relational Algebra",
+   "items": [
+    {
+     "title": "Relational Model, Keys & Relational Algebra — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\dbms\\db_relational.pdf"
+    }
+   ]
+  },
+  {
+   "key": "db_normal",
+   "title": "4. Functional Dependencies & Normalisation",
+   "items": [
+    {
+     "title": "Functional Dependencies & Normalisation — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\dbms\\db_normal.pdf"
+    }
+   ]
+  },
+  {
+   "key": "db_sql",
+   "title": "5. SQL",
+   "items": [
+    {
+     "title": "SQL — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\dbms\\db_sql.pdf"
+    }
+   ]
+  },
+  {
+   "key": "db_txn",
+   "title": "6. Transactions & Concurrency Control",
+   "items": [
+    {
+     "title": "Transactions & Concurrency Control — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\dbms\\db_txn.pdf"
+    }
+   ]
+  },
+  {
+   "key": "db_index",
+   "title": "7. Indexing & File Organisation",
+   "items": [
+    {
+     "title": "Indexing & File Organisation — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\dbms\\db_index.pdf"
+    }
+   ]
+  },
+  {
+   "key": "db_practice",
+   "title": "8. Complete notes, previous-year questions & 200 most expected",
+   "items": [
+    {
+     "title": "DBMS — complete notes (all chapters in one PDF)",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\dbms\\dbms_complete_notes.pdf"
+    },
+    {
+     "title": "DBMS — previous-year questions 2023–24 with solutions",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\dbms\\dbms_pyq_2023_24.pdf"
+    },
+    {
+     "title": "DBMS — 200 most expected questions with answers",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\dbms\\dbms_200_most_expected.pdf"
+    }
+   ]
+  }
+ ]
+}

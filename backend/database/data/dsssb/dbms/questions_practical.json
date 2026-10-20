@@ -1,0 +1,2302 @@
+[
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "SQL command categories - DDL",
+  "difficulty": "easy",
+  "question_en": "Which of the following SQL commands belongs to the Data Definition Language (DDL)?",
+  "options": [
+   {
+    "en": "UPDATE"
+   },
+   {
+    "en": "GRANT"
+   },
+   {
+    "en": "TRUNCATE"
+   },
+   {
+    "en": "SAVEPOINT"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "TRUNCATE is classed as DDL, together with CREATE, ALTER, DROP and RENAME, because it works on the table's storage rather than row by row and causes an implicit commit in MySQL and Oracle. It is often confused with DML because, like DELETE, it removes rows. UPDATE is DML, GRANT is DCL and SAVEPOINT is TCL.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "SQL command categories - TCL",
+  "difficulty": "easy",
+  "question_en": "Which group contains only Transaction Control Language (TCL) commands?",
+  "options": [
+   {
+    "en": "COMMIT, GRANT, REVOKE"
+   },
+   {
+    "en": "INSERT, UPDATE, ROLLBACK"
+   },
+   {
+    "en": "CREATE, SAVEPOINT, ALTER"
+   },
+   {
+    "en": "COMMIT, ROLLBACK, SAVEPOINT"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "COMMIT makes a transaction's changes permanent, ROLLBACK undoes them and SAVEPOINT marks a point to roll back to, so all three are TCL. GRANT and REVOKE are DCL, INSERT and UPDATE are DML, and CREATE and ALTER are DDL, so every other group mixes categories.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "SQL command categories - DCL",
+  "difficulty": "easy",
+  "question_en": "GRANT and REVOKE, the commands that give and take back user privileges, are part of:",
+  "options": [
+   {
+    "en": "Data Manipulation Language (DML)"
+   },
+   {
+    "en": "Data Definition Language (DDL)"
+   },
+   {
+    "en": "Transaction Control Language (TCL)"
+   },
+   {
+    "en": "Data Control Language (DCL)"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "GRANT gives privileges such as SELECT or UPDATE on an object to a user, and REVOKE withdraws them; together they form the Data Control Language. DML changes the data in tables, DDL changes their structure, and TCL (COMMIT, ROLLBACK, SAVEPOINT) controls transactions.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "DELETE vs TRUNCATE",
+  "difficulty": "medium",
+  "question_en": "Which statement about DELETE and TRUNCATE is correct?",
+  "options": [
+   {
+    "en": "TRUNCATE can remove selected rows with WHERE; DELETE removes all rows"
+   },
+   {
+    "en": "DELETE can remove selected rows with WHERE; TRUNCATE removes all rows"
+   },
+   {
+    "en": "Both DELETE and TRUNCATE also remove the table structure"
+   },
+   {
+    "en": "TRUNCATE is a DML command that fires row-level DELETE triggers"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "DELETE is a DML command: it removes rows one at a time, accepts a WHERE clause and can be rolled back. TRUNCATE is DDL: it takes no WHERE clause, empties the whole table, keeps the table structure and does not fire DELETE triggers. Only DROP removes the structure itself.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "DROP TABLE",
+  "difficulty": "easy",
+  "question_en": "A table named OLD_FEES is no longer needed. Which command removes both its rows and its definition (structure) from the database?",
+  "options": [
+   {
+    "en": "DELETE FROM OLD_FEES;"
+   },
+   {
+    "en": "DROP TABLE OLD_FEES;"
+   },
+   {
+    "en": "TRUNCATE TABLE OLD_FEES;"
+   },
+   {
+    "en": "ALTER TABLE OLD_FEES DELETE;"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "DROP TABLE deletes the data, the table definition, its indexes and constraints, so the table no longer exists. DELETE FROM and TRUNCATE TABLE empty the table but leave an empty table with the same structure, and ALTER TABLE ... DELETE is not valid SQL.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "DEFAULT constraint",
+  "difficulty": "easy",
+  "question_en": "A table is created with CREATE TABLE STUDENT(ROLL INT PRIMARY KEY, NAME VARCHAR(20), CITY VARCHAR(20) DEFAULT 'Delhi'); and then INSERT INTO STUDENT(ROLL, NAME) VALUES (11, 'Isha'); is run. What does SELECT CITY FROM STUDENT WHERE ROLL = 11; return?",
+  "options": [
+   {
+    "en": "NULL"
+   },
+   {
+    "en": "'' (empty)"
+   },
+   {
+    "en": "'Delhi'"
+   },
+   {
+    "en": "Error"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "When an INSERT does not give a value for a column that has a DEFAULT constraint, the default value is stored, so CITY becomes 'Delhi'. NULL would be stored only if the column had no DEFAULT; omitting a column is not an error unless it is NOT NULL with no default.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "CHECK constraint and NULL",
+  "difficulty": "hard",
+  "question_en": "In standard SQL (where CHECK constraints are enforced, as in MySQL 8.0.16+, SQL Server and Oracle), a table is created with CREATE TABLE VOTER(VID INT PRIMARY KEY, AGE INT CHECK (AGE >= 18)); Which of the following INSERT statements is accepted?",
+  "options": [
+   {
+    "en": "INSERT INTO VOTER VALUES (4, NULL);"
+   },
+   {
+    "en": "INSERT INTO VOTER VALUES (1, 16);"
+   },
+   {
+    "en": "INSERT INTO VOTER VALUES (2, 17);"
+   },
+   {
+    "en": "INSERT INTO VOTER VALUES (3, -18);"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A CHECK constraint rejects a row only when its condition is FALSE. For AGE = NULL the condition NULL >= 18 is UNKNOWN, not FALSE, so the row is accepted; add NOT NULL to block it. The values 16, 17 and -18 make AGE >= 18 FALSE, so those rows are rejected (MySQL enforces CHECK from version 8.0.16).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "UNIQUE vs PRIMARY KEY",
+  "difficulty": "medium",
+  "question_en": "Which statement correctly compares the UNIQUE and PRIMARY KEY constraints?",
+  "options": [
+   {
+    "en": "A table may have many PRIMARY KEYs but only one UNIQUE constraint"
+   },
+   {
+    "en": "UNIQUE columns reject NULL, but PRIMARY KEY columns accept one NULL"
+   },
+   {
+    "en": "A PRIMARY KEY column allows duplicate values if they are NULL"
+   },
+   {
+    "en": "A table may have many UNIQUE constraints but only one PRIMARY KEY"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "A PRIMARY KEY is UNIQUE plus NOT NULL, and a table can have only one (it may span several columns). A table can have several UNIQUE constraints, and a UNIQUE column can hold NULL (MySQL allows many NULLs, SQL Server allows one). The other options reverse these rules.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "FOREIGN KEY ON DELETE CASCADE",
+  "difficulty": "medium",
+  "question_en": "Table DEPT(DNO) has rows: (10), (20), (30). Table EMP(ENO, DNO) has rows: (1,10), (2,20), (3,10), (4,30), (5,10), where EMP.DNO is declared as FOREIGN KEY (DNO) REFERENCES DEPT(DNO) ON DELETE CASCADE. After DELETE FROM DEPT WHERE DNO = 10; what does SELECT COUNT(*) FROM EMP; return?",
+  "options": [
+   {
+    "en": "5"
+   },
+   {
+    "en": "2"
+   },
+   {
+    "en": "3"
+   },
+   {
+    "en": "Error"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "ON DELETE CASCADE deletes the child rows that refer to the deleted parent row. Department 10 has employees 1, 3 and 5, so those three rows go and employees 2 and 4 remain, giving 2. An error (the DELETE being rejected) would occur only with ON DELETE RESTRICT or NO ACTION.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "FOREIGN KEY ON DELETE SET NULL",
+  "difficulty": "easy",
+  "question_en": "EMP.DNO is a foreign key referencing DEPT.DNO, declared with ON DELETE SET NULL. When department 20 is deleted from DEPT, what happens to the employees of department 20?",
+  "options": [
+   {
+    "en": "Their rows are deleted automatically"
+   },
+   {
+    "en": "Their rows remain and their DNO becomes NULL"
+   },
+   {
+    "en": "The DELETE on DEPT is rejected"
+   },
+   {
+    "en": "Their DNO is set to the column's DEFAULT"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "ON DELETE SET NULL keeps the child rows but sets the foreign key to NULL, so the employees stay with no department. Deleting the child rows is ON DELETE CASCADE, rejecting the delete is RESTRICT or NO ACTION, and using the default value is ON DELETE SET DEFAULT.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "ALTER TABLE ADD column",
+  "difficulty": "easy",
+  "question_en": "Which statement correctly adds a new column PHONE to an existing table EMP?",
+  "options": [
+   {
+    "en": "UPDATE EMP ADD COLUMN PHONE VARCHAR(15);"
+   },
+   {
+    "en": "INSERT INTO EMP COLUMN PHONE VARCHAR(15);"
+   },
+   {
+    "en": "MODIFY TABLE EMP ADD PHONE VARCHAR(15);"
+   },
+   {
+    "en": "ALTER TABLE EMP ADD PHONE VARCHAR(15);"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Changing a table's structure is DDL, done with ALTER TABLE table_name ADD column_name datatype (the word COLUMN is optional in MySQL). UPDATE and INSERT are DML commands that work on rows, not on structure, and MODIFY TABLE is not an SQL command.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "ALTER TABLE MODIFY column type",
+  "difficulty": "medium",
+  "question_en": "In MySQL, the data type of column SAL in table EMP must be changed to DECIMAL(10,2). Which statement does this?",
+  "options": [
+   {
+    "en": "ALTER TABLE EMP RENAME SAL DECIMAL(10,2);"
+   },
+   {
+    "en": "UPDATE EMP SET SAL = DECIMAL(10,2);"
+   },
+   {
+    "en": "ALTER TABLE EMP CHANGE TYPE SAL DECIMAL(10,2);"
+   },
+   {
+    "en": "ALTER TABLE EMP MODIFY SAL DECIMAL(10,2);"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "MySQL (and Oracle) change a column's definition with ALTER TABLE ... MODIFY column new_type. SQL Server writes it as ALTER TABLE EMP ALTER COLUMN SAL DECIMAL(10,2). MySQL's CHANGE needs the old and new column names (CHANGE SAL SAL DECIMAL(10,2)), so 'CHANGE TYPE' is invalid, and UPDATE changes values, not types.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "DROP SCHEMA CASCADE",
+  "difficulty": "medium",
+  "question_en": "In standard SQL, the statement DROP SCHEMA COLLEGE CASCADE; is run on a schema that contains tables and views. What is the result?",
+  "options": [
+   {
+    "en": "The command fails because the schema is not empty"
+   },
+   {
+    "en": "The schema and all its tables, views and other elements are dropped"
+   },
+   {
+    "en": "Only the empty tables of the schema are dropped"
+   },
+   {
+    "en": "Only the schema name is removed; its tables remain"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "In SQL schema evolution, DROP SCHEMA ... CASCADE removes the schema together with every element in it (tables, views, domains, constraints). With RESTRICT instead, the schema is dropped only if it has no elements, which is the behaviour described in the first distractor.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "DROP TABLE RESTRICT",
+  "difficulty": "hard",
+  "question_en": "In standard SQL, with the statement DROP TABLE DEPT RESTRICT; the table DEPT is dropped only if:",
+  "options": [
+   {
+    "en": "it is not referenced in any constraint or view"
+   },
+   {
+    "en": "it contains no rows at that moment"
+   },
+   {
+    "en": "it has no PRIMARY KEY defined on it"
+   },
+   {
+    "en": "no user currently holds a privilege on it"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "For DROP TABLE, RESTRICT means the table is dropped only if it is not referenced by other schema elements, for example a foreign key in another table or a view. CASCADE drops those referencing constraints and views as well. Whether the table has rows does not matter: a table full of data can still be dropped with RESTRICT if nothing refers to it.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "SELECT clause execution order",
+  "difficulty": "medium",
+  "question_en": "In what logical order does a DBMS evaluate the clauses of a SELECT query that uses all of them?",
+  "options": [
+   {
+    "en": "SELECT, FROM, WHERE, GROUP BY, HAVING, ORDER BY"
+   },
+   {
+    "en": "FROM, GROUP BY, WHERE, HAVING, ORDER BY, SELECT"
+   },
+   {
+    "en": "FROM, WHERE, HAVING, GROUP BY, SELECT, ORDER BY"
+   },
+   {
+    "en": "FROM, WHERE, GROUP BY, HAVING, SELECT, ORDER BY"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "First the tables in FROM are combined, WHERE filters individual rows, GROUP BY forms groups, HAVING filters groups, SELECT computes the output columns and ORDER BY sorts the result. The written order starts with SELECT, but it is evaluated near the end, which is why a column alias works in ORDER BY but not in WHERE.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "DISTINCT with COUNT",
+  "difficulty": "easy",
+  "question_en": "Table EMP(ID, NAME, DEPT) has rows: (1,'Asha','IT'), (2,'Ravi','HR'), (3,'Mona','IT'), (4,'Karan','FIN'), (5,'Neha','HR'), (6,'Om','IT'). What is the output of SELECT COUNT(DISTINCT DEPT) FROM EMP;?",
+  "options": [
+   {
+    "en": "6"
+   },
+   {
+    "en": "3"
+   },
+   {
+    "en": "2"
+   },
+   {
+    "en": "4"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "COUNT(DISTINCT DEPT) counts the different non-NULL department values: IT, HR and FIN, which gives 3. COUNT(DEPT) or COUNT(*) would give 6 because they count every row, duplicates included.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "LIKE wildcards % and _",
+  "difficulty": "medium",
+  "question_en": "Table STUDENT(ROLL, NAME) has rows: (1,'Aman'), (2,'Kavya'), (3,'Rahul'), (4,'Sana'), (5,'Ankit'), (6,'Tara'). How many rows does SELECT NAME FROM STUDENT WHERE NAME LIKE '_a%'; return?",
+  "options": [
+   {
+    "en": "2"
+   },
+   {
+    "en": "6"
+   },
+   {
+    "en": "4"
+   },
+   {
+    "en": "3"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "In LIKE, _ matches exactly one character and % matches any number of characters, so '_a%' means 'second letter is a'. Kavya, Rahul, Sana and Tara qualify, giving 4. Aman and Ankit start with A but their second letters are m and n; the pattern for 'starts with A' would be 'A%'.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "BETWEEN is inclusive",
+  "difficulty": "easy",
+  "question_en": "Table EMP(ID, SAL) has rows: (1,4000), (2,4500), (3,6000), (4,6500), (5,5000), (6,3999). What is the output of SELECT COUNT(*) FROM EMP WHERE SAL BETWEEN 4000 AND 6000;?",
+  "options": [
+   {
+    "en": "2"
+   },
+   {
+    "en": "3"
+   },
+   {
+    "en": "4"
+   },
+   {
+    "en": "5"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "BETWEEN includes both end values, so it means SAL >= 4000 AND SAL <= 6000. The salaries 4000, 4500, 6000 and 5000 qualify, giving 4; 6500 and 3999 are outside. Leaving out the two end values would wrongly give 2.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "IN operator",
+  "difficulty": "easy",
+  "question_en": "The condition WHERE DEPT IN ('IT', 'HR', 'FIN') is equivalent to:",
+  "options": [
+   {
+    "en": "WHERE DEPT = 'IT' AND DEPT = 'HR' AND DEPT = 'FIN'"
+   },
+   {
+    "en": "WHERE DEPT BETWEEN 'IT' AND 'FIN'"
+   },
+   {
+    "en": "WHERE DEPT LIKE 'IT%HR%FIN'"
+   },
+   {
+    "en": "WHERE DEPT = 'IT' OR DEPT = 'HR' OR DEPT = 'FIN'"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "IN tests whether a value equals any member of a list, so it is a shorthand for several equality tests joined by OR. Joining them with AND would never be true, since one row cannot hold three different values. BETWEEN tests a range and LIKE matches a pattern.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "IS NULL",
+  "difficulty": "easy",
+  "question_en": "Which WHERE condition correctly selects the employees whose commission (COMM) has not been entered, i.e. is NULL?",
+  "options": [
+   {
+    "en": "WHERE COMM = NULL"
+   },
+   {
+    "en": "WHERE COMM = 0"
+   },
+   {
+    "en": "WHERE COMM = ''"
+   },
+   {
+    "en": "WHERE COMM IS NULL"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "NULL means a missing value and is tested only with IS NULL or IS NOT NULL. COMM = NULL evaluates to UNKNOWN for every row, so it returns nothing. 0 and the empty string are real values, not NULL.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "NULL behaviour - NOT IN with NULL",
+  "difficulty": "hard",
+  "question_en": "Table EMP(ENO, DNO) has rows: (1,10), (2,20), (3,30), (4,40). Table PROJ(PNO, DNO) has rows: (101,10), (102,NULL). What is the output of SELECT COUNT(*) FROM EMP WHERE DNO NOT IN (SELECT DNO FROM PROJ);?",
+  "options": [
+   {
+    "en": "3"
+   },
+   {
+    "en": "4"
+   },
+   {
+    "en": "0"
+   },
+   {
+    "en": "1"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The subquery returns (10, NULL), so the condition becomes DNO <> 10 AND DNO <> NULL. Any comparison with NULL is UNKNOWN, so the condition is never TRUE, and for DNO = 10 it is FALSE; no row qualifies and the count is 0. Expecting 3 (20, 30, 40) ignores the NULL; use NOT EXISTS or filter out NULLs in the subquery to get 3.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "NULL in arithmetic",
+  "difficulty": "medium",
+  "question_en": "Table EMP(ID, NAME, SAL, COMM) has rows: (1,'Asha',5000,NULL), (2,'Ravi',7000,500). What is the output of SELECT SAL + COMM FROM EMP WHERE ID = 1;?",
+  "options": [
+   {
+    "en": "5000"
+   },
+   {
+    "en": "0"
+   },
+   {
+    "en": "Error"
+   },
+   {
+    "en": "NULL"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Any arithmetic with NULL gives NULL, so 5000 + NULL is NULL, not 5000. To treat a missing commission as zero, write SAL + IFNULL(COMM, 0) in MySQL, ISNULL(COMM, 0) in SQL Server or COALESCE(COMM, 0) in standard SQL. The expression is valid, so there is no error.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "ORDER BY on two columns",
+  "difficulty": "medium",
+  "question_en": "Table EMP(ID, NAME, SAL) has rows: (1,'Mona',6000), (2,'Asha',8000), (3,'Ravi',6000), (4,'Dev',8000), (5,'Om',5000). In the output of SELECT NAME FROM EMP ORDER BY SAL DESC, NAME; which name appears third?",
+  "options": [
+   {
+    "en": "Ravi"
+   },
+   {
+    "en": "Dev"
+   },
+   {
+    "en": "Om"
+   },
+   {
+    "en": "Mona"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Rows are sorted by SAL in descending order and, within equal salaries, by NAME in ascending order (the default). The order is Asha, Dev (8000), Mona, Ravi (6000), Om (5000), so Mona is third. Ravi would be third only if names were also sorted descending.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "COUNT(*) vs COUNT(column)",
+  "difficulty": "medium",
+  "question_en": "Table EMP(ID, NAME, COMM) has rows: (1,'Asha',NULL), (2,'Ravi',500), (3,'Mona',NULL), (4,'Karan',0), (5,'Neha',200). What is the output of SELECT COUNT(*), COUNT(COMM) FROM EMP;?",
+  "options": [
+   {
+    "en": "5 and 5"
+   },
+   {
+    "en": "3 and 5"
+   },
+   {
+    "en": "5 and 3"
+   },
+   {
+    "en": "5 and 2"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "COUNT(*) counts all rows, giving 5. COUNT(COMM) counts only non-NULL values of COMM: 500, 0 and 200, giving 3. The value 0 is a real value and is counted, so 2 is wrong.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "Aggregate vs scalar functions",
+  "difficulty": "easy",
+  "question_en": "A scalar function returns one value for each row, while an aggregate function returns one value for a whole group of rows. Which of these is a scalar function and NOT an aggregate function?",
+  "options": [
+   {
+    "en": "LENGTH()"
+   },
+   {
+    "en": "AVG()"
+   },
+   {
+    "en": "MIN()"
+   },
+   {
+    "en": "COUNT()"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "LENGTH() works on one string at a time and returns its length for each row, so it is a scalar (single-row) function. AVG, MIN and COUNT, like SUM and MAX, take a set of rows and return a single summary value, so they are aggregate functions.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "AVG ignores NULL",
+  "difficulty": "medium",
+  "question_en": "Table EMP(ID, COMM) has rows: (1,400), (2,NULL), (3,200), (4,NULL), (5,300). What is the output of SELECT AVG(COMM) FROM EMP;?",
+  "options": [
+   {
+    "en": "180"
+   },
+   {
+    "en": "900"
+   },
+   {
+    "en": "NULL"
+   },
+   {
+    "en": "300"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Aggregate functions other than COUNT(*) ignore NULLs. AVG(COMM) = (400 + 200 + 300) / 3 = 300. Dividing by all 5 rows (900 / 5 = 180) would be correct only for AVG(COALESCE(COMM, 0)).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "GROUP BY with HAVING",
+  "difficulty": "medium",
+  "question_en": "Table EMP(ID, NAME, SAL, DEPT) has rows: (1,'Asha',5000,'IT'), (2,'Ravi',7000,'HR'), (3,'Mona',4000,'IT'), (4,'Karan',9000,'FIN'), (5,'Neha',6000,'HR'), (6,'Om',3000,'IT'). What is the output of SELECT DEPT, SUM(SAL) FROM EMP GROUP BY DEPT HAVING COUNT(*) >= 2 ORDER BY DEPT;?",
+  "options": [
+   {
+    "en": "(IT, 12000) only"
+   },
+   {
+    "en": "(FIN, 9000), (HR, 13000), (IT, 12000)"
+   },
+   {
+    "en": "(HR, 13000) and (IT, 12000)"
+   },
+   {
+    "en": "(HR, 13000) only"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "GROUP BY makes three groups: FIN (1 row, 9000), HR (2 rows, 7000 + 6000 = 13000) and IT (3 rows, 5000 + 4000 + 3000 = 12000). HAVING COUNT(*) >= 2 removes FIN, which has one employee, and ORDER BY DEPT lists HR before IT.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "WHERE vs HAVING",
+  "difficulty": "medium",
+  "question_en": "Why does SELECT DEPT, AVG(SAL) FROM EMP WHERE AVG(SAL) > 5000 GROUP BY DEPT; give an error?",
+  "options": [
+   {
+    "en": "AVG cannot be used together with GROUP BY in one query"
+   },
+   {
+    "en": "Aggregates cannot be used in WHERE; a group condition belongs in HAVING"
+   },
+   {
+    "en": "WHERE must always be written after the GROUP BY clause"
+   },
+   {
+    "en": "A column used in GROUP BY cannot appear in the SELECT list"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "WHERE filters individual rows before groups are formed, so the average of a group does not exist yet at that point. The correct query is SELECT DEPT, AVG(SAL) FROM EMP GROUP BY DEPT HAVING AVG(SAL) > 5000. AVG with GROUP BY is normal, WHERE comes before GROUP BY, and grouped columns are allowed in SELECT.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "GROUP BY select-list rule",
+  "difficulty": "hard",
+  "question_en": "In standard SQL (and in MySQL 5.7+ with its default ONLY_FULL_GROUP_BY mode), why is SELECT DEPT, NAME, MAX(SAL) FROM EMP GROUP BY DEPT; rejected?",
+  "options": [
+   {
+    "en": "DEPT should have been written inside an aggregate function"
+   },
+   {
+    "en": "MAX(SAL) must be given a column alias using AS"
+   },
+   {
+    "en": "GROUP BY must list every column of the EMP table"
+   },
+   {
+    "en": "NAME is neither in GROUP BY nor inside an aggregate function"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "After grouping, each output row stands for a whole department, so every column in SELECT must either be a grouping column or be aggregated. NAME has many values per department and the DBMS cannot choose one, so the query is rejected. DEPT is a grouping column and may appear as it is, and an alias is optional.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "INNER JOIN row count",
+  "difficulty": "medium",
+  "question_en": "Table EMP(ENO, ENAME, DNO) has rows: (1,'Asha',10), (2,'Ravi',20), (3,'Mona',10), (4,'Karan',NULL), (5,'Neha',40). Table DEPT(DNO, DNAME) has rows: (10,'IT'), (20,'HR'), (30,'FIN'). What is the output of SELECT COUNT(*) FROM EMP E INNER JOIN DEPT D ON E.DNO = D.DNO;?",
+  "options": [
+   {
+    "en": "5"
+   },
+   {
+    "en": "4"
+   },
+   {
+    "en": "15"
+   },
+   {
+    "en": "3"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "An inner join keeps only matching pairs. Asha and Mona match department 10 and Ravi matches 20, giving 3 rows. Karan (DNO NULL) and Neha (DNO 40) have no matching department, and 15 would be the Cartesian product of 5 x 3 rows.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "LEFT OUTER JOIN and NULLs",
+  "difficulty": "medium",
+  "question_en": "Table EMP(ENO, ENAME, DNO) has rows: (1,'Asha',10), (2,'Ravi',20), (3,'Mona',10), (4,'Karan',NULL), (5,'Neha',40). Table DEPT(DNO, DNAME) has rows: (10,'IT'), (20,'HR'), (30,'FIN'). For SELECT E.ENAME, D.DNAME FROM EMP E LEFT OUTER JOIN DEPT D ON E.DNO = D.DNO; what does the output contain?",
+  "options": [
+   {
+    "en": "3 rows, none of them with NULL in DNAME"
+   },
+   {
+    "en": "6 rows, 1 of them with NULL in DNAME"
+   },
+   {
+    "en": "5 rows, 2 of them with NULL in DNAME"
+   },
+   {
+    "en": "5 rows, 1 of them with NULL in DNAME"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "A left outer join keeps every row of the left table (EMP), so there are 5 rows. Karan (DNO NULL) and Neha (DNO 40) have no matching department, so their DNAME is filled with NULL. Three rows is the inner join, and 6 rows would come from a full outer join, which also adds department 30.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "CROSS JOIN row count",
+  "difficulty": "easy",
+  "question_en": "Table A has 4 rows and table B has 6 rows. How many rows does SELECT * FROM A CROSS JOIN B; return?",
+  "options": [
+   {
+    "en": "24"
+   },
+   {
+    "en": "10"
+   },
+   {
+    "en": "6"
+   },
+   {
+    "en": "4"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A cross join is the Cartesian product: every row of A is paired with every row of B, giving 4 x 6 = 24 rows. Adding the counts (10) would describe UNION ALL of two compatible tables, not a join.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "FULL OUTER JOIN row count",
+  "difficulty": "hard",
+  "question_en": "Table EMP(ENO, ENAME, DNO) has rows: (1,'Asha',10), (2,'Ravi',20), (3,'Mona',10), (4,'Karan',NULL), (5,'Neha',40). Table DEPT(DNO, DNAME) has rows: (10,'IT'), (20,'HR'), (30,'FIN'). What is the output of SELECT COUNT(*) FROM EMP E FULL OUTER JOIN DEPT D ON E.DNO = D.DNO;?",
+  "options": [
+   {
+    "en": "5"
+   },
+   {
+    "en": "6"
+   },
+   {
+    "en": "8"
+   },
+   {
+    "en": "3"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "A full outer join gives the 3 matching pairs, plus the 2 unmatched employees (Karan and Neha) with NULL department columns, plus the unmatched department 30 (FIN) with NULL employee columns: 3 + 2 + 1 = 6. MySQL has no FULL OUTER JOIN and gets the same result with a LEFT JOIN UNION a RIGHT JOIN.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "Self join",
+  "difficulty": "easy",
+  "question_en": "In EMP(ENO, ENAME, MGR), MGR holds the ENO of each employee's manager from the same table. Listing every employee next to the manager's name requires:",
+  "options": [
+   {
+    "en": "a UNION of EMP with itself on the MGR column"
+   },
+   {
+    "en": "a Cartesian product with no join condition"
+   },
+   {
+    "en": "a GROUP BY on MGR with a HAVING clause"
+   },
+   {
+    "en": "a self join of EMP with itself using two aliases"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "A self join treats one table as two copies with different aliases, for example FROM EMP E JOIN EMP M ON E.MGR = M.ENO, then selects E.ENAME and M.ENAME. UNION only stacks rows, a Cartesian product without a condition pairs everyone with everyone, and GROUP BY summarises rows instead of pairing them.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "NATURAL JOIN",
+  "difficulty": "easy",
+  "question_en": "Which statement about NATURAL JOIN is correct?",
+  "options": [
+   {
+    "en": "It joins on all same-named columns and shows each such column once"
+   },
+   {
+    "en": "It joins on the primary key only, even when column names differ"
+   },
+   {
+    "en": "It returns every combination of rows from the two tables"
+   },
+   {
+    "en": "It keeps unmatched rows of both tables and pads them with NULL"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "NATURAL JOIN automatically uses every column name common to both tables as an equality condition and keeps only one copy of each such column. It does not look at key definitions. Every combination of rows is a CROSS JOIN, and keeping unmatched rows of both sides is a FULL OUTER JOIN.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "UNION vs UNION ALL",
+  "difficulty": "medium",
+  "question_en": "Table T1(X) has rows: (1), (2), (2), (3). Table T2(X) has rows: (2), (3), (4). How many rows do P: SELECT X FROM T1 UNION SELECT X FROM T2; and Q: SELECT X FROM T1 UNION ALL SELECT X FROM T2; return?",
+  "options": [
+   {
+    "en": "P returns 4, Q returns 7"
+   },
+   {
+    "en": "P returns 7, Q returns 4"
+   },
+   {
+    "en": "P returns 5, Q returns 7"
+   },
+   {
+    "en": "P returns 4, Q returns 5"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "UNION removes all duplicate rows from the combined result, including the repeated 2 within T1, leaving 1, 2, 3, 4, which is 4 rows. UNION ALL keeps every row: 4 + 3 = 7. Answering 5 assumes only the values shared between the tables are removed.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "EXCEPT / MINUS",
+  "difficulty": "medium",
+  "question_en": "Table T1(X) has rows: (1), (2), (3), (4), (5). Table T2(X) has rows: (2), (4), (6). What is the output of SELECT X FROM T1 EXCEPT SELECT X FROM T2; (written with MINUS in Oracle)?",
+  "options": [
+   {
+    "en": "1, 3, 5"
+   },
+   {
+    "en": "2, 4"
+   },
+   {
+    "en": "6"
+   },
+   {
+    "en": "1, 3, 5, 6"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "EXCEPT (MINUS in Oracle) returns the rows of the first query that are not in the second: T1 minus {2, 4} leaves 1, 3 and 5. The value 6 is only in T2, so it never appears in T1 EXCEPT T2. 2 and 4 would be the INTERSECT result.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "Subquery with IN",
+  "difficulty": "medium",
+  "question_en": "Table EMP(ENO, ENAME, DNO) has rows: (1,'Asha',10), (2,'Ravi',20), (3,'Mona',30), (4,'Dev',10). Table DEPT(DNO, LOC) has rows: (10,'Delhi'), (20,'Pune'), (30,'Delhi'). What is the output of SELECT ENAME FROM EMP WHERE DNO IN (SELECT DNO FROM DEPT WHERE LOC = 'Delhi') ORDER BY ENO;?",
+  "options": [
+   {
+    "en": "Asha, Mona, Dev"
+   },
+   {
+    "en": "Asha, Dev"
+   },
+   {
+    "en": "Ravi"
+   },
+   {
+    "en": "Asha, Ravi, Mona, Dev"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The subquery returns the Delhi departments, 10 and 30. The outer query keeps employees whose DNO is in (10, 30): Asha (10), Mona (30) and Dev (10), in ENO order. Leaving out Mona would mean only department 10 had been found.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "Subquery with ALL and ANY",
+  "difficulty": "hard",
+  "question_en": "Table EMP(ENO, SAL, DEPT) has rows: (1,5000,'IT'), (2,7000,'HR'), (3,4000,'HR'), (4,8000,'IT'), (5,6000,'IT'), (6,3000,'FIN'). P: SELECT COUNT(*) FROM EMP WHERE SAL > ALL (SELECT SAL FROM EMP WHERE DEPT = 'HR'); Q: the same query with ANY in place of ALL. What do P and Q return?",
+  "options": [
+   {
+    "en": "P returns 4, Q returns 1"
+   },
+   {
+    "en": "P returns 2, Q returns 5"
+   },
+   {
+    "en": "P returns 1, Q returns 4"
+   },
+   {
+    "en": "P returns 1, Q returns 5"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The subquery returns the HR salaries (7000, 4000). > ALL means greater than every value, i.e. greater than 7000: only 8000, so P = 1. > ANY means greater than at least one value, i.e. greater than 4000: 5000, 7000, 8000 and 6000, so Q = 4. 4000 itself is not greater than 4000, so 5 is wrong.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "NOT EXISTS correlated subquery",
+  "difficulty": "medium",
+  "question_en": "Table DEPT(DNO, DNAME) has rows: (10,'IT'), (20,'HR'), (30,'FIN'), (40,'LAW'). Table EMP(ENO, DNO) has rows: (1,10), (2,10), (3,30). What is the output of SELECT DNAME FROM DEPT D WHERE NOT EXISTS (SELECT * FROM EMP E WHERE E.DNO = D.DNO) ORDER BY DNO;?",
+  "options": [
+   {
+    "en": "HR, LAW"
+   },
+   {
+    "en": "IT, FIN"
+   },
+   {
+    "en": "IT, IT, FIN"
+   },
+   {
+    "en": "LAW"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "For each department the subquery checks whether any employee has that DNO; NOT EXISTS keeps the departments where the subquery returns no row. IT (10) and FIN (30) have employees, so the result is HR and LAW. IT, FIN would be the EXISTS result, and EXISTS never repeats a department row.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "Second-highest salary",
+  "difficulty": "medium",
+  "question_en": "Table EMP(ID, SAL) has rows: (1,9000), (2,7000), (3,9000), (4,5000), (5,7000). What is the output of SELECT MAX(SAL) FROM EMP WHERE SAL < (SELECT MAX(SAL) FROM EMP);?",
+  "options": [
+   {
+    "en": "9000"
+   },
+   {
+    "en": "5000"
+   },
+   {
+    "en": "7000"
+   },
+   {
+    "en": "NULL"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The inner query finds the highest salary, 9000. The outer query takes the largest salary below 9000, which is 7000, so this is the standard second-highest-salary query and it handles the duplicate 9000s correctly. A query such as ORDER BY SAL DESC LIMIT 1 OFFSET 1 would wrongly return 9000 here, because of the duplicate.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "DISTINCT on several columns",
+  "difficulty": "medium",
+  "question_en": "Table EMP(ID, DEPT, CITY) has rows: (1,'IT','Delhi'), (2,'IT','Pune'), (3,'HR','Delhi'), (4,'IT','Delhi'), (5,'HR','Delhi'). How many rows does SELECT DISTINCT DEPT, CITY FROM EMP; return?",
+  "options": [
+   {
+    "en": "3"
+   },
+   {
+    "en": "2"
+   },
+   {
+    "en": "5"
+   },
+   {
+    "en": "4"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "DISTINCT applies to the whole combination of selected columns, not just the first column. The distinct pairs are (IT, Delhi), (IT, Pune) and (HR, Delhi), so 3 rows are returned. The answer 2 counts distinct DEPT values only.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "Correlated subquery - definition",
+  "difficulty": "easy",
+  "question_en": "A subquery that refers to a column of the outer query, and is therefore evaluated once for every row the outer query processes, is called a:",
+  "options": [
+   {
+    "en": "Correlated subquery"
+   },
+   {
+    "en": "Non-correlated subquery"
+   },
+   {
+    "en": "Inline view"
+   },
+   {
+    "en": "Scalar subquery"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A correlated subquery uses a value from the current outer row (for example WHERE E2.DEPT = E1.DEPT), so it must be re-evaluated for each outer row. A non-correlated subquery is independent and can be evaluated once. An inline view is a subquery in FROM, and a scalar subquery is one that returns a single value.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "Correlated subquery output",
+  "difficulty": "hard",
+  "question_en": "Table EMP(ENO, ENAME, SAL, DEPT) has rows: (1,'Asha',5000,'IT'), (2,'Ravi',7000,'HR'), (3,'Mona',8000,'IT'), (4,'Karan',3000,'HR'), (5,'Neha',6000,'IT'). What is the output of SELECT ENAME FROM EMP E WHERE SAL > (SELECT AVG(SAL) FROM EMP WHERE DEPT = E.DEPT) ORDER BY ENO;?",
+  "options": [
+   {
+    "en": "Ravi, Mona, Neha"
+   },
+   {
+    "en": "Mona"
+   },
+   {
+    "en": "Ravi, Mona"
+   },
+   {
+    "en": "Asha, Karan"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "For each employee the subquery computes the average of that employee's own department: IT = (5000 + 8000 + 6000) / 3 = 6333.33 and HR = (7000 + 3000) / 2 = 5000. Mona (8000 > 6333.33) and Ravi (7000 > 5000) qualify, while Neha (6000) does not. Ravi, Mona, Neha would be the result of comparing with the overall average, 5800.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "Views - definition",
+  "difficulty": "easy",
+  "question_en": "In SQL, a view is best described as:",
+  "options": [
+   {
+    "en": "a physical copy of a table that is saved on disk"
+   },
+   {
+    "en": "an index created to speed up searching a table"
+   },
+   {
+    "en": "a backup of a table taken at a fixed time"
+   },
+   {
+    "en": "a virtual table whose rows come from a stored SELECT query"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "CREATE VIEW stores only the defining query; whenever the view is used, its rows are produced from the base tables, so it is a virtual table that always shows current data. Physically stored copies are materialized views or backups, and an index is a separate access structure.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "Views - updatability",
+  "difficulty": "medium",
+  "question_en": "A view is created as CREATE VIEW DEPT_PAY AS SELECT DEPT, SUM(SAL) AS TOTAL FROM EMP GROUP BY DEPT; Which statement is true?",
+  "options": [
+   {
+    "en": "An UPDATE on DEPT_PAY is not allowed, as each row comes from a group"
+   },
+   {
+    "en": "Updating TOTAL in the view changes every SAL in that department"
+   },
+   {
+    "en": "DROP VIEW DEPT_PAY also deletes the EMP base table"
+   },
+   {
+    "en": "The view keeps its own copy of the totals stored on disk"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A view that uses GROUP BY, aggregate functions or DISTINCT is not updatable, because a view row does not correspond to a single base-table row, so the DBMS cannot know which rows to change. DROP VIEW removes only the view definition, and an ordinary view stores no data of its own.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "String functions - TRIM and LENGTH",
+  "difficulty": "easy",
+  "question_en": "What is the output of SELECT LENGTH(TRIM('  Delhi  '));? (The string has two spaces before and two after Delhi.)",
+  "options": [
+   {
+    "en": "9"
+   },
+   {
+    "en": "5"
+   },
+   {
+    "en": "7"
+   },
+   {
+    "en": "6"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "TRIM removes the leading and trailing spaces, leaving 'Delhi', and LENGTH of 'Delhi' is 5. Without TRIM the length would be 9, and LTRIM or RTRIM alone would leave 7. (In SQL Server, LENGTH is written LEN.)",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "String functions - SUBSTR",
+  "difficulty": "medium",
+  "question_en": "What is the output of SELECT SUBSTR('DATABASE', 3, 4); in MySQL?",
+  "options": [
+   {
+    "en": "ATAB"
+   },
+   {
+    "en": "TABAS"
+   },
+   {
+    "en": "BASE"
+   },
+   {
+    "en": "TABA"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "SUBSTR(string, start, length) counts positions from 1, so it starts at the 3rd character (T) and takes 4 characters: T, A, B, A, giving 'TABA'. Starting from position 2 would give 'ATAB'. SUBSTRING behaves the same way in MySQL and SQL Server.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "String functions - INSTR",
+  "difficulty": "medium",
+  "question_en": "What is the output of SELECT INSTR('COMPUTER', 'PUT'); in MySQL?",
+  "options": [
+   {
+    "en": "3"
+   },
+   {
+    "en": "5"
+   },
+   {
+    "en": "4"
+   },
+   {
+    "en": "0"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "INSTR(string, substring) returns the 1-based position of the first occurrence of the substring. In C-O-M-P-U-T-E-R the substring PUT starts at the 4th character, so the result is 4. It would return 0 only if the substring were absent; LOCATE('PUT', 'COMPUTER') gives the same 4.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "Concatenation in SQL Server",
+  "difficulty": "medium",
+  "question_en": "In Microsoft SQL Server, which expression produces the string 'TGT CS'?",
+  "options": [
+   {
+    "en": "'TGT' & ' ' & 'CS'"
+   },
+   {
+    "en": "'TGT' + ' ' + 'CS'"
+   },
+   {
+    "en": "'TGT' . ' ' . 'CS'"
+   },
+   {
+    "en": "'TGT' ## ' ' ## 'CS'"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "SQL Server uses + to join strings (it also has CONCAT() from SQL Server 2012). Oracle and standard SQL use ||, and MySQL uses CONCAT(). & is a bitwise AND operator in SQL Server, while . and ## do not concatenate strings in SQL.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "Concatenation in MySQL",
+  "difficulty": "medium",
+  "question_en": "In MySQL with default settings (PIPES_AS_CONCAT not enabled), which expression returns 'DSSSB2024'?",
+  "options": [
+   {
+    "en": "'DSSSB' || '2024'"
+   },
+   {
+    "en": "'DSSSB' + '2024'"
+   },
+   {
+    "en": "CONCAT('DSSSB', '2024')"
+   },
+   {
+    "en": "'DSSSB' & '2024'"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "In MySQL, CONCAT() is the way to join strings. By default || is the logical OR operator, so 'DSSSB' || '2024' gives 1, and + is arithmetic addition, so 'DSSSB' + '2024' becomes 0 + 2024 = 2024. & is bitwise AND. Only with sql_mode PIPES_AS_CONCAT does || join strings as in Oracle.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "CEILING and FLOOR",
+  "difficulty": "medium",
+  "question_en": "What is the output of SELECT CEILING(-4.3), FLOOR(-4.3);?",
+  "options": [
+   {
+    "en": "-5 and -4"
+   },
+   {
+    "en": "-4 and -4"
+   },
+   {
+    "en": "-4 and -5"
+   },
+   {
+    "en": "-5 and -5"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "CEILING (CEIL in MySQL and Oracle) returns the smallest integer greater than or equal to the value; for -4.3 that is -4, since -4 > -4.3. FLOOR returns the largest integer less than or equal to it, which is -5. Swapping them is the usual mistake with negative numbers.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "ROUND with negative places",
+  "difficulty": "hard",
+  "question_en": "What is the output of SELECT ROUND(1257.38, -2); in MySQL?",
+  "options": [
+   {
+    "en": "1300"
+   },
+   {
+    "en": "1200"
+   },
+   {
+    "en": "1257.4"
+   },
+   {
+    "en": "1260"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A negative second argument rounds to the left of the decimal point: -2 rounds to the nearest hundred. 1257.38 lies between 1200 and 1300 and its tens-and-units part (57.38) is 50 or more, so it rounds up to 1300. ROUND(1257.38, -1) would give 1260 and ROUND(1257.38, 1) would give 1257.4.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "ROUND vs TRUNCATE",
+  "difficulty": "medium",
+  "question_en": "What is the output of SELECT ROUND(15.789, 1), TRUNCATE(15.789, 1); in MySQL?",
+  "options": [
+   {
+    "en": "15.7 and 15.8"
+   },
+   {
+    "en": "15.8 and 15.7"
+   },
+   {
+    "en": "15.8 and 15.8"
+   },
+   {
+    "en": "16 and 15"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "ROUND(15.789, 1) keeps one decimal place and rounds using the next digit (8), giving 15.8. TRUNCATE(15.789, 1) simply cuts off the extra digits without rounding, giving 15.7. Oracle calls this TRUNC, and SQL Server gets it with ROUND(15.789, 1, 1).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "MOD with negative numbers",
+  "difficulty": "hard",
+  "question_en": "What is the output of SELECT MOD(-17, 5), MOD(17, -5); in MySQL?",
+  "options": [
+   {
+    "en": "3 and -3"
+   },
+   {
+    "en": "-2 and -2"
+   },
+   {
+    "en": "2 and -2"
+   },
+   {
+    "en": "-2 and 2"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "In MySQL (and Oracle), the result of MOD takes the sign of the dividend, the first argument. -17 = 5 x (-3) + (-2), so MOD(-17, 5) = -2, and 17 = (-5) x (-3) + 2, so MOD(17, -5) = 2. The answer 3 and -3 follows the floor-division rule used by Python's %, not SQL.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "CURDATE vs NOW",
+  "difficulty": "easy",
+  "question_en": "In MySQL, which function returns only the current date (for example 2024-03-15), without the time part?",
+  "options": [
+   {
+    "en": "NOW()"
+   },
+   {
+    "en": "CURDATE()"
+   },
+   {
+    "en": "SYSDATE()"
+   },
+   {
+    "en": "CURRENT_TIMESTAMP()"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "CURDATE() (also CURRENT_DATE) returns just the date in YYYY-MM-DD form. NOW(), SYSDATE() and CURRENT_TIMESTAMP() all return the date and the time, such as 2024-03-15 10:42:07. SQL Server has no CURDATE; it uses CAST(GETDATE() AS DATE).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "CURRENT_TIMESTAMP",
+  "difficulty": "medium",
+  "question_en": "Which date-time function is defined in the ANSI SQL standard and works in both MySQL and SQL Server to return the current date and time?",
+  "options": [
+   {
+    "en": "CURRENT_TIMESTAMP"
+   },
+   {
+    "en": "GETDATE()"
+   },
+   {
+    "en": "SYSDATETIME()"
+   },
+   {
+    "en": "CURDATE()"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "CURRENT_TIMESTAMP is the ANSI standard function; SQL Server treats it as the same as GETDATE(), and in MySQL it is a synonym of NOW(). GETDATE() and SYSDATETIME() exist only in SQL Server, and CURDATE() exists only in MySQL and returns the date alone.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "SYSDATETIMEOFFSET",
+  "difficulty": "medium",
+  "question_en": "In SQL Server, which function returns the current system date and time together with the server's time-zone offset (such as +05:30)?",
+  "options": [
+   {
+    "en": "SYSDATETIME()"
+   },
+   {
+    "en": "SYSDATETIMEOFFSET()"
+   },
+   {
+    "en": "GETDATE()"
+   },
+   {
+    "en": "GETUTCDATE()"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "SYSDATETIMEOFFSET() returns a datetimeoffset value that includes the time-zone offset. SYSDATETIME() and GETDATE() return local date and time without any offset, and GETUTCDATE() returns the UTC date and time, also without an offset.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "SYSDATETIME vs GETDATE",
+  "difficulty": "hard",
+  "question_en": "How does SYSDATETIME() differ from GETDATE() in SQL Server?",
+  "options": [
+   {
+    "en": "It returns only the date, while GETDATE() returns date and time"
+   },
+   {
+    "en": "It adds the time-zone offset, which GETDATE() does not include"
+   },
+   {
+    "en": "It returns datetime2(7), with finer fractional-second precision"
+   },
+   {
+    "en": "It returns UTC time, while GETDATE() returns the local time"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Both return the local system date and time without a time-zone offset. GETDATE() returns datetime (accurate to about 3.33 milliseconds), while SYSDATETIME() returns datetime2(7), precise to 100 nanoseconds. The offset version is SYSDATETIMEOFFSET() and the UTC version is SYSUTCDATETIME().",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "DATEDIFF in MySQL",
+  "difficulty": "medium",
+  "question_en": "What is the output of SELECT DATEDIFF('2024-03-10', '2024-02-25'); in MySQL?",
+  "options": [
+   {
+    "en": "-14"
+   },
+   {
+    "en": "14"
+   },
+   {
+    "en": "13"
+   },
+   {
+    "en": "15"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "MySQL's DATEDIFF(expr1, expr2) takes only two dates and returns expr1 minus expr2 in days. February 2024 has 29 days (leap year), so 25 Feb to 29 Feb is 4 days and then 10 more days to 10 March, giving 14. The answer is positive because the later date is written first; SQL Server's DATEDIFF instead takes (datepart, startdate, enddate).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "DATEDIFF in SQL Server",
+  "difficulty": "hard",
+  "question_en": "What is the output of SELECT DATEDIFF(year, '2023-12-31', '2024-01-01'); in SQL Server?",
+  "options": [
+   {
+    "en": "0"
+   },
+   {
+    "en": "-1"
+   },
+   {
+    "en": "Error"
+   },
+   {
+    "en": "1"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "SQL Server's DATEDIFF(datepart, startdate, enddate) counts how many datepart boundaries are crossed going from startdate to enddate. Going from 31 Dec 2023 to 1 Jan 2024 crosses one year boundary, so the result is 1, even though only one day has passed. It would be negative only if enddate were earlier than startdate.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "DATEADD",
+  "difficulty": "hard",
+  "question_en": "What is the date part of the output of SELECT DATEADD(month, 1, '2024-01-31'); in SQL Server?",
+  "options": [
+   {
+    "en": "2024-02-29"
+   },
+   {
+    "en": "2024-03-02"
+   },
+   {
+    "en": "2024-03-01"
+   },
+   {
+    "en": "2024-02-28"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "DATEADD(datepart, number, date) adds the given number of units. When a month is added and the day (31) does not exist in the new month, SQL Server returns the last day of that month. February 2024 has 29 days because 2024 is a leap year, so the result is 2024-02-29, not a date that spills into March.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "GRANT",
+  "difficulty": "easy",
+  "question_en": "Which statement lets user RAVI read rows from and add rows to table EMP?",
+  "options": [
+   {
+    "en": "GRANT SELECT, INSERT ON EMP TO RAVI;"
+   },
+   {
+    "en": "GRANT RAVI SELECT, INSERT FROM EMP;"
+   },
+   {
+    "en": "ALLOW SELECT, INSERT ON EMP FOR RAVI;"
+   },
+   {
+    "en": "REVOKE SELECT, INSERT ON EMP TO RAVI;"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The syntax is GRANT privilege_list ON object TO user. SELECT allows reading and INSERT allows adding rows. REVOKE takes privileges away and is written REVOKE ... ON EMP FROM RAVI, while ALLOW is not an SQL command.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "WITH GRANT OPTION",
+  "difficulty": "easy",
+  "question_en": "What does WITH GRANT OPTION add in GRANT UPDATE ON EMP TO MEENA WITH GRANT OPTION;?",
+  "options": [
+   {
+    "en": "MEENA may also drop the EMP table from the database"
+   },
+   {
+    "en": "MEENA may pass the UPDATE privilege on EMP on to other users"
+   },
+   {
+    "en": "MEENA gets every privilege on EMP, not only UPDATE"
+   },
+   {
+    "en": "The privilege can never be revoked from MEENA later"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "WITH GRANT OPTION lets the grantee grant the same privilege to other users. It does not widen the privilege: MEENA still has only UPDATE on EMP, not DROP or the other privileges, and the grantor can still revoke it (with CASCADE, the users MEENA granted it to also lose it).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "REVOKE CASCADE",
+  "difficulty": "medium",
+  "question_en": "User A granted SELECT on EMP to B WITH GRANT OPTION, and B then granted it to C. In standard SQL, what happens when A runs REVOKE SELECT ON EMP FROM B CASCADE;?",
+  "options": [
+   {
+    "en": "Only B loses it, and C keeps it"
+   },
+   {
+    "en": "Only C loses it, and B keeps it"
+   },
+   {
+    "en": "The REVOKE fails because C holds it"
+   },
+   {
+    "en": "Both B and C lose the SELECT privilege"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "With CASCADE, revoking from B also revokes every privilege that depended on B's grant, so C (who got it only from B) loses it too. With RESTRICT the REVOKE would fail because a dependent grant exists. B obviously loses it since B is the user named in the REVOKE.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "SAVEPOINT and ROLLBACK TO",
+  "difficulty": "medium",
+  "question_en": "Table ACC(ID, BAL) has rows: (1,1000), (2,2000). These statements run in order: START TRANSACTION; INSERT INTO ACC VALUES (3, 3000); SAVEPOINT S1; DELETE FROM ACC WHERE ID = 1; ROLLBACK TO S1; COMMIT; What does SELECT COUNT(*) FROM ACC; then return?",
+  "options": [
+   {
+    "en": "2"
+   },
+   {
+    "en": "1"
+   },
+   {
+    "en": "4"
+   },
+   {
+    "en": "3"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "ROLLBACK TO S1 undoes only the work done after the savepoint, i.e. the DELETE, while the INSERT made before S1 stays. COMMIT then makes it permanent, so the table has rows 1, 2 and 3. A full ROLLBACK would have left 2 rows, and without any rollback the count would also be 2.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "COMMIT and ROLLBACK",
+  "difficulty": "medium",
+  "question_en": "Table ACC(ID, BAL) has rows: (1,1000). These statements run in order: START TRANSACTION; UPDATE ACC SET BAL = BAL + 500 WHERE ID = 1; COMMIT; START TRANSACTION; UPDATE ACC SET BAL = BAL - 200 WHERE ID = 1; ROLLBACK; What is BAL for ID 1 now?",
+  "options": [
+   {
+    "en": "1500"
+   },
+   {
+    "en": "1300"
+   },
+   {
+    "en": "1000"
+   },
+   {
+    "en": "800"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The first transaction adds 500 and is committed, so 1500 becomes permanent. The second transaction subtracts 200 but is rolled back, which restores 1500. A ROLLBACK can never undo work that has already been committed, so 1000 is wrong, and 1300 would need the second change to be committed.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "Implicit COMMIT by DDL",
+  "difficulty": "hard",
+  "question_en": "In MySQL: START TRANSACTION; INSERT INTO T VALUES (5); CREATE TABLE T2 (A INT); ROLLBACK; What happens to the row inserted into T?",
+  "options": [
+   {
+    "en": "It stays, because CREATE TABLE caused an implicit COMMIT"
+   },
+   {
+    "en": "It is removed, because ROLLBACK undoes the whole transaction"
+   },
+   {
+    "en": "It is removed, but the new table T2 still remains"
+   },
+   {
+    "en": "Nothing, because CREATE TABLE fails inside a transaction"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "In MySQL (and Oracle), DDL statements such as CREATE, ALTER, DROP and TRUNCATE cause an implicit COMMIT before they run, so the INSERT is committed when CREATE TABLE executes. The later ROLLBACK has nothing left to undo, so the row stays and T2 exists. DDL is allowed inside a transaction; it just ends the transaction.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "UPDATE then aggregate",
+  "difficulty": "medium",
+  "question_en": "Table EMP(ID, SAL, DEPT) has rows: (1,5000,'IT'), (2,7000,'HR'), (3,4000,'IT'), (4,6000,'HR'). After UPDATE EMP SET SAL = SAL + 1000 WHERE DEPT = 'IT'; what does SELECT SUM(SAL) FROM EMP; return?",
+  "options": [
+   {
+    "en": "22000"
+   },
+   {
+    "en": "26000"
+   },
+   {
+    "en": "24000"
+   },
+   {
+    "en": "23000"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The original total is 5000 + 7000 + 4000 + 6000 = 22000. The UPDATE adds 1000 to each of the two IT rows, so the total rises by 2000 to 24000. 26000 would mean all four rows were updated, which happens only if the WHERE clause is left out.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_sql",
+  "subtopic": "Union compatibility",
+  "difficulty": "easy",
+  "question_en": "Two SELECT statements can be combined with UNION, INTERSECT or EXCEPT only if they:",
+  "options": [
+   {
+    "en": "come from tables that have the same primary key"
+   },
+   {
+    "en": "use exactly the same column names in both lists"
+   },
+   {
+    "en": "return the same number of columns with compatible data types"
+   },
+   {
+    "en": "return the same number of rows as each other"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Set operations need union-compatible inputs: the same number of columns, with matching data types in corresponding positions. Column names may differ (the result takes the names of the first SELECT), and the row counts and keys do not matter. For example, SELECT A, B FROM T1 UNION SELECT C FROM T2 fails because the column counts differ.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_txn",
+  "subtopic": "ACID - component responsible",
+  "difficulty": "medium",
+  "question_en": "According to Korth, which component of a database system is responsible for ensuring the isolation property of transactions?",
+  "options": [
+   {
+    "en": "Recovery system"
+   },
+   {
+    "en": "Application programmer"
+   },
+   {
+    "en": "Concurrency-control system"
+   },
+   {
+    "en": "Query optimizer"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Korth assigns each ACID property to a component: atomicity and durability are ensured by the recovery system, consistency is the responsibility of the application programmer (helped by integrity constraints), and isolation is ensured by the concurrency-control system. The query optimizer only chooses execution plans.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_txn",
+  "subtopic": "ACID - durability",
+  "difficulty": "easy",
+  "question_en": "A fund transfer commits, and a moment later the power fails. After restart, the transfer is still reflected in the database. Which ACID property does this show?",
+  "options": [
+   {
+    "en": "Durability"
+   },
+   {
+    "en": "Atomicity"
+   },
+   {
+    "en": "Consistency"
+   },
+   {
+    "en": "Isolation"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Durability means that once a transaction commits, its changes survive any later system failure. Atomicity is about all-or-nothing execution of a transaction that has not finished, consistency about keeping integrity constraints, and isolation about concurrent transactions not seeing each other's partial work.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_txn",
+  "subtopic": "Transaction states",
+  "difficulty": "medium",
+  "question_en": "A transaction has executed its final statement, but its updates may still be only in main memory and it has not yet committed. In which state is it?",
+  "options": [
+   {
+    "en": "Active"
+   },
+   {
+    "en": "Committed"
+   },
+   {
+    "en": "Partially committed"
+   },
+   {
+    "en": "Failed"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The states are active, partially committed (after the last statement executes), committed (after the commit completes, once the updates are safely recorded), failed and aborted. A transaction that has finished its last statement but not completed the commit is partially committed; a hardware failure at this point can still send it to the failed state.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_txn",
+  "subtopic": "Number of serial schedules",
+  "difficulty": "easy",
+  "question_en": "How many different serial schedules are possible for four transactions T1, T2, T3 and T4?",
+  "options": [
+   {
+    "en": "24"
+   },
+   {
+    "en": "4"
+   },
+   {
+    "en": "16"
+   },
+   {
+    "en": "12"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A serial schedule runs the transactions one after another in some order, so the number of serial schedules equals the number of orderings of n transactions, n!. For n = 4 that is 4 x 3 x 2 x 1 = 24. The answer 16 is 4 squared and has no meaning here.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_txn",
+  "subtopic": "Conflicting operations",
+  "difficulty": "easy",
+  "question_en": "Which pair of operations in a schedule is a conflicting pair?",
+  "options": [
+   {
+    "en": "R1(A) and W2(A)"
+   },
+   {
+    "en": "R1(A) and R2(A)"
+   },
+   {
+    "en": "W1(A) and W2(B)"
+   },
+   {
+    "en": "R1(A) and W1(A)"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Two operations conflict when they belong to different transactions, access the same data item and at least one of them is a write. R1(A) and W2(A) meet all three conditions. Two reads never conflict, W1(A) and W2(B) touch different items, and R1(A) and W1(A) belong to the same transaction.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_txn",
+  "subtopic": "Precedence graph - equivalent serial order",
+  "difficulty": "medium",
+  "question_en": "Consider the schedule S: R2(A); R1(B); W2(A); R1(A); W1(B); R3(B); W3(A). Which serial schedule is S conflict equivalent to?",
+  "options": [
+   {
+    "en": "T1 → T2 → T3"
+   },
+   {
+    "en": "T2 → T3 → T1"
+   },
+   {
+    "en": "T2 → T1 → T3"
+   },
+   {
+    "en": "S is not conflict serializable"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Conflicting pairs give the edges: W2(A) before R1(A) gives T2 → T1; R2(A) and W2(A) before W3(A) give T2 → T3; R1(A) before W3(A) and W1(B) before R3(B) give T1 → T3. The precedence graph has no cycle, and its only topological order is T2, T1, T3.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_txn",
+  "subtopic": "Conflict serializability - cycle",
+  "difficulty": "hard",
+  "question_en": "Which of the following schedules is NOT conflict serializable?",
+  "options": [
+   {
+    "en": "R1(A); W1(A); R2(A); W2(A)"
+   },
+   {
+    "en": "R2(B); W2(B); R1(A); W1(B)"
+   },
+   {
+    "en": "R1(A); R2(B); W2(A); W1(B)"
+   },
+   {
+    "en": "R1(A); R2(A); W1(B); W2(B)"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "In R1(A); R2(B); W2(A); W1(B), R1(A) before W2(A) gives T1 → T2 and R2(B) before W1(B) gives T2 → T1, a cycle, so it is not conflict serializable. In each of the other schedules all conflicting pairs point the same way (T1 → T2, T2 → T1 and T1 → T2 respectively), so each is equivalent to a serial order.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_txn",
+  "subtopic": "View serializability - blind writes",
+  "difficulty": "hard",
+  "question_en": "Consider the schedule S: R1(A); W2(A); W1(A); W3(A). Which statement is correct?",
+  "options": [
+   {
+    "en": "S is both conflict serializable and view serializable"
+   },
+   {
+    "en": "S is neither view serializable nor conflict serializable"
+   },
+   {
+    "en": "S is conflict serializable but not view serializable"
+   },
+   {
+    "en": "S is view serializable but not conflict serializable"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "R1(A) before W2(A) gives T1 → T2 and W2(A) before W1(A) gives T2 → T1, so the precedence graph has a cycle and S is not conflict serializable. But S is view equivalent to the serial order T1, T2, T3: T1 reads the initial A in both, and T3 makes the final write in both. The blind writes of T2 and T3 make this possible, and since every conflict serializable schedule is also view serializable, the option 'conflict serializable but not view serializable' can never be true.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_txn",
+  "subtopic": "Recoverable schedule",
+  "difficulty": "medium",
+  "question_en": "A schedule is recoverable if, whenever a transaction Tj reads a data item previously written by Ti, then:",
+  "options": [
+   {
+    "en": "Tj commits before Ti commits"
+   },
+   {
+    "en": "Ti reads that item again before it commits"
+   },
+   {
+    "en": "Ti and Tj commit at the same instant"
+   },
+   {
+    "en": "Ti commits before Tj commits"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "In a recoverable schedule, a transaction that read data from Ti may commit only after Ti has committed; otherwise, if Ti later aborts, Tj would already have committed using a value that never officially existed. If Tj commits first, the schedule is non-recoverable. A cascadeless schedule is stricter: Tj may read the item only after Ti commits.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_txn",
+  "subtopic": "Recoverable vs cascadeless",
+  "difficulty": "hard",
+  "question_en": "Consider the schedule S: W1(A); R2(A); W2(B); C1; C2 (C = commit). Which statement is true?",
+  "options": [
+   {
+    "en": "S is cascadeless but not recoverable"
+   },
+   {
+    "en": "S is both recoverable and cascadeless"
+   },
+   {
+    "en": "S is neither recoverable nor cascadeless"
+   },
+   {
+    "en": "S is recoverable but not cascadeless"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "T2 reads A written by T1, and T1 commits before T2 commits, so S is recoverable. But T2 reads A before T1 has committed, so if T1 aborted, T2 would have to be rolled back too (a cascading rollback), and S is not cascadeless. Every cascadeless schedule is recoverable, so the first distractor can never happen.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_txn",
+  "subtopic": "Dirty read",
+  "difficulty": "easy",
+  "question_en": "T2 reads a value written by T1 before T1 commits, and T1 later aborts, so T2 has used a value that never officially existed. This problem is called:",
+  "options": [
+   {
+    "en": "Lost update"
+   },
+   {
+    "en": "Dirty read"
+   },
+   {
+    "en": "Unrepeatable read"
+   },
+   {
+    "en": "Phantom read"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Reading uncommitted data is a dirty read, also called the temporary update problem. A lost update happens when one transaction's write overwrites another's, an unrepeatable read when the same item gives different values on two reads, and a phantom when re-running a query finds new rows.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_txn",
+  "subtopic": "Lost update numerical",
+  "difficulty": "medium",
+  "question_en": "Initially A = 100. T1: read(A); A := A - 20; write(A). T2: read(A); A := A + 30; write(A). They run in the order R1(A); R2(A); W1(A); W2(A). What is the final value of A?",
+  "options": [
+   {
+    "en": "110"
+   },
+   {
+    "en": "80"
+   },
+   {
+    "en": "130"
+   },
+   {
+    "en": "100"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Both transactions read A = 100. T1 writes 100 - 20 = 80, then T2 writes its own value 100 + 30 = 130, overwriting T1's update. The final value is 130 instead of the correct 110 (either serial order gives 110), which is the lost update problem.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_txn",
+  "subtopic": "Isolation levels",
+  "difficulty": "medium",
+  "question_en": "Which SQL isolation level prevents dirty reads but still allows unrepeatable (non-repeatable) reads?",
+  "options": [
+   {
+    "en": "READ COMMITTED"
+   },
+   {
+    "en": "READ UNCOMMITTED"
+   },
+   {
+    "en": "REPEATABLE READ"
+   },
+   {
+    "en": "SERIALIZABLE"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "READ COMMITTED allows a transaction to read only committed data, so dirty reads cannot occur, but a value read twice may change in between if another transaction commits. READ UNCOMMITTED allows dirty reads, REPEATABLE READ also prevents unrepeatable reads (phantoms may remain), and SERIALIZABLE prevents all three anomalies.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_txn",
+  "subtopic": "Two-phase locking phases",
+  "difficulty": "easy",
+  "question_en": "In two-phase locking (2PL), during the shrinking phase a transaction:",
+  "options": [
+   {
+    "en": "may release locks but cannot obtain any new lock"
+   },
+   {
+    "en": "may obtain new locks but cannot release any lock"
+   },
+   {
+    "en": "may obtain and release locks without restriction"
+   },
+   {
+    "en": "must release all of its locks in a single step"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "In 2PL, a transaction first goes through a growing phase, in which it obtains locks and releases none, and then a shrinking phase, in which it releases locks and obtains none. The point where it gets its last lock is the lock point. The first distractor describes the growing phase.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_txn",
+  "subtopic": "Strict two-phase locking",
+  "difficulty": "medium",
+  "question_en": "Strict two-phase locking differs from basic 2PL because a transaction:",
+  "options": [
+   {
+    "en": "obtains all its locks before it starts executing"
+   },
+   {
+    "en": "holds all its exclusive locks until it commits or aborts"
+   },
+   {
+    "en": "releases each lock right after using the item"
+   },
+   {
+    "en": "is never allowed to take shared locks on items"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Strict 2PL keeps every exclusive (write) lock until the transaction commits or aborts, so no other transaction can read uncommitted data; this gives cascadeless schedules. Rigorous 2PL holds all locks, shared ones too, until commit. Obtaining all locks before starting is conservative 2PL, which avoids deadlock.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_txn",
+  "subtopic": "2PL and deadlock",
+  "difficulty": "medium",
+  "question_en": "Which statement about basic two-phase locking is correct?",
+  "options": [
+   {
+    "en": "It prevents deadlock but does not ensure conflict serializability"
+   },
+   {
+    "en": "It ensures conflict serializability and prevents deadlock"
+   },
+   {
+    "en": "It ensures conflict serializability but does not prevent deadlock"
+   },
+   {
+    "en": "It ensures neither conflict serializability nor deadlock freedom"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Every schedule produced under 2PL is conflict serializable, with transactions ordered by their lock points. But two transactions can each hold a lock the other needs, for example T1 holds X and wants Y while T2 holds Y and wants X, so deadlock is still possible. Conservative 2PL or schemes such as wait-die are needed to avoid it.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_txn",
+  "subtopic": "Deadlock detection - wait-for graph",
+  "difficulty": "easy",
+  "question_en": "A DBMS detects deadlock using a wait-for graph, in which an edge Ti → Tj means Ti is waiting for a lock held by Tj. A deadlock exists exactly when the graph:",
+  "options": [
+   {
+    "en": "has more edges than nodes"
+   },
+   {
+    "en": "has a node with no outgoing edge"
+   },
+   {
+    "en": "contains a cycle"
+   },
+   {
+    "en": "is not connected"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "A cycle such as T1 → T2 → T1 means each transaction in it waits for another in the same cycle, so none can ever proceed; that is a deadlock. The DBMS then picks a victim to roll back. A node with no outgoing edge is a transaction that is not waiting, and the edge count or connectedness alone says nothing.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_txn",
+  "subtopic": "Wait-die vs wound-wait",
+  "difficulty": "hard",
+  "question_en": "T1 (timestamp 5) requests a lock on item X, which is held by T2 (timestamp 10). What happens under wait-die and under wound-wait?",
+  "options": [
+   {
+    "en": "Wait-die: T1 is rolled back; wound-wait: T1 waits"
+   },
+   {
+    "en": "Under both schemes, T1 waits for T2 to finish"
+   },
+   {
+    "en": "Wait-die: T1 waits; wound-wait: T2 is rolled back"
+   },
+   {
+    "en": "Under both schemes, T2 is rolled back at once"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The smaller timestamp means T1 is older. In wait-die, an older transaction may wait for a younger one, so T1 waits (a younger requester would die instead). In wound-wait, an older requester wounds the younger holder, so T2 is rolled back (a younger requester would wait). Both schemes avoid deadlock by never letting a cycle of waits form.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_txn",
+  "subtopic": "Timestamp-ordering protocol",
+  "difficulty": "hard",
+  "question_en": "Under the basic timestamp-ordering protocol, transaction T with TS(T) = 12 issues write(Q). Currently R-timestamp(Q) = 15 and W-timestamp(Q) = 10. What happens?",
+  "options": [
+   {
+    "en": "The write runs and W-timestamp(Q) becomes 12"
+   },
+   {
+    "en": "The write is rejected and T is rolled back"
+   },
+   {
+    "en": "The write is ignored and T simply continues"
+   },
+   {
+    "en": "T waits until the transaction with timestamp 15 ends"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "For write(Q), if TS(T) < R-timestamp(Q), a younger transaction (timestamp 15) has already read Q, and T's value would have been needed earlier, so the write is rejected and T is rolled back. Here 12 < 15. Ignoring the write is Thomas' write rule, which applies only when TS(T) < W-timestamp(Q), and timestamp protocols never make transactions wait.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_txn",
+  "subtopic": "Write-ahead logging and checkpoints",
+  "difficulty": "medium",
+  "question_en": "The write-ahead logging (WAL) rule used in recovery requires that:",
+  "options": [
+   {
+    "en": "the changed data block is written to disk before its log record"
+   },
+   {
+    "en": "an update's log record reaches stable storage before the changed block"
+   },
+   {
+    "en": "log records are written only after the transaction commits"
+   },
+   {
+    "en": "a checkpoint is taken before every single write operation"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Under WAL, the log record describing a change must be forced to stable storage before the modified data block is written to the database, and all log records of a transaction must be on disk before it commits. This lets recovery undo or redo any change. Checkpoints are taken periodically, not on every write, to limit how much of the log must be scanned after a crash.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_index",
+  "subtopic": "Primary index - block anchor",
+  "difficulty": "medium",
+  "question_en": "In a primary index (Navathe), each index entry holds the primary key value of the ______ record of a data block, called the block anchor, together with a pointer to that block.",
+  "options": [
+   {
+    "en": "last"
+   },
+   {
+    "en": "first"
+   },
+   {
+    "en": "middle"
+   },
+   {
+    "en": "second"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "A primary index is an ordered file of fixed-length entries <K(i), P(i)>, one per data block, where K(i) is the key of the first record in block i (the anchor record) and P(i) points to the block. Because there is one entry per block rather than per record, the primary index is sparse.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_index",
+  "subtopic": "Clustering index",
+  "difficulty": "medium",
+  "question_en": "The records of a file are physically ordered on a non-key field, DEPT_NO, which does not have a distinct value for every record. An index built on DEPT_NO is a:",
+  "options": [
+   {
+    "en": "Primary index"
+   },
+   {
+    "en": "Secondary index"
+   },
+   {
+    "en": "Hash index"
+   },
+   {
+    "en": "Clustering index"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "A clustering index is defined on the ordering field of a file when that field is not a key, so many records share a value; it has one entry for each distinct value, pointing to the first block holding it. A primary index needs the ordering field to be a key, and a secondary index is on a non-ordering field.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_index",
+  "subtopic": "Secondary index",
+  "difficulty": "medium",
+  "question_en": "Which statement about a secondary index is correct?",
+  "options": [
+   {
+    "en": "It must be built on the field by which the file is sorted"
+   },
+   {
+    "en": "It is built on a non-ordering field, and a file may have several"
+   },
+   {
+    "en": "A data file can have at most one secondary index"
+   },
+   {
+    "en": "It always has exactly one entry for each data block"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "A secondary index gives another access path on a field that is not the physical ordering field, so a file can have many of them, while it can have at most one primary or clustering index. Because the records are not ordered on that field, a secondary index on a key is dense, with one entry per record rather than per block.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_index",
+  "subtopic": "Dense vs sparse index",
+  "difficulty": "easy",
+  "question_en": "An index that has entries for only some of the search-key values, for example one entry per data block, is called a:",
+  "options": [
+   {
+    "en": "Dense index"
+   },
+   {
+    "en": "Secondary index"
+   },
+   {
+    "en": "Hash index"
+   },
+   {
+    "en": "Sparse (non-dense) index"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "A sparse or non-dense index has entries for only some search-key values, such as the first key of each block; a primary index is an example. A dense index has an entry for every search-key value (every record), as a secondary index on a key does.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_index",
+  "subtopic": "Multilevel index",
+  "difficulty": "medium",
+  "question_en": "In a multilevel index, the second level is built by:",
+  "options": [
+   {
+    "en": "building a hash table on the key field of the data file"
+   },
+   {
+    "en": "creating a primary index on the first-level index, treated as an ordered file"
+   },
+   {
+    "en": "storing a second copy of the data file in sorted order"
+   },
+   {
+    "en": "creating a secondary index on a non-key field of the data file"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The first-level index is itself an ordered file with distinct key values, so a primary index (one entry per block of the first level) can be built on it; this repeats until the top level fits in one block. Each level reduces the search space by the fan-out fo (the index blocking factor), so a search needs about log base fo of the number of blocks accesses, instead of log base 2.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_index",
+  "subtopic": "Index blocks numerical",
+  "difficulty": "hard",
+  "question_en": "An ordered file has 40,000 fixed-length records of 200 bytes each, stored unspanned in blocks of 2048 bytes. A primary index is built on the 10-byte key field, with 6-byte block pointers. How many blocks does the (single-level) primary index occupy?",
+  "options": [
+   {
+    "en": "32"
+   },
+   {
+    "en": "313"
+   },
+   {
+    "en": "250"
+   },
+   {
+    "en": "40"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Blocking factor bfr = floor(2048 / 200) = 10, so the file needs 40,000 / 10 = 4000 blocks, and the primary index has one entry per block: 4000 entries. Each entry is 10 + 6 = 16 bytes, so floor(2048 / 16) = 128 entries fit in a block, and the index needs ceil(4000 / 128) = 32 blocks. 313 is what a dense index with one entry per record would need (ceil(40,000 / 128)).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_index",
+  "subtopic": "Blocking factor numerical",
+  "difficulty": "medium",
+  "question_en": "The block size is 4096 bytes and each fixed-length record is 150 bytes, stored unspanned (a record may not cross a block boundary). How many blocks are needed to store 10,000 records?",
+  "options": [
+   {
+    "en": "367"
+   },
+   {
+    "en": "371"
+   },
+   {
+    "en": "370"
+   },
+   {
+    "en": "27"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The blocking factor is floor(4096 / 150) = 27 records per block; the 46 leftover bytes in each block stay unused because records are unspanned. The file needs ceil(10,000 / 27) = ceil(370.37) = 371 blocks. 367 comes from dividing the total bytes (1,500,000 / 4096), which is valid only for spanned records.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_index",
+  "subtopic": "B-tree vs B+ tree",
+  "difficulty": "medium",
+  "question_en": "Which feature makes a B+ tree better than a B-tree for range queries such as SAL BETWEEN 3000 AND 5000?",
+  "options": [
+   {
+    "en": "Every internal node stores record pointers along with its keys"
+   },
+   {
+    "en": "All data pointers are in leaf nodes, which are linked in key order"
+   },
+   {
+    "en": "A B+ tree is always exactly two levels deep in the index"
+   },
+   {
+    "en": "A B+ tree never needs to split a node during insertion"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "In a B+ tree, record (data) pointers are kept only in the leaf nodes, and the leaves are chained in key order, so after finding 3000 the search simply walks along the leaves up to 5000. In a B-tree, data pointers are also kept in internal nodes and there is no leaf chain, which is the first distractor. Both trees grow and split nodes as keys are inserted.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_index",
+  "subtopic": "Extendible hashing",
+  "difficulty": "hard",
+  "question_en": "Which hashing scheme keeps a directory of 2^d bucket addresses, where d is the global depth, and doubles the directory when a bucket whose local depth equals d overflows?",
+  "options": [
+   {
+    "en": "Extendible hashing"
+   },
+   {
+    "en": "Static hashing with chaining"
+   },
+   {
+    "en": "Linear hashing"
+   },
+   {
+    "en": "Open addressing"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Extendible hashing uses the first (or last) d bits of the hash value to index a directory of 2^d entries; a full bucket with local depth less than d is just split, but if its local depth equals d the directory is doubled. Linear hashing also grows the file dynamically but needs no directory, and static hashing has a fixed number of buckets.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_index",
+  "subtopic": "Hash index and range queries",
+  "difficulty": "easy",
+  "question_en": "For the query SELECT * FROM EMP WHERE SAL BETWEEN 30000 AND 50000;, which access structure on SAL is the least helpful?",
+  "options": [
+   {
+    "en": "A B+ tree index on SAL"
+   },
+   {
+    "en": "A hash index on SAL"
+   },
+   {
+    "en": "The file sorted on SAL"
+   },
+   {
+    "en": "A clustering index on SAL"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Hashing spreads key values over buckets in no particular order, so it finds an exact value such as SAL = 40000 quickly but cannot list a range without examining every bucket. A B+ tree, a file sorted on SAL and a clustering index all keep values in order, so the search finds 30000 and scans forward to 50000.",
+  "pyq_concept": false
+ }
+]

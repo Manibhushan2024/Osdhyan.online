@@ -1,0 +1,2302 @@
+[
+ {
+  "chapter_key": "db_intro",
+  "subtopic": "Three-schema architecture",
+  "difficulty": "easy",
+  "question_en": "In the three-schema (ANSI/SPARC) architecture, the level that describes how the data are actually stored on disk is the ______.",
+  "options": [
+   {
+    "en": "internal (physical) level"
+   },
+   {
+    "en": "conceptual (logical) level"
+   },
+   {
+    "en": "external (view) level"
+   },
+   {
+    "en": "application (user) level"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The internal level describes the physical storage structures and access paths, i.e. how the data are actually stored. The conceptual level describes what data are stored for the whole database and the relationships among them, without storage details. The external level shows only the part of the database a user group needs.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_intro",
+  "subtopic": "Data independence",
+  "difficulty": "medium",
+  "question_en": "The capacity to change the conceptual schema without having to change the external schemas or the application programs is called ______.",
+  "options": [
+   {
+    "en": "data abstraction"
+   },
+   {
+    "en": "physical data independence"
+   },
+   {
+    "en": "logical data independence"
+   },
+   {
+    "en": "data encapsulation"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Logical data independence means the conceptual (logical) schema can change, e.g. adding a column or a table, without rewriting external views or programs. Physical data independence is the ability to change the internal schema (file organisation, indexes) without changing the conceptual schema. Data abstraction is the general idea of hiding detail through levels.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_intro",
+  "subtopic": "Data independence",
+  "difficulty": "hard",
+  "question_en": "Consider the following statements:\nI. Physical data independence is the ability to modify the internal schema without changing the conceptual schema.\nII. Logical data independence is easier to achieve than physical data independence.\nWhich of the statements given above is/are correct?",
+  "options": [
+   {
+    "en": "Only I"
+   },
+   {
+    "en": "Only II"
+   },
+   {
+    "en": "Both I and II"
+   },
+   {
+    "en": "Neither I nor II"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Statement I is the standard definition of physical data independence. Statement II is false: logical data independence is harder to achieve because application programs depend heavily on the logical structure of the data they access. So only I is correct.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_intro",
+  "subtopic": "DBMS vs file system",
+  "difficulty": "easy",
+  "question_en": "Which of the following is NOT a disadvantage of keeping organisational data in a conventional file-processing system?",
+  "options": [
+   {
+    "en": "Concurrent-access anomalies"
+   },
+   {
+    "en": "Data redundancy and inconsistency"
+   },
+   {
+    "en": "Difficulty in accessing the required data"
+   },
+   {
+    "en": "Centralised control of data through a DBA"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Korth lists the drawbacks of file-processing systems as data redundancy and inconsistency, difficulty in accessing data, data isolation, integrity problems, atomicity problems, concurrent-access anomalies and security problems. Centralised control of data under a database administrator is an advantage of a DBMS, not a drawback of file systems.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_intro",
+  "subtopic": "Database administrator",
+  "difficulty": "medium",
+  "question_en": "Which of the following is NOT normally a function of the database administrator (DBA)?",
+  "options": [
+   {
+    "en": "Schema definition and schema modification"
+   },
+   {
+    "en": "Entering the day-to-day sales transactions"
+   },
+   {
+    "en": "Granting authorization for data access"
+   },
+   {
+    "en": "Routine maintenance such as periodic backups"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The DBA defines and modifies the schema, defines storage structures and access methods, grants authorization and performs routine maintenance such as backups and monitoring disk space. Entering daily transactions is the work of naive (end) users through application interfaces, not a DBA function.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_intro",
+  "subtopic": "Data dictionary",
+  "difficulty": "easy",
+  "question_en": "A ______ contains metadata, that is, data about data, such as table names, column types and integrity constraints.",
+  "options": [
+   {
+    "en": "secondary index file"
+   },
+   {
+    "en": "transaction log file"
+   },
+   {
+    "en": "buffer pool in main memory"
+   },
+   {
+    "en": "data dictionary (system catalog)"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The DDL interpreter records schema definitions, constraints and authorization information as metadata in the data dictionary, also called the system catalog. The transaction log records changes for recovery, and the buffer pool only caches disk blocks in memory.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_intro",
+  "subtopic": "Schema and instance",
+  "difficulty": "easy",
+  "question_en": "The collection of information stored in a database at a particular moment is called a(n) ______ of the database.",
+  "options": [
+   {
+    "en": "schema"
+   },
+   {
+    "en": "instance"
+   },
+   {
+    "en": "subschema"
+   },
+   {
+    "en": "domain"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "An instance (database state) is the actual content of the database at a given moment and changes with every insert, delete or update. A schema is the overall design of the database, which changes rarely. A subschema is a view-level schema and a domain is a set of permitted values.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_intro",
+  "subtopic": "Database languages - DML",
+  "difficulty": "medium",
+  "question_en": "A ______ DML requires a user to specify what data are needed without specifying how to get those data.",
+  "options": [
+   {
+    "en": "navigational (record-at-a-time)"
+   },
+   {
+    "en": "procedural (step-by-step)"
+   },
+   {
+    "en": "declarative (non-procedural)"
+   },
+   {
+    "en": "physical (storage-level)"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Korth classifies DMLs into procedural DMLs, which require the user to specify what data are needed and how to get them, and declarative (non-procedural) DMLs, which require only what data are needed. SQL is largely declarative. A navigational record-at-a-time DML is a kind of procedural DML.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_intro",
+  "subtopic": "Database languages - DDL",
+  "difficulty": "medium",
+  "question_en": "Which of the following SQL commands belongs to the Data Definition Language (DDL)?",
+  "options": [
+   {
+    "en": "TRUNCATE"
+   },
+   {
+    "en": "UPDATE"
+   },
+   {
+    "en": "GRANT"
+   },
+   {
+    "en": "ROLLBACK"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "TRUNCATE removes all rows by deallocating the table storage while keeping its structure; like CREATE, ALTER, DROP and RENAME it is classed as DDL (it auto-commits in Oracle and MySQL). UPDATE is DML, GRANT is DCL and ROLLBACK is TCL. TRUNCATE is often confused with DELETE, which is DML.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_intro",
+  "subtopic": "Database languages - DCL/TCL",
+  "difficulty": "medium",
+  "question_en": "Which of the following pairs of SQL commands and language categories is correctly matched?",
+  "options": [
+   {
+    "en": "COMMIT, SAVEPOINT – DDL"
+   },
+   {
+    "en": "GRANT, REVOKE – DCL"
+   },
+   {
+    "en": "ALTER, RENAME – DML"
+   },
+   {
+    "en": "INSERT, MERGE – TCL"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "GRANT and REVOKE give and withdraw privileges, so they are Data Control Language commands. COMMIT and SAVEPOINT are TCL, ALTER and RENAME are DDL, and INSERT and MERGE are DML.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_intro",
+  "subtopic": "Database connectivity - ODBC/JDBC",
+  "difficulty": "easy",
+  "question_en": "Which standard application programming interface is used by Java programs to connect to and communicate with a database server?",
+  "options": [
+   {
+    "en": "HTTP"
+   },
+   {
+    "en": "ODBC"
+   },
+   {
+    "en": "JDBC"
+   },
+   {
+    "en": "SOAP"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "JDBC (Java Database Connectivity) defines an API that Java programs use to connect to database servers and send SQL. ODBC (Open Database Connectivity) is the corresponding standard originally defined for C and other languages. HTTP and SOAP are web protocols, not database connectivity APIs.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_intro",
+  "subtopic": "Tier architecture",
+  "difficulty": "medium",
+  "question_en": "In a three-tier database application architecture, the client machine acts merely as a front end and communicates with ______.",
+  "options": [
+   {
+    "en": "other client machines arranged in a peer-to-peer ring"
+   },
+   {
+    "en": "the database server directly through embedded SQL"
+   },
+   {
+    "en": "only the file manager of the local operating system"
+   },
+   {
+    "en": "an application server, which in turn talks to the database"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "In a three-tier architecture the client has no direct database calls; it talks to an application server holding the business logic, which accesses the database server. In a two-tier architecture the client application itself calls the database server through ODBC or JDBC. Three-tier is the usual design for large web applications.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_intro",
+  "subtopic": "Data models",
+  "difficulty": "medium",
+  "question_en": "XML, in which individual data items of the same type may have different sets of attributes, is an example of the ______ data model.",
+  "options": [
+   {
+    "en": "semi-structured"
+   },
+   {
+    "en": "relational"
+   },
+   {
+    "en": "hierarchical"
+   },
+   {
+    "en": "network"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The semi-structured data model allows data items of the same type to have different attribute sets; XML and JSON are its common representations. The relational model uses tables with a fixed set of columns, while the hierarchical (tree) and network (graph) models are older record-based models.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_intro",
+  "subtopic": "Database users",
+  "difficulty": "medium",
+  "question_en": "Users who interact with the system without writing programs, forming their requests in a database query language or through data-analysis tools, are called ______ users.",
+  "options": [
+   {
+    "en": "specialized"
+   },
+   {
+    "en": "naive"
+   },
+   {
+    "en": "sophisticated"
+   },
+   {
+    "en": "parametric"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Korth calls such users sophisticated users: analysts who use query languages or OLAP and data-mining tools. Naive (parametric) users only invoke previously written application programs through forms, and specialized users write specialized database applications such as CAD or knowledge-base systems.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_intro",
+  "subtopic": "Three-schema architecture",
+  "difficulty": "hard",
+  "question_en": "In the three-schema architecture, a database system has ______.",
+  "options": [
+   {
+    "en": "several internal schemas, one conceptual schema and one external schema"
+   },
+   {
+    "en": "one internal schema, one conceptual schema and several external schemas"
+   },
+   {
+    "en": "one internal schema, several conceptual schemas and one external schema"
+   },
+   {
+    "en": "equal numbers of internal, conceptual and external schemas"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "A database has a single physical (internal) schema and a single logical (conceptual) schema, but at the view level it may have several external schemas or subschemas, one for each group of users. The mappings between levels let each external view be derived from the one conceptual schema.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_er",
+  "subtopic": "ER model - entity set",
+  "difficulty": "medium",
+  "question_en": "In Elmasri–Navathe terminology, the collection of all entities of a particular entity type in the database at any point in time is called a(n) ______.",
+  "options": [
+   {
+    "en": "relationship set"
+   },
+   {
+    "en": "entity type"
+   },
+   {
+    "en": "value set"
+   },
+   {
+    "en": "entity set"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Navathe separates the two ideas: an entity type defines a collection of entities with the same attributes (the schema), while the entity set is the collection of entities of that type present in the database at a given moment (the extension). A value set is the domain of an attribute. Korth uses the term entity set for both.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_er",
+  "subtopic": "ER model - relationship set",
+  "difficulty": "easy",
+  "question_en": "A set of relationships of the same type is called a ______.",
+  "options": [
+   {
+    "en": "relationship set"
+   },
+   {
+    "en": "entity set"
+   },
+   {
+    "en": "weak entity set"
+   },
+   {
+    "en": "value set"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A relationship is an association among several entities, and a relationship set is a set of relationships of the same type, e.g. all ADVISOR relationships between INSTRUCTOR and STUDENT. An entity set is a set of entities of the same type, not of relationships.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_er",
+  "subtopic": "ER model - descriptive attributes",
+  "difficulty": "medium",
+  "question_en": "In a library ER diagram, the attribute issue_date is attached to the relationship set BORROWS between MEMBER and BOOK. Such an attribute is called a ______ attribute.",
+  "options": [
+   {
+    "en": "key"
+   },
+   {
+    "en": "derived"
+   },
+   {
+    "en": "multivalued"
+   },
+   {
+    "en": "descriptive"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "An attribute attached to a relationship set is a descriptive attribute; it records information about the relationship itself (when the book was issued), not about the member or the book. A derived attribute is computed from other attributes, and a multivalued attribute holds several values for one entity.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_er",
+  "subtopic": "ER model - attribute types",
+  "difficulty": "easy",
+  "question_en": "An attribute whose value can be computed from other stored attributes, such as Age from Date_of_birth, is called a ______ attribute.",
+  "options": [
+   {
+    "en": "stored"
+   },
+   {
+    "en": "derived"
+   },
+   {
+    "en": "composite"
+   },
+   {
+    "en": "multivalued"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "A derived attribute is not stored but computed from related attributes; Age is derived from the stored attribute Date_of_birth and the current date. It is drawn as a dashed ellipse. A composite attribute is one that can be divided into sub-parts.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_er",
+  "subtopic": "ER model - attribute types",
+  "difficulty": "easy",
+  "question_en": "An attribute such as Name that can be divided into First_name, Middle_name and Last_name is a ______ attribute.",
+  "options": [
+   {
+    "en": "multivalued"
+   },
+   {
+    "en": "simple (atomic)"
+   },
+   {
+    "en": "composite"
+   },
+   {
+    "en": "derived"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "A composite attribute can be divided into smaller sub-parts with their own meaning, such as the parts of a name or an address. A simple (atomic) attribute cannot be divided, and a multivalued attribute has several values for one entity, such as several phone numbers.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_er",
+  "subtopic": "ER symbols",
+  "difficulty": "easy",
+  "question_en": "In a Chen-notation ER diagram, a multivalued attribute such as Phone_numbers is shown by a ______.",
+  "options": [
+   {
+    "en": "double ellipse (oval)"
+   },
+   {
+    "en": "dashed ellipse (oval)"
+   },
+   {
+    "en": "double rectangle"
+   },
+   {
+    "en": "double diamond"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A multivalued attribute is drawn as a double ellipse. A dashed ellipse marks a derived attribute, a double rectangle marks a weak entity set and a double diamond marks an identifying relationship set.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_er",
+  "subtopic": "Specialisation - attribute inheritance",
+  "difficulty": "medium",
+  "question_en": "In specialisation and generalisation, the property by which a lower-level entity set possesses all the attributes and relationship participations of its higher-level entity set is called ______.",
+  "options": [
+   {
+    "en": "aggregation"
+   },
+   {
+    "en": "attribute inheritance"
+   },
+   {
+    "en": "participation constraint"
+   },
+   {
+    "en": "referential integrity"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Attribute inheritance means that a lower-level entity set (subclass) inherits the attributes and the relationship participations of the higher-level entity set (superclass); e.g. STUDENT inherits Name and Address from PERSON. Aggregation treats a relationship as an entity, and a participation constraint says whether all entities take part in a relationship.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_er",
+  "subtopic": "ER symbols - weak entity",
+  "difficulty": "easy",
+  "question_en": "In a Chen-notation ER diagram (as used by Navathe), a weak entity set and its identifying relationship set are drawn respectively as a ______.",
+  "options": [
+   {
+    "en": "double ellipse and a double rectangle"
+   },
+   {
+    "en": "dashed rectangle and a dashed diamond"
+   },
+   {
+    "en": "double rectangle and a double diamond"
+   },
+   {
+    "en": "single rectangle and a single diamond"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "In Chen notation a weak entity set is drawn as a double rectangle and the identifying relationship that links it to its owner entity set as a double diamond. A double ellipse is used for a multivalued attribute, and a single rectangle with a single diamond denotes a strong entity set and an ordinary relationship set.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_er",
+  "subtopic": "ER symbols - participation",
+  "difficulty": "medium",
+  "question_en": "Total participation of an entity set in a relationship set is shown in an ER diagram by ______.",
+  "options": [
+   {
+    "en": "underlining the relationship name"
+   },
+   {
+    "en": "a dashed line joining them"
+   },
+   {
+    "en": "an arrow pointing to the entity set"
+   },
+   {
+    "en": "a double line joining them"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "A double line between an entity set and a relationship set indicates total participation: every entity must take part in the relationship. A single line means partial participation. In Korth's notation an arrow indicates the \"one\" side of a mapping cardinality, not participation.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_er",
+  "subtopic": "Degree of relationship",
+  "difficulty": "easy",
+  "question_en": "A relationship set that involves three entity sets, such as SUPPLIES among SUPPLIER, PART and PROJECT, has degree ______.",
+  "options": [
+   {
+    "en": "three (ternary)"
+   },
+   {
+    "en": "two (binary)"
+   },
+   {
+    "en": "one (unary)"
+   },
+   {
+    "en": "four (quaternary)"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The degree of a relationship set is the number of entity sets that participate in it. SUPPLIES involves three entity sets, so it is a ternary relationship of degree three. Most relationship sets in practice are binary (degree two).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_er",
+  "subtopic": "Recursive relationship",
+  "difficulty": "medium",
+  "question_en": "A relationship set in which the same entity set participates more than once in different roles, as in EMPLOYEE supervises EMPLOYEE, is called a ______ relationship.",
+  "options": [
+   {
+    "en": "identifying"
+   },
+   {
+    "en": "ternary"
+   },
+   {
+    "en": "recursive"
+   },
+   {
+    "en": "total"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "When the same entity set takes part in a relationship set more than once in different roles (supervisor and supervisee), the relationship set is recursive; role names are then needed to tell the roles apart. A ternary relationship involves three different participations, and an identifying relationship links a weak entity set to its owner.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_er",
+  "subtopic": "Mapping cardinality",
+  "difficulty": "medium",
+  "question_en": "If an entity in A is associated with any number of entities in B, but an entity in B can be associated with at most one entity in A, the mapping cardinality from A to B is ______.",
+  "options": [
+   {
+    "en": "many-to-one"
+   },
+   {
+    "en": "one-to-many"
+   },
+   {
+    "en": "one-to-one"
+   },
+   {
+    "en": "many-to-many"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "This is Korth's definition of one-to-many from A to B: one A entity relates to zero or more B entities, while each B entity relates to at most one A entity (e.g. DEPARTMENT to EMPLOYEE). Many-to-one is the same situation seen in the reverse direction, from B to A.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_er",
+  "subtopic": "Participation constraint",
+  "difficulty": "medium",
+  "question_en": "The participation of an entity set E in a relationship set R is said to be total if ______.",
+  "options": [
+   {
+    "en": "no entity in E can exist without having its own key attribute"
+   },
+   {
+    "en": "only some of the entities in E participate in relationships in R"
+   },
+   {
+    "en": "every entity in E participates in exactly one relationship in R"
+   },
+   {
+    "en": "every entity in E participates in at least one relationship in R"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Total participation means every entity in E takes part in at least one relationship in R, e.g. every LOAN must have a BORROWER. If only some entities take part, participation is partial. \"Exactly one\" adds a cardinality restriction that total participation by itself does not require.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_er",
+  "subtopic": "Weak entity set",
+  "difficulty": "easy",
+  "question_en": "An entity set that does not have sufficient attributes to form a primary key is called a ______.",
+  "options": [
+   {
+    "en": "weak entity set"
+   },
+   {
+    "en": "strong entity set"
+   },
+   {
+    "en": "derived entity set"
+   },
+   {
+    "en": "composite entity set"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A weak entity set lacks enough attributes of its own to form a primary key, so it depends on an identifying (owner) entity set, e.g. DEPENDENT depends on EMPLOYEE. An entity set that has a primary key is a strong entity set.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_er",
+  "subtopic": "Weak entity - discriminator",
+  "difficulty": "medium",
+  "question_en": "The attribute of a weak entity set that distinguishes among its entities that depend on the same strong entity is called the ______.",
+  "options": [
+   {
+    "en": "alternate key"
+   },
+   {
+    "en": "foreign key"
+   },
+   {
+    "en": "surrogate key"
+   },
+   {
+    "en": "discriminator (partial key)"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Korth calls it the discriminator and Navathe calls it the partial key; it is underlined with a dashed line in the ER diagram. For DEPENDENT, Dependent_name separates the dependents of one employee. It identifies entities only together with the owner's key, so it is not a key on its own.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_er",
+  "subtopic": "Weak entity - primary key",
+  "difficulty": "medium",
+  "question_en": "The primary key of a weak entity set is formed by ______.",
+  "options": [
+   {
+    "en": "its discriminator alone, without any other attribute"
+   },
+   {
+    "en": "the primary key of its identifying entity set plus its discriminator"
+   },
+   {
+    "en": "the primary key of its identifying entity set alone"
+   },
+   {
+    "en": "all the descriptive attributes of its identifying relationship"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "A weak entity is identified by the primary key of its identifying (owner) entity set together with its own discriminator, e.g. (Emp_id, Dependent_name). The discriminator alone is not unique across owners, and the owner's key alone cannot tell two dependents of the same employee apart.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_er",
+  "subtopic": "Weak entity set",
+  "difficulty": "hard",
+  "question_en": "Consider the following statements about a weak entity set:\nI. A weak entity set must have total participation in its identifying relationship set.\nII. The identifying relationship set is many-to-one from the weak entity set to the identifying entity set.\nWhich of the statements given above is/are correct?",
+  "options": [
+   {
+    "en": "Only I"
+   },
+   {
+    "en": "Only II"
+   },
+   {
+    "en": "Both I and II"
+   },
+   {
+    "en": "Neither I nor II"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Both are true. Every weak entity must be associated with an owner, so its participation in the identifying relationship is total (statement I). Each weak entity depends on exactly one owner while an owner may have many weak entities, so the identifying relationship is many-to-one from the weak entity set to the owner (statement II).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_er",
+  "subtopic": "Specialisation",
+  "difficulty": "medium",
+  "question_en": "The top-down design process of designating subgroupings within an entity set that are distinctive from other entities in the set is called ______.",
+  "options": [
+   {
+    "en": "specialisation"
+   },
+   {
+    "en": "generalisation"
+   },
+   {
+    "en": "aggregation"
+   },
+   {
+    "en": "normalisation"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Specialisation is the top-down process of defining subclasses within an entity set, e.g. dividing PERSON into EMPLOYEE and STUDENT. Generalisation is the reverse, bottom-up process of combining several entity sets into a higher-level entity set.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_er",
+  "subtopic": "Generalisation",
+  "difficulty": "easy",
+  "question_en": "Combining several entity sets that share common features, such as CAR and TRUCK, into a higher-level entity set VEHICLE is a bottom-up process called ______.",
+  "options": [
+   {
+    "en": "specialisation"
+   },
+   {
+    "en": "generalisation"
+   },
+   {
+    "en": "aggregation"
+   },
+   {
+    "en": "decomposition"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Generalisation is a bottom-up synthesis in which lower-level entity sets with common attributes are combined into a higher-level entity set. Specialisation is the top-down opposite. Decomposition is a normalisation term for splitting a relation schema.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_er",
+  "subtopic": "Aggregation",
+  "difficulty": "medium",
+  "question_en": "______ is an abstraction through which relationships are treated as higher-level entities, so that a relationship set can itself participate in another relationship set.",
+  "options": [
+   {
+    "en": "Specialisation"
+   },
+   {
+    "en": "Generalisation"
+   },
+   {
+    "en": "Aggregation"
+   },
+   {
+    "en": "Attribute inheritance"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The ER model cannot express a relationship among relationships directly. Aggregation treats a relationship set and its entity sets (e.g. WORKS_ON among EMPLOYEE, BRANCH, JOB) as a higher-level entity that can then take part in another relationship such as MANAGES. Generalisation combines entity sets, not relationship sets.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_er",
+  "subtopic": "Specialisation constraints",
+  "difficulty": "hard",
+  "question_en": "In an EER model, an EMPLOYEE may be a member of both the SECRETARY and ENGINEER subclasses, and some employees belong to no subclass at all. This specialisation is ______.",
+  "options": [
+   {
+    "en": "overlapping and total"
+   },
+   {
+    "en": "disjoint and total"
+   },
+   {
+    "en": "disjoint and partial"
+   },
+   {
+    "en": "overlapping and partial"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Because one entity can belong to more than one subclass, the disjointness constraint is overlapping rather than disjoint. Because some superclass entities belong to no subclass, the completeness constraint is partial rather than total. Overlapping-and-total would require every employee to be in at least one subclass.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_er",
+  "subtopic": "ER to relational mapping - M:N",
+  "difficulty": "medium",
+  "question_en": "When an M:N binary relationship type is mapped to the relational model, it is represented by ______.",
+  "options": [
+   {
+    "en": "a new relation whose key combines the primary keys of both entity relations"
+   },
+   {
+    "en": "a foreign key added to the relation on either side of the relationship"
+   },
+   {
+    "en": "merging the two participating entity relations into a single relation"
+   },
+   {
+    "en": "a multivalued attribute stored in one of the participating relations"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "An M:N relationship cannot be represented by a single foreign key, because each entity on either side can relate to many on the other. It is mapped to a separate relationship relation holding the primary keys of both sides as foreign keys (together forming its primary key) plus any descriptive attributes. Only 1:1 and 1:N relationships can use the foreign-key approach.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_er",
+  "subtopic": "ER to relational mapping - 1:N",
+  "difficulty": "medium",
+  "question_en": "DEPARTMENT (1) — EMPLOYS — (N) EMPLOYEE. When this 1:N relationship is mapped without creating a separate relationship relation, the foreign key is placed in ______.",
+  "options": [
+   {
+    "en": "both relations, each referencing the other one"
+   },
+   {
+    "en": "DEPARTMENT (the 1-side), referencing EMPLOYEE"
+   },
+   {
+    "en": "EMPLOYEE (the N-side), referencing DEPARTMENT"
+   },
+   {
+    "en": "a new relation containing both primary keys"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "For a 1:N relationship the primary key of the 1-side relation is added as a foreign key in the N-side relation, so each EMPLOYEE tuple stores its Dept_no. Putting it in DEPARTMENT would need many employee values in one tuple, which is not atomic. A new relation is required only for M:N relationships (and is optional for 1:N).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_er",
+  "subtopic": "ER to relational mapping - 1:1",
+  "difficulty": "hard",
+  "question_en": "For a 1:1 relationship MANAGES between EMPLOYEE (partial participation) and DEPARTMENT (total participation), the foreign-key approach of ER-to-relational mapping places the foreign key in ______.",
+  "options": [
+   {
+    "en": "EMPLOYEE, referencing the managed DEPARTMENT"
+   },
+   {
+    "en": "DEPARTMENT, referencing the managing EMPLOYEE"
+   },
+   {
+    "en": "a separate MANAGES relation and nowhere else"
+   },
+   {
+    "en": "both relations as mutual foreign keys"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Navathe's rule for 1:1 relationships is to put the foreign key in the relation whose entity type has total participation. Every department has a manager, so Mgr_ssn in DEPARTMENT is never NULL, whereas most employees manage no department and a foreign key in EMPLOYEE would be mostly NULL.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_er",
+  "subtopic": "ER to relational mapping - number of tables",
+  "difficulty": "hard",
+  "question_en": "An ER diagram has strong entity sets STUDENT, COURSE and DEPARTMENT. ENROLLS is an M:N relationship between STUDENT and COURSE, OFFERS is a 1:N relationship from DEPARTMENT to COURSE, and STUDENT has a multivalued attribute Phone. What is the minimum number of relations needed to represent this design in the relational model?",
+  "options": [
+   {
+    "en": "3"
+   },
+   {
+    "en": "4"
+   },
+   {
+    "en": "5"
+   },
+   {
+    "en": "6"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "One relation is needed for each strong entity set (3). ENROLLS is M:N, so it needs its own relation (4). OFFERS is 1:N, so Dept_id goes into COURSE as a foreign key and needs no new relation. The multivalued attribute Phone needs a separate relation STUDENT_PHONE(Roll_no, Phone), giving 5. Answer 4 forgets the multivalued attribute.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_relational",
+  "subtopic": "Relational terminology",
+  "difficulty": "easy",
+  "question_en": "In relational model terminology, a row of a table is called a ______.",
+  "options": [
+   {
+    "en": "relation"
+   },
+   {
+    "en": "attribute"
+   },
+   {
+    "en": "domain"
+   },
+   {
+    "en": "tuple"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "In the formal relational model a table is a relation, a row is a tuple and a column header is an attribute. A domain is the set of permitted values of an attribute, and the relation schema is the list of attributes of the relation.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_relational",
+  "subtopic": "Relational terminology",
+  "difficulty": "easy",
+  "question_en": "The number of attributes in a relation is called its ______.",
+  "options": [
+   {
+    "en": "instance"
+   },
+   {
+    "en": "cardinality"
+   },
+   {
+    "en": "domain"
+   },
+   {
+    "en": "degree"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The degree (arity) of a relation is the number of its attributes, i.e. columns. Cardinality is the number of tuples (rows) in the relation at a given time, which is the usual confusion. A relation STUDENT(Roll, Name, Class) has degree 3 whatever its number of rows.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_relational",
+  "subtopic": "Relational terminology - domain",
+  "difficulty": "easy",
+  "question_en": "For each attribute of a relation there is a set of permitted atomic values, called the ______ of that attribute.",
+  "options": [
+   {
+    "en": "domain"
+   },
+   {
+    "en": "degree"
+   },
+   {
+    "en": "tuple"
+   },
+   {
+    "en": "key"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The domain of an attribute is the set of permitted values for it, e.g. the domain of Age might be integers from 0 to 120. In the relational model domains are required to be atomic (indivisible). Degree is the number of attributes and a tuple is one row.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_relational",
+  "subtopic": "Properties of relations",
+  "difficulty": "medium",
+  "question_en": "Which of the following is NOT a property of a relation in the formal relational model?",
+  "options": [
+   {
+    "en": "No two tuples of the relation are identical"
+   },
+   {
+    "en": "Tuples are kept in a meaningful fixed order"
+   },
+   {
+    "en": "Every attribute value is atomic"
+   },
+   {
+    "en": "All attributes of a relation have distinct names"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "A relation is a set of tuples, so tuples are distinct and have no inherent order; ordering rows differently gives the same relation. Attribute values are atomic (1NF) and attribute names within a relation are distinct. A fixed meaningful order of tuples is therefore not a property of a relation.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_relational",
+  "subtopic": "Relational model",
+  "difficulty": "easy",
+  "question_en": "In the relational model, both data and the relationships among those data are represented by ______.",
+  "options": [
+   {
+    "en": "a collection of tables"
+   },
+   {
+    "en": "a collection of record trees"
+   },
+   {
+    "en": "records linked by pointers"
+   },
+   {
+    "en": "objects with stored methods"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The relational model uses a collection of tables (relations), each with uniquely named columns, to represent both data and the relationships among them; relationships are expressed through matching key values. Record trees describe the hierarchical model and pointer-linked records the network model.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_relational",
+  "subtopic": "Codd's rules",
+  "difficulty": "medium",
+  "question_en": "According to Codd's Guaranteed Access Rule, every individual data value in a relational database must be logically accessible by specifying ______.",
+  "options": [
+   {
+    "en": "the file name, record number and byte offset"
+   },
+   {
+    "en": "the table name, primary key value and column name"
+   },
+   {
+    "en": "the table name, row number and index name"
+   },
+   {
+    "en": "the schema name, tuple order and data type"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Rule 2, the Guaranteed Access Rule, says each atomic value must be reachable by a combination of table name, primary key value and column name. Physical details such as record numbers, byte offsets or row positions must not be needed, since tuples have no inherent order in a relation.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_relational",
+  "subtopic": "Codd's rules",
+  "difficulty": "medium",
+  "question_en": "The Codd rule which states that all information in a relational database is represented explicitly at the logical level, and in exactly one way, by values in tables is the ______.",
+  "options": [
+   {
+    "en": "Comprehensive Data Sublanguage Rule"
+   },
+   {
+    "en": "Guaranteed Access Rule"
+   },
+   {
+    "en": "Information Rule"
+   },
+   {
+    "en": "View Updating Rule"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Rule 1, the Information Rule, requires every piece of information, including table and column names, to be stored as values in tables. The Guaranteed Access Rule (Rule 2) is about reaching each value by table, key and column; the Comprehensive Data Sublanguage Rule (Rule 5) requires one language for definition, manipulation and control.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_relational",
+  "subtopic": "Keys - super key",
+  "difficulty": "easy",
+  "question_en": "A set of one or more attributes that, taken collectively, allows us to identify uniquely a tuple in the relation is called a ______.",
+  "options": [
+   {
+    "en": "non-prime attribute set"
+   },
+   {
+    "en": "foreign key"
+   },
+   {
+    "en": "partial key"
+   },
+   {
+    "en": "super key"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "This is Korth's definition of a superkey; it may contain extra attributes, e.g. {Roll_no, Name} is a superkey if Roll_no alone is. A foreign key refers to another relation's key and need not be unique, and a partial key identifies weak entities only together with the owner's key.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_relational",
+  "subtopic": "Keys - candidate key",
+  "difficulty": "easy",
+  "question_en": "A minimal super key, that is, a super key of which no proper subset is a super key, is called a ______.",
+  "options": [
+   {
+    "en": "candidate key"
+   },
+   {
+    "en": "primary key"
+   },
+   {
+    "en": "composite key"
+   },
+   {
+    "en": "alternate key"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A candidate key is a minimal superkey. A relation may have several candidate keys; the one chosen by the designer becomes the primary key, and the others are alternate keys. A composite key is simply a key made of more than one attribute.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_relational",
+  "subtopic": "Keys - alternate key",
+  "difficulty": "easy",
+  "question_en": "A candidate key that is not chosen as the primary key is called a(n) ______.",
+  "options": [
+   {
+    "en": "super key"
+   },
+   {
+    "en": "foreign key"
+   },
+   {
+    "en": "alternate key"
+   },
+   {
+    "en": "composite key"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "If STUDENT has candidate keys Roll_no and Aadhaar_no and Roll_no is chosen as the primary key, Aadhaar_no is an alternate key. It is still unique, but a superkey need not be minimal and a foreign key refers to another relation.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_relational",
+  "subtopic": "Keys - foreign key",
+  "difficulty": "medium",
+  "question_en": "An attribute set in relation r1 whose values must refer to the primary key of another relation r2 is called a ______ of r1, where r1 is the referencing relation.",
+  "options": [
+   {
+    "en": "candidate key"
+   },
+   {
+    "en": "foreign key"
+   },
+   {
+    "en": "surrogate key"
+   },
+   {
+    "en": "partial key"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "A foreign key in the referencing relation r1 refers to the primary key of the referenced relation r2, e.g. Dept_id in EMPLOYEE referencing DEPARTMENT. Its values may repeat and may be NULL, which is why it is not a candidate key of r1. A surrogate key is a system-generated identifier.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_relational",
+  "subtopic": "Keys - super vs candidate",
+  "difficulty": "medium",
+  "question_en": "Consider the following statements:\nI. Every candidate key is a super key.\nII. Every super key is a candidate key.\nWhich of the statements given above is/are correct?",
+  "options": [
+   {
+    "en": "Only I"
+   },
+   {
+    "en": "Only II"
+   },
+   {
+    "en": "Both I and II"
+   },
+   {
+    "en": "Neither I nor II"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A candidate key is a minimal superkey, so every candidate key is a superkey and statement I is true. A superkey may contain extra attributes, e.g. {Roll_no, Name}, so it need not be minimal and statement II is false.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_relational",
+  "subtopic": "Keys - counting super keys",
+  "difficulty": "medium",
+  "question_en": "A relation R(A, B, C, D, E) has A as its only candidate key. How many super keys does R have?",
+  "options": [
+   {
+    "en": "15"
+   },
+   {
+    "en": "16"
+   },
+   {
+    "en": "31"
+   },
+   {
+    "en": "32"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Every superkey must contain A, and each of the other 4 attributes B, C, D, E may be present or absent. So the number of superkeys is 2^4 = 16 (from {A} up to {A,B,C,D,E}). The value 15 wrongly drops {A} itself, and 31 counts all non-empty subsets of R.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_relational",
+  "subtopic": "Keys - counting super keys",
+  "difficulty": "hard",
+  "question_en": "A relation R(A, B, C, D) has exactly two candidate keys, A and BC. How many super keys does R have?",
+  "options": [
+   {
+    "en": "8"
+   },
+   {
+    "en": "9"
+   },
+   {
+    "en": "10"
+   },
+   {
+    "en": "12"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Superkeys containing A: 2^3 = 8. Superkeys containing both B and C: 2^2 = 4 ({B,C} with or without A and D). Those containing A, B and C are counted twice: 2^1 = 2. So the total is 8 + 4 - 2 = 10. The answer 12 forgets to subtract the overlap.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_relational",
+  "subtopic": "Integrity constraints - entity integrity",
+  "difficulty": "easy",
+  "question_en": "The entity integrity constraint states that ______.",
+  "options": [
+   {
+    "en": "every attribute must have a default value"
+   },
+   {
+    "en": "every foreign key value must be NULL"
+   },
+   {
+    "en": "no two relations may share attribute names"
+   },
+   {
+    "en": "no primary key value can be NULL"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Entity integrity says that no attribute of a primary key may be NULL, because the primary key is used to identify individual tuples. A foreign key may be NULL, but that is a referential integrity matter and not a requirement.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_relational",
+  "subtopic": "Integrity constraints - referential integrity",
+  "difficulty": "medium",
+  "question_en": "A value that appears in one relation for a given set of attributes must also appear for a certain set of attributes in another relation, unless it is NULL. This requirement is called ______.",
+  "options": [
+   {
+    "en": "key constraint"
+   },
+   {
+    "en": "entity integrity"
+   },
+   {
+    "en": "domain constraint"
+   },
+   {
+    "en": "referential integrity"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Referential integrity is specified between two relations: every non-NULL foreign key value in the referencing relation must exist as a primary key value in the referenced relation. Entity integrity applies within a single relation (primary key not NULL), and a domain constraint limits the values of one attribute.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_relational",
+  "subtopic": "Referential actions",
+  "difficulty": "medium",
+  "question_en": "EMPLOYEE has FOREIGN KEY (dept_id) REFERENCES DEPARTMENT ON DELETE CASCADE. Deleting a DEPARTMENT tuple will ______.",
+  "options": [
+   {
+    "en": "also delete the EMPLOYEE tuples that refer to it"
+   },
+   {
+    "en": "set dept_id to NULL in the referring EMPLOYEE tuples"
+   },
+   {
+    "en": "be rejected while any EMPLOYEE tuple refers to it"
+   },
+   {
+    "en": "set dept_id to its default value in referring tuples"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "ON DELETE CASCADE propagates the deletion: all referencing EMPLOYEE tuples are deleted too, so no dangling reference remains. SET NULL and SET DEFAULT would keep the employees and change their dept_id, while RESTRICT or NO ACTION would reject the deletion.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_relational",
+  "subtopic": "Referential actions",
+  "difficulty": "hard",
+  "question_en": "Consider the following statements about referential actions:\nI. ON DELETE SET NULL can be used only if the foreign key columns allow NULL values.\nII. ON UPDATE CASCADE changes the foreign key values in referencing tuples when the referenced primary key value is changed.\nWhich of the statements given above is/are correct?",
+  "options": [
+   {
+    "en": "Only I"
+   },
+   {
+    "en": "Only II"
+   },
+   {
+    "en": "Neither I nor II"
+   },
+   {
+    "en": "Both I and II"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Both are true. SET NULL puts NULL into the foreign key of referencing tuples, which is impossible if those columns are declared NOT NULL (statement I). ON UPDATE CASCADE copies a changed primary key value into all referencing foreign keys, keeping them consistent (statement II).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_relational",
+  "subtopic": "NULL values",
+  "difficulty": "medium",
+  "question_en": "In SQL's three-valued logic, the comparison NULL = NULL evaluates to ______.",
+  "options": [
+   {
+    "en": "TRUE"
+   },
+   {
+    "en": "UNKNOWN"
+   },
+   {
+    "en": "FALSE"
+   },
+   {
+    "en": "an error"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Any comparison involving NULL yields UNKNOWN, the third truth value, because NULL means \"value unknown or not applicable\" and two unknown values cannot be said to be equal. A WHERE clause keeps only rows whose condition is TRUE, so such rows are dropped; IS NULL must be used instead.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_relational",
+  "subtopic": "Relational algebra - select",
+  "difficulty": "easy",
+  "question_en": "The relational algebra operation that selects the tuples satisfying a given predicate is ______.",
+  "options": [
+   {
+    "en": "ρ (rename)"
+   },
+   {
+    "en": "π (project)"
+   },
+   {
+    "en": "σ (select)"
+   },
+   {
+    "en": "× (Cartesian product)"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The select operation σ picks the tuples (rows) that satisfy a predicate, e.g. σ dept = \"CS\" (INSTRUCTOR); it gives a horizontal subset. The project operation π picks attributes (columns), and ρ renames a relation or its attributes.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_relational",
+  "subtopic": "Relational algebra - project",
+  "difficulty": "medium",
+  "question_en": "Which of the following statements about the project operation π of relational algebra is correct?",
+  "options": [
+   {
+    "en": "It returns the listed attributes and removes duplicate tuples"
+   },
+   {
+    "en": "It returns the listed attributes but keeps duplicate tuples"
+   },
+   {
+    "en": "It returns only the tuples that satisfy a given predicate"
+   },
+   {
+    "en": "It pairs every tuple of one relation with every tuple of another"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "π returns a relation with only the listed attributes (a vertical subset), and since a relation is a set, duplicate tuples are removed. SQL SELECT, by contrast, keeps duplicates unless DISTINCT is written. Picking tuples by a predicate is σ, and pairing every tuple is the Cartesian product ×.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_relational",
+  "subtopic": "Relational algebra - rename",
+  "difficulty": "easy",
+  "question_en": "The relational algebra operation used to give a new name to a relation or to its attributes is ______.",
+  "options": [
+   {
+    "en": "σ (sigma)"
+   },
+   {
+    "en": "π (pi)"
+   },
+   {
+    "en": "ρ (rho)"
+   },
+   {
+    "en": "÷ (division)"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The rename operation ρ, e.g. ρ x (E) or ρ x(A1, A2) (E), returns the result of expression E under the name x, optionally renaming its attributes. It is needed to join a relation with itself. π projects columns, σ selects rows and ÷ is division.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_relational",
+  "subtopic": "Relational algebra - union compatibility",
+  "difficulty": "medium",
+  "question_en": "For R ∪ S, R − S or R ∩ S to be valid, R and S must be union-compatible, which means that ______.",
+  "options": [
+   {
+    "en": "they have at least one attribute name in common with each other"
+   },
+   {
+    "en": "they have the same number of attributes with compatible domains"
+   },
+   {
+    "en": "they have the same number of tuples at the time of the operation"
+   },
+   {
+    "en": "they have the same attribute chosen as their primary key"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Union compatibility requires the two relations to have the same arity (number of attributes), and the domains of the i-th attributes of both must be the same or compatible. The number of tuples does not matter, and a common attribute is what a natural join needs, not a set operation.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_relational",
+  "subtopic": "Relational algebra - intersection",
+  "difficulty": "hard",
+  "question_en": "Set intersection is not a fundamental relational algebra operation, because R ∩ S can be expressed as ______.",
+  "options": [
+   {
+    "en": "R × (R − S)"
+   },
+   {
+    "en": "R ∪ (R − S)"
+   },
+   {
+    "en": "(R − S) ∪ (S − R)"
+   },
+   {
+    "en": "R − (R − S)"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "R − S keeps the tuples of R that are not in S; removing those from R leaves exactly the tuples present in both, so R ∩ S = R − (R − S). The expression (R − S) ∪ (S − R) is the symmetric difference, i.e. tuples in exactly one of the two relations, and R ∪ (R − S) is simply R.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_relational",
+  "subtopic": "Relational algebra - Cartesian product",
+  "difficulty": "medium",
+  "question_en": "Relation R has 4 attributes and 6 tuples, and relation S has 3 attributes and 5 tuples. The Cartesian product R × S has ______.",
+  "options": [
+   {
+    "en": "7 attributes and 30 tuples"
+   },
+   {
+    "en": "7 attributes and 11 tuples"
+   },
+   {
+    "en": "12 attributes and 30 tuples"
+   },
+   {
+    "en": "12 attributes and 11 tuples"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "In R × S every tuple of R is paired with every tuple of S, so the degree is 4 + 3 = 7 attributes and the cardinality is 6 × 5 = 30 tuples. Degrees add and cardinalities multiply; the distractors multiply the degrees or add the cardinalities.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_relational",
+  "subtopic": "Relational algebra - natural join",
+  "difficulty": "hard",
+  "question_en": "R(A, B) = {(1, x), (2, y), (3, x), (4, z)} and S(B, C) = {(x, p), (x, q), (y, r), (w, s)}. How many tuples are there in the natural join R ⋈ S?",
+  "options": [
+   {
+    "en": "4"
+   },
+   {
+    "en": "5"
+   },
+   {
+    "en": "6"
+   },
+   {
+    "en": "7"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The join is on the common attribute B. B = x: two R tuples (1, 3) × two S tuples (p, q) = 4 tuples. B = y: (2, y, r) = 1 tuple. B = z appears only in R and B = w only in S, so they add nothing. Total = 4 + 1 = 5.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_relational",
+  "subtopic": "Relational algebra - outer join",
+  "difficulty": "hard",
+  "question_en": "EMP(eid, did) = {(E1, D1), (E2, D2), (E3, D1), (E4, NULL), (E5, D3)} and DEPT(did, dname) = {(D1, Sales), (D2, HR), (D4, Admin)}. How many tuples are there in the full outer natural join EMP ⟗ DEPT?",
+  "options": [
+   {
+    "en": "3"
+   },
+   {
+    "en": "4"
+   },
+   {
+    "en": "5"
+   },
+   {
+    "en": "6"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Matching tuples: E1-D1, E2-D2, E3-D1, giving 3. Unmatched EMP tuples E4 (NULL matches nothing) and E5 (D3) are added with NULL dname: +2. The unmatched DEPT tuple D4 is added with NULL eid: +1. Total = 6. The left outer join would give 5 and the right outer join 4.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_relational",
+  "subtopic": "Relational algebra - division",
+  "difficulty": "medium",
+  "question_en": "Given ENROLLED(student, course) and COURSE(course), the query \"find the students who are enrolled in every course\" is expressed most directly in relational algebra as ______.",
+  "options": [
+   {
+    "en": "ENROLLED ⋈ COURSE"
+   },
+   {
+    "en": "ENROLLED × COURSE"
+   },
+   {
+    "en": "ENROLLED ÷ COURSE"
+   },
+   {
+    "en": "ENROLLED − COURSE"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The division R ÷ S returns those values of the attributes of R not in S (here student) that are paired in R with every tuple of S. That is exactly a \"for all\" query. The natural join only finds students enrolled in at least one listed course, and the difference is not even union-compatible here.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_relational",
+  "subtopic": "Relational algebra - fundamental operations",
+  "difficulty": "medium",
+  "question_en": "Which of the following is NOT one of the fundamental operations of relational algebra?",
+  "options": [
+   {
+    "en": "Natural join (⋈)"
+   },
+   {
+    "en": "Set difference (−)"
+   },
+   {
+    "en": "Cartesian product (×)"
+   },
+   {
+    "en": "Rename (ρ)"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Korth lists six fundamental operations: select, project, union, set difference, Cartesian product and rename. Natural join, intersection, division and assignment are additional operations that can be written using them; for example, a natural join is a Cartesian product followed by a selection and a projection.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_relational",
+  "subtopic": "Relational calculus",
+  "difficulty": "hard",
+  "question_en": "Which of the following statements about relational calculus is correct?",
+  "options": [
+   {
+    "en": "Tuple relational calculus is procedural: a query fixes the order of its operations"
+   },
+   {
+    "en": "Tuple relational calculus is non-procedural: a query states what is wanted, not how"
+   },
+   {
+    "en": "In domain relational calculus the variables range over whole tuples of a relation"
+   },
+   {
+    "en": "Safe relational calculus is strictly more expressive than basic relational algebra"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Relational algebra is procedural, whereas tuple and domain relational calculus are non-procedural (declarative) query languages, e.g. {t | t ∈ instructor ∧ t[salary] > 80000}. Tuple variables range over tuples, but domain variables range over attribute values. Safe calculus expressions are equivalent in power to basic relational algebra, not stronger.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_normal",
+  "subtopic": "Anomalies",
+  "difficulty": "easy",
+  "question_en": "In a relation STUDENT_COURSE(Roll_no, Course_id, Course_name, Fee) with key (Roll_no, Course_id), a new course cannot be recorded until at least one student enrols in it. This is an example of ______.",
+  "options": [
+   {
+    "en": "an update anomaly"
+   },
+   {
+    "en": "a deletion anomaly"
+   },
+   {
+    "en": "an insertion anomaly"
+   },
+   {
+    "en": "a lost update problem"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "An insertion anomaly occurs when a fact cannot be stored without also storing an unrelated fact; here course details need a Roll_no because it is part of the primary key, which cannot be NULL. A deletion anomaly is losing a fact (the course) when the last student row is deleted. The lost update problem is a concurrency issue, not a design one.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_normal",
+  "subtopic": "Anomalies",
+  "difficulty": "easy",
+  "question_en": "In an un-normalised EMP_DEPT table a department's address is repeated in the row of every employee of that department. Changing it in some rows but not in others leaves the data inconsistent. This is ______.",
+  "options": [
+   {
+    "en": "a dirty read problem"
+   },
+   {
+    "en": "an insertion anomaly"
+   },
+   {
+    "en": "a deletion anomaly"
+   },
+   {
+    "en": "an update anomaly"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "When the same fact is stored redundantly, a change has to be made in every copy; missing some copies creates inconsistency. This is the update (modification) anomaly. A dirty read is a transaction problem caused by reading uncommitted data, not a schema-design problem.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_normal",
+  "subtopic": "Functional dependency",
+  "difficulty": "easy",
+  "question_en": "A functional dependency X → Y holds on a relation R if ______.",
+  "options": [
+   {
+    "en": "any two tuples that agree on X also agree on Y"
+   },
+   {
+    "en": "any two tuples that agree on Y also agree on X"
+   },
+   {
+    "en": "every value of X appears in exactly one tuple"
+   },
+   {
+    "en": "X and Y have no attributes in common at all"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "X → Y means the X-value of a tuple uniquely determines its Y-value: whenever t1[X] = t2[X], then t1[Y] = t2[Y]. The reverse direction is not required. X need not be unique in the relation; that would make X a superkey, which is a stronger condition.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_normal",
+  "subtopic": "Trivial FD",
+  "difficulty": "easy",
+  "question_en": "A functional dependency X → Y is called trivial if ______.",
+  "options": [
+   {
+    "en": "X ∩ Y = ∅"
+   },
+   {
+    "en": "X ⊆ Y"
+   },
+   {
+    "en": "Y ⊆ X"
+   },
+   {
+    "en": "X is a super key"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "An FD is trivial if it is satisfied by every relation, which happens exactly when Y is a subset of X, e.g. AB → A. It follows from the reflexivity rule. X → Y with X ∩ Y = ∅ is a completely non-trivial FD.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_normal",
+  "subtopic": "Armstrong axioms vs derived rules",
+  "difficulty": "medium",
+  "question_en": "Armstrong's axioms consist of exactly which three inference rules?",
+  "options": [
+   {
+    "en": "Union, decomposition and pseudo-transitivity"
+   },
+   {
+    "en": "Reflexivity, augmentation and transitivity"
+   },
+   {
+    "en": "Reflexivity, union and decomposition"
+   },
+   {
+    "en": "Augmentation, transitivity and union"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Armstrong's axioms are reflexivity (if Y ⊆ X then X → Y), augmentation (if X → Y then XZ → YZ) and transitivity (if X → Y and Y → Z then X → Z). Union, decomposition and pseudo-transitivity are additional rules derived from these three, so they are not axioms.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_normal",
+  "subtopic": "Armstrong axioms vs derived rules",
+  "difficulty": "easy",
+  "question_en": "The inference rule \"if X → YZ holds, then X → Y and X → Z hold\" is called the ______ rule.",
+  "options": [
+   {
+    "en": "pseudo-transitivity"
+   },
+   {
+    "en": "union"
+   },
+   {
+    "en": "augmentation"
+   },
+   {
+    "en": "decomposition"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Splitting the right-hand side of an FD is the decomposition (projective) rule, which is derived from reflexivity and transitivity. The union (additive) rule is the reverse: X → Y and X → Z give X → YZ.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_normal",
+  "subtopic": "Armstrong axioms vs derived rules",
+  "difficulty": "medium",
+  "question_en": "Which of the following correctly states the pseudo-transitivity rule?",
+  "options": [
+   {
+    "en": "If X → Y and WY → Z, then WX → Z"
+   },
+   {
+    "en": "If X → Y and Y → Z, then X → Z"
+   },
+   {
+    "en": "If X → Y, then XZ → YZ"
+   },
+   {
+    "en": "If X → Y and X → Z, then X → YZ"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Pseudo-transitivity says that from X → Y and WY → Z we can infer WX → Z: augment X → Y with W to get WX → WY, then apply transitivity with WY → Z. The second option is plain transitivity, the third is augmentation and the fourth is the union rule.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_normal",
+  "subtopic": "Armstrong axioms - soundness and completeness",
+  "difficulty": "hard",
+  "question_en": "Consider the following statements:\nI. Armstrong's axioms are sound, that is, they generate only functional dependencies that actually hold.\nII. Armstrong's axioms are complete, that is, repeated application generates all functional dependencies in F⁺.\nWhich of the statements given above is/are correct?",
+  "options": [
+   {
+    "en": "Both I and II"
+   },
+   {
+    "en": "Only I"
+   },
+   {
+    "en": "Only II"
+   },
+   {
+    "en": "Neither I nor II"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Both statements are true. The axioms are sound because they never produce an FD that does not hold in every relation satisfying F, and complete because for a given set F they produce every FD in its closure F⁺. That is why closure F⁺ can be computed by applying them repeatedly.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_normal",
+  "subtopic": "Attribute closure",
+  "difficulty": "medium",
+  "question_en": "Relation R(A, B, C, D, E, F) has the set of functional dependencies F = {A → BC, CD → E, B → D, E → A}. What is the closure A⁺?",
+  "options": [
+   {
+    "en": "ABC"
+   },
+   {
+    "en": "ABCD"
+   },
+   {
+    "en": "ABCDE"
+   },
+   {
+    "en": "ABCDEF"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Start with A. A → BC gives ABC; B → D gives ABCD; CD → E gives ABCDE; E → A adds nothing new. No FD has F on its right-hand side, so F is never added and A⁺ = ABCDE. A is therefore not a superkey of R. Stopping after B → D gives ABCD.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_normal",
+  "subtopic": "Attribute closure",
+  "difficulty": "medium",
+  "question_en": "Relation R(V, W, X, Y, Z) has the set of functional dependencies F = {V → W, WX → Y, Y → Z, Z → V}. What is the closure Y⁺?",
+  "options": [
+   {
+    "en": "YZ"
+   },
+   {
+    "en": "VWYZ"
+   },
+   {
+    "en": "VWXYZ"
+   },
+   {
+    "en": "VYZ"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Start with Y. Y → Z gives YZ; Z → V gives VYZ; V → W gives VWYZ. WX → Y cannot be used to add anything because X is not in the set, and nothing determines X. So Y⁺ = VWYZ, and Y is not a superkey because X is missing.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_normal",
+  "subtopic": "Attribute closure - super key test",
+  "difficulty": "hard",
+  "question_en": "Relation R(A, B, C, D, E, F) has F = {A → B, B → C, CD → E, E → F, F → A}. Which of the following is a super key of R?",
+  "options": [
+   {
+    "en": "AB"
+   },
+   {
+    "en": "BE"
+   },
+   {
+    "en": "CD"
+   },
+   {
+    "en": "AF"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "D appears on no right-hand side, so every super key must contain D; that already rules out AB, BE and AF (AB⁺ = ABC, BE⁺ = ABCEF, AF⁺ = ABCF). For CD: CD → E gives CDE, E → F gives CDEF, F → A gives ACDEF, A → B gives ABCDEF. So CD⁺ contains all attributes and CD is a super key.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_normal",
+  "subtopic": "Candidate key finding",
+  "difficulty": "medium",
+  "question_en": "Relation R(A, B, C, D, E) has F = {A → C, BC → D, D → E}. The candidate key of R is ______.",
+  "options": [
+   {
+    "en": "ABD"
+   },
+   {
+    "en": "A"
+   },
+   {
+    "en": "BC"
+   },
+   {
+    "en": "AB"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "A and B never appear on a right-hand side, so both must be in every key. AB⁺: A → C gives ABC, BC → D gives ABCD, D → E gives ABCDE, so AB is a key and it is minimal. ABD is also a super key but not minimal, and A⁺ = AC, BC⁺ = BCDE are not all of R.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_normal",
+  "subtopic": "Candidate key finding",
+  "difficulty": "hard",
+  "question_en": "Relation R(A, B, C, D, E) has F = {AB → C, C → D, D → B, D → E}. How many candidate keys does R have?",
+  "options": [
+   {
+    "en": "1"
+   },
+   {
+    "en": "2"
+   },
+   {
+    "en": "3"
+   },
+   {
+    "en": "4"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "A is on no right-hand side, so it is in every key, but A⁺ = A. AB⁺ = ABCDE; AC⁺: C → D, D → B, D → E gives ABCDE; AD⁺: D → B, D → E, AB → C gives ABCDE; AE⁺ = AE. So AB, AC and AD are candidate keys, and every other super key contains one of them. Hence 3 candidate keys.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_normal",
+  "subtopic": "Prime attributes",
+  "difficulty": "hard",
+  "question_en": "Relation R(A, B, C, D, E, F) has F = {AB → C, C → A, BC → D, D → EF}. Which attributes of R are prime attributes?",
+  "options": [
+   {
+    "en": "B only"
+   },
+   {
+    "en": "B and C only"
+   },
+   {
+    "en": "A, B and C only"
+   },
+   {
+    "en": "A, B, C and D"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "B is on no right-hand side, so it is in every key. AB⁺ = ABCDEF and BC⁺ (C → A, then AB → C, BC → D, D → EF) = ABCDEF, so AB and BC are candidate keys. Sets such as BD, BE, BDEF never produce A or C, so there are no other keys. Prime attributes are those in some candidate key: A, B and C. D is not in any key.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_normal",
+  "subtopic": "Canonical cover",
+  "difficulty": "medium",
+  "question_en": "A canonical cover Fc of a set F of functional dependencies is a set equivalent to F in which ______.",
+  "options": [
+   {
+    "en": "every FD that can be inferred from F by the axioms is included"
+   },
+   {
+    "en": "no FD has an extraneous attribute and every left side is unique"
+   },
+   {
+    "en": "every FD has exactly one attribute on its left-hand side"
+   },
+   {
+    "en": "only the trivial functional dependencies of F are retained"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Korth defines a canonical cover as a set that logically implies and is implied by F, contains no FD with an extraneous attribute on either side, and has a unique left side for each FD (FDs with the same left side are combined). The set of all FDs inferable from F is the closure F⁺, which is much larger, not minimal.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_normal",
+  "subtopic": "Canonical cover",
+  "difficulty": "hard",
+  "question_en": "Which of the following is the canonical cover of F = {A → B, B → C, A → C, AB → D}?",
+  "options": [
+   {
+    "en": "{A → BCD, B → C}"
+   },
+   {
+    "en": "{A → B, B → C, AB → D}"
+   },
+   {
+    "en": "{A → BC, AB → D}"
+   },
+   {
+    "en": "{A → BD, B → C}"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "In AB → D, B is extraneous because A⁺ already contains B (A → B), so it becomes A → D. A → C is redundant because A → B and B → C give it by transitivity. Combining FDs with the same left side gives {A → BD, B → C}. The set {A → BCD, B → C} still has the extraneous C on the right. {A → B, B → C, AB → D} is equivalent to F but keeps the extraneous B in AB → D, so it is not canonical either.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_normal",
+  "subtopic": "First normal form",
+  "difficulty": "easy",
+  "question_en": "A relation schema R is in first normal form (1NF) if ______.",
+  "options": [
+   {
+    "en": "every determinant of R is a candidate key of R"
+   },
+   {
+    "en": "every non-prime attribute fully depends on each key"
+   },
+   {
+    "en": "no non-prime attribute is transitively dependent"
+   },
+   {
+    "en": "the domains of all attributes of R are atomic"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Korth: R is in 1NF if the domains of all its attributes are atomic, i.e. indivisible; this disallows composite and multivalued attributes and nested relations. Full dependency of non-prime attributes describes 2NF, no transitive dependency describes 3NF and \"every determinant is a candidate key\" describes BCNF.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "db_normal",
+  "subtopic": "Second normal form",
+  "difficulty": "medium",
+  "question_en": "A relation in 1NF is in second normal form (2NF) if ______.",
+  "options": [
+   {
+    "en": "no prime attribute is transitively dependent on any candidate key"
+   },
+   {
+    "en": "no non-prime attribute is partially dependent on any candidate key"
+   },
+   {
+    "en": "the left side of every non-trivial FD is a super key of the relation"
+   },
+   {
+    "en": "the relation contains no non-trivial multivalued dependency at all"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "2NF requires every non-prime attribute to be fully functionally dependent on every candidate key, i.e. not dependent on a proper subset of a key. A relation whose candidate keys are all single attributes is therefore automatically in 2NF. The super-key condition is BCNF and the multivalued condition relates to 4NF.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_normal",
+  "subtopic": "Third normal form",
+  "difficulty": "medium",
+  "question_en": "R is in 3NF if, for every functional dependency α → β in F⁺, at least one of these holds: α → β is trivial; α is a super key of R; or ______.",
+  "options": [
+   {
+    "en": "each attribute in β − α is contained in a candidate key of R"
+   },
+   {
+    "en": "β is a super key of the relation schema R"
+   },
+   {
+    "en": "α is contained in at least one candidate key of R"
+   },
+   {
+    "en": "β − α contains only non-prime attributes of R"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "This is Korth's definition of 3NF: the third alternative allows α → β when every attribute of β − α is prime (part of some candidate key), which need not be the same key. BCNF drops this third alternative. The last option is the opposite: a non-prime attribute determined by a non-superkey is exactly what violates 3NF.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_normal",
+  "subtopic": "BCNF",
+  "difficulty": "medium",
+  "question_en": "A relation schema R is in Boyce–Codd normal form (BCNF) with respect to F if, for every non-trivial functional dependency α → β in F⁺, ______.",
+  "options": [
+   {
+    "en": "β is a super key of R"
+   },
+   {
+    "en": "β is a prime attribute"
+   },
+   {
+    "en": "α is a prime attribute"
+   },
+   {
+    "en": "α is a super key of R"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "BCNF requires the left side (determinant) of every non-trivial FD to be a super key. It is stricter than 3NF, which also allows an FD whose right-side attributes are prime. Whether β is prime does not matter in BCNF.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_normal",
+  "subtopic": "BCNF vs 3NF",
+  "difficulty": "medium",
+  "question_en": "Consider the following statements:\nI. Every relation in BCNF is also in 3NF.\nII. For every relation, a lossless BCNF decomposition that preserves all functional dependencies can always be found.\nWhich of the statements given above is/are correct?",
+  "options": [
+   {
+    "en": "Only II"
+   },
+   {
+    "en": "Only I"
+   },
+   {
+    "en": "Both I and II"
+   },
+   {
+    "en": "Neither I nor II"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Statement I is true because the BCNF condition (determinant is a super key) is one of the alternatives permitted by 3NF. Statement II is false: BCNF decomposition is always lossless, but it may not preserve dependencies, e.g. R(S, T, U) with ST → U and U → T. Only 3NF guarantees a lossless and dependency-preserving decomposition.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_normal",
+  "subtopic": "Highest normal form",
+  "difficulty": "medium",
+  "question_en": "Relation R(A, B, C, D) has F = {AB → C, C → D}. What is the highest normal form that R satisfies?",
+  "options": [
+   {
+    "en": "1NF"
+   },
+   {
+    "en": "2NF"
+   },
+   {
+    "en": "3NF"
+   },
+   {
+    "en": "BCNF"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "AB⁺ = ABCD, so AB is the only candidate key; C and D are non-prime. No non-prime attribute depends on A alone or B alone, so R is in 2NF. But C → D has a non-superkey determinant and a non-prime right side (AB → C → D is transitive), so R is not in 3NF. Highest normal form: 2NF.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_normal",
+  "subtopic": "Highest normal form",
+  "difficulty": "hard",
+  "question_en": "Relation R(S, T, U) has F = {ST → U, U → T}. What is the highest normal form that R satisfies?",
+  "options": [
+   {
+    "en": "1NF"
+   },
+   {
+    "en": "2NF"
+   },
+   {
+    "en": "3NF"
+   },
+   {
+    "en": "BCNF"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "ST⁺ = STU and SU⁺ = STU, so the candidate keys are ST and SU; every attribute is prime. U → T has a determinant U that is not a super key, so R is not in BCNF. But T is a prime attribute, so the FD is allowed by 3NF. Highest normal form: 3NF.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_normal",
+  "subtopic": "Highest normal form",
+  "difficulty": "medium",
+  "question_en": "Relation R(A, B, C, D) has F = {AB → C, B → D}. What is the highest normal form that R satisfies?",
+  "options": [
+   {
+    "en": "1NF"
+   },
+   {
+    "en": "2NF"
+   },
+   {
+    "en": "3NF"
+   },
+   {
+    "en": "BCNF"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "AB⁺ = ABCD, so AB is the only candidate key and C, D are non-prime. B → D makes the non-prime attribute D depend on B, a proper subset of the key, which is a partial dependency. So R violates 2NF and its highest normal form is 1NF.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_normal",
+  "subtopic": "BCNF",
+  "difficulty": "medium",
+  "question_en": "Which of the following is always true for any relation schema that has exactly two attributes?",
+  "options": [
+   {
+    "en": "It is always in BCNF, whatever F is"
+   },
+   {
+    "en": "It is in 3NF but not always in BCNF"
+   },
+   {
+    "en": "It is in 2NF but not always in 3NF"
+   },
+   {
+    "en": "It has exactly one candidate key"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "For R(A, B) the only possible non-trivial FDs are A → B and B → A, and whichever holds makes its left side a super key; if neither holds, the key is AB and no non-trivial FD exists. So every two-attribute relation is in BCNF. It may have two candidate keys (A and B) if both FDs hold.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_normal",
+  "subtopic": "Lossless join",
+  "difficulty": "medium",
+  "question_en": "A decomposition of R into R1 and R2 is guaranteed to be a lossless-join decomposition if F⁺ contains ______.",
+  "options": [
+   {
+    "en": "R1 − R2 → R2 − R1"
+   },
+   {
+    "en": "R1 → R2 or R2 → R1"
+   },
+   {
+    "en": "R1 ∪ R2 → R1 ∩ R2"
+   },
+   {
+    "en": "R1 ∩ R2 → R1 or R1 ∩ R2 → R2"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The decomposition is lossless when the common attributes R1 ∩ R2 form a super key of R1 or of R2, i.e. R1 ∩ R2 → R1 or R1 ∩ R2 → R2 is in F⁺. Then joining R1 and R2 back gives exactly R, with no spurious tuples. R1 ∪ R2 → R1 ∩ R2 is trivial and always holds, so it cannot be the test, and R1 → R2 only says that R1 is a super key of R; e.g. R(A, B, C) with AB → C split into (A, B) and (B, C) is still lossy.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_normal",
+  "subtopic": "Lossless join",
+  "difficulty": "hard",
+  "question_en": "Relation R(A, B, C, D) has F = {A → B, C → D}. Which of the following decompositions of R is lossless-join?",
+  "options": [
+   {
+    "en": "(A, B) and (A, C, D)"
+   },
+   {
+    "en": "(A, B) and (C, D)"
+   },
+   {
+    "en": "(A, C) and (B, D)"
+   },
+   {
+    "en": "(A, B, C) and (B, D)"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "For (A, B) and (A, C, D), the common attribute is A and A → B, so A is a key of (A, B) and the join is lossless. (A, B) with (C, D) and (A, C) with (B, D) share no attribute, so their join is a Cartesian product. For (A, B, C) and (B, D) the common attribute B determines nothing (B⁺ = B), so that join is lossy too.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_normal",
+  "subtopic": "Dependency preservation",
+  "difficulty": "hard",
+  "question_en": "Relation R(A, B, C, D) has F = {A → B, B → C, C → D}. R is decomposed into R1(A, B), R2(A, C) and R3(A, D). This decomposition is ______.",
+  "options": [
+   {
+    "en": "lossless-join and dependency-preserving"
+   },
+   {
+    "en": "lossless-join but not dependency-preserving"
+   },
+   {
+    "en": "dependency-preserving but not lossless-join"
+   },
+   {
+    "en": "neither lossless-join nor dependency-preserving"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "A⁺ = ABCD and A is common to all three schemas, so A is a key of each and the join is lossless. The projections of F⁺ give only A → B, A → C and A → D; from these, B → C and C → D cannot be derived, so dependencies are not preserved. Checking B → C would need a join of the relations.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_normal",
+  "subtopic": "MVD and 4NF",
+  "difficulty": "medium",
+  "question_en": "A relation schema R is in fourth normal form (4NF) if, for every non-trivial multivalued dependency X →→ Y, ______.",
+  "options": [
+   {
+    "en": "X is a set of prime attributes"
+   },
+   {
+    "en": "Y is a super key of R"
+   },
+   {
+    "en": "X is a super key of R"
+   },
+   {
+    "en": "Y contains only prime attributes"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "4NF is the BCNF condition applied to multivalued dependencies: the left side X of every non-trivial MVD must be a super key. MVDs arise when two independent multivalued facts are stored together, e.g. EMP(Name, Skill, Language) with Name →→ Skill. Every 4NF relation is also in BCNF.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "db_normal",
+  "subtopic": "Transitive dependency",
+  "difficulty": "easy",
+  "question_en": "In R(Roll_no, Name, Pin_code, City) with Roll_no → Pin_code and Pin_code → City, the dependency Roll_no → City is a ______ dependency.",
+  "options": [
+   {
+    "en": "multivalued"
+   },
+   {
+    "en": "partial"
+   },
+   {
+    "en": "trivial"
+   },
+   {
+    "en": "transitive"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Roll_no → City is derived through Pin_code (Roll_no → Pin_code → City), and Pin_code is not a key, so it is a transitive dependency; it violates 3NF. A partial dependency is on a proper subset of a composite key, but here the key Roll_no is a single attribute.",
+  "pyq_concept": false
+ }
+]

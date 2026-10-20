@@ -19,7 +19,14 @@ import {
 import api from '@/lib/api';
 import { asList } from '@/lib/courseContent';
 
+const CATEGORY_NAMES: Record<string, string> = {
+    dsssb: 'DSSSB TGT Computer Science',
+    gs: 'General Studies',
+    'current-affairs': 'Current Affairs',
+};
+
 function formatCategoryName(value: string) {
+    if (CATEGORY_NAMES[value]) return CATEGORY_NAMES[value];
     return value
         .split('-')
         .map((word) => word.charAt(0).toUpperCase() + word.slice(1))

@@ -3,7 +3,13 @@
 import { useParams } from 'next/navigation';
 import SubjectLearningConsole from '@/components/courses/SubjectLearningConsole';
 
+const CATEGORY_NAMES: Record<string, string> = {
+    dsssb: 'DSSSB TGT Computer Science',
+    gs: 'General Studies',
+};
+
 function formatCategoryName(value: string) {
+    if (CATEGORY_NAMES[value]) return CATEGORY_NAMES[value];
     return value
         .split('-')
         .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
@@ -28,7 +34,7 @@ export default function CategorySubjectPage() {
                 { label: categoryName, href: `/dashboard/courses/${category}` },
                 { label: 'Subject' },
             ]}
-            subtitle={`${categoryName} multimodal learning with chapter and topic navigation plus full-window controls.`}
+            subtitle={`${categoryName}: pick a chapter, then a topic, and study its notes, videos and practice material.`}
         />
     );
 }

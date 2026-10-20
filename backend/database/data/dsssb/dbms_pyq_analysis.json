@@ -1,0 +1,370 @@
+[
+ {
+  "qid": "630680256151",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following is a conflict serializable schedule?\nS1: R1(A); R1(B); R2(A); R2(B); W2(B); W1(A)\nS2: R1(A); R2(A); R2(B); W2(B); R1(B); W1(A)",
+  "options": [
+   "S1 is conflict serializable but S2 is not.",
+   "S1 is not conflict serializable but S2 is conflict serializable.",
+   "Both are not conflict serializable.",
+   "Both are conflict serializable."
+  ],
+  "answer": 2,
+  "subtopic": "Conflict serializability",
+  "difficulty": "hard",
+  "explanation": "Draw the precedence graph. In S1, R1(B) comes before W2(B), giving T1->T2, and R2(A) comes before W1(A), giving T2->T1. That is a cycle, so S1 is not conflict serializable. In S2, R2(A) before W1(A) and W2(B) before R1(B) both give T2->T1 and there is no edge back, so S2 is equivalent to the serial order T2, T1.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256149",
+  "paper": "2023_06_24_s3",
+  "question": "Consider the relation R (PQRSTU) with the set of functional dependencies F = {P → RT, Q → S, R → PS, QS → TU}. Find the closures of PQ.",
+  "options": [
+   "PQRST",
+   "PQRTU",
+   "PQRSU",
+   "PQRSTU"
+  ],
+  "answer": 4,
+  "subtopic": "Attribute closure",
+  "difficulty": "medium",
+  "explanation": "Start with PQ. P -> RT adds R and T, giving PQRT. R -> PS adds S (Q -> S also adds S), giving PQRST. Now QS -> TU adds U, giving PQRSTU. So the closure contains every attribute and PQ is a superkey. Option 1 stops before using QS -> TU.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256351",
+  "paper": "2023_06_25_s1",
+  "question": "The ‘DEFAULT constraint’ of SQL will ______.",
+  "options": [
+   "ensure that a column cannot have a NULL value",
+   "ensure that all the values in a column satisfy certain conditions",
+   "ensure that all values in a column are different",
+   "provide a default value for a column when none is specified"
+  ],
+  "answer": 4,
+  "subtopic": "SQL constraints",
+  "difficulty": "easy",
+  "explanation": "The DEFAULT constraint gives a column a value automatically when an INSERT does not supply one, for example city VARCHAR(20) DEFAULT 'Delhi'. NOT NULL stops NULL values, CHECK enforces a condition and UNIQUE keeps values different.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256686",
+  "paper": "2023_06_25_s2",
+  "question": "Which of the following DBMS scenarios will NOT really follow Armstrong's Axiom?",
+  "options": [
+   "Reflexivity rule",
+   "Pseudo transitivity rule",
+   "Transitivity rule",
+   "Armstrong's axioms"
+  ],
+  "answer": 2,
+  "subtopic": "Armstrong axioms vs derived rules",
+  "difficulty": "medium",
+  "explanation": "Armstrong's axioms proper are only three rules: reflexivity, augmentation and transitivity. Pseudo-transitivity (if X->Y and WY->Z then WX->Z) is not one of the axioms; it is a secondary rule derived from them. So it is the one that is not an Armstrong axiom, while reflexivity and transitivity are.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598493",
+  "paper": "2024_02_07_s2",
+  "question": "A ______ index is an ordered file whose records are of fixed length with two fields primary key and a pointer to a disk block.",
+  "options": [
+   "Secondary",
+   "Multilevel",
+   "Primary",
+   "Clustering"
+  ],
+  "answer": 3,
+  "subtopic": "Indexing - primary index",
+  "difficulty": "medium",
+  "explanation": "A primary index is an ordered file of fixed-length records with two fields: the primary key value of the first record in a data block (the anchor) and a pointer to that disk block. A clustering index is built on a non-key ordering field, and a secondary index is built on a non-ordering field.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598496",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following statement is correct for DATEDIFF function in SQL?\nI. This function reports difference between the arguments 'startdate' and 'enddate'.\nII. In this, 'datepart' argument/value can be specified in a variable.",
+  "options": [
+   "Only I",
+   "Neither I nor II",
+   "Both I and II",
+   "Only II"
+  ],
+  "answer": 1,
+  "subtopic": "SQL DATEDIFF function",
+  "difficulty": "medium",
+  "explanation": "DATEDIFF(datepart, startdate, enddate) returns the difference between the start date and the end date in the given unit, so statement I is true. In SQL Server the datepart (year, month, day, ...) must be written directly as a keyword and cannot be given in a variable, so II is false. So only I is correct.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598488",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following symbol is used with SELECT command of SQL, to retrieve all the attribute values of the selected tuples?",
+  "options": [
+   "#",
+   "%",
+   "*",
+   ":"
+  ],
+  "answer": 3,
+  "subtopic": "SQL SELECT *",
+  "difficulty": "easy",
+  "explanation": "SELECT * FROM table returns all attributes (columns) of the selected rows; * is the wildcard for 'all columns'. % is the LIKE wildcard for any sequence of characters, and # and : have no such role in standard SQL.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598491",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following is NOT an aggregate function in SQL?",
+  "options": [
+   "CROSS PRODUCT",
+   "MAXIMUM",
+   "COUNT",
+   "SUM"
+  ],
+  "answer": 1,
+  "subtopic": "SQL aggregate functions",
+  "difficulty": "easy",
+  "explanation": "SQL aggregate functions such as COUNT, SUM, AVG, MAX and MIN take a group of rows and return a single value. 'MAXIMUM' in the options refers to MAX. A cross product (Cartesian product) is a join operation that combines rows of two tables, not an aggregate function.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598476",
+  "paper": "2024_02_07_s2",
+  "question": "In relational databases, which of the following integrity constraint is specified between two relations and is used to maintain the consistency among tuples in the two relations?",
+  "options": [
+   "Entity integrity constraint",
+   "Semantic integrity constraint",
+   "Functional integrity constraint",
+   "Referential integrity constraint"
+  ],
+  "answer": 4,
+  "subtopic": "Referential integrity",
+  "difficulty": "easy",
+  "explanation": "A referential integrity constraint is defined between two relations: a foreign key value in one table must match an existing primary key value in the referenced table (or be NULL). This keeps the tuples in the two relations consistent. Entity integrity applies within one relation (primary key not NULL).",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598494",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following operator is used as concatenation operator in SQL?",
+  "options": [
+   "++",
+   "“ ”",
+   "##",
+   "||"
+  ],
+  "answer": 4,
+  "subtopic": "SQL concatenation operator",
+  "difficulty": "easy",
+  "explanation": "In standard SQL (Oracle, PostgreSQL) || is the string concatenation operator, for example 'Data' || 'base' gives 'Database'. MySQL uses CONCAT() and SQL Server uses +, while ++, ## and quotes are not concatenation operators.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598495",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following operator of SQL is used in WHERE clause for match a character pattern in database?",
+  "options": [
+   "LIKE",
+   "IN",
+   "IS NULL",
+   "OR"
+  ],
+  "answer": 1,
+  "subtopic": "SQL LIKE operator",
+  "difficulty": "easy",
+  "explanation": "LIKE is used in a WHERE clause to match a character pattern, with % standing for any sequence of characters and _ for exactly one character, for example WHERE name LIKE 'A%'. IN checks membership in a list of values, and IS NULL tests for missing values.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256150",
+  "paper": "2023_06_24_s3",
+  "question": "Descriptive attributes are used to:",
+  "options": [
+   "record the information about relationships",
+   "record the information about attributes",
+   "record the information about participating entities",
+   "record the information about data"
+  ],
+  "answer": 1,
+  "subtopic": "ER model - descriptive attributes",
+  "difficulty": "easy",
+  "explanation": "Attributes attached to a relationship set (e.g. 'since' on works_for) are called descriptive attributes; they record information about the relationship itself, not about the participating entities. Information about entities is held by the entities' own attributes.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256350",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following is known as an association among several entities?",
+  "options": [
+   "Instance",
+   "Key",
+   "Relationship",
+   "Participation"
+  ],
+  "answer": 3,
+  "subtopic": "ER model - relationship",
+  "difficulty": "easy",
+  "explanation": "A relationship is an association among two or more entities (e.g. Student ENROLLS-IN Course). An instance is a single occurrence, a key identifies entities uniquely, and participation describes whether every entity takes part in a relationship.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256622",
+  "paper": "2023_06_25_s2",
+  "question": "Which of the following is used to define the structure of a relation as well as delete relations and relate schemas?",
+  "options": [
+   "Integrity constraint",
+   "View",
+   "DML (Data Manipulation Language)",
+   "DDL (Data Definition Language)"
+  ],
+  "answer": 4,
+  "subtopic": "SQL - DDL",
+  "difficulty": "easy",
+  "explanation": "DDL (CREATE, ALTER, DROP) defines relation schemas, deletes relations and modifies schemas. DML (SELECT, INSERT, UPDATE, DELETE) works on data inside the tables, not on their structure.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256621",
+  "paper": "2023_06_25_s2",
+  "question": "What makes a database a relational database?",
+  "options": [
+   "Tables",
+   "Field",
+   "Records",
+   "Tuple"
+  ],
+  "answer": 1,
+  "subtopic": "Relational model",
+  "difficulty": "easy",
+  "explanation": "A relational database stores data in tables (relations) of rows and columns, linked by keys; that is what makes it relational. Fields, records and tuples are just the parts of a table.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256636",
+  "paper": "2023_06_25_s2",
+  "question": "Communication between an application program and a database server occur via:",
+  "options": [
+   "ODBC OR JDBC",
+   "API",
+   "web server",
+   "HTTP"
+  ],
+  "answer": 1,
+  "subtopic": "Database connectivity - ODBC/JDBC",
+  "difficulty": "easy",
+  "explanation": "Application programs communicate with a database server through standard APIs such as ODBC (C and other languages) or JDBC (Java). HTTP and a web server connect browsers to web applications, not applications to databases.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598497",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following data function in SQL returns the current database system timestamp as a 'datetime' value without the database time zone offset?",
+  "options": [
+   "GETTIME",
+   "GETDATE",
+   "CASTDATE",
+   "CASTTIME"
+  ],
+  "answer": 2,
+  "subtopic": "SQL date functions",
+  "difficulty": "easy",
+  "explanation": "In SQL Server, GETDATE() returns the current database system timestamp as a datetime value without the time-zone offset (SYSDATETIMEOFFSET includes it). GETTIME, CASTDATE and CASTTIME are not standard functions.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598492",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following normal form of normalization in relational model, disallows relations within relations or relations as attribute values within tuples?",
+  "options": [
+   "Fourth",
+   "First",
+   "Second",
+   "Third"
+  ],
+  "answer": 2,
+  "subtopic": "First normal form",
+  "difficulty": "easy",
+  "explanation": "1NF requires atomic attribute values; it disallows multivalued and composite attributes, i.e. relations within relations (nested relations) as attribute values. 2NF and 3NF deal with partial and transitive dependencies.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598498",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following maths function in SQL returns the smallest integer greater than, or equal to, the specified numeric expression?",
+  "options": [
+   "ROUND",
+   "CEILING",
+   "ABS",
+   "FLOOR"
+  ],
+  "answer": 2,
+  "subtopic": "SQL math functions",
+  "difficulty": "easy",
+  "explanation": "CEILING(x) returns the smallest integer greater than or equal to x, e.g. CEILING(4.2) = 5. FLOOR returns the largest integer less than or equal to x, ROUND rounds to the nearest value, and ABS gives the absolute value.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598489",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following operation includes all tuples that are in R-set but not in S-set?",
+  "options": [
+   "R – S",
+   "R ∩ S",
+   "R ∪ S",
+   "R × S"
+  ],
+  "answer": 1,
+  "subtopic": "Relational algebra - set difference",
+  "difficulty": "easy",
+  "explanation": "The set difference R - S contains tuples that are in R but not in S. R ∩ S gives tuples in both, R ∪ S tuples in either, and R × S is the Cartesian product.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598475",
+  "paper": "2024_02_07_s2",
+  "question": "In Database Management System (DBMS), which of the following term defines a collection of entities that have the same attributes in the database?",
+  "options": [
+   "Entity type",
+   "Value set",
+   "Entity set",
+   "Value type"
+  ],
+  "answer": 1,
+  "subtopic": "ER model - entity type",
+  "difficulty": "medium",
+  "explanation": "In Elmasri-Navathe's terminology, an entity type defines a collection of entities that have the same attributes (e.g. EMPLOYEE). An entity set is the collection of entities of that type present in the database at a particular moment, and a value set is the domain of an attribute.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598477",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following term of ER model (Entity – Relationship) is corresponding to the foreign key (or relationship relation) in the relational model of database?",
+  "options": [
+   "Composite attribute",
+   "Entity type",
+   "1 : 1 (one to one) or 1 : N (one to many) relationship type",
+   "M : N (many to many) relationship type"
+  ],
+  "answer": 3,
+  "subtopic": "ER to relational mapping",
+  "difficulty": "medium",
+  "explanation": "In ER-to-relational mapping, a 1:1 or 1:N relationship type corresponds to a foreign key (or a relationship relation). An M:N relationship type needs a separate relationship relation with two foreign keys, and composite attributes map to sets of simple attributes.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598478",
+  "paper": "2024_02_07_s2",
+  "question": "In SQL, which of the following is correct command for schema evolution, if the RESTRICT option is chosen than the schema is dropped only if schema has no element in it?",
+  "options": [
+   "DELETE",
+   "UPDATE",
+   "ALTER",
+   "DROP"
+  ],
+  "answer": 4,
+  "subtopic": "SQL DROP SCHEMA",
+  "difficulty": "medium",
+  "explanation": "Schema evolution commands include DROP SCHEMA name RESTRICT, which drops the schema only if it has no elements, and CASCADE, which drops it with all its elements. ALTER modifies existing schema elements but has no RESTRICT schema-drop behaviour, and DELETE/UPDATE are DML commands.",
+  "key_doubt": false
+ }
+]

@@ -53,6 +53,7 @@ export default function SubjectLearningConsole({
     const [loading, setLoading] = useState(true);
     const [activeChapter, setActiveChapter] = useState<number | null>(null);
     const [selectedTopic, setSelectedTopic] = useState<any>(null);
+    const [subjectName, setSubjectName] = useState<string | null>(null);
     const [contentType, setContentType] = useState<ContentType>('notes');
     const [error, setError] = useState<string | null>(null);
 
@@ -66,6 +67,7 @@ export default function SubjectLearningConsole({
             const res = await api.get(`/courses/subjects/${subjectId}/hierarchy`);
             const allChapters = asList<CourseChapter>(res.data);
             setChapters(allChapters);
+            setSubjectName(res.data?.subject?.name_en ?? null);
 
             // Open the first chapter that has topics.
             const first = allChapters.find((c) => c.topics?.length) ?? allChapters[0];
@@ -156,10 +158,12 @@ export default function SubjectLearningConsole({
                                 ))}
                             </div>
                             <h1 className="text-xl md:text-3xl font-black text-white uppercase tracking-tight italic">
-                                {selectedTopic?.name_en || contextLabel}
+                                {subjectName || selectedTopic?.name_en || contextLabel}
                             </h1>
                             <p className="text-xs md:text-sm text-cyan-100/80 mt-1">
-                                {subtitle || 'Study each topic with notes, video, audio and mind maps.'}
+                                {subjectName && selectedTopic?.name_en
+                                    ? `Now open: ${selectedTopic.name_en}`
+                                    : (subtitle || 'Study each topic with notes, video, audio and mind maps.')}
                             </p>
                         </div>
                     </div>

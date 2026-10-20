@@ -16,10 +16,20 @@ import {
     Map,
     Layers,
     FileText,
+    Database,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const categories = [
+    {
+        id: 'dsssb',
+        name: 'DSSSB TGT Computer Science',
+        icon: Database,
+        desc: 'Exam-focused notes for every CS chapter, starting with DBMS: concepts, previous-year questions and the most expected questions.',
+        accent: 'from-emerald-600/20 to-teal-600/10',
+        iconClass: 'bg-emerald-600/15 text-emerald-600 border-emerald-600/30',
+        badgeClass: 'bg-emerald-600/10 text-emerald-700 border-emerald-600/30',
+    },
     {
         id: 'ncert',
         name: 'NCERT',
