@@ -1,0 +1,2302 @@
+[
+  {
+    "chapter_key": "nw_network",
+    "subtopic": "Subnetting: hosts from a subnet mask",
+    "difficulty": "medium",
+    "question_en": "A network uses the subnet mask 255.255.248.0. What is the maximum number of usable host addresses in each subnet?",
+    "options": [
+      {
+        "en": "2048"
+      },
+      {
+        "en": "4094"
+      },
+      {
+        "en": "1022"
+      },
+      {
+        "en": "2046"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "255.255.248.0 is /21, so host bits = 32 − 21 = 11. Usable hosts = 2^11 − 2 = 2048 − 2 = 2046, because the all-0s (network) and all-1s (broadcast) host parts cannot be assigned. 2048 is the total number of addresses in the block, not the usable count.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "nw_network",
+    "subtopic": "Subnetting: subnets from borrowed bits",
+    "difficulty": "hard",
+    "question_en": "The network 192.168.10.0/24 is subnetted by borrowing 3 bits from the host part. How many subnets are created, and how many usable hosts does each subnet have?",
+    "options": [
+      {
+        "en": "8 subnets, 32 hosts each"
+      },
+      {
+        "en": "8 subnets, 30 hosts each"
+      },
+      {
+        "en": "6 subnets, 30 hosts each"
+      },
+      {
+        "en": "3 subnets, 62 hosts each"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Borrowing 3 bits gives 2^3 = 8 subnets with the new prefix /27. Host bits left = 32 − 27 = 5, so usable hosts = 2^5 − 2 = 30. '32 hosts' wrongly counts the network and broadcast addresses, and '6 subnets' uses the obsolete 2^n − 2 rule that discarded the first and last subnet.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_network",
+    "subtopic": "Subnetting: network address of a host",
+    "difficulty": "medium",
+    "question_en": "What is the network (subnet) address of the host 172.16.45.130/26?",
+    "options": [
+      {
+        "en": "172.16.45.64"
+      },
+      {
+        "en": "172.16.45.0"
+      },
+      {
+        "en": "172.16.45.192"
+      },
+      {
+        "en": "172.16.45.128"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "/26 means mask 255.255.255.192, so the block size in the last octet is 256 − 192 = 64. Subnets start at .0, .64, .128 and .192; 130 lies in the range .128–.191, so the network address is 172.16.45.128. 172.16.45.192 is the next subnet, which starts after 130.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_network",
+    "subtopic": "Subnetting: broadcast address",
+    "difficulty": "hard",
+    "question_en": "What is the directed broadcast address of the subnet that contains the host 10.1.70.20/20?",
+    "options": [
+      {
+        "en": "10.1.79.255"
+      },
+      {
+        "en": "10.1.71.255"
+      },
+      {
+        "en": "10.1.63.255"
+      },
+      {
+        "en": "10.1.255.255"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "/20 means mask 255.255.240.0, so the block size in the third octet is 256 − 240 = 16: subnets start at 0, 16, 32, 48, 64, 80 and so on. 70 lies in 64–79, so the network is 10.1.64.0 and the broadcast (all host bits 1) is 10.1.79.255. 10.1.71.255 wrongly uses a block of 8, which would be a /21.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_network",
+    "subtopic": "Subnetting: first and last usable host",
+    "difficulty": "medium",
+    "question_en": "For the host 192.168.5.77/27, what are the first and last usable host addresses of its subnet?",
+    "options": [
+      {
+        "en": "192.168.5.64 and 192.168.5.95"
+      },
+      {
+        "en": "192.168.5.65 and 192.168.5.95"
+      },
+      {
+        "en": "192.168.5.65 and 192.168.5.94"
+      },
+      {
+        "en": "192.168.5.33 and 192.168.5.62"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "/27 gives a block size of 32: subnets start at .0, .32, .64 and .96. 77 lies in .64–.95, so the network is .64 and the broadcast is .95. Usable hosts run from network + 1 to broadcast − 1, i.e. .65 to .94; the pair .64 and .95 are the network and broadcast addresses, which cannot be given to hosts.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_network",
+    "subtopic": "CIDR prefix to dotted-decimal mask",
+    "difficulty": "easy",
+    "question_en": "The CIDR prefix /19 is equivalent to which dotted-decimal subnet mask?",
+    "options": [
+      {
+        "en": "255.255.192.0"
+      },
+      {
+        "en": "255.255.240.0"
+      },
+      {
+        "en": "255.224.0.0"
+      },
+      {
+        "en": "255.255.224.0"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "/19 = 8 + 8 + 3 one-bits, so the third octet is 11100000 = 128 + 64 + 32 = 224, giving 255.255.224.0. 255.255.192.0 is /18 (two ones in the third octet) and 255.255.240.0 is /20 (four ones).",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_network",
+    "subtopic": "Subnetting: block size",
+    "difficulty": "easy",
+    "question_en": "What is the block size (the address increment between consecutive subnets) for the mask 255.255.255.224?",
+    "options": [
+      {
+        "en": "32"
+      },
+      {
+        "en": "16"
+      },
+      {
+        "en": "64"
+      },
+      {
+        "en": "224"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Block size = 256 − the value of the last non-255 octet = 256 − 224 = 32. So the subnets begin at .0, .32, .64, .96 and so on, each holding 30 usable hosts. 224 is the mask octet itself, not the step between subnets.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_network",
+    "subtopic": "Subnetting: choosing a mask for N hosts",
+    "difficulty": "hard",
+    "question_en": "An administrator needs one subnet with at least 500 usable host addresses while wasting as few addresses as possible. Which subnet mask should be used?",
+    "options": [
+      {
+        "en": "255.255.255.0"
+      },
+      {
+        "en": "255.255.252.0"
+      },
+      {
+        "en": "255.255.255.128"
+      },
+      {
+        "en": "255.255.254.0"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Find the smallest h with 2^h − 2 ≥ 500: 2^9 − 2 = 510, so 9 host bits are needed, giving prefix /23 = 255.255.254.0. 255.255.255.0 (/24) gives only 254 hosts, and 255.255.252.0 (/22) gives 1022 hosts, wasting more addresses than necessary.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "nw_network",
+    "subtopic": "Subnetting: /30 point-to-point links",
+    "difficulty": "easy",
+    "question_en": "How many usable host addresses does a subnet with the mask 255.255.255.252 provide (the reason it is used on point-to-point router links)?",
+    "options": [
+      {
+        "en": "4"
+      },
+      {
+        "en": "1"
+      },
+      {
+        "en": "6"
+      },
+      {
+        "en": "2"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "255.255.255.252 is /30, leaving 2 host bits: 2^2 = 4 addresses, minus the network and broadcast addresses = 2 usable hosts, one for each end of the link. 4 is the total size of the block, not the usable count.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "nw_network",
+    "subtopic": "CIDR: dividing a block",
+    "difficulty": "medium",
+    "question_en": "How many /24 networks can be carved out of a single /20 address block?",
+    "options": [
+      {
+        "en": "8"
+      },
+      {
+        "en": "32"
+      },
+      {
+        "en": "16"
+      },
+      {
+        "en": "4"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Going from /20 to /24 borrows 24 − 20 = 4 bits, so the block splits into 2^4 = 16 networks of 256 addresses each (16 × 256 = 4096 = 2^12). 8 would be the answer for a /21 block.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_network",
+    "subtopic": "Subnetting: same-subnet test",
+    "difficulty": "hard",
+    "question_en": "With the subnet mask 255.255.255.192, which of the following hosts lies in the same subnet as 192.168.1.130?",
+    "options": [
+      {
+        "en": "192.168.1.120"
+      },
+      {
+        "en": "192.168.1.190"
+      },
+      {
+        "en": "192.168.1.200"
+      },
+      {
+        "en": "192.168.1.60"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Mask .192 is /26 with block size 64, giving subnets .0–.63, .64–.127, .128–.191 and .192–.255. 192.168.1.130 lies in .128–.191, and so does .190. 192.168.1.120 is numerically close but belongs to the .64–.127 subnet.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_network",
+    "subtopic": "Subnetting: mask for N subnets",
+    "difficulty": "hard",
+    "question_en": "The Class B network 150.20.0.0 must be divided into 64 equal subnets. Which subnet mask should be used?",
+    "options": [
+      {
+        "en": "255.255.254.0"
+      },
+      {
+        "en": "255.255.248.0"
+      },
+      {
+        "en": "255.255.252.0"
+      },
+      {
+        "en": "255.255.255.192"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "64 subnets need 2^6 = 64, so 6 bits are borrowed from the default /16, giving /22. Six ones in the third octet = 11111100 = 252, so the mask is 255.255.252.0, and each subnet has 2^10 − 2 = 1022 hosts. 255.255.248.0 borrows only 5 bits and yields just 32 subnets.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_network",
+    "subtopic": "CIDR: route aggregation (supernetting)",
+    "difficulty": "hard",
+    "question_en": "A router must advertise the networks 200.1.4.0/24, 200.1.5.0/24, 200.1.6.0/24 and 200.1.7.0/24 as one summary route. What is the aggregated route?",
+    "options": [
+      {
+        "en": "200.1.4.0/23"
+      },
+      {
+        "en": "200.1.4.0/22"
+      },
+      {
+        "en": "200.1.0.0/21"
+      },
+      {
+        "en": "200.1.0.0/16"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "In binary the third octets 4, 5, 6 and 7 are 000001 00, 000001 01, 000001 10 and 000001 11: the first 6 bits match, so the common prefix is 16 + 6 = 22 bits, giving 200.1.4.0/22 (exactly 200.1.4.0 – 200.1.7.255). A /23 would cover only 200.1.4.0 and 200.1.5.0, while /21 and /16 also include networks that were not in the list.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_network",
+    "subtopic": "Subnetting: prefix for N subnets",
+    "difficulty": "hard",
+    "question_en": "From 192.168.50.0/24 an administrator needs at least 14 subnets and wants the largest possible number of hosts in each. Which prefix length should be used?",
+    "options": [
+      {
+        "en": "/27"
+      },
+      {
+        "en": "/29"
+      },
+      {
+        "en": "/28"
+      },
+      {
+        "en": "/26"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Borrow n bits with 2^n ≥ 14, so n = 4 (16 subnets) and the prefix is 24 + 4 = /28, leaving 2^4 − 2 = 14 hosts per subnet. /27 borrows only 3 bits and gives 8 subnets; /29 also gives enough subnets but only 6 hosts in each.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_network",
+    "subtopic": "IPv4 binary to dotted-decimal",
+    "difficulty": "easy",
+    "question_en": "What is the dotted-decimal form of the IPv4 address 11000000.10101000.00000001.00001010?",
+    "options": [
+      {
+        "en": "192.168.1.10"
+      },
+      {
+        "en": "192.168.1.5"
+      },
+      {
+        "en": "192.164.1.10"
+      },
+      {
+        "en": "196.168.1.10"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Convert each octet: 11000000 = 128 + 64 = 192; 10101000 = 128 + 32 + 8 = 168; 00000001 = 1; 00001010 = 8 + 2 = 10. So the address is 192.168.1.10. 192.168.1.5 comes from misreading 00001010 as 101 (= 5).",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_network",
+    "subtopic": "Network-layer functions",
+    "difficulty": "easy",
+    "question_en": "Which of the following is NOT a responsibility of the network layer?",
+    "options": [
+      {
+        "en": "Logical (IP) addressing of hosts"
+      },
+      {
+        "en": "Routing packets between networks"
+      },
+      {
+        "en": "Grouping the bit stream into frames"
+      },
+      {
+        "en": "Fragmenting datagrams to fit the MTU"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Framing — grouping bits into frames with a header and trailer — is a data link layer duty. The network layer provides host-to-host delivery through logical addressing, routing, forwarding, fragmentation and congestion control. Fragmentation may sound like framing, but it splits IP datagrams and is a network-layer task.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "nw_network",
+    "subtopic": "Datagram vs virtual-circuit networks",
+    "difficulty": "medium",
+    "question_en": "Which statement correctly describes a virtual-circuit network?",
+    "options": [
+      {
+        "en": "Every packet is routed independently using its full address"
+      },
+      {
+        "en": "No connection set-up phase is needed before sending data"
+      },
+      {
+        "en": "All packets of a connection follow the same pre-set path"
+      },
+      {
+        "en": "Packets normally arrive out of order at the destination"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "A virtual-circuit network has set-up, data-transfer and teardown phases; after set-up every packet follows the same path and carries a short virtual-circuit identifier, so packets arrive in order. Independent routing of each packet without set-up is the defining feature of a datagram network, not a virtual-circuit network.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "nw_network",
+    "subtopic": "IPv4 and IPv6 address size",
+    "difficulty": "easy",
+    "question_en": "The lengths of an IPv4 address and an IPv6 address are, respectively:",
+    "options": [
+      {
+        "en": "32 bits and 64 bits"
+      },
+      {
+        "en": "48 bits and 128 bits"
+      },
+      {
+        "en": "32 bits and 128 bits"
+      },
+      {
+        "en": "64 bits and 128 bits"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "An IPv4 address is 4 bytes (32 bits), giving 2^32 ≈ 4.3 billion addresses; an IPv6 address is 16 bytes (128 bits). 48 bits is the length of a MAC (Ethernet hardware) address, not an IP address.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "nw_network",
+    "subtopic": "IPv4 classes and ranges",
+    "difficulty": "easy",
+    "question_en": "IPv4 addresses whose first octet lies between 224 and 239 belong to:",
+    "options": [
+      {
+        "en": "Class E, reserved for future use"
+      },
+      {
+        "en": "Class C, used for small networks"
+      },
+      {
+        "en": "Class D, reserved for multicasting"
+      },
+      {
+        "en": "Class B, used for mid-size networks"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Class D (leading bits 1110) covers 224.0.0.0 – 239.255.255.255 and is used for multicast groups; it has no network/host split and no default mask. Class E starts at 240 (leading bits 1111) and is reserved for experimental use.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_network",
+    "subtopic": "Special addresses: loopback",
+    "difficulty": "easy",
+    "question_en": "The address 127.0.0.1 is used to:",
+    "options": [
+      {
+        "en": "Broadcast to every host on the local link"
+      },
+      {
+        "en": "Identify a private network behind NAT"
+      },
+      {
+        "en": "Reach the default gateway of the LAN"
+      },
+      {
+        "en": "Test the TCP/IP stack on the local host"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "127.0.0.0/8 is the loopback block: packets sent to 127.0.0.1 never leave the computer, so it is used to test the local protocol stack (for example, ping 127.0.0.1). Broadcasting to the local link uses 255.255.255.255, not a 127.x.x.x address.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_network",
+    "subtopic": "Private IPv4 addresses",
+    "difficulty": "medium",
+    "question_en": "Which of the following is a private IPv4 address that is not routed on the public Internet?",
+    "options": [
+      {
+        "en": "172.20.5.9"
+      },
+      {
+        "en": "172.32.5.9"
+      },
+      {
+        "en": "192.169.5.9"
+      },
+      {
+        "en": "11.0.5.9"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The RFC 1918 private ranges are 10.0.0.0/8, 172.16.0.0/12 (172.16.0.0 – 172.31.255.255) and 192.168.0.0/16. 172.20.5.9 falls inside 172.16–172.31, so it is private. 172.32.5.9 lies just outside that range and is a public address.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_network",
+    "subtopic": "Special addresses: broadcast and network",
+    "difficulty": "hard",
+    "question_en": "Consider the following statements:\nI. 255.255.255.255 is the limited broadcast address, and routers do not forward it.\nII. An address whose host bits are all 0 identifies the network itself and is not assigned to a host.\nWhich of the statements is/are correct?",
+    "options": [
+      {
+        "en": "Only I"
+      },
+      {
+        "en": "Both I and II"
+      },
+      {
+        "en": "Only II"
+      },
+      {
+        "en": "Neither I nor II"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Both statements are true. The limited broadcast 255.255.255.255 stays inside the local network, and an all-zeros host part (for example 192.168.1.0/24) names the network. Do not confuse the limited broadcast with a directed broadcast, which has all host bits 1 within a particular network (for example 192.168.1.255).",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_network",
+    "subtopic": "IPv4 classes and default masks",
+    "difficulty": "medium",
+    "question_en": "The address 191.200.15.4 belongs to which class, and what is its default subnet mask?",
+    "options": [
+      {
+        "en": "Class C, 255.255.255.0"
+      },
+      {
+        "en": "Class B, 255.255.0.0"
+      },
+      {
+        "en": "Class A, 255.0.0.0"
+      },
+      {
+        "en": "Class B, 255.255.255.0"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Class B covers first octets 128–191 (leading bits 10), so 191 is the last Class B value and the default mask is 255.255.0.0 (/16). Class C begins at 192, which is why an address starting with 191 is often mistaken for Class C.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_network",
+    "subtopic": "IPv6 zero compression",
+    "difficulty": "medium",
+    "question_en": "Which is the correct zero-compressed form of the IPv6 address 2001:0DB8:0000:0000:0000:0000:1428:57AB?",
+    "options": [
+      {
+        "en": "2001:DB8:::1428:57AB"
+      },
+      {
+        "en": "2001::DB8::1428:57AB"
+      },
+      {
+        "en": "2001:DB8::14:28:57AB"
+      },
+      {
+        "en": "2001:DB8::1428:57AB"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Leading zeros inside a group may be dropped (0DB8 becomes DB8), and one run of consecutive all-zero groups may be replaced by '::', giving 2001:DB8::1428:57AB. '2001::DB8::1428:57AB' is invalid because '::' may appear only once; otherwise the number of missing groups would be ambiguous.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_network",
+    "subtopic": "IPv6 features",
+    "difficulty": "medium",
+    "question_en": "Which statement about IPv6 is TRUE?",
+    "options": [
+      {
+        "en": "It has no broadcast; it uses multicast and anycast"
+      },
+      {
+        "en": "Its fixed base header is 20 bytes long"
+      },
+      {
+        "en": "Routers fragment its packets along the path"
+      },
+      {
+        "en": "It keeps the header checksum field of IPv4"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "IPv6 defines unicast, multicast and anycast addresses but no broadcast. Its base header is a fixed 40 bytes (20 bytes is the minimum IPv4 header), only the source host may fragment a packet, and the header checksum was removed to speed up forwarding.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_network",
+    "subtopic": "NAT",
+    "difficulty": "easy",
+    "question_en": "Network Address Translation (NAT) mainly allows:",
+    "options": [
+      {
+        "en": "A host to learn the MAC address of its gateway"
+      },
+      {
+        "en": "Many private hosts to share one public IP address"
+      },
+      {
+        "en": "Domain names to be translated into IP addresses"
+      },
+      {
+        "en": "A router to pick the shortest path to a network"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "A NAT router replaces private source addresses (such as 192.168.x.x) with its own public address and keeps a translation table (PAT also uses port numbers), so a whole LAN can use one public IP and IPv4 addresses are conserved. Translating domain names into IP addresses is the job of DNS, not NAT.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_network",
+    "subtopic": "ARP",
+    "difficulty": "easy",
+    "question_en": "Which protocol does a host use to find the MAC address of a neighbour whose IPv4 address it already knows?",
+    "options": [
+      {
+        "en": "RARP"
+      },
+      {
+        "en": "ICMP"
+      },
+      {
+        "en": "DHCP"
+      },
+      {
+        "en": "ARP"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "ARP broadcasts a request asking which host owns a given IP address, and that host replies with its MAC address. RARP does the reverse — a host that knows only its MAC address asks for its IP address — and it has been replaced by BOOTP and DHCP.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_network",
+    "subtopic": "ARP, RARP, ICMP, DHCP roles",
+    "difficulty": "medium",
+    "question_en": "Which protocol–function pairing is INCORRECT?",
+    "options": [
+      {
+        "en": "ARP – maps a domain name to an IP address"
+      },
+      {
+        "en": "RARP – obtains an IP address from a MAC address"
+      },
+      {
+        "en": "ICMP – reports errors; used by ping and traceroute"
+      },
+      {
+        "en": "DHCP – assigns IP settings to hosts dynamically"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Mapping a domain name to an IP address is done by DNS; ARP maps an IP address to a MAC address. The other pairings are correct: ping uses ICMP Echo Request and Echo Reply, and DHCP leases the IP address, mask, default gateway and DNS server to a host.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_network",
+    "subtopic": "Distance vector vs link state routing",
+    "difficulty": "medium",
+    "question_en": "In distance-vector routing, each router periodically sends:",
+    "options": [
+      {
+        "en": "The state of its own links to every router in the network"
+      },
+      {
+        "en": "Only its changed routes to a central routing server"
+      },
+      {
+        "en": "Its entire routing table to its direct neighbours only"
+      },
+      {
+        "en": "Its link costs only to the destination host directly"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Distance-vector (Bellman–Ford) routers share their whole distance table, but only with their neighbours. Link-state routers do the opposite: they flood information about only their own links to every router, and each router then runs Dijkstra's algorithm on the complete map.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "nw_network",
+    "subtopic": "Count-to-infinity problem",
+    "difficulty": "medium",
+    "question_en": "The count-to-infinity problem, which is reduced by split horizon and poison reverse, occurs in:",
+    "options": [
+      {
+        "en": "Link-state routing"
+      },
+      {
+        "en": "Distance-vector routing"
+      },
+      {
+        "en": "Path-vector routing"
+      },
+      {
+        "en": "Static routing"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "In distance-vector routing good news travels fast but bad news travels slowly: after a link fails, neighbours keep advertising stale routes to each other, raising the cost step by step towards 'infinity'. Link-state routing avoids this because every router holds the full topology and computes paths itself.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_network",
+    "subtopic": "RIP",
+    "difficulty": "medium",
+    "question_en": "In RIP, which uses hop count as its metric, a destination is treated as unreachable when the hop count equals:",
+    "options": [
+      {
+        "en": "15"
+      },
+      {
+        "en": "16"
+      },
+      {
+        "en": "255"
+      },
+      {
+        "en": "32"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "RIP allows at most 15 hops; a metric of 16 means infinity (unreachable), which keeps RIP for small networks and limits count-to-infinity. 15 is the largest valid, reachable hop count, not the unreachable value. RIP sends updates every 30 seconds over UDP port 520.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_network",
+    "subtopic": "OSPF",
+    "difficulty": "medium",
+    "question_en": "OSPF is best described as:",
+    "options": [
+      {
+        "en": "A distance-vector protocol using the Bellman–Ford algorithm"
+      },
+      {
+        "en": "A path-vector protocol used between autonomous systems"
+      },
+      {
+        "en": "A static protocol in which routes are entered by hand"
+      },
+      {
+        "en": "A link-state interior protocol using Dijkstra's algorithm"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "OSPF (Open Shortest Path First) is an interior gateway protocol: routers flood link-state advertisements within an autonomous system (which can be divided into areas) and compute shortest paths with Dijkstra's algorithm. Bellman–Ford distance vector describes RIP, and path vector between autonomous systems describes BGP.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_network",
+    "subtopic": "BGP",
+    "difficulty": "medium",
+    "question_en": "Which protocol exchanges routing information between different autonomous systems on the Internet?",
+    "options": [
+      {
+        "en": "RIP"
+      },
+      {
+        "en": "BGP"
+      },
+      {
+        "en": "OSPF"
+      },
+      {
+        "en": "ICMP"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "BGP (Border Gateway Protocol, version 4) is the exterior gateway protocol of the Internet; it is a path-vector protocol that runs over TCP port 179. RIP and OSPF are interior protocols that work inside a single autonomous system.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_network",
+    "subtopic": "Congestion control: leaky and token bucket",
+    "difficulty": "medium",
+    "question_en": "Which traffic-shaping algorithm lets an idle host save up credit so that it can later send a burst of data?",
+    "options": [
+      {
+        "en": "Token bucket"
+      },
+      {
+        "en": "Leaky bucket"
+      },
+      {
+        "en": "Slow start"
+      },
+      {
+        "en": "Stop-and-wait"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "In the token bucket, tokens collect at a fixed rate up to the bucket size, so a host that has been idle can send a burst as large as its saved tokens. The leaky bucket sends packets out at a constant rate however bursty the input is, so it smooths bursts instead of allowing them.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "nw_network",
+    "subtopic": "IPv4 header: TTL",
+    "difficulty": "medium",
+    "question_en": "The purpose of the Time-To-Live (TTL) field in the IPv4 header is to:",
+    "options": [
+      {
+        "en": "Discard packets that loop endlessly in the network"
+      },
+      {
+        "en": "Record the time at which the packet was created"
+      },
+      {
+        "en": "Set the priority of the packet at each router"
+      },
+      {
+        "en": "Give the position of a fragment in the datagram"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Each router decreases TTL by 1 and discards the packet when it reaches 0, returning an ICMP Time Exceeded message; this stops packets from circulating forever in routing loops (traceroute relies on it). The position of a fragment is given by the Fragment Offset field, not by TTL.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_transport_app",
+    "subtopic": "TCP features",
+    "difficulty": "medium",
+    "question_en": "Which of the following is NOT a property of TCP?",
+    "options": [
+      {
+        "en": "It provides full-duplex communication between processes"
+      },
+      {
+        "en": "It delivers bytes reliably and in the correct order"
+      },
+      {
+        "en": "It preserves the boundaries of each application message"
+      },
+      {
+        "en": "It sets up a connection before transferring any data"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "TCP is a byte-stream protocol: it treats application data as one continuous stream of bytes and may split or combine writes into segments, so message boundaries are not preserved (UDP and SCTP do preserve them). TCP is connection-oriented, reliable, ordered and full-duplex.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "nw_transport_app",
+    "subtopic": "Applications that use UDP",
+    "difficulty": "easy",
+    "question_en": "Which application normally runs over UDP rather than TCP?",
+    "options": [
+      {
+        "en": "Web pages over HTTP/1.1"
+      },
+      {
+        "en": "E-mail relaying by SMTP"
+      },
+      {
+        "en": "DNS name lookups"
+      },
+      {
+        "en": "Remote login by SSH"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "DNS queries are short request–reply exchanges, so DNS uses UDP port 53 (falling back to TCP for large replies and zone transfers). Other typical UDP users are DHCP, TFTP, SNMP, VoIP and live streaming. HTTP/1.1, SMTP and SSH need a reliable byte stream and run over TCP.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "nw_transport_app",
+    "subtopic": "TCP and UDP header sizes",
+    "difficulty": "easy",
+    "question_en": "The minimum TCP header size and the UDP header size are, respectively:",
+    "options": [
+      {
+        "en": "8 bytes and 20 bytes"
+      },
+      {
+        "en": "20 bytes and 20 bytes"
+      },
+      {
+        "en": "40 bytes and 8 bytes"
+      },
+      {
+        "en": "20 bytes and 8 bytes"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "A TCP header is 20 bytes without options and up to 60 bytes with options. UDP has a fixed 8-byte header: source port, destination port, length and checksum, 2 bytes each. 40 bytes is the size of the IPv6 base header.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_transport_app",
+    "subtopic": "TCP three-way handshake",
+    "difficulty": "easy",
+    "question_en": "In TCP's three-way handshake, which sequence of segments opens a connection?",
+    "options": [
+      {
+        "en": "SYN → ACK → FIN"
+      },
+      {
+        "en": "ACK → SYN → SYN+ACK"
+      },
+      {
+        "en": "SYN → SYN+ACK → ACK"
+      },
+      {
+        "en": "SYN → FIN+ACK → ACK"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "The client sends SYN with its initial sequence number; the server replies SYN+ACK with its own initial sequence number and acknowledges the client's; the client then sends a final ACK. FIN segments are used to close a connection, not to open one.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "nw_transport_app",
+    "subtopic": "TCP flags",
+    "difficulty": "medium",
+    "question_en": "Which TCP flag does a host set to close its side of a connection gracefully?",
+    "options": [
+      {
+        "en": "RST"
+      },
+      {
+        "en": "PSH"
+      },
+      {
+        "en": "URG"
+      },
+      {
+        "en": "FIN"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "FIN means 'I have no more data to send'; each side sends a FIN and has it acknowledged. RST aborts a connection abruptly rather than closing it gracefully. PSH asks the receiver to deliver data at once, and URG marks urgent data.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_transport_app",
+    "subtopic": "Flow control: sliding window",
+    "difficulty": "medium",
+    "question_en": "TCP flow control, which stops a fast sender from overflowing a slow receiver and losing data, is achieved by:",
+    "options": [
+      {
+        "en": "Doubling the congestion window after every round trip"
+      },
+      {
+        "en": "Computing a checksum over the header and the data"
+      },
+      {
+        "en": "Exchanging SYN and ACK segments before data flows"
+      },
+      {
+        "en": "A sliding window sized by the receiver's advertised window"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "The receiver advertises its free buffer space (rwnd) in every segment, and the sender keeps its unacknowledged data within that sliding window, so the receiver's buffer never overflows. Doubling the window every RTT is slow start, a congestion-control mechanism that protects the network rather than the receiver.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "nw_transport_app",
+    "subtopic": "Congestion control: AIMD",
+    "difficulty": "hard",
+    "question_en": "Consider the following statements about TCP congestion control (TCP Tahoe):\nI. In congestion avoidance, cwnd grows by about 1 MSS per round-trip time.\nII. After a timeout, ssthresh is set to half the current cwnd and cwnd restarts from 1 MSS.\nWhich of the statements is/are correct?",
+    "options": [
+      {
+        "en": "Only I"
+      },
+      {
+        "en": "Both I and II"
+      },
+      {
+        "en": "Only II"
+      },
+      {
+        "en": "Neither I nor II"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Both are correct. Above ssthresh, TCP switches from exponential slow start to additive increase (+1 MSS per RTT); on a timeout it applies multiplicative decrease, setting ssthresh = cwnd/2, and Tahoe restarts slow start from cwnd = 1 MSS. (TCP Reno, on three duplicate ACKs, halves cwnd instead of resetting it to 1.)",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "nw_transport_app",
+    "subtopic": "Congestion window numerical",
+    "difficulty": "hard",
+    "question_en": "A TCP connection starts with cwnd = 1 MSS and ssthresh = 16 MSS, and no segment is lost. What is cwnd at the start of the 8th transmission round (RTT)?",
+    "options": [
+      {
+        "en": "19 MSS"
+      },
+      {
+        "en": "20 MSS"
+      },
+      {
+        "en": "128 MSS"
+      },
+      {
+        "en": "17 MSS"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Slow start doubles cwnd every RTT until it reaches ssthresh, so rounds 1–5 begin with 1, 2, 4, 8 and 16 MSS. From 16 MSS, congestion avoidance adds 1 MSS per RTT: round 6 = 17, round 7 = 18 and round 8 = 19 MSS. 128 MSS assumes the doubling never stops at the threshold.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "nw_transport_app",
+    "subtopic": "TCP sequence and acknowledgement numbers",
+    "difficulty": "medium",
+    "question_en": "A TCP segment carries data bytes numbered 5001 to 6000. If it arrives correctly and all earlier bytes have been received, what acknowledgement number does the receiver send?",
+    "options": [
+      {
+        "en": "6001"
+      },
+      {
+        "en": "6000"
+      },
+      {
+        "en": "5001"
+      },
+      {
+        "en": "7001"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "TCP acknowledgements are cumulative and carry the number of the next byte expected. The segment ends at byte 6000, so the receiver sends ACK = 6000 + 1 = 6001. An ACK of 6000 would mean byte 6000 itself is still awaited.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_transport_app",
+    "subtopic": "Well-known ports",
+    "difficulty": "easy",
+    "question_en": "Which service–port pairing is correct?",
+    "options": [
+      {
+        "en": "Telnet – 21"
+      },
+      {
+        "en": "SMTP – 110"
+      },
+      {
+        "en": "SSH – 22"
+      },
+      {
+        "en": "DNS – 69"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "SSH uses TCP port 22. The other pairs are mismatched: Telnet uses 23 (21 is FTP control), SMTP uses 25 (110 is POP3) and DNS uses 53 (69 is TFTP).",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "nw_transport_app",
+    "subtopic": "Well-known ports: mail retrieval",
+    "difficulty": "easy",
+    "question_en": "A mail client that downloads messages using POP3 connects to which well-known server port?",
+    "options": [
+      {
+        "en": "110"
+      },
+      {
+        "en": "143"
+      },
+      {
+        "en": "25"
+      },
+      {
+        "en": "119"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "POP3 servers listen on TCP port 110 (995 for POP3 over TLS). Port 143 belongs to IMAP, the other mail-access protocol, and port 25 is SMTP, which sends mail rather than retrieving it.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "nw_transport_app",
+    "subtopic": "Well-known ports: DHCP",
+    "difficulty": "medium",
+    "question_en": "DHCP messages are carried by UDP using which port numbers?",
+    "options": [
+      {
+        "en": "68 at the server and 67 at the client"
+      },
+      {
+        "en": "53 at the server and 54 at the client"
+      },
+      {
+        "en": "69 at the server and 70 at the client"
+      },
+      {
+        "en": "67 at the server and 68 at the client"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "A DHCP server listens on UDP port 67 and the client uses UDP port 68, numbers inherited from BOOTP. Swapping the two is the usual mistake; 53 belongs to DNS and 69 to TFTP.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_transport_app",
+    "subtopic": "Well-known ports: TFTP",
+    "difficulty": "medium",
+    "question_en": "Which protocol uses UDP port 69 to copy files without any login or directory listing?",
+    "options": [
+      {
+        "en": "FTP"
+      },
+      {
+        "en": "TFTP"
+      },
+      {
+        "en": "SNMP"
+      },
+      {
+        "en": "NTP"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "TFTP (Trivial File Transfer Protocol) is a simple file-transfer protocol with no authentication, running on UDP port 69; it is used, for example, to boot diskless devices or load router images. FTP is the full-featured version and runs over TCP ports 20 and 21.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_transport_app",
+    "subtopic": "Well-known ports: RDP",
+    "difficulty": "medium",
+    "question_en": "Microsoft's Remote Desktop Protocol (RDP) listens by default on port:",
+    "options": [
+      {
+        "en": "3306"
+      },
+      {
+        "en": "8080"
+      },
+      {
+        "en": "3389"
+      },
+      {
+        "en": "5900"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "RDP uses port 3389 (TCP, and UDP in newer versions). 3306 is the MySQL database port, 8080 is a common alternative HTTP port, and 5900 is used by VNC, a different remote-desktop system.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_transport_app",
+    "subtopic": "FTP control and data connections",
+    "difficulty": "medium",
+    "question_en": "In FTP (active mode), what do TCP ports 21 and 20 carry, respectively?",
+    "options": [
+      {
+        "en": "Control commands; file data"
+      },
+      {
+        "en": "File data; control commands"
+      },
+      {
+        "en": "User names; user passwords"
+      },
+      {
+        "en": "Uploaded files; downloaded files"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "FTP uses two connections: a control connection on port 21 that stays open for the whole session (commands and replies, i.e. control sent 'out of band'), and a data connection from server port 20 in active mode that is opened for each file transfer or listing. Swapping the two ports is the usual trap.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "nw_transport_app",
+    "subtopic": "Port number ranges",
+    "difficulty": "hard",
+    "question_en": "According to IANA, the dynamic (private or ephemeral) port range is:",
+    "options": [
+      {
+        "en": "49152–65535"
+      },
+      {
+        "en": "1024–49151"
+      },
+      {
+        "en": "0–1023"
+      },
+      {
+        "en": "256–1023"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Port numbers are 16 bits long (0–65535). IANA divides them into well-known ports 0–1023, registered ports 1024–49151, and dynamic/private ports 49152–65535, which clients use for short-lived connections. 1024–49151 is the registered range that IANA assigns to applications on request.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_transport_app",
+    "subtopic": "Socket address",
+    "difficulty": "easy",
+    "question_en": "A socket address, which identifies a particular process on a particular host, consists of:",
+    "options": [
+      {
+        "en": "An IP address and a port number"
+      },
+      {
+        "en": "A MAC address and a port number"
+      },
+      {
+        "en": "An IP address and a MAC address"
+      },
+      {
+        "en": "A port number and a protocol name"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The IP address identifies the host and the port number identifies the process on that host; together they form a socket address such as 192.0.2.5:80. A TCP connection is identified by the pair of sockets at its two ends. MAC addresses belong to the data link layer and are not part of a socket.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_transport_app",
+    "subtopic": "DNS resource records",
+    "difficulty": "medium",
+    "question_en": "Which DNS resource record maps a host name to an IPv6 address?",
+    "options": [
+      {
+        "en": "A"
+      },
+      {
+        "en": "MX"
+      },
+      {
+        "en": "PTR"
+      },
+      {
+        "en": "AAAA"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "The AAAA ('quad-A') record holds a 128-bit IPv6 address, while the A record holds a 32-bit IPv4 address. MX names a domain's mail server, CNAME gives an alias and PTR is used for reverse lookup (address to name).",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_transport_app",
+    "subtopic": "DNS resolution: recursive vs iterative",
+    "difficulty": "hard",
+    "question_en": "In recursive DNS resolution, how does the query proceed?",
+    "options": [
+      {
+        "en": "The client itself queries the root, TLD and authoritative servers"
+      },
+      {
+        "en": "The queried server obtains the final answer on the client's behalf"
+      },
+      {
+        "en": "The root server returns the final IP address in every case"
+      },
+      {
+        "en": "The query is broadcast to every DNS server on the Internet"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "In recursive resolution the client asks its local DNS server once, and that server does all the work and returns the final answer (or an error). In iterative resolution each server only refers the asker to the next server (root, then TLD, then authoritative), and the asker contacts each one in turn.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_transport_app",
+    "subtopic": "HTTP is stateless",
+    "difficulty": "medium",
+    "question_en": "HTTP is described as a stateless protocol because:",
+    "options": [
+      {
+        "en": "The server keeps no memory of a client's earlier requests"
+      },
+      {
+        "en": "It cannot carry any state information such as cookies"
+      },
+      {
+        "en": "It closes the TCP connection after every single byte"
+      },
+      {
+        "en": "It does not use any port number at the server side"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Each HTTP request is handled on its own; the server does not remember previous requests, so websites add state with cookies, sessions or tokens. Cookies are in fact carried in HTTP headers (Set-Cookie and Cookie), so the protocol is stateless but can still transport state.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_transport_app",
+    "subtopic": "HTTP methods",
+    "difficulty": "easy",
+    "question_en": "Which HTTP method requests a resource from the server and should not change any data on it?",
+    "options": [
+      {
+        "en": "POST"
+      },
+      {
+        "en": "GET"
+      },
+      {
+        "en": "DELETE"
+      },
+      {
+        "en": "PUT"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "GET retrieves a resource and is defined as safe (no side effects) and idempotent; any data it sends goes in the URL query string. POST submits data to be processed (such as a form), PUT replaces a resource and DELETE removes one.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_transport_app",
+    "subtopic": "HTTP status codes",
+    "difficulty": "easy",
+    "question_en": "An HTTP response with status code 404 means:",
+    "options": [
+      {
+        "en": "The server hit an internal error"
+      },
+      {
+        "en": "The requested resource was not found"
+      },
+      {
+        "en": "The resource has moved permanently"
+      },
+      {
+        "en": "The request was successful"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "4xx codes are client errors, and 404 Not Found means the server cannot find the requested URL. 500 is Internal Server Error (5xx = server errors), 301 is Moved Permanently (3xx = redirection) and 200 is OK (2xx = success).",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_transport_app",
+    "subtopic": "HTTP status codes",
+    "difficulty": "hard",
+    "question_en": "Consider the following HTTP status codes:\nI. 201 means a new resource was created as a result of the request.\nII. 403 means the server is temporarily unavailable.\nWhich of the statements is/are correct?",
+    "options": [
+      {
+        "en": "Only I"
+      },
+      {
+        "en": "Only II"
+      },
+      {
+        "en": "Both I and II"
+      },
+      {
+        "en": "Neither I nor II"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Only I is correct: 201 Created is a success (2xx) code. 403 Forbidden means the server understood the request but refuses to authorise it; 'temporarily unavailable' is 503 Service Unavailable, a 5xx server error.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_transport_app",
+    "subtopic": "Persistent vs non-persistent HTTP",
+    "difficulty": "medium",
+    "question_en": "By default, HTTP/1.1 differs from HTTP/1.0 in that it uses:",
+    "options": [
+      {
+        "en": "Persistent connections that serve many requests"
+      },
+      {
+        "en": "A new TCP connection for every object fetched"
+      },
+      {
+        "en": "UDP instead of TCP to transfer web pages"
+      },
+      {
+        "en": "Port 443 instead of port 80 for plain HTTP"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "HTTP/1.1 keeps the TCP connection open by default (persistent or keep-alive), so many objects of a page can be fetched over one connection without repeated handshakes. HTTP/1.0 by default opened a new, non-persistent connection for each object.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_transport_app",
+    "subtopic": "SMTP push vs POP3/IMAP pull",
+    "difficulty": "medium",
+    "question_en": "In e-mail delivery, SMTP and POP3/IMAP are, respectively:",
+    "options": [
+      {
+        "en": "Push protocol; pull protocols"
+      },
+      {
+        "en": "Pull protocol; push protocols"
+      },
+      {
+        "en": "Push protocol; push protocols"
+      },
+      {
+        "en": "Pull protocol; pull protocols"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "SMTP pushes mail from the sender's client to its mail server and between mail servers (port 25). The recipient's client then pulls mail from its mailbox server using POP3 (port 110) or IMAP (port 143). SMTP cannot retrieve mail, which is why a separate access protocol is needed.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_transport_app",
+    "subtopic": "IMAP vs POP3",
+    "difficulty": "medium",
+    "question_en": "Which capability does IMAP offer that basic POP3 does not?",
+    "options": [
+      {
+        "en": "Sending mail from a client to a mail server"
+      },
+      {
+        "en": "Downloading messages to the local computer"
+      },
+      {
+        "en": "Managing mail in folders kept on the server"
+      },
+      {
+        "en": "Using TCP as its underlying transport"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "IMAP keeps mail on the server and lets the user create and search folders there and download only headers or parts, so the mailbox looks the same from every device. POP3 typically downloads messages and deletes them from the server. Downloading and using TCP are common to both, and sending mail is SMTP's job.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "nw_transport_app",
+    "subtopic": "MIME",
+    "difficulty": "medium",
+    "question_en": "MIME is used in e-mail mainly to:",
+    "options": [
+      {
+        "en": "Encrypt the message body between two mail servers"
+      },
+      {
+        "en": "Retrieve messages from a mailbox on the mail server"
+      },
+      {
+        "en": "Translate the recipient's domain into an IP address"
+      },
+      {
+        "en": "Send non-ASCII content such as images and attachments"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "SMTP was designed for 7-bit ASCII text, so MIME (Multipurpose Internet Mail Extensions) adds headers such as Content-Type and encodings such as Base64 to carry images, audio, video, non-English text and attachments. MIME itself does not encrypt anything; secure mail uses S/MIME or PGP.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_transport_app",
+    "subtopic": "SNMP",
+    "difficulty": "easy",
+    "question_en": "SNMP, which uses UDP port 161, is used to:",
+    "options": [
+      {
+        "en": "Monitor and manage routers, switches and servers"
+      },
+      {
+        "en": "Transfer web pages from a server to a browser"
+      },
+      {
+        "en": "Synchronise the clocks of computers on a network"
+      },
+      {
+        "en": "Assign IP addresses to hosts as they join a LAN"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The Simple Network Management Protocol lets a manager poll agents on network devices (UDP 161) and receive traps (UDP 162) to read or change values in the MIB. Clock synchronisation is done by NTP (UDP 123), and address assignment by DHCP.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_transport_app",
+    "subtopic": "Process-to-process vs host-to-host delivery",
+    "difficulty": "medium",
+    "question_en": "Which statement best distinguishes the transport layer from the network layer?",
+    "options": [
+      {
+        "en": "Transport is host-to-host; network is process-to-process"
+      },
+      {
+        "en": "Transport is hop-to-hop; network is process-to-process"
+      },
+      {
+        "en": "Transport is process-to-process; network is host-to-host"
+      },
+      {
+        "en": "Transport is node-to-node; network is hop-to-hop"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "The network layer (IP) delivers a packet from the source host to the destination host using IP addresses. The transport layer (TCP, UDP, SCTP) then delivers the data to the correct process on that host using port numbers. Hop-to-hop (node-to-node) delivery is the data link layer's job.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_transport_app",
+    "subtopic": "Telnet vs SSH",
+    "difficulty": "medium",
+    "question_en": "Why has Telnet (port 23) been largely replaced by SSH (port 22)?",
+    "options": [
+      {
+        "en": "Telnet cannot run over TCP and works only over UDP"
+      },
+      {
+        "en": "Telnet allows only file transfer, not remote login"
+      },
+      {
+        "en": "Telnet sends everything, even passwords, in plain text"
+      },
+      {
+        "en": "Telnet works only inside a single local network"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Telnet provides remote terminal login over TCP port 23 but sends user names, passwords and commands unencrypted, so anyone capturing the traffic can read them. SSH offers the same remote login over TCP port 22 with encryption and strong authentication.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_security",
+    "subtopic": "CIA triad",
+    "difficulty": "easy",
+    "question_en": "Which security goal ensures that information is not altered or tampered with by unauthorised parties?",
+    "options": [
+      {
+        "en": "Confidentiality"
+      },
+      {
+        "en": "Availability"
+      },
+      {
+        "en": "Integrity"
+      },
+      {
+        "en": "Non-repudiation"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Integrity means data stays accurate and unmodified, and it is usually checked with hashes or message authentication codes. Confidentiality only keeps data secret (through encryption) — a secret message can still be altered. Integrity, confidentiality and availability together form the CIA triad.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_security",
+    "subtopic": "Authentication vs authorisation",
+    "difficulty": "easy",
+    "question_en": "After a user has logged in successfully, deciding which files and operations that user is permitted to access is called:",
+    "options": [
+      {
+        "en": "Authentication"
+      },
+      {
+        "en": "Identification"
+      },
+      {
+        "en": "Encryption"
+      },
+      {
+        "en": "Authorisation"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Authentication verifies who the user is (password, OTP, biometric); authorisation then decides what the verified user may do (permissions, access-control lists). Authentication always comes first, which is why the two terms are often confused.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "nw_security",
+    "subtopic": "Attacks and malware types",
+    "difficulty": "medium",
+    "question_en": "Which threat–description pairing is INCORRECT?",
+    "options": [
+      {
+        "en": "Trojan horse – looks useful but hides malicious code"
+      },
+      {
+        "en": "Ransomware – encrypts files and demands a payment"
+      },
+      {
+        "en": "Phishing – fake e-mails or sites that steal credentials"
+      },
+      {
+        "en": "Worm – needs a host file and user action to spread"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "A worm replicates itself and spreads across networks on its own, without attaching to a host file; the description given fits a virus, which needs a host program and usually a user action. The other three pairings are correct.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_security",
+    "subtopic": "Substitution vs transposition ciphers",
+    "difficulty": "medium",
+    "question_en": "Consider the following statements:\nI. A substitution cipher replaces each letter with another letter or symbol.\nII. A transposition cipher changes the positions of the letters but keeps the letters themselves.\nWhich of the statements is/are correct?",
+    "options": [
+      {
+        "en": "Both I and II"
+      },
+      {
+        "en": "Only I"
+      },
+      {
+        "en": "Only II"
+      },
+      {
+        "en": "Neither I nor II"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Both are correct. A substitution cipher (for example Caesar or Vigenère) disguises letters by replacing them, while a transposition cipher (for example rail-fence or columnar) only reorders them, so its ciphertext keeps the same letter frequencies as the plaintext.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "nw_security",
+    "subtopic": "Caesar cipher numerical",
+    "difficulty": "easy",
+    "question_en": "Using a Caesar cipher with a shift of 3 (A→D), what is the ciphertext for the plaintext NETWORK?",
+    "options": [
+      {
+        "en": "QHWZRUN"
+      },
+      {
+        "en": "QHWZRUM"
+      },
+      {
+        "en": "KBQTLOH"
+      },
+      {
+        "en": "RIXASVO"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Shift each letter forward by 3: N→Q, E→H, T→W, W→Z, O→R, R→U, K→N, giving QHWZRUN. KBQTLOH is a backward shift of 3 (which is decryption), and RIXASVO uses a shift of 4.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "nw_security",
+    "subtopic": "Symmetric vs asymmetric algorithms",
+    "difficulty": "medium",
+    "question_en": "Which group contains ONLY asymmetric (public-key) algorithms?",
+    "options": [
+      {
+        "en": "RSA, AES, ECC, DSA"
+      },
+      {
+        "en": "DES, IDEA, RC4, Blowfish"
+      },
+      {
+        "en": "RSA, Diffie–Hellman, ECC, DSA"
+      },
+      {
+        "en": "Diffie–Hellman, 3DES, DSA, RC4"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "RSA, Diffie–Hellman, ECC (elliptic-curve cryptography) and DSA all use a public/private key pair. AES, DES, 3DES, IDEA, RC4 and Blowfish are symmetric — the same secret key encrypts and decrypts — so any group containing one of them is wrong.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "nw_security",
+    "subtopic": "Symmetric algorithm key lengths",
+    "difficulty": "medium",
+    "question_en": "Which algorithm–key-length pairing is correct?",
+    "options": [
+      {
+        "en": "DES – 128-bit effective key"
+      },
+      {
+        "en": "IDEA – 56-bit key"
+      },
+      {
+        "en": "Blowfish – fixed 512-bit key"
+      },
+      {
+        "en": "AES – 128, 192 or 256 bits"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "AES (Rijndael) uses a 128-bit block with 128-, 192- or 256-bit keys (10, 12 or 14 rounds). DES has a 56-bit effective key (64 bits including parity), IDEA uses a 128-bit key, and Blowfish takes a variable key of 32 to 448 bits.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "nw_security",
+    "subtopic": "Triple DES key length",
+    "difficulty": "hard",
+    "question_en": "Triple DES with three independent keys uses a total key length of ___ bits, but because of the meet-in-the-middle attack it offers effective security of about ___ bits.",
+    "options": [
+      {
+        "en": "112; 56"
+      },
+      {
+        "en": "168; 112"
+      },
+      {
+        "en": "192; 168"
+      },
+      {
+        "en": "56; 168"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Each DES key is 56 bits, so three keys give 3 × 56 = 168 bits. A meet-in-the-middle attack reduces the effective strength to about 2 × 56 = 112 bits. '112; 56' describes the two-key version's key length and single DES's strength, not three-key 3DES.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "nw_security",
+    "subtopic": "Number of keys: symmetric vs public-key",
+    "difficulty": "hard",
+    "question_en": "Ten users want every pair among them to be able to communicate secretly. How many keys are needed with symmetric-key cryptography, and how many with public-key cryptography?",
+    "options": [
+      {
+        "en": "90 and 10"
+      },
+      {
+        "en": "45 and 10"
+      },
+      {
+        "en": "45 and 20"
+      },
+      {
+        "en": "100 and 20"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Symmetric: one shared key per pair = n(n − 1)/2 = 10 × 9 / 2 = 45 keys. Public-key: each user needs one key pair, so 2n = 20 keys (10 public + 10 private). '45 and 10' counts only the public keys.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_security",
+    "subtopic": "Session key and hybrid encryption",
+    "difficulty": "medium",
+    "question_en": "In protocols such as TLS, the bulk data is encrypted with ___, while ___ is used to exchange it securely.",
+    "options": [
+      {
+        "en": "the receiver's private key; a hash function such as SHA-256"
+      },
+      {
+        "en": "a temporary symmetric session key; public-key cryptography"
+      },
+      {
+        "en": "a long-term public key; a symmetric stream cipher like RC4"
+      },
+      {
+        "en": "a message digest; a certificate revocation list from the CA"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Symmetric ciphers such as AES are fast, so a fresh session key is created for one session and used for the bulk data; slower public-key methods (RSA or Diffie–Hellman) are used only to agree on or carry that key. Encrypting all data directly with a public-key algorithm would be far too slow.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "nw_security",
+    "subtopic": "Hash functions",
+    "difficulty": "medium",
+    "question_en": "The message digests produced by MD5 and SHA-1 are, respectively:",
+    "options": [
+      {
+        "en": "160 bits and 128 bits"
+      },
+      {
+        "en": "128 bits and 256 bits"
+      },
+      {
+        "en": "64 bits and 160 bits"
+      },
+      {
+        "en": "128 bits and 160 bits"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "MD5 produces a 128-bit digest and SHA-1 a 160-bit digest, while SHA-256 (SHA-2 family) produces 256 bits. MD5 and SHA-1 are now considered broken for collision resistance, so SHA-256 or stronger is recommended.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_security",
+    "subtopic": "Digital signature keys",
+    "difficulty": "hard",
+    "question_en": "To create a digital signature the sender uses ___, and the receiver verifies it with ___.",
+    "options": [
+      {
+        "en": "the sender's public key; the sender's private key"
+      },
+      {
+        "en": "the receiver's public key; the receiver's private key"
+      },
+      {
+        "en": "a shared secret key; the same shared secret key"
+      },
+      {
+        "en": "the sender's private key; the sender's public key"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "The sender signs (encrypts the message hash) with its own private key, which only it holds, and anyone can verify the signature with the sender's public key; this gives authentication, integrity and non-repudiation. Encrypting with the receiver's public key provides confidentiality, not a signature.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_security",
+    "subtopic": "Certificates, CA and HTTPS",
+    "difficulty": "medium",
+    "question_en": "When a browser opens an HTTPS site, how does the server prove that its public key really belongs to it?",
+    "options": [
+      {
+        "en": "By sending its private key to the browser for checking"
+      },
+      {
+        "en": "By using port 443, which only genuine servers may use"
+      },
+      {
+        "en": "By presenting a digital certificate signed by a trusted CA"
+      },
+      {
+        "en": "By sending an MD5 hash of its home page to the browser"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "HTTPS is HTTP over SSL/TLS (port 443). During the TLS handshake the server sends an X.509 certificate that binds its domain name to its public key and is signed by a Certificate Authority the browser trusts. A private key is never sent to anyone, and a port number proves nothing about identity.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_security",
+    "subtopic": "IPsec and VPN",
+    "difficulty": "hard",
+    "question_en": "IPsec works at the ___ layer, and its ___ mode, which encrypts the whole original IP packet, is used for site-to-site VPNs.",
+    "options": [
+      {
+        "en": "transport; transport"
+      },
+      {
+        "en": "network; tunnel"
+      },
+      {
+        "en": "application; tunnel"
+      },
+      {
+        "en": "network; transport"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "IPsec protects IP packets at the network layer using AH (authentication) and ESP (encryption). Tunnel mode wraps the entire original packet inside a new IP header, as VPN gateways do; transport mode protects only the payload and keeps the original header, so it suits host-to-host links.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_security",
+    "subtopic": "Firewall types and DMZ",
+    "difficulty": "medium",
+    "question_en": "In network security, a DMZ is:",
+    "options": [
+      {
+        "en": "A firewall that checks only source and destination IP addresses"
+      },
+      {
+        "en": "An attack that floods a server until it can no longer respond"
+      },
+      {
+        "en": "A protocol that encrypts traffic between a browser and a server"
+      },
+      {
+        "en": "A separate subnet for public servers between the LAN and the Internet"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "A demilitarised zone (perimeter network) holds Internet-facing servers such as web and mail servers, so outsiders can reach them while firewalls still shield the internal LAN. A firewall that checks only addresses and ports is a packet-filtering firewall; stateful firewalls also track connection state, and proxy firewalls inspect application content.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_security",
+    "subtopic": "IDS vs IPS",
+    "difficulty": "medium",
+    "question_en": "Which statement correctly distinguishes an IDS from an IPS?",
+    "options": [
+      {
+        "en": "An IDS blocks attacks inline; an IPS only logs and raises alerts"
+      },
+      {
+        "en": "An IDS detects and alerts; an IPS sits inline and blocks attacks"
+      },
+      {
+        "en": "An IDS encrypts the traffic; an IPS decrypts it at the receiver"
+      },
+      {
+        "en": "An IDS works only on hosts; an IPS works only on the Internet"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "An Intrusion Detection System watches a copy of the traffic (or host logs), matches signatures or anomalies and raises alerts, but does not stop the traffic. An Intrusion Prevention System is placed inline, so it can drop malicious packets or reset connections in real time. Swapping the two roles is the common trap.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_security",
+    "subtopic": "Internet history: ARPANET",
+    "difficulty": "easy",
+    "question_en": "ARPANET, the forerunner of the Internet, was:",
+    "options": [
+      {
+        "en": "A circuit-switched telephone network built by AT&T in 1975"
+      },
+      {
+        "en": "An early packet-switched network, funded by the US DoD in 1969"
+      },
+      {
+        "en": "The first web browser, developed at CERN in the year 1990"
+      },
+      {
+        "en": "The backbone network that NSF built for universities in 1986"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "ARPANET was funded by ARPA of the US Department of Defense and first linked four nodes (UCLA, SRI, UCSB and the University of Utah) in 1969 using packet switching (it was the first wide-area packet-switched network); it switched to TCP/IP on 1 January 1983. NSFNET (1986) was a later backbone that took over ARPANET's role.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_security",
+    "subtopic": "WWW inventor",
+    "difficulty": "easy",
+    "question_en": "The World Wide Web was proposed in 1989 by:",
+    "options": [
+      {
+        "en": "Vint Cerf at Stanford"
+      },
+      {
+        "en": "Ray Tomlinson at BBN"
+      },
+      {
+        "en": "Marc Andreessen at NCSA"
+      },
+      {
+        "en": "Tim Berners-Lee at CERN"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Tim Berners-Lee proposed the WWW at CERN in 1989 and created HTTP, HTML, URLs, the first web server and the first browser. Vint Cerf, with Bob Kahn, designed TCP/IP and is called a 'father of the Internet', which makes him the usual distractor; Tomlinson sent the first network e-mail and Andreessen built the Mosaic browser.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_security",
+    "subtopic": "Internet vs WWW",
+    "difficulty": "medium",
+    "question_en": "Consider the following statements:\nI. The World Wide Web is a service that runs on top of the Internet.\nII. E-mail and FTP are parts of the World Wide Web.\nWhich of the statements is/are correct?",
+    "options": [
+      {
+        "en": "Only II"
+      },
+      {
+        "en": "Only I"
+      },
+      {
+        "en": "Both I and II"
+      },
+      {
+        "en": "Neither I nor II"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Only I is correct. The Internet is the global network of networks running TCP/IP; the WWW is one service on it — linked hypertext pages fetched with HTTP. E-mail (SMTP, POP3, IMAP) and FTP are separate Internet services, not parts of the Web.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_security",
+    "subtopic": "URL parts",
+    "difficulty": "easy",
+    "question_en": "In the URL https://www.example.org:8443/docs/index.html, what does '8443' represent?",
+    "options": [
+      {
+        "en": "The protocol"
+      },
+      {
+        "en": "The path to the file"
+      },
+      {
+        "en": "The domain name"
+      },
+      {
+        "en": "The port number"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "A URL has the form protocol://host:port/path. Here https is the protocol (scheme), www.example.org is the host or domain name, 8443 is the port number (replacing the default 443) and /docs/index.html is the path. Without ':8443' the browser would use port 443 for HTTPS.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_security",
+    "subtopic": "Browser vs search engine vs web server",
+    "difficulty": "easy",
+    "question_en": "Mozilla Firefox, Google Search and Apache HTTP Server are, respectively, examples of:",
+    "options": [
+      {
+        "en": "a browser, a search engine and a web server"
+      },
+      {
+        "en": "a search engine, a browser and a web server"
+      },
+      {
+        "en": "a web server, a search engine and a browser"
+      },
+      {
+        "en": "a browser, a web server and a search engine"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "A browser (Firefox, Chrome) is client software that requests and displays web pages; a search engine (Google Search, Bing) is a website that indexes pages and finds them by keyword; a web server (Apache, Nginx, IIS) stores pages and serves them over HTTP. Mixing up a search engine with a browser is the classic error.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_security",
+    "subtopic": "Web surfing",
+    "difficulty": "easy",
+    "question_en": "Moving from one web page to another by following hyperlinks, often without a fixed goal, is commonly called:",
+    "options": [
+      {
+        "en": "Web hosting"
+      },
+      {
+        "en": "Web surfing"
+      },
+      {
+        "en": "Web crawling"
+      },
+      {
+        "en": "Web scraping"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Web surfing (browsing) is a person moving through websites by clicking links. Web crawling is done by search-engine bots that visit pages automatically to index them, and web hosting means storing a website on a server so that others can reach it.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "nw_security",
+    "subtopic": "ISP and connection types",
+    "difficulty": "medium",
+    "question_en": "Which broadband Internet connection uses existing telephone lines and lets voice calls and data share the line at the same time?",
+    "options": [
+      {
+        "en": "Dial-up"
+      },
+      {
+        "en": "Cable modem"
+      },
+      {
+        "en": "Satellite"
+      },
+      {
+        "en": "DSL"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "DSL (for example ADSL) carries data over the copper telephone line at frequencies above the voice band, so the phone still works while the user is connected to the ISP. Dial-up also uses the phone line but occupies it completely and is limited to 56 kbps; cable broadband uses the TV coaxial network.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_security",
+    "subtopic": "E-mail: CC and BCC",
+    "difficulty": "easy",
+    "question_en": "When an e-mail is sent with some addresses in the BCC field:",
+    "options": [
+      {
+        "en": "BCC recipients are hidden from all other recipients"
+      },
+      {
+        "en": "BCC recipients are not allowed to reply to the sender"
+      },
+      {
+        "en": "BCC recipients receive only the subject of the e-mail"
+      },
+      {
+        "en": "BCC recipients are shown to everyone in the To field"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "BCC (blind carbon copy) recipients get the full message, but their addresses are not shown to the To, CC or other BCC recipients. CC (carbon copy) recipients, by contrast, are visible to everyone who receives the mail.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_security",
+    "subtopic": "Cookies",
+    "difficulty": "easy",
+    "question_en": "A web cookie is:",
+    "options": [
+      {
+        "en": "A program a website installs to scan the user's files"
+      },
+      {
+        "en": "A small piece of data a website stores in the user's browser"
+      },
+      {
+        "en": "A temporary copy of a whole web page kept on the server"
+      },
+      {
+        "en": "A key the browser uses to encrypt all HTTPS traffic"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "A cookie is a small text record (a name–value pair) that a server sends with Set-Cookie and the browser returns on later requests, letting sites remember logins, carts and preferences. It is passive data, not a program, so it cannot scan files; third-party cookies are the ones used for cross-site tracking.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_mobile",
+    "subtopic": "GSM: HLR and VLR",
+    "difficulty": "medium",
+    "question_en": "Which statement about GSM's HLR and VLR is correct?",
+    "options": [
+      {
+        "en": "HLR holds permanent subscriber data; VLR holds temporary data of visitors in its area"
+      },
+      {
+        "en": "VLR holds permanent subscriber data; HLR holds temporary data of visitors in its area"
+      },
+      {
+        "en": "HLR and VLR both store only the IMEI numbers of stolen or blocked handsets"
+      },
+      {
+        "en": "HLR is located inside each BTS, while VLR is located inside each BSC"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The HLR is the home operator's central database with each subscriber's permanent profile (IMSI, services, current location area). The VLR, usually co-located with an MSC, keeps temporary copies for subscribers currently in its area and informs the HLR when a mobile registers there. IMEIs of stolen handsets are kept in the EIR.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "nw_mobile",
+    "subtopic": "GSM architecture elements",
+    "difficulty": "medium",
+    "question_en": "Which GSM element–function pairing is INCORRECT?",
+    "options": [
+      {
+        "en": "BSC – controls a group of BTSs and their radio channels"
+      },
+      {
+        "en": "EIR – stores the permanent profile of every subscriber"
+      },
+      {
+        "en": "MSC – switches calls and connects to other networks"
+      },
+      {
+        "en": "AuC – holds the secret keys used for authentication"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The EIR (Equipment Identity Register) keeps IMEI numbers in white, grey and black lists to block stolen or faulty handsets; permanent subscriber profiles are stored in the HLR. The other pairings are correct: BTS and BSC form the Base Station Subsystem, the MSC does switching, and the AuC holds the key Ki for authentication and ciphering.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "nw_mobile",
+    "subtopic": "Mobile generations 1G–5G",
+    "difficulty": "easy",
+    "question_en": "Which generation–technology pairing is INCORRECT?",
+    "options": [
+      {
+        "en": "2G – GSM with digital voice and SMS"
+      },
+      {
+        "en": "5G – first generation to use digital transmission"
+      },
+      {
+        "en": "3G – UMTS/WCDMA mobile broadband"
+      },
+      {
+        "en": "4G – LTE, an all-IP network"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Digital transmission began with 2G (GSM, 1991); 1G systems such as AMPS carried analog voice only. 3G (UMTS/WCDMA, CDMA2000) brought mobile broadband, 4G (LTE and LTE-Advanced) is all-IP, and 5G adds very high data rates, about 1 ms latency and support for massive IoT.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_mobile",
+    "subtopic": "Hard vs soft handover",
+    "difficulty": "medium",
+    "question_en": "A soft handover, typical of CDMA systems, is one in which:",
+    "options": [
+      {
+        "en": "The mobile leaves the old cell before joining the new one"
+      },
+      {
+        "en": "The call moves between channels of the same base station"
+      },
+      {
+        "en": "The mobile joins the new cell before leaving the old one"
+      },
+      {
+        "en": "The call is dropped and must be redialled in the new cell"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Soft handover is make-before-break: during the transition the mobile is linked to two or more base stations at once, which CDMA allows because neighbouring cells use the same frequency. Break-before-make is hard handover, used in GSM (FDMA/TDMA).",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_mobile",
+    "subtopic": "Satellite handover types",
+    "difficulty": "hard",
+    "question_en": "In a satellite system, transferring a call from one spot beam to another spot beam of the same satellite is called:",
+    "options": [
+      {
+        "en": "Inter-satellite handover"
+      },
+      {
+        "en": "Gateway handover"
+      },
+      {
+        "en": "Intra-satellite handover"
+      },
+      {
+        "en": "Inter-system handover"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Schiller lists four satellite handovers: intra-satellite (between spot beams of one satellite), inter-satellite (between two satellites), gateway (the satellite changes its ground gateway) and inter-system (between a satellite network and a terrestrial cellular network). Inter-satellite handover involves two different satellites, not two beams of the same one.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "nw_mobile",
+    "subtopic": "Mobile IP: co-located COA",
+    "difficulty": "hard",
+    "question_en": "In Mobile IP, if the mobile node obtains a temporary address itself, for example through DHCP, and acts as its own tunnel endpoint, that address is called the:",
+    "options": [
+      {
+        "en": "Foreign agent care-of address"
+      },
+      {
+        "en": "Permanent home address"
+      },
+      {
+        "en": "Co-located care-of address"
+      },
+      {
+        "en": "Home agent address"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "The care-of address (COA) is the current tunnel endpoint for the mobile node. With a co-located COA the mobile node gets the address itself (for example via DHCP) and de-capsulates packets itself; with a foreign-agent COA the tunnel ends at the FA's address. The FA is a router, not an address — the 2023 official key that gave 'FA' for the DHCP-obtained tunnel endpoint was wrong; the correct answer is the COA.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "nw_mobile",
+    "subtopic": "Mobile IP: home agent and tunnelling",
+    "difficulty": "hard",
+    "question_en": "In Mobile IP, packets that a correspondent node sends to the mobile node's home address are intercepted by the ___ and tunnelled to the ___.",
+    "options": [
+      {
+        "en": "home agent; care-of address"
+      },
+      {
+        "en": "foreign agent; home address"
+      },
+      {
+        "en": "home agent; correspondent node"
+      },
+      {
+        "en": "foreign agent; home agent"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The home agent, a router on the home network, intercepts datagrams addressed to the mobile node's permanent home address, encapsulates them (IP-in-IP) and tunnels them to the current care-of address. The foreign agent, if one is used, de-tunnels and delivers them; replies from the mobile node can go straight to the correspondent node (triangular routing).",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "nw_mobile",
+    "subtopic": "Satellite orbits: GEO, MEO, LEO",
+    "difficulty": "medium",
+    "question_en": "Which satellite orbit gives the lowest propagation delay but needs a large constellation of satellites for continuous global coverage?",
+    "options": [
+      {
+        "en": "GEO (about 35,786 km)"
+      },
+      {
+        "en": "MEO (about 10,000–20,000 km)"
+      },
+      {
+        "en": "LEO (about 500–2,000 km)"
+      },
+      {
+        "en": "HEO (highly elliptical orbit)"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Low Earth Orbit satellites are close to the Earth, so the ground-to-satellite-to-ground delay is only about 5–10 ms, but each covers a small footprint and moves fast, so dozens or even thousands are needed (Iridium, Starlink). GEO satellites appear stationary and three can cover most of the Earth, but their ground-to-satellite-to-ground delay is about 250 ms (about 0.5 s for a question and its reply).",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "nw_mobile",
+    "subtopic": "Categories of mobile devices",
+    "difficulty": "medium",
+    "question_en": "A laptop used on a Wi-Fi network while travelling in a train belongs to which category of mobile computing devices?",
+    "options": [
+      {
+        "en": "Fixed and wired"
+      },
+      {
+        "en": "Mobile and wireless"
+      },
+      {
+        "en": "Mobile and wired"
+      },
+      {
+        "en": "Fixed and wireless"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Schiller's four categories are fixed and wired (a desktop PC), mobile and wired (a laptop plugged into the network at each place), fixed and wireless (for example desktop PCs on a wireless LAN in a historic building where cabling is not allowed) and mobile and wireless (a device used on the move without cables). A laptop on Wi-Fi in a moving train is mobile and wireless.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "nw_mobile",
+    "subtopic": "Bluetooth, Wi-Fi and WiMAX standards",
+    "difficulty": "medium",
+    "question_en": "The IEEE standards for Wi-Fi, Bluetooth and WiMAX are, respectively:",
+    "options": [
+      {
+        "en": "802.3, 802.15.1 and 802.16"
+      },
+      {
+        "en": "802.11, 802.16 and 802.15.1"
+      },
+      {
+        "en": "802.16, 802.11 and 802.15.4"
+      },
+      {
+        "en": "802.11, 802.15.1 and 802.16"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Wi-Fi wireless LANs follow IEEE 802.11 (a/b/g/n/ac/ax), Bluetooth was standardised as IEEE 802.15.1 (a WPAN) and WiMAX (broadband wireless MAN) is IEEE 802.16. 802.3 is wired Ethernet and 802.15.4 is the low-rate WPAN standard used by Zigbee.",
+    "pyq_concept": false
+  }
+]

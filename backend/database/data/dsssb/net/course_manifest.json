@@ -1,0 +1,108 @@
+{
+ "subject": "Networks (Computer Networks + Internet)",
+ "subject_hi": "कंप्यूटर नेटवर्क एवं इंटरनेट",
+ "chapters": [
+  {
+   "key": "nw_basics",
+   "title": "1. Network Basics, Types & Topologies",
+   "items": [
+    {
+     "title": "Network Basics, Types & Topologies — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\net\\nw_basics.pdf"
+    }
+   ]
+  },
+  {
+   "key": "nw_models",
+   "title": "2. OSI & TCP/IP Models, PDUs & Network Devices",
+   "items": [
+    {
+     "title": "OSI & TCP/IP Models, PDUs & Network Devices — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\net\\nw_models.pdf"
+    }
+   ]
+  },
+  {
+   "key": "nw_physical",
+   "title": "3. Physical Layer: Signals, Transmission Media & Switching",
+   "items": [
+    {
+     "title": "Physical Layer: Signals, Transmission Media & Switching — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\net\\nw_physical.pdf"
+    }
+   ]
+  },
+  {
+   "key": "nw_datalink",
+   "title": "4. Data Link Layer, Error Control & Medium Access",
+   "items": [
+    {
+     "title": "Data Link Layer, Error Control & Medium Access — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\net\\nw_datalink.pdf"
+    }
+   ]
+  },
+  {
+   "key": "nw_network",
+   "title": "5. Network Layer: IP Addressing, Subnetting & Routing",
+   "items": [
+    {
+     "title": "Network Layer: IP Addressing, Subnetting & Routing — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\net\\nw_network.pdf"
+    }
+   ]
+  },
+  {
+   "key": "nw_transport_app",
+   "title": "6. Transport & Application Layer Protocols",
+   "items": [
+    {
+     "title": "Transport & Application Layer Protocols — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\net\\nw_transport_app.pdf"
+    }
+   ]
+  },
+  {
+   "key": "nw_security",
+   "title": "7. Network Security, Internet & Web Basics",
+   "items": [
+    {
+     "title": "Network Security, Internet & Web Basics — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\net\\nw_security.pdf"
+    }
+   ]
+  },
+  {
+   "key": "nw_mobile",
+   "title": "8. Mobile & Wireless Communication",
+   "items": [
+    {
+     "title": "Mobile & Wireless Communication — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\net\\nw_mobile.pdf"
+    }
+   ]
+  },
+  {
+   "key": "net_practice",
+   "title": "9. Complete notes, previous-year questions & 200 most expected",
+   "items": [
+    {
+     "title": "Networks — fast revision sheet (revise everything quickly)",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\net\\net_fast_revision.pdf"
+    },
+    {
+     "title": "Networks — complete notes (all chapters in one PDF)",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\net\\net_complete_notes.pdf"
+    },
+    {
+     "title": "Networks — previous-year questions 2023–24 with solutions",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\net\\net_pyq_2023_24.pdf"
+    },
+    {
+     "title": "Networks — 200 most expected questions with answers",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\net\\net_200_most_expected.pdf"
+    }
+   ]
+  }
+ ]
+}

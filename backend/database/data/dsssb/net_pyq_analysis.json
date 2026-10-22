@@ -1,0 +1,733 @@
+[
+ {
+  "qid": "630680256153",
+  "paper": "2023_06_24_s3",
+  "question": "A network on the internet has a subnet mask of 255.255.240.0. What is the maximum number of hosts it can handle?",
+  "options": [
+   "1024",
+   "3072",
+   "2048",
+   "4094"
+  ],
+  "answer": 4,
+  "subtopic": "Subnetting - host count",
+  "source_chapter": "cs_net",
+  "difficulty": "medium",
+  "explanation": "The mask 255.255.240.0 has 20 one-bits (8+8+4), which leaves 32 - 20 = 12 host bits. Usable hosts = 2^12 - 2 = 4096 - 2 = 4094, because the all-zeros (network) and all-ones (broadcast) addresses cannot be given to hosts. 2048 or 1024 would come from using too few host bits.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256198",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following statements is true about Home Location Register (HLR) and Visitor Location Register (VLR)?",
+  "options": [
+   "VLR is not responsible for the MS (Mobile Station) to inform the MLR about location changes.",
+   "VLR is not responsible for the MS (Mobile Station) to inform the HLR about location changes.",
+   "VLR is responsible for the MS (Mobile Station) to inform the HLR about location changes.",
+   "HLR is responsible for the MS (Mobile Station) to inform the VLR about location changes."
+  ],
+  "answer": 3,
+  "subtopic": "GSM - HLR and VLR",
+  "source_chapter": "cs_net",
+  "difficulty": "medium",
+  "explanation": "In GSM, the HLR is the permanent database of subscribers and the VLR holds temporary data for mobiles currently in its area. When a mobile station moves into a new area, the VLR updates the HLR about the new location. So the VLR is responsible for informing the HLR. Option 4 reverses the roles.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256159",
+  "paper": "2023_06_24_s3",
+  "question": "What feature of the transport layer prevents data loss?",
+  "options": [
+   "Encryption",
+   "Packet switching",
+   "Addressing",
+   "Flow control"
+  ],
+  "answer": 4,
+  "subtopic": "Transport layer flow control",
+  "source_chapter": "cs_net",
+  "difficulty": "easy",
+  "explanation": "Flow control (for example TCP's sliding window) stops a fast sender from overwhelming a slow receiver. Without it the receiver's buffer would overflow and data would be lost. Encryption gives confidentiality, and addressing and packet switching do not prevent loss.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256158",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following statements is FALSE about TCP (Transmission control protocol)?",
+  "options": [
+   "It uses a three-way handshake to establish a connection.",
+   "It receives data from application as a single stream.",
+   "It is a connection-oriented protocol.",
+   "It is a connection-less protocol."
+  ],
+  "answer": 4,
+  "subtopic": "TCP features",
+  "source_chapter": "cs_net",
+  "difficulty": "easy",
+  "explanation": "TCP is a connection-oriented protocol: it sets up a connection with a three-way handshake (SYN, SYN-ACK, ACK) and treats application data as a byte stream. So the statement that it is connection-less is false. UDP is the connection-less transport protocol.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256160",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following statements is true about slow start phase of the TCP congestion control?",
+  "options": [
+   "Congestion window increases by 1 Maximum Segment Size every round trip time.",
+   "Congestion window approximately doubles every round trip time.",
+   "Congestion window increases by 2 Maximum Segment Size on every successful acknowledgement.",
+   "Congestion window approximately doubles on every successful acknowledgement."
+  ],
+  "answer": 2,
+  "subtopic": "TCP congestion control - slow start",
+  "source_chapter": "cs_net",
+  "difficulty": "medium",
+  "explanation": "In slow start the congestion window grows by 1 MSS for every ACK received. Since a whole window's worth of ACKs arrives in one RTT, the window roughly doubles every round trip time (exponential growth). Option 1 (plus 1 MSS per RTT) describes congestion avoidance, which is linear growth.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256157",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following is NOT a symmetric-key cryptographic algorithm?",
+  "options": [
+   "AES",
+   "RC4",
+   "RSA",
+   "DES"
+  ],
+  "answer": 3,
+  "subtopic": "Symmetric vs asymmetric cryptography",
+  "source_chapter": "cs_net",
+  "difficulty": "easy",
+  "explanation": "RSA is an asymmetric (public-key) algorithm that uses a public key to encrypt and a private key to decrypt. AES and DES are symmetric block ciphers and RC4 is a symmetric stream cipher, so they all use the same secret key on both sides.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256334",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following refers to messages sent from transport entity to transport entity in the transport layer of the ISO/OSI network model?",
+  "options": [
+   "Packet",
+   "Block",
+   "Frame",
+   "Segment"
+  ],
+  "answer": 4,
+  "subtopic": "OSI PDUs",
+  "source_chapter": "cs_net",
+  "difficulty": "easy",
+  "explanation": "In the OSI model the transport layer's data unit, exchanged between transport entities, is called a segment (also known as a TPDU). Packets belong to the network layer and frames to the data link layer.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256337",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following ciphers reorders the letters but does NOT disguise them?",
+  "options": [
+   "Quantum",
+   "One time pad",
+   "Transposition",
+   "Substitution"
+  ],
+  "answer": 3,
+  "subtopic": "Transposition vs substitution cipher",
+  "source_chapter": "cs_net",
+  "difficulty": "easy",
+  "explanation": "A transposition cipher only rearranges the order of the plaintext letters; the letters themselves stay the same. A substitution cipher replaces each letter with another symbol, so it disguises the letters but keeps their order.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256406",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following belongs to the fixed and wireless configuration category of mobile devices?",
+  "options": [
+   "Wi-Fi router",
+   "Desktop computer",
+   "Wi-Fi Dongle",
+   "Laptop"
+  ],
+  "answer": 1,
+  "subtopic": "Mobile computing device categories",
+  "source_chapter": "cs_net",
+  "difficulty": "medium",
+  "explanation": "Mobile computing devices are grouped as fixed-wired (desktop), mobile-wired (laptop on a cable), fixed-wireless and mobile-wireless (smartphone). A Wi-Fi router stays in one place but gives wireless connectivity, so it is fixed and wireless. A Wi-Fi dongle is plugged into a portable device, so it is not a fixed device.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256341",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following is designed in such a way that all the stations are connected through a single cable known as a backbone cable in the computer network?",
+  "options": [
+   "Bus topology",
+   "Mesh topology",
+   "Star topology",
+   "Ring topology"
+  ],
+  "answer": 1,
+  "subtopic": "Network topologies",
+  "source_chapter": "cs_net",
+  "difficulty": "easy",
+  "explanation": "In a bus topology every station is connected to one shared cable called the backbone, with terminators at both ends. Star topology uses a central hub, ring connects each node to two neighbours in a loop, and mesh links nodes to many others.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256339",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following is FALSE with reference to peer-to-peer network?",
+  "options": [
+   "This network has a dedicated server.",
+   "It is useful for small environments, usually up to 10 computers.",
+   "Special permissions are assigned to each computer for sharing the resources.",
+   "All the computers are linked together with equal privilege and responsibilities for processing data."
+  ],
+  "answer": 1,
+  "subtopic": "Peer-to-peer network",
+  "source_chapter": "cs_net",
+  "difficulty": "easy",
+  "explanation": "A peer-to-peer network has no dedicated server; every computer is equal and can act as both client and server. So statement 1 is false. P2P suits small set-ups of about 10 computers, and each computer controls the sharing permissions for its own resources.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256338",
+  "paper": "2023_06_25_s1",
+  "question": "What is the key length for the Triple DES cryptography algorithm?",
+  "options": [
+   "46 bits",
+   "32 bits",
+   "168 bits",
+   "56 bits"
+  ],
+  "answer": 3,
+  "subtopic": "Triple DES key length",
+  "source_chapter": "cs_net",
+  "difficulty": "easy",
+  "explanation": "Triple DES runs DES three times with three independent 56-bit keys, so the key length is 3 x 56 = 168 bits (112 bits in the two-key version). 56 bits is the key length of single DES.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256335",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following internet protocols provides a way for applications to send encapsulated IP datagrams without having to establish a connection?",
+  "options": [
+   "Telnet",
+   "Unit Datagram Protocol",
+   "Transmission Control Protocol",
+   "rlogin"
+  ],
+  "answer": 2,
+  "subtopic": "UDP",
+  "source_chapter": "cs_net",
+  "difficulty": "easy",
+  "explanation": "UDP (User Datagram Protocol, written as 'Unit Datagram Protocol' in the question) lets applications send encapsulated IP datagrams without setting up a connection (RFC 768). TCP is connection-oriented, and Telnet and rlogin are remote login applications.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256668",
+  "paper": "2023_06_25_s2",
+  "question": "______ is the handover from a satellite network to a terrestrial cellular network.",
+  "options": [
+   "Gateway handover",
+   "Inter satellite handover",
+   "Inter system handover",
+   "Intra satellite handover"
+  ],
+  "answer": 3,
+  "subtopic": "Satellite systems - handover types",
+  "source_chapter": "cs_net",
+  "difficulty": "medium",
+  "explanation": "A handover between two different kinds of network, such as from a satellite network to a land-based cellular network, is called an inter-system handover. Intra- and inter-satellite handovers stay within the satellite system, and gateway handover happens between ground gateways.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256623",
+  "paper": "2023_06_25_s2",
+  "question": "The internet layer in TCP/IP model is associated with ______ data.",
+  "options": [
+   "segments",
+   "frames",
+   "bytes",
+   "packets"
+  ],
+  "answer": 4,
+  "subtopic": "TCP/IP PDUs",
+  "source_chapter": "cs_net",
+  "difficulty": "easy",
+  "explanation": "The Internet layer of the TCP/IP model (IP) works with packets, also called datagrams. Segments belong to the transport layer, and frames belong to the network access/link layer.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256669",
+  "paper": "2023_06_25_s2",
+  "question": "______ is the address of the current tunnel endpoint for MN that can be chosen via DHCP.",
+  "options": [
+   "FA",
+   "COA",
+   "HA",
+   "CN"
+  ],
+  "answer": 1,
+  "subtopic": "Mobile IP - care-of address",
+  "source_chapter": "cs_net",
+  "difficulty": "medium",
+  "explanation": "In Mobile IP the care-of address (COA) is the current tunnel end-point for the mobile node. It can be a foreign-agent COA or a co-located COA that the mobile node gets itself, for example through DHCP. The FA is an agent (router), not the address that DHCP assigns. The official key (FA) looks wrong; option 2, COA, is the right answer.",
+  "key_doubt": true
+ },
+ {
+  "qid": "630680256674",
+  "paper": "2023_06_25_s2",
+  "question": "Which of the following are the most essential components a computer system uses for communication over internet?",
+  "options": [
+   "Applications and mouse",
+   "Monitor and keyboard",
+   "NIC and TCP/IP",
+   "Camera and microphone"
+  ],
+  "answer": 3,
+  "subtopic": "Internet connectivity essentials",
+  "source_chapter": "cs_net",
+  "difficulty": "easy",
+  "explanation": "To communicate over the internet a computer needs hardware to connect to the network, the Network Interface Card (NIC), and the common set of protocols, the TCP/IP suite. A monitor, keyboard, mouse, camera and microphone are I/O peripherals and are not needed for network communication.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256631",
+  "paper": "2023_06_25_s2",
+  "question": "Communication between end systems is encrypted using a key that is commonly referred to as a:",
+  "options": [
+   "single key",
+   "session key",
+   "private key",
+   "public key"
+  ],
+  "answer": 2,
+  "subtopic": "Session keys",
+  "source_chapter": "cs_net",
+  "difficulty": "medium",
+  "explanation": "End systems usually agree on a temporary symmetric session key for one communication session (often exchanged using public-key cryptography) and encrypt the data with it. Public and private keys are long-term asymmetric keys and are mainly used to set up or sign the session, not to encrypt the bulk data.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256629",
+  "paper": "2023_06_25_s2",
+  "question": "The process of verifying a user's identity is called:",
+  "options": [
+   "integrity",
+   "authentication",
+   "validation",
+   "confidentiality"
+  ],
+  "answer": 2,
+  "subtopic": "Security - authentication",
+  "source_chapter": "cs_net",
+  "difficulty": "easy",
+  "explanation": "Authentication is the process of checking that users are who they say they are, using passwords, OTPs, biometrics or certificates. Integrity makes sure data has not been changed, and confidentiality makes sure only authorised people can read it.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256633",
+  "paper": "2023_06_25_s2",
+  "question": "Which layer is responsible for sending data as a bit stream?",
+  "options": [
+   "Presentation layer",
+   "Network layer",
+   "Physical layer",
+   "Data link layer"
+  ],
+  "answer": 4,
+  "subtopic": "OSI layers - physical layer",
+  "source_chapter": "cs_net",
+  "difficulty": "easy",
+  "explanation": "Sending data as a raw bit stream over the medium (voltages, light pulses, signals) is the job of the physical layer (layer 1). The data link layer groups bits into frames and handles error and flow control. The official key (data link layer) looks wrong; option 3, the physical layer, is the standard answer.",
+  "key_doubt": true
+ },
+ {
+  "qid": "630680256630",
+  "paper": "2023_06_25_s2",
+  "question": "The information transformed during encryption is ______.",
+  "options": [
+   "encrypted message",
+   "coded message",
+   "cipher text",
+   "plain text"
+  ],
+  "answer": 4,
+  "subtopic": "Encryption basics",
+  "source_chapter": "cs_net",
+  "difficulty": "easy",
+  "explanation": "Encryption takes the original readable information, the plain text, and turns it into cipher text using an algorithm and a key. So the information being transformed is the plain text. Cipher text is what comes out of encryption, not what goes in.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598468",
+  "paper": "2024_02_07_s2",
+  "question": "In computer networking, a Repeater is a device that operates only in the ______ layer.",
+  "options": [
+   "Physical",
+   "Network",
+   "Data link",
+   "Session"
+  ],
+  "answer": 1,
+  "subtopic": "Network devices - repeater",
+  "source_chapter": "cs_net",
+  "difficulty": "easy",
+  "explanation": "A repeater only regenerates and amplifies the signal bit by bit to extend the range of a cable. It does not read addresses, so it works only at the physical layer. Bridges and switches work at the data link layer, and routers at the network layer.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598473",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following is correct formula for calculating wavelength (λ) of a signal in the data communication?",
+  "options": [
+   "λ = propagation speed + frequency",
+   "λ = propagation speed × period",
+   "λ = propagation speed + period",
+   "λ = propagation speed × frequency"
+  ],
+  "answer": 2,
+  "subtopic": "Signals - wavelength",
+  "source_chapter": "cs_net",
+  "difficulty": "easy",
+  "explanation": "Wavelength is the distance a signal travels in one period: lambda = propagation speed x period, which is the same as speed / frequency. Option 4 (speed x frequency) is wrong because frequency = 1/period, so the speed should be divided by it.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598470",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following type of guided transmission media are categorized by their Radio Government (RG) ratings in computer networking?",
+  "options": [
+   "Fiber-Optic Cable",
+   "Coaxial Cable",
+   "Metallic Cable",
+   "Twisted-Pair Cable"
+  ],
+  "answer": 2,
+  "subtopic": "Guided media - coaxial cable",
+  "source_chapter": "cs_net",
+  "difficulty": "easy",
+  "explanation": "Coaxial cables are classified by Radio Government (RG) ratings such as RG-59 (cable TV), RG-58 (thin Ethernet) and RG-11 (thick Ethernet). Each RG number specifies physical properties like conductor gauge and impedance. Twisted-pair cables are rated by categories (Cat 5, Cat 6) instead.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256152",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following statements is true?",
+  "options": [
+   "Circuit setup is not required in both a datagram network and virtual-circuit network.",
+   "Circuit setup is required in both a datagram network and virtual-circuit network.",
+   "Circuit setup is required in a virtual-circuit network.",
+   "Circuit setup is required in a datagram network."
+  ],
+  "answer": 3,
+  "subtopic": "Datagram vs virtual-circuit networks",
+  "source_chapter": "cs_net",
+  "difficulty": "easy",
+  "explanation": "A virtual-circuit network (connection-oriented) must set up a path before data transfer and tear it down afterwards. A datagram network is connectionless: each packet is routed independently and no setup phase is needed. So only option 3 is true; option 2 is wrong because datagram networks need no setup.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256141",
+  "paper": "2023_06_24_s3",
+  "question": "_____ is the process of visiting different web sites on the internet hosted by various companies, organisations, educational institutions, magazines, individuals, etc.",
+  "options": [
+   "Webbing",
+   "Searching",
+   "Chatting",
+   "Web surfing"
+  ],
+  "answer": 4,
+  "subtopic": "Internet - web surfing",
+  "source_chapter": "cs_net",
+  "difficulty": "easy",
+  "explanation": "Web surfing (browsing) is moving from one website to another on the internet, usually by following hyperlinks. Searching means using a search engine to find specific information, and chatting is real-time messaging.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256144",
+  "paper": "2023_06_24_s3",
+  "question": "The refractive index of the core of an optical fibre is greater than that of cladding because:",
+  "options": [
+   "the light gets reflected at the entrance end of the optical fibre",
+   "the light gets totally internally reflected into the core",
+   "the light gets restricted at the entrance end of the optical fibre",
+   "the light gets refracted into cladding"
+  ],
+  "answer": 2,
+  "subtopic": "Optical fibre principle",
+  "source_chapter": "cs_net",
+  "difficulty": "easy",
+  "explanation": "Light travels through an optical fibre by total internal reflection, which needs light to go from a denser medium (core) to a rarer medium (cladding) at more than the critical angle. Hence the core's refractive index is kept higher than the cladding's; option 4 is the opposite of what is desired.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256333",
+  "paper": "2023_06_25_s1",
+  "question": "Too many packets present in (a part of) the network causes packet delay and loss that degrades performance. This situation is referred to as ______.",
+  "options": [
+   "throttling",
+   "chocking",
+   "congestion",
+   "collapse"
+  ],
+  "answer": 3,
+  "subtopic": "Congestion",
+  "source_chapter": "cs_net",
+  "difficulty": "easy",
+  "explanation": "When too many packets are present in (part of) a network, queues build up and packets are delayed or dropped; this is congestion. Choke packets and throttling are techniques to control congestion, and congestion collapse is its extreme outcome.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256331",
+  "paper": "2023_06_25_s1",
+  "question": "In connectionless services offered by the network layer, packets are injected into the network individually and routed independently of each other. In this context, the packets are frequently called ______, and the network is called a ______ network.",
+  "options": [
+   "datagrams; virtual-circuit",
+   "datagrams; datagram",
+   "virtual circuits; datagram",
+   "virtual circuits; virtual-circuit"
+  ],
+  "answer": 2,
+  "subtopic": "Network layer - datagram service",
+  "source_chapter": "cs_net",
+  "difficulty": "easy",
+  "explanation": "In a connectionless network-layer service, independently routed packets are called datagrams and the network is a datagram network. Virtual-circuit networks are connection-oriented, so options using 'virtual circuit' are wrong.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256336",
+  "paper": "2023_06_25_s1",
+  "question": "Any process in the transport layer wishing to remotely retrieve mail from a host can connect to the destination host’s port ______ to contact its IMAP daemon.",
+  "options": [
+   "443",
+   "80",
+   "143",
+   "20"
+  ],
+  "answer": 3,
+  "subtopic": "Well-known ports",
+  "source_chapter": "cs_net",
+  "difficulty": "easy",
+  "explanation": "IMAP servers listen on TCP port 143 (993 for IMAPS). Port 80 is HTTP, 443 is HTTPS and 20 is FTP data.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256407",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following is a router in a foreign network to which the mobile node is currently connected with reference to mobile communication?",
+  "options": [
+   "Foreign agent",
+   "Home agent",
+   "Foreign agent COA",
+   "Co-located COA"
+  ],
+  "answer": 1,
+  "subtopic": "Mobile IP",
+  "source_chapter": "cs_net",
+  "difficulty": "medium",
+  "explanation": "In Mobile IP, the foreign agent is the router in the visited (foreign) network that serves the mobile node and delivers tunnelled packets to it. The home agent sits in the home network, and a care-of address (COA) is an address, not a router.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256408",
+  "paper": "2023_06_25_s1",
+  "question": "In which of the following radio channel sharing methods several users share the same frequency channel of higher bandwidth by dividing it into different time slots?",
+  "options": [
+   "Time Division Multiple Access",
+   "Network Division Multiple Access",
+   "Frequency Division Multiple Access",
+   "Packet Division Multiple Access"
+  ],
+  "answer": 1,
+  "subtopic": "Multiple access - TDMA",
+  "source_chapter": "cs_net",
+  "difficulty": "easy",
+  "explanation": "TDMA lets several users share one wide frequency channel by giving each user a different time slot. FDMA instead divides the bandwidth into separate frequency bands; NDMA and PDMA are not standard schemes.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256332",
+  "paper": "2023_06_25_s1",
+  "question": "The algorithm that manages routing tables and makes routing decisions in the network layer of the ISO/OSI model is called ______.",
+  "options": [
+   "network algorithm",
+   "routing algorithm",
+   "table algorithm",
+   "IP algorithm"
+  ],
+  "answer": 2,
+  "subtopic": "Routing algorithms",
+  "source_chapter": "cs_net",
+  "difficulty": "easy",
+  "explanation": "The routing algorithm is the part of network-layer software that decides on which output line an incoming packet should be sent, and builds/maintains routing tables. The other names are not standard terms.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256340",
+  "paper": "2023_06_25_s1",
+  "question": "In a Client/Server network, the central controller is known as a ______, while all other computers in the network are called ______.",
+  "options": [
+   "peer; servers",
+   "client; servers",
+   "server; clients",
+   "server; peers"
+  ],
+  "answer": 3,
+  "subtopic": "Client-server network",
+  "source_chapter": "cs_net",
+  "difficulty": "easy",
+  "explanation": "In a client/server network the central computer that provides services and controls resources is the server, and the other computers that request services are clients. 'Peers' are used in peer-to-peer networks where all nodes are equal.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256632",
+  "paper": "2023_06_25_s2",
+  "question": "Which of the following are networking transport layer protocols?",
+  "options": [
+   "FTP and DNS",
+   "Telnet and ICMP",
+   "TCP, UDP and SCTP",
+   "ARP and RARP"
+  ],
+  "answer": 3,
+  "subtopic": "Transport layer protocols",
+  "source_chapter": "cs_net",
+  "difficulty": "easy",
+  "explanation": "TCP, UDP and SCTP are transport-layer protocols. FTP, DNS and Telnet are application-layer, ICMP is network-layer, and ARP/RARP work between the network and data-link layers.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256667",
+  "paper": "2023_06_25_s2",
+  "question": "BTS stands for ________.",
+  "options": [
+   "Base Transfer Station",
+   "Base Transceiver Station",
+   "Basic Transfer System",
+   "Basic Transceiver Station"
+  ],
+  "answer": 2,
+  "subtopic": "Mobile communication - BTS",
+  "source_chapter": "cs_net",
+  "difficulty": "easy",
+  "explanation": "BTS stands for Base Transceiver Station, the equipment (with antennas) that sends and receives radio signals between mobile phones and the cellular network. It transmits and receives (transceiver), not just transfers.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256673",
+  "paper": "2023_06_25_s2",
+  "question": "In a global system of world-wide computer networks, interconnection is essential for which purpose of computations?",
+  "options": [
+   "Market data analysis",
+   "Messages for communication",
+   "Sharing files of different types",
+   "Data for transactions"
+  ],
+  "answer": 2,
+  "subtopic": "Purpose of internetworking",
+  "source_chapter": "cs_net",
+  "difficulty": "medium",
+  "explanation": "The worldwide interconnection of networks (the internet) exists primarily to carry messages for communication between computers and people, e.g. email and messaging. File sharing, market analysis and transactions are applications built on top of this communication capability.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256625",
+  "paper": "2023_06_25_s2",
+  "question": "Which of the following is NOT a network layer function?",
+  "options": [
+   "Error control and flow control",
+   "Intra-routing",
+   "Routing",
+   "Congestion control"
+  ],
+  "answer": 1,
+  "subtopic": "Network layer functions",
+  "source_chapter": "cs_net",
+  "difficulty": "easy",
+  "explanation": "Routing (inter- and intra-domain) and congestion control are network-layer functions. Error control and flow control are mainly responsibilities of the data link layer (hop-to-hop) and transport layer (end-to-end).",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256624",
+  "paper": "2023_06_25_s2",
+  "question": "Which of the following 4-byte IP addresses are used for internet protocol layer?",
+  "options": [
+   "Network address and port address",
+   "Network address and MAC address",
+   "Network address and host address",
+   "Host address and port address"
+  ],
+  "answer": 3,
+  "subtopic": "IPv4 addressing",
+  "source_chapter": "cs_net",
+  "difficulty": "easy",
+  "explanation": "A 4-byte (32-bit) IPv4 address has two parts: the network address (netid) and the host address (hostid). Port numbers belong to the transport layer and MAC addresses to the data link layer.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598469",
+  "paper": "2024_02_07_s2",
+  "question": "In the data link layer, _____ is based on automatic repeat request, which is the retransmission of data.",
+  "options": [
+   "Framing",
+   "Physical addressing",
+   "Error control",
+   "Flow control"
+  ],
+  "answer": 3,
+  "subtopic": "Data link layer - error control",
+  "source_chapter": "cs_net",
+  "difficulty": "easy",
+  "explanation": "Error control in the data link layer is based on Automatic Repeat reQuest (ARQ): damaged or lost frames are detected and retransmitted. Flow control only regulates how much data the sender can send before waiting for acknowledgement.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598474",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following statement is correct regarding point-to-point connection in the data communication?\nI. It provides a dedicated link between two devices.\nII. It is a timeshared connection.",
+  "options": [
+   "Only II",
+   "Both I and II",
+   "Neither I nor II",
+   "Only I"
+  ],
+  "answer": 4,
+  "subtopic": "Line configuration - point-to-point",
+  "source_chapter": "cs_net",
+  "difficulty": "easy",
+  "explanation": "A point-to-point connection provides a dedicated link between exactly two devices, so statement I is correct. A timeshared link is a feature of multipoint (multidrop) connections, where several devices share one link, so II is false.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598471",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following statement is correct regarding unguided media (wireless)?\nI. Unguided media transport electromagnetic waves without using a physical conductor.\nII. Unguided signals can travel from the source to destination in ground propagation way.",
+  "options": [
+   "Only II",
+   "Both I and II",
+   "Only I",
+   "Neither I nor II"
+  ],
+  "answer": 2,
+  "subtopic": "Unguided media",
+  "source_chapter": "cs_net",
+  "difficulty": "easy",
+  "explanation": "Unguided (wireless) media carry electromagnetic waves without a physical conductor, so I is true. Wireless signals propagate by ground propagation, sky propagation or line-of-sight, so II is also true. Hence both I and II.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598472",
+  "paper": "2024_02_07_s2",
+  "question": "In periodic analog signals, which of the following is NOT a parameter to describe a sine wave in data communication?",
+  "options": [
+   "Wavelength",
+   "Phase",
+   "Frequency",
+   "Peak amplitude"
+  ],
+  "answer": 1,
+  "subtopic": "Sine wave parameters",
+  "source_chapter": "cs_net",
+  "difficulty": "easy",
+  "explanation": "A sine wave is fully described by three parameters: peak amplitude, frequency (or period) and phase. Wavelength is a derived characteristic (propagation speed ÷ frequency), not one of the three describing parameters.",
+  "key_doubt": false
+ }
+]

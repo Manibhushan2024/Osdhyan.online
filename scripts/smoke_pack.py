@@ -54,7 +54,7 @@ def main():
     check(f'{name} course in DSSSB category', subj is not None)
     s, hier, _ = call(api, 'GET', f"/courses/subjects/{subj['id']}/hierarchy", token)
     mats = [mt for c in hier['data'] for t in c['topics'] for mt in t['materials']]
-    check('course has 8 chapters and 10 PDFs', len(hier['data']) == 8 and len(mats) == 10, f"{len(hier['data'])} / {len(mats)}")
+    check('course has 8+ chapters and 10+ PDFs', len(hier['data']) >= 8 and len(mats) >= 10, f"{len(hier['data'])} / {len(mats)}")
     url = mats[0].get('url') or (api.rsplit('/api', 1)[0] + '/storage/' + mats[0]['file_path'])
     if url.startswith('/'):
         url = api.rsplit('/api', 1)[0] + url

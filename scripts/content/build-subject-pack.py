@@ -158,8 +158,17 @@ def main():
         q_block(i, p['question'] or '', p['options'] or ['', '', '', ''], (p['answer'] or 1) - 1, p.get('explanation'),
                 f"<span class='tag'>{PAPER_NAMES.get(p['paper'], p['paper'])}</span>")
         for i, p in enumerate(pyq, 1))
+    # Optional fast-revision sheet (notes/quick_revision.md): its own PDF and the
+    # first section of the complete notes, so a student can revise in one sitting.
+    quick_md = os.path.join(pdir, 'notes', 'quick_revision.md')
+    quick_html = md_html(open(quick_md, encoding='utf-8').read()) if os.path.exists(quick_md) else ''
+    quick_pdf = None
+    if quick_html:
+        quick_pdf = write_pdf(os.path.join(out_dir, f'{pack}_fast_revision'), f'{name} — Fast Revision Sheet', quick_html, footer)
+        toc = toc.replace('<ol>', '<ol><li>Fast revision sheet</li>', 1)
+        print('fast revision pdf')
     complete = write_pdf(os.path.join(out_dir, f'{pack}_complete_notes'), f'{name} — Complete Notes (DSSSB TGT CS)',
-                         cover + analysis + toc + ''.join(md_html(notes[k]) for k in order if k in notes) + pyq_html, footer)
+                         cover + analysis + toc + quick_html + ''.join(md_html(notes[k]) for k in order if k in notes) + pyq_html, footer)
     pyq_pdf = write_pdf(os.path.join(out_dir, f'{pack}_pyq_2023_24'), f'{name} — Previous-year questions 2023–24', analysis + pyq_html, footer)
     print('complete notes + pyq pdf')
 
@@ -176,6 +185,7 @@ def main():
     print('expected questions pdf')
 
     manifest['chapters'].append({'key': f'{pack}_practice', 'title': f'{len(chapters) + 1}. Complete notes, previous-year questions & {len(qs)} most expected', 'items': [
+        *([{'title': f'{name} — fast revision sheet (revise everything quickly)', 'file': quick_pdf}] if quick_pdf else []),
         {'title': f'{name} — complete notes (all chapters in one PDF)', 'file': complete},
         {'title': f'{name} — previous-year questions 2023–24 with solutions', 'file': pyq_pdf},
         {'title': f'{name} — {len(qs)} most expected questions with answers', 'file': q_pdf},

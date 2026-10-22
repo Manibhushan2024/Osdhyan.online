@@ -1,0 +1,2302 @@
+[
+ {
+  "chapter_key": "nw_basics",
+  "subtopic": "Data flow - half-duplex",
+  "difficulty": "easy",
+  "question_en": "In ______ mode, each station can both transmit and receive, but not at the same time.",
+  "options": [
+   {
+    "en": "Simplex"
+   },
+   {
+    "en": "Half-duplex"
+   },
+   {
+    "en": "Full-duplex"
+   },
+   {
+    "en": "Multipoint"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "In half-duplex mode (for example a walkie-talkie) both stations can send, but only one at a time, so the sender uses the whole capacity of the channel. Full-duplex lets both stations send at the same moment. Multipoint is a line configuration, not a data-flow mode.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_basics",
+  "subtopic": "Data flow - full-duplex",
+  "difficulty": "easy",
+  "question_en": "Which of the following is an example of full-duplex communication?",
+  "options": [
+   {
+    "en": "A keyboard sending input to a computer"
+   },
+   {
+    "en": "A walkie-talkie conversation"
+   },
+   {
+    "en": "A telephone conversation"
+   },
+   {
+    "en": "A television broadcast"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "In a telephone conversation both people can talk and listen at the same time, which is full-duplex. A walkie-talkie is half-duplex because only one side can talk at a time. A keyboard and a TV broadcast send data in one direction only (simplex).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_basics",
+  "subtopic": "Line configuration - multipoint",
+  "difficulty": "hard",
+  "question_en": "Which statement is correct regarding a multipoint (multidrop) connection?\nI. More than two specific devices share a single link.\nII. If the devices must take turns to use the link, the sharing is called spatial sharing.",
+  "options": [
+   {
+    "en": "Only I"
+   },
+   {
+    "en": "Only II"
+   },
+   {
+    "en": "Both I and II"
+   },
+   {
+    "en": "Neither I nor II"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A multipoint connection is one in which more than two specific devices share a single link, so I is correct. If the devices use the link simultaneously the capacity is spatially shared; if they must take turns it is a timeshared (temporally shared) connection. So II mixes up the two terms and is false.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_basics",
+  "subtopic": "Components of data communication",
+  "difficulty": "easy",
+  "question_en": "Which of the following is NOT one of the five components of a data communication system?",
+  "options": [
+   {
+    "en": "Message"
+   },
+   {
+    "en": "Protocol"
+   },
+   {
+    "en": "Transmission medium"
+   },
+   {
+    "en": "Bandwidth"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The five components are message, sender, receiver, transmission medium and protocol. Bandwidth is a performance measure of a link, not a component. Protocol is a component: it is the set of rules that governs the communication.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_basics",
+  "subtopic": "Protocol elements",
+  "difficulty": "medium",
+  "question_en": "The three key elements of a protocol are ______.",
+  "options": [
+   {
+    "en": "sender, receiver and medium"
+   },
+   {
+    "en": "delivery, accuracy and timeliness"
+   },
+   {
+    "en": "syntax, semantics and timing"
+   },
+   {
+    "en": "framing, routing and addressing"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "A protocol is defined by its syntax (the structure or format of the data), semantics (the meaning of each section of bits) and timing (when data should be sent and how fast). Delivery, accuracy and timeliness are characteristics of an effective communication system, not elements of a protocol.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_basics",
+  "subtopic": "Network types - MAN",
+  "difficulty": "easy",
+  "question_en": "A network that covers a town or a city, such as a cable TV network that also provides Internet access, is called a ______.",
+  "options": [
+   {
+    "en": "MAN"
+   },
+   {
+    "en": "LAN"
+   },
+   {
+    "en": "PAN"
+   },
+   {
+    "en": "WAN"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A Metropolitan Area Network (MAN) spans a town or city; cable TV networks and city-wide DSL networks are standard examples. A LAN covers an office, building or campus, while a WAN covers a country or a continent.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_basics",
+  "subtopic": "Network types - coverage",
+  "difficulty": "easy",
+  "question_en": "Which of the following arranges network types correctly in increasing order of geographical coverage?",
+  "options": [
+   {
+    "en": "LAN < PAN < MAN < WAN"
+   },
+   {
+    "en": "PAN < LAN < MAN < WAN"
+   },
+   {
+    "en": "PAN < MAN < LAN < WAN"
+   },
+   {
+    "en": "LAN < MAN < PAN < WAN"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "A PAN covers a few metres around one person (for example Bluetooth devices), a LAN covers a building or campus, a MAN covers a city and a WAN covers a country or the world. Option A wrongly puts the LAN below the PAN.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_basics",
+  "subtopic": "Client-server network",
+  "difficulty": "medium",
+  "question_en": "Which of the following is an advantage of a client-server network over a peer-to-peer network?",
+  "options": [
+   {
+    "en": "It needs no dedicated computer to act as a server"
+   },
+   {
+    "en": "Every computer has equal rights and responsibilities"
+   },
+   {
+    "en": "Failure of the server does not affect the clients"
+   },
+   {
+    "en": "Security and backups can be managed centrally"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "In a client-server network the server holds the shared resources, so security, user accounts and backups are managed in one place. Equal rights for every computer and no dedicated server describe a peer-to-peer network. Server failure is in fact the main weakness of the client-server model.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_basics",
+  "subtopic": "Peer-to-peer network",
+  "difficulty": "medium",
+  "question_en": "In a peer-to-peer network, ______.",
+  "options": [
+   {
+    "en": "each computer can act as both a client and a server"
+   },
+   {
+    "en": "one dedicated computer controls all shared resources"
+   },
+   {
+    "en": "clients can only request services from a central host"
+   },
+   {
+    "en": "a network operating system server is mandatory"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "In a peer-to-peer network all computers are equal: each can share its own resources (acting as a server) and use others' resources (acting as a client). A dedicated controlling computer, a central host and a mandatory server are features of a client-server network.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_basics",
+  "subtopic": "Mesh topology - links",
+  "difficulty": "medium",
+  "question_en": "How many duplex links are needed to connect 12 devices in a fully connected mesh topology?",
+  "options": [
+   {
+    "en": "132"
+   },
+   {
+    "en": "144"
+   },
+   {
+    "en": "66"
+   },
+   {
+    "en": "11"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "A full mesh of n devices needs n(n - 1)/2 duplex links. Here 12 x 11 / 2 = 66. The value 132 = n(n - 1) is the number of simplex links (or I/O ports), not duplex links.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_basics",
+  "subtopic": "Mesh topology - I/O ports",
+  "difficulty": "hard",
+  "question_en": "In a fully connected mesh of 9 devices, how many I/O ports does each device need, and how many I/O ports are needed in the whole network?",
+  "options": [
+   {
+    "en": "9 each, 81 in total"
+   },
+   {
+    "en": "8 each, 36 in total"
+   },
+   {
+    "en": "9 each, 36 in total"
+   },
+   {
+    "en": "8 each, 72 in total"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Each device connects to the other n - 1 = 8 devices, so it needs 8 I/O ports. Total ports = n(n - 1) = 9 x 8 = 72, i.e. two ports for each of the 36 links. The figure 36 is the number of duplex links, not the number of ports.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_basics",
+  "subtopic": "Bus topology - failure",
+  "difficulty": "medium",
+  "question_en": "In a bus topology, what is the effect of a break in the backbone cable?",
+  "options": [
+   {
+    "en": "Only the device nearest the break loses its connection"
+   },
+   {
+    "en": "It stops all transmission, even between devices on the same side"
+   },
+   {
+    "en": "Traffic is automatically rerouted through the terminators"
+   },
+   {
+    "en": "Only the devices downstream of the break are affected"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "A fault or break in the bus cable stops all transmission, even between devices on the same side of the problem, because the damaged end reflects signals back and creates noise in both directions. Terminators only absorb signals at the cable ends; they cannot reroute traffic.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_basics",
+  "subtopic": "Star topology",
+  "difficulty": "medium",
+  "question_en": "Which statement is correct about star topology?\nI. Each device needs only one link and one I/O port to connect to the central hub.\nII. If one device's link fails, every other device also loses connectivity.",
+  "options": [
+   {
+    "en": "Only II"
+   },
+   {
+    "en": "Both I and II"
+   },
+   {
+    "en": "Only I"
+   },
+   {
+    "en": "Neither I nor II"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "In a star each device has a single dedicated link (and one I/O port) to the hub, so I is true. If one link fails, only that device is cut off and the others keep working, so II is false. The whole star fails only when the hub itself fails.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_basics",
+  "subtopic": "Ring topology",
+  "difficulty": "medium",
+  "question_en": "In a ring topology, each device has a dedicated point-to-point connection with ______ and contains a ______ that regenerates the signal.",
+  "options": [
+   {
+    "en": "only its two neighbours; repeater"
+   },
+   {
+    "en": "every other device; repeater"
+   },
+   {
+    "en": "only the central hub; terminator"
+   },
+   {
+    "en": "only its two neighbours; terminator"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "In a ring, each device is linked only to the two devices on either side, and a signal passes from device to device in one direction; each device has a built-in repeater that regenerates the bits. Terminators belong to the bus topology, and a link to every other device describes a mesh.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_basics",
+  "subtopic": "Standards bodies - IEEE",
+  "difficulty": "easy",
+  "question_en": "Which organisation develops the 802 family of standards for LANs and MANs, such as Ethernet and Wi-Fi?",
+  "options": [
+   {
+    "en": "ISO"
+   },
+   {
+    "en": "ANSI"
+   },
+   {
+    "en": "ITU-T"
+   },
+   {
+    "en": "IEEE"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The IEEE (Institute of Electrical and Electronics Engineers) started Project 802 to set standards for LANs and MANs, e.g. 802.3 Ethernet and 802.11 wireless LAN. ISO produced the OSI model and ITU-T (formerly CCITT) sets telecommunication standards.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_basics",
+  "subtopic": "Standards bodies - RFC and IETF",
+  "difficulty": "medium",
+  "question_en": "Internet standards are published as numbered documents called ______, and their technical development is carried out by the ______.",
+  "options": [
+   {
+    "en": "ISOs; ITU-T"
+   },
+   {
+    "en": "RFCs; IETF"
+   },
+   {
+    "en": "Drafts; IEEE"
+   },
+   {
+    "en": "RFCs; ANSI"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "An Internet specification starts as an Internet draft and, once accepted, is published as a Request for Comment (RFC) with a number. The Internet Engineering Task Force (IETF) develops these protocols. ANSI is the US national standards body and does not issue RFCs.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_basics",
+  "subtopic": "Propagation time",
+  "difficulty": "medium",
+  "question_en": "A signal travels 4,800 km over a fibre link at a propagation speed of 2.4 x 10^8 m/s. What is the propagation time?",
+  "options": [
+   {
+    "en": "20 ms"
+   },
+   {
+    "en": "2 ms"
+   },
+   {
+    "en": "200 ms"
+   },
+   {
+    "en": "0.2 ms"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Propagation time = distance / propagation speed = (4.8 x 10^6 m) / (2.4 x 10^8 m/s) = 0.02 s = 20 ms. Getting 2 ms or 200 ms comes from converting km to metres wrongly.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_basics",
+  "subtopic": "Latency components",
+  "difficulty": "medium",
+  "question_en": "In data communication, latency (delay) of a message is defined as the sum of ______.",
+  "options": [
+   {
+    "en": "bandwidth, throughput and jitter"
+   },
+   {
+    "en": "propagation time and processing delay only"
+   },
+   {
+    "en": "bit rate, baud rate and queuing time"
+   },
+   {
+    "en": "propagation, transmission, queuing and processing delays"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Latency is the time taken for an entire message to arrive completely: propagation time + transmission time + queuing time + processing delay. Option B leaves out transmission and queuing time. Bandwidth, throughput and jitter are separate performance measures, not parts of delay.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_basics",
+  "subtopic": "Throughput numerical",
+  "difficulty": "hard",
+  "question_en": "A network with a bandwidth of 20 Mbps passes on average 18,000 frames per minute, each carrying 10,000 bits. What is its throughput?",
+  "options": [
+   {
+    "en": "18 Mbps"
+   },
+   {
+    "en": "1.8 Mbps"
+   },
+   {
+    "en": "3 Mbps"
+   },
+   {
+    "en": "30 Mbps"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Throughput = bits actually passed per second = (18,000 x 10,000) / 60 = 1.8 x 10^8 / 60 = 3 x 10^6 bps = 3 Mbps. The 20 Mbps bandwidth is only the potential capacity. 1.8 Mbps and 18 Mbps come from misplacing the power of ten in 1.8 x 10^8 instead of dividing the bits per minute by 60.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_basics",
+  "subtopic": "Bandwidth-delay product",
+  "difficulty": "hard",
+  "question_en": "A link has a bandwidth of 8 Mbps and a one-way delay of 3 ms. What is its bandwidth-delay product, i.e. the number of bits that can fill the link?",
+  "options": [
+   {
+    "en": "2,400 bits"
+   },
+   {
+    "en": "24,000 bits"
+   },
+   {
+    "en": "240,000 bits"
+   },
+   {
+    "en": "48,000 bits"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Bandwidth-delay product = bandwidth x delay = (8 x 10^6 bits/s) x (3 x 10^-3 s) = 24,000 bits, the number of bits in transit on the link at one time. 48,000 bits would wrongly use the round-trip time (6 ms) instead of the one-way delay.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_models",
+  "subtopic": "OSI - session layer",
+  "difficulty": "easy",
+  "question_en": "Which OSI layer provides dialog control and synchronization by inserting checkpoints into a stream of data?",
+  "options": [
+   {
+    "en": "Session layer"
+   },
+   {
+    "en": "Transport layer"
+   },
+   {
+    "en": "Presentation layer"
+   },
+   {
+    "en": "Application layer"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The session layer is the network dialog controller: it sets up, maintains and synchronizes the interaction, and adds checkpoints so that after a crash only the data after the last checkpoint is resent. The transport layer handles end-to-end delivery of the whole message, not dialog control.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_models",
+  "subtopic": "OSI - presentation layer",
+  "difficulty": "easy",
+  "question_en": "Translation between different character codes, encryption and compression are functions of the ______ layer.",
+  "options": [
+   {
+    "en": "application"
+   },
+   {
+    "en": "session"
+   },
+   {
+    "en": "presentation"
+   },
+   {
+    "en": "data link"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The presentation layer deals with the syntax and semantics of the information exchanged: translation (e.g. between encoding systems), encryption/decryption and compression. The application layer provides user services such as mail and file transfer, not data formatting.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_models",
+  "subtopic": "OSI - transport layer addressing",
+  "difficulty": "easy",
+  "question_en": "The transport layer header must include a ______ address so that a message is delivered to the correct process on the destination host.",
+  "options": [
+   {
+    "en": "physical"
+   },
+   {
+    "en": "port"
+   },
+   {
+    "en": "logical"
+   },
+   {
+    "en": "specific"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The transport layer gives process-to-process delivery, so its header carries a port (service-point) address that identifies the process. The logical (IP) address only identifies the host and is used by the network layer; the physical address is used hop by hop.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_models",
+  "subtopic": "OSI - data link layer",
+  "difficulty": "easy",
+  "question_en": "Which OSI layer is responsible for moving frames from one hop (node) to the next hop?",
+  "options": [
+   {
+    "en": "Physical layer"
+   },
+   {
+    "en": "Network layer"
+   },
+   {
+    "en": "Transport layer"
+   },
+   {
+    "en": "Data link layer"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The data link layer gives hop-to-hop (node-to-node) delivery of frames. The network layer is responsible for source-to-destination delivery of packets across several networks. The physical layer moves individual bits, not frames.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_models",
+  "subtopic": "OSI - network layer",
+  "difficulty": "medium",
+  "question_en": "Which layer is responsible for the delivery of individual packets from the source host to the destination host, possibly across several networks?",
+  "options": [
+   {
+    "en": "Data link layer"
+   },
+   {
+    "en": "Network layer"
+   },
+   {
+    "en": "Transport layer"
+   },
+   {
+    "en": "Session layer"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The network layer provides source-to-destination delivery of individual packets using logical addressing and routing. The transport layer delivers the entire message from process to process, and the data link layer only delivers within one link.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_models",
+  "subtopic": "OSI - layer functions",
+  "difficulty": "medium",
+  "question_en": "Which statement is correct?\nI. The data link layer provides access control, deciding which device has control of a shared link at a given time.\nII. The transport layer divides a message into segments that carry sequence numbers for reassembly.",
+  "options": [
+   {
+    "en": "Both I and II"
+   },
+   {
+    "en": "Only I"
+   },
+   {
+    "en": "Only II"
+   },
+   {
+    "en": "Neither I nor II"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Access control on a shared (multipoint) link is a data link layer duty, so I is correct. The transport layer performs segmentation and reassembly, numbering each segment so the receiver can put the message back in order and replace lost segments, so II is also correct.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_models",
+  "subtopic": "OSI - physical layer",
+  "difficulty": "medium",
+  "question_en": "Which of the following is NOT a function of the physical layer?",
+  "options": [
+   {
+    "en": "Bit synchronization between sender and receiver"
+   },
+   {
+    "en": "Defining the transmission mode (simplex or duplex)"
+   },
+   {
+    "en": "Representing bits as electrical or optical signals"
+   },
+   {
+    "en": "Grouping bits into frames with headers and trailers"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The physical layer moves a raw bit stream: it defines bit representation, data rate, bit synchronization, line configuration, topology and transmission mode. Framing (dividing the bit stream into frames with headers and trailers) is a data link layer function.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_models",
+  "subtopic": "OSI - layer groups",
+  "difficulty": "medium",
+  "question_en": "In the OSI model, which layers together are known as the user support layers?",
+  "options": [
+   {
+    "en": "Physical, data link and network"
+   },
+   {
+    "en": "Network, transport and session"
+   },
+   {
+    "en": "Session, presentation and application"
+   },
+   {
+    "en": "Transport, session and presentation"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Layers 5, 6 and 7 (session, presentation, application) are the user support layers that allow interoperability between unrelated software. Layers 1, 2 and 3 are the network support layers, and layer 4 (transport) links the two groups.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_models",
+  "subtopic": "Encapsulation - headers and trailers",
+  "difficulty": "medium",
+  "question_en": "During encapsulation in the OSI model, a trailer is usually added only at the ______ layer.",
+  "options": [
+   {
+    "en": "data link"
+   },
+   {
+    "en": "network"
+   },
+   {
+    "en": "transport"
+   },
+   {
+    "en": "physical"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Headers are added at layers 6 down to 2, but a trailer (such as the frame check sequence used for error detection) is usually added only at layer 2, the data link layer. The physical layer adds no header or trailer; it only converts the frame into a bit stream.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_models",
+  "subtopic": "Peer-to-peer processes",
+  "difficulty": "medium",
+  "question_en": "In a layered architecture, the processes on two machines that communicate with each other at a given layer are called ______ processes.",
+  "options": [
+   {
+    "en": "client"
+   },
+   {
+    "en": "peer-to-peer"
+   },
+   {
+    "en": "adjacent"
+   },
+   {
+    "en": "interface"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Layer x on one machine communicates logically with layer x on the other machine using that layer's protocol; these are peer-to-peer processes. Adjacent layers on the same machine talk to each other through interfaces, which is a different relationship.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_models",
+  "subtopic": "OSI - application layer",
+  "difficulty": "easy",
+  "question_en": "Network virtual terminal, file transfer access and management (FTAM), mail services and directory services are provided by the ______ layer.",
+  "options": [
+   {
+    "en": "presentation"
+   },
+   {
+    "en": "session"
+   },
+   {
+    "en": "transport"
+   },
+   {
+    "en": "application"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The application layer gives the user (person or software) access to the network and provides services such as network virtual terminal, FTAM, mail and directory services. The presentation layer only formats, encrypts and compresses the data.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_models",
+  "subtopic": "OSI vs TCP/IP mapping",
+  "difficulty": "medium",
+  "question_en": "The application layer of the TCP/IP protocol suite is roughly equivalent to which layers of the OSI model?",
+  "options": [
+   {
+    "en": "Application layer only"
+   },
+   {
+    "en": "Presentation and application layers"
+   },
+   {
+    "en": "Session, presentation and application layers"
+   },
+   {
+    "en": "Transport, session and application layers"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "TCP/IP has no separate session and presentation layers; their duties are handled inside its application layer, so it matches the combined OSI session, presentation and application layers. Option B leaves out the session layer.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_models",
+  "subtopic": "TCP/IP model layers",
+  "difficulty": "hard",
+  "question_en": "The original TCP/IP reference model (as described by Tanenbaum) has ______ layers, and its lowest layer (host-to-network or link) corresponds to the OSI ______.",
+  "options": [
+   {
+    "en": "four; physical and data link layers"
+   },
+   {
+    "en": "five; physical layer only"
+   },
+   {
+    "en": "four; data link and network layers"
+   },
+   {
+    "en": "five; data link layer only"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The original TCP/IP model has four layers: link (host-to-network), internet, transport and application. Its lowest layer covers both the OSI physical and data link layers. The five-layer version used by Forouzan splits this layer into physical and data link, which is why 'five' is a tempting distractor.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_models",
+  "subtopic": "OSI vs TCP/IP comparison",
+  "difficulty": "hard",
+  "question_en": "Which statement comparing the OSI and TCP/IP models is correct?\nI. The OSI model makes a clear distinction between services, interfaces and protocols.\nII. In TCP/IP the protocols came first, and the model was essentially a description of the existing protocols.",
+  "options": [
+   {
+    "en": "Only I"
+   },
+   {
+    "en": "Only II"
+   },
+   {
+    "en": "Neither I nor II"
+   },
+   {
+    "en": "Both I and II"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Tanenbaum notes that OSI's biggest contribution is the explicit distinction between services, interfaces and protocols, so I is true. With OSI the model was designed before the protocols, but with TCP/IP the protocols came first and the model only described them, so II is also true.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_models",
+  "subtopic": "Protocols - internet layer",
+  "difficulty": "medium",
+  "question_en": "Which group contains only protocols of the internet (network) layer of the TCP/IP suite?",
+  "options": [
+   {
+    "en": "TCP, UDP and SCTP"
+   },
+   {
+    "en": "IP, ICMP and IGMP"
+   },
+   {
+    "en": "HTTP, FTP and SMTP"
+   },
+   {
+    "en": "PPP, HDLC and Ethernet"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "IP carries datagrams, ICMP reports errors and queries, and IGMP manages multicast group membership; all three work at the internet (network) layer. TCP, UDP and SCTP are transport-layer protocols, HTTP, FTP and SMTP are application-layer, and PPP, HDLC and Ethernet are data-link protocols.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_models",
+  "subtopic": "Protocols - layer mapping",
+  "difficulty": "medium",
+  "question_en": "Which protocol is correctly matched with its TCP/IP layer?",
+  "options": [
+   {
+    "en": "HTTP - transport layer"
+   },
+   {
+    "en": "UDP - internet layer"
+   },
+   {
+    "en": "SMTP - application layer"
+   },
+   {
+    "en": "ICMP - data link layer"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "SMTP, the e-mail transfer protocol, is an application-layer protocol. HTTP is also application-layer (it runs over TCP), UDP is a transport-layer protocol, and ICMP belongs to the internet (network) layer.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_models",
+  "subtopic": "PDU - data link layer",
+  "difficulty": "easy",
+  "question_en": "In the OSI model, the protocol data unit of the data link layer is called a ______.",
+  "options": [
+   {
+    "en": "packet"
+   },
+   {
+    "en": "frame"
+   },
+   {
+    "en": "segment"
+   },
+   {
+    "en": "message"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The data link layer encapsulates a network-layer packet into a frame by adding a header and a trailer. A packet (datagram) is the network-layer unit and a segment is the transport-layer unit.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_models",
+  "subtopic": "PDU - transport layer",
+  "difficulty": "medium",
+  "question_en": "In the TCP/IP suite, the transport-layer data unit created by UDP is called a ______, while the one created by TCP is called a segment.",
+  "options": [
+   {
+    "en": "user datagram"
+   },
+   {
+    "en": "data frame"
+   },
+   {
+    "en": "IP packet"
+   },
+   {
+    "en": "ATM cell"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "At the transport layer TCP produces segments and UDP produces user datagrams. A packet (IP datagram) is the network-layer unit and a frame is the data-link unit; a cell is the fixed-size unit used in ATM.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_models",
+  "subtopic": "PDU order",
+  "difficulty": "medium",
+  "question_en": "Which sequence correctly lists the data units from the application layer down to the physical layer in TCP/IP?",
+  "options": [
+   {
+    "en": "Message, packet, segment, frame, bits"
+   },
+   {
+    "en": "Bits, frame, packet, segment, message"
+   },
+   {
+    "en": "Message, segment, packet, frame, bits"
+   },
+   {
+    "en": "Message, frame, segment, packet, bits"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Going down the stack: application message, transport segment (or user datagram), network packet (datagram), data link frame and finally bits on the physical medium. Option B lists the same units but from the bottom up, which is the reverse of what is asked.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_models",
+  "subtopic": "Addresses - sizes",
+  "difficulty": "medium",
+  "question_en": "What are the sizes of a MAC (physical) address, an IPv4 (logical) address and a port address, respectively?",
+  "options": [
+   {
+    "en": "32 bits, 48 bits and 16 bits"
+   },
+   {
+    "en": "48 bits, 32 bits and 8 bits"
+   },
+   {
+    "en": "48 bits, 128 bits and 16 bits"
+   },
+   {
+    "en": "48 bits, 32 bits and 16 bits"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "An Ethernet MAC address is 48 bits (6 bytes), an IPv4 address is 32 bits (4 bytes) and a port number is 16 bits (0 to 65,535). 128 bits is the size of an IPv6 address, not IPv4.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_models",
+  "subtopic": "Addresses - hop-to-hop change",
+  "difficulty": "hard",
+  "question_en": "As a packet travels from source to destination through several routers, which addresses normally change at every hop and which stay the same?",
+  "options": [
+   {
+    "en": "IP addresses change; MAC and port addresses stay the same"
+   },
+   {
+    "en": "Port addresses change; MAC and IP addresses stay the same"
+   },
+   {
+    "en": "All three kinds of address change at every router"
+   },
+   {
+    "en": "MAC addresses change; IP and port addresses stay the same"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Physical (MAC) addresses have only local, link-level scope: each router removes the old frame and builds a new one with new source and destination MAC addresses. The logical (IP) and port addresses are end-to-end and stay the same along the path (ignoring NAT). Option A reverses the roles of MAC and IP.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_models",
+  "subtopic": "Devices - hub",
+  "difficulty": "easy",
+  "question_en": "An active hub is actually a ______ and operates in the ______ layer.",
+  "options": [
+   {
+    "en": "two-layer switch; data link"
+   },
+   {
+    "en": "multiport repeater; physical"
+   },
+   {
+    "en": "bridge; data link"
+   },
+   {
+    "en": "router; network"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "An active hub is a multiport repeater: it regenerates the incoming bits and sends them out of all other ports without reading any address, so it works only in the physical layer. A two-layer switch is a multiport bridge and works in the data link layer.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_models",
+  "subtopic": "Devices - bridge",
+  "difficulty": "medium",
+  "question_en": "Unlike a repeater, a bridge ______.",
+  "options": [
+   {
+    "en": "can check the MAC address in a frame and filter traffic"
+   },
+   {
+    "en": "can forward packets using their destination IP addresses"
+   },
+   {
+    "en": "can translate between different application protocols"
+   },
+   {
+    "en": "amplifies the incoming signal together with the noise"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A bridge works in both the physical and data link layers, so it can read the destination MAC address of a frame and decide whether to forward or drop it (filtering) using its table. Forwarding by IP address is a router's job, and protocol translation is a gateway's job. A repeater regenerates the signal; it is not an amplifier.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_models",
+  "subtopic": "Devices - router",
+  "difficulty": "easy",
+  "question_en": "A device that connects two or more different networks and forwards packets based on their logical (IP) addresses is a ______.",
+  "options": [
+   {
+    "en": "hub"
+   },
+   {
+    "en": "bridge"
+   },
+   {
+    "en": "router"
+   },
+   {
+    "en": "repeater"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "A router is a three-layer device (physical, data link, network) that routes packets between different networks using their logical (IP) addresses and its routing table. A bridge filters by MAC address within a LAN, while hubs and repeaters work only with signals.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_models",
+  "subtopic": "Devices - gateway",
+  "difficulty": "medium",
+  "question_en": "Which device can operate in all layers of the model and acts as a protocol converter between networks that use different protocol suites?",
+  "options": [
+   {
+    "en": "Gateway"
+   },
+   {
+    "en": "Two-layer switch"
+   },
+   {
+    "en": "Bridge"
+   },
+   {
+    "en": "Active hub"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A gateway can work in all the layers, up to the application layer; it accepts data formatted for one protocol suite and converts it to another before forwarding. A two-layer switch and a bridge work only up to the data link layer, and an active hub only in the physical layer.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_models",
+  "subtopic": "Devices - modem",
+  "difficulty": "easy",
+  "question_en": "The word MODEM stands for ______ and, on the sending side, a modem converts ______.",
+  "options": [
+   {
+    "en": "modulator-demodulator; analog signals into digital data"
+   },
+   {
+    "en": "model-demodel; digital data into network packets"
+   },
+   {
+    "en": "modular-demodulator; frames into packets"
+   },
+   {
+    "en": "modulator-demodulator; digital data into analog signals"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "MODEM is short for modulator-demodulator. When sending, it modulates digital data onto an analog carrier so it can travel over a telephone or cable line; when receiving, it demodulates the analog signal back into digital data. Option A describes the receiving side, not the sending side.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_models",
+  "subtopic": "Devices - layers",
+  "difficulty": "hard",
+  "question_en": "Which device is correctly matched with the highest OSI layer at which it operates?",
+  "options": [
+   {
+    "en": "Repeater - data link layer"
+   },
+   {
+    "en": "Two-layer switch - network layer"
+   },
+   {
+    "en": "Router - network layer"
+   },
+   {
+    "en": "Bridge - physical layer"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "A router works in the physical, data link and network layers, so its highest layer is the network layer. A repeater works only in the physical layer, while a bridge and a two-layer switch work up to the data link layer (a bridge is not limited to the physical layer).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_models",
+  "subtopic": "Collision and broadcast domains - switch",
+  "difficulty": "medium",
+  "question_en": "A 24-port switch (no VLANs configured) has 20 PCs connected to it. How many collision domains and broadcast domains are there?",
+  "options": [
+   {
+    "en": "1 collision domain and 20 broadcast domains"
+   },
+   {
+    "en": "20 collision domains and 1 broadcast domain"
+   },
+   {
+    "en": "24 collision domains and 24 broadcast domains"
+   },
+   {
+    "en": "1 collision domain and 1 broadcast domain"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Every switch port that has a device attached is a separate collision domain, so 20 PCs give 20 collision domains (unused ports do not count). A switch forwards broadcast frames to all ports, so the whole switch is 1 broadcast domain. One collision domain and one broadcast domain would be the answer for a hub.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_models",
+  "subtopic": "Collision and broadcast domains - router",
+  "difficulty": "hard",
+  "question_en": "A router has 4 interfaces, and each interface is connected to a separate hub with 5 PCs attached. How many collision domains and broadcast domains are there in total?",
+  "options": [
+   {
+    "en": "20 collision domains and 4 broadcast domains"
+   },
+   {
+    "en": "4 collision domains and 1 broadcast domain"
+   },
+   {
+    "en": "20 collision domains and 1 broadcast domain"
+   },
+   {
+    "en": "4 collision domains and 4 broadcast domains"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "A hub repeats every signal to all its ports, so each hub segment (5 PCs plus the router interface) is one collision domain: 4 in total. A router does not forward broadcasts, so each of its interfaces is a separate broadcast domain: 4 in total. Twenty collision domains would only be true if switches replaced the hubs.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_models",
+  "subtopic": "Header overhead numerical",
+  "difficulty": "hard",
+  "question_en": "A system uses a 5-layer protocol hierarchy. Applications generate 900-byte messages, and each of the 5 layers adds a 20-byte header. What fraction of the transmitted bytes is header?",
+  "options": [
+   {
+    "en": "10%"
+   },
+   {
+    "en": "11.1%"
+   },
+   {
+    "en": "2.2%"
+   },
+   {
+    "en": "20%"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Total header = 5 x 20 = 100 bytes, so each transmitted unit is 900 + 100 = 1,000 bytes. Header fraction = 100 / 1,000 = 10%. The value 11.1% (100/900) wrongly divides by the message size instead of the total transmitted size.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_physical",
+  "subtopic": "Sine wave - period and frequency",
+  "difficulty": "easy",
+  "question_en": "Which pair of sine-wave characteristics are reciprocals of each other?",
+  "options": [
+   {
+    "en": "Amplitude and phase"
+   },
+   {
+    "en": "Frequency and phase"
+   },
+   {
+    "en": "Period and frequency"
+   },
+   {
+    "en": "Wavelength and amplitude"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Period T is the time for one cycle and frequency f is the number of cycles per second, so f = 1/T and T = 1/f. Phase describes the position of the waveform relative to time 0 and has no reciprocal relation with frequency.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_physical",
+  "subtopic": "Period numerical",
+  "difficulty": "easy",
+  "question_en": "A sine wave has a frequency of 250 kHz. What is its period?",
+  "options": [
+   {
+    "en": "0.4 microseconds"
+   },
+   {
+    "en": "4 microseconds"
+   },
+   {
+    "en": "40 microseconds"
+   },
+   {
+    "en": "4 milliseconds"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "T = 1/f = 1 / (250 x 10^3 Hz) = 4 x 10^-6 s = 4 microseconds. 4 milliseconds would be the period of a 250 Hz signal, i.e. the kilo prefix has been ignored.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_physical",
+  "subtopic": "Sine wave - phase",
+  "difficulty": "medium",
+  "question_en": "A sine wave is shifted by one-quarter of a cycle with respect to time 0. What is its phase?",
+  "options": [
+   {
+    "en": "90 degrees (pi/2 radians)"
+   },
+   {
+    "en": "45 degrees (pi/4 radians)"
+   },
+   {
+    "en": "180 degrees (pi radians)"
+   },
+   {
+    "en": "270 degrees (3pi/2 radians)"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "One complete cycle is 360 degrees (2pi radians), so a quarter-cycle shift is 360/4 = 90 degrees = pi/2 radians. 180 degrees would be a half-cycle shift.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_physical",
+  "subtopic": "Wavelength numerical",
+  "difficulty": "medium",
+  "question_en": "A 50 MHz signal travels through a cable at a propagation speed of 2 x 10^8 m/s. What is its wavelength?",
+  "options": [
+   {
+    "en": "0.25 m"
+   },
+   {
+    "en": "40 m"
+   },
+   {
+    "en": "6 m"
+   },
+   {
+    "en": "4 m"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Wavelength = propagation speed x period = propagation speed / frequency = (2 x 10^8) / (50 x 10^6) = 4 m. 0.25 m is the inverted ratio, and 6 m would use the speed of light in vacuum (3 x 10^8 m/s) instead of the speed in the cable.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_physical",
+  "subtopic": "Transmission impairment - distortion",
+  "difficulty": "easy",
+  "question_en": "The impairment in which a composite signal changes its form or shape because its frequency components travel at different speeds through the medium is called ______.",
+  "options": [
+   {
+    "en": "attenuation"
+   },
+   {
+    "en": "distortion"
+   },
+   {
+    "en": "crosstalk"
+   },
+   {
+    "en": "thermal noise"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Distortion occurs in composite signals: each frequency component has its own propagation speed and delay, so the components arrive out of phase and the shape changes. Attenuation is a loss of energy (strength), not a change of shape; crosstalk and thermal noise are kinds of noise.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_physical",
+  "subtopic": "Bit rate vs baud rate",
+  "difficulty": "easy",
+  "question_en": "A digital signal carries 4 bits in each signal element. If the bit rate is 8,000 bps, what is the baud (signal) rate?",
+  "options": [
+   {
+    "en": "32,000 baud"
+   },
+   {
+    "en": "8,000 baud"
+   },
+   {
+    "en": "2,000 baud"
+   },
+   {
+    "en": "4,000 baud"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Baud rate = bit rate / bits per signal element = 8,000 / 4 = 2,000 baud. Multiplying instead of dividing gives 32,000. The baud rate equals the bit rate only when each signal element carries one bit.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_physical",
+  "subtopic": "Nyquist bit rate",
+  "difficulty": "medium",
+  "question_en": "A noiseless channel has a bandwidth of 4 kHz and uses 8 signal levels. According to Nyquist, what is the maximum bit rate?",
+  "options": [
+   {
+    "en": "24 kbps"
+   },
+   {
+    "en": "64 kbps"
+   },
+   {
+    "en": "12 kbps"
+   },
+   {
+    "en": "32 kbps"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Nyquist: bit rate = 2 x bandwidth x log2(L) = 2 x 4,000 x log2(8) = 2 x 4,000 x 3 = 24,000 bps = 24 kbps. 64 kbps wrongly multiplies by the number of levels (8) instead of log2(8) = 3.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_physical",
+  "subtopic": "Nyquist - signal levels",
+  "difficulty": "hard",
+  "question_en": "We need to send 280 kbps over a noiseless channel with a bandwidth of 20 kHz. How many signal levels are required according to Nyquist?",
+  "options": [
+   {
+    "en": "7"
+   },
+   {
+    "en": "14"
+   },
+   {
+    "en": "128"
+   },
+   {
+    "en": "256"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "280,000 = 2 x 20,000 x log2(L), so log2(L) = 280,000 / 40,000 = 7 and L = 2^7 = 128 levels. The value 7 is the number of bits per level, not the number of levels.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_physical",
+  "subtopic": "Shannon capacity",
+  "difficulty": "hard",
+  "question_en": "A telephone line has a bandwidth of 3 kHz and a signal-to-noise ratio of 30 dB. What is its approximate Shannon capacity?",
+  "options": [
+   {
+    "en": "90 kbps"
+   },
+   {
+    "en": "3 kbps"
+   },
+   {
+    "en": "15 kbps"
+   },
+   {
+    "en": "30 kbps"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "SNR(dB) = 10 log10(SNR), so 30 dB means SNR = 10^3 = 1,000. C = B log2(1 + SNR) = 3,000 x log2(1,001), about 3,000 x 9.97, which is about 29.9 kbps, roughly 30 kbps. 90 kbps comes from using the dB value (30) directly inside the formula.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_physical",
+  "subtopic": "Attenuation in decibels",
+  "difficulty": "medium",
+  "question_en": "The power of a signal falls from 40 mW to 0.4 mW as it travels along a cable. What is the attenuation in decibels?",
+  "options": [
+   {
+    "en": "-10 dB"
+   },
+   {
+    "en": "-20 dB"
+   },
+   {
+    "en": "-40 dB"
+   },
+   {
+    "en": "-100 dB"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "dB = 10 log10(P2/P1) = 10 log10(0.4/40) = 10 log10(0.01) = 10 x (-2) = -20 dB. The negative sign shows a loss. -10 dB would be a fall to one-tenth of the power, not one-hundredth.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_physical",
+  "subtopic": "Line coding - Manchester",
+  "difficulty": "medium",
+  "question_en": "In Manchester encoding, ______.",
+  "options": [
+   {
+    "en": "there is a transition at the middle of every bit, used for synchronization"
+   },
+   {
+    "en": "the signal level stays constant for the whole duration of each bit"
+   },
+   {
+    "en": "a 1 bit is shown by zero voltage and a 0 bit by a positive voltage"
+   },
+   {
+    "en": "the signal level is inverted only when the next bit is a 1"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "In Manchester encoding the bit duration is split into two halves and the level changes at the middle of every bit; this mid-bit transition gives the receiver clock synchronization. It is used in 10 Mbps standard Ethernet. Inverting the level only when the next bit is 1 describes NRZ-I.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_physical",
+  "subtopic": "Line coding - NRZ-I",
+  "difficulty": "medium",
+  "question_en": "In NRZ-I (Non-Return-to-Zero, Invert) encoding, ______.",
+  "options": [
+   {
+    "en": "the voltage level itself directly determines the bit value"
+   },
+   {
+    "en": "every bit has a transition at its middle point"
+   },
+   {
+    "en": "a 0 bit is shown by alternating positive and negative levels"
+   },
+   {
+    "en": "a change in voltage level occurs only when the next bit is 1"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "In NRZ-I the change or lack of change in level decides the bit: an inversion means the bit is 1, no change means the bit is 0. In NRZ-L the level itself decides the bit (option A), and a mid-bit transition is a feature of Manchester encoding.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_physical",
+  "subtopic": "Digital-to-analog modulation - QAM",
+  "difficulty": "easy",
+  "question_en": "Quadrature Amplitude Modulation (QAM) is a combination of ______.",
+  "options": [
+   {
+    "en": "ASK and FSK"
+   },
+   {
+    "en": "FSK and PSK"
+   },
+   {
+    "en": "ASK and PSK"
+   },
+   {
+    "en": "AM and FM"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "QAM changes both the amplitude and the phase of the carrier, so it combines ASK (amplitude shift keying) and PSK (phase shift keying). Frequency is not varied in QAM, so combinations with FSK or FM are wrong.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_physical",
+  "subtopic": "Guided media - twisted pair",
+  "difficulty": "easy",
+  "question_en": "Twisted-pair cables are classified by the EIA into ______, and the common connector used with UTP is the ______.",
+  "options": [
+   {
+    "en": "RG ratings; BNC connector"
+   },
+   {
+    "en": "categories (Cat 5, Cat 6); RJ-45"
+   },
+   {
+    "en": "propagation modes; SC connector"
+   },
+   {
+    "en": "categories (Cat 5, Cat 6); BNC"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The EIA classifies unshielded twisted-pair cable into categories (Cat 1 to Cat 7) by quality, and UTP uses the RJ-45 connector. RG ratings and BNC connectors belong to coaxial cable, and propagation modes and SC connectors belong to optical fibre.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_physical",
+  "subtopic": "Guided media - coaxial RG ratings",
+  "difficulty": "medium",
+  "question_en": "Which coaxial cable rating is commonly used for cable TV networks?",
+  "options": [
+   {
+    "en": "RG-58"
+   },
+   {
+    "en": "RG-62"
+   },
+   {
+    "en": "RG-8"
+   },
+   {
+    "en": "RG-59"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "RG-59 (75 ohm) coaxial cable is used for cable TV. RG-58 (50 ohm) was used for thin Ethernet, RG-8 (50 ohm) for thick Ethernet and RG-62 (93 ohm) for ARCnet. All coaxial cables are categorised by these Radio Government (RG) ratings. (Forouzan's table lists RG-11 for thick Ethernet, but real RG-11 is a 75-ohm cable that is also used in cable TV, so it is not offered as an option here.)",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_physical",
+  "subtopic": "Optical fibre - propagation modes",
+  "difficulty": "medium",
+  "question_en": "In which optical-fibre propagation mode is the core diameter very small, so that light travels almost horizontally and delay distortion is the least?",
+  "options": [
+   {
+    "en": "Single-mode"
+   },
+   {
+    "en": "Multimode step-index"
+   },
+   {
+    "en": "Multimode graded-index"
+   },
+   {
+    "en": "Infrared line-of-sight"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Single-mode fibre has a very narrow core and a highly focused source, so beams travel almost horizontally; all beams arrive nearly together, giving negligible distortion over long distances. Multimode graded-index reduces distortion compared with step-index, but still has more than single-mode.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_physical",
+  "subtopic": "Optical fibre - advantages",
+  "difficulty": "medium",
+  "question_en": "Which of the following is NOT an advantage of optical fibre over metallic cable?",
+  "options": [
+   {
+    "en": "Higher bandwidth"
+   },
+   {
+    "en": "Less signal attenuation"
+   },
+   {
+    "en": "Easier installation and upkeep"
+   },
+   {
+    "en": "Immunity to electromagnetic noise"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Optical fibre offers higher bandwidth, lower attenuation, immunity to electromagnetic interference, light weight and resistance to corrosion. However, installing and maintaining fibre needs special expertise, so easy installation is a disadvantage, not an advantage; cost and one-way light propagation are other drawbacks.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_physical",
+  "subtopic": "Unguided media - microwave and infrared",
+  "difficulty": "medium",
+  "question_en": "Which statement is correct regarding unguided media?\nI. Microwaves are unidirectional, so the sending and receiving antennas need to be aligned (line of sight).\nII. Infrared waves pass easily through walls, which makes them suitable for long-range indoor links.",
+  "options": [
+   {
+    "en": "Both I and II"
+   },
+   {
+    "en": "Only I"
+   },
+   {
+    "en": "Only II"
+   },
+   {
+    "en": "Neither I nor II"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Microwaves (1 to 300 GHz) are unidirectional and need line-of-sight antennas, so I is true. Infrared waves (300 GHz to 400 THz) cannot penetrate walls; this keeps them inside one room (e.g. TV remotes) and makes them unsuitable for long-range links, so II is false.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_physical",
+  "subtopic": "Unguided media - radio waves",
+  "difficulty": "easy",
+  "question_en": "Electromagnetic waves ranging from about 3 kHz to 1 GHz, which are mostly omnidirectional, are called ______.",
+  "options": [
+   {
+    "en": "radio waves"
+   },
+   {
+    "en": "microwaves"
+   },
+   {
+    "en": "infrared waves"
+   },
+   {
+    "en": "light waves"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Forouzan classifies waves from 3 kHz to 1 GHz as radio waves; they are mostly omnidirectional, so the antennas need not be aligned (used for AM/FM radio and paging). Microwaves (1 to 300 GHz) are unidirectional.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_physical",
+  "subtopic": "Multiplexing - WDM",
+  "difficulty": "easy",
+  "question_en": "Which multiplexing technique is designed to combine optical signals in a fibre-optic cable and is conceptually the same as FDM?",
+  "options": [
+   {
+    "en": "Synchronous TDM"
+   },
+   {
+    "en": "Statistical TDM"
+   },
+   {
+    "en": "CDM"
+   },
+   {
+    "en": "WDM"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Wavelength-division multiplexing (WDM) combines light signals of different wavelengths into one fibre; it is FDM applied to very high (optical) frequencies, usually using a prism. TDM techniques divide time, not frequency.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_physical",
+  "subtopic": "Synchronous TDM numerical",
+  "difficulty": "hard",
+  "question_en": "Four connections of 2 kbps each are multiplexed using synchronous TDM with 1-bit time slots. What are the data rate of the link and the duration of each time slot?",
+  "options": [
+   {
+    "en": "2 kbps and 125 microseconds"
+   },
+   {
+    "en": "8 kbps and 500 microseconds"
+   },
+   {
+    "en": "8 kbps and 125 microseconds"
+   },
+   {
+    "en": "4 kbps and 250 microseconds"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Link rate = 4 x 2 kbps = 8 kbps. Each input bit lasts 1/2,000 s = 500 microseconds, and that time is shared by 4 slots, so each slot lasts 500/4 = 125 microseconds (= 1/8,000 s). 500 microseconds is the frame duration, not the slot duration.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_physical",
+  "subtopic": "Statistical TDM",
+  "difficulty": "hard",
+  "question_en": "Which statement correctly describes statistical TDM compared with synchronous TDM?",
+  "options": [
+   {
+    "en": "Slots are allocated dynamically, so each slot must carry an address"
+   },
+   {
+    "en": "Each input line gets a fixed slot in every frame, even with no data"
+   },
+   {
+    "en": "The number of slots per frame must equal the number of input lines"
+   },
+   {
+    "en": "Guard bands are placed between slots to stop channel interference"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "In statistical TDM, slots are given only to input lines that have data, so there is no fixed link between a slot and a line and each slot must carry the destination address. Fixed slots (wasted when empty) and slots equal to the number of inputs describe synchronous TDM. Guard bands belong to FDM.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_physical",
+  "subtopic": "Circuit switching",
+  "difficulty": "medium",
+  "question_en": "Which statement is correct about a circuit-switched network?\nI. Resources such as bandwidth are reserved during the setup phase and stay dedicated for the whole transfer.\nII. Each data unit must carry the full destination address during the data-transfer phase.",
+  "options": [
+   {
+    "en": "Only II"
+   },
+   {
+    "en": "Only I"
+   },
+   {
+    "en": "Both I and II"
+   },
+   {
+    "en": "Neither I nor II"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "In circuit switching, resources are reserved in the setup phase and remain dedicated until teardown, so I is true. Addresses are used only during setup; once the circuit exists, data flows along it without addressing, so II is false. Carrying an address in every unit is a feature of datagram (packet) switching.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_physical",
+  "subtopic": "Virtual-circuit switching - VCI",
+  "difficulty": "hard",
+  "question_en": "In a virtual-circuit network, the virtual-circuit identifier (VCI) carried in a frame ______.",
+  "options": [
+   {
+    "en": "is a globally unique address of the destination host"
+   },
+   {
+    "en": "stays the same from the source to the destination"
+   },
+   {
+    "en": "is assigned by the destination during the teardown phase"
+   },
+   {
+    "en": "has only link (local) scope and is changed at each switch"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "A VCI is a small number with link scope only: each switch looks up the incoming port and VCI in its table and replaces it with the outgoing VCI. It is not a global address (that is used only in the setup phase), so it does not stay the same end to end.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_physical",
+  "subtopic": "Datagram switching",
+  "difficulty": "medium",
+  "question_en": "In a datagram network, packets that belong to the same message ______.",
+  "options": [
+   {
+    "en": "must follow a path reserved during a setup phase"
+   },
+   {
+    "en": "always arrive in the same order in which they were sent"
+   },
+   {
+    "en": "may take different routes and arrive out of order"
+   },
+   {
+    "en": "carry a virtual-circuit identifier instead of an address"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "In a datagram network each packet is treated independently and routed using the destination address in its header, so packets of one message may take different paths and arrive out of order (or be lost). There is no setup phase or VCI; those belong to virtual-circuit networks.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_datalink",
+  "subtopic": "LLC and MAC sublayers",
+  "difficulty": "easy",
+  "question_en": "IEEE Project 802 divides the data link layer into which two sublayers?",
+  "options": [
+   {
+    "en": "Physical and logical"
+   },
+   {
+    "en": "LLC and MAC"
+   },
+   {
+    "en": "Framing and routing"
+   },
+   {
+    "en": "PLS and PMD"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "IEEE 802 splits the data link layer into Logical Link Control (LLC), which handles framing, flow and error control in a way common to all LANs, and Media Access Control (MAC), which defines the access method of each LAN, such as CSMA/CD for Ethernet. PLS and PMD are physical-layer sublayers.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_datalink",
+  "subtopic": "Framing - byte stuffing",
+  "difficulty": "easy",
+  "question_en": "In character-oriented (byte-oriented) framing, when a byte with the same pattern as the flag appears in the data, the sender ______.",
+  "options": [
+   {
+    "en": "inserts an extra escape (ESC) byte before it"
+   },
+   {
+    "en": "inserts a 0 bit after five consecutive 1s"
+   },
+   {
+    "en": "discards that byte and requests retransmission"
+   },
+   {
+    "en": "replaces it with a block of all-zero bytes"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Byte stuffing adds a special escape (ESC) byte before any data byte that looks like a flag (or an ESC), so the receiver treats it as data. Inserting a 0 after five consecutive 1s is bit stuffing, used in bit-oriented protocols such as HDLC.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_datalink",
+  "subtopic": "Framing - bit stuffing numerical",
+  "difficulty": "medium",
+  "question_en": "Using bit stuffing with the flag 01111110, which bit sequence is actually sent for the data 011111110111110?",
+  "options": [
+   {
+    "en": "0111110110111110"
+   },
+   {
+    "en": "0111111011111010"
+   },
+   {
+    "en": "01111101101111100"
+   },
+   {
+    "en": "01111101110111110"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The sender inserts a 0 after every five consecutive 1s, whatever the next bit is. Data 0 1111111 0 11111 0 becomes 0 11111[0]11 0 11111[0] 0 = 01111101101111100 (17 bits). Option A forgets the second stuffed 0: a 0 is stuffed even when the next data bit is already 0.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_datalink",
+  "subtopic": "Error detection - parity",
+  "difficulty": "easy",
+  "question_en": "A simple even-parity check (one parity bit per data unit) can detect ______.",
+  "options": [
+   {
+    "en": "any burst error of any length"
+   },
+   {
+    "en": "any even number of bit errors"
+   },
+   {
+    "en": "only errors in the parity bit itself"
+   },
+   {
+    "en": "any odd number of bit errors"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "A single parity bit makes the number of 1s even; flipping an odd number of bits makes it odd, so the error is detected. If an even number of bits flip, the count stays even and the error goes unnoticed (the code has dmin = 2).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_datalink",
+  "subtopic": "Hamming distance rules",
+  "difficulty": "medium",
+  "question_en": "To guarantee the correction of up to 3 errors in every case, the minimum Hamming distance of a block code must be ______.",
+  "options": [
+   {
+    "en": "4"
+   },
+   {
+    "en": "7"
+   },
+   {
+    "en": "6"
+   },
+   {
+    "en": "3"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "To correct t errors, dmin = 2t + 1 = 2(3) + 1 = 7. The value 4 is the rule for detection: detecting s errors needs only dmin = s + 1 = 4.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_datalink",
+  "subtopic": "Hamming code - redundant bits",
+  "difficulty": "medium",
+  "question_en": "How many redundant (parity) bits does a Hamming code need to correct single-bit errors in a 12-bit data word?",
+  "options": [
+   {
+    "en": "3"
+   },
+   {
+    "en": "4"
+   },
+   {
+    "en": "5"
+   },
+   {
+    "en": "6"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The number of redundant bits r must satisfy 2^r >= m + r + 1. With m = 12: r = 4 gives 16 >= 17 (false), r = 5 gives 32 >= 18 (true), so r = 5 and the codeword has 17 bits. Four parity bits are enough only for data words of up to 11 bits.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_datalink",
+  "subtopic": "CRC - principle",
+  "difficulty": "easy",
+  "question_en": "Generation and checking of a CRC (cyclic redundancy check) are based on ______.",
+  "options": [
+   {
+    "en": "modulo-2 binary division"
+   },
+   {
+    "en": "one's complement addition"
+   },
+   {
+    "en": "decimal long division"
+   },
+   {
+    "en": "counting the number of 1s"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "In CRC the data (with zeros appended) is divided by a generator using modulo-2 division, where subtraction is XOR, and the remainder is appended as the check bits. One's complement addition is used by the checksum, and counting 1s is the idea behind parity.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_datalink",
+  "subtopic": "CRC numerical",
+  "difficulty": "hard",
+  "question_en": "Using the generator (divisor) 1101, which codeword is transmitted for the dataword 10110 in CRC?",
+  "options": [
+   {
+    "en": "10110011"
+   },
+   {
+    "en": "10110110"
+   },
+   {
+    "en": "10110111"
+   },
+   {
+    "en": "10110101"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The divisor has 4 bits, so append 3 zeros: 10110000. Modulo-2 division: 1011 XOR 1101 = 0110; bring down the next bit to get 1100, XOR 1101 = 0001; bring down the next bits (two steps with quotient bit 0: 0010, then 0100) to get 1000, XOR 1101 = 0101, leaving remainder 101. The codeword is dataword + remainder = 10110101 (it divides by 1101 with remainder 0); the other options leave a non-zero remainder.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_datalink",
+  "subtopic": "Checksum",
+  "difficulty": "medium",
+  "question_en": "The Internet checksum used by IP, TCP and UDP is calculated using ______.",
+  "options": [
+   {
+    "en": "modulo-2 division of 8-bit words"
+   },
+   {
+    "en": "16-bit one's complement arithmetic"
+   },
+   {
+    "en": "32-bit two's complement multiplication"
+   },
+   {
+    "en": "a parity bit for each 7-bit character"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The sender splits the data into 16-bit words, adds them using one's complement arithmetic (carries are wrapped around) and sends the complement of the sum. The receiver repeats the sum; a result of all 0s after complementing means no error was detected. Modulo-2 division is CRC, not checksum.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_datalink",
+  "subtopic": "Stop-and-Wait ARQ",
+  "difficulty": "easy",
+  "question_en": "In Stop-and-Wait ARQ, the sequence numbers of data frames are based on modulo ______.",
+  "options": [
+   {
+    "en": "2"
+   },
+   {
+    "en": "4"
+   },
+   {
+    "en": "8"
+   },
+   {
+    "en": "16"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Only one frame is outstanding at a time, so the numbers 0 and 1 (modulo 2) are enough for the receiver to tell a new frame from a duplicate after a lost acknowledgment. Larger moduli such as 8 are needed only by sliding-window protocols that keep many frames outstanding.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_datalink",
+  "subtopic": "Sliding window sizes - GBN and SR",
+  "difficulty": "medium",
+  "question_en": "A sliding-window protocol uses 4-bit sequence numbers. What are the maximum sender window sizes for Go-Back-N ARQ and Selective Repeat ARQ respectively?",
+  "options": [
+   {
+    "en": "16 and 8"
+   },
+   {
+    "en": "15 and 15"
+   },
+   {
+    "en": "15 and 8"
+   },
+   {
+    "en": "8 and 16"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "With m-bit sequence numbers, Go-Back-N allows a sender window of at most 2^m - 1 = 15, and Selective Repeat allows at most 2^(m-1) = 8 (for both sender and receiver windows). A GBN window of 16 would let the receiver mistake a resent old frame for a new one.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_datalink",
+  "subtopic": "Go-Back-N ARQ",
+  "difficulty": "medium",
+  "question_en": "In Go-Back-N ARQ, when the timer of an outstanding frame expires, the sender ______.",
+  "options": [
+   {
+    "en": "resends only the frame whose timer expired"
+   },
+   {
+    "en": "resends all outstanding frames from that frame on"
+   },
+   {
+    "en": "waits for a negative acknowledgment to resend"
+   },
+   {
+    "en": "closes the connection and starts a new one"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "In Go-Back-N the receiver window is 1, so it discards every frame received after a lost or damaged one. On a time-out the sender therefore goes back and resends all outstanding frames starting from the expired one. Resending only the expired frame is how Selective Repeat ARQ works.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_datalink",
+  "subtopic": "Piggybacking",
+  "difficulty": "easy",
+  "question_en": "The technique of sending an acknowledgment inside a data frame that is travelling in the opposite direction is called ______.",
+  "options": [
+   {
+    "en": "bit stuffing"
+   },
+   {
+    "en": "pipelining"
+   },
+   {
+    "en": "framing"
+   },
+   {
+    "en": "piggybacking"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Piggybacking attaches control information (the acknowledgment) to a data frame going the other way, which improves the efficiency of two-way communication. Pipelining means sending several frames before earlier ones are acknowledged, which is a different idea.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_datalink",
+  "subtopic": "Stop-and-Wait efficiency numerical",
+  "difficulty": "hard",
+  "question_en": "A 1,000-bit frame is sent on a 1 Mbps link with a one-way propagation delay of 2 ms using Stop-and-Wait ARQ. Ignoring processing time and acknowledgment size, what is the link utilisation?",
+  "options": [
+   {
+    "en": "20%"
+   },
+   {
+    "en": "33.3%"
+   },
+   {
+    "en": "50%"
+   },
+   {
+    "en": "10%"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Transmission time Tt = 1,000 / 10^6 = 1 ms, and the sender then waits 2Tp = 4 ms for the acknowledgment. Utilisation = Tt / (Tt + 2Tp) = 1 / (1 + 4) = 20%. The value 33.3% wrongly counts only the one-way delay, 1 / (1 + 2).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_datalink",
+  "subtopic": "HDLC frame types",
+  "difficulty": "medium",
+  "question_en": "In HDLC, which type of frame is used to carry link-management information such as mode setting and connection set-up?",
+  "options": [
+   {
+    "en": "I-frame"
+   },
+   {
+    "en": "S-frame"
+   },
+   {
+    "en": "C-frame"
+   },
+   {
+    "en": "U-frame"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "HDLC has three frame types. I-frames carry user data (with piggybacked control), S-frames carry flow- and error-control information (RR, RNR, REJ, SREJ) when there is no data to piggyback on, and U-frames (unnumbered) manage the link, e.g. setting the mode or disconnecting. There is no C-frame in HDLC.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_datalink",
+  "subtopic": "PPP - LCP",
+  "difficulty": "medium",
+  "question_en": "In PPP, which protocol is responsible for establishing, configuring, maintaining and terminating the link?",
+  "options": [
+   {
+    "en": "CHAP"
+   },
+   {
+    "en": "NCP"
+   },
+   {
+    "en": "LCP"
+   },
+   {
+    "en": "PAP"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The Link Control Protocol (LCP) sets up, configures, maintains and terminates the PPP link. PAP and CHAP are authentication protocols, and the Network Control Protocols (NCPs, such as IPCP) configure network-layer protocols after the link is up.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_datalink",
+  "subtopic": "ALOHA - maximum throughput",
+  "difficulty": "medium",
+  "question_en": "The maximum throughput of slotted ALOHA is about ______, achieved when the offered load G equals ______.",
+  "options": [
+   {
+    "en": "18.4%; 1/2"
+   },
+   {
+    "en": "36.8%; 1"
+   },
+   {
+    "en": "36.8%; 1/2"
+   },
+   {
+    "en": "18.4%; 1"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "For slotted ALOHA, S = G e^(-G), which is largest at G = 1, giving S = 1/e = 0.368 (36.8%). The pair 18.4% at G = 1/2 belongs to pure ALOHA, where S = G e^(-2G) and the vulnerable time is twice as long.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_datalink",
+  "subtopic": "Pure ALOHA throughput numerical",
+  "difficulty": "hard",
+  "question_en": "A pure ALOHA network shares a 250 kbps channel and sends 250-bit frames. If all stations together produce 500 frames per second, about how many frames per second are delivered successfully?",
+  "options": [
+   {
+    "en": "184"
+   },
+   {
+    "en": "92"
+   },
+   {
+    "en": "303"
+   },
+   {
+    "en": "500"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Frame time Tfr = 250 / 250,000 = 1 ms, so G = 500 x 0.001 = 0.5 frames per frame time. S = G e^(-2G) = 0.5 x e^(-1) = 0.184, and the channel can carry 1/Tfr = 1,000 frames/s, so about 0.184 x 1,000 = 184 frames/s survive. 303 is the slotted ALOHA figure, S = G e^(-G).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_datalink",
+  "subtopic": "CSMA/CA vs CSMA/CD",
+  "difficulty": "medium",
+  "question_en": "Wireless LANs use CSMA/CA instead of CSMA/CD mainly because ______.",
+  "options": [
+   {
+    "en": "wireless frames are always shorter than Ethernet frames"
+   },
+   {
+    "en": "CSMA/CA needs no acknowledgment for each frame"
+   },
+   {
+    "en": "collisions cannot be reliably detected in wireless networks"
+   },
+   {
+    "en": "wireless stations never share the same radio channel"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "A wireless station cannot reliably sense a collision while transmitting: its own signal swamps weak incoming signals, and hidden stations may not hear each other. So 802.11 avoids collisions using interframe space, a contention window and acknowledgments (optionally RTS/CTS). Option B is false because CSMA/CA does use an ACK for each frame.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_datalink",
+  "subtopic": "CSMA/CD minimum frame size",
+  "difficulty": "hard",
+  "question_en": "In a CSMA/CD network with a bandwidth of 20 Mbps, the maximum one-way propagation time is 12.8 microseconds. What is the minimum frame size needed to detect every collision?",
+  "options": [
+   {
+    "en": "32 bytes"
+   },
+   {
+    "en": "128 bytes"
+   },
+   {
+    "en": "256 bytes"
+   },
+   {
+    "en": "64 bytes"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The frame transmission time must be at least twice the maximum propagation time: Tfr >= 2 x 12.8 = 25.6 microseconds. Minimum size = 20 x 10^6 x 25.6 x 10^-6 = 512 bits = 64 bytes. 32 bytes results from using the one-way time instead of the round trip.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_datalink",
+  "subtopic": "Channelization - CDMA",
+  "difficulty": "medium",
+  "question_en": "In CDMA, ______.",
+  "options": [
+   {
+    "en": "each station uses a separate frequency band all the time"
+   },
+   {
+    "en": "each station has a unique code and all send at once on one channel"
+   },
+   {
+    "en": "stations take turns in fixed time slots on one frequency"
+   },
+   {
+    "en": "a primary station polls each station before it can send"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "In CDMA every station is assigned a unique, mutually orthogonal chip sequence (code, e.g. Walsh codes) and all stations transmit at the same time over the whole channel; the receiver separates them using the codes. Separate bands describe FDMA and fixed time slots describe TDMA; polling is a controlled-access method.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "nw_datalink",
+  "subtopic": "Ethernet frame length",
+  "difficulty": "medium",
+  "question_en": "In standard Ethernet (IEEE 802.3), the minimum and maximum frame lengths, excluding the preamble and SFD, are ______.",
+  "options": [
+   {
+    "en": "46 bytes and 1500 bytes"
+   },
+   {
+    "en": "64 bytes and 1500 bytes"
+   },
+   {
+    "en": "64 bytes and 1518 bytes"
+   },
+   {
+    "en": "72 bytes and 1526 bytes"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The 18 bytes of header and trailer (6 + 6 + 2 + 4 CRC) plus 46 to 1,500 bytes of data give a frame of 64 to 1,518 bytes. 46 and 1,500 bytes are the limits of the data field only, and 72/1,526 bytes would wrongly include the 8-byte preamble and SFD.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_datalink",
+  "subtopic": "Ethernet MAC address types",
+  "difficulty": "hard",
+  "question_en": "An Ethernet destination address is 47:20:1B:2E:08:EE. What type of address is it?",
+  "options": [
+   {
+    "en": "Multicast"
+   },
+   {
+    "en": "Unicast"
+   },
+   {
+    "en": "Broadcast"
+   },
+   {
+    "en": "Loopback"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "If the least significant bit of the first byte is 0 the address is unicast; if it is 1 the address is multicast. The first byte 47 hex = 0100 0111 ends in 1, so it is multicast. It is not broadcast, because a broadcast address is all 1s (FF:FF:FF:FF:FF:FF).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_datalink",
+  "subtopic": "IEEE 802.11 standards",
+  "difficulty": "medium",
+  "question_en": "Which IEEE wireless LAN standard operates in the 5 GHz band using OFDM with a data rate of up to 54 Mbps?",
+  "options": [
+   {
+    "en": "802.11b"
+   },
+   {
+    "en": "802.11a"
+   },
+   {
+    "en": "802.11g"
+   },
+   {
+    "en": "802.15.1"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "802.11a uses OFDM in the 5 GHz band with rates up to 54 Mbps. 802.11g also reaches 54 Mbps with OFDM but works in the 2.4 GHz band, and 802.11b uses DSSS at 2.4 GHz with up to 11 Mbps. 802.15.1 is Bluetooth.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "nw_datalink",
+  "subtopic": "Bluetooth - piconet and scatternet",
+  "difficulty": "easy",
+  "question_en": "A Bluetooth piconet can have at most ______ active secondary stations, and two or more piconets combined form a ______.",
+  "options": [
+   {
+    "en": "15; scatternet"
+   },
+   {
+    "en": "7; extended service set"
+   },
+   {
+    "en": "8; basic service set"
+   },
+   {
+    "en": "7; scatternet"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "A piconet has one primary and up to seven active secondaries (eight active devices in all; more can be parked). Combining piconets gives a scatternet, in which a secondary of one piconet can be the primary of another. BSS and ESS are IEEE 802.11 terms.",
+  "pyq_concept": false
+ }
+]
