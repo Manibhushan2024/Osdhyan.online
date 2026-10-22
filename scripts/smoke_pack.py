@@ -7,6 +7,8 @@ usage: python -I scripts/smoke_pack.py <Name> [--api http://127.0.0.1:3000/api]
        e.g. python -I scripts/smoke_pack.py DBMS ; python -I scripts/smoke_pack.py Programming
 """
 import argparse
+import glob
+import json
 import os
 import sys
 import time
@@ -16,6 +18,16 @@ sys.path.insert(0, os.path.dirname(__file__))
 from smoke_test import call  # noqa: E402
 import smoke_dsssb  # noqa: E402
 from smoke_dsssb import check, take  # noqa: E402
+
+
+def expected_tests(name):
+    """Number of tests the pack's question_sets.json defines (pack found by its pack.json name)."""
+    data = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'backend', 'database', 'data', 'dsssb')
+    for cfg_path in glob.glob(os.path.join(data, '*', 'pack.json')):
+        if json.load(open(cfg_path, encoding='utf-8')).get('name') == name:
+            spec = json.load(open(os.path.join(os.path.dirname(cfg_path), 'question_sets.json'), encoding='utf-8'))
+            return len(spec['exams'][0]['series'][0]['tests'])
+    raise SystemExit(f'No pack named {name}')
 
 
 def main():
@@ -39,12 +51,13 @@ def main():
     s, d, _ = call(api, 'GET', f"/test-series/{dbms['id']}", token)
     tests = d['content'].get(f'{name} Special', [])
     names = {t['name_en']: t for t in tests}
-    check(f'10 {name} tests', len(tests) == 10, str(len(tests)))
+    expected = expected_tests(name)
+    check(f'{expected} {name} tests', len(tests) == expected, str(len(tests)))
     full = next(t for n, t in names.items() if 'Most Expected Questions (Full Test)' in n)
     pyq = next(t for n, t in names.items() if 'Previous Year Questions' in n)
 
     s, m, _ = call(api, 'GET', f"/test-series/{main_series['id']}", token)
-    check(f'main DSSSB series has a {name} Special tab', len(m['content'].get(f'{name} Special', [])) == 10)
+    check(f'main DSSSB series has a {name} Special tab', len(m['content'].get(f'{name} Special', [])) == expected)
 
     take(api, token, pyq['id'])
     take(api, token, full['id'], answer_all=False)

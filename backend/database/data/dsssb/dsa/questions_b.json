@@ -1,0 +1,2302 @@
+[
+ {
+  "chapter_key": "ds_trees",
+  "subtopic": "Tree terminology",
+  "difficulty": "easy",
+  "question_en": "In a tree, a node that has no children is called a:",
+  "options": [
+   {
+    "en": "Root node"
+   },
+   {
+    "en": "Leaf node"
+   },
+   {
+    "en": "Internal node"
+   },
+   {
+    "en": "Sibling node"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "A leaf (also called an external or terminal node) has degree 0, i.e. no children. The root is the only node with no parent, an internal node has at least one child, and siblings are nodes that share a parent.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_trees",
+  "subtopic": "Binary tree properties - maximum nodes",
+  "difficulty": "easy",
+  "question_en": "Height is counted as the number of edges on the longest root-to-leaf path (a single node has height 0). The maximum number of nodes in a binary tree of height h is:",
+  "options": [
+   {
+    "en": "2ʰ⁺¹ − 1"
+   },
+   {
+    "en": "2ʰ − 1"
+   },
+   {
+    "en": "2ʰ"
+   },
+   {
+    "en": "2h + 1"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Level i (root at level 0) can hold at most 2ⁱ nodes, and a tree of height h has levels 0 to h. Adding 1 + 2 + 4 + … + 2ʰ gives 2ʰ⁺¹ − 1. The form 2ʰ − 1 is the same fact when height is counted in levels (single node = height 1).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_trees",
+  "subtopic": "Binary tree properties - minimum height",
+  "difficulty": "medium",
+  "question_en": "What is the minimum possible height of a binary tree with 100 nodes? (Height = number of edges on the longest root-to-leaf path.)",
+  "options": [
+   {
+    "en": "5"
+   },
+   {
+    "en": "6"
+   },
+   {
+    "en": "7"
+   },
+   {
+    "en": "50"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "A tree of height 5 holds at most 2⁶ − 1 = 63 nodes, which is fewer than 100, while height 6 holds up to 2⁷ − 1 = 127. So the minimum height is 6 = ⌊log₂ 100⌋.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_trees",
+  "subtopic": "Binary tree properties - n0 = n2 + 1",
+  "difficulty": "hard",
+  "question_en": "A binary tree has 18 leaves and 10 nodes with exactly one child. How many nodes does the tree have in total?",
+  "options": [
+   {
+    "en": "28"
+   },
+   {
+    "en": "45"
+   },
+   {
+    "en": "46"
+   },
+   {
+    "en": "36"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "In every binary tree n₀ = n₂ + 1, so the number of nodes with two children is n₂ = 18 − 1 = 17. Total nodes = n₀ + n₁ + n₂ = 18 + 10 + 17 = 45.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_trees",
+  "subtopic": "Binary tree properties - NULL links",
+  "difficulty": "medium",
+  "question_en": "A binary tree with 30 nodes is stored as linked nodes, each having a left and a right pointer. How many of these pointers are NULL?",
+  "options": [
+   {
+    "en": "31"
+   },
+   {
+    "en": "29"
+   },
+   {
+    "en": "30"
+   },
+   {
+    "en": "60"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "There are 2 × 30 = 60 pointers in all. A tree with 30 nodes has 30 − 1 = 29 edges, and each edge uses one pointer, so 60 − 29 = 31 pointers are NULL (always n + 1).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_trees",
+  "subtopic": "Number of binary trees (Catalan)",
+  "difficulty": "medium",
+  "question_en": "How many structurally different binary trees can be formed with 4 unlabelled nodes?",
+  "options": [
+   {
+    "en": "10"
+   },
+   {
+    "en": "16"
+   },
+   {
+    "en": "24"
+   },
+   {
+    "en": "14"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The count is the Catalan number Cₙ = C(2n, n)/(n + 1). For n = 4: C(8, 4)/5 = 70/5 = 14.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_trees",
+  "subtopic": "Number of BSTs (Catalan)",
+  "difficulty": "hard",
+  "question_en": "How many different binary search trees can be built from the 5 distinct keys 10, 20, 30, 40 and 50?",
+  "options": [
+   {
+    "en": "120"
+   },
+   {
+    "en": "42"
+   },
+   {
+    "en": "14"
+   },
+   {
+    "en": "132"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Every binary-tree shape with 5 nodes can be filled with the sorted keys in exactly one valid BST way (fill it in inorder). So the count is the Catalan number C₅ = C(10, 5)/6 = 252/6 = 42; 5! = 120 counts insertion orders, not distinct trees.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_trees",
+  "subtopic": "Traversals - preorder",
+  "difficulty": "easy",
+  "question_en": "Trees are written as Root(Left, Right); a dash (–) marks an empty child and a bare label is a leaf. What is the preorder traversal of the tree P(Q(S, T), R(–, U))?",
+  "options": [
+   {
+    "en": "S, Q, T, P, R, U"
+   },
+   {
+    "en": "S, T, Q, U, R, P"
+   },
+   {
+    "en": "P, Q, S, T, R, U"
+   },
+   {
+    "en": "P, Q, R, S, T, U"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Preorder visits Root, then Left subtree, then Right subtree. P first, then Q's subtree in preorder (Q, S, T), then R's subtree (R, U). Result: P, Q, S, T, R, U.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_trees",
+  "subtopic": "Traversals - inorder",
+  "difficulty": "medium",
+  "question_en": "Trees are written as Root(Left, Right); a dash (–) marks an empty child and a bare label is a leaf. What is the inorder traversal of the tree M(N(–, O(P, Q)), R(S, –))?",
+  "options": [
+   {
+    "en": "M, N, O, P, Q, R, S"
+   },
+   {
+    "en": "N, P, O, Q, M, S, R"
+   },
+   {
+    "en": "P, Q, O, N, S, R, M"
+   },
+   {
+    "en": "N, O, P, Q, M, S, R"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Inorder is Left, Root, Right. N has no left child, so N comes first, then its right subtree O(P, Q) in inorder: P, O, Q. Then the root M, then R's subtree: S, R. Result: N, P, O, Q, M, S, R.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_trees",
+  "subtopic": "Traversals - postorder",
+  "difficulty": "medium",
+  "question_en": "Trees are written as Root(Left, Right); a dash (–) marks an empty child and a bare label is a leaf. What is the postorder traversal of the tree 10(20(40, 50), 30(60(–, 70), –))?",
+  "options": [
+   {
+    "en": "10, 20, 40, 50, 30, 60, 70"
+   },
+   {
+    "en": "40, 50, 20, 70, 60, 30, 10"
+   },
+   {
+    "en": "40, 20, 50, 10, 60, 70, 30"
+   },
+   {
+    "en": "40, 50, 20, 60, 70, 30, 10"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Postorder is Left, Right, Root. Left subtree of 10 gives 40, 50, 20. In the right subtree, 60 has only a right child 70, so it gives 70, 60, then 30. The root 10 comes last: 40, 50, 20, 70, 60, 30, 10.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_trees",
+  "subtopic": "Traversals - level order",
+  "difficulty": "medium",
+  "question_en": "Trees are written as Root(Left, Right); a dash (–) marks an empty child and a bare label is a leaf. What is the level-order (breadth-first) traversal of the tree 8(3(1, 6(4, 7)), 10(–, 14(13, –)))?",
+  "options": [
+   {
+    "en": "8, 3, 1, 6, 4, 7, 10, 14, 13"
+   },
+   {
+    "en": "8, 3, 10, 1, 6, 14, 4, 7, 13"
+   },
+   {
+    "en": "8, 3, 10, 1, 6, 4, 7, 14, 13"
+   },
+   {
+    "en": "1, 3, 4, 6, 7, 8, 10, 13, 14"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Level order lists the nodes level by level, left to right, using a queue. Level 0: 8; level 1: 3, 10; level 2: 1, 6, 14; level 3: 4, 7, 13. Result: 8, 3, 10, 1, 6, 14, 4, 7, 13.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_trees",
+  "subtopic": "Traversals - array representation",
+  "difficulty": "hard",
+  "question_en": "A binary tree is stored in an array with the root at index 1 and the children of index i at 2i and 2i + 1. The filled cells are 1 = A, 2 = B, 3 = C, 4 = D, 5 = E, 7 = F and 10 = G; all other cells are empty. What is the postorder traversal?",
+  "options": [
+   {
+    "en": "G, D, E, B, F, C, A"
+   },
+   {
+    "en": "D, G, E, B, F, C, A"
+   },
+   {
+    "en": "D, E, G, B, F, C, A"
+   },
+   {
+    "en": "D, B, G, E, A, C, F"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Index 10 = 2 × 5, so G is the left child of E (index 5); index 7 = 2 × 3 + 1, so F is the right child of C. The tree is A(B(D, E(G, –)), C(–, F)). Postorder (Left, Right, Root): D, G, E, B, F, C, A.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_trees",
+  "subtopic": "BST - inorder gives sorted order",
+  "difficulty": "easy",
+  "question_en": "Which traversal of a binary search tree lists its keys in ascending order?",
+  "options": [
+   {
+    "en": "Preorder"
+   },
+   {
+    "en": "Postorder"
+   },
+   {
+    "en": "Inorder"
+   },
+   {
+    "en": "Level order"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "In a BST every key in the left subtree is smaller than the root and every key in the right subtree is larger. Inorder visits Left, Root, Right, so it outputs the keys in sorted (ascending) order.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_trees",
+  "subtopic": "Tree from inorder and preorder",
+  "difficulty": "hard",
+  "question_en": "A binary tree has preorder R T W X Y U V Z and inorder W T Y X R U Z V. What is its postorder traversal?",
+  "options": [
+   {
+    "en": "W, X, Y, T, Z, V, U, R"
+   },
+   {
+    "en": "W, Y, X, T, V, Z, U, R"
+   },
+   {
+    "en": "W, Y, X, T, Z, V, U, R"
+   },
+   {
+    "en": "Y, W, X, T, Z, V, U, R"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Preorder gives the root R; in the inorder R splits W T Y X (left) from U Z V (right). In the left part T is the root with W on its left and X(Y, –) on its right; in the right part U has no left child and V(Z, –) on its right. Postorder of R(T(W, X(Y, –)), U(–, V(Z, –))) is W, Y, X, T, Z, V, U, R.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_trees",
+  "subtopic": "Tree from inorder and postorder",
+  "difficulty": "hard",
+  "question_en": "A binary tree has inorder 9, 3, 7, 2, 6, 5, 8 and postorder 9, 3, 6, 2, 8, 5, 7. What is its preorder traversal?",
+  "options": [
+   {
+    "en": "7, 3, 9, 5, 2, 8, 6"
+   },
+   {
+    "en": "7, 9, 3, 5, 2, 6, 8"
+   },
+   {
+    "en": "7, 3, 9, 2, 6, 5, 8"
+   },
+   {
+    "en": "7, 3, 9, 5, 2, 6, 8"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The last postorder element 7 is the root; inorder splits it into 9 3 (left) and 2 6 5 8 (right). Working from the end of postorder: 5 is the right root with 2 6 on its left and 8 on its right; 2 has right child 6; on the left, 3 is the root with left child 9. Preorder of 7(3(9, –), 5(2(–, 6), 8)) is 7, 3, 9, 5, 2, 6, 8.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_trees",
+  "subtopic": "Tree reconstruction - which pair is not enough",
+  "difficulty": "medium",
+  "question_en": "Which pair of traversals is NOT always enough to rebuild a unique binary tree?",
+  "options": [
+   {
+    "en": "Inorder and preorder"
+   },
+   {
+    "en": "Inorder and postorder"
+   },
+   {
+    "en": "Inorder and level order"
+   },
+   {
+    "en": "Preorder and postorder"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Inorder tells which nodes lie left and right of a root, so it fixes the tree when paired with preorder, postorder or level order. Preorder + postorder cannot: A with only a left child B and A with only a right child B both give preorder A B and postorder B A.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_trees",
+  "subtopic": "BST - insertion sequence",
+  "difficulty": "medium",
+  "question_en": "The keys 45, 25, 65, 15, 35, 55, 75, 30, 60 are inserted in this order into an empty binary search tree. What is the preorder traversal of the resulting tree?",
+  "options": [
+   {
+    "en": "45, 25, 65, 15, 35, 55, 75, 30, 60"
+   },
+   {
+    "en": "45, 25, 15, 35, 30, 65, 55, 60, 75"
+   },
+   {
+    "en": "15, 30, 35, 25, 60, 55, 75, 65, 45"
+   },
+   {
+    "en": "15, 25, 30, 35, 45, 55, 60, 65, 75"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "45 is the root; 25, 15, 35 go left and 65, 55, 75 go right; 30 becomes the left child of 35 and 60 the right child of 55. The tree is 45(25(15, 35(30, –)), 65(55(–, 60), 75)), whose preorder is 45, 25, 15, 35, 30, 65, 55, 60, 75. The insertion order is this tree's level order, not its preorder.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_trees",
+  "subtopic": "BST - height after insertions",
+  "difficulty": "medium",
+  "question_en": "The keys 50, 40, 60, 30, 45, 35, 33, 70 are inserted in this order into an empty BST. What is the height of the tree? (Height = number of edges on the longest root-to-leaf path.)",
+  "options": [
+   {
+    "en": "3"
+   },
+   {
+    "en": "5"
+   },
+   {
+    "en": "7"
+   },
+   {
+    "en": "4"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "30 goes left of 40, 35 goes right of 30, and 33 goes left of 35. The longest path is 50 → 40 → 30 → 35 → 33, which has 4 edges, so the height is 4.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_trees",
+  "subtopic": "BST vs AVL complexity",
+  "difficulty": "easy",
+  "question_en": "What is the worst-case time to search for a key in a BST with n nodes, and in an AVL tree with n nodes?",
+  "options": [
+   {
+    "en": "O(log n) and O(log n)"
+   },
+   {
+    "en": "O(n) and O(log n)"
+   },
+   {
+    "en": "O(n) and O(n)"
+   },
+   {
+    "en": "O(log n) and O(n)"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "A plain BST can become skewed (for example, when keys arrive in sorted order) and then behaves like a linked list, so search is O(n). An AVL tree keeps its height O(log n), so search is O(log n) even in the worst case.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_trees",
+  "subtopic": "BST - deleting a node with two children",
+  "difficulty": "hard",
+  "question_en": "The keys 60, 30, 80, 20, 45, 70, 90, 65, 75 are inserted in this order into an empty BST. The root 60 is then deleted, and it is replaced by its inorder successor. What is the preorder traversal after the deletion?",
+  "options": [
+   {
+    "en": "45, 30, 20, 80, 70, 65, 75, 90"
+   },
+   {
+    "en": "70, 30, 20, 45, 80, 65, 75, 90"
+   },
+   {
+    "en": "65, 30, 20, 45, 80, 70, 75, 90"
+   },
+   {
+    "en": "65, 30, 20, 45, 70, 75, 80, 90"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The tree is 60(30(20, 45), 80(70(65, 75), 90)). The inorder successor of 60 is the smallest key in its right subtree, 65 (a leaf), so 65 moves to the root and its old place becomes empty. New tree 65(30(20, 45), 80(70(–, 75), 90)) has preorder 65, 30, 20, 45, 80, 70, 75, 90.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_trees",
+  "subtopic": "BST - deleting a node with one child",
+  "difficulty": "easy",
+  "question_en": "How is a BST node that has exactly one child deleted?",
+  "options": [
+   {
+    "en": "It is replaced by the smallest key of the tree"
+   },
+   {
+    "en": "Its child is deleted along with it"
+   },
+   {
+    "en": "Its only child is linked directly to its parent"
+   },
+   {
+    "en": "The whole tree is rebuilt from the inorder list"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "A node with one child is bypassed: its parent's pointer is changed to point to the node's only child, which keeps the BST order. Only a node with two children needs its inorder successor (or predecessor) to replace it.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_trees",
+  "subtopic": "AVL - balance factor",
+  "difficulty": "easy",
+  "question_en": "In an AVL tree, the balance factor (height of left subtree − height of right subtree) of every node must be:",
+  "options": [
+   {
+    "en": "−1, 0 or +1"
+   },
+   {
+    "en": "0 only"
+   },
+   {
+    "en": "Between −2 and +2"
+   },
+   {
+    "en": "0 or +1 only"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "An AVL tree is a BST in which the heights of the two subtrees of every node differ by at most one. So the balance factor must be −1, 0 or +1; a value of ±2 triggers a rotation.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_trees",
+  "subtopic": "AVL - rotation type",
+  "difficulty": "medium",
+  "question_en": "The keys 50, 40 and 45 are inserted in this order into an empty AVL tree. Which rotation restores balance?",
+  "options": [
+   {
+    "en": "LR (left–right double rotation)"
+   },
+   {
+    "en": "LL (single right rotation)"
+   },
+   {
+    "en": "RR (single left rotation)"
+   },
+   {
+    "en": "RL (right–left double rotation)"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "After inserting 45, node 50 has balance factor +2 and the new key lies in the Right subtree of its Left child 40, which is the LR case. A left rotation at 40 followed by a right rotation at 50 gives 45 with children 40 and 50.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_trees",
+  "subtopic": "AVL - minimum nodes for height h",
+  "difficulty": "hard",
+  "question_en": "Taking the height of a single node as 0, what is the minimum number of nodes in an AVL tree of height 5?",
+  "options": [
+   {
+    "en": "12"
+   },
+   {
+    "en": "31"
+   },
+   {
+    "en": "33"
+   },
+   {
+    "en": "20"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The sparsest AVL tree obeys N(h) = N(h − 1) + N(h − 2) + 1 with N(0) = 1 and N(1) = 2. This gives 1, 2, 4, 7, 12, 20, so N(5) = 20. (12 is N(4); 63 would be the maximum for height 5.)",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_trees",
+  "subtopic": "AVL - insertion sequence",
+  "difficulty": "hard",
+  "question_en": "The keys 15, 25, 35, 45, 55, 65 are inserted in this order into an empty AVL tree. What is the preorder traversal of the final tree?",
+  "options": [
+   {
+    "en": "45, 25, 15, 35, 55, 65"
+   },
+   {
+    "en": "25, 15, 45, 35, 55, 65"
+   },
+   {
+    "en": "35, 25, 15, 55, 45, 65"
+   },
+   {
+    "en": "45, 35, 25, 15, 55, 65"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Inserting 35 causes an RR rotation at 15 → 25(15, 35). Inserting 55 causes an RR rotation at 35 → 25(15, 45(35, 55)). Inserting 65 makes the root 25 have balance factor −2, so an RR rotation at 25 gives 45(25(15, 35), 55(–, 65)), whose preorder is 45, 25, 15, 35, 55, 65.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_trees",
+  "subtopic": "AVL - computing a balance factor",
+  "difficulty": "medium",
+  "question_en": "Trees are written as Root(Left, Right); a dash (–) marks an empty child and a bare label is a leaf. In the BST 50(30(20(10, –), 40), 70), what is the balance factor of the root 50 (left height − right height), and is the tree an AVL tree?",
+  "options": [
+   {
+    "en": "+1; it is an AVL tree"
+   },
+   {
+    "en": "+2; it is not an AVL tree"
+   },
+   {
+    "en": "−2; it is not an AVL tree"
+   },
+   {
+    "en": "+3; it is not an AVL tree"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The left subtree 30(20(10, –), 40) has height 2 and the right subtree 70 has height 0 (counting edges). The balance factor is 2 − 0 = +2, which is outside −1..+1, so the tree is not AVL.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_trees",
+  "subtopic": "B-tree - order and key limits",
+  "difficulty": "medium",
+  "question_en": "In a B-tree of order 7 (each node has at most 7 children), what are the maximum number of keys in a node and the minimum number of keys in a non-root node?",
+  "options": [
+   {
+    "en": "6 and 3"
+   },
+   {
+    "en": "7 and 4"
+   },
+   {
+    "en": "6 and 4"
+   },
+   {
+    "en": "7 and 3"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A node of order m has at most m − 1 = 6 keys. Every non-root node must have at least ⌈m/2⌉ = 4 children, hence at least ⌈m/2⌉ − 1 = 3 keys.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_trees",
+  "subtopic": "B+ tree facts",
+  "difficulty": "medium",
+  "question_en": "Which statement is true of a B+ tree but NOT of an ordinary B-tree?",
+  "options": [
+   {
+    "en": "All leaves lie on the same level"
+   },
+   {
+    "en": "Keys inside each node are kept in sorted order"
+   },
+   {
+    "en": "All records are in the leaves, which are linked for range scans"
+   },
+   {
+    "en": "It is a balanced multiway search tree"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "In a B+ tree, internal nodes hold only index keys; every key and its record pointer appears in a leaf, and the leaves are chained in a linked list, so range queries are fast. Equal leaf depth, sorted keys in a node and multiway balance are shared by both trees.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_trees",
+  "subtopic": "B-tree - maximum keys",
+  "difficulty": "hard",
+  "question_en": "A B-tree of order 5 (at most 5 children per node) has height 2, i.e. three levels: root, middle level and leaves. What is the maximum number of keys it can hold?",
+  "options": [
+   {
+    "en": "125"
+   },
+   {
+    "en": "100"
+   },
+   {
+    "en": "124"
+   },
+   {
+    "en": "155"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "With every node full, there are 1 + 5 + 25 = 31 nodes, each holding 5 − 1 = 4 keys, so 31 × 4 = 124 keys. In general the maximum is mʰ⁺¹ − 1 = 5³ − 1 = 124.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_trees",
+  "subtopic": "Heap - bottom-up build",
+  "difficulty": "hard",
+  "question_en": "The array [5, 12, 9, 20, 15, 3, 17] is converted into a max-heap by the bottom-up (heapify) method, starting from the last internal node. What is the resulting array?",
+  "options": [
+   {
+    "en": "[20, 15, 17, 5, 12, 3, 9]"
+   },
+   {
+    "en": "[20, 15, 17, 12, 5, 3, 9]"
+   },
+   {
+    "en": "[20, 17, 15, 12, 9, 5, 3]"
+   },
+   {
+    "en": "[20, 5, 17, 12, 15, 3, 9]"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Heapify index 2 (9): swap with 17 → [5, 12, 17, 20, 15, 3, 9]. Index 1 (12): swap with 20 → [5, 20, 17, 12, 15, 3, 9]. Index 0 (5): swap with 20, then with 15 → [20, 15, 17, 12, 5, 3, 9]. Inserting the keys one by one would give a different heap.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_trees",
+  "subtopic": "Heap - insertion",
+  "difficulty": "medium",
+  "question_en": "The keys 10, 30, 20, 50, 40, 60 are inserted one at a time into an initially empty max-heap stored in an array. What is the final array?",
+  "options": [
+   {
+    "en": "[60, 50, 20, 30, 40, 10]"
+   },
+   {
+    "en": "[60, 50, 40, 30, 20, 10]"
+   },
+   {
+    "en": "[60, 50, 40, 10, 30, 20]"
+   },
+   {
+    "en": "[60, 40, 50, 10, 30, 20]"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Each new key goes to the end and is swapped upward while it is larger than its parent. After 50: [50, 30, 20, 10]; after 40 (swaps with 30): [50, 40, 20, 10, 30]; 60 swaps with 20 and then with 50: [60, 40, 50, 10, 30, 20].",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_trees",
+  "subtopic": "Heap - delete maximum",
+  "difficulty": "medium",
+  "question_en": "One delete-max operation is performed on the max-heap [90, 70, 80, 40, 60, 50, 75]. What is the array afterwards?",
+  "options": [
+   {
+    "en": "[75, 70, 80, 40, 60, 50]"
+   },
+   {
+    "en": "[80, 75, 70, 40, 60, 50]"
+   },
+   {
+    "en": "[80, 70, 75, 40, 60, 50]"
+   },
+   {
+    "en": "[80, 70, 50, 40, 60, 75]"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The root 90 is removed and the last element 75 is moved to the root: [75, 70, 80, 40, 60, 50]. It sifts down by swapping with its larger child 80, and at index 2 its only child 50 is smaller, so it stops: [80, 70, 75, 40, 60, 50].",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_trees",
+  "subtopic": "Heap sort facts",
+  "difficulty": "easy",
+  "question_en": "What is the worst-case time complexity of heap sort, and is it stable?",
+  "options": [
+   {
+    "en": "O(n log n); stable"
+   },
+   {
+    "en": "O(n²); not stable"
+   },
+   {
+    "en": "O(n log n); not stable"
+   },
+   {
+    "en": "O(n); stable"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Heap sort builds a heap in O(n) and then performs n − 1 delete-max operations of O(log n) each, so it is O(n log n) in every case. Moving elements across the heap can reorder equal keys, so it is not stable (though it is in-place).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_trees",
+  "subtopic": "Expression trees",
+  "difficulty": "medium",
+  "question_en": "An expression tree is built for (a − b) * (c + d / e). What does a preorder traversal of this tree give?",
+  "options": [
+   {
+    "en": "* − a b + c / d e"
+   },
+   {
+    "en": "a b − c d e / + *"
+   },
+   {
+    "en": "a − b * c + d / e"
+   },
+   {
+    "en": "* − a b / + c d e"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The root is the last operator applied, *, with left subtree − (a, b) and right subtree + (c, / (d, e)). Preorder (Root, Left, Right) gives * − a b + c / d e, the prefix (Polish) form; postorder would give the postfix form.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_trees",
+  "subtopic": "Heap - build-heap complexity",
+  "difficulty": "medium",
+  "question_en": "Using the bottom-up heapify method, building a binary heap from an unsorted array of n elements takes:",
+  "options": [
+   {
+    "en": "O(n log n)"
+   },
+   {
+    "en": "O(log n)"
+   },
+   {
+    "en": "O(n)"
+   },
+   {
+    "en": "O(n²)"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Most nodes are near the bottom and sift down only a short distance; the sum of heights over all nodes is O(n). So bottom-up build-heap is linear, even though n separate insertions would cost O(n log n).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_graphs",
+  "subtopic": "Handshake lemma",
+  "difficulty": "easy",
+  "question_en": "An undirected graph has six vertices whose degrees are 4, 3, 3, 2, 2 and 2. How many edges does it have?",
+  "options": [
+   {
+    "en": "6"
+   },
+   {
+    "en": "16"
+   },
+   {
+    "en": "12"
+   },
+   {
+    "en": "8"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "By the handshake lemma, the sum of the degrees equals twice the number of edges, because each edge adds 1 to the degree of each of its two ends. Here 4 + 3 + 3 + 2 + 2 + 2 = 16 = 2E, so E = 8.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_graphs",
+  "subtopic": "Complete graph edges",
+  "difficulty": "easy",
+  "question_en": "How many edges does the complete graph K₉ have?",
+  "options": [
+   {
+    "en": "72"
+   },
+   {
+    "en": "45"
+   },
+   {
+    "en": "36"
+   },
+   {
+    "en": "81"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "In Kₙ every pair of distinct vertices is joined by one edge, so it has n(n − 1)/2 edges. For n = 9: 9 × 8 / 2 = 36.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_graphs",
+  "subtopic": "Cycle graph degrees",
+  "difficulty": "easy",
+  "question_en": "In the cycle graph Cₙ (n ≥ 3), how many edges are there, and what is the degree of each vertex?",
+  "options": [
+   {
+    "en": "n edges; every vertex has degree 2"
+   },
+   {
+    "en": "n − 1 edges; every vertex has degree 2"
+   },
+   {
+    "en": "n edges; two vertices have degree 1"
+   },
+   {
+    "en": "2n edges; every vertex has degree 4"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Cₙ is a single closed ring v₁–v₂–…–vₙ–v₁, so it has n edges and every vertex touches exactly two of them. Check with the handshake lemma: n × 2 = 2 × n edges. (A path graph, by contrast, has n − 1 edges and two end vertices of degree 1.)",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_graphs",
+  "subtopic": "Path graph degrees",
+  "difficulty": "medium",
+  "question_en": "A path graph has 9 vertices. What is the sum of the degrees of all its vertices?",
+  "options": [
+   {
+    "en": "18"
+   },
+   {
+    "en": "14"
+   },
+   {
+    "en": "16"
+   },
+   {
+    "en": "9"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "A path on 9 vertices has 9 − 1 = 8 edges, so the degree sum is 2 × 8 = 16. Directly: the two end vertices have degree 1 and the other 7 have degree 2, giving 2 + 14 = 16.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ds_graphs",
+  "subtopic": "Trees and forests - edge count",
+  "difficulty": "medium",
+  "question_en": "A forest (an acyclic undirected graph) has 20 vertices and consists of 4 separate trees. How many edges does it have?",
+  "options": [
+   {
+    "en": "16"
+   },
+   {
+    "en": "19"
+   },
+   {
+    "en": "20"
+   },
+   {
+    "en": "24"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A tree with nᵢ vertices has nᵢ − 1 edges. Adding over the 4 trees gives 20 − 4 = 16 edges; in general, a forest with n vertices and k trees has n − k edges.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_graphs",
+  "subtopic": "Adjacency matrix vs list - space",
+  "difficulty": "easy",
+  "question_en": "For a graph with V vertices and E edges, how much space do an adjacency matrix and an adjacency list need, respectively?",
+  "options": [
+   {
+    "en": "O(V + E) and O(V²)"
+   },
+   {
+    "en": "O(E) and O(V)"
+   },
+   {
+    "en": "O(V²) and O(E²)"
+   },
+   {
+    "en": "O(V²) and O(V + E)"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "An adjacency matrix always has V × V cells, whatever the number of edges. An adjacency list stores one list head per vertex plus one entry per edge end, i.e. O(V + E), which is much smaller for sparse graphs.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_graphs",
+  "subtopic": "Adjacency matrix vs list - operations",
+  "difficulty": "medium",
+  "question_en": "Which operation is faster with an adjacency matrix than with an adjacency list?",
+  "options": [
+   {
+    "en": "Listing all neighbours of a vertex in a sparse graph"
+   },
+   {
+    "en": "Checking whether a given edge (u, v) exists"
+   },
+   {
+    "en": "Storing a large sparse graph in little memory"
+   },
+   {
+    "en": "Running BFS over a large sparse graph"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "In a matrix the cell A[u][v] answers the edge query in O(1), while a list may need to scan all neighbours of u, O(deg u). The other three tasks favour the list, because the matrix always costs O(V) per row and O(V²) overall.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_graphs",
+  "subtopic": "BFS and DFS data structures",
+  "difficulty": "easy",
+  "question_en": "Breadth-first search and depth-first search are usually implemented with which data structures, respectively?",
+  "options": [
+   {
+    "en": "Stack and queue"
+   },
+   {
+    "en": "Priority queue and queue"
+   },
+   {
+    "en": "Stack and heap"
+   },
+   {
+    "en": "Queue and stack"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "BFS explores the graph level by level, so it uses a FIFO queue. DFS goes as deep as possible before backtracking, so it uses a stack (often the recursion stack).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_graphs",
+  "subtopic": "BFS order",
+  "difficulty": "medium",
+  "question_en": "An undirected graph has the edges 1–2, 1–4, 2–3, 2–5, 4–5, 4–6, 3–7, 5–7, 6–7. Neighbours are always taken in increasing order. What is the BFS order starting from vertex 1?",
+  "options": [
+   {
+    "en": "1, 2, 4, 3, 5, 6, 7"
+   },
+   {
+    "en": "1, 2, 3, 7, 5, 4, 6"
+   },
+   {
+    "en": "1, 2, 3, 4, 5, 6, 7"
+   },
+   {
+    "en": "1, 4, 2, 6, 5, 3, 7"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Start with queue [1]. Visit 1 and enqueue 2, 4; visit 2 and enqueue 3, 5; visit 4 and enqueue 6 (5 is already queued); then 3 enqueues 7, and 5, 6, 7 add nothing new. Order: 1, 2, 4, 3, 5, 6, 7.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_graphs",
+  "subtopic": "DFS order",
+  "difficulty": "medium",
+  "question_en": "An undirected graph has the edges 1–2, 1–4, 2–3, 2–5, 4–5, 4–6, 3–7, 5–7, 6–7. Neighbours are always taken in increasing order. What is the (recursive) DFS order starting from vertex 4?",
+  "options": [
+   {
+    "en": "4, 1, 2, 3, 7, 5, 6"
+   },
+   {
+    "en": "4, 1, 5, 6, 2, 7, 3"
+   },
+   {
+    "en": "4, 1, 2, 5, 7, 3, 6"
+   },
+   {
+    "en": "4, 5, 2, 1, 3, 7, 6"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "From 4 go to its smallest neighbour 1, then 2, then 3 (2's smallest unvisited neighbour), then 7, then 5 (7's smallest unvisited neighbour). 5 has nothing new, so backtrack to 7 and visit 6. Order: 4, 1, 2, 3, 7, 5, 6.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_graphs",
+  "subtopic": "BFS/DFS complexity",
+  "difficulty": "medium",
+  "question_en": "What is the time complexity of BFS on a graph with V vertices and E edges when the graph is stored as an adjacency matrix?",
+  "options": [
+   {
+    "en": "O(V + E)"
+   },
+   {
+    "en": "O(E log V)"
+   },
+   {
+    "en": "O(V · E)"
+   },
+   {
+    "en": "O(V²)"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "For each of the V vertices taken from the queue, BFS scans its whole matrix row of V cells to find neighbours, giving O(V²). With an adjacency list the same BFS is O(V + E).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_graphs",
+  "subtopic": "Topological order",
+  "difficulty": "medium",
+  "question_en": "A directed graph has the edges A→B, A→C, B→D, C→D, D→E, C→F and F→E. Which of the following is a valid topological order?",
+  "options": [
+   {
+    "en": "A, B, D, C, F, E"
+   },
+   {
+    "en": "A, C, B, E, D, F"
+   },
+   {
+    "en": "A, C, F, B, D, E"
+   },
+   {
+    "en": "B, A, C, D, F, E"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "In a topological order every edge u→v must have u before v. A, C, F, B, D, E satisfies all seven edges. A, B, D, C, … puts D before C (breaks C→D); A, C, B, E, D, … puts E before D; B, A, … puts B before A.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_graphs",
+  "subtopic": "Topological sort - condition",
+  "difficulty": "easy",
+  "question_en": "A topological ordering of the vertices of a graph exists if and only if the graph is:",
+  "options": [
+   {
+    "en": "A directed acyclic graph (DAG)"
+   },
+   {
+    "en": "An undirected connected graph"
+   },
+   {
+    "en": "A directed graph with a cycle"
+   },
+   {
+    "en": "A complete undirected graph"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "If there is a directed cycle u → … → u, then u would have to come before itself, which is impossible. Every DAG has at least one topological order, found by DFS finishing times or by Kahn's algorithm (repeatedly removing in-degree-0 vertices).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_graphs",
+  "subtopic": "MST weight (Kruskal)",
+  "difficulty": "hard",
+  "question_en": "An undirected weighted graph on vertices A to F has the edges A–B 4, A–C 3, B–C 1, B–D 2, C–D 4, C–E 5, D–E 7, D–F 6, E–F 3. What is the total weight of its minimum spanning tree?",
+  "options": [
+   {
+    "en": "13"
+   },
+   {
+    "en": "14"
+   },
+   {
+    "en": "15"
+   },
+   {
+    "en": "16"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Kruskal takes edges in increasing weight: B–C 1, B–D 2, A–C 3, E–F 3 (all accepted); A–B 4 and C–D 4 would form cycles, so they are skipped; C–E 5 joins the two components. The tree has 6 − 1 = 5 edges with weight 1 + 2 + 3 + 3 + 5 = 14.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_graphs",
+  "subtopic": "Prim's algorithm order",
+  "difficulty": "medium",
+  "question_en": "An undirected weighted graph has the edges P–Q 6, P–R 2, Q–R 3, Q–S 5, R–S 7, R–T 8, S–T 1, Q–T 9. Starting from P, in which order does Prim's algorithm add edges to the tree?",
+  "options": [
+   {
+    "en": "S–T, P–R, R–Q, Q–S"
+   },
+   {
+    "en": "P–R, R–Q, Q–S, S–T"
+   },
+   {
+    "en": "P–R, R–Q, R–S, S–T"
+   },
+   {
+    "en": "P–R, P–Q, Q–S, S–T"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Prim always adds the cheapest edge leaving the current tree: from {P} it is P–R 2, from {P, R} it is R–Q 3, from {P, Q, R} it is Q–S 5 (cheaper than R–S 7 and R–T 8), and finally S–T 1. Total weight 11. Starting with S–T is Kruskal's order, not Prim's.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_graphs",
+  "subtopic": "Kruskal's algorithm complexity",
+  "difficulty": "medium",
+  "question_en": "What is the time complexity of Kruskal's algorithm on a graph with E edges (using union–find)?",
+  "options": [
+   {
+    "en": "O(V³)"
+   },
+   {
+    "en": "O(E²)"
+   },
+   {
+    "en": "O(V + E)"
+   },
+   {
+    "en": "O(E log E)"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Kruskal first sorts all E edges by weight, which costs O(E log E); the union–find checks that follow are almost constant time each. Since E ≤ V², O(E log E) is the same as O(E log V).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_graphs",
+  "subtopic": "Spanning trees of Kn (Cayley)",
+  "difficulty": "medium",
+  "question_en": "How many different spanning trees does the complete graph K₆ have?",
+  "options": [
+   {
+    "en": "7776"
+   },
+   {
+    "en": "720"
+   },
+   {
+    "en": "216"
+   },
+   {
+    "en": "1296"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "By Cayley's formula Kₙ has nⁿ⁻² labelled spanning trees. For n = 6: 6⁴ = 1296. (6⁵ = 7776 and 6! = 720 are common slips.)",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_graphs",
+  "subtopic": "Dijkstra's algorithm",
+  "difficulty": "medium",
+  "question_en": "A directed weighted graph has the edges S→A 7, S→B 2, B→A 3, A→C 1, B→C 8, C→D 2, B→D 9, A→D 5. Using Dijkstra's algorithm from S, what is the shortest distance from S to D?",
+  "options": [
+   {
+    "en": "8"
+   },
+   {
+    "en": "9"
+   },
+   {
+    "en": "10"
+   },
+   {
+    "en": "11"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Dijkstra finalises S = 0, then B = 2, then A = min(7, 2 + 3) = 5, then C = min(5 + 1, 2 + 8) = 6, and finally D = min(6 + 2, 5 + 5, 2 + 9) = 8. The path is S → B → A → C → D.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_graphs",
+  "subtopic": "Dijkstra limitations",
+  "difficulty": "easy",
+  "question_en": "Dijkstra's single-source shortest-path algorithm may give wrong answers when the graph:",
+  "options": [
+   {
+    "en": "Is directed rather than undirected"
+   },
+   {
+    "en": "Contains cycles of positive weight"
+   },
+   {
+    "en": "Has edges with negative weights"
+   },
+   {
+    "en": "Is dense, with E close to V²"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Dijkstra greedily fixes the distance of the nearest unfinished vertex and never revisits it; a later negative edge could make that distance smaller, so the answer can be wrong. Directed graphs, positive cycles and dense graphs are all handled correctly.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_graphs",
+  "subtopic": "Bellman–Ford facts",
+  "difficulty": "medium",
+  "question_en": "For a graph with V vertices and E edges, how many times does Bellman–Ford relax every edge, and what is its time complexity?",
+  "options": [
+   {
+    "en": "V times; O(V²)"
+   },
+   {
+    "en": "E − 1 times; O(E log V)"
+   },
+   {
+    "en": "V − 1 times; O(V · E)"
+   },
+   {
+    "en": "log V times; O(V + E)"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "A shortest simple path has at most V − 1 edges, so V − 1 rounds of relaxing all E edges are enough, giving O(V · E). One extra round that still improves a distance shows a negative-weight cycle.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_graphs",
+  "subtopic": "Floyd–Warshall facts",
+  "difficulty": "medium",
+  "question_en": "The Floyd–Warshall algorithm finds shortest paths between all pairs of vertices. What design technique does it use, and what is its time complexity?",
+  "options": [
+   {
+    "en": "Dynamic programming; O(V³)"
+   },
+   {
+    "en": "Greedy method; O(V²)"
+   },
+   {
+    "en": "Divide and conquer; O(V² log V)"
+   },
+   {
+    "en": "Backtracking; O(2ⱽ)"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Floyd–Warshall builds the answer table d[i][j] by allowing intermediate vertices 1, 2, …, k one at a time (dynamic programming). Three nested loops over V vertices give O(V³) time and O(V²) space.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ds_graphs",
+  "subtopic": "Euler circuit condition",
+  "difficulty": "easy",
+  "question_en": "A connected undirected graph has an Euler circuit if and only if:",
+  "options": [
+   {
+    "en": "Exactly two vertices have odd degree"
+   },
+   {
+    "en": "Every vertex has odd degree"
+   },
+   {
+    "en": "The graph contains no cycle"
+   },
+   {
+    "en": "Every vertex has even degree"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "An Euler circuit uses every edge exactly once and returns to the start, so each visit enters and leaves a vertex, using its edges in pairs. Exactly two odd vertices give an Euler path (not a circuit) that starts and ends at those two vertices.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_graphs",
+  "subtopic": "Euler path check",
+  "difficulty": "hard",
+  "question_en": "A connected undirected graph has the edges A–B, A–C, B–C, B–D, C–D, D–E and C–E. Which statement is true?",
+  "options": [
+   {
+    "en": "It has an Euler circuit starting and ending at C"
+   },
+   {
+    "en": "It has an Euler path from B to D but no Euler circuit"
+   },
+   {
+    "en": "It has an Euler path from A to E but no Euler circuit"
+   },
+   {
+    "en": "It has neither an Euler path nor an Euler circuit"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Degrees are A 2, B 3, C 4, D 3, E 2, so exactly two vertices (B and D) are odd. Hence there is an Euler path that must start at one odd vertex and end at the other, e.g. B–A–C–B–D–C–E–D, but no Euler circuit.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_graphs",
+  "subtopic": "Hamiltonian cycles in Kn",
+  "difficulty": "hard",
+  "question_en": "How many distinct Hamiltonian cycles does the complete graph K₅ have? (A cycle and its reverse count as the same cycle.)",
+  "options": [
+   {
+    "en": "24"
+   },
+   {
+    "en": "60"
+   },
+   {
+    "en": "12"
+   },
+   {
+    "en": "120"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Fix the starting vertex; the other 4 vertices can be arranged in 4! = 24 orders. Each cycle is counted twice (once in each direction), so Kₙ has (n − 1)!/2 = 24/2 = 12 Hamiltonian cycles.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_graphs",
+  "subtopic": "DFS on a directed graph",
+  "difficulty": "hard",
+  "question_en": "A directed graph is given by adjacency lists, and neighbours are taken in the listed order: A: C, B; B: D; C: B, E; D: F; E: D, F; F: (none). What is the recursive DFS order starting from A?",
+  "options": [
+   {
+    "en": "A, C, B, E, D, F"
+   },
+   {
+    "en": "A, B, D, F, C, E"
+   },
+   {
+    "en": "A, C, E, D, F, B"
+   },
+   {
+    "en": "A, C, B, D, F, E"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "From A go to C (listed first), then to C's first neighbour B, then D, then F. F has no out-edges, so backtrack to D, B and then C, whose next neighbour E is still unvisited. Order: A, C, B, D, F, E.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_sort_search",
+  "subtopic": "Linear search - average comparisons",
+  "difficulty": "medium",
+  "question_en": "In linear search on n distinct elements, if the key is present and equally likely to be at any position, the average number of comparisons is:",
+  "options": [
+   {
+    "en": "n/2"
+   },
+   {
+    "en": "n"
+   },
+   {
+    "en": "log₂ n"
+   },
+   {
+    "en": "(n + 1)/2"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Finding the key at position i takes i comparisons, so the average is (1 + 2 + … + n)/n = (n + 1)/2. For example, with n = 50 the average is 25.5, while an unsuccessful search needs all n comparisons.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_sort_search",
+  "subtopic": "Binary search - maximum comparisons",
+  "difficulty": "medium",
+  "question_en": "What is the maximum number of key comparisons binary search needs on a sorted array of 1000 elements?",
+  "options": [
+   {
+    "en": "9"
+   },
+   {
+    "en": "11"
+   },
+   {
+    "en": "10"
+   },
+   {
+    "en": "500"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Each comparison halves the remaining range, so the worst case is ⌊log₂ n⌋ + 1 comparisons. For n = 1000, ⌊log₂ 1000⌋ = 9 (2⁹ = 512 ≤ 1000 < 1024), giving 10.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_sort_search",
+  "subtopic": "Binary search - conditions",
+  "difficulty": "easy",
+  "question_en": "Binary search can be applied efficiently only when the data is:",
+  "options": [
+   {
+    "en": "Sorted and stored with random (index) access"
+   },
+   {
+    "en": "Stored in an unsorted singly linked list"
+   },
+   {
+    "en": "Unsorted but free of duplicate keys"
+   },
+   {
+    "en": "Spread across a hash table by key"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Binary search compares the key with the middle element and discards half the range, which needs the data in sorted order. It also needs O(1) access to the middle element, which an array gives but a linked list does not.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_sort_search",
+  "subtopic": "Binary search - trace",
+  "difficulty": "medium",
+  "question_en": "Binary search for 17 is done on the sorted array [3, 8, 12, 17, 23, 31, 38, 44, 52, 60, 71] (indices 0 to 10, mid = ⌊(low + high)/2⌋). Which elements are compared with the key, in order?",
+  "options": [
+   {
+    "en": "31, 17"
+   },
+   {
+    "en": "23, 12, 17"
+   },
+   {
+    "en": "31, 12, 17"
+   },
+   {
+    "en": "31, 8, 17"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "low = 0, high = 10, mid = 5 → 31 > 17, so high = 4. mid = 2 → 12 < 17, so low = 3. mid = 3 → 17, found. The elements compared are 31, 12, 17.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_sort_search",
+  "subtopic": "Binary search - complexity",
+  "difficulty": "easy",
+  "question_en": "What are the best-case and worst-case time complexities of binary search on n sorted elements?",
+  "options": [
+   {
+    "en": "O(log n) and O(n)"
+   },
+   {
+    "en": "O(1) and O(n)"
+   },
+   {
+    "en": "O(n) and O(n log n)"
+   },
+   {
+    "en": "O(1) and O(log n)"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "In the best case the key is the first middle element examined, so one comparison suffices: O(1). In the worst case the range is halved until it is empty, about log₂ n steps: O(log n).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_sort_search",
+  "subtopic": "Bubble sort - best case",
+  "difficulty": "easy",
+  "question_en": "Bubble sort with a 'swapped' flag (stop when a pass makes no swap) is given an already-sorted array of n elements. Its running time is:",
+  "options": [
+   {
+    "en": "O(n²)"
+   },
+   {
+    "en": "O(n log n)"
+   },
+   {
+    "en": "O(n)"
+   },
+   {
+    "en": "O(1)"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The first pass makes n − 1 comparisons and no swaps, so the flag stops the algorithm immediately. That single pass is O(n); without the flag bubble sort would still do all O(n²) comparisons.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_sort_search",
+  "subtopic": "Insertion sort - worst case",
+  "difficulty": "easy",
+  "question_en": "What is the worst-case time complexity of insertion sort, and which input causes it?",
+  "options": [
+   {
+    "en": "O(n²), for an already-sorted input"
+   },
+   {
+    "en": "O(n log n), for a reverse-sorted input"
+   },
+   {
+    "en": "O(n²), for a reverse-sorted input"
+   },
+   {
+    "en": "O(n), for a randomly ordered input"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "With reverse-sorted input, each new element must move past every element already sorted, giving 1 + 2 + … + (n − 1) = n(n − 1)/2 comparisons, i.e. O(n²). Already-sorted input is the best case, O(n).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_sort_search",
+  "subtopic": "Merge sort complexity",
+  "difficulty": "easy",
+  "question_en": "What is the best-case time complexity of merge sort on n elements?",
+  "options": [
+   {
+    "en": "O(n)"
+   },
+   {
+    "en": "O(log n)"
+   },
+   {
+    "en": "O(n²)"
+   },
+   {
+    "en": "O(n log n)"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Merge sort always splits the array into halves (about log n levels) and merges O(n) elements per level, whatever the input order. So its best, average and worst cases are all O(n log n).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ds_sort_search",
+  "subtopic": "Quick sort complexity",
+  "difficulty": "medium",
+  "question_en": "What are the average-case and worst-case time complexities of quick sort?",
+  "options": [
+   {
+    "en": "O(n log n) and O(n log n)"
+   },
+   {
+    "en": "O(n²) and O(n²)"
+   },
+   {
+    "en": "O(n log n) and O(n²)"
+   },
+   {
+    "en": "O(n) and O(n log n)"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "On average the pivot splits the array into reasonably balanced parts, giving O(n log n). If the pivot is always the smallest or largest element, the parts have sizes n − 1 and 0, giving n + (n − 1) + … = O(n²).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_sort_search",
+  "subtopic": "Insertion sort - comparisons on sorted input",
+  "difficulty": "medium",
+  "question_en": "How many key comparisons does insertion sort make on an already-sorted array of 10 elements?",
+  "options": [
+   {
+    "en": "45"
+   },
+   {
+    "en": "9"
+   },
+   {
+    "en": "10"
+   },
+   {
+    "en": "0"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Each of the elements at positions 2 to 10 is compared once with its left neighbour, finds it smaller, and stays put. That is n − 1 = 9 comparisons, which is why insertion sort is O(n) on sorted data.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_sort_search",
+  "subtopic": "Counting sort complexity",
+  "difficulty": "medium",
+  "question_en": "Counting sort sorts n integers whose values lie in the range 0 to k. Its time complexity is:",
+  "options": [
+   {
+    "en": "O(n + k)"
+   },
+   {
+    "en": "O(n log n)"
+   },
+   {
+    "en": "O(n · k)"
+   },
+   {
+    "en": "O(k log n)"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Counting sort makes one pass over the n inputs to count them, one pass over the k + 1 counters to form prefix sums, and one more pass over the inputs to place them. The total is O(n + k), which is linear when k = O(n).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_sort_search",
+  "subtopic": "Radix sort complexity",
+  "difficulty": "medium",
+  "question_en": "Radix sort sorts n numbers of d digits each, in base k, using counting sort on each digit. Its time complexity is:",
+  "options": [
+   {
+    "en": "O(n log n)"
+   },
+   {
+    "en": "O(d · (n + k))"
+   },
+   {
+    "en": "O(nᵈ)"
+   },
+   {
+    "en": "O(d · k · log n)"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Radix sort performs one stable counting sort per digit, starting from the least significant digit. Each pass costs O(n + k) and there are d passes, so the total is O(d(n + k)).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_sort_search",
+  "subtopic": "Selection sort - number of swaps",
+  "difficulty": "medium",
+  "question_en": "What is the maximum number of swaps selection sort performs on an array of n elements?",
+  "options": [
+   {
+    "en": "n(n − 1)/2"
+   },
+   {
+    "en": "n log₂ n"
+   },
+   {
+    "en": "n²"
+   },
+   {
+    "en": "n − 1"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Each of the n − 1 passes finds the minimum of the unsorted part and does at most one swap to put it in place. So selection sort does at most n − 1 swaps (O(n)), even though it always makes n(n − 1)/2 comparisons.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_sort_search",
+  "subtopic": "Sorting complexity - same in all cases",
+  "difficulty": "easy",
+  "question_en": "Which sorting algorithm takes O(n log n) time in its best, average and worst cases?",
+  "options": [
+   {
+    "en": "Quick sort"
+   },
+   {
+    "en": "Insertion sort"
+   },
+   {
+    "en": "Bubble sort"
+   },
+   {
+    "en": "Merge sort"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Merge sort's divide-and-merge work does not depend on the input order, so it is O(n log n) in every case. Quick sort degrades to O(n²) in the worst case, and insertion and bubble sort are O(n²) on average.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ds_sort_search",
+  "subtopic": "Selection sort - comparisons",
+  "difficulty": "medium",
+  "question_en": "How many comparisons does selection sort make on an already-sorted array of 10 elements?",
+  "options": [
+   {
+    "en": "9"
+   },
+   {
+    "en": "90"
+   },
+   {
+    "en": "45"
+   },
+   {
+    "en": "0"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Selection sort always scans the whole unsorted part to find its minimum: 9 + 8 + … + 1 = n(n − 1)/2 = 45 comparisons. It cannot detect sorted input, so its best case is also O(n²).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ds_sort_search",
+  "subtopic": "Comparison vs non-comparison sorts",
+  "difficulty": "easy",
+  "question_en": "Which of the following sorting algorithms is NOT comparison-based?",
+  "options": [
+   {
+    "en": "Merge sort"
+   },
+   {
+    "en": "Heap sort"
+   },
+   {
+    "en": "Quick sort"
+   },
+   {
+    "en": "Counting sort"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Counting sort never compares two keys; it uses the key values as indices into a count array. Merge, heap and quick sort decide the order only by comparing pairs of keys.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_sort_search",
+  "subtopic": "Stability",
+  "difficulty": "easy",
+  "question_en": "Which of the following sorting algorithms is stable in its standard form?",
+  "options": [
+   {
+    "en": "Quick sort"
+   },
+   {
+    "en": "Merge sort"
+   },
+   {
+    "en": "Heap sort"
+   },
+   {
+    "en": "Selection sort"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "A stable sort keeps equal keys in their original relative order. Merge sort is stable because, when two keys are equal, the merge takes the one from the left half first. Quick, heap and selection sort can move equal keys past each other through long-distance swaps.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_sort_search",
+  "subtopic": "In-place sorting",
+  "difficulty": "easy",
+  "question_en": "Which of the following sorting algorithms is NOT in-place in its usual array implementation?",
+  "options": [
+   {
+    "en": "Merge sort"
+   },
+   {
+    "en": "Heap sort"
+   },
+   {
+    "en": "Insertion sort"
+   },
+   {
+    "en": "Selection sort"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Merging two sorted halves of an array needs an auxiliary array of size O(n). Heap, insertion and selection sort rearrange the elements inside the original array using only O(1) extra space.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_sort_search",
+  "subtopic": "Unstable sorts",
+  "difficulty": "medium",
+  "question_en": "Which group contains only sorting algorithms that are unstable in their standard form?",
+  "options": [
+   {
+    "en": "Merge sort, insertion sort, bubble sort"
+   },
+   {
+    "en": "Quick sort, merge sort, counting sort"
+   },
+   {
+    "en": "Quick sort, heap sort, selection sort"
+   },
+   {
+    "en": "Heap sort, insertion sort, radix sort"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Quick, heap and selection sort all swap elements over long distances, so equal keys can change their relative order. Merge, insertion, bubble, counting and radix sort are stable, which is why each other option contains at least one stable sort.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_sort_search",
+  "subtopic": "Bubble sort - after one pass",
+  "difficulty": "medium",
+  "question_en": "Bubble sort (ascending, adjacent elements compared left to right) is applied to [29, 10, 14, 37, 13, 5]. What is the array after the first pass?",
+  "options": [
+   {
+    "en": "[10, 14, 29, 13, 5, 37]"
+   },
+   {
+    "en": "[10, 14, 13, 5, 29, 37]"
+   },
+   {
+    "en": "[5, 10, 14, 37, 13, 29]"
+   },
+   {
+    "en": "[10, 14, 29, 37, 5, 13]"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Pass 1: 29 > 10 swap, 29 > 14 swap, 29 < 37 no swap, 37 > 13 swap, 37 > 5 swap. The largest element 37 bubbles to the end: [10, 14, 29, 13, 5, 37].",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_sort_search",
+  "subtopic": "Bubble sort - after two passes",
+  "difficulty": "hard",
+  "question_en": "Bubble sort (ascending, adjacent elements compared left to right, so the largest value moves to the end in each pass) is applied to [8, 22, 7, 9, 31, 5, 13]. What is the array after the second pass?",
+  "options": [
+   {
+    "en": "[8, 7, 9, 22, 5, 13, 31]"
+   },
+   {
+    "en": "[7, 8, 5, 9, 13, 22, 31]"
+   },
+   {
+    "en": "[5, 7, 8, 9, 13, 22, 31]"
+   },
+   {
+    "en": "[7, 8, 9, 5, 13, 22, 31]"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Pass 1 swaps 22/7, 22/9, 31/5 and 31/13, giving [8, 7, 9, 22, 5, 13, 31]. Pass 2 swaps 8/7, 22/5 and 22/13, giving [7, 8, 9, 5, 13, 22, 31]; the two largest values are now fixed at the end.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_sort_search",
+  "subtopic": "Selection sort - after two passes",
+  "difficulty": "medium",
+  "question_en": "Selection sort (ascending; each pass swaps the minimum of the unsorted part into place) is applied to [42, 17, 63, 8, 29, 51, 3]. What is the array after two passes?",
+  "options": [
+   {
+    "en": "[3, 8, 63, 17, 29, 51, 42]"
+   },
+   {
+    "en": "[3, 17, 63, 8, 29, 51, 42]"
+   },
+   {
+    "en": "[3, 8, 17, 63, 29, 51, 42]"
+   },
+   {
+    "en": "[3, 8, 17, 42, 63, 29, 51]"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Pass 1: the minimum 3 is swapped with 42 → [3, 17, 63, 8, 29, 51, 42]. Pass 2: the minimum of the rest, 8, is swapped with 17 → [3, 8, 63, 17, 29, 51, 42].",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_sort_search",
+  "subtopic": "Insertion sort - after k passes",
+  "difficulty": "medium",
+  "question_en": "Insertion sort (ascending) is applied to [27, 9, 34, 15, 6, 40]. Pass i inserts the element at index i into the sorted part on its left. What is the array after 3 passes?",
+  "options": [
+   {
+    "en": "[9, 27, 34, 15, 6, 40]"
+   },
+   {
+    "en": "[6, 9, 15, 27, 34, 40]"
+   },
+   {
+    "en": "[9, 27, 15, 34, 6, 40]"
+   },
+   {
+    "en": "[9, 15, 27, 34, 6, 40]"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Pass 1 inserts 9 → [9, 27, 34, 15, 6, 40]; pass 2 inserts 34, which stays; pass 3 inserts 15 between 9 and 27 → [9, 15, 27, 34, 6, 40]. After k passes the first k + 1 elements are sorted among themselves.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_sort_search",
+  "subtopic": "Bubble sort - number of swaps",
+  "difficulty": "hard",
+  "question_en": "How many swaps does bubble sort make to sort [4, 3, 6, 1, 5, 2] in ascending order?",
+  "options": [
+   {
+    "en": "8"
+   },
+   {
+    "en": "10"
+   },
+   {
+    "en": "15"
+   },
+   {
+    "en": "9"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Each adjacent swap removes exactly one inversion (a pair i < j with a[i] > a[j]), so the swaps equal the inversions. Inversions: 4 → (3, 1, 2) = 3, 3 → (1, 2) = 2, 6 → (1, 5, 2) = 3, 5 → (2) = 1, total 9.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_sort_search",
+  "subtopic": "Bubble sort - passes with early exit",
+  "difficulty": "medium",
+  "question_en": "Bubble sort (ascending, adjacent elements compared left to right) with an early-exit flag (it stops after the first pass that makes no swap; that pass is counted) is applied to [5, 1, 2, 3, 4]. How many passes are made?",
+  "options": [
+   {
+    "en": "1"
+   },
+   {
+    "en": "2"
+   },
+   {
+    "en": "4"
+   },
+   {
+    "en": "5"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Pass 1 carries 5 all the way to the end, giving [1, 2, 3, 4, 5]. Pass 2 makes no swap, so the flag stops the sort: 2 passes in total instead of n − 1 = 4. (The direction matters: a right-to-left version that moves the smallest value to the front would need at least 4 passes here, because 5 would then move only one place to the right per pass.)",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_sort_search",
+  "subtopic": "Quick sort - partition result",
+  "difficulty": "hard",
+  "question_en": "Quick sort uses the Lomuto partition on [7, 2, 9, 4, 1, 8, 5] with the last element 5 as pivot: i starts just before the array, each element ≤ pivot is swapped into position i + 1 (after incrementing i), and finally the pivot is swapped into position i + 1. What is the array after this first partition?",
+  "options": [
+   {
+    "en": "[2, 4, 1, 5, 9, 8, 7]"
+   },
+   {
+    "en": "[2, 4, 1, 5, 7, 9, 8]"
+   },
+   {
+    "en": "[1, 2, 4, 5, 7, 8, 9]"
+   },
+   {
+    "en": "[2, 1, 4, 5, 9, 8, 7]"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "2, 4 and 1 are ≤ 5: 2 swaps with 7 → [2, 7, 9, 4, 1, 8, 5]; 4 swaps with 7 → [2, 4, 9, 7, 1, 8, 5]; 1 swaps with 9 → [2, 4, 1, 7, 9, 8, 5]. Finally the pivot swaps with 7 at index 3 → [2, 4, 1, 5, 9, 8, 7].",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_sort_search",
+  "subtopic": "Quick sort - pivot's final position",
+  "difficulty": "medium",
+  "question_en": "In quick sort, the first element 36 of [36, 15, 52, 8, 44, 27, 61, 19] is chosen as the pivot, and the partition step puts the pivot into its final sorted place (as in the Lomuto / Horowitz–Sahni partition). At which position does 36 end up?",
+  "options": [
+   {
+    "en": "4th position (index 3)"
+   },
+   {
+    "en": "5th position (index 4)"
+   },
+   {
+    "en": "1st position (index 0)"
+   },
+   {
+    "en": "6th position (index 5)"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "After partitioning, the pivot sits at its final sorted position, right after all smaller elements. Four elements (15, 8, 27, 19) are smaller than 36, so it lands at index 4, the 5th position.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_sort_search",
+  "subtopic": "Quick sort - worst-case input",
+  "difficulty": "easy",
+  "question_en": "Quick sort always picks the first element as the pivot. Which input makes it run in O(n²) time?",
+  "options": [
+   {
+    "en": "An array that is already sorted"
+   },
+   {
+    "en": "An array in random order"
+   },
+   {
+    "en": "An array whose first element is always the median"
+   },
+   {
+    "en": "An array with all keys distinct and shuffled"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "On sorted input the first element is the smallest, so every partition leaves 0 elements on one side and n − 1 on the other. This gives n − 1 levels of recursion and about n²/2 comparisons. Random order or median pivots give balanced splits.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_sort_search",
+  "subtopic": "Merging - comparisons",
+  "difficulty": "medium",
+  "question_en": "Two sorted lists with m and n elements are merged into one sorted list. What is the maximum number of comparisons needed?",
+  "options": [
+   {
+    "en": "m + n − 1"
+   },
+   {
+    "en": "m + n"
+   },
+   {
+    "en": "min(m, n)"
+   },
+   {
+    "en": "m × n"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Each comparison outputs one element, and once one list is empty the rest of the other list is copied without comparing. In the worst case the lists run out together, so m + n − 1 comparisons are made (e.g. 14 for lists of 6 and 9); the best case is min(m, n).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_sort_search",
+  "subtopic": "Merge sort - space",
+  "difficulty": "easy",
+  "question_en": "How much auxiliary (extra) space does the standard array-based merge sort need for n elements?",
+  "options": [
+   {
+    "en": "O(1)"
+   },
+   {
+    "en": "O(log n)"
+   },
+   {
+    "en": "O(n)"
+   },
+   {
+    "en": "O(n²)"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The merge step copies elements into a temporary array as large as the part being merged, which is O(n) at the top level. This extra space is the main disadvantage of merge sort compared with heap sort.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_sort_search",
+  "subtopic": "Lower bound for comparison sorts",
+  "difficulty": "medium",
+  "question_en": "What is the lower bound on the worst-case number of comparisons for any comparison-based sorting algorithm on n elements?",
+  "options": [
+   {
+    "en": "Ω(n log n)"
+   },
+   {
+    "en": "Ω(n)"
+   },
+   {
+    "en": "Ω(log n)"
+   },
+   {
+    "en": "Ω(n²)"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A comparison sort is a binary decision tree that must have at least n! leaves, one per possible ordering. Its height is at least log₂(n!) = Θ(n log n), so no comparison sort can beat Ω(n log n) in the worst case; merge and heap sort reach this bound.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_sort_search",
+  "subtopic": "Choosing a sort for nearly sorted data",
+  "difficulty": "easy",
+  "question_en": "Which sorting algorithm is the best choice for an array that is already almost sorted (only a few elements out of place)?",
+  "options": [
+   {
+    "en": "Selection sort"
+   },
+   {
+    "en": "Heap sort"
+   },
+   {
+    "en": "Quick sort"
+   },
+   {
+    "en": "Insertion sort"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Insertion sort does work proportional to n plus the number of inversions, so on nearly sorted data it runs in close to O(n). Selection sort stays O(n²), heap sort ignores existing order, and quick sort with a first- or last-element pivot is near its O(n²) worst case on such data.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_sort_search",
+  "subtopic": "Hashing - division method",
+  "difficulty": "easy",
+  "question_en": "Using the division method h(k) = k mod 13, at which slot is the key 158 placed?",
+  "options": [
+   {
+    "en": "12"
+   },
+   {
+    "en": "2"
+   },
+   {
+    "en": "5"
+   },
+   {
+    "en": "6"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "158 = 13 × 12 + 2, so 158 mod 13 = 2 and the key goes to slot 2. (12 is the quotient, not the remainder.)",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_sort_search",
+  "subtopic": "Hashing - linear probing final table",
+  "difficulty": "hard",
+  "question_en": "The keys 43, 23, 34, 72, 13, 55, 64 are inserted in this order into a hash table of size 10 using h(k) = k mod 10 and linear probing. Which is the final table (slot:key)?",
+  "options": [
+   {
+    "en": "2:72, 3:43, 4:23, 5:34, 6:55, 7:13, 8:64"
+   },
+   {
+    "en": "2:72, 3:43, 4:23, 5:34, 6:13, 7:55, 8:64"
+   },
+   {
+    "en": "2:72, 3:43, 4:23, 5:13, 6:34, 7:55, 8:64"
+   },
+   {
+    "en": "2:72, 3:43, 4:34, 5:23, 6:13, 7:55, 8:64"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "43 → 3; 23 → 3 taken → 4; 34 → 4 taken → 5; 72 → 2; 13 → 3, 4, 5 taken → 6; 55 → 5, 6 taken → 7; 64 → 4 to 7 taken → 8. Final: 2:72, 3:43, 4:23, 5:34, 6:13, 7:55, 8:64.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_sort_search",
+  "subtopic": "Hashing - linear probing position",
+  "difficulty": "medium",
+  "question_en": "The keys 22, 33, 15, 26, 4, 37 are inserted in this order into a hash table of size 11 using h(k) = k mod 11 and linear probing. In which slot is 37 stored?",
+  "options": [
+   {
+    "en": "7"
+   },
+   {
+    "en": "4"
+   },
+   {
+    "en": "5"
+   },
+   {
+    "en": "8"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "22 → 0; 33 → 0 taken → 1; 15 → 4; 26 → 4 taken → 5; 4 → 4, 5 taken → 6. 37 mod 11 = 4, and slots 4, 5, 6 are taken, so 37 goes to slot 7. The run of filled slots 4–7 is primary clustering.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_sort_search",
+  "subtopic": "Hashing - quadratic probing",
+  "difficulty": "hard",
+  "question_en": "The keys 27, 47, 37, 57, 17 are inserted in this order into a table of size 10 with quadratic probing: probe i uses slot (k mod 10 + i²) mod 10 for i = 0, 1, 2, …. In which slot is 17 stored?",
+  "options": [
+   {
+    "en": "3"
+   },
+   {
+    "en": "1"
+   },
+   {
+    "en": "6"
+   },
+   {
+    "en": "9"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "All keys hash to 7. 27 → 7; 47 → 8 (7 + 1); 37 → 1 (7 + 4 = 11); 57 → 6 (7 + 9 = 16). For 17, slots 7, 8, 1 and 6 are taken, so i = 4 gives (7 + 16) mod 10 = 3.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_sort_search",
+  "subtopic": "Hashing - separate chaining",
+  "difficulty": "medium",
+  "question_en": "The keys 12, 19, 26, 8, 30, 15, 40 are inserted into a hash table of 7 slots using h(k) = k mod 7 and separate chaining. Which slot has the longest chain, and how many keys does it hold?",
+  "options": [
+   {
+    "en": "Slot 1, with 2 keys"
+   },
+   {
+    "en": "Slot 5, with 4 keys"
+   },
+   {
+    "en": "Slot 5, with 3 keys"
+   },
+   {
+    "en": "Slot 2, with 4 keys"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "12, 19, 26 and 40 all give remainder 5; 8 and 15 give 1; 30 gives 2. So slot 5 holds the chain 12 → 19 → 26 → 40 with 4 keys, slot 1 holds 2 keys and slot 2 holds 1.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_sort_search",
+  "subtopic": "Hashing - double hashing",
+  "difficulty": "hard",
+  "question_en": "A table of size 11 uses double hashing: h₁(k) = k mod 11, h₂(k) = 5 − (k mod 5), and probe i uses slot (h₁(k) + i · h₂(k)) mod 11. The keys 14, 25 and 36 are inserted in this order. In which slot is 36 stored?",
+  "options": [
+   {
+    "en": "4"
+   },
+   {
+    "en": "5"
+   },
+   {
+    "en": "7"
+   },
+   {
+    "en": "8"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "14 → 3. 25 → h₁ = 3 (taken), h₂ = 5 − 0 = 5, so slot 8. 36 → h₁ = 3 (taken), h₂ = 5 − 1 = 4, so slot (3 + 4) mod 11 = 7, which is free.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_sort_search",
+  "subtopic": "Hashing - load factor",
+  "difficulty": "easy",
+  "question_en": "The load factor α of a hash table that stores n keys in m slots is defined as:",
+  "options": [
+   {
+    "en": "α = m/n"
+   },
+   {
+    "en": "α = n/m"
+   },
+   {
+    "en": "α = m − n"
+   },
+   {
+    "en": "α = n × m"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The load factor is the average number of keys per slot, α = n/m; for example, 45 keys in 60 slots give α = 0.75. With open addressing α must stay at most 1; with chaining it may exceed 1.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_sort_search",
+  "subtopic": "Hashing - clustering",
+  "difficulty": "medium",
+  "question_en": "In open addressing, linear probing mainly suffers from ______ clustering, while quadratic probing suffers from ______ clustering.",
+  "options": [
+   {
+    "en": "secondary; primary"
+   },
+   {
+    "en": "primary; primary"
+   },
+   {
+    "en": "secondary; no"
+   },
+   {
+    "en": "primary; secondary"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "With linear probing, occupied slots form long runs that any new key hashing into the run must walk through (primary clustering). Quadratic probing breaks up these runs, but keys with the same home slot still follow the same probe sequence (secondary clustering); double hashing reduces both.",
+  "pyq_concept": false
+ }
+]

@@ -1,0 +1,28 @@
+{
+ "name": "DSA",
+ "chapters": [
+  ["ds_algo", "Algorithms, Complexity & Recursion", "Algorithms & Complexity"],
+  ["ds_linear", "Arrays & Linked Lists", "Arrays & Linked Lists"],
+  ["ds_stack_queue", "Stacks & Queues", "Stacks & Queues"],
+  ["ds_trees", "Trees, BST, AVL, B-Trees & Heaps", "Trees & Heaps"],
+  ["ds_graphs", "Graphs: Representation, Traversal, MST & Shortest Paths", "Graphs"],
+  ["ds_sort_search", "Searching, Sorting & Hashing", "Searching, Sorting & Hashing"],
+  ["ds_design", "Algorithm Design Techniques", "Design Techniques"]
+ ],
+ "pyq_file": "dsa_pyq_analysis.json",
+ "pyq_rules": [
+  ["graph", "ds_graphs"], ["subset", "ds_design"], ["divide and conquer", "ds_design"], ["problem types", "ds_design"],
+  ["merge sort - divide", "ds_design"], ["sort", "ds_sort_search"], ["queue", "ds_stack_queue"], ["linear", "ds_linear"],
+  ["asymptotic", "ds_algo"], ["algorithm", "ds_algo"]
+ ],
+ "question_files": ["questions_a.json", "questions_b.json"],
+ "series_name": "DSSSB TGT CS — DSA Complete (Notes + 200 Most Expected)",
+ "series_name_hi": "DSSSB TGT CS — डेटा स्ट्रक्चर एवं एल्गोरिद्म सम्पूर्ण",
+ "series_description": "Data Structures & Algorithms from basics to exam level: previous-year questions, chapter-wise practice with traversal, sorting, hashing and graph numericals, and the 200 most expected questions with solutions. Notes and a fast-revision sheet are in Courses → DSSSB TGT Computer Science → DSA.",
+ "course_subject": "DSA (Data Structures & Algorithms)",
+ "course_subject_hi": "डेटा स्ट्रक्चर एवं एल्गोरिद्म",
+ "tagline": "Complexity & recursion · arrays & linked lists · stacks & queues · trees, BST, AVL, heaps · graphs · searching, sorting & hashing · design techniques",
+ "intro": "In the 4 official DSSSB TGT Computer Science papers of 2023–24 there were <b>{n} DSA questions</b>, about 3–4 per paper. They are mostly definitions and complexity facts: characteristics of an algorithm, order of growth, best/average/worst cases of sorting, divide and conquer, backtracking (sum of subsets), queue operations and graph degrees. Memorise the complexity tables, then practise the short numericals.",
+ "practice_split": 35,
+ "full_test_min_per_q": 0.75
+}

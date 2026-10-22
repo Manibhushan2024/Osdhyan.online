@@ -1,0 +1,530 @@
+[
+ {
+  "qid": "630680256175",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following statements is FALSE?",
+  "options": [
+   "Burst Time: Time required by a process to start its execution",
+   "Turn Around Time: Time difference between the completion time and arrival time",
+   "Completion Time: Time at which a process completes its execution",
+   "Arrival Time: Time at which a process arrives in the ready queue"
+  ],
+  "answer": 1,
+  "subtopic": "CPU scheduling terms",
+  "difficulty": "easy",
+  "explanation": "Burst time is the CPU time a process needs to finish its execution, not the time it takes to start. So statement 1 is false. The other definitions are correct: TAT = Completion time - Arrival time, Completion time is when the process finishes, and Arrival time is when it enters the ready queue.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256176",
+  "paper": "2023_06_24_s3",
+  "question": "Page fault means:",
+  "options": [
+   "accessing the page that is not currently in the memory",
+   "removing the page whenever it is needed",
+   "fetching the page whenever it is needed",
+   "an error that always occurs in the page"
+  ],
+  "answer": 1,
+  "subtopic": "Page fault",
+  "difficulty": "easy",
+  "explanation": "A page fault happens when a program refers to a page that is not currently in main memory, so the OS must bring it in from disk. Fetching the page is the OS's response to the fault, not the fault itself. It is a normal event, not an error that always occurs.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256188",
+  "paper": "2023_06_24_s3",
+  "question": "Grep command is used to:",
+  "options": [
+   "change the case of alphabets",
+   "search for a specific pattern from a specified file and display those lines containing the pattern",
+   "cut the columns/fields of a specified file",
+   "redirect the output of one command to another command"
+  ],
+  "answer": 2,
+  "subtopic": "Linux grep command",
+  "difficulty": "easy",
+  "explanation": "grep (global regular expression print) searches a file for a pattern and prints the lines that match. Changing case is done by tr, cutting columns by cut, and sending one command's output to another by the pipe (|).",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256177",
+  "paper": "2023_06_24_s3",
+  "question": "The advantage of SSTF (Shortest Seek Time First) is:",
+  "options": [
+   "high variance of response time as SSTF favours only some requests",
+   "overhead to calculate seek time in advance",
+   "average response time decreases",
+   "throughput decreases"
+  ],
+  "answer": 3,
+  "subtopic": "Disk scheduling - SSTF",
+  "difficulty": "easy",
+  "explanation": "SSTF always serves the request closest to the current head position, which reduces total head movement. So average response (seek) time decreases and throughput increases, which is its advantage. High variance (possible starvation) and the overhead of calculating seek times are its disadvantages.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256134",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following is NOT true about NTFS?",
+  "options": [
+   "It utilises the disk space efficiently by using a smaller size of clusters.",
+   "NTFS's attributes are read-only, hidden, system, archive, not content indexed, off-line, temporary and compressed.",
+   "It introduced improved performance, scalable in comparison with its precursor.",
+   "It does not support the compression of files and directories to optimise storage space."
+  ],
+  "answer": 4,
+  "subtopic": "File systems - NTFS",
+  "difficulty": "medium",
+  "explanation": "NTFS does support built-in compression of files and folders (and also encryption, ACLs and journaling). So the statement that it does not support compression is false. The other statements are true: it uses small clusters efficiently, has those attributes, and improved on FAT.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256357",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following is an illusion of an extremely large main memory?",
+  "options": [
+   "Cache memory",
+   "Virtual memory",
+   "Hard Disk",
+   "Associative memory"
+  ],
+  "answer": 2,
+  "subtopic": "Virtual memory",
+  "difficulty": "easy",
+  "explanation": "Virtual memory uses part of the disk together with paging/segmentation so that programs see a memory much larger than the physical RAM. This is an illusion of a very large main memory. Cache memory is a small fast buffer, and the hard disk is the backing store, not the illusion itself.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256358",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following statements is FALSE?",
+  "options": [
+   "Microkernel is smaller in size.",
+   "It is not easy to extend a Monolithic kernel.",
+   "In Monolithic kernel, both user services and kernel services are kept in a separate address space.",
+   "To design a Microkernel, more codes are required."
+  ],
+  "answer": 3,
+  "subtopic": "Monolithic vs microkernel",
+  "difficulty": "medium",
+  "explanation": "In a monolithic kernel, user services and kernel services all run in the same (kernel) address space, which makes it fast but hard to extend. Keeping them in separate address spaces is the feature of a microkernel. So statement 3 is false. The other statements are true.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256403",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following are two arguments that ‘chmod’ takes to change different permission configurations of files in KDE Linux shell?",
+  "options": [
+   "Permission changes and network names",
+   "Permission changes and user names",
+   "Permission changes and system names",
+   "Permission changes and file names"
+  ],
+  "answer": 4,
+  "subtopic": "Linux chmod",
+  "difficulty": "easy",
+  "explanation": "chmod takes two arguments: the permission change (for example u+x or 755) and the file name(s) to apply it to, as in chmod 755 script.sh. User names are changed with chown, not chmod.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256359",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following options describes the desirable property of a good operating system?",
+  "options": [
+   "Low throughput and low turnaround time",
+   "High throughput and high turnaround time",
+   "Low throughput and high turnaround time",
+   "High throughput and low turnaround time"
+  ],
+  "answer": 4,
+  "subtopic": "Scheduling criteria",
+  "difficulty": "easy",
+  "explanation": "A good OS should finish many processes per unit time (high throughput) and finish each process quickly after it arrives (low turnaround time). High turnaround time means processes wait longer, which is not desirable.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256647",
+  "paper": "2023_06_25_s2",
+  "question": "An operating system completely releases the memory allocated to a process after the process transitions from which of the following states?",
+  "options": [
+   "Sleeping to ready",
+   "Ready to running",
+   "Running to terminated",
+   "Running to sleeping"
+  ],
+  "answer": 3,
+  "subtopic": "Process states and memory release",
+  "difficulty": "easy",
+  "explanation": "While a process is sleeping/waiting or ready it still owns its memory. Only when it moves from running to terminated (exits) does the OS take back all of its memory and other resources. The other transitions only change its scheduling state.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256657",
+  "paper": "2023_06_25_s2",
+  "question": "The default file system type in Linux is:",
+  "options": [
+   "Ext3",
+   "Ext1",
+   "Ext4",
+   "Ext2"
+  ],
+  "answer": 3,
+  "subtopic": "Linux file systems",
+  "difficulty": "easy",
+  "explanation": "Ext4 (fourth extended file system) is the default file system in most modern Linux distributions. It replaced Ext3 by adding extents, larger file and volume sizes, and faster fsck. Ext2 and Ext3 were older defaults.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256607",
+  "paper": "2023_06_25_s2",
+  "question": "Which type of computer program acts as a bridge between a computer user and the computer hardware?",
+  "options": [
+   "Random Access Memory",
+   "User thread",
+   "Operating system",
+   "Kernel"
+  ],
+  "answer": 3,
+  "subtopic": "Operating system definition",
+  "difficulty": "easy",
+  "explanation": "The operating system is the program that acts as the interface between the user and the hardware: it manages resources and provides services to run programs. The kernel is the core part of the OS that talks to the hardware, but the complete user-to-hardware bridge is the OS as a whole.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256655",
+  "paper": "2023_06_25_s2",
+  "question": "Identify the command that is used to delete files in Linux.",
+  "options": [
+   "rm",
+   "Rmdir",
+   "Delete",
+   "Rdir"
+  ],
+  "answer": 1,
+  "subtopic": "Linux file commands",
+  "difficulty": "easy",
+  "explanation": "In Linux, rm removes files (rm -r also removes directories with their contents). rmdir removes only empty directories, and 'Delete' and 'Rdir' are not Linux commands.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598459",
+  "paper": "2024_02_07_s2",
+  "question": "In which of the following condition of Deadlock Prevention, at least one resource must be non-sharable?",
+  "options": [
+   "Circular wait",
+   "Hold and wait",
+   "Mutual Exclusion",
+   "No preemption"
+  ],
+  "answer": 3,
+  "subtopic": "Deadlock conditions",
+  "difficulty": "easy",
+  "explanation": "The mutual exclusion condition says at least one resource must be held in a non-sharable mode, so only one process can use it at a time. Hold and wait, no preemption and circular wait are the other three necessary conditions for deadlock.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598456",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following File operation need not involve any actual I/O (Input/Output) and is also known as 'File Seek'?",
+  "options": [
+   "Deleting a file",
+   "Repositioning within a file",
+   "Reading a file",
+   "Truncating a file"
+  ],
+  "answer": 2,
+  "subtopic": "File operations - seek",
+  "difficulty": "easy",
+  "explanation": "Repositioning within a file (file seek) only changes the current file-position pointer to a new value. It does not need any actual read or write on the disk. Reading, deleting and truncating all change or access the file's data or blocks.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598458",
+  "paper": "2024_02_07_s2",
+  "question": "A semaphore is an integer variable that, apart from initialization, is accessed only through which of the following standard atomic operation?",
+  "options": [
+   "release ()",
+   "lock ()",
+   "acquire ()",
+   "signal ()"
+  ],
+  "answer": 4,
+  "subtopic": "Semaphores - wait/signal",
+  "difficulty": "easy",
+  "explanation": "Apart from initialisation, a semaphore S is accessed only through two atomic operations: wait() (P, decrement) and signal() (V, increment). acquire()/release() and lock() are names used by some libraries for locks, not the standard semaphore operations.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598455",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following page replacement algorithms(s) does not suffer from Belady's anomaly in Operating System?\nI. Least-Recently Used (LRU) page replacement.\nII. First-In, First-Out (FIFO) page replacement.",
+  "options": [
+   "Only I",
+   "Neither I nor II",
+   "Only II",
+   "Both I and II"
+  ],
+  "answer": 1,
+  "subtopic": "Belady's anomaly",
+  "difficulty": "medium",
+  "explanation": "Belady's anomaly means that giving a process more frames causes more page faults. FIFO can show this anomaly (for example the string 1,2,3,4,1,2,5,1,2,3,4,5 gives 9 faults with 3 frames and 10 with 4). LRU is a stack algorithm, so it never suffers from it. So only I is correct.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256174",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following services is NOT provided by the operating system?",
+  "options": [
+   "Resource management",
+   "Inter process for communication",
+   "Translate source into machine code",
+   "Program execution"
+  ],
+  "answer": 3,
+  "subtopic": "OS services",
+  "difficulty": "easy",
+  "explanation": "An operating system provides services such as program execution, resource management, I/O, file handling and inter-process communication. Translating source code into machine code is done by a compiler/interpreter (a language processor), not by the OS. Hence option 3 is the service the OS does NOT provide.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256186",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following statements is NOT true?",
+  "options": [
+   "etc: It contains other additional commands that are related to system maintenance and administration.",
+   "usr: It contains temporary files created by Linux or other users.",
+   "bin: It contains executable files for the UNIX commands.",
+   "dev: It contains device drivers that control various peripherals that are connected with the system."
+  ],
+  "answer": 2,
+  "subtopic": "Linux directory structure",
+  "difficulty": "easy",
+  "explanation": "/usr holds user programs, libraries and documentation; temporary files are kept in /tmp. /bin holds essential executable commands, /dev holds device files, and /etc holds configuration/administration files. So the statement about usr is NOT true.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256185",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following is a default permission for the text file in Linux?",
+  "options": [
+   "rwx r-- r--",
+   "rw- r-- r--",
+   "rwx rwx rwx",
+   "rwx --- ---"
+  ],
+  "answer": 2,
+  "subtopic": "Linux file permissions",
+  "difficulty": "medium",
+  "explanation": "A new regular file gets 666 masked by the usual umask 022, giving 644 = rw- r-- r--. Text files do not get execute permission by default, so rwx r-- r-- (744) is wrong.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256187",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following is NOT a shell in Linux?",
+  "options": [
+   "C shell",
+   "Korn shell",
+   "Bourne shell",
+   "Alpha cell"
+  ],
+  "answer": 4,
+  "subtopic": "Linux shells",
+  "difficulty": "easy",
+  "explanation": "Common UNIX/Linux shells are the Bourne shell (sh), C shell (csh), Korn shell (ksh) and Bourne-Again shell (bash). 'Alpha cell' is not a shell at all; it is a distractor.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256401",
+  "paper": "2023_06_25_s1",
+  "question": "By default, the BASH shell of the Linux environment has a ______ prompt.",
+  "options": [
+   "#",
+   "&",
+   "$",
+   "%"
+  ],
+  "answer": 3,
+  "subtopic": "Linux shell prompt",
+  "difficulty": "easy",
+  "explanation": "For an ordinary user, the bash shell shows the $ prompt by default. # is shown for the root (super) user, and % is the default C-shell prompt.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256402",
+  "paper": "2023_06_25_s1",
+  "question": "What will be the output of the Linux shell command ‘rm doc*’?",
+  "options": [
+   "Erase all files beginning with the pattern ‘doc’",
+   "Erase all files ending with the pattern ‘doc’",
+   "List filenames ending with the pattern ‘doc’",
+   "List filenames beginning with the pattern ‘doc’"
+  ],
+  "answer": 1,
+  "subtopic": "Linux rm with wildcard",
+  "difficulty": "easy",
+  "explanation": "rm deletes files, and the wildcard doc* matches every name that begins with 'doc' followed by any characters. To match names ending in doc you would write *doc; listing would need ls, not rm.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256656",
+  "paper": "2023_06_25_s2",
+  "question": "In which of the following directories are the configuration files found?",
+  "options": [
+   "/dev",
+   "/root",
+   "/etc/",
+   "/bin"
+  ],
+  "answer": 3,
+  "subtopic": "Linux /etc directory",
+  "difficulty": "easy",
+  "explanation": "/etc holds system-wide configuration files such as /etc/passwd, /etc/fstab and /etc/hosts. /dev holds device files, /bin essential binaries and /root is the root user's home directory.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256648",
+  "paper": "2023_06_25_s2",
+  "question": "______ and ______ are used in conjunction for making a complete process subroutine.",
+  "options": [
+   "fork(), join()",
+   "fork(), sleep()",
+   "sleep(), join()",
+   "join(), fork()"
+  ],
+  "answer": 1,
+  "subtopic": "Process creation - fork/join",
+  "difficulty": "medium",
+  "explanation": "fork() starts a concurrent child computation and join() waits for it to finish and recombines it with the parent; used together they form a complete process subroutine. sleep() only suspends execution for a time. Option 4 lists join before fork, which is the wrong order.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256654",
+  "paper": "2023_06_25_s2",
+  "question": "Which command is used to remove a directory in Linux?",
+  "options": [
+   "Rm",
+   "Delete",
+   "Erase",
+   "Rm, Delete and Erase"
+  ],
+  "answer": 1,
+  "subtopic": "Linux directory removal",
+  "difficulty": "easy",
+  "explanation": "rm (with -r, as in rm -r dirname) removes directories along with their contents (rmdir removes empty ones). 'Delete' and 'Erase' are DOS/Windows-style commands that do not exist in Linux, so option 4 is wrong.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256634",
+  "paper": "2023_06_25_s2",
+  "question": "What is an endpoint of an inter-process communication?",
+  "options": [
+   "Tunnel",
+   "Port",
+   "Socket",
+   "Pipe"
+  ],
+  "answer": 3,
+  "subtopic": "IPC - sockets",
+  "difficulty": "easy",
+  "explanation": "A socket is an endpoint of communication between two processes, identified by an IP address and a port number. A port is only a number identifying a service, and a pipe is a channel connecting two processes rather than an endpoint.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598445",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following command is used in the communication system call of an operating system?",
+  "options": [
+   "Request device, release device",
+   "Attach or detach remote devices",
+   "Allocate and free memory",
+   "Read, write, reposition"
+  ],
+  "answer": 2,
+  "subtopic": "System calls - communication",
+  "difficulty": "medium",
+  "explanation": "Communication system calls include create/delete connection, send/receive messages, transfer status information, and attach or detach remote devices. Request/release device belongs to device management, allocate/free memory to process control, and read/write/reposition to file management.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598457",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following statement is correct for a 'Volume Control block' in File-System Implementation?",
+  "options": [
+   "It is used to organize the files",
+   "It has a unique identifier number to allow association with a directory entry",
+   "It contains the number of block in the partition",
+   "It can contain information needed by the system to boot an operating system from that volume"
+  ],
+  "answer": 3,
+  "subtopic": "File system - volume control block",
+  "difficulty": "medium",
+  "explanation": "The volume control block (superblock in UNIX, master file table in NTFS) holds volume details such as the number of blocks in the partition, block size, free-block count and pointers. Booting information is in the boot control block (option 4), and a unique identifier per file is in the FCB/inode (option 2).",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598481",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following part of operating system allocates the CPU to next scheduled process in the system?",
+  "options": [
+   "File manager",
+   "Dispatcher",
+   "Scheduler",
+   "Input/output handler"
+  ],
+  "answer": 2,
+  "subtopic": "Dispatcher",
+  "difficulty": "easy",
+  "explanation": "The dispatcher gives control of the CPU to the process selected by the short-term scheduler: it performs the context switch, switches to user mode and jumps to the right location. The scheduler only decides which process runs next; the dispatcher actually allocates the CPU.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598454",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following statement(s) is/are correct for context switching in Operating System?\nI. When a context switch occurs, the kernel saves the context of the old process in its PCB (Process Control Block).\nII. Context-Switch time is pure overhead, because the system does no useful work while switching.",
+  "options": [
+   "Neither I nor II",
+   "Only I",
+   "Only II",
+   "Both I and II"
+  ],
+  "answer": 4,
+  "subtopic": "Context switching",
+  "difficulty": "easy",
+  "explanation": "During a context switch the kernel saves the old process's state (registers, PC, etc.) in its PCB and loads the new process's saved state. Context-switch time is pure overhead because no useful user work is done during the switch. Both statements are correct.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598453",
+  "paper": "2024_02_07_s2",
+  "question": "Match the following Process states of Operating System with their definitions.\nState | Definition\nI. New | 1. The process is waiting to be assigned to a processor\nII. Running | 2. Instructions are being executed\nIII. Ready | 3. The process is being created",
+  "options": [
+   "I-3, II-1, III-2",
+   "I-1, II-3, III-2",
+   "I-1, II-2, III-3",
+   "I-3, II-2, III-1"
+  ],
+  "answer": 4,
+  "subtopic": "Process states",
+  "difficulty": "easy",
+  "explanation": "New: the process is being created (3). Running: instructions are being executed (2). Ready: the process is waiting to be assigned to a processor (1). So I-3, II-2, III-1.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598460",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following system call include 'wait for time' operation command in Operating System?",
+  "options": [
+   "Process Control",
+   "Device Management",
+   "File Management",
+   "Communications"
+  ],
+  "answer": 1,
+  "subtopic": "System calls - process control",
+  "difficulty": "easy",
+  "explanation": "Process-control system calls include end/abort, load/execute, create/terminate process, get/set attributes, wait for time, wait event/signal event, and allocate/free memory. Device management handles request/release device, and file management handles open/read/write files.",
+  "key_doubt": false
+ }
+]

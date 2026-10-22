@@ -1,0 +1,98 @@
+{
+ "subject": "OS (Operating Systems)",
+ "subject_hi": "ऑपरेटिंग सिस्टम",
+ "chapters": [
+  {
+   "key": "os_intro",
+   "title": "1. Introduction, OS Structure & System Calls",
+   "items": [
+    {
+     "title": "Introduction, OS Structure & System Calls — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\os\\os_intro.pdf"
+    }
+   ]
+  },
+  {
+   "key": "os_process",
+   "title": "2. Processes, Threads & Inter-Process Communication",
+   "items": [
+    {
+     "title": "Processes, Threads & Inter-Process Communication — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\os\\os_process.pdf"
+    }
+   ]
+  },
+  {
+   "key": "os_sched",
+   "title": "3. CPU Scheduling",
+   "items": [
+    {
+     "title": "CPU Scheduling — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\os\\os_sched.pdf"
+    }
+   ]
+  },
+  {
+   "key": "os_sync",
+   "title": "4. Process Synchronisation & Deadlocks",
+   "items": [
+    {
+     "title": "Process Synchronisation & Deadlocks — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\os\\os_sync.pdf"
+    }
+   ]
+  },
+  {
+   "key": "os_memory",
+   "title": "5. Memory Management & Virtual Memory",
+   "items": [
+    {
+     "title": "Memory Management & Virtual Memory — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\os\\os_memory.pdf"
+    }
+   ]
+  },
+  {
+   "key": "os_storage",
+   "title": "6. File Systems, Disk Scheduling & I/O",
+   "items": [
+    {
+     "title": "File Systems, Disk Scheduling & I/O — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\os\\os_storage.pdf"
+    }
+   ]
+  },
+  {
+   "key": "os_linux",
+   "title": "7. Linux / Unix Commands & Shell",
+   "items": [
+    {
+     "title": "Linux / Unix Commands & Shell — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\os\\os_linux.pdf"
+    }
+   ]
+  },
+  {
+   "key": "os_practice",
+   "title": "8. Complete notes, previous-year questions & 200 most expected",
+   "items": [
+    {
+     "title": "OS — fast revision sheet (revise everything quickly)",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\os\\os_fast_revision.pdf"
+    },
+    {
+     "title": "OS — complete notes (all chapters in one PDF)",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\os\\os_complete_notes.pdf"
+    },
+    {
+     "title": "OS — previous-year questions 2023–24 with solutions",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\os\\os_pyq_2023_24.pdf"
+    },
+    {
+     "title": "OS — 200 most expected questions with answers",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\os\\os_200_most_expected.pdf"
+    }
+   ]
+  }
+ ]
+}

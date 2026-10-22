@@ -1,0 +1,2302 @@
+[
+  {
+    "chapter_key": "os_intro",
+    "subtopic": "OS definition",
+    "difficulty": "easy",
+    "question_en": "According to Silberschatz–Galvin, an operating system is best described as:",
+    "options": [
+      {
+        "en": "a program that translates high-level source code into equivalent machine code before execution"
+      },
+      {
+        "en": "a program that acts as an intermediary between the user of a computer and the computer hardware"
+      },
+      {
+        "en": "a hardware unit that permanently stores the data and instructions needed by the processor"
+      },
+      {
+        "en": "a utility program whose only job is to organise the files stored on a hard disk"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "An operating system is a program that manages the computer hardware and acts as an intermediary (interface/bridge) between the user and the hardware. Translating source code is the job of a compiler, which is a system program, not the OS itself.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "os_intro",
+    "subtopic": "Kernel",
+    "difficulty": "easy",
+    "question_en": "The one program that runs at all times on the computer, usually called the core of the operating system, is the ______.",
+    "options": [
+      {
+        "en": "kernel"
+      },
+      {
+        "en": "shell"
+      },
+      {
+        "en": "compiler"
+      },
+      {
+        "en": "bootstrap loader"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Silberschatz defines the kernel as \"the one program running at all times on the computer\". The shell is only a command interpreter, and the bootstrap loader runs only at start-up to load the kernel.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_intro",
+    "subtopic": "Multiprogramming CPU utilisation",
+    "difficulty": "hard",
+    "question_en": "In the simple probabilistic model of multiprogramming, each process spends a fraction p of its time waiting for I/O, so CPU utilisation = 1 − pⁿ for n processes in memory. If every process waits for I/O 80% of the time and 3 processes are in memory, the CPU utilisation is about:",
+    "options": [
+      {
+        "en": "51.2%"
+      },
+      {
+        "en": "48.8%"
+      },
+      {
+        "en": "60.0%"
+      },
+      {
+        "en": "20.0%"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The CPU is idle only when all 3 processes are waiting for I/O at the same time, with probability 0.8³ = 0.512. So utilisation = 1 − 0.512 = 0.488, i.e. about 48.8%. The value 51.2% is the idle fraction, not the utilisation.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_intro",
+    "subtopic": "Types of OS - batch",
+    "difficulty": "easy",
+    "question_en": "In a batch operating system:",
+    "options": [
+      {
+        "en": "each user interacts directly with the program while it is running"
+      },
+      {
+        "en": "jobs with similar needs are grouped together and run without user interaction"
+      },
+      {
+        "en": "every task must finish within a strict, fixed deadline or it fails"
+      },
+      {
+        "en": "processing is shared among many computers linked by a network"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "A batch system collects jobs with similar requirements into batches and runs them one after another with no interaction between the user and the job while it runs. Interaction is a feature of time-sharing, deadlines of real-time systems, and networked processing of distributed systems.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_intro",
+    "subtopic": "Types of OS - time sharing",
+    "difficulty": "medium",
+    "question_en": "Time sharing (multitasking) is a logical extension of ______, in which the CPU switches among jobs so frequently that users can interact with each program while it is running.",
+    "options": [
+      {
+        "en": "multiprogramming"
+      },
+      {
+        "en": "batch spooling"
+      },
+      {
+        "en": "real-time processing"
+      },
+      {
+        "en": "distributed processing"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Silberschatz describes time sharing as a logical extension of multiprogramming. Multiprogramming keeps several jobs in memory to keep the CPU busy; time sharing adds very frequent switching so that each user gets a quick, interactive response.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_intro",
+    "subtopic": "Multiprogramming",
+    "difficulty": "easy",
+    "question_en": "The main objective of multiprogramming is to:",
+    "options": [
+      {
+        "en": "allow a single user to run exactly one program at any given time"
+      },
+      {
+        "en": "guarantee that every process meets a strict and fixed deadline"
+      },
+      {
+        "en": "connect several computers so that they share one common clock"
+      },
+      {
+        "en": "increase CPU utilisation by always keeping a job for the CPU to execute"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Multiprogramming keeps several jobs in memory; when one job has to wait (for example for I/O), the OS switches the CPU to another job. Thus the CPU is never idle as long as some job needs to execute, which increases CPU utilisation.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_intro",
+    "subtopic": "Real-time OS - hard vs soft",
+    "difficulty": "medium",
+    "question_en": "Which of the following statements about real-time systems is correct?",
+    "options": [
+      {
+        "en": "A soft real-time system guarantees critical tasks finish on time; a hard one only gives them priority"
+      },
+      {
+        "en": "A hard real-time system guarantees critical tasks finish on time; a soft one only gives them priority"
+      },
+      {
+        "en": "Both hard and soft real-time systems allow a critical deadline to be missed now and then"
+      },
+      {
+        "en": "Real-time systems are meant only for batch jobs that have no time limits of any kind"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "A hard real-time system guarantees that critical real-time tasks are completed within their deadlines; a missed deadline is a system failure. A soft real-time system only gives critical tasks priority over other tasks and retains that priority until they complete, so an occasional missed deadline is tolerable.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_intro",
+    "subtopic": "Real-time OS - examples",
+    "difficulty": "easy",
+    "question_en": "Which of the following is the BEST example of a soft real-time system?",
+    "options": [
+      {
+        "en": "Car air-bag deployment control"
+      },
+      {
+        "en": "Industrial robot-arm controller"
+      },
+      {
+        "en": "Live audio and video streaming"
+      },
+      {
+        "en": "Missile guidance system"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "In multimedia streaming an occasional late frame only lowers quality, so it is a soft real-time application. Air-bag control, robot-arm control and missile guidance must meet every deadline, so they are hard real-time systems.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_intro",
+    "subtopic": "Types of OS - distributed",
+    "difficulty": "medium",
+    "question_en": "A distributed operating system is best characterised as one in which:",
+    "options": [
+      {
+        "en": "two or more processors share one memory and one clock inside a single computer"
+      },
+      {
+        "en": "physically separate computers, each with its own memory, cooperate over a network"
+      },
+      {
+        "en": "jobs are collected on tape and processed one batch at a time without interaction"
+      },
+      {
+        "en": "a single CPU switches rapidly between several interactive users at terminals"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "A distributed system is a collection of physically separate, possibly heterogeneous computer systems, each with its own local memory, networked to give users access to shared resources. Sharing one memory and clock describes a tightly coupled multiprocessor system instead.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_intro",
+    "subtopic": "Multiprocessor systems",
+    "difficulty": "hard",
+    "question_en": "Match List I with List II:\nList I | List II\nI. Asymmetric multiprocessing | 1. Each processor performs all tasks, including operating-system functions\nII. Symmetric multiprocessing (SMP) | 2. A boss processor schedules and allocates work to worker processors\nIII. Graceful degradation | 3. Service continues in proportion to the level of surviving hardware\nIV. Clustered system | 4. Separate systems joined by a LAN that typically share storage",
+    "options": [
+      {
+        "en": "I-1, II-2, III-3, IV-4"
+      },
+      {
+        "en": "I-2, II-1, III-3, IV-4"
+      },
+      {
+        "en": "I-2, II-1, III-4, IV-3"
+      },
+      {
+        "en": "I-1, II-2, III-4, IV-3"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Asymmetric multiprocessing uses a boss–worker relationship, while in SMP every processor is a peer that performs all tasks. Graceful degradation is the ability to keep providing service proportional to the surviving hardware, and a clustered system joins separate computers, usually over a LAN with shared storage.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_intro",
+    "subtopic": "Dual-mode operation",
+    "difficulty": "medium",
+    "question_en": "In dual-mode operation, the hardware mode bit indicates the current mode. Its value is:",
+    "options": [
+      {
+        "en": "1 for kernel mode and 0 for user mode"
+      },
+      {
+        "en": "0 for kernel mode and 1 for user mode"
+      },
+      {
+        "en": "0 for both kernel mode and user mode"
+      },
+      {
+        "en": "1 for both kernel mode and user mode"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "A mode bit is added to the hardware: kernel (supervisor/privileged) mode = 0 and user mode = 1. On a trap or interrupt the hardware switches from user mode to kernel mode by setting the bit to 0, and the OS sets it back to 1 before passing control to a user program.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_intro",
+    "subtopic": "Privileged instructions",
+    "difficulty": "hard",
+    "question_en": "Which of the following instructions need NOT be privileged?",
+    "options": [
+      {
+        "en": "Set the value of the timer"
+      },
+      {
+        "en": "Read the system clock"
+      },
+      {
+        "en": "Turn off interrupts"
+      },
+      {
+        "en": "Issue direct I/O to a device"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Instructions that could harm the system—setting the timer, disabling interrupts, performing I/O directly—are privileged and can run only in kernel mode. Merely reading the clock cannot damage the system or other users, so it can safely be executed in user mode.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_intro",
+    "subtopic": "Interrupts and traps",
+    "difficulty": "medium",
+    "question_en": "A software-generated interrupt, caused either by an error (such as division by zero) or by a specific request from a user program for an operating-system service, is called a(n):",
+    "options": [
+      {
+        "en": "hardware interrupt"
+      },
+      {
+        "en": "context switch"
+      },
+      {
+        "en": "trap (exception)"
+      },
+      {
+        "en": "DMA transfer"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "A trap or exception is a software-generated interrupt caused by an error or by a user program requesting an OS service (a system call). Hardware interrupts come from devices through signals to the CPU, and DMA is a way for devices to move data without the CPU.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_intro",
+    "subtopic": "OS services",
+    "difficulty": "medium",
+    "question_en": "Silberschatz divides OS services into those that help the user and those that ensure the efficient operation of the system itself. Which service belongs to the SECOND group?",
+    "options": [
+      {
+        "en": "User interface"
+      },
+      {
+        "en": "Program execution"
+      },
+      {
+        "en": "Resource allocation"
+      },
+      {
+        "en": "File-system manipulation"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Services for the user include the user interface, program execution, I/O operations, file-system manipulation, communications and error detection. Services for efficient operation of the system itself are resource allocation, logging (accounting), and protection and security.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "os_intro",
+    "subtopic": "OS services",
+    "difficulty": "easy",
+    "question_en": "Which of the following is NOT a service provided by an operating system?",
+    "options": [
+      {
+        "en": "Detecting errors in hardware and in programs"
+      },
+      {
+        "en": "Loading programs into memory and running them"
+      },
+      {
+        "en": "Performing I/O operations requested by programs"
+      },
+      {
+        "en": "Correcting the logical errors in a user's algorithm"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Error detection, program execution and I/O operations are standard OS services. The OS can report run-time errors, but finding and correcting logic errors in an algorithm is the programmer's job, not a service of the operating system.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "os_intro",
+    "subtopic": "System calls",
+    "difficulty": "easy",
+    "question_en": "System calls provide:",
+    "options": [
+      {
+        "en": "a method for the compiler to optimise the loops in source code"
+      },
+      {
+        "en": "a hardware path that bypasses the CPU for all disk transfers"
+      },
+      {
+        "en": "a record of the commands a user has typed at the shell prompt"
+      },
+      {
+        "en": "an interface to the services made available by an operating system"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "System calls provide an interface to the services made available by the operating system; they are the way a running program requests a service from the kernel. They are usually reached through an API such as POSIX or the Windows API.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "os_intro",
+    "subtopic": "System call categories",
+    "difficulty": "medium",
+    "question_en": "Match the system calls (List I) with their category (List II):\nList I | List II\nI. wait event, signal event | 1. File management\nII. open, close, read, write | 2. Information maintenance\nIII. get time or date, set system data | 3. Communications\nIV. send, receive messages | 4. Process control",
+    "options": [
+      {
+        "en": "I-4, II-1, III-3, IV-2"
+      },
+      {
+        "en": "I-4, II-1, III-2, IV-3"
+      },
+      {
+        "en": "I-1, II-4, III-2, IV-3"
+      },
+      {
+        "en": "I-2, II-1, III-4, IV-3"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "In Silberschatz's list, wait event/signal event are process-control calls, and open/close/read/write are file-management calls. Get time or date and set system data are information-maintenance calls, while send/receive messages are communication calls.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "os_intro",
+    "subtopic": "System call categories - communications",
+    "difficulty": "medium",
+    "question_en": "In Silberschatz's classification, the system calls \"create, delete communication connection\" and \"attach or detach remote devices\" belong to which category?",
+    "options": [
+      {
+        "en": "Device management"
+      },
+      {
+        "en": "Information maintenance"
+      },
+      {
+        "en": "Protection"
+      },
+      {
+        "en": "Communications"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "The communications category contains create/delete communication connection, send/receive messages, transfer status information, and attach or detach remote devices. Device management covers local calls such as request/release device and read/write/reposition.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "os_intro",
+    "subtopic": "System call categories - process control",
+    "difficulty": "medium",
+    "question_en": "The system calls \"allocate and free memory\" and \"wait for time\" fall under which category of system calls?",
+    "options": [
+      {
+        "en": "File management"
+      },
+      {
+        "en": "Process control"
+      },
+      {
+        "en": "Device management"
+      },
+      {
+        "en": "Information maintenance"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Process-control calls include end/abort, load/execute, create/terminate process, get/set process attributes, wait for time, wait event/signal event, and allocate and free memory. Information maintenance only gets or sets data such as the time, date or system data.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "os_intro",
+    "subtopic": "System call parameter passing",
+    "difficulty": "hard",
+    "question_en": "Which of the following is NOT a general method of passing parameters to the operating system during a system call?",
+    "options": [
+      {
+        "en": "Placing them in CPU registers"
+      },
+      {
+        "en": "Storing them in a memory block and passing its address"
+      },
+      {
+        "en": "Embedding them in the interrupt vector table"
+      },
+      {
+        "en": "Pushing them onto the stack"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Silberschatz lists three methods: pass the parameters in registers, store them in a block or table in memory and pass the block's address in a register, or push them onto the stack for the OS to pop. The interrupt vector only holds addresses of interrupt service routines, not call parameters.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_intro",
+    "subtopic": "Monolithic vs microkernel",
+    "difficulty": "medium",
+    "question_en": "Which of the following statements about a microkernel is TRUE?",
+    "options": [
+      {
+        "en": "All operating-system services run together in one large kernel address space"
+      },
+      {
+        "en": "It is faster than a monolithic kernel because it never has to pass messages"
+      },
+      {
+        "en": "Most services run as user-level processes that communicate by message passing"
+      },
+      {
+        "en": "Adding any new service always requires modifying and rebuilding the kernel"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "A microkernel keeps only minimal functions (process and memory management, communication) in the kernel and moves other services to user space, where they communicate through message passing. This makes it small, easy to extend and more reliable, but the message-passing overhead makes it slower than a monolithic kernel, which runs everything in a single address space.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "os_intro",
+    "subtopic": "Layered approach",
+    "difficulty": "medium",
+    "question_en": "In the layered approach to OS design, layer 0 is the hardware and the highest layer is the user interface. The main advantage of this approach is:",
+    "options": [
+      {
+        "en": "simplicity of construction and debugging"
+      },
+      {
+        "en": "the fastest possible system-call execution"
+      },
+      {
+        "en": "no need to decide carefully what goes in each layer"
+      },
+      {
+        "en": "freedom for any layer to call the layers above it"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Each layer uses only the functions and services of lower layers, so layers can be built and debugged one at a time—this simplicity of construction and debugging is the main advantage. The drawbacks are the difficulty of defining the layers properly and lower performance, since a request may have to pass through several layers.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_intro",
+    "subtopic": "Modular kernel",
+    "difficulty": "medium",
+    "question_en": "Modern kernels such as Linux and Solaris link in additional services (for example, device drivers and file systems) at boot time or run time through:",
+    "options": [
+      {
+        "en": "loadable kernel modules"
+      },
+      {
+        "en": "batch job-control cards"
+      },
+      {
+        "en": "a fixed single-image kernel"
+      },
+      {
+        "en": "hardware interrupt vectors"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The modular approach uses loadable kernel modules: the kernel has a set of core components and links in additional services dynamically. It is like a layered system in having defined interfaces, but more flexible because any module can call any other module.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_intro",
+    "subtopic": "Booting",
+    "difficulty": "easy",
+    "question_en": "The small program that runs when the computer is powered on, initialises the system and loads the operating-system kernel into memory, and is usually stored in ROM or EEPROM (firmware), is the:",
+    "options": [
+      {
+        "en": "dispatcher"
+      },
+      {
+        "en": "command interpreter"
+      },
+      {
+        "en": "device driver"
+      },
+      {
+        "en": "bootstrap program"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Booting is starting a computer by loading the kernel. The bootstrap program (bootstrap loader), kept in firmware, initialises CPU registers, device controllers and memory, then locates the kernel, loads it into main memory and starts its execution.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_intro",
+    "subtopic": "OS history",
+    "difficulty": "easy",
+    "question_en": "The UNIX operating system was originally developed at Bell Labs by:",
+    "options": [
+      {
+        "en": "Ken Thompson and Dennis Ritchie"
+      },
+      {
+        "en": "Linus Torvalds and Richard Stallman"
+      },
+      {
+        "en": "Bill Gates and Paul Allen"
+      },
+      {
+        "en": "Andrew Tanenbaum and Edsger Dijkstra"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "UNIX was developed at AT&T Bell Labs around 1969–1970 by Ken Thompson and Dennis Ritchie, and Ritchie's C language was later used to rewrite it. Linus Torvalds created the Linux kernel in 1991, and Tanenbaum wrote the MINIX teaching OS.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_process",
+    "subtopic": "Process vs program",
+    "difficulty": "easy",
+    "question_en": "A program is a ______ entity, whereas a process is an ______ entity.",
+    "options": [
+      {
+        "en": "active; passive"
+      },
+      {
+        "en": "passive; active"
+      },
+      {
+        "en": "active; active"
+      },
+      {
+        "en": "passive; passive"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "A program is a passive entity, such as a file containing a list of instructions stored on disk. A process is an active entity—a program in execution with a program counter and a set of associated resources; a program becomes a process when it is loaded into memory.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_process",
+    "subtopic": "Process memory layout",
+    "difficulty": "easy",
+    "question_en": "Which section of a process in memory holds memory that is dynamically allocated during run time, for example by malloc()?",
+    "options": [
+      {
+        "en": "Heap"
+      },
+      {
+        "en": "Stack"
+      },
+      {
+        "en": "Text section"
+      },
+      {
+        "en": "Data section"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "A process in memory has a text section (code), a data section (global variables), a heap (memory dynamically allocated at run time) and a stack (temporary data such as function parameters, return addresses and local variables). The heap and stack grow towards each other.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_process",
+    "subtopic": "Process states",
+    "difficulty": "easy",
+    "question_en": "Match the process states with their meanings:\nState | Meaning\nI. Waiting | 1. The process has finished execution\nII. Ready | 2. The process is waiting for some event, such as I/O completion\nIII. Terminated | 3. The process is waiting to be assigned to a processor\nIV. Running | 4. Instructions are being executed",
+    "options": [
+      {
+        "en": "I-3, II-2, III-1, IV-4"
+      },
+      {
+        "en": "I-2, II-3, III-4, IV-1"
+      },
+      {
+        "en": "I-2, II-3, III-1, IV-4"
+      },
+      {
+        "en": "I-1, II-3, III-2, IV-4"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Waiting means the process waits for an event (such as I/O completion or a signal); Ready means it waits only for the CPU. Terminated means it has finished execution, and Running means its instructions are being executed.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "os_process",
+    "subtopic": "Process state transitions",
+    "difficulty": "medium",
+    "question_en": "Which of the following state transitions is NOT possible in the standard five-state process model?",
+    "options": [
+      {
+        "en": "Running → Waiting"
+      },
+      {
+        "en": "Waiting → Ready"
+      },
+      {
+        "en": "Waiting → Running"
+      },
+      {
+        "en": "Ready → Running"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "When the event a waiting process needs occurs, it goes to the Ready state; it must then be selected by the scheduler before it can run. So Waiting → Running directly is not allowed, while Running → Waiting (I/O request), Waiting → Ready (event completes) and Ready → Running (dispatch) are normal transitions.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_process",
+    "subtopic": "Process state transitions",
+    "difficulty": "medium",
+    "question_en": "A running process is moved back to the ready state when:",
+    "options": [
+      {
+        "en": "it issues an I/O request and must wait for the device"
+      },
+      {
+        "en": "a timer interrupt occurs because its time slice has expired"
+      },
+      {
+        "en": "it executes its last statement and calls exit()"
+      },
+      {
+        "en": "the I/O operation it was waiting for is completed"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "An interrupt (such as the timer ending the time quantum) moves a process from Running to Ready. An I/O request moves it from Running to Waiting, exit() moves it to Terminated, and I/O completion moves a Waiting process to Ready.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_process",
+    "subtopic": "Process termination",
+    "difficulty": "medium",
+    "question_en": "Consider the following statements:\nStatement I: A process moves from the waiting state to the ready state when the event it was waiting for occurs.\nStatement II: All the memory allocated to a process is reclaimed by the operating system when the process terminates.\nWhich of the statements given above is/are correct?",
+    "options": [
+      {
+        "en": "Only I"
+      },
+      {
+        "en": "Only II"
+      },
+      {
+        "en": "Neither I nor II"
+      },
+      {
+        "en": "Both I and II"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Statement I is correct: on I/O or event completion a waiting process becomes ready, not running. Statement II is also correct: when a process terminates (for example by calling exit()), all its resources—physical and virtual memory, open files and I/O buffers—are deallocated by the operating system.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "os_process",
+    "subtopic": "Process control block",
+    "difficulty": "easy",
+    "question_en": "Which of the following is NOT normally stored in a process control block (PCB)?",
+    "options": [
+      {
+        "en": "The program counter and the CPU register contents"
+      },
+      {
+        "en": "CPU-scheduling information such as process priority"
+      },
+      {
+        "en": "The source code from which the program was compiled"
+      },
+      {
+        "en": "Memory-management information such as page tables"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "The PCB stores the process state, program counter, CPU registers, CPU-scheduling information, memory-management information, accounting information and I/O status information (such as open files). The source code of the program is not part of a running process's PCB.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_process",
+    "subtopic": "Context switch",
+    "difficulty": "medium",
+    "question_en": "Which of the following statements about context switching is correct?",
+    "options": [
+      {
+        "en": "The system performs useful user work while the switch is in progress"
+      },
+      {
+        "en": "The state of the old process is discarded instead of being saved"
+      },
+      {
+        "en": "Its speed depends on hardware support, such as multiple sets of registers"
+      },
+      {
+        "en": "It is carried out by the long-term scheduler when a job is admitted"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "During a context switch the kernel saves the state of the old process in its PCB and loads the saved state of the new one; this time is pure overhead because no useful work is done. Context-switch time depends heavily on hardware support—some processors provide multiple register sets, so a switch just changes a pointer.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "os_process",
+    "subtopic": "Schedulers - long-term",
+    "difficulty": "easy",
+    "question_en": "The ______ scheduler controls the degree of multiprogramming, that is, the number of processes in memory.",
+    "options": [
+      {
+        "en": "long-term"
+      },
+      {
+        "en": "short-term"
+      },
+      {
+        "en": "medium-term"
+      },
+      {
+        "en": "I/O"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The long-term (job) scheduler selects processes from the job pool on disk and loads them into memory, so it controls the degree of multiprogramming. The short-term (CPU) scheduler only picks which ready process gets the CPU next.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_process",
+    "subtopic": "Schedulers - medium-term",
+    "difficulty": "medium",
+    "question_en": "Removing a process from memory to reduce the degree of multiprogramming, and later bringing it back so that it continues where it left off, is called ______ and is done by the ______ scheduler.",
+    "options": [
+      {
+        "en": "paging; short-term"
+      },
+      {
+        "en": "spooling; long-term"
+      },
+      {
+        "en": "swapping; medium-term"
+      },
+      {
+        "en": "dispatching; short-term"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "The medium-term scheduler swaps a process out of memory (and later swaps it back in) to reduce the degree of multiprogramming or to improve the process mix. Swapping may also be needed when memory becomes over-committed.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_process",
+    "subtopic": "Dispatcher",
+    "difficulty": "medium",
+    "question_en": "Which of the following is NOT a function of the dispatcher?",
+    "options": [
+      {
+        "en": "Switching context from one process to another process"
+      },
+      {
+        "en": "Switching the CPU from kernel mode to user mode"
+      },
+      {
+        "en": "Jumping to the proper location in the user program to restart it"
+      },
+      {
+        "en": "Selecting which new jobs are admitted into memory from the job pool"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "The dispatcher is the module that gives control of the CPU to the process selected by the short-term scheduler: it switches context, switches to user mode and jumps to the proper location in the user program. Admitting new jobs is done by the long-term scheduler. The time the dispatcher takes is called dispatch latency.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "os_process",
+    "subtopic": "fork() return value",
+    "difficulty": "easy",
+    "question_en": "After a successful fork() call, the value returned to the child process is ______ and the value returned to the parent process is ______.",
+    "options": [
+      {
+        "en": "the PID of the parent; 0"
+      },
+      {
+        "en": "1; the PID of the child"
+      },
+      {
+        "en": "0; the PID of the child"
+      },
+      {
+        "en": "−1; the PID of the parent"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "fork() creates a new process that is a copy of the parent and returns twice: 0 in the child and the (non-zero) process identifier of the new child in the parent. A negative value is returned to the parent only if the fork fails.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_process",
+    "subtopic": "exec() system call",
+    "difficulty": "medium",
+    "question_en": "Which statement about the exec() family of system calls (for example execlp()) is correct?",
+    "options": [
+      {
+        "en": "It replaces the calling process's memory image with a new program"
+      },
+      {
+        "en": "It creates a new child process that is a copy of its parent"
+      },
+      {
+        "en": "It makes the parent wait until one of its children terminates"
+      },
+      {
+        "en": "It returns the PID of the newly loaded program to its caller"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "exec() loads a binary file into memory, destroying the memory image of the program that called it, and starts its execution; the PID stays the same. On success it does not return at all. Creating a copy is done by fork(), and waiting for a child is done by wait().",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_process",
+    "subtopic": "wait() system call",
+    "difficulty": "medium",
+    "question_en": "A parent process calls wait(). Which of the following is correct?",
+    "options": [
+      {
+        "en": "It immediately terminates all of the parent's child processes"
+      },
+      {
+        "en": "It makes the child wait until the parent process terminates"
+      },
+      {
+        "en": "It blocks until a child terminates and then returns that child's PID"
+      },
+      {
+        "en": "It loads a new program into the parent's own address space"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "wait() suspends the parent until one of its children terminates; it returns the PID of the terminated child and can collect the child's exit status. This also removes the child's entry from the process table, so it no longer remains a zombie.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_process",
+    "subtopic": "Zombie process",
+    "difficulty": "medium",
+    "question_en": "A process that has terminated but whose parent has not yet called wait() to collect its exit status is called a(n):",
+    "options": [
+      {
+        "en": "zombie process"
+      },
+      {
+        "en": "orphan process"
+      },
+      {
+        "en": "daemon process"
+      },
+      {
+        "en": "init process"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "When a process terminates, its entry in the process table stays until the parent calls wait(), because the table holds its exit status. During this period the process is a zombie; once the parent calls wait(), its PID and table entry are released.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_process",
+    "subtopic": "Orphan process",
+    "difficulty": "medium",
+    "question_en": "If a parent process terminates without calling wait(), its still-running children become ______ and, in traditional UNIX, are adopted by ______.",
+    "options": [
+      {
+        "en": "zombies; the login shell of the user"
+      },
+      {
+        "en": "daemons; the kernel CPU scheduler"
+      },
+      {
+        "en": "orphans; the swapper process (PID 0)"
+      },
+      {
+        "en": "orphans; init (systemd in modern Linux)"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Children whose parent has terminated without invoking wait() are orphans. Traditional UNIX makes the init process (systemd on modern Linux) their new parent; init calls wait() periodically, which collects their exit status and releases their process-table entries.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_process",
+    "subtopic": "fork() count",
+    "difficulty": "easy",
+    "question_en": "How many times is \"OS\" printed when the following program runs? (Assume every fork() succeeds.)\n```c\n#include <stdio.h>\n#include <unistd.h>\nint main() {\n    fork();\n    fork();\n    fork();\n    printf(\"OS\\n\");\n    return 0;\n}\n```",
+    "options": [
+      {
+        "en": "3"
+      },
+      {
+        "en": "8"
+      },
+      {
+        "en": "6"
+      },
+      {
+        "en": "7"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Each fork() doubles the number of processes: 1 → 2 → 4 → 8. All 8 processes (the original plus 7 children) reach printf(), so \"OS\" is printed 2³ = 8 times. In general n unconditional forks give 2ⁿ processes and 2ⁿ − 1 children.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_process",
+    "subtopic": "fork() count",
+    "difficulty": "hard",
+    "question_en": "How many times is \"hi\" printed by the following program? (Assume every fork() succeeds and output is written immediately.)\n```c\n#include <stdio.h>\n#include <unistd.h>\nint main() {\n    int i;\n    for (i = 0; i < 3; i++) {\n        fork();\n        printf(\"hi\\n\");\n    }\n    return 0;\n}\n```",
+    "options": [
+      {
+        "en": "8"
+      },
+      {
+        "en": "6"
+      },
+      {
+        "en": "15"
+      },
+      {
+        "en": "14"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "The printf() is inside the loop, so it runs after each fork. In iteration 0 there are 2 processes (2 prints), in iteration 1 there are 4 (4 prints) and in iteration 2 there are 8 (8 prints). Total = 2 + 4 + 8 = 14.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_process",
+    "subtopic": "fork() count",
+    "difficulty": "hard",
+    "question_en": "How many times is \"A\" printed by the following program? (Assume every fork() succeeds.)\n```c\n#include <stdio.h>\n#include <unistd.h>\nint main() {\n    if (fork() || fork())\n        fork();\n    printf(\"A\\n\");\n    return 0;\n}\n```",
+    "options": [
+      {
+        "en": "5"
+      },
+      {
+        "en": "4"
+      },
+      {
+        "en": "6"
+      },
+      {
+        "en": "3"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The parent gets a non-zero value from the first fork, so || short-circuits, the condition is true and it forks again: 2 prints. The first child gets 0, so it evaluates the second fork; it receives a non-zero value, forks once more and gives 2 prints, while the grandchild created by the second fork gets 0 (condition false) and prints once. Total = 2 + 2 + 1 = 5.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_process",
+    "subtopic": "fork() count",
+    "difficulty": "hard",
+    "question_en": "How many times is \"Z\" printed by the following program? (Assume every fork() succeeds.)\n```c\n#include <stdio.h>\n#include <unistd.h>\nint main() {\n    int i;\n    for (i = 0; i < 4; i++) {\n        if (fork() == 0)\n            break;\n    }\n    printf(\"Z\\n\");\n    return 0;\n}\n```",
+    "options": [
+      {
+        "en": "5"
+      },
+      {
+        "en": "16"
+      },
+      {
+        "en": "4"
+      },
+      {
+        "en": "8"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Each child gets 0 from fork() and immediately breaks out of the loop, so children never create further processes. Only the original parent keeps looping and creates 4 children in total. The parent and its 4 children each print once: 5 times.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_process",
+    "subtopic": "fork() and separate address spaces",
+    "difficulty": "hard",
+    "question_en": "What is the output of the following program? (Assume fork() succeeds.)\n```c\n#include <stdio.h>\n#include <unistd.h>\n#include <sys/wait.h>\nint main() {\n    int x = 5;\n    if (fork() == 0) {\n        x = x + 10;\n        printf(\"%d\\n\", x);\n    } else {\n        wait(NULL);\n        x = x - 2;\n        printf(\"%d\\n\", x);\n    }\n    return 0;\n}\n```",
+    "options": [
+      {
+        "en": "15 then 13"
+      },
+      {
+        "en": "3 then 15"
+      },
+      {
+        "en": "13 then 15"
+      },
+      {
+        "en": "15 then 3"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "After fork() the child gets its own copy of the address space, so changing x in the child does not affect the parent's x. The parent waits for the child, so the child prints 5 + 10 = 15 first; then the parent prints its own 5 − 2 = 3.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_process",
+    "subtopic": "fork and join",
+    "difficulty": "medium",
+    "question_en": "In the fork–join construct for concurrent programming, the join instruction is used to:",
+    "options": [
+      {
+        "en": "split one computation into two computations that run in parallel"
+      },
+      {
+        "en": "move a process from the ready queue to the running state"
+      },
+      {
+        "en": "recombine two or more concurrent computations into a single one"
+      },
+      {
+        "en": "permanently delete the PCB of a process that has finished"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "fork splits a single computation into two concurrent computations, and join recombines concurrent computations into one—the computation after join continues only when all the joined branches have finished. Used together, fork and join express a complete concurrent subroutine.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "os_process",
+    "subtopic": "IPC - shared memory vs message passing",
+    "difficulty": "medium",
+    "question_en": "Which statement comparing shared memory and message passing for interprocess communication is correct?",
+    "options": [
+      {
+        "en": "Shared memory needs system calls only to set up the region; message passing usually needs one per message"
+      },
+      {
+        "en": "Message passing is always faster than shared memory because it never involves the kernel at all"
+      },
+      {
+        "en": "Shared memory cannot be used by cooperating processes that run on the same computer system"
+      },
+      {
+        "en": "With shared memory the kernel must copy every byte that one process sends to the other one"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "In shared memory, system calls are needed only to establish the shared region; after that, accesses are ordinary memory accesses with no kernel help, so it can be faster. Message passing is typically implemented with system calls (kernel intervention) for each send and receive, but it is easier to implement and is useful for smaller amounts of data and in distributed systems.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_process",
+    "subtopic": "IPC - sockets",
+    "difficulty": "easy",
+    "question_en": "A socket, used for communication between processes over a network, is defined as:",
+    "options": [
+      {
+        "en": "a pipe that can be shared only between a parent and its child process"
+      },
+      {
+        "en": "an endpoint for communication, identified by an IP address and a port number"
+      },
+      {
+        "en": "a block of memory shared by cooperating processes on a single machine"
+      },
+      {
+        "en": "a signal that notifies a process that a particular event has happened"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "A socket is defined as an endpoint for communication; a pair of processes communicating over a network uses a pair of sockets, one per process. A socket is identified by an IP address concatenated with a port number, for example 161.25.19.8:1625.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "os_process",
+    "subtopic": "IPC - pipes",
+    "difficulty": "hard",
+    "question_en": "Which of the following statements about pipes is correct?",
+    "options": [
+      {
+        "en": "An ordinary pipe is two-way and can be used by any unrelated processes on the system"
+      },
+      {
+        "en": "An ordinary pipe is one-way and needs a parent–child relationship; a named pipe does not"
+      },
+      {
+        "en": "A named pipe (FIFO) ceases to exist as soon as the process that created it terminates"
+      },
+      {
+        "en": "Pipes can be used only between processes running on different computers in a network"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "An ordinary (anonymous) pipe allows one-way, producer–consumer communication and requires a parent–child relationship; it exists only while the processes use it. A named pipe (FIFO) appears in the file system, needs no parent–child relationship, and continues to exist after the communicating processes have finished.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_process",
+    "subtopic": "IPC - signals",
+    "difficulty": "medium",
+    "question_en": "Which signal in UNIX/Linux can be neither caught nor ignored by a process?",
+    "options": [
+      {
+        "en": "SIGINT"
+      },
+      {
+        "en": "SIGTERM"
+      },
+      {
+        "en": "SIGCHLD"
+      },
+      {
+        "en": "SIGKILL"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "A signal notifies a process that a particular event has occurred, and most signals can be handled by a user-defined handler or ignored. SIGKILL (signal 9, sent by kill -9) and SIGSTOP cannot be caught, blocked or ignored, so SIGKILL always terminates the process.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_process",
+    "subtopic": "Threads - shared resources",
+    "difficulty": "medium",
+    "question_en": "Threads that belong to the same process share which of the following?",
+    "options": [
+      {
+        "en": "Stack, register set and program counter"
+      },
+      {
+        "en": "Thread ID and its own private stack"
+      },
+      {
+        "en": "Program counter and the data section only"
+      },
+      {
+        "en": "Code section, data section and open files"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "A thread is a basic unit of CPU utilisation with its own thread ID, program counter, register set and stack. It shares with the other threads of the same process its code section, data section and other OS resources such as open files and signals.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_process",
+    "subtopic": "Threads - benefits",
+    "difficulty": "easy",
+    "question_en": "Which of the following is NOT one of the benefits of multithreaded programming listed by Silberschatz?",
+    "options": [
+      {
+        "en": "Guaranteed absence of race conditions"
+      },
+      {
+        "en": "Responsiveness to the user"
+      },
+      {
+        "en": "Sharing of process resources"
+      },
+      {
+        "en": "Economy in creation and switching"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The four benefits are responsiveness, resource sharing, economy (threads are cheaper to create and switch than processes) and scalability on multicore systems. Because threads share data, multithreaded programs are actually more prone to race conditions and need synchronisation.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_process",
+    "subtopic": "Threads - many-to-one model",
+    "difficulty": "hard",
+    "question_en": "In the many-to-one multithreading model:",
+    "options": [
+      {
+        "en": "threads of one process can run in parallel on several cores"
+      },
+      {
+        "en": "each user thread is mapped to its own separate kernel thread"
+      },
+      {
+        "en": "a blocking system call by one thread blocks the entire process"
+      },
+      {
+        "en": "the kernel schedules every user thread of a process separately"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "The many-to-one model maps many user-level threads to a single kernel thread; thread management is done by a user-space library. Because only one thread can access the kernel at a time, a blocking system call blocks the whole process, and the threads cannot run in parallel on multicore systems.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_process",
+    "subtopic": "Threads - multithreading models",
+    "difficulty": "medium",
+    "question_en": "Modern Linux and Windows operating systems implement which multithreading model?",
+    "options": [
+      {
+        "en": "Many-to-one"
+      },
+      {
+        "en": "Many-to-many"
+      },
+      {
+        "en": "One-to-one"
+      },
+      {
+        "en": "Two-level"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Linux and the Windows family use the one-to-one model, which maps each user thread to a kernel thread. This allows more concurrency (another thread can run when one blocks) and parallelism on multiprocessors; the cost is creating a kernel thread for every user thread.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sched",
+    "subtopic": "Scheduling terms",
+    "difficulty": "easy",
+    "question_en": "Which of the following definitions is CORRECT?",
+    "options": [
+      {
+        "en": "Response time: time from submission of a request until the first response is produced"
+      },
+      {
+        "en": "Waiting time: total time from the arrival of a process until its completion"
+      },
+      {
+        "en": "Turnaround time: time a process spends waiting only in the ready queue"
+      },
+      {
+        "en": "Burst time: time a process waits before it gets the CPU for the first time"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Response time is the time from submission of a request until the first response is produced. Waiting time is the total time spent waiting in the ready queue, turnaround time is completion time − arrival time, and burst time is the CPU time the process needs to execute.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "os_sched",
+    "subtopic": "Scheduling criteria",
+    "difficulty": "easy",
+    "question_en": "A CPU-scheduling algorithm is considered better if it:",
+    "options": [
+      {
+        "en": "maximises waiting time and turnaround time and minimises throughput"
+      },
+      {
+        "en": "maximises turnaround time and minimises CPU utilisation and throughput"
+      },
+      {
+        "en": "minimises CPU utilisation and throughput and maximises response time"
+      },
+      {
+        "en": "maximises CPU utilisation and throughput and minimises waiting time"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "It is desirable to maximise CPU utilisation and throughput (number of processes completed per time unit) and to minimise turnaround time, waiting time and response time. Hence a good scheduler has high throughput and low turnaround time.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "os_sched",
+    "subtopic": "Preemptive vs non-preemptive",
+    "difficulty": "hard",
+    "question_en": "CPU-scheduling decisions may take place when a process (1) switches from running to waiting, (2) switches from running to ready, (3) switches from waiting to ready, or (4) terminates. Scheduling is non-preemptive (cooperative) when decisions are made only under:",
+    "options": [
+      {
+        "en": "circumstances 2 and 3"
+      },
+      {
+        "en": "circumstances 1 and 4"
+      },
+      {
+        "en": "circumstances 1 and 3"
+      },
+      {
+        "en": "circumstances 2 and 4"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "In circumstances 1 and 4 there is no choice—a new process must be selected because the running process has given up the CPU. If scheduling happens only then, it is non-preemptive: a process keeps the CPU until it terminates or switches to waiting. Scheduling under circumstances 2 and 3 as well is preemptive.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sched",
+    "subtopic": "Non-preemptive algorithms",
+    "difficulty": "easy",
+    "question_en": "Which of the following scheduling algorithms is inherently non-preemptive?",
+    "options": [
+      {
+        "en": "Round Robin (RR) scheduling"
+      },
+      {
+        "en": "Shortest Remaining Time First"
+      },
+      {
+        "en": "First-Come, First-Served (FCFS)"
+      },
+      {
+        "en": "Preemptive priority scheduling"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Under FCFS, once the CPU is allocated to a process, the process keeps it until it terminates or requests I/O, so FCFS is non-preemptive. RR, SRTF and preemptive priority scheduling all take the CPU away from a running process.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sched",
+    "subtopic": "SJF scheduling",
+    "difficulty": "medium",
+    "question_en": "SJF scheduling is provably optimal because it gives the minimum average waiting time for a given set of processes. Its main practical difficulty is that:",
+    "options": [
+      {
+        "en": "it needs a time quantum that is very hard to choose well"
+      },
+      {
+        "en": "it cannot be used when all the jobs arrive at the same time"
+      },
+      {
+        "en": "it always causes the convoy effect for the short processes"
+      },
+      {
+        "en": "the length of the next CPU burst is not known in advance"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "The real difficulty with SJF is knowing the length of the next CPU request. For short-term scheduling it can only be approximated—typically by predicting the next burst as an exponential average of the measured lengths of previous bursts.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sched",
+    "subtopic": "Convoy effect",
+    "difficulty": "easy",
+    "question_en": "The convoy effect, in which many short processes wait for one long CPU-bound process to release the CPU, is associated with which scheduling algorithm?",
+    "options": [
+      {
+        "en": "SRTF"
+      },
+      {
+        "en": "Round Robin"
+      },
+      {
+        "en": "Multilevel feedback queue"
+      },
+      {
+        "en": "FCFS"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Under FCFS, if a big CPU-bound process gets the CPU, all the short I/O-bound processes pile up behind it, which lowers CPU and device utilisation. This is the convoy effect; preemptive algorithms such as SRTF and RR avoid it.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sched",
+    "subtopic": "Starvation and aging",
+    "difficulty": "easy",
+    "question_en": "Gradually increasing the priority of processes that wait in the system for a long time, so that they are not blocked indefinitely, is called:",
+    "options": [
+      {
+        "en": "thrashing"
+      },
+      {
+        "en": "swapping"
+      },
+      {
+        "en": "aging"
+      },
+      {
+        "en": "spooling"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Priority scheduling can cause indefinite blocking (starvation) of low-priority processes. Aging solves this by slowly raising the priority of a waiting process—for example by 1 every 15 minutes—so it eventually gets the highest priority and runs.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sched",
+    "subtopic": "Round Robin - time quantum",
+    "difficulty": "medium",
+    "question_en": "In Round Robin scheduling, if the time quantum is made extremely large, the policy behaves like ______; if it is made extremely small, ______.",
+    "options": [
+      {
+        "en": "FCFS; context-switch overhead becomes very large"
+      },
+      {
+        "en": "SJF; throughput becomes extremely large"
+      },
+      {
+        "en": "priority scheduling; starvation disappears"
+      },
+      {
+        "en": "SRTF; response time becomes very poor"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "If the quantum is larger than every CPU burst, no process is ever preempted, so RR becomes FCFS. If it is extremely small, the CPU spends a large share of its time context switching, so the quantum should be large compared with the context-switch time (rule of thumb: about 80% of CPU bursts shorter than the quantum).",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sched",
+    "subtopic": "Multilevel feedback queue",
+    "difficulty": "medium",
+    "question_en": "The key difference between multilevel feedback queue (MLFQ) scheduling and multilevel queue (MLQ) scheduling is that in MLFQ:",
+    "options": [
+      {
+        "en": "a process is permanently assigned to one queue when it enters the system"
+      },
+      {
+        "en": "only one ready queue is kept for all the processes in the system"
+      },
+      {
+        "en": "a process can move between queues according to its CPU-burst behaviour"
+      },
+      {
+        "en": "every queue must be scheduled strictly by the FCFS algorithm"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "In MLQ, processes are permanently assigned to one queue (for example foreground or background). MLFQ allows a process to move between queues: a process using too much CPU time moves to a lower-priority queue, and one that waits too long can be moved to a higher-priority queue (aging).",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sched",
+    "subtopic": "HRRN scheduling",
+    "difficulty": "medium",
+    "question_en": "In Highest Response Ratio Next (HRRN) scheduling, the response ratio of a waiting process is computed as:",
+    "options": [
+      {
+        "en": "Service time / (Waiting time + Service time)"
+      },
+      {
+        "en": "(Waiting time − Service time) / Waiting time"
+      },
+      {
+        "en": "Waiting time × Service time"
+      },
+      {
+        "en": "(Waiting time + Service time) / Service time"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "HRRN is non-preemptive; whenever the CPU becomes free it runs the process with the highest ratio (W + S) / S, where W is the time spent waiting and S is the expected service (burst) time. Short jobs get high ratios, but a long job's ratio keeps rising as it waits, so starvation is avoided.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sched",
+    "subtopic": "Starvation",
+    "difficulty": "medium",
+    "question_en": "Which of the following scheduling algorithms can NOT cause starvation of a process?",
+    "options": [
+      {
+        "en": "Shortest Job First"
+      },
+      {
+        "en": "Shortest Remaining Time First"
+      },
+      {
+        "en": "Round Robin"
+      },
+      {
+        "en": "Preemptive priority"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "In Round Robin every ready process gets a time quantum in turn, so with n processes and quantum q no process waits more than (n − 1) × q time units. SJF and SRTF can keep postponing long jobs, and priority scheduling can keep postponing low-priority jobs.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sched",
+    "subtopic": "SRTF scheduling",
+    "difficulty": "easy",
+    "question_en": "Shortest-Remaining-Time-First (SRTF) scheduling is the preemptive version of:",
+    "options": [
+      {
+        "en": "FCFS scheduling"
+      },
+      {
+        "en": "Round Robin scheduling"
+      },
+      {
+        "en": "SJF scheduling"
+      },
+      {
+        "en": "HRRN scheduling"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "SJF can be preemptive or non-preemptive. When a newly arrived process has a shorter next CPU burst than what is left of the currently running process, preemptive SJF preempts the running process; this is called shortest-remaining-time-first scheduling.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sched",
+    "subtopic": "FCFS numerical",
+    "difficulty": "easy",
+    "question_en": "Consider the following processes (times in ms), scheduled by FCFS:\nProcess | Arrival time | Burst time\nP1 | 0 | 7\nP2 | 2 | 4\nP3 | 3 | 1\nP4 | 6 | 3\nWhat is the average waiting time?",
+    "options": [
+      {
+        "en": "3.75 ms"
+      },
+      {
+        "en": "8.50 ms"
+      },
+      {
+        "en": "5.25 ms"
+      },
+      {
+        "en": "4.75 ms"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Gantt chart: P1 0–7 | P2 7–11 | P3 11–12 | P4 12–15. Waiting time = start − arrival: P1 = 0, P2 = 5, P3 = 8, P4 = 6. Average = 19 / 4 = 4.75 ms (8.50 ms is the average turnaround time).",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sched",
+    "subtopic": "SJF numerical",
+    "difficulty": "medium",
+    "question_en": "Consider the following processes (times in ms), scheduled by non-preemptive SJF:\nProcess | Arrival time | Burst time\nP1 | 0 | 6\nP2 | 1 | 8\nP3 | 2 | 3\nP4 | 3 | 2\nWhat is the average turnaround time?",
+    "options": [
+      {
+        "en": "4.75 ms"
+      },
+      {
+        "en": "10.25 ms"
+      },
+      {
+        "en": "9.50 ms"
+      },
+      {
+        "en": "12.50 ms"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Only P1 is present at time 0, so it runs 0–6. Then the shortest of the waiting jobs runs: P4 6–8, P3 8–11, P2 11–19. Turnaround = completion − arrival: P1 = 6, P2 = 18, P3 = 9, P4 = 5, so average = 38 / 4 = 9.50 ms.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sched",
+    "subtopic": "SRTF numerical",
+    "difficulty": "hard",
+    "question_en": "Consider the following processes (times in ms), scheduled by preemptive SJF (SRTF):\nProcess | Arrival time | Burst time\nP1 | 0 | 9\nP2 | 1 | 4\nP3 | 2 | 2\nP4 | 4 | 5\nWhat is the average waiting time?",
+    "options": [
+      {
+        "en": "7.00 ms"
+      },
+      {
+        "en": "4.00 ms"
+      },
+      {
+        "en": "9.00 ms"
+      },
+      {
+        "en": "7.50 ms"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Gantt chart: P1 0–1 | P2 1–2 | P3 2–4 | P2 4–7 | P4 7–12 | P1 12–20. Completion times: P1 = 20, P2 = 7, P3 = 4, P4 = 12. Waiting = turnaround − burst: P1 = 11, P2 = 2, P3 = 0, P4 = 3, so average = 16 / 4 = 4.00 ms.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sched",
+    "subtopic": "Round Robin numerical",
+    "difficulty": "hard",
+    "question_en": "Consider the following processes (times in ms), scheduled by Round Robin with a time quantum of 2 ms. A process arriving at the same instant that a quantum expires joins the ready queue before the preempted process.\nProcess | Arrival time | Burst time\nP1 | 0 | 5\nP2 | 1 | 3\nP3 | 2 | 1\nP4 | 3 | 4\nWhat is the average turnaround time?",
+    "options": [
+      {
+        "en": "8.25 ms"
+      },
+      {
+        "en": "7.25 ms"
+      },
+      {
+        "en": "5.00 ms"
+      },
+      {
+        "en": "9.00 ms"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Gantt chart: P1 0–2 | P2 2–4 | P3 4–5 | P1 5–7 | P4 7–9 | P2 9–10 | P1 10–11 | P4 11–13. Completion times: P1 = 11, P2 = 10, P3 = 5, P4 = 13. Turnaround: P1 = 11, P2 = 9, P3 = 3, P4 = 10, so average = 33 / 4 = 8.25 ms.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sched",
+    "subtopic": "Round Robin context switches",
+    "difficulty": "medium",
+    "question_en": "Three processes arrive at time 0 in the order P1, P2, P3 with CPU bursts of 8, 4 and 5 ms. They are scheduled by Round Robin with a quantum of 3 ms. Counting a context switch each time the CPU passes from one process to a different process (ignore the first dispatch and the final exit), how many context switches occur?",
+    "options": [
+      {
+        "en": "7"
+      },
+      {
+        "en": "6"
+      },
+      {
+        "en": "5"
+      },
+      {
+        "en": "8"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Gantt chart: P1 0–3 | P2 3–6 | P3 6–9 | P1 9–12 | P2 12–13 | P3 13–15 | P1 15–17. There are 7 slots, so the CPU passes between different processes 7 − 1 = 6 times.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sched",
+    "subtopic": "Priority scheduling numerical",
+    "difficulty": "medium",
+    "question_en": "Consider the following processes (times in ms; a smaller number means a higher priority), scheduled by preemptive priority scheduling:\nProcess | Arrival time | Burst time | Priority\nP1 | 0 | 6 | 3\nP2 | 1 | 3 | 1\nP3 | 2 | 4 | 4\nP4 | 3 | 2 | 2\nAt what time does P1 complete?",
+    "options": [
+      {
+        "en": "6 ms"
+      },
+      {
+        "en": "15 ms"
+      },
+      {
+        "en": "9 ms"
+      },
+      {
+        "en": "11 ms"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Gantt chart: P1 0–1 | P2 1–4 (priority 1 preempts P1) | P4 4–6 | P1 6–11 | P3 11–15. P1 runs 1 ms, then waits while P2 and P4 run, and finishes its remaining 5 ms at 11 ms.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sched",
+    "subtopic": "Priority scheduling numerical",
+    "difficulty": "medium",
+    "question_en": "Consider the following processes (times in ms; a smaller number means a higher priority), scheduled by non-preemptive priority scheduling:\nProcess | Arrival time | Burst time | Priority\nP1 | 0 | 4 | 3\nP2 | 1 | 5 | 2\nP3 | 2 | 2 | 1\nP4 | 3 | 6 | 4\nWhat is the average waiting time?",
+    "options": [
+      {
+        "en": "4.50 ms"
+      },
+      {
+        "en": "4.25 ms"
+      },
+      {
+        "en": "8.00 ms"
+      },
+      {
+        "en": "3.75 ms"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "P1 is alone at time 0 and, being non-preemptive, runs 0–4. Then by priority: P3 4–6, P2 6–11, P4 11–17. Waiting = start − arrival: P1 = 0, P3 = 2, P2 = 5, P4 = 8, so average = 15 / 4 = 3.75 ms.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sched",
+    "subtopic": "HRRN numerical",
+    "difficulty": "hard",
+    "question_en": "Consider the following processes (times in ms), scheduled by Highest Response Ratio Next (HRRN):\nProcess | Arrival time | Burst time\nA | 0 | 4\nB | 1 | 6\nC | 2 | 3\nD | 3 | 5\nIn what order do the processes execute?",
+    "options": [
+      {
+        "en": "A, C, D, B"
+      },
+      {
+        "en": "A, B, C, D"
+      },
+      {
+        "en": "A, C, B, D"
+      },
+      {
+        "en": "A, D, C, B"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "A runs 0–4. At t = 4 the ratios (W + S)/S are B = (3 + 6)/6 = 1.5, C = (2 + 3)/3 ≈ 1.67, D = (1 + 5)/5 = 1.2, so C runs 4–7. At t = 7, B = (6 + 6)/6 = 2.0 and D = (4 + 5)/5 = 1.8, so B runs 7–13 and D runs 13–18.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sched",
+    "subtopic": "Round Robin numerical",
+    "difficulty": "medium",
+    "question_en": "Three processes P1, P2 and P3 arrive at time 0 in that order with CPU bursts of 10, 5 and 7 ms. Using Round Robin with a time quantum of 4 ms, what is the completion time of P3?",
+    "options": [
+      {
+        "en": "22 ms"
+      },
+      {
+        "en": "17 ms"
+      },
+      {
+        "en": "15 ms"
+      },
+      {
+        "en": "20 ms"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Gantt chart: P1 0–4 | P2 4–8 | P3 8–12 | P1 12–16 | P2 16–17 | P3 17–20 | P1 20–22. P3 finishes its last 3 ms at 20 ms.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sched",
+    "subtopic": "SRTF numerical",
+    "difficulty": "hard",
+    "question_en": "Consider the following processes (times in ms), scheduled by SRTF:\nProcess | Arrival time | Burst time\nP1 | 0 | 8\nP2 | 1 | 2\nP3 | 3 | 4\nP4 | 5 | 1\nWhat is the average turnaround time?",
+    "options": [
+      {
+        "en": "8.50 ms"
+      },
+      {
+        "en": "5.75 ms"
+      },
+      {
+        "en": "2.00 ms"
+      },
+      {
+        "en": "6.25 ms"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Gantt chart: P1 0–1 | P2 1–3 | P3 3–5 | P4 5–6 | P3 6–8 | P1 8–15. Completion times: P1 = 15, P2 = 3, P3 = 8, P4 = 6. Turnaround: P1 = 15, P2 = 2, P3 = 5, P4 = 1, so average = 23 / 4 = 5.75 ms.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sched",
+    "subtopic": "FCFS convoy numerical",
+    "difficulty": "medium",
+    "question_en": "Three processes arrive at time 0 with CPU bursts P1 = 20 ms, P2 = 2 ms and P3 = 2 ms and are scheduled by FCFS. What is the average waiting time if they are served in the order P1, P2, P3, and if they are served in the order P2, P3, P1?",
+    "options": [
+      {
+        "en": "14 ms and 2 ms"
+      },
+      {
+        "en": "14 ms and 4 ms"
+      },
+      {
+        "en": "22 ms and 10 ms"
+      },
+      {
+        "en": "20 ms and 2 ms"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Order P1, P2, P3: waiting times 0, 20, 22, average 42 / 3 = 14 ms. Order P2, P3, P1: waiting times 0, 2, 4, average 6 / 3 = 2 ms. The large difference shows the convoy effect of FCFS when a long job is served first.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sched",
+    "subtopic": "SJF numerical",
+    "difficulty": "medium",
+    "question_en": "Four processes arrive at time 0 with CPU bursts P1 = 7, P2 = 3, P3 = 9 and P4 = 5 ms. What is the average waiting time under SJF scheduling?",
+    "options": [
+      {
+        "en": "9.00 ms"
+      },
+      {
+        "en": "12.50 ms"
+      },
+      {
+        "en": "6.50 ms"
+      },
+      {
+        "en": "5.50 ms"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "SJF order: P2 0–3 | P4 3–8 | P1 8–15 | P3 15–24. Waiting times: P2 = 0, P4 = 3, P1 = 8, P3 = 15, so average = 26 / 4 = 6.50 ms. FCFS in the order P1–P4 would give 9.00 ms.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sched",
+    "subtopic": "Burst prediction - exponential average",
+    "difficulty": "hard",
+    "question_en": "The next CPU burst is predicted by exponential averaging: τ(n+1) = α·t(n) + (1 − α)·τ(n). With α = 0.5, an initial prediction τ1 = 12 ms and measured bursts t1 = 8 ms and t2 = 6 ms, what is the predicted length τ3 of the third burst?",
+    "options": [
+      {
+        "en": "8 ms"
+      },
+      {
+        "en": "10 ms"
+      },
+      {
+        "en": "7 ms"
+      },
+      {
+        "en": "9 ms"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "τ2 = 0.5 × 8 + 0.5 × 12 = 10 ms. τ3 = 0.5 × 6 + 0.5 × 10 = 8 ms. With α = 0.5, recent history and past history are weighted equally.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sync",
+    "subtopic": "Race condition",
+    "difficulty": "easy",
+    "question_en": "A situation in which several processes access and manipulate the same data concurrently, and the outcome depends on the particular order in which the accesses take place, is called a:",
+    "options": [
+      {
+        "en": "deadlock"
+      },
+      {
+        "en": "starvation"
+      },
+      {
+        "en": "thrashing"
+      },
+      {
+        "en": "race condition"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "This is the Silberschatz definition of a race condition. To guard against it, only one process at a time should manipulate the shared data, which is why processes must be synchronised (the critical-section problem).",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sync",
+    "subtopic": "Critical-section requirements",
+    "difficulty": "easy",
+    "question_en": "Which of the following is NOT one of the three requirements that a solution to the critical-section problem must satisfy?",
+    "options": [
+      {
+        "en": "Hold and wait"
+      },
+      {
+        "en": "Mutual exclusion"
+      },
+      {
+        "en": "Progress"
+      },
+      {
+        "en": "Bounded waiting"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "A solution must satisfy mutual exclusion (only one process in its critical section at a time), progress (the choice of who enters next cannot be postponed indefinitely) and bounded waiting (a limit on how many times others may enter before a waiting process). Hold and wait is one of the necessary conditions for deadlock.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sync",
+    "subtopic": "Peterson's solution",
+    "difficulty": "medium",
+    "question_en": "Peterson's solution to the critical-section problem:",
+    "options": [
+      {
+        "en": "works for any number of processes by using a single binary semaphore"
+      },
+      {
+        "en": "depends on a special atomic test_and_set() hardware instruction"
+      },
+      {
+        "en": "uses a monitor with condition variables and the x.wait() operation"
+      },
+      {
+        "en": "is for two processes and uses the shared variables int turn and boolean flag[2]"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Peterson's solution is a classic software-based solution restricted to two processes that alternate between critical and remainder sections. Process i sets flag[i] = true and turn = j, then waits while (flag[j] && turn == j); it satisfies mutual exclusion, progress and bounded waiting.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sync",
+    "subtopic": "Hardware support - test_and_set",
+    "difficulty": "medium",
+    "question_en": "The test_and_set() instruction is useful for synchronisation mainly because it:",
+    "options": [
+      {
+        "en": "lets two processes enter their critical sections at the same time"
+      },
+      {
+        "en": "permanently disables the interrupts on every processor in the system"
+      },
+      {
+        "en": "guarantees bounded waiting without needing any additional code"
+      },
+      {
+        "en": "reads and sets a memory word as one atomic (uninterruptible) operation"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "test_and_set() returns the old value of a lock word and sets it to true as one atomic unit, so if two CPUs execute it simultaneously the executions happen sequentially in some order. A simple lock built on it gives mutual exclusion, but extra code is needed to guarantee bounded waiting.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sync",
+    "subtopic": "Semaphore operations",
+    "difficulty": "easy",
+    "question_en": "Apart from initialisation, a semaphore S is accessed only through two standard atomic operations, originally termed P and V by Dijkstra. These operations are:",
+    "options": [
+      {
+        "en": "lock() and unlock()"
+      },
+      {
+        "en": "wait() and signal()"
+      },
+      {
+        "en": "acquire() and free()"
+      },
+      {
+        "en": "send() and receive()"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "A semaphore is an integer variable accessed, apart from initialisation, only through wait() (P, from the Dutch proberen, \"to test\") and signal() (V, from verhogen, \"to increment\"). Both must execute atomically.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "os_sync",
+    "subtopic": "Counting vs binary semaphores",
+    "difficulty": "medium",
+    "question_en": "Which of the following statements about semaphores is correct?",
+    "options": [
+      {
+        "en": "A binary semaphore ranges only between 0 and 1; a counting one has an unrestricted range"
+      },
+      {
+        "en": "A counting semaphore can take only the values 0 and 1, like a mutex lock"
+      },
+      {
+        "en": "A binary semaphore is used to control a resource that has many instances"
+      },
+      {
+        "en": "A counting semaphore can never be used to provide mutual exclusion"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The value of a counting semaphore can range over an unrestricted domain and is used to control a resource with a finite number of instances (initialised to that number). A binary semaphore takes only 0 and 1 and behaves like a mutex lock; a counting semaphore initialised to 1 can also give mutual exclusion.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sync",
+    "subtopic": "Semaphore value numerical",
+    "difficulty": "easy",
+    "question_en": "A counting semaphore S is initialised to 7. Then 15 wait (P) operations and 9 signal (V) operations are performed on S. What is the final value of S?",
+    "options": [
+      {
+        "en": "−1"
+      },
+      {
+        "en": "1"
+      },
+      {
+        "en": "13"
+      },
+      {
+        "en": "0"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Each wait() decrements S by 1 and each signal() increments it by 1. Final value = 7 − 15 + 9 = 1.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sync",
+    "subtopic": "Semaphore blocking numerical",
+    "difficulty": "hard",
+    "question_en": "A semaphore S, implemented with a waiting queue (so its value may become negative), is initialised to 4. Six processes execute wait(S) one after another, and no process executes signal(S). What is the value of S, and how many processes are blocked?",
+    "options": [
+      {
+        "en": "−2; 2 processes are blocked"
+      },
+      {
+        "en": "0; 2 processes are blocked"
+      },
+      {
+        "en": "−2; 6 processes are blocked"
+      },
+      {
+        "en": "2; no process is blocked"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "In this implementation wait() decrements S and blocks the caller if S becomes negative. After six waits, S = 4 − 6 = −2: the first four processes proceed and the last two are blocked. The magnitude of a negative value equals the number of processes waiting on the semaphore.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sync",
+    "subtopic": "Monitors",
+    "difficulty": "medium",
+    "question_en": "Which of the following statements about monitors is correct?",
+    "options": [
+      {
+        "en": "Only one process at a time can be active within the monitor"
+      },
+      {
+        "en": "Any number of processes may execute inside a monitor at once"
+      },
+      {
+        "en": "x.signal() has an effect even when no process is waiting on x"
+      },
+      {
+        "en": "A monitor is a low-level hardware instruction like test_and_set()"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "A monitor is a high-level abstract data type whose construct ensures that only one process at a time is active within it. Condition variables are used with x.wait() and x.signal(); unlike a semaphore's signal(), x.signal() has no effect if no process is suspended on x.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sync",
+    "subtopic": "Bounded-buffer problem",
+    "difficulty": "medium",
+    "question_en": "In the semaphore solution to the bounded-buffer (producer–consumer) problem with a buffer of n slots, the semaphores mutex, empty and full are initialised to:",
+    "options": [
+      {
+        "en": "mutex = 0, empty = 0, full = n"
+      },
+      {
+        "en": "mutex = 1, empty = 0, full = n"
+      },
+      {
+        "en": "mutex = 1, empty = n, full = 0"
+      },
+      {
+        "en": "mutex = n, empty = 1, full = 0"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "mutex = 1 gives mutual exclusion on the buffer, empty counts the empty slots (initially all n) and full counts the filled slots (initially 0). The producer does wait(empty) and later signal(full); the consumer does wait(full) and later signal(empty).",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sync",
+    "subtopic": "Deadlock conditions",
+    "difficulty": "medium",
+    "question_en": "Match the necessary conditions for deadlock with their descriptions:\nCondition | Description\nI. Mutual exclusion | 1. A resource can be released only voluntarily by the process holding it\nII. Hold and wait | 2. At least one resource must be held in a non-sharable mode\nIII. No preemption | 3. A set of waiting processes exists, each waiting for a resource held by the next\nIV. Circular wait | 4. A process holds at least one resource while waiting to acquire others",
+    "options": [
+      {
+        "en": "I-2, II-4, III-1, IV-3"
+      },
+      {
+        "en": "I-1, II-4, III-2, IV-3"
+      },
+      {
+        "en": "I-2, II-3, III-1, IV-4"
+      },
+      {
+        "en": "I-4, II-2, III-1, IV-3"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Mutual exclusion requires at least one non-sharable resource; hold and wait means holding resources while waiting for others. No preemption means resources are released only voluntarily, and circular wait is a cycle P0 → P1 → … → Pn → P0 of waiting processes. All four must hold simultaneously for a deadlock.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "os_sync",
+    "subtopic": "Deadlock avoidance",
+    "difficulty": "easy",
+    "question_en": "The Banker's algorithm is used for deadlock:",
+    "options": [
+      {
+        "en": "prevention"
+      },
+      {
+        "en": "detection"
+      },
+      {
+        "en": "recovery"
+      },
+      {
+        "en": "avoidance"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "The Banker's algorithm is a deadlock-avoidance algorithm for resources with multiple instances: before granting a request it checks whether the resulting state would be safe. Prevention instead ensures that one of the four necessary conditions can never hold.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sync",
+    "subtopic": "Deadlock prevention - circular wait",
+    "difficulty": "medium",
+    "question_en": "To ensure that the circular-wait condition can never hold, a system can:",
+    "options": [
+      {
+        "en": "allow every resource in the system to be shared by all processes at once"
+      },
+      {
+        "en": "impose a total ordering of resource types and request them in increasing order"
+      },
+      {
+        "en": "preempt resources only from those processes that are currently running"
+      },
+      {
+        "en": "let a process request resources only while it already holds some others"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Number every resource type and require each process to request resources only in increasing order of enumeration; then no cycle of waiting processes can form. Sharing every resource is impossible for non-sharable ones such as printers or mutex locks.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sync",
+    "subtopic": "Banker's algorithm numerical",
+    "difficulty": "hard",
+    "question_en": "A system has three resource types A, B and C with 8, 6 and 5 instances. At time T0 the state is:\nProcess | Allocation (A B C) | Max (A B C)\nP0 | 1 1 0 | 5 3 2\nP1 | 2 0 1 | 3 2 2\nP2 | 0 1 2 | 6 2 4\nP3 | 3 0 1 | 4 1 2\nP4 | 1 2 0 | 2 4 3\nAvailable = (1, 2, 1). Using the Banker's algorithm, which of the following is a safe sequence?",
+    "options": [
+      {
+        "en": "P0, P1, P3, P4, P2"
+      },
+      {
+        "en": "P1, P3, P0, P4, P2"
+      },
+      {
+        "en": "P1, P4, P3, P0, P2"
+      },
+      {
+        "en": "P4, P1, P3, P2, P0"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Need = Max − Allocation: P0 (4 2 2), P1 (1 2 1), P2 (6 1 2), P3 (1 1 1), P4 (1 2 3). Work = (1 2 1) → P1 runs, Work = (3 2 2) → P3, Work = (6 2 3) → P0, Work = (7 3 3) → P4, Work = (8 5 3) → P2, Work = (8 6 5). P0 or P4 cannot go first, and P4 cannot follow P1 directly because it needs 3 C while only 2 are free.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sync",
+    "subtopic": "Safe state - single resource",
+    "difficulty": "medium",
+    "question_en": "A system has 12 printers. P1 holds 4 and may need up to 9, P2 holds 2 and may need up to 4, and P3 holds 3 and may need up to 8. Which of the following sequences is safe?",
+    "options": [
+      {
+        "en": "P2, P3, P1"
+      },
+      {
+        "en": "P1, P2, P3"
+      },
+      {
+        "en": "P3, P1, P2"
+      },
+      {
+        "en": "P3, P2, P1"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Allocated = 4 + 2 + 3 = 9, so 3 printers are free. Remaining needs: P1 = 5, P2 = 2, P3 = 5. P2 can finish (3 ≥ 2), releasing its printers so 5 are free; then P3 (needs 5) finishes, making 8 free; then P1 (needs 5) finishes. Any sequence starting with P1 or P3 fails because only 3 printers are free.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sync",
+    "subtopic": "Resource-allocation graph",
+    "difficulty": "hard",
+    "question_en": "Which of the following statements about a resource-allocation graph (RAG) is correct?",
+    "options": [
+      {
+        "en": "If every resource type has exactly one instance, a cycle implies a deadlock"
+      },
+      {
+        "en": "A cycle always implies deadlock, whatever the number of resource instances"
+      },
+      {
+        "en": "If the graph contains no cycle, the system may still be in a deadlock"
+      },
+      {
+        "en": "A request edge is directed from a resource type to the requesting process"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "If the graph has no cycle, no process is deadlocked. If it has a cycle and each resource type has only one instance, a deadlock has occurred; with several instances per type a cycle is necessary but not sufficient. A request edge points from a process to a resource type (Pi → Rj), and an assignment edge from a resource to a process.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sync",
+    "subtopic": "Deadlock detection",
+    "difficulty": "medium",
+    "question_en": "For deadlock detection when every resource type has a single instance, the detection algorithm searches for a cycle in a:",
+    "options": [
+      {
+        "en": "safe-sequence table produced by the Banker's algorithm"
+      },
+      {
+        "en": "wait-for graph obtained by removing resource nodes from the RAG"
+      },
+      {
+        "en": "page table maintained separately for each running process"
+      },
+      {
+        "en": "Gantt chart that records the CPU-scheduling decisions"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "A wait-for graph is obtained from the resource-allocation graph by removing the resource nodes and collapsing the edges, so Pi → Pj means Pi waits for a resource held by Pj. A deadlock exists if and only if this graph contains a cycle; for multiple instances an algorithm similar to the Banker's is used instead.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sync",
+    "subtopic": "Minimum resources to avoid deadlock",
+    "difficulty": "medium",
+    "question_en": "A system has 4 processes, and each process may need up to 3 instances of a resource type R. What is the minimum number of instances of R that guarantees the system can never deadlock?",
+    "options": [
+      {
+        "en": "8"
+      },
+      {
+        "en": "12"
+      },
+      {
+        "en": "9"
+      },
+      {
+        "en": "10"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Worst case: every process holds 3 − 1 = 2 instances and waits for one more, using 4 × 2 = 8 instances. One extra instance lets some process finish and release its resources, so the minimum is 4 × (3 − 1) + 1 = 9. With 8 instances deadlock is possible.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sync",
+    "subtopic": "Maximum processes without deadlock",
+    "difficulty": "hard",
+    "question_en": "A system has 13 identical tape drives, and each process may need up to 4 drives. What is the maximum number of processes that can share the drives so that deadlock can never occur?",
+    "options": [
+      {
+        "en": "3"
+      },
+      {
+        "en": "4"
+      },
+      {
+        "en": "5"
+      },
+      {
+        "en": "6"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Deadlock is impossible when n × (4 − 1) + 1 ≤ 13, i.e. 3n ≤ 12, so n ≤ 4. With 5 processes the drives could be held as 3, 3, 3, 3 and 1; no drive is free and every process is waiting, so deadlock is possible. Hence the maximum is 4.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "os_sync",
+    "subtopic": "Starvation vs deadlock",
+    "difficulty": "medium",
+    "question_en": "Which of the following statements about deadlock and starvation is correct?",
+    "options": [
+      {
+        "en": "Starvation and deadlock are the same situation described in different words"
+      },
+      {
+        "en": "Aging is the standard technique used to break an existing deadlock"
+      },
+      {
+        "en": "A starving process is always part of a circular wait among processes"
+      },
+      {
+        "en": "Every deadlocked process starves, but a starving process need not be deadlocked"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "In a deadlock the processes wait forever for events that only the other deadlocked processes can cause, so they are indefinitely blocked. Starvation (indefinite blocking) can also happen without any circular wait, for example a low-priority process repeatedly passed over; aging cures starvation, not deadlock.",
+    "pyq_concept": false
+  }
+]

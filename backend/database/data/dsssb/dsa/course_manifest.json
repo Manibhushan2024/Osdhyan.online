@@ -1,0 +1,98 @@
+{
+ "subject": "DSA (Data Structures & Algorithms)",
+ "subject_hi": "डेटा स्ट्रक्चर एवं एल्गोरिद्म",
+ "chapters": [
+  {
+   "key": "ds_algo",
+   "title": "1. Algorithms, Complexity & Recursion",
+   "items": [
+    {
+     "title": "Algorithms, Complexity & Recursion — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\dsa\\ds_algo.pdf"
+    }
+   ]
+  },
+  {
+   "key": "ds_linear",
+   "title": "2. Arrays & Linked Lists",
+   "items": [
+    {
+     "title": "Arrays & Linked Lists — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\dsa\\ds_linear.pdf"
+    }
+   ]
+  },
+  {
+   "key": "ds_stack_queue",
+   "title": "3. Stacks & Queues",
+   "items": [
+    {
+     "title": "Stacks & Queues — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\dsa\\ds_stack_queue.pdf"
+    }
+   ]
+  },
+  {
+   "key": "ds_trees",
+   "title": "4. Trees, BST, AVL, B-Trees & Heaps",
+   "items": [
+    {
+     "title": "Trees, BST, AVL, B-Trees & Heaps — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\dsa\\ds_trees.pdf"
+    }
+   ]
+  },
+  {
+   "key": "ds_graphs",
+   "title": "5. Graphs: Representation, Traversal, MST & Shortest Paths",
+   "items": [
+    {
+     "title": "Graphs: Representation, Traversal, MST & Shortest Paths — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\dsa\\ds_graphs.pdf"
+    }
+   ]
+  },
+  {
+   "key": "ds_sort_search",
+   "title": "6. Searching, Sorting & Hashing",
+   "items": [
+    {
+     "title": "Searching, Sorting & Hashing — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\dsa\\ds_sort_search.pdf"
+    }
+   ]
+  },
+  {
+   "key": "ds_design",
+   "title": "7. Algorithm Design Techniques",
+   "items": [
+    {
+     "title": "Algorithm Design Techniques — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\dsa\\ds_design.pdf"
+    }
+   ]
+  },
+  {
+   "key": "dsa_practice",
+   "title": "8. Complete notes, previous-year questions & 200 most expected",
+   "items": [
+    {
+     "title": "DSA — fast revision sheet (revise everything quickly)",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\dsa\\dsa_fast_revision.pdf"
+    },
+    {
+     "title": "DSA — complete notes (all chapters in one PDF)",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\dsa\\dsa_complete_notes.pdf"
+    },
+    {
+     "title": "DSA — previous-year questions 2023–24 with solutions",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\dsa\\dsa_pyq_2023_24.pdf"
+    },
+    {
+     "title": "DSA — 200 most expected questions with answers",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\dsa\\dsa_200_most_expected.pdf"
+    }
+   ]
+  }
+ ]
+}

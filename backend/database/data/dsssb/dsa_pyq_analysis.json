@@ -1,0 +1,210 @@
+[
+ {
+  "qid": "630680256137",
+  "paper": "2023_06_24_s3",
+  "question": "In a path-graph having 'n' vertices, where 'n' > 2, _____ is the number of vertices with degree 2.",
+  "options": [
+   "3",
+   "n − 2",
+   "2",
+   "0"
+  ],
+  "answer": 2,
+  "subtopic": "Graph theory - path graph degrees",
+  "difficulty": "easy",
+  "explanation": "A path graph on n vertices is v1-v2-...-vn. The two end vertices have degree 1 and every inner vertex has degree 2, so n - 2 vertices have degree 2. The answer '2' is the number of vertices of degree 1, not degree 2.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256191",
+  "paper": "2023_06_24_s3",
+  "question": "Arrange the following in the order of growth.\nO(n), O(n^2), O(2^n), O(log n), O(n log n), O(n^2 log n)",
+  "options": [
+   "O(n), O(n^2), O(log n), O(2^n), O(n log n), O(n^2 log n)",
+   "O(n), O(2^n), O(2^n), O(log n), O(n^2 log n), O(n log n)",
+   "O(log n), O(n), O(n log n), O(n^2), O(n^2 log n), O(2^n)",
+   "O(n^2), O(n), O(2^n), O(log n), O(n log n), O(n^2 log n)"
+  ],
+  "answer": 3,
+  "subtopic": "Asymptotic growth order",
+  "difficulty": "easy",
+  "explanation": "For large n: log n < n < n log n < n^2 < n^2 log n < 2^n. Logarithmic grows slowest, polynomial terms grow next (multiplying by log n adds a little), and exponential 2^n eventually beats any polynomial. Only option 3 follows this order.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256192",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following is NOT the application of Divide and Conquer?",
+  "options": [
+   "Binary Search",
+   "All Pairs Shortest Path Problem",
+   "Quick Sort",
+   "Strassen's Matrix Multiplication"
+  ],
+  "answer": 2,
+  "subtopic": "Divide and conquer applications",
+  "difficulty": "easy",
+  "explanation": "Binary search, quick sort and Strassen's matrix multiplication all split the problem into sub-problems and combine the results (divide and conquer). The all-pairs shortest path problem is solved by Floyd-Warshall, a dynamic programming algorithm, so it is not a divide-and-conquer application.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256210",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following is the easiest to be transformed into a computer program?",
+  "options": [
+   "Pseudo-code",
+   "Algorithm",
+   "Flowchart",
+   "None of the above"
+  ],
+  "answer": 1,
+  "subtopic": "Algorithm representation",
+  "difficulty": "easy",
+  "explanation": "Pseudo-code is written in structured, programming-like statements (IF, WHILE, etc.), so it maps almost line-by-line to real code. An algorithm in plain prose or a flowchart needs more translation effort before coding.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256194",
+  "paper": "2023_06_24_s3",
+  "question": "What are the solutions for the following sum of a subset problem?\nw[1:5]={2,7,8,9,15}; Sum required = 17\n1 means the item is included.\n0 means the item is excluded.",
+  "options": [
+   "11100; 10101; 00110",
+   "11100; 10001; 00110",
+   "11000; 10001; 00110",
+   "11100; 10101; 00111"
+  ],
+  "answer": 2,
+  "subtopic": "Sum of subsets (backtracking)",
+  "difficulty": "medium",
+  "explanation": "From {2,7,8,9,15} the subsets summing to 17 are {2,7,8} = 11100, {2,15} = 10001 and {8,9} = 00110. Option 1's 10101 = 2+8+15 = 25 and option 4's 00111 = 8+9+15 = 32, so they are wrong.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256347",
+  "paper": "2023_06_25_s1",
+  "question": "The operations of a ______ require that the first element that is inserted is the first one to be removed?",
+  "options": [
+   "union",
+   "graph",
+   "stack",
+   "queue"
+  ],
+  "answer": 4,
+  "subtopic": "Queue - FIFO",
+  "difficulty": "easy",
+  "explanation": "A queue follows FIFO: the first element inserted is the first one removed. A stack follows LIFO, where the last inserted element is removed first.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256345",
+  "paper": "2023_06_25_s1",
+  "question": "Which characteristic of an algorithm refers to ‘each instruction is clear and unambiguous’?",
+  "options": [
+   "Definiteness",
+   "Finiteness",
+   "Effectiveness",
+   "Indefiniteness"
+  ],
+  "answer": 1,
+  "subtopic": "Characteristics of an algorithm",
+  "difficulty": "easy",
+  "explanation": "Definiteness means every instruction of an algorithm is clear, precise and unambiguous. Finiteness means it terminates after a finite number of steps, and effectiveness means each step is basic enough to be carried out.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256329",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following is true with reference to Queue Data Structure in the C programming language?\n(i) Insertion can take place from the front end.\n(ii) Deletion can take place from the rear end.",
+  "options": [
+   "Neither (i) nor (ii)",
+   "Both (i) and (ii)",
+   "Only (i)",
+   "Only (ii)"
+  ],
+  "answer": 1,
+  "subtopic": "Queue operations",
+  "difficulty": "easy",
+  "explanation": "In a queue, insertion (enqueue) happens at the rear and deletion (dequeue) happens at the front. Statement (i) puts insertion at the front and (ii) puts deletion at the rear, so both are false: neither (i) nor (ii).",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256411",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following refers to the kind of problems that require the identification of the best solution to a search problem from a given set of solutions?",
+  "options": [
+   "Training",
+   "Optimisation",
+   "Counting",
+   "Decision"
+  ],
+  "answer": 2,
+  "subtopic": "Problem types - optimisation",
+  "difficulty": "easy",
+  "explanation": "An optimisation problem asks for the best solution (minimum or maximum by some measure) from the set of feasible solutions, e.g. shortest path. A decision problem has a yes/no answer and a counting problem asks how many solutions exist.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256661",
+  "paper": "2023_06_25_s2",
+  "question": "What is the best case and worst-case complexity of selection sort?",
+  "options": [
+   "O(nlogn)",
+   "O(n)",
+   "O(n^2)",
+   "O(logn)"
+  ],
+  "answer": 3,
+  "subtopic": "Selection sort complexity",
+  "difficulty": "easy",
+  "explanation": "Selection sort always scans the remaining unsorted part to find the minimum, making n(n-1)/2 comparisons regardless of input order. So both best and worst case are O(n^2). O(n) best case applies to insertion/bubble sort with a sorted input, not selection sort.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256609",
+  "paper": "2023_06_25_s2",
+  "question": "What are the data structures categorised as a linear list?",
+  "options": [
+   "Binary tree",
+   "Graphs",
+   "Circular queue",
+   "Array"
+  ],
+  "answer": 4,
+  "subtopic": "Linear data structures",
+  "difficulty": "easy",
+  "explanation": "An array stores elements in contiguous, sequential order, the basic example of a linear list. Trees and graphs are non-linear because an element can link to several others. A circular queue is also linear but is a restricted structure built on an array/list, so the expected answer is the array.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256662",
+  "paper": "2023_06_25_s2",
+  "question": "Which of the following algorithm design techniques is used in the merge sort algorithm * Mcq?",
+  "options": [
+   "Greedy algorithm",
+   "Backtracking",
+   "Divide and conquer",
+   "Divide and conquer, backtracking and greedy algorithm"
+  ],
+  "answer": 3,
+  "subtopic": "Merge sort - divide and conquer",
+  "difficulty": "easy",
+  "explanation": "Merge sort divides the array into two halves, recursively sorts each half, and merges the sorted halves: divide and conquer. It makes no greedy choices and does no backtracking.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256663",
+  "paper": "2023_06_25_s2",
+  "question": "What is the average case time complexity of merge sort?",
+  "options": [
+   "O(n log n)",
+   "O(n)",
+   "O(1)",
+   "O(n^2 log n)"
+  ],
+  "answer": 1,
+  "subtopic": "Merge sort complexity",
+  "difficulty": "easy",
+  "explanation": "Merge sort always splits the array into halves (log n levels) and merges in O(n) per level, so best, average and worst case are all O(n log n). O(n^2) is the worst case of quick sort, not merge sort.",
+  "key_doubt": false
+ }
+]

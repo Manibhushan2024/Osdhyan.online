@@ -1,0 +1,2302 @@
+[
+ {
+  "chapter_key": "ds_algo",
+  "subtopic": "Characteristics of an algorithm - finiteness",
+  "difficulty": "easy",
+  "question_en": "An algorithm must stop after a finite number of steps for every valid input. Which characteristic of an algorithm does this describe?",
+  "options": [
+   {
+    "en": "Finiteness"
+   },
+   {
+    "en": "Definiteness"
+   },
+   {
+    "en": "Effectiveness"
+   },
+   {
+    "en": "Generality"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Finiteness means the algorithm terminates after a finite number of steps for all valid inputs. Definiteness means each step is clear and unambiguous, and effectiveness means each step is basic enough to be carried out exactly in finite time.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ds_algo",
+  "subtopic": "Characteristics of an algorithm - effectiveness",
+  "difficulty": "medium",
+  "question_en": "Which characteristic of an algorithm requires every operation to be so basic that a person could, in principle, carry it out exactly with pencil and paper in a finite time?",
+  "options": [
+   {
+    "en": "Finiteness"
+   },
+   {
+    "en": "Definiteness"
+   },
+   {
+    "en": "Output"
+   },
+   {
+    "en": "Effectiveness"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "This is effectiveness (Horowitz–Sahni): each operation must be basic and actually feasible, not merely well stated. Finiteness is about the whole algorithm stopping, while definiteness is about each step being unambiguous (an instruction like 'add 6 or 7 to x' violates definiteness).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ds_algo",
+  "subtopic": "Characteristics of an algorithm - input and output",
+  "difficulty": "medium",
+  "question_en": "As per the standard definition of an algorithm (Knuth; Horowitz–Sahni), how many inputs and outputs must an algorithm have?",
+  "options": [
+   {
+    "en": "At least one input, at least one output"
+   },
+   {
+    "en": "At least one input, zero or more outputs"
+   },
+   {
+    "en": "Exactly one input and exactly one output"
+   },
+   {
+    "en": "Zero or more inputs, at least one output"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "An algorithm may take zero or more externally supplied inputs; a routine that prints the first 10 primes needs no input at all. But it must produce at least one output, otherwise it does nothing useful.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ds_algo",
+  "subtopic": "Flowchart symbols",
+  "difficulty": "easy",
+  "question_en": "In a flowchart, which symbol is used for an input/output step such as 'Read A, B' or 'Print SUM'?",
+  "options": [
+   {
+    "en": "Oval"
+   },
+   {
+    "en": "Parallelogram"
+   },
+   {
+    "en": "Diamond"
+   },
+   {
+    "en": "Rectangle"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The parallelogram is the input/output symbol. The oval marks Start/Stop, the rectangle is a processing step (e.g., SUM = A + B) and the diamond is a decision with Yes/No branches.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ds_algo",
+  "subtopic": "Pseudocode vs flowchart",
+  "difficulty": "medium",
+  "question_en": "Consider the following statements:\n(i) Pseudocode has no strict syntax and cannot be executed directly, yet it is easier to convert into a program than a flowchart.\n(ii) In a flowchart, the Start and Stop steps are drawn as rectangles.\nWhich of the statements is/are correct?",
+  "options": [
+   {
+    "en": "Both (i) and (ii)"
+   },
+   {
+    "en": "Only (ii)"
+   },
+   {
+    "en": "Only (i)"
+   },
+   {
+    "en": "Neither (i) nor (ii)"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "(i) is true: pseudocode uses programming-like constructs (IF, WHILE, FOR) without a fixed syntax, so it maps almost line by line to code. (ii) is false: Start and Stop use the oval (terminal) symbol; the rectangle is the processing symbol.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ds_algo",
+  "subtopic": "Problem types - decision problem",
+  "difficulty": "easy",
+  "question_en": "'Given a graph G and an integer k, can G be coloured with at most k colours?' The answer to this problem is only YES or NO. Such a problem is called a/an:",
+  "options": [
+   {
+    "en": "Optimisation problem"
+   },
+   {
+    "en": "Decision problem"
+   },
+   {
+    "en": "Enumeration problem"
+   },
+   {
+    "en": "Counting problem"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "A decision problem has a yes/no answer. The related optimisation problem asks for the minimum number of colours (the chromatic number), and an enumeration problem would list every valid colouring.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ds_algo",
+  "subtopic": "Problem types - optimisation problem",
+  "difficulty": "medium",
+  "question_en": "Which of the following is an optimisation problem?",
+  "options": [
+   {
+    "en": "Does any path exist from city P to city Q?"
+   },
+   {
+    "en": "Find the cheapest route from city P to city Q"
+   },
+   {
+    "en": "List every permutation of the set {1, 2, 3}"
+   },
+   {
+    "en": "Is the number 221 a prime number?"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "An optimisation problem picks the best (minimum or maximum) solution among all feasible ones, and the cheapest route minimises cost over all routes. Path existence and primality are decision (yes/no) problems (221 = 13 × 17), and listing permutations is an enumeration problem.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ds_algo",
+  "subtopic": "Linear vs non-linear data structures",
+  "difficulty": "easy",
+  "question_en": "Which of the following is a non-linear data structure?",
+  "options": [
+   {
+    "en": "Stack"
+   },
+   {
+    "en": "Queue"
+   },
+   {
+    "en": "Linked list"
+   },
+   {
+    "en": "Binary tree"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "In a linear structure (array, stack, queue, linked list) each element has at most one predecessor and one successor, so the elements form a sequence. In a tree a node can have several children, so it is non-linear; graphs are non-linear too.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ds_algo",
+  "subtopic": "Primitive vs non-primitive data structures",
+  "difficulty": "easy",
+  "question_en": "Which of the following is a primitive data structure?",
+  "options": [
+   {
+    "en": "Character (char)"
+   },
+   {
+    "en": "Array of integers"
+   },
+   {
+    "en": "Singly linked list"
+   },
+   {
+    "en": "Structure (struct)"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Primitive data structures are the basic types that machine instructions operate on directly: int, char, float, double and pointer. Arrays, structures, linked lists, stacks and trees are non-primitive because they are built from primitive types.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_algo",
+  "subtopic": "Abstract Data Type (ADT)",
+  "difficulty": "medium",
+  "question_en": "An Abstract Data Type (ADT) such as 'Stack' is best described as:",
+  "options": [
+   {
+    "en": "Values and operations, specified without implementation details"
+   },
+   {
+    "en": "A fixed memory layout chosen by the compiler for the data"
+   },
+   {
+    "en": "A data type that can only be implemented using an array"
+   },
+   {
+    "en": "A set of machine instructions written for one processor"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "An ADT states what data is stored and which operations (e.g., push, pop, isEmpty) are allowed, but not how they are implemented. A stack ADT can be implemented with an array or with a linked list without changing its interface.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_algo",
+  "subtopic": "Asymptotic notation - Big-O",
+  "difficulty": "easy",
+  "question_en": "If f(n) = O(g(n)), then g(n) is an asymptotic ______ of f(n).",
+  "options": [
+   {
+    "en": "lower bound"
+   },
+   {
+    "en": "upper bound"
+   },
+   {
+    "en": "tight bound"
+   },
+   {
+    "en": "average value"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "f(n) = O(g(n)) means there are constants c > 0 and n₀ such that 0 ≤ f(n) ≤ c·g(n) for all n ≥ n₀, so g bounds f from above. Ω gives a lower bound and Θ gives a tight (two-sided) bound.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_algo",
+  "subtopic": "Asymptotic notation - Theta definition",
+  "difficulty": "medium",
+  "question_en": "f(n) = Θ(g(n)) if and only if there exist positive constants c₁, c₂ and n₀ such that, for all n ≥ n₀:",
+  "options": [
+   {
+    "en": "f(n) < c·g(n) for every c > 0"
+   },
+   {
+    "en": "0 ≤ f(n) ≤ c₂·g(n) only"
+   },
+   {
+    "en": "0 ≤ c₁·g(n) ≤ f(n) only"
+   },
+   {
+    "en": "0 ≤ c₁·g(n) ≤ f(n) ≤ c₂·g(n)"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Θ is a tight bound: f is sandwiched between c₁·g(n) and c₂·g(n) for all large n. The condition with only the upper constant c₂ defines O, the one with only c₁ defines Ω, and 'f(n) < c·g(n) for every c > 0' defines little-o (a strict upper bound).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_algo",
+  "subtopic": "Asymptotic notation - O, Ω, Θ of a polynomial",
+  "difficulty": "medium",
+  "question_en": "For f(n) = 4n² + 7n log n + 50, which statement is FALSE?",
+  "options": [
+   {
+    "en": "f(n) = O(n log n)"
+   },
+   {
+    "en": "f(n) = Ω(n log n)"
+   },
+   {
+    "en": "f(n) = Θ(n²)"
+   },
+   {
+    "en": "f(n) = O(n³)"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The dominant term is 4n², so f(n) = Θ(n²). Hence f is also O(n³) (a looser upper bound) and Ω(n log n) (a looser lower bound). But n² grows faster than n log n, so f(n) = O(n log n) is false.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_algo",
+  "subtopic": "Order of growth",
+  "difficulty": "medium",
+  "question_en": "Arrange the following functions in increasing order of growth:\nn!, n log n, 2ⁿ, √n, n³, log n",
+  "options": [
+   {
+    "en": "log n, n log n, √n, n³, 2ⁿ, n!"
+   },
+   {
+    "en": "√n, log n, n log n, n³, n!, 2ⁿ"
+   },
+   {
+    "en": "log n, √n, n log n, n³, 2ⁿ, n!"
+   },
+   {
+    "en": "log n, √n, n³, n log n, 2ⁿ, n!"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Logarithmic < polynomial < exponential < factorial. Among the polynomial terms, √n = n^0.5 < n log n < n³. And 2ⁿ < n! for large n (for n = 10: 2¹⁰ = 1024 but 10! = 3,628,800).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ds_algo",
+  "subtopic": "Order of growth - fastest function",
+  "difficulty": "hard",
+  "question_en": "For large n, which of the following functions grows the fastest?",
+  "options": [
+   {
+    "en": "1.5ⁿ"
+   },
+   {
+    "en": "n^(log₂ n)"
+   },
+   {
+    "en": "n¹⁰"
+   },
+   {
+    "en": "n³ log n"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Compare base-2 logarithms: log₂(n¹⁰) = 10 log₂ n, log₂(n^(log₂ n)) = (log₂ n)², and log₂(1.5ⁿ) ≈ 0.585n. Since n eventually beats (log₂ n)² (at n = 2²⁰: about 613,000 versus 400), an exponential cⁿ with c > 1 outgrows the quasi-polynomial n^(log n) and every polynomial.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ds_algo",
+  "subtopic": "Asymptotic value of log(n!)",
+  "difficulty": "hard",
+  "question_en": "log₂(n!) is asymptotically equal to:",
+  "options": [
+   {
+    "en": "Θ(n)"
+   },
+   {
+    "en": "Θ(log n)"
+   },
+   {
+    "en": "Θ(n log n)"
+   },
+   {
+    "en": "Θ(n²)"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "log(n!) = log 1 + log 2 + … + log n ≤ n log n. Also the top n/2 terms are each at least log(n/2), so log(n!) ≥ (n/2) log(n/2). Hence log(n!) = Θ(n log n); Stirling's formula gives n log₂ n − 1.44n.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_algo",
+  "subtopic": "Loop complexity - multiplicative loop",
+  "difficulty": "easy",
+  "question_en": "What is the tightest Big-O time complexity of the following code?\n```c\nfor (i = 1; i <= n; i = i * 3)\n    count++;\n```",
+  "options": [
+   {
+    "en": "O(n)"
+   },
+   {
+    "en": "O(√n)"
+   },
+   {
+    "en": "O(n log n)"
+   },
+   {
+    "en": "O(log n)"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "i takes the values 1, 3, 9, …, 3ᵏ and the loop stops when 3ᵏ > n. So it runs about log₃ n + 1 times (7 times for n = 1000), which is O(log n), since log bases differ only by a constant factor.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_algo",
+  "subtopic": "Loop complexity - dependent nested loop count",
+  "difficulty": "medium",
+  "question_en": "How many times is count++ executed when n = 20?\n```c\nfor (i = 1; i <= n; i++)\n    for (j = 1; j <= i; j++)\n        count++;\n```",
+  "options": [
+   {
+    "en": "400"
+   },
+   {
+    "en": "210"
+   },
+   {
+    "en": "190"
+   },
+   {
+    "en": "200"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "For a given i the inner loop runs i times, so the total is 1 + 2 + … + 20 = 20 × 21 / 2 = 210. In general it is n(n + 1)/2, which is O(n²).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_algo",
+  "subtopic": "Loop complexity - halving outer loop",
+  "difficulty": "medium",
+  "question_en": "What is the tightest Big-O time complexity of the following code?\n```c\nfor (i = n; i > 0; i = i / 2)\n    for (j = 0; j < i; j++)\n        count++;\n```",
+  "options": [
+   {
+    "en": "O(n log n)"
+   },
+   {
+    "en": "O(log n)"
+   },
+   {
+    "en": "O(n)"
+   },
+   {
+    "en": "O(n²)"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The inner loop runs n + n/2 + n/4 + … + 1 times in total. This geometric series is less than 2n, so the code is O(n). It is not O(n log n), because the log n outer iterations do not each cost n.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_algo",
+  "subtopic": "Loop complexity - linear outer, doubling inner",
+  "difficulty": "medium",
+  "question_en": "What is the tightest Big-O time complexity of the following code?\n```c\nfor (i = 1; i <= n; i++)\n    for (j = 1; j < n; j = j * 2)\n        count++;\n```",
+  "options": [
+   {
+    "en": "O(n²)"
+   },
+   {
+    "en": "O(log n)"
+   },
+   {
+    "en": "O(n log n)"
+   },
+   {
+    "en": "O(n)"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The outer loop runs n times. For each i, j doubles from 1 until it reaches n, which takes about log₂ n iterations. Total ≈ n log₂ n, i.e., O(n log n).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_algo",
+  "subtopic": "Loop complexity - square-root bound",
+  "difficulty": "medium",
+  "question_en": "What is the tightest Big-O time complexity of the following code?\n```c\nfor (i = 1; i * i <= n; i++)\n    count++;\n```",
+  "options": [
+   {
+    "en": "O(√n)"
+   },
+   {
+    "en": "O(log n)"
+   },
+   {
+    "en": "O(n)"
+   },
+   {
+    "en": "O(n²)"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The loop continues while i² ≤ n, i.e., while i ≤ √n, so it runs ⌊√n⌋ times. For n = 100 it runs 10 times, so the complexity is O(√n).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_algo",
+  "subtopic": "Loop complexity - repeated squaring",
+  "difficulty": "hard",
+  "question_en": "What is the tightest Big-O time complexity of the following code?\n```c\nfor (i = 2; i <= n; i = i * i)\n    count++;\n```",
+  "options": [
+   {
+    "en": "O(log n)"
+   },
+   {
+    "en": "O(√n)"
+   },
+   {
+    "en": "O(log log n)"
+   },
+   {
+    "en": "O(n)"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "i takes the values 2, 2², 2⁴, 2⁸, …, i.e., 2^(2ᵏ) after k steps. The loop stops when 2^(2ᵏ) > n, i.e., when 2ᵏ > log₂ n, so k ≈ log₂ log₂ n. For n = 65536 = 2¹⁶ it runs 5 times (i = 2, 4, 16, 256, 65536).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_algo",
+  "subtopic": "Loop complexity - sequential loops",
+  "difficulty": "easy",
+  "question_en": "What is the tightest Big-O time complexity of the following code?\n```c\nfor (i = 0; i < n; i++)\n    sum = sum + a[i];\nfor (j = 0; j < m; j++)\n    prod = prod * b[j];\n```",
+  "options": [
+   {
+    "en": "O(n + m)"
+   },
+   {
+    "en": "O(n × m)"
+   },
+   {
+    "en": "O(n²)"
+   },
+   {
+    "en": "O(m)"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The two loops run one after the other, not nested, so their costs add: n iterations plus m iterations gives O(n + m). Only nested loops multiply their iteration counts.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_algo",
+  "subtopic": "Loop complexity - geometric inner loop count",
+  "difficulty": "medium",
+  "question_en": "What is the final value of count after this code runs?\n```c\ncount = 0;\nfor (i = 1; i <= 128; i = i * 2)\n    for (j = 1; j <= i; j++)\n        count++;\n```",
+  "options": [
+   {
+    "en": "256"
+   },
+   {
+    "en": "255"
+   },
+   {
+    "en": "127"
+   },
+   {
+    "en": "1024"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "i takes the values 1, 2, 4, …, 128 and the inner loop runs i times for each. Total = 1 + 2 + 4 + … + 128 = 2⁸ − 1 = 255. In general this pattern is O(n), not O(n log n).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_algo",
+  "subtopic": "Loop complexity - while loop with growing step",
+  "difficulty": "hard",
+  "question_en": "What is the tightest Big-O time complexity of the following code?\n```c\ni = 1; s = 1;\nwhile (s <= n) {\n    i++;\n    s = s + i;\n}\n```",
+  "options": [
+   {
+    "en": "O(log n)"
+   },
+   {
+    "en": "O(n)"
+   },
+   {
+    "en": "O(n log n)"
+   },
+   {
+    "en": "O(√n)"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "After k iterations s = 1 + 2 + … + (k + 1) ≈ k²/2. The loop stops when k²/2 > n, i.e., after about √(2n) iterations. Hence the complexity is O(√n).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_algo",
+  "subtopic": "Loop complexity - harmonic series",
+  "difficulty": "hard",
+  "question_en": "What is the tightest Big-O time complexity of the following code?\n```c\nfor (i = 1; i <= n; i++)\n    for (j = 1; j <= n; j = j + i)\n        count++;\n```",
+  "options": [
+   {
+    "en": "O(n²)"
+   },
+   {
+    "en": "O(n√n)"
+   },
+   {
+    "en": "O(n)"
+   },
+   {
+    "en": "O(n log n)"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "For a given i the inner loop runs about n/i times. Total ≈ n/1 + n/2 + … + n/n = n(1 + 1/2 + … + 1/n) = n·Hₙ, and the harmonic number Hₙ ≈ ln n. So the code is O(n log n).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_algo",
+  "subtopic": "Best, average and worst case",
+  "difficulty": "easy",
+  "question_en": "Which type of analysis guarantees that an algorithm will never take more time than a certain bound for ANY input of size n?",
+  "options": [
+   {
+    "en": "Best-case analysis"
+   },
+   {
+    "en": "Worst-case analysis"
+   },
+   {
+    "en": "Average-case analysis"
+   },
+   {
+    "en": "Empirical (testing) analysis"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The worst-case running time is the maximum time over all inputs of size n, so it is an upper bound that holds for every input. Best case is the minimum (e.g., linear search finding the key at the first position), and average case is the expected time over a distribution of inputs.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_algo",
+  "subtopic": "Master theorem - case 1",
+  "difficulty": "medium",
+  "question_en": "Using the Master theorem, the solution of T(n) = 4T(n/2) + n is:",
+  "options": [
+   {
+    "en": "Θ(n log n)"
+   },
+   {
+    "en": "Θ(n²)"
+   },
+   {
+    "en": "Θ(n)"
+   },
+   {
+    "en": "Θ(n² log n)"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Here a = 4 and b = 2, so n^(log_b a) = n^(log₂ 4) = n². f(n) = n is polynomially smaller than n² (case 1), so T(n) = Θ(n²).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_algo",
+  "subtopic": "Master theorem - case 3",
+  "difficulty": "hard",
+  "question_en": "Using the Master theorem, the solution of T(n) = 3T(n/4) + n log n is:",
+  "options": [
+   {
+    "en": "Θ(n^(log₄ 3))"
+   },
+   {
+    "en": "Θ(n log² n)"
+   },
+   {
+    "en": "Θ(n^(log₄ 3) log n)"
+   },
+   {
+    "en": "Θ(n log n)"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "a = 3 and b = 4, so n^(log₄ 3) ≈ n^0.79. f(n) = n log n is polynomially larger (case 3), and the regularity condition holds: 3·(n/4)·log(n/4) ≤ (3/4)·n log n. So T(n) = Θ(f(n)) = Θ(n log n).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_algo",
+  "subtopic": "Standard recurrence results",
+  "difficulty": "medium",
+  "question_en": "Which recurrence–solution pair is INCORRECT?",
+  "options": [
+   {
+    "en": "T(n) = T(n/2) + c → Θ(log n)"
+   },
+   {
+    "en": "T(n) = 2T(n/2) + cn → Θ(n log n)"
+   },
+   {
+    "en": "T(n) = T(n − 1) + cn → Θ(n log n)"
+   },
+   {
+    "en": "T(n) = 2T(n − 1) + c → Θ(2ⁿ)"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "T(n) = T(n − 1) + cn unrolls to c(n + (n − 1) + … + 1) = Θ(n²), the worst case of quick sort, not Θ(n log n). The other pairs are correct: binary search Θ(log n), merge sort Θ(n log n) and Tower of Hanoi Θ(2ⁿ).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_algo",
+  "subtopic": "Tower of Hanoi - number of moves",
+  "difficulty": "easy",
+  "question_en": "What is the minimum number of moves needed to solve the Tower of Hanoi puzzle with 7 discs?",
+  "options": [
+   {
+    "en": "49"
+   },
+   {
+    "en": "128"
+   },
+   {
+    "en": "63"
+   },
+   {
+    "en": "127"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "M(n) = 2M(n − 1) + 1 with M(1) = 1 gives M(n) = 2ⁿ − 1. For n = 7: 2⁷ − 1 = 127 moves.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_algo",
+  "subtopic": "Tower of Hanoi - moves of the smallest disc",
+  "difficulty": "medium",
+  "question_en": "In the optimal (minimum-move) solution of the Tower of Hanoi with 6 discs, how many times does the smallest disc move?",
+  "options": [
+   {
+    "en": "63"
+   },
+   {
+    "en": "32"
+   },
+   {
+    "en": "31"
+   },
+   {
+    "en": "16"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The total number of moves is 2⁶ − 1 = 63. Disc k (k = 1 is the smallest) moves 2^(n − k) times, so the smallest disc moves 2⁵ = 32 times (every alternate move), while the largest disc moves only once.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_algo",
+  "subtopic": "Recursion - number of calls",
+  "difficulty": "hard",
+  "question_en": "How many calls to f (including the first call) are made when f(6) is evaluated?\n```c\nint f(int n) {\n    if (n <= 1) return 1;\n    return f(n - 1) + f(n - 2);\n}\n```",
+  "options": [
+   {
+    "en": "25"
+   },
+   {
+    "en": "13"
+   },
+   {
+    "en": "15"
+   },
+   {
+    "en": "21"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Let C(n) be the calls made for f(n): C(0) = C(1) = 1 and C(n) = 1 + C(n − 1) + C(n − 2). So C(2) = 3, C(3) = 5, C(4) = 9, C(5) = 15 and C(6) = 1 + 15 + 9 = 25. This exponential blow-up is why naive recursive Fibonacci is slow.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_algo",
+  "subtopic": "Recursion - output trace",
+  "difficulty": "medium",
+  "question_en": "What is printed by the call p(3)?\n```c\nvoid p(int n) {\n    if (n == 0) return;\n    printf(\"%d \", n);\n    p(n - 1);\n    printf(\"%d \", n);\n}\n```",
+  "options": [
+   {
+    "en": "1 2 3 3 2 1"
+   },
+   {
+    "en": "3 2 1 3 2 1"
+   },
+   {
+    "en": "3 2 1 1 2 3"
+   },
+   {
+    "en": "3 2 1 0 1 2 3"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Each call prints n, recurses on n − 1, and prints n again after the inner call returns; p(0) prints nothing. So 3 2 1 is printed on the way down and 1 2 3 while the calls unwind, giving 3 2 1 1 2 3.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_algo",
+  "subtopic": "Recursion - return value trace",
+  "difficulty": "medium",
+  "question_en": "What value does h(4728) return?\n```c\nint h(int n) {\n    if (n < 10) return n;\n    return h(n / 10) + n % 10;\n}\n```",
+  "options": [
+   {
+    "en": "17"
+   },
+   {
+    "en": "8"
+   },
+   {
+    "en": "21"
+   },
+   {
+    "en": "12"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "h(4728) = h(472) + 8 = h(47) + 2 + 8 = h(4) + 7 + 2 + 8 = 4 + 7 + 2 + 8 = 21. The function returns the sum of the decimal digits of n.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_linear",
+  "subtopic": "Array address - row-major",
+  "difficulty": "medium",
+  "question_en": "An array int A[10][15] (indices start at 0) is stored in row-major order with base address 2000 and 4 bytes per element. What is the address of A[6][8]?",
+  "options": [
+   {
+    "en": "2392"
+   },
+   {
+    "en": "2344"
+   },
+   {
+    "en": "2328"
+   },
+   {
+    "en": "2272"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Row-major: address = Base + w × (i × C + j), where C = 15 columns. Address = 2000 + 4 × (6 × 15 + 8) = 2000 + 4 × 98 = 2392.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_linear",
+  "subtopic": "Array address - column-major",
+  "difficulty": "medium",
+  "question_en": "An array A[1..8][1..12] is stored in column-major order. The base address is 1500 and each element takes 2 bytes. What is the address of A[5][7]?",
+  "options": [
+   {
+    "en": "1622"
+   },
+   {
+    "en": "1608"
+   },
+   {
+    "en": "1604"
+   },
+   {
+    "en": "1652"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Column-major: address = Base + w × ((j − lc) × R + (i − lr)), where R = 8 rows. Address = 1500 + 2 × ((7 − 1) × 8 + (5 − 1)) = 1500 + 2 × 52 = 1604. (Row-major would give 1608.)",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_linear",
+  "subtopic": "Array address - row-major with non-zero lower bounds",
+  "difficulty": "hard",
+  "question_en": "An array A[−3..4][5..14] of 8-byte elements is stored in row-major order starting at address 1000. What is the address of A[2][9]?",
+  "options": [
+   {
+    "en": "1296"
+   },
+   {
+    "en": "1432"
+   },
+   {
+    "en": "1192"
+   },
+   {
+    "en": "1592"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Rows = 4 − (−3) + 1 = 8 and columns = 14 − 5 + 1 = 10. Row-major address = 1000 + 8 × ((2 − (−3)) × 10 + (9 − 5)) = 1000 + 8 × 54 = 1432.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_linear",
+  "subtopic": "Array address - column-major with negative bounds",
+  "difficulty": "hard",
+  "question_en": "An array A[−2..6][−4..3] of 2-byte elements is stored in column-major order with base address 600. What is the address of A[3][1]?",
+  "options": [
+   {
+    "en": "696"
+   },
+   {
+    "en": "690"
+   },
+   {
+    "en": "624"
+   },
+   {
+    "en": "700"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Rows R = 6 − (−2) + 1 = 9 and columns = 3 − (−4) + 1 = 8. Column-major address = 600 + 2 × ((1 − (−4)) × 9 + (3 − (−2))) = 600 + 2 × (45 + 5) = 700.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_linear",
+  "subtopic": "Array address - one-dimensional",
+  "difficulty": "medium",
+  "question_en": "In a one-dimensional array B[5..50] each element takes 2 bytes, and B[12] is stored at address 2114. What is the address of B[30]?",
+  "options": [
+   {
+    "en": "2150"
+   },
+   {
+    "en": "2132"
+   },
+   {
+    "en": "2164"
+   },
+   {
+    "en": "2152"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Consecutive elements are 2 bytes apart, so address(B[30]) = address(B[12]) + 2 × (30 − 12) = 2114 + 36 = 2150. The base address of B[5] is 2114 − 2 × (12 − 5) = 2100.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_linear",
+  "subtopic": "Array - number of elements",
+  "difficulty": "easy",
+  "question_en": "How many elements does the array A[−4..6][3..12] contain?",
+  "options": [
+   {
+    "en": "100"
+   },
+   {
+    "en": "90"
+   },
+   {
+    "en": "99"
+   },
+   {
+    "en": "110"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Elements in a dimension = upper bound − lower bound + 1. Rows = 6 − (−4) + 1 = 11 and columns = 12 − 3 + 1 = 10, so the array has 11 × 10 = 110 elements.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_linear",
+  "subtopic": "Array - insertion complexity",
+  "difficulty": "easy",
+  "question_en": "Inserting a new element at index 0 of an array that already holds n elements (keeping their order) takes, in the worst case:",
+  "options": [
+   {
+    "en": "O(1)"
+   },
+   {
+    "en": "O(n)"
+   },
+   {
+    "en": "O(log n)"
+   },
+   {
+    "en": "O(n²)"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "All n existing elements must be shifted one place to the right to free index 0, which costs O(n). Accessing an element by its index, in contrast, is O(1).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_linear",
+  "subtopic": "Triangular matrix - storage count",
+  "difficulty": "medium",
+  "question_en": "A 12 × 12 lower triangular matrix is stored row by row in a 1-D array, keeping only the elements on and below the main diagonal. How many elements are stored?",
+  "options": [
+   {
+    "en": "72"
+   },
+   {
+    "en": "66"
+   },
+   {
+    "en": "144"
+   },
+   {
+    "en": "78"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Row i holds i elements, so the count is 1 + 2 + … + 12 = 12 × 13 / 2 = 78. The 66 elements above the diagonal (12 × 11 / 2) are zero and are not stored.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_linear",
+  "subtopic": "Triangular matrix - address of an element",
+  "difficulty": "hard",
+  "question_en": "The lower triangular part (on and below the diagonal) of A[1..10][1..10] is stored row-wise in a 1-D array starting at address 500, with 2 bytes per element. What is the address of A[7][4]?",
+  "options": [
+   {
+    "en": "550"
+   },
+   {
+    "en": "548"
+   },
+   {
+    "en": "626"
+   },
+   {
+    "en": "560"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Rows 1 to 6 store 1 + 2 + … + 6 = 21 elements, and A[7][4] is the 4th element of row 7, so its offset is 21 + 3 = 24. Address = 500 + 2 × 24 = 548.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_linear",
+  "subtopic": "Sparse matrix - triplet representation",
+  "difficulty": "medium",
+  "question_en": "A 7 × 8 sparse matrix has 11 non-zero elements. In the 3-tuple (row, column, value) representation with one header row holding the dimensions and the number of non-zeros, how many rows does the table have?",
+  "options": [
+   {
+    "en": "12"
+   },
+   {
+    "en": "11"
+   },
+   {
+    "en": "56"
+   },
+   {
+    "en": "33"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "One triple is stored for each non-zero element (11 rows) plus the header row ⟨7, 8, 11⟩, giving 12 rows of 3 columns (36 values). That is far fewer than the 56 cells of the full matrix.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_linear",
+  "subtopic": "Linked list types - circular",
+  "difficulty": "easy",
+  "question_en": "In which type of linked list does the last node's next pointer point back to the first node instead of NULL?",
+  "options": [
+   {
+    "en": "Singly linked list"
+   },
+   {
+    "en": "Doubly linked list"
+   },
+   {
+    "en": "Circular linked list"
+   },
+   {
+    "en": "Header linked list"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "In a circular linked list the last node links back to the first, so the whole list can be traversed starting from any node. In an ordinary singly or doubly linked list the last node's next pointer is NULL.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_linear",
+  "subtopic": "Doubly linked list - NULL pointers",
+  "difficulty": "easy",
+  "question_en": "A non-circular doubly linked list has 8 nodes. How many NULL pointers does it contain?",
+  "options": [
+   {
+    "en": "8"
+   },
+   {
+    "en": "1"
+   },
+   {
+    "en": "2"
+   },
+   {
+    "en": "16"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Each node has a prev and a next pointer (16 in all). Only the first node's prev and the last node's next are NULL; every other pointer links to a neighbour. So there are exactly 2 NULL pointers, whatever the number of nodes.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_linear",
+  "subtopic": "Linked list - operation complexities",
+  "difficulty": "medium",
+  "question_en": "A singly linked list keeps both a head pointer and a tail pointer. Which operation still takes O(n) time?",
+  "options": [
+   {
+    "en": "Delete the last node"
+   },
+   {
+    "en": "Insert a node at the end"
+   },
+   {
+    "en": "Delete the first node"
+   },
+   {
+    "en": "Insert a node at the front"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "To delete the last node, the second-last node's next must be set to NULL, and in a singly linked list that node can be reached only by walking from the head, which is O(n). Inserting at either end and deleting the first node are O(1) with head and tail pointers.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_linear",
+  "subtopic": "Doubly linked list - deletion complexity",
+  "difficulty": "easy",
+  "question_en": "In a doubly linked list, you are given a pointer to a node X in the middle of the list. What is the time needed to delete X?",
+  "options": [
+   {
+    "en": "O(n²)"
+   },
+   {
+    "en": "O(log n)"
+   },
+   {
+    "en": "O(n)"
+   },
+   {
+    "en": "O(1)"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "X's neighbours are reachable through X->prev and X->next, so we set X->prev->next = X->next and X->next->prev = X->prev, then free X. This is a fixed number of steps, i.e., O(1).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_linear",
+  "subtopic": "Linked list - recursive traversal output",
+  "difficulty": "medium",
+  "question_en": "The list is 5 → 10 → 15 → 20 and f(head) is called. What is printed?\n```c\nstruct node { int data; struct node *next; };\nvoid f(struct node *p) {\n    if (p == NULL) return;\n    f(p->next);\n    printf(\"%d \", p->data);\n}\n```",
+  "options": [
+   {
+    "en": "5 10 15 20"
+   },
+   {
+    "en": "5 15"
+   },
+   {
+    "en": "20 15 10 5"
+   },
+   {
+    "en": "20 10"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "f first recurses all the way to the end of the list and prints each node's data only while the calls return. So the last node is printed first and the output is 20 15 10 5: the list is printed in reverse without being changed.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_linear",
+  "subtopic": "Linked list - pointer manipulation (reversal)",
+  "difficulty": "medium",
+  "question_en": "What does the following function do to a singly linked list?\n```c\nstruct node *f(struct node *head) {\n    struct node *prev = NULL, *nxt;\n    while (head != NULL) {\n        nxt = head->next;\n        head->next = prev;\n        prev = head;\n        head = nxt;\n    }\n    return prev;\n}\n```",
+  "options": [
+   {
+    "en": "Reverses the list and returns the new head"
+   },
+   {
+    "en": "Deletes every node and returns NULL"
+   },
+   {
+    "en": "Returns the last node, links unchanged"
+   },
+   {
+    "en": "Makes the list circular and returns head"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Each iteration saves the next node in nxt, points the current node back to prev, and then advances prev and head by one node. When head becomes NULL every link has been reversed, and prev points to the old last node, which is the new head.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_linear",
+  "subtopic": "Linked list - insertion after a node",
+  "difficulty": "medium",
+  "question_en": "Pointer p points to a node of a singly linked list and q points to a new node. Which statement sequence correctly inserts q immediately after p?",
+  "options": [
+   {
+    "en": "q->next = p->next; p->next = q;"
+   },
+   {
+    "en": "p->next = q; q->next = p->next;"
+   },
+   {
+    "en": "q->next = p; p->next = q->next;"
+   },
+   {
+    "en": "p->next = q->next; q->next = p;"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "q must first take over p's old successor (q->next = p->next), and only then is p linked to q. If p->next = q is done first, the rest of the list is lost and q->next = p->next would make q point to itself.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_linear",
+  "subtopic": "Linked list - pointer manipulation trace",
+  "difficulty": "hard",
+  "question_en": "The list is 11 → 22 → 33 → 44 → 55 → 66 and head points to 11. After the code below runs, what does traversing the list from head print?\n```c\np = head;\nwhile (p != NULL && p->next != NULL) {\n    p->next = p->next->next;\n    p = p->next;\n}\n```",
+  "options": [
+   {
+    "en": "22 44 66"
+   },
+   {
+    "en": "11 33 55"
+   },
+   {
+    "en": "11 22 33"
+   },
+   {
+    "en": "11 66"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "In each pass p bypasses its successor (p->next = p->next->next) and then moves to the new successor. From 11, node 22 is bypassed and p moves to 33; 44 is bypassed and p moves to 55; 66 is bypassed and p becomes NULL. The list is now 11 → 33 → 55: every alternate node is unlinked.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_linear",
+  "subtopic": "Slow and fast pointers - middle node",
+  "difficulty": "medium",
+  "question_en": "Pointers slow and fast both start at the head of a singly linked list of 9 nodes numbered 1 to 9. In each step slow = slow->next and fast = fast->next->next, and the loop runs while (fast != NULL && fast->next != NULL). At which node does slow stop?",
+  "options": [
+   {
+    "en": "Node 4"
+   },
+   {
+    "en": "Node 9"
+   },
+   {
+    "en": "Node 6"
+   },
+   {
+    "en": "Node 5"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "fast moves two nodes per step: 1 → 3 → 5 → 7 → 9. After 4 steps fast->next is NULL, so the loop ends with slow at node 1 + 4 = 5, the middle node. The same tortoise-and-hare idea (Floyd) detects a cycle when the two pointers meet.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_linear",
+  "subtopic": "Array vs linked list",
+  "difficulty": "easy",
+  "question_en": "Which of the following is an advantage of a linked list over an array?",
+  "options": [
+   {
+    "en": "Random access to the i-th element in O(1)"
+   },
+   {
+    "en": "Insertion and deletion without shifting"
+   },
+   {
+    "en": "Better cache locality of the elements"
+   },
+   {
+    "en": "Less memory needed for each element"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "A linked list grows and shrinks dynamically, and a node is inserted or deleted just by changing pointers, with no shifting of elements. Arrays win on O(1) random access, cache locality and memory, since every list node needs extra space for a pointer.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_stack_queue",
+  "subtopic": "Stack - LIFO",
+  "difficulty": "easy",
+  "question_en": "A pile of trays, where the tray placed last is the first one taken off, works on which principle, and which data structure models it?",
+  "options": [
+   {
+    "en": "LIFO, stack"
+   },
+   {
+    "en": "FIFO, queue"
+   },
+   {
+    "en": "LIFO, queue"
+   },
+   {
+    "en": "FIFO, stack"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Last In, First Out (LIFO) means the most recently added item is removed first, exactly like push and pop at the top of a stack. A queue is FIFO: the earliest inserted item leaves first.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_stack_queue",
+  "subtopic": "Stack - overflow condition",
+  "difficulty": "easy",
+  "question_en": "A stack is implemented with an array stack[MAX], and top is initialised to −1. Which condition is checked before a push to detect overflow?",
+  "options": [
+   {
+    "en": "top == −1"
+   },
+   {
+    "en": "top == MAX"
+   },
+   {
+    "en": "top == MAX − 1"
+   },
+   {
+    "en": "top == 0"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Valid indices are 0 to MAX − 1, so the stack is full when top == MAX − 1 and another push would overflow. top == −1 is the empty (underflow) condition, checked before a pop.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_stack_queue",
+  "subtopic": "Queue - FIFO operations",
+  "difficulty": "easy",
+  "question_en": "Which statement about a linear queue is correct?",
+  "options": [
+   {
+    "en": "Insertion at the front, deletion at the rear"
+   },
+   {
+    "en": "Insertion and deletion both at the rear"
+   },
+   {
+    "en": "Insertion at the rear, deletion at the front"
+   },
+   {
+    "en": "Insertion and deletion both at the front"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "A queue is FIFO: new elements join at the rear (enqueue) and elements leave from the front (dequeue), so the element that has waited longest is removed first. If insertion and deletion were at the same end, it would behave like a stack.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ds_stack_queue",
+  "subtopic": "Queue in C - overflow in a linear queue",
+  "difficulty": "medium",
+  "question_en": "Starting with an empty queue, 5 elements are enqueued and then 2 are dequeued. What happens on the next call enqueue(9)?\n```c\n#define MAX 5\nint q[MAX], front = -1, rear = -1;\nvoid enqueue(int x) {\n    if (rear == MAX - 1) { printf(\"Overflow\"); return; }\n    if (front == -1) front = 0;\n    q[++rear] = x;\n}\nint dequeue(void) {\n    if (front == -1 || front > rear) { printf(\"Underflow\"); return -1; }\n    return q[front++];\n}\n```",
+  "options": [
+   {
+    "en": "9 is stored at q[0]"
+   },
+   {
+    "en": "9 is stored at q[2]"
+   },
+   {
+    "en": "Underflow is printed"
+   },
+   {
+    "en": "Overflow is printed"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "After 5 enqueues rear = 4 = MAX − 1, and the 2 dequeues only move front to 2. enqueue checks rear == MAX − 1, so it prints Overflow even though q[0] and q[1] are free. This wasted space in a linear queue is why a circular queue is used.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ds_stack_queue",
+  "subtopic": "Queue - number of elements",
+  "difficulty": "easy",
+  "question_en": "In a linear array queue, front is the index of the first element and rear is the index of the last element (front ≤ rear). How many elements are in the queue?",
+  "options": [
+   {
+    "en": "rear − front"
+   },
+   {
+    "en": "rear − front + 1"
+   },
+   {
+    "en": "rear − front − 1"
+   },
+   {
+    "en": "rear + front − 1"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The elements occupy indices front, front + 1, …, rear, which is rear − front + 1 positions. For example, front = 3 and rear = 7 hold 5 elements.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ds_stack_queue",
+  "subtopic": "Infix to postfix",
+  "difficulty": "medium",
+  "question_en": "What is the postfix form of the infix expression A + B * C − D / E?",
+  "options": [
+   {
+    "en": "A B C * + D E / −"
+   },
+   {
+    "en": "A B + C * D E / −"
+   },
+   {
+    "en": "A B C * D E / − +"
+   },
+   {
+    "en": "A B C + * D − E /"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "* and / bind tighter than + and −, and operators of equal precedence are applied left to right. So the expression is ((A + (B * C)) − (D / E)), whose postfix form is A B C * + D E / −.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_stack_queue",
+  "subtopic": "Infix to postfix with parentheses",
+  "difficulty": "medium",
+  "question_en": "What is the postfix form of the infix expression (A + B) * (C − D) / E?",
+  "options": [
+   {
+    "en": "A B + C D − * E /"
+   },
+   {
+    "en": "A B + C D − E / *"
+   },
+   {
+    "en": "A B C D + − * E /"
+   },
+   {
+    "en": "A B + * C D − E /"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The parenthesised parts become A B + and C D −. * and / have equal precedence and associate left to right, so (A + B) * (C − D) is formed first and then divided by E: A B + C D − * E /.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_stack_queue",
+  "subtopic": "Infix to postfix - right-associative power",
+  "difficulty": "hard",
+  "question_en": "What is the postfix form of the infix expression A ^ B ^ C * D, where ^ (power) has the highest precedence and is right-associative?",
+  "options": [
+   {
+    "en": "A B C D * ^ ^"
+   },
+   {
+    "en": "A B ^ C ^ D *"
+   },
+   {
+    "en": "A B C ^ ^ D *"
+   },
+   {
+    "en": "A B ^ C D * ^"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Right associativity means A ^ B ^ C = A ^ (B ^ C), which gives A B C ^ ^. That result is then multiplied by D: A B C ^ ^ D *. Treating ^ as left-associative would wrongly give A B ^ C ^ D *.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_stack_queue",
+  "subtopic": "Infix to prefix",
+  "difficulty": "medium",
+  "question_en": "What is the prefix form of the infix expression (P − Q) * (R + S)?",
+  "options": [
+   {
+    "en": "* + P Q − R S"
+   },
+   {
+    "en": "− P Q + R S *"
+   },
+   {
+    "en": "* P Q − R S +"
+   },
+   {
+    "en": "* − P Q + R S"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "In prefix form each operator comes before its two operands. (P − Q) becomes − P Q and (R + S) becomes + R S, and the outer * is written first: * − P Q + R S.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_stack_queue",
+  "subtopic": "Infix to prefix - mixed precedence",
+  "difficulty": "hard",
+  "question_en": "What is the prefix form of the infix expression A + B * C ^ D − E, where ^ (power) has the highest precedence?",
+  "options": [
+   {
+    "en": "− + A * ^ B C D E"
+   },
+   {
+    "en": "+ A − * B ^ C D E"
+   },
+   {
+    "en": "− + * A B ^ C D E"
+   },
+   {
+    "en": "− + A * B ^ C D E"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Precedence gives ((A + (B * (C ^ D))) − E). Writing each operator before its operands: C ^ D → ^ C D, then B * … → * B ^ C D, then A + … → + A * B ^ C D, and finally − + A * B ^ C D E.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_stack_queue",
+  "subtopic": "Infix to postfix - nested parentheses",
+  "difficulty": "medium",
+  "question_en": "What is the postfix form of the infix expression A * (B + C) − D / (E + F)?",
+  "options": [
+   {
+    "en": "A B C + * D E / F + −"
+   },
+   {
+    "en": "A B C + * D E F + / −"
+   },
+   {
+    "en": "A B + C * D E F + / −"
+   },
+   {
+    "en": "A B C + D E F + / * −"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The sums inside parentheses come first: B C + and E F +. Then A * (B + C) → A B C + * and D / (E + F) → D E F + /. Finally − joins the two parts: A B C + * D E F + / −.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_stack_queue",
+  "subtopic": "Prefix to postfix conversion",
+  "difficulty": "medium",
+  "question_en": "The prefix expression * + A B − C D is equivalent to which postfix expression?",
+  "options": [
+   {
+    "en": "A B − C D + *"
+   },
+   {
+    "en": "A B C D + − *"
+   },
+   {
+    "en": "A B + C D * −"
+   },
+   {
+    "en": "A B + C D − *"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "In the prefix form, * applies to the two sub-expressions (+ A B) and (− C D). So the infix form is (A + B) * (C − D), whose postfix form is A B + C D − *.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_stack_queue",
+  "subtopic": "Postfix evaluation",
+  "difficulty": "easy",
+  "question_en": "What is the value of the postfix expression 6 3 2 * + 4 −?",
+  "options": [
+   {
+    "en": "14"
+   },
+   {
+    "en": "8"
+   },
+   {
+    "en": "10"
+   },
+   {
+    "en": "4"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Push 6, 3, 2. * pops 2 and 3 and pushes 6; + pops 6 and 6 and pushes 12; push 4; − computes 12 − 4 = 8.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_stack_queue",
+  "subtopic": "Postfix evaluation",
+  "difficulty": "medium",
+  "question_en": "What is the value of the postfix expression 8 2 / 3 4 * + 5 −?",
+  "options": [
+   {
+    "en": "9"
+   },
+   {
+    "en": "21"
+   },
+   {
+    "en": "11"
+   },
+   {
+    "en": "1"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "8 2 / gives 4, 3 4 * gives 12, 4 + 12 = 16, and 16 − 5 = 11. For each operator, compute (second popped) op (first popped), e.g., 8 / 2, not 2 / 8.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_stack_queue",
+  "subtopic": "Prefix evaluation",
+  "difficulty": "medium",
+  "question_en": "What is the value of the prefix expression − * + 4 2 3 / 8 4?",
+  "options": [
+   {
+    "en": "14"
+   },
+   {
+    "en": "20"
+   },
+   {
+    "en": "16"
+   },
+   {
+    "en": "18"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Scan from right to left with a stack: push 4, 8; / gives 8 / 4 = 2. Push 3, 2, 4; + gives 4 + 2 = 6; * gives 6 × 3 = 18; − gives 18 − 2 = 16. In infix this is (4 + 2) * 3 − 8 / 4.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_stack_queue",
+  "subtopic": "Postfix evaluation with power",
+  "difficulty": "medium",
+  "question_en": "What is the value of the postfix expression 2 3 ^ 4 2 / − 3 *, where ^ denotes exponentiation?",
+  "options": [
+   {
+    "en": "12"
+   },
+   {
+    "en": "6"
+   },
+   {
+    "en": "24"
+   },
+   {
+    "en": "18"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Scan left to right, applying each operator to the top two operands: 2 3 ^ = 2³ = 8 and 4 2 / = 2. Then 8 − 2 = 6, and finally 6 3 * = 18.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_stack_queue",
+  "subtopic": "Postfix evaluation - stack contents",
+  "difficulty": "hard",
+  "question_en": "While evaluating the postfix expression 7 3 5 + * 6 8 2 / − *, what are the stack contents (bottom → top) just after the operand 2 is pushed?",
+  "options": [
+   {
+    "en": "7, 8, 6, 8, 2"
+   },
+   {
+    "en": "56, 6, 8, 2"
+   },
+   {
+    "en": "56, 6, 4"
+   },
+   {
+    "en": "7, 3, 5, 6, 8, 2"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "3 5 + gives 8, and 7 8 * gives 56, leaving only 56 on the stack. Then 6, 8 and 2 are pushed, so the stack is 56, 6, 8, 2. Continuing: 8 / 2 = 4, 6 − 4 = 2 and 56 × 2 = 112.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_stack_queue",
+  "subtopic": "Stack contents after operations",
+  "difficulty": "medium",
+  "question_en": "Starting with an empty stack, these operations are performed: push(4), push(9), pop(), push(6), push(2), pop(), pop(), push(7). What are the stack contents from bottom to top?",
+  "options": [
+   {
+    "en": "4, 6, 7"
+   },
+   {
+    "en": "4, 7"
+   },
+   {
+    "en": "9, 7"
+   },
+   {
+    "en": "4, 9, 7"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "push 4, 9 → [4, 9]; pop removes 9 → [4]; push 6, 2 → [4, 6, 2]. The two pops remove 2 and 6 → [4], and push 7 gives [4, 7], with 7 on top.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_stack_queue",
+  "subtopic": "Stack - order of popped elements",
+  "difficulty": "medium",
+  "question_en": "The operations push(1), push(2), push(3), pop(), pop(), push(4), pop(), pop() are performed on an empty stack. In what order are the elements popped?",
+  "options": [
+   {
+    "en": "1 2 3 4"
+   },
+   {
+    "en": "3 2 4 1"
+   },
+   {
+    "en": "3 2 1 4"
+   },
+   {
+    "en": "2 3 4 1"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The stack becomes [1, 2, 3]; two pops give 3 and then 2, leaving [1]. push(4) gives [1, 4], and the next two pops give 4 and then 1. Popped order: 3 2 4 1.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_stack_queue",
+  "subtopic": "Circular queue - full condition",
+  "difficulty": "easy",
+  "question_en": "A circular queue is implemented in an array of size N with indices front and rear, keeping one slot empty to tell 'full' from 'empty'. Which condition means the queue is FULL?",
+  "options": [
+   {
+    "en": "front == rear"
+   },
+   {
+    "en": "rear == N − 1"
+   },
+   {
+    "en": "(rear + 1) % N == front"
+   },
+   {
+    "en": "(front + 1) % N == rear"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Because one slot is left unused, the queue is empty when front == rear and full when advancing rear by one (wrapping with % N) would reach front, i.e., (rear + 1) % N == front. The test rear == N − 1 is the full test of a linear queue only.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_stack_queue",
+  "subtopic": "Circular queue - number of elements",
+  "difficulty": "medium",
+  "question_en": "A circular queue is stored in an array of 12 locations (indices 0–11). front = 9 is the index of the first element and rear = 3 is the index of the last element. How many elements are in the queue?",
+  "options": [
+   {
+    "en": "5"
+   },
+   {
+    "en": "6"
+   },
+   {
+    "en": "8"
+   },
+   {
+    "en": "7"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The elements occupy indices 9, 10, 11, 0, 1, 2, 3, which is 7 positions. Formula: (rear − front + N) % N + 1 = (3 − 9 + 12) % 12 + 1 = 6 + 1 = 7.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_stack_queue",
+  "subtopic": "Circular queue in C - trace",
+  "difficulty": "hard",
+  "question_en": "Starting with an empty queue, the calls enq(10), enq(20), enq(30), enq(40), deq(), deq(), enq(50), enq(60) are made. What are the final values of front and rear?\n```c\n#define N 5\nint q[N], front = -1, rear = -1;\nvoid enq(int x) {\n    if ((rear + 1) % N == front) { printf(\"Full\"); return; }\n    if (front == -1) front = 0;\n    rear = (rear + 1) % N;\n    q[rear] = x;\n}\nint deq(void) {\n    int x = q[front];\n    if (front == rear) front = rear = -1;\n    else front = (front + 1) % N;\n    return x;\n}\n```",
+  "options": [
+   {
+    "en": "front = 2, rear = 0"
+   },
+   {
+    "en": "front = 2, rear = 5"
+   },
+   {
+    "en": "front = 0, rear = 2"
+   },
+   {
+    "en": "front = 1, rear = 0"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "After four enqueues front = 0 and rear = 3. The two dequeues move front to 2. enq(50) sets rear = 4, and enq(60) wraps rear to (4 + 1) % 5 = 0 and stores 60 in q[0]. So front = 2 and rear = 0, with 4 elements (30, 40, 50, 60).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_stack_queue",
+  "subtopic": "Deque - input-restricted",
+  "difficulty": "easy",
+  "question_en": "A double-ended queue (deque) in which insertion is allowed at only one end, but deletion is allowed at both ends, is called a/an:",
+  "options": [
+   {
+    "en": "Input-restricted deque"
+   },
+   {
+    "en": "Output-restricted deque"
+   },
+   {
+    "en": "Priority queue"
+   },
+   {
+    "en": "Circular queue"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "In an input-restricted deque, insertion happens at one end only while deletion is allowed at both ends. An output-restricted deque is the reverse: insertion at both ends, deletion at one end only.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_stack_queue",
+  "subtopic": "Priority queue - heap implementation",
+  "difficulty": "medium",
+  "question_en": "A priority queue of n elements is implemented as a binary min-heap. What are the time complexities of inserting an element and of deleting the minimum element?",
+  "options": [
+   {
+    "en": "O(log n) and O(log n)"
+   },
+   {
+    "en": "O(1) and O(n)"
+   },
+   {
+    "en": "O(n) and O(1)"
+   },
+   {
+    "en": "O(log n) and O(1)"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Insertion puts the element at the next leaf and sifts it up a tree of height ⌊log₂ n⌋, so it is O(log n). Delete-min removes the root, moves the last leaf to the root and sifts it down, also O(log n). Only reading the minimum (peek) is O(1).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_stack_queue",
+  "subtopic": "Applications of stack",
+  "difficulty": "easy",
+  "question_en": "Which of the following is NOT an application of a stack?",
+  "options": [
+   {
+    "en": "Checking balanced parentheses"
+   },
+   {
+    "en": "Undo operation in a text editor"
+   },
+   {
+    "en": "Round-robin CPU scheduling"
+   },
+   {
+    "en": "Managing function calls and recursion"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Parenthesis checking, undo and function-call management all need the most recent item first (LIFO), so they use a stack. Round-robin scheduling serves processes in arrival order and cycles through them, which uses a (circular) queue.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_stack_queue",
+  "subtopic": "Applications of queue",
+  "difficulty": "easy",
+  "question_en": "Documents sent to a shared office printer are printed in the order in which they arrive. Which data structure suits this print spooler best?",
+  "options": [
+   {
+    "en": "Stack"
+   },
+   {
+    "en": "Queue"
+   },
+   {
+    "en": "Binary tree"
+   },
+   {
+    "en": "Graph"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The first document submitted must be printed first, which is FIFO behaviour, so a queue is used. A stack would print the most recently submitted document first.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ds_stack_queue",
+  "subtopic": "Queue using two stacks - cost",
+  "difficulty": "hard",
+  "question_en": "A queue is implemented with two stacks S1 and S2. Enqueue pushes onto S1. Dequeue pops from S2; if S2 is empty, all elements of S1 are first popped and pushed onto S2. With n elements, what are the worst-case cost of one dequeue and the amortised cost per operation (tightest bounds)?",
+  "options": [
+   {
+    "en": "O(1) worst case, O(1) amortised"
+   },
+   {
+    "en": "O(n) worst case, O(1) amortised"
+   },
+   {
+    "en": "O(n) worst case, O(n) amortised"
+   },
+   {
+    "en": "O(log n) worst case, O(1) amortised"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "A dequeue that finds S2 empty must move all n elements from S1 to S2, costing O(n). But each element is pushed and popped at most twice in its life (once on S1, once on S2), so any sequence of m operations costs O(m), i.e., O(1) amortised per operation.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_stack_queue",
+  "subtopic": "Stack permutations - Catalan number",
+  "difficulty": "hard",
+  "question_en": "The numbers 1, 2, 3, 4, 5 are pushed onto a stack in this order, and pops may be done at any time (the stack is emptied at the end). How many different output sequences are possible?",
+  "options": [
+   {
+    "en": "14"
+   },
+   {
+    "en": "120"
+   },
+   {
+    "en": "42"
+   },
+   {
+    "en": "32"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The number of permutations a stack can produce from n items in fixed input order is the Catalan number Cₙ = C(2n, n)/(n + 1). For n = 5: C(10, 5)/6 = 252/6 = 42, far fewer than 5! = 120.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_stack_queue",
+  "subtopic": "Stack permutations - impossible sequence",
+  "difficulty": "medium",
+  "question_en": "The elements 1, 2, 3, 4, 5 are pushed onto a stack in that order, and pops are allowed at any time. Which output sequence is IMPOSSIBLE?",
+  "options": [
+   {
+    "en": "3 2 1 5 4"
+   },
+   {
+    "en": "2 4 3 5 1"
+   },
+   {
+    "en": "1 2 3 4 5"
+   },
+   {
+    "en": "4 1 2 3 5"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "To output 4 first, 1, 2 and 3 must already be on the stack with 3 on top, so the next pop gives 3 (or 5 after pushing 5), never 1. Hence 4 1 2 3 5 is impossible. The others can be produced, e.g., 2 4 3 5 1 = push 1, push 2, pop, push 3, push 4, pop, pop, push 5, pop, pop.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_stack_queue",
+  "subtopic": "Two stacks in one array",
+  "difficulty": "medium",
+  "question_en": "Two stacks share one array A[0..n−1]: stack 1 grows upward from index 0 (top1 starts at −1) and stack 2 grows downward from index n − 1 (top2 starts at n). When does a push cause overflow?",
+  "options": [
+   {
+    "en": "top1 == top2"
+   },
+   {
+    "en": "top2 == 0"
+   },
+   {
+    "en": "top1 == n − 1"
+   },
+   {
+    "en": "top1 + 1 == top2"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Neither stack is limited to a fixed half; they can grow until they meet. The array is completely full when the next free slot of stack 1 is top2's slot, i.e., top1 + 1 == top2, and then a push to either stack overflows. This uses space better than two fixed halves.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_design",
+  "subtopic": "Divide and conquer - which is not",
+  "difficulty": "easy",
+  "question_en": "Which of the following algorithms does NOT use the divide and conquer technique?",
+  "options": [
+   {
+    "en": "Prim's MST algorithm"
+   },
+   {
+    "en": "Binary search"
+   },
+   {
+    "en": "Merge sort"
+   },
+   {
+    "en": "Karatsuba multiplication"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Merge sort, binary search and Karatsuba multiplication each split the problem into smaller sub-problems, solve them recursively and combine the results. Prim's algorithm grows the spanning tree by repeatedly adding the cheapest edge leaving it, which is a greedy method.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ds_design",
+  "subtopic": "Divide and conquer - Strassen's matrix multiplication",
+  "difficulty": "medium",
+  "question_en": "Strassen's algorithm multiplies two n × n matrices by splitting each into four (n/2) × (n/2) blocks. Which recurrence and complexity does it have?",
+  "options": [
+   {
+    "en": "T(n) = 8T(n/2) + Θ(n²), Θ(n³)"
+   },
+   {
+    "en": "T(n) = 7T(n/2) + Θ(n²), Θ(n^2.81)"
+   },
+   {
+    "en": "T(n) = 7T(n/2) + Θ(n), Θ(n²)"
+   },
+   {
+    "en": "T(n) = 4T(n/2) + Θ(n²), Θ(n² log n)"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Strassen uses 7 block multiplications instead of the naive 8, plus Θ(n²) work for additions. By the Master theorem T(n) = Θ(n^(log₂ 7)) ≈ Θ(n^2.81), better than the Θ(n³) of the 8-multiplication version.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ds_design",
+  "subtopic": "Greedy - fractional knapsack",
+  "difficulty": "medium",
+  "question_en": "A knapsack of capacity 15 kg is to be filled from items I1 (5 kg, ₹30), I2 (10 kg, ₹40), I3 (4 kg, ₹28) and I4 (8 kg, ₹24). Items may be broken (fractional knapsack). What is the maximum total value?",
+  "options": [
+   {
+    "en": "₹76"
+   },
+   {
+    "en": "₹70"
+   },
+   {
+    "en": "₹82"
+   },
+   {
+    "en": "₹88"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Value/weight ratios: I3 = 7, I1 = 6, I2 = 4, I4 = 3. Take I3 (4 kg, ₹28) and I1 (5 kg, ₹30), using 9 kg; the remaining 6 kg is 6/10 of I2, worth ₹24. Maximum value = 28 + 30 + 24 = ₹82.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_design",
+  "subtopic": "Greedy - activity selection",
+  "difficulty": "medium",
+  "question_en": "Activities (start, finish): A(2, 5), B(1, 3), C(4, 7), D(6, 8), E(3, 9), F(8, 10), G(9, 12), H(11, 13). An activity may start exactly when the previous one finishes. What is the maximum number of activities one person can perform?",
+  "options": [
+   {
+    "en": "4"
+   },
+   {
+    "en": "3"
+   },
+   {
+    "en": "5"
+   },
+   {
+    "en": "2"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Greedy rule: sort by finish time and pick each activity that starts no earlier than the last chosen one finishes. Order by finish: B(3), A(5), C(7), D(8), E(9), F(10), G(12), H(13). The picks are B(1–3), C(4–7), F(8–10) and H(11–13), so 4 activities.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_design",
+  "subtopic": "Greedy - Huffman coding",
+  "difficulty": "hard",
+  "question_en": "A message contains the characters P, Q, R, S and T with frequencies 4, 7, 10, 15 and 20. Using Huffman coding, how many bits are needed to encode the whole message?",
+  "options": [
+   {
+    "en": "168"
+   },
+   {
+    "en": "123"
+   },
+   {
+    "en": "112"
+   },
+   {
+    "en": "135"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Merge the two smallest weights each time: 4 + 7 = 11; 10 + 11 = 21; 15 + 20 = 35; 21 + 35 = 56. P and Q get 3-bit codes while R, S and T get 2-bit codes, so the total is 4×3 + 7×3 + 10×2 + 15×2 + 20×2 = 123 bits (also the sum of merges 11 + 21 + 35 + 56). A fixed 3-bit code would need 168 bits.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_design",
+  "subtopic": "Greedy - job sequencing with deadlines",
+  "difficulty": "hard",
+  "question_en": "Each job takes one unit of time. Jobs (profit, deadline): J1 (35, 3), J2 (30, 4), J3 (25, 4), J4 (20, 2), J5 (15, 3), J6 (12, 1), J7 (5, 2). What is the maximum total profit if each job must finish by its deadline?",
+  "options": [
+   {
+    "en": "90"
+   },
+   {
+    "en": "105"
+   },
+   {
+    "en": "110"
+   },
+   {
+    "en": "122"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Take jobs in decreasing order of profit and place each in the latest free slot not after its deadline. J1 → slot 3, J2 → slot 4, J3 → slot 2, J4 → slot 1; all 4 slots (maximum deadline 4) are now full, so J5, J6 and J7 are rejected. Maximum profit = 35 + 30 + 25 + 20 = 110.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_design",
+  "subtopic": "Greedy vs dynamic programming - knapsack",
+  "difficulty": "easy",
+  "question_en": "The greedy method (choosing by value/weight ratio) is guaranteed to give an optimal solution for which version of the knapsack problem?",
+  "options": [
+   {
+    "en": "Fractional knapsack"
+   },
+   {
+    "en": "0/1 knapsack only"
+   },
+   {
+    "en": "Both 0/1 and fractional"
+   },
+   {
+    "en": "Neither version"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "In the fractional knapsack items can be split, so filling the bag in decreasing order of value/weight is always optimal. In the 0/1 version an item must be taken whole; the same greedy rule can leave capacity unused and miss the best combination, so dynamic programming is used.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_design",
+  "subtopic": "Dynamic programming - required properties",
+  "difficulty": "easy",
+  "question_en": "Which two properties must a problem have for dynamic programming to be applied effectively?",
+  "options": [
+   {
+    "en": "Overlapping subproblems and sorted input"
+   },
+   {
+    "en": "Greedy-choice property and independent subproblems"
+   },
+   {
+    "en": "Optimal substructure and greedy-choice property"
+   },
+   {
+    "en": "Optimal substructure and overlapping subproblems"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Optimal substructure means an optimal solution is built from optimal solutions of subproblems. Overlapping subproblems means the same subproblems recur, so their answers can be stored (memoised or tabulated) and reused. Divide and conquer, by contrast, works on independent subproblems.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_design",
+  "subtopic": "Dynamic programming - 0/1 knapsack",
+  "difficulty": "hard",
+  "question_en": "In a 0/1 knapsack problem the capacity is 9 and the items (weight, value) are (2, 12), (3, 20), (4, 28) and (5, 33). What is the maximum total value?",
+  "options": [
+   {
+    "en": "53"
+   },
+   {
+    "en": "60"
+   },
+   {
+    "en": "61.2"
+   },
+   {
+    "en": "61"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Taking the items of weight 4 and 5 gives 28 + 33 = 61, while weights 2 + 3 + 4 give 12 + 20 + 28 = 60. Greedy by value/weight ratio (7, 6.67, 6.6, 6) picks weights 4, 3, 2 for only 60, and the DP table confirms 61 as the optimum. 61.2 would be the fractional-knapsack value.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_design",
+  "subtopic": "Dynamic programming - LCS length",
+  "difficulty": "medium",
+  "question_en": "What is the length of the longest common subsequence (LCS) of the strings ALGORITHM and LOGARITHM?",
+  "options": [
+   {
+    "en": "9"
+   },
+   {
+    "en": "6"
+   },
+   {
+    "en": "8"
+   },
+   {
+    "en": "7"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Both words end in RITHM, and their prefixes are ALGO and LOGA. In these prefixes A comes before L, G and O in one word but after them in the other, and G and O are also in opposite orders, so at least two letters must be dropped. A common subsequence of length 7 exists (e.g., LGRITHM), so the LCS length is 7.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_design",
+  "subtopic": "Backtracking - sum of subsets",
+  "difficulty": "medium",
+  "question_en": "Sum of subsets problem: w = {3, 5, 6, 7, 9} and the required sum m = 15. Writing each solution as a 0/1 vector (1 = item included), which option lists all the solutions?",
+  "options": [
+   {
+    "en": "10110; 00101"
+   },
+   {
+    "en": "11010; 00110"
+   },
+   {
+    "en": "11010; 00101"
+   },
+   {
+    "en": "11010; 00101; 10011"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The subsets with sum 15 are {3, 5, 7} = 11010 and {6, 9} = 00101; no other subset works. 00110 = 6 + 7 = 13, 10110 = 3 + 6 + 7 = 16 and 10011 = 3 + 7 + 9 = 19, so the other options contain wrong vectors.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ds_design",
+  "subtopic": "Backtracking - 4-queens",
+  "difficulty": "medium",
+  "question_en": "In the 4-queens problem a solution is written as (x₁, x₂, x₃, x₄), where xᵢ is the column of the queen in row i. Which of the following is a valid solution?",
+  "options": [
+   {
+    "en": "(1, 3, 2, 4)"
+   },
+   {
+    "en": "(2, 3, 1, 4)"
+   },
+   {
+    "en": "(3, 1, 4, 2)"
+   },
+   {
+    "en": "(1, 4, 2, 3)"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "In (3, 1, 4, 2) all columns differ and |xᵢ − xⱼ| ≠ |i − j| for every pair of rows, so no two queens share a diagonal. Each other option has a diagonal clash, e.g., (1, 4, 2, 3) has queens at rows 3 and 4 in columns 2 and 3. The 4-queens problem has exactly two solutions: (2, 4, 1, 3) and (3, 1, 4, 2).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_design",
+  "subtopic": "Branch and bound vs backtracking",
+  "difficulty": "easy",
+  "question_en": "Which statement correctly describes branch and bound as compared with backtracking?",
+  "options": [
+   {
+    "en": "It explores the state-space tree only depth-first"
+   },
+   {
+    "en": "It uses bounds, often with FIFO/least-cost search, to prune"
+   },
+   {
+    "en": "It always finds a solution faster than backtracking"
+   },
+   {
+    "en": "It never prunes any node of the state-space tree"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Backtracking searches the state-space tree depth-first and abandons a node as soon as it cannot lead to a feasible solution. Branch and bound is used mainly for optimisation problems (e.g., 0/1 knapsack, travelling salesman): it computes a bound for each live node, expands nodes in FIFO or least-cost order, and prunes nodes that cannot beat the best solution so far.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_design",
+  "subtopic": "NP-complete problems",
+  "difficulty": "easy",
+  "question_en": "Which of the following problems is NP-complete?",
+  "options": [
+   {
+    "en": "Boolean satisfiability (SAT)"
+   },
+   {
+    "en": "Sorting n numbers"
+   },
+   {
+    "en": "Dijkstra's shortest paths"
+   },
+   {
+    "en": "Minimum spanning tree"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "SAT was the first problem proved NP-complete (Cook–Levin theorem). Sorting (O(n log n)), shortest paths with Dijkstra's algorithm and the MST (Prim/Kruskal) all have polynomial-time algorithms, so they are in P.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ds_design",
+  "subtopic": "P, NP and NP-complete",
+  "difficulty": "medium",
+  "question_en": "Which of the following statements is TRUE?",
+  "options": [
+   {
+    "en": "P is a subset of NP (P ⊆ NP)"
+   },
+   {
+    "en": "It has been proved that NP ⊆ P"
+   },
+   {
+    "en": "Every NP-hard problem belongs to NP"
+   },
+   {
+    "en": "NP-complete in P would imply P ≠ NP"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A problem solvable in polynomial time can also be verified in polynomial time, so P ⊆ NP. Whether NP ⊆ P (i.e., P = NP) is still open. NP-hard problems need not be in NP (the halting problem is NP-hard but undecidable), and if any NP-complete problem were in P, then P = NP.",
+  "pyq_concept": false
+ }
+]

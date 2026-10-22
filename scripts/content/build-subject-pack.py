@@ -122,7 +122,8 @@ def main():
             if q.get('chapter_key') not in title_of or len(opts) != 4 or q.get('answer_index') not in (0, 1, 2, 3) or not stem:
                 print('!! dropped malformed question:', stem[:60])
                 continue
-            fp = re.sub(r'\W+', ' ', (stem + '|' + '|'.join(o.get('en', '') for o in opts)).lower())
+            # Only spacing and case are ignored: symbols matter ("A+B*C" vs "(A+B)*C").
+            fp = re.sub(r'\s+', ' ', (stem + '|' + '|'.join(o.get('en', '') for o in opts)).lower()).strip()
             if fp in seen:
                 print('!! dropped duplicate:', stem[:60])
                 continue
