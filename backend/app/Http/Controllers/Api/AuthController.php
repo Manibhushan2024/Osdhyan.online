@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Mail\OtpEmail;
 use App\Mail\WelcomeEmail;
 use App\Models\User;
+use App\Services\FirebaseTokenException;
+use App\Services\FirebaseTokenVerifier;
 use App\Services\SmsService;
 use App\Support\PhoneNumber;
 use Illuminate\Http\Request;
@@ -563,6 +565,18 @@ class AuthController extends Controller
                 'enabled'   => $this->googleConfigured(),
                 'client_id' => $this->googleConfigured() ? config('services.google.client_id') : null,
             ],
+            // Public Firebase web config (safe to expose) so the clients can
+            // initialise the Firebase SDK without a rebuild.
+            'firebase' => [
+                'enabled'    => $firebaseOn = app(FirebaseTokenVerifier::class)->isConfigured(),
+                'project_id' => $firebaseOn ? config('services.firebase.project_id') : null,
+                'web'        => [
+                    'apiKey'            => $firebaseOn ? config('services.firebase.web_api_key') : null,
+                    'authDomain'        => $firebaseOn ? config('services.firebase.auth_domain') : null,
+                    'appId'             => $firebaseOn ? config('services.firebase.web_app_id') : null,
+                    'messagingSenderId' => $firebaseOn ? config('services.firebase.messaging_sender_id') : null,
+                ],
+            ],
         ]);
     }
 
@@ -668,6 +682,109 @@ class AuthController extends Controller
 
             return redirect("{$frontendUrl}/auth/login?error=" . urlencode('Google sign-in failed. Please try again or use OTP.'));
         }
+    }
+
+    // ─── Firebase Authentication ──────────────────────────────────────────────
+
+    /**
+     * Sign in with a Firebase ID token. The Android app / web sign in with the
+     * Firebase SDK (phone OTP, e-mail link, Google) and post the ID token here;
+     * we verify it against Google's keys and issue our own Sanctum token.
+     *
+     * The account is found by firebase_uid, then by phone number, then by a
+     * verified e-mail; otherwise a new student account is created.
+     */
+    public function firebaseToken(Request $request, FirebaseTokenVerifier $verifier)
+    {
+        if (!$verifier->isConfigured()) {
+            return response()->json([
+                'message' => 'Firebase sign-in is not set up yet. Use your mobile number (OTP) or e-mail and password.',
+                'code'    => 'FIREBASE_NOT_CONFIGURED',
+            ], 503);
+        }
+
+        $validated = $request->validate([
+            'id_token' => 'required|string|max:8192',
+            'name'     => 'nullable|string|max:255',
+        ]);
+
+        try {
+            $claims = $verifier->verify($validated['id_token']);
+        } catch (FirebaseTokenException $e) {
+            return response()->json(['message' => $e->getMessage(), 'code' => 'FIREBASE_TOKEN_INVALID'], $e->status());
+        }
+
+        $uid      = (string) $claims['sub'];
+        $provider = (string) ($claims['firebase']['sign_in_provider'] ?? '');
+        $rawPhone = trim((string) ($claims['phone_number'] ?? ''));
+        $phone    = $rawPhone === '' ? null : (PhoneNumber::normalize($rawPhone) ?? $rawPhone);
+        $email    = strtolower(trim((string) ($claims['email'] ?? ''))) ?: null;
+        // Only a verified address may be linked to an existing account; an
+        // unverified e-mail/password Firebase user could otherwise claim
+        // someone else's account. Google addresses are verified by Google.
+        $emailTrusted = $email && (filter_var($claims['email_verified'] ?? false, FILTER_VALIDATE_BOOLEAN) || $provider === 'google.com');
+        $googleSub    = $claims['firebase']['identities']['google.com'][0] ?? null;
+
+        if (!$phone && !$email) {
+            return response()->json(['message' => 'Sign in with a mobile number or e-mail address.'], 422);
+        }
+
+        $phoneOwner = $phone ? User::whereIn('phone', PhoneNumber::candidates($phone))->first() : null;
+        $emailOwner = $email ? User::whereRaw('LOWER(email) = ?', [$email])->first() : null;
+
+        $user = User::where('firebase_uid', $uid)->first()
+            ?? $phoneOwner
+            ?? ($emailTrusted ? $emailOwner : null);
+        $isNewUser = false;
+
+        if (!$user) {
+            $user = User::create([
+                'name'     => trim((string) ($claims['name'] ?? '')) ?: ($validated['name'] ?? null) ?: 'Student',
+                'email'    => $emailOwner ? null : $email,
+                'phone'    => $phone,
+                'avatar'   => is_string($claims['picture'] ?? null) ? $claims['picture'] : null,
+                'role'     => 'student',
+                'password' => Hash::make(Str::random(32)),
+            ]);
+            $isNewUser = true;
+        }
+
+        $updates = ['firebase_uid' => $uid];
+        if (!$user->phone && $phone && !$phoneOwner) {
+            $updates['phone'] = $phone;
+        }
+        if (!$user->email && $email && !$emailOwner) {
+            $updates['email'] = $email;
+        }
+        if ($emailTrusted && !$user->email_verified_at && strtolower((string) ($updates['email'] ?? $user->email)) === $email) {
+            $updates['email_verified_at'] = now();
+        }
+        if (!$user->avatar && is_string($claims['picture'] ?? null)) {
+            $updates['avatar'] = $claims['picture'];
+        }
+        if (is_string($googleSub) && !$user->google_id && !User::where('google_id', $googleSub)->exists()) {
+            $updates['google_id'] = $googleSub;
+        }
+        $user->forceFill($updates)->save();
+
+        if ($isNewUser && $user->email) {
+            try {
+                Mail::to($user->email)->queue(new WelcomeEmail($user));
+            } catch (\Throwable $e) {
+                \Log::warning('Welcome email (Firebase) failed', ['error' => $e->getMessage()]);
+            }
+        }
+
+        $token = $user->createToken('auth_token')->plainTextToken;
+
+        return response()->json([
+            'message'      => $isNewUser ? 'Account created' : 'Signed in',
+            'access_token' => $token,
+            'token_type'   => 'Bearer',
+            'user'         => $user->fresh(),
+            'is_new_user'  => $isNewUser,
+            'needs_phone'  => empty($user->phone),
+        ]);
     }
 
     // ─── Logout ───────────────────────────────────────────────────────────────

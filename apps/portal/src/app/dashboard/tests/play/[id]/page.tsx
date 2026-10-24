@@ -269,7 +269,10 @@ export default function TestPlayer() {
     const [timeLeft, setTimeLeft] = useState(0);
     const [deadline, setDeadline] = useState<number | null>(null);
     const [responses, setResponses] = useState<ResponseMap>({});
-    const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+    // Palette: open beside the question on tablets and desktops; on phones it
+    // covers the question, so it starts closed and opens from the ≡ button.
+    const [isSidebarOpen, setIsSidebarOpen] = useState(() => (typeof window === 'undefined' ? true : window.innerWidth >= 640));
+    const closePaletteOnPhone = () => { if (typeof window !== 'undefined' && window.innerWidth < 640) setIsSidebarOpen(false); };
     const [attemptId, setAttemptId] = useState<number | null>(null);
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitError, setSubmitError] = useState<string | null>(null);
@@ -1276,6 +1279,14 @@ export default function TestPlayer() {
                                 <p className="text-xs text-foreground/60 truncate max-w-[220px]">{test?.name_en}</p>
                             </div>
                             <div className="flex items-center gap-2">
+                                <button
+                                    type="button"
+                                    onClick={() => setIsSidebarOpen(false)}
+                                    className="sm:hidden h-9 px-3 rounded-lg border border-card-border text-xs font-semibold text-foreground/70"
+                                    aria-label="Back to the question"
+                                >
+                                    Back to question
+                                </button>
                                 <div className={cn(
                                     "h-2 w-2 rounded-full",
                                     isOffline
@@ -1321,7 +1332,7 @@ export default function TestPlayer() {
                                     return (
                                         <button
                                             key={q.id}
-                                            onClick={() => goToQuestion(i)}
+                                            onClick={() => { goToQuestion(i); closePaletteOnPhone(); }}
                                             className={cn(
                                                 "h-12 w-12 rounded-xl border flex items-center justify-center text-[10px] font-black transition-all hover:scale-110 relative",
                                                 btnClass

@@ -42,6 +42,19 @@ return [
         'redirect' => env('GOOGLE_REDIRECT_URI') ?: rtrim((string) env('APP_URL', 'http://localhost:8000'), '/') . '/api/auth/google/callback',
     ],
 
+    // Firebase Authentication (phone OTP, e-mail link, Google) on the Android
+    // app and the web. The client signs in with the Firebase SDK and posts
+    // the ID token to /api/auth/firebase/token. Only project_id is needed to
+    // verify tokens; the web values are public by design (they ship in the
+    // browser bundle) and are handed to clients via /api/auth/options.
+    'firebase' => [
+        'project_id'          => env('FIREBASE_PROJECT_ID'),
+        'web_api_key'         => env('FIREBASE_WEB_API_KEY'),
+        'auth_domain'         => env('FIREBASE_AUTH_DOMAIN'),
+        'web_app_id'          => env('FIREBASE_WEB_APP_ID'),
+        'messaging_sender_id' => env('FIREBASE_MESSAGING_SENDER_ID'),
+    ],
+
     // Read through config() so values survive `php artisan config:cache`
     // (env() returns null at runtime once config is cached).
     'ai' => [

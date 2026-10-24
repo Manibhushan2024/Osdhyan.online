@@ -74,6 +74,9 @@ Route::get('/auth/google/callback', [AuthController::class, 'handleGoogleCallbac
 // Sign in with a Google ID token (Google Identity Services on web, expo-auth-session on mobile)
 Route::post('/auth/google/token', [AuthController::class, 'googleToken'])->middleware('throttle:login');
 // Tells the client which sign-in methods are available (OTP delivery, Google)
+// Sign in with a Firebase ID token (phone OTP / e-mail link / Google via the Firebase SDK)
+Route::post('/auth/firebase/token', [AuthController::class, 'firebaseToken'])->middleware('throttle:login');
+
 Route::get('/auth/options', [AuthController::class, 'options']);
 
 // Test-series catalogue: open to guests so they can see what they would buy;

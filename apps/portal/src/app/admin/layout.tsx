@@ -60,9 +60,10 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
         <div className="flex h-screen bg-slate-950 overflow-hidden">
             <AdminSidebar />
 
-            <main className="flex-1 overflow-y-auto p-5 sm:p-8 lg:p-10">
-                <div className="max-w-7xl mx-auto space-y-8">
-                    <div className="flex items-center justify-between border-b border-indigo-500/10 pb-6">
+            <main className="flex-1 min-w-0 overflow-y-auto p-4 pt-[4.5rem] sm:p-8 sm:pt-[4.5rem] lg:p-10 lg:pt-10">
+                <div className="max-w-7xl mx-auto space-y-6 lg:space-y-8">
+                    {/* On phones the top bar already carries the name */}
+                    <div className="hidden lg:flex items-center justify-between border-b border-indigo-500/10 pb-6">
                         <div className="flex items-center gap-4">
                             <Logo iconOnly className="transition-transform duration-500 hover:scale-110" />
                             <div>

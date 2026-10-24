@@ -172,15 +172,16 @@ export default function MaterialViewerPage() {
     return (
         <div className="flex flex-col h-[calc(100vh-6rem)] max-w-7xl mx-auto space-y-6 animate-in fade-in slide-in-from-bottom-6 duration-1000">
             {/* Header / Toolbar */}
-            <div className="flex items-center justify-between bg-card-bg p-4 rounded-2xl border border-card-border shadow-sm transition-all">
-                <div className="flex items-center gap-4">
+            <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between bg-card-bg p-3 md:p-4 rounded-2xl border border-card-border shadow-sm transition-all">
+                <div className="flex items-center gap-3 min-w-0">
                     <button
                         onClick={() => router.back()}
-                        className="h-10 w-10 bg-background/50 rounded-xl flex items-center justify-center text-foreground/50 hover:text-blue-600 transition-colors border border-card-border"
+                        className="h-10 w-10 shrink-0 bg-background/50 rounded-xl flex items-center justify-center text-foreground/50 hover:text-blue-600 transition-colors border border-card-border"
+                        aria-label="Back"
                     >
                         <ChevronLeft className="h-5 w-5" />
                     </button>
-                    <div>
+                    <div className="min-w-0">
                         <h1 className="text-sm font-black text-foreground uppercase tracking-tight line-clamp-1">{material.title}</h1>
                         <div className="flex items-center gap-3 mt-0.5">
                             <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">{material.subject?.name_en}</span>
@@ -190,10 +191,10 @@ export default function MaterialViewerPage() {
                     </div>
                 </div>
 
-                <div className="flex items-center gap-4 md:gap-8">
+                <div className="flex flex-wrap items-center gap-2 md:gap-8">
                     {/* Stats Widget */}
                     <div className={cn(
-                        "flex items-center gap-4 px-6 py-2.5 rounded-2xl border transition-all duration-500",
+                        "flex flex-wrap items-center gap-2 md:gap-4 px-3 md:px-6 py-2 md:py-2.5 rounded-2xl border transition-all duration-500 w-full md:w-auto",
                         isActive
                             ? "bg-blue-600/10 border-blue-600/30 shadow-lg shadow-blue-500/10"
                             : "bg-orange-500/10 border-orange-500/30"
@@ -209,9 +210,9 @@ export default function MaterialViewerPage() {
                             </div>
                         </div>
 
-                        <div className="h-8 w-px bg-card-border mx-2" />
+                        <div className="hidden md:block h-8 w-px bg-card-border mx-2" />
 
-                        <div className="flex items-center gap-2">
+                        <div className="flex flex-wrap items-center gap-2">
                             <button
                                 onClick={handleToggleTimer}
                                 className={cn(
@@ -240,15 +241,27 @@ export default function MaterialViewerPage() {
                         </div>
                     </div>
 
-                    <div className="hidden lg:flex items-center gap-2 border-l border-card-border pl-8">
+                    {/* Open / download: always visible — on phones the in-page PDF frame is unreliable, so this is the main way to read a PDF */}
+                    <div className="flex items-center gap-2 md:border-l md:border-card-border md:pl-8">
                         {fileUrl && (
                             <a
                                 href={fileUrl}
                                 {...(material.type === 'youtube' ? { target: '_blank', rel: 'noopener noreferrer' } : { download: true })}
-                                className="h-10 w-10 bg-background/50 text-foreground/40 rounded-xl flex items-center justify-center hover:text-blue-600 transition-all border border-card-border"
+                                className="h-10 px-3 md:px-0 md:w-10 bg-background/50 text-foreground/60 rounded-xl flex items-center justify-center gap-2 hover:text-blue-600 transition-all border border-card-border text-xs font-bold"
                                 title={material.type === 'youtube' ? 'Open on YouTube' : 'Download'}
                             >
                                 {material.type === 'youtube' ? <Maximize2 className="h-4 w-4" /> : <Download className="h-4 w-4" />}
+                                <span className="md:hidden">{material.type === 'youtube' ? 'Open on YouTube' : 'Download'}</span>
+                            </a>
+                        )}
+                        {fileUrl && material.type === 'pdf' && (
+                            <a
+                                href={fileUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="md:hidden h-10 px-3 bg-blue-600 text-white rounded-xl flex items-center justify-center text-xs font-bold"
+                            >
+                                Open PDF
                             </a>
                         )}
                     </div>
