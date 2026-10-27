@@ -1,0 +1,508 @@
+[
+  {
+    "chapter_key": "cf_teach",
+    "subtopic": "Objectives - psychomotor domain",
+    "difficulty": "medium",
+    "question_en": "In R.H. Dave's classification of the psychomotor domain, the highest level, at which a skill such as touch-typing becomes automatic and natural, is:",
+    "options": [
+      {
+        "en": "Precision"
+      },
+      {
+        "en": "Articulation"
+      },
+      {
+        "en": "Naturalisation"
+      },
+      {
+        "en": "Manipulation"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Dave's psychomotor levels run Imitation, Manipulation, Precision, Articulation and Naturalisation. At Naturalisation the skill is performed automatically with little conscious effort, so it is the highest level.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_teach",
+    "subtopic": "Bloom's taxonomy - levels",
+    "difficulty": "medium",
+    "question_en": "Match the objective with its level in the revised Bloom's taxonomy.\nA. State the full form of ALU\nB. Explain in your own words why RAM is volatile\nC. Use a for loop to print the table of 7\nD. Design a new quiz app for the class\n1. Apply   2. Create   3. Remember   4. Understand",
+    "options": [
+      {
+        "en": "A-4, B-3, C-1, D-2"
+      },
+      {
+        "en": "A-3, B-1, C-4, D-2"
+      },
+      {
+        "en": "A-3, B-4, C-2, D-1"
+      },
+      {
+        "en": "A-3, B-4, C-1, D-2"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Stating a full form is recall (Remember) and explaining in one's own words is Understand. Using a loop in a new task is Apply, and designing an original product is Create.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_teach",
+    "subtopic": "Herbartian approach - basis",
+    "difficulty": "easy",
+    "question_en": "The Herbartian steps of lesson planning are based on which psychological idea?",
+    "options": [
+      {
+        "en": "Apperception - new ideas link to existing ideas"
+      },
+      {
+        "en": "Operant conditioning - reward shapes behaviour"
+      },
+      {
+        "en": "Insight - sudden grasp of the whole problem"
+      },
+      {
+        "en": "Scaffolding - temporary adult support in learning"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Herbart held that new knowledge is learnt by linking it to the 'apperceptive mass' of ideas already in the mind. His four formal steps (clearness, association, system, method), later expanded by his followers Ziller and Rein into the five steps (preparation, presentation, association, generalisation, application), are built on this apperception theory.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_teach",
+    "subtopic": "Lesson planning - RCEM approach",
+    "difficulty": "medium",
+    "question_en": "The RCEM approach to lesson planning, which states objectives as expected behavioural outcomes in terms of mental processes, was developed at:",
+    "options": [
+      {
+        "en": "NCERT headquarters, New Delhi"
+      },
+      {
+        "en": "Regional College of Education, Mysore"
+      },
+      {
+        "en": "Central Institute of Educational Technology"
+      },
+      {
+        "en": "National Council for Teacher Education"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "RCEM stands for Regional College of Education, Mysore, where this approach was developed. It refines Bloom's evaluation approach and writes objectives as mental processes such as knowledge, understanding, application and creativity.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_teach",
+    "subtopic": "Herbartian approach - limitations",
+    "difficulty": "medium",
+    "question_en": "Which statement about the Herbartian approach to lesson planning is correct?\nI. It gives more importance to the teacher's presentation than to pupils' activity.\nII. Its five steps suit skill and appreciation lessons as well as knowledge lessons.",
+    "options": [
+      {
+        "en": "Both I and II"
+      },
+      {
+        "en": "Neither I nor II"
+      },
+      {
+        "en": "Only I"
+      },
+      {
+        "en": "Only II"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "The Herbartian plan is teacher-centred, with the teacher presenting and pupils mostly receiving. Its rigid steps work best for knowledge lessons and do not suit skill or appreciation lessons, so only statement I is correct.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_teach",
+    "subtopic": "Constructivism - 5E model",
+    "difficulty": "easy",
+    "question_en": "The correct sequence of the 5E instructional model based on constructivism is:",
+    "options": [
+      {
+        "en": "Explore, Engage, Explain, Elaborate, Evaluate"
+      },
+      {
+        "en": "Engage, Explore, Explain, Elaborate, Evaluate"
+      },
+      {
+        "en": "Engage, Explain, Explore, Evaluate, Elaborate"
+      },
+      {
+        "en": "Explain, Engage, Explore, Elaborate, Evaluate"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The 5E model, developed by the BSCS team led by Rodger Bybee, runs Engage, Explore, Explain, Elaborate and Evaluate. Students first get interested and explore before the teacher formally explains the concept.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_teach",
+    "subtopic": "Inductive vs deductive method",
+    "difficulty": "medium",
+    "question_en": "Which statement about inductive and deductive methods of teaching is correct?\nI. The inductive method is slower but lets students discover the rule and understand it better.\nII. The deductive method moves from several examples to a general rule.",
+    "options": [
+      {
+        "en": "Only I"
+      },
+      {
+        "en": "Only II"
+      },
+      {
+        "en": "Both I and II"
+      },
+      {
+        "en": "Neither I nor II"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The inductive method goes from examples to the rule (particular to general); it is time-consuming but builds understanding. The deductive method starts with the rule and applies it to examples, so statement II describes induction, not deduction.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_teach",
+    "subtopic": "Project method - types",
+    "difficulty": "medium",
+    "question_en": "W.H. Kilpatrick classified projects into four types. Which of the following is NOT one of them?",
+    "options": [
+      {
+        "en": "Producer project"
+      },
+      {
+        "en": "Consumer project"
+      },
+      {
+        "en": "Drill project"
+      },
+      {
+        "en": "Evaluator project"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Kilpatrick's four types are producer, consumer, problem and drill (specific learning) projects. 'Evaluator project' is not part of his classification.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_teach",
+    "subtopic": "Constructivism - types",
+    "difficulty": "easy",
+    "question_en": "Which of the following is correctly matched?\nI. Cognitive constructivism - Jean Piaget\nII. Social constructivism - Lev Vygotsky",
+    "options": [
+      {
+        "en": "Only I"
+      },
+      {
+        "en": "Neither I nor II"
+      },
+      {
+        "en": "Both I and II"
+      },
+      {
+        "en": "Only II"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Piaget's cognitive constructivism says the individual builds knowledge through assimilation and accommodation. Vygotsky's social constructivism stresses that knowledge is built through social interaction and language, so both pairs are correct.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_teach",
+    "subtopic": "Computer lab - records",
+    "difficulty": "easy",
+    "question_en": "In a school computer lab, items such as computers, printers and UPS units that are not used up in daily work are recorded in the:",
+    "options": [
+      {
+        "en": "Consumable stock register"
+      },
+      {
+        "en": "Non-consumable (dead) stock register"
+      },
+      {
+        "en": "Breakage and loss register"
+      },
+      {
+        "en": "Daily lab attendance register"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Permanent equipment that is not consumed in use is entered in the non-consumable or dead stock register. Items such as paper, cartridges and CDs that get used up go into the consumable stock register.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_teach",
+    "subtopic": "Classroom management - Kounin",
+    "difficulty": "medium",
+    "question_en": "A teacher firmly corrects one student who is chatting during a demonstration, and the students sitting nearby also stop talking. Kounin called this the:",
+    "options": [
+      {
+        "en": "Ripple effect"
+      },
+      {
+        "en": "Halo effect"
+      },
+      {
+        "en": "Hawthorne effect"
+      },
+      {
+        "en": "Pygmalion effect"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Jacob Kounin used 'ripple effect' for the way a correction aimed at one student spreads to others who see it. The halo, Hawthorne and Pygmalion effects describe rating bias, being observed and teacher expectation respectively.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_teach",
+    "subtopic": "Assessment of / for learning",
+    "difficulty": "medium",
+    "question_en": "Which statement is correct?\nI. Assessment of learning is mainly used to certify and report what students have achieved.\nII. Assessment for learning is conducted only at the end of a term.",
+    "options": [
+      {
+        "en": "Both I and II"
+      },
+      {
+        "en": "Only II"
+      },
+      {
+        "en": "Neither I nor II"
+      },
+      {
+        "en": "Only I"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Assessment of learning is summative and is used for grading, certification and reporting. Assessment for learning is formative and goes on throughout teaching to give feedback, so statement II is wrong.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_teach",
+    "subtopic": "Qualities of a test - objectivity",
+    "difficulty": "easy",
+    "question_en": "A test whose answer scripts get the same marks no matter which examiner scores them is said to have high:",
+    "options": [
+      {
+        "en": "Validity"
+      },
+      {
+        "en": "Discrimination"
+      },
+      {
+        "en": "Objectivity"
+      },
+      {
+        "en": "Comprehensiveness"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Objectivity means the score does not depend on the personal judgement of the examiner. Objective-type items and a clear marking scheme increase it.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_teach",
+    "subtopic": "Qualities of a test - reliability",
+    "difficulty": "hard",
+    "question_en": "The split-half method and the Kuder-Richardson formulas are used to estimate a test's:",
+    "options": [
+      {
+        "en": "Validity"
+      },
+      {
+        "en": "Objectivity"
+      },
+      {
+        "en": "Difficulty level"
+      },
+      {
+        "en": "Reliability"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Both methods measure internal consistency, which is one form of reliability. Test-retest and parallel-forms methods are other ways to find reliability.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_teach",
+    "subtopic": "CCE - co-scholastic areas",
+    "difficulty": "easy",
+    "question_en": "Under CBSE's CCE scheme, life skills, attitudes, values and participation in co-curricular activities were assessed as:",
+    "options": [
+      {
+        "en": "Co-scholastic areas"
+      },
+      {
+        "en": "Scholastic areas"
+      },
+      {
+        "en": "Summative assessment only"
+      },
+      {
+        "en": "Diagnostic testing only"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "CCE divided assessment into scholastic areas (subjects) and co-scholastic areas (life skills, attitudes, values, co-curricular activities). This made evaluation 'comprehensive', covering all sides of the learner.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_teach",
+    "subtopic": "ICT-based assessment",
+    "difficulty": "easy",
+    "question_en": "A computer-based test that picks the next question according to whether the candidate answered the previous one correctly is called:",
+    "options": [
+      {
+        "en": "Optical mark recognition test"
+      },
+      {
+        "en": "Computerised adaptive testing"
+      },
+      {
+        "en": "Open-book online examination"
+      },
+      {
+        "en": "Linear paper-pencil testing"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "In computerised adaptive testing the software raises or lowers the difficulty of the next item based on the previous response. This measures ability accurately with fewer questions.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_teach",
+    "subtopic": "ICT - SWAYAM",
+    "difficulty": "hard",
+    "question_en": "Courses on SWAYAM are delivered in a four-quadrant format. Which of the following is NOT one of the four quadrants?",
+    "options": [
+      {
+        "en": "Video lectures (e-tutorial)"
+      },
+      {
+        "en": "Downloadable reading material"
+      },
+      {
+        "en": "Self-assessment tests and quizzes"
+      },
+      {
+        "en": "Face-to-face classroom lectures"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "SWAYAM's four quadrants are e-tutorial (video), e-content (reading material), self-assessment (quizzes and assignments) and a discussion forum. Face-to-face lectures are not part of this online format.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_teach",
+    "subtopic": "Piaget - centration",
+    "difficulty": "medium",
+    "question_en": "A 5-year-old says a tall, thin glass has more juice than a short, wide glass, though both hold the same amount. He looks only at height and ignores width. Piaget called this:",
+    "options": [
+      {
+        "en": "Centration"
+      },
+      {
+        "en": "Object permanence"
+      },
+      {
+        "en": "Hypothetico-deductive reasoning"
+      },
+      {
+        "en": "Seriation"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Centration is focusing on one feature of a situation while ignoring others, typical of the pre-operational stage. It is a main reason why such children fail conservation tasks.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_teach",
+    "subtopic": "Child development - theorists",
+    "difficulty": "medium",
+    "question_en": "Match the theorist with the concept.\nA. James Marcia\nB. Diana Baumrind\nC. Noam Chomsky\nD. Lev Vygotsky\n1. Parenting styles   2. Language Acquisition Device   3. Zone of proximal development   4. Identity statuses",
+    "options": [
+      {
+        "en": "A-1, B-4, C-2, D-3"
+      },
+      {
+        "en": "A-4, B-1, C-3, D-2"
+      },
+      {
+        "en": "A-4, B-1, C-2, D-3"
+      },
+      {
+        "en": "A-4, B-2, C-1, D-3"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Marcia described four identity statuses of adolescents and Baumrind classified parenting styles. Chomsky proposed the inborn Language Acquisition Device, and Vygotsky gave the zone of proximal development.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_teach",
+    "subtopic": "Reinforcement - negative",
+    "difficulty": "hard",
+    "question_en": "A teacher announces that students who finish their lab programs correctly will not have to do the extra written homework. Removing the unwanted homework to increase the desired behaviour is an example of:",
+    "options": [
+      {
+        "en": "Positive reinforcement"
+      },
+      {
+        "en": "Negative reinforcement"
+      },
+      {
+        "en": "Positive punishment"
+      },
+      {
+        "en": "Extinction"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Negative reinforcement increases a behaviour by removing an unpleasant stimulus. It is not punishment, because punishment aims to decrease a behaviour.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_teach",
+    "subtopic": "Inclusive education - RPWD and Samagra Shiksha",
+    "difficulty": "hard",
+    "question_en": "Which statement is correct?\nI. The Rights of Persons with Disabilities Act, 2016 recognises 21 types of specified disabilities.\nII. Samagra Shiksha (2018) merged SSA, RMSA and Teacher Education into one scheme.",
+    "options": [
+      {
+        "en": "Both I and II"
+      },
+      {
+        "en": "Only I"
+      },
+      {
+        "en": "Only II"
+      },
+      {
+        "en": "Neither I nor II"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The RPWD Act 2016 raised the number of recognised disabilities from 7 (PwD Act 1995) to 21. Samagra Shiksha, launched in 2018, combined Sarva Shiksha Abhiyan, Rashtriya Madhyamik Shiksha Abhiyan and Teacher Education.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_teach",
+    "subtopic": "Education commissions",
+    "difficulty": "medium",
+    "question_en": "Match the commission or policy with its period.\nA. University Education Commission (Radhakrishnan)\nB. Secondary Education Commission (Mudaliar)\nC. Education Commission (Kothari)\nD. National Policy on Education (second NPE)\n1. 1964-66   2. 1948-49   3. 1986   4. 1952-53",
+    "options": [
+      {
+        "en": "A-4, B-2, C-1, D-3"
+      },
+      {
+        "en": "A-2, B-1, C-4, D-3"
+      },
+      {
+        "en": "A-2, B-4, C-1, D-3"
+      },
+      {
+        "en": "A-2, B-4, C-3, D-1"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "The Radhakrishnan Commission sat in 1948-49 and the Mudaliar Commission in 1952-53. The Kothari Commission worked from 1964 to 1966, and the second National Policy on Education came in 1986 (the first NPE was in 1968).",
+    "pyq_concept": false
+  }
+]

@@ -20,13 +20,17 @@ import smoke_dsssb  # noqa: E402
 from smoke_dsssb import check, take  # noqa: E402
 
 
-def expected_tests(name):
-    """Number of tests the pack's question_sets.json defines (pack found by its pack.json name)."""
+def pack_expectations(name):
+    """What the pack's files define: number of tests, course chapters and PDFs (pack found by its pack.json name)."""
     data = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'backend', 'database', 'data', 'dsssb')
     for cfg_path in glob.glob(os.path.join(data, '*', 'pack.json')):
-        if json.load(open(cfg_path, encoding='utf-8')).get('name') == name:
-            spec = json.load(open(os.path.join(os.path.dirname(cfg_path), 'question_sets.json'), encoding='utf-8'))
-            return len(spec['exams'][0]['series'][0]['tests'])
+        cfg = json.load(open(cfg_path, encoding='utf-8'))
+        if cfg.get('name') == name:
+            folder = os.path.dirname(cfg_path)
+            spec = json.load(open(os.path.join(folder, 'question_sets.json'), encoding='utf-8'))
+            manifest = json.load(open(os.path.join(folder, 'course_manifest.json'), encoding='utf-8'))
+            return {'tests': len(spec['exams'][0]['series'][0]['tests']), 'chapters': len(manifest['chapters']),
+                    'pdfs': sum(len(c['items']) for c in manifest['chapters'])}
     raise SystemExit(f'No pack named {name}')
 
 
@@ -51,7 +55,8 @@ def main():
     s, d, _ = call(api, 'GET', f"/test-series/{dbms['id']}", token)
     tests = d['content'].get(f'{name} Special', [])
     names = {t['name_en']: t for t in tests}
-    expected = expected_tests(name)
+    exp = pack_expectations(name)
+    expected = exp['tests']
     check(f'{expected} {name} tests', len(tests) == expected, str(len(tests)))
     full = next(t for n, t in names.items() if 'Most Expected Questions (Full Test)' in n)
     pyq = next(t for n, t in names.items() if 'Previous Year Questions' in n)
@@ -67,7 +72,7 @@ def main():
     check(f'{name} course in DSSSB category', subj is not None)
     s, hier, _ = call(api, 'GET', f"/courses/subjects/{subj['id']}/hierarchy", token)
     mats = [mt for c in hier['data'] for t in c['topics'] for mt in t['materials']]
-    check('course has 8+ chapters and 10+ PDFs', len(hier['data']) >= 8 and len(mats) >= 10, f"{len(hier['data'])} / {len(mats)}")
+    check(f"course has {exp['chapters']} chapters and {exp['pdfs']} PDFs", len(hier['data']) == exp['chapters'] and len(mats) == exp['pdfs'], f"{len(hier['data'])} / {len(mats)}")
     url = mats[0].get('url') or (api.rsplit('/api', 1)[0] + '/storage/' + mats[0]['file_path'])
     if url.startswith('/'):
         url = api.rsplit('/api', 1)[0] + url

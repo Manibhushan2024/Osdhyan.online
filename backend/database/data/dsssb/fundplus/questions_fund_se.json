@@ -1,0 +1,2026 @@
+[
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Number systems - decimal to binary (fraction)",
+    "difficulty": "easy",
+    "question_en": "What is the binary equivalent of the decimal number 13.375?",
+    "options": [
+      {
+        "en": "1101.101"
+      },
+      {
+        "en": "1101.011"
+      },
+      {
+        "en": "1011.011"
+      },
+      {
+        "en": "1101.110"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Integer part: 13 = 8 + 4 + 1 = 1101. Fraction part by repeated multiplication by 2: 0.375 × 2 = 0.75 (0), 0.75 × 2 = 1.5 (1), 0.5 × 2 = 1.0 (1), giving .011. Hence 13.375 = (1101.011)2.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Number systems - binary to decimal (fraction)",
+    "difficulty": "easy",
+    "question_en": "The binary number (101101.1)2 is equal to which decimal number?",
+    "options": [
+      {
+        "en": "45.25"
+      },
+      {
+        "en": "44.5"
+      },
+      {
+        "en": "90.5"
+      },
+      {
+        "en": "45.5"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "101101 = 32 + 8 + 4 + 1 = 45, and the first bit after the binary point has weight 2^−1 = 0.5. So (101101.1)2 = 45 + 0.5 = 45.5.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Number systems - hexadecimal to octal",
+    "difficulty": "medium",
+    "question_en": "The hexadecimal number (3A7)16 is equal to which octal number?",
+    "options": [
+      {
+        "en": "(1647)8"
+      },
+      {
+        "en": "(1747)8"
+      },
+      {
+        "en": "(1637)8"
+      },
+      {
+        "en": "(3507)8"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Write each hex digit as 4 bits: 3 = 0011, A = 1010, 7 = 0111, giving 0011 1010 0111. Regroup in 3s from the right: 001 110 100 111 = 1 6 4 7. So (3A7)16 = (1647)8 (both equal 935 in decimal).",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Codes - Gray code",
+    "difficulty": "medium",
+    "question_en": "What is the Gray code of the hexadecimal number (5B)16?",
+    "options": [
+      {
+        "en": "1101101"
+      },
+      {
+        "en": "1011011"
+      },
+      {
+        "en": "1110110"
+      },
+      {
+        "en": "1110011"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "(5B)16 = 1011011 in binary. Gray code keeps the MSB and XORs each pair of adjacent bits: 1, 1⊕0 = 1, 0⊕1 = 1, 1⊕1 = 0, 1⊕0 = 1, 0⊕1 = 1, 1⊕1 = 0. The Gray code is 1110110.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Binary arithmetic - 2's complement addition",
+    "difficulty": "medium",
+    "question_en": "Using 8-bit 2's complement arithmetic, what is the result of (−37) + (−20)?",
+    "options": [
+      {
+        "en": "10111001"
+      },
+      {
+        "en": "11000110"
+      },
+      {
+        "en": "00111001"
+      },
+      {
+        "en": "11000111"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "−37 = 11011011 and −20 = 11101100 in 8-bit 2's complement. Adding gives 1 11000111; the end carry is discarded, leaving 11000111. Its 2's complement is 00111001 = 57, so the result is −57 and no overflow occurs (−57 lies within −128 to +127).",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Arithmetic shift - signed division",
+    "difficulty": "medium",
+    "question_en": "An 8-bit register holds the 2's complement number 11101100. What does it contain after one arithmetic shift right?",
+    "options": [
+      {
+        "en": "01110110"
+      },
+      {
+        "en": "11011000"
+      },
+      {
+        "en": "11110110"
+      },
+      {
+        "en": "01111011"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Arithmetic shift right moves every bit one place right and copies the sign bit into the MSB. 11101100 (−20) becomes 11110110, which is −10. So an arithmetic right shift divides a signed number by 2 while keeping its sign.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Codes - BCD addition",
+    "difficulty": "medium",
+    "question_en": "When the BCD digits 0111 (7) and 0110 (6) are added, what is the correct BCD result?",
+    "options": [
+      {
+        "en": "0001 0011"
+      },
+      {
+        "en": "0000 1101"
+      },
+      {
+        "en": "0001 1001"
+      },
+      {
+        "en": "0001 0111"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Binary sum 0111 + 0110 = 1101 (13), which is greater than 9 and therefore not a valid BCD digit. A BCD adder adds the correction 0110: 1101 + 0110 = 1 0011. The result is 0001 0011, i.e. BCD for 13.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Codes - Excess-3",
+    "difficulty": "easy",
+    "question_en": "The Excess-3 coded number 1000 1100 represents which decimal number?",
+    "options": [
+      {
+        "en": "58"
+      },
+      {
+        "en": "59"
+      },
+      {
+        "en": "8C"
+      },
+      {
+        "en": "69"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Each Excess-3 group is the BCD digit plus 3. 1000 = 8, and 8 − 3 = 5; 1100 = 12, and 12 − 3 = 9. The decimal number is 59.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Codes - ASCII values",
+    "difficulty": "medium",
+    "question_en": "The ASCII code of the uppercase letter 'M', expressed in hexadecimal, is:",
+    "options": [
+      {
+        "en": "4C"
+      },
+      {
+        "en": "6D"
+      },
+      {
+        "en": "3D"
+      },
+      {
+        "en": "4D"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Uppercase 'A' is 65, so 'M' (the 13th letter) is 65 + 12 = 77. 77 = 4 × 16 + 13, which is 4D in hexadecimal. Lowercase 'm' would be 77 + 32 = 109 = 6D.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Unicode encodings - UTF-8 length",
+    "difficulty": "hard",
+    "question_en": "How many bytes does UTF-8 use to encode the euro sign '€', whose Unicode code point is U+20AC?",
+    "options": [
+      {
+        "en": "2 bytes"
+      },
+      {
+        "en": "3 bytes"
+      },
+      {
+        "en": "1 byte"
+      },
+      {
+        "en": "4 bytes"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "UTF-8 uses 1 byte for U+0000–U+007F, 2 bytes for U+0080–U+07FF, 3 bytes for U+0800–U+FFFF and 4 bytes beyond that. U+20AC falls in the 3-byte range; it is encoded as E2 82 AC.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Unicode encoding formats",
+    "difficulty": "medium",
+    "question_en": "Which Unicode encoding form represents every character with a fixed length of 4 bytes?",
+    "options": [
+      {
+        "en": "UTF-32"
+      },
+      {
+        "en": "UTF-8"
+      },
+      {
+        "en": "UTF-16"
+      },
+      {
+        "en": "UTF-7"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "UTF-32 stores every code point in exactly 32 bits (4 bytes). UTF-8 is variable length (1 to 4 bytes) and UTF-16 uses 2 or 4 bytes (surrogate pairs). UTF-7 is an obsolete 7-bit-safe variable form.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Complements - radix complement",
+    "difficulty": "easy",
+    "question_en": "What is the 10's complement of the decimal number 4732?",
+    "options": [
+      {
+        "en": "5267"
+      },
+      {
+        "en": "4268"
+      },
+      {
+        "en": "5268"
+      },
+      {
+        "en": "6268"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "10's complement = 10^n − N, where n is the number of digits. 10^4 − 4732 = 5268. Equivalently, take the 9's complement (9999 − 4732 = 5267) and add 1.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Binary arithmetic - overflow detection",
+    "difficulty": "hard",
+    "question_en": "In n-bit 2's complement addition, overflow has occurred when:",
+    "options": [
+      {
+        "en": "there is a carry out of the most significant bit position"
+      },
+      {
+        "en": "the two operands being added have opposite signs"
+      },
+      {
+        "en": "the result has more 1s than either of the two operands"
+      },
+      {
+        "en": "the carry into the sign bit differs from the carry out of it"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Overflow occurs only when adding two numbers of the same sign gives a result of the opposite sign, which is detected when the carry into the MSB is not equal to the carry out of the MSB (V = Cin ⊕ Cout). A carry out by itself is simply discarded and is not overflow, and operands of opposite sign can never overflow.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Boolean algebra - consensus theorem",
+    "difficulty": "medium",
+    "question_en": "The identity AB + A'C + BC = AB + A'C is known as the:",
+    "options": [
+      {
+        "en": "Absorption law"
+      },
+      {
+        "en": "De Morgan's theorem"
+      },
+      {
+        "en": "Consensus theorem"
+      },
+      {
+        "en": "Involution law"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "The consensus theorem says the term BC (the consensus of AB and A'C) is redundant and can be removed. Absorption is A + AB = A, De Morgan relates complements of sums and products, and involution is (A')' = A.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Boolean algebra - distributive law",
+    "difficulty": "easy",
+    "question_en": "Using the distributive law, the expression (A + B)(A + C) is equal to:",
+    "options": [
+      {
+        "en": "AB + C"
+      },
+      {
+        "en": "A + BC"
+      },
+      {
+        "en": "A + B + C"
+      },
+      {
+        "en": "ABC"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Expand: (A + B)(A + C) = A·A + AC + AB + BC = A + AC + AB + BC. By absorption A + AC + AB = A, leaving A + BC. This is the second distributive law of Boolean algebra (OR distributes over AND).",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "K-map simplification (3-variable)",
+    "difficulty": "medium",
+    "question_en": "Using a K-map, what is the minimal SOP form of F(A, B, C) = Σm(1, 2, 3, 5, 7)?",
+    "options": [
+      {
+        "en": "C + A'B"
+      },
+      {
+        "en": "C + AB'"
+      },
+      {
+        "en": "A'C + B"
+      },
+      {
+        "en": "A' + BC"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Minterms 1, 3, 5, 7 all have C = 1 and form a quad, giving C. Minterm 2 (010) pairs with 3 (011) to give A'B. So F = C + A'B.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "K-map simplification (4-variable)",
+    "difficulty": "hard",
+    "question_en": "Using a four-variable K-map, simplify F(A, B, C, D) = Σm(0, 2, 5, 7, 8, 10, 13, 15).",
+    "options": [
+      {
+        "en": "BD' + B'D"
+      },
+      {
+        "en": "B'D' + BD"
+      },
+      {
+        "en": "A'B + CD"
+      },
+      {
+        "en": "B'C' + BC"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Minterms 0, 2, 8, 10 are the four corners of the map, all with B = 0 and D = 0, giving B'D'. Minterms 5, 7, 13, 15 form the central quad with B = 1 and D = 1, giving BD. So F = B'D' + BD (which is the XNOR of B and D).",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "K-map with don't-care conditions",
+    "difficulty": "hard",
+    "question_en": "Using a K-map, the minimal SOP of F(A, B, C, D) = Σm(1, 3, 5, 7, 9) + d(6, 12, 13) is:",
+    "options": [
+      {
+        "en": "A'D + C'D"
+      },
+      {
+        "en": "A'D + B'C'D"
+      },
+      {
+        "en": "CD + A'B'"
+      },
+      {
+        "en": "A'B + C'D"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Minterms 1, 3, 5, 7 form a quad with A = 0 and D = 1, giving A'D. Minterm 9 is grouped with 1, 5 and the don't-care 13 into the quad C'D. So F = A'D + C'D = D(A' + C'); the don't-cares 6 and 12 are left unused.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Canonical forms - counting minterms",
+    "difficulty": "hard",
+    "question_en": "When the three-variable function F(A, B, C) = A + B'C is expanded into canonical SOP form, how many minterms does it contain?",
+    "options": [
+      {
+        "en": "4"
+      },
+      {
+        "en": "6"
+      },
+      {
+        "en": "5"
+      },
+      {
+        "en": "3"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "A alone covers the four minterms with A = 1: 4, 5, 6, 7. B'C covers minterms 1 (001) and 5 (101). The union is {1, 4, 5, 6, 7}, i.e. 5 minterms.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Universal gates - NAND implementation",
+    "difficulty": "hard",
+    "question_en": "What is the minimum number of two-input NAND gates needed to implement a two-input XOR gate?",
+    "options": [
+      {
+        "en": "5"
+      },
+      {
+        "en": "3"
+      },
+      {
+        "en": "6"
+      },
+      {
+        "en": "4"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Let X = NAND(A, B). Then NAND(A, X) and NAND(B, X) are formed, and a fourth NAND of those two outputs gives A ⊕ B. So 4 NAND gates are the minimum (5 NOR gates are needed for XOR using NOR alone).",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Logic gates - XNOR and universal gates",
+    "difficulty": "easy",
+    "question_en": "Consider the following statements. I. A two-input XNOR gate gives output 1 when both inputs are equal. II. The XNOR gate is a universal gate. Which of the statements is/are correct?",
+    "options": [
+      {
+        "en": "Only I"
+      },
+      {
+        "en": "Only II"
+      },
+      {
+        "en": "Both I and II"
+      },
+      {
+        "en": "Neither I nor II"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "XNOR is the complement of XOR, so its output is 1 when the inputs are equal (00 or 11); statement I is correct. Only NAND and NOR are universal gates; XNOR alone cannot produce every function, so statement II is wrong.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Combinational circuits - half subtractor",
+    "difficulty": "medium",
+    "question_en": "For a half subtractor computing A − B, the Difference and Borrow outputs are respectively:",
+    "options": [
+      {
+        "en": "A ⊕ B and AB'"
+      },
+      {
+        "en": "A ⊕ B and A'B"
+      },
+      {
+        "en": "A ⊙ B and A'B"
+      },
+      {
+        "en": "A ⊕ B and AB"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The difference bit is 1 when exactly one input is 1, so D = A ⊕ B. A borrow is needed only when A = 0 and B = 1, so Bout = A'B. (A half adder has the same XOR output but its carry is AB.)",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Multiplexers - building larger MUX",
+    "difficulty": "medium",
+    "question_en": "How many 4-to-1 multiplexers are needed to build a 16-to-1 multiplexer?",
+    "options": [
+      {
+        "en": "4"
+      },
+      {
+        "en": "6"
+      },
+      {
+        "en": "5"
+      },
+      {
+        "en": "8"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "The first level needs 16 ÷ 4 = 4 multiplexers, each selecting one of four inputs using two select lines. Their four outputs feed a fifth 4-to-1 MUX driven by the remaining two select lines. Total = 4 + 1 = 5.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Ripple counter - propagation delay",
+    "difficulty": "hard",
+    "question_en": "An 8-bit ripple counter is built from flip-flops that each have a propagation delay of 25 ns. What is the maximum clock frequency at which it can be operated reliably?",
+    "options": [
+      {
+        "en": "40 MHz"
+      },
+      {
+        "en": "8 MHz"
+      },
+      {
+        "en": "25 MHz"
+      },
+      {
+        "en": "5 MHz"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "In a ripple counter the delays add up: total settling time = 8 × 25 ns = 200 ns. The clock period must be at least 200 ns, so f(max) = 1 ÷ 200 ns = 5 MHz.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Cascaded counters - modulus and frequency",
+    "difficulty": "hard",
+    "question_en": "A mod-5, a mod-4 and a mod-3 counter are connected in cascade and the first counter is clocked at 120 kHz. What is the frequency at the output of the last counter?",
+    "options": [
+      {
+        "en": "10 kHz"
+      },
+      {
+        "en": "2 kHz"
+      },
+      {
+        "en": "40 kHz"
+      },
+      {
+        "en": "24 kHz"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The overall modulus of cascaded counters is the product of their moduli: 5 × 4 × 3 = 60. The output frequency is the input frequency divided by the overall modulus: 120 kHz ÷ 60 = 2 kHz.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Counters - ring counter",
+    "difficulty": "easy",
+    "question_en": "A ring counter built using 5 flip-flops has how many distinct states?",
+    "options": [
+      {
+        "en": "5"
+      },
+      {
+        "en": "10"
+      },
+      {
+        "en": "32"
+      },
+      {
+        "en": "16"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "In a ring counter a single 1 circulates through the flip-flops, so an n-flip-flop ring counter has n states: here 5. A Johnson (twisted-ring) counter with the same 5 flip-flops would have 2n = 10 states.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Counters - modulus and unused states",
+    "difficulty": "medium",
+    "question_en": "A mod-12 counter is designed with the minimum number of flip-flops. How many unused (invalid) states does it have?",
+    "options": [
+      {
+        "en": "2"
+      },
+      {
+        "en": "12"
+      },
+      {
+        "en": "4"
+      },
+      {
+        "en": "0"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "The minimum number of flip-flops n must satisfy 2^n ≥ 12, so n = 4 (16 states). The counter uses 12 of them, leaving 16 − 12 = 4 unused states.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Flip-flop conversion - JK to D",
+    "difficulty": "medium",
+    "question_en": "A JK flip-flop can be made to behave as a D flip-flop by:",
+    "options": [
+      {
+        "en": "tying both J and K permanently to 1"
+      },
+      {
+        "en": "tying both J and K permanently to 0"
+      },
+      {
+        "en": "applying D to both the J and K inputs"
+      },
+      {
+        "en": "applying D to J and D' to K"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "With J = D and K = D', D = 1 gives J = 1, K = 0 (set) and D = 0 gives J = 0, K = 1 (reset), so Q follows D. J = K = 1 makes it toggle (a T flip-flop), and J = K = 0 holds the state.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Cache mapping - tag/set/offset bits",
+    "difficulty": "hard",
+    "question_en": "A 4-way set-associative cache of 8 KB has a block size of 16 bytes. Main memory is 16 MB and byte-addressable. How many bits are in the tag, set and word (offset) fields of the address?",
+    "options": [
+      {
+        "en": "11, 9 and 4"
+      },
+      {
+        "en": "15, 5 and 4"
+      },
+      {
+        "en": "12, 8 and 4"
+      },
+      {
+        "en": "13, 7 and 4"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "16 MB = 2^24 bytes, so the address has 24 bits. Offset = log2(16) = 4 bits. Cache lines = 8 KB ÷ 16 B = 512, sets = 512 ÷ 4 = 128 = 2^7, so the set field is 7 bits. Tag = 24 − 7 − 4 = 13 bits.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Memory units conversion",
+    "difficulty": "easy",
+    "question_en": "How many kilobytes are there in 2 GB (using binary units)?",
+    "options": [
+      {
+        "en": "2,048,000 KB"
+      },
+      {
+        "en": "2,097,152 KB"
+      },
+      {
+        "en": "2,000,000 KB"
+      },
+      {
+        "en": "1,048,576 KB"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "1 GB = 1024 MB and 1 MB = 1024 KB. So 2 GB = 2 × 1024 × 1024 KB = 2,097,152 KB. The value 1,048,576 KB is only 1 GB.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "SRAM vs DRAM",
+    "difficulty": "medium",
+    "question_en": "Each bit of a static RAM (SRAM) cell is stored in a:",
+    "options": [
+      {
+        "en": "flip-flop made of cross-coupled transistors"
+      },
+      {
+        "en": "capacitor that must be refreshed periodically"
+      },
+      {
+        "en": "floating-gate transistor erased by UV light"
+      },
+      {
+        "en": "magnetised region on a rotating surface"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "An SRAM cell is a bistable latch (flip-flop), usually of six transistors, so it holds data as long as power is on and needs no refresh. SRAM is faster but costlier than DRAM, so it is used for cache memory. DRAM stores each bit as charge on a capacitor that must be refreshed periodically and is used for main memory. Floating-gate cells belong to EPROM/flash, and magnetised regions to hard disks.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Memory organisation - number of chips",
+    "difficulty": "medium",
+    "question_en": "How many 4K × 4 memory chips are needed to build a memory of 32K × 8?",
+    "options": [
+      {
+        "en": "8"
+      },
+      {
+        "en": "32"
+      },
+      {
+        "en": "16"
+      },
+      {
+        "en": "4"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Number of chips = (total words ÷ words per chip) × (bits per word ÷ bits per chip) = (32K ÷ 4K) × (8 ÷ 4) = 8 × 2 = 16. Two chips side by side give the 8-bit width, and 8 such rows give 32K words.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Addressing modes - immediate",
+    "difficulty": "easy",
+    "question_en": "In the instruction MOV R1, #25, the operand 25 is specified using which addressing mode?",
+    "options": [
+      {
+        "en": "Immediate addressing"
+      },
+      {
+        "en": "Direct addressing"
+      },
+      {
+        "en": "Register indirect addressing"
+      },
+      {
+        "en": "Indexed addressing"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The # sign indicates that the operand itself is part of the instruction, which is immediate addressing; no memory access is needed to fetch it. In direct addressing the field would be the memory address of the operand.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Addressing modes - relative addressing",
+    "difficulty": "medium",
+    "question_en": "In PC-relative addressing, the program counter holds 1202 after the instruction is fetched and the address field of the instruction is 24. What is the effective address?",
+    "options": [
+      {
+        "en": "1178"
+      },
+      {
+        "en": "1202"
+      },
+      {
+        "en": "24"
+      },
+      {
+        "en": "1226"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "In relative addressing, EA = contents of PC + address field. EA = 1202 + 24 = 1226. This mode is mainly used for branch instructions because the target is close to the current instruction.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Instruction formats - zero-address",
+    "difficulty": "medium",
+    "question_en": "Zero-address instructions such as ADD (with no operand field) are used in computers that use:",
+    "options": [
+      {
+        "en": "single-accumulator organisation"
+      },
+      {
+        "en": "general-register organisation"
+      },
+      {
+        "en": "stack organisation"
+      },
+      {
+        "en": "memory-to-memory organisation"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "In a stack-organised computer the operands are implicitly the top two stack elements, so arithmetic instructions need no address field. One-address instructions use an implied accumulator, and two- and three-address formats are used with general-register organisation.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "RISC vs CISC",
+    "difficulty": "medium",
+    "question_en": "Which of the following is a characteristic of a CISC processor rather than a RISC processor?",
+    "options": [
+      {
+        "en": "Only load and store instructions access memory"
+      },
+      {
+        "en": "Variable-length instructions with many addressing modes"
+      },
+      {
+        "en": "A large number of general-purpose registers"
+      },
+      {
+        "en": "Single-cycle execution of most instructions"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "CISC designs use many complex, variable-length instructions, many addressing modes and usually microprogrammed control. RISC designs use fixed-length instructions, a load/store architecture, many registers and hardwired control aimed at one instruction per cycle.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "CPU registers - MAR and MDR",
+    "difficulty": "easy",
+    "question_en": "Which CPU register temporarily holds the data word that has just been read from, or is about to be written into, main memory?",
+    "options": [
+      {
+        "en": "Memory Data Register (MDR)"
+      },
+      {
+        "en": "Memory Address Register (MAR)"
+      },
+      {
+        "en": "Program Counter (PC)"
+      },
+      {
+        "en": "Instruction Register (IR)"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The MDR (also called the Memory Buffer Register) holds the data being transferred to or from memory. The MAR holds the address of that memory location, the PC holds the address of the next instruction and the IR holds the instruction being executed.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "DMA transfer modes",
+    "difficulty": "medium",
+    "question_en": "In which DMA transfer mode does the DMA controller take over the system bus for one memory cycle, transfer a single word and then return the bus to the CPU?",
+    "options": [
+      {
+        "en": "Burst transfer mode"
+      },
+      {
+        "en": "Transparent (hidden) mode"
+      },
+      {
+        "en": "Cycle stealing mode"
+      },
+      {
+        "en": "Interrupt-driven I/O mode"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "In cycle stealing the DMA controller 'steals' one bus cycle at a time, transfers one word and hands the bus back, so CPU work is slowed only slightly. In burst (block) mode a whole block is transferred in one continuous burst while the CPU waits for the bus. In transparent (hidden) mode the DMA controller uses the bus only in cycles when the CPU is not using it, so the CPU is never slowed. Interrupt-driven I/O is not a DMA mode.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Interrupts - non-maskable interrupt",
+    "difficulty": "medium",
+    "question_en": "An interrupt that cannot be disabled or ignored by the CPU through software, and is used for events such as power failure, is called a:",
+    "options": [
+      {
+        "en": "maskable interrupt"
+      },
+      {
+        "en": "software interrupt"
+      },
+      {
+        "en": "vectored interrupt"
+      },
+      {
+        "en": "non-maskable interrupt"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "A non-maskable interrupt (NMI) always gets serviced, so it is reserved for critical events like power failure or memory parity errors. Maskable interrupts can be enabled or disabled by the program; software interrupts are produced by instructions; vectored refers to how the ISR address is obtained.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "BIOS, POST and CMOS",
+    "difficulty": "medium",
+    "question_en": "Consider the following statements. I. The Power-On Self-Test (POST) is carried out by the BIOS firmware when the computer is switched on. II. The CMOS setup values such as date and time are stored on the hard disk and are lost when the computer is shut down. Which of the statements is/are correct?",
+    "options": [
+      {
+        "en": "Only I"
+      },
+      {
+        "en": "Only II"
+      },
+      {
+        "en": "Both I and II"
+      },
+      {
+        "en": "Neither I nor II"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The BIOS, stored in ROM/flash on the motherboard, runs POST to check the hardware before loading the operating system, so statement I is correct. CMOS settings are kept in a small CMOS RAM chip powered by the motherboard battery, not on the hard disk, so statement II is wrong.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "System bus - address and data bus",
+    "difficulty": "easy",
+    "question_en": "Which of the following statements about the system bus is correct?",
+    "options": [
+      {
+        "en": "The address bus is bidirectional and the data bus is unidirectional"
+      },
+      {
+        "en": "The address bus is unidirectional and the data bus is bidirectional"
+      },
+      {
+        "en": "Both the address bus and data bus are unidirectional"
+      },
+      {
+        "en": "Both the address bus and data bus are bidirectional"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The CPU places addresses on the address bus, so addresses flow only from the CPU to memory and I/O (unidirectional). Data must be read and written, so the data bus carries data in both directions (bidirectional).",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Output devices - plotter",
+    "difficulty": "easy",
+    "question_en": "Which output device produces large, high-precision line drawings such as engineering designs and maps, traditionally by moving pens over paper?",
+    "options": [
+      {
+        "en": "Scanner"
+      },
+      {
+        "en": "Light pen"
+      },
+      {
+        "en": "Digitizer"
+      },
+      {
+        "en": "Plotter"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "A plotter is an output device for vector graphics such as architectural drawings and maps. A scanner, light pen and digitizer (graphics tablet) are all input devices.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Generations of languages",
+    "difficulty": "easy",
+    "question_en": "SQL, a non-procedural query language in which the user states what data is needed rather than how to get it, belongs to which generation of programming languages?",
+    "options": [
+      {
+        "en": "Second generation (2GL)"
+      },
+      {
+        "en": "Third generation (3GL)"
+      },
+      {
+        "en": "Fourth generation (4GL)"
+      },
+      {
+        "en": "First generation (1GL)"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Fourth-generation languages such as SQL, report generators and query languages are non-procedural and closer to human language. 1GL is machine language, 2GL is assembly language, 3GL covers procedural high-level languages like C and FORTRAN, and 5GL (e.g. Prolog) is logic-based.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "System vs application software",
+    "difficulty": "easy",
+    "question_en": "Which of the following is NOT an example of system software?",
+    "options": [
+      {
+        "en": "An operating system"
+      },
+      {
+        "en": "A payroll accounting package"
+      },
+      {
+        "en": "A device driver"
+      },
+      {
+        "en": "An assembler"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "System software manages the hardware and provides a platform for other programs; operating systems, device drivers and language translators such as assemblers belong to it. A payroll package serves a specific user task, so it is application software.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Language translators - interpreter",
+    "difficulty": "easy",
+    "question_en": "Which language translator converts and executes a high-level program one statement at a time and stops as soon as it meets an error?",
+    "options": [
+      {
+        "en": "Interpreter"
+      },
+      {
+        "en": "Compiler"
+      },
+      {
+        "en": "Assembler"
+      },
+      {
+        "en": "Loader"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "An interpreter translates and executes the source program line by line, so errors are reported one at a time and no separate object file is produced. A compiler translates the whole program first, an assembler translates assembly language, and a loader places programs in memory.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Compiler phases - lexical analysis",
+    "difficulty": "medium",
+    "question_en": "Which phase of a compiler reads the source program character by character, groups the characters into tokens and removes white space and comments?",
+    "options": [
+      {
+        "en": "Syntax analysis"
+      },
+      {
+        "en": "Semantic analysis"
+      },
+      {
+        "en": "Code optimisation"
+      },
+      {
+        "en": "Lexical analysis"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "The lexical analyser (scanner) is the first phase; it produces a stream of tokens such as identifiers, keywords and operators and enters identifiers in the symbol table. Syntax analysis then builds a parse tree from these tokens, and semantic analysis checks types and meaning.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Linker and loader",
+    "difficulty": "medium",
+    "question_en": "The system program that combines several separately compiled object modules and library routines into a single executable file is the:",
+    "options": [
+      {
+        "en": "Loader"
+      },
+      {
+        "en": "Interpreter"
+      },
+      {
+        "en": "Linker"
+      },
+      {
+        "en": "Debugger"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "A linker resolves references between object modules and libraries and produces one executable file. The loader then copies that executable into main memory for execution. Interpreters translate source code and debuggers help find errors.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Flowchart symbols",
+    "difficulty": "easy",
+    "question_en": "In a flowchart, the parallelogram symbol is used to represent:",
+    "options": [
+      {
+        "en": "a decision or condition test"
+      },
+      {
+        "en": "an input or output operation"
+      },
+      {
+        "en": "the start or end of the program"
+      },
+      {
+        "en": "a processing step or calculation"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The parallelogram denotes input/output (such as READ or PRINT). A diamond is used for decisions, an oval (terminal) for start/stop, a rectangle for processing and a small circle for a connector.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Raster graphics - frame buffer size",
+    "difficulty": "hard",
+    "question_en": "A raster display has a resolution of 1024 × 768 pixels and uses 24 bits per pixel. What is the minimum size of the frame buffer?",
+    "options": [
+      {
+        "en": "2.25 MB"
+      },
+      {
+        "en": "0.75 MB"
+      },
+      {
+        "en": "18 MB"
+      },
+      {
+        "en": "2.25 KB"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Frame buffer size = pixels × bits per pixel = 1024 × 768 × 24 bits = 18,874,368 bits. Dividing by 8 gives 2,359,296 bytes, and 2,359,296 ÷ 1,048,576 = 2.25 MB. (18 is the size in megabits, not megabytes.)",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Cohen-Sutherland line clipping - outcodes",
+    "difficulty": "hard",
+    "question_en": "In the Cohen–Sutherland algorithm, the clipping window is xmin = 10, xmax = 50, ymin = 10, ymax = 40, and the 4-bit region code is written in the order Top-Bottom-Right-Left. What is the region code of the point (60, 5)?",
+    "options": [
+      {
+        "en": "1010"
+      },
+      {
+        "en": "0110"
+      },
+      {
+        "en": "0101"
+      },
+      {
+        "en": "1001"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Check each bit: Top = 1 if y > 40 (5 is not, so 0); Bottom = 1 if y < 10 (yes, 1); Right = 1 if x > 50 (60, yes, 1); Left = 1 if x < 10 (no, 0). The region code is 0110, meaning the point lies below and to the right of the window.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Computer graphics - projections",
+    "difficulty": "medium",
+    "question_en": "In which type of projection do all the projection lines converge at a single point called the centre of projection, making distant objects appear smaller?",
+    "options": [
+      {
+        "en": "Orthographic projection"
+      },
+      {
+        "en": "Oblique projection"
+      },
+      {
+        "en": "Perspective projection"
+      },
+      {
+        "en": "Isometric projection"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Perspective projection uses projectors that meet at the centre of projection, so object size decreases with distance, giving a realistic view. Orthographic, oblique and isometric projections are all parallel projections, in which projectors are parallel and relative sizes are preserved.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Random scan vs raster scan display",
+    "difficulty": "easy",
+    "question_en": "A random-scan display, which draws a picture one line at a time by directing the electron beam only to the parts of the screen where lines are drawn, is also called a:",
+    "options": [
+      {
+        "en": "raster-scan display"
+      },
+      {
+        "en": "plasma panel display"
+      },
+      {
+        "en": "liquid crystal display"
+      },
+      {
+        "en": "vector (calligraphic) display"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Random-scan displays are also known as vector, stroke-writing or calligraphic displays; they store line-drawing commands in a display file. Raster-scan displays sweep the beam across every row of the screen and store pixel intensities in a frame buffer.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Probability - two dice",
+    "difficulty": "medium",
+    "question_en": "Two fair dice are thrown together. What is the probability that the sum of the numbers obtained is a prime number?",
+    "options": [
+      {
+        "en": "1/3"
+      },
+      {
+        "en": "7/18"
+      },
+      {
+        "en": "1/2"
+      },
+      {
+        "en": "5/12"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Possible prime sums are 2, 3, 5, 7 and 11. Favourable outcomes: sum 2 → 1, 3 → 2, 5 → 4, 7 → 6, 11 → 2, total 15 out of 36. Probability = 15/36 = 5/12.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Statistics - mean and range",
+    "difficulty": "easy",
+    "question_en": "For the data set 12, 7, 19, 4, 23, 13, what are the arithmetic mean and the range respectively?",
+    "options": [
+      {
+        "en": "13 and 23"
+      },
+      {
+        "en": "13 and 19"
+      },
+      {
+        "en": "12 and 19"
+      },
+      {
+        "en": "13.5 and 19"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Mean = (12 + 7 + 19 + 4 + 23 + 13) ÷ 6 = 78 ÷ 6 = 13. Range = largest value − smallest value = 23 − 4 = 19.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_fund",
+    "subtopic": "Interpolation methods",
+    "difficulty": "medium",
+    "question_en": "When the values of x are equally spaced, which formula is most suitable for interpolating a value near the beginning of the table?",
+    "options": [
+      {
+        "en": "Newton's backward difference formula"
+      },
+      {
+        "en": "Lagrange's interpolation formula"
+      },
+      {
+        "en": "Newton's forward difference formula"
+      },
+      {
+        "en": "Newton's divided difference formula"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Newton's forward difference formula uses differences from the start of an equally spaced table, so it suits values near the beginning; the backward formula suits values near the end. Lagrange's and divided-difference formulas are used mainly when the x values are unequally spaced.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_se",
+    "subtopic": "Waterfall model characteristics",
+    "difficulty": "medium",
+    "question_en": "In the classic waterfall model, the customer first sees a working version of the software:",
+    "options": [
+      {
+        "en": "only late, after implementation and testing"
+      },
+      {
+        "en": "at the end of the requirements phase"
+      },
+      {
+        "en": "after every short iteration of 2–4 weeks"
+      },
+      {
+        "en": "as a throwaway prototype in the first phase"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The waterfall model is linear and sequential: each phase is completed and documented before the next begins. Working software therefore appears only late in the life cycle, so errors in requirements are discovered late and are costly to fix. Short iterations and early prototypes belong to agile and prototyping models.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_se",
+    "subtopic": "RAD model phases",
+    "difficulty": "medium",
+    "question_en": "In the RAD (Rapid Application Development) model, which phase immediately follows data modelling?",
+    "options": [
+      {
+        "en": "Business modelling"
+      },
+      {
+        "en": "Application generation"
+      },
+      {
+        "en": "Testing and turnover"
+      },
+      {
+        "en": "Process modelling"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "The RAD phases in order are business modelling, data modelling, process modelling, application generation, and testing and turnover. Process modelling converts the data objects defined in data modelling into the processing needed to achieve the business functions.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_se",
+    "subtopic": "Spiral model",
+    "difficulty": "medium",
+    "question_en": "In Boehm's spiral model, each loop of the spiral represents:",
+    "options": [
+      {
+        "en": "a single fixed-length sprint"
+      },
+      {
+        "en": "one phase of the software process"
+      },
+      {
+        "en": "one level of the testing hierarchy"
+      },
+      {
+        "en": "the complete life cycle of one module"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Each loop of the spiral is a phase of the process (for example feasibility, requirements, design), and every loop passes through objective setting, risk assessment and reduction, development and validation, and planning. Sprints belong to Scrum, not the spiral model.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_se",
+    "subtopic": "V-model",
+    "difficulty": "medium",
+    "question_en": "In the V-model, acceptance testing is planned on the basis of which phase on the left (development) arm of the V?",
+    "options": [
+      {
+        "en": "System design"
+      },
+      {
+        "en": "Architectural design"
+      },
+      {
+        "en": "Requirements analysis"
+      },
+      {
+        "en": "Module design"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Each development phase in the V-model has a matching test phase: requirements analysis ↔ acceptance testing, system design ↔ system testing, architectural design ↔ integration testing and module design ↔ unit testing. Acceptance tests check the system against the user's requirements.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_se",
+    "subtopic": "Agile - Scrum roles",
+    "difficulty": "easy",
+    "question_en": "In Scrum, the person who facilitates the process, coaches the team and removes impediments that block its progress is the:",
+    "options": [
+      {
+        "en": "Scrum Master"
+      },
+      {
+        "en": "Product Owner"
+      },
+      {
+        "en": "Project Sponsor"
+      },
+      {
+        "en": "Development Team"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The Scrum Master is a servant-leader who ensures Scrum is followed and removes obstacles. The Product Owner manages and orders the product backlog, and the Development Team builds the increment during each sprint.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_se",
+    "subtopic": "Agile - Extreme Programming practices",
+    "difficulty": "easy",
+    "question_en": "Pair programming, in which two developers work at one workstation with one writing the code and the other reviewing every line, is a key practice of:",
+    "options": [
+      {
+        "en": "the waterfall model"
+      },
+      {
+        "en": "the spiral model"
+      },
+      {
+        "en": "the V-model"
+      },
+      {
+        "en": "Extreme Programming (XP)"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Extreme Programming is an agile method whose practices include pair programming, test-first development, small releases, continuous integration and refactoring. The waterfall, spiral and V-models are plan-driven and do not prescribe pair programming.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_se",
+    "subtopic": "Requirements - functional vs non-functional",
+    "difficulty": "easy",
+    "question_en": "Which of the following is a functional requirement for a school fee-management system?",
+    "options": [
+      {
+        "en": "The system shall be available 99.5% of the time"
+      },
+      {
+        "en": "Every page of the system shall load within 3 seconds"
+      },
+      {
+        "en": "The system shall issue a receipt for every fee payment"
+      },
+      {
+        "en": "The system shall run on both Windows and Linux"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "A functional requirement states a service or behaviour the system must provide, such as issuing a receipt. Availability, response time and platform support are non-functional requirements (reliability, performance and portability constraints).",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_se",
+    "subtopic": "SRS characteristics",
+    "difficulty": "easy",
+    "question_en": "An SRS in which every stated requirement has only one possible interpretation is said to be:",
+    "options": [
+      {
+        "en": "Traceable"
+      },
+      {
+        "en": "Unambiguous"
+      },
+      {
+        "en": "Modifiable"
+      },
+      {
+        "en": "Consistent"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "IEEE 830 lists correct, unambiguous, complete, consistent, ranked, verifiable, modifiable and traceable as qualities of a good SRS. Unambiguous means each requirement can be read in only one way. Consistent means no two requirements conflict, and traceable means each requirement's origin and later use can be followed.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_se",
+    "subtopic": "Levels of software design",
+    "difficulty": "medium",
+    "question_en": "Which level of software design specifies the internal logic, algorithms and data structures of each individual module?",
+    "options": [
+      {
+        "en": "Detailed (low-level) design"
+      },
+      {
+        "en": "Architectural design"
+      },
+      {
+        "en": "Conceptual system design"
+      },
+      {
+        "en": "Preliminary design"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Design proceeds from system (conceptual) design to architectural (high-level) design, which identifies modules and their interfaces, and then to detailed (low-level) design, which describes each module's algorithms and data structures. Preliminary design is another name for the high-level stage.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_se",
+    "subtopic": "Cohesion - order of types",
+    "difficulty": "hard",
+    "question_en": "Which option arranges these types of cohesion from the WORST (least desirable) to the BEST (most desirable)?",
+    "options": [
+      {
+        "en": "Coincidental, Logical, Temporal, Communicational, Functional"
+      },
+      {
+        "en": "Logical, Coincidental, Temporal, Communicational, Functional"
+      },
+      {
+        "en": "Coincidental, Temporal, Logical, Functional, Communicational"
+      },
+      {
+        "en": "Functional, Communicational, Temporal, Logical, Coincidental"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The full order from worst to best is coincidental < logical < temporal < procedural < communicational < sequential < functional. Functional cohesion, where every element contributes to one single task, is the goal. The last option lists the right order but from best to worst.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_se",
+    "subtopic": "Coupling - order of types",
+    "difficulty": "hard",
+    "question_en": "Which option arranges these types of coupling from the LOWEST (most desirable) to the HIGHEST (least desirable)?",
+    "options": [
+      {
+        "en": "Stamp, Data, Control, Common, Content"
+      },
+      {
+        "en": "Data, Control, Stamp, Content, Common"
+      },
+      {
+        "en": "Content, Common, Control, Stamp, Data"
+      },
+      {
+        "en": "Data, Stamp, Control, Common, Content"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "The order from loosest to tightest is data < stamp < control < external < common < content. Data coupling (passing only the needed elementary values) is best, and content coupling (one module directly using or changing another's internals) is worst. Good design aims for low coupling and high cohesion.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_se",
+    "subtopic": "UML diagram types - structural",
+    "difficulty": "medium",
+    "question_en": "Which of the following is a structural (static) UML diagram rather than a behavioural one?",
+    "options": [
+      {
+        "en": "Activity diagram"
+      },
+      {
+        "en": "Component diagram"
+      },
+      {
+        "en": "Sequence diagram"
+      },
+      {
+        "en": "Use case diagram"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Structural UML diagrams show the static parts of a system: class, object, component, deployment, package and composite structure diagrams. Activity, use case and state machine diagrams are behavioural, and sequence diagrams are behavioural interaction diagrams.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_se",
+    "subtopic": "UML - state machine diagram",
+    "difficulty": "easy",
+    "question_en": "Which UML diagram shows the states an object passes through during its lifetime and the events that cause transitions between those states?",
+    "options": [
+      {
+        "en": "Class diagram"
+      },
+      {
+        "en": "Deployment diagram"
+      },
+      {
+        "en": "State machine diagram"
+      },
+      {
+        "en": "Component diagram"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "A state machine diagram models the life of a single object as states connected by event-triggered transitions, for example an Order moving from Placed to Shipped to Delivered. Class, deployment and component diagrams are structural and do not show state changes.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_se",
+    "subtopic": "White-box vs black-box techniques",
+    "difficulty": "easy",
+    "question_en": "Which of the following is a white-box testing technique?",
+    "options": [
+      {
+        "en": "Equivalence class partitioning"
+      },
+      {
+        "en": "Boundary value analysis"
+      },
+      {
+        "en": "Basis path testing"
+      },
+      {
+        "en": "Cause–effect graphing"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "White-box (glass-box) techniques design tests from the internal code structure; basis path testing uses the control-flow graph and cyclomatic complexity to find independent paths. Equivalence partitioning, boundary value analysis and cause–effect graphing use only the specification, so they are black-box techniques.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_se",
+    "subtopic": "Boundary value analysis - number of test cases",
+    "difficulty": "hard",
+    "question_en": "Using normal boundary value analysis with the single-fault assumption, how many test cases are needed for a function that has three independent input variables?",
+    "options": [
+      {
+        "en": "13"
+      },
+      {
+        "en": "15"
+      },
+      {
+        "en": "27"
+      },
+      {
+        "en": "12"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Each variable in turn takes the values min, min+, max− and max while the others stay at nominal, giving 4 cases per variable, plus one case with all variables nominal. Total = 4n + 1 = 4 × 3 + 1 = 13. (Robust BVA would need 6n + 1 = 19.)",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_se",
+    "subtopic": "Cyclomatic complexity - numerical",
+    "difficulty": "hard",
+    "question_en": "A function contains one 'if' statement with the condition (a > 0 && b > 0), one 'for' loop, and one 'switch' statement with three case labels and a default. Counting each simple condition separately, what is its cyclomatic complexity?",
+    "options": [
+      {
+        "en": "5"
+      },
+      {
+        "en": "7"
+      },
+      {
+        "en": "6"
+      },
+      {
+        "en": "8"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "V(G) = number of simple predicates + 1. The compound if contributes 2 (a > 0 and b > 0), the for loop contributes 1, and the switch with 4 outgoing branches contributes 4 − 1 = 3. V(G) = 2 + 1 + 3 + 1 = 7.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_se",
+    "subtopic": "Integration testing - drivers and stubs",
+    "difficulty": "medium",
+    "question_en": "In which integration testing approach are 'drivers' written to call and pass test data to the lower-level modules under test?",
+    "options": [
+      {
+        "en": "Top-down integration"
+      },
+      {
+        "en": "Big-bang integration"
+      },
+      {
+        "en": "Acceptance testing"
+      },
+      {
+        "en": "Bottom-up integration"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Bottom-up integration starts with the lowest-level modules, so temporary drivers are needed to simulate the higher-level modules that call them. Top-down integration uses stubs to stand in for missing lower modules, and big-bang integration combines all modules at once.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_se",
+    "subtopic": "Types of system testing",
+    "difficulty": "medium",
+    "question_en": "Which kind of system testing checks that the protection mechanisms built into a system will actually protect it from improper penetration or unauthorised access?",
+    "options": [
+      {
+        "en": "Stress testing"
+      },
+      {
+        "en": "Recovery testing"
+      },
+      {
+        "en": "Security testing"
+      },
+      {
+        "en": "Performance testing"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Security testing attempts to break in and verifies the system's protection mechanisms. Stress testing uses abnormal load, recovery testing forces failures and checks recovery, and performance testing measures run-time speed and resource use.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_se",
+    "subtopic": "Alpha and beta testing",
+    "difficulty": "easy",
+    "question_en": "Beta testing of a software product is conducted:",
+    "options": [
+      {
+        "en": "by developers in a controlled environment at the developer's site"
+      },
+      {
+        "en": "by end users at their own sites, without the developer present"
+      },
+      {
+        "en": "by independent testers on individual modules before integration"
+      },
+      {
+        "en": "by the development team using stubs and drivers"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Beta testing is done by real customers in their own environment; the developer is generally not present and users report problems back. Alpha testing, by contrast, is done by users at the developer's site under the developer's observation.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_se",
+    "subtopic": "Software maintenance types",
+    "difficulty": "medium",
+    "question_en": "Modifying delivered software to detect and correct latent faults before they ever cause a failure, when no fault has been reported and no new feature has been requested, is called:",
+    "options": [
+      {
+        "en": "Preventive maintenance"
+      },
+      {
+        "en": "Corrective maintenance"
+      },
+      {
+        "en": "Adaptive maintenance"
+      },
+      {
+        "en": "Perfective maintenance"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Preventive maintenance (ISO/IEC 14764, SWEBOK) corrects latent faults before they become operational failures; Pressman also calls such anticipatory restructuring 'software re-engineering'. Corrective maintenance fixes reported faults, adaptive maintenance suits the software to a changed environment, and perfective maintenance adds enhancements or improves performance.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_se",
+    "subtopic": "Software configuration management tasks",
+    "difficulty": "medium",
+    "question_en": "Which of the following is NOT a task of software configuration management (SCM)?",
+    "options": [
+      {
+        "en": "Version control"
+      },
+      {
+        "en": "Change control"
+      },
+      {
+        "en": "Configuration audit"
+      },
+      {
+        "en": "Cost estimation"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "The standard SCM tasks are identification of configuration items, version control, change control, configuration audit and status reporting. Cost estimation is a project-planning activity (for example using COCOMO), not part of SCM.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_se",
+    "subtopic": "SCM - baseline",
+    "difficulty": "medium",
+    "question_en": "In software configuration management, a work product that has been formally reviewed and agreed upon, and that can be changed only through formal change-control procedures, is called a:",
+    "options": [
+      {
+        "en": "Branch"
+      },
+      {
+        "en": "Release note"
+      },
+      {
+        "en": "Change request"
+      },
+      {
+        "en": "Baseline"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "A baseline is a reviewed and approved specification or product that serves as the basis for further development; after it is set, changes require a formal change request and approval. A change request is the form used to propose such a change, and a branch is a parallel line of versions.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_se",
+    "subtopic": "Risk strategies - reactive vs proactive",
+    "difficulty": "easy",
+    "question_en": "A risk strategy in which the team does nothing about risks until they actually become problems and then rushes to fix them ('fire-fighting') is called a:",
+    "options": [
+      {
+        "en": "Reactive risk strategy"
+      },
+      {
+        "en": "Proactive risk strategy"
+      },
+      {
+        "en": "Risk mitigation strategy"
+      },
+      {
+        "en": "Risk avoidance strategy"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Pressman describes reactive strategies as reacting to risks only when they occur, often called crisis management or fire-fighting. A proactive strategy identifies risks early, assesses their probability and impact, and plans mitigation in advance.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_se",
+    "subtopic": "Risk management - RMMM",
+    "difficulty": "medium",
+    "question_en": "In software risk management, the abbreviation RMMM stands for:",
+    "options": [
+      {
+        "en": "Risk Measurement, Modelling and Minimisation"
+      },
+      {
+        "en": "Risk Monitoring, Mapping and Management"
+      },
+      {
+        "en": "Risk Mitigation, Monitoring and Management"
+      },
+      {
+        "en": "Risk Mitigation, Measurement and Modelling"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "RMMM means Risk Mitigation, Monitoring and Management. Mitigation means avoiding or reducing a risk, monitoring means tracking risk indicators, and management means carrying out contingency plans when a risk occurs. These steps are recorded in the RMMM plan.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_se",
+    "subtopic": "Risk exposure - numerical",
+    "difficulty": "medium",
+    "question_en": "A project risk has a 60% probability of occurring and, if it occurs, will cost the project ₹50,000. What is its risk exposure?",
+    "options": [
+      {
+        "en": "₹50,000"
+      },
+      {
+        "en": "₹30,000"
+      },
+      {
+        "en": "₹20,000"
+      },
+      {
+        "en": "₹83,333"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Risk exposure RE = P × C, where P is the probability of the risk and C is its cost if it occurs. RE = 0.6 × ₹50,000 = ₹30,000. Risks with higher exposure are given priority in planning.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_se",
+    "subtopic": "COCOMO modes",
+    "difficulty": "medium",
+    "question_en": "In COCOMO, a project that must work within tight hardware, software and operational constraints, such as air-traffic control software, is classified as:",
+    "options": [
+      {
+        "en": "Organic mode"
+      },
+      {
+        "en": "Embedded mode"
+      },
+      {
+        "en": "Semi-detached mode"
+      },
+      {
+        "en": "Intermediate mode"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Boehm's three modes are organic (small, experienced team, familiar problem), semi-detached (medium size, mixed experience) and embedded (tight constraints, complex). 'Intermediate' is a level of the COCOMO model (Basic, Intermediate, Detailed), not a project mode.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_se",
+    "subtopic": "COCOMO - development time numerical",
+    "difficulty": "hard",
+    "question_en": "An organic-mode project needs an estimated effort of 64 person-months. Using the Basic COCOMO formula TDEV = 2.5 × (E)^0.38 months, the development time is approximately:",
+    "options": [
+      {
+        "en": "25.6 months"
+      },
+      {
+        "en": "6.4 months"
+      },
+      {
+        "en": "12.1 months"
+      },
+      {
+        "en": "16.0 months"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "64^0.38 = e^(0.38 × ln 64) = e^(0.38 × 4.159) = e^1.580 ≈ 4.86. TDEV = 2.5 × 4.86 ≈ 12.1 months. The average team size would then be about 64 ÷ 12.1 ≈ 5 persons.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_se",
+    "subtopic": "Software quality factors (ISO 9126)",
+    "difficulty": "hard",
+    "question_en": "Which of the following is NOT one of the six main quality characteristics defined in ISO 9126?",
+    "options": [
+      {
+        "en": "Portability"
+      },
+      {
+        "en": "Maintainability"
+      },
+      {
+        "en": "Usability"
+      },
+      {
+        "en": "Integrity"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "ISO 9126 defines six characteristics: functionality, reliability, usability, efficiency, maintainability and portability. Integrity is one of McCall's quality factors; in ISO 9126 security falls under functionality as a sub-characteristic.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_se",
+    "subtopic": "ISO 9126 sub-characteristics",
+    "difficulty": "medium",
+    "question_en": "In ISO 9126, adaptability, installability and replaceability are sub-characteristics of which quality characteristic?",
+    "options": [
+      {
+        "en": "Portability"
+      },
+      {
+        "en": "Maintainability"
+      },
+      {
+        "en": "Usability"
+      },
+      {
+        "en": "Reliability"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Portability is the ease of moving software from one environment to another; its sub-characteristics are adaptability, installability, co-existence and replaceability. Maintainability covers analysability, changeability, stability and testability.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_se",
+    "subtopic": "CMM levels",
+    "difficulty": "medium",
+    "question_en": "At which level of the Capability Maturity Model (CMM) are the software process and product quality measured quantitatively and controlled using detailed metrics?",
+    "options": [
+      {
+        "en": "Level 3 – Defined"
+      },
+      {
+        "en": "Level 4 – Managed"
+      },
+      {
+        "en": "Level 2 – Repeatable"
+      },
+      {
+        "en": "Level 5 – Optimizing"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The five CMM levels are 1 Initial, 2 Repeatable, 3 Defined, 4 Managed and 5 Optimizing. At level 4 the organisation collects detailed measures and controls the process quantitatively; level 5 adds continuous process improvement.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_se",
+    "subtopic": "Reliability - MTBF, MTTR and availability",
+    "difficulty": "hard",
+    "question_en": "A system has a mean time to failure (MTTF) of 480 hours and a mean time to repair (MTTR) of 20 hours. What are its MTBF and availability?",
+    "options": [
+      {
+        "en": "460 hours and 95.8%"
+      },
+      {
+        "en": "500 hours and 95%"
+      },
+      {
+        "en": "480 hours and 96%"
+      },
+      {
+        "en": "500 hours and 96%"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "MTBF = MTTF + MTTR = 480 + 20 = 500 hours. Availability = MTTF ÷ (MTTF + MTTR) × 100 = 480 ÷ 500 × 100 = 96%.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_se",
+    "subtopic": "Software engineering - layered technology",
+    "difficulty": "medium",
+    "question_en": "In Pressman's view of software engineering as a layered technology, which layer forms the foundation on which the other layers rest?",
+    "options": [
+      {
+        "en": "A quality focus"
+      },
+      {
+        "en": "The process layer"
+      },
+      {
+        "en": "The methods layer"
+      },
+      {
+        "en": "The tools layer"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Pressman's layers from the bottom up are quality focus, process, methods and tools. The organisation's commitment to quality is the bedrock; the process layer holds the methods together, methods give the technical 'how to', and tools give automated support.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_se",
+    "subtopic": "Prescriptive process models",
+    "difficulty": "medium",
+    "question_en": "Consider the following statements. I. In the incremental model, the first increment is often a core product with only the basic requirements. II. The waterfall model suits projects whose requirements are well understood and stable. Which of the statements is/are correct?",
+    "options": [
+      {
+        "en": "Only I"
+      },
+      {
+        "en": "Only II"
+      },
+      {
+        "en": "Both I and II"
+      },
+      {
+        "en": "Neither I nor II"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "In the incremental model the first increment usually delivers the core product, and later increments add features, so statement I is correct. The linear waterfall model works well only when requirements are clear and unlikely to change, so statement II is also correct.",
+    "pyq_concept": true
+  }
+]

@@ -1,0 +1,24 @@
+{
+ "name": "Fundamentals, SE, Web, IT & Teaching",
+ "chapters": [
+  ["cf_fund", "Computer Fundamentals & Digital Logic", "Fundamentals & Digital"],
+  ["cf_se", "Software Engineering", "Software Engineering"],
+  ["cf_web", "Web Technologies", "Web Technologies"],
+  ["cf_it", "IT Tools & Emerging Technologies", "IT Tools & Emerging Tech"],
+  ["cf_teach", "Teaching Methodology of Computer Science", "Teaching Methodology"]
+ ],
+ "pyq_file": "fundplus_pyq_analysis.json",
+ "pyq_rules": [
+  ["[cf_fund]", "cf_fund"], ["[cf_se]", "cf_se"], ["[cf_web]", "cf_web"], ["[cf_it]", "cf_it"], ["[cf_teach]", "cf_teach"]
+ ],
+ "question_files": ["questions_fund_se.json", "questions_web_it.json", "questions_teach.json"],
+ "series_name": "DSSSB TGT CS — Fundamentals, SE, Web, IT & Teaching (Notes + 200 Most Expected)",
+ "series_name_hi": "DSSSB TGT CS — कंप्यूटर फंडामेंटल्स, SE, वेब, IT एवं शिक्षण विधि",
+ "series_description": "The remaining five syllabus chapters in one pack: Computer Fundamentals & Digital Logic, Software Engineering, Web Technologies, IT Tools & Emerging Technologies and Teaching Methodology — 238 previous-year questions, chapter-wise practice and the 200 most expected questions, weighted the way DSSSB weights these chapters. Short notes and a fast-revision sheet are in Courses → DSSSB TGT Computer Science.",
+ "course_subject": "Fundamentals, SE, Web, IT & Teaching",
+ "course_subject_hi": "कंप्यूटर फंडामेंटल्स, SE, वेब, IT एवं शिक्षण विधि",
+ "tagline": "Digital logic & architecture · SDLC & testing · HTML/CSS/JS/XML · MS Office, MIS, e-commerce, cyber law, AI/IoT/cloud · lesson planning, evaluation, child development",
+ "intro": "In the 4 official DSSSB TGT Computer Science papers of 2023–24 these five chapters carried <b>{n} questions</b> — about 36 per paper, more than any other block. Fundamentals alone is 10 per paper and reaches into computer architecture, compilers, graphics and basic maths; IT Tools is really MIS, knowledge management, e-commerce, business/economics basics and cyber law; Teaching Methodology leans on child development and inclusive education. These notes are deliberately short: tables and one-liners that cover every asked area.",
+ "practice_split": 35,
+ "full_test_min_per_q": 0.75
+}

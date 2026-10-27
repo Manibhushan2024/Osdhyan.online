@@ -1,0 +1,2072 @@
+[
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "HTML anchor target",
+    "difficulty": "easy",
+    "question_en": "In the markup <a href=\"result.html\" target=\"_self\">Result</a>, where does the linked page open when it is clicked?",
+    "options": [
+      {
+        "en": "In the same frame or tab as the link (the default)"
+      },
+      {
+        "en": "In a new, unnamed browser tab or window"
+      },
+      {
+        "en": "In the full window, replacing all the frames"
+      },
+      {
+        "en": "In the parent frameset of the current frame"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "_self loads the linked document in the same browsing context (frame or tab) that holds the link, and it is the default when target is omitted. _blank opens a new tab or window, _parent uses the parent frame and _top replaces the whole window.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "HTML anchor mailto",
+    "difficulty": "easy",
+    "question_en": "What happens when a visitor clicks the link <a href=\"mailto:principal@school.in\">Write to us</a>?",
+    "options": [
+      {
+        "en": "The browser downloads a file named principal@school.in"
+      },
+      {
+        "en": "The page sends an e-mail at once without asking the user"
+      },
+      {
+        "en": "The default e-mail program opens with the address filled in"
+      },
+      {
+        "en": "The browser shows an error because mailto is not a scheme"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "mailto: is a URL scheme that hands the address to the user's default e-mail client, which opens a new message with the To field filled in. Nothing is sent until the user writes and sends the mail.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "HTML hr element",
+    "difficulty": "easy",
+    "question_en": "In HTML5, the <hr> element semantically represents:",
+    "options": [
+      {
+        "en": "a hidden row placed inside a table"
+      },
+      {
+        "en": "a thematic break between paragraph-level sections"
+      },
+      {
+        "en": "a hyperlink reference to another page"
+      },
+      {
+        "en": "a heading of the lowest rank on the page"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "<hr> is an empty element that marks a thematic break, such as a change of topic, and browsers draw it as a horizontal rule. Its old presentational attributes (size, width, align, noshade) are obsolete in HTML5 and replaced by CSS.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "HTML body link attributes",
+    "difficulty": "medium",
+    "question_en": "In the old-style <body> tag, which attribute sets the colour a hyperlink shows at the moment it is being clicked (the active link)?",
+    "options": [
+      {
+        "en": "TEXT"
+      },
+      {
+        "en": "LINK"
+      },
+      {
+        "en": "VLINK"
+      },
+      {
+        "en": "ALINK"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "ALINK gives the colour of an active link, i.e. while the mouse button is pressed on it. LINK sets the colour of unvisited links, VLINK of visited links and TEXT of normal body text; all are now replaced by CSS (a:active, a:link, a:visited).",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "HTML head element",
+    "difficulty": "medium",
+    "question_en": "Which of the following should NOT be placed inside the <head> section of an HTML document?",
+    "options": [
+      {
+        "en": "<meta charset=\"UTF-8\">"
+      },
+      {
+        "en": "<link rel=\"icon\" href=\"logo.png\">"
+      },
+      {
+        "en": "<p>Welcome to our school</p>"
+      },
+      {
+        "en": "<script src=\"app.js\"></script>"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "<head> holds metadata about the page: <title>, <meta>, <link>, <style>, <script> and <base>. A <p> paragraph is visible content and belongs in <body>.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "HTML comments",
+    "difficulty": "easy",
+    "question_en": "A page contains the line <!-- Revised by Admin on 5 May -->. What happens to this text?",
+    "options": [
+      {
+        "en": "It is shown in italics at the top of the page"
+      },
+      {
+        "en": "It is not displayed, but anyone can read it in View Source"
+      },
+      {
+        "en": "It is encrypted and removed from the page source"
+      },
+      {
+        "en": "It appears as a tooltip when the page first loads"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Text between <!-- and --> is an HTML comment: the browser does not render it. It is still sent to the browser as part of the source, so it must never contain passwords or other secrets.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "HTML tables",
+    "difficulty": "easy",
+    "question_en": "Which tag gives a title to an HTML table and must be written immediately after the opening <table> tag?",
+    "options": [
+      {
+        "en": "<caption>"
+      },
+      {
+        "en": "<th>"
+      },
+      {
+        "en": "<thead>"
+      },
+      {
+        "en": "<title>"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "<caption> supplies the table's title and must be the first child of <table>; browsers show it above the table by default. <th> is a header cell, <thead> groups header rows and <title> names the whole page in <head>.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "HTML form input types",
+    "difficulty": "medium",
+    "question_en": "A form contains <input type=\"email\" name=\"mail\" required>. The user types only abc and clicks Submit. What does a modern browser do?",
+    "options": [
+      {
+        "en": "It sends abc to the server without any check"
+      },
+      {
+        "en": "It appends a default domain to the value and sends it"
+      },
+      {
+        "en": "It clears the field and submits the form empty"
+      },
+      {
+        "en": "It stops submission and asks for a valid e-mail address"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "type=\"email\" makes the browser check that the value looks like an e-mail address (it must contain @ and a domain part). Because the check fails, the form is not submitted and a validation message is shown. Server-side validation is still needed because client checks can be bypassed.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "HTML forms - GET vs POST and file upload",
+    "difficulty": "hard",
+    "question_en": "A form lets students upload a photo using <input type=\"file\" name=\"pic\">. Which <form> settings are needed for the file contents to actually reach the server?",
+    "options": [
+      {
+        "en": "method=\"get\" with enctype=\"text/plain\""
+      },
+      {
+        "en": "method=\"post\" with enctype=\"multipart/form-data\""
+      },
+      {
+        "en": "method=\"get\" with enctype=\"multipart/form-data\""
+      },
+      {
+        "en": "method=\"post\" with enctype=\"application/json\""
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "File data travels in the request body, so the form must use POST; GET only appends name=value pairs to the URL. The enctype must be multipart/form-data, because the default application/x-www-form-urlencoded sends just the file name. application/json is not a valid enctype for an HTML form.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "Three ways to add CSS - priority",
+    "difficulty": "medium",
+    "question_en": "An <h1> is styled by an external stylesheet (color: blue), by an internal <style> block placed after the <link> (color: green) and by its own inline style attribute (color: red). All rules use the same selector type and none uses !important. Which colour does the heading show?",
+    "options": [
+      {
+        "en": "Blue"
+      },
+      {
+        "en": "Green"
+      },
+      {
+        "en": "Red"
+      },
+      {
+        "en": "The browser default, black"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "CSS can be added inline (style attribute), internally (<style> in the head) or externally (<link> to a .css file). An inline style has the highest priority, so red wins. Between internal and external rules of equal specificity, the one that comes later in the document wins.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "CSS selectors",
+    "difficulty": "medium",
+    "question_en": "Which elements are selected by the CSS selector h2 + p?",
+    "options": [
+      {
+        "en": "Every <p> that is nested inside an <h2>"
+      },
+      {
+        "en": "Every <p> that comes anywhere after an <h2>"
+      },
+      {
+        "en": "Only the <p> immediately after an <h2>, with the same parent"
+      },
+      {
+        "en": "All <h2> elements together with all <p> elements"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "The + combinator is the adjacent-sibling selector: it matches a <p> that directly follows an <h2> and shares its parent. h2 ~ p would match every later sibling <p>, h2 p matches descendants and h2, p is a group selector.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "CSS box model",
+    "difficulty": "easy",
+    "question_en": "In the CSS box model, which area lies outside the border and is always transparent, never showing the element's background colour?",
+    "options": [
+      {
+        "en": "Padding"
+      },
+      {
+        "en": "Content"
+      },
+      {
+        "en": "Border-spacing"
+      },
+      {
+        "en": "Margin"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "From inside out, the box model is content, padding, border and margin. Padding takes the element's background, but the margin is clear space outside the border that shows whatever lies behind the element.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "CSS transitions",
+    "difficulty": "medium",
+    "question_en": "What happens when the mouse pointer moves over an element with class btn?\n```css\n.btn { width: 100px; transition: width 2s; }\n.btn:hover { width: 250px; }\n```",
+    "options": [
+      {
+        "en": "The width jumps to 250px at once and resets after 2 seconds"
+      },
+      {
+        "en": "The width grows smoothly from 100px to 250px over 2 seconds"
+      },
+      {
+        "en": "The width waits 2 seconds and then jumps to 250px"
+      },
+      {
+        "en": "Nothing changes, because a @keyframes rule is missing"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "transition: width 2s tells the browser to animate any change in width over 2 seconds instead of applying it instantly. On hover the width moves gradually to 250px, and it moves back smoothly when the pointer leaves. @keyframes is needed only for CSS animations, not transitions.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "CSS filter",
+    "difficulty": "easy",
+    "question_en": "What is the visible effect of this rule?\n```css\nimg { filter: blur(4px); }\n```",
+    "options": [
+      {
+        "en": "All images appear out of focus (blurred)"
+      },
+      {
+        "en": "All images get a 4px black border"
+      },
+      {
+        "en": "All images are shown in greyscale"
+      },
+      {
+        "en": "All images shrink by 4px on each side"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The CSS filter property applies graphic effects; blur(4px) applies a Gaussian blur whose radius (the standard deviation of the Gaussian) is 4px. Other filter functions include grayscale(), brightness(), contrast() and sepia().",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "CSS preprocessors",
+    "difficulty": "medium",
+    "question_en": "In Sass (SCSS syntax), how is a variable holding the main theme colour declared?",
+    "options": [
+      {
+        "en": "@primary: #0066cc;"
+      },
+      {
+        "en": "var primary = #0066cc;"
+      },
+      {
+        "en": "--primary = #0066cc;"
+      },
+      {
+        "en": "$primary: #0066cc;"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Sass variables begin with $, and the preprocessor compiles them into plain CSS. LESS uses the @ prefix, while native CSS custom properties are written as --primary: value; inside a rule and read with var(--primary).",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "CSS - what does this rule do",
+    "difficulty": "medium",
+    "question_en": "What does the following rule do?\n```css\n.box { display: flex; justify-content: center; }\n```",
+    "options": [
+      {
+        "en": "Centres the child items along the main (horizontal) axis"
+      },
+      {
+        "en": "Centres only the text inside each child item"
+      },
+      {
+        "en": "Stacks the child items vertically in the middle"
+      },
+      {
+        "en": "Centres the .box element itself on the page"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "display: flex makes .box a flex container whose children are laid out in a row by default. justify-content aligns those children along the main axis, so center groups them in the middle horizontally. Vertical alignment in a row is controlled by align-items.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "JavaScript document.write",
+    "difficulty": "medium",
+    "question_en": "What does the following script display?\n```html\n<script>\ndocument.write(2 + 3 + \"A\");\ndocument.write(\"<br>\");\ndocument.write(\"A\" + 2 + 3);\n</script>\n```",
+    "options": [
+      {
+        "en": "23A on line 1 and A23 on line 2"
+      },
+      {
+        "en": "5A on line 1 and A5 on line 2"
+      },
+      {
+        "en": "5A on line 1 and A23 on line 2"
+      },
+      {
+        "en": "23A on line 1 and A5 on line 2"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "The + operator works left to right. In 2 + 3 + \"A\" the numbers are added first (5) and then joined to \"A\", giving 5A. In \"A\" + 2 + 3 the first operation already involves a string, so 2 and 3 are joined as text, giving A23.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "JavaScript var vs let - output",
+    "difficulty": "hard",
+    "question_en": "What does the following code print?\n```javascript\nfor (var i = 0; i < 3; i++) {\n  setTimeout(() => console.log(i), 0);\n}\n```",
+    "options": [
+      {
+        "en": "0 1 2"
+      },
+      {
+        "en": "3 3 3"
+      },
+      {
+        "en": "0 0 0"
+      },
+      {
+        "en": "1 2 3"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "var is function-scoped, so all three callbacks share one variable i. The callbacks run only after the loop finishes, when i is already 3, so 3 is printed three times. Declaring the loop variable with let creates a new binding per iteration and prints 0 1 2.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "JavaScript operators - output",
+    "difficulty": "hard",
+    "question_en": "What is the output?\n```javascript\nlet a = 5;\nlet b = a++ + ++a;\nconsole.log(a, b);\n```",
+    "options": [
+      {
+        "en": "6 11"
+      },
+      {
+        "en": "7 11"
+      },
+      {
+        "en": "6 12"
+      },
+      {
+        "en": "7 12"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "a++ returns the old value 5 and then makes a = 6. ++a then increases a to 7 and returns 7. So b = 5 + 7 = 12, and a ends as 7.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "JavaScript truthy and falsy - output",
+    "difficulty": "medium",
+    "question_en": "What is printed?\n```javascript\nconsole.log(Boolean(\"\"), Boolean(\"0\"));\n```",
+    "options": [
+      {
+        "en": "false true"
+      },
+      {
+        "en": "false false"
+      },
+      {
+        "en": "true false"
+      },
+      {
+        "en": "true true"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The empty string is one of JavaScript's falsy values, so Boolean(\"\") is false. \"0\" is a non-empty string, and every non-empty string is truthy, so Boolean(\"0\") is true.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "JavaScript numbers - output",
+    "difficulty": "medium",
+    "question_en": "What is the output of the following statement?\n```javascript\nconsole.log(0.1 + 0.2 === 0.3);\n```",
+    "options": [
+      {
+        "en": "true"
+      },
+      {
+        "en": "false"
+      },
+      {
+        "en": "0.3"
+      },
+      {
+        "en": "NaN"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "JavaScript stores numbers as 64-bit binary floating point, in which 0.1 and 0.2 cannot be represented exactly. Their sum is 0.30000000000000004, which is not strictly equal to 0.3, so false is printed.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "JavaScript arrays - output",
+    "difficulty": "medium",
+    "question_en": "What does this code print?\n```javascript\nconsole.log([1, 2, 3, 4, 5, 6].filter(n => n % 2 === 0).map(n => n * n));\n```",
+    "options": [
+      {
+        "en": "[1, 9, 25]"
+      },
+      {
+        "en": "[2, 4, 6]"
+      },
+      {
+        "en": "[4, 16, 36]"
+      },
+      {
+        "en": "[1, 4, 9, 16, 25, 36]"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "filter keeps only the even numbers, giving [2, 4, 6]. map then squares each of them, giving [4, 16, 36]. Both methods return new arrays and leave the original unchanged.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "JavaScript strings - output",
+    "difficulty": "medium",
+    "question_en": "What is printed by this code?\n```javascript\nlet s = \"DELHI\";\nconsole.log(s.slice(1, 3), s.length);\n```",
+    "options": [
+      {
+        "en": "ELH 5"
+      },
+      {
+        "en": "EL 5"
+      },
+      {
+        "en": "DE 4"
+      },
+      {
+        "en": "EL 4"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "String indices start at 0, and slice(1, 3) returns characters from index 1 up to, but not including, index 3, which is \"EL\". The length property counts all five characters of DELHI.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "JavaScript DOM methods",
+    "difficulty": "medium",
+    "question_en": "What does document.getElementsByClassName(\"note\") return?",
+    "options": [
+      {
+        "en": "Only the first element having class note"
+      },
+      {
+        "en": "null when more than one element has that class"
+      },
+      {
+        "en": "A live HTMLCollection of all elements having class note"
+      },
+      {
+        "en": "A static array holding the ids of those elements"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "getElementsByClassName returns a live HTMLCollection of every matching element, which updates automatically when the document changes. It returns an empty collection, not null, when nothing matches. getElementById and querySelector are the methods that return a single element.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "JavaScript events",
+    "difficulty": "easy",
+    "question_en": "Which JavaScript event fires when an input box loses focus, for example when the user presses Tab to move to the next field?",
+    "options": [
+      {
+        "en": "onfocus"
+      },
+      {
+        "en": "onload"
+      },
+      {
+        "en": "onsubmit"
+      },
+      {
+        "en": "onblur"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "The blur event fires when an element loses focus, and onblur is often used to validate a field as soon as the user leaves it. onfocus is its opposite, onload fires when the page finishes loading and onsubmit fires when a form is submitted.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "jQuery effects",
+    "difficulty": "medium",
+    "question_en": "What does the following jQuery statement do?\n```javascript\n$(\"#banner\").fadeTo(\"slow\", 0.3);\n```",
+    "options": [
+      {
+        "en": "Fades the element to 30% opacity and leaves it visible"
+      },
+      {
+        "en": "Fades the element out completely within 0.3 seconds"
+      },
+      {
+        "en": "Slides the element up until it is 30% of its height"
+      },
+      {
+        "en": "Hides the element and then removes it from the DOM"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "fadeTo(speed, opacity) animates the opacity of the selected elements to the given value, here 0.3, at the given speed. Unlike fadeOut(), it does not hide the element with display: none, so it stays on the page in a faded state.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "jQuery selectors",
+    "difficulty": "easy",
+    "question_en": "Which elements are selected by the jQuery selector $(\"p.intro\")?",
+    "options": [
+      {
+        "en": "The single <p> element whose id is intro"
+      },
+      {
+        "en": "Every element with class intro inside a <p>"
+      },
+      {
+        "en": "The first <p> and every element with class intro"
+      },
+      {
+        "en": "Every <p> element that has the class intro"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "jQuery uses CSS selector syntax, so p.intro means <p> elements carrying class=\"intro\". An id would be written p#intro, a descendant would be written p .intro (with a space), and a group would use a comma.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "AngularJS directives",
+    "difficulty": "easy",
+    "question_en": "In AngularJS, which directive marks the root element of the application and automatically bootstraps (starts) AngularJS on the page?",
+    "options": [
+      {
+        "en": "ng-init"
+      },
+      {
+        "en": "ng-app"
+      },
+      {
+        "en": "ng-model"
+      },
+      {
+        "en": "ng-controller"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "ng-app defines the root of an AngularJS application, and AngularJS starts automatically on the element carrying it. ng-init sets initial values, ng-model binds form controls to data and ng-controller attaches a controller to a part of the view.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "AngularJS directives - ng-repeat",
+    "difficulty": "medium",
+    "question_en": "Inside a working AngularJS application, how many <li> elements appear in the rendered page for this markup?\n```html\n<ul>\n  <li ng-repeat=\"c in ['Red','Green','Blue']\">{{c}}</li>\n</ul>\n```",
+    "options": [
+      {
+        "en": "1, showing all three names together"
+      },
+      {
+        "en": "0, because ng-repeat needs an ng-model"
+      },
+      {
+        "en": "3, one for each colour in the list"
+      },
+      {
+        "en": "4, including the original template item"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "ng-repeat clones its element once for every item in the collection, and {{c}} shows the current item. The array has three colours, so three <li> elements appear: Red, Green and Blue. The template itself is not displayed as an extra item.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "XML naming rules",
+    "difficulty": "medium",
+    "question_en": "Which statement about XML element names is correct?",
+    "options": [
+      {
+        "en": "<Student> and <student> are two different elements"
+      },
+      {
+        "en": "Names may begin with a digit, such as <1st>"
+      },
+      {
+        "en": "Names may contain spaces, such as <first name>"
+      },
+      {
+        "en": "Names starting with xml are reserved for users"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "XML is case-sensitive, so <Student> and <student> are different element names and a start tag must match its end tag exactly. Names cannot start with a digit or contain spaces, and names beginning with xml (in any case) are reserved for the XML standards, not for users.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "XML well-formed vs valid",
+    "difficulty": "easy",
+    "question_en": "An XML document is called valid when it:",
+    "options": [
+      {
+        "en": "opens without any error in a web browser"
+      },
+      {
+        "en": "starts with the declaration <?xml version=\"1.0\"?>"
+      },
+      {
+        "en": "is well-formed and also obeys its DTD or XML Schema"
+      },
+      {
+        "en": "contains only elements and no attributes at all"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "A well-formed document follows XML syntax rules (one root, properly nested and closed tags, quoted attributes). A valid document is well-formed and also conforms to the structure declared in its DTD or XML Schema. Every valid document is well-formed, but not every well-formed document is valid.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "DTD declarations",
+    "difficulty": "medium",
+    "question_en": "In the DTD declaration <!ELEMENT name (#PCDATA)>, what does #PCDATA mean the element may contain?",
+    "options": [
+      {
+        "en": "Parsed character data, i.e. text read by the parser"
+      },
+      {
+        "en": "Character data that the parser ignores completely"
+      },
+      {
+        "en": "Only other child elements and no text at all"
+      },
+      {
+        "en": "Binary data such as images and sound files"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "#PCDATA stands for parsed character data: text that the parser examines, so entities such as &amp; are expanded and markup is recognised. CDATA sections, by contrast, are not parsed. An element declared only with (#PCDATA) holds text and no child elements.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "XML parsers - DOM vs SAX",
+    "difficulty": "hard",
+    "question_en": "Why is a SAX parser usually preferred over a DOM parser for reading a very large XML file?",
+    "options": [
+      {
+        "en": "It builds the full tree in memory so any node can be changed"
+      },
+      {
+        "en": "It can edit the document and save it back to the disk"
+      },
+      {
+        "en": "It always validates against the DTD faster than DOM"
+      },
+      {
+        "en": "It reads the file sequentially and raises events, with no full tree"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "SAX (Simple API for XML) is event-based: it reads the document from start to end and calls handlers such as startElement and endElement, so memory use stays small. DOM loads the whole document into an in-memory tree, which allows random access and changes but needs much more memory for big files.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "XML processor",
+    "difficulty": "hard",
+    "question_en": "According to the XML 1.0 specification, what must an XML processor do when it detects a well-formedness error, such as a missing end tag?",
+    "options": [
+      {
+        "en": "Report a fatal error and stop normal processing"
+      },
+      {
+        "en": "Silently insert the missing end tag and continue"
+      },
+      {
+        "en": "Skip the faulty element and display the rest"
+      },
+      {
+        "en": "Convert the document to HTML and render it"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The XML processor (parser) reads the document and gives the application access to its content and structure. The specification treats a well-formedness violation as a fatal error: the processor must report it and must not continue normal processing. This strictness differs from HTML browsers, which try to repair faulty markup.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "Java servlets life cycle",
+    "difficulty": "medium",
+    "question_en": "In the servlet life cycle, which method does the container call only once, when the servlet is first loaded, to do one-time setup?",
+    "options": [
+      {
+        "en": "service()"
+      },
+      {
+        "en": "init()"
+      },
+      {
+        "en": "destroy()"
+      },
+      {
+        "en": "doGet()"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The servlet container (for example Tomcat) loads the class, creates one instance and calls init() once. It then calls service() for every request, which passes the request to doGet() or doPost(). destroy() is called once when the servlet is taken out of service.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "CGI",
+    "difficulty": "hard",
+    "question_en": "What was the main performance drawback of classic CGI programs that led to technologies such as Java servlets?",
+    "options": [
+      {
+        "en": "They could be written only in the C language"
+      },
+      {
+        "en": "A new process was started for every request"
+      },
+      {
+        "en": "They were unable to read submitted form data"
+      },
+      {
+        "en": "They could run only on the client's machine"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The Common Gateway Interface defines how a web server passes a request to an external program and returns its output. Classic CGI starts a fresh operating-system process for each request, which is slow and wastes memory under heavy load. Servlets avoid this by handling each request on a thread of one loaded instance.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "ASP.NET page events",
+    "difficulty": "hard",
+    "question_en": "In ASP.NET Web Forms, the Page.IsPostBack property is true when:",
+    "options": [
+      {
+        "en": "the page is being loaded for the very first time"
+      },
+      {
+        "en": "the page reloads because its own form was submitted"
+      },
+      {
+        "en": "the visitor's browser has JavaScript switched off"
+      },
+      {
+        "en": "the page is being redirected to some other page"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "A postback happens when a Web Forms page sends its form data back to the same page, for example when a server-side Button raises its Click event. IsPostBack is false on the first request and true on postbacks, so code such as if (!IsPostBack) in Page_Load runs initialisation only once.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "ADO.NET",
+    "difficulty": "medium",
+    "question_en": "Which ADO.NET object holds an in-memory copy of one or more tables and works in disconnected mode, without keeping the database connection open?",
+    "options": [
+      {
+        "en": "DataReader"
+      },
+      {
+        "en": "Connection"
+      },
+      {
+        "en": "DataSet"
+      },
+      {
+        "en": "Command"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "A DataSet, filled by a DataAdapter, stores tables, rows and relations in memory and can be used after the connection is closed. A DataReader is connected, forward-only and read-only. Connection opens the link to the database and Command runs SQL statements.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "Front-end vs back-end tools",
+    "difficulty": "easy",
+    "question_en": "A developer wants to inspect a page's HTML elements and try out CSS changes live inside the browser while designing the layout. Which front-end tool is meant for this?",
+    "options": [
+      {
+        "en": "MySQL Workbench"
+      },
+      {
+        "en": "Apache Tomcat"
+      },
+      {
+        "en": "Composer for PHP"
+      },
+      {
+        "en": "Chrome DevTools"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Chrome DevTools is a set of front-end development tools built into the browser for inspecting the DOM, editing CSS live, debugging JavaScript and checking network activity. MySQL Workbench is a database design tool, Apache Tomcat is a back-end servlet container and Composer manages PHP (server-side) packages.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "Client-server architecture",
+    "difficulty": "medium",
+    "question_en": "In a three-tier web application, which tier contains the business logic, such as calculating a student's total marks and grade?",
+    "options": [
+      {
+        "en": "Presentation tier (the browser)"
+      },
+      {
+        "en": "Data tier (the database server)"
+      },
+      {
+        "en": "Application tier (the web/app server)"
+      },
+      {
+        "en": "Network tier (the router)"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Three-tier architecture separates presentation (user interface in the browser), application or business logic (on the web/application server) and data storage (on the database server). The middle tier receives requests, applies the rules and talks to the database.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "HTTP status codes",
+    "difficulty": "medium",
+    "question_en": "A web server returns HTTP status code 403. What does it mean?",
+    "options": [
+      {
+        "en": "The server understood the request but refuses access"
+      },
+      {
+        "en": "The requested page does not exist on the server"
+      },
+      {
+        "en": "The server crashed while handling the request"
+      },
+      {
+        "en": "The page has moved permanently to a new URL"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "403 Forbidden means the server understood the request but will not authorise it, for example because the user lacks permission. A missing page gives 404, a server-side failure gives 500 and a permanent move gives 301.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "HTTP status codes",
+    "difficulty": "easy",
+    "question_en": "Which HTTP status code reports a general error on the server side, such as an unhandled exception in a PHP script?",
+    "options": [
+      {
+        "en": "200"
+      },
+      {
+        "en": "302"
+      },
+      {
+        "en": "400"
+      },
+      {
+        "en": "500"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "500 Internal Server Error is the generic code for a failure on the server. Codes are grouped by class: 2xx success (200 OK), 3xx redirection (302 Found), 4xx client errors (400 Bad Request) and 5xx server errors.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "E-commerce models",
+    "difficulty": "easy",
+    "question_en": "Booking a railway ticket and paying for it through an app on a smartphone is best described as:",
+    "options": [
+      {
+        "en": "m-commerce"
+      },
+      {
+        "en": "e-auction"
+      },
+      {
+        "en": "EDI"
+      },
+      {
+        "en": "B2B commerce"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "m-commerce (mobile commerce) is buying, selling or paying through handheld devices such as smartphones and tablets. It is a form of e-commerce; EDI is computer-to-computer exchange of business documents, and B2B is trade between businesses.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "Web security - cookies",
+    "difficulty": "hard",
+    "question_en": "A cookie is set with the Secure attribute. What is the effect?",
+    "options": [
+      {
+        "en": "It cannot be read by JavaScript on the page"
+      },
+      {
+        "en": "It is deleted as soon as the browser closes"
+      },
+      {
+        "en": "It is encrypted by the browser before storage"
+      },
+      {
+        "en": "It is sent by the browser only over HTTPS connections"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "The Secure attribute tells the browser to send the cookie only on encrypted HTTPS requests, so it cannot be read on plain HTTP traffic. Hiding a cookie from JavaScript is done by HttpOnly, and a cookie without Expires or Max-Age is a session cookie that ends when the browser closes.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_web",
+    "subtopic": "Web security - XSS defence",
+    "difficulty": "hard",
+    "question_en": "The Content-Security-Policy (CSP) HTTP response header is mainly used to:",
+    "options": [
+      {
+        "en": "limit the sources allowed to supply scripts, reducing XSS"
+      },
+      {
+        "en": "encrypt the cookies that are sent to the browser"
+      },
+      {
+        "en": "compress the page so that it loads more quickly"
+      },
+      {
+        "en": "block SQL injection inside database queries"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "CSP lets a site declare which sources of scripts, styles, images and so on the browser may load, for example script-src 'self'. Injected inline or third-party scripts are then refused, which greatly reduces the impact of cross-site scripting. SQL injection is prevented on the server with parameterised queries.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "Excel functions - COUNTIF",
+    "difficulty": "medium",
+    "question_en": "Cells A1:A6 contain 45, 50, 72, the text \"NA\", 50 and 38. What does =COUNTIF(A1:A6,\">=50\") return?",
+    "options": [
+      {
+        "en": "2"
+      },
+      {
+        "en": "4"
+      },
+      {
+        "en": "3"
+      },
+      {
+        "en": "5"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "COUNTIF counts the cells that meet the condition. The numbers 50, 72 and 50 are greater than or equal to 50, so the result is 3. The text \"NA\" cannot satisfy a numeric comparison and is not counted.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "Excel functions - LEN and TRIM",
+    "difficulty": "hard",
+    "question_en": "What does the formula =LEN(TRIM(\"  Delhi   Board  \")) return? (The text has 2 leading spaces, 3 spaces between the words and 2 trailing spaces.)",
+    "options": [
+      {
+        "en": "17"
+      },
+      {
+        "en": "11"
+      },
+      {
+        "en": "13"
+      },
+      {
+        "en": "10"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Excel's TRIM removes leading and trailing spaces and reduces every run of spaces between words to a single space, giving \"Delhi Board\". LEN then counts 5 + 1 + 5 = 11 characters. Without TRIM the length would be 17.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "Excel functions - IF and AND",
+    "difficulty": "easy",
+    "question_en": "A1 contains 55 and B1 contains 38. What does =IF(AND(A1>=40,B1>=40),\"Pass\",\"Fail\") return?",
+    "options": [
+      {
+        "en": "Fail"
+      },
+      {
+        "en": "Pass"
+      },
+      {
+        "en": "TRUE"
+      },
+      {
+        "en": "#VALUE!"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "AND returns TRUE only when every condition is true. B1>=40 is false (38), so AND gives FALSE and IF returns its third argument, \"Fail\". With OR instead of AND the result would have been \"Pass\".",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "Excel functions - MOD",
+    "difficulty": "hard",
+    "question_en": "What value does the Excel formula =MOD(-7,3) return?",
+    "options": [
+      {
+        "en": "-1"
+      },
+      {
+        "en": "1"
+      },
+      {
+        "en": "-2"
+      },
+      {
+        "en": "2"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Excel computes MOD(n, d) as n - d*INT(n/d), so the result always takes the sign of the divisor. Here INT(-7/3) = INT(-2.33) = -3, and -7 - 3*(-3) = 2. Many programming languages that truncate towards zero would give -1 instead.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "Excel functions - AVERAGE",
+    "difficulty": "medium",
+    "question_en": "Cells A1:A4 contain 10, the text \"abc\", an empty cell and 20. What does =AVERAGE(A1:A4) return?",
+    "options": [
+      {
+        "en": "7.5"
+      },
+      {
+        "en": "10"
+      },
+      {
+        "en": "15"
+      },
+      {
+        "en": "#VALUE!"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "When given a range, AVERAGE ignores cells containing text and empty cells, so it averages only 10 and 20. (10 + 20) / 2 = 15. AVERAGEA would treat the text as 0 and give a different result.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "Excel functions - text",
+    "difficulty": "medium",
+    "question_en": "What does the Excel formula =LEFT(\"INFORMATION\",4)&RIGHT(\"SYSTEM\",3) return?",
+    "options": [
+      {
+        "en": "INFOSYS"
+      },
+      {
+        "en": "INFOTEM"
+      },
+      {
+        "en": "INFORSYS"
+      },
+      {
+        "en": "TIONTEM"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "LEFT(\"INFORMATION\",4) takes the first four characters, INFO, and RIGHT(\"SYSTEM\",3) takes the last three, TEM. The & operator joins text, so the result is INFOTEM.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "Excel functions - math",
+    "difficulty": "easy",
+    "question_en": "What is the result of the Excel formula =POWER(2,5)+SQRT(81)?",
+    "options": [
+      {
+        "en": "19"
+      },
+      {
+        "en": "113"
+      },
+      {
+        "en": "34"
+      },
+      {
+        "en": "41"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "POWER(2,5) is 2 raised to the power 5, which is 32. SQRT(81) is the square root of 81, which is 9. 32 + 9 = 41.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "MS Word shortcuts",
+    "difficulty": "easy",
+    "question_en": "In MS Word, which keyboard shortcut opens the Insert Hyperlink dialog box for the selected text?",
+    "options": [
+      {
+        "en": "Ctrl + H"
+      },
+      {
+        "en": "Ctrl + K"
+      },
+      {
+        "en": "Ctrl + L"
+      },
+      {
+        "en": "Ctrl + Shift + H"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Ctrl + K inserts or edits a hyperlink in Word, and the same shortcut works in Excel and PowerPoint. Ctrl + H opens Replace and Ctrl + L left-aligns the paragraph.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "MS PowerPoint shortcuts",
+    "difficulty": "medium",
+    "question_en": "In MS PowerPoint, with a slide selected in the thumbnail pane, what does pressing Ctrl + D do?",
+    "options": [
+      {
+        "en": "Duplicates the selected slide"
+      },
+      {
+        "en": "Deletes the selected slide"
+      },
+      {
+        "en": "Opens the Design tab"
+      },
+      {
+        "en": "Starts the slide show"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "In PowerPoint, Ctrl + D duplicates the selected slide (or the selected object on a slide) and places the copy right after it. Ctrl + M inserts a new blank slide, Delete removes a slide and F5 starts the show. In Word, Ctrl + D opens the Font dialog instead.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "File extensions",
+    "difficulty": "medium",
+    "question_en": "An Excel workbook containing VBA macros must be saved in which format so that the macros are kept?",
+    "options": [
+      {
+        "en": ".xlsx"
+      },
+      {
+        "en": ".xltx"
+      },
+      {
+        "en": ".xlsm"
+      },
+      {
+        "en": ".csv"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": ".xlsm is the macro-enabled workbook format; the m stands for macro. The default .xlsx format cannot store macros, .xltx is a macro-free template and .csv keeps only plain text values of one sheet.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "Types of information systems - TPS",
+    "difficulty": "easy",
+    "question_en": "Which information system records the routine, day-to-day transactions of a business, such as billing, payroll and railway reservations?",
+    "options": [
+      {
+        "en": "Transaction Processing System"
+      },
+      {
+        "en": "Decision Support System"
+      },
+      {
+        "en": "Executive Information System"
+      },
+      {
+        "en": "Expert System"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "A Transaction Processing System (TPS) captures and processes the large volume of routine transactions at the operational level. Its data later feeds higher-level systems such as MIS, DSS and EIS.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "Types of information systems - EIS",
+    "difficulty": "medium",
+    "question_en": "Which system gives top management summarised, graphical information such as dashboards, drawn from internal and external data, for strategic decisions?",
+    "options": [
+      {
+        "en": "Transaction Processing System"
+      },
+      {
+        "en": "Office Automation System"
+      },
+      {
+        "en": "Knowledge Work System"
+      },
+      {
+        "en": "Executive Information System"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "An Executive Information System (also called Executive Support System) serves senior executives with easy-to-read summaries, trends and drill-down facilities. It combines internal company data with external data such as market and competitor information.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "Decision Support System",
+    "difficulty": "medium",
+    "question_en": "A Decision Support System (DSS) is mainly designed to help managers with which type of decisions?",
+    "options": [
+      {
+        "en": "Fully structured, routine decisions"
+      },
+      {
+        "en": "Semi-structured and unstructured decisions"
+      },
+      {
+        "en": "Only programmed decisions taken by clerks"
+      },
+      {
+        "en": "Decisions taken automatically without humans"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "A DSS combines data, analytical models and an easy interface so that managers can explore problems that have no fixed procedure. Typical tools are what-if analysis, sensitivity analysis and goal seeking. Routine, structured decisions are handled by TPS and standard MIS reports.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "MIS - levels of information",
+    "difficulty": "easy",
+    "question_en": "Information used by first-line supervisors for daily control, such as today's attendance list or items to reorder, is classed as:",
+    "options": [
+      {
+        "en": "strategic information"
+      },
+      {
+        "en": "tactical information"
+      },
+      {
+        "en": "operational information"
+      },
+      {
+        "en": "external information"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Operational information is detailed, short-term and used for day-to-day control at the lowest management level. Tactical information supports middle managers in medium-term planning, and strategic information supports top management in long-term policy decisions.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "MIS - information quality dimensions",
+    "difficulty": "hard",
+    "question_en": "In the information-quality framework used in MIS, which category contains accuracy, objectivity, believability and reputation?",
+    "options": [
+      {
+        "en": "Intrinsic"
+      },
+      {
+        "en": "Contextual"
+      },
+      {
+        "en": "Representational"
+      },
+      {
+        "en": "Accessibility"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Intrinsic quality means the information is good in itself: accurate, objective, believable and from a reputable source. Contextual quality covers relevance, timeliness and completeness for the task, representational quality covers interpretability and consistent format, and accessibility covers ease and security of access.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "Knowledge management - tacit vs explicit",
+    "difficulty": "easy",
+    "question_en": "Which of the following is an example of EXPLICIT knowledge?",
+    "options": [
+      {
+        "en": "A senior teacher's knack for calming a noisy class"
+      },
+      {
+        "en": "A written laboratory safety manual"
+      },
+      {
+        "en": "A mechanic's feel for a fault from an engine's sound"
+      },
+      {
+        "en": "A chef's instinct for the right amount of spice"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Explicit knowledge is codified: it can be written, stored and shared through documents, manuals and databases. The other three are tacit knowledge, which is personal, experience-based and hard to put into words.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "Knowledge management - SECI model",
+    "difficulty": "medium",
+    "question_en": "In Nonaka and Takeuchi's SECI model, converting tacit knowledge into explicit form, for example an expert writing her know-how as a guide, is called:",
+    "options": [
+      {
+        "en": "Socialisation"
+      },
+      {
+        "en": "Externalisation"
+      },
+      {
+        "en": "Combination"
+      },
+      {
+        "en": "Internalisation"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "SECI describes four conversions: socialisation (tacit to tacit, by shared experience), externalisation (tacit to explicit), combination (explicit to explicit) and internalisation (explicit to tacit, by learning and practice). Writing down personal know-how is externalisation.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "Knowledge management process",
+    "difficulty": "hard",
+    "question_en": "In the knowledge management process, which step involves cataloguing, indexing, filtering and linking the captured knowledge so that it can be found later?",
+    "options": [
+      {
+        "en": "Knowledge gathering"
+      },
+      {
+        "en": "Knowledge refining"
+      },
+      {
+        "en": "Knowledge dissemination"
+      },
+      {
+        "en": "Knowledge organisation"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "The KM process runs gather (acquire), organise, refine and disseminate (share). Organising arranges knowledge by cataloguing, indexing, filtering and linking it. Refining then adds value by contextualising, discovering relationships and abstracting, and dissemination delivers it to users.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "Knowledge management roles",
+    "difficulty": "medium",
+    "question_en": "The senior executive responsible for an organisation's knowledge management programme is usually called the:",
+    "options": [
+      {
+        "en": "Chief Information Officer"
+      },
+      {
+        "en": "Chief Technology Officer"
+      },
+      {
+        "en": "Chief Knowledge Officer"
+      },
+      {
+        "en": "Chief Financial Officer"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "The Chief Knowledge Officer (CKO) leads the KM strategy: building a knowledge-sharing culture, setting up repositories and communities, and linking knowledge to business goals. The CIO is responsible for information technology and systems in general.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "E-commerce revenue models",
+    "difficulty": "easy",
+    "question_en": "A blogger earns a commission whenever a reader clicks her link and then buys a product on an online store. This revenue model is called:",
+    "options": [
+      {
+        "en": "subscription"
+      },
+      {
+        "en": "advertising"
+      },
+      {
+        "en": "affiliate"
+      },
+      {
+        "en": "transaction fee"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "In the affiliate model a site earns a referral fee or a percentage of sales for sending customers to another business. Subscription charges a fixed periodic fee, advertising earns from displayed ads and the transaction-fee model charges for each deal processed.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "E-commerce revenue models",
+    "difficulty": "medium",
+    "question_en": "A music app offers basic listening free with advertisements but charges a monthly fee for an ad-free premium plan. Which revenue model does this follow?",
+    "options": [
+      {
+        "en": "Freemium"
+      },
+      {
+        "en": "Licensing"
+      },
+      {
+        "en": "Affiliate"
+      },
+      {
+        "en": "Sales revenue"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Freemium (free + premium) gives a basic service free to attract many users and earns from those who upgrade to paid features. Licensing charges for the right to use software or content, and the sales model earns by selling goods directly.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "E-commerce history",
+    "difficulty": "medium",
+    "question_en": "Who is credited with inventing online shopping in 1979 in the United Kingdom?",
+    "options": [
+      {
+        "en": "Jeff Bezos"
+      },
+      {
+        "en": "Tim Berners-Lee"
+      },
+      {
+        "en": "K Vaitheeswaran"
+      },
+      {
+        "en": "Michael Aldrich"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "In 1979 Michael Aldrich connected a modified domestic television to a real-time transaction-processing computer through a telephone line, creating the first online shopping system. Jeff Bezos founded Amazon in 1994, Tim Berners-Lee invented the World Wide Web, and K Vaitheeswaran is called the father of e-commerce in India.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "Company law - minimum members",
+    "difficulty": "easy",
+    "question_en": "Under the Companies Act, 2013, what is the minimum number of members needed to form a private limited company?",
+    "options": [
+      {
+        "en": "1"
+      },
+      {
+        "en": "7"
+      },
+      {
+        "en": "2"
+      },
+      {
+        "en": "10"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Section 3 of the Companies Act, 2013 requires at least two persons for a private company and at least seven for a public company. A One Person Company can be formed by a single person, and a private company may have at most 200 members.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "Forms of business organisation",
+    "difficulty": "hard",
+    "question_en": "In a Joint Hindu Family business, the senior member who manages the business and alone bears unlimited liability is called the:",
+    "options": [
+      {
+        "en": "Co-parcener"
+      },
+      {
+        "en": "Karta"
+      },
+      {
+        "en": "Partner"
+      },
+      {
+        "en": "Proprietor"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "A Joint Hindu Family (HUF) business is run by the Karta, usually the eldest member, whose liability is unlimited. The other members, called co-parceners, have liability limited to their share in the family property.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "Business - working capital",
+    "difficulty": "medium",
+    "question_en": "A firm has current assets of ₹8,50,000 and current liabilities of ₹3,20,000. What is its net working capital?",
+    "options": [
+      {
+        "en": "₹11,70,000"
+      },
+      {
+        "en": "₹3,20,000"
+      },
+      {
+        "en": "₹2,65,000"
+      },
+      {
+        "en": "₹5,30,000"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Net working capital = current assets - current liabilities = ₹8,50,000 - ₹3,20,000 = ₹5,30,000. It is the money available for day-to-day operations such as buying raw material and paying wages.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "Accounting - double entry and accounting equation",
+    "difficulty": "easy",
+    "question_en": "A business has total assets of ₹5,00,000 and outside liabilities of ₹1,80,000. According to the accounting equation, what is the owner's capital?",
+    "options": [
+      {
+        "en": "₹3,20,000"
+      },
+      {
+        "en": "₹6,80,000"
+      },
+      {
+        "en": "₹1,80,000"
+      },
+      {
+        "en": "₹5,00,000"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The accounting equation is Assets = Liabilities + Capital, which follows from the dual-aspect (double entry) principle. So Capital = ₹5,00,000 - ₹1,80,000 = ₹3,20,000.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "Accounting - drawings",
+    "difficulty": "medium",
+    "question_en": "The owner withdraws ₹10,000 cash from the business for personal use. What is the effect on the books of the business?",
+    "options": [
+      {
+        "en": "Business expenses increase by ₹10,000"
+      },
+      {
+        "en": "Capital decreases by ₹10,000 through drawings"
+      },
+      {
+        "en": "Capital increases by ₹10,000"
+      },
+      {
+        "en": "Sales decrease by ₹10,000"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Money or goods taken by the owner for personal use are drawings, recorded by debiting the Drawings account and crediting Cash. Drawings are not a business expense; they are deducted from the owner's capital in the balance sheet.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "Accounting cycle",
+    "difficulty": "medium",
+    "question_en": "In the accounting cycle, the trial balance is prepared from the balances of the:",
+    "options": [
+      {
+        "en": "journal entries"
+      },
+      {
+        "en": "balance sheet"
+      },
+      {
+        "en": "cash memos and vouchers"
+      },
+      {
+        "en": "ledger accounts"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Transactions are first recorded in the journal and then posted to ledger accounts. The balances of all ledger accounts are listed in the trial balance to check arithmetical accuracy, after which adjustments are made and the final accounts are prepared.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "Economics - elasticity of demand",
+    "difficulty": "medium",
+    "question_en": "When the price of a pen rises by 10%, the quantity demanded falls by 25%. What is the price elasticity of demand (absolute value)?",
+    "options": [
+      {
+        "en": "0.4"
+      },
+      {
+        "en": "1"
+      },
+      {
+        "en": "2.5"
+      },
+      {
+        "en": "15"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Price elasticity = percentage change in quantity demanded / percentage change in price = 25 / 10 = 2.5. Because it is greater than 1, demand for the pen is relatively elastic.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "Economics - diminishing marginal utility",
+    "difficulty": "medium",
+    "question_en": "The total utility from 1, 2, 3 and 4 cups of tea is 20, 35, 45 and 50 utils respectively. What is the marginal utility of the 3rd cup?",
+    "options": [
+      {
+        "en": "10"
+      },
+      {
+        "en": "15"
+      },
+      {
+        "en": "45"
+      },
+      {
+        "en": "5"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Marginal utility is the extra total utility from one more unit: MU of the 3rd cup = 45 - 35 = 10. The MU values 20, 15, 10, 5 keep falling, which illustrates the law of diminishing marginal utility.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "Economics - types of inflation",
+    "difficulty": "easy",
+    "question_en": "Inflation caused by a rise in production costs, such as higher wages or costlier raw materials, is called:",
+    "options": [
+      {
+        "en": "demand-pull inflation"
+      },
+      {
+        "en": "cost-push inflation"
+      },
+      {
+        "en": "built-in inflation"
+      },
+      {
+        "en": "disinflation"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "In cost-push inflation, higher input costs push producers to raise prices even when demand has not grown. Demand-pull inflation arises when demand exceeds supply, and built-in inflation comes from expectations that keep wages and prices rising together.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "Demand forecasting for new products",
+    "difficulty": "hard",
+    "question_en": "Among Joel Dean's methods for forecasting demand for a new product, offering the product for sale in a sample market and using the results to estimate total demand is the:",
+    "options": [
+      {
+        "en": "vicarious approach"
+      },
+      {
+        "en": "evolutionary approach"
+      },
+      {
+        "en": "substitute approach"
+      },
+      {
+        "en": "sales experience approach"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "The sales experience approach test-markets the new product in a sample area and projects the result to the whole market. The evolutionary approach treats the product as an outgrowth of an existing one, the substitute approach treats it as a replacement for an existing product, and the vicarious approach studies consumer reactions indirectly through dealers.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "Cyber law - IT Act sections",
+    "difficulty": "hard",
+    "question_en": "Which section of the IT Act, 2000 punishes violation of privacy by intentionally capturing, publishing or transmitting the image of a private area of a person without consent?",
+    "options": [
+      {
+        "en": "Section 66C"
+      },
+      {
+        "en": "Section 67"
+      },
+      {
+        "en": "Section 66E"
+      },
+      {
+        "en": "Section 43"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Section 66E (added in 2008) punishes this privacy violation with imprisonment up to three years, a fine up to ₹2 lakh, or both. Section 66C covers identity theft, Section 67 covers publishing obscene material electronically and Section 43 deals with compensation for damage to computer systems.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "Cyber law - intermediary liability",
+    "difficulty": "hard",
+    "question_en": "What does Section 79 of the IT Act, 2000 provide?",
+    "options": [
+      {
+        "en": "Exemption from liability for intermediaries that observe due diligence"
+      },
+      {
+        "en": "Punishment for cyber terrorism against the nation"
+      },
+      {
+        "en": "Legal recognition of records kept in electronic form"
+      },
+      {
+        "en": "The power to block public access to websites"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Section 79 is the safe-harbour clause: an intermediary such as a social-media platform or ISP is not liable for third-party content it only hosts or transmits, provided it observes due diligence and removes unlawful content on proper notice. Cyber terrorism is Section 66F, electronic records are recognised by Section 4 and blocking orders come under Section 69A.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "DPDP Act 2023",
+    "difficulty": "medium",
+    "question_en": "Under the Digital Personal Data Protection Act, 2023, the person who alone or with others decides the purpose and means of processing personal data is called the:",
+    "options": [
+      {
+        "en": "Data Principal"
+      },
+      {
+        "en": "Data Processor"
+      },
+      {
+        "en": "Consent Manager"
+      },
+      {
+        "en": "Data Fiduciary"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Section 2(i) of the DPDP Act defines the Data Fiduciary as the person who determines the purpose and means of processing. The Data Principal is the individual to whom the data relates, and a Data Processor processes data on behalf of a Data Fiduciary.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "DPDP Act 2023 - penalties",
+    "difficulty": "hard",
+    "question_en": "Under the DPDP Act, 2023, what is the maximum penalty for a Data Fiduciary's failure to take reasonable security safeguards to prevent a personal data breach?",
+    "options": [
+      {
+        "en": "₹50 crore"
+      },
+      {
+        "en": "₹250 crore"
+      },
+      {
+        "en": "₹150 crore"
+      },
+      {
+        "en": "₹200 crore"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The Schedule to the Act sets up to ₹250 crore for failing to take reasonable security safeguards, the highest penalty in the Act. Penalties are imposed by the Data Protection Board of India after an inquiry. Failure to notify a breach or to meet children's-data obligations can attract up to ₹200 crore.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "Intellectual property rights - terms",
+    "difficulty": "medium",
+    "question_en": "Under the Indian Copyright Act, 1957, how long does copyright last in a computer program (a literary work) published during the author's lifetime?",
+    "options": [
+      {
+        "en": "The author's lifetime plus 60 years"
+      },
+      {
+        "en": "20 years from first publication"
+      },
+      {
+        "en": "10 years, renewable every 10 years"
+      },
+      {
+        "en": "Only for the author's lifetime"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Computer programs are protected as literary works, and Section 22 gives them copyright for the author's life plus 60 years, counted from the year after death. By contrast, a patent lasts 20 years and a trademark registration lasts 10 years at a time, renewable.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "E-Waste Management Rules 2016",
+    "difficulty": "medium",
+    "question_en": "The E-Waste (Management) Rules, 2016 made producers responsible for collecting their end-of-life products and sending them for recycling. What is this principle called?",
+    "options": [
+      {
+        "en": "Polluter Pays Exemption"
+      },
+      {
+        "en": "Consumer Disposal Liability"
+      },
+      {
+        "en": "Extended Producer Responsibility"
+      },
+      {
+        "en": "Zero Waste Certification"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Extended Producer Responsibility (EPR) makes manufacturers responsible for their products even after sale, including collection targets and channelling e-waste to authorised recyclers. The 2016 Rules covered IT and telecom equipment and consumer electrical and electronic goods, including CFL and other mercury lamps; they were replaced by the E-Waste (Management) Rules, 2022 from April 2023, which keep EPR.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "AI - categories (ANI/AGI/ASI)",
+    "difficulty": "easy",
+    "question_en": "A voice assistant can set alarms and answer weather questions, but it cannot learn to drive a car. Which category of AI is it?",
+    "options": [
+      {
+        "en": "Artificial General Intelligence"
+      },
+      {
+        "en": "Artificial Narrow Intelligence"
+      },
+      {
+        "en": "Artificial Super Intelligence"
+      },
+      {
+        "en": "Human-level strong AI"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Artificial Narrow Intelligence (weak AI) performs a specific set of tasks and cannot transfer its skill to unrelated tasks; all AI in use today is of this kind. AGI would match human ability across all tasks, and ASI would surpass human intelligence.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "AI bias",
+    "difficulty": "medium",
+    "question_en": "A recruitment AI, trained mostly on past résumés of male employees, starts rating women candidates lower. What is the main cause of this bias?",
+    "options": [
+      {
+        "en": "Unrepresentative, skewed training data"
+      },
+      {
+        "en": "Insufficient memory on the computer"
+      },
+      {
+        "en": "Hosting the model on a cloud server"
+      },
+      {
+        "en": "Too many layers in the neural network"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "A machine-learning model learns patterns from its training data, so historical imbalance in the data is reproduced in its predictions. Such bias is often hard to spot because many models are black boxes; remedies include balanced data, fairness testing and explainable AI.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "IoT challenges",
+    "difficulty": "medium",
+    "question_en": "Smart devices from different manufacturers use different protocols and cannot work together in one home. Which IoT challenge does this show?",
+    "options": [
+      {
+        "en": "Latency"
+      },
+      {
+        "en": "Scalability"
+      },
+      {
+        "en": "Miniaturisation"
+      },
+      {
+        "en": "Interoperability"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Interoperability is the ability of devices and systems from different vendors to exchange data and work together, and the lack of common standards makes it a major IoT challenge. Other key challenges are security and privacy, power consumption and managing huge numbers of devices.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "Cloud deployment models",
+    "difficulty": "medium",
+    "question_en": "A cloud infrastructure shared by several organisations with common needs, for example a group of state universities running one examination platform, is a:",
+    "options": [
+      {
+        "en": "public cloud"
+      },
+      {
+        "en": "private cloud"
+      },
+      {
+        "en": "community cloud"
+      },
+      {
+        "en": "hybrid cloud"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "A community cloud is shared by a specific group of organisations with common concerns such as security or compliance, and its cost is shared among them. A public cloud is open to everyone, a private cloud serves one organisation and a hybrid cloud combines two or more models.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "Big data - Vs",
+    "difficulty": "easy",
+    "question_en": "Which 'V' of big data refers to the trustworthiness and accuracy of the data, for example fake reviews or faulty sensor readings?",
+    "options": [
+      {
+        "en": "Volume"
+      },
+      {
+        "en": "Velocity"
+      },
+      {
+        "en": "Variety"
+      },
+      {
+        "en": "Veracity"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Veracity is about data quality and reliability: noise, bias and errors reduce it. Volume is the amount of data, velocity is the speed at which it arrives and variety is the range of formats; value is often added as the fifth V.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "Blockchain",
+    "difficulty": "easy",
+    "question_en": "The very first block of a blockchain, which has no previous block to refer to, is called the:",
+    "options": [
+      {
+        "en": "root block"
+      },
+      {
+        "en": "orphan block"
+      },
+      {
+        "en": "genesis block"
+      },
+      {
+        "en": "header block"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "The genesis block (block 0) starts the chain, and every later block stores the hash of the block before it. Bitcoin's genesis block was mined in January 2009. An orphan (strictly, stale) block is a valid block that ends up outside the main chain.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "cf_it",
+    "subtopic": "Digital India services",
+    "difficulty": "medium",
+    "question_en": "SWAYAM, a Government of India platform launched in 2017, is mainly used for:",
+    "options": [
+      {
+        "en": "a locker for citizens' digital documents"
+      },
+      {
+        "en": "free online courses for learners"
+      },
+      {
+        "en": "bill payments through UPI apps"
+      },
+      {
+        "en": "booking hospital appointments online"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "SWAYAM (Study Webs of Active-Learning for Young Aspiring Minds), run by the Ministry of Education, offers free MOOCs from school to postgraduate level, with optional paid certification exams. Digital documents are kept in DigiLocker and UPI payments run on NPCI's network.",
+    "pyq_concept": false
+  }
+]

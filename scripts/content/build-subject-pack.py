@@ -201,12 +201,25 @@ def main():
                 'difficulty': q.get('difficulty') if q.get('difficulty') in ('easy', 'medium', 'hard') else 'medium'}
 
     category = f'{name} Special'
-    tests = [{'title': f'{name} — Previous Year Questions (DSSSB 2023–24)', 'subject': SUBJECT, 'mode': 'pyq', 'category': category,
-              'duration_min': max(10, round(len(pyq) * 1.0)), 'negative_marking': 0.25,
-              'questions': [{'category': SUBJECT, 'chapter': chapter_prefix + title_of[p['chapter_key']], 'question_en': p['question'],
-                             'question_hi': None, 'options': [{'en': o, 'hi': None} for o in p['options']], 'answer_index': p['answer'] - 1,
-                             'explanation_en': p.get('explanation'), 'explanation_hi': None, 'difficulty': p.get('difficulty') or 'medium'} for p in pyq],
-              'description': f'All {len(pyq)} {name} questions from the 4 official DSSSB TGT CS papers, with the official answers and solutions.'}]
+
+    def pyq_spec(p):
+        return {'category': SUBJECT, 'chapter': chapter_prefix + title_of[p['chapter_key']], 'question_en': p['question'],
+                'question_hi': None, 'options': [{'en': o, 'hi': None} for o in p['options']], 'answer_index': p['answer'] - 1,
+                'explanation_en': p.get('explanation'), 'explanation_hi': None, 'difficulty': p.get('difficulty') or 'medium'}
+
+    # One previous-year test, or one per chapter when the set is too long to sit in one go.
+    tests = []
+    if len(pyq) <= 80:
+        tests.append({'title': f'{name} — Previous Year Questions (DSSSB 2023–24)', 'subject': SUBJECT, 'mode': 'pyq', 'category': category,
+                      'duration_min': max(10, len(pyq)), 'negative_marking': 0.25, 'questions': [pyq_spec(p) for p in pyq],
+                      'description': f'All {len(pyq)} {name} questions from the 4 official DSSSB TGT CS papers, with the official answers and solutions.'})
+    else:
+        for k, t, short in chapters:
+            part = [pyq_spec(p) for p in pyq if p['chapter_key'] == k]
+            if part:
+                tests.append({'title': f'Previous Year Questions — {short} (DSSSB 2023–24)', 'subject': SUBJECT, 'chapter': chapter_prefix + t,
+                              'mode': 'pyq', 'category': category, 'duration_min': max(10, len(part)), 'negative_marking': 0.25, 'questions': part,
+                              'description': f'All {len(part)} {t} questions from the 4 official DSSSB TGT CS papers, with the official answers and solutions.'})
     split = int(cfg.get('practice_split', 35))
     for k, t, short in chapters:
         chunk = [spec(q, k) for q in qs if q['chapter_key'] == k]

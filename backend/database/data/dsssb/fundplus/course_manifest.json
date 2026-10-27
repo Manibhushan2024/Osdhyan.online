@@ -1,0 +1,78 @@
+{
+ "subject": "Fundamentals, SE, Web, IT & Teaching",
+ "subject_hi": "कंप्यूटर फंडामेंटल्स, SE, वेब, IT एवं शिक्षण विधि",
+ "chapters": [
+  {
+   "key": "cf_fund",
+   "title": "1. Computer Fundamentals & Digital Logic",
+   "items": [
+    {
+     "title": "Computer Fundamentals & Digital Logic — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\fundplus\\cf_fund.pdf"
+    }
+   ]
+  },
+  {
+   "key": "cf_se",
+   "title": "2. Software Engineering",
+   "items": [
+    {
+     "title": "Software Engineering — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\fundplus\\cf_se.pdf"
+    }
+   ]
+  },
+  {
+   "key": "cf_web",
+   "title": "3. Web Technologies",
+   "items": [
+    {
+     "title": "Web Technologies — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\fundplus\\cf_web.pdf"
+    }
+   ]
+  },
+  {
+   "key": "cf_it",
+   "title": "4. IT Tools & Emerging Technologies",
+   "items": [
+    {
+     "title": "IT Tools & Emerging Technologies — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\fundplus\\cf_it.pdf"
+    }
+   ]
+  },
+  {
+   "key": "cf_teach",
+   "title": "5. Teaching Methodology of Computer Science",
+   "items": [
+    {
+     "title": "Teaching Methodology of Computer Science — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\fundplus\\cf_teach.pdf"
+    }
+   ]
+  },
+  {
+   "key": "fundplus_practice",
+   "title": "6. Complete notes, previous-year questions & 200 most expected",
+   "items": [
+    {
+     "title": "Fundamentals, SE, Web, IT & Teaching — fast revision sheet (revise everything quickly)",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\fundplus\\fundplus_fast_revision.pdf"
+    },
+    {
+     "title": "Fundamentals, SE, Web, IT & Teaching — complete notes (all chapters in one PDF)",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\fundplus\\fundplus_complete_notes.pdf"
+    },
+    {
+     "title": "Fundamentals, SE, Web, IT & Teaching — previous-year questions 2023–24 with solutions",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\fundplus\\fundplus_pyq_2023_24.pdf"
+    },
+    {
+     "title": "Fundamentals, SE, Web, IT & Teaching — 200 most expected questions with answers",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\fundplus\\fundplus_200_most_expected.pdf"
+    }
+   ]
+  }
+ ]
+}

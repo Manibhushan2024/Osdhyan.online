@@ -1,0 +1,3810 @@
+[
+ {
+  "qid": "630680256195",
+  "paper": "2023_06_24_s3",
+  "question": "_____ is a set of interrelated components that collect (or retrieve), process, store and distribute information to support decision-making and control in an organisation.",
+  "options": [
+   "An information technology",
+   "Mini model of a processed system",
+   "Max model of a processed system",
+   "An information system"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_it] Information system definition",
+  "difficulty": "easy",
+  "explanation": "An information system is a set of interrelated components (people, hardware, software, data, procedures) that collect, process, store and distribute information to support decision-making and control in an organisation. Information technology is only the hardware/software part of such a system, not the complete set of components. The 'mini/max model' options are not standard terms.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256184",
+  "paper": "2023_06_24_s3",
+  "question": "How to write the dot net server control?",
+  "options": [
+   "<asp:controlType ID=\"ControlID\" runin=\"server\" Property1=value1 [Property2=value2] />",
+   "<asp:controlType ID=\"ControlID\" runas=\"server\" Property1=value1 [Property2=value2] />",
+   "<asp:controlType ID=\"ControlID\" run=\"server\" Property1=value1 [Property2=value2] />",
+   "<asp:controlType ID=\"ControlID\" runat=\"server\" Property1=value1 [Property2=value2] />"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_web] ASP.NET server control syntax",
+  "difficulty": "easy",
+  "explanation": "An ASP.NET server control is written as <asp:ControlType ID=\"...\" runat=\"server\" .../>. The runat=\"server\" attribute tells ASP.NET to process the control on the server instead of sending it to the browser as plain HTML. 'runin', 'runas' and 'run' are not valid attributes.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256189",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following is NOT a risk management methodology?",
+  "options": [
+   "Acceptance of threats",
+   "Risk generation",
+   "Avoidance of threats",
+   "Transfer of risks"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_se] Risk management strategies",
+  "difficulty": "easy",
+  "explanation": "The standard ways of handling a risk are avoidance, transfer (for example insurance or outsourcing), mitigation/reduction and acceptance. 'Risk generation' is not a risk management method; creating risk is the opposite of managing it. Acceptance and avoidance are both valid strategies.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256196",
+  "paper": "2023_06_24_s3",
+  "question": "DSS is a computer program application used to improve a company's _____ capabilities.",
+  "options": [
+   "decision-making capabilities",
+   "marketing capabilities",
+   "delegation capabilities",
+   "resources utilisation capabilities"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_it] Decision Support System",
+  "difficulty": "easy",
+  "explanation": "A Decision Support System (DSS) is an interactive computer system that analyses data and models to help managers make better decisions. Its main job is to improve decision-making, not marketing, delegation or resource utilisation, even though better decisions can help those areas too.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256168",
+  "paper": "2023_06_24_s3",
+  "question": "CMM stands for:",
+  "options": [
+   "Cognitive Modularity Model",
+   "Capability Modularity Model",
+   "Cognitive Measurable Model",
+   "Capability Maturity Model"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_se] CMM",
+  "difficulty": "easy",
+  "explanation": "CMM stands for Capability Maturity Model, developed by SEI (Carnegie Mellon). It rates an organisation's software process on five maturity levels: Initial, Repeatable, Defined, Managed and Optimizing. The other expansions are made-up combinations of these words.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256173",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following parameters is used to create a hyperlink in HTML?",
+  "options": [
+   "Link",
+   "url",
+   "Path",
+   "Href"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_web] HTML anchor href",
+  "difficulty": "easy",
+  "explanation": "A hyperlink is made with the anchor tag and its href attribute, for example <a href=\"page.html\">Link</a>. href (hypertext reference) holds the destination URL. 'url', 'link' and 'path' are not attributes of the <a> tag.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256156",
+  "paper": "2023_06_24_s3",
+  "question": "A four-way set-associative cache memory unit with a capacity of 32 KB is built using a block size of 1 K. The word length is 8 bits. The size of physical address space is 32 GB. The number of bits for the TAG field is:",
+  "options": [
+   "22",
+   "24",
+   "25",
+   "23"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_fund] Cache mapping - tag bits",
+  "difficulty": "hard",
+  "explanation": "The physical address space is 32 GB = 2^35 bytes, and since a word is 8 bits each byte is addressable, so the address is 35 bits. Block = 1 KB = 2^10, so offset = 10 bits. Lines = 32 KB / 1 KB = 32, and with 4-way sets there are 32/4 = 8 sets, so set index = 3 bits. Tag = 35 - 10 - 3 = 22 bits.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256142",
+  "paper": "2023_06_24_s3",
+  "question": "A body of mass 4.9 kg hangs from a spring and oscillates with a period of 0.6 sec. How much will the spring shorten when the body is removed?",
+  "options": [
+   "0.809 metre",
+   "1.089 metre",
+   "1.009 metre",
+   "0.089 metre"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_fund] Physics - SHM spring (non-CS)",
+  "difficulty": "medium",
+  "explanation": "For a spring-mass system T = 2*pi*sqrt(m/k), and the static stretch is x = mg/k. So x = g*T^2/(4*pi^2) = 9.8 x 0.36 / 39.48 = about 0.089 m. When the body is removed the spring shortens by this stretch. The mass value is not needed because it cancels out.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256178",
+  "paper": "2023_06_24_s3",
+  "question": "Elasticity of demand explains the _____ of the correlation between price and quantity.",
+  "options": [
+   "level, degree and angle",
+   "angle",
+   "level",
+   "degree"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_it] Economics - elasticity of demand (non-CS)",
+  "difficulty": "easy",
+  "explanation": "Price elasticity of demand measures the degree (how much) quantity demanded responds to a change in price, as % change in quantity divided by % change in price. It tells the strength of the relationship, not an 'angle' or 'level'.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256128",
+  "paper": "2023_06_24_s3",
+  "question": "The algebraic sum of deviations is zero when measured from the _____.",
+  "options": [
+   "second quartile",
+   "geometric mean",
+   "arithmetic mean",
+   "harmonic mean"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_fund] Statistics - arithmetic mean property",
+  "difficulty": "easy",
+  "explanation": "A key property of the arithmetic mean is that the sum of deviations from it is zero: sum(x - mean) = sum(x) - n*mean = 0. The median minimises the sum of absolute deviations instead, and the geometric and harmonic means do not have this property.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256127",
+  "paper": "2023_06_24_s3",
+  "question": "The volume of the tetrahedron bounded by the surfaces x = 0, y = 0, z = 0 and x/a + y/b + z/c = 1 is:",
+  "options": [
+   "abc/4",
+   "abc/2",
+   "abc/10",
+   "abc/6"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_fund] Maths - triple integral volume",
+  "difficulty": "medium",
+  "explanation": "The plane x/a + y/b + z/c = 1 cuts the axes at a, b and c, forming a tetrahedron with three perpendicular edges a, b, c at the origin. Volume = (1/3) x base area x height = (1/3)(ab/2)c = abc/6. abc/2 would be a triangular prism, not a tetrahedron.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256161",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following methods is used to slide down an element?",
+  "options": [
+   "slideDown()",
+   "moveBelow()",
+   "moveDown()",
+   "slideBelow()"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_web] jQuery effects",
+  "difficulty": "easy",
+  "explanation": "In jQuery, $(selector).slideDown(speed) shows a hidden element with a sliding-down animation, and slideUp()/slideToggle() are its partners. moveDown(), moveBelow() and slideBelow() are not jQuery methods.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256163",
+  "paper": "2023_06_24_s3",
+  "question": "According to the double entry system, every transaction will have _____ entries.",
+  "options": [
+   "Right and Left",
+   "Up and Down",
+   "Debt and Credit",
+   "Up and Left"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_it] Accounting - double entry (non-CS)",
+  "difficulty": "easy",
+  "explanation": "In the double entry system every transaction affects two accounts: one is debited and the other is credited with the same amount. The option written as 'Debt and Credit' means Debit and Credit. Right and left only describe the sides of a ledger account, not the entries.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256169",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following is NOT true about the Waterfall model?",
+  "options": [
+   "Long duration",
+   "High cost",
+   "High-risk involvement",
+   "Low cost"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_se] Waterfall model characteristics",
+  "difficulty": "medium",
+  "explanation": "The Waterfall model is usually described as having a long duration, high risk (errors are found late) and low cost, because it is simple to plan and manage. So 'high cost' is the statement that is NOT true. High cost is a feature of models like Spiral, not Waterfall.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256200",
+  "paper": "2023_06_24_s3",
+  "question": "Which of these is NOT a parameter upon which the influence of lightning is based?",
+  "options": [
+   "Light Source",
+   "Position of Observer",
+   "Rendering Algorithm",
+   "Surface"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_fund] Computer graphics - illumination",
+  "difficulty": "medium",
+  "explanation": "In computer graphics, the lighting (illumination) at a point depends on the light source, the surface properties (normal, reflectivity) and the position of the observer (for specular highlights). The rendering algorithm only decides how that lighting is computed and drawn, so it is not a lighting parameter.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256212",
+  "paper": "2023_06_24_s3",
+  "question": "What is the value of Δ^n e^(ax+b) ?",
+  "options": [
+   "(e^(ah) − 1)^n e^(ax − b)",
+   "(e^(ah) − 1)^n e^(ax + b)",
+   "(e^(ah) + 1)^n e^(ax − b)",
+   "(e^(ah) + 1)^n e^(ax + b)"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_fund] Numerical methods - forward difference",
+  "difficulty": "medium",
+  "explanation": "With step h, delta e^(ax+b) = e^(a(x+h)+b) - e^(ax+b) = (e^(ah) - 1)e^(ax+b). Each further application multiplies by the same factor (e^(ah) - 1), so delta^n e^(ax+b) = (e^(ah) - 1)^n e^(ax+b). The exponent stays ax + b, so the options with ax - b are wrong.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256146",
+  "paper": "2023_06_24_s3",
+  "question": "A three-variable function (A ⊕ B ⊕ C)' = ?",
+  "options": [
+   "(A ⊙ B ⊙ C)'",
+   "A ⊕ B ⊙ C'",
+   "A ⊙ B ⊕ C",
+   "A ⊕ B ⊙ C"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_fund] Boolean algebra - XOR/XNOR",
+  "difficulty": "hard",
+  "explanation": "XNOR is the complement of XOR, so replacing one XOR with an XNOR complements the whole expression: A xor (B xnor C) = A xor (B xor C)' = (A xor B xor C)'. So option 4 gives the required function. Note: for an odd number of variables A xnor B xnor C equals A xor B xor C, so options 1 and 3 also simplify to the same function; the paper's key picks option 4 as the standard form.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256129",
+  "paper": "2023_06_24_s3",
+  "question": "If two dice are thrown, find the probability that the sum is neither 5 nor 9?",
+  "options": [
+   "3/9",
+   "5/9",
+   "1/9",
+   "7/9"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_fund] Probability - two dice",
+  "difficulty": "easy",
+  "explanation": "With two dice there are 36 outcomes. Sum 5 comes from (1,4),(2,3),(3,2),(4,1) = 4 ways, and sum 9 from (3,6),(4,5),(5,4),(6,3) = 4 ways. P(5 or 9) = 8/36 = 2/9, so P(neither) = 1 - 2/9 = 7/9. 5/9 would come from a counting mistake.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256135",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following is NOT true about software?",
+  "options": [
+   "System software is written in a high-level language.",
+   "Application software is written in a high-level language.",
+   "System software plays a vital role for the effective functioning of a system.",
+   "System software is written in a low-level language."
+  ],
+  "answer": 1,
+  "subtopic": "[cf_fund] System vs application software",
+  "difficulty": "easy",
+  "explanation": "As per the classic textbook view, system software (OS, assemblers, drivers) is written in low-level language close to the hardware, while application software is written in high-level languages. So 'system software is written in a high-level language' is the statement that is NOT true here. Option 4 states the textbook view, so it is true.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256140",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following is an example of the fifth-generation language?",
+  "options": [
+   "Java",
+   "Cobol",
+   "Prolog",
+   "Python"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_fund] Generations of languages",
+  "difficulty": "easy",
+  "explanation": "Fifth-generation languages solve problems by stating constraints and rules instead of writing step-by-step algorithms, and they are used in AI. Prolog (logic programming) is the standard example. Java and Python are third-generation (high-level procedural/OOP) languages, and COBOL is also 3GL.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256126",
+  "paper": "2023_06_24_s3",
+  "question": "If u = tan^(−1)(y/x), then x ∂u/∂x + y ∂u/∂y = ?",
+  "options": [
+   "Sin 2u",
+   "0",
+   "None of the given options",
+   "Cos 2u"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_fund] Maths - Euler theorem for homogeneous functions",
+  "difficulty": "medium",
+  "explanation": "u = tan^-1(y/x) is a function of y/x only, so it is homogeneous of degree 0. By Euler's theorem, x du/dx + y du/dy = n*u = 0. Directly: du/dx = -y/(x^2+y^2) and du/dy = x/(x^2+y^2), so x(-y) + y(x) = 0. sin 2u comes from a different function (like tan u homogeneous).",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256211",
+  "paper": "2023_06_24_s3",
+  "question": "Program links with other parts of the program in a flowchart are represented by _______.",
+  "options": [
+   "rectangles",
+   "circles",
+   "trapezoids",
+   "rhombuses"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_fund] Flowchart symbols",
+  "difficulty": "easy",
+  "explanation": "In a flowchart a small circle is the connector symbol. It joins parts of a flowchart that are far apart or on the same page without drawing long lines. Rectangles show processes, rhombuses (diamonds) show decisions, and parallelograms show input/output.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256164",
+  "paper": "2023_06_24_s3",
+  "question": "The part of the firm's capital that is required for conducting day to day expenses is called:",
+  "options": [
+   "working capital",
+   "asset",
+   "expenses",
+   "fixed capital"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_it] Business - working capital (non-CS)",
+  "difficulty": "easy",
+  "explanation": "Working capital (current assets minus current liabilities) is the money a firm needs for daily operations such as wages, raw material and bills. Fixed capital is invested in long-term assets like land and machinery, so it is not used for day-to-day expenses.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256145",
+  "paper": "2023_06_24_s3",
+  "question": "Find the value of F = xy + x'z using distributive law.",
+  "options": [
+   "(x + z)(y + z)",
+   "(x + y')(x + z)",
+   "(x' + y)(y + z)",
+   "(x' + y)(x + z)(y + z)"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_fund] Boolean algebra - distributive law",
+  "difficulty": "medium",
+  "explanation": "Apply distribution of OR over AND: xy + x'z = (xy + x')(xy + z) = (x + x')(y + x')(x + z)(y + z) = (x' + y)(x + z)(y + z). Since x + x' = 1, that factor drops out. The (y + z) term is the consensus term, so the product of sums still equals xy + x'z.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256162",
+  "paper": "2023_06_24_s3",
+  "question": "Which directive is used for binding the model data to the view?",
+  "options": [
+   "ng-model-view",
+   "ng-model-app",
+   "ng-model",
+   "ng-app-model"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_web] AngularJS directives",
+  "difficulty": "easy",
+  "explanation": "In AngularJS, ng-model binds the value of an input/select/textarea to a property on the scope (two-way data binding), so the view and the model stay in sync. ng-app starts the application, and 'ng-model-view', 'ng-model-app' and 'ng-app-model' do not exist.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256148",
+  "paper": "2023_06_24_s3",
+  "question": "For what minimum value of propagation delay in each FF will a 10-bit ripple counter skip a count when it is clocked at 10 MHz?",
+  "options": [
+   "10 ns",
+   "25 ns",
+   "100 ns",
+   "50 ns"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_fund] Digital electronics - ripple counter delay",
+  "difficulty": "medium",
+  "explanation": "At 10 MHz the clock period is 1/10 MHz = 100 ns. In a ripple counter the delays add up, so the total delay of 10 flip-flops is 10 x tpd. A count is missed when this delay reaches the clock period: 10 x tpd = 100 ns, so tpd = 10 ns. 100 ns would be the total delay, not the delay per flip-flop.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256197",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following systems comprises word processing, electronic filing, electronic mail, message switching, data storage and data and voice communication?",
+  "options": [
+   "Executive Support Systems",
+   "Office Automation Systems",
+   "Customer Relationship Management",
+   "Decision Support Systems"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_it] Office Automation System",
+  "difficulty": "easy",
+  "explanation": "Office Automation Systems (OAS) help office work through word processing, electronic filing, e-mail, message switching, data storage and voice/data communication. DSS and ESS help managers make decisions, and CRM manages customer relationships.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256367",
+  "paper": "2023_06_25_s1",
+  "question": "With reference to CSS, which of the following allows to change property values smoothly over a given duration?",
+  "options": [
+   "Masking",
+   "Transitions",
+   "Web Fonts",
+   "Text Effects"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_web] CSS transitions",
+  "difficulty": "easy",
+  "explanation": "CSS transitions (the transition property) change a property's value smoothly over a set duration, for example transition: width 2s. Masking hides parts of an element, web fonts load custom fonts, and text effects style text. None of these animate value changes.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256391",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following statements is/are true with reference to java servlets?\n(i) A Servlet is a Java program that runs without a web server.\n(ii) It receives the requests and responds to them using related protocols (usually HTTP).",
+  "options": [
+   "Only (i)",
+   "Both (i) and (ii)",
+   "Neither (i) nor (ii)",
+   "Only (ii)"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_web] Java servlets",
+  "difficulty": "easy",
+  "explanation": "A servlet is a Java program that runs inside a web server or servlet container (such as Tomcat), so statement (i) is false. Statement (ii) is true: it receives client requests and sends responses, usually over HTTP. So only (ii) is correct.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256355",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following refers to a system test that forces a software to fail in a variety of ways and verifies that recovery is properly performed?",
+  "options": [
+   "Recovery testing",
+   "Stress testing",
+   "Security testing",
+   "Performance testing"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_se] Types of system testing",
+  "difficulty": "easy",
+  "explanation": "Recovery testing deliberately makes the software fail in different ways (crashes, power loss, network failure) and checks that recovery is done properly. Stress testing checks behaviour under extreme load, not recovery from failure.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256348",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following is NV RAM memory that retains its data even when turned off?",
+  "options": [
+   "Cache memory",
+   "Flash memory",
+   "Register memory",
+   "Main memory"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_fund] Memory types - flash",
+  "difficulty": "easy",
+  "explanation": "Flash memory is non-volatile (NV) RAM-type storage that keeps its data without power, as in pen drives, SSDs and memory cards. Cache, registers and main memory (DRAM) are volatile, so they lose their contents when the power is turned off.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256385",
+  "paper": "2023_06_25_s1",
+  "question": "A cube is a square prism. If all the sides of a cube are x, then volume = ______ and surface area = ______.",
+  "options": [
+   "x^3; 6x^2",
+   "x^2; 6x^3",
+   "6x^3; x^2",
+   "6x^2; x^3"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_fund] Mensuration - cube",
+  "difficulty": "easy",
+  "explanation": "For a cube with edge x, volume = x * x * x = x^3. It has 6 square faces of area x^2 each, so total surface area = 6x^2. Option 2 swaps the powers.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256366",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following displays uses an electron beam that operates like a pencil to create a line image on the CRT screen?",
+  "options": [
+   "Rotate Scan",
+   "Roster Scan",
+   "Random Scan",
+   "Raster Scan"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_fund] Random scan vs raster scan display",
+  "difficulty": "easy",
+  "explanation": "A random scan (vector) display moves the electron beam directly along the path of each line, like a pencil drawing, so only the needed parts of the screen are traced. A raster scan sweeps the whole screen row by row and builds the image from pixels. 'Roster' and 'Rotate' scan are not real display types.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256372",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following is a graphical representation of an algorithm?",
+  "options": [
+   "Flowchart",
+   "Source code",
+   "Program",
+   "Pseudo code"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_fund] Flowchart",
+  "difficulty": "easy",
+  "explanation": "A flowchart is a diagram that shows the steps of an algorithm using standard symbols joined by arrows. Pseudocode is a text form of an algorithm, and source code or a program is the actual implementation, not a graphical representation.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256392",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following can be used for the frontend or user interface while developing a web application?",
+  "options": [
+   "JavaScript",
+   "PHP",
+   "Django",
+   "SQL"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_web] Front-end vs back-end technologies",
+  "difficulty": "easy",
+  "explanation": "JavaScript runs in the browser and is used with HTML and CSS to build the front end (user interface). PHP and Django (Python) are server-side back-end technologies, and SQL is used to query databases.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256414",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following refers to expertise and skills acquired by a person through experience or education, the theoretical or practical understanding of a subject?",
+  "options": [
+   "Synthesis",
+   "Reference",
+   "Knowledge",
+   "Problem solving"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_it] Knowledge - definition",
+  "difficulty": "easy",
+  "explanation": "Knowledge is the expertise and skills a person gains through experience or education, that is, the theoretical or practical understanding of a subject. Synthesis means combining ideas, and problem solving is applying knowledge. Neither is the understanding itself.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256377",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following is a type of Discrete Probability Distribution?",
+  "options": [
+   "Log-Normal Distribution",
+   "Exponential Distribution",
+   "Normal Distribution",
+   "Poisson Distribution"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_fund] Probability distributions",
+  "difficulty": "easy",
+  "explanation": "The Poisson distribution is discrete: it gives the probability of a whole number of events (0, 1, 2, ...) in a fixed interval. Normal, exponential and log-normal distributions are continuous because they take any real value in a range.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256364",
+  "paper": "2023_06_25_s1",
+  "question": "In Cohen Sutherland Line clipping algorithm, if a line ______ the clipping window, then the line is required to clip as it is considered partially visible.",
+  "options": [
+   "falls inside",
+   "falls outside",
+   "intersects",
+   "falls on"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_fund] Cohen-Sutherland line clipping",
+  "difficulty": "easy",
+  "explanation": "Cohen-Sutherland gives each endpoint a 4-bit region code. If both codes are 0000 the line is fully inside and accepted. If the AND of the codes is non-zero it is fully outside and rejected. Otherwise the line intersects the window boundary, so it is partly visible and must be clipped.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256375",
+  "paper": "2023_06_25_s1",
+  "question": "Which characteristic of business refers to ‘various components of a business system are highly interacting and interdependent’?",
+  "options": [
+   "Interdependence",
+   "Complexity",
+   "Creativity",
+   "Goal-orientation"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_it] Characteristics of business systems",
+  "difficulty": "easy",
+  "explanation": "Interdependence means the parts of a business system (production, finance, marketing, HR) interact closely and depend on each other, so a change in one affects the others. Complexity refers to the large number of variables involved, not to this mutual dependence.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256342",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following is NOT a front-end design tool?",
+  "options": [
+   "Angular JS",
+   "PHP",
+   "Chrome Dev Tools",
+   "jQuery"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_web] Front-end tools",
+  "difficulty": "easy",
+  "explanation": "PHP is a server-side scripting language that runs on the web server, so it is a back-end tool. AngularJS and jQuery are JavaScript front-end libraries/frameworks, and Chrome DevTools is used to inspect and debug front-end pages.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256368",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following types of XML parsers is an object that contains all the information of an XML document and is composed like a tree structure?",
+  "options": [
+   "DOS",
+   "SAX",
+   "DOM",
+   "SAY"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_web] XML parsers - DOM vs SAX",
+  "difficulty": "easy",
+  "explanation": "A DOM (Document Object Model) parser loads the whole XML document into memory as a tree of node objects that can be navigated and changed. SAX is an event-based streaming parser that does not build a tree. DOS and SAY are not XML parsers.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256381",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following algebraic functions represents NAND gate?",
+  "options": [
+   "(xy)’",
+   "(x+y)’",
+   "x+y",
+   "x*y"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_fund] Logic gates - NAND",
+  "difficulty": "easy",
+  "explanation": "NAND = NOT(AND), so its output is (xy)'. (x + y)' is NOR, x + y is OR, and x*y is AND.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256410",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following methods is used for the function y = f(x), with the given discrete set of points (x_i, y_i), i = 0, 1, 2, 3, …, n where x_i’s are NOT equispaced?",
+  "options": [
+   "Newton’s backward interpolation formula",
+   "Newton’s divided difference formula",
+   "Newton’s forward interpolation formula",
+   "Gauss’s forward difference formula"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_fund] Interpolation - unequal intervals",
+  "difficulty": "easy",
+  "explanation": "Newton's divided difference formula (and also Lagrange's formula) works for unequally spaced x values. Newton's forward/backward formulas and Gauss's formulas assume equally spaced points with a fixed step h, so they cannot be used here.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256379",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following with reference to digital electronics is a device that stores (and sometimes displays) the number of times a particular event or process has occurred, often in relationship to a clock signal?",
+  "options": [
+   "Latch",
+   "Flip-Flop",
+   "Counter",
+   "Register"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_fund] Digital electronics - counters",
+  "difficulty": "easy",
+  "explanation": "A counter is a sequential circuit, built from flip-flops, that counts the number of clock pulses or events and stores (and can display) that count. A latch or flip-flop stores only one bit, and a register stores a word of data but does not count.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256361",
+  "paper": "2023_06_25_s1",
+  "question": "With reference to Management Information System, which of the following categories refers to information that is concerned with long-term policy decisions that define the objectives of a business and check how well these objectives are met?",
+  "options": [
+   "Tactical information",
+   "Strategic information",
+   "Operational information",
+   "Planning information"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_it] MIS - levels of information",
+  "difficulty": "easy",
+  "explanation": "Strategic information is used by top management for long-term policy decisions, such as setting business objectives and checking how well they are met. Tactical information is for middle management's medium-term control, and operational information is for day-to-day work.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256386",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following effects is the phenomenon of emission of electrons from the surfaces of certain substances, mainly metals, when light of a shorter wavelength is incident upon them?",
+  "options": [
+   "Photo-light",
+   "Photo-mechanic",
+   "Photo-electric",
+   "Photo-magnetic"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_fund] Physics - photoelectric effect (non-CS)",
+  "difficulty": "easy",
+  "explanation": "The photoelectric effect is the emission of electrons from a metal surface when light of short enough wavelength (frequency above the threshold) falls on it, as explained by Einstein. The other terms are not names of physical effects.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256370",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following is a Microsoft ActiveX control that will sort through a data file, extrapolate the necessary information and produce that information in specified areas on the web page?",
+  "options": [
+   "Dialog Bars",
+   "Tabular Data Control",
+   "Control Bars",
+   "Dialog Boxes"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_web] DHTML data binding - TDC",
+  "difficulty": "medium",
+  "explanation": "The Tabular Data Control (TDC) is a Microsoft ActiveX control that reads a delimited text data file and binds its data to elements of a web page (data binding in DHTML). Dialog bars, control bars and dialog boxes are UI elements and do not read data files.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256362",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following is NOT a component of Management Information System?",
+  "options": [
+   "People",
+   "Software",
+   "Education procedures",
+   "Data"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_it] MIS components",
+  "difficulty": "easy",
+  "explanation": "The components of an MIS are people, hardware, software, data (database) and procedures. 'Education procedures' is not a component of MIS. People, software and data are core components.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256376",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following helps to make predictions from data?",
+  "options": [
+   "Prescriptive statistics",
+   "Inferential statistics",
+   "Sample statistics",
+   "Descriptive statistics"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_fund] Statistics - inferential vs descriptive",
+  "difficulty": "easy",
+  "explanation": "Inferential statistics uses sample data to make predictions or generalisations about a population, through estimation, hypothesis testing and regression. Descriptive statistics only summarises the data you already have (mean, charts) and does not predict.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256380",
+  "paper": "2023_06_25_s1",
+  "question": "What is the binary equivalent of the decimal number 10.25?",
+  "options": [
+   "1010.01",
+   "1011.01",
+   "1101.01",
+   "1111.01"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_fund] Number system - decimal to binary",
+  "difficulty": "easy",
+  "explanation": "Integer part: 10 = 8 + 2 = 1010. Fraction: 0.25 x 2 = 0.5 gives bit 0, then 0.5 x 2 = 1.0 gives bit 1, so the fraction is .01. So 10.25 = 1010.01. Option 2 (1011.01) equals 11.25.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256374",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following is the fundamental state of business activity and involves the sale and purchase of goods and services?",
+  "options": [
+   "Enterprise",
+   "Trade",
+   "Supply",
+   "Industry"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_it] Business - trade (non-CS)",
+  "difficulty": "easy",
+  "explanation": "Trade, the buying and selling of goods and services, is the basic core activity of business. Industry produces goods, and supply and enterprise are broader or related ideas, not the act of sale and purchase itself.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256399",
+  "paper": "2023_06_25_s1",
+  "question": "‘As the stock of a commodity increases with the consumer, its marginal utility to the consumer decreases’. To which of the following laws does the given statement refer to?",
+  "options": [
+   "Law of Diminishing Marginal Utility",
+   "Law of Supply",
+   "Law of Elasticity",
+   "Law of Demand"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_it] Economics - diminishing marginal utility (non-CS)",
+  "difficulty": "easy",
+  "explanation": "The Law of Diminishing Marginal Utility says that as a consumer gets more units of a good, the extra satisfaction (marginal utility) from each additional unit falls. The Law of Demand links price and quantity demanded, not utility from stock held.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256670",
+  "paper": "2023_06_25_s2",
+  "question": "In order to move objects in computer graphics that generate animation effects which of the following is necessary?",
+  "options": [
+   "Various transformation operations",
+   "Line rasterisation sequencing",
+   "Phong model of lighting",
+   "Eigen value computations"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_fund] Computer graphics - transformations/animation",
+  "difficulty": "easy",
+  "explanation": "Animation in computer graphics moves objects by applying transformations (translation, rotation, scaling) step by step across frames. Line rasterisation, the Phong lighting model and eigenvalue calculations are not what makes objects move.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256672",
+  "paper": "2023_06_25_s2",
+  "question": "The ______ design is high-abstraction version of a system that is followed by ______ design that breaks the concept into less-abstracted view of sub-systems and later the ______ design showcases the implementation at module-level.",
+  "options": [
+   "detailed, system, architectural",
+   "detailed, architectural, system",
+   "architectural, detailed, system",
+   "system, architectural, detailed"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_se] Levels of software design",
+  "difficulty": "medium",
+  "explanation": "Software design goes from abstract to concrete. System (high-level) design gives the most abstract view of the whole system. Architectural design then splits it into subsystems and their interactions. Detailed design finally describes the implementation of each module. So the order is system, architectural, detailed.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256619",
+  "paper": "2023_06_25_s2",
+  "question": "Represent (743)_8 in grey code.",
+  "options": [
+   "100010010",
+   "101011101",
+   "110100000",
+   "100010000"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_fund] Number system - Gray code",
+  "difficulty": "medium",
+  "explanation": "(743)8 in binary is 111 100 011 = 111100011. For Gray code, keep the first bit and XOR each pair of neighbouring bits: 1, 1^1=0, 1^1=0, 1^1=0, 1^0=1, 0^0=0, 0^0=0, 0^1=1, 1^1=0. This gives 100010010. Option 4 differs only in the second-last bit.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256660",
+  "paper": "2023_06_25_s2",
+  "question": "A fixed sum that is paid by customers for a service, typically on a monthly, quarterly or annual basis, is called ______ in electronic commerce.",
+  "options": [
+   "licensing",
+   "affiliate",
+   "marketing",
+   "subscription"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_it] E-commerce revenue models",
+  "difficulty": "easy",
+  "explanation": "In e-commerce the subscription revenue model charges customers a fixed amount every month, quarter or year to use a service (for example Netflix). Licensing gives the right to use software, and the affiliate model earns commission on referrals.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256615",
+  "paper": "2023_06_25_s2",
+  "question": "Which phenomenon causes a phase shift in the retardation plates?",
+  "options": [
+   "Phasor plates",
+   "Retardation plates",
+   "Polaroid filters",
+   "Double refraction"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_fund] Physics - double refraction (non-CS)",
+  "difficulty": "medium",
+  "explanation": "Retardation plates (quarter- and half-wave plates) are made of birefringent crystals. Double refraction splits light into ordinary and extraordinary rays that travel at different speeds, which creates the phase shift between them. Polaroid filters only polarise light and do not create this phase shift.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256685",
+  "paper": "2023_06_25_s2",
+  "question": "Which method creates interpolants that are softer?",
+  "options": [
+   "Polynomial and spline interpolation",
+   "Piecewise constant interpolation",
+   "Polynomial interpolation",
+   "Linear interpolation and spline interpolation"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_fund] Interpolation methods - smoothness",
+  "difficulty": "hard",
+  "explanation": "'Softer' here means smoother. Piecewise constant (nearest-neighbour) interpolation produces a step function with jumps at the data points, so it is the least smooth method. Polynomial and especially spline interpolation produce smooth curves, so option 1 is the better answer. The official key (piecewise constant) looks wrong unless the question meant 'simplest'.",
+  "key_doubt": true
+ },
+ {
+  "qid": "630680256617",
+  "paper": "2023_06_25_s2",
+  "question": "Which transition generates laser output in CO2 molecule?",
+  "options": [
+   "Vibrational states",
+   "Pulsed output",
+   "Molecular states",
+   "Energy states"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_fund] Physics - CO2 laser (non-CS)",
+  "difficulty": "medium",
+  "explanation": "A CO2 laser works on transitions between the vibrational energy levels of the CO2 molecule (from the asymmetric stretch mode down to the symmetric stretch or bending modes), giving infrared output around 10.6 micrometres. 'Pulsed output' is an operating mode, not a transition.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256610",
+  "paper": "2023_06_25_s2",
+  "question": "Which of the following is frequently used to ensure that data is correctly entered into a computer?",
+  "options": [
+   "Keyboards",
+   "Speakers",
+   "Input controls",
+   "Digitisers"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_fund] Input controls - data validation",
+  "difficulty": "medium",
+  "explanation": "Checking that data is entered correctly is the job of input controls, which include validation checks, check digits, range checks and verification. A keyboard is only the device used to type the data and cannot check whether it is correct. The official key (Keyboards) looks wrong; option 3, input controls, is the right answer.",
+  "key_doubt": true
+ },
+ {
+  "qid": "630680256665",
+  "paper": "2023_06_25_s2",
+  "question": "Which of the following comes under applied mathematics?",
+  "options": [
+   "Information processing",
+   "Operations research",
+   "Management accounting",
+   "Organisation"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_it] Operations research",
+  "difficulty": "easy",
+  "explanation": "Operations research uses mathematical methods such as linear programming, queuing theory and simulation to make decisions better, so it is a branch of applied mathematics. Management accounting and organisation are management areas, and information processing is a computing activity.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256677",
+  "paper": "2023_06_25_s2",
+  "question": "An individual's shared experience results in __________.",
+  "options": [
+   "systematic knowledge",
+   "shared knowledge",
+   "tacit knowledge",
+   "tacit knowledge, systematic knowledge and shared knowledge"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_it] Knowledge management - tacit knowledge",
+  "difficulty": "medium",
+  "explanation": "In Nonaka's SECI model, socialisation means people sharing experiences (observing, imitating, working together), and what passes between them is tacit knowledge: personal know-how that is hard to write down. Systematic (explicit) knowledge is produced by putting it into documents, not by shared experience.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256666",
+  "paper": "2023_06_25_s2",
+  "question": "Which qualitative statistic is difficult to quantify precisely?",
+  "options": [
+   "Model",
+   "Infrastructure",
+   "Value",
+   "Decision making"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_it] Qualitative measures",
+  "difficulty": "medium",
+  "explanation": "Value (for example customer value or the value of information) is qualitative and subjective, so it is hard to measure precisely with a number. Infrastructure and models can be described and counted more concretely.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256606",
+  "paper": "2023_06_25_s2",
+  "question": "Which of the following is an example of an output device?",
+  "options": [
+   "Mouse",
+   "Light pen",
+   "Keyboard",
+   "Visual Display Unit"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_fund] Input/output devices",
+  "difficulty": "easy",
+  "explanation": "A Visual Display Unit (monitor) shows output from the computer to the user, so it is an output device. The mouse, light pen and keyboard are all input devices.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256649",
+  "paper": "2023_06_25_s2",
+  "question": "What is effective desire?",
+  "options": [
+   "Demand",
+   "Consumption",
+   "Calculus",
+   "Utility"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_it] Economics - demand (non-CS)",
+  "difficulty": "easy",
+  "explanation": "In economics, effective desire means a desire backed by the ability to pay and the willingness to spend, and that is the definition of demand. Consumption is the actual use of goods, and utility is the satisfaction they give. The official key (Consumption) looks wrong; option 1, Demand, is the correct answer.",
+  "key_doubt": true
+ },
+ {
+  "qid": "630680256658",
+  "paper": "2023_06_25_s2",
+  "question": "______ primarily deals with buying and selling, particularly on a large scale.",
+  "options": [
+   "Commerce",
+   "Finance",
+   "Supply chain",
+   "Distribution"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_it] Business - commerce (non-CS)",
+  "difficulty": "easy",
+  "explanation": "Commerce covers all activities involved in buying and selling goods and services, especially on a large scale, together with aids to trade such as transport, banking and insurance. Finance deals with managing money, and distribution or supply chain are only parts of commerce.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256601",
+  "paper": "2023_06_25_s2",
+  "question": "Which probability calculus of views obeys particular rules?",
+  "options": [
+   "Standard deviation",
+   "Variance",
+   "Bayesian probability",
+   "Frequency probability"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_fund] Bayesian probability",
+  "difficulty": "medium",
+  "explanation": "Bayesian probability treats probability as a degree of belief (a 'view') and updates it with evidence using fixed rules: the probability axioms and Bayes' theorem. Frequency probability is defined as a long-run relative frequency, not as a view. Standard deviation and variance are measures of spread, not kinds of probability.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256678",
+  "paper": "2023_06_25_s2",
+  "question": "A particular organisation or industry's most successful solutions or problem-solving methods are called ______.",
+  "options": [
+   "knowledge warehouse",
+   "knowledge management",
+   "organisational learning",
+   "best practices"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_it] Knowledge management - best practices",
+  "difficulty": "medium",
+  "explanation": "The most successful solutions or problem-solving methods developed by an organisation or industry are called best practices (Laudon's definition in knowledge management). Knowledge management is the overall process of creating, storing and sharing knowledge, not the name for those solutions. The official key (knowledge management) looks wrong; option 4 is correct.",
+  "key_doubt": true
+ },
+ {
+  "qid": "630680256671",
+  "paper": "2023_06_25_s2",
+  "question": "______ and ______ views cannot be framed together for rendering a computer visual appropriately.",
+  "options": [
+   "Orthogonal projection, horizontal view",
+   "Vertical view, rear projection",
+   "Front-side, rear-side",
+   "Parallel projection, perspective projection"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_fund] Computer graphics - projections",
+  "difficulty": "hard",
+  "explanation": "An orthogonal (orthographic) projection is a parallel projection with the direction of projection fixed perpendicular to a principal plane (front, top or side). So it cannot also be framed as a separate horizontal viewing direction in the same view; you pick one orthographic view at a time. The question is loosely worded, and the official key is option 1.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256684",
+  "paper": "2023_06_25_s2",
+  "question": "The ______ interpolation method is used in probability theory and statistics, and the Gaussian process is one example.",
+  "options": [
+   "linear",
+   "polynomial",
+   "spline",
+   "nonlinear"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_fund] Interpolation - Gaussian process",
+  "difficulty": "medium",
+  "explanation": "Gaussian process regression (kriging) is a nonlinear interpolation method that comes from probability theory and statistics: it models the unknown function as a random process with a covariance kernel. Linear, polynomial and spline interpolation are deterministic methods and are not based on probability.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256598",
+  "paper": "2023_06_25_s2",
+  "question": "Find a unit vector normal to the surface x^3 + y^3 + 3xyz = 3 at the point (1,2,-1).",
+  "options": [
+   "(1/√2)(î − 3ĵ − 2k̂)",
+   "(1/√14)(î − 3ĵ + 2k̂)",
+   "(1/√14)(−î + 3ĵ + 2k̂)",
+   "(î + 3ĵ + 2k̂)"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_fund] Vector calculus - gradient/unit normal",
+  "difficulty": "medium",
+  "explanation": "Normal = grad(phi) with phi = x^3 + y^3 + 3xyz - 3, so grad(phi) = (3x^2 + 3yz, 3y^2 + 3xz, 3xy). At (1,2,-1) this is (3 - 6, 12 - 3, 6) = (-3, 9, 6) = 3(-1, 3, 2). Its magnitude is 3*sqrt(14), so the unit normal is (1/sqrt(14))(-i + 3j + 2k). Option 2 has the wrong signs.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256605",
+  "paper": "2023_06_25_s2",
+  "question": "______ are a set of computer programs with necessary documentation.",
+  "options": [
+   "Relative programs",
+   "Software packages",
+   "File packages",
+   "Application programs"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_fund] Software packages",
+  "difficulty": "easy",
+  "explanation": "A software package is a set of related programs supplied together with the documentation needed to install and use them (for example MS Office). An application program is a single program for a task and does not necessarily include documentation.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256614",
+  "paper": "2023_06_25_s2",
+  "question": "Does polarisation vary with direction?",
+  "options": [
+   "Polarising axis",
+   "Transverse wave",
+   "Propagating axis",
+   "Pass axis"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_fund] Physics - polarisation (non-CS)",
+  "difficulty": "medium",
+  "explanation": "Polarisation, where the vibration has a particular direction perpendicular to the direction of travel, is possible only for transverse waves. That is why light can be polarised but sound (a longitudinal wave) cannot. The pass axis or polarising axis belong to a polariser, not to the wave.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256652",
+  "paper": "2023_06_25_s2",
+  "question": "According to business economics, the growth of an existing product is used to estimate the demand for a new product using:",
+  "options": [
+   "growth curve approach",
+   "vicarious approach",
+   "substitute approach",
+   "opinion polling approach"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_it] Economics - demand forecasting for new products (non-CS)",
+  "difficulty": "hard",
+  "explanation": "In Joel Dean's methods for forecasting demand for a new product, the growth curve approach estimates the new product's demand from the growth pattern of an existing, established product. The substitute approach treats the new product as a replacement for an existing one and studies that product's demand instead. The official key (substitute) looks wrong; option 1 fits the question.",
+  "key_doubt": true
+ },
+ {
+  "qid": "630680256635",
+  "paper": "2023_06_25_s2",
+  "question": "______ are a database applications' universal front end that connects to the back end via the internet.",
+  "options": [
+   "Web browsers",
+   "Web server",
+   "Software programs",
+   "Web application"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_web] Web-based database front end",
+  "difficulty": "easy",
+  "explanation": "Web browsers act as a universal front end (thin client): through the internet they connect to a web server, which talks to the back-end database. The web server and the web application sit on the server side, not at the user's end.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256644",
+  "paper": "2023_06_25_s2",
+  "question": "In building software, ______ should preferably be lower and ______ is preferred to be on the higher side.",
+  "options": [
+   "inheritance from parent class, dependency with peer classes",
+   "aggregation with peer components, composition among classes",
+   "none of the given answer",
+   "coupling among components, cohesion in bonding components"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_se] Coupling and cohesion",
+  "difficulty": "easy",
+  "explanation": "Good software design aims for low coupling (modules depend on each other as little as possible) and high cohesion (each module's parts work closely towards one purpose). This makes the system easier to maintain, test and reuse. Inheritance, aggregation and composition are design choices, not 'lower is better' measures.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256608",
+  "paper": "2023_06_25_s2",
+  "question": "Which storage media supports only sequential access?",
+  "options": [
+   "Hard disk",
+   "CD",
+   "Magnetic tape",
+   "DVD"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_fund] Storage access methods",
+  "difficulty": "easy",
+  "explanation": "Magnetic tape stores data one after another along the tape, so to reach a record you must pass all the records before it; this is sequential access only. Hard disks, CDs and DVDs allow direct (random) access to any block.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256618",
+  "paper": "2023_06_25_s2",
+  "question": "A register contains a 3's complement number 10100. If it is divided by 2, find the value of the register.",
+  "options": [
+   "01100",
+   "00110",
+   "01010",
+   "11010"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_fund] Arithmetic shift - signed division",
+  "difficulty": "hard",
+  "explanation": "'3's complement' is a misprint for 2's complement. 10100 in 5-bit 2's complement is -12. Dividing a signed number by 2 is an arithmetic right shift, which copies the sign bit: 10100 -> 11010 = -6. The official key 01010 (+10) is a logical shift that loses the sign; it is only right if 10100 is read as unsigned 20. So option 4 appears to be the correct answer.",
+  "key_doubt": true
+ },
+ {
+  "qid": "630680598500",
+  "paper": "2024_02_07_s2",
+  "question": "Match the AI Ethics with its correct description.\nAI Ethics | Description\nI. Data privacy | 1. It is a standard metric that measures how many users in a database share a particular attribute.\nII. K-anonymity | 2. It is a trade-off between the amount of data collected and the performance of a product or service.\nIII. L-diversity | 3. It extends the idea by merging several sensitive attributes together.",
+  "options": [
+   "I-1, II-3, III-2",
+   "I-2, II-3, III-1",
+   "I-1, II-2, III-3",
+   "I-2, II-1, III-3"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_it] AI ethics - privacy models",
+  "difficulty": "medium",
+  "explanation": "Data privacy involves a trade-off between how much data is collected and how well a product or service performs (I-2). K-anonymity measures how many records in a database share the same attribute values, so each person is hidden among at least k others (II-1). L-diversity extends k-anonymity by requiring diversity in the sensitive attributes of each group (III-3). So the match is I-2, II-1, III-3.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598480",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following is an input device which can detect the presence or absence of a pencil or pen mark on a paper?",
+  "options": [
+   "Optical Mark Reader (OMR)",
+   "Light pen",
+   "Digitizer",
+   "Optical Character Recognizer (OCR)"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_fund] Input devices - OMR",
+  "difficulty": "easy",
+  "explanation": "An Optical Mark Reader (OMR) detects whether pen or pencil marks are present in fixed positions, for example on exam answer sheets. OCR recognises actual printed or handwritten characters, and a light pen or digitiser is used for drawing or pointing.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598443",
+  "paper": "2024_02_07_s2",
+  "question": "Using K-map, simplify the Boolean function: F(x, y, z) = S (0, 2, 4, 5, 6)\nWhich of the following is simplified function?",
+  "options": [
+   "F = z + x'y'",
+   "F = z' + xy'",
+   "F = z + x'y",
+   "F = z' + xy"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_fund] K-map simplification",
+  "difficulty": "medium",
+  "explanation": "Minterms 0, 2, 4, 6 (000, 010, 100, 110) are all the cells with z = 0, so they group into z'. Minterm 5 (101) pairs with 4 (100) to give xy'. So F = z' + xy'. Option 4 (z' + xy) would need minterm 7, which is not in the function.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598499",
+  "paper": "2024_02_07_s2",
+  "question": "Match the categories of AI with its correct description.\nCategories of AI | Description\nI. Artificial Narrow Intelligence | 1. Level of general and strong AI that is smarter than humans if that's possible.\nII. Artificial General Intelligence | 2. Such system seems to act intelligently but they don't have any awareness of what they are doing.\nIII. Super Intelligence | 3. Acting like a smart human and thinking like one with a conscious.",
+  "options": [
+   "I-2, II-3, III-1",
+   "I-2, II-1, III-3",
+   "I-1, II-2, III-3",
+   "I-1, II-3, III-2"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_it] AI - categories (ANI/AGI/ASI)",
+  "difficulty": "easy",
+  "explanation": "Artificial Narrow Intelligence systems appear intelligent but have no awareness of what they are doing (I-2). Artificial General Intelligence acts and thinks like a conscious, smart human (II-3). Super Intelligence goes beyond human intelligence (III-1). So the match is I-2, II-3, III-1.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598514",
+  "paper": "2024_02_07_s2",
+  "question": "Which among the following given below is correct in context of privacy issues in social media and online platforms?",
+  "options": [
+   "The sharing on social media especially by children must be monitored at all times.",
+   "The addiction of social media does not hamper the academic performance of a student.",
+   "Rumours and fake news cannot put the administration at risk.",
+   "Mishandling of social media cannot create tension in the law and order."
+  ],
+  "answer": 1,
+  "subtopic": "[cf_it] Social media and privacy",
+  "difficulty": "easy",
+  "explanation": "Children are especially at risk of privacy violations and cyberbullying, so what they share on social media should be monitored. The other options are false: social media addiction can hurt studies, and rumours, fake news and misuse of social media can disturb law and order.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598487",
+  "paper": "2024_02_07_s2",
+  "question": "In HTML body tag, which of the following attribute indicates the colour of the hyperlinks after the mouse is clicked on it?",
+  "options": [
+   "VLINK",
+   "ALINK",
+   "LINK",
+   "HLINK"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_web] HTML body link attributes",
+  "difficulty": "medium",
+  "explanation": "In the <body> tag, LINK sets the colour of unvisited links, ALINK sets the colour of a link while it is being clicked (active), and VLINK sets the colour of links that have already been visited (after they are clicked). So VLINK is the colour after the click. HLINK is not an attribute.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598450",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following Instruction format use an implied accumulator (AC) register for all data manipulation?",
+  "options": [
+   "One-address instructions",
+   "Three-address instructions",
+   "Zero-address instructions",
+   "Two-address instructions"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_fund] Instruction formats",
+  "difficulty": "easy",
+  "explanation": "One-address instructions (such as ADD X) use an implied accumulator: AC <- AC + M[X], so the AC is both the source and the result of every data operation. Zero-address instructions use a stack, and two- or three-address instructions name their operands explicitly.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598447",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following printer is type of impact printer?",
+  "options": [
+   "Ink-Jet",
+   "Laser",
+   "Dot matrix",
+   "Thermal"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_fund] Printers - impact vs non-impact",
+  "difficulty": "easy",
+  "explanation": "A dot matrix printer is an impact printer: tiny pins strike an inked ribbon against the paper to make dots. Ink-jet, laser and thermal printers are non-impact printers because nothing strikes the paper.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598452",
+  "paper": "2024_02_07_s2",
+  "question": "In Direct Memory Access (DMA) ______, a block sequence consisting of a number of memory words is transferred in a continuous burst.",
+  "options": [
+   "Bus granting",
+   "Burst transfer",
+   "Cycle stealing",
+   "Controller count"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_fund] DMA transfer modes",
+  "difficulty": "easy",
+  "explanation": "In DMA burst transfer mode, the DMA controller takes the bus and transfers a whole block of memory words in one continuous burst before giving the bus back. In cycle stealing it transfers one word at a time, taking single bus cycles from the CPU.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598486",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following is NOT an attribute that included by the HR tag which puts a horizontal line on the page?",
+  "options": [
+   "SHADE",
+   "SIZE",
+   "ALIGN",
+   "WIDTH"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_web] HTML HR tag attributes",
+  "difficulty": "medium",
+  "explanation": "The <HR> tag supports the attributes SIZE (thickness), WIDTH, ALIGN and NOSHADE (draws a solid line without shading). There is no attribute called SHADE; the real attribute is NOSHADE.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598518",
+  "paper": "2024_02_07_s2",
+  "question": "Over half of the e-waste generated in the developed world are exported to developing countries, mainly to ______, where metals like copper, iron, silicon, nickel and gold are recovered during recycling process.",
+  "options": [
+   "Afghanistan",
+   "Kazakistan",
+   "UAE",
+   "India"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_it] E-waste management",
+  "difficulty": "easy",
+  "explanation": "Studies on e-waste report that a large share of the e-waste from developed countries is shipped to developing countries, with India (along with China and parts of Africa) a major destination. There, metals such as copper, iron, nickel and gold are recovered, often by unsafe informal recycling.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598482",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following tag of HTML language is a container for the tags that contain information about the page?",
+  "options": [
+   "<title>",
+   "<html>",
+   "<head>",
+   "<body>"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_web] HTML head element",
+  "difficulty": "easy",
+  "explanation": "The <head> element is a container for metadata about the page: <title>, <meta>, <link>, <style> and <script>. <title> is only one tag inside the head, and <body> holds the visible content.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598483",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following form is correct to show a 'comments' in the HTML language?",
+  "options": [
+   "< – – This is a comment – – >",
+   "< – – This is a comment – –! >",
+   "< !– – This is a comment –! >",
+   "< !– – This is a comment – – >"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_web] HTML comments",
+  "difficulty": "easy",
+  "explanation": "An HTML comment is written as <!-- This is a comment -->: it starts with <!-- and ends with -->. Option 4 is this form (with spaces shown between the symbols). The other options either miss the ! at the start or wrongly put ! in the closing part.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598485",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following rule is needed to be followed while declaring the XML (Extensible Markup Language) elements name?",
+  "options": [
+   "Name must start with a number",
+   "Name can contain spaces",
+   "Name must not start with the letter xml",
+   "Name cannot contain letter, numbers and other characters"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_web] XML naming rules",
+  "difficulty": "easy",
+  "explanation": "XML naming rules: element names are case-sensitive, must start with a letter or underscore, cannot contain spaces, and must not start with the letters 'xml' (in any case), because that prefix is reserved. They can contain letters, digits, hyphens, underscores and periods, so the other options are false.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598511",
+  "paper": "2024_02_07_s2",
+  "question": "IPR (Intellectual Property Right) is given for how much time, in digital realm?",
+  "options": [
+   "Certain period of time",
+   "Unlimited period of time",
+   "Uncertain period of time",
+   "Depending on case to case basis"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_it] Intellectual Property Rights",
+  "difficulty": "easy",
+  "explanation": "Intellectual property rights such as copyright, patents and designs, including those for digital works, are granted only for a limited, certain period. For example, a patent lasts 20 years and copyright lasts for the author's life plus 60 years in India. After that the work goes into the public domain, so the protection is not unlimited.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598484",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following HTML tag is used to puts a line break in the text?",
+  "options": [
+   "<B>",
+   "<BL>",
+   "<L>",
+   "<BR>"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_web] HTML line break",
+  "difficulty": "easy",
+  "explanation": "<BR> is an empty tag that inserts a line break, so the following text starts on a new line. <B> makes text bold, and <BL> and <L> are not standard HTML tags.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598508",
+  "paper": "2024_02_07_s2",
+  "question": "ASCII (American Standard Code for Information Interchange) can only handle ______ or at most ______ languages and that shows its limitation to handle all world languages.",
+  "options": [
+   "2, 5",
+   "1, 2",
+   "1, 5",
+   "3, 4"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_fund] Character encoding - ASCII limits",
+  "difficulty": "medium",
+  "explanation": "ASCII is a 7-bit code with only 128 characters, enough for the English alphabet, digits and symbols. So it can handle 1 language (English), or at most 2 with the extended 8-bit sets. It cannot represent scripts like Devanagari or Chinese, which is why Unicode was developed.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598442",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following statement(s) is/are correct regarding AND logic gate?\nI. The AND gate produces the output value 1 if input A and input B are both equal to 1.\nII. The algebraic operation symbol of the AND function is the same as the multiplication symbol of ordinary arithmetic.",
+  "options": [
+   "Neither I nor II",
+   "Only I",
+   "Both I and II",
+   "Only II"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_fund] Logic gates - AND",
+  "difficulty": "easy",
+  "explanation": "Both statements are true. An AND gate outputs 1 only when all inputs are 1, so A = B = 1 gives 1. AND is written like ordinary multiplication: A.B or AB. So the correct option is both I and II.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256206",
+  "paper": "2023_06_24_s3",
+  "question": "The lowest cost solution to developing a KM system is:",
+  "options": [
+   "in-house development",
+   "outsourcing",
+   "development by end users",
+   "off-the shelf solution"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_it] KM system development options",
+  "difficulty": "medium",
+  "explanation": "Per standard KM texts (Awad & Ghaziri), in-house development uses the organisation's existing IT staff, tools and knowledge of its own processes, so no vendor licence, consultancy or customisation fees are paid; this is treated as the lowest-cost route. An off-the-shelf solution looks cheap but adds licence cost plus the expense of adapting a generic product, while outsourcing pays an external firm's margin. End-user development is cheap to start but usually yields poorly integrated systems.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256154",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following is NOT a type of computer architecture?",
+  "options": [
+   "Micro Architecture",
+   "Harvard Architecture",
+   "Software Architecture",
+   "Instruction Set Architecture"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_fund] Computer architecture types",
+  "difficulty": "easy",
+  "explanation": "Computer (hardware) architecture is classified into types such as Instruction Set Architecture (ISA), micro-architecture (implementation of the ISA), Harvard and von Neumann architectures. Software architecture describes the high-level structure of a software system and belongs to software engineering, not computer hardware architecture.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256139",
+  "paper": "2023_06_24_s3",
+  "question": "The decimal equivalent of the binary number 111111 is:",
+  "options": [
+   "46",
+   "63",
+   "52",
+   "36"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_fund] Binary to decimal",
+  "difficulty": "easy",
+  "explanation": "111111 in binary = 32+16+8+4+2+1 = 63 (equivalently 2^6 - 1 = 63). None of the other values matches this positional sum.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256179",
+  "paper": "2023_06_24_s3",
+  "question": "Marginal revenue is calculated by _____.",
+  "options": [
+   "dividing the change in total output quantity by the change in total revenue",
+   "dividing the change in total cost by the change in total output quantity",
+   "dividing the change in total revenue by the change in total output quantity",
+   "dividing the change in total revenue by the change in total profit"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_it] Marginal revenue",
+  "difficulty": "easy",
+  "explanation": "Marginal revenue is the additional revenue from selling one more unit: MR = ΔTR / ΔQ, i.e. change in total revenue divided by change in output quantity. Option 2 (ΔTC/ΔQ) is marginal cost, and option 1 is the inverted ratio.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256165",
+  "paper": "2023_06_24_s3",
+  "question": "Any account or goods used by the owner of the business for his personal use is called as:",
+  "options": [
+   "sales",
+   "drawings",
+   "general expenses",
+   "expenses"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_it] Accounting - drawings",
+  "difficulty": "easy",
+  "explanation": "Cash or goods withdrawn by the proprietor for personal use are recorded as Drawings, which reduce the owner's capital. They are not business expenses, because they do not help earn revenue for the business.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256133",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following statements is true?",
+  "options": [
+   "POST is the process performed by BIOS immediately after the system is shutdown.",
+   "The bootstrap program is stored in RAM.",
+   "CMOS chip is powered by the battery located in the mother board.",
+   "BIOS was developed by Charles Babbage."
+  ],
+  "answer": 3,
+  "subtopic": "[cf_fund] BIOS, POST and CMOS",
+  "difficulty": "easy",
+  "explanation": "The CMOS chip stores BIOS settings and the real-time clock and is kept powered by a small coin-cell battery on the motherboard. POST runs at start-up, not after shutdown; the bootstrap loader is stored in ROM, not RAM; and BIOS has nothing to do with Charles Babbage.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256209",
+  "paper": "2023_06_24_s3",
+  "question": "'FORTRAN' stands for _____.",
+  "options": [
+   "Format Translation",
+   "Format Transfer",
+   "Formula Translation",
+   "Formula Transfer"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_fund] Programming language history",
+  "difficulty": "easy",
+  "explanation": "FORTRAN stands for FORmula TRANslation, developed by John Backus's team at IBM (1957) for scientific and numeric computation. The other expansions are distractors.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256207",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following is NOT a type of business?",
+  "options": [
+   "Experience driven",
+   "Expense driven",
+   "Efficiency driven",
+   "Expert driven"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_it] KM - types of business",
+  "difficulty": "medium",
+  "explanation": "In knowledge management, businesses are categorised by what drives their value: expert-driven, experience-driven and efficiency-driven businesses. 'Expense driven' is not one of these categories, so it is the odd one out.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256172",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following opens the linked document in the windows full body among the target values?",
+  "options": [
+   "_self",
+   "_top",
+   "_blank",
+   "_parent"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_web] HTML target attribute",
+  "difficulty": "easy",
+  "explanation": "target=\"_top\" opens the linked document in the full body of the window, breaking out of all frames. _self opens in the same frame, _blank in a new window/tab, and _parent only in the immediate parent frame.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256201",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following is the syntax to write an external CSS?",
+  "options": [
+   "<style rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">",
+   "<style> href=\"style.css\" </style>",
+   "<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">",
+   "<a href=\"style.css\" rel=\"stylesheet\" type=\"text/css\" >"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_web] External CSS linking",
+  "difficulty": "easy",
+  "explanation": "An external stylesheet is attached in the <head> with <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">. The <style> tag is for internal CSS and has no href attribute, and <a> creates a hyperlink, not a stylesheet link.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256199",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following is a clipping algorithm?",
+  "options": [
+   "Simple DDA",
+   "Liang Barsky's algorithm",
+   "Bresenham's algorithm",
+   "Mid-point Algorithm"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_fund] Computer graphics - clipping",
+  "difficulty": "easy",
+  "explanation": "Liang-Barsky is a parametric line-clipping algorithm (like Cohen-Sutherland). Simple DDA, Bresenham's and the mid-point algorithm are scan-conversion algorithms used to draw lines/circles, not to clip them.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256143",
+  "paper": "2023_06_24_s3",
+  "question": "An LED emits green light of wavelength λ = 5511.11 Å. Find the value of Eg.",
+  "options": [
+   "1.25 eV",
+   "2.25 eV",
+   "3.606 eV",
+   "36.06 eV"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_fund] LED band gap",
+  "difficulty": "medium",
+  "explanation": "Eg = hc/λ. Using hc ≈ 12400 eV·Å, Eg = 12400 / 5511.11 ≈ 2.25 eV. Option 3 (3.606 eV) would correspond to about 3440 Å (ultraviolet), not green light.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256202",
+  "paper": "2023_06_24_s3",
+  "question": "How to change all images to black and white (100% grey)?",
+  "options": [
+   "img { filter: graycolor(100%);}",
+   "img { filter: grayscale(100%);}",
+   "img { graycolor(100%);}",
+   "img { filter: \"grayscale(100%)\";}"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_web] CSS filter",
+  "difficulty": "easy",
+  "explanation": "The CSS filter property with the grayscale() function converts an image to grey: img { filter: grayscale(100%); }. There is no graycolor() function, and the value must not be quoted as a string (option 4).",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256203",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following is NOT an XML Parser?",
+  "options": [
+   "Shell",
+   "JDOM",
+   "DOM",
+   "SAX"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_web] XML parsers",
+  "difficulty": "easy",
+  "explanation": "DOM (tree-based), SAX (event-based) and JDOM (Java-oriented) are XML parsers/APIs. 'Shell' is a command interpreter, not an XML parser.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256132",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following statements is NOT true?",
+  "options": [
+   "5 kilobytes is equal to 10,240 half bytes",
+   "3 kilobytes is equal to 24,576 bits",
+   "4 kilobytes is equal to 4069 bytes",
+   "2 kilobytes is equal to 4096 nibbles"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_fund] Memory units conversion",
+  "difficulty": "medium",
+  "explanation": "1 KB = 1024 bytes, so 4 KB = 4096 bytes, not 4069; hence option 3 is NOT true. Checks: 5 KB = 5120 bytes = 10,240 nibbles (half bytes); 3 KB = 3072 × 8 = 24,576 bits; 2 KB = 2048 bytes = 4096 nibbles.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256147",
+  "paper": "2023_06_24_s3",
+  "question": "A Mod-6 counter and a Mod-8 counter in cascade give a _____ counter.",
+  "options": [
+   "Mod-14",
+   "Mod-68",
+   "Mod-2",
+   "Mod-48"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_fund] Cascaded counters",
+  "difficulty": "easy",
+  "explanation": "When counters are cascaded, their moduli multiply: Mod-6 × Mod-8 = Mod-48 counter. Adding them (Mod-14) is the common mistake.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256204",
+  "paper": "2023_06_24_s3",
+  "question": "How to write the external DTD?",
+  "options": [
+   "<!DOCTYPE SYSTEM \"file-name\">",
+   "<!DOCTYPE element ROOT \"file-name\">",
+   "<!DOCTYPE SYSTEM \"file-name\" root-element>",
+   "<!DOCTYPE root-element SYSTEM \"file-name\">"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_web] XML external DTD",
+  "difficulty": "easy",
+  "explanation": "An external DTD is referenced as <!DOCTYPE root-element SYSTEM \"file-name\">: the root element name comes first, then the keyword SYSTEM and the DTD file path. Options 1 and 3 omit or misplace the root element, and ROOT is not a DTD keyword.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256213",
+  "paper": "2023_06_24_s3",
+  "question": "The values of x are 1, 3, 4 and those of f(x) are 1, 27, 64. What is the polynomial equation by using the Lagrange interpolation formula?",
+  "options": [
+   "8x^2 − 19x + 12",
+   "8x^2 + 9x + 12",
+   "8x^2 − 9x + 12",
+   "8x^2 + 9x + 12"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_fund] Lagrange interpolation",
+  "difficulty": "hard",
+  "explanation": "Fit a quadratic through (1,1), (3,27), (4,64) using Lagrange's formula; simplifying gives f(x) = 8x^2 - 19x + 12. Check: x=1 gives 8-19+12 = 1; x=3 gives 72-57+12 = 27; x=4 gives 128-76+12 = 64. Option 3 (8x^2 - 9x + 12) gives 11 at x=1, so it fails.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256125",
+  "paper": "2023_06_24_s3",
+  "question": "The general solution of dy/dx = e^(x + y) is:",
+  "options": [
+   "e^(−x) − e^(−y) = c",
+   "e^(−x) + e^(y) = c",
+   "e^x + e^(−y) = c",
+   "e^(−x) + e^(y) = c"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_fund] Differential equations - variable separable",
+  "difficulty": "medium",
+  "explanation": "dy/dx = e^x·e^y, so e^(-y) dy = e^x dx. Integrating: -e^(-y) = e^x + k, i.e. e^x + e^(-y) = c. Option 1 has the sign of e^(-x) wrong; differentiating it does not give back the original equation.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256208",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following is NOT the purpose of knowledge management system?",
+  "options": [
+   "Driving strategy",
+   "Integration",
+   "Sharing of knowledge",
+   "Portability"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_it] Purpose of KM systems",
+  "difficulty": "easy",
+  "explanation": "Knowledge management systems aim to drive strategy, integrate knowledge across the organisation, and enable sharing of knowledge to improve decisions and innovation. Portability is a software quality attribute (ability to run on different platforms), not a purpose of a KMS.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256167",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following is NOT a phase of the RAD model?",
+  "options": [
+   "Development modelling",
+   "Business modelling",
+   "Process modelling",
+   "Data modelling"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_se] RAD model phases",
+  "difficulty": "easy",
+  "explanation": "The RAD model phases are business modelling, data modelling, process modelling, application generation, and testing & turnover. 'Development modelling' is not a phase of RAD.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256180",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following inflations describes how demand for goods and services can drive up their prices?",
+  "options": [
+   "Cost-push inflation",
+   "Built-in Inflation",
+   "Demand-pull inflation",
+   "Demand-push inflation"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_it] Types of inflation",
+  "difficulty": "easy",
+  "explanation": "Demand-pull inflation occurs when aggregate demand exceeds supply, pulling prices up. Cost-push inflation is caused by rising input costs (wages, raw materials), and built-in inflation comes from wage-price expectations. 'Demand-push' is not a standard term.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256190",
+  "paper": "2023_06_24_s3",
+  "question": "Who is the father of e-commerce in India?",
+  "options": [
+   "Bryan Eisenberg",
+   "Michael Aldrich",
+   "K Vaitheeswaran",
+   "Tim Ferris"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_it] E-commerce history",
+  "difficulty": "medium",
+  "explanation": "K. Vaitheeswaran, co-founder of Fabmall/Indiaplaza (1999), is widely called the father of e-commerce in India. Michael Aldrich invented online shopping in the UK (1979), so he is the father of e-commerce globally, not of Indian e-commerce.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256155",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following is an addressing mode used in an instruction of the form ADD R1, [R2]?",
+  "options": [
+   "Register Indirect",
+   "Register",
+   "Indexed Register",
+   "Assembly Register"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_fund] Addressing modes",
+  "difficulty": "easy",
+  "explanation": "In ADD R1, [R2], the square brackets mean R2 holds the memory address of the operand, which is register indirect addressing. Plain register mode would use the contents of R2 itself as the operand (ADD R1, R2).",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256131",
+  "paper": "2023_06_24_s3",
+  "question": "An organisation structure establishes relationships between:",
+  "options": [
+   "people, work and resources",
+   "organisations and environment",
+   "suppliers and customers",
+   "organisations and society"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_it] Organisation structure",
+  "difficulty": "easy",
+  "explanation": "An organisation structure defines authority and responsibility relationships among people, the work they do and the resources they use. The other options describe external relationships (environment, customers, society), which are not set by internal structure.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256130",
+  "paper": "2023_06_24_s3",
+  "question": "_____ is a person who carries on business by himself/herself.",
+  "options": [
+   "Cooperative",
+   "Sole proprietorship",
+   "Partnership",
+   "Trader"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_it] Forms of business organisation",
+  "difficulty": "easy",
+  "explanation": "A sole proprietorship is a business owned, managed and controlled by one person who bears all risks and profits. A partnership needs two or more persons and a cooperative is a voluntary association of members.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256205",
+  "paper": "2023_06_24_s3",
+  "question": "The set of processes developed in an organisation to create, gather, store, transfer and apply knowledge best describes:",
+  "options": [
+   "knowledge management",
+   "organisational learnings",
+   "knowledge asset",
+   "organisational memory"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_it] Knowledge management definition",
+  "difficulty": "easy",
+  "explanation": "Knowledge management is the set of processes to create, gather, store, transfer (share) and apply knowledge in an organisation. Organisational memory is only the stored knowledge, and a knowledge asset is the knowledge itself, not the processes.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256183",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following is NOT a feature of ADO.net?",
+  "options": [
+   "Maintainability",
+   "Interoperability",
+   "Reachability",
+   "Scalability"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_web] ADO.NET features",
+  "difficulty": "medium",
+  "explanation": "Microsoft lists the key features of ADO.NET as interoperability (XML based), maintainability, programmability, performance and scalability. 'Reachability' is not one of them.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256214",
+  "paper": "2023_06_24_s3",
+  "question": "If μ is an averaging operator and δ^n is the n^th central difference operator, then what is the value of μ^2?",
+  "options": [
+   "μ^2 = 1/4 (δ^2 + 4)",
+   "μ^2 = 1/2 (δ^2 + 4)",
+   "μ^2 = 1/4 (δ^2 + 6)",
+   "μ^2 = 1/4 (δ^2 + 8)"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_fund] Finite difference operators",
+  "difficulty": "hard",
+  "explanation": "μ = (E^(1/2) + E^(-1/2))/2 and δ = E^(1/2) - E^(-1/2). Then μ^2 = (E + 2 + E^(-1))/4 and δ^2 = E - 2 + E^(-1), so μ^2 = (δ^2 + 4)/4 = 1 + δ^2/4. The other options use wrong constants.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256353",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following identifies, controls, audits and reports modifications that invariably occur while software is being developed and after it has been released to a customer?",
+  "options": [
+   "Software Process Model",
+   "Software Quality Assurance",
+   "Software Cost Estimation",
+   "Software Configuration Management"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_se] Software configuration management",
+  "difficulty": "easy",
+  "explanation": "Software Configuration Management (SCM) is the umbrella activity that identifies, controls, audits and reports changes to software during development and after release. SQA focuses on quality assurance activities, not change tracking.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256415",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following refers to focusing on determining, organising, directing, facilitating and monitoring knowledge-related practices and activities required to achieve the desired business strategies and objectives with reference to knowledge management in organisations?",
+  "options": [
+   "Business point of view",
+   "Education point of view",
+   "Hands-on operational point of view",
+   "Management point of view"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_it] KM viewpoints",
+  "difficulty": "medium",
+  "explanation": "From the management point of view, KM focuses on determining, organising, directing, facilitating and monitoring knowledge-related practices to achieve business strategies. The business point of view is about why/where the organisation should invest in knowledge, and the hands-on operational view is about applying expertise in daily work.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256382",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following is NOT a method of solving quadratic equations?",
+  "options": [
+   "By completing the square",
+   "By using the quadratic formula",
+   "By factorisation",
+   "By using convergence"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_fund] Quadratic equations",
+  "difficulty": "easy",
+  "explanation": "Quadratic equations are solved by factorisation, completing the square, or the quadratic formula (also graphically). 'Convergence' refers to iterative numerical behaviour of sequences/series and is not a method of solving quadratics.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256344",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following is a software application that helps developers to build attractive website layouts and apps with ease?",
+  "options": [
+   "Database design tools",
+   "Front-end development tools",
+   "Logic programming tools",
+   "Back-end development tools"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_web] Front-end development tools",
+  "difficulty": "easy",
+  "explanation": "Front-end development tools (e.g. Bootstrap, Sass, VS Code extensions) help developers build attractive layouts and user interfaces for websites and apps. Back-end tools deal with servers and databases, and database design tools model data.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256369",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following is a valid syntax for the XML element in a DTD?",
+  "options": [
+   "<!ELEMENT element-name category>",
+   "<!ATTLIST element-name attribute-name attribute-type attribute-value>",
+   "<#ELEMENT element-name category>",
+   "<!ENTITY entity-name \"entity-value\">"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_web] DTD element declaration",
+  "difficulty": "easy",
+  "explanation": "An element is declared in a DTD as <!ELEMENT element-name category> (or (content)). <!ATTLIST ...> declares attributes and <!ENTITY ...> declares entities, so they are valid but not for elements; <#ELEMENT> is invalid syntax.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256352",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following process models are the oldest software engineering paradigms and suggest a linear process flow that is often inconsistent with modern realities?",
+  "options": [
+   "Incremental Process Models",
+   "Sequential Process Models",
+   "Evolutionary Process Models",
+   "Concurrent Process Models"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_se] Prescriptive process models",
+  "difficulty": "easy",
+  "explanation": "Sequential (linear) process models such as the waterfall model are the oldest paradigm; they assume a linear flow that rarely matches real projects where requirements change. Incremental, evolutionary and concurrent models were introduced to handle iteration and change.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256400",
+  "paper": "2023_06_25_s1",
+  "question": "The demand is said to be ______ when a very insignificant change in price leads to an infinite change in quantity demanded.",
+  "options": [
+   "perfectly inelastic",
+   "relatively elastic",
+   "relatively inelastic",
+   "perfectly elastic"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_it] Elasticity of demand",
+  "difficulty": "easy",
+  "explanation": "Demand is perfectly elastic (Ed = ∞) when a negligible change in price causes an infinite change in quantity demanded; the demand curve is horizontal. Perfectly inelastic (Ed = 0) is the opposite case where quantity does not change at all.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256378",
+  "paper": "2023_06_25_s1",
+  "question": "Consider the following data set: 6, 20, 25, 63, 92, 101. What is the range of the data set?",
+  "options": [
+   "63",
+   "6",
+   "95",
+   "101"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_fund] Statistics - range",
+  "difficulty": "easy",
+  "explanation": "Range = maximum - minimum = 101 - 6 = 95. Option 4 (101) is just the maximum value.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256354",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following software quality factors refers to the degree to which the software makes optimal use of system resources as indicated by the sub-attributes time behaviour and resource behaviour?",
+  "options": [
+   "Maintainability",
+   "Usability",
+   "Portability",
+   "Efficiency"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_se] Software quality factors (ISO 9126)",
+  "difficulty": "easy",
+  "explanation": "In ISO 9126, Efficiency covers time behaviour and resource behaviour, i.e. optimal use of system resources. Maintainability, usability and portability have different sub-attributes (analysability, learnability, adaptability etc.).",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256365",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following curves is particularly a kind of spline generated from a set of control points by forming a set of polynomial functions with reference to computer graphics?",
+  "options": [
+   "Explicit",
+   "Parametric",
+   "Implicit",
+   "Bezier"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_fund] Computer graphics - curves",
+  "difficulty": "medium",
+  "explanation": "A Bezier curve is a spline defined by a set of control points, built from Bernstein polynomial blending functions. 'Parametric' describes a general way of representing curves, not a specific spline generated from control points.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256397",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following is defined as that branch of economic analysis that studies the economic behaviour of the individual unit and may be a person, a particular household or a particular firm?",
+  "options": [
+   "International Economics",
+   "Macro Economics",
+   "Environmental Economics",
+   "Micro Economics"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_it] Microeconomics",
+  "difficulty": "easy",
+  "explanation": "Microeconomics studies the behaviour of individual units such as a consumer, household or firm. Macroeconomics studies the economy as a whole (national income, inflation, unemployment).",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256416",
+  "paper": "2023_06_25_s1",
+  "question": "Which step of the knowledge management process involves adding value by discovering relationships, abstracting and sharing?",
+  "options": [
+   "Knowledge refining",
+   "Knowledge gathering or acquisition",
+   "Knowledge organisation",
+   "Knowledge sharing"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_it] KM process steps",
+  "difficulty": "medium",
+  "explanation": "Knowledge refining adds value to captured knowledge by discovering relationships, abstracting, synthesising and sharing it. Gathering/acquisition only collects knowledge, and organisation only stores/structures it.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256396",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following is an action or occurrence such as a mouse click, a key press, mouse movements or any system-generated notification in ASP.NET?",
+  "options": [
+   "Directive",
+   "Validator",
+   "Control",
+   "Event"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_web] ASP.NET events",
+  "difficulty": "easy",
+  "explanation": "In ASP.NET, an event is an action or occurrence such as a mouse click, key press, mouse movement or a system-generated notification, which triggers an event handler. Directives give compiler instructions, validators check input, and controls are UI elements.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256409",
+  "paper": "2023_06_25_s1",
+  "question": "Suppose we are given values of y = f(x) for a set of values of x, the process of finding the value of y corresponding to any value of x = x_i between x_0 and x_n is called ______.",
+  "options": [
+   "bias",
+   "variance",
+   "hypothesis",
+   "interpolation"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_fund] Numerical methods - interpolation",
+  "difficulty": "easy",
+  "explanation": "Estimating y for an x lying between the given tabulated points x0 ... xn is interpolation. Estimating outside that range is extrapolation; bias, variance and hypothesis are statistics terms.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256388",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following is the proper sequence of the accounting cycle?",
+  "options": [
+   "Recording of Transaction → Journal → Ledger → Trial Balance → Adjusted Trial Balance → Adjustment Entries → Closing Entries → Financial Statement",
+   "Recording of Transaction → Journal → Ledger → Trial Balance → Adjustment Entries → Adjusted Trial Balance → Closing Entries → Financial Statement",
+   "Recording of Transaction → Journal → Ledger → Trial Balance → Adjustment Entries → Closing Entries → Adjusted Trial Balance → Financial Statement",
+   "Recording of Transaction → Journal → Ledger → Trial Balance → Adjustment Entries → Adjusted Trial Balance → Financial Statement → Closing Entries"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_it] Accounting cycle",
+  "difficulty": "medium",
+  "explanation": "Key doubt: the standard accounting cycle is Transactions → Journal → Ledger → Trial Balance → Adjustment Entries → Adjusted Trial Balance → Financial Statements → Closing Entries, which is option 4. Financial statements are prepared from the adjusted trial balance BEFORE closing entries, because closing entries reset revenue, expense and drawing accounts to zero. The official option 2 puts closing entries before financial statements, which is not the textbook order.",
+  "key_doubt": true
+ },
+ {
+  "qid": "630680256363",
+  "paper": "2023_06_25_s1",
+  "question": "Interpretability, Format, Coherence and Compatibility refer to which quality of information with reference to Management Information System?",
+  "options": [
+   "Contextual",
+   "Representational",
+   "Intrinsic",
+   "Accessibility"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_it] MIS - information quality dimensions",
+  "difficulty": "medium",
+  "explanation": "In the Wang-Strong framework, representational quality covers interpretability, ease of understanding, format/concise representation, coherence/consistency and compatibility. Intrinsic quality covers accuracy and believability, contextual quality covers relevance and timeliness, and accessibility covers access and security.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256387",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following refers to the art of recoding, classifying and summarising in a significant manner, and in terms of money, transactions and events that are in part at least of a financial character, and interpreting the results thereof?",
+  "options": [
+   "Financial Accounting",
+   "Cost Accounting",
+   "Management Accounting",
+   "Book Keeping"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_it] Accounting definition",
+  "difficulty": "medium",
+  "explanation": "This is the AICPA definition of accounting, which describes financial accounting: recording, classifying and summarising financial transactions in money terms and interpreting the results. Book keeping only records transactions and does not interpret results; cost and management accounting focus on internal cost control and decision making.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256405",
+  "paper": "2023_06_25_s1",
+  "question": "Activities like packing goods, loading goods and shipping goods belong to which step of the e-commerce primary process?",
+  "options": [
+   "Contract conclusion",
+   "Delivery/fulfilment",
+   "Billing/invoice",
+   "Service/support"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_it] E-commerce primary processes",
+  "difficulty": "easy",
+  "explanation": "Packing, loading and shipping goods to the customer happen in the delivery/fulfilment step of the e-commerce process. Contract conclusion is placing/accepting the order, billing is invoicing and payment, and service/support is after-sales.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256343",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following front-end tools is one of the most widely used CSS extension languages across the world?",
+  "options": [
+   "Visual Studio Code",
+   "Git",
+   "TypeScript",
+   "Sass"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_web] CSS preprocessors",
+  "difficulty": "easy",
+  "explanation": "Sass (Syntactically Awesome Style Sheets) is a widely used CSS extension language that adds variables, nesting and mixins. VS Code is an editor, Git is version control and TypeScript extends JavaScript, not CSS.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256398",
+  "paper": "2023_06_25_s1",
+  "question": "The ______ economic system is characterised by free markets and the absence of government intervention in the economy.",
+  "options": [
+   "private",
+   "capitalist",
+   "public",
+   "socialist"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_it] Economic systems",
+  "difficulty": "easy",
+  "explanation": "A capitalist (free-market) economy is characterised by private ownership, free markets and little or no government intervention. A socialist economy has state ownership and planning, while a mixed economy combines both.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256371",
+  "paper": "2023_06_25_s1",
+  "question": "The semiconductor memory Dynamic RAM (DRAM) stores each bit of information in a/an ______.",
+  "options": [
+   "diode",
+   "electrical capacitor",
+   "flip-flop",
+   "resistor"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_fund] DRAM vs SRAM",
+  "difficulty": "easy",
+  "explanation": "DRAM stores each bit as charge on a tiny capacitor (with one access transistor), which leaks and must be refreshed periodically. SRAM stores bits in flip-flops, which is why it is faster but costlier.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256384",
+  "paper": "2023_06_25_s1",
+  "question": "AB is a tangent to a circle at B. O is the centre of the circle. If the circle radius is 40 mm and AB = 150 mm, calculate the length of AO.",
+  "options": [
+   "57.30 mm",
+   "962 mm",
+   "155.2 mm",
+   "235.6 mm"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_fund] Geometry - tangent to circle",
+  "difficulty": "easy",
+  "explanation": "A tangent is perpendicular to the radius at the point of contact, so triangle OBA is right-angled at B. AO = √(OB² + AB²) = √(40² + 150²) = √(1600 + 22500) = √24100 ≈ 155.2 mm. Option 4 (235.6) is not consistent with Pythagoras.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256349",
+  "paper": "2023_06_25_s1",
+  "question": "The Insert key in a keyboard of a computer system is used to toggle between ______ and ______ modes during data entry.",
+  "options": [
+   "backspace; overwrite",
+   "delete; overwrite",
+   "insert; overwrite",
+   "delete; replace"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_fund] Keyboard - Insert key",
+  "difficulty": "easy",
+  "explanation": "The Insert key toggles between insert mode (new characters push existing text to the right) and overwrite mode (new characters replace existing text). Backspace and Delete are separate keys that erase characters.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256383",
+  "paper": "2023_06_25_s1",
+  "question": "What is the amount of rotation between two straight lines?",
+  "options": [
+   "Revolution",
+   "Degree",
+   "Transversal",
+   "Angle"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_fund] Geometry - angle",
+  "difficulty": "easy",
+  "explanation": "An angle measures the amount of rotation between two straight lines (rays) meeting at a point. A degree is only a unit for measuring angles, and a transversal is a line cutting two or more lines.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256346",
+  "paper": "2023_06_25_s1",
+  "question": "Match the system with the respective unit to represent heat.\nSystem | Unit\n(a) CGS | (i) BTU\n(b) FPS | (ii) Joule\n(c) SI | (iii) Calorie",
+  "options": [
+   "(a)-(iii), (b)-(i), (c)-(ii)",
+   "(a)-(ii), (b)-(i), (c)-(iii)",
+   "(a)-(i), (b)-(ii), (c)-(iii)",
+   "(a)-(ii), (b)-(iii), (c)-(i)"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_fund] Units of heat",
+  "difficulty": "easy",
+  "explanation": "In the CGS system heat is measured in calories, in the FPS system in British Thermal Units (BTU), and in the SI system in joules. Hence (a)-(iii), (b)-(i), (c)-(ii).",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256404",
+  "paper": "2023_06_25_s1",
+  "question": "With reference to stakeholders of e-commerce, business organisations abbreviated by ‘B’ may include ______.",
+  "options": [
+   "government",
+   "consumers",
+   "customers",
+   "producers"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_it] E-commerce stakeholders",
+  "difficulty": "easy",
+  "explanation": "In B2B/B2C notation, 'B' stands for business organisations such as producers, manufacturers, wholesalers and retailers. Consumers/customers are 'C' and government is 'G'.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256360",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following refers to a planned system of collecting, storing and disseminating data in the form of information needed to carry out the functions of management?",
+  "options": [
+   "Computer Networks",
+   "Software Engineering",
+   "Management Information System",
+   "Database Management System"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_it] MIS definition",
+  "difficulty": "easy",
+  "explanation": "A Management Information System is a planned system for collecting, storing and disseminating data as information needed by managers to plan, organise and control. A DBMS only manages data storage and retrieval; it does not by itself serve management functions.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256637",
+  "paper": "2023_06_25_s2",
+  "question": "______ is the standard that defines how web servers and application programs communicate.",
+  "options": [
+   "JDBC",
+   "ODBC",
+   "CGI",
+   "HTTP"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_web] CGI",
+  "difficulty": "medium",
+  "explanation": "Key doubt: the Common Gateway Interface (CGI) is the standard that defines how a web server communicates with application programs (Silberschatz, Database System Concepts), so option 3 should be correct. HTTP is the protocol between the browser (client) and the web server, not between the web server and application programs. JDBC/ODBC connect applications to databases.",
+  "key_doubt": true
+ },
+ {
+  "qid": "630680256642",
+  "paper": "2023_06_25_s2",
+  "question": "Within software engineering, which prescriptive model is INCOMPATIBLE with circumstances in which the requirements alter throughout development?",
+  "options": [
+   "Linear models",
+   "Evolutionary models",
+   "Agile models",
+   "Incremental models"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_se] Linear (waterfall) model",
+  "difficulty": "easy",
+  "explanation": "Linear sequential models such as waterfall assume requirements are fixed and fully known at the start, so they cope poorly when requirements change during development. Evolutionary, incremental and agile models are designed to accommodate changing requirements.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256612",
+  "paper": "2023_06_25_s2",
+  "question": "Which of the following is a translator that translates source code into object target code?",
+  "options": [
+   "Language processor",
+   "Interpreter",
+   "Compiler",
+   "Assembler"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_fund] Language translators",
+  "difficulty": "easy",
+  "explanation": "A compiler translates the entire high-level source program into object (target) code before execution. An interpreter executes line by line without producing an object program, and an assembler translates assembly language only.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256626",
+  "paper": "2023_06_25_s2",
+  "question": "Which architecture is the most energy efficient?",
+  "options": [
+   "CISC",
+   "IANA",
+   "ISA",
+   "RISC"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_fund] RISC vs CISC",
+  "difficulty": "easy",
+  "explanation": "RISC processors use simple, fixed-length instructions that execute in one cycle with fewer transistors, so they consume less power; this is why ARM (RISC) dominates mobile devices. CISC needs complex decoding hardware and more power, while IANA and ISA are not architecture styles to compare here.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256597",
+  "paper": "2023_06_25_s2",
+  "question": "The series ∑ 1/∛(n^2) is:",
+  "options": [
+   "None of the given options",
+   "divergent",
+   "oscillatory convergent",
+   "convergent"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_fund] Series convergence (p-series)",
+  "difficulty": "medium",
+  "explanation": "Key doubt: Σ 1/∛(n^2) = Σ 1/n^(2/3) is a p-series with p = 2/3. A p-series converges only when p > 1, so here (p ≤ 1) the series diverges and option 2 is correct. The official 'convergent' contradicts the p-series test; compare with Σ 1/n, which also diverges.",
+  "key_doubt": true
+ },
+ {
+  "qid": "630680256643",
+  "paper": "2023_06_25_s2",
+  "question": "______ activities are at the very core of project completion work tasks, whereas ______ activities are not mandatory.",
+  "options": [
+   "Requirements, arbitrary",
+   "Framework, umbrella",
+   "Functional, non-functional",
+   "Non-functional, functional"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_se] Requirements - functional vs non-functional",
+  "difficulty": "medium",
+  "explanation": "Functional requirements describe what the system must do and are at the core of completing the project's work tasks, so they are mandatory. Non-functional requirements (performance, usability, etc.) describe qualities and are treated in this question as not mandatory. Framework/umbrella (option 2) describes process activities, and umbrella activities are not optional, so it does not fit the 'not mandatory' clue.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256602",
+  "paper": "2023_06_25_s2",
+  "question": "The most common type of business organisation is:",
+  "options": [
+   "partnership",
+   "sole proprietorship",
+   "NGO",
+   "corporation"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_it] Forms of business organisation",
+  "difficulty": "easy",
+  "explanation": "Sole proprietorship is the most common form of business organisation because it is easy to start, needs little capital and has few legal formalities. Partnerships and companies require more agreements and registration.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256676",
+  "paper": "2023_06_25_s2",
+  "question": "______ reads XML documents and provides access to their content and structure.",
+  "options": [
+   "XML schema",
+   "XML pre-processor",
+   "XML processor",
+   "XML codes"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_web] XML processor",
+  "difficulty": "easy",
+  "explanation": "An XML processor (parser) reads an XML document and gives applications access to its content and structure. An XML schema only defines the allowed structure; it does not read documents.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256616",
+  "paper": "2023_06_25_s2",
+  "question": "What is the lifetime of an atom's ground state in Stimulated Absorption?",
+  "options": [
+   "2 minutes",
+   "11 hours",
+   "5 seconds",
+   "Infinity"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_fund] Lasers - atomic states",
+  "difficulty": "medium",
+  "explanation": "The ground state is the lowest energy level and is stable: an atom stays there indefinitely unless it absorbs energy, so its lifetime is taken as infinite. Excited states have lifetimes around 10^-8 s and metastable states around 10^-3 s.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256620",
+  "paper": "2023_06_25_s2",
+  "question": "How many INVALID input combinations occur at the input of a BCD adder?",
+  "options": [
+   "58",
+   "56",
+   "156",
+   "256"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_fund] BCD adder",
+  "difficulty": "hard",
+  "explanation": "A BCD adder takes two 4-bit inputs, giving 2^4 × 2^4 = 256 input combinations. Only digits 0-9 are valid for each input, so valid combinations = 10 × 10 = 100. Invalid combinations = 256 - 100 = 156 (ignoring the carry-in).",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256675",
+  "paper": "2023_06_25_s2",
+  "question": "What will the output of the following code snippet be?\n<script>\ndocument.write (\"Hello\")\ndocument.write (\"\nIndia\")\n</script>",
+  "options": [
+   "Hello",
+   "HelloIndia",
+   "India",
+   "Hello India"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_web] JavaScript document.write",
+  "difficulty": "easy",
+  "explanation": "The second string starts with a newline character. When written into HTML, a newline is treated as whitespace and rendered as a single space, so the page shows 'Hello India'. 'HelloIndia' would appear only if there were no whitespace between the strings.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256651",
+  "paper": "2023_06_25_s2",
+  "question": "______ is also referred to as the Sales-Force-Composite method or the Collective Opinion Method.",
+  "options": [
+   "Consumer interview method",
+   "Substitute approach",
+   "Evolutionary approach",
+   "Opinion survey"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_it] Demand forecasting methods",
+  "difficulty": "medium",
+  "explanation": "The opinion survey method includes the sales-force composite (collective opinion) method, where salespeople's estimates of expected sales are combined. The consumer interview method surveys buyers directly, and the evolutionary/substitute approaches are for new products.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256664",
+  "paper": "2023_06_25_s2",
+  "question": "In a management information system, what is/are the formal social unit that is/are devoted to attaining specified goals?",
+  "options": [
+   "Organisation, management and marketing",
+   "Organisation",
+   "Management",
+   "Marketing"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_it] MIS - organisation",
+  "difficulty": "easy",
+  "explanation": "An organisation is a formal social unit (a group of people) deliberately structured to achieve specified goals. Management is the process of directing that unit, and marketing is one of its functions.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256611",
+  "paper": "2023_06_25_s2",
+  "question": "Memory that does not change its contents due to external causes is referred to as:",
+  "options": [
+   "dynamic memory",
+   "fixed memory",
+   "static memory",
+   "temporary memory"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_fund] Static memory",
+  "difficulty": "easy",
+  "explanation": "Static memory (e.g. SRAM) keeps its contents as long as power is supplied without needing refresh, so its contents do not change due to external causes. Dynamic memory (DRAM) loses charge and must be refreshed, and temporary memory is not a standard term.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256659",
+  "paper": "2023_06_25_s2",
+  "question": "The ______ E-commerce segment(s) is/are represented by OLX.",
+  "options": [
+   "C2C, B2C and B2B",
+   "B2B",
+   "C2C",
+   "B2C"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_it] E-commerce models - C2C",
+  "difficulty": "easy",
+  "explanation": "OLX is a classifieds platform where individuals sell used goods directly to other individuals, so it is Consumer-to-Consumer (C2C). B2C examples are Amazon/Flipkart retail and B2B examples are IndiaMART.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256683",
+  "paper": "2023_06_25_s2",
+  "question": "Interpolation is carried out using data from:",
+  "options": [
+   "regression analysis",
+   "curve fitting and regression analysis",
+   "linear interpolation",
+   "curve fitting and linear analysis"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_fund] Interpolation",
+  "difficulty": "medium",
+  "explanation": "Interpolation estimates intermediate values from known data points, so it relies on curve fitting through the points and, in the simplest case, linear (straight-line) analysis between them. Regression analysis models general trends with error rather than passing through the given points, so it is not the basis of interpolation.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256599",
+  "paper": "2023_06_25_s2",
+  "question": "Who invented the probability definition?",
+  "options": [
+   "Simon Laplace",
+   "Euclid",
+   "None of the given answer",
+   "Einstein"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_fund] Probability - classical definition",
+  "difficulty": "easy",
+  "explanation": "The classical definition of probability, P(E) = favourable outcomes / total equally likely outcomes, was formalised by Pierre-Simon Laplace. Euclid worked in geometry and Einstein in physics.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256639",
+  "paper": "2023_06_25_s2",
+  "question": "Which of the following accounts is/are prepared for net profit?",
+  "options": [
+   "Profit and loss account",
+   "Trading account, profit and loss account and balance sheet",
+   "Trading account",
+   "Balance sheet"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_it] Final accounts - net profit",
+  "difficulty": "easy",
+  "explanation": "Net profit is found in the Profit and Loss Account, which deducts indirect expenses from gross profit. The Trading Account gives gross profit, and the Balance Sheet is a statement of assets and liabilities, not an account.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256600",
+  "paper": "2023_06_25_s2",
+  "question": "Identify the generic probability density function that corresponds with discrete random variables.",
+  "options": [
+   "Cumulative distribution",
+   "Gaussian distribution",
+   "Poisson distribution",
+   "Rayleigh distribution"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_fund] Probability distributions",
+  "difficulty": "medium",
+  "explanation": "The Poisson distribution is defined for discrete random variables (counts 0, 1, 2, ...), with P(X=k) = e^(-λ)λ^k/k!. Gaussian (normal) and Rayleigh distributions are continuous, and the cumulative distribution is a function type, not a specific discrete distribution.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256604",
+  "paper": "2023_06_25_s2",
+  "question": "A public company must have at least ______ members.",
+  "options": [
+   "14",
+   "7",
+   "2",
+   "3"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_it] Company law - minimum members",
+  "difficulty": "easy",
+  "explanation": "Under the Companies Act, 2013, a public company needs at least 7 members (a private company needs 2, a One Person Company needs 1). Option 3 (2) is the minimum for a private company.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256628",
+  "paper": "2023_06_25_s2",
+  "question": "A computer bus line is made up of which of the following components?",
+  "options": [
+   "Registers",
+   "Set of parallel lines",
+   "Accumulators",
+   "RAM and ROM"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_fund] Computer bus",
+  "difficulty": "easy",
+  "explanation": "A bus is a set of parallel wires (lines) that carry data, address and control signals between CPU, memory and I/O devices. Registers, accumulators and RAM/ROM are components connected by the bus, not what it is made of.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256603",
+  "paper": "2023_06_25_s2",
+  "question": "Which of the following business structures has limited liability to its members?",
+  "options": [
+   "Partnership",
+   "Cooperative society",
+   "Company",
+   "Sole proprietorship"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_it] Limited liability",
+  "difficulty": "easy",
+  "explanation": "A company is a separate legal entity, so its members' liability is limited to the unpaid amount on their shares. Sole proprietors and (general) partners have unlimited liability; a cooperative society may also have limited liability, but the company is the classic answer.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256650",
+  "paper": "2023_06_25_s2",
+  "question": "Which method is used for demand forecasting of new products?",
+  "options": [
+   "Evolutionary approach, opinion polling approach and vicarious approach",
+   "Opinion polling approach",
+   "Evolutionary approach",
+   "Vicarious approach"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_it] Demand forecasting for new products",
+  "difficulty": "medium",
+  "explanation": "Joel Dean's methods for forecasting demand for new products include the evolutionary approach, substitute approach, opinion polling approach, growth-curve approach and vicarious approach. Since all three listed approaches are valid, option 1 (all of them) is correct; picking only one is incomplete.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256679",
+  "paper": "2023_06_25_s2",
+  "question": "The construction of computer-generated simulations that simulate real-world activities using interactive graphics software and hardware is called:",
+  "options": [
+   "virtual reality systems",
+   "hybrid systems",
+   "genetic algorithms",
+   "fuzzy neural networks"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_fund] Virtual reality",
+  "difficulty": "easy",
+  "explanation": "Virtual reality systems use interactive graphics software and hardware (head-mounted displays, gloves) to create computer-generated simulations of real-world activities. Genetic algorithms, fuzzy neural networks and hybrid systems are AI techniques, not simulation environments.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256638",
+  "paper": "2023_06_25_s2",
+  "question": "What is a long-term asset in accounting?",
+  "options": [
+   "Intangible assets",
+   "Current liabilities",
+   "Fixed liabilities",
+   "Fixed assets"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_it] Accounting - fixed assets",
+  "difficulty": "easy",
+  "explanation": "Long-term assets are fixed (non-current) assets such as land, buildings and machinery, held for more than one year to run the business. Liabilities are obligations, not assets; intangible assets are one sub-type, while 'fixed assets' is the general term.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256627",
+  "paper": "2023_06_25_s2",
+  "question": "What is the size of the computer accumulator register?",
+  "options": [
+   "8 bytes",
+   "16 bytes",
+   "8 KB",
+   "4 bytes"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_fund] CPU registers - accumulator",
+  "difficulty": "medium",
+  "explanation": "The accumulator's size equals the processor's word length; for a typical 32-bit processor it is 32 bits = 4 bytes. 8 KB is far too large for a register, and 16 bytes is not a standard general-purpose word size.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256613",
+  "paper": "2023_06_25_s2",
+  "question": "Which of the following computer programs provides instructions for computer operations?",
+  "options": [
+   "System software",
+   "System utility",
+   "Magnetic card",
+   "System application"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_fund] System software",
+  "difficulty": "easy",
+  "explanation": "System software (operating system, drivers, utilities) provides the instructions that control and coordinate the computer's own operations. A utility is only one type of system software, and a magnetic card is hardware.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598502",
+  "paper": "2024_02_07_s2",
+  "question": "What is the advantage of exploratory Data Analysis in Big Data and Analytics?",
+  "options": [
+   "Less realistic statements of accuracy",
+   "Flexible ways to generate hypotheses",
+   "Usually does not provide definitive answers",
+   "More realistic statements of accuracy"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_it] Exploratory data analysis",
+  "difficulty": "easy",
+  "explanation": "Exploratory Data Analysis is flexible and visual, letting analysts discover patterns and generate new hypotheses before formal modelling. Not giving definitive answers and less realistic statements of accuracy are drawbacks of EDA, not advantages.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598503",
+  "paper": "2024_02_07_s2",
+  "question": "In AI biases many AI models are ______.\nI. deepfakes\nII. Black boxes\nIII. K-anonymity",
+  "options": [
+   "Only II",
+   "Only I",
+   "I, II and III",
+   "Only I and III"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_it] AI bias - black box",
+  "difficulty": "easy",
+  "explanation": "Many AI models, especially deep neural networks, are 'black boxes': their internal reasoning is hard to interpret, so hidden biases are difficult to detect. Deepfakes are AI-generated fake media and k-anonymity is a privacy technique, so only II is correct.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598513",
+  "paper": "2024_02_07_s2",
+  "question": "In cyber security, what remedy does the law provide?",
+  "options": [
+   "Apology",
+   "Imprisonment",
+   "Technologies",
+   "Computer networks"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_it] Cyber law remedies",
+  "difficulty": "easy",
+  "explanation": "Cyber laws such as the IT Act, 2000 provide legal remedies including penalties, compensation and imprisonment for cyber offences. Technologies and computer networks are tools, not legal remedies, and an apology is not a remedy provided by law.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598479",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following part of the CPU has the necessary electronic circuitry to perform binary addition and shift operations in computer system?",
+  "options": [
+   "Arithmetic Logic Unit (ALU)",
+   "Memory Buses",
+   "Registers",
+   "Control Unit"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_fund] CPU - ALU",
+  "difficulty": "easy",
+  "explanation": "The ALU contains the circuitry to perform arithmetic (binary addition, subtraction) and logical and shift operations. The control unit only directs operations, and registers only hold data temporarily.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598449",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following is characteristic of a RISC (Reduced Instruction Set Computer) processor?",
+  "options": [
+   "Microprogrammed control",
+   "Instruction that manipulate operands in memory",
+   "Fixed-length, easily decoded instruction format",
+   "A large number (typically from 100 to 250) of instructions"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_fund] RISC characteristics",
+  "difficulty": "easy",
+  "explanation": "RISC processors use fixed-length, easily decoded instructions, few addressing modes, hardwired control and load/store-only memory access. Microprogrammed control, memory-operand instructions and 100-250 instructions are CISC characteristics.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598451",
+  "paper": "2024_02_07_s2",
+  "question": "In which of the following type of addressing mode, the instruction specifies a register in the CPU whose contents give the address of the operand in memory?",
+  "options": [
+   "Register indirect mode",
+   "Indirect address mode",
+   "Implied mode",
+   "Immediate mode"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_fund] Addressing modes - register indirect",
+  "difficulty": "easy",
+  "explanation": "In register indirect mode the instruction specifies a CPU register whose contents are the memory address of the operand. In indirect address mode the address field points to a memory word that holds the effective address, and immediate mode has the operand in the instruction itself.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598448",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following statement(s) is/are correct regarding Assembly language?\nI. An assembler converts (or assembles) the symbolic program of an Assembly language into its equivalent machine program.\nII. A program written in an assembly language is machine dependent.",
+  "options": [
+   "Both I and II",
+   "Only II",
+   "Only I",
+   "Neither I nor II"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_fund] Assembly language",
+  "difficulty": "easy",
+  "explanation": "Both statements are correct: an assembler translates symbolic assembly code into equivalent machine code, and assembly language is machine-dependent because its mnemonics map directly onto a specific processor's instruction set.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598515",
+  "paper": "2024_02_07_s2",
+  "question": "In context of the Digital Personal Data Protection Act, 2023, which of the given following is correct?",
+  "options": [
+   "“Child” means an individual who has not completed the age of eighteen years",
+   "“Digital personal data” means personal data in physical form",
+   "“Chairperson” does not mean the chairperson of the board",
+   "“Data” means representation of facts only"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_it] DPDP Act 2023",
+  "difficulty": "easy",
+  "explanation": "Under the Digital Personal Data Protection Act, 2023, a 'child' is an individual who has not completed eighteen years of age. Digital personal data means personal data in digital form (not physical), and 'Chairperson' does refer to the Chairperson of the Data Protection Board.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598446",
+  "paper": "2024_02_07_s2",
+  "question": "In CPU, which of the following type of register is required by the control unit and contains the instruction currently being executed?",
+  "options": [
+   "Instruction register",
+   "Accumulator",
+   "Program register",
+   "Memory data register"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_fund] CPU registers - instruction register",
+  "difficulty": "easy",
+  "explanation": "The Instruction Register (IR) holds the instruction currently being executed so that the control unit can decode it. The accumulator holds operands/results, and the memory data register buffers data moving to and from memory.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598510",
+  "paper": "2024_02_07_s2",
+  "question": "______ enables the creator owner to earn recognition or financial benefit by using their creation or invention.",
+  "options": [
+   "Patent",
+   "Copyright",
+   "Intellectual property right",
+   "Data protection"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_it] Intellectual property rights",
+  "difficulty": "medium",
+  "explanation": "Key doubt: the statement is the WIPO description of intellectual property rights - IP is protected by patents, copyright and trademarks, which 'enable people to earn recognition or financial benefit from what they invent or create'. Because it covers inventions as well as creations, option 3 (intellectual property right) is the correct general answer. Copyright protects only original creative works, not inventions (those are patented), so the official key is too narrow.",
+  "key_doubt": true
+ },
+ {
+  "qid": "630680598501",
+  "paper": "2024_02_07_s2",
+  "question": "From the challenges given below, which of the challenge does IoT adoption include?",
+  "options": [
+   "Deepfake",
+   "Black box",
+   "Security",
+   "Cloud storage"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_it] IoT challenges",
+  "difficulty": "easy",
+  "explanation": "Security (and privacy) is a major challenge of IoT adoption, because many connected devices have weak authentication and are hard to patch. Deepfakes and black-box models are AI issues, and cloud storage is a supporting technology, not an IoT challenge.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598517",
+  "paper": "2024_02_07_s2",
+  "question": "Irreparable computer and other electronic goods are known as ______ in tech world.",
+  "options": [
+   "Man made waste",
+   "Natural waste",
+   "Waste",
+   "Electronic waste"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_it] E-waste",
+  "difficulty": "easy",
+  "explanation": "Discarded, unusable or irreparable computers, phones and other electronic goods are called electronic waste (e-waste). They contain hazardous materials such as lead and mercury and need special recycling.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598516",
+  "paper": "2024_02_07_s2",
+  "question": "The E-waste (management) rules 2016 of India, recognizes two broad categories: IT and telecommunication equipment and consumer electrical and electronics including which of the following material?\nI. Fluorescent\nII. Mercury",
+  "options": [
+   "Only I",
+   "Only II",
+   "Both I and II",
+   "Neither I nor II"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_it] E-waste Management Rules 2016",
+  "difficulty": "medium",
+  "explanation": "The E-Waste (Management) Rules, 2016 cover IT and telecom equipment and consumer electrical and electronics, and they also brought compact fluorescent lamps and other mercury-containing lamps under their scope. So both fluorescent and mercury items are included.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598512",
+  "paper": "2024_02_07_s2",
+  "question": "In digital realm, which refers to the legal rights to protect invention or creation in intellectual property, are given to whom?",
+  "options": [
+   "Employee",
+   "Seller",
+   "Creator/invertor",
+   "Buyers"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_it] Intellectual property rights holder",
+  "difficulty": "easy",
+  "explanation": "Intellectual property rights are granted to the creator or inventor of the work, giving them exclusive rights over its use for a period of time. Employees, sellers or buyers get rights only if transferred by the creator.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598519",
+  "paper": "2024_02_07_s2",
+  "question": "In E-waste management, from which factors, there comes the exposure variability in electronic waste?",
+  "options": [
+   "Type of E-waste",
+   "Quantity of the Pollutants in air",
+   "Management processes of the air pollution",
+   "Medical waste"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_it] E-waste exposure",
+  "difficulty": "medium",
+  "explanation": "Exposure to e-waste hazards varies mainly with the type of e-waste (what device and which toxic components, e.g. lead, mercury, cadmium), along with how it is processed. Air pollutant quantities and air-pollution management are outcomes rather than the source of variability, and medical waste is a separate category.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598506",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following is commonly used in UNICODE encoding schemes and number system in computer science?",
+  "options": [
+   "UTF-17",
+   "UTF-61",
+   "UTF-8",
+   "UTF-35"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_fund] Unicode encodings",
+  "difficulty": "easy",
+  "explanation": "UTF-8 is the most widely used Unicode encoding scheme (variable length, 1-4 bytes, ASCII-compatible). The other standard encodings are UTF-16 and UTF-32; UTF-17, UTF-61 and UTF-35 do not exist.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598444",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following phase of the compiler, gathers type information and saves it in either the syntax tree or the symbol table, for subsequent use during intermediate code generation?",
+  "options": [
+   "Semantic Analyzer",
+   "Code Analyzer",
+   "Syntax Analyzer",
+   "Lexical Analyzer"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_fund] Compiler phases - semantic analysis",
+  "difficulty": "medium",
+  "explanation": "The semantic analyzer checks the parse tree for semantic consistency (type checking) and gathers type information, storing it in the syntax tree or symbol table for intermediate code generation. The syntax analyzer only builds the parse tree, and the lexical analyzer produces tokens.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598505",
+  "paper": "2024_02_07_s2",
+  "question": "______ has been developed to incorporate all the character of every written language of the world. It provides a unique number for every character, irrespective of device [server, desktop, mob], OS [linux, win] or software application",
+  "options": [
+   "UNICODE",
+   "Binary Code",
+   "ISCII",
+   "ASCII"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_fund] Unicode",
+  "difficulty": "easy",
+  "explanation": "Unicode assigns a unique number (code point) to every character of every written language, regardless of platform, device or program. ASCII covers only 128 English characters and ISCII covers only Indian scripts.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598509",
+  "paper": "2024_02_07_s2",
+  "question": "Unicode in the programming language can be represented using which of the bit format standards in computer science?",
+  "options": [
+   "8-bit",
+   "17-bit",
+   "65-bit",
+   "9-bit"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_fund] Unicode bit formats",
+  "difficulty": "easy",
+  "explanation": "Unicode is commonly represented with UTF-8, an 8-bit (byte-based) encoding format; UTF-16 and UTF-32 are the other standard forms. 17-, 65- and 9-bit formats do not exist for Unicode.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256218",
+  "paper": "2023_06_24_s3",
+  "question": "Who among the following is known as Lokhitwadi?",
+  "options": [
+   "Ishwar Chandra Vidyasagar",
+   "GopalHari Deshmukh",
+   "Rabindranath Tagore",
+   "Ram Mohan Roy"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_teach] Indian social reformers",
+  "difficulty": "medium",
+  "explanation": "Gopal Hari Deshmukh, the 19th-century Maharashtrian social reformer, wrote under the pen name 'Lokhitwadi' through his 'Shatapatre' letters on social reform. Hence option 2.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256220",
+  "paper": "2023_06_24_s3",
+  "question": "For preparing a unit plan, which of the following procedure is followed?\nI. Formation of proper units and sub-units if not prescribed in the syllabus.\nII. Determination of methods of assessment.",
+  "options": [
+   "Both I and II",
+   "Neither I nor II",
+   "Only I",
+   "Only II"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_teach] Unit planning",
+  "difficulty": "easy",
+  "explanation": "A unit plan involves organising content into suitable units and sub-units (when the syllabus does not give them) and deciding the methods of assessment/evaluation for the unit. Both steps are part of the procedure, so option 1.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256221",
+  "paper": "2023_06_24_s3",
+  "question": "David Kolb's model of learning style is based on which type of learning?",
+  "options": [
+   "Inquiry-based learning",
+   "Integrative learning",
+   "Collaborative learning",
+   "Experiential learning"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_teach] Learning styles",
+  "difficulty": "easy",
+  "explanation": "David Kolb's learning-style model rests on his Experiential Learning Theory, a four-stage cycle of concrete experience, reflective observation, abstract conceptualisation and active experimentation. Hence experiential learning.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256216",
+  "paper": "2023_06_24_s3",
+  "question": "Inconsistency in the development of different type of conservation is called _____.",
+  "options": [
+   "Horizontal Decalage",
+   "Meta-cognition",
+   "Selective attention",
+   "Immersion"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_teach] Piaget - conservation",
+  "difficulty": "medium",
+  "explanation": "Piaget used 'horizontal decalage' for the uneven acquisition of conservation tasks - a child conserves number first, then mass, weight and volume later, though the same logic applies. So option 1.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256219",
+  "paper": "2023_06_24_s3",
+  "question": "Heuristic method of teaching science was introduced by_____.",
+  "options": [
+   "William James",
+   "Henry Edward Armstrong",
+   "Lev Vygotsky",
+   "Abraham Maslow"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_teach] Methods of teaching science",
+  "difficulty": "easy",
+  "explanation": "The heuristic (discovery) method, in which the learner finds things out for himself, was introduced by H. E. Armstrong. The word comes from Greek 'heurisko', meaning 'I find out'.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256215",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following statement is correct regarding vision of new-born babies?\nI. Neonates can discriminate between stationary black and white stripe which is 1/8 of an inch wide\nII. By three months babies can see stripes as narrow as 64th of an inch wide",
+  "options": [
+   "Both I and II",
+   "Neither I nor II",
+   "Only I",
+   "Only II"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_teach] Infant perception",
+  "difficulty": "hard",
+  "explanation": "Developmental research (Fantz and others) shows newborns can discriminate black-and-white stripes about 1/8 inch wide, and visual acuity improves rapidly so that around three months infants detect much narrower stripes (about 1/64 inch). Thus both statements are treated as correct.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256217",
+  "paper": "2023_06_24_s3",
+  "question": "In the context of Parenting, which of the following is correctly matched?",
+  "options": [
+   "Clearly communicating parent – Child being less liked",
+   "Power assertive parents – Coercive tactics in peer used by child",
+   "Parents being harsh – Unattractive social behavior of child",
+   "Give and take relationship of parents – Children show same relationship with peer"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_teach] Parenting styles",
+  "difficulty": "medium",
+  "explanation": "Children model the relationships they experience at home: when parents maintain a reciprocal, give-and-take relationship, children show similar cooperative relationships with peers. The other pairings are mismatched (e.g. clear communication leads to well-liked children).",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256222",
+  "paper": "2023_06_24_s3",
+  "question": "Broca's area and wernicke's area are concerned with language. These are the areas of _____.\nI. right hemisphere of brain.\nII. left hemisphere of brain.",
+  "options": [
+   "Only II",
+   "Only I",
+   "Both I and II",
+   "Neither I nor II"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_teach] Brain and language",
+  "difficulty": "easy",
+  "explanation": "Broca's area (speech production) and Wernicke's area (language comprehension) are located in the left cerebral hemisphere in most people. Hence only statement II is correct.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256223",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following is NOT a Neo-Freudian Theory of Development?\nI. Henry Stack Sullivan's Interpersonal Theory\nII. Erik Erikson Theory of Psycho-social Development",
+  "options": [
+   "Only II",
+   "Both I and II",
+   "Neither I nor II",
+   "Only I"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_teach] Neo-Freudian theories",
+  "difficulty": "medium",
+  "explanation": "Neo-Freudians kept Freud's basic ideas but stressed social and cultural factors. Both Harry Stack Sullivan's interpersonal theory and Erik Erikson's psychosocial theory are neo-Freudian, so neither is 'not neo-Freudian' (option 3).",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256224",
+  "paper": "2023_06_24_s3",
+  "question": "Participation in which of the following activities can enable the community to accept a teacher as one of them?\nI. Problems of unhygienic conditions.\nII. Problems of agriculture.",
+  "options": [
+   "Neither I nor II",
+   "Only I",
+   "Both I and II",
+   "Only II"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_teach] Teacher and community",
+  "difficulty": "easy",
+  "explanation": "A teacher who participates in solving the community's real problems - unhygienic conditions as well as agricultural problems - wins its trust and is accepted as one of them. Hence both I and II.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256420",
+  "paper": "2023_06_25_s1",
+  "question": "Considering the benefits to children with disability, which of the following provisions of Sarva Shiksha Abhiyan is correct?\nI. Stipend for girls with disabilities\nII. Braille textbooks",
+  "options": [
+   "Only II",
+   "Only I",
+   "Neither I nor II",
+   "Both I and II"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_teach] Inclusive education - SSA",
+  "difficulty": "easy",
+  "explanation": "Under Sarva Shiksha Abhiyan's inclusive education component, children with special needs receive aids and appliances, Braille/large-print textbooks, and girls with disabilities are given stipends to support their schooling. Hence both are correct.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256422",
+  "paper": "2023_06_25_s1",
+  "question": "Reinforcement strengthens the occurrence of the emitted behaviour in the students. Which of the following is the correct example of positive reinforcement?",
+  "options": [
+   "Teacher assigning high grades.",
+   "Teacher finding loopholes in work.",
+   "Teacher detaining the student after class hours.",
+   "Teacher giving threat of failure."
+  ],
+  "answer": 1,
+  "subtopic": "[cf_teach] Reinforcement",
+  "difficulty": "easy",
+  "explanation": "Positive reinforcement adds a pleasant stimulus after a desired behaviour to increase its occurrence. Awarding high grades is a reward, while finding loopholes, detention and threats are punishments or aversive stimuli.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256423",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following does not come under lower form of writing?",
+  "options": [
+   "Dictation",
+   "Picture composition",
+   "Paragraph writing",
+   "Independent writing"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_teach] Teaching of writing",
+  "difficulty": "hard",
+  "explanation": "Lower (controlled/guided) forms of writing include copying, dictation, picture composition and guided writing. Paragraph writing is treated as a higher form of composition requiring organisation of ideas, so per the official key it does not belong to the lower forms.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256417",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following is NOT correct in regard of Piagetian perspective of play?",
+  "options": [
+   "Play is not possible for child without toys",
+   "The play is something which transcends both culture and time",
+   "Play have biological foundation",
+   "The play is something related to nature"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_teach] Piaget - play",
+  "difficulty": "medium",
+  "explanation": "Piaget saw play as natural, biologically based and universal across cultures and ages, arising from assimilation. Children can play without toys (pretend and imaginative play), so the claim that play is impossible without toys is not correct.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256418",
+  "paper": "2023_06_25_s1",
+  "question": "Which activity children’s do to expand their vocabulary?\nI. Fast mapping\nII. Sorting",
+  "options": [
+   "Only I",
+   "Only II",
+   "Both I and II",
+   "Neither I nor II"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_teach] Language development",
+  "difficulty": "medium",
+  "explanation": "Fast mapping is the process by which children quickly connect a new word to its meaning after only one or two exposures, rapidly expanding vocabulary. Sorting is a classification skill, not a vocabulary-building process, so only I.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256425",
+  "paper": "2023_06_25_s1",
+  "question": "In which method of learning by work, student themselves decide objective and prepare plan for an activity?",
+  "options": [
+   "Project method",
+   "Excursion method",
+   "Observation method",
+   "Demonstration method"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_teach] Project method",
+  "difficulty": "easy",
+  "explanation": "In Kilpatrick's project method, students themselves purpose (set the objective), plan, execute and judge a purposeful activity, learning by doing. Hence the project method.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256419",
+  "paper": "2023_06_25_s1",
+  "question": "The ‘Kesari’ newspaper was published in which language?",
+  "options": [
+   "Marathi",
+   "Odiya",
+   "Bengali",
+   "Hindi"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_teach] Indian education history",
+  "difficulty": "easy",
+  "explanation": "'Kesari' was started by Bal Gangadhar Tilak in 1881 in Marathi; its English counterpart was 'Mahratta'. Hence Marathi.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256424",
+  "paper": "2023_06_25_s1",
+  "question": "According to the Indian Penal Code, an offence is not punishable for a child below ______ of age.",
+  "options": [
+   "10 years",
+   "5 years",
+   "7 years",
+   "12 years"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_teach] Child rights / law",
+  "difficulty": "easy",
+  "explanation": "Section 82 of the Indian Penal Code (doli incapax) states that nothing is an offence which is done by a child under seven years of age. Hence 7 years.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256426",
+  "paper": "2023_06_25_s1",
+  "question": "Parent and family involvement decreases student’s ______.\nI. Achievement\nII. Success",
+  "options": [
+   "Only I",
+   "Both I and II",
+   "Neither I nor II",
+   "Only II"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_teach] Home-school partnership",
+  "difficulty": "easy",
+  "explanation": "Research consistently shows that parent and family involvement increases students' achievement and success; it does not decrease them. So neither statement is correct.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256421",
+  "paper": "2023_06_25_s1",
+  "question": "Read the following characteristics of one of the piaget’s stages of cognitive development given as A, B and C. Select the correct stage from the options.\nA. Complete generality of thought.\nB. Development of strong idealism.\nC. Propositional thinking.",
+  "options": [
+   "Concrete operations stage",
+   "Preoperational stage",
+   "Formal operations stage",
+   "Sensorimotor"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_teach] Piaget - stages",
+  "difficulty": "easy",
+  "explanation": "Generality of thought, idealism and propositional (hypothetico-deductive) reasoning are characteristics of the formal operational stage (11+ years), when adolescents think abstractly.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256688",
+  "paper": "2023_06_25_s2",
+  "question": "Which of the following ailments is NOT caused by obesity?",
+  "options": [
+   "High blood pressure",
+   "AIDS",
+   "Orthopedic problem",
+   "Diabetes"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_teach] Health and nutrition",
+  "difficulty": "easy",
+  "explanation": "Obesity is a risk factor for lifestyle disorders such as high blood pressure, diabetes and joint/orthopaedic problems. AIDS is caused by the HIV virus, not by obesity.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256691",
+  "paper": "2023_06_25_s2",
+  "question": "When learning is meaning making, then students are the meaning makers. The learning process in this context is ________.",
+  "options": [
+   "student-centred",
+   "teacher-centred",
+   "society-centred",
+   "subject-centred"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_teach] Constructivism",
+  "difficulty": "easy",
+  "explanation": "When learners construct meaning themselves, the process is constructivist and student-centred; the teacher only facilitates. Hence option 1.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256694",
+  "paper": "2023_06_25_s2",
+  "question": "Which of the following statement is NOT correctly matched?",
+  "options": [
+   "Child with special need - should be seated near the board",
+   "Performing art - every child should have clear view of board",
+   "Group work - sitting arrangement should be in clump or clustered",
+   "Group discussion - teacher should have eye contact with every child"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_teach] Classroom management",
+  "difficulty": "medium",
+  "explanation": "Performing arts need open space where children can move and see one another, not a clear view of the board. The other pairings - CWSN seated near the board, clustered seating for group work, eye contact in discussion - are correct.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256695",
+  "paper": "2023_06_25_s2",
+  "question": "Integrated child development service provides nutritious food for children who are ______.",
+  "options": [
+   "School going",
+   "Schooldrop-out",
+   "Below age of six years and too young to go to school",
+   "Girls below 12 years of age"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_teach] ICDS / child welfare",
+  "difficulty": "easy",
+  "explanation": "The Integrated Child Development Services scheme provides supplementary nutrition through anganwadis to children below six years (too young for school), and to pregnant and lactating mothers.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256696",
+  "paper": "2023_06_25_s2",
+  "question": "Which of the following is the activity related to community services?",
+  "options": [
+   "Collect picture about different musical instrument and dances",
+   "Collect information about handicrafts of different place",
+   "Participating in decoration at the time of events",
+   "Explore food habit and living style of the people of different state"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_teach] Community service activities",
+  "difficulty": "easy",
+  "explanation": "Helping with decoration during school or community events is a service activity contributing to the community. The other options are information-collection or project activities.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256687",
+  "paper": "2023_06_25_s2",
+  "question": "Auditory and visual co-ordination system is present in child from ______.",
+  "options": [
+   "Birth",
+   "3 weeks of birth",
+   "6 days of birth",
+   "6 months of birth"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_teach] Infant perception",
+  "difficulty": "hard",
+  "explanation": "Newborns turn their eyes and head towards a sound source, showing that auditory-visual coordination is present from birth, though it becomes more refined over the following months.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256690",
+  "paper": "2023_06_25_s2",
+  "question": "All of the given are the methods of Information and Communication Technology - based assessment except ______.",
+  "options": [
+   "Concept map construction",
+   "Writing reflection journal on paper",
+   "Multimedia program development",
+   "Computer-based testing"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_teach] ICT-based assessment",
+  "difficulty": "medium",
+  "explanation": "Concept-map construction with software, multimedia program development and computer-based testing all use ICT. Writing a reflection journal on paper is a traditional, non-ICT method.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256692",
+  "paper": "2023_06_25_s2",
+  "question": "Which of the following is correctly matched?\nI. A child calling all four legged animals doggie – under-generalization\nII. A child using word 'duck' for only his toy duck – over-generalizing",
+  "options": [
+   "Both I and II",
+   "Neither I nor II",
+   "Only II",
+   "Only I"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_teach] Language development",
+  "difficulty": "medium",
+  "explanation": "Calling all four-legged animals 'doggie' is over-generalisation (overextension), while using 'duck' only for one's own toy duck is under-generalisation (underextension). Both pairs are wrongly matched, so neither is correct.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256689",
+  "paper": "2023_06_25_s2",
+  "question": "The philosophy of inclusive education was added in District Primary Education Programme (DPEP) in ________ year.",
+  "options": [
+   "1966",
+   "1997",
+   "2012",
+   "1950"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_teach] Inclusive education - policy",
+  "difficulty": "medium",
+  "explanation": "The District Primary Education Programme (launched 1994) added an Integrated Education for Disabled Children/inclusive education component in 1997. Hence 1997.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256693",
+  "paper": "2023_06_25_s2",
+  "question": "The given statement is referring to which type of identity status in adolescents?\n'Experimenting and actively searching for alternatives in their struggle to establish their identity.'",
+  "options": [
+   "Identity moratorium",
+   "Identity diffusion",
+   "Identity foreclosure",
+   "Identity achievement"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_teach] Marcia's identity status",
+  "difficulty": "easy",
+  "explanation": "In James Marcia's model, identity moratorium is the status of adolescents who are in crisis - actively exploring and experimenting with alternatives - but have not yet made commitments.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598531",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following stage is used for child cognition development at the age from 2 years to 7 years?",
+  "options": [
+   "Sensori-motor",
+   "Pre-operational",
+   "Formal operational",
+   "Concrete operational"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_teach] Piaget - stages",
+  "difficulty": "easy",
+  "explanation": "Piaget's pre-operational stage spans roughly 2 to 7 years, marked by symbolic thought, egocentrism and lack of conservation. Hence option 2.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598534",
+  "paper": "2024_02_07_s2",
+  "question": "The Government of India adopted the National Policy for Empowerment of Women in ______.",
+  "options": [
+   "2001",
+   "2005",
+   "2000",
+   "2003"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_teach] Women empowerment policy",
+  "difficulty": "easy",
+  "explanation": "The Government of India adopted the National Policy for the Empowerment of Women in 2001, which was also declared the Year of Women's Empowerment.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598535",
+  "paper": "2024_02_07_s2",
+  "question": "In which of the following approach Pedagogy indicate learning by doing based on engagement of students through different activities?\nI. Teacher centered approach\nII. Student centered approach",
+  "options": [
+   "Both I and II",
+   "Only I",
+   "Neither I nor II",
+   "Only II"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_teach] Pedagogical approaches",
+  "difficulty": "easy",
+  "explanation": "Learning by doing through varied activities that actively engage learners is the hallmark of the student-centred (constructivist) approach. The teacher-centred approach relies mainly on lecture and transmission.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598537",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following approach of Assessment for Learning is the assessment of classmates on the response and performance of the learner?",
+  "options": [
+   "Teacher-led assessment",
+   "Learner self-assessment",
+   "Computer-based assessment",
+   "Peer assessment"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_teach] Assessment for learning",
+  "difficulty": "easy",
+  "explanation": "Peer assessment is when classmates evaluate a learner's responses and performance, giving feedback to one another. Self-assessment is by the learner himself and teacher-led assessment is by the teacher.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598532",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following language was included through the 71st constitutional amendment (1992) in 8th schedule of the Indian Constitution?",
+  "options": [
+   "Bengali",
+   "Nepali",
+   "Boro",
+   "Gujarati"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_teach] Languages in the Constitution",
+  "difficulty": "medium",
+  "explanation": "The 71st Constitutional Amendment (1992) added Konkani, Manipuri and Nepali to the Eighth Schedule. Boro was added later by the 92nd Amendment (2003), and Bengali and Gujarati were original languages.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598540",
+  "paper": "2024_02_07_s2",
+  "question": "Art education is the area of learning that is based upon which of the following?\nI. The visual, tangible art\nII. The performing arts",
+  "options": [
+   "Only I",
+   "Both I and II",
+   "Neither I nor II",
+   "Only II"
+  ],
+  "answer": 2,
+  "subtopic": "[cf_teach] Art education",
+  "difficulty": "easy",
+  "explanation": "Art education covers both the visual/tangible arts (drawing, painting, sculpture, crafts) and the performing arts (music, dance, drama). Hence both I and II.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598533",
+  "paper": "2024_02_07_s2",
+  "question": "In which of the following approach to learning and teaching, both the teacher and the students perform activities strictly confined to the prescribed contents/ textbooks in the subject being taught?",
+  "options": [
+   "Learner centered",
+   "Teacher-centered",
+   "Subject-centered",
+   "Discipline centered"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_teach] Approaches to teaching",
+  "difficulty": "medium",
+  "explanation": "In the subject-centred approach, teaching and learning activities are strictly confined to the prescribed content or textbook of the subject. Learner-centred approaches go beyond the textbook to learners' needs and experiences.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598539",
+  "paper": "2024_02_07_s2",
+  "question": "Piaget divided which of the following domain of development into four stages: The Sensorimotor Stage, The Pre-Operational Stage, Concrete Operational Stage and The Formal Operational Stage?",
+  "options": [
+   "Moral development",
+   "Physical and motor development",
+   "Cognitive development",
+   "Socio-emotional development"
+  ],
+  "answer": 3,
+  "subtopic": "[cf_teach] Piaget - cognitive development",
+  "difficulty": "easy",
+  "explanation": "Piaget's four stages - sensorimotor, pre-operational, concrete operational and formal operational - describe cognitive (intellectual) development. Hence option 3.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598538",
+  "paper": "2024_02_07_s2",
+  "question": "Match the following Classification Of Cognitive Disability (Mental Retardation) with their range of intelligence quotient (IQ).\nSeverity Levels | Range of IQ\nI. Profound Mentally Retarded | 1. 20-34\nII. Mild Mentally Retarded | 2. Below 20\nIII. Severe Mentally Retarded | 3. 50-75",
+  "options": [
+   "I-2, II-3, III-1",
+   "I-1, II-3, III-2",
+   "I-3, II-2, III-1",
+   "I-2, II-1, III-3"
+  ],
+  "answer": 1,
+  "subtopic": "[cf_teach] Intellectual disability",
+  "difficulty": "medium",
+  "explanation": "Standard IQ ranges are: mild about 50/55-70/75, moderate 35-49, severe 20-34 and profound below 20. So profound = below 20, mild = 50-75, severe = 20-34, giving I-2, II-3, III-1.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680598536",
+  "paper": "2024_02_07_s2",
+  "question": "In the types of Learning resources, the term ______ denotes a partially three-dimensional, full-size replica or scale model of a landscape typically showing historical events, nature scenes or cityscapes, for purposes of education or entertainment.",
+  "options": [
+   "cartoons",
+   "Globes",
+   "realia",
+   "diorama"
+  ],
+  "answer": 4,
+  "subtopic": "[cf_teach] Learning resources",
+  "difficulty": "easy",
+  "explanation": "A diorama is a three-dimensional full-size or scale model of a scene (historical event, nature or cityscape), often displayed in museums. Realia are real objects, and globes are spherical maps.",
+  "key_doubt": false
+ }
+]
