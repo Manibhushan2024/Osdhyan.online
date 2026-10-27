@@ -1,0 +1,1497 @@
+[
+ {
+  "chapter_key": "ga_history",
+  "subtopic": "Ancient history – Indus Valley",
+  "difficulty": "easy",
+  "question_en": "At which Harappan site was a dockyard discovered, showing the civilisation's sea trade?",
+  "options": [
+   {
+    "en": "Kalibangan"
+   },
+   {
+    "en": "Banawali"
+   },
+   {
+    "en": "Rakhigarhi"
+   },
+   {
+    "en": "Lothal"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Lothal in Gujarat (excavated by S. R. Rao) has a brick dockyard. It linked Harappan trade with West Asia.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ga_history",
+  "subtopic": "Ancient history – Buddhism",
+  "difficulty": "medium",
+  "question_en": "The Fourth Buddhist Council was held in Kashmir under the patronage of which ruler?",
+  "options": [
+   {
+    "en": "Ashoka"
+   },
+   {
+    "en": "Ajatashatru"
+   },
+   {
+    "en": "Kanishka"
+   },
+   {
+    "en": "Kalashoka"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The Fourth Council met at Kundalvana in Kashmir under Kanishka, presided over by Vasumitra. Buddhism split into Hinayana and Mahayana after it.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ga_history",
+  "subtopic": "Ancient history – Mauryas",
+  "difficulty": "hard",
+  "question_en": "Which of Ashoka's edicts describes the Kalinga War and his remorse over it?",
+  "options": [
+   {
+    "en": "Major Rock Edict XIII"
+   },
+   {
+    "en": "Major Rock Edict II"
+   },
+   {
+    "en": "Pillar Edict VII"
+   },
+   {
+    "en": "Minor Rock Edict I"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Major Rock Edict XIII records the Kalinga War (c. 261 BCE) and Ashoka's turn to Dhamma. It also mentions Greek kings to whom envoys were sent.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ga_history",
+  "subtopic": "Ancient history – Guptas",
+  "difficulty": "medium",
+  "question_en": "The Prayaga Prashasti (Allahabad Pillar inscription) praising Samudragupta was composed by:",
+  "options": [
+   {
+    "en": "Kalidasa"
+   },
+   {
+    "en": "Harisena"
+   },
+   {
+    "en": "Banabhatta"
+   },
+   {
+    "en": "Vishakhadatta"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Harisena, court poet of Samudragupta, composed the Prayaga Prashasti. It lists Samudragupta's conquests in north and south India.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ga_history",
+  "subtopic": "Ancient history – Sangam age",
+  "difficulty": "medium",
+  "question_en": "The three Sangam assemblies of Tamil poets were held under the patronage of which dynasty?",
+  "options": [
+   {
+    "en": "Cholas"
+   },
+   {
+    "en": "Pandyas"
+   },
+   {
+    "en": "Cheras"
+   },
+   {
+    "en": "Pallavas"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Tradition says the three Sangams were held at Madurai and nearby under Pandya kings. Sangam literature is the main source for early Tamil history.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ga_history",
+  "subtopic": "Medieval history – Delhi Sultanate",
+  "difficulty": "medium",
+  "question_en": "Which is the correct chronological order of the dynasties of the Delhi Sultanate?",
+  "options": [
+   {
+    "en": "Mamluk, Khalji, Tughluq, Sayyid, Lodi"
+   },
+   {
+    "en": "Mamluk, Tughluq, Khalji, Lodi, Sayyid"
+   },
+   {
+    "en": "Khalji, Mamluk, Tughluq, Sayyid, Lodi"
+   },
+   {
+    "en": "Mamluk, Khalji, Sayyid, Tughluq, Lodi"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The Sultanate ran from the Mamluks (1206) to the Khaljis, Tughluqs, Sayyids and Lodis. It ended when Babur defeated Ibrahim Lodi at Panipat in 1526.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ga_history",
+  "subtopic": "Medieval history – Tughluq dynasty",
+  "difficulty": "easy",
+  "question_en": "Which Delhi Sultan introduced token currency, issuing bronze/copper coins to be valued at par with silver coins?",
+  "options": [
+   {
+    "en": "Alauddin Khalji"
+   },
+   {
+    "en": "Firoz Shah Tughluq"
+   },
+   {
+    "en": "Iltutmish"
+   },
+   {
+    "en": "Muhammad bin Tughluq"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Muhammad bin Tughluq issued token coins around 1329–30. The scheme failed because the coins were easily forged, and it was withdrawn.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ga_history",
+  "subtopic": "Medieval history – Tughluq dynasty",
+  "difficulty": "hard",
+  "question_en": "Which Sultan set up the Diwan-i-Khairat, a department to help the poor and arrange marriages of their daughters?",
+  "options": [
+   {
+    "en": "Ghiyasuddin Tughluq"
+   },
+   {
+    "en": "Muhammad bin Tughluq"
+   },
+   {
+    "en": "Firoz Shah Tughluq"
+   },
+   {
+    "en": "Sikandar Lodi"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Firoz Shah Tughluq created the Diwan-i-Khairat (charity) and a separate department of slaves. He is also known for canals and new towns such as Hisar.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ga_history",
+  "subtopic": "Medieval history – Mughals",
+  "difficulty": "medium",
+  "question_en": "In the Second Battle of Panipat (1556), Akbar's forces under Bairam Khan defeated:",
+  "options": [
+   {
+    "en": "Ibrahim Lodi"
+   },
+   {
+    "en": "Sher Shah Suri"
+   },
+   {
+    "en": "Hemu"
+   },
+   {
+    "en": "Rana Pratap"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "In 1556 Akbar's army led by Bairam Khan defeated Hemu, the general of Adil Shah Sur. The victory secured Mughal rule in north India.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ga_history",
+  "subtopic": "Medieval history – Mughal architecture",
+  "difficulty": "easy",
+  "question_en": "The Buland Darwaza at Fatehpur Sikri was built by Akbar to commemorate his victory over:",
+  "options": [
+   {
+    "en": "Bengal"
+   },
+   {
+    "en": "Gujarat"
+   },
+   {
+    "en": "Kashmir"
+   },
+   {
+    "en": "Mewar"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Akbar built the Buland Darwaza to mark his conquest of Gujarat (1573). It is the main gateway of the Jama Masjid at Fatehpur Sikri.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ga_history",
+  "subtopic": "Medieval history – Vijayanagar",
+  "difficulty": "medium",
+  "question_en": "'Amuktamalyada', a Telugu work on statecraft and devotion, was written by which Vijayanagar ruler?",
+  "options": [
+   {
+    "en": "Harihara I"
+   },
+   {
+    "en": "Bukka Raya I"
+   },
+   {
+    "en": "Achyuta Raya"
+   },
+   {
+    "en": "Krishnadeva Raya"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Krishnadeva Raya of the Tuluva dynasty wrote Amuktamalyada in Telugu. His court had the eight poets known as the Ashtadiggajas.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ga_history",
+  "subtopic": "Medieval history – Marathas",
+  "difficulty": "medium",
+  "question_en": "Shivaji was crowned Chhatrapati in 1674 at which fort?",
+  "options": [
+   {
+    "en": "Pratapgad"
+   },
+   {
+    "en": "Sinhagad"
+   },
+   {
+    "en": "Raigad"
+   },
+   {
+    "en": "Purandar"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Shivaji's coronation took place at Raigad in June 1674. Raigad served as the Maratha capital after that.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ga_history",
+  "subtopic": "Medieval history – Sikh Gurus",
+  "difficulty": "medium",
+  "question_en": "The Adi Granth was compiled in 1604 by which Sikh Guru?",
+  "options": [
+   {
+    "en": "Guru Nanak Dev"
+   },
+   {
+    "en": "Guru Ram Das"
+   },
+   {
+    "en": "Guru Gobind Singh"
+   },
+   {
+    "en": "Guru Arjan Dev"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Guru Arjan Dev, the fifth Guru, compiled the Adi Granth and installed it at Harmandir Sahib. Guru Gobind Singh later declared the Granth the eternal Guru.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ga_history",
+  "subtopic": "Modern history – Anglo-Mysore wars",
+  "difficulty": "hard",
+  "question_en": "The Second Anglo-Mysore War ended with which treaty between Tipu Sultan and the English in 1784?",
+  "options": [
+   {
+    "en": "Treaty of Madras"
+   },
+   {
+    "en": "Treaty of Mangalore"
+   },
+   {
+    "en": "Treaty of Seringapatam"
+   },
+   {
+    "en": "Treaty of Salbai"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The Treaty of Mangalore (1784) restored mutual conquests and ended the Second Anglo-Mysore War. The Treaty of Madras ended the first war and Seringapatam (1792) the third.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ga_history",
+  "subtopic": "Modern history – British expansion",
+  "difficulty": "hard",
+  "question_en": "Who commanded the East India Company's army in the Battle of Buxar (1764)?",
+  "options": [
+   {
+    "en": "Robert Clive"
+   },
+   {
+    "en": "Hector Munro"
+   },
+   {
+    "en": "Eyre Coote"
+   },
+   {
+    "en": "Arthur Wellesley"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Major Hector Munro defeated the combined forces of Mir Qasim, Shuja-ud-Daulah and Shah Alam II at Buxar. The victory led to the grant of Diwani in 1765.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ga_history",
+  "subtopic": "Modern history – Governors-General",
+  "difficulty": "medium",
+  "question_en": "Match the Governors-General with the measures of their time:\n(a) Lord Cornwallis  (b) Lord William Bentinck  (c) Lord Dalhousie  (d) Lord Ripon\n(i) Local self-government resolution  (ii) First railway line  (iii) Abolition of Sati  (iv) Permanent Settlement",
+  "options": [
+   {
+    "en": "a-iii, b-iv, c-i, d-ii"
+   },
+   {
+    "en": "a-iv, b-iii, c-ii, d-i"
+   },
+   {
+    "en": "a-iv, b-ii, c-iii, d-i"
+   },
+   {
+    "en": "a-ii, b-iii, c-iv, d-i"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Cornwallis brought the Permanent Settlement (1793), Bentinck abolished Sati (1829), Dalhousie opened the first railway (1853) and Ripon passed the local self-government resolution (1882).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ga_history",
+  "subtopic": "Modern history – constitutional acts",
+  "difficulty": "easy",
+  "question_en": "Separate electorates for Muslims were first introduced by which Act?",
+  "options": [
+   {
+    "en": "Indian Councils Act, 1892"
+   },
+   {
+    "en": "Indian Councils Act, 1909"
+   },
+   {
+    "en": "Government of India Act, 1919"
+   },
+   {
+    "en": "Government of India Act, 1935"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The Indian Councils Act, 1909 (Morley–Minto Reforms) gave Muslims separate electorates. Lord Minto was the Viceroy at the time.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ga_history",
+  "subtopic": "Modern history – Revolt of 1857",
+  "difficulty": "easy",
+  "question_en": "Who led the Revolt of 1857 at Lucknow?",
+  "options": [
+   {
+    "en": "Rani Lakshmibai"
+   },
+   {
+    "en": "Kunwar Singh"
+   },
+   {
+    "en": "Nana Saheb"
+   },
+   {
+    "en": "Begum Hazrat Mahal"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Begum Hazrat Mahal led the revolt in Lucknow (Awadh). Rani Lakshmibai led at Jhansi, Kunwar Singh in Bihar and Nana Saheb at Kanpur.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ga_history",
+  "subtopic": "Modern history – socio-religious reform",
+  "difficulty": "easy",
+  "question_en": "The Satyashodhak Samaj (1873), which worked for the rights of lower castes, was founded by:",
+  "options": [
+   {
+    "en": "Jyotirao Phule"
+   },
+   {
+    "en": "Dayananda Saraswati"
+   },
+   {
+    "en": "Narayana Guru"
+   },
+   {
+    "en": "B. R. Ambedkar"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Jyotirao Phule founded the Satyashodhak Samaj in Pune in 1873. He also wrote 'Gulamgiri' against caste oppression.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ga_history",
+  "subtopic": "Modern history – tribal movements",
+  "difficulty": "medium",
+  "question_en": "The Santhal Rebellion (Hul) of 1855–56 was led by:",
+  "options": [
+   {
+    "en": "Sidhu and Kanhu"
+   },
+   {
+    "en": "Birsa Munda"
+   },
+   {
+    "en": "Tomma Dora"
+   },
+   {
+    "en": "Alluri Sitarama Raju"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Brothers Sidhu and Kanhu Murmu led the Santhal Hul against zamindars, moneylenders and the British. The Santhal Parganas district was created after it.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ga_history",
+  "subtopic": "Modern history – Congress sessions",
+  "difficulty": "easy",
+  "question_en": "The 'Purna Swaraj' resolution was adopted by the Congress at which session, presided over by Jawaharlal Nehru?",
+  "options": [
+   {
+    "en": "Karachi, 1931"
+   },
+   {
+    "en": "Lahore, 1929"
+   },
+   {
+    "en": "Calcutta, 1928"
+   },
+   {
+    "en": "Lucknow, 1916"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The Lahore session of December 1929 adopted Purna Swaraj as the goal. 26 January 1930 was then observed as Independence Day.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ga_history",
+  "subtopic": "Modern history – Gandhian movements",
+  "difficulty": "hard",
+  "question_en": "Gandhiji undertook his first hunger strike in India during which movement?",
+  "options": [
+   {
+    "en": "Champaran Satyagraha, 1917"
+   },
+   {
+    "en": "Kheda Satyagraha, 1918"
+   },
+   {
+    "en": "Ahmedabad mill strike, 1918"
+   },
+   {
+    "en": "Rowlatt Satyagraha, 1919"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Gandhiji fasted during the Ahmedabad mill strike (1918) to support the workers' wage demand. Champaran was his first civil disobedience in India.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ga_history",
+  "subtopic": "Modern history – revolutionaries",
+  "difficulty": "medium",
+  "question_en": "The Kakori train action of 1925 was carried out by members of which organisation?",
+  "options": [
+   {
+    "en": "Hindustan Republican Association"
+   },
+   {
+    "en": "Ghadar Party"
+   },
+   {
+    "en": "Anushilan Samiti"
+   },
+   {
+    "en": "Abhinav Bharat"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Ram Prasad Bismil, Ashfaqulla Khan and others of the HRA looted the train at Kakori. In 1928 the HRA became the Hindustan Socialist Republican Association.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ga_history",
+  "subtopic": "Modern history – Partition 1947",
+  "difficulty": "medium",
+  "question_en": "Who chaired the Boundary Commissions that drew the India–Pakistan border in 1947?",
+  "options": [
+   {
+    "en": "Cyril Radcliffe"
+   },
+   {
+    "en": "Stafford Cripps"
+   },
+   {
+    "en": "Pethick-Lawrence"
+   },
+   {
+    "en": "Lord Ismay"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Sir Cyril Radcliffe chaired the Punjab and Bengal Boundary Commissions. The 'Radcliffe Line' was made public on 17 August 1947.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ga_history",
+  "subtopic": "Modern history – post-independence",
+  "difficulty": "easy",
+  "question_en": "Which was the first state formed on a linguistic basis, in 1953?",
+  "options": [
+   {
+    "en": "Kerala"
+   },
+   {
+    "en": "Maharashtra"
+   },
+   {
+    "en": "Andhra State"
+   },
+   {
+    "en": "Gujarat"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Andhra State was created on 1 October 1953 after Potti Sriramulu died on fast. This led to the States Reorganisation Commission under Fazl Ali.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ga_history",
+  "subtopic": "Art & culture – classical dance",
+  "difficulty": "medium",
+  "question_en": "Guru Kelucharan Mohapatra (1926–2004) was a famous exponent of which classical dance?",
+  "options": [
+   {
+    "en": "Kathak"
+   },
+   {
+    "en": "Odissi"
+   },
+   {
+    "en": "Manipuri"
+   },
+   {
+    "en": "Kuchipudi"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Kelucharan Mohapatra revived and popularised Odissi of Odisha. He received the Padma Vibhushan in 2000.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ga_history",
+  "subtopic": "Art & culture – classical dance",
+  "difficulty": "medium",
+  "question_en": "Sattriya, recognised as a classical dance, originated in the monasteries of which state?",
+  "options": [
+   {
+    "en": "Assam"
+   },
+   {
+    "en": "Manipur"
+   },
+   {
+    "en": "Odisha"
+   },
+   {
+    "en": "West Bengal"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Sattriya was introduced by the Vaishnava saint Srimanta Sankardev in the sattras (monasteries) of Assam. The Sangeet Natak Akademi recognised it as classical in 2000.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ga_history",
+  "subtopic": "Art & culture – folk dances",
+  "difficulty": "easy",
+  "question_en": "Match the folk dances with their states:\n(a) Lavani  (b) Giddha  (c) Ghoomar  (d) Bihu\n(i) Assam  (ii) Rajasthan  (iii) Punjab  (iv) Maharashtra",
+  "options": [
+   {
+    "en": "a-iii, b-iv, c-ii, d-i"
+   },
+   {
+    "en": "a-iv, b-ii, c-iii, d-i"
+   },
+   {
+    "en": "a-ii, b-iii, c-iv, d-i"
+   },
+   {
+    "en": "a-iv, b-iii, c-ii, d-i"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Lavani is from Maharashtra, Giddha from Punjab, Ghoomar from Rajasthan and Bihu from Assam. Folk dances by state are a regular DSSSB topic.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ga_history",
+  "subtopic": "Art & culture – musicians",
+  "difficulty": "easy",
+  "question_en": "Ustad Amjad Ali Khan is a renowned player of which instrument?",
+  "options": [
+   {
+    "en": "Sarod"
+   },
+   {
+    "en": "Sitar"
+   },
+   {
+    "en": "Santoor"
+   },
+   {
+    "en": "Shehnai"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Amjad Ali Khan is a sarod maestro of the Senia Bangash gharana. He received the Padma Vibhushan in 2001.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ga_history",
+  "subtopic": "Art & culture – temple architecture",
+  "difficulty": "medium",
+  "question_en": "The Sun Temple at Konark was built by Narasimhadeva I of which dynasty?",
+  "options": [
+   {
+    "en": "Chandela"
+   },
+   {
+    "en": "Pallava"
+   },
+   {
+    "en": "Somavamshi"
+   },
+   {
+    "en": "Eastern Ganga"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Narasimhadeva I of the Eastern Ganga dynasty built Konark in the 13th century. It is shaped as the Sun god's chariot and is a UNESCO site.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ga_history",
+  "subtopic": "Art & culture – cave architecture",
+  "difficulty": "hard",
+  "question_en": "The rock-cut Kailasa temple (Cave 16) at Ellora was built under which dynasty?",
+  "options": [
+   {
+    "en": "Rashtrakuta"
+   },
+   {
+    "en": "Chalukya"
+   },
+   {
+    "en": "Pallava"
+   },
+   {
+    "en": "Satavahana"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Rashtrakuta king Krishna I built the Kailasa temple, carved from a single rock. Ellora has Buddhist, Hindu and Jain caves.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ga_history",
+  "subtopic": "Heritage – UNESCO sites in India",
+  "difficulty": "medium",
+  "question_en": "The Ramappa (Rudreshwara) Temple, a UNESCO World Heritage Site since 2021, is located in:",
+  "options": [
+   {
+    "en": "Telangana"
+   },
+   {
+    "en": "Karnataka"
+   },
+   {
+    "en": "Andhra Pradesh"
+   },
+   {
+    "en": "Odisha"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The Ramappa Temple at Palampet in Mulugu district, Telangana was built under the Kakatiyas. It was inscribed in 2021, the same year as Dholavira.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ga_history",
+  "subtopic": "Art & culture – fairs & festivals",
+  "difficulty": "easy",
+  "question_en": "The Hornbill Festival, held every December, is celebrated in which state?",
+  "options": [
+   {
+    "en": "Nagaland"
+   },
+   {
+    "en": "Mizoram"
+   },
+   {
+    "en": "Manipur"
+   },
+   {
+    "en": "Arunachal Pradesh"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The Hornbill Festival is held at Kisama near Kohima, Nagaland from 1 to 10 December. It showcases the culture of the Naga tribes.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ga_history",
+  "subtopic": "Art & culture – painting schools",
+  "difficulty": "hard",
+  "question_en": "'Bani Thani', often called the Indian Mona Lisa, belongs to which school of painting?",
+  "options": [
+   {
+    "en": "Kangra"
+   },
+   {
+    "en": "Basohli"
+   },
+   {
+    "en": "Kishangarh"
+   },
+   {
+    "en": "Mewar"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Bani Thani was painted by Nihal Chand in the Kishangarh school of Rajasthan under Raja Sawant Singh. A postage stamp on it was issued in 1973.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ga_history",
+  "subtopic": "Art & culture – Sanskrit literature",
+  "difficulty": "medium",
+  "question_en": "'Mudrarakshasa', a Sanskrit play about Chandragupta Maurya's rise to power, was written by:",
+  "options": [
+   {
+    "en": "Kalidasa"
+   },
+   {
+    "en": "Vishakhadatta"
+   },
+   {
+    "en": "Bhasa"
+   },
+   {
+    "en": "Shudraka"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Vishakhadatta wrote Mudrarakshasa, which shows Chanakya's plans against the Nanda minister Rakshasa. Shudraka wrote Mrichchhakatika.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ga_polity",
+  "subtopic": "Polity – Constituent Assembly",
+  "difficulty": "medium",
+  "question_en": "Who presided over the first meeting of the Constituent Assembly on 9 December 1946 as its temporary President?",
+  "options": [
+   {
+    "en": "Sachchidananda Sinha"
+   },
+   {
+    "en": "Rajendra Prasad"
+   },
+   {
+    "en": "H. C. Mukherjee"
+   },
+   {
+    "en": "G. V. Mavalankar"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Dr Sachchidananda Sinha, the oldest member, was temporary President. Dr Rajendra Prasad was elected permanent President on 11 December 1946.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ga_polity",
+  "subtopic": "Polity – Preamble",
+  "difficulty": "easy",
+  "question_en": "The Objectives Resolution, which later became the basis of the Preamble, was moved in the Constituent Assembly by:",
+  "options": [
+   {
+    "en": "B. R. Ambedkar"
+   },
+   {
+    "en": "Jawaharlal Nehru"
+   },
+   {
+    "en": "Vallabhbhai Patel"
+   },
+   {
+    "en": "Rajendra Prasad"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Nehru moved the Objectives Resolution on 13 December 1946 and it was adopted on 22 January 1947. Its ideals were reflected in the Preamble.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ga_polity",
+  "subtopic": "Polity – borrowed features",
+  "difficulty": "medium",
+  "question_en": "Match the features of the Constitution with their sources:\n(a) Judicial review  (b) Directive Principles  (c) Fundamental Duties  (d) Concurrent List\n(i) Australia  (ii) USSR  (iii) Ireland  (iv) USA",
+  "options": [
+   {
+    "en": "a-iii, b-iv, c-ii, d-i"
+   },
+   {
+    "en": "a-iv, b-ii, c-iii, d-i"
+   },
+   {
+    "en": "a-iv, b-iii, c-i, d-ii"
+   },
+   {
+    "en": "a-iv, b-iii, c-ii, d-i"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Judicial review came from the USA, DPSP from Ireland, Fundamental Duties from the former USSR and the Concurrent List from Australia.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ga_polity",
+  "subtopic": "Polity – schedules",
+  "difficulty": "easy",
+  "question_en": "Which Schedule of the Constitution lists the 22 recognised languages?",
+  "options": [
+   {
+    "en": "Seventh Schedule"
+   },
+   {
+    "en": "Eighth Schedule"
+   },
+   {
+    "en": "Fifth Schedule"
+   },
+   {
+    "en": "Ninth Schedule"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The Eighth Schedule lists 22 languages. The last four (Bodo, Dogri, Maithili, Santhali) were added by the 92nd Amendment in 2003.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ga_polity",
+  "subtopic": "Polity – fundamental rights",
+  "difficulty": "easy",
+  "question_en": "Which Article of the Constitution abolishes 'untouchability' and forbids its practice in any form?",
+  "options": [
+   {
+    "en": "Article 17"
+   },
+   {
+    "en": "Article 15"
+   },
+   {
+    "en": "Article 19"
+   },
+   {
+    "en": "Article 23"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Article 17 abolishes untouchability, and its practice is an offence punishable by law. The Protection of Civil Rights Act, 1955 gives effect to it.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ga_polity",
+  "subtopic": "Polity – fundamental rights",
+  "difficulty": "medium",
+  "question_en": "Employment of children below 14 years in factories, mines or other hazardous work is prohibited by:",
+  "options": [
+   {
+    "en": "Article 24"
+   },
+   {
+    "en": "Article 21A"
+   },
+   {
+    "en": "Article 23"
+   },
+   {
+    "en": "Article 45"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Article 24 is part of the Right against Exploitation. Article 23 bans human trafficking and forced labour.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ga_polity",
+  "subtopic": "Polity – DPSP vs FR",
+  "difficulty": "medium",
+  "question_en": "Consider the statements:\nI. Fundamental Rights are justiciable, while Directive Principles cannot be enforced by any court.\nII. Directive Principles are contained in Part III of the Constitution.\nWhich is/are correct?",
+  "options": [
+   {
+    "en": "Only II"
+   },
+   {
+    "en": "Only I"
+   },
+   {
+    "en": "Both I and II"
+   },
+   {
+    "en": "Neither I nor II"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Article 37 says DPSPs are not enforceable by courts but are fundamental in governance. DPSPs are in Part IV; Part III contains the Fundamental Rights.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ga_polity",
+  "subtopic": "Polity – Fundamental Duties",
+  "difficulty": "medium",
+  "question_en": "The Fundamental Duties were added by the 42nd Amendment on the recommendation of which committee?",
+  "options": [
+   {
+    "en": "Swaran Singh Committee"
+   },
+   {
+    "en": "Sarkaria Committee"
+   },
+   {
+    "en": "Verma Committee"
+   },
+   {
+    "en": "Balwant Rai Mehta Committee"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The Swaran Singh Committee (1976) recommended Fundamental Duties, added as Part IV-A (Article 51A). The Verma Committee (1999) later studied their implementation.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ga_polity",
+  "subtopic": "Polity – President",
+  "difficulty": "medium",
+  "question_en": "Who among the following does NOT take part in the election of the President of India?",
+  "options": [
+   {
+    "en": "Elected members of Lok Sabha"
+   },
+   {
+    "en": "Elected members of Rajya Sabha"
+   },
+   {
+    "en": "Nominated members of Rajya Sabha"
+   },
+   {
+    "en": "Elected members of State Assemblies"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Under Article 54, only elected members of both Houses of Parliament and of the State and UT (Delhi, Puducherry) Assemblies vote. Nominated members do not.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ga_polity",
+  "subtopic": "Polity – Vice-President",
+  "difficulty": "medium",
+  "question_en": "Under which Article is the Vice-President the ex-officio Chairman of the Rajya Sabha?",
+  "options": [
+   {
+    "en": "Article 63"
+   },
+   {
+    "en": "Article 66"
+   },
+   {
+    "en": "Article 89"
+   },
+   {
+    "en": "Article 64"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Article 64 makes the Vice-President ex-officio Chairman of the Council of States. Article 66 deals with the election of the Vice-President.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ga_polity",
+  "subtopic": "Polity – Prime Minister and Council of Ministers",
+  "difficulty": "hard",
+  "question_en": "The 91st Amendment (2003) limits the size of the Union Council of Ministers, including the PM, to what share of the Lok Sabha's total strength?",
+  "options": [
+   {
+    "en": "10 per cent"
+   },
+   {
+    "en": "15 per cent"
+   },
+   {
+    "en": "20 per cent"
+   },
+   {
+    "en": "25 per cent"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Article 75(1A), added by the 91st Amendment, caps the Council of Ministers at 15% of the Lok Sabha's total members. The same Amendment also tightened the anti-defection law.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ga_polity",
+  "subtopic": "Polity – Parliament (bills)",
+  "difficulty": "easy",
+  "question_en": "Who decides whether a bill is a Money Bill?",
+  "options": [
+   {
+    "en": "President of India"
+   },
+   {
+    "en": "Chairman of the Rajya Sabha"
+   },
+   {
+    "en": "Speaker of the Lok Sabha"
+   },
+   {
+    "en": "Union Finance Minister"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Under Article 110(3) the Speaker's decision on whether a bill is a Money Bill is final. The Speaker endorses a certificate on it before it goes to the Rajya Sabha.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ga_polity",
+  "subtopic": "Polity – Parliament (joint sitting)",
+  "difficulty": "medium",
+  "question_en": "A joint sitting of both Houses of Parliament cannot be called to resolve a deadlock on which bill?",
+  "options": [
+   {
+    "en": "Ordinary Bill"
+   },
+   {
+    "en": "Financial Bill under Art 117(1)"
+   },
+   {
+    "en": "Constitution Amendment Bill"
+   },
+   {
+    "en": "Financial Bill under Art 117(3)"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Article 368 requires each House to pass an Amendment Bill separately, so a joint sitting is not possible. A joint sitting is also not available for a Money Bill.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ga_polity",
+  "subtopic": "Polity – Speaker",
+  "difficulty": "hard",
+  "question_en": "The Speaker of the Lok Sabha submits a letter of resignation to:",
+  "options": [
+   {
+    "en": "The President"
+   },
+   {
+    "en": "The Prime Minister"
+   },
+   {
+    "en": "The Vice-President"
+   },
+   {
+    "en": "The Deputy Speaker"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Under Article 94, the Speaker resigns by writing to the Deputy Speaker. The Deputy Speaker in turn resigns to the Speaker.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ga_polity",
+  "subtopic": "Polity – Parliament (sessions)",
+  "difficulty": "easy",
+  "question_en": "Under Article 85, the gap between two sessions of Parliament cannot be more than:",
+  "options": [
+   {
+    "en": "Three months"
+   },
+   {
+    "en": "Four months"
+   },
+   {
+    "en": "One year"
+   },
+   {
+    "en": "Six months"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Article 85 requires Parliament to meet at least once in six months. In practice there are three sessions: Budget, Monsoon and Winter.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ga_polity",
+  "subtopic": "Polity – state legislatures",
+  "difficulty": "medium",
+  "question_en": "Under which Article can Parliament create or abolish a State Legislative Council after the State Assembly passes a resolution?",
+  "options": [
+   {
+    "en": "Article 168"
+   },
+   {
+    "en": "Article 171"
+   },
+   {
+    "en": "Article 169"
+   },
+   {
+    "en": "Article 174"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Article 169 lets Parliament create or abolish a Council if the Assembly passes a resolution by special majority. Such a law is not treated as an amendment under Article 368.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ga_polity",
+  "subtopic": "Polity – urban local bodies",
+  "difficulty": "medium",
+  "question_en": "The 74th Amendment added which Schedule listing 18 subjects for municipalities?",
+  "options": [
+   {
+    "en": "Eleventh Schedule"
+   },
+   {
+    "en": "Tenth Schedule"
+   },
+   {
+    "en": "Twelfth Schedule"
+   },
+   {
+    "en": "Ninth Schedule"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The 74th Amendment (1992) added Part IX-A and the Twelfth Schedule with 18 subjects. The 73rd Amendment added the Eleventh Schedule for panchayats.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ga_polity",
+  "subtopic": "Polity – Panchayati Raj",
+  "difficulty": "easy",
+  "question_en": "Under the 73rd Amendment, what minimum share of seats in Panchayats is reserved for women?",
+  "options": [
+   {
+    "en": "One-fourth"
+   },
+   {
+    "en": "One-third"
+   },
+   {
+    "en": "One-half"
+   },
+   {
+    "en": "One-fifth"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Article 243D reserves at least one-third of seats and chairperson posts in Panchayats for women. Many states have raised this to 50%.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ga_polity",
+  "subtopic": "Polity – Centre-state financial relations",
+  "difficulty": "easy",
+  "question_en": "The Finance Commission, which recommends sharing of central taxes with states, is set up under:",
+  "options": [
+   {
+    "en": "Article 270"
+   },
+   {
+    "en": "Article 275"
+   },
+   {
+    "en": "Article 282"
+   },
+   {
+    "en": "Article 280"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Article 280 provides for a Finance Commission every five years or earlier. It recommends how tax proceeds are divided between the Union and the States.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ga_polity",
+  "subtopic": "Polity – official language",
+  "difficulty": "medium",
+  "question_en": "Which Article directs the Union to promote the spread and development of the Hindi language?",
+  "options": [
+   {
+    "en": "Article 343"
+   },
+   {
+    "en": "Article 345"
+   },
+   {
+    "en": "Article 350A"
+   },
+   {
+    "en": "Article 351"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Article 351 is the directive for development of Hindi. Article 343 makes Hindi in Devanagari the official language of the Union.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ga_polity",
+  "subtopic": "Polity – amendments",
+  "difficulty": "hard",
+  "question_en": "The 44th Amendment (1978) replaced the words 'internal disturbance' as a ground for National Emergency with:",
+  "options": [
+   {
+    "en": "External aggression"
+   },
+   {
+    "en": "Civil unrest"
+   },
+   {
+    "en": "Armed rebellion"
+   },
+   {
+    "en": "Breakdown of order"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "After the 1975 Emergency, the 44th Amendment replaced 'internal disturbance' with 'armed rebellion' in Article 352. It also required the Cabinet's written advice for a proclamation.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ga_polity",
+  "subtopic": "Polity – amendments",
+  "difficulty": "hard",
+  "question_en": "The 103rd Amendment (2019) providing reservation for Economically Weaker Sections inserted which clauses?",
+  "options": [
+   {
+    "en": "Articles 15(4) and 16(4)"
+   },
+   {
+    "en": "Articles 15(5) and 16(4A)"
+   },
+   {
+    "en": "Articles 15(6) and 16(6)"
+   },
+   {
+    "en": "Articles 14(2) and 16(5)"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Articles 15(6) and 16(6) allow up to 10% EWS reservation in education and public jobs. The Supreme Court upheld it in Janhit Abhiyan (2022).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ga_polity",
+  "subtopic": "Polity – constitutional bodies",
+  "difficulty": "easy",
+  "question_en": "The Election Commission of India is provided for under which Article?",
+  "options": [
+   {
+    "en": "Article 315"
+   },
+   {
+    "en": "Article 280"
+   },
+   {
+    "en": "Article 324"
+   },
+   {
+    "en": "Article 148"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Article 324 vests superintendence, direction and control of elections in the Election Commission. It conducts elections to Parliament, State Legislatures and the offices of President and Vice-President.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ga_polity",
+  "subtopic": "Polity – constitutional bodies",
+  "difficulty": "medium",
+  "question_en": "The Comptroller and Auditor General of India is appointed under which Article?",
+  "options": [
+   {
+    "en": "Article 76"
+   },
+   {
+    "en": "Article 165"
+   },
+   {
+    "en": "Article 315"
+   },
+   {
+    "en": "Article 148"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Article 148 provides for the CAG, appointed by the President. The CAG holds office for six years or until age 65, whichever is earlier.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "ga_polity",
+  "subtopic": "Polity – judiciary (writs)",
+  "difficulty": "medium",
+  "question_en": "Which writ asks a person 'by what authority' he holds a public office?",
+  "options": [
+   {
+    "en": "Mandamus"
+   },
+   {
+    "en": "Quo Warranto"
+   },
+   {
+    "en": "Certiorari"
+   },
+   {
+    "en": "Prohibition"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Quo Warranto stops a person from illegally holding a public office. Mandamus means 'we command' and Certiorari quashes orders of lower courts.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ga_polity",
+  "subtopic": "Polity – judiciary (writs)",
+  "difficulty": "hard",
+  "question_en": "Consider the statements:\nI. A High Court can issue writs under Article 226 for enforcing Fundamental Rights and also for 'any other purpose'.\nII. The right to move the Supreme Court under Article 32 is itself a Fundamental Right.\nWhich is/are correct?",
+  "options": [
+   {
+    "en": "Only I"
+   },
+   {
+    "en": "Only II"
+   },
+   {
+    "en": "Both I and II"
+   },
+   {
+    "en": "Neither I nor II"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Article 226 covers Fundamental Rights and other legal rights, so it is wider than Article 32. Article 32 is itself a Fundamental Right, while Article 226 is not.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ga_polity",
+  "subtopic": "Polity – judiciary (collegium)",
+  "difficulty": "hard",
+  "question_en": "The collegium system of appointing judges originated from which case?",
+  "options": [
+   {
+    "en": "First Judges Case, 1981"
+   },
+   {
+    "en": "Third Judges Case, 1998"
+   },
+   {
+    "en": "Fourth Judges Case, 2015"
+   },
+   {
+    "en": "Second Judges Case, 1993"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The Second Judges Case (SC Advocates-on-Record Association, 1993) gave primacy to the CJI and senior judges. The 1998 case widened it to the CJI plus four senior judges.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ga_polity",
+  "subtopic": "Polity – emergency provisions",
+  "difficulty": "easy",
+  "question_en": "Financial Emergency can be proclaimed by the President under which Article?",
+  "options": [
+   {
+    "en": "Article 360"
+   },
+   {
+    "en": "Article 352"
+   },
+   {
+    "en": "Article 356"
+   },
+   {
+    "en": "Article 365"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Article 360 deals with Financial Emergency, which has never been declared. Article 352 covers National Emergency and Article 356 President's Rule.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ga_polity",
+  "subtopic": "Polity – Delhi (Article 239AA)",
+  "difficulty": "medium",
+  "question_en": "Under Article 239AA, the Delhi Legislative Assembly cannot make laws on which of the following?",
+  "options": [
+   {
+    "en": "Education"
+   },
+   {
+    "en": "Public health"
+   },
+   {
+    "en": "Police"
+   },
+   {
+    "en": "Agriculture"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Article 239AA, inserted by the 69th Amendment, keeps public order, police and land outside the Assembly's powers. These subjects stay with the Centre.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "ga_polity",
+  "subtopic": "Polity – landmark cases",
+  "difficulty": "medium",
+  "question_en": "In which case did a nine-judge bench hold in 2017 that the right to privacy is a Fundamental Right?",
+  "options": [
+   {
+    "en": "Maneka Gandhi case"
+   },
+   {
+    "en": "Indra Sawhney case"
+   },
+   {
+    "en": "Minerva Mills case"
+   },
+   {
+    "en": "Justice K. S. Puttaswamy case"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The Puttaswamy judgment held privacy to be part of Article 21 and Part III. Maneka Gandhi (1978) had earlier widened the meaning of Article 21.",
+  "pyq_concept": false
+ }
+]

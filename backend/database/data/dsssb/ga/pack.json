@@ -1,0 +1,27 @@
+{
+ "name": "General Awareness",
+ "chapters": [
+  ["ga_current", "Current Affairs — February to October 2026", "Current Affairs"],
+  ["ga_history", "Indian History, Art & Culture", "History, Art & Culture"],
+  ["ga_polity", "Indian Polity & Constitution", "Polity"],
+  ["ga_geo", "Indian Geography & Census", "Geography & Census"],
+  ["ga_econ", "Indian Economy & Banking Basics", "Economy"],
+  ["ga_science", "General Science (Class 10 level)", "General Science"],
+  ["ga_delhi", "Delhi GK", "Delhi GK"]
+ ],
+ "pyq_file": "ga_pyq_analysis.json",
+ "pyq_rules": [
+  ["[ga_current]", "ga_current"], ["[ga_history]", "ga_history"], ["[ga_polity]", "ga_polity"], ["[ga_geo]", "ga_geo"],
+  ["[ga_econ]", "ga_econ"], ["[ga_science]", "ga_science"], ["[ga_delhi]", "ga_delhi"]
+ ],
+ "question_files": ["questions_current.json", "questions_static_a.json", "questions_static_b.json"],
+ "series_name": "DSSSB TGT CS — General Awareness (Current Affairs + Static GK)",
+ "series_name_hi": "DSSSB TGT CS — सामान्य जागरूकता (करंट अफेयर्स + स्टैटिक GK)",
+ "series_description": "Section A General Awareness: Current Affairs for February–October 2026 and Static GK (history, art & culture, polity, geography & census, economy, class-10 science, Delhi GK) — 80 previous-year questions, chapter-wise practice and the 200 most expected questions weighted 8:12 as in the paper. Short notes and a fast-revision sheet are in Courses → DSSSB TGT Computer Science.",
+ "course_subject": "General Awareness (Current Affairs + Static GK)",
+ "course_subject_hi": "सामान्य जागरूकता (करंट अफेयर्स + स्टैटिक GK)",
+ "tagline": "Feb–Oct 2026 current affairs · history, art & culture · polity · geography & census · economy · class-10 science · Delhi GK",
+ "intro": "Section A General Awareness carries 20 marks in every DSSSB paper: about 8 current-affairs and 12 static-GK questions. In the 4 official 2023–24 TGT CS papers ({n} questions) the static part leaned on art & culture, medieval and modern history, Census 2011, polity basics, geography and class-10 science; current affairs asked schemes, appointments, awards, sports and science & tech of the previous 6–12 months. The notes are short tables; the current-affairs chapter is a sourced capsule for February–October 2026.",
+ "practice_split": 35,
+ "full_test_min_per_q": 0.6
+}

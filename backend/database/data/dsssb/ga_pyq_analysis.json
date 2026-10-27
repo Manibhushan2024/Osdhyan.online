@@ -1,0 +1,1282 @@
+[
+ {
+  "qid": "630680256053",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following pairs of personality and the associated musical instrument is NOT matched correctly?",
+  "options": [
+   "Zakir Hussain - Tabla",
+   "Bismillah Khan -Shehnai",
+   "Bhajan Sopori - Veena",
+   "Hari Prasad Chaurasia - Flute"
+  ],
+  "answer": 3,
+  "subtopic": "[ga_history] Indian music – personalities and instruments",
+  "difficulty": "easy",
+  "explanation": "Pandit Bhajan Sopori was a renowned santoor maestro from Kashmir, not a veena player, so pair 3 is wrongly matched. The others are correct: Zakir Hussain – tabla, Ustad Bismillah Khan – shehnai, Pandit Hari Prasad Chaurasia – bansuri (flute).",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256061",
+  "paper": "2023_06_24_s3",
+  "question": "Which Constitutional Amendment Act promoted the appointment of the same person as a Governor for two or more states?",
+  "options": [
+   "Ninth",
+   "Third",
+   "Fifth",
+   "Seventh"
+  ],
+  "answer": 4,
+  "subtopic": "[ga_polity] Constitutional amendments",
+  "difficulty": "medium",
+  "explanation": "The Constitution (Seventh Amendment) Act, 1956 — enacted alongside the States Reorganisation Act — amended Article 153 to allow the same person to be appointed Governor of two or more states. It also reorganised states on a linguistic basis and abolished the Part A/B/C/D classification.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256043",
+  "paper": "2023_06_24_s3",
+  "question": "Where is the India's first Dark Night Sky Reserve being established?",
+  "options": [
+   "Ladakh",
+   "Daman and Diu",
+   "Lakshadweep",
+   "Dadra and Nagar Haveli"
+  ],
+  "answer": 1,
+  "subtopic": "[ga_current] Science & environment – current affairs 2022",
+  "difficulty": "easy",
+  "explanation": "India's first Dark Sky Reserve is being set up at Hanle in Ladakh, within the Changthang Wildlife Sanctuary, around the Indian Astronomical Observatory. It was announced in 2022 by the UT administration with the Indian Institute of Astrophysics to promote astro-tourism and protect the night sky from light pollution.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256051",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following types of structures is NOT associated with Buddhist architecture in India?",
+  "options": [
+   "Chaityas",
+   "Monkas",
+   "Viharas",
+   "Stupas"
+  ],
+  "answer": 2,
+  "subtopic": "[ga_history] Indian art and architecture",
+  "difficulty": "easy",
+  "explanation": "Buddhist architecture in India consists of stupas (relic mounds), chaityas (prayer halls with a stupa at one end) and viharas (monasteries where monks lived). 'Monkas' is not a Buddhist structure — it is simply a distractor word — so it is the correct choice.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256044",
+  "paper": "2023_06_24_s3",
+  "question": "The first Indian to participate in NASA's International Air and Space Program was _____.",
+  "options": [
+   "Jahnavi Dangeti",
+   "Detriya Devi",
+   "Kusum Ghosat",
+   "Maanvi Bhatt"
+  ],
+  "answer": 1,
+  "subtopic": "[ga_current] Persons in news 2022",
+  "difficulty": "medium",
+  "explanation": "Jahnavi Dangeti, a student from Andhra Pradesh, became the first Indian to complete NASA's International Air and Space Program (IASP) in 2022, held at the Kennedy Space Center, USA. The other names are not associated with this programme.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256048",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following was the host country for the FIFA World Cup 2022?",
+  "options": [
+   "Turkey",
+   "Saudi Arabia",
+   "Qatar",
+   "UAE"
+  ],
+  "answer": 3,
+  "subtopic": "[ga_current] Sports – current affairs 2022",
+  "difficulty": "easy",
+  "explanation": "The FIFA World Cup 2022 was hosted by Qatar (20 November – 18 December 2022), the first World Cup held in the Middle East and the first played in November–December. Argentina won the final against France on penalties.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256057",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following states has the highest number of operating mines (excluding fuels, atomic mineral and minor minerals), according to the Annual Report, 2021-22 of the Ministry of Mines?",
+  "options": [
+   "Odisha",
+   "Madhya Pradesh",
+   "Jharkhand",
+   "Rajasthan"
+  ],
+  "answer": 2,
+  "subtopic": "[ga_geo] Indian economy – minerals",
+  "difficulty": "hard",
+  "explanation": "According to the Ministry of Mines Annual Report 2021-22, Madhya Pradesh had the highest number of reporting (operating) mines in the country, followed by Gujarat, Karnataka and Odisha. Odisha leads in the value of mineral production, but by number of mines Madhya Pradesh is first.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256062",
+  "paper": "2023_06_24_s3",
+  "question": "As of December 2022, who was the Lieutenant Governor of Delhi?",
+  "options": [
+   "Tajendra Khanna",
+   "Vinai Kumar Saxena",
+   "Najeeb Jung",
+   "Anil Baijal"
+  ],
+  "answer": 2,
+  "subtopic": "[ga_current] Appointments 2022",
+  "difficulty": "easy",
+  "explanation": "Vinai Kumar Saxena took over as the 22nd Lieutenant Governor of Delhi on 26 May 2022, succeeding Anil Baijal, and was therefore the LG in December 2022. Najeeb Jung and Tajendra Khanna were earlier LGs of Delhi.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256059",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following is NOT a sexually transmitted disease?",
+  "options": [
+   "AIDS",
+   "Amoebiasis",
+   "Gonorrhea",
+   "Syphilis"
+  ],
+  "answer": 2,
+  "subtopic": "[ga_science] Biology – diseases",
+  "difficulty": "easy",
+  "explanation": "Amoebiasis (amoebic dysentery) is caused by the protozoan Entamoeba histolytica and spreads through contaminated food and water, not by sexual contact. AIDS (HIV), gonorrhoea and syphilis are all sexually transmitted diseases.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256049",
+  "paper": "2023_06_24_s3",
+  "question": "The Battle of Khanwa (1527) was fought between the forces of Rana Sanga and _____.",
+  "options": [
+   "Babur",
+   "Mahmood Khalji",
+   "Isham Khan",
+   "Ibrahim Lodhi"
+  ],
+  "answer": 1,
+  "subtopic": "[ga_history] Medieval Indian history – Mughals",
+  "difficulty": "easy",
+  "explanation": "The Battle of Khanwa (17 March 1527) was fought near Fatehpur Sikri between Babur and the Rajput confederacy led by Rana Sanga of Mewar. Babur's victory, following Panipat (1526) against Ibrahim Lodi, consolidated Mughal rule in north India.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256058",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following eras is considered as the age of the dinosaurs?",
+  "options": [
+   "Cenozoic",
+   "Precambrian",
+   "Palaeozoic",
+   "Mesozoic"
+  ],
+  "answer": 4,
+  "subtopic": "[ga_geo] Geography / geology – geological time scale",
+  "difficulty": "easy",
+  "explanation": "The Mesozoic Era (about 252 to 66 million years ago, comprising the Triassic, Jurassic and Cretaceous periods) is called the 'Age of Reptiles' or age of the dinosaurs. The Cenozoic that followed is the age of mammals, while the Palaeozoic preceded the dinosaurs.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256052",
+  "paper": "2023_06_24_s3",
+  "question": "'Buiya' is a popular folk-dance form of which of the following states?",
+  "options": [
+   "Mizoram",
+   "Nagaland",
+   "Arunachal Pradesh",
+   "Manipur"
+  ],
+  "answer": 3,
+  "subtopic": "[ga_history] Indian culture – folk dances",
+  "difficulty": "medium",
+  "explanation": "Buiya is a folk dance of the Digaru Mishmi tribe of Arunachal Pradesh, performed on festive occasions. Other Arunachal dances include Ponung, Wancho and Bardo Chham.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256050",
+  "paper": "2023_06_24_s3",
+  "question": "What name was given to the operation for liberation of Goa, in 1961, to make it a part of the Union of India?",
+  "options": [
+   "Operation Vijay",
+   "Operation Margao",
+   "Operation Polo",
+   "Operation Searchlight"
+  ],
+  "answer": 1,
+  "subtopic": "[ga_history] Modern Indian history – post-independence",
+  "difficulty": "easy",
+  "explanation": "Operation Vijay (December 1961) was the Indian armed forces' action that liberated Goa, Daman and Diu from Portuguese rule. Operation Polo (1948) was the annexation of Hyderabad, and Operation Searchlight (1971) was a Pakistani army action in East Pakistan.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256045",
+  "paper": "2023_06_24_s3",
+  "question": "The Ministry of Women and Child Development (MWCD), in partnership with the Ministry of Education, GOI and UNICEF, launched which of the following campaigns to bring back 'out of school' adolescent girls in India to the formal education and/or skilling system?",
+  "options": [
+   "Shakti Shiksha Abhiyaan",
+   "Beti Bachao Beti Padhao",
+   "Kanya Shiksha Pravesh Utsav",
+   "She is a Changemaker"
+  ],
+  "answer": 3,
+  "subtopic": "[ga_current] Government schemes 2022",
+  "difficulty": "medium",
+  "explanation": "Kanya Shiksha Pravesh Utsav was launched in March 2022 by the Ministry of Women and Child Development with the Ministry of Education and UNICEF, to bring out-of-school adolescent girls (11–14 years) back into formal education or skilling, using the Anganwadi network under Mission Shakti.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256046",
+  "paper": "2023_06_24_s3",
+  "question": "National Action Plan for Mechanised Sanitation Ecosystem (NAMASTE) is a joint initiative of _____ and _____.",
+  "options": [
+   "Ministry of Social Justice and Empowerment; Ministry of Housing and Urban Affairs",
+   "Ministry of Environment and Climate Change; Ministry of Housing and Urban Affairs",
+   "Ministry of Environment and Climate Change; Ministry of Minority Affairs",
+   "Ministry of Social Justice and Empowerment; Ministry of Environment and Climate Change"
+  ],
+  "answer": 1,
+  "subtopic": "[ga_current] Government schemes 2022",
+  "difficulty": "medium",
+  "explanation": "NAMASTE (National Action for Mechanised Sanitation Ecosystem), launched in 2022, is a joint initiative of the Ministry of Social Justice and Empowerment and the Ministry of Housing and Urban Affairs. It aims to end hazardous manual cleaning of sewers and septic tanks by promoting mechanised sanitation and skilling sanitation workers.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256060",
+  "paper": "2023_06_24_s3",
+  "question": "How many internal reflections do light rays undergo, inside a raindrop, to form a secondary rainbow?",
+  "options": [
+   "One",
+   "Four",
+   "Three",
+   "Two"
+  ],
+  "answer": 4,
+  "subtopic": "[ga_science] Physics – optics",
+  "difficulty": "easy",
+  "explanation": "A primary rainbow forms by one internal reflection inside each raindrop, while a secondary rainbow forms by two internal reflections. The extra reflection makes the secondary bow fainter, larger and with its colour order reversed.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256055",
+  "paper": "2023_06_24_s3",
+  "question": "As per the Census of India 2011, what percentage of Indians live in rural areas?",
+  "options": [
+   "81.2",
+   "61.5",
+   "68.8",
+   "77.3"
+  ],
+  "answer": 3,
+  "subtopic": "[ga_geo] Census 2011 – rural/urban population",
+  "difficulty": "easy",
+  "explanation": "As per Census 2011, about 68.8% of India's population (83.3 crore people) lived in rural areas and 31.2% in urban areas. The urban share rose from 27.8% in 2001, showing gradual urbanisation.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256054",
+  "paper": "2023_06_24_s3",
+  "question": "The formula for calculating Net National Product (NNP) is _____.",
+  "options": [
+   "GNP – Depreciation",
+   "GDP + Depreciation",
+   "GNP + Depreciation",
+   "GDP – Depreciation"
+  ],
+  "answer": 1,
+  "subtopic": "[ga_econ] National income – NNP",
+  "difficulty": "easy",
+  "explanation": "Net National Product (NNP) = Gross National Product (GNP) − Depreciation. Depreciation (consumption of fixed capital) is the wear and tear of capital goods; subtracting it from GNP gives the net value of output produced by a country's residents.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256056",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following states had the highest growth rate for population according to the Census of India, 2011 as compared to that of 2001?",
+  "options": [
+   "Himachal Pradesh",
+   "Meghalaya",
+   "Bihar",
+   "Uttar Pradesh"
+  ],
+  "answer": 2,
+  "subtopic": "[ga_geo] Census 2011 – decadal growth",
+  "difficulty": "medium",
+  "explanation": "According to Census 2011, Meghalaya recorded the highest decadal population growth rate among the given states, about 27.9% during 2001–2011 (Bihar ~25.4%, UP ~20.2%, Himachal ~12.9%). Nagaland was the only state to record negative growth in that decade.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256047",
+  "paper": "2023_06_24_s3",
+  "question": "Who among the following was the first woman president of the Indian Olympic Association?",
+  "options": [
+   "Sania Mirza",
+   "MC Mary Kom",
+   "PT Usha",
+   "Geeta Phogat"
+  ],
+  "answer": 3,
+  "subtopic": "[ga_current] Sports personalities – IOA",
+  "difficulty": "easy",
+  "explanation": "Legendary sprinter P.T. Usha became the first woman president of the Indian Olympic Association, elected unopposed in December 2022. Known as the 'Payyoli Express', she finished fourth in the 400 m hurdles at the 1984 Los Angeles Olympics.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256246",
+  "paper": "2023_06_25_s1",
+  "question": "Which ministry has launched the Digital India Awards?",
+  "options": [
+   "Ministry of Electronics and Information Technology",
+   "Ministry of Education",
+   "Ministry of Information and Broadcasting",
+   "Ministry of Commerce and Industry"
+  ],
+  "answer": 1,
+  "subtopic": "[ga_current] Awards – Digital India Awards",
+  "difficulty": "easy",
+  "explanation": "The Digital India Awards are instituted by the Ministry of Electronics and Information Technology (MeitY), with the National e-Governance Division (NeGD) running them. They honour exemplary digital initiatives by government bodies at all levels.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256245",
+  "paper": "2023_06_25_s1",
+  "question": "How many scientists were awarded the Shanti Swarup Bhatnagar Award, 2021 for Science and Technology?",
+  "options": [
+   "14",
+   "8",
+   "11",
+   "5"
+  ],
+  "answer": 3,
+  "subtopic": "[ga_current] Awards – science",
+  "difficulty": "medium",
+  "explanation": "The Shanti Swarup Bhatnagar Prize for Science and Technology 2021 was announced by CSIR for 11 scientists across seven disciplines. It is India's top multidisciplinary science award for scientists below 45, named after CSIR's founding director.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256257",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following terms is used for the rate at which commercial banks borrow money by selling their securities to the Reserve Bank of India?",
+  "options": [
+   "Repo rate",
+   "Reverse bank rate",
+   "Bank rate",
+   "Reverse repo rate"
+  ],
+  "answer": 1,
+  "subtopic": "[ga_econ] Banking – monetary policy rates",
+  "difficulty": "easy",
+  "explanation": "The repo (repurchase) rate is the rate at which commercial banks borrow short-term funds from the RBI by selling government securities with an agreement to buy them back. The reverse repo rate is the opposite: the rate at which the RBI borrows from banks.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256250",
+  "paper": "2023_06_25_s1",
+  "question": "Under whose rule were the southern kingdoms annexed to the Delhi Sultanate?",
+  "options": [
+   "Ulugh Khan",
+   "Shershah Suri",
+   "Mubarak Khalji",
+   "Nasiruddin Khan"
+  ],
+  "answer": 3,
+  "subtopic": "[ga_delhi] Medieval history – Delhi Sultanate",
+  "difficulty": "hard",
+  "explanation": "The official key gives Mubarak Shah Khalji (1316–1320), during whose reign Devagiri (Yadava kingdom) was formally annexed to the Delhi Sultanate in 1318. Under Alauddin Khalji, southern kingdoms such as Devagiri, Warangal and Dwarasamudra had only been made to pay tribute, not annexed.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256258",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following was set up by the Exim Bank and SIDBI in 2021 for identifying potential mid-sized and small companies as India's new champions in exports?",
+  "options": [
+   "Prabasi Tarakki fund",
+   "National Investment fund",
+   "Ubharte Sitaare fund",
+   "Stand Up India scheme"
+  ],
+  "answer": 3,
+  "subtopic": "[ga_current] Economy – government schemes",
+  "difficulty": "medium",
+  "explanation": "The 'Ubharte Sitaare' Fund was set up by Exim Bank and SIDBI in 2021 to find and support mid-sized and small Indian companies that could become future export champions. It provides equity, debt and technical help to such firms.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256263",
+  "paper": "2023_06_25_s1",
+  "question": "As of 2022, which of the following states has the highest number of assembly constituencies?",
+  "options": [
+   "Maharashtra",
+   "Gujarat",
+   "Uttar Pradesh",
+   "Tamil Nadu"
+  ],
+  "answer": 3,
+  "subtopic": "[ga_polity] Polity – state legislatures",
+  "difficulty": "easy",
+  "explanation": "Uttar Pradesh has the largest legislative assembly in India with 403 constituencies. Maharashtra has 288, Tamil Nadu 234 and Gujarat 182.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256264",
+  "paper": "2023_06_25_s1",
+  "question": "What is the minimum age requirement, as prescribed by the Constitution, to become a member of a Panchayat?",
+  "options": [
+   "18 years",
+   "28 years",
+   "36 years",
+   "21 years"
+  ],
+  "answer": 4,
+  "subtopic": "[ga_polity] Polity – Panchayati Raj",
+  "difficulty": "easy",
+  "explanation": "Under Article 243F, a person must be at least 21 years old to be chosen as a member of a Panchayat. This minimum age for Panchayat elections was introduced by the 73rd Amendment Act, 1992.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256261",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following is a vector borne disease?",
+  "options": [
+   "Diabetes",
+   "Breast Cancer",
+   "Covid-19",
+   "Malaria"
+  ],
+  "answer": 4,
+  "subtopic": "[ga_science] Biology – diseases",
+  "difficulty": "easy",
+  "explanation": "Malaria is a vector-borne disease: the Plasmodium parasite is spread by the bite of an infected female Anopheles mosquito. Diabetes and cancer are non-communicable diseases, and Covid-19 spreads directly through respiratory droplets.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256248",
+  "paper": "2023_06_25_s1",
+  "question": "Who among the following won the Golden Boot award during the 2022 FIFA World Cup awards?",
+  "options": [
+   "Lionel Messi",
+   "Kylian Mbappe",
+   "Enzo Fernandez",
+   "Emiliano Martinez"
+  ],
+  "answer": 2,
+  "subtopic": "[ga_current] Sports – FIFA World Cup 2022",
+  "difficulty": "easy",
+  "explanation": "France's Kylian Mbappé won the Golden Boot at the 2022 FIFA World Cup in Qatar with 8 goals, including a hat-trick in the final. Lionel Messi won the Golden Ball and Emiliano Martínez the Golden Glove.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256249",
+  "paper": "2023_06_25_s1",
+  "question": "The final match of Ranji Trophy, 2022 was played between which two teams?",
+  "options": [
+   "Rajasthan and Maharashtra",
+   "Haryana and Punjab",
+   "Mumbai and Madhya Pradesh",
+   "Delhi and Himachal Pradesh"
+  ],
+  "answer": 3,
+  "subtopic": "[ga_current] Sports – cricket",
+  "difficulty": "easy",
+  "explanation": "The 2022 Ranji Trophy final was played between Madhya Pradesh and Mumbai in Bengaluru. Madhya Pradesh won by 6 wickets to lift its first Ranji Trophy title.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256262",
+  "paper": "2023_06_25_s1",
+  "question": "With reference to the constitutional provisions regarding Rajya Sabha, which of the following statements is correct?",
+  "options": [
+   "The Attorney General of India is the ex-officio chairman of the Rajya Sabha.",
+   "The Prime Minister of India is the ex-officio chairman of the Rajya Sabha.",
+   "The Vice-President of India is the ex-officio chairman of the Rajya Sabha.",
+   "The President of India is the ex-officio chairman of the Rajya Sabha."
+  ],
+  "answer": 3,
+  "subtopic": "[ga_polity] Polity – Parliament",
+  "difficulty": "easy",
+  "explanation": "Under Articles 64 and 89, the Vice-President of India is the ex-officio Chairman of the Rajya Sabha. The Deputy Chairman is elected by the members of the House.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256260",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following man-made objects was the first one to cross the heliosphere of our solar system?",
+  "options": [
+   "Sputnik-1",
+   "New Horizons",
+   "Messenger-1",
+   "Voyager-1"
+  ],
+  "answer": 4,
+  "subtopic": "[ga_science] Space science",
+  "difficulty": "easy",
+  "explanation": "NASA's Voyager 1, launched in 1977, was the first man-made object to cross the heliopause into interstellar space, in August 2012. Voyager 2 followed in 2018.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256247",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following aims to create a competent civil service, rooted in Indian ethos, with a shared understanding of India's priorities, working in harmonisation for effective and efficient public service delivery?",
+  "options": [
+   "Mission Karmayogi",
+   "Rashtriya Gokul Mission",
+   "Atmanirbhar Bharat Abhiyan",
+   "Samarth Scheme"
+  ],
+  "answer": 1,
+  "subtopic": "[ga_current] Government schemes – governance",
+  "difficulty": "easy",
+  "explanation": "Mission Karmayogi (the National Programme for Civil Services Capacity Building), launched in 2020, aims to build a competent, citizen-centric civil service rooted in Indian ethos. It relies on online training through the iGOT Karmayogi platform.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256256",
+  "paper": "2023_06_25_s1",
+  "question": "Who among the following is NOT amongst the Trinity of Carnatic music?",
+  "options": [
+   "Tyagaraja",
+   "Syama Sastri",
+   "Tenali Raman",
+   "Muthuswami Dikshitar"
+  ],
+  "answer": 3,
+  "subtopic": "[ga_history] Art & culture – music",
+  "difficulty": "easy",
+  "explanation": "The Trinity of Carnatic music is Tyagaraja, Muthuswami Dikshitar and Syama Sastri, all 18th–19th century composers from Thiruvarur. Tenali Raman was a poet and wit in the court of Vijayanagara ruler Krishnadevaraya, not a Carnatic composer.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256251",
+  "paper": "2023_06_25_s1",
+  "question": "Who among the following planned to launch a military expedition to bring the Khurasan region under Delhi Sultanate's submission?",
+  "options": [
+   "Muhammad Tughluq",
+   "Ghiyasuddin Khan",
+   "Ibrahim Lodi",
+   "Alauddin Khalji"
+  ],
+  "answer": 1,
+  "subtopic": "[ga_history] Medieval history – Tughluq dynasty",
+  "difficulty": "medium",
+  "explanation": "Muhammad bin Tughluq planned an expedition to conquer Khurasan (in Central Asia) and raised a large army for it, but the plan was dropped and the army disbanded. It is often counted among his 'ambitious projects', along with shifting the capital to Daulatabad and issuing token currency.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256252",
+  "paper": "2023_06_25_s1",
+  "question": "The given pairs represent movements with the respective leaders. Which of these pairs is/are matched correctly?\ni.Koya Rebellion - Tomma Dora\nii. Pabna Peasant Uprising - Bhagirath Manjhi\niii. Kharwar Uprising - Shambhunath Pal",
+  "options": [
+   "Only ii",
+   "ii and iii",
+   "i and iii",
+   "Only i"
+  ],
+  "answer": 4,
+  "subtopic": "[ga_history] Modern history – tribal & peasant movements",
+  "difficulty": "hard",
+  "explanation": "The Koya Rebellion (1879–80) in the Godavari hill tracts was led by Tomma Dora, so pair i is correct. The Kharwar uprising was led by Bhagirath Manjhi, and the Pabna peasant uprising (1873) by leaders like Ishan Chandra Roy, Shambhu Pal and Keshab Chandra Roy. Pairs ii and iii have their leaders swapped, so only i is matched correctly.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256254",
+  "paper": "2023_06_25_s1",
+  "question": "The temples at Khajuraho, a UNESCO World Heritage Site, were built during the reign of which of the following dynasties?",
+  "options": [
+   "Maurya",
+   "Chandela",
+   "Pallava",
+   "Kakatiya"
+  ],
+  "answer": 2,
+  "subtopic": "[ga_history] Art & culture – temple architecture",
+  "difficulty": "easy",
+  "explanation": "The Khajuraho group of temples (Madhya Pradesh) was built by the Chandela Rajputs, mainly between 950 and 1050 CE. They are famous for their Nagara-style architecture and intricate sculptures, and became a UNESCO World Heritage Site in 1986.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256255",
+  "paper": "2023_06_25_s1",
+  "question": "Terms such as 'Pada Bheda', 'Chalis' and 'Bhramaris' are associated with the techniques of which of the following dance forms?",
+  "options": [
+   "Odissi",
+   "Kathakali",
+   "Ghoomar",
+   "Manipuri"
+  ],
+  "answer": 1,
+  "subtopic": "[ga_history] Art & culture – classical dance",
+  "difficulty": "medium",
+  "explanation": "'Pada Bheda' (foot movements), 'Chalis' (gaits) and 'Bhramaris' (turns) are technical elements of Odissi, the classical dance of Odisha. Odissi is known for its tribhangi (three-bend) posture and the chowk stance.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256253",
+  "paper": "2023_06_25_s1",
+  "question": "Which of the following Indian monuments is NOT a UNESCO World Heritage Site?",
+  "options": [
+   "Red Fort",
+   "Char Minar",
+   "Taj Mahal",
+   "Humayun's Tomb"
+  ],
+  "answer": 2,
+  "subtopic": "[ga_history] Heritage – UNESCO sites in India",
+  "difficulty": "easy",
+  "explanation": "The Charminar in Hyderabad (built in 1591 by Muhammad Quli Qutb Shah) is not a UNESCO World Heritage Site. The Red Fort Complex, Taj Mahal and Humayun's Tomb are all inscribed World Heritage Sites.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256259",
+  "paper": "2023_06_25_s1",
+  "question": "In terms of power generation from renewable sources, which of the following sectors has the highest installed capacity in India as per the Annual Report, 2021-22 of the Ministry of New and Renewable Energy, Government of India?",
+  "options": [
+   "Small hydro",
+   "Wind",
+   "Bio-energy",
+   "Solar"
+  ],
+  "answer": 4,
+  "subtopic": "[ga_current] Economy – renewable energy",
+  "difficulty": "medium",
+  "explanation": "According to MNRE's Annual Report 2021-22, solar power had the largest installed renewable capacity in India (about 50 GW), ahead of wind (about 40 GW), bio-energy and small hydro. Solar overtook wind as the top renewable source around 2020.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256529",
+  "paper": "2023_06_25_s2",
+  "question": "After Kerala, which of the following states or union territories has the highest scheduled caste sex ratio?",
+  "options": [
+   "Puducherry",
+   "Tamil Nadu",
+   "Maharashtra",
+   "New Delhi"
+  ],
+  "answer": 1,
+  "subtopic": "[ga_geo] Census 2011 – SC sex ratio",
+  "difficulty": "hard",
+  "explanation": "As per Census 2011, Kerala had the highest sex ratio among Scheduled Castes (1057 females per 1000 males), followed by Puducherry (about 1056). Tamil Nadu came next at about 1007.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256532",
+  "paper": "2023_06_25_s2",
+  "question": "Who among the following gave the three laws of planetary motion?",
+  "options": [
+   "Newton",
+   "Rutherford",
+   "Kepler",
+   "Faraday"
+  ],
+  "answer": 3,
+  "subtopic": "[ga_science] Physics – gravitation",
+  "difficulty": "easy",
+  "explanation": "Johannes Kepler gave the three laws of planetary motion (1609–1619): planets move in elliptical orbits (law of orbits), sweep equal areas in equal times (law of areas), and T² ∝ a³ (law of periods). Newton later explained them with his law of gravitation.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256531",
+  "paper": "2023_06_25_s2",
+  "question": "In which of the following diseases does a parasite develop in the red blood cells (RBCs) of humans?",
+  "options": [
+   "Covid-19",
+   "Avian influenza",
+   "Dengue",
+   "Malaria"
+  ],
+  "answer": 4,
+  "subtopic": "[ga_science] Biology – diseases",
+  "difficulty": "easy",
+  "explanation": "In malaria, the Plasmodium parasite first multiplies in the liver and then invades and multiplies inside red blood cells. The bursting of these RBCs causes the periodic fever and chills. Dengue, Covid-19 and avian influenza are viral diseases.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256523",
+  "paper": "2023_06_25_s2",
+  "question": "The Ajanta caves of Maharashtra are the cave monuments connected with which of the following religions?",
+  "options": [
+   "Zoroastrianism",
+   "Buddhism",
+   "Hinduism",
+   "Jainism"
+  ],
+  "answer": 2,
+  "subtopic": "[ga_history] Art & culture – cave architecture",
+  "difficulty": "easy",
+  "explanation": "The Ajanta caves (Aurangabad district, Maharashtra) are Buddhist rock-cut caves, made from about the 2nd century BCE to the 6th century CE. They are famous for murals depicting Jataka tales and became a UNESCO World Heritage Site in 1983.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256520",
+  "paper": "2023_06_25_s2",
+  "question": "Who among the following Pala dynasty rulers was the founder of Vajrayana, Vikramashila and Somapura universities?",
+  "options": [
+   "Gopala",
+   "Devapala",
+   "Dharmapala",
+   "Mahipala"
+  ],
+  "answer": 3,
+  "subtopic": "[ga_history] Ancient history – Pala dynasty",
+  "difficulty": "medium",
+  "explanation": "Dharmapala (c. 770–810 CE), the Pala ruler, founded the Vikramashila Mahavihara (Bihar) and the Somapura Mahavihara (Paharpur, Bangladesh), which became great centres of Vajrayana Buddhism. He was the son of Gopala, the founder of the Pala dynasty.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256534",
+  "paper": "2023_06_25_s2",
+  "question": "The grants in aid by the Union government to certain States, charged to the Consolidated Fund of India, are described in Article ______ of the Constitution of India, 1949.",
+  "options": [
+   "475",
+   "175",
+   "275",
+   "375"
+  ],
+  "answer": 3,
+  "subtopic": "[ga_polity] Polity – Centre-state financial relations",
+  "difficulty": "medium",
+  "explanation": "Article 275 of the Constitution provides statutory grants-in-aid from the Union to states that need assistance, charged on the Consolidated Fund of India. These grants are given on the recommendation of the Finance Commission, unlike the discretionary grants under Article 282.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256524",
+  "paper": "2023_06_25_s2",
+  "question": "Which of the following dance forms was also known as 'Dasi Attam' in ancient times?",
+  "options": [
+   "Mohiniattam",
+   "Bharatnatyam",
+   "Kathak",
+   "Bihu"
+  ],
+  "answer": 2,
+  "subtopic": "[ga_history] Art & culture – classical dance",
+  "difficulty": "easy",
+  "explanation": "Bharatanatyam was earlier known as 'Dasi Attam' or 'Sadir', because it was performed by devadasis in the temples of Tamil Nadu. It was renamed and revived in the 20th century by E. Krishna Iyer and Rukmini Devi Arundale.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256516",
+  "paper": "2023_06_25_s2",
+  "question": "Recently India test fired the surface-to-surface ballistic missile, Agni-5. What type of fuel engine does the missile have?",
+  "options": [
+   "Liquid fuel engine",
+   "Semisolid fuel engine",
+   "Gaseous fuel engine",
+   "Solid fuel engine"
+  ],
+  "answer": 4,
+  "subtopic": "[ga_current] Defence – missiles",
+  "difficulty": "easy",
+  "explanation": "Agni-5 is a three-stage, solid-fuel intercontinental-range ballistic missile developed by DRDO, with a range above 5,000 km. Solid fuel lets it be stored and launched quickly from a canister.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256525",
+  "paper": "2023_06_25_s2",
+  "question": "Ustad Zakir Hussain, the Indian music maestro, is known to play which of the following instruments?",
+  "options": [
+   "Flute",
+   "Tabla",
+   "Santoor",
+   "Harmonica"
+  ],
+  "answer": 2,
+  "subtopic": "[ga_history] Art & culture – musicians",
+  "difficulty": "easy",
+  "explanation": "Ustad Zakir Hussain, son of Ustad Alla Rakha, was a world-renowned tabla maestro. He received the Padma Vibhushan (2023) and several Grammy Awards.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256526",
+  "paper": "2023_06_25_s2",
+  "question": "The receipts which neither create any liability nor reduce the assets of the government are called ______.",
+  "options": [
+   "self-assessed receipts",
+   "revenue receipts",
+   "capital receipts",
+   "standard receipts"
+  ],
+  "answer": 2,
+  "subtopic": "[ga_econ] Economy – government budget",
+  "difficulty": "easy",
+  "explanation": "Revenue receipts are government receipts that neither create a liability nor reduce assets, for example tax revenue, and non-tax revenue such as fees, dividends and interest. Capital receipts, such as borrowings or disinvestment, either create a liability or reduce assets.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256533",
+  "paper": "2023_06_25_s2",
+  "question": "Which state has recently, in November 2022, notified to implement the Panchayat Extension to Scheduled Areas (PESA) Act?",
+  "options": [
+   "Maharashtra",
+   "Madhya Pradesh",
+   "Rajasthan",
+   "Gujarat"
+  ],
+  "answer": 2,
+  "subtopic": "[ga_current] Polity – PESA Act",
+  "difficulty": "medium",
+  "explanation": "Madhya Pradesh notified its PESA rules on 15 November 2022 (Janjatiya Gaurav Divas) to implement the Panchayats (Extension to Scheduled Areas) Act, 1996. The Act gives gram sabhas in Fifth Schedule areas powers over local resources and governance.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256515",
+  "paper": "2023_06_25_s2",
+  "question": "In December 2022, three women of Indian origin were selected as Australia's 'STEM Superstars'. Which of the following is NOT one of them?",
+  "options": [
+   "Dr. Indrani Mukherjee",
+   "Neelima Kadiala",
+   "Dr. Ana Baburamani",
+   "Shruthi Bishnoi"
+  ],
+  "answer": 4,
+  "subtopic": "[ga_current] Persons in news – awards",
+  "difficulty": "hard",
+  "explanation": "In December 2022, Science & Technology Australia named Dr. Indrani Mukherjee, Neelima Kadiyala and Dr. Ana Baburamani, all of Indian origin, among its 'Superstars of STEM'. Shruthi Bishnoi was not among them.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256530",
+  "paper": "2023_06_25_s2",
+  "question": "Which state has major reserves of low-grade, brown coal called lignite, which is used for power generation?",
+  "options": [
+   "Gujarat",
+   "West Bengal",
+   "Odisha",
+   "Tamil Nadu"
+  ],
+  "answer": 4,
+  "subtopic": "[ga_geo] Geography – minerals & energy",
+  "difficulty": "easy",
+  "explanation": "Tamil Nadu holds India's largest lignite (brown coal) reserves, mainly at Neyveli, where NLC India uses it for thermal power generation. Lignite is a low-grade coal with high moisture and low carbon content.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256527",
+  "paper": "2023_06_25_s2",
+  "question": "As per the Handbook of Statistics on the Indian Economy, 2019-20, published by RBI, which Indian state has highest GDP?",
+  "options": [
+   "Tamil Nadu",
+   "Maharashtra",
+   "Karnataka",
+   "Gujarat"
+  ],
+  "answer": 2,
+  "subtopic": "[ga_econ] Economy – state GDP",
+  "difficulty": "easy",
+  "explanation": "As per the RBI Handbook of Statistics on the Indian Economy 2019-20, Maharashtra had the highest Gross State Domestic Product (GSDP) among Indian states, followed by Tamil Nadu and Uttar Pradesh/Karnataka.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256518",
+  "paper": "2023_06_25_s2",
+  "question": "Where will the 2023 IBA Women's World Boxing Championships take place in India, in March 2023?",
+  "options": [
+   "Gandhinagar",
+   "Indore",
+   "Chandigarh",
+   "New Delhi"
+  ],
+  "answer": 4,
+  "subtopic": "[ga_current] Sports – boxing",
+  "difficulty": "easy",
+  "explanation": "The 2023 IBA Women's World Boxing Championships were held at the K.D. Jadhav Indoor Hall in New Delhi in March 2023. India won four golds, through Nikhat Zareen, Lovlina Borgohain, Nitu Ghanghas and Saweety Boora.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256522",
+  "paper": "2023_06_25_s2",
+  "question": "Which of the following monuments is NOT located in Delhi?",
+  "options": [
+   "Qutab Minar",
+   "Ala-i-Minar",
+   "Balban's Tomb",
+   "Bibi ka Makbara"
+  ],
+  "answer": 4,
+  "subtopic": "[ga_history] Art & culture – monuments",
+  "difficulty": "easy",
+  "explanation": "Bibi ka Maqbara is in Aurangabad (Chhatrapati Sambhajinagar), Maharashtra. It was built by Aurangzeb's son Azam Shah in memory of his mother and is called the 'Taj of the Deccan'. The Qutub Minar, the Alai Minar and Balban's tomb are all in Mehrauli, Delhi.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256521",
+  "paper": "2023_06_25_s2",
+  "question": "Who was the first Asian to be elected for membership in the British Parliament in 1892?",
+  "options": [
+   "Subhas Chandra Bose",
+   "Dadabhai Naoroji",
+   "Jawahar Lal Nehru",
+   "Dinyar Patel"
+  ],
+  "answer": 2,
+  "subtopic": "[ga_history] Modern history – personalities",
+  "difficulty": "easy",
+  "explanation": "Dadabhai Naoroji, the 'Grand Old Man of India', was elected to the British House of Commons in 1892 from Finsbury Central as a Liberal Party candidate, becoming the first Asian MP. He is known for the 'Drain Theory' of colonial economic exploitation.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256528",
+  "paper": "2023_06_25_s2",
+  "question": "'Bangar' and 'Khadar' are the sub-types of which of the following soils?",
+  "options": [
+   "Black soil",
+   "Alluvial soil",
+   "Red soil",
+   "Laterite soil"
+  ],
+  "answer": 2,
+  "subtopic": "[ga_geo] Geography – soils",
+  "difficulty": "easy",
+  "explanation": "Alluvial soil is divided into Bangar (older alluvium, found on higher ground, with kankar nodules) and Khadar (newer alluvium, found in the floodplains and more fertile). It is the most widespread soil in India, covering the northern plains.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256519",
+  "paper": "2023_06_25_s2",
+  "question": "Who is the first Indian woman to win a bronze medal in the Women's singles table tennis at the Asian Cup 2022?",
+  "options": [
+   "Sutirtha Mukherjee",
+   "Mouma Das",
+   "Manika Batra",
+   "Naina Jaiswal"
+  ],
+  "answer": 3,
+  "subtopic": "[ga_current] Sports – table tennis",
+  "difficulty": "easy",
+  "explanation": "Manika Batra became the first Indian woman to win a medal (bronze) in women's singles at the ITTF-ATTU Asian Cup, in Bangkok in November 2022. She beat world No. 6 Hina Hayata of Japan in the bronze-medal match.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680256517",
+  "paper": "2023_06_25_s2",
+  "question": "As per the Sample Registration System (SRS) Statistical Report, 2019, released in February 2022 by the Registrar General of India (RGI), which state had the highest infant mortality rate in 2019?",
+  "options": [
+   "Odisha",
+   "Madhya Pradesh",
+   "Chhattisgarh",
+   "Bihar"
+  ],
+  "answer": 2,
+  "subtopic": "[ga_current] Social indicators – IMR",
+  "difficulty": "medium",
+  "explanation": "As per the SRS Statistical Report 2019, Madhya Pradesh had the highest infant mortality rate (46 per 1,000 live births), and Kerala had the lowest. The national IMR in 2019 was 30.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680599869",
+  "paper": "2024_02_07_s2",
+  "question": "Which Indian badminton player secured a bronze medal in the men's singles at the BWF World Badminton Championships 2023?",
+  "options": [
+   "Srikanth Kidambi",
+   "HS Prannoy",
+   "Lakshya Sen",
+   "B. Sai Praneeth"
+  ],
+  "answer": 2,
+  "subtopic": "[ga_current] Sports – badminton",
+  "difficulty": "easy",
+  "explanation": "H.S. Prannoy won bronze in men's singles at the BWF World Championships 2023 in Copenhagen, losing the semi-final to Kunlavut Vitidsarn. It was his first World Championships medal.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680599871",
+  "paper": "2024_02_07_s2",
+  "question": "ISRO signed MoU with which of the following companies in January 2023 to support space-tech startups in India?",
+  "options": [
+   "Cognizant",
+   "Microsoft",
+   "Oracle",
+   "Capgemini"
+  ],
+  "answer": 2,
+  "subtopic": "[ga_current] Science & tech – space agreements",
+  "difficulty": "medium",
+  "explanation": "In January 2023, ISRO signed an MoU with Microsoft to support space-tech startups in India, giving them access to Microsoft's tools, cloud platform (Azure) and mentorship. The move is part of opening up India's space sector to private players.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680599879",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following articles of the Indian Constitution mentions that the official language of the Union shall be Hindi in the Devanagari script?",
+  "options": [
+   "Article 343",
+   "Article 280",
+   "Article 324",
+   "Article 226"
+  ],
+  "answer": 1,
+  "subtopic": "[ga_polity] Polity – official language",
+  "difficulty": "easy",
+  "explanation": "Article 343(1) says the official language of the Union shall be Hindi in the Devanagari script, with the international form of Indian numerals. Part XVII (Articles 343–351) deals with official languages.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680599881",
+  "paper": "2024_02_07_s2",
+  "question": "Narmada originates from which of the following places?",
+  "options": [
+   "Amarkantak plateau",
+   "Mahabaleshwar",
+   "Brahmagiri hills",
+   "Chotanagpur Plateau"
+  ],
+  "answer": 1,
+  "subtopic": "[ga_geo] Geography – rivers",
+  "difficulty": "easy",
+  "explanation": "The Narmada rises at Amarkantak on the Maikal range/Amarkantak plateau in Anuppur district, Madhya Pradesh. It flows west through a rift valley between the Vindhyas and Satpuras into the Gulf of Khambhat (Arabian Sea).",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680599877",
+  "paper": "2024_02_07_s2",
+  "question": "In which year did the Battle of Seringapatam, a war between Mysore and the British, take place?",
+  "options": [
+   "1799",
+   "1764",
+   "1767",
+   "1805"
+  ],
+  "answer": 1,
+  "subtopic": "[ga_history] Modern history – Anglo-Mysore wars",
+  "difficulty": "easy",
+  "explanation": "The Battle (Siege) of Seringapatam in 1799 was the decisive battle of the Fourth Anglo-Mysore War. Tipu Sultan was killed defending his capital, and the British restored the Wodeyars to a reduced Mysore.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680599885",
+  "paper": "2024_02_07_s2",
+  "question": "Article 315 of the Indian Constitution is related to which of the following?",
+  "options": [
+   "Finance Commission",
+   "Public Service Commissions for the Union and for the States",
+   "Administrative tribunals",
+   "Election Commission"
+  ],
+  "answer": 2,
+  "subtopic": "[ga_polity] Polity – constitutional bodies",
+  "difficulty": "easy",
+  "explanation": "Article 315 provides for a Public Service Commission for the Union (UPSC) and a Public Service Commission for each state. The Finance Commission is under Article 280 and the Election Commission under Article 324.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680599880",
+  "paper": "2024_02_07_s2",
+  "question": "Nalwari Fair is a cattle fair celebrated in which of the following states?",
+  "options": [
+   "Tamil Nadu",
+   "Himachal Pradesh",
+   "Assam",
+   "Gujarat"
+  ],
+  "answer": 2,
+  "subtopic": "[ga_history] Art & culture – fairs & festivals",
+  "difficulty": "medium",
+  "explanation": "The Nalwari Fair is an annual cattle fair held in March at Bilaspur, Himachal Pradesh, on the Luhnu ground. It features trade in cattle along with wrestling and cultural events.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680599884",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following articles of the Indian Constitution provides protection of life and personal liberty?",
+  "options": [
+   "Article 29",
+   "Article 25",
+   "Article 21",
+   "Article 19"
+  ],
+  "answer": 3,
+  "subtopic": "[ga_polity] Polity – fundamental rights",
+  "difficulty": "easy",
+  "explanation": "Article 21 states that no person shall be deprived of life or personal liberty except according to procedure established by law. Courts have widened it to include rights such as privacy, livelihood and a clean environment.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680599878",
+  "paper": "2024_02_07_s2",
+  "question": "Who among the following composed the famous Tamil epic Silappadikaram?",
+  "options": [
+   "Kovalan",
+   "Thiruvalluvar",
+   "Sattanar",
+   "Ilango"
+  ],
+  "answer": 4,
+  "subtopic": "[ga_history] Ancient history – Sangam literature",
+  "difficulty": "medium",
+  "explanation": "Silappadikaram, one of the five great Tamil epics, was composed by Ilango Adigal, a Chera prince turned Jain monk. It tells the story of Kovalan, Kannagi and Madhavi. Its sequel Manimekalai was written by Sattanar.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680599873",
+  "paper": "2024_02_07_s2",
+  "question": "What was the repo rate of RBI announced in December 2023?",
+  "options": [
+   "3.5 percent",
+   "8.5 percent",
+   "6.5 percent",
+   "2.5 percent"
+  ],
+  "answer": 3,
+  "subtopic": "[ga_current] Banking – monetary policy",
+  "difficulty": "easy",
+  "explanation": "In its December 2023 policy, the RBI Monetary Policy Committee kept the repo rate unchanged at 6.5%. The rate had stayed at 6.5% since February 2023.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680599875",
+  "paper": "2024_02_07_s2",
+  "question": "In which of the following years was the Indian National Congress established?",
+  "options": [
+   "1906",
+   "1893",
+   "1885",
+   "1875"
+  ],
+  "answer": 3,
+  "subtopic": "[ga_history] Modern history – national movement",
+  "difficulty": "easy",
+  "explanation": "The Indian National Congress was founded in December 1885 at Gokuldas Tejpal Sanskrit College, Bombay, with A.O. Hume's initiative. W.C. Bonnerjee presided over its first session, attended by 72 delegates.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680599883",
+  "paper": "2024_02_07_s2",
+  "question": "Which is the most populous state in India according to 2011 census?",
+  "options": [
+   "Madhya Pradesh",
+   "West Bengal",
+   "Bihar",
+   "Uttar Pradesh"
+  ],
+  "answer": 4,
+  "subtopic": "[ga_geo] Census 2011 – population",
+  "difficulty": "easy",
+  "explanation": "As per Census 2011, Uttar Pradesh was the most populous state with about 19.98 crore people (16.5% of India), followed by Maharashtra and Bihar.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680599872",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following ministries had signed a MoU with the International Society of Krishna Consciousness (ISKCON) in New Delhi on 23 November 2023 to spread the message of Nasha Mukt Bharat Abhiyan among youth, women, students etc.?",
+  "options": [
+   "Ministry of Home Affairs",
+   "Ministry of Social Justice and Empowerment",
+   "Ministry of Health and Family Welfare",
+   "Ministry of Food Processing Industries"
+  ],
+  "answer": 2,
+  "subtopic": "[ga_current] Government schemes – MoUs",
+  "difficulty": "medium",
+  "explanation": "The Ministry of Social Justice and Empowerment signed an MoU with ISKCON on 23 November 2023 to spread awareness under the Nasha Mukt Bharat Abhiyaan (NMBA). The NMBA, launched in 2020, is run by this ministry.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680599870",
+  "paper": "2024_02_07_s2",
+  "question": "What is the name of the artificial intelligence project that Jio is working on with IIT Bombay, announced by Akash Ambani in December 2023?",
+  "options": [
+   "Bharat GPT",
+   "Chat GPT",
+   "Chat Bot",
+   "India GPT"
+  ],
+  "answer": 1,
+  "subtopic": "[ga_current] Science & tech – AI",
+  "difficulty": "easy",
+  "explanation": "In December 2023, Akash Ambani announced that Jio is building 'BharatGPT', a large language model AI project, with IIT Bombay. It is aimed at Indian languages and India-specific use cases.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680599887",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following is NOT a rich source of Vitamin A?",
+  "options": [
+   "Carrot",
+   "Mango",
+   "Amla",
+   "Papaya"
+  ],
+  "answer": 3,
+  "subtopic": "[ga_science] Biology – vitamins",
+  "difficulty": "easy",
+  "explanation": "Amla (Indian gooseberry) is famous as a rich source of Vitamin C, not Vitamin A. Carrot, mango and papaya are rich in beta-carotene, which the body converts to Vitamin A.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680599876",
+  "paper": "2024_02_07_s2",
+  "question": "Who among the following started the Young Bengal Movement in Calcutta?",
+  "options": [
+   "Dadabhai Naoroji",
+   "W.C. Bonnerji",
+   "Henry Derozio",
+   "A.O. Hume"
+  ],
+  "answer": 3,
+  "subtopic": "[ga_history] Modern history – socio-religious reform",
+  "difficulty": "easy",
+  "explanation": "The Young Bengal Movement was started by Henry Louis Vivian Derozio, a teacher at Hindu College, Calcutta, in the late 1820s. His students, the Derozians, encouraged free thinking and questioned social and religious orthodoxy.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680599888",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following acids is found in orange?",
+  "options": [
+   "Citric acid",
+   "Oxalic acid",
+   "Methanoic acid",
+   "Lactic acid"
+  ],
+  "answer": 1,
+  "subtopic": "[ga_science] Chemistry – natural acids",
+  "difficulty": "easy",
+  "explanation": "Oranges and other citrus fruits contain citric acid, which gives them their sour taste. Oxalic acid is found in tomatoes and spinach, methanoic (formic) acid in ant stings, and lactic acid in curd.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680599886",
+  "paper": "2024_02_07_s2",
+  "question": "Which of the following Articles of the Indian Constitution empowers the Vice President to act as President or discharge his functions during casual vacancies in the office or during the absence of the President?",
+  "options": [
+   "Article 72",
+   "Article 61",
+   "Article 65",
+   "Article 52"
+  ],
+  "answer": 3,
+  "subtopic": "[ga_polity] Polity – Vice-President",
+  "difficulty": "medium",
+  "explanation": "Article 65 lets the Vice-President act as President when the office falls vacant (death, resignation, removal) until a new President is elected. It also lets the Vice-President discharge the President's functions during the President's absence or illness.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680599882",
+  "paper": "2024_02_07_s2",
+  "question": "Which of these hills is NOT included in Purvanchal or Eastern hills?",
+  "options": [
+   "Manipur hills",
+   "Shevroy Hills",
+   "Patkai hills",
+   "Naga hills"
+  ],
+  "answer": 2,
+  "subtopic": "[ga_geo] Geography – physiography",
+  "difficulty": "medium",
+  "explanation": "The Purvanchal (eastern hills) include the Patkai Bum, Naga hills, Manipur hills and Mizo hills along India's north-eastern border. The Shevaroy Hills are part of the Eastern Ghats in Tamil Nadu (Salem district), with Yercaud as the hill station.",
+  "key_doubt": false
+ },
+ {
+  "qid": "630680599874",
+  "paper": "2024_02_07_s2",
+  "question": "In which of the following years was ICICI formed at the initiative of World Bank, the Government of India and representative of Indian Industry?",
+  "options": [
+   "1982",
+   "1975",
+   "1955",
+   "1966"
+  ],
+  "answer": 3,
+  "subtopic": "[ga_econ] Banking – financial institutions",
+  "difficulty": "medium",
+  "explanation": "ICICI (Industrial Credit and Investment Corporation of India) was set up in 1955 at the initiative of the World Bank, the Government of India and Indian industry representatives. Its purpose was to provide project finance to Indian industry. It later became ICICI Bank.",
+  "key_doubt": false
+ }
+]

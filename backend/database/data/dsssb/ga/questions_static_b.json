@@ -1,0 +1,1267 @@
+[
+  {
+    "chapter_key": "ga_geo",
+    "subtopic": "Physiography",
+    "difficulty": "medium",
+    "question_en": "The longitudinal valleys between the Lesser Himalaya and the Shiwalik range, such as Dehra Dun, are known as:",
+    "options": [
+      {
+        "en": "Duns"
+      },
+      {
+        "en": "Duars"
+      },
+      {
+        "en": "Karewas"
+      },
+      {
+        "en": "Bugyals"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Longitudinal valleys between the Lesser Himalaya and the Shiwaliks are called Duns, e.g. Dehra Dun, Kotli Dun and Patli Dun (NCERT).",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "ga_geo",
+    "subtopic": "Rivers & tributaries",
+    "difficulty": "hard",
+    "question_en": "Which river rises in Rakas Tal near Mansarovar in Tibet and enters India through the Shipki La pass?",
+    "options": [
+      {
+        "en": "Beas"
+      },
+      {
+        "en": "Satluj"
+      },
+      {
+        "en": "Chenab"
+      },
+      {
+        "en": "Ravi"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The Satluj originates in Rakas Tal near Mansarovar (called Langchen Khambab in Tibet) and enters India through Shipki La in Himachal Pradesh.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "ga_geo",
+    "subtopic": "Dams & rivers",
+    "difficulty": "medium",
+    "question_en": "Which of the following dam–river pairs is NOT correctly matched?",
+    "options": [
+      {
+        "en": "Tehri – Bhagirathi"
+      },
+      {
+        "en": "Hirakud – Mahanadi"
+      },
+      {
+        "en": "Bhakra – Satluj"
+      },
+      {
+        "en": "Nagarjuna Sagar – Godavari"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Nagarjuna Sagar dam is on the Krishna river, not the Godavari. The other three pairs are correct.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "ga_geo",
+    "subtopic": "Rivers & tributaries",
+    "difficulty": "easy",
+    "question_en": "Which river is known as the 'Sorrow of Bihar' because of its frequent floods and shifting course?",
+    "options": [
+      {
+        "en": "Son"
+      },
+      {
+        "en": "Damodar"
+      },
+      {
+        "en": "Gandak"
+      },
+      {
+        "en": "Kosi"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "The Kosi often changes its course and floods north Bihar, so it is called the 'Sorrow of Bihar'. The Damodar was called the 'Sorrow of Bengal'.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "ga_geo",
+    "subtopic": "Soils",
+    "difficulty": "medium",
+    "question_en": "Which soil develops under high temperature and heavy rainfall due to intense leaching, and is well suited to cashew nut?",
+    "options": [
+      {
+        "en": "Laterite soil"
+      },
+      {
+        "en": "Alluvial soil"
+      },
+      {
+        "en": "Black soil"
+      },
+      {
+        "en": "Arid soil"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Laterite soil forms where intense leaching removes lime and silica under heavy rain and high heat; with manure it suits cashew, tea and coffee (NCERT).",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "ga_geo",
+    "subtopic": "Monsoon",
+    "difficulty": "medium",
+    "question_en": "The violent pre-monsoon evening thunderstorms of West Bengal in April–May are locally called:",
+    "options": [
+      {
+        "en": "Mango showers"
+      },
+      {
+        "en": "Kalbaisakhi"
+      },
+      {
+        "en": "Blossom showers"
+      },
+      {
+        "en": "Loo"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Kalbaisakhi ('calamity of the month of Baisakh') are pre-monsoon nor'westers in West Bengal and Assam. Mango showers occur in Kerala and Karnataka.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "ga_geo",
+    "subtopic": "Monsoon",
+    "difficulty": "medium",
+    "question_en": "Which state receives the bulk of its annual rainfall during October–November from the retreating (north-east) monsoon?",
+    "options": [
+      {
+        "en": "Gujarat"
+      },
+      {
+        "en": "Kerala"
+      },
+      {
+        "en": "Tamil Nadu"
+      },
+      {
+        "en": "Odisha"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "The Coromandel coast of Tamil Nadu stays relatively dry in the south-west monsoon and gets most of its rain in October–November from the retreating monsoon.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "ga_geo",
+    "subtopic": "Minerals & leading states",
+    "difficulty": "medium",
+    "question_en": "The Khetri copper mines, among the oldest copper belts of India, are located in which state?",
+    "options": [
+      {
+        "en": "Odisha"
+      },
+      {
+        "en": "Jharkhand"
+      },
+      {
+        "en": "Madhya Pradesh"
+      },
+      {
+        "en": "Rajasthan"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "The Khetri–Singhana belt in Jhunjhunu district of Rajasthan is a major copper belt; Balaghat (MP) and Singhbhum (Jharkhand) are others.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "ga_geo",
+    "subtopic": "Minerals & leading states",
+    "difficulty": "hard",
+    "question_en": "Which state is the leading producer of bauxite, the ore of aluminium, in India?",
+    "options": [
+      {
+        "en": "Odisha"
+      },
+      {
+        "en": "Gujarat"
+      },
+      {
+        "en": "Jharkhand"
+      },
+      {
+        "en": "Chhattisgarh"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Odisha is India's largest bauxite producer; its Koraput and Kalahandi districts host the Panchpatmali and other deposits.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "ga_geo",
+    "subtopic": "National parks & biosphere reserves",
+    "difficulty": "hard",
+    "question_en": "Which was the first biosphere reserve of India, established in 1986?",
+    "options": [
+      {
+        "en": "Sundarbans"
+      },
+      {
+        "en": "Nilgiri"
+      },
+      {
+        "en": "Nanda Devi"
+      },
+      {
+        "en": "Gulf of Mannar"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The Nilgiri Biosphere Reserve, spread over Tamil Nadu, Kerala and Karnataka, was set up in 1986 as India's first biosphere reserve.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "ga_geo",
+    "subtopic": "Crops & states",
+    "difficulty": "easy",
+    "question_en": "Which state is the largest producer of coffee in India?",
+    "options": [
+      {
+        "en": "Assam"
+      },
+      {
+        "en": "Kerala"
+      },
+      {
+        "en": "Karnataka"
+      },
+      {
+        "en": "Tamil Nadu"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Karnataka produces about 70 per cent of India's coffee, mainly in Chikkamagaluru, Kodagu and Hassan districts.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "ga_geo",
+    "subtopic": "States & UTs",
+    "difficulty": "hard",
+    "question_en": "Which state of India shares its boundary with the largest number of other states?",
+    "options": [
+      {
+        "en": "Maharashtra"
+      },
+      {
+        "en": "Madhya Pradesh"
+      },
+      {
+        "en": "Assam"
+      },
+      {
+        "en": "Uttar Pradesh"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Uttar Pradesh borders eight states (Uttarakhand, Himachal Pradesh, Haryana, Rajasthan, Madhya Pradesh, Chhattisgarh, Jharkhand, Bihar) besides the NCT of Delhi.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "ga_geo",
+    "subtopic": "Geological time scale",
+    "difficulty": "hard",
+    "question_en": "The Quaternary period, in which modern humans appeared, belongs to which geological era?",
+    "options": [
+      {
+        "en": "Cenozoic"
+      },
+      {
+        "en": "Mesozoic"
+      },
+      {
+        "en": "Palaeozoic"
+      },
+      {
+        "en": "Proterozoic"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The Cenozoic era has the Tertiary (Palaeogene and Neogene) and Quaternary periods; the Mesozoic is the age of dinosaurs.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "ga_geo",
+    "subtopic": "Census 2011 – population",
+    "difficulty": "easy",
+    "question_en": "According to Census 2011, the total population of India was about:",
+    "options": [
+      {
+        "en": "102 crore"
+      },
+      {
+        "en": "121 crore"
+      },
+      {
+        "en": "128 crore"
+      },
+      {
+        "en": "115 crore"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Census 2011 counted 1,21,08,54,977 persons, about 121 crore; Census 2001 had recorded about 102.9 crore.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "ga_geo",
+    "subtopic": "Census 2011 – decadal growth",
+    "difficulty": "hard",
+    "question_en": "What was India's decadal population growth rate for 2001–2011 as per Census 2011?",
+    "options": [
+      {
+        "en": "14.3 per cent"
+      },
+      {
+        "en": "21.5 per cent"
+      },
+      {
+        "en": "17.7 per cent"
+      },
+      {
+        "en": "24.8 per cent"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Population grew by 17.7 per cent in 2001–2011, down from 21.5 per cent in 1991–2001 — the sharpest fall in decadal growth since Independence.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "ga_geo",
+    "subtopic": "Census 2011 – sex ratio",
+    "difficulty": "medium",
+    "question_en": "As per Census 2011, which state recorded the lowest overall sex ratio (females per 1,000 males)?",
+    "options": [
+      {
+        "en": "Rajasthan"
+      },
+      {
+        "en": "Punjab"
+      },
+      {
+        "en": "Bihar"
+      },
+      {
+        "en": "Haryana"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Haryana had the lowest sex ratio among states at 879; Kerala had the highest at 1,084. The national figure was 943.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "ga_geo",
+    "subtopic": "Census 2011 – literacy",
+    "difficulty": "medium",
+    "question_en": "According to Census 2011 (provisional figures, the ones usually quoted), the overall literacy rate of India was:",
+    "options": [
+      {
+        "en": "74.04 per cent"
+      },
+      {
+        "en": "64.84 per cent"
+      },
+      {
+        "en": "82.14 per cent"
+      },
+      {
+        "en": "65.46 per cent"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Provisional Census 2011 data put overall literacy at 74.04 per cent (male 82.14, female 65.46); it was 64.84 per cent in 2001. The final Primary Census Abstract gave about 73.0 per cent (male 80.88, female 64.63), but exams normally quote 74.04.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "ga_geo",
+    "subtopic": "Census 2011 – density",
+    "difficulty": "medium",
+    "question_en": "Which state had the highest population density as per Census 2011?",
+    "options": [
+      {
+        "en": "West Bengal"
+      },
+      {
+        "en": "Bihar"
+      },
+      {
+        "en": "Kerala"
+      },
+      {
+        "en": "Uttar Pradesh"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Bihar had the highest density among states at 1,106 persons per sq km; the national average was 382 and Arunachal Pradesh the lowest at 17.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "ga_econ",
+    "subtopic": "National income",
+    "difficulty": "medium",
+    "question_en": "Gross National Product (GNP) is equal to Gross Domestic Product (GDP) plus:",
+    "options": [
+      {
+        "en": "Indirect taxes minus subsidies"
+      },
+      {
+        "en": "Depreciation of capital stock"
+      },
+      {
+        "en": "Net factor income from abroad"
+      },
+      {
+        "en": "Net exports of goods"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "GNP = GDP + net factor income from abroad. Subtracting depreciation from GNP gives NNP.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "ga_econ",
+    "subtopic": "Deficits",
+    "difficulty": "medium",
+    "question_en": "Primary deficit of the government is obtained by subtracting which item from the fiscal deficit?",
+    "options": [
+      {
+        "en": "Defence expenditure"
+      },
+      {
+        "en": "Capital expenditure"
+      },
+      {
+        "en": "Revenue deficit"
+      },
+      {
+        "en": "Interest payments"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Primary deficit = fiscal deficit − interest payments; it shows borrowing needed for expenses other than interest.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "ga_econ",
+    "subtopic": "Inflation indices",
+    "difficulty": "hard",
+    "question_en": "The Wholesale Price Index (WPI) in India is compiled and released by:",
+    "options": [
+      {
+        "en": "Office of the Economic Adviser, DPIIT"
+      },
+      {
+        "en": "National Statistics Office, MoSPI"
+      },
+      {
+        "en": "Department of Economic Affairs"
+      },
+      {
+        "en": "Labour Bureau, Ministry of Labour"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "WPI is released by the Office of the Economic Adviser, Department for Promotion of Industry and Internal Trade (Ministry of Commerce and Industry). CPI is released by the NSO.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "ga_econ",
+    "subtopic": "RBI tools",
+    "difficulty": "medium",
+    "question_en": "Under the Statutory Liquidity Ratio (SLR), banks must keep a fixed share of their net demand and time liabilities as:",
+    "options": [
+      {
+        "en": "Cash balance deposited with the RBI"
+      },
+      {
+        "en": "Cash, gold and approved securities with themselves"
+      },
+      {
+        "en": "Loans given to priority sectors"
+      },
+      {
+        "en": "Foreign currency deposits abroad"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "SLR is held by the bank itself in liquid assets such as cash, gold and approved government securities. CRR, by contrast, is cash kept with the RBI.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "ga_econ",
+    "subtopic": "Monetary Policy Committee",
+    "difficulty": "medium",
+    "question_en": "Consider the statements about the Monetary Policy Committee (MPC): 1. It has six members, three of them from the RBI including the Governor. 2. In case of a tie, the RBI Governor has a casting vote. Which is/are correct?",
+    "options": [
+      {
+        "en": "1 only"
+      },
+      {
+        "en": "2 only"
+      },
+      {
+        "en": "Both 1 and 2"
+      },
+      {
+        "en": "Neither 1 nor 2"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Both are correct. The MPC, set up in 2016 under the amended RBI Act, 1934, has six members and the Governor has a second or casting vote in a tie.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "ga_econ",
+    "subtopic": "Financial institutions",
+    "difficulty": "medium",
+    "question_en": "NABARD, the apex development bank for agriculture and rural development, was established in:",
+    "options": [
+      {
+        "en": "1990"
+      },
+      {
+        "en": "1969"
+      },
+      {
+        "en": "1982"
+      },
+      {
+        "en": "1975"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "NABARD was set up on 12 July 1982 on the recommendation of the CRAFICARD (B. Sivaraman) Committee.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "ga_econ",
+    "subtopic": "Financial institutions",
+    "difficulty": "easy",
+    "question_en": "Which is the principal financial institution for the promotion and financing of the MSME sector in India?",
+    "options": [
+      {
+        "en": "SIDBI"
+      },
+      {
+        "en": "NABARD"
+      },
+      {
+        "en": "EXIM Bank"
+      },
+      {
+        "en": "NHB"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The Small Industries Development Bank of India (SIDBI), set up in 1990, is the principal institution for micro, small and medium enterprises.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "ga_econ",
+    "subtopic": "Financial-inclusion schemes",
+    "difficulty": "easy",
+    "question_en": "Pradhan Mantri Jan Dhan Yojana, the national mission for financial inclusion, was launched in:",
+    "options": [
+      {
+        "en": "2016"
+      },
+      {
+        "en": "2014"
+      },
+      {
+        "en": "2012"
+      },
+      {
+        "en": "2015"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "PMJDY was launched on 28 August 2014 to give every household a basic bank account with a RuPay debit card and accident cover.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "ga_econ",
+    "subtopic": "HDI & reports",
+    "difficulty": "easy",
+    "question_en": "The Human Development Index (HDI) is published every year by:",
+    "options": [
+      {
+        "en": "IMF"
+      },
+      {
+        "en": "World Bank"
+      },
+      {
+        "en": "UNDP"
+      },
+      {
+        "en": "WTO"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "The United Nations Development Programme publishes the HDI in its Human Development Report, combining health, education and standard of living.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "ga_econ",
+    "subtopic": "Types of banks",
+    "difficulty": "medium",
+    "question_en": "Which type of bank in India can accept deposits but is NOT allowed to give loans?",
+    "options": [
+      {
+        "en": "Cooperative bank"
+      },
+      {
+        "en": "Small finance bank"
+      },
+      {
+        "en": "Regional rural bank"
+      },
+      {
+        "en": "Payments bank"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Payments banks may accept limited deposits and offer remittances and debit cards, but they cannot lend or issue credit cards.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "ga_econ",
+    "subtopic": "GST",
+    "difficulty": "easy",
+    "question_en": "The Goods and Services Tax (GST) came into force across India on:",
+    "options": [
+      {
+        "en": "1 July 2017"
+      },
+      {
+        "en": "1 April 2017"
+      },
+      {
+        "en": "1 July 2016"
+      },
+      {
+        "en": "8 November 2016"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "GST, a destination-based indirect tax, was rolled out on 1 July 2017 after the 101st Constitutional Amendment of 2016.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "ga_econ",
+    "subtopic": "Sectors of economy",
+    "difficulty": "medium",
+    "question_en": "Disguised unemployment, where more people work than are actually needed, is most common in India in:",
+    "options": [
+      {
+        "en": "Information technology"
+      },
+      {
+        "en": "Agriculture"
+      },
+      {
+        "en": "Banking services"
+      },
+      {
+        "en": "Large-scale industry"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "In the primary sector, especially family farming, many members work on small plots; removing some would not reduce output (NCERT Class 10).",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "ga_science",
+    "subtopic": "Units & gravitation",
+    "difficulty": "hard",
+    "question_en": "What is the SI unit of the universal gravitational constant G?",
+    "options": [
+      {
+        "en": "N m kg⁻¹"
+      },
+      {
+        "en": "N kg² m⁻²"
+      },
+      {
+        "en": "N m² kg⁻²"
+      },
+      {
+        "en": "kg m s⁻²"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "From F = Gm₁m₂/r², G = Fr²/(m₁m₂), so its unit is N m² kg⁻². Its value is about 6.67 × 10⁻¹¹ N m² kg⁻².",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "ga_science",
+    "subtopic": "Instruments",
+    "difficulty": "easy",
+    "question_en": "Which instrument is used to measure the relative humidity of air?",
+    "options": [
+      {
+        "en": "Manometer"
+      },
+      {
+        "en": "Hydrometer"
+      },
+      {
+        "en": "Barometer"
+      },
+      {
+        "en": "Hygrometer"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "A hygrometer measures humidity. A hydrometer measures the density of liquids and a barometer measures atmospheric pressure.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "ga_science",
+    "subtopic": "Optics – mirrors",
+    "difficulty": "easy",
+    "question_en": "Which type of mirror is used as a rear-view mirror in vehicles?",
+    "options": [
+      {
+        "en": "Convex mirror"
+      },
+      {
+        "en": "Concave mirror"
+      },
+      {
+        "en": "Plane mirror"
+      },
+      {
+        "en": "Cylindrical mirror"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "A convex mirror always forms an erect, diminished image and gives a wider field of view, so it is used as a rear-view mirror.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "ga_science",
+    "subtopic": "Optics – atmosphere",
+    "difficulty": "medium",
+    "question_en": "The twinkling of stars is mainly due to:",
+    "options": [
+      {
+        "en": "Dispersion of light"
+      },
+      {
+        "en": "Atmospheric refraction"
+      },
+      {
+        "en": "Total internal reflection"
+      },
+      {
+        "en": "Scattering of light"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Starlight is refracted by air layers of changing density, so the apparent position and brightness of a star keep changing, causing twinkling.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "ga_science",
+    "subtopic": "Sound",
+    "difficulty": "easy",
+    "question_en": "The audible range of frequencies for the normal human ear is about:",
+    "options": [
+      {
+        "en": "200 Hz to 200 kHz"
+      },
+      {
+        "en": "2 Hz to 2 kHz"
+      },
+      {
+        "en": "20 Hz to 20 kHz"
+      },
+      {
+        "en": "20 kHz to 200 kHz"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Humans hear roughly 20 Hz to 20,000 Hz. Sound below 20 Hz is infrasound and above 20 kHz is ultrasound.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "ga_science",
+    "subtopic": "Electricity",
+    "difficulty": "medium",
+    "question_en": "The heating element of an electric iron or heater is usually made of:",
+    "options": [
+      {
+        "en": "Aluminium"
+      },
+      {
+        "en": "Copper"
+      },
+      {
+        "en": "Tungsten"
+      },
+      {
+        "en": "Nichrome"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Nichrome, an alloy of nickel and chromium, has high resistivity and a high melting point and does not oxidise easily when hot.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "ga_science",
+    "subtopic": "Natural acids",
+    "difficulty": "medium",
+    "question_en": "Which of the following pairs of natural source and acid is NOT correctly matched?",
+    "options": [
+      {
+        "en": "Ant sting – Citric acid"
+      },
+      {
+        "en": "Tamarind – Tartaric acid"
+      },
+      {
+        "en": "Curd – Lactic acid"
+      },
+      {
+        "en": "Vinegar – Acetic acid"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Ant sting contains methanoic (formic) acid; citric acid is found in lemon and orange. The other pairs are correct (NCERT Class 10).",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "ga_science",
+    "subtopic": "Common chemical names",
+    "difficulty": "medium",
+    "question_en": "The chemical formula of washing soda is:",
+    "options": [
+      {
+        "en": "NaHCO₃"
+      },
+      {
+        "en": "Na₂CO₃·10H₂O"
+      },
+      {
+        "en": "CaOCl₂"
+      },
+      {
+        "en": "CaSO₄·2H₂O"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Washing soda is sodium carbonate decahydrate, Na₂CO₃·10H₂O. NaHCO₃ is baking soda, CaOCl₂ is bleaching powder and CaSO₄·2H₂O is gypsum.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "ga_science",
+    "subtopic": "Metals",
+    "difficulty": "easy",
+    "question_en": "Which metal is the best conductor of electricity?",
+    "options": [
+      {
+        "en": "Aluminium"
+      },
+      {
+        "en": "Copper"
+      },
+      {
+        "en": "Silver"
+      },
+      {
+        "en": "Gold"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Silver has the highest electrical conductivity of all metals; copper is second and is used in wires because it is much cheaper.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "ga_science",
+    "subtopic": "Vitamins & deficiency diseases",
+    "difficulty": "medium",
+    "question_en": "Deficiency of Vitamin B1 (thiamine) causes which disease?",
+    "options": [
+      {
+        "en": "Pellagra"
+      },
+      {
+        "en": "Scurvy"
+      },
+      {
+        "en": "Rickets"
+      },
+      {
+        "en": "Beriberi"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Lack of thiamine causes beriberi. Scurvy is due to lack of Vitamin C, rickets to Vitamin D and pellagra to niacin (B3).",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "ga_science",
+    "subtopic": "Diseases & causative agents",
+    "difficulty": "easy",
+    "question_en": "Which of the following diseases is caused by a virus?",
+    "options": [
+      {
+        "en": "Chickenpox"
+      },
+      {
+        "en": "Typhoid"
+      },
+      {
+        "en": "Cholera"
+      },
+      {
+        "en": "Tuberculosis"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Chickenpox is caused by the varicella-zoster virus. Typhoid, cholera and tuberculosis are bacterial diseases.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "ga_science",
+    "subtopic": "Human body",
+    "difficulty": "easy",
+    "question_en": "Which is the largest gland in the human body?",
+    "options": [
+      {
+        "en": "Pancreas"
+      },
+      {
+        "en": "Liver"
+      },
+      {
+        "en": "Thyroid"
+      },
+      {
+        "en": "Pituitary"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The liver is the largest gland; it secretes bile, which emulsifies fats in the small intestine.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "ga_science",
+    "subtopic": "Space science",
+    "difficulty": "medium",
+    "question_en": "ISRO's Aditya-L1, India's first space-based solar observatory, is placed in a halo orbit around:",
+    "options": [
+      {
+        "en": "Geostationary orbit of Earth"
+      },
+      {
+        "en": "Earth–Moon Lagrange point L2"
+      },
+      {
+        "en": "Sun–Earth Lagrange point L1"
+      },
+      {
+        "en": "A low polar orbit of the Moon"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Aditya-L1 was launched by PSLV-C57 in September 2023 and reached a halo orbit around L1, about 1.5 million km from Earth, in January 2024.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "ga_delhi",
+    "subtopic": "Cities of Delhi",
+    "difficulty": "medium",
+    "question_en": "Siri, counted among the 'seven cities' of Delhi, was founded by:",
+    "options": [
+      {
+        "en": "Muhammad bin Tughluq"
+      },
+      {
+        "en": "Ghiyasuddin Tughluq"
+      },
+      {
+        "en": "Firoz Shah Tughluq"
+      },
+      {
+        "en": "Alauddin Khalji"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Alauddin Khalji built Siri around 1303 against Mongol raids. Tughlaqabad was built by Ghiyasuddin, Jahanpanah by Muhammad bin Tughluq and Firozabad by Firoz Shah.",
+    "pyq_concept": true
+  },
+  {
+    "chapter_key": "ga_delhi",
+    "subtopic": "Monuments & UNESCO sites",
+    "difficulty": "hard",
+    "question_en": "In which year was the Red Fort Complex of Delhi inscribed as a UNESCO World Heritage Site?",
+    "options": [
+      {
+        "en": "2007"
+      },
+      {
+        "en": "1993"
+      },
+      {
+        "en": "2010"
+      },
+      {
+        "en": "2014"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "The Red Fort Complex was inscribed in 2007. Qutb Minar and its monuments and Humayun's Tomb were inscribed in 1993.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "ga_delhi",
+    "subtopic": "Local government (MCD)",
+    "difficulty": "hard",
+    "question_en": "The three municipal corporations of Delhi (North, South and East) were merged back into a single Municipal Corporation of Delhi in which year?",
+    "options": [
+      {
+        "en": "2012"
+      },
+      {
+        "en": "2022"
+      },
+      {
+        "en": "2017"
+      },
+      {
+        "en": "2020"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The MCD was split into three corporations in 2012. The Delhi Municipal Corporation (Amendment) Act, 2022 reunified them into one MCD from 22 May 2022, and the delimitation that followed fixed 250 wards.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "ga_delhi",
+    "subtopic": "Assembly seats",
+    "difficulty": "easy",
+    "question_en": "How many seats does the Legislative Assembly of the NCT of Delhi have?",
+    "options": [
+      {
+        "en": "80"
+      },
+      {
+        "en": "60"
+      },
+      {
+        "en": "70"
+      },
+      {
+        "en": "90"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "The Delhi Legislative Assembly has 70 elected members, 12 of them reserved for Scheduled Castes.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "ga_delhi",
+    "subtopic": "Delhi Metro",
+    "difficulty": "easy",
+    "question_en": "The Airport Express Line of Delhi Metro, linking New Delhi railway station with IGI Airport, is shown on the map in which colour?",
+    "options": [
+      {
+        "en": "Grey"
+      },
+      {
+        "en": "Magenta"
+      },
+      {
+        "en": "Violet"
+      },
+      {
+        "en": "Orange"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "The Airport Express Line is the Orange Line, running from New Delhi to IGI Airport and Dwarka.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "ga_delhi",
+    "subtopic": "DoE school types",
+    "difficulty": "easy",
+    "question_en": "In Delhi's Directorate of Education, the abbreviation 'RPVV' stands for:",
+    "options": [
+      {
+        "en": "Rajkiya Pratibha Vikas Vidyalaya"
+      },
+      {
+        "en": "Rashtriya Pratibha Vikas Vidyalaya"
+      },
+      {
+        "en": "Rajkiya Pragati Vikas Vidyalaya"
+      },
+      {
+        "en": "Rajya Pratibha Vidya Vihar"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "RPVVs are Rajkiya Pratibha Vikas Vidyalayas — Delhi government schools for meritorious students, with admission through a test.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "ga_delhi",
+    "subtopic": "DoE school types",
+    "difficulty": "medium",
+    "question_en": "Which category of Delhi government schools, started in 2021, offers specialised domains such as STEM, Humanities and Performing Arts?",
+    "options": [
+      {
+        "en": "Rajkiya Pratibha Vikas Vidyalayas"
+      },
+      {
+        "en": "Schools of Specialised Excellence"
+      },
+      {
+        "en": "Sarvodaya Vidyalayas"
+      },
+      {
+        "en": "Kendriya Vidyalayas"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "Schools of Specialised Excellence (SoSE) were started by the Delhi DoE in 2021 for students with aptitude in specific domains. Sarvodaya Vidyalayas are composite schools.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "ga_delhi",
+    "subtopic": "Happiness Curriculum",
+    "difficulty": "medium",
+    "question_en": "The Happiness Curriculum was introduced in Delhi government schools, in the presence of the Dalai Lama, in the year:",
+    "options": [
+      {
+        "en": "2019"
+      },
+      {
+        "en": "2016"
+      },
+      {
+        "en": "2018"
+      },
+      {
+        "en": "2020"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "The Happiness Curriculum was launched in July 2018 for classes nursery to 8, with a daily period on mindfulness and wellbeing.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "ga_delhi",
+    "subtopic": "Delhi firsts",
+    "difficulty": "hard",
+    "question_en": "Who was the first Chief Minister of Delhi, taking office in 1952?",
+    "options": [
+      {
+        "en": "Sahib Singh Verma"
+      },
+      {
+        "en": "Madan Lal Khurana"
+      },
+      {
+        "en": "Gurmukh Nihal Singh"
+      },
+      {
+        "en": "Chaudhary Brahm Prakash"
+      }
+    ],
+    "answer_index": 3,
+    "explanation_en": "Chaudhary Brahm Prakash became Delhi's first Chief Minister in 1952. Madan Lal Khurana was the first CM after the Assembly was restored in 1993.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "ga_delhi",
+    "subtopic": "Delhi firsts",
+    "difficulty": "easy",
+    "question_en": "Who was the first woman Chief Minister of Delhi (1998)?",
+    "options": [
+      {
+        "en": "Sushma Swaraj"
+      },
+      {
+        "en": "Sheila Dikshit"
+      },
+      {
+        "en": "Kiran Walia"
+      },
+      {
+        "en": "Krishna Tirath"
+      }
+    ],
+    "answer_index": 0,
+    "explanation_en": "Sushma Swaraj became Delhi's first woman Chief Minister in October 1998; Sheila Dikshit succeeded her in December 1998.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "ga_delhi",
+    "subtopic": "State symbols",
+    "difficulty": "easy",
+    "question_en": "Which bird was declared the state bird of Delhi in 2012 to promote its conservation?",
+    "options": [
+      {
+        "en": "Indian peacock"
+      },
+      {
+        "en": "House sparrow"
+      },
+      {
+        "en": "Common myna"
+      },
+      {
+        "en": "Rock pigeon"
+      }
+    ],
+    "answer_index": 1,
+    "explanation_en": "The house sparrow (gauraiya) was declared Delhi's state bird in 2012 because its numbers were falling.",
+    "pyq_concept": false
+  },
+  {
+    "chapter_key": "ga_delhi",
+    "subtopic": "Census 2011 – Delhi",
+    "difficulty": "medium",
+    "question_en": "According to Census 2011, the population of the NCT of Delhi was about:",
+    "options": [
+      {
+        "en": "2.10 crore"
+      },
+      {
+        "en": "1.38 crore"
+      },
+      {
+        "en": "1.68 crore"
+      },
+      {
+        "en": "1.12 crore"
+      }
+    ],
+    "answer_index": 2,
+    "explanation_en": "Census 2011 counted 1,67,87,941 persons in Delhi, about 1.68 crore, up from about 1.38 crore in 2001.",
+    "pyq_concept": true
+  }
+]

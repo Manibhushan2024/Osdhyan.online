@@ -1,0 +1,98 @@
+{
+ "subject": "General Awareness (Current Affairs + Static GK)",
+ "subject_hi": "सामान्य जागरूकता (करंट अफेयर्स + स्टैटिक GK)",
+ "chapters": [
+  {
+   "key": "ga_current",
+   "title": "1. Current Affairs — February to October 2026",
+   "items": [
+    {
+     "title": "Current Affairs — February to October 2026 — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\ga\\ga_current.pdf"
+    }
+   ]
+  },
+  {
+   "key": "ga_history",
+   "title": "2. Indian History, Art & Culture",
+   "items": [
+    {
+     "title": "Indian History, Art & Culture — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\ga\\ga_history.pdf"
+    }
+   ]
+  },
+  {
+   "key": "ga_polity",
+   "title": "3. Indian Polity & Constitution",
+   "items": [
+    {
+     "title": "Indian Polity & Constitution — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\ga\\ga_polity.pdf"
+    }
+   ]
+  },
+  {
+   "key": "ga_geo",
+   "title": "4. Indian Geography & Census",
+   "items": [
+    {
+     "title": "Indian Geography & Census — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\ga\\ga_geo.pdf"
+    }
+   ]
+  },
+  {
+   "key": "ga_econ",
+   "title": "5. Indian Economy & Banking Basics",
+   "items": [
+    {
+     "title": "Indian Economy & Banking Basics — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\ga\\ga_econ.pdf"
+    }
+   ]
+  },
+  {
+   "key": "ga_science",
+   "title": "6. General Science (Class 10 level)",
+   "items": [
+    {
+     "title": "General Science (Class 10 level) — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\ga\\ga_science.pdf"
+    }
+   ]
+  },
+  {
+   "key": "ga_delhi",
+   "title": "7. Delhi GK",
+   "items": [
+    {
+     "title": "Delhi GK — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\ga\\ga_delhi.pdf"
+    }
+   ]
+  },
+  {
+   "key": "ga_practice",
+   "title": "8. Complete notes, previous-year questions & 200 most expected",
+   "items": [
+    {
+     "title": "General Awareness — fast revision sheet (revise everything quickly)",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\ga\\ga_fast_revision.pdf"
+    },
+    {
+     "title": "General Awareness — complete notes (all chapters in one PDF)",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\ga\\ga_complete_notes.pdf"
+    },
+    {
+     "title": "General Awareness — previous-year questions 2023–24 with solutions",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\ga\\ga_pyq_2023_24.pdf"
+    },
+    {
+     "title": "General Awareness — 200 most expected questions with answers",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\ga\\ga_200_most_expected.pdf"
+    }
+   ]
+  }
+ ]
+}
