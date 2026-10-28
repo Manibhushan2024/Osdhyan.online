@@ -35,10 +35,17 @@ RUN chmod +x /usr/local/bin/osdhyan-entrypoint
 
 WORKDIR /var/www/osdhyan
 
+COPY --from=vendor /usr/bin/composer /usr/bin/composer
 COPY --from=vendor /app/vendor ./vendor
 COPY . .
 
-RUN mkdir -p storage/framework/sessions storage/framework/views storage/framework/cache/data storage/logs bootstrap/cache \
+# The vendor stage built its class map before the app code existed, so it
+# has no App\ classes. Rebuild it now that app/ is here (authoritative =
+# no filesystem lookups at runtime). vendor/ is in .dockerignore, so a
+# developer's local packages can never leak into the image.
+RUN composer dump-autoload --no-dev --optimize --classmap-authoritative --no-interaction --no-scripts \
+    && php -r 'require "vendor/autoload.php"; exit(class_exists("App\\Models\\User") ? 0 : 1);' \
+    && mkdir -p storage/framework/sessions storage/framework/views storage/framework/cache/data storage/logs bootstrap/cache \
     && php artisan package:discover --ansi \
     && chown -R www-data:www-data storage bootstrap/cache \
     && chmod -R 775 storage bootstrap/cache

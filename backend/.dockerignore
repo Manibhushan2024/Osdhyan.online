@@ -17,3 +17,6 @@ docker-compose*.yml
 storage/app/public/*
 storage/app/private/*
 !storage/app/public/.gitignore
+
+# Packages are installed inside the image (vendor stage); never copy local ones
+vendor
