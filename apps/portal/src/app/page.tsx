@@ -11,6 +11,7 @@ import {
     FileText,
     GraduationCap,
     Languages,
+    Smartphone,
     Video,
 } from 'lucide-react';
 
@@ -125,6 +126,15 @@ export default function LandingPage() {
                         <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-green-600" /> No card needed</li>
                         <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-green-600" /> Works on low-end phones</li>
                     </ul>
+                    {/* Android app: the APK is served from the API's public storage. */}
+                    <a
+                        href="/storage/downloads/osdhyan.apk"
+                        download
+                        className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline"
+                    >
+                        <Smartphone className="h-4 w-4" />
+                        Download the Android app (APK)
+                    </a>
                 </div>
             </section>
 
