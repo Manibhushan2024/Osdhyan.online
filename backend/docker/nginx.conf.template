@@ -55,6 +55,16 @@ http {
             try_files $uri =404;
         }
 
+        # Android app downloads: correct type so phones offer to install,
+        # and no week-long caching (a new APK replaces osdhyan.apk).
+        location /storage/downloads/ {
+            alias /var/www/osdhyan/storage/app/public/downloads/;
+            types { application/vnd.android.package-archive apk; }
+            default_type application/octet-stream;
+            add_header Cache-Control "no-cache";
+            try_files $uri =404;
+        }
+
         location ~ /\.(?!well-known) {
             deny all;
         }
