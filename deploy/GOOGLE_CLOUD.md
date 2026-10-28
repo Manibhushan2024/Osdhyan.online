@@ -56,3 +56,21 @@ Fill `MAIL_USERNAME`, `MAIL_PASSWORD`, `MAIL_FROM_ADDRESS` (and `MAIL_HOST` for 
 `deploy/.env`, then `docker compose up -d backend` and
 `docker compose exec backend php artisan osdhyan:mail-test you@example.com`.
 Until then students cannot sign in by code on this server (production never shows codes).
+
+## Android app (APK)
+
+- Download link (also on the home page): https://8-234-95-50.sslip.io/storage/downloads/osdhyan.apk
+- Signing key: `C:\dev\osdhyan-data\android\osdhyan-release.jks`, password in
+  `C:\dev\osdhyan-data\android\keystore.txt`. **Back both up.** Android only installs
+  updates signed with the same key. SHA-256 fingerprint:
+  `B2:14:88:DA:CA:05:86:C3:04:E1:C5:6F:53:5D:80:8C:F2:FF:0E:E4:69:6A:84:F4:7B:63:8D:D5:21:42:2E:20`
+  (needed later for Firebase and Google sign-in).
+
+Publish a new version:
+1. Raise `version` in `mobile/osdhyan/package.json` and set a higher `OSDHYAN_ANDROID_VERSION_CODE`.
+2. `bash mobile/osdhyan/scripts/build-apk.sh` (20–40 minutes; needs about 5 GB free disk).
+3. Upload, replacing the old file:
+```powershell
+gcloud compute scp mobile\osdhyan\dist\osdhyan-<version>-<code>.apk osdhyan-server:/home/dell/osdhyan.apk --project=osdhyan-live --zone=asia-south1-a
+gcloud compute ssh osdhyan-server --project=osdhyan-live --zone=asia-south1-a --command="cd ~/osdhyan/deploy && docker compose cp /home/dell/osdhyan.apk backend:/var/www/osdhyan/storage/app/public/downloads/osdhyan.apk"
+```
