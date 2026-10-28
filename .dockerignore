@@ -1,0 +1,9 @@
+# Build context for apps/portal/Dockerfile (repo root). Only the portal goes in.
+*
+!package.json
+!package-lock.json
+!apps/portal
+apps/portal/node_modules
+apps/portal/.next
+apps/portal/.env*
+apps/portal/**/*.log

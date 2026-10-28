@@ -73,8 +73,8 @@ services:
 
   portal:
     build:
-      context: ./apps/portal
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: apps/portal/Dockerfile
     container_name: osdhyan_portal
     restart: unless-stopped
     depends_on:

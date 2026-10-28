@@ -19,8 +19,13 @@ function Listening($port) { (Get-NetTCPConnection -LocalPort $port -State Listen
 
 # 1. PostgreSQL
 if (-not (Listening 5433)) {
-    & "$PgBin\pg_ctl.exe" -D "$Data\pgdata" -o "-p 5433 -c listen_addresses=127.0.0.1 -c max_connections=300" -l "$Logs\postgres.log" start | Out-Null
-    Start-Sleep 3
+    # Started detached: piping pg_ctl's output made this script wait forever,
+    # because the postgres child process keeps the pipe open.
+    Start-Process -FilePath "$PgBin\pg_ctl.exe" -WindowStyle Hidden -ArgumentList @(
+        '-D', "`"$Data\pgdata`"", '-o', '"-p 5433 -c listen_addresses=127.0.0.1 -c max_connections=300"',
+        '-l', "`"$Logs\postgres.log`"", 'start')
+    # After a crash or power cut PostgreSQL first replays its log; give it up to 2 minutes.
+    for ($i = 0; $i -lt 60 -and -not (Listening 5433); $i++) { Start-Sleep 2 }
 }
 & "$PgBin\pg_isready.exe" -h 127.0.0.1 -p 5433
 
@@ -91,8 +96,13 @@ if (-not $NoTunnel) {
     } else {
         # http2 transport is more reliable than QUIC on home/mobile networks
         Start-Process cloudflared -ArgumentList "tunnel --url http://127.0.0.1:3000 --no-autoupdate --protocol http2" -WindowStyle Hidden -RedirectStandardOutput "$Logs\tunnel.log" -RedirectStandardError "$Logs\tunnel.err.log"
-        Start-Sleep 8
-        $url = (Select-String -Path "$Logs\tunnel.err.log" -Pattern 'https://[a-z0-9-]+\.trycloudflare\.com' | Select-Object -First 1).Matches.Value
+        # The link appears in the log after a few seconds (longer on slow internet).
+        $url = $null
+        for ($i = 0; $i -lt 30 -and -not $url; $i++) {
+            Start-Sleep 2
+            $url = (Select-String -Path "$Logs\tunnel.err.log" -Pattern 'https://[a-z0-9-]+\.trycloudflare\.com' -ErrorAction SilentlyContinue | Select-Object -First 1).Matches.Value
+        }
+        if (-not $url) { $url = '(no link yet: see ' + "$Logs\tunnel.err.log" + ')' }
         "Tunnel: TEMPORARY link (changes on every restart; run setup-permanent-link.ps1 for a fixed one):`n        $url"
         Set-Content "$Data\current-link.txt" $url
     }

@@ -12,3 +12,8 @@ tests
 .phpunit*
 docker-compose*.yml
 *.md
+
+# Uploaded files live on a volume on the server, never inside the image
+storage/app/public/*
+storage/app/private/*
+!storage/app/public/.gitignore

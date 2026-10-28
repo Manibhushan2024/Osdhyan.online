@@ -4,6 +4,8 @@ the main DSSSB series lists them under "<Name> Special", a test can be taken wit
 answers and solutions shown after submit, and the course has its PDFs.
 
 usage: python -I scripts/smoke_pack.py <Name> [--api http://127.0.0.1:3000/api]
+  Production servers never show OTP codes, so there set OSDHYAN_CHECK_LOGIN and
+  OSDHYAN_CHECK_PASSWORD (an existing account) and the check signs in with a password.
        e.g. python -I scripts/smoke_pack.py DBMS ; python -I scripts/smoke_pack.py Programming
 """
 import argparse
@@ -41,9 +43,13 @@ def main():
     args = ap.parse_args()
     api, name = args.api, args.name
 
-    email = f'pack.check.{int(time.time())}@example.test'
-    s, p, _ = call(api, 'POST', '/auth/send-otp', body={'email': email, 'purpose': 'signup'})
-    s, p, _ = call(api, 'POST', '/auth/verify-otp', body={'email': email, 'otp': (p or {}).get('dev_otp'), 'name': 'Pack Check'})
+    if os.environ.get('OSDHYAN_CHECK_LOGIN'):
+        s, p, _ = call(api, 'POST', '/auth/login', body={'login': os.environ['OSDHYAN_CHECK_LOGIN'],
+                                                        'password': os.environ.get('OSDHYAN_CHECK_PASSWORD', '')})
+    else:
+        email = f'pack.check.{int(time.time())}@example.test'
+        s, p, _ = call(api, 'POST', '/auth/send-otp', body={'email': email, 'purpose': 'signup'})
+        s, p, _ = call(api, 'POST', '/auth/verify-otp', body={'email': email, 'otp': (p or {}).get('dev_otp'), 'name': 'Pack Check'})
     token = (p or {}).get('access_token')
     check('signed in', bool(token))
 

@@ -1,0 +1,28 @@
+{
+	email {$ACME_EMAIL:ops@osdhyan.online}
+}
+
+# SITE_ADDRESS is the public address, e.g. "osdhyan.online, www.osdhyan.online".
+# Caddy fetches and renews the HTTPS certificates by itself.
+# For a first test on a bare IP address use ":80" (plain HTTP).
+{$SITE_ADDRESS} {
+	encode zstd gzip
+
+	request_body {
+		max_size 70MB
+	}
+
+	header {
+		-Server
+		Strict-Transport-Security "max-age=31536000"
+	}
+
+	@backend path /api/* /storage/* /up /sanctum/*
+	handle @backend {
+		reverse_proxy backend:10000
+	}
+
+	handle {
+		reverse_proxy portal:3000
+	}
+}

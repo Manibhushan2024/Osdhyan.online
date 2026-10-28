@@ -1,0 +1,144 @@
+# OSDHYAN production stack — runs on any Linux server with Docker
+# (AWS, Azure, Google Cloud or a plain VPS).
+#
+#   cd deploy && cp .env.example .env   # then fill it in
+#   docker compose up -d --build
+#
+# Only Caddy is reachable from outside (ports 80 and 443). It gets HTTPS
+# certificates by itself and sends /api, /storage and /up to Laravel and
+# everything else to the Next.js website, so one address serves it all.
+name: osdhyan
+
+x-logging: &logging
+  driver: json-file
+  options: { max-size: "20m", max-file: "5" }
+
+services:
+  caddy:
+    image: caddy:2.8-alpine
+    restart: unless-stopped
+    ports:
+      - "${HTTP_PORT:-80}:80"
+      - "${HTTPS_PORT:-443}:443"
+      - "${HTTPS_PORT:-443}:443/udp"
+    environment:
+      SITE_ADDRESS: ${SITE_ADDRESS}
+      ACME_EMAIL: ${ACME_EMAIL:-ops@osdhyan.online}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on: [backend, portal]
+    logging: *logging
+
+  backend:
+    build: { context: ../backend }
+    image: osdhyan-backend:latest
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      PORT: "10000"
+      DB_CONNECTION: pgsql
+      DB_HOST: postgres
+      DB_PORT: "5432"
+      DB_DATABASE: osdhyan
+      DB_USERNAME: osdhyan
+      DB_PASSWORD: ${POSTGRES_PASSWORD}
+      REDIS_CLIENT: phpredis
+      REDIS_HOST: redis
+      REDIS_PORT: "6379"
+      REDIS_PASSWORD: ""
+      CACHE_STORE: redis
+      QUEUE_CONNECTION: redis
+      SESSION_DRIVER: redis
+      LOG_CHANNEL: stderr
+      RUN_MIGRATIONS: "1"
+      RUN_WORKERS: "1"
+    volumes:
+      - storage_app:/var/www/osdhyan/storage/app
+      - ./restore:/restore:ro
+    depends_on:
+      postgres: { condition: service_healthy }
+      redis: { condition: service_healthy }
+    logging: *logging
+
+  portal:
+    build:
+      context: ..
+      dockerfile: apps/portal/Dockerfile
+      args:
+        NEXT_PUBLIC_API_URL: /api
+        NEXT_PUBLIC_STORAGE_URL: ""
+        NEXT_PUBLIC_SITE_URL: ${APP_URL}
+        NEXT_PUBLIC_JITSI_DOMAIN: ${JITSI_DOMAIN:-}
+        BACKEND_ORIGIN: http://backend:10000
+    image: osdhyan-portal:latest
+    restart: unless-stopped
+    environment:
+      BACKEND_ORIGIN: http://backend:10000
+    depends_on: [backend]
+    logging: *logging
+
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: osdhyan
+      POSTGRES_USER: osdhyan
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    command: >
+      postgres -c shared_buffers=512MB -c effective_cache_size=1536MB
+      -c max_connections=200 -c work_mem=8MB
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./restore:/restore:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -h 127.0.0.1 -U osdhyan -d osdhyan"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    logging: *logging
+
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    command: redis-server --appendonly yes --maxmemory 384mb --maxmemory-policy allkeys-lru
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 10
+    logging: *logging
+
+  # Nightly backups into deploy/backups on the server's disk:
+  # database dump every night (kept BACKUP_KEEP_DAYS days) and the uploaded
+  # files every night (kept 7). Copy deploy/backups to cloud storage too
+  # (see CLOUD_SETUP.md, step 9).
+  backup:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      PGHOST: postgres
+      PGUSER: osdhyan
+      PGPASSWORD: ${POSTGRES_PASSWORD}
+      PGDATABASE: osdhyan
+      BACKUP_KEEP_DAYS: ${BACKUP_KEEP_DAYS:-30}
+      BACKUP_HOUR: ${BACKUP_HOUR:-2}
+      TZ: Asia/Kolkata
+    volumes:
+      - ./scripts/backup-loop.sh:/backup-loop.sh:ro
+      - ./backups:/backups
+      - storage_app:/storage_app:ro
+    entrypoint: ["/bin/sh", "/backup-loop.sh"]
+    depends_on:
+      postgres: { condition: service_healthy }
+    logging: *logging
+
+volumes:
+  pgdata:
+  redis_data:
+  storage_app:
+  caddy_data:
+  caddy_config:

@@ -42,6 +42,12 @@ Firebase does **not** host our Laravel API or the PostgreSQL database. Those run
 
 ## Phase 1 — Cloud server with a permanent address (3–4 days after your answers)
 
+**Decided 28 Oct 2026: company cloud first, own cloud later.** The server bundle is
+ready in `deploy/` (Docker Compose: Caddy with automatic HTTPS, API, website,
+PostgreSQL 16, Redis, worker, scheduler, nightly backups). It runs the same on AWS,
+Azure or Google Cloud, so the later move is the same steps on a new server plus
+one data copy. Step-by-step guide and the request to send IT: `deploy/CLOUD_SETUP.md`.
+
 **I build**
 - One server in **Mumbai** (asia-south1): Docker containers for the API (PHP-FPM + Nginx), the website (Next.js), PostgreSQL 16, Redis; HTTPS certificates that renew themselves; the queue worker and scheduler as services; log rotation.
 - Domain: `osdhyan.online` → website, `api.osdhyan.online` → API, `admin` stays under the website. Cloudflare in front for caching and DDoS protection (free plan).
