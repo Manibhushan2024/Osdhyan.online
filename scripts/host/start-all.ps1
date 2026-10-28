@@ -1,9 +1,11 @@
 # Starts everything OSDHYAN needs on this laptop:
-#   PostgreSQL (5433) -> Redis (service) -> Apache+PHP API (8000) -> Portal (3000) -> Cloudflare tunnel
+#   PostgreSQL (5433) -> Redis (service) -> Apache+PHP API (8000) -> Portal (3000) [-> Cloudflare tunnel]
+# Since 28 Oct 2026 the live site is on Google Cloud (deploy/GOOGLE_CLOUD.md), so the
+# laptop is for development only and the public tunnel is OFF unless you pass -Tunnel.
 # Run:   powershell -ExecutionPolicy Bypass -File C:\dev\test-series-platform\scripts\host\start-all.ps1
 # Logs:  C:\dev\osdhyan-data\logs\
 param(
-    [switch]$NoTunnel,      # skip cloudflared
+    [switch]$Tunnel,        # also open a public cloudflared link (off by default)
     [switch]$Rebuild        # rebuild the portal (after code changes)
 )
 
@@ -88,7 +90,7 @@ if (-not (Listening 3000)) {
 try { "Portal: http://localhost:3000 -> " + (Invoke-WebRequest -UseBasicParsing http://127.0.0.1:3000/api/health -TimeoutSec 20).StatusCode } catch { "Portal: starting (see $Logs\portal.err.log)" }
 
 # 6. Cloudflare tunnel
-if (-not $NoTunnel) {
+if ($Tunnel) {
     $named = Test-Path "$Data\cloudflared\config.yml"
     if ($named) {
         Start-Process cloudflared -ArgumentList "--config `"$Data\cloudflared\config.yml`" tunnel run" -WindowStyle Hidden -RedirectStandardOutput "$Logs\tunnel.log" -RedirectStandardError "$Logs\tunnel.err.log"

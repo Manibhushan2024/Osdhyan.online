@@ -1,5 +1,10 @@
 # Hosting OSDHYAN from this laptop
 
+> **Retired for live use on 28 Oct 2026.** The live site now runs on Google Cloud
+> (https://8-234-95-50.sslip.io, see `deploy/GOOGLE_CLOUD.md`). The laptop stack is
+> for development only; `start-all.ps1` no longer opens the public tunnel unless
+> run with `-Tunnel`. Data written on the laptop is NOT copied to the cloud.
+
 Everything runs on the laptop; the world reaches it through a Cloudflare tunnel.
 One public URL serves the portal **and** the API (Next.js proxies `/api` and
 `/storage` to Laravel — see `apps/portal/next.config.ts`).
