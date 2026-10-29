@@ -198,14 +198,17 @@ def main():
         return {'category': SUBJECT, 'chapter': chapter_prefix + title_of[ck], 'question_en': q['question_en'], 'question_hi': None,
                 'options': [{'en': o['en'], 'hi': None} for o in q['options']], 'answer_index': q['answer_index'],
                 'explanation_en': q.get('explanation_en'), 'explanation_hi': None,
-                'difficulty': q.get('difficulty') if q.get('difficulty') in ('easy', 'medium', 'hard') else 'medium'}
+                'difficulty': q.get('difficulty') if q.get('difficulty') in ('easy', 'medium', 'hard') else 'medium',
+                # concept link → notes section shown as "Revise this concept" in solutions
+                'chapter_key': ck, 'subtopic': q.get('subtopic')}
 
     category = f'{name} Special'
 
     def pyq_spec(p):
         return {'category': SUBJECT, 'chapter': chapter_prefix + title_of[p['chapter_key']], 'question_en': p['question'],
                 'question_hi': None, 'options': [{'en': o, 'hi': None} for o in p['options']], 'answer_index': p['answer'] - 1,
-                'explanation_en': p.get('explanation'), 'explanation_hi': None, 'difficulty': p.get('difficulty') or 'medium'}
+                'explanation_en': p.get('explanation'), 'explanation_hi': None, 'difficulty': p.get('difficulty') or 'medium',
+                'chapter_key': p['chapter_key'], 'subtopic': (p.get('subtopic') or '').split('] ', 1)[-1] or None}
 
     # One previous-year test, or one per chapter when the set is too long to sit in one go.
     tests = []

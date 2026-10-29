@@ -16,6 +16,8 @@ class Question extends Model
         'explanation_en',
         'explanation_hi',
         'difficulty',
+        'concept_key',
+        'subtopic',
     ];
 
     protected $hidden = ['content_hash'];

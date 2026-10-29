@@ -8,6 +8,7 @@ use App\Models\Test;
 use App\Models\TestAttempt;
 use App\Services\AttemptHistory;
 use App\Services\AttemptScorer;
+use App\Services\SectionState;
 use App\Services\TestAnswerKey;
 use App\Services\TestPayload;
 use Illuminate\Http\JsonResponse;
@@ -37,6 +38,16 @@ class TestAttemptController extends Controller
             $data['server_time']   = now()->toISOString();
             $data['deadline_at']   = $attempt->deadline($duration)->toISOString();
             $data['remaining_sec'] = $attempt->remainingSeconds($duration);
+            if ($test && SectionState::sectionsOf($test)) {
+                $data['section_state'] = SectionState::compute($attempt, $test);
+                // Every section locked (last one by its timer) → the attempt is over.
+                if ($data['section_state']['all_locked']) {
+                    AttemptScorer::finalize($attempt, $test);
+                    $attempt->refresh();
+                    $data = array_merge($data, $attempt->toArray());
+                    unset($data['server_time'], $data['deadline_at'], $data['remaining_sec']);
+                }
+            }
         }
 
         return $data;
@@ -199,14 +210,29 @@ class TestAttemptController extends Controller
             ], 409);
         }
 
-        $result = AttemptScorer::upsertResponses($attempt, TestAnswerKey::for($test), $responses);
+        $outside = 0;
+        $writable = SectionState::writableQuestionIds($attempt, $test);
+        if ($writable !== null) {
+            $allowed = array_flip($writable);
+            $before = count($responses);
+            $responses = array_values(array_filter($responses, fn ($r) => isset($allowed[(int) ($r['question_id'] ?? 0)])));
+            $outside = $before - count($responses);
+        }
 
-        return response()->json([
+        $result = $responses ? AttemptScorer::upsertResponses($attempt, TestAnswerKey::for($test), $responses) : ['saved' => 0, 'rejected' => 0];
+
+        $out = [
             'message'       => 'Responses saved',
             'saved'         => $result['saved'],
-            'rejected'      => $result['rejected'],
+            'rejected'      => $result['rejected'] + $outside,
             'remaining_sec' => $attempt->remainingSeconds($test->duration_sec),
-        ]);
+        ];
+        if ($writable !== null) {
+            $out['locked_rejected'] = $outside; // answers for locked / not-yet-open sections
+            $out['section_state'] = SectionState::compute($attempt, $test);
+        }
+
+        return response()->json($out);
     }
 
     // ─── Show (in progress or result) ─────────────────────────────────────────
@@ -241,6 +267,61 @@ class TestAttemptController extends Controller
         return $this->json($data);
     }
 
+    // ─── Sections ─────────────────────────────────────────────────────────────
+
+    /**
+     * POST /attempts/{id}/sections/{key}/lock — "Submit section": saves the
+     * answers sent with it, locks the section and opens the next one. Locking
+     * the last section submits the whole attempt.
+     */
+    public function lockSection(Request $request, $attemptId, string $key)
+    {
+        $attempt = $this->findOwnedAttempt($attemptId);
+        if ($attempt instanceof JsonResponse) {
+            return $attempt;
+        }
+        $test = $attempt->test;
+
+        if (!SectionState::isSequential($test)) {
+            return response()->json(['message' => 'This test has no locked sections.', 'code' => 'NO_SECTIONS'], 422);
+        }
+        if (!$attempt->acceptsAnswers($test->duration_sec)) {
+            return response()->json(['message' => 'Time is over for this test.', 'code' => 'ATTEMPT_CLOSED', 'status' => $attempt->status], 409);
+        }
+
+        $responses = $this->validateResponsesPayload($request, false);
+        $writable = SectionState::writableQuestionIds($attempt, $test) ?? [];
+        $allowed = array_flip($writable);
+        $responses = array_values(array_filter($responses, fn ($r) => isset($allowed[(int) ($r['question_id'] ?? 0)])));
+        if ($responses) {
+            AttemptScorer::upsertResponses($attempt, TestAnswerKey::for($test), $responses);
+        }
+
+        $state = SectionState::lock($attempt, $test, $key);
+        if ($state === null) {
+            return response()->json([
+                'message'       => 'Only the active section can be submitted.',
+                'code'          => 'SECTION_NOT_ACTIVE',
+                'section_state' => SectionState::compute($attempt, $test),
+            ], 409);
+        }
+
+        if ($state['all_locked']) {
+            AttemptScorer::finalize($attempt, $test);
+            $attempt->refresh()->load('responses');
+            $data = $this->presentAttempt($attempt, $test);
+            $data['test'] = TestPayload::withAnswers($test);
+
+            return $this->json(['completed' => true, 'section_state' => $state, 'attempt' => $data]);
+        }
+
+        return $this->json([
+            'completed'     => false,
+            'section_state' => $state,
+            'remaining_sec' => $attempt->remainingSeconds($test->duration_sec),
+        ]);
+    }
+
     // ─── Complete ─────────────────────────────────────────────────────────────
 
     public function completeAttempt(Request $request, $attemptId)
@@ -252,6 +333,12 @@ class TestAttemptController extends Controller
 
         $finalResponses = $this->validateResponsesPayload($request, false);
         $test = $attempt->test;
+
+        $writable = SectionState::writableQuestionIds($attempt, $test);
+        if ($writable !== null) {
+            $allowed = array_flip($writable);
+            $finalResponses = array_values(array_filter($finalResponses, fn ($r) => isset($allowed[(int) ($r['question_id'] ?? 0)])));
+        }
 
         AttemptScorer::finalize($attempt, $test, $finalResponses);
 

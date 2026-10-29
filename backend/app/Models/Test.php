@@ -13,11 +13,14 @@ class Test extends Model
         'duration_sec', 'negative_marking', 'question_mark', 'total_marks',
         'passing_marks', 'is_free', 'shuffle_questions', 'max_attempts',
         'year', 'paper_type',
+        'sections', 'section_mode', 'evaluate_marked',
     ];
 
     protected $casts = [
         'is_free'           => 'boolean',
         'shuffle_questions' => 'boolean',
+        'sections'          => 'array',
+        'evaluate_marked'   => 'boolean',
     ];
 
     public function exam()

@@ -1,0 +1,1362 @@
+[
+ {
+  "qid": "630680256092",
+  "paper": "2023_06_24_s3",
+  "question": "Select the option that contains no spelling error.",
+  "question_hi": null,
+  "options": [
+   "The horrizontal movements of ocean water are refferred to as currents, while the vertical changes are called upwelling or downwelling.",
+   "The horizontal movements of ocean water are refered to as currents, while the vertical changes are called upwelling or downwelling.",
+   "The horizontal movements of ocean water are referred to as currents, while the vertical changes are called upwelling or downwelling.",
+   "The horrizontal movements of ocean water are referred to as currents, while the vertical changes are called upwelling or downwelling."
+  ],
+  "answer": 3,
+  "subtopic": "Spelling",
+  "difficulty": "easy",
+  "explanation": "'Horizontal' has a single r and 'referred' doubles the r before -ed because the stress falls on the final syllable (re-FER). Only option 3 spells both words correctly; the others contain 'horrizontal', 'refferred' or 'refered'.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256095",
+  "paper": "2023_06_24_s3",
+  "question": "Select the most appropriate meaning of the given proverb.\nYou can't have your cake and eat it too",
+  "question_hi": null,
+  "options": [
+   "Not to worry much about trivial matters",
+   "Encourage people to achieve at least one goal, if not two",
+   "To do two things that are similar to each other",
+   "Unable to do two things that are contradictory to each other"
+  ],
+  "answer": 4,
+  "subtopic": "Proverbs",
+  "difficulty": "easy",
+  "explanation": "'You can't have your cake and eat it too' means you cannot enjoy two mutually contradictory advantages at once - once the cake is eaten, you no longer have it. Hence option 4, being unable to do two contradictory things, is the correct meaning.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256083",
+  "paper": "2023_06_24_s3",
+  "question": "Sentences of a paragraph are given below in jumbled order. Arrange the sentences in the correct order to form a meaningful and coherent paragraph.\n1) Travellers should, however, realise that change cannot be brought by a single person, and we should join hands together and vow to follow the traffic rules.\n2) Eight out of ten road accidents are caused by the people who don't follow the rules of the road.\n3) Abiding by the traffic rules will only help us in having a smooth traffic flow and preventing road accidents.\n4) Road safety rules are meant for public safety and to keep the traffic congestion in check.",
+  "question_hi": null,
+  "options": [
+   "3,4,1,2",
+   "1,3,2,4",
+   "4,2,1,3",
+   "3,2,1,4"
+  ],
+  "answer": 3,
+  "subtopic": "Para jumbles",
+  "difficulty": "medium",
+  "explanation": "Sentence 4 introduces the topic (road safety rules), 2 gives the statistic on rule-breakers causing accidents, 1 adds 'however' that change needs collective effort, and 3 concludes with the benefit of following rules. So the order 4-2-1-3 (option 3) is coherent.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256090",
+  "paper": "2023_06_24_s3",
+  "question": "Select the most appropriate ANTONYM of the underlined word/ set of given words.\nGarima has a propensity for being the attention seeker in the department.\nShe's inherited from her father a propensity to talk too much",
+  "question_hi": null,
+  "options": [
+   "aptness",
+   "disinclination",
+   "competence",
+   "disposition"
+  ],
+  "answer": 2,
+  "subtopic": "Antonyms",
+  "difficulty": "easy",
+  "explanation": "'Propensity' means a natural tendency or inclination to behave in a certain way. Its opposite is 'disinclination' (unwillingness); aptness and disposition are near-synonyms and competence is unrelated.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256086",
+  "paper": "2023_06_24_s3",
+  "question": "Select the option that can be used as a one-word substitute for the given group of words.\nOne who believes in ruthless self-aggrandisement",
+  "question_hi": null,
+  "options": [
+   "Introvert",
+   "Egoist",
+   "Altruistic",
+   "Iconoclast"
+  ],
+  "answer": 2,
+  "subtopic": "One-word substitution",
+  "difficulty": "medium",
+  "explanation": "An egoist is a self-centred person who pursues his own interest and self-aggrandisement (enlarging his own power or importance). An altruist is the opposite, an introvert is shy, and an iconoclast attacks established beliefs, so 'Egoist' fits.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256096",
+  "paper": "2023_06_24_s3",
+  "question": "The following sentence has been split into four segments. Identify the segment that contains a grammatical error.\nThe ideal detect dog / is extremely energetic / with an excessive / play drive.",
+  "question_hi": null,
+  "options": [
+   "The ideal detect dog",
+   "with an excessive",
+   "play drive",
+   "is extremely energetic"
+  ],
+  "answer": 1,
+  "subtopic": "Error spotting",
+  "difficulty": "medium",
+  "explanation": "A noun used as a modifier here must be 'detection', not the verb 'detect': the correct phrase is 'The ideal detection dog'. The other segments ('is extremely energetic', 'with an excessive play drive') are grammatical, so segment 1 has the error.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256088",
+  "paper": "2023_06_24_s3",
+  "question": "Select the most appropriate option that can substitute the underlined segment in the given sentence. If there is no need to substitute it, select 'No substitution required'.\nBarely has they won the match when the coach had a heart attack.",
+  "question_hi": null,
+  "options": [
+   "Barely have they won",
+   "Barely did they won",
+   "No substitution required",
+   "Barely had they won"
+  ],
+  "answer": 4,
+  "subtopic": "Inversion / sentence improvement",
+  "difficulty": "medium",
+  "explanation": "'Barely/Hardly/Scarcely ... when' expresses one past action immediately followed by another, so it takes the past perfect with inversion: 'Barely had they won the match when...'. 'Has' is wrong for a past context and 'did ... won' is ungrammatical, so option 4 is correct.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256097",
+  "paper": "2023_06_24_s3",
+  "question": "The following sentence has been split into four segments. Identify the segment that contains a grammatical error.\nThe sparrows are / some of the few birds / that engage on / dust bathing.",
+  "question_hi": null,
+  "options": [
+   "some of the few birds",
+   "The sparrows are",
+   "dust bathing",
+   "that engage on"
+  ],
+  "answer": 4,
+  "subtopic": "Prepositions",
+  "difficulty": "easy",
+  "explanation": "The verb 'engage' takes the preposition 'in' when it means to take part in an activity: 'engage in dust bathing'. 'Engage on' is incorrect, so segment 4 contains the error.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256089",
+  "paper": "2023_06_24_s3",
+  "question": "Select the most appropriate option to fill in the blank with the correct collocation.\nIf you read _____ you will clearly see what he means.",
+  "question_hi": null,
+  "options": [
+   "among the lines",
+   "with the lines",
+   "on the lines",
+   "between the lines"
+  ],
+  "answer": 4,
+  "subtopic": "Idioms / collocations",
+  "difficulty": "easy",
+  "explanation": "'Read between the lines' is a fixed collocation meaning to understand the hidden or implied meaning. The other prepositions do not form this idiom, so option 4 is correct.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256093",
+  "paper": "2023_06_24_s3",
+  "question": "Select the option that contains no spelling error.",
+  "question_hi": null,
+  "options": [
+   "Conservation canines are fast becoming indispensable tools for biologists.",
+   "Conservation cannines are fast becoming indispensible tools for biologicsts.",
+   "Conversatoin canines are fast becoming indispensable tools for biologists.",
+   "Conversation canines are fast becoming indespensible tools for biologists."
+  ],
+  "answer": 1,
+  "subtopic": "Spelling",
+  "difficulty": "easy",
+  "explanation": "The correct spellings are 'conservation', 'canines', 'indispensable' and 'biologists'. Only option 1 has all of them correct; the others contain 'cannines', 'indispensible', 'biologicsts', 'conversatoin' or 'indespensible'.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256087",
+  "paper": "2023_06_24_s3",
+  "question": "Select the most appropriate option that can substitute the underlined segment in the given sentence. If there is no need to substitute it, select 'No substitution required'.\nNo sooner had the company launch its new product than it went bankrupt.",
+  "question_hi": null,
+  "options": [
+   "No substitution required",
+   "No sooner had the company launched",
+   "No sooner did the company launched",
+   "No sooner have the company launched"
+  ],
+  "answer": 2,
+  "subtopic": "Inversion / sentence improvement",
+  "difficulty": "medium",
+  "explanation": "'No sooner ... than' is followed by the past perfect with subject-auxiliary inversion: 'No sooner had + subject + V3'. So 'had the company launch' must become 'had the company launched' (option 2); 'did ... launched' and 'have the company' are ungrammatical.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256094",
+  "paper": "2023_06_24_s3",
+  "question": "Select the most appropriate meaning of the given idiom.\nBlow off steam",
+  "question_hi": null,
+  "options": [
+   "To be careful with steam",
+   "To get rid of pent-up energy or strong emotion",
+   "To deal with reality",
+   "To experience maximum heat"
+  ],
+  "answer": 2,
+  "subtopic": "Idioms",
+  "difficulty": "easy",
+  "explanation": "'Blow off steam' means to release pent-up energy or strong emotions such as anger, often through activity. Option 2 states exactly this idiomatic sense.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256084",
+  "paper": "2023_06_24_s3",
+  "question": "Sentences of a paragraph are given below in jumbled order. Arrange the sentences in the correct order to form a meaningful and coherent paragraph.\n1) As one starts growing old, the lens of the eye hardens, loses its transparency and becomes opaque.\n2) Cataract is the major cause of blindness, which is also caused by a damage to the cornea.\n3) It obstructs the light rays from entering the eye.\n4) It occurs more often in old age.",
+  "question_hi": null,
+  "options": [
+   "4,2,3,1",
+   "2,4,1,3",
+   "1,2,3,4",
+   "2,1,4,3"
+  ],
+  "answer": 2,
+  "subtopic": "Para jumbles",
+  "difficulty": "medium",
+  "explanation": "Sentence 2 introduces cataract as a major cause of blindness, 4 says it occurs more often in old age, 1 explains that the eye lens hardens and becomes opaque with ageing, and 3 says this blocks light rays. Hence 2-4-1-3 (option 2).",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256085",
+  "paper": "2023_06_24_s3",
+  "question": "Select the option that can be used as a one-word substitute for the given group of words.\nStudy of various aspects of aging",
+  "question_hi": null,
+  "options": [
+   "Microbiology",
+   "Chronology",
+   "Genealogy",
+   "Gerontology"
+  ],
+  "answer": 4,
+  "subtopic": "One-word substitution",
+  "difficulty": "easy",
+  "explanation": "Gerontology is the scientific study of ageing and of the problems of old people (Greek geron = old man). Chronology is the order of events, genealogy the study of family lineage, and microbiology the study of microbes.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256091",
+  "paper": "2023_06_24_s3",
+  "question": "Select the most appropriate homonym to fill in the blanks.\nAs she _____ her hands from the deck I fear the huge _____ of ocean.",
+  "question_hi": null,
+  "options": [
+   "hauls",
+   "ripples",
+   "tides",
+   "waves"
+  ],
+  "answer": 4,
+  "subtopic": "Homonyms",
+  "difficulty": "medium",
+  "explanation": "'Waves' fits both blanks with different meanings: 'she waves her hands' (verb: moves in greeting) and 'the huge waves of ocean' (noun: moving ridges of water). The other words do not suit both blanks.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256103",
+  "paper": "2023_06_24_s3",
+  "question": "Comprehension:\nRead the given passage and answer the questions that follow.\n\nWhen I was very little, I caught the travel bug. It started after my grandparents first brought me to their home in France and I have now been to twenty-nine different countries. Each has given me a unique learning experience.\n\nAt five, I marvelled at the Eiffel Tower in the City of Lights. When I was eight, I stood in the heart of Piazza San Marco feeding hordes of pigeons, then glided down Venetian waterways on sleek gondolas. At thirteen, I saw the ancient, megalithic structure of Stonehenge and walked along the Great Wall of China, amazed that the thousand-year-old stones were still in place.\n\nIt was through exploring cultures around the world that I first became interested in language.\n\nIt began with French, which taught me the importance of pronunciation. I remember once asking a store owner in Paris where Rue des Pyramides was. But when I pronounced it PYR–a–mides instead of pyr–A–mides, with more accent on the A, she looked at me bewildered.\n\nIn the eighth grade, I became fascinated with Spanish and aware of its similarities with English through cognates. Baseball in Spanish, for example, is béisbol, which looks different but sounds nearly the same. This was incredible to me as it made speech and comprehension more fluid, and even today I find that cognates come to the rescue when I forget how to say something in Spanish.\n\nThen, in high school, I developed an enthusiasm for Chinese. As I studied Chinese at my school, I marvelled how if just one stroke was missing from a character, the meaning is lost. I loved how long words were formed by combining simpler characters, so Huǒ meaning fire and Shān meaning mountain can be joined to create Huǒshān, which means volcano. I love spending hours at a time practicing the characters and I can feel the beauty and rhythm as I form them.\n\nSubQuestion No : 16\nIdentify the tone of the given passage.",
+  "question_hi": null,
+  "options": [
+   "Sad",
+   "Hypocritical",
+   "Narrative and descriptive",
+   "Optimistic"
+  ],
+  "answer": 3,
+  "subtopic": "Reading comprehension - tone",
+  "difficulty": "easy",
+  "explanation": "The writer narrates personal experiences in chronological order and describes places and languages in detail, without sadness or pretence. Hence the tone is narrative and descriptive (option 3).",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256099",
+  "paper": "2023_06_24_s3",
+  "question": "Comprehension:\nRead the given passage and answer the questions that follow.\n\nWhen I was very little, I caught the travel bug. It started after my grandparents first brought me to their home in France and I have now been to twenty-nine different countries. Each has given me a unique learning experience.\n\nAt five, I marvelled at the Eiffel Tower in the City of Lights. When I was eight, I stood in the heart of Piazza San Marco feeding hordes of pigeons, then glided down Venetian waterways on sleek gondolas. At thirteen, I saw the ancient, megalithic structure of Stonehenge and walked along the Great Wall of China, amazed that the thousand-year-old stones were still in place.\n\nIt was through exploring cultures around the world that I first became interested in language.\n\nIt began with French, which taught me the importance of pronunciation. I remember once asking a store owner in Paris where Rue des Pyramides was. But when I pronounced it PYR–a–mides instead of pyr–A–mides, with more accent on the A, she looked at me bewildered.\n\nIn the eighth grade, I became fascinated with Spanish and aware of its similarities with English through cognates. Baseball in Spanish, for example, is béisbol, which looks different but sounds nearly the same. This was incredible to me as it made speech and comprehension more fluid, and even today I find that cognates come to the rescue when I forget how to say something in Spanish.\n\nThen, in high school, I developed an enthusiasm for Chinese. As I studied Chinese at my school, I marvelled how if just one stroke was missing from a character, the meaning is lost. I loved how long words were formed by combining simpler characters, so Huǒ meaning fire and Shān meaning mountain can be joined to create Huǒshān, which means volcano. I love spending hours at a time practicing the characters and I can feel the beauty and rhythm as I form them.\n\nSubQuestion No : 17\nIdentify the most suitable title for the given passage.",
+  "question_hi": null,
+  "options": [
+   "The Beautiful World",
+   "Solo Travellers",
+   "Travel and Language",
+   "7 Wonders of the World"
+  ],
+  "answer": 3,
+  "subtopic": "Reading comprehension - title",
+  "difficulty": "easy",
+  "explanation": "The passage links the author's travels to the growth of his interest in French, Spanish and Chinese. 'Travel and Language' captures both themes, while the other titles cover only a part or are unrelated.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256102",
+  "paper": "2023_06_24_s3",
+  "question": "Comprehension:\nRead the given passage and answer the questions that follow.\n\nWhen I was very little, I caught the travel bug. It started after my grandparents first brought me to their home in France and I have now been to twenty-nine different countries. Each has given me a unique learning experience.\n\nAt five, I marvelled at the Eiffel Tower in the City of Lights. When I was eight, I stood in the heart of Piazza San Marco feeding hordes of pigeons, then glided down Venetian waterways on sleek gondolas. At thirteen, I saw the ancient, megalithic structure of Stonehenge and walked along the Great Wall of China, amazed that the thousand-year-old stones were still in place.\n\nIt was through exploring cultures around the world that I first became interested in language.\n\nIt began with French, which taught me the importance of pronunciation. I remember once asking a store owner in Paris where Rue des Pyramides was. But when I pronounced it PYR–a–mides instead of pyr–A–mides, with more accent on the A, she looked at me bewildered.\n\nIn the eighth grade, I became fascinated with Spanish and aware of its similarities with English through cognates. Baseball in Spanish, for example, is béisbol, which looks different but sounds nearly the same. This was incredible to me as it made speech and comprehension more fluid, and even today I find that cognates come to the rescue when I forget how to say something in Spanish.\n\nThen, in high school, I developed an enthusiasm for Chinese. As I studied Chinese at my school, I marvelled how if just one stroke was missing from a character, the meaning is lost. I loved how long words were formed by combining simpler characters, so Huǒ meaning fire and Shān meaning mountain can be joined to create Huǒshān, which means volcano. I love spending hours at a time practicing the characters and I can feel the beauty and rhythm as I form them.\n\nSubQuestion No : 18\nWhich word from the passage is the most appropriate synonym of the word'unbelievable '?",
+  "question_hi": null,
+  "options": [
+   "Amazed",
+   "Bewildered",
+   "Incredible",
+   "Enthusiasm"
+  ],
+  "answer": 3,
+  "subtopic": "Reading comprehension - vocabulary",
+  "difficulty": "easy",
+  "explanation": "'Incredible' (used in 'This was incredible to me') means impossible to believe, i.e. unbelievable. 'Amazed' and 'bewildered' describe feelings and 'enthusiasm' means eagerness, so option 3 is correct.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256101",
+  "paper": "2023_06_24_s3",
+  "question": "Comprehension:\nRead the given passage and answer the questions that follow.\n\nWhen I was very little, I caught the travel bug. It started after my grandparents first brought me to their home in France and I have now been to twenty-nine different countries. Each has given me a unique learning experience.\n\nAt five, I marvelled at the Eiffel Tower in the City of Lights. When I was eight, I stood in the heart of Piazza San Marco feeding hordes of pigeons, then glided down Venetian waterways on sleek gondolas. At thirteen, I saw the ancient, megalithic structure of Stonehenge and walked along the Great Wall of China, amazed that the thousand-year-old stones were still in place.\n\nIt was through exploring cultures around the world that I first became interested in language.\n\nIt began with French, which taught me the importance of pronunciation. I remember once asking a store owner in Paris where Rue des Pyramides was. But when I pronounced it PYR–a–mides instead of pyr–A–mides, with more accent on the A, she looked at me bewildered.\n\nIn the eighth grade, I became fascinated with Spanish and aware of its similarities with English through cognates. Baseball in Spanish, for example, is béisbol, which looks different but sounds nearly the same. This was incredible to me as it made speech and comprehension more fluid, and even today I find that cognates come to the rescue when I forget how to say something in Spanish.\n\nThen, in high school, I developed an enthusiasm for Chinese. As I studied Chinese at my school, I marvelled how if just one stroke was missing from a character, the meaning is lost. I loved how long words were formed by combining simpler characters, so Huǒ meaning fire and Shān meaning mountain can be joined to create Huǒshān, which means volcano. I love spending hours at a time practicing the characters and I can feel the beauty and rhythm as I form them.\n\nSubQuestion No : 19\nWhich word from the passage is the most appropriate ANTONYM of the word' ordinary'?",
+  "question_hi": null,
+  "options": [
+   "Marvelled",
+   "Fascinated",
+   "Unique",
+   "Bewildered"
+  ],
+  "answer": 3,
+  "subtopic": "Reading comprehension - vocabulary",
+  "difficulty": "easy",
+  "explanation": "'Ordinary' means common or usual; its opposite is 'unique' (one of a kind), used in 'Each has given me a unique learning experience'. The other words describe states of wonder or confusion.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256100",
+  "paper": "2023_06_24_s3",
+  "question": "Comprehension:\nRead the given passage and answer the questions that follow.\n\nWhen I was very little, I caught the travel bug. It started after my grandparents first brought me to their home in France and I have now been to twenty-nine different countries. Each has given me a unique learning experience.\n\nAt five, I marvelled at the Eiffel Tower in the City of Lights. When I was eight, I stood in the heart of Piazza San Marco feeding hordes of pigeons, then glided down Venetian waterways on sleek gondolas. At thirteen, I saw the ancient, megalithic structure of Stonehenge and walked along the Great Wall of China, amazed that the thousand-year-old stones were still in place.\n\nIt was through exploring cultures around the world that I first became interested in language.\n\nIt began with French, which taught me the importance of pronunciation. I remember once asking a store owner in Paris where Rue des Pyramides was. But when I pronounced it PYR–a–mides instead of pyr–A–mides, with more accent on the A, she looked at me bewildered.\n\nIn the eighth grade, I became fascinated with Spanish and aware of its similarities with English through cognates. Baseball in Spanish, for example, is béisbol, which looks different but sounds nearly the same. This was incredible to me as it made speech and comprehension more fluid, and even today I find that cognates come to the rescue when I forget how to say something in Spanish.\n\nThen, in high school, I developed an enthusiasm for Chinese. As I studied Chinese at my school, I marvelled how if just one stroke was missing from a character, the meaning is lost. I loved how long words were formed by combining simpler characters, so Huǒ meaning fire and Shān meaning mountain can be joined to create Huǒshān, which means volcano. I love spending hours at a time practicing the characters and I can feel the beauty and rhythm as I form them.\n\nSubQuestion No : 20\nThe author was fascinated by which of the following when he was thirteen?",
+  "question_hi": null,
+  "options": [
+   "All the twenty-nine different countries he had visited",
+   "Great Wall of China",
+   "Eiffel Tower in the City of Lights",
+   "Piazza San Marco"
+  ],
+  "answer": 2,
+  "subtopic": "Reading comprehension - factual",
+  "difficulty": "easy",
+  "explanation": "The passage says 'At thirteen, I saw ... Stonehenge and walked along the Great Wall of China, amazed...'. The Eiffel Tower was at five and Piazza San Marco at eight, so option 2 is correct.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256291",
+  "paper": "2023_06_25_s1",
+  "question": "Select the most appropriate ANTONYM of the given word.\nPredictable",
+  "question_hi": null,
+  "options": [
+   "Foreseeable",
+   "Improbable",
+   "Certain",
+   "Expected"
+  ],
+  "answer": 2,
+  "subtopic": "Antonyms",
+  "difficulty": "easy",
+  "explanation": "'Predictable' means able to be foreseen or expected. Its opposite is 'improbable' (unlikely to happen); foreseeable, certain and expected are all close in meaning to predictable.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256287",
+  "paper": "2023_06_25_s1",
+  "question": "Select the most appropriate meaning of the given idiom.\nMiss the boat",
+  "question_hi": null,
+  "options": [
+   "Miss a chance",
+   "Narrow escape",
+   "Forget something important",
+   "Miss travelling by boat"
+  ],
+  "answer": 1,
+  "subtopic": "Idioms",
+  "difficulty": "easy",
+  "explanation": "'Miss the boat' means to lose an opportunity by being too slow to act. It has nothing to do with literal boat travel, so option 1, 'miss a chance', is correct.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256298",
+  "paper": "2023_06_25_s1",
+  "question": "Sentences of a paragraph are given below in jumbled order. Arrange the sentences in the correct order to form a meaningful and coherent paragraph.\nA.Two IAF MiG fighters from the Adampur base crashed following a mid-air collision.\nB.As a result, a fire broke out in four houses, and four boys playing in a field were wounded when the debris fell on them.\nC.The other fighter plane crashed in the fields of Chansu Jattan.\nD.According to reports, one plane crashed near Pensara.",
+  "question_hi": null,
+  "options": [
+   "ABCD",
+   "DCBA",
+   "ACBD",
+   "ADCB"
+  ],
+  "answer": 4,
+  "subtopic": "Para jumbles",
+  "difficulty": "medium",
+  "explanation": "A introduces the crash of two MiG fighters, D reports where one plane crashed, C follows with 'the other fighter plane', and B describes the result (fire and injuries). So ADCB is the logical order.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256285",
+  "paper": "2023_06_25_s1",
+  "question": "Parts of the following sentence have been given as options. Select the option that contains an error.\nIt is so refreshing to walk through the beach early in the morning.",
+  "question_hi": null,
+  "options": [
+   "refreshing to walk",
+   "early in the morning",
+   "through the beach",
+   "It is so"
+  ],
+  "answer": 3,
+  "subtopic": "Prepositions",
+  "difficulty": "easy",
+  "explanation": "We walk 'along' or 'on' a beach, i.e. over its surface; 'through' implies moving inside something enclosed like a forest or tunnel. Hence 'through the beach' contains the error.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256296",
+  "paper": "2023_06_25_s1",
+  "question": "Select the option that can be used as a one-word substitute for the given phrase.\nA collection of weapons and military equipment",
+  "question_hi": null,
+  "options": [
+   "Arsenal",
+   "Archive",
+   "Apiary",
+   "Asylum"
+  ],
+  "answer": 1,
+  "subtopic": "One-word substitution",
+  "difficulty": "easy",
+  "explanation": "An arsenal is a collection or store of weapons and military equipment. An archive stores records, an apiary is a place for keeping bees, and an asylum is a place of refuge.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256292",
+  "paper": "2023_06_25_s1",
+  "question": "Select the most appropriate option to fill in the blanks.\nMy injured _____ will _____ soon.",
+  "question_hi": null,
+  "options": [
+   "heel; heel",
+   "heal; heel",
+   "heel; heal",
+   "heal; heal"
+  ],
+  "answer": 3,
+  "subtopic": "Homophones",
+  "difficulty": "easy",
+  "explanation": "'Heel' (noun) is the back part of the foot and 'heal' (verb) means to become healthy again. The sentence needs a noun first and a verb after 'will', so 'heel; heal' (option 3).",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256299",
+  "paper": "2023_06_25_s1",
+  "question": "Sentences of a paragraph are given below in jumbled order. Arrange the sentences in the correct order to form a meaningful and coherent paragraph.\nA.We can request the public library to send us all the books that they will be replacing this year.\nB.However, I think, I have solution to this problem.\nC.That means, no books till the next academic session.\nD.Yesterday I was told that we had exhausted our library funds for this year.",
+  "question_hi": null,
+  "options": [
+   "CBAD",
+   "DBCA",
+   "ABCD",
+   "DCBA"
+  ],
+  "answer": 4,
+  "subtopic": "Para jumbles",
+  "difficulty": "medium",
+  "explanation": "D states the problem (library funds exhausted), C gives its consequence (no books till next session), B introduces a solution with 'However', and A states the solution. Hence DCBA.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256294",
+  "paper": "2023_06_25_s1",
+  "question": "Select the most appropriate option that can substitute the underlined word in the given sentence. If there is no need to substitute it, select 'No substitution required'.\nPost covid, international air travel is hopping back to normalcy.",
+  "question_hi": null,
+  "options": [
+   "limping",
+   "No substitution required",
+   "faltering",
+   "lumbering"
+  ],
+  "answer": 1,
+  "subtopic": "Sentence improvement / vocabulary",
+  "difficulty": "medium",
+  "explanation": "'Hopping' suggests lively, energetic movement, which contradicts the slow, struggling recovery of air travel after Covid. 'Limping back to normalcy' is the standard expression for a slow, difficult recovery, so option 1.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256288",
+  "paper": "2023_06_25_s1",
+  "question": "Select the most appropriate meaning of the given idiom.\nShort fuse",
+  "question_hi": null,
+  "options": [
+   "Dangerous situation",
+   "Control anger quickly",
+   "A tricky problem",
+   "Get angry quickly"
+  ],
+  "answer": 4,
+  "subtopic": "Idioms",
+  "difficulty": "easy",
+  "explanation": "A person with a 'short fuse' gets angry very quickly, just as a short fuse makes an explosive go off quickly. Hence option 4.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256290",
+  "paper": "2023_06_25_s1",
+  "question": "Select the correctly spelt word.",
+  "question_hi": null,
+  "options": [
+   "Competance",
+   "Cammand",
+   "Complexety",
+   "Crucial"
+  ],
+  "answer": 4,
+  "subtopic": "Spelling",
+  "difficulty": "easy",
+  "explanation": "'Crucial' is spelt correctly. The correct forms of the others are 'competence', 'command' and 'complexity'.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256295",
+  "paper": "2023_06_25_s1",
+  "question": "Select the most appropriate option that can substitute the underlined phrase in the given sentence. If there is no need to substitute it, select 'No substitution required'.\nThe Mysore palace is gearing up for the winter festival.",
+  "question_hi": null,
+  "options": [
+   "setting up",
+   "No substitution required",
+   "fortifying",
+   "dressing up"
+  ],
+  "answer": 2,
+  "subtopic": "Phrasal verbs",
+  "difficulty": "medium",
+  "explanation": "'Gear up for' means to prepare for an event, which fits the palace preparing for the winter festival. The sentence is already correct, so no substitution is required.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256293",
+  "paper": "2023_06_25_s1",
+  "question": "Select the most appropriate option to fill in the blank.\nThere is a _____ train from Mysore to Chennai.",
+  "question_hi": null,
+  "options": [
+   "speedy",
+   "brisk",
+   "quick",
+   "fast"
+  ],
+  "answer": 4,
+  "subtopic": "Collocations",
+  "difficulty": "medium",
+  "explanation": "The fixed collocation is 'fast train' (as in fast food, fast car). Speedy, brisk and quick are not used idiomatically with 'train' in this sense, so option 4.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256297",
+  "paper": "2023_06_25_s1",
+  "question": "Select the option that can be used as a one-word substitute for the given phrase.\nThe study of evolution of mankind",
+  "question_hi": null,
+  "options": [
+   "Geology",
+   "Archaeology",
+   "Anthropology",
+   "Cartography"
+  ],
+  "answer": 3,
+  "subtopic": "One-word substitution",
+  "difficulty": "easy",
+  "explanation": "Anthropology is the study of human beings, including the evolution of mankind, their societies and cultures. Geology studies the earth, archaeology studies ancient remains, and cartography is map-making.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256286",
+  "paper": "2023_06_25_s1",
+  "question": "Parts of the following sentence have been given as options. Select the option that contains an error.\nWhether I do not agree with her views, I respect her for her honesty.",
+  "question_hi": null,
+  "options": [
+   "for her honesty",
+   "with her views",
+   "I respect her",
+   "Whether I do not agree"
+  ],
+  "answer": 4,
+  "subtopic": "Conjunctions",
+  "difficulty": "medium",
+  "explanation": "'Whether' introduces alternatives or doubt and cannot express contrast. A concessive clause needs 'Though/Although': 'Though I do not agree with her views, I respect her...'. So segment 4 has the error.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256289",
+  "paper": "2023_06_25_s1",
+  "question": "Select the INCORRECTLY spelt word.",
+  "question_hi": null,
+  "options": [
+   "Associate",
+   "Attendance",
+   "Accept",
+   "Alott"
+  ],
+  "answer": 4,
+  "subtopic": "Spelling",
+  "difficulty": "easy",
+  "explanation": "The correct spelling is 'allot' (double l, single t). Associate, attendance and accept are spelt correctly, so 'Alott' is the incorrectly spelt word.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256302",
+  "paper": "2023_06_25_s1",
+  "question": "Comprehension:\nRead the given passage and answer the questions that follow.\n\n“Any bicycle repair shop around? Can anyone share the location please?”\nThat was a desperate appeal from a woman in our residents’ association’s WhatsApp group. Her child’s bicycle needed urgent mending.\n“There is one around 2 km away.” Soon came the first response.\n“No. The shop shut long ago, even before COVID,” someone else chipped in.\nWhere have the bicycle repairers gone? The wayside mechanics who would do a gamut of works on your bicycles for a paltry sum have almost gone extinct. These days, only children use bicycles, and you know a mechanic needs regular customers to survive. There is a time in almost everyone’s life when they become proud owners of their first bicycle. And there comes a stage when we abandon the prized possession and graduate ourselves to a motorised vehicle. Unused and unattended, the bicycles rust and disintegrate and finally end up at scrap dealers.\nCity roads in Kerala have now become totally unfriendly for bicycles. A cyclist is an odd man out on the chaotic road, an unwelcome disruptor among the automobiles arrogantly jostling for space. There are people out there who love to bicycle to their workplaces but dare not, dreading the reckless traffic on the way.\nIs speed synonymous with progress? The transition from bullock carts to bullet trains denotes mankind’s journey toward development. However, passion for speed and more speed could trigger a gasping race to nowhere. To find time to relish the fruits of development, the curve has to slow down and plateau somewhere.\nA bicycle is silent like a butterfly, easy like a true friend to possess and maintain. A bicycle symbolises fine balancing, not just on its narrow wheels but a balanced living. This simple carbon-free mode of transport helps the rider to be healthy and heal the habitat. People who cycle to work tend to be less stressed out at workplaces. Motorcyclists whiz past, hiding their heads and thoughts in full-face helmets. Car owners roll up their glasses and cocoon their mind and body from the outside world. A cyclist pedals under the open sky, opens up to friends and fellows on the way and forgets one’s own worries. It seems egalitarianism is part and parcel of the cycling culture.\n\nQ.16 Who is referred to as an ‘unwelcome disrupter’?",
+  "question_hi": null,
+  "options": [
+   "Scrap dealer",
+   "Motorcyclist",
+   "Cyclist",
+   "Car owner"
+  ],
+  "answer": 3,
+  "subtopic": "Reading comprehension - factual",
+  "difficulty": "easy",
+  "explanation": "The passage says 'A cyclist is an odd man out on the chaotic road, an unwelcome disruptor among the automobiles'. So the cyclist is referred to as the unwelcome disruptor.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256304",
+  "paper": "2023_06_25_s1",
+  "question": "Comprehension:\nRead the given passage and answer the questions that follow.\n\n“Any bicycle repair shop around? Can anyone share the location please?”\nThat was a desperate appeal from a woman in our residents’ association’s WhatsApp group. Her child’s bicycle needed urgent mending.\n“There is one around 2 km away.” Soon came the first response.\n“No. The shop shut long ago, even before COVID,” someone else chipped in.\nWhere have the bicycle repairers gone? The wayside mechanics who would do a gamut of works on your bicycles for a paltry sum have almost gone extinct. These days, only children use bicycles, and you know a mechanic needs regular customers to survive. There is a time in almost everyone’s life when they become proud owners of their first bicycle. And there comes a stage when we abandon the prized possession and graduate ourselves to a motorised vehicle. Unused and unattended, the bicycles rust and disintegrate and finally end up at scrap dealers.\nCity roads in Kerala have now become totally unfriendly for bicycles. A cyclist is an odd man out on the chaotic road, an unwelcome disruptor among the automobiles arrogantly jostling for space. There are people out there who love to bicycle to their workplaces but dare not, dreading the reckless traffic on the way.\nIs speed synonymous with progress? The transition from bullock carts to bullet trains denotes mankind’s journey toward development. However, passion for speed and more speed could trigger a gasping race to nowhere. To find time to relish the fruits of development, the curve has to slow down and plateau somewhere.\nA bicycle is silent like a butterfly, easy like a true friend to possess and maintain. A bicycle symbolises fine balancing, not just on its narrow wheels but a balanced living. This simple carbon-free mode of transport helps the rider to be healthy and heal the habitat. People who cycle to work tend to be less stressed out at workplaces. Motorcyclists whiz past, hiding their heads and thoughts in full-face helmets. Car owners roll up their glasses and cocoon their mind and body from the outside world. A cyclist pedals under the open sky, opens up to friends and fellows on the way and forgets one’s own worries. It seems egalitarianism is part and parcel of the cycling culture.\n\nQ.17 Which of these advantages of a bicycle does the writer NOT mention in the passage?",
+  "question_hi": null,
+  "options": [
+   "It is an eco-friendly means of transport.",
+   "It symbolises balance in life.",
+   "It easily navigates in traffic jams.",
+   "It acts as stress buster."
+  ],
+  "answer": 3,
+  "subtopic": "Reading comprehension - negative fact",
+  "difficulty": "medium",
+  "explanation": "The writer mentions that cycling is carbon-free (eco-friendly), symbolises balanced living, and reduces stress. Nowhere does he say bicycles navigate traffic jams easily; in fact he says roads are unfriendly to cyclists. Hence option 3.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256303",
+  "paper": "2023_06_25_s1",
+  "question": "Comprehension:\nRead the given passage and answer the questions that follow.\n\n“Any bicycle repair shop around? Can anyone share the location please?”\nThat was a desperate appeal from a woman in our residents’ association’s WhatsApp group. Her child’s bicycle needed urgent mending.\n“There is one around 2 km away.” Soon came the first response.\n“No. The shop shut long ago, even before COVID,” someone else chipped in.\nWhere have the bicycle repairers gone? The wayside mechanics who would do a gamut of works on your bicycles for a paltry sum have almost gone extinct. These days, only children use bicycles, and you know a mechanic needs regular customers to survive. There is a time in almost everyone’s life when they become proud owners of their first bicycle. And there comes a stage when we abandon the prized possession and graduate ourselves to a motorised vehicle. Unused and unattended, the bicycles rust and disintegrate and finally end up at scrap dealers.\nCity roads in Kerala have now become totally unfriendly for bicycles. A cyclist is an odd man out on the chaotic road, an unwelcome disruptor among the automobiles arrogantly jostling for space. There are people out there who love to bicycle to their workplaces but dare not, dreading the reckless traffic on the way.\nIs speed synonymous with progress? The transition from bullock carts to bullet trains denotes mankind’s journey toward development. However, passion for speed and more speed could trigger a gasping race to nowhere. To find time to relish the fruits of development, the curve has to slow down and plateau somewhere.\nA bicycle is silent like a butterfly, easy like a true friend to possess and maintain. A bicycle symbolises fine balancing, not just on its narrow wheels but a balanced living. This simple carbon-free mode of transport helps the rider to be healthy and heal the habitat. People who cycle to work tend to be less stressed out at workplaces. Motorcyclists whiz past, hiding their heads and thoughts in full-face helmets. Car owners roll up their glasses and cocoon their mind and body from the outside world. A cyclist pedals under the open sky, opens up to friends and fellows on the way and forgets one’s own worries. It seems egalitarianism is part and parcel of the cycling culture.\n\nQ.18 Select the synonym of ‘unfriendly’ as used in the passage.",
+  "question_hi": null,
+  "options": [
+   "Inhospitable",
+   "Estranged",
+   "Aloof",
+   "Lonely"
+  ],
+  "answer": 1,
+  "subtopic": "Reading comprehension - vocabulary",
+  "difficulty": "easy",
+  "explanation": "'Unfriendly' roads are those that are unwelcoming or unsuitable, i.e. 'inhospitable'. Estranged, aloof and lonely describe people's relationships or feelings, not roads.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256301",
+  "paper": "2023_06_25_s1",
+  "question": "Comprehension:\nRead the given passage and answer the questions that follow.\n\n“Any bicycle repair shop around? Can anyone share the location please?”\nThat was a desperate appeal from a woman in our residents’ association’s WhatsApp group. Her child’s bicycle needed urgent mending.\n“There is one around 2 km away.” Soon came the first response.\n“No. The shop shut long ago, even before COVID,” someone else chipped in.\nWhere have the bicycle repairers gone? The wayside mechanics who would do a gamut of works on your bicycles for a paltry sum have almost gone extinct. These days, only children use bicycles, and you know a mechanic needs regular customers to survive. There is a time in almost everyone’s life when they become proud owners of their first bicycle. And there comes a stage when we abandon the prized possession and graduate ourselves to a motorised vehicle. Unused and unattended, the bicycles rust and disintegrate and finally end up at scrap dealers.\nCity roads in Kerala have now become totally unfriendly for bicycles. A cyclist is an odd man out on the chaotic road, an unwelcome disruptor among the automobiles arrogantly jostling for space. There are people out there who love to bicycle to their workplaces but dare not, dreading the reckless traffic on the way.\nIs speed synonymous with progress? The transition from bullock carts to bullet trains denotes mankind’s journey toward development. However, passion for speed and more speed could trigger a gasping race to nowhere. To find time to relish the fruits of development, the curve has to slow down and plateau somewhere.\nA bicycle is silent like a butterfly, easy like a true friend to possess and maintain. A bicycle symbolises fine balancing, not just on its narrow wheels but a balanced living. This simple carbon-free mode of transport helps the rider to be healthy and heal the habitat. People who cycle to work tend to be less stressed out at workplaces. Motorcyclists whiz past, hiding their heads and thoughts in full-face helmets. Car owners roll up their glasses and cocoon their mind and body from the outside world. A cyclist pedals under the open sky, opens up to friends and fellows on the way and forgets one’s own worries. It seems egalitarianism is part and parcel of the cycling culture.\n\nQ.19 What is the purpose of the conversation at the beginning the passage?",
+  "question_hi": null,
+  "options": [
+   "No particular purpose",
+   "An interesting way of introducing the topic of disappearing cycle mechanics.",
+   "To express anger against the disappearing cycle mechanics.",
+   "To bring to everyone’s notice the chaotic state of roads in Kerala."
+  ],
+  "answer": 2,
+  "subtopic": "Reading comprehension - purpose",
+  "difficulty": "medium",
+  "explanation": "The WhatsApp exchange about finding a bicycle repair shop leads directly to the question 'Where have the bicycle repairers gone?'. It is a lively device to introduce the topic of disappearing cycle mechanics.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256305",
+  "paper": "2023_06_25_s1",
+  "question": "Comprehension:\nRead the given passage and answer the questions that follow.\n\n“Any bicycle repair shop around? Can anyone share the location please?”\nThat was a desperate appeal from a woman in our residents’ association’s WhatsApp group. Her child’s bicycle needed urgent mending.\n“There is one around 2 km away.” Soon came the first response.\n“No. The shop shut long ago, even before COVID,” someone else chipped in.\nWhere have the bicycle repairers gone? The wayside mechanics who would do a gamut of works on your bicycles for a paltry sum have almost gone extinct. These days, only children use bicycles, and you know a mechanic needs regular customers to survive. There is a time in almost everyone’s life when they become proud owners of their first bicycle. And there comes a stage when we abandon the prized possession and graduate ourselves to a motorised vehicle. Unused and unattended, the bicycles rust and disintegrate and finally end up at scrap dealers.\nCity roads in Kerala have now become totally unfriendly for bicycles. A cyclist is an odd man out on the chaotic road, an unwelcome disruptor among the automobiles arrogantly jostling for space. There are people out there who love to bicycle to their workplaces but dare not, dreading the reckless traffic on the way.\nIs speed synonymous with progress? The transition from bullock carts to bullet trains denotes mankind’s journey toward development. However, passion for speed and more speed could trigger a gasping race to nowhere. To find time to relish the fruits of development, the curve has to slow down and plateau somewhere.\nA bicycle is silent like a butterfly, easy like a true friend to possess and maintain. A bicycle symbolises fine balancing, not just on its narrow wheels but a balanced living. This simple carbon-free mode of transport helps the rider to be healthy and heal the habitat. People who cycle to work tend to be less stressed out at workplaces. Motorcyclists whiz past, hiding their heads and thoughts in full-face helmets. Car owners roll up their glasses and cocoon their mind and body from the outside world. A cyclist pedals under the open sky, opens up to friends and fellows on the way and forgets one’s own worries. It seems egalitarianism is part and parcel of the cycling culture.\n\nQ.20 What does the writer mean when he says, “It seems egalitarianism is part and parcel of cycling culture”?",
+  "question_hi": null,
+  "options": [
+   "Cycling culture isolates the poor.",
+   "Cycling culture encourages the polarisation of the community.",
+   "Cycling promotes an elitist culture.",
+   "Cycling symbolises the removal of inequalities among people."
+  ],
+  "answer": 4,
+  "subtopic": "Reading comprehension - inference",
+  "difficulty": "medium",
+  "explanation": "Egalitarianism is the belief that all people are equal. The writer says a cyclist, unlike motorists who cocoon themselves, opens up to fellow travellers, so cycling culture symbolises the removal of inequalities among people.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256565",
+  "paper": "2023_06_25_s2",
+  "question": "Select the most appropriate option that can substitute the underlined word in the given sentence. If there is no need to substitute it, select 'No substitution required'.\n\nCollins Dictionary picked the word 'permacrisis' as its word of 2022 to describe any widespread period of instability and insecurity.",
+  "question_hi": null,
+  "options": [
+   "lengthened",
+   "No substitution required",
+   "elongated",
+   "extended"
+  ],
+  "answer": 4,
+  "subtopic": "Sentence improvement / vocabulary",
+  "difficulty": "medium",
+  "explanation": "Collins defined 'permacrisis' as 'an extended period of instability and insecurity'. 'Extended period' is the natural collocation for a long-lasting stretch of time; 'lengthened' and 'elongated' describe physical stretching, so option 4 fits best.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256569",
+  "paper": "2023_06_25_s2",
+  "question": "Sentences of a paragraph are given below in jumbled order. Arrange the sentences in the correct order to form a meaningful and coherent paragraph.\n\nA.This is the story of an unhappy telephone booth that woke up one morning with a headache.\nB.A little later a small boy who was watching all this from a distance came and began singing in his lovely voice.\nC.A young man came to make a call, but the door wouldn't open; then an old lady came and she also could not open it.\nD.And lo and behold! The door opened on its own.",
+  "question_hi": null,
+  "options": [
+   "BCAD",
+   "ACBD",
+   "CADB",
+   "ABCD"
+  ],
+  "answer": 2,
+  "subtopic": "Para jumbles",
+  "difficulty": "medium",
+  "explanation": "A introduces the story of the unhappy telephone booth, C describes people failing to open its door, B brings in the boy who sang, and D gives the result - the door opened. Hence ACBD.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256558",
+  "paper": "2023_06_25_s2",
+  "question": "Select the most appropriate meaning of the given idiom.\n\nBreak even",
+  "question_hi": null,
+  "options": [
+   "To lose someone dear",
+   "Neither lose nor gain any money",
+   "Divide something into equal parts",
+   "Unrehearsed dancing"
+  ],
+  "answer": 2,
+  "subtopic": "Idioms",
+  "difficulty": "easy",
+  "explanation": "'Break even' means to reach a point where income equals expenditure, so there is neither profit nor loss. Hence option 2.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256563",
+  "paper": "2023_06_25_s2",
+  "question": "Select the most appropriate option to fill in the blank.\n\nI am ______ aware of the consequences of my decision.",
+  "question_hi": null,
+  "options": [
+   "utterly",
+   "outrightly",
+   "positively",
+   "fully"
+  ],
+  "answer": 4,
+  "subtopic": "Collocations",
+  "difficulty": "medium",
+  "explanation": "'Fully aware' is the standard collocation meaning completely conscious of something. 'Outrightly' is non-standard, and 'utterly' and 'positively' do not idiomatically pair with 'aware' here.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256555",
+  "paper": "2023_06_25_s2",
+  "question": "Parts of the following sentence have been given as options. Select the option that contains an error.\n\nPlease pour the coffee into the flask into the cups.",
+  "question_hi": null,
+  "options": [
+   "Please pour",
+   "into the cups",
+   "into the flask",
+   "the coffee"
+  ],
+  "answer": 3,
+  "subtopic": "Prepositions",
+  "difficulty": "easy",
+  "explanation": "Coffee is poured 'from' a flask 'into' the cups; the source takes 'from'. So 'into the flask' should be 'from the flask', making option 3 the error.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256564",
+  "paper": "2023_06_25_s2",
+  "question": "Select the most appropriate option that can substitute the underlined word in the given sentence. If there is no need to substitute it, select 'No substitution required'.\n\nWith the coming of rains, people are feeling relieved after the flaming heat of the summer season.",
+  "question_hi": null,
+  "options": [
+   "No substitution required",
+   "ardent",
+   "scorching",
+   "crackling"
+  ],
+  "answer": 3,
+  "subtopic": "Sentence improvement / vocabulary",
+  "difficulty": "easy",
+  "explanation": "'Scorching heat' is the standard collocation for intense summer heat. 'Flaming' refers to actual flames, 'ardent' means passionate and 'crackling' is a sound, so option 3 is the best substitute.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256559",
+  "paper": "2023_06_25_s2",
+  "question": "Select the INCORRECTLY spelt word.",
+  "question_hi": null,
+  "options": [
+   "Unison",
+   "Unpredictable",
+   "Univercity",
+   "Universal"
+  ],
+  "answer": 3,
+  "subtopic": "Spelling",
+  "difficulty": "easy",
+  "explanation": "The correct spelling is 'university' with an s. Unison, unpredictable and universal are spelt correctly, so 'Univercity' is incorrect.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256560",
+  "paper": "2023_06_25_s2",
+  "question": "Select the correctly spelt word.",
+  "question_hi": null,
+  "options": [
+   "Permeate",
+   "Pention",
+   "Persuacion",
+   "Permision"
+  ],
+  "answer": 1,
+  "subtopic": "Spelling",
+  "difficulty": "easy",
+  "explanation": "'Permeate' (to spread through) is correctly spelt. The others should be 'pension', 'persuasion' and 'permission'.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256566",
+  "paper": "2023_06_25_s2",
+  "question": "Select the option that can be used as a one-word substitute for the given phrase.\n\nThe arrangement of events or dates in the order of their occurrence",
+  "question_hi": null,
+  "options": [
+   "Phonology",
+   "Chronology",
+   "Geology",
+   "Morphology"
+  ],
+  "answer": 2,
+  "subtopic": "One-word substitution",
+  "difficulty": "easy",
+  "explanation": "Chronology (chronos = time) is the arrangement of events or dates in the order in which they occurred. Phonology studies speech sounds, geology the earth, and morphology word forms or structures.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256568",
+  "paper": "2023_06_25_s2",
+  "question": "Sentences of a paragraph are given below in jumbled order. Arrange the sentences in the correct order to form a meaningful and coherent paragraph.\n\nA.Louis Braille was born on 4th Jan 1809 in France.\nB.Although the doctors did their best, his eyes could not be saved.\nC.He had been playing in his father's workshop when the accident took place.\nD.When he was 3 years old, Louis lost his eyesight as a result of an accident.",
+  "question_hi": null,
+  "options": [
+   "DBAC",
+   "ADCB",
+   "BCDA",
+   "ABCD"
+  ],
+  "answer": 2,
+  "subtopic": "Para jumbles",
+  "difficulty": "medium",
+  "explanation": "A gives Braille's birth, D says he lost his eyesight at three due to an accident, C explains how the accident happened, and B says doctors could not save his eyes. Hence ADCB.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256561",
+  "paper": "2023_06_25_s2",
+  "question": "Select the most appropriate ANTONYM of the given word.\n\nLiberation",
+  "question_hi": null,
+  "options": [
+   "Subjugation",
+   "Emancipation",
+   "Acquittal",
+   "Freedom"
+  ],
+  "answer": 1,
+  "subtopic": "Antonyms",
+  "difficulty": "easy",
+  "explanation": "'Liberation' means setting free. Its opposite is 'subjugation' (bringing under control or domination); emancipation, acquittal and freedom are similar in meaning.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256557",
+  "paper": "2023_06_25_s2",
+  "question": "Select the most appropriate meaning of the given idiom.\n\nFace the music",
+  "question_hi": null,
+  "options": [
+   "Confront unpleasantness",
+   "Accept appreciation",
+   "Deny mistakes",
+   "Playing a difficult tune"
+  ],
+  "answer": 1,
+  "subtopic": "Idioms",
+  "difficulty": "easy",
+  "explanation": "'Face the music' means to accept and confront the unpleasant consequences of one's actions. Hence option 1, 'confront unpleasantness'.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256567",
+  "paper": "2023_06_25_s2",
+  "question": "Select the option that can be used as a one-word substitute for the given phrase.\n\nA large bedroom for a number of people in a school or institution",
+  "question_hi": null,
+  "options": [
+   "Creche",
+   "Dormitory",
+   "Hostel",
+   "Sanitorium"
+  ],
+  "answer": 2,
+  "subtopic": "One-word substitution",
+  "difficulty": "easy",
+  "explanation": "A dormitory is a large bedroom with many beds for students or members of an institution. A creche is a nursery for infants, a hostel is a whole residential building, and a sanatorium is a place for convalescents.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256556",
+  "paper": "2023_06_25_s2",
+  "question": "Parts of the following sentence have been given as options. Select the option that contains an error.\n\nI appreciate her being honesty about all her mistakes.",
+  "question_hi": null,
+  "options": [
+   "her being honesty",
+   "I appreciate",
+   "about all",
+   "her mistakes"
+  ],
+  "answer": 1,
+  "subtopic": "Error spotting (parts of speech)",
+  "difficulty": "medium",
+  "explanation": "After the gerund 'being', a complement adjective is needed: 'her being honest'. 'Honesty' is a noun and cannot follow 'being' here, so segment 1 is incorrect.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256562",
+  "paper": "2023_06_25_s2",
+  "question": "Select the most appropriate option to fill in the blanks.\n\nLet us ______ at the ______ shop.",
+  "question_hi": null,
+  "options": [
+   "meat; meet",
+   "meet; meat",
+   "meet; meet",
+   "meat; meat"
+  ],
+  "answer": 2,
+  "subtopic": "Homophones",
+  "difficulty": "easy",
+  "explanation": "'Meet' (verb) means to come together, and 'meat' (noun) is animal flesh. The sentence needs a verb after 'Let us' and a noun modifier for 'shop', giving 'meet; meat'.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256571",
+  "paper": "2023_06_25_s2",
+  "question": "Comprehension:\nRead the given passage and answer the questions that follow.\n\nNo matter where you work, sometimes subtle and sometimes very obvious competition is a part and parcel of workplaces. In an environment where most workers are seeking good appraisals, awards, promotions and reputation, fairness is not always on the minds of those competing with each other.\nI recall a story in elementary school about how to make a line smaller without cutting it. The answer to the challenge is drawing a bigger line beside the first line so that the one already drawn looks smaller automatically. The moral of the story is that in order to win over others, you don't necessarily need to cut them down. Instead, you can make yourself bigger by being better at the job or earning credibility fairly. Competition is inevitable, but to outshine others, one way is to do a better job or advance yourself by learning and demonstrating skills.\nSome people resort to unfair means. They throw colleagues, take credit for others' work, gossip, backbite, go out of their way to please the bosses and do favours outside of work to earn favours at work, etc. When many employees at work take this approach, the culture of the place becomes toxic over time where it is hard for people to trust each other and contribute to a team environment.\nSome workers either get frustrated and disengaged and 'quietly quit', that is, they stop caring about work without actually quitting and do the bare minimum to not get fired. Some others simply leave. But quitting is not an option for everyone, especially when their income supports the family. There are extreme scenarios where people have ended their lives or suffered chronic mental or other health problems because they are unable to cope.\nBecause job hopping is not easy and not always a solution for everyone, changing the toxic culture is important.\nA human resources department that truly supports employees and their well-being, a strong leadership and psychological safety at work that allows employees to speak up when they see something wrong without the fear of being reprimanded are some important prerequisites to achieve a work culture that is conducive to equitable growth opportunities for all. Such a work environment would also make the organisation productive.\n\nSubQuestion No : 16\nWhy does the writer refer to the story from his school days?",
+  "question_hi": null,
+  "options": [
+   "To bring out the power of competitions",
+   "To convey that one can win without defeating anyone",
+   "To find a clever solution to a problem",
+   "To establish the importance of creative thinking"
+  ],
+  "answer": 2,
+  "subtopic": "Reading comprehension - purpose",
+  "difficulty": "medium",
+  "explanation": "The story shows a line can be made smaller by drawing a bigger one beside it, and the writer states the moral: to win you need not cut others down. So it conveys that one can win without defeating anyone.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256572",
+  "paper": "2023_06_25_s2",
+  "question": "Comprehension:\nRead the given passage and answer the questions that follow.\n\nNo matter where you work, sometimes subtle and sometimes very obvious competition is a part and parcel of workplaces. In an environment where most workers are seeking good appraisals, awards, promotions and reputation, fairness is not always on the minds of those competing with each other.\nI recall a story in elementary school about how to make a line smaller without cutting it. The answer to the challenge is drawing a bigger line beside the first line so that the one already drawn looks smaller automatically. The moral of the story is that in order to win over others, you don't necessarily need to cut them down. Instead, you can make yourself bigger by being better at the job or earning credibility fairly. Competition is inevitable, but to outshine others, one way is to do a better job or advance yourself by learning and demonstrating skills.\nSome people resort to unfair means. They throw colleagues, take credit for others' work, gossip, backbite, go out of their way to please the bosses and do favours outside of work to earn favours at work, etc. When many employees at work take this approach, the culture of the place becomes toxic over time where it is hard for people to trust each other and contribute to a team environment.\nSome workers either get frustrated and disengaged and 'quietly quit', that is, they stop caring about work without actually quitting and do the bare minimum to not get fired. Some others simply leave. But quitting is not an option for everyone, especially when their income supports the family. There are extreme scenarios where people have ended their lives or suffered chronic mental or other health problems because they are unable to cope.\nBecause job hopping is not easy and not always a solution for everyone, changing the toxic culture is important.\nA human resources department that truly supports employees and their well-being, a strong leadership and psychological safety at work that allows employees to speak up when they see something wrong without the fear of being reprimanded are some important prerequisites to achieve a work culture that is conducive to equitable growth opportunities for all. Such a work environment would also make the organisation productive.\n\nSubQuestion No : 17\nSelect the synonym of 'subtle' as used in the passage.",
+  "question_hi": null,
+  "options": [
+   "Thin",
+   "Sophisticated",
+   "Delicate",
+   "Implied"
+  ],
+  "answer": 4,
+  "subtopic": "Reading comprehension - vocabulary",
+  "difficulty": "medium",
+  "explanation": "In 'sometimes subtle and sometimes very obvious competition', subtle is the opposite of obvious, meaning not openly expressed, i.e. implied. Thin and delicate are physical senses, so option 4 fits.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256573",
+  "paper": "2023_06_25_s2",
+  "question": "Comprehension:\nRead the given passage and answer the questions that follow.\n\nNo matter where you work, sometimes subtle and sometimes very obvious competition is a part and parcel of workplaces. In an environment where most workers are seeking good appraisals, awards, promotions and reputation, fairness is not always on the minds of those competing with each other.\nI recall a story in elementary school about how to make a line smaller without cutting it. The answer to the challenge is drawing a bigger line beside the first line so that the one already drawn looks smaller automatically. The moral of the story is that in order to win over others, you don't necessarily need to cut them down. Instead, you can make yourself bigger by being better at the job or earning credibility fairly. Competition is inevitable, but to outshine others, one way is to do a better job or advance yourself by learning and demonstrating skills.\nSome people resort to unfair means. They throw colleagues, take credit for others' work, gossip, backbite, go out of their way to please the bosses and do favours outside of work to earn favours at work, etc. When many employees at work take this approach, the culture of the place becomes toxic over time where it is hard for people to trust each other and contribute to a team environment.\nSome workers either get frustrated and disengaged and 'quietly quit', that is, they stop caring about work without actually quitting and do the bare minimum to not get fired. Some others simply leave. But quitting is not an option for everyone, especially when their income supports the family. There are extreme scenarios where people have ended their lives or suffered chronic mental or other health problems because they are unable to cope.\nBecause job hopping is not easy and not always a solution for everyone, changing the toxic culture is important.\nA human resources department that truly supports employees and their well-being, a strong leadership and psychological safety at work that allows employees to speak up when they see something wrong without the fear of being reprimanded are some important prerequisites to achieve a work culture that is conducive to equitable growth opportunities for all. Such a work environment would also make the organisation productive.\n\nSubQuestion No : 18\nWhich of these is NOT a consequence of fierce competition at workplace?",
+  "question_hi": null,
+  "options": [
+   "Mental health problems",
+   "Rising one's voice against unfairness",
+   "Suicides",
+   "Doing the bare minimum required"
+  ],
+  "answer": 2,
+  "subtopic": "Reading comprehension - negative fact",
+  "difficulty": "medium",
+  "explanation": "The passage lists quiet quitting (doing the bare minimum), leaving, mental health problems and even suicides as outcomes of toxic competition. Speaking up against unfairness is mentioned only as a remedy, not a consequence.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256574",
+  "paper": "2023_06_25_s2",
+  "question": "Comprehension:\nRead the given passage and answer the questions that follow.\n\nNo matter where you work, sometimes subtle and sometimes very obvious competition is a part and parcel of workplaces. In an environment where most workers are seeking good appraisals, awards, promotions and reputation, fairness is not always on the minds of those competing with each other.\nI recall a story in elementary school about how to make a line smaller without cutting it. The answer to the challenge is drawing a bigger line beside the first line so that the one already drawn looks smaller automatically. The moral of the story is that in order to win over others, you don't necessarily need to cut them down. Instead, you can make yourself bigger by being better at the job or earning credibility fairly. Competition is inevitable, but to outshine others, one way is to do a better job or advance yourself by learning and demonstrating skills.\nSome people resort to unfair means. They throw colleagues, take credit for others' work, gossip, backbite, go out of their way to please the bosses and do favours outside of work to earn favours at work, etc. When many employees at work take this approach, the culture of the place becomes toxic over time where it is hard for people to trust each other and contribute to a team environment.\nSome workers either get frustrated and disengaged and 'quietly quit', that is, they stop caring about work without actually quitting and do the bare minimum to not get fired. Some others simply leave. But quitting is not an option for everyone, especially when their income supports the family. There are extreme scenarios where people have ended their lives or suffered chronic mental or other health problems because they are unable to cope.\nBecause job hopping is not easy and not always a solution for everyone, changing the toxic culture is important.\nA human resources department that truly supports employees and their well-being, a strong leadership and psychological safety at work that allows employees to speak up when they see something wrong without the fear of being reprimanded are some important prerequisites to achieve a work culture that is conducive to equitable growth opportunities for all. Such a work environment would also make the organisation productive.\n\nSubQuestion No : 19\nWhich of the following would the writer NOT agree with?",
+  "question_hi": null,
+  "options": [
+   "Equal opportunity for everyone to prove themselves",
+   "Freedom of speech essential at workplace",
+   "Not let personal preferences interfere in official matters",
+   "Allowing bosses to have personal preferences"
+  ],
+  "answer": 4,
+  "subtopic": "Reading comprehension - inference",
+  "difficulty": "medium",
+  "explanation": "The writer criticises pleasing bosses and earning favours, and calls for equitable growth opportunities and freedom to speak up. So he would not agree with allowing bosses to have personal preferences.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256575",
+  "paper": "2023_06_25_s2",
+  "question": "Comprehension:\nRead the given passage and answer the questions that follow.\n\nNo matter where you work, sometimes subtle and sometimes very obvious competition is a part and parcel of workplaces. In an environment where most workers are seeking good appraisals, awards, promotions and reputation, fairness is not always on the minds of those competing with each other.\nI recall a story in elementary school about how to make a line smaller without cutting it. The answer to the challenge is drawing a bigger line beside the first line so that the one already drawn looks smaller automatically. The moral of the story is that in order to win over others, you don't necessarily need to cut them down. Instead, you can make yourself bigger by being better at the job or earning credibility fairly. Competition is inevitable, but to outshine others, one way is to do a better job or advance yourself by learning and demonstrating skills.\nSome people resort to unfair means. They throw colleagues, take credit for others' work, gossip, backbite, go out of their way to please the bosses and do favours outside of work to earn favours at work, etc. When many employees at work take this approach, the culture of the place becomes toxic over time where it is hard for people to trust each other and contribute to a team environment.\nSome workers either get frustrated and disengaged and 'quietly quit', that is, they stop caring about work without actually quitting and do the bare minimum to not get fired. Some others simply leave. But quitting is not an option for everyone, especially when their income supports the family. There are extreme scenarios where people have ended their lives or suffered chronic mental or other health problems because they are unable to cope.\nBecause job hopping is not easy and not always a solution for everyone, changing the toxic culture is important.\nA human resources department that truly supports employees and their well-being, a strong leadership and psychological safety at work that allows employees to speak up when they see something wrong without the fear of being reprimanded are some important prerequisites to achieve a work culture that is conducive to equitable growth opportunities for all. Such a work environment would also make the organisation productive.\n\nSubQuestion No : 20\nSelect the option that describes the type of this passage.",
+  "question_hi": null,
+  "options": [
+   "Narrative",
+   "Persuasive",
+   "Argumentative",
+   "Expository"
+  ],
+  "answer": 4,
+  "subtopic": "Reading comprehension - type of passage",
+  "difficulty": "hard",
+  "explanation": "The passage explains a workplace problem - unfair competition - its causes, effects and possible remedies in an informative way. Writing that explains and informs on a topic is expository.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680599693",
+  "paper": "2024_02_07_s2",
+  "question": "Choose the most appropriate synonym of the given word.\nObstinate",
+  "question_hi": null,
+  "options": [
+   "Headstrong",
+   "Devilish",
+   "Joyful",
+   "Agreeable"
+  ],
+  "answer": 1,
+  "subtopic": "Synonyms",
+  "difficulty": "easy",
+  "explanation": "'Obstinate' means stubbornly refusing to change one's opinion or course. 'Headstrong' (self-willed, stubborn) is its synonym; agreeable is nearly the opposite, and devilish and joyful are unrelated.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680599694",
+  "paper": "2024_02_07_s2",
+  "question": "Choose the most appropriate antonym of the given word.\nQuarantine",
+  "question_hi": null,
+  "options": [
+   "Quarrel",
+   "Assimilate",
+   "Mourn",
+   "Circumstance"
+  ],
+  "answer": 2,
+  "subtopic": "Antonyms",
+  "difficulty": "medium",
+  "explanation": "To 'quarantine' is to isolate or keep apart, especially to prevent the spread of disease. 'Assimilate' means to absorb or integrate into a group, which is the opposite idea.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680599675",
+  "paper": "2024_02_07_s2",
+  "question": "Choose the most appropriate option for the given blank.\nYou can't hear the chirping of the birds from outside, ______?",
+  "question_hi": null,
+  "options": [
+   "were they",
+   "is she",
+   "can you",
+   "was they"
+  ],
+  "answer": 3,
+  "subtopic": "Question tags",
+  "difficulty": "easy",
+  "explanation": "A question tag repeats the auxiliary of the main clause with the same subject pronoun and opposite polarity. The main clause 'You can't hear...' is negative with 'can', so the tag is the positive 'can you?'.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680599687",
+  "paper": "2024_02_07_s2",
+  "question": "Select the sentence with no spelling errors",
+  "question_hi": null,
+  "options": [
+   "Compliance with the traffic laws is neccesary for safe driving.",
+   "Compliance with the trafic laws is necessary for safe driving.",
+   "Complience with the traffic laws is necessary for safe driving.",
+   "Compliance with the traffic laws is necessary for safe driving."
+  ],
+  "answer": 4,
+  "subtopic": "Spelling",
+  "difficulty": "easy",
+  "explanation": "The correct spellings are 'compliance', 'traffic' and 'necessary'. Only option 4 has all three correct; the others contain 'neccesary', 'trafic' or 'complience'.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680599691",
+  "paper": "2024_02_07_s2",
+  "question": "Choose the most appropriate antonym of the underlined word in the given sentence.\nWe should always be friendly to others and help them in need.",
+  "question_hi": null,
+  "options": [
+   "Hostile",
+   "Igneous",
+   "Scorching",
+   "Mammoth"
+  ],
+  "answer": 1,
+  "subtopic": "Antonyms",
+  "difficulty": "easy",
+  "explanation": "'Friendly' means kind and pleasant towards others; its opposite is 'hostile' (unfriendly, aggressive). Igneous, scorching and mammoth are unrelated in meaning.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680599682",
+  "paper": "2024_02_07_s2",
+  "question": "Rearrange the parts of the sentence in correct order.\nDeveloping basic\nP. is the only way to face an\nQ. infrastructure and the production sector\nR. responsibility to help states in this respect\nS. economic crisis and the Centre has the",
+  "question_hi": null,
+  "options": [
+   "QPSR",
+   "RSPQ",
+   "SRPQ",
+   "PRSQ"
+  ],
+  "answer": 1,
+  "subtopic": "Sentence rearrangement",
+  "difficulty": "medium",
+  "explanation": "'Developing basic' is followed by Q 'infrastructure and the production sector', then P 'is the only way to face an', S 'economic crisis and the Centre has the', and R 'responsibility to help states'. Hence QPSR.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680599690",
+  "paper": "2024_02_07_s2",
+  "question": "Choose the most appropriate idiom for the given situation.\nThe team stopped working since they had been working for 6 hours continuously.",
+  "question_hi": null,
+  "options": [
+   "Down to the wire",
+   "Cracked someone up",
+   "Flip the bird",
+   "Call it a day"
+  ],
+  "answer": 4,
+  "subtopic": "Idioms",
+  "difficulty": "easy",
+  "explanation": "'Call it a day' means to stop working on something, usually because one has done enough or is tired. It fits a team stopping after six hours of continuous work.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680599685",
+  "paper": "2024_02_07_s2",
+  "question": "Select the sentence with no spelling errors",
+  "question_hi": null,
+  "options": [
+   "I'd like to rich a consensus on the isue before we take a formal vote.",
+   "I'd like to reach a consensus on the essue before we take a formal vote.",
+   "I'd like to reach a conssensus on the issue before we take a formal vote.",
+   "I'd like to reach a consensus on the issue before we take a formal vote."
+  ],
+  "answer": 4,
+  "subtopic": "Spelling",
+  "difficulty": "easy",
+  "explanation": "The correct forms are 'reach', 'consensus' and 'issue'. Only option 4 spells all of them correctly; the others have 'rich', 'isue', 'essue' or 'conssensus'.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680599684",
+  "paper": "2024_02_07_s2",
+  "question": "The question below consists of a set of labelled sentences. Out of the four options given, select the most logical order of the sentences to form a coherent paragraph.\nP. As the Plains was settled and grassland converted for crops and grazing, fires were seen as a threat and extinguished.\nQ. Historically, fires set by lightning burned naturally at regular intervals across the Great Plains.\nR. Native Americans, who saw the benefits, periodically burned the prairie to improve grazing conditions for buffalo.\nS. In the last 50 years, as woody plants began increasing and transforming the grassland into a shrub ecosystem, fire has returned to the Plains in the form of controlled burns.",
+  "question_hi": null,
+  "options": [
+   "SRQP",
+   "PSQR",
+   "RSQP",
+   "QRPS"
+  ],
+  "answer": 4,
+  "subtopic": "Para jumbles",
+  "difficulty": "medium",
+  "explanation": "Q gives the historical background (natural lightning fires), R adds that Native Americans also burned the prairie, P describes how settlers began extinguishing fires, and S says fire has returned as controlled burns in the last 50 years. Hence QRPS.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680599679",
+  "paper": "2024_02_07_s2",
+  "question": "A sentence has been given with a blank to be filled with an appropriate option. Choose the correct alternative.\nHe took another bite and chewed ______.",
+  "question_hi": null,
+  "options": [
+   "slow",
+   "slower",
+   "slowly",
+   "slowest"
+  ],
+  "answer": 3,
+  "subtopic": "Adverbs",
+  "difficulty": "easy",
+  "explanation": "'Chewed' is a verb, and a verb is modified by an adverb, not an adjective. So the adverb 'slowly' is correct.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680599678",
+  "paper": "2024_02_07_s2",
+  "question": "A sentence has been given with a blank to be filled with an appropriate option. Choose the correct alternative.\nNina felt her eyes brim ______ tears and blinked hard.",
+  "question_hi": null,
+  "options": [
+   "with",
+   "by",
+   "of",
+   "off"
+  ],
+  "answer": 1,
+  "subtopic": "Prepositions",
+  "difficulty": "easy",
+  "explanation": "The verb 'brim' takes the preposition 'with': 'eyes brimmed with tears' means filled to the edge with tears. Hence option 1.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680599681",
+  "paper": "2024_02_07_s2",
+  "question": "A sentence has been given with a blank to be filled with an appropriate option. Choose the correct alternative.\nThe sea provides humanity with a bounty of nutrient-rich food, which we have benefited ______ thousands of years.",
+  "question_hi": null,
+  "options": [
+   "for since",
+   "for",
+   "of from",
+   "from of"
+  ],
+  "answer": 2,
+  "subtopic": "Prepositions",
+  "difficulty": "hard",
+  "explanation": "The sentence needs a duration expression, 'for thousands of years'. Among the given choices only 'for' is acceptable; 'for since', 'of from' and 'from of' are ungrammatical combinations (ideally the sentence would read 'benefited from for thousands of years').",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680599680",
+  "paper": "2024_02_07_s2",
+  "question": "A sentence has been given with a blank to be filled with an appropriate option. Choose the correct alternative.\nMelitopol residents ______ the streets following the alleged kidnapping of mayor.",
+  "question_hi": null,
+  "options": [
+   "took on",
+   "took to",
+   "taken off",
+   "taken at"
+  ],
+  "answer": 2,
+  "subtopic": "Phrasal verbs",
+  "difficulty": "medium",
+  "explanation": "'Take to the streets' is an idiom meaning to go out into public places to protest. Residents protesting the mayor's kidnapping 'took to the streets'; 'took on' means to accept a challenge.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680599677",
+  "paper": "2024_02_07_s2",
+  "question": "Choose the most appropriate option for the given blank.\nShe was wearing a ball gown in the party, ______?",
+  "question_hi": null,
+  "options": [
+   "wasn't them",
+   "wasn't she",
+   "weren't they",
+   "isn't she"
+  ],
+  "answer": 2,
+  "subtopic": "Question tags",
+  "difficulty": "easy",
+  "explanation": "The main clause 'She was wearing...' is positive with the auxiliary 'was' and subject 'she', so the tag is negative: 'wasn't she?'.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680599688",
+  "paper": "2024_02_07_s2",
+  "question": "Choose the most appropriate idiom for the given situation.\nShe prepared herself for hard work as her exams were near.",
+  "question_hi": null,
+  "options": [
+   "Drag one's feet",
+   "Roll up one's sleeves",
+   "Back to square one",
+   "Hit the books"
+  ],
+  "answer": 2,
+  "subtopic": "Idioms",
+  "difficulty": "medium",
+  "explanation": "'Roll up one's sleeves' means to prepare for hard work. 'Drag one's feet' means to delay, and 'back to square one' means to start again, so option 2 fits best.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680599696",
+  "paper": "2024_02_07_s2",
+  "question": "Comprehension:\nRead the following passage and answer the questions given below.\nThe two main reasons of this chronic and unmanageable problem is rapidly ever increasing population and defective education system. Such a huge population, India finds it difficult to make any significant success in the areas of employment, alleviation of poverty and backwardness. Every sixth person in the world is an Indian. In other words, we are adding an Australia to our population every year or to Japan every ten years. There are about 31 new babies every minute or 45,000 new people daily. Thus, every year there are about 16 million more people to feed, cloth, educate and give employment. This prevailing trend of population growth is quite disturbing.\nUnemployment rate in India is showing an increasing trend since 2011 when it was 3.5 percent. The same rose to 3.6 percent in 2012 and climbed to 3.7 percent last year.\nQ. Through this passage, the author's main idea is to bring to your notice the ____________.",
+  "question_hi": null,
+  "options": [
+   "population growth of Japan and Australia",
+   "low population growth and its benefits",
+   "rate of poverty in India and its cause",
+   "population explosion in India and the resulting problems"
+  ],
+  "answer": 4,
+  "subtopic": "Reading comprehension - main idea",
+  "difficulty": "easy",
+  "explanation": "The passage highlights India's rapidly increasing population - figures on births and annual additions - and links it to unemployment, poverty and backwardness. So the main idea is population explosion and its resulting problems.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680599699",
+  "paper": "2024_02_07_s2",
+  "question": "Comprehension:\nRead the following passage and answer the questions given below.\nThe two main reasons of this chronic and unmanageable problem is rapidly ever increasing population and defective education system. Such a huge population, India finds it difficult to make any significant success in the areas of employment, alleviation of poverty and backwardness. Every sixth person in the world is an Indian. In other words, we are adding an Australia to our population every year or to Japan every ten years. There are about 31 new babies every minute or 45,000 new people daily. Thus, every year there are about 16 million more people to feed, cloth, educate and give employment. This prevailing trend of population growth is quite disturbing.\nUnemployment rate in India is showing an increasing trend since 2011 when it was 3.5 percent. The same rose to 3.6 percent in 2012 and climbed to 3.7 percent last year.\nQ. According to the passage, which of these problems cannot be successfully tackled due to a large population?\nI. Unemployment\nII. Poverty\nIII. Backwardness",
+  "question_hi": null,
+  "options": [
+   "Only I",
+   "Only III",
+   "Only II and III",
+   "I, II and III"
+  ],
+  "answer": 4,
+  "subtopic": "Reading comprehension - factual",
+  "difficulty": "easy",
+  "explanation": "The passage says that with such a huge population India finds it difficult to succeed in employment, alleviation of poverty and backwardness. So all three - I, II and III - are correct.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680599697",
+  "paper": "2024_02_07_s2",
+  "question": "Comprehension:\nRead the following passage and answer the questions given below.\nThe two main reasons of this chronic and unmanageable problem is rapidly ever increasing population and defective education system. Such a huge population, India finds it difficult to make any significant success in the areas of employment, alleviation of poverty and backwardness. Every sixth person in the world is an Indian. In other words, we are adding an Australia to our population every year or to Japan every ten years. There are about 31 new babies every minute or 45,000 new people daily. Thus, every year there are about 16 million more people to feed, cloth, educate and give employment. This prevailing trend of population growth is quite disturbing.\nUnemployment rate in India is showing an increasing trend since 2011 when it was 3.5 percent. The same rose to 3.6 percent in 2012 and climbed to 3.7 percent last year.\nQ. Through the given statement 'we are adding an Australia to our population every year', the author implies that ____________.",
+  "question_hi": null,
+  "options": [
+   "our population growth is equivalent to that of Australia",
+   "population composition of India and Australia, is similar.",
+   "the number of people added to Australia's population is equal to India's entire population",
+   "the number of people added to India's population every year is equal to Australia's entire population"
+  ],
+  "answer": 4,
+  "subtopic": "Reading comprehension - inference",
+  "difficulty": "medium",
+  "explanation": "'Adding an Australia every year' means India's annual population increase equals the whole population of Australia. Hence option 4.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680599698",
+  "paper": "2024_02_07_s2",
+  "question": "Comprehension:\nRead the following passage and answer the questions given below.\nThe two main reasons of this chronic and unmanageable problem is rapidly ever increasing population and defective education system. Such a huge population, India finds it difficult to make any significant success in the areas of employment, alleviation of poverty and backwardness. Every sixth person in the world is an Indian. In other words, we are adding an Australia to our population every year or to Japan every ten years. There are about 31 new babies every minute or 45,000 new people daily. Thus, every year there are about 16 million more people to feed, cloth, educate and give employment. This prevailing trend of population growth is quite disturbing.\nUnemployment rate in India is showing an increasing trend since 2011 when it was 3.5 percent. The same rose to 3.6 percent in 2012 and climbed to 3.7 percent last year.\nQ. Choose the word that has the most nearly the same meaning as the word given.\nAlleviation",
+  "question_hi": null,
+  "options": [
+   "Eradicate",
+   "Indigenous",
+   "Intensify",
+   "Impressive"
+  ],
+  "answer": 1,
+  "subtopic": "Reading comprehension - vocabulary",
+  "difficulty": "easy",
+  "explanation": "'Alleviation' means reducing or lessening a problem; in context 'alleviation of poverty' means removing poverty. 'Eradicate' (to remove) is the closest in meaning among the options, while 'intensify' is the opposite.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680599700",
+  "paper": "2024_02_07_s2",
+  "question": "Comprehension:\nRead the following passage and answer the questions given below.\nThe two main reasons of this chronic and unmanageable problem is rapidly ever increasing population and defective education system. Such a huge population, India finds it difficult to make any significant success in the areas of employment, alleviation of poverty and backwardness. Every sixth person in the world is an Indian. In other words, we are adding an Australia to our population every year or to Japan every ten years. There are about 31 new babies every minute or 45,000 new people daily. Thus, every year there are about 16 million more people to feed, cloth, educate and give employment. This prevailing trend of population growth is quite disturbing.\nUnemployment rate in India is showing an increasing trend since 2011 when it was 3.5 percent. The same rose to 3.6 percent in 2012 and climbed to 3.7 percent last year.\nQ. Which of the following words is opposite in meaning to the word 'extinct' as used in the passage?",
+  "question_hi": null,
+  "options": [
+   "prevailing",
+   "lost",
+   "obsolete",
+   "defunct"
+  ],
+  "answer": 1,
+  "subtopic": "Reading comprehension - antonyms",
+  "difficulty": "easy",
+  "explanation": "'Extinct' means no longer existing. Its opposite is 'prevailing' (currently existing or widespread), as in 'this prevailing trend'. Lost, obsolete and defunct are synonyms of extinct.",
+  "explanation_hi": null
+ }
+]

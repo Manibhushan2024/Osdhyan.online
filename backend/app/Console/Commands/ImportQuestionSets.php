@@ -201,10 +201,14 @@ class ImportQuestionSets extends Command
             'is_free'          => true,
             'paper_type'       => $spec['paper_type'] ?? null,
             'year'             => $spec['year'] ?? null,
+            // Exam-style blocks: [{key, name_en, name_hi, count, duration_min}] in question order.
+            'sections'         => isset($spec['sections']) ? $this->normalizeSections($spec['sections']) : null,
+            'section_mode'     => $spec['section_mode'] ?? (isset($spec['sections']) ? 'sequential' : 'free'),
+            'evaluate_marked'  => (bool) ($spec['evaluate_marked'] ?? true),
         ];
         $test = Test::firstOrCreate(['exam_id' => $exam->id, 'name_en' => $spec['title']], $attrs);
         if (!$test->wasRecentlyCreated) {
-            $test->update(array_intersect_key($attrs, array_flip(['mode', 'category', 'duration_sec', 'negative_marking', 'description_en', 'subject_id', 'chapter_id', 'paper_type', 'year'])));
+            $test->update(array_intersect_key($attrs, array_flip(['mode', 'category', 'duration_sec', 'negative_marking', 'description_en', 'subject_id', 'chapter_id', 'paper_type', 'year', 'sections', 'section_mode', 'evaluate_marked'])));
         }
 
         $ids = [];
@@ -235,11 +239,13 @@ class ImportQuestionSets extends Command
             ->first(fn ($cand) => $cand->options->sortBy('label')->map(fn ($o) => $this->normOption((string) $o->option_en))->values()->all() === $wanted);
         if ($existing) {
             $stats['questions_reused']++;
-            // Fill in explanations/Hindi that the earlier copy may lack.
+            // Fill in explanations/Hindi/concept keys that the earlier copy may lack.
             $fill = array_filter([
                 'question_hi'    => $existing->question_hi ?: ($q['question_hi'] ?? null),
                 'explanation_en' => $existing->explanation_en ?: ($q['explanation_en'] ?? null),
                 'explanation_hi' => $existing->explanation_hi ?: ($q['explanation_hi'] ?? null),
+                'concept_key'    => $existing->concept_key ?: ($q['chapter_key'] ?? null),
+                'subtopic'       => $existing->subtopic ?: (isset($q['subtopic']) ? mb_substr((string) $q['subtopic'], 0, 160) : null),
             ]);
             $existing->fill($fill)->save();
 
@@ -256,6 +262,8 @@ class ImportQuestionSets extends Command
             'explanation_en' => $q['explanation_en'] ?? null,
             'explanation_hi' => $q['explanation_hi'] ?? null,
             'difficulty'     => in_array($q['difficulty'] ?? '', ['easy', 'medium', 'hard'], true) ? $q['difficulty'] : 'medium',
+            'concept_key'    => $q['chapter_key'] ?? null,
+            'subtopic'       => isset($q['subtopic']) ? mb_substr((string) $q['subtopic'], 0, 160) : null,
         ]);
 
         $labels = ['A', 'B', 'C', 'D', 'E', 'F'];
@@ -275,6 +283,27 @@ class ImportQuestionSets extends Command
         $stats['questions_new']++;
 
         return $question->id;
+    }
+
+    /** Section spec → stored shape (from/count resolved in question order). */
+    private function normalizeSections(array $sections): array
+    {
+        $out = [];
+        $cursor = 0;
+        foreach (array_values($sections) as $i => $s) {
+            $count = (int) ($s['count'] ?? 0);
+            $out[] = [
+                'key'          => (string) ($s['key'] ?? ('s' . ($i + 1))),
+                'name_en'      => (string) ($s['name_en'] ?? $s['name'] ?? ('Section ' . ($i + 1))),
+                'name_hi'      => $s['name_hi'] ?? null,
+                'from'         => $cursor,
+                'count'        => $count,
+                'duration_sec' => isset($s['duration_min']) ? (int) $s['duration_min'] * 60 : ($s['duration_sec'] ?? null),
+            ];
+            $cursor += $count;
+        }
+
+        return $out;
     }
 
     private function normOption(string $text): string

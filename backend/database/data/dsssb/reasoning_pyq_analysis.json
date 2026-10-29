@@ -1,0 +1,1039 @@
+[
+ {
+  "qid": "630680256026",
+  "paper": "2023_06_24_s3",
+  "question": "Which of the following letters is the 7th to the left of the 11th letter from the right end of the series?\n(Left) A D F G W R W S F G B C S X A D G H J K L Y O R E D H K H (Right)",
+  "question_hi": null,
+  "options": [
+   "B",
+   "C",
+   "G",
+   "S"
+  ],
+  "answer": 2,
+  "subtopic": "Letter series – position counting",
+  "difficulty": "easy",
+  "explanation": "Count the series: it has 29 letters (A D F G W R W S F G B C S X A D G H J K L Y O R E D H K H). The 11th letter from the right end is at position 29 − 11 + 1 = 19 from the left, which is J. The 7th letter to the left of position 19 is at position 19 − 7 = 12, which is C.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256040",
+  "paper": "2023_06_24_s3",
+  "question": "Select the correct combination of mathematical signs that can sequentially replace the * signs and balance the given equation.\n19 * 23 * 221 * 17 * 89 * 361",
+  "question_hi": null,
+  "options": [
+   "÷, +, ×, −, =",
+   "+, ÷, ×, −, =",
+   "×, +, ÷, −, =",
+   "−, +, ÷, ×, ="
+  ],
+  "answer": 3,
+  "subtopic": "Mathematical operations – sign replacement",
+  "difficulty": "easy",
+  "explanation": "Try option 3: 19 × 23 + 221 ÷ 17 − 89 = 361. Apply BODMAS: 19 × 23 = 437 and 221 ÷ 17 = 13. Then 437 + 13 − 89 = 361, which equals the right-hand side, so the sequence ×, +, ÷, −, = balances the equation. The other options give values far from 361 (e.g. option 1: 19 ÷ 23 is a fraction).",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256037",
+  "paper": "2023_06_24_s3",
+  "question": "Select the correct combination of mathematical signs that can sequentially replace the * signs and balance the following equation.\n45 * 45 * 45 * 45 * 45 * 1979",
+  "question_hi": null,
+  "options": [
+   "+, ÷, =, ×, −",
+   "−, ÷, =, +, ×",
+   "÷, +, ×, −, =",
+   "×, +, ÷, −, ="
+  ],
+  "answer": 1,
+  "subtopic": "Mathematical operations – sign replacement",
+  "difficulty": "easy",
+  "explanation": "Try option 1: 45 + 45 ÷ 45 = 45 × 45 − 1979. Left side: 45 ÷ 45 = 1, so 45 + 1 = 46. Right side: 45 × 45 = 2025, and 2025 − 1979 = 46. Both sides equal 46, so the combination +, ÷, =, ×, − is correct. Option 2 gives 45 − 1 = 44 on the left but 45 + 45 × 1979 on the right, which is far larger.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256028",
+  "paper": "2023_06_24_s3",
+  "question": "In the evening, before sunset, X is facing towards the right hand side of the direction where his shadow is falling. He then turns right and walk 20 m. Then, he turns right again and walks 10 m. Then, he turns left and walks 10 m, and then turning right, he walks 20 m. Then, he turns right again and walks 30 m. At what distance and in which direction is X now from the starting point?",
+  "question_hi": null,
+  "options": [
+   "30 m, north",
+   "20 m, north",
+   "30 m, south",
+   "20 m, south"
+  ],
+  "answer": 1,
+  "subtopic": "Direction sense with shadow",
+  "difficulty": "medium",
+  "explanation": "In the evening the sun is in the west, so a shadow falls towards the east. The right-hand side of east is south, so X initially faces south. Turn right → west, walk 20 m; turn right → north, walk 10 m; turn left → west, walk 10 m; turn right → north, walk 20 m; turn right → east, walk 30 m. Net east-west movement: 20 + 10 west and 30 east = 0; net north movement: 10 + 20 = 30 m. So X is 30 m north of the start.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256031",
+  "paper": "2023_06_24_s3",
+  "question": "Study the given information, statement and conclusions carefully, and decide which of the given conclusions logically follow(s) from the statement.\nP # Q means P is greater than Q.\nP $ Q means P is either greater than or equal to Q.\nP = Q means P is smaller than Q.\nStatement:\nC $ E, F # C, D = E.\nConclusions:\nI. C # D\nII. E # D",
+  "question_hi": null,
+  "options": [
+   "Only conclusion II follows",
+   "Both conclusions I and II follow",
+   "Only conclusion I follows",
+   "Either conclusion I or II follows"
+  ],
+  "answer": 2,
+  "subtopic": "Coded inequalities",
+  "difficulty": "easy",
+  "explanation": "Decode: C $ E means C ≥ E; F # C means F > C; D = E means D < E. Combining: F > C ≥ E > D. Conclusion I (C # D, i.e. C > D): since C ≥ E and E > D, C > D is definite — follows. Conclusion II (E # D, i.e. E > D): given directly — follows. Hence both conclusions follow.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256039",
+  "paper": "2023_06_24_s3",
+  "question": "Four number-pairs have been given, out of which three are alike in some manner and one is different. Select the one that is different.",
+  "question_hi": null,
+  "options": [
+   "16 - 72",
+   "24 - 108",
+   "18 - 81",
+   "22 - 97"
+  ],
+  "answer": 4,
+  "subtopic": "Odd one out – number pairs",
+  "difficulty": "easy",
+  "explanation": "In each pair the second number is 4.5 times the first: 16 × 4.5 = 72, 24 × 4.5 = 108, 18 × 4.5 = 81. For 22, 22 × 4.5 = 99, but the pair gives 97, so 22 − 97 does not follow the pattern and is the odd one out.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256041",
+  "paper": "2023_06_24_s3",
+  "question": "What approximate value should come in place of the question mark (?) in the following equation?\n23.87 ÷ 12.19 – 76.69 ÷ 29.89 × 17.37 = ?",
+  "question_hi": null,
+  "options": [
+   "567",
+   "234",
+   "345",
+   "435"
+  ],
+  "answer": 4,
+  "subtopic": "Approximation / simplification",
+  "difficulty": "medium",
+  "explanation": "Round off the numbers: 23.87 ÷ 12.19 ≈ 24 ÷ 12 = 2; 76.69 ÷ 29.89 ≈ 77 ÷ 30 ≈ 2.57; 2.57 × 17.37 ≈ 44.6. As printed, 2 − 44.6 ≈ −43, which matches no option, so an operator has evidently been misprinted in the paper. The official key is 435; a form such as 23.87 × 17.37 + 12.19 … ≈ 415 + 12 + … lands near 435, so treat the official key as the reference. Note: question appears garbled; the method (round each number, then apply BODMAS) is what matters.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256030",
+  "paper": "2023_06_24_s3",
+  "question": "In a row of a picture hall where all are facing north, Khalid is 25th from the left end and Kapil is 29th from the right end. They interchange their seats, and Sham who is sitting 34th from the left end is sitting at the 5th place to the left of Khalid new position. How many persons are there in one row of the picture hall?",
+  "question_hi": null,
+  "options": [
+   "56",
+   "67",
+   "76",
+   "62"
+  ],
+  "answer": 2,
+  "subtopic": "Ranking / seating in a row",
+  "difficulty": "medium",
+  "explanation": "After the interchange, Khalid occupies Kapil's old seat, which is 29th from the right. Sham is 34th from the left and sits 5 places to the left of Khalid, so Khalid's new seat is 34 + 5 = 39th from the left. Total persons = (position from left) + (position from right) − 1 = 39 + 29 − 1 = 67.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256038",
+  "paper": "2023_06_24_s3",
+  "question": "Four number-pairs have been given, out of which three are alike in some manner and one is different. Select the one that is different.",
+  "question_hi": null,
+  "options": [
+   "13 - 39",
+   "27 - 81",
+   "23 - 69",
+   "17 - 51"
+  ],
+  "answer": 2,
+  "subtopic": "Odd one out – number pairs",
+  "difficulty": "medium",
+  "explanation": "In every pair the second number is 3 times the first (13 × 3 = 39, 27 × 3 = 81, 23 × 3 = 69, 17 × 3 = 51), so the multiplication rule alone does not separate them. Look at the first numbers: 13, 23 and 17 are prime numbers, whereas 27 is composite (3 × 9). Hence 27 − 81 is the odd pair.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256024",
+  "paper": "2023_06_24_s3",
+  "question": "Read the given statements and conclusions carefully. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statements.\nStatements:\nA. Some dogs are goats.\nB. All goats are peacocks.\nC. All peacocks are eagles.\nConclusions:\nI. Some peacocks are dogs.\nII. All dogs are peacocks.\nIII. All eagles are peacocks.",
+  "question_hi": null,
+  "options": [
+   "Only conclusion I follows",
+   "Only conclusions II and III follow",
+   "Only conclusions I and II follow",
+   "All the conclusions, I, II and III, follow"
+  ],
+  "answer": 1,
+  "subtopic": "Syllogism",
+  "difficulty": "easy",
+  "explanation": "Draw the Venn picture: dogs partly overlap goats; goats sit entirely inside peacocks; peacocks sit entirely inside eagles. Conclusion I (some peacocks are dogs): the dogs that are goats are also peacocks — follows. Conclusion II (all dogs are peacocks): only some dogs are goats, so not definite — does not follow. Conclusion III (all eagles are peacocks): the statement is the reverse (all peacocks are eagles) — does not follow. Only I follows.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256023",
+  "paper": "2023_06_24_s3",
+  "question": "In a row of 80 students, Ram is at the 15th position to the right of Rohit, who is at the 40th position from the right end. What will be the position of Ram from the left end?",
+  "question_hi": null,
+  "options": [
+   "54th",
+   "56th",
+   "55th",
+   "57th"
+  ],
+  "answer": 2,
+  "subtopic": "Ranking in a row",
+  "difficulty": "easy",
+  "explanation": "Rohit is 40th from the right in a row of 80, so from the left he is 80 − 40 + 1 = 41st. Ram is 15 places to his right (i.e. further from the left end), so Ram's position from the left = 41 + 15 = 56th.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256029",
+  "paper": "2023_06_24_s3",
+  "question": "If\nP # Q means P is the brother of Q,\nP @ Q means P is the father of Q, and\nP & Q means P is the sister of Q,\nthen how is A related to E in the expression A # B @ C & D # E?",
+  "question_hi": null,
+  "options": [
+   "Paternal uncle",
+   "Father",
+   "Grandfather",
+   "Maternal uncle"
+  ],
+  "answer": 1,
+  "subtopic": "Blood relations – coded",
+  "difficulty": "easy",
+  "explanation": "Decode A # B @ C & D # E: A is the brother of B; B is the father of C; C is the sister of D; D is the brother of E. So B is the father of C, D and E (they are siblings). A is the brother of B, i.e. brother of E's father — A is E's paternal uncle.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256027",
+  "paper": "2023_06_24_s3",
+  "question": "AOPQRSTUVDEFMNWXBZGHIJKLYC\nHow many letters in the above string occupy the same position as they occupy in the English alphabet?",
+  "question_hi": null,
+  "options": [
+   "Four",
+   "Two",
+   "One",
+   "Three"
+  ],
+  "answer": 1,
+  "subtopic": "Alphabet test",
+  "difficulty": "medium",
+  "explanation": "Compare each letter's place in the string with its alphabet number. A is at position 1 (A = 1) ✓. M is at position 13 (M = 13) ✓, N at position 14 (N = 14) ✓, and Y at position 25 (Y = 25) ✓. No other letter matches (e.g. O at 2, D at 10, C at 26). So four letters — A, M, N, Y — occupy their natural alphabetical positions.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256032",
+  "paper": "2023_06_24_s3",
+  "question": "A statement is given, followed by two courses of action numbered I and II. You have to assume everything in the statement to be true, and on the basis of the information given in the statement, decide which of the suggested courses of action logically follow(s) for pursuing.\nStatement:\nFalse cases on dowry are on the increase in the last few years.\nCourses of Action:\nI. Government should instruct the local police administration to properly verify dowry complaints before registering an FIR.\nII. Local police should take strict action on false cases of dowry.",
+  "question_hi": null,
+  "options": [
+   "Only II follows",
+   "Only I follows",
+   "Either I or II follows",
+   "Both I and II follow"
+  ],
+  "answer": 4,
+  "subtopic": "Courses of action",
+  "difficulty": "medium",
+  "explanation": "The problem is the rise in false dowry cases. Course I (proper verification of complaints before FIR) directly prevents false cases from being registered — it follows. Course II (strict action against those filing false cases) acts as a deterrent and is a practical, legal measure — it also follows. As both address the problem, the official key is that both I and II follow.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256231",
+  "paper": "2023_06_25_s1",
+  "question": "If\nA + B means A is the brother of B,\nA − B means A is the sister of B and\nA × B means A is the father of B,\nthen how is P related to S in the expression 'P × Q − R + S'?",
+  "question_hi": null,
+  "options": [
+   "P is the father of S",
+   "P is the son of S",
+   "P is the brother of S",
+   "P is the uncle of S"
+  ],
+  "answer": 1,
+  "subtopic": "Coded blood relations",
+  "difficulty": "easy",
+  "explanation": "P × Q: P is the father of Q. Q − R: Q is the sister of R. R + S: R is the brother of S. So Q, R and S are siblings, all children of P, which makes P the father of S.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256235",
+  "paper": "2023_06_25_s1",
+  "question": "Read the given statement and conclusions carefully. Assuming that the information given in the statement is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statement.\nStatement:\nHealth is the best wealth of an individual.\nConclusions:\nI. People do not think too much about health while making efforts to earn.\nII. Wealth is of no use without health.",
+  "question_hi": null,
+  "options": [
+   "Only conclusion I follows.",
+   "Either conclusion I or II follows.",
+   "Only conclusion II follows.",
+   "Both I and II follow."
+  ],
+  "answer": 1,
+  "subtopic": "Statement & conclusions",
+  "difficulty": "medium",
+  "explanation": "The statement says health matters more than wealth. Such advice is usually given because people tend to neglect health while chasing money, so conclusion I is accepted as implied. Conclusion II goes too far: calling health the 'best' wealth does not mean wealth is of 'no use' without it. Hence only conclusion I follows (as per the official key).",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256244",
+  "paper": "2023_06_25_s1",
+  "question": "Which two signs should be interchanged to make the following equation correct?\n105 ÷ 21 + 67 − 64 × 16 = 287",
+  "question_hi": null,
+  "options": [
+   "÷ and ×",
+   "× and +",
+   "+ and −",
+   "× and −"
+  ],
+  "answer": 2,
+  "subtopic": "Mathematical operations – sign interchange",
+  "difficulty": "easy",
+  "explanation": "Swap × and +: 105 ÷ 21 × 67 − 64 + 16. By BODMAS: 105 ÷ 21 = 5, then 5 × 67 = 335, then 335 − 64 + 16 = 287, which equals the right-hand side.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256229",
+  "paper": "2023_06_25_s1",
+  "question": "ABCDEFGHIJKLMNOPQRSTUVWXYZ\nIf the 1st, 3rd, 5th, 8th, 12th, 15th and 18th letters of the English alphabet (given above) are chosen to form a meaningful word (name of a disease), which letter will come in the middle of all? Each letter must be used and only once.",
+  "question_hi": null,
+  "options": [
+   "A",
+   "E",
+   "C",
+   "L"
+  ],
+  "answer": 4,
+  "subtopic": "Meaningful word formation",
+  "difficulty": "easy",
+  "explanation": "The chosen letters are A(1), C(3), E(5), H(8), L(12), O(15) and R(18). They form the disease name CHOLERA. The word has 7 letters, so the middle (4th) letter is L.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256234",
+  "paper": "2023_06_25_s1",
+  "question": "Four letter-cluster pairs have been given, out of which three are alike in some manner and one is different. Select the one that is different.",
+  "question_hi": null,
+  "options": [
+   "INSPIRING : KMUOKQKMI",
+   "CABALETTA : ABZBJFRUY",
+   "FACULTIES : HZETNSKDU",
+   "ABANDONED : CACMFNPDF"
+  ],
+  "answer": 2,
+  "subtopic": "Odd one out – letter coding",
+  "difficulty": "medium",
+  "explanation": "In options 1, 3 and 4 the letters change alternately by +2 and −1 (e.g. INSPIRING: I+2=K, N−1=M, S+2=U, P−1=O …; ABANDONED: A+2=C, B−1=A …). In CABALETTA : ABZBJFRUY the pattern is reversed, −2 and +1 (C−2=A, A+1=B, B−2=Z, A+1=B …). So option 2 is the odd one.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256225",
+  "paper": "2023_06_25_s1",
+  "question": "Ramesh secured the 15th position from the top and is just 3 positions behind of his best friend Arvind in a class of 50 students. What will be the rank of Arvind from the bottom?",
+  "question_hi": null,
+  "options": [
+   "36th",
+   "40th",
+   "39th",
+   "38th"
+  ],
+  "answer": 3,
+  "subtopic": "Ranking & order",
+  "difficulty": "easy",
+  "explanation": "Ramesh is 15th from the top and 3 places behind Arvind, so Arvind is 15 − 3 = 12th from the top. Rank from bottom = total − rank from top + 1 = 50 − 12 + 1 = 39th.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256240",
+  "paper": "2023_06_25_s1",
+  "question": "Four number-pairs have been given, out of which three are alike in some manner and one is different. Select the one that is different.",
+  "question_hi": null,
+  "options": [
+   "55-275",
+   "45-235",
+   "35-175",
+   "25-125"
+  ],
+  "answer": 2,
+  "subtopic": "Odd one out – number pairs",
+  "difficulty": "easy",
+  "explanation": "In each pair the second number is 5 times the first: 55 × 5 = 275, 35 × 5 = 175 and 25 × 5 = 125. But 45 × 5 = 225, not 235, so 45-235 is the odd one.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256242",
+  "paper": "2023_06_25_s1",
+  "question": "Select the correct combination of mathematical signs that can sequentially replace the * signs and balance the given equation.\n37 * 42 * 21 * 37 * 67 * 44",
+  "question_hi": null,
+  "options": [
+   "×, +, ÷, −, =",
+   "−, ÷, +, ×, =",
+   "÷, +, ×, −, =",
+   "+, ÷, ×, −, ="
+  ],
+  "answer": 4,
+  "subtopic": "Mathematical operations – sign replacement",
+  "difficulty": "easy",
+  "explanation": "Try option 4: 37 + 42 ÷ 21 × 37 − 67 = 44. By BODMAS, 42 ÷ 21 = 2, then 2 × 37 = 74, then 37 + 74 − 67 = 44. Both sides are equal, so the sign sequence +, ÷, ×, −, = balances the equation.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256232",
+  "paper": "2023_06_25_s1",
+  "question": "A question is given followed by two statements labelled I and II. Identify which of the statements is/are sufficient to answer the question.\nQuestion: Who is the shortest of all?\nStatements:\nI. Sachin is taller than Mohan and shorter than Vipin.\nII. Devika is shorter than Gangan.",
+  "question_hi": null,
+  "options": [
+   "Both the statements I and II are insufficient to answer the question.",
+   "Either statement I alone or statement II alone is sufficient to answer the question.",
+   "Statement II alone is sufficient to answer the question, while statement I alone is not sufficient to answer the question.",
+   "Statement I alone is sufficient to answer the question, while statement II alone is not sufficient to answer the question."
+  ],
+  "answer": 1,
+  "subtopic": "Data sufficiency – comparison",
+  "difficulty": "easy",
+  "explanation": "Statement I gives only Mohan < Sachin < Vipin. Statement II gives only Devika < Gangan. There is no link between the two groups, so even together they cannot tell us who is shortest of all. Both statements are insufficient.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256236",
+  "paper": "2023_06_25_s1",
+  "question": "Read the given statement and courses of action carefully. Assuming that the information given in the statement is true, even if it appears to be at variance with commonly known facts, decide which of the given courses of action logically follow(s) from the statement.\nStatement:\nIn the last few years, the condition of roads in the state has continuously deteriorated.\nCourses of Action:\nI. State Government should take strict action against all the employees of Road Development Authority.\nII. State Government should instruct Road Development Authorities to take regular inspection and necessary action to maintain roads.",
+  "question_hi": null,
+  "options": [
+   "Only II follows.",
+   "Only I follows.",
+   "Both I and II follow.",
+   "Either I or II follows."
+  ],
+  "answer": 1,
+  "subtopic": "Statement & course of action",
+  "difficulty": "easy",
+  "explanation": "Course II is a practical step that tackles the problem through regular inspection and maintenance of roads. Course I is too harsh and unfair: punishing every employee without fixing responsibility is not a sensible remedy. So only II follows.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256228",
+  "paper": "2023_06_25_s1",
+  "question": "How many even numbers are immediately followed by an odd number but not immediately preceded by an even number in the following series?\n3 4 3 2 5 6 7 4 3 4 5 6 7 8 9 6 5 4 3 2 2 4 5 6 7 8 9 9 7 6 0 7 6 5 4 3",
+  "question_hi": null,
+  "options": [
+   "13",
+   "14",
+   "12",
+   "11"
+  ],
+  "answer": 1,
+  "subtopic": "Number series – counting",
+  "difficulty": "medium",
+  "explanation": "Scan each even number and check two things: the next number is odd and the previous number is not even. The qualifying ones are the 4 (2nd), 2 (4th), 6 (6th), 4 (8th), 4 (10th), 6 (12th), 8 (14th), 6 (16th), 4 (18th), 6 (24th), 8 (26th), 6 (33rd) and 4 (35th). Cases like '2 4 5' and '6 0 7' fail because the even number is preceded by an even number. Total = 13.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256243",
+  "paper": "2023_06_25_s1",
+  "question": "What approximate value should come in place of the question mark (?) in the following equation?\n56.43 ÷ 27.89 − 67.78 + 98.19 × 13.67 = ?",
+  "question_hi": null,
+  "options": [
+   "1235",
+   "1238",
+   "1123",
+   "1306"
+  ],
+  "answer": 4,
+  "subtopic": "Approximation",
+  "difficulty": "easy",
+  "explanation": "Round to the nearest whole numbers: 56 ÷ 28 − 68 + 98 × 14 = 2 − 68 + 1372 = 1306. (Exact working gives about 1276, and 1306 is still the nearest option.)",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256230",
+  "paper": "2023_06_25_s1",
+  "question": "In the early morning after sunrise, the football coach of Argentina is discussing the strategies for the next match with Messi on the ground such that the coach's shadow falls exactly in front of Messi. In which direction is Messi facing?",
+  "question_hi": null,
+  "options": [
+   "South",
+   "North",
+   "East",
+   "West"
+  ],
+  "answer": 3,
+  "subtopic": "Direction sense – shadows",
+  "difficulty": "easy",
+  "explanation": "Just after sunrise the sun is in the east, so shadows fall towards the west. The coach's shadow falls westward and lies in front of Messi, so Messi stands west of the coach and faces him, i.e. Messi faces East.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256227",
+  "paper": "2023_06_25_s1",
+  "question": "There are six persons, P, Q, R, S, T and U. T is older than no one. S is older than P. Q is younger than P. U is older than T but younger than Q. S is older than R. Who is the third youngest among all?",
+  "question_hi": null,
+  "options": [
+   "Q",
+   "P",
+   "R",
+   "U"
+  ],
+  "answer": 1,
+  "subtopic": "Ordering – age comparison",
+  "difficulty": "medium",
+  "explanation": "T is older than no one, so T is the youngest. U is older than T but younger than Q, so U is second youngest in the intended order. From S > P > Q and S > R, the order taken is S > R/P > Q > U > T, which makes Q the third youngest (as per the official key).",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256233",
+  "paper": "2023_06_25_s1",
+  "question": "Select the option with the second term related to the first term in the same way as the second term is related to the first term in the given pair.\nMATTER: BNUUSF",
+  "question_hi": null,
+  "options": [
+   "HOTELS : PIFTUM",
+   "HOTELS : PIFUTM",
+   "HOTELS : PIFUMT",
+   "HOTELS : PFIUTM"
+  ],
+  "answer": 2,
+  "subtopic": "Letter analogy – coding",
+  "difficulty": "medium",
+  "explanation": "MATTER: shift each letter +1 to get NBUUFS, then swap each pair of letters (NB→BN, UU→UU, FS→SF) to get BNUUSF. HOTELS +1 = IPUFMT; swapping pairs (IP→PI, UF→FU, MT→TM) gives PIFUTM.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256514",
+  "paper": "2023_06_25_s2",
+  "question": "Which two signs should be interchanged to make the following equation correct?\n56 − 74 × 17 + 391 ÷ 23 = 1297",
+  "question_hi": null,
+  "options": [
+   "÷ and ×",
+   "+ and −",
+   "× and −",
+   "÷ and +"
+  ],
+  "answer": 2,
+  "subtopic": "Mathematical operations – sign interchange",
+  "difficulty": "easy",
+  "explanation": "Swap + and −: 56 + 74 × 17 − 391 ÷ 23. By BODMAS: 74 × 17 = 1258 and 391 ÷ 23 = 17. Then 56 + 1258 − 17 = 1297, which equals the right-hand side.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256499",
+  "paper": "2023_06_25_s2",
+  "question": "Select the term from among the given options that can replace the question mark (?) in the following series.\nPMT, QOW, RQZ, SSC, ?",
+  "question_hi": null,
+  "options": [
+   "TVG",
+   "TUF",
+   "TVF",
+   "TVE"
+  ],
+  "answer": 2,
+  "subtopic": "Letter series",
+  "difficulty": "easy",
+  "explanation": "Treat each letter position as its own series. First letters P, Q, R, S, T (+1); second letters M, O, Q, S, U (+2); third letters T, W, Z, C, F (+3, wrapping from Z to C). The next term is TUF.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256495",
+  "paper": "2023_06_25_s2",
+  "question": "A person placed the 9 letters from A to I of the English alphabet into a row such that\n• There is exactly two letters' gap between two vowels.\n• I and B are placed at the extreme ends.\n• D and F are placed between A and E.\n• C is placed to the right of B and second to the left of D.\n• E is placed exactly between A and I.\nWhich letter is placed in the middle of the row?",
+  "question_hi": null,
+  "options": [
+   "F",
+   "E",
+   "G",
+   "D"
+  ],
+  "answer": 1,
+  "subtopic": "Linear arrangement",
+  "difficulty": "medium",
+  "explanation": "C must be to the right of B, so B is at the left end (position 1) and I at the right end (9). E is midway between A and I with two letters between each vowel, so E is at 6 and A at 3. D and F lie between A and E (positions 4 and 5), and C is second to the left of D, so C = 2 and D = 4, F = 5. The row is B C A D F E _ _ I, and the middle (5th) letter is F.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256505",
+  "paper": "2023_06_25_s2",
+  "question": "Read the given statement and conclusions carefully. Assuming that the information given in the statement is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statement.\nStatement:\nPhysical exercises are good for health.\nConclusions:\nI. Mostly players are healthy because of the involvement of physical exercise in their profession.\nII. Ravinder played tennis at the age of 70.",
+  "question_hi": null,
+  "options": [
+   "Only conclusion II follows.",
+   "Only conclusion I follows.",
+   "Both conclusions I and II follow.",
+   "Either conclusion I or II follows."
+  ],
+  "answer": 2,
+  "subtopic": "Statement & conclusions",
+  "difficulty": "easy",
+  "explanation": "If physical exercise is good for health, then players, whose profession involves regular exercise, are likely to be healthy, so conclusion I follows. Conclusion II is about one particular person (Ravinder) and has no link to the statement. Only I follows.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256506",
+  "paper": "2023_06_25_s2",
+  "question": "A statement is given followed by two arguments. Decide which of the arguments is/are strong with respect to the statement.\nStatement:\nShould a college run any course without seeking affiliation from the university?\nArguments:\nI. Yes, it will provide more opportunities to individuals.\nII. No, it will deteriorate the quality as college may not have all the equipment and resource to run any course.",
+  "question_hi": null,
+  "options": [
+   "Both arguments I and II are strong.",
+   "Only argument I is strong.",
+   "Only argument II is strong.",
+   "Neither argument I nor argument II is strong."
+  ],
+  "answer": 4,
+  "subtopic": "Statement & arguments",
+  "difficulty": "medium",
+  "explanation": "Argument I is vague: unaffiliated courses do not create real opportunities, because their degrees are not recognised. Argument II rests on an assumption (that the college lacks equipment and resources) rather than on the actual purpose of affiliation, which is academic recognition and standards. As per the official key, neither argument is strong.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256510",
+  "paper": "2023_06_25_s2",
+  "question": "Four number-pairs have been given, out of which three are alike in some manner and one is different. Select the one that is different.",
+  "question_hi": null,
+  "options": [
+   "59-413",
+   "37-269",
+   "61-427",
+   "47-329"
+  ],
+  "answer": 2,
+  "subtopic": "Odd one out – number pairs",
+  "difficulty": "easy",
+  "explanation": "In each pair the second number is 7 times the first: 59 × 7 = 413, 61 × 7 = 427 and 47 × 7 = 329. But 37 × 7 = 259, not 269, so 37-269 is the odd one.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256513",
+  "paper": "2023_06_25_s2",
+  "question": "What approximate value should come in place of the question mark (?) in the following equation?\n78.69 ÷ 29.19 × 13.17 − 45.67 ÷ 22.89 = ?",
+  "question_hi": null,
+  "options": [
+   "378",
+   "567",
+   "356",
+   "454"
+  ],
+  "answer": 4,
+  "subtopic": "Approximation",
+  "difficulty": "easy",
+  "explanation": "The key's value 454 comes from reading the first operator as '+': 79 + 29 × 13 − 46 ÷ 23 = 79 + 377 − 2 = 454. As printed (78.69 ÷ 29.19 × 13.17 − 45.67 ÷ 22.89), the expression gives only about 2.7 × 13.17 − 2 ≈ 34, which matches no option.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256502",
+  "paper": "2023_06_25_s2",
+  "question": "Select the option where the second word is related to the first word in the same way as the second word is related to the first word in the given pair.\nIMAGINE: BLJGFMJ",
+  "question_hi": null,
+  "options": [
+   "COLLEGE : MNDLFFF",
+   "SUCCESS : DTTCTRE",
+   "COMMAND : NNDMENB",
+   "FAILURE : JZFLFQV"
+  ],
+  "answer": 1,
+  "subtopic": "Letter analogy – coding",
+  "difficulty": "hard",
+  "explanation": "Rule from IMAGINE: split it as IMA | G | INE. Change each 3-letter block by +1, −1, +1 and reverse it (IMA → JLB → BLJ; INE → JMF → FMJ), keeping the middle letter G. Apply it to COLLEGE: COL → DNM → MND, L stays, EGE → FFF → FFF, giving MNDLFFF. The other options break the rule (e.g. SUCCESS should be DTTCTRF, not DTTCTRE).",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256496",
+  "paper": "2023_06_25_s2",
+  "question": "In a row of 50 students, Kajal is 8th to the left of Rashmi. If Rashmi is 25th from the left end of the row, what will be the position of Kajal from the right end of the row?",
+  "question_hi": null,
+  "options": [
+   "33rd",
+   "34th",
+   "32nd",
+   "35th"
+  ],
+  "answer": 2,
+  "subtopic": "Ranking & order",
+  "difficulty": "easy",
+  "explanation": "Rashmi is 25th from the left and Kajal is 8 places to her left, so Kajal is 25 − 8 = 17th from the left. Position from the right = 50 − 17 + 1 = 34th.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256501",
+  "paper": "2023_06_25_s2",
+  "question": "A question is given, followed by two statements labelled I and II. Identify which of the statements is/are sufficient to answer the question.\nQuestion:\nWhat will be the code of 'HUMAN' in the same language?\nStatements:\nI. 'FAHAD' is coded as '61814'.\nII. 'WATER' is coded as '23120518'.",
+  "question_hi": null,
+  "options": [
+   "Information in both the statements I and II is necessary to answer the question.",
+   "Information in statement I alone is sufficient to answer the question, while information in statement II alone is not sufficient to answer the question.",
+   "Information in either statement I alone or statement II alone is sufficient to answer the question.",
+   "Information in statement II alone is sufficient to answer the question, while information in statement I alone is not sufficient to answer the question."
+  ],
+  "answer": 3,
+  "subtopic": "Data sufficiency – coding",
+  "difficulty": "easy",
+  "explanation": "Statement I: FAHAD → 6 1 8 1 4, i.e. each letter is replaced by its alphabet position. Statement II: WATER → 23 1 20 5 18, which shows the same rule. Either statement alone reveals the rule, giving HUMAN = 8 21 13 1 14 (82113114). So either statement alone is sufficient.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256503",
+  "paper": "2023_06_25_s2",
+  "question": "Four letter-cluster pairs have been given, out of which three are alike in some manner and one is different. Select the one that is different.",
+  "question_hi": null,
+  "options": [
+   "IMAGINE : BLJGFMJ",
+   "SUCCESS : DTTCTRF",
+   "COMMAND : NNDMENB",
+   "COLLEGE : MNDLFFF"
+  ],
+  "answer": 3,
+  "subtopic": "Odd one out – letter coding",
+  "difficulty": "hard",
+  "explanation": "Rule: split the word into 3 letters + middle letter + 3 letters; change each block by +1, −1, +1 and reverse it, keeping the middle letter. IMAGINE → BLJGFMJ, SUCCESS → DTTCTRF and COLLEGE → MNDLFFF follow it. For COMMAND, AND → BME → EMB, so the code should be NNDMEMB, not NNDMENB. Option 3 is the odd one.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256512",
+  "paper": "2023_06_25_s2",
+  "question": "Select the correct combination of mathematical signs that can sequentially replace the * signs and balance the given equation.\n34 * 69 * 23 * 37 * 23 * 882",
+  "question_hi": null,
+  "options": [
+   "×, +, ÷, −, =",
+   "+, ÷, ×, −, =",
+   "−, ÷, +, ×, =",
+   "÷, +, ×, −, ="
+  ],
+  "answer": 3,
+  "subtopic": "Mathematical operations – sign replacement",
+  "difficulty": "easy",
+  "explanation": "Try option 3: 34 − 69 ÷ 23 + 37 × 23 = 882. By BODMAS: 69 ÷ 23 = 3 and 37 × 23 = 851. Then 34 − 3 + 851 = 882, which balances the equation.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256504",
+  "paper": "2023_06_25_s2",
+  "question": "Four letter-cluster pairs have been given, out of which three are alike in some manner and one is different. Select the one that is different.",
+  "question_hi": null,
+  "options": [
+   "HOTELS : PIFUTM",
+   "MATTER : BNUUSF",
+   "ACTING : DBJUHO",
+   "ACTUAL : DBUVMB"
+  ],
+  "answer": 4,
+  "subtopic": "Odd one out – letter coding",
+  "difficulty": "medium",
+  "explanation": "Rule: shift each letter by +1, then swap each adjacent pair. HOTELS → IPUFMT → PIFUTM; MATTER → NBUUFS → BNUUSF; ACTING → BDUJOH → DBJUHO. ACTUAL → BDUVBM → DBVUMB, but the given code is DBUVMB, so option 4 is the odd one.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256511",
+  "paper": "2023_06_25_s2",
+  "question": "Four number-pairs have been given, out of which three are alike in some manner and one is different. Select the one that is different.",
+  "question_hi": null,
+  "options": [
+   "19-59",
+   "17-53",
+   "29-91",
+   "23-71"
+  ],
+  "answer": 3,
+  "subtopic": "Odd one out – number pairs",
+  "difficulty": "easy",
+  "explanation": "The rule is second = 3 × first + 2: 19 × 3 + 2 = 59, 17 × 3 + 2 = 53 and 23 × 3 + 2 = 71. But 29 × 3 + 2 = 89, not 91, so 29-91 is the odd one.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256498",
+  "paper": "2023_06_25_s2",
+  "question": "There are six persons, P, Q, R, S, T and U. R is lighter than P but heavier than Q. S is lighter than U. T is heavier than P. U is lighter than Q. Who is the heaviest among them all?",
+  "question_hi": null,
+  "options": [
+   "P",
+   "R",
+   "T",
+   "Q"
+  ],
+  "answer": 3,
+  "subtopic": "Ordering – comparison",
+  "difficulty": "easy",
+  "explanation": "From the clues: Q < R < P, P < T, U < Q and S < U. Combined, S < U < Q < R < P < T, so T is the heaviest.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680600059",
+  "paper": "2024_02_07_s2",
+  "question": "A series is given with one term missing. Select the correct alternative from the given ones that will complete the series.\nNRCH, IYNJ, FJUE, AQFB, ?",
+  "question_hi": null,
+  "options": [
+   "XBMW",
+   "QRST",
+   "XTQR",
+   "XMNO"
+  ],
+  "answer": 1,
+  "subtopic": "Letter series",
+  "difficulty": "hard",
+  "explanation": "Check each letter position. 1st letters N, I, F, A go −5, −3, −5, so the next is −3: X. 2nd letters R, Y, J, Q go +7, +11, +7, so the next is +11: B. 3rd letters C, N, U, F go +11, +7, +11, so the next is +7: M. Only XBMW starts with XBM (its 4th letter W continues H, J, E, B with a −5 step).",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680600057",
+  "paper": "2024_02_07_s2",
+  "question": "In the following, select the odd letter/letters from the given alternatives.",
+  "question_hi": null,
+  "options": [
+   "MKH",
+   "MPR",
+   "WUR",
+   "KIF"
+  ],
+  "answer": 2,
+  "subtopic": "Odd one out – letter groups",
+  "difficulty": "easy",
+  "explanation": "MKH (13→11→8), WUR (23→21→18) and KIF (11→9→6) all step backwards by −2 and then −3. MPR (13→16→18) steps forwards by +3 and then +2, so it is the odd one.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680600048",
+  "paper": "2024_02_07_s2",
+  "question": "In a certain code language, 'STOPWARS' is written as 'POTSSRAW', 'LOGIPERT' is written as 'IGOLTREP'. What is the code for 'LAPTOPST' in that code language?",
+  "question_hi": null,
+  "options": [
+   "TATPOTSP",
+   "TATPPOTS",
+   "TAPTSOPS",
+   "TPALTSPO"
+  ],
+  "answer": 4,
+  "subtopic": "Coding–decoding",
+  "difficulty": "easy",
+  "explanation": "The word is split into two halves of 4 letters and each half is reversed: STOP|WARS → POTS|SRAW and LOGI|PERT → IGOL|TREP. So LAPT|OPST → TPAL|TSPO = TPALTSPO.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680600061",
+  "paper": "2024_02_07_s2",
+  "question": "A statement is followed by a set of conclusions in the given question. Identify which conclusion follows logically from the following statement.\nStatement:\nRaveena goes to the gym daily, as her father has advised her to exercise.\nConclusion:\nI. Raveena's father cares for her daughter health.\nII. Raveena is suffering from some chronic disease.",
+  "question_hi": null,
+  "options": [
+   "Both I and II follow",
+   "Only I follow",
+   "Neither I nor II follow",
+   "Only II follow"
+  ],
+  "answer": 2,
+  "subtopic": "Statement & conclusions",
+  "difficulty": "easy",
+  "explanation": "The father advising daily exercise shows that he cares about his daughter's health, so conclusion I follows. Nothing in the statement suggests any disease (people exercise to stay fit), so conclusion II does not follow. Only I follows.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680600064",
+  "paper": "2024_02_07_s2",
+  "question": "If '÷' means '×', '–' means '+', '×' means '÷' and '+' means '–', then 38 × 57 ÷ 9 – 18 + 12 = ?",
+  "question_hi": null,
+  "options": [
+   "10",
+   "12",
+   "6",
+   "7"
+  ],
+  "answer": 2,
+  "subtopic": "Mathematical operations – symbol substitution",
+  "difficulty": "easy",
+  "explanation": "Replacing the signs gives 38 ÷ 57 × 9 + 18 − 12. By BODMAS: 38/57 = 2/3, then 2/3 × 9 = 6, then 6 + 18 − 12 = 12.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680600067",
+  "paper": "2024_02_07_s2",
+  "question": "Select that missing pair (Third number : Fourth number) which is related in the same way as the first number is related to the second number and fifth number is related to sixth number. (NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits. E.g.13 – Operations on 13 such as adding /subtracting /multiplying etc. to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed)\n442 : 633 :: ? : ?  :: 186 : 377",
+  "question_hi": null,
+  "options": [
+   "313 : 504",
+   "518 : 719",
+   "111 : 292",
+   "277 : 467"
+  ],
+  "answer": 1,
+  "subtopic": "Number analogy",
+  "difficulty": "easy",
+  "explanation": "The second number is the first plus 191: 442 + 191 = 633 and 186 + 191 = 377. Checking the options, 313 + 191 = 504, so 313 : 504 fits. The others differ by 201, 181 and 190.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680600045",
+  "paper": "2024_02_07_s2",
+  "question": "P, Q, R, S, T, U and V are seven friends sitting in a single row facing North. S is to the immediate right of R. T and P are neighbors of U.Q is to the immediate left of R and on second place from left most end. P is at the right most end.Who is sitting on the immediate left of P?",
+  "question_hi": null,
+  "options": [
+   "U",
+   "R",
+   "T",
+   "S"
+  ],
+  "answer": 1,
+  "subtopic": "Linear arrangement",
+  "difficulty": "easy",
+  "explanation": "Q is 2nd from the left and immediately left of R, so R = 3 and S (immediately right of R) = 4. P is at the right end (7), and U, whose neighbours are T and P, is at 6 with T at 5. V takes position 1. The immediate left of P is U.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680600052",
+  "paper": "2024_02_07_s2",
+  "question": "In the following question below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion logically follows the given statements.\nStatements:\nI. Some C are D.\nII. Some D are E.\nIII. No E is G.\nConclusion:\nI. Some E are C.\nII. No D is G.\nIII. Some G are C.",
+  "question_hi": null,
+  "options": [
+   "Neither conclusion follows",
+   "Only conclusion II follows",
+   "Only conclusion I follows",
+   "Only conclusion III follows"
+  ],
+  "answer": 1,
+  "subtopic": "Syllogism",
+  "difficulty": "medium",
+  "explanation": "'Some C are D' and 'Some D are E' are two particular statements, so no definite link between C and E follows (I fails). 'No E is G' only separates the D that are E from G; other D may or may not be G (II fails). Nothing at all links G with C (III fails). Hence no conclusion follows.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680600046",
+  "paper": "2024_02_07_s2",
+  "question": "Mona is 13th from the right end in a row of 40 girls. What is his position from the left end?",
+  "question_hi": null,
+  "options": [
+   "29",
+   "27",
+   "28",
+   "26"
+  ],
+  "answer": 3,
+  "subtopic": "Ranking & order",
+  "difficulty": "easy",
+  "explanation": "Position from the left = total − position from the right + 1 = 40 − 13 + 1 = 28th.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680600066",
+  "paper": "2024_02_07_s2",
+  "question": "In the following question, select the missing number from the given series.\n200, 197, 206, 179, 260, ?",
+  "question_hi": null,
+  "options": [
+   "–83",
+   "–80",
+   "–100",
+   "17"
+  ],
+  "answer": 4,
+  "subtopic": "Number series",
+  "difficulty": "medium",
+  "explanation": "The differences are −3, +9, −27, +81, i.e. powers of 3 with alternating signs. The next difference is −243, so the missing term = 260 − 243 = 17.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680600058",
+  "paper": "2024_02_07_s2",
+  "question": "In the following, select the odd letter/letters from the given alternatives.",
+  "question_hi": null,
+  "options": [
+   "WXUZ",
+   "EFCG",
+   "NOLQ",
+   "IJGL"
+  ],
+  "answer": 2,
+  "subtopic": "Odd one out – letter groups",
+  "difficulty": "medium",
+  "explanation": "WXUZ (23, 24, 21, 26), NOLQ (14, 15, 12, 17) and IJGL (9, 10, 7, 12) all follow +1, −3, +5. EFCG (5, 6, 3, 7) follows +1, −3, +4, so it is the odd one.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680600055",
+  "paper": "2024_02_07_s2",
+  "question": "In the following question, select the related letters from the given alternatives.\nNQT : ORU :: ADH : ?",
+  "question_hi": null,
+  "options": [
+   "ACZ",
+   "UVZ",
+   "BEI",
+   "SPQ"
+  ],
+  "answer": 3,
+  "subtopic": "Letter analogy",
+  "difficulty": "easy",
+  "explanation": "Each letter of NQT moves +1 to give ORU. Applying +1 to ADH gives BEI.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680600050",
+  "paper": "2024_02_07_s2",
+  "question": "If A + B means 'A' is the husband of 'B', A – B means 'A' is the wife of 'B', A × B means 'A' is the mother of 'B', A ÷ B means 'A' is the son of 'B'. If J ÷ P + K × M – R, then How is P related to R?",
+  "question_hi": null,
+  "options": [
+   "Husband",
+   "Wife's brother",
+   "Father",
+   "Wife's father"
+  ],
+  "answer": 4,
+  "subtopic": "Coded blood relations",
+  "difficulty": "medium",
+  "explanation": "J ÷ P: J is the son of P. P + K: P is the husband of K. K × M: K is the mother of M, so P is M's father. M − R: M is the wife of R. So P is the father of R's wife, i.e. R's wife's father (father-in-law).",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680600065",
+  "paper": "2024_02_07_s2",
+  "question": "By Interchanging the given two numbers which of the following equation will be not correct?\n7 and 9",
+  "question_hi": null,
+  "options": [
+   "9 – 7 + 3 = 1",
+   "9 × 4 – 7 × 3 = 4",
+   "9 × 1 – 7 × 2 = –11",
+   "7 × 2 + 9 – 4 = 21"
+  ],
+  "answer": 2,
+  "subtopic": "Mathematical operations – interchange",
+  "difficulty": "easy",
+  "explanation": "Interchange 7 and 9 in each equation. (1) 7 − 9 + 3 = 1 ✓; (3) 7 × 1 − 9 × 2 = −11 ✓; (4) 9 × 2 + 7 − 4 = 21 ✓. But (2) becomes 7 × 4 − 9 × 3 = 28 − 27 = 1, not 4, so it is the equation that is not correct.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680600068",
+  "paper": "2024_02_07_s2",
+  "question": "Select the option that is related to the fifth number cluster in the same way as the second number cluster is related to the first number cluster and fourth number cluster is related to third number cluster.\n6 : 180 :: 8 : 448 :: 10 : ?",
+  "question_hi": null,
+  "options": [
+   "900",
+   "990",
+   "800",
+   "999"
+  ],
+  "answer": 1,
+  "subtopic": "Number analogy",
+  "difficulty": "easy",
+  "explanation": "The rule is n³ − n²: 6³ − 6² = 216 − 36 = 180 and 8³ − 8² = 512 − 64 = 448. So 10³ − 10² = 1000 − 100 = 900.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680600060",
+  "paper": "2024_02_07_s2",
+  "question": "In the given question, a statement is followed by two courses of action. Based on the information given in the statement, you have to assume everything in the statement to be true. Identify which course(s) of action logically follows.\nStatement:\nA bridge collapsed in town Y due to poor construction.\nCourse of Action:\nI. Search-and-rescue operations should be conducted immediately.\nII. People should leave town Y and move to town X.",
+  "question_hi": null,
+  "options": [
+   "Only I follow",
+   "Only II follow",
+   "Neither I nor II follow",
+   "Both I and II follow"
+  ],
+  "answer": 1,
+  "subtopic": "Statement & course of action",
+  "difficulty": "easy",
+  "explanation": "After a bridge collapse, the immediate need is to rescue people who may be trapped or injured, so course I follows. Asking people to leave the whole town is impractical and out of proportion to the problem, so course II does not follow.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680600063",
+  "paper": "2024_02_07_s2",
+  "question": "A statement is followed by a set of conclusions in the given question. Identify which conclusion follows logically from the following statement.\nStatement:\nFor the past three years the ABC Corporation has been planning to expand its operations in order to reach out to the world market.\nConclusion:\nI. The ABC corporation is not competitive.\nII. The ABC corporation wants to capture the global market.",
+  "question_hi": null,
+  "options": [
+   "Neither I nor II follow",
+   "Only I follow",
+   "Both I and II follow",
+   "Only II follow"
+  ],
+  "answer": 4,
+  "subtopic": "Statement & conclusions",
+  "difficulty": "easy",
+  "explanation": "Planning to expand operations to reach the world market shows that the corporation wants a global presence, so conclusion II follows. Nothing in the statement suggests it is uncompetitive; if anything it suggests the opposite. Only II follows.",
+  "explanation_hi": null
+ }
+]

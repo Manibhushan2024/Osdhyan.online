@@ -83,7 +83,20 @@ class AttemptScorer
 
             $responses = DB::table('test_responses')
                 ->where('test_attempt_id', $locked->id)
-                ->get(['id', 'question_id', 'selected_option_id']);
+                ->get(['id', 'question_id', 'selected_option_id', 'is_marked_for_review']);
+
+            // Real DSSSB rule (TCS iON, ConsiderMarkForReview=NO): an answer that is
+            // still "Marked for Review" at submit is NOT evaluated.
+            $evaluateMarked = $test->evaluate_marked ?? true;
+            $markedNotEvaluated = 0;
+            if (!$evaluateMarked) {
+                foreach ($responses as $r) {
+                    if ($r->is_marked_for_review && $r->selected_option_id) {
+                        $r->selected_option_id = null;
+                        $markedNotEvaluated++;
+                    }
+                }
+            }
 
             $sectional = [];
             foreach ($key as $q) {
@@ -155,8 +168,10 @@ class AttemptScorer
                     'unattempted_count' => max(0, count($key) - $attempted),
                     'total_questions'   => count($key),
                     'sectional_stats'   => $sectional,
+                    'section_results'   => SectionState::results($test, $key, $responses),
+                    'marked_not_evaluated' => $markedNotEvaluated,
                     'accuracy'          => $accuracy,
-                ],
+                ] + (is_array($locked->metadata) ? ['sections' => $locked->metadata['sections'] ?? null] : []),
             ]);
 
             // Atomic aggregate update — no read-modify-write race.

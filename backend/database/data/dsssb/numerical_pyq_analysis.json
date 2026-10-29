@@ -1,0 +1,1294 @@
+[
+ {
+  "qid": "630680256068",
+  "paper": "2023_06_24_s3",
+  "question": "A has a sum of ₹12,528, which is 16% more than what B has and 20% less than what C has. The amount that B and C together have is:",
+  "question_hi": null,
+  "options": [
+   "₹26,460",
+   "₹26,450",
+   "₹26,420",
+   "₹26,550"
+  ],
+  "answer": 1,
+  "subtopic": "Percentage – comparison",
+  "difficulty": "easy",
+  "explanation": "A = 116% of B, so B = 12528 ÷ 1.16 = ₹10,800. A = 80% of C, so C = 12528 ÷ 0.8 = ₹15,660. B + C = 10,800 + 15,660 = ₹26,460.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256063",
+  "paper": "2023_06_24_s3",
+  "question": "The value of [(6 2/5 ÷ 5 1/3 of 4 1/2) − (1 1/3 ÷ 3 3/5 of 5/6) + 2/5] / [3/4 − 2 2/3 ÷ 1 1/5 of 5/9 + 4 1/4] is:",
+  "question_hi": null,
+  "options": [
+   "1/3",
+   "5/6",
+   "2/3",
+   "2/9"
+  ],
+  "answer": 4,
+  "subtopic": "Simplification – BODMAS with fractions",
+  "difficulty": "medium",
+  "explanation": "Apply 'of' before ÷. Numerator: 5 1/3 of 4 1/2 = 16/3 × 9/2 = 24, so 32/5 ÷ 24 = 4/15; 3 3/5 of 5/6 = 3, so 4/3 ÷ 3 = 4/9; 4/15 − 4/9 + 2/5 = (12 − 20 + 18)/45 = 2/9. Denominator: 1 1/5 of 5/9 = 2/3, so 8/3 ÷ 2/3 = 4; 3/4 − 4 + 17/4 = 1. Value = (2/9)/1 = 2/9.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256073",
+  "paper": "2023_06_24_s3",
+  "question": "A varies directly as B and inversely as C. When B = 25 and C = 18, then A = 20. If B = 35 and C = 16, then what is the value of A?",
+  "question_hi": null,
+  "options": [
+   "32",
+   "31.5",
+   "30",
+   "32.5"
+  ],
+  "answer": 2,
+  "subtopic": "Variation – direct and inverse",
+  "difficulty": "easy",
+  "explanation": "A = kB/C. From 20 = k × 25/18, k = 20 × 18/25 = 14.4. For B = 35 and C = 16: A = 14.4 × 35/16 = 31.5.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256071",
+  "paper": "2023_06_24_s3",
+  "question": "6 years ago, the ratio of the ages (in years) of Renu and Raman was 5 : 11. After 6 years from now, the ratio of their ages will be 11 : 17. What is the sum of their present ages (in years)?",
+  "question_hi": null,
+  "options": [
+   "34",
+   "46",
+   "44",
+   "38"
+  ],
+  "answer": 3,
+  "subtopic": "Problems on ages",
+  "difficulty": "easy",
+  "explanation": "Let ages 6 years ago be 5x and 11x. Six years from now (12 years later) they are 5x + 12 and 11x + 12, and (5x + 12)/(11x + 12) = 11/17 gives 85x + 204 = 121x + 132, so x = 2. Present ages are 16 and 28, and their sum is 44.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256070",
+  "paper": "2023_06_24_s3",
+  "question": "A man marks an article 60% above its cost price and sells it by giving two successive discounts of 25% and 5% on its marked price. What is his profit percentage?",
+  "question_hi": null,
+  "options": [
+   "14%",
+   "20%",
+   "30%",
+   "16%"
+  ],
+  "answer": 1,
+  "subtopic": "Profit & loss – successive discounts",
+  "difficulty": "easy",
+  "explanation": "Let CP = 100, so MP = 160. After successive discounts of 25% and 5%: SP = 160 × 0.75 × 0.95 = 114. Profit = 114 − 100 = 14, i.e. 14%.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256067",
+  "paper": "2023_06_24_s3",
+  "question": "The ratio of acid and water in solution A is 2 : 5 and the ratio of acid and water in solution B is 6 : 7. 7 L of A is mixed with 9 L of B. In 312 mL of the resulting solution, the quantity (in mL) of acid is:",
+  "question_hi": null,
+  "options": [
+   "125",
+   "135",
+   "120",
+   "130"
+  ],
+  "answer": 3,
+  "subtopic": "Mixture & alligation",
+  "difficulty": "medium",
+  "explanation": "In 7 L of A (2 : 5), acid = 2 L. In 9 L of B (6 : 7), acid = 9 × 6/13 = 54/13 L. Total acid = 2 + 54/13 = 80/13 L in 16 L of mixture, so the acid fraction is 80/(13 × 16) = 5/13. Acid in 312 mL = 312 × 5/13 = 120 mL.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256064",
+  "paper": "2023_06_24_s3",
+  "question": "If the 9-digit number 924x597y4 is divisible by 88, then the maximum possible value of (5x − 3y) is:",
+  "question_hi": null,
+  "options": [
+   "37",
+   "23",
+   "17",
+   "35"
+  ],
+  "answer": 4,
+  "subtopic": "Number system – divisibility",
+  "difficulty": "medium",
+  "explanation": "88 = 8 × 11. For 8, the last three digits 7y4 must be divisible by 8, so y = 0, 4 or 8 (704, 744, 784). For 11: (9+4+5+7+4) − (2+x+9+y) = 18 − x − y must be 0 or a multiple of 11, so x + y = 7 (x + y = 18 is impossible with valid digits). Pairs: (x, y) = (7, 0) gives 5x − 3y = 35; (3, 4) gives 3. Maximum = 35.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256069",
+  "paper": "2023_06_24_s3",
+  "question": "By selling an article at 11/25 of its selling price, a shopkeeper loses 34%. If he sells it at 80% of its original selling price, then his profit percentage is:",
+  "question_hi": null,
+  "options": [
+   "28%",
+   "20%",
+   "30%",
+   "25%"
+  ],
+  "answer": 2,
+  "subtopic": "Profit & loss",
+  "difficulty": "medium",
+  "explanation": "Selling at 11/25 of SP gives a 34% loss: (11/25)SP = 0.66 CP, so SP = 1.5 CP. Selling at 80% of SP gives 0.8 × 1.5 CP = 1.2 CP, i.e. a profit of 20%.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256076",
+  "paper": "2023_06_24_s3",
+  "question": "A train passes two bridges of length 900 m and 420 m in 75 seconds and 50 seconds, respectively. The length (in m) of the train is:",
+  "question_hi": null,
+  "options": [
+   "540",
+   "500",
+   "550",
+   "520"
+  ],
+  "answer": 1,
+  "subtopic": "Trains – crossing bridges",
+  "difficulty": "easy",
+  "explanation": "Speed is constant, so (L + 900)/75 = (L + 420)/50. Cross-multiplying: 50L + 45000 = 75L + 31500, so 25L = 13500 and L = 540 m.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256077",
+  "paper": "2023_06_24_s3",
+  "question": "Pipe A can fill a tank in 20 hours and pipe B can empty the full tank in 40 hours. Both pipes were initially opened together for 30 hours, and then pipe B was closed and pipe A continued to fill the tank. In how much total time (in hours) was the tank filled completely?",
+  "question_hi": null,
+  "options": [
+   "36",
+   "38",
+   "34",
+   "35"
+  ],
+  "answer": 4,
+  "subtopic": "Pipes & cisterns",
+  "difficulty": "easy",
+  "explanation": "Net filling rate with both pipes open = 1/20 − 1/40 = 1/40 per hour, so in 30 hours 30/40 = 3/4 of the tank is filled. The remaining 1/4 is filled by A alone in (1/4) × 20 = 5 hours. Total time = 30 + 5 = 35 hours.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256080",
+  "paper": "2023_06_24_s3",
+  "question": "A circle is inscribed in a square. Another circle concentric to this circle is drawn within the circle. The area of the ring formed by these two circles is 1540 cm^2 and the difference between their radii is 7 cm. What is the perimeter (in cm) of the square? (Use π = 22/7)",
+  "question_hi": null,
+  "options": [
+   "308",
+   "352",
+   "264",
+   "336"
+  ],
+  "answer": 1,
+  "subtopic": "Mensuration – circle and square",
+  "difficulty": "medium",
+  "explanation": "Ring area = π(R² − r²) = 1540, so R² − r² = 1540 × 7/22 = 490. Since R − r = 7, R + r = 490/7 = 70, which gives R = 38.5 cm. The outer circle is inscribed in the square, so side = 2R = 77 cm and perimeter = 4 × 77 = 308 cm.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256075",
+  "paper": "2023_06_24_s3",
+  "question": "An item is available for ₹1,600 cash or for ₹700 cash down payment, followed by three monthly instalments of ₹310 each. The rate of interest (simple) p.a. charged under the instalment plan is (approximate):",
+  "question_hi": null,
+  "options": [
+   "20.8%",
+   "21.6%",
+   "20.3%",
+   "21.2%"
+  ],
+  "answer": 3,
+  "subtopic": "Simple interest – instalments",
+  "difficulty": "hard",
+  "explanation": "Balance after down payment = 1600 − 700 = ₹900, repaid as 3 × 310 = ₹930. Equate amounts at the end of 3 months at r% p.a.: 900 + 900 × r × 3/1200 = 930 + 310 × r × (2 + 1)/1200. So 2700r − 930r = 36000, giving r = 36000/1770 ≈ 20.3%.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256074",
+  "paper": "2023_06_24_s3",
+  "question": "A certain sum invested at simple interest for 3 1/2 years amounts to ₹6,747 and for 5 years amounts to ₹7,410 at the same rate per cent per annum. The rate of interest p.a. is:",
+  "question_hi": null,
+  "options": [
+   "8.5%",
+   "7.5%",
+   "8%",
+   "9%"
+  ],
+  "answer": 1,
+  "subtopic": "Simple interest",
+  "difficulty": "easy",
+  "explanation": "Interest for the extra 1.5 years = 7410 − 6747 = ₹663, so yearly SI = ₹442. Principal = 6747 − 3.5 × 442 = 6747 − 1547 = ₹5,200. Rate = 442/5200 × 100 = 8.5% p.a.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256079",
+  "paper": "2023_06_24_s3",
+  "question": "Two solid metallic right circular cones of heights 31 cm and 53 cm and radii of their bases 21 cm each are melted and recast into a solid sphere. What is the surface area (in cm^2) of the sphere?",
+  "question_hi": null,
+  "options": [
+   "1764 π",
+   "900 π",
+   "1600 π",
+   "1296 π"
+  ],
+  "answer": 1,
+  "subtopic": "Mensuration – cone to sphere",
+  "difficulty": "medium",
+  "explanation": "Total volume of the cones = (1/3)π × 21² × (31 + 53) = (1/3)π × 441 × 84 = 12348π. Setting (4/3)πR³ = 12348π gives R³ = 9261, so R = 21 cm. Surface area of the sphere = 4πR² = 4π × 441 = 1764π cm².",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256078",
+  "paper": "2023_06_24_s3",
+  "question": "A can do a certain work in 14 days. B is 33 1/3 % less efficient than A. Both started to work together, but A left the work 2 days before the completion of the work and B continued to work till the work was over. In how many days was the whole work completed?",
+  "question_hi": null,
+  "options": [
+   "9 3/5",
+   "8 1/4",
+   "8 1/2",
+   "10 2/5"
+  ],
+  "answer": 1,
+  "subtopic": "Time & work – efficiency",
+  "difficulty": "medium",
+  "explanation": "A does 1/14 per day. B is 33⅓% less efficient, so B does (2/3)(1/14) = 1/21 per day. Let total time be T: A works T − 2 days and B works T days. (T − 2)/14 + T/21 = 1 gives 3(T − 2) + 2T = 42, so 5T = 48 and T = 9.6 = 9 3/5 days.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256072",
+  "paper": "2023_06_24_s3",
+  "question": "A and B start a business by investing their capitals in the ratio of 2/3 : 3/8. After 4 months, A reduced his capital by 50% and B increased his capital by one-third. What will be the share (in ₹ lakhs) of B in a total profit of ₹ 39 lakhs, after 1 year?",
+  "question_hi": null,
+  "options": [
+   "18.6",
+   "17.2",
+   "19.8",
+   "13.2"
+  ],
+  "answer": 3,
+  "subtopic": "Partnership",
+  "difficulty": "medium",
+  "explanation": "Capital ratio 2/3 : 3/8 = 16 : 9. A: 16 × 4 + 8 × 8 = 128 (halved after 4 months). B: 9 × 4 + 12 × 8 = 132 (raised by one-third). Profit ratio = 128 : 132 = 32 : 33, so B's share = 39 × 33/65 = ₹19.8 lakh.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256065",
+  "paper": "2023_06_24_s3",
+  "question": "When 1529, 2178 and 2886 are divided by the greatest number n, the remainder in each case is r. What is the value of (3n – 2r)?",
+  "question_hi": null,
+  "options": [
+   "69",
+   "61",
+   "67",
+   "63"
+  ],
+  "answer": 1,
+  "subtopic": "HCF – same remainder",
+  "difficulty": "medium",
+  "explanation": "n is the HCF of the differences: 2178 − 1529 = 649 = 59 × 11 and 2886 − 2178 = 708 = 59 × 12, so n = 59. The remainder is r = 1529 − 59 × 25 = 54. So 3n − 2r = 177 − 108 = 69.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256066",
+  "paper": "2023_06_24_s3",
+  "question": "A car travels for 45 minutes at a speed of 80 km/h, the next 40 minutes at s speed of 48 km/h and the next 35 minutes at a speed of x km/h. If his average speed for the whole journey is 72 1/4 km/h, then what is the value of x ?",
+  "question_hi": null,
+  "options": [
+   "96",
+   "90",
+   "80",
+   "84"
+  ],
+  "answer": 2,
+  "subtopic": "Speed – average speed",
+  "difficulty": "medium",
+  "explanation": "Distances: 80 × 45/60 = 60 km and 48 × 40/60 = 32 km, and the third part is 35x/60 = 7x/12 km. Total time = 120 min = 2 h, so total distance = 72.25 × 2 = 144.5 km. Then 92 + 7x/12 = 144.5, so 7x/12 = 52.5 and x = 90 km/h.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256269",
+  "paper": "2023_06_25_s1",
+  "question": "The ratio of spirit and water in solution A is 3 : 4, and the ratio of spirit and water in solution B is 5 : 9. Later, 5 L of A is mixed with 6 L of B. In 462 mL of the resulting solution, how much water (in mL) should be added so that the ratio of spirit and water in it becomes 1 : 2?",
+  "question_hi": null,
+  "options": [
+   "87",
+   "182",
+   "78",
+   "178"
+  ],
+  "answer": 3,
+  "subtopic": "Mixture & alligation",
+  "difficulty": "medium",
+  "explanation": "In 5 L of A (3 : 4): spirit = 15/7 L, water = 20/7 L. In 6 L of B (5 : 9): spirit = 15/7 L, water = 27/7 L. The mix has spirit : water = 30 : 47 (total 77 parts). In 462 mL, spirit = 180 mL and water = 282 mL. For a 1 : 2 ratio, water must be 360 mL, so add 360 − 282 = 78 mL.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256267",
+  "paper": "2023_06_25_s1",
+  "question": "When 3336, 4188 and 5679 are divided by a 2-digit number p, the remainder in each case is q. What is the value of (p – q)?",
+  "question_hi": null,
+  "options": [
+   "13",
+   "3",
+   "1",
+   "11"
+  ],
+  "answer": 3,
+  "subtopic": "HCF – same remainder",
+  "difficulty": "medium",
+  "explanation": "p must divide the differences: 4188 − 3336 = 852 = 4 × 213 and 5679 − 4188 = 1491 = 7 × 213, so the HCF is 213 = 3 × 71. The only 2-digit divisor is p = 71. The remainder is q = 3336 − 71 × 46 = 70. So p − q = 71 − 70 = 1.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256271",
+  "paper": "2023_06_25_s1",
+  "question": "A is 60% more than B. C is 55% more than the difference between A and B. If A is decreased by 40% and C is increased by 33 1/3 %, then C is what percentage more than A (correct to one decimal place)?",
+  "question_hi": null,
+  "options": [
+   "22.6%",
+   "29.2%",
+   "28.5%",
+   "25.4%"
+  ],
+  "answer": 2,
+  "subtopic": "Percentage – successive change",
+  "difficulty": "medium",
+  "explanation": "Let B = 100, so A = 160. A − B = 60, so C = 1.55 × 60 = 93. New A = 160 × 0.6 = 96 and new C = 93 × 4/3 = 124. C exceeds A by (124 − 96)/96 × 100 = 29.17%, which is about 29.2%.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256284",
+  "paper": "2023_06_25_s1",
+  "question": "Study the following graph and answer the question.\n[Line graph: Percent Profit (y-axis, 0-60) vs Year (2018-2021). Company A: 2018 = 30, 2019 = 40, 2020 = 55, 2021 = 35. Company B: 2018 = 45, 2019 = 50, 2020 = 35, 2021 = 44]\nPercent profit = (Income − Expenditure)/Expenditure × 100\nProfit = Income − Expenditure\nIn 2018, if the expenditure of the company B is ₹300 crores and the income of company A is 390 crores, then by what percentage was the profit of company B more than that of A in that year?",
+  "question_hi": null,
+  "options": [
+   "40%",
+   "55%",
+   "50%",
+   "42%"
+  ],
+  "answer": 3,
+  "subtopic": "Data interpretation – line graph",
+  "difficulty": "medium",
+  "explanation": "Company B (2018): profit = 45% of the expenditure of ₹300 cr = ₹135 cr. Company A (2018): income = 1.30 × expenditure = 390, so expenditure = ₹300 cr and profit = ₹90 cr. B's profit is more than A's by (135 − 90)/90 × 100 = 50%.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256281",
+  "paper": "2023_06_25_s1",
+  "question": "The volume of a right circular cylinder of height 32 cm and base diameter 36 cm is equal to the volume of a right circular cone of height 24 cm. What is the curved surface area (in cm^2) of the cone?",
+  "question_hi": null,
+  "options": [
+   "432√13 π",
+   "288√13 π",
+   "240√15 π",
+   "360√15 π"
+  ],
+  "answer": 1,
+  "subtopic": "Mensuration – cylinder and cone",
+  "difficulty": "medium",
+  "explanation": "Cylinder volume = π × 18² × 32 = 10368π. For the cone, (1/3)πr² × 24 = 10368π gives r² = 1296, so r = 36 cm. Slant height l = √(36² + 24²) = √1872 = 12√13. Curved surface area = πrl = π × 36 × 12√13 = 432√13π cm².",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256265",
+  "paper": "2023_06_25_s1",
+  "question": "The value of (5 1/9 − 7 7/8 ÷ 9 9/20) ÷ 1.2̄ − (5 1/4 ÷ 3/7 of 1/4 × 2/7) × 3/14 + 3/4 is:",
+  "question_hi": null,
+  "options": [
+   "2 1/2",
+   "1 1/4",
+   "2 1/3",
+   "1 1/3"
+  ],
+  "answer": 2,
+  "subtopic": "Simplification – BODMAS with fractions",
+  "difficulty": "medium",
+  "explanation": "First part: 7 7/8 ÷ 9 9/20 = 63/8 × 20/189 = 5/6; then 46/9 − 5/6 = 77/18; and 1.2̄ = 11/9, so 77/18 ÷ 11/9 = 7/2. Second part: 3/7 of 1/4 = 3/28; 21/4 ÷ 3/28 = 49; 49 × 2/7 = 14; 14 × 3/14 = 3. Value = 7/2 − 3 + 3/4 = 5/4 = 1 1/4.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256274",
+  "paper": "2023_06_25_s1",
+  "question": "P varies directly as Q and inversely as R. When Q = 2.7 and R = 1.6, then P = 4.5. What is the value of R when P = 6 and Q = 15?",
+  "question_hi": null,
+  "options": [
+   "5",
+   "20/3",
+   "10",
+   "5/2"
+  ],
+  "answer": 2,
+  "subtopic": "Variation – direct and inverse",
+  "difficulty": "easy",
+  "explanation": "P = kQ/R. From 4.5 = k × 2.7/1.6, k = 7.2/2.7 = 8/3. For P = 6 and Q = 15: 6 = (8/3) × 15/R = 40/R, so R = 40/6 = 20/3.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256272",
+  "paper": "2023_06_25_s1",
+  "question": "When Savita sells 46 articles for ₹2,070, she suffers a loss of 10%. To earn a profit of 20%, she should sell 46 articles for:",
+  "question_hi": null,
+  "options": [
+   "₹2,852",
+   "₹2,668",
+   "₹2,760",
+   "₹2,990"
+  ],
+  "answer": 3,
+  "subtopic": "Profit & loss",
+  "difficulty": "easy",
+  "explanation": "A 10% loss means ₹2,070 = 90% of CP, so CP of the 46 articles = ₹2,300. For a 20% profit, SP = 1.2 × 2300 = ₹2,760.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256273",
+  "paper": "2023_06_25_s1",
+  "question": "An article is sold for ₹1,683 after giving three successive discounts of x %, 10% and 12% on its marked price of ₹2,500. If a single discount of 3x % is given on the same marked price, then the selling price (in ₹) of the article will be:",
+  "question_hi": null,
+  "options": [
+   "1,450",
+   "1,300",
+   "1,375",
+   "1,150"
+  ],
+  "answer": 3,
+  "subtopic": "Discount – successive discounts",
+  "difficulty": "medium",
+  "explanation": "2500 × (1 − x/100) × 0.90 × 0.88 = 1683, so (1 − x/100) × 1980 = 1683. This gives 1 − x/100 = 0.85, so x = 15. A single discount of 3x = 45% gives SP = 2500 × 0.55 = ₹1,375.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256280",
+  "paper": "2023_06_25_s1",
+  "question": "What is the area (in cm^2) of a circle that circumscribes a triangle with sides 28 cm, 45 cm and 53 cm?",
+  "question_hi": null,
+  "options": [
+   "702.25 π",
+   "729 π",
+   "784 π",
+   "506.25 π"
+  ],
+  "answer": 1,
+  "subtopic": "Geometry – circumcircle of triangle",
+  "difficulty": "medium",
+  "explanation": "28² + 45² = 784 + 2025 = 2809 = 53², so the triangle is right-angled. The circumcircle of a right triangle has the hypotenuse as its diameter, so R = 53/2 = 26.5 cm. Area = π × 26.5² = 702.25π cm².",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256283",
+  "paper": "2023_06_25_s1",
+  "question": "Study the following table and answer the question.\nProduction and Export of cement by companies A and B from 2017 to 2020 (in million tonnes)\nYear | A Production | A Export | B Production | B Export\n2017 | 250 | 170 | 320 | 190\n2018 | 340 | 275 | 360 | 280\n2019 | 370 | 220 | 425 | 320\n2020 | 450 | 245 | 470 | 275\nThe total export of cement by both the companies in 2017 and 2019 is what percentage less than the total production of cement by the two companies in 2018 and 2020 (correct to one decimal place)?",
+  "question_hi": null,
+  "options": [
+   "45.5%",
+   "44.4%",
+   "43.2%",
+   "43.8%"
+  ],
+  "answer": 2,
+  "subtopic": "Data interpretation – table",
+  "difficulty": "easy",
+  "explanation": "Exports in 2017 and 2019 = 170 + 190 + 220 + 320 = 900. Production in 2018 and 2020 = 340 + 360 + 450 + 470 = 1620. Percentage less = (1620 − 900)/1620 × 100 = 720/1620 × 100 ≈ 44.4%.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256268",
+  "paper": "2023_06_25_s1",
+  "question": "A man covers a distance of 180 km at a speed of 45 km/h, the next 150 km at a speed of 50 km/h and the next 120 km at a speed of x km/h. If his average speed for the whole journey is 47 7/19 km/h, then what is the value of x ?",
+  "question_hi": null,
+  "options": [
+   "48",
+   "52",
+   "42",
+   "40"
+  ],
+  "answer": 1,
+  "subtopic": "Speed – average speed",
+  "difficulty": "medium",
+  "explanation": "Times taken: 180/45 = 4 h and 150/50 = 3 h, and the third part takes 120/x h. Total distance = 450 km and average speed = 900/19 km/h, so total time = 450 × 19/900 = 9.5 h. Then 120/x = 9.5 − 7 = 2.5, which gives x = 48 km/h.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256282",
+  "paper": "2023_06_25_s1",
+  "question": "The height of a cylinder inscribed in a sphere is 1.2 times the radius of the sphere. The radius of the sphere is 10 cm, and the volume of the cylinder is x% of the volume of the sphere. The value of x is:",
+  "question_hi": null,
+  "options": [
+   "58.2",
+   "56.4",
+   "60.4",
+   "57.6"
+  ],
+  "answer": 4,
+  "subtopic": "Mensuration – cylinder in sphere",
+  "difficulty": "hard",
+  "explanation": "Cylinder height h = 1.2 × 10 = 12 cm, so half-height = 6. The cylinder's radius r satisfies r² = 10² − 6² = 64, so r = 8. Cylinder volume = π × 64 × 12 = 768π. Sphere volume = (4/3)π × 1000 = 4000π/3. x = 768π ÷ (4000π/3) × 100 = 57.6.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256277",
+  "paper": "2023_06_25_s1",
+  "question": "A loan of ₹13,500 is to be paid back in two equal annual instalments. If the rate of interest is 16% p.a. compounded annually, then what is the total interest paid in this instalment scheme?",
+  "question_hi": null,
+  "options": [
+   "₹3,300",
+   "₹3,320",
+   "₹3,360",
+   "₹3,350"
+  ],
+  "answer": 2,
+  "subtopic": "Compound interest – instalments",
+  "difficulty": "hard",
+  "explanation": "Let each instalment be X. Then 13500 = X/1.16 + X/1.16² = X × 2.16/1.3456, so X = 13500 × 1.3456/2.16 = ₹8,410. Total paid = 2 × 8410 = ₹16,820, so the interest = 16820 − 13500 = ₹3,320.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256275",
+  "paper": "2023_06_25_s1",
+  "question": "A and B started a business by investing their capitals in the ratio 5/8 : 3/5. After 6 months, A reduced his capital by 20% and B increased his capital by 50%. After 1 year, the share of A in the total profit was ₹15 lakhs. The total profit (in ₹ lakhs) was:",
+  "question_hi": null,
+  "options": [
+   "35",
+   "27",
+   "40",
+   "30"
+  ],
+  "answer": 1,
+  "subtopic": "Partnership",
+  "difficulty": "medium",
+  "explanation": "Capital ratio 5/8 : 3/5 = 25 : 24. A: 25 × 6 + 20 × 6 = 270 (reduced by 20%). B: 24 × 6 + 36 × 6 = 360 (raised by 50%). Profit ratio = 270 : 360 = 3 : 4. A's share 3 parts = 15 lakh, so the total of 7 parts = ₹35 lakh.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256278",
+  "paper": "2023_06_25_s1",
+  "question": "The speed of a boat going upstream is 40% of its speed going downstream. It takes a total time of 4 2/3 hours in going 15 km upstream and the same distance downstream. What is the speed (in km/h) of the boat in still water?",
+  "question_hi": null,
+  "options": [
+   "8 3/8",
+   "7 7/8",
+   "7 1/2",
+   "8 1/2"
+  ],
+  "answer": 2,
+  "subtopic": "Boats & streams",
+  "difficulty": "medium",
+  "explanation": "Let the downstream speed be d, so upstream = 0.4d. Then 15/(0.4d) + 15/d = 14/3, i.e. 52.5/d = 14/3, so d = 11.25 km/h and upstream = 4.5 km/h. Speed in still water = (11.25 + 4.5)/2 = 7.875 = 7 7/8 km/h.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256279",
+  "paper": "2023_06_25_s1",
+  "question": "Pipes A and B can fill a tank in 18 hours and 27 hours, respectively. Pipe C is an outlet pipe. When all the three pipes are opened for 15 hours, then 5/36 part of the tank is filled. How much time (in hours) will C alone take to empty one-third of the tank?",
+  "question_hi": null,
+  "options": [
+   "4",
+   "3",
+   "6",
+   "5"
+  ],
+  "answer": 1,
+  "subtopic": "Pipes & cisterns",
+  "difficulty": "medium",
+  "explanation": "A + B fill 1/18 + 1/27 = 5/54 per hour. With C open, 5/36 is filled in 15 h, so the net rate = 1/108 per hour. C's emptying rate = 5/54 − 1/108 = 9/108 = 1/12, so C empties the full tank in 12 h and one-third of it in 4 h.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256270",
+  "paper": "2023_06_25_s1",
+  "question": "In a test consisting of 150 questions, a candidate correctly answers 60% of the first 90 questions. What percentage of the remaining questions does he need to answer correctly so that he has 64% of all the questions answered correctly in the test?",
+  "question_hi": null,
+  "options": [
+   "68%",
+   "72%",
+   "70%",
+   "66%"
+  ],
+  "answer": 3,
+  "subtopic": "Percentage",
+  "difficulty": "easy",
+  "explanation": "64% of 150 = 96 correct answers are needed. He has 60% of 90 = 54 correct already, so he needs 96 − 54 = 42 more from the remaining 60 questions. 42/60 × 100 = 70%.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256266",
+  "paper": "2023_06_25_s1",
+  "question": "If x = √(19 + 4√15) − √(19 − 4√15), then what is the value of x ?",
+  "question_hi": null,
+  "options": [
+   "2√5",
+   "4",
+   "2",
+   "8√15"
+  ],
+  "answer": 2,
+  "subtopic": "Algebra – surds",
+  "difficulty": "medium",
+  "explanation": "19 + 4√15 = 15 + 4 + 2 × 2 × √15 = (√15 + 2)², and similarly 19 − 4√15 = (√15 − 2)². So x = (√15 + 2) − (√15 − 2) = 4.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256276",
+  "paper": "2023_06_25_s1",
+  "question": "A certain sum invested at 10% p.a. simple interest amounts to ₹9,417 in 4 years 4 months. What will be the amount of the same sum at 12 1/2 % p.a. in 2 2/5 years at simple interest?",
+  "question_hi": null,
+  "options": [
+   "₹8,641",
+   "₹8,531",
+   "₹8,541",
+   "₹8,631"
+  ],
+  "answer": 3,
+  "subtopic": "Simple interest",
+  "difficulty": "medium",
+  "explanation": "4 years 4 months = 13/3 years, so the amount = P(1 + 0.10 × 13/3) = 43P/30 = 9417, giving P = ₹6,570. At 12½% for 2 2/5 years: SI = 6570 × 0.125 × 2.4 = ₹1,971. Amount = 6570 + 1971 = ₹8,541.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256535",
+  "paper": "2023_06_25_s2",
+  "question": "The value of (7 1/2 of 2/5 ÷ 3/8 − 3/8 × 5/4 ÷ 2/5 of 5/16 + 1/4) / (2/3 of 2 1/6 ÷ 1 1/3 × 1/3 − 1/36) is:",
+  "question_hi": null,
+  "options": [
+   "13 1/2",
+   "11 3/4",
+   "9 1/2",
+   "7 1/4"
+  ],
+  "answer": 1,
+  "subtopic": "Simplification – BODMAS with fractions",
+  "difficulty": "medium",
+  "explanation": "Numerator: 7 1/2 of 2/5 = 3, and 3 ÷ 3/8 = 8; 2/5 of 5/16 = 1/8, so 3/8 × 5/4 ÷ 1/8 = 15/4; 8 − 15/4 + 1/4 = 9/2. Denominator: 2/3 of 13/6 = 13/9; 13/9 ÷ 4/3 = 13/12; 13/12 × 1/3 = 13/36; 13/36 − 1/36 = 1/3. Value = (9/2) ÷ (1/3) = 27/2 = 13 1/2.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256549",
+  "paper": "2023_06_25_s2",
+  "question": "A train completely passes a 200-m-long tunnel in 36 seconds and a pole in 20 seconds. How much time (in hours) will it take to cover a distance of 333 km?",
+  "question_hi": null,
+  "options": [
+   "6.7",
+   "7.5",
+   "7.4",
+   "6.9"
+  ],
+  "answer": 3,
+  "subtopic": "Trains",
+  "difficulty": "easy",
+  "explanation": "Passing a pole: L = 20v. Passing the tunnel: L + 200 = 36v. Subtracting, 16v = 200, so v = 12.5 m/s = 12.5 × 18/5 = 45 km/h. Time for 333 km = 333/45 = 7.4 hours.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256546",
+  "paper": "2023_06_25_s2",
+  "question": "Ravi and Gaurav enter into a partnership with their capitals in the ratio of 1/2 : 5/6. After 4 months, Ravi doubles his capital and Gaurav reduces his capital by 40%. What is the share of Ravi in the profit if Gaurav's share in the profit is ₹1,32,000, after 1 year?",
+  "question_hi": null,
+  "options": [
+   "₹1,92,000",
+   "₹1,80,000",
+   "₹1,68,000",
+   "₹1,56,000"
+  ],
+  "answer": 2,
+  "subtopic": "Partnership",
+  "difficulty": "medium",
+  "explanation": "Capital ratio 1/2 : 5/6 = 3 : 5. Ravi: 3 × 4 + 6 × 8 = 60 (doubled after 4 months). Gaurav: 5 × 4 + 3 × 8 = 44 (cut by 40%). Profit ratio = 60 : 44 = 15 : 11. Gaurav's 11 parts = ₹1,32,000, so one part = ₹12,000 and Ravi's share = 15 × 12000 = ₹1,80,000.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256540",
+  "paper": "2023_06_25_s2",
+  "question": "The price of an item is increased successively by 20%, 10% and 5% and then decreased by 40%. If its final price is ₹415.80, then what was its initial price?",
+  "question_hi": null,
+  "options": [
+   "₹480",
+   "₹520",
+   "₹500",
+   "₹550"
+  ],
+  "answer": 3,
+  "subtopic": "Percentage – successive change",
+  "difficulty": "easy",
+  "explanation": "Overall multiplier = 1.20 × 1.10 × 1.05 × 0.60 = 0.8316. Initial price = 415.80 ÷ 0.8316 = ₹500.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256536",
+  "paper": "2023_06_25_s2",
+  "question": "If x = √(23 + 6√10) − √(23 − 6√10), then the value of x lies between:",
+  "question_hi": null,
+  "options": [
+   "5 and 5.5",
+   "4 and 4.5",
+   "3.5 and 4",
+   "4.5 and 5"
+  ],
+  "answer": 2,
+  "subtopic": "Algebra – surds",
+  "difficulty": "medium",
+  "explanation": "23 + 6√10 = 18 + 5 + 2√90 = (3√2 + √5)², and similarly 23 − 6√10 = (3√2 − √5)². So x = (3√2 + √5) − (3√2 − √5) = 2√5 ≈ 4.47, which lies between 4 and 4.5.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256552",
+  "paper": "2023_06_25_s2",
+  "question": "The cost of colouring a conical tomb at ₹80 per 100 m^2 is ₹440, and its slant height is 25 m. The volume (in m^3) of material contained in it is (use π = 22/7):",
+  "question_hi": null,
+  "options": [
+   "1001",
+   "1232",
+   "924",
+   "1078"
+  ],
+  "answer": 2,
+  "subtopic": "Mensuration – cone",
+  "difficulty": "medium",
+  "explanation": "Curved surface area = 440 ÷ 80 × 100 = 550 m². Since πrl = 550, (22/7) × r × 25 = 550, so r = 7 m. Height h = √(25² − 7²) = 24 m. Volume = (1/3) × (22/7) × 49 × 24 = 1232 m³.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256542",
+  "paper": "2023_06_25_s2",
+  "question": "By selling an article for ₹374, a shopkeeper loses 6.5%. To gain 9.5%, he must sell it for:",
+  "question_hi": null,
+  "options": [
+   "₹448",
+   "₹440",
+   "₹432",
+   "₹438"
+  ],
+  "answer": 4,
+  "subtopic": "Profit & loss",
+  "difficulty": "easy",
+  "explanation": "A 6.5% loss means ₹374 = 93.5% of CP, so CP = 374/0.935 = ₹400. For a 9.5% gain, SP = 400 × 1.095 = ₹438.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256543",
+  "paper": "2023_06_25_s2",
+  "question": "The marked price of an article is ₹600. It is sold for ₹342.72, after allowing three successive discounts of 16%, 20% and x % on its marked price. If a single discount of 2 x % is given on its marked price, then the selling price (in ₹) of the article will be:",
+  "question_hi": null,
+  "options": [
+   "420",
+   "390",
+   "450",
+   "492"
+  ],
+  "answer": 1,
+  "subtopic": "Discount – successive discounts",
+  "difficulty": "medium",
+  "explanation": "After 16% and 20% discounts: 600 × 0.84 × 0.80 = ₹403.20. Then 403.20 × (1 − x/100) = 342.72 gives 1 − x/100 = 0.85, so x = 15. A single discount of 2x = 30% gives SP = 600 × 0.70 = ₹420.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256554",
+  "paper": "2023_06_25_s2",
+  "question": "Study the following graph and answer the question.\nPercentage profit earned by companies A and B during 2017 to 2020\n[Line graph, Percentage Profit vs Years: Company A: 2017=35, 2018=30, 2019=40, 2020=50; Company B: 2017=40, 2018=50, 2019=30, 2020=45]\nPercentage profit = (Income − Expenditure)/Expenditure × 100\nProfit = Income − Expenditure\nIf the total income of both the companies in 2019 was ₹428.8 crores and the ratio of the expenditure of A to that of B in the same year was 2 : 3, then the expenditure (in ₹ crores) of A in that year was:",
+  "question_hi": null,
+  "options": [
+   "136",
+   "128",
+   "124",
+   "130"
+  ],
+  "answer": 2,
+  "subtopic": "Data interpretation – line graph",
+  "difficulty": "medium",
+  "explanation": "In 2019, A's profit was 40% and B's was 30%. Let the expenditures be 2k and 3k. Total income = 1.4 × 2k + 1.3 × 3k = 6.7k = 428.8, so k = 64. A's expenditure = 2 × 64 = ₹128 crore.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256548",
+  "paper": "2023_06_25_s2",
+  "question": "A computer is available for ₹75,300 cash or for ₹25,740 cash down payment and two equal half-yearly instalments. If the dealer charges interest at 20% p.a., compounded half-yearly, then the total interest to be paid by a customer who buys it in instalment scheme is:",
+  "question_hi": null,
+  "options": [
+   "₹7,552",
+   "₹7,564",
+   "₹7,532",
+   "₹7,574"
+  ],
+  "answer": 1,
+  "subtopic": "Compound interest – instalments",
+  "difficulty": "hard",
+  "explanation": "Balance = 75300 − 25740 = ₹49,560. The half-yearly rate is 10%, so 49560 = X/1.1 + X/1.21 = 2.1X/1.21, giving X = 49560 × 1.21/2.1 = ₹28,556. Total instalments = 2 × 28556 = ₹57,112, so interest = 57112 − 49560 = ₹7,552.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256544",
+  "paper": "2023_06_25_s2",
+  "question": "Given that a + b + c = 3960. If a : (b + c) = 3 : 8 and c : (a + b) = 4 : 5, then what is the value of b?",
+  "question_hi": null,
+  "options": [
+   "1080",
+   "1760",
+   "1440",
+   "1120"
+  ],
+  "answer": 4,
+  "subtopic": "Ratio & proportion",
+  "difficulty": "easy",
+  "explanation": "a : (b + c) = 3 : 8, so a = 3/11 × 3960 = 1080. c : (a + b) = 4 : 5, so c = 4/9 × 3960 = 1760. Then b = 3960 − 1080 − 1760 = 1120.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256550",
+  "paper": "2023_06_25_s2",
+  "question": "Pipes A and B can fill a tank in 40 hours and x hours, respectively. Pipe C alone can empty the full tank in 10 hours. When all the three pipes are opened together, then 1/6 th part of the full tank is emptied in 4 hours. What is the value of x ?",
+  "question_hi": null,
+  "options": [
+   "36",
+   "20",
+   "24",
+   "30"
+  ],
+  "answer": 4,
+  "subtopic": "Pipes & cisterns",
+  "difficulty": "medium",
+  "explanation": "The net emptying rate is 1/6 tank in 4 h = 1/24 per hour. So 1/10 − 1/40 − 1/x = 1/24, which gives 1/x = 3/40 − 1/24 = (9 − 5)/120 = 1/30. Hence x = 30.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256551",
+  "paper": "2023_06_25_s2",
+  "question": "The perimeter of a field in the shape of a rhombus is 116 m and one of its diagonals is 42 m. Its area is equal to the area of a rectangular garden whose sides are in the ratio of 30 : 7. The perimeter of the rectangular garden is:",
+  "question_hi": null,
+  "options": [
+   "185 m",
+   "111 m",
+   "222 m",
+   "148 m"
+  ],
+  "answer": 4,
+  "subtopic": "Mensuration – rhombus and rectangle",
+  "difficulty": "medium",
+  "explanation": "Side of the rhombus = 116/4 = 29 m. Half of the known diagonal = 21, so the other half = √(29² − 21²) = 20, making the other diagonal 40 m. Area = (42 × 40)/2 = 840 m². For the rectangle, 30k × 7k = 840 gives k = 2, so the sides are 60 m and 14 m and the perimeter = 2(60 + 14) = 148 m.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256541",
+  "paper": "2023_06_25_s2",
+  "question": "The income of A is 32% less than the income of B, and the average income of A and B is 20% less than the income of C. If A's income increases by 25% and B's income decreases by 10%, then the income of C is what percentage less than the new total income of A and B?",
+  "question_hi": null,
+  "options": [
+   "40%",
+   "35%",
+   "30%",
+   "32%"
+  ],
+  "answer": 1,
+  "subtopic": "Percentage – comparison",
+  "difficulty": "medium",
+  "explanation": "Let B = 100, so A = 68 and their average = 84 = 80% of C, giving C = 105. New A = 68 × 1.25 = 85 and new B = 90, so the new total = 175. C is less by (175 − 105)/175 × 100 = 40%.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256539",
+  "paper": "2023_06_25_s2",
+  "question": "Solutions A, B and C contain alcohol and water in the ratio of 3 : 7, 4 : 11 and 2 : 3, respectively. Four litres of A, five litres of B and three litres of C are mixed in a vessel. The percentage of alcohol in the resulting solution in the vessel is closest to:",
+  "question_hi": null,
+  "options": [
+   "32%",
+   "31%",
+   "28%",
+   "30%"
+  ],
+  "answer": 2,
+  "subtopic": "Mixture & alligation",
+  "difficulty": "medium",
+  "explanation": "Alcohol in each part: A = 4 × 3/10 = 1.2 L, B = 5 × 4/15 = 4/3 ≈ 1.333 L and C = 3 × 2/5 = 1.2 L. Total alcohol ≈ 3.733 L in 12 L. Percentage = 3.733/12 × 100 ≈ 31.1%, which is closest to 31%.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256545",
+  "paper": "2023_06_25_s2",
+  "question": "A varies inversely with the product of B and C. When B = 9 and C = 5, then A = 12. When B = 15 and C = 4, then the value of A is:",
+  "question_hi": null,
+  "options": [
+   "16",
+   "8",
+   "9",
+   "18"
+  ],
+  "answer": 3,
+  "subtopic": "Variation – inverse",
+  "difficulty": "easy",
+  "explanation": "A = k/(BC). From 12 = k/(9 × 5), k = 540. For B = 15 and C = 4: A = 540/60 = 9.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256553",
+  "paper": "2023_06_25_s2",
+  "question": "The height of a solid right circular cylinder is 32 cm. Its total surface area is 370π cm^2. Its volume is equal to 3/5 of the volume of a sphere. The diameter of the sphere is:",
+  "question_hi": null,
+  "options": [
+   "15 cm",
+   "10 cm",
+   "30 cm",
+   "20 cm"
+  ],
+  "answer": 4,
+  "subtopic": "Mensuration – cylinder and sphere",
+  "difficulty": "medium",
+  "explanation": "Total surface area 2πr(h + r) = 370π gives r(32 + r) = 185, so r = 5 cm (since 5 × 37 = 185). Cylinder volume = π × 25 × 32 = 800π. Then 800π = (3/5) × (4/3)πR³ = (4/5)πR³, so R³ = 1000 and R = 10 cm. Diameter = 20 cm.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256547",
+  "paper": "2023_06_25_s2",
+  "question": "The amount of a certain sum invested at 7.4% p.a. for 2 1/2 years at simple interest is ₹1,701 less than the simple interest on the same sum for 10 years at 15% p.a. The sum (in ₹) is:",
+  "question_hi": null,
+  "options": [
+   "5,400",
+   "5,000",
+   "5,500",
+   "5,200"
+  ],
+  "answer": 1,
+  "subtopic": "Simple interest",
+  "difficulty": "medium",
+  "explanation": "Amount at 7.4% for 2.5 years = P(1 + 0.185) = 1.185P. SI at 15% for 10 years = 1.5P. Since 1.5P − 1.185P = 0.315P = 1701, P = ₹5,400.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256537",
+  "paper": "2023_06_25_s2",
+  "question": "Let x be the least number which when divided by 30, 36, 40 and 54, leaves a remainder of 4 in each case, and x is divisible by 23. What is the sum of the digits of x ?",
+  "question_hi": null,
+  "options": [
+   "12",
+   "13",
+   "14",
+   "11"
+  ],
+  "answer": 2,
+  "subtopic": "LCM – remainder with divisibility",
+  "difficulty": "hard",
+  "explanation": "LCM(30, 36, 40, 54) = 2³ × 3³ × 5 = 1080, so x = 1080k + 4. Since 1080 = 23 × 47 − 1, x ≡ −k + 4 (mod 23), and x is divisible by 23 when k = 4. So x = 4324 (= 23 × 188), and the digit sum is 4 + 3 + 2 + 4 = 13.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680256538",
+  "paper": "2023_06_25_s2",
+  "question": "A man travels from P to Q at a speed of 50 km/h and then from Q to R at a speed of 60 km/h, where Q is between P and R. The ratio of distances PQ and QR is 1 : 2. He travels from R to P at a speed of 45 km/h. What is his average speed (in km/h) for the whole journey?",
+  "question_hi": null,
+  "options": [
+   "48",
+   "52",
+   "54",
+   "50"
+  ],
+  "answer": 4,
+  "subtopic": "Speed – average speed",
+  "difficulty": "medium",
+  "explanation": "Let PQ = d and QR = 2d, so PR = 3d and the total distance = 6d. Total time = d/50 + 2d/60 + 3d/45 = d(3 + 5 + 10)/150 = 3d/25. Average speed = 6d ÷ (3d/25) = 50 km/h.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680600116",
+  "paper": "2024_02_07_s2",
+  "question": "The ratio of Amit's and Ankit's present age is 10 : 13. Amit is 18 years younger than Ankit. What will be the ratio of Amit's age to Ankit's age after 12 years?",
+  "question_hi": null,
+  "options": [
+   "4 : 5",
+   "3 : 5",
+   "4 : 9",
+   "4 : 7"
+  ],
+  "answer": 1,
+  "subtopic": "Problems on ages",
+  "difficulty": "easy",
+  "explanation": "The age difference is 13 − 10 = 3 parts = 18 years, so 1 part = 6. Present ages are 60 and 78. After 12 years they will be 72 and 90, a ratio of 72 : 90 = 4 : 5.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680600110",
+  "paper": "2024_02_07_s2",
+  "question": "If E1 is 8 times more than E2, then E2 is what percentage less than E1?",
+  "question_hi": null,
+  "options": [
+   "96.96 percent",
+   "88.88 percent",
+   "80.88 percent",
+   "84.88 percent"
+  ],
+  "answer": 2,
+  "subtopic": "Percentage",
+  "difficulty": "easy",
+  "explanation": "'8 times more than E2' means E1 = E2 + 8E2 = 9E2. E2 is less than E1 by (9 − 1)/9 × 100 = 800/9 = 88.88%.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680600098",
+  "paper": "2024_02_07_s2",
+  "question": "The average age of 40 students is 21 years. It was observed that while calculating the average age, the age of a student was taken as 20 years instead of 30 years. What will be the correct average age?",
+  "question_hi": null,
+  "options": [
+   "21.25 years",
+   "21.22 years",
+   "12.12 years",
+   "23.84 years"
+  ],
+  "answer": 1,
+  "subtopic": "Average – correction",
+  "difficulty": "easy",
+  "explanation": "The correct total is 10 more than the recorded total (30 − 20 = 10), so the average rises by 10/40 = 0.25. Correct average = 21 + 0.25 = 21.25 years.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680600114",
+  "paper": "2024_02_07_s2",
+  "question": "Three numbers P, Q and R are in the ratio of 6 : 5 : 3 respectively. If R is 32 less than the sum of P and Q, then what is the value of Q?",
+  "question_hi": null,
+  "options": [
+   "24",
+   "48",
+   "20",
+   "32"
+  ],
+  "answer": 3,
+  "subtopic": "Ratio & proportion",
+  "difficulty": "easy",
+  "explanation": "Let P = 6k, Q = 5k and R = 3k. Then (P + Q) − R = 11k − 3k = 8k = 32, so k = 4 and Q = 5 × 4 = 20.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680600102",
+  "paper": "2024_02_07_s2",
+  "question": "What is the compound interest on (compounding annually) Rs. 14400 at the rate of 10 percent for 3 years?",
+  "question_hi": null,
+  "options": [
+   "Rs. 4214.8",
+   "Rs. 4712.6",
+   "Rs. 4812.6",
+   "Rs. 4766.4"
+  ],
+  "answer": 4,
+  "subtopic": "Compound interest",
+  "difficulty": "easy",
+  "explanation": "Amount = 14400 × (1.1)³ = 14400 × 1.331 = ₹19,166.40. Compound interest = 19166.40 − 14400 = ₹4,766.40.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680600120",
+  "paper": "2024_02_07_s2",
+  "question": "Each of the length, breadth and height of a cuboid is decreased by 12 percent. What is the percentage decrease in the total surface area of the cuboid?",
+  "question_hi": null,
+  "options": [
+   "20.24 percent",
+   "24.78 percent",
+   "18.92 percent",
+   "22.56 percent"
+  ],
+  "answer": 4,
+  "subtopic": "Mensuration – cuboid percentage change",
+  "difficulty": "easy",
+  "explanation": "Surface area varies as the square of the linear dimensions. With each dimension multiplied by 0.88, the area becomes 0.88² = 0.7744 of the original. Decrease = 1 − 0.7744 = 0.2256, i.e. 22.56%.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680600108",
+  "paper": "2024_02_07_s2",
+  "question": "For what value of M, 859M is divisible by 9?",
+  "question_hi": null,
+  "options": [
+   "5",
+   "3",
+   "7",
+   "2"
+  ],
+  "answer": 1,
+  "subtopic": "Number system – divisibility",
+  "difficulty": "easy",
+  "explanation": "A number is divisible by 9 if its digit sum is divisible by 9. 8 + 5 + 9 + M = 22 + M, and the next multiple of 9 is 27, so M = 5.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680600112",
+  "paper": "2024_02_07_s2",
+  "question": "Cost price of an article is Rs. 230. If the profit percentage is 12 percent, then what is the value of profit?",
+  "question_hi": null,
+  "options": [
+   "Rs. 27.6",
+   "Rs. 30",
+   "Rs. 32.8",
+   "Rs. 35"
+  ],
+  "answer": 1,
+  "subtopic": "Profit & loss",
+  "difficulty": "easy",
+  "explanation": "Profit = 12% of CP = 0.12 × 230 = ₹27.6.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680600113",
+  "paper": "2024_02_07_s2",
+  "question": "After giving a discount of 25 percent a cycle is sold for Rs. 7200. What is the marked price of the cycle?",
+  "question_hi": null,
+  "options": [
+   "Rs. 9500",
+   "Rs. 10000",
+   "Rs. 9000",
+   "Rs. 9600"
+  ],
+  "answer": 4,
+  "subtopic": "Discount",
+  "difficulty": "easy",
+  "explanation": "After a 25% discount, SP = 75% of MP. So MP = 7200 ÷ 0.75 = ₹9,600.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680600100",
+  "paper": "2024_02_07_s2",
+  "question": "Simple interest and compound interest (compounding annually) on a principal at a certain rate of interest for 2 years is Rs. 28800 and Rs. 36000 respectively. What is the principal?",
+  "question_hi": null,
+  "options": [
+   "Rs. 30000",
+   "Rs. 28800",
+   "Rs. 29750",
+   "Rs. 28850"
+  ],
+  "answer": 2,
+  "subtopic": "CI and SI difference",
+  "difficulty": "medium",
+  "explanation": "SI for 2 years = 28800, so the interest for one year = 14400. CI − SI = 36000 − 28800 = 7200, which is the interest on the first year's interest (14400) for one year, so r = 7200/14400 = 50%. Principal = 14400 ÷ 0.50 = ₹28,800.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680600119",
+  "paper": "2024_02_07_s2",
+  "question": "A train of length 210 metres is running at a speed of 54 km/hr. In how much time it will completely cross a platform of 390 metres?",
+  "question_hi": null,
+  "options": [
+   "50 seconds",
+   "60 seconds",
+   "40 seconds",
+   "30 seconds"
+  ],
+  "answer": 3,
+  "subtopic": "Trains – crossing platform",
+  "difficulty": "easy",
+  "explanation": "Distance to cover = train + platform = 210 + 390 = 600 m. Speed = 54 × 5/18 = 15 m/s. Time = 600/15 = 40 seconds.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680600109",
+  "paper": "2024_02_07_s2",
+  "question": "What is the value of 33 ÷ 11 + 75 ÷ 5 × 2 – 6 ÷ 12 × 30?",
+  "question_hi": null,
+  "options": [
+   "15",
+   "18",
+   "9",
+   "42"
+  ],
+  "answer": 2,
+  "subtopic": "Simplification – BODMAS",
+  "difficulty": "easy",
+  "explanation": "Do division and multiplication left to right first: 33 ÷ 11 = 3; 75 ÷ 5 × 2 = 15 × 2 = 30; 6 ÷ 12 × 30 = 0.5 × 30 = 15. Then 3 + 30 − 15 = 18.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680600111",
+  "paper": "2024_02_07_s2",
+  "question": "The population of a town is 30000. If every year the population increases by 20 percent, then what will be the population of the town after 3 years?",
+  "question_hi": null,
+  "options": [
+   "51840",
+   "51720",
+   "50820",
+   "48000"
+  ],
+  "answer": 1,
+  "subtopic": "Percentage – population growth",
+  "difficulty": "easy",
+  "explanation": "Population after 3 years = 30000 × (1.2)³ = 30000 × 1.728 = 51,840.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680600107",
+  "paper": "2024_02_07_s2",
+  "question": "What is the Highest Common Factor of 12, 36 and 240",
+  "question_hi": null,
+  "options": [
+   "12",
+   "30",
+   "18",
+   "480"
+  ],
+  "answer": 1,
+  "subtopic": "HCF",
+  "difficulty": "easy",
+  "explanation": "12 = 2² × 3, 36 = 2² × 3² and 240 = 2⁴ × 3 × 5. The common factors with the lowest powers are 2² × 3 = 12. Also, 12 divides both 36 and 240, so the HCF is 12.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680600122",
+  "paper": "2024_02_07_s2",
+  "question": "The breadth of a rectangular hall is 5/8 of its length. If the area of the floor is 160 metre^2, then what is the difference between the length and breadth of the hall?",
+  "question_hi": null,
+  "options": [
+   "8 metre",
+   "6 metre",
+   "10 metre",
+   "4 metre"
+  ],
+  "answer": 2,
+  "subtopic": "Mensuration – rectangle",
+  "difficulty": "easy",
+  "explanation": "Let length = L, so breadth = 5L/8. Then L × 5L/8 = 160, so L² = 256 and L = 16 m, breadth = 10 m. Difference = 16 − 10 = 6 m.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680600117",
+  "paper": "2024_02_07_s2",
+  "question": "X and Y together can complete a work in 60 days. Y and Z together can complete the same work in 90 days. If X, Y and Z all work together, then the same work gets completed in 45 days. How many days will X and Z together take to complete the same work?",
+  "question_hi": null,
+  "options": [
+   "120 days",
+   "90 days",
+   "60 days",
+   "150 days"
+  ],
+  "answer": 3,
+  "subtopic": "Time & work",
+  "difficulty": "medium",
+  "explanation": "Z = (X + Y + Z) − (X + Y) = 1/45 − 1/60 = 1/180 per day. X = (X + Y + Z) − (Y + Z) = 1/45 − 1/90 = 1/90 per day. X + Z = 1/90 + 1/180 = 3/180 = 1/60, so they take 60 days.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680600118",
+  "paper": "2024_02_07_s2",
+  "question": "A truck left 8 hours early than the scheduled time and in order to reach its destination 600 km away on time, it had to decrease its usual speed by 20 km/hr. What is the usual speed of the truck?",
+  "question_hi": null,
+  "options": [
+   "30 km/hr",
+   "50 km/hr",
+   "40 km/hr",
+   "60 km/hr"
+  ],
+  "answer": 2,
+  "subtopic": "Speed, time & distance",
+  "difficulty": "medium",
+  "explanation": "Let the usual speed be v. Leaving 8 hours early and arriving on time means 600/(v − 20) − 600/v = 8, so 12000 = 8v(v − 20), i.e. v² − 20v − 1500 = 0. This gives (v − 50)(v + 30) = 0, so v = 50 km/h.",
+  "explanation_hi": null
+ },
+ {
+  "qid": "630680600099",
+  "paper": "2024_02_07_s2",
+  "question": "The simple interest on a sum for 11 years is Rs. 42000. The rate of interest for the first 4 years is 3 percent per annum and for the next 7 years is 9 percent per annum. What is the sum?",
+  "question_hi": null,
+  "options": [
+   "Rs. 70000",
+   "Rs. 56000",
+   "Rs. 60000",
+   "Rs. 58000"
+  ],
+  "answer": 2,
+  "subtopic": "Simple interest – varying rates",
+  "difficulty": "easy",
+  "explanation": "Total rate over 11 years = 4 × 3% + 7 × 9% = 12% + 63% = 75% of the sum. So 0.75P = 42000 and P = ₹56,000.",
+  "explanation_hi": null
+ }
+]

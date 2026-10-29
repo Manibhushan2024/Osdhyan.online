@@ -114,6 +114,9 @@ Route::middleware(['auth:sanctum', 'throttle:api'])->group(function () {
     Route::post('/tests/{test}/attempts', [TestAttemptController::class, 'startAttempt']);
     Route::get('/tests/{test}/latest-attempt', [TestAttemptController::class, 'getLatestAttempt']);
     Route::get('/attempts', [TestAttemptController::class, 'mine']);
+    // "Revise this concept": the notes section behind a question / a chapter's notes.
+    Route::get('/questions/{question}/concept', [\App\Http\Controllers\Api\ConceptController::class, 'forQuestion']);
+    Route::get('/concepts/{key}', [\App\Http\Controllers\Api\ConceptController::class, 'chapter']);
     Route::get('/attempts/{attempt}', [TestAttemptController::class, 'show']);
 
     // Answer sync is high-frequency — give it a higher limit
@@ -123,6 +126,7 @@ Route::middleware(['auth:sanctum', 'throttle:api'])->group(function () {
     });
 
     Route::post('/attempts/{attempt}/complete', [TestAttemptController::class, 'completeAttempt']);
+    Route::post('/attempts/{attempt}/sections/{key}/lock', [TestAttemptController::class, 'lockSection'])->middleware('throttle:api');
 
     // AI chat is expensive — tighter limit
     Route::middleware('throttle:ai')->group(function () {

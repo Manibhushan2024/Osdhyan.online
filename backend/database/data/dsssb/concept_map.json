@@ -1,0 +1,21 @@
+{
+  "_comment": "Question concept_key (from the gen/ banks or the official papers) → which pack's notes chapters explain it. Pack chapter keys (os_sched, db_er, ga_polity, …) resolve to their own notes file directly and need no entry here. 'keys' limits the chapters; omitted = every chapter of the pack.",
+  "cs_os":     {"pack": "os"},
+  "cs_dbms":   {"pack": "dbms"},
+  "cs_net":    {"pack": "net"},
+  "cs_dsa":    {"pack": "dsa"},
+  "cs_prog":   {"pack": "prog"},
+  "cs_fund":   {"pack": "fundplus", "keys": ["cf_fund"]},
+  "cs_se":     {"pack": "fundplus", "keys": ["cf_se"]},
+  "cs_web":    {"pack": "fundplus", "keys": ["cf_web"]},
+  "cs_it":     {"pack": "fundplus", "keys": ["cf_it"]},
+  "teach":     {"pack": "fundplus", "keys": ["cf_teach"]},
+  "ga_static": {"pack": "ga", "keys": ["ga_history", "ga_polity", "ga_geo", "ga_econ", "ga_science", "ga_delhi"]},
+  "ga_current": {"pack": "ga", "keys": ["ga_current"]},
+  "rea_verbal":    {"pack": "reasoning"},
+  "rea_nonverbal": {"pack": "reasoning"},
+  "num_arith":     {"pack": "numerical"},
+  "num_adv":       {"pack": "numerical"},
+  "english":       {"pack": "english"},
+  "hindi":         {"pack": "hindi"}
+}
