@@ -1,19 +1,48 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Loader2 } from 'lucide-react';
+import type { Auth } from 'firebase/auth';
 import api from '@/lib/api';
+import { useAuth } from '@/components/providers/AuthProvider';
+import { exchangeFirebaseUser, firebaseErrorMessage, getFirebaseAuth } from '@/lib/firebase';
 import { redirectFromLocation, rememberOAuthRedirect } from '@/lib/redirect';
 
+type FirebaseAuthModule = typeof import('firebase/auth');
+
+/** Firebase errors that mean "Google is not switched on in Firebase" — use the server flow instead. */
+const NOT_ENABLED = new Set(['auth/operation-not-allowed', 'auth/admin-restricted-operation', 'auth/configuration-not-found']);
+
 /**
- * "Continue with Google" — starts the server-side OAuth flow. When Google
- * isn't configured yet the server answers 503 with a readable message.
+ * "Continue with Google". When Firebase sign-in is configured this opens the
+ * Google pop-up through Firebase and exchanges the Firebase ID token for our
+ * API token. Otherwise (or when Google is not switched on in Firebase yet) it
+ * starts the server-side OAuth flow, which answers 503 with a readable
+ * message when Google isn't configured there either.
  */
 export default function GoogleButton({ label = 'Continue with Google', onError }: { label?: string; onError?: (message: string) => void }) {
+    const { login } = useAuth();
     const [loading, setLoading] = useState(false);
+    // Loaded ahead of the click: browsers only allow the pop-up when it opens
+    // straight from the click, without waiting for a download first.
+    const fb = useRef<{ auth: Auth; mod: FirebaseAuthModule } | null>(null);
 
-    const start = async () => {
-        setLoading(true);
+    useEffect(() => {
+        let cancelled = false;
+        void (async () => {
+            try {
+                const auth = await getFirebaseAuth();
+                if (!auth || cancelled) return;
+                const mod = await import('firebase/auth');
+                if (!cancelled) fb.current = { auth, mod };
+            } catch {
+                // Firebase unavailable — the server flow is used.
+            }
+        })();
+        return () => { cancelled = true; };
+    }, []);
+
+    const startServerFlow = async () => {
         try {
             rememberOAuthRedirect(redirectFromLocation(''));
             const res = await api.get('/auth/google/redirect');
@@ -21,6 +50,31 @@ export default function GoogleButton({ label = 'Continue with Google', onError }
         } catch (err: unknown) {
             const data = (err as { response?: { data?: { message?: string } } })?.response?.data;
             onError?.(data?.message || 'Google sign-in is unavailable right now. Please use your mobile number instead.');
+            setLoading(false);
+        }
+    };
+
+    const start = async () => {
+        setLoading(true);
+        const ready = fb.current;
+        if (!ready) {
+            await startServerFlow();
+            return;
+        }
+        try {
+            const { mod, auth } = ready;
+            const provider = new mod.GoogleAuthProvider();
+            provider.setCustomParameters({ prompt: 'select_account' });
+            const cred = await mod.signInWithPopup(auth, provider);
+            const data = await exchangeFirebaseUser(auth, cred.user);
+            login(data.access_token, data.user as Parameters<typeof login>[1], redirectFromLocation('/dashboard'));
+        } catch (err) {
+            const code = (err as { code?: string })?.code;
+            if (code && NOT_ENABLED.has(code)) {
+                await startServerFlow();
+                return;
+            }
+            onError?.(firebaseErrorMessage(err, 'Google sign-in did not work. Please try again or use your mobile number.'));
             setLoading(false);
         }
     };
