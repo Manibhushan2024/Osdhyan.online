@@ -6,7 +6,7 @@ bundle works). Everything runs on one VM with Docker Compose.
 | Item | Value |
 |---|---|
 | Site | https://8-234-95-50.sslip.io (until osdhyan.online points here) |
-| Admin sign-in | https://8-234-95-50.sslip.io/admin/login — credentials in `C:\dev\osdhyan-data\cloud-admin.txt` on the owner's laptop |
+| Admin sign-in | https://8-234-95-50.sslip.io/admin/login — credentials in `C:\dev\osdhyan-data\cloud-admin.txt` on the owner's laptop (the owner's own student login is in the same file) |
 | Google account | ops@weldots.com (organisation weldots.com) |
 | Project | `osdhyan-live` (own project, separate from Weldots CRM; billing account "My Billing Account") |
 | VM | `osdhyan-server`, zone asia-south1-a (Mumbai), e2-standard-2 (2 vCPU, 8 GB), 50 GB SSD, Ubuntu 24.04, Shielded VM |
@@ -74,3 +74,22 @@ Publish a new version:
 gcloud compute scp mobile\osdhyan\dist\osdhyan-<version>-<code>.apk osdhyan-server:/home/dell/osdhyan.apk --project=osdhyan-live --zone=asia-south1-a
 gcloud compute ssh osdhyan-server --project=osdhyan-live --zone=asia-south1-a --command="cd ~/osdhyan/deploy && docker compose cp /home/dell/osdhyan.apk backend:/var/www/osdhyan/storage/app/public/downloads/osdhyan.apk"
 ```
+
+## Firebase (sign-in)
+
+Project `osdhyan-live` (same Google Cloud project). Web app and Android app registered; phone sign-in (+91)
+and e-mail-link sign-in enabled; Identity Platform (Blaze) — 50k monthly users free, SMS billed per message.
+Values: `C:\dev\osdhyan-datairebase-web-config.json`, `firebase-backend.env` (copied into the server's
+`deploy/.env` as FIREBASE_*), `mobile/osdhyan/google-services.json`.
+Still to click once: https://console.firebase.google.com/project/osdhyan-live/authentication/providers →
+Google → Enable (then re-download google-services.json for the app's Google button).
+
+## Loading new content on the server
+
+Code and data files travel with `push-to-gcp.ps1` (committed files only). After a deploy:
+```bash
+docker compose exec backend php artisan osdhyan:import-question-sets database/data/dsssb/<pack>/question_sets.json
+docker compose exec backend php artisan osdhyan:import-concept-notes          # "Revise this concept" sections
+```
+PDFs are uploaded from the laptop: `python -X utf8 -I scripts/content/publish-subject-course.py <pack> --api https://8-234-95-50.sslip.io/api`
+with OSDHYAN_ADMIN_EMAIL / OSDHYAN_ADMIN_PASSWORD set. Verify with `scripts/smoke_pack.py "<Pack name>" --api …`.
