@@ -1,0 +1,2210 @@
+[
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Tenses",
+  "difficulty": "easy",
+  "question_en": "She ______ in Delhi since 2015.",
+  "options": [
+   {
+    "en": "is living"
+   },
+   {
+    "en": "lived"
+   },
+   {
+    "en": "was living"
+   },
+   {
+    "en": "has been living"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "“Since 2015” marks a period continuing up to now, so the present perfect continuous (has been living) is used. Simple past “lived” would mean she no longer lives there.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Tenses",
+  "difficulty": "medium",
+  "question_en": "By the time the police arrived, the thieves ______.",
+  "options": [
+   {
+    "en": "had escaped"
+   },
+   {
+    "en": "have escaped"
+   },
+   {
+    "en": "would escape"
+   },
+   {
+    "en": "are escaping"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Of two past actions, the earlier one takes the past perfect (had + V3). Escaping happened before the police arrived.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Tenses",
+  "difficulty": "medium",
+  "question_en": "I ______ the report by tomorrow evening.",
+  "options": [
+   {
+    "en": "will have finished"
+   },
+   {
+    "en": "would finish"
+   },
+   {
+    "en": "have finished"
+   },
+   {
+    "en": "had finished"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "“By + future time” shows completion before a future moment, which needs the future perfect (will have + V3).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Tenses",
+  "difficulty": "easy",
+  "question_en": "Look! The children ______ in the garden.",
+  "options": [
+   {
+    "en": "play"
+   },
+   {
+    "en": "played"
+   },
+   {
+    "en": "have played"
+   },
+   {
+    "en": "are playing"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "“Look!” signals an action happening at this moment, so the present continuous is required.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Tenses",
+  "difficulty": "medium",
+  "question_en": "If I ______ you, I would accept the offer.",
+  "options": [
+   {
+    "en": "were"
+   },
+   {
+    "en": "am"
+   },
+   {
+    "en": "was"
+   },
+   {
+    "en": "will be"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "In an unreal (second) conditional, the if-clause takes the subjunctive “were” for all persons: If I were you, ... would.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Tenses",
+  "difficulty": "easy",
+  "question_en": "The train ______ before we reached the station.",
+  "options": [
+   {
+    "en": "has left"
+   },
+   {
+    "en": "leaves"
+   },
+   {
+    "en": "was leaving"
+   },
+   {
+    "en": "had left"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The train’s departure happened earlier than our arrival (both in the past), so the past perfect is used for the earlier action.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Tenses",
+  "difficulty": "hard",
+  "question_en": "The teacher told the class that the earth ______ round the sun.",
+  "options": [
+   {
+    "en": "moves"
+   },
+   {
+    "en": "moved"
+   },
+   {
+    "en": "had moved"
+   },
+   {
+    "en": "was moving"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A universal or scientific truth stays in the simple present even after a past-tense reporting verb.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Tenses",
+  "difficulty": "hard",
+  "question_en": "Hardly ______ the room when the phone rang.",
+  "options": [
+   {
+    "en": "she had entered"
+   },
+   {
+    "en": "did she enter"
+   },
+   {
+    "en": "she entered"
+   },
+   {
+    "en": "had she entered"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "“Hardly/Scarcely/No sooner” is followed by the past perfect, with auxiliary–subject inversion: Hardly had she entered ... when ...",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Tenses",
+  "difficulty": "easy",
+  "question_en": "I ______ this film three times.",
+  "options": [
+   {
+    "en": "saw"
+   },
+   {
+    "en": "am seeing"
+   },
+   {
+    "en": "have seen"
+   },
+   {
+    "en": "see"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Repeated experience up to the present with no fixed past time takes the present perfect (have seen).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Tenses",
+  "difficulty": "medium",
+  "question_en": "How long ______ you ______ for the bus?",
+  "options": [
+   {
+    "en": "did; wait"
+   },
+   {
+    "en": "are; waiting"
+   },
+   {
+    "en": "do; wait"
+   },
+   {
+    "en": "have; been waiting"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "“How long” with an action that began in the past and continues now takes the present perfect continuous: have you been waiting.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Tenses",
+  "difficulty": "hard",
+  "question_en": "This time next week, we ______ on the beach in Goa.",
+  "options": [
+   {
+    "en": "will be lying"
+   },
+   {
+    "en": "will lie"
+   },
+   {
+    "en": "will have lain"
+   },
+   {
+    "en": "would lie"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "“This time next week” refers to an action in progress at a specific future moment, so the future continuous (will be lying) is used.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Articles",
+  "difficulty": "easy",
+  "question_en": "He is ______ honest man.",
+  "options": [
+   {
+    "en": "a"
+   },
+   {
+    "en": "the"
+   },
+   {
+    "en": "an"
+   },
+   {
+    "en": "no article"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "“Honest” begins with a silent h, so it has a vowel sound and takes “an”.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Articles",
+  "difficulty": "easy",
+  "question_en": "______ Ganga is the holiest river of India.",
+  "options": [
+   {
+    "en": "The"
+   },
+   {
+    "en": "A"
+   },
+   {
+    "en": "An"
+   },
+   {
+    "en": "No article"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Names of rivers take the definite article “the”.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Articles",
+  "difficulty": "medium",
+  "question_en": "She plays ______ guitar very well.",
+  "options": [
+   {
+    "en": "a"
+   },
+   {
+    "en": "an"
+   },
+   {
+    "en": "no article"
+   },
+   {
+    "en": "the"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "“The” is used before the names of musical instruments when we speak of playing them: play the guitar.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Articles",
+  "difficulty": "medium",
+  "question_en": "My brother is studying at ______ university in Pune.",
+  "options": [
+   {
+    "en": "a"
+   },
+   {
+    "en": "an"
+   },
+   {
+    "en": "the"
+   },
+   {
+    "en": "no article"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "“University” begins with the consonant sound /yu/, so the article is “a”, not “an”.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Articles",
+  "difficulty": "medium",
+  "question_en": "She has ______ MBA degree from a reputed institute.",
+  "options": [
+   {
+    "en": "a"
+   },
+   {
+    "en": "the"
+   },
+   {
+    "en": "no article"
+   },
+   {
+    "en": "an"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "“MBA” is pronounced “em-bee-ay”, beginning with a vowel sound, so “an” is used.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Articles",
+  "difficulty": "medium",
+  "question_en": "Rohan goes to ______ school by bus every day.",
+  "options": [
+   {
+    "en": "a"
+   },
+   {
+    "en": "no article"
+   },
+   {
+    "en": "an"
+   },
+   {
+    "en": "the"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "When a place is visited for its primary purpose (school for studying), no article is used: goes to school.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Articles",
+  "difficulty": "easy",
+  "question_en": "What ______ pity that he failed again!",
+  "options": [
+   {
+    "en": "the"
+   },
+   {
+    "en": "an"
+   },
+   {
+    "en": "a"
+   },
+   {
+    "en": "no article"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "In exclamations with a singular countable noun, “What a/an + noun” is used: What a pity!",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Articles",
+  "difficulty": "hard",
+  "question_en": "She is ______ European who has settled in Chennai.",
+  "options": [
+   {
+    "en": "an"
+   },
+   {
+    "en": "the"
+   },
+   {
+    "en": "a"
+   },
+   {
+    "en": "no article"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "“European” starts with the consonant sound /yoo/, so “a” is correct despite the initial vowel letter.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Prepositions",
+  "difficulty": "easy",
+  "question_en": "She is very good ______ mathematics.",
+  "options": [
+   {
+    "en": "at"
+   },
+   {
+    "en": "in"
+   },
+   {
+    "en": "on"
+   },
+   {
+    "en": "with"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The fixed phrase is “good at” a subject or skill.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Prepositions",
+  "difficulty": "easy",
+  "question_en": "The teacher congratulated him ______ his success.",
+  "options": [
+   {
+    "en": "for"
+   },
+   {
+    "en": "at"
+   },
+   {
+    "en": "by"
+   },
+   {
+    "en": "on"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The verb “congratulate” takes “on” with the achievement: congratulated him on his success.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Prepositions",
+  "difficulty": "medium",
+  "question_en": "She is married ______ a doctor.",
+  "options": [
+   {
+    "en": "with"
+   },
+   {
+    "en": "to"
+   },
+   {
+    "en": "by"
+   },
+   {
+    "en": "from"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "“Married to” a person is the correct collocation.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Prepositions",
+  "difficulty": "medium",
+  "question_en": "She is suffering ______ high fever.",
+  "options": [
+   {
+    "en": "from"
+   },
+   {
+    "en": "with"
+   },
+   {
+    "en": "by"
+   },
+   {
+    "en": "of"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "We suffer from a disease or illness, so “suffering from” is used.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Prepositions",
+  "difficulty": "medium",
+  "question_en": "The Principal was annoyed ______ the students for coming late.",
+  "options": [
+   {
+    "en": "on"
+   },
+   {
+    "en": "with"
+   },
+   {
+    "en": "to"
+   },
+   {
+    "en": "from"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "“Annoyed with” is used for a person (annoyed at/about a thing).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Prepositions",
+  "difficulty": "medium",
+  "question_en": "Divide the sweets ______ the three children equally.",
+  "options": [
+   {
+    "en": "between"
+   },
+   {
+    "en": "in"
+   },
+   {
+    "en": "into"
+   },
+   {
+    "en": "among"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "“Among” is used for more than two persons or things; “between” is for two.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Prepositions",
+  "difficulty": "medium",
+  "question_en": "Aman is senior ______ me by two years.",
+  "options": [
+   {
+    "en": "than"
+   },
+   {
+    "en": "from"
+   },
+   {
+    "en": "to"
+   },
+   {
+    "en": "over"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Words such as senior, junior, superior, inferior, prefer take “to”, not “than”.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Prepositions",
+  "difficulty": "medium",
+  "question_en": "The old man was accused ______ theft.",
+  "options": [
+   {
+    "en": "for"
+   },
+   {
+    "en": "of"
+   },
+   {
+    "en": "with"
+   },
+   {
+    "en": "about"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "“Accuse” is followed by “of”: accused of theft.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Prepositions",
+  "difficulty": "easy",
+  "question_en": "I prefer tea ______ coffee.",
+  "options": [
+   {
+    "en": "to"
+   },
+   {
+    "en": "than"
+   },
+   {
+    "en": "over"
+   },
+   {
+    "en": "from"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "“Prefer” is always followed by “to”, never “than”.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Prepositions",
+  "difficulty": "hard",
+  "question_en": "Beware ______ pickpockets in crowded places.",
+  "options": [
+   {
+    "en": "from"
+   },
+   {
+    "en": "against"
+   },
+   {
+    "en": "of"
+   },
+   {
+    "en": "at"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The verb “beware” takes “of”: Beware of pickpockets.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Subject–verb agreement",
+  "difficulty": "medium",
+  "question_en": "Neither the manager nor the employees ______ present in the meeting.",
+  "options": [
+   {
+    "en": "was"
+   },
+   {
+    "en": "is"
+   },
+   {
+    "en": "has been"
+   },
+   {
+    "en": "were"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "In “neither...nor”, the verb agrees with the noun nearest to it. “Employees” is plural, so “were”.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Subject–verb agreement",
+  "difficulty": "easy",
+  "question_en": "Each of the boys ______ given a prize.",
+  "options": [
+   {
+    "en": "were"
+   },
+   {
+    "en": "was"
+   },
+   {
+    "en": "are"
+   },
+   {
+    "en": "have been"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "“Each” is singular and takes a singular verb, even when followed by “of + plural noun”.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Subject–verb agreement",
+  "difficulty": "easy",
+  "question_en": "Mathematics ______ my favourite subject.",
+  "options": [
+   {
+    "en": "is"
+   },
+   {
+    "en": "are"
+   },
+   {
+    "en": "were"
+   },
+   {
+    "en": "have been"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Subjects ending in -ics (mathematics, physics, economics) are treated as singular.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Subject–verb agreement",
+  "difficulty": "medium",
+  "question_en": "The number of applicants ______ increasing every year.",
+  "options": [
+   {
+    "en": "are"
+   },
+   {
+    "en": "were"
+   },
+   {
+    "en": "is"
+   },
+   {
+    "en": "have been"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "“The number of” is singular (the number is increasing); “a number of” would be plural.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Subject–verb agreement",
+  "difficulty": "medium",
+  "question_en": "Either of the two answers ______ correct.",
+  "options": [
+   {
+    "en": "are"
+   },
+   {
+    "en": "were"
+   },
+   {
+    "en": "have been"
+   },
+   {
+    "en": "is"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "“Either” means one of the two and is singular, so it takes “is”.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Subject–verb agreement",
+  "difficulty": "hard",
+  "question_en": "Bread and butter ______ my usual breakfast.",
+  "options": [
+   {
+    "en": "are"
+   },
+   {
+    "en": "were"
+   },
+   {
+    "en": "is"
+   },
+   {
+    "en": "have been"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Two nouns that form one idea (bread and butter, rice and curry) take a singular verb.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Subject–verb agreement",
+  "difficulty": "medium",
+  "question_en": "Ten kilometres ______ a long distance to walk.",
+  "options": [
+   {
+    "en": "is"
+   },
+   {
+    "en": "are"
+   },
+   {
+    "en": "were"
+   },
+   {
+    "en": "have been"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A plural expression of distance, money, time or weight used as a single unit takes a singular verb.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Subject–verb agreement",
+  "difficulty": "hard",
+  "question_en": "The Principal as well as the teachers ______ invited to the function.",
+  "options": [
+   {
+    "en": "were"
+   },
+   {
+    "en": "was"
+   },
+   {
+    "en": "are"
+   },
+   {
+    "en": "have been"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "With “as well as”, “along with”, “together with”, the verb agrees with the first subject (Principal – singular).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Subject–verb agreement",
+  "difficulty": "hard",
+  "question_en": "Many a student ______ failed in this test.",
+  "options": [
+   {
+    "en": "have"
+   },
+   {
+    "en": "are"
+   },
+   {
+    "en": "were"
+   },
+   {
+    "en": "has"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "“Many a” is followed by a singular noun and a singular verb: Many a student has failed.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Subject–verb agreement",
+  "difficulty": "medium",
+  "question_en": "The police ______ investigating the case.",
+  "options": [
+   {
+    "en": "is"
+   },
+   {
+    "en": "are"
+   },
+   {
+    "en": "was"
+   },
+   {
+    "en": "has been"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "“Police” is a collective noun that is always plural in usage, so it takes a plural verb.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Active and passive voice",
+  "difficulty": "easy",
+  "question_en": "Change the voice: ‘The police arrested the thief.’",
+  "options": [
+   {
+    "en": "The thief was arrested by the police."
+   },
+   {
+    "en": "The thief is arrested by the police."
+   },
+   {
+    "en": "The thief had been arrested by the police."
+   },
+   {
+    "en": "The police was arrested by the thief."
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Simple past active becomes was/were + V3 in the passive; the object becomes the subject.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Active and passive voice",
+  "difficulty": "easy",
+  "question_en": "Change the voice: ‘The students completed the project.’",
+  "options": [
+   {
+    "en": "The project is completed by the students."
+   },
+   {
+    "en": "The project has been completed by the students."
+   },
+   {
+    "en": "The project was completed by the students."
+   },
+   {
+    "en": "The students were completed by the project."
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Simple past: object + was/were + V3 + by + agent.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Active and passive voice",
+  "difficulty": "medium",
+  "question_en": "Change the voice: ‘Who wrote this letter?’",
+  "options": [
+   {
+    "en": "Who was written this letter?"
+   },
+   {
+    "en": "By whom is this letter written?"
+   },
+   {
+    "en": "By whom has this letter been written?"
+   },
+   {
+    "en": "By whom was this letter written?"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "For a 'Who' question in the active voice, the passive begins 'By whom', and the tense is kept: simple past 'wrote' becomes 'was written'. 'Has been written' changes the tense.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Active and passive voice",
+  "difficulty": "medium",
+  "question_en": "Change the voice: ‘She is writing a novel.’",
+  "options": [
+   {
+    "en": "A novel is being written by her."
+   },
+   {
+    "en": "A novel is written by her."
+   },
+   {
+    "en": "A novel was being written by her."
+   },
+   {
+    "en": "A novel has been written by her."
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Present continuous passive = is/am/are + being + V3.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Active and passive voice",
+  "difficulty": "hard",
+  "question_en": "Change the voice: ‘They will have finished the work by noon.’",
+  "options": [
+   {
+    "en": "The work will be finished by them by noon."
+   },
+   {
+    "en": "The work will have been finished by them by noon."
+   },
+   {
+    "en": "The work would have been finished by them by noon."
+   },
+   {
+    "en": "The work has been finished by them by noon."
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Future perfect passive = will have been + V3.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Active and passive voice",
+  "difficulty": "medium",
+  "question_en": "Change the voice: ‘Someone has stolen my bicycle.’",
+  "options": [
+   {
+    "en": "My bicycle was stolen by someone."
+   },
+   {
+    "en": "My bicycle is stolen."
+   },
+   {
+    "en": "My bicycle has been stolen."
+   },
+   {
+    "en": "My bicycle had been stolen."
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Present perfect passive = has/have been + V3; the vague agent ‘someone’ is normally omitted.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Active and passive voice",
+  "difficulty": "medium",
+  "question_en": "Change the voice: ‘Do it at once.’",
+  "options": [
+   {
+    "en": "It should do at once."
+   },
+   {
+    "en": "It is done at once."
+   },
+   {
+    "en": "Let it be done at once."
+   },
+   {
+    "en": "Let it done at once."
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Imperative sentences become passive with ‘Let + object + be + V3’.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Active and passive voice",
+  "difficulty": "easy",
+  "question_en": "Change into the active voice: ‘The window was broken by the boy.’",
+  "options": [
+   {
+    "en": "The boy has broken the window."
+   },
+   {
+    "en": "The boy broke the window."
+   },
+   {
+    "en": "The boy breaks the window."
+   },
+   {
+    "en": "The boy was breaking the window."
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Simple past passive (was broken) becomes simple past active (broke).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Active and passive voice",
+  "difficulty": "medium",
+  "question_en": "Change into the active voice: ‘A letter was being written by Neha.’",
+  "options": [
+   {
+    "en": "Neha wrote a letter."
+   },
+   {
+    "en": "Neha has written a letter."
+   },
+   {
+    "en": "Neha is writing a letter."
+   },
+   {
+    "en": "Neha was writing a letter."
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Past continuous passive (was being written) corresponds to past continuous active (was writing).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Direct and indirect speech (narration)",
+  "difficulty": "easy",
+  "question_en": "Change into indirect speech: He said, “I am happy.”",
+  "options": [
+   {
+    "en": "He said that he was happy."
+   },
+   {
+    "en": "He said that he is happy."
+   },
+   {
+    "en": "He said that I was happy."
+   },
+   {
+    "en": "He said that he had been happy."
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Present simple becomes past simple in reported speech when the reporting verb is in the past; pronoun I changes to he.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Direct and indirect speech (narration)",
+  "difficulty": "medium",
+  "question_en": "Change into indirect speech: She said to me, “Where do you live?”",
+  "options": [
+   {
+    "en": "She asked me where I lived."
+   },
+   {
+    "en": "She told me where did I live."
+   },
+   {
+    "en": "She asked me where do you live."
+   },
+   {
+    "en": "She asked me that where I lived."
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A wh-question is reported with ‘asked’, statement word order and no ‘that’.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Direct and indirect speech (narration)",
+  "difficulty": "medium",
+  "question_en": "Change into indirect speech: The teacher said, “The earth moves round the sun.”",
+  "options": [
+   {
+    "en": "The teacher said that the earth moved round the sun."
+   },
+   {
+    "en": "The teacher said that the earth had moved round the sun."
+   },
+   {
+    "en": "The teacher told that the earth moves round the sun."
+   },
+   {
+    "en": "The teacher said that the earth moves round the sun."
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "A universal truth does not change tense in indirect speech.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Direct and indirect speech (narration)",
+  "difficulty": "medium",
+  "question_en": "Change into indirect speech: He said to her, “Please help me.”",
+  "options": [
+   {
+    "en": "He ordered her to help him."
+   },
+   {
+    "en": "He requested her to help him."
+   },
+   {
+    "en": "He said her to help me."
+   },
+   {
+    "en": "He asked that she helps him."
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "A polite request with ‘please’ is reported with ‘requested’ + to-infinitive.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Direct and indirect speech (narration)",
+  "difficulty": "medium",
+  "question_en": "Change into indirect speech: “Alas! I have failed,” said the boy.",
+  "options": [
+   {
+    "en": "The boy said that alas he has failed."
+   },
+   {
+    "en": "The boy exclaimed that I had failed."
+   },
+   {
+    "en": "The boy exclaimed sorrowfully that he had failed."
+   },
+   {
+    "en": "The boy asked sorrowfully whether he had failed."
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Exclamations are reported with ‘exclaimed with joy/sorrow’; present perfect shifts to past perfect.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Direct and indirect speech (narration)",
+  "difficulty": "medium",
+  "question_en": "Change into direct speech: He asked me if I had finished my work.",
+  "options": [
+   {
+    "en": "He said to me, “Have you finished my work?”"
+   },
+   {
+    "en": "He said to me, “Had I finished my work?”"
+   },
+   {
+    "en": "He said to me, “Have you finished your work?”"
+   },
+   {
+    "en": "He said to me, “Have I finished your work?”"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The 'if' clause shows a yes/no question; the past perfect in the report goes back to the present perfect, and the pronouns change I → you and my → your: “Have you finished your work?”.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Direct and indirect speech (narration)",
+  "difficulty": "easy",
+  "question_en": "Change into indirect speech: She said, “I will come tomorrow.”",
+  "options": [
+   {
+    "en": "She said that she would come the next day."
+   },
+   {
+    "en": "She said that she will come tomorrow."
+   },
+   {
+    "en": "She said that I would come tomorrow."
+   },
+   {
+    "en": "She said that she would come tomorrow."
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Will becomes would and tomorrow becomes the next day / the following day.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Direct and indirect speech (narration)",
+  "difficulty": "hard",
+  "question_en": "Change into indirect speech: The captain said to the team, “Let us play carefully.”",
+  "options": [
+   {
+    "en": "The captain said to the team that let us play carefully."
+   },
+   {
+    "en": "The captain proposed to the team that they should play carefully."
+   },
+   {
+    "en": "The captain ordered the team to play carefully."
+   },
+   {
+    "en": "The captain asked the team that we play carefully."
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "‘Let us’ expresses a suggestion and is reported with ‘proposed/suggested that ... should’.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Question tags",
+  "difficulty": "easy",
+  "question_en": "Choose the most appropriate question tag for the blank.\nLet's go for a walk after dinner, ______?",
+  "options": [
+   {
+    "en": "will we"
+   },
+   {
+    "en": "shall we"
+   },
+   {
+    "en": "don't we"
+   },
+   {
+    "en": "shan't we"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "A sentence beginning with 'Let's' (a suggestion that includes the speaker) always takes the tag 'shall we?'. 'Will we' and 'don't we' do not fit a suggestion.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Question tags",
+  "difficulty": "hard",
+  "question_en": "Choose the most appropriate question tag for the blank.\nNobody called me while I was out, ______?",
+  "options": [
+   {
+    "en": "didn't they"
+   },
+   {
+    "en": "did he"
+   },
+   {
+    "en": "did they"
+   },
+   {
+    "en": "didn't he"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "'Nobody' makes the statement negative, so the tag is positive; indefinite pronouns like nobody, everyone and someone are picked up by 'they'. Hence 'did they?'.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Conjunctions",
+  "difficulty": "easy",
+  "question_en": "Select the most appropriate option to fill in the blank.\n______ he worked very hard, he could not clear the examination.",
+  "options": [
+   {
+    "en": "Because"
+   },
+   {
+    "en": "Unless"
+   },
+   {
+    "en": "Whether"
+   },
+   {
+    "en": "Although"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The two clauses contrast (hard work, yet failure), so a concessive conjunction is needed: 'Although'. 'Because' shows cause, 'unless' a condition and 'whether' a choice.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_grammar",
+  "subtopic": "Adjectives and adverbs",
+  "difficulty": "medium",
+  "question_en": "Select the most appropriate option to fill in the blank.\nThe roses in your garden smell ______.",
+  "options": [
+   {
+    "en": "sweetly"
+   },
+   {
+    "en": "sweet"
+   },
+   {
+    "en": "more sweetly"
+   },
+   {
+    "en": "sweetness"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "'Smell' here is a linking verb (like look, feel, taste, seem), so it is followed by an adjective describing the subject: 'smell sweet'. An adverb is used only with an action verb, e.g. 'He chewed slowly'.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_errors",
+  "subtopic": "Error spotting",
+  "difficulty": "medium",
+  "question_en": "Identify the segment that contains an error.\nDespite of the heavy rain / the match / was played / as scheduled.",
+  "options": [
+   {
+    "en": "Despite of the heavy rain"
+   },
+   {
+    "en": "the match"
+   },
+   {
+    "en": "was played"
+   },
+   {
+    "en": "as scheduled"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "“Despite” is never followed by “of”. Correct: Despite the heavy rain (or In spite of the heavy rain).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_errors",
+  "subtopic": "Error spotting",
+  "difficulty": "easy",
+  "question_en": "Identify the segment that contains an error.\nShe told me / that she / didn’t knew / the answer.",
+  "options": [
+   {
+    "en": "She told me"
+   },
+   {
+    "en": "that she"
+   },
+   {
+    "en": "didn’t knew"
+   },
+   {
+    "en": "the answer"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "After “did/didn’t”, the main verb takes its base form: didn’t know.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_errors",
+  "subtopic": "Error spotting",
+  "difficulty": "medium",
+  "question_en": "Identify the segment that contains an error.\nThe furniture in the new office / are made / of teak wood / and looks elegant.",
+  "options": [
+   {
+    "en": "The furniture in the new office"
+   },
+   {
+    "en": "are made"
+   },
+   {
+    "en": "of teak wood"
+   },
+   {
+    "en": "and looks elegant"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "“Furniture” is an uncountable, singular noun, so the verb should be “is made”.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_errors",
+  "subtopic": "Error spotting",
+  "difficulty": "medium",
+  "question_en": "Identify the segment that contains an error. If there is no error, select option 4.\nHe is taller / than any other boy / in his class.",
+  "options": [
+   {
+    "en": "He is taller"
+   },
+   {
+    "en": "than any other boy"
+   },
+   {
+    "en": "in his class"
+   },
+   {
+    "en": "No error"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The comparative with “any other + singular noun” is correct, so the sentence has no error.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_errors",
+  "subtopic": "Error spotting",
+  "difficulty": "easy",
+  "question_en": "Identify the segment that contains an error.\nI have been knowing / him since / we were children / in the same school.",
+  "options": [
+   {
+    "en": "I have been knowing"
+   },
+   {
+    "en": "him since"
+   },
+   {
+    "en": "we were children"
+   },
+   {
+    "en": "in the same school"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "“Know” is a stative verb and is not used in continuous tenses. Correct: I have known him since ...",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_errors",
+  "subtopic": "Error spotting",
+  "difficulty": "hard",
+  "question_en": "Identify the segment that contains an error.\nHardly had he reached / the station / than the train / left without him.",
+  "options": [
+   {
+    "en": "Hardly had he reached"
+   },
+   {
+    "en": "the station"
+   },
+   {
+    "en": "than the train"
+   },
+   {
+    "en": "left without him"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "“Hardly” is followed by “when”, not “than” (“No sooner” takes “than”).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_errors",
+  "subtopic": "Error spotting",
+  "difficulty": "hard",
+  "question_en": "Identify the segment that contains an error.\nRahul is one of the boys / who has / won medals / in the national games.",
+  "options": [
+   {
+    "en": "Rahul is one of the boys"
+   },
+   {
+    "en": "who has"
+   },
+   {
+    "en": "won medals"
+   },
+   {
+    "en": "in the national games"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "In “one of the + plural noun + who”, the relative pronoun refers to the plural noun, so the verb is “have”.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_errors",
+  "subtopic": "Error spotting",
+  "difficulty": "medium",
+  "question_en": "Identify the segment that contains an error.\nShe gave me / a very good advices / on how to / prepare for the interview.",
+  "options": [
+   {
+    "en": "She gave me"
+   },
+   {
+    "en": "a very good advices"
+   },
+   {
+    "en": "on how to"
+   },
+   {
+    "en": "prepare for the interview"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "“Advice” is uncountable and has no plural form. Correct: a piece of advice / very good advice.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_errors",
+  "subtopic": "Error spotting",
+  "difficulty": "medium",
+  "question_en": "Identify the segment that contains an error.\nThe Principal, along with / the teachers, / are planning / a farewell party.",
+  "options": [
+   {
+    "en": "The Principal, along with"
+   },
+   {
+    "en": "the teachers,"
+   },
+   {
+    "en": "are planning"
+   },
+   {
+    "en": "a farewell party"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The subject “Principal” is singular; “along with” does not make it plural. Use “is planning”.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_errors",
+  "subtopic": "Error spotting",
+  "difficulty": "medium",
+  "question_en": "Identify the segment that contains an error.\nBetween you and I, / the project / is not likely / to succeed.",
+  "options": [
+   {
+    "en": "Between you and I,"
+   },
+   {
+    "en": "the project"
+   },
+   {
+    "en": "is not likely"
+   },
+   {
+    "en": "to succeed"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A preposition takes the objective case: “Between you and me”.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_errors",
+  "subtopic": "Error spotting",
+  "difficulty": "easy",
+  "question_en": "Identify the segment that contains an error. If there is no error, select option 4.\nThe book that / I bought yesterday / is very interesting.",
+  "options": [
+   {
+    "en": "The book that"
+   },
+   {
+    "en": "I bought yesterday"
+   },
+   {
+    "en": "is very interesting"
+   },
+   {
+    "en": "No error"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The sentence is grammatically correct; the relative clause and verb agree properly.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_errors",
+  "subtopic": "Error spotting",
+  "difficulty": "medium",
+  "question_en": "Identify the segment that contains an error.\nMy uncle / is working / in this company / since 2010.",
+  "options": [
+   {
+    "en": "My uncle"
+   },
+   {
+    "en": "is working"
+   },
+   {
+    "en": "in this company"
+   },
+   {
+    "en": "since 2010"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "“Since 2010” needs the present perfect continuous: has been working.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_errors",
+  "subtopic": "Error spotting",
+  "difficulty": "easy",
+  "question_en": "Identify the segment that contains an error.\nThough he was tired, / but he / continued working / on the project.",
+  "options": [
+   {
+    "en": "Though he was tired,"
+   },
+   {
+    "en": "but he"
+   },
+   {
+    "en": "continued working"
+   },
+   {
+    "en": "on the project"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "“Though” and “but” should not be used together in one sentence. Remove “but”.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_errors",
+  "subtopic": "Error spotting",
+  "difficulty": "medium",
+  "question_en": "Identify the segment that contains an error.\nI prefer / walking than / driving to / the office.",
+  "options": [
+   {
+    "en": "I prefer"
+   },
+   {
+    "en": "walking than"
+   },
+   {
+    "en": "driving to"
+   },
+   {
+    "en": "the office"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "“Prefer” takes “to”: I prefer walking to driving.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_errors",
+  "subtopic": "Sentence improvement",
+  "difficulty": "medium",
+  "question_en": "Select the option that best replaces the part in square brackets. If no change is needed, select ‘No improvement’.\nShe [hardly never] visits her native village.",
+  "options": [
+   {
+    "en": "No improvement"
+   },
+   {
+    "en": "hardly not"
+   },
+   {
+    "en": "hardly ever"
+   },
+   {
+    "en": "not hardly"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "“Hardly” already has a negative sense, so “never” cannot be added. The correct idiom is “hardly ever”.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_errors",
+  "subtopic": "Sentence improvement",
+  "difficulty": "easy",
+  "question_en": "Select the option that best replaces the part in square brackets. If no change is needed, select ‘No improvement’.\nI [am living] in Jaipur since my childhood.",
+  "options": [
+   {
+    "en": "No improvement"
+   },
+   {
+    "en": "had lived"
+   },
+   {
+    "en": "live"
+   },
+   {
+    "en": "have been living"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "“Since + point of time” with an action continuing now needs the present perfect continuous: have been living.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_errors",
+  "subtopic": "Sentence improvement",
+  "difficulty": "medium",
+  "question_en": "Select the option that best replaces the part in square brackets. If no change is needed, select ‘No improvement’.\nThe teacher asked the boy [why was he late].",
+  "options": [
+   {
+    "en": "why he was late"
+   },
+   {
+    "en": "No improvement"
+   },
+   {
+    "en": "why he is late"
+   },
+   {
+    "en": "that why was he late"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "In reported questions the word order becomes that of a statement (subject before verb): why he was late.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_errors",
+  "subtopic": "Sentence improvement",
+  "difficulty": "hard",
+  "question_en": "Select the option that best replaces the part in square brackets. If no change is needed, select ‘No improvement’.\nHe suggested [me to take] a taxi.",
+  "options": [
+   {
+    "en": "No improvement"
+   },
+   {
+    "en": "me for taking"
+   },
+   {
+    "en": "that I take"
+   },
+   {
+    "en": "me taking"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "“Suggest” is not followed by an object + to-infinitive. It takes a that-clause (that I take / that I should take) or a gerund.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_errors",
+  "subtopic": "Sentence improvement",
+  "difficulty": "easy",
+  "question_en": "Select the option that best replaces the part in square brackets. If no change is needed, select ‘No improvement’.\nEach of the girls [have] brought her own lunch.",
+  "options": [
+   {
+    "en": "No improvement"
+   },
+   {
+    "en": "has"
+   },
+   {
+    "en": "are"
+   },
+   {
+    "en": "were"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "“Each” is singular and needs “has”.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_errors",
+  "subtopic": "Sentence improvement",
+  "difficulty": "easy",
+  "question_en": "Select the option that best replaces the part in square brackets. If no change is needed, select ‘No improvement’.\nThe cost of living [have risen] sharply this year.",
+  "options": [
+   {
+    "en": "has risen"
+   },
+   {
+    "en": "No improvement"
+   },
+   {
+    "en": "are rising"
+   },
+   {
+    "en": "were risen"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The subject “cost” is singular, so the verb must be “has risen”.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_errors",
+  "subtopic": "Sentence improvement",
+  "difficulty": "hard",
+  "question_en": "Select the option that best replaces the part in square brackets. If no change is needed, select ‘No improvement’.\nI would have helped you [if you would have asked].",
+  "options": [
+   {
+    "en": "No improvement"
+   },
+   {
+    "en": "if you will ask"
+   },
+   {
+    "en": "if you asked"
+   },
+   {
+    "en": "if you had asked"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "In the third conditional, the if-clause uses the past perfect (if + had + V3) and the main clause uses would have + V3.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_errors",
+  "subtopic": "Sentence improvement",
+  "difficulty": "easy",
+  "question_en": "Select the option that best replaces the part in square brackets. If no change is needed, select ‘No improvement’.\nShe is [more taller] than her sister.",
+  "options": [
+   {
+    "en": "No improvement"
+   },
+   {
+    "en": "most taller"
+   },
+   {
+    "en": "taller"
+   },
+   {
+    "en": "more tall"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "A one-syllable adjective forms the comparative with -er; “more” must not be added (double comparative).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_errors",
+  "subtopic": "Sentence improvement",
+  "difficulty": "easy",
+  "question_en": "Select the option that best replaces the part in square brackets. If no change is needed, select ‘No improvement’.\nHe [is knowing] the answer to every question.",
+  "options": [
+   {
+    "en": "knows"
+   },
+   {
+    "en": "No improvement"
+   },
+   {
+    "en": "has been knowing"
+   },
+   {
+    "en": "was knowing"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "“Know” is a stative verb and is not used in continuous forms; use the simple present.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_errors",
+  "subtopic": "Sentence improvement",
+  "difficulty": "medium",
+  "question_en": "Select the option that best replaces the part in square brackets. If no change is needed, select ‘No improvement’.\nNeither the teacher [or the students] were aware of the changes.",
+  "options": [
+   {
+    "en": "No improvement"
+   },
+   {
+    "en": "nor the student"
+   },
+   {
+    "en": "and the students"
+   },
+   {
+    "en": "nor the students"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "“Neither” is paired with “nor”, not “or”.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_errors",
+  "subtopic": "Sentence improvement – inversion",
+  "difficulty": "medium",
+  "question_en": "Select the most appropriate option that can substitute the bracketed segment in the given sentence. If there is no need to substitute it, select 'No substitution required'.\nScarcely had I reached the gate [than the bell rang].",
+  "options": [
+   {
+    "en": "when the bell rang"
+   },
+   {
+    "en": "then the bell rang"
+   },
+   {
+    "en": "No substitution required"
+   },
+   {
+    "en": "than the bell had rung"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "'Scarcely' and 'Hardly' are paired with 'when' (or 'before'); only 'No sooner' takes 'than'. So the correct form is 'Scarcely had I reached the gate when the bell rang'.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_errors",
+  "subtopic": "Sentence improvement – inversion",
+  "difficulty": "hard",
+  "question_en": "Select the most appropriate option that can substitute the bracketed segment in the given sentence. If there is no need to substitute it, select 'No substitution required'.\n[Not only he is] a good singer but also a fine dancer.",
+  "options": [
+   {
+    "en": "Not only he was"
+   },
+   {
+    "en": "No substitution required"
+   },
+   {
+    "en": "Not only does he"
+   },
+   {
+    "en": "Not only is he"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "When a sentence begins with 'Not only', the auxiliary comes before the subject (inversion): 'Not only is he a good singer but also a fine dancer'. 'Does he' would need a main verb such as 'sing'.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_errors",
+  "subtopic": "Error spotting – prepositions",
+  "difficulty": "easy",
+  "question_en": "The following sentence has been split into four segments. Identify the segment that contains a grammatical error.\nHe has been / absent in the class / for the last / three days.",
+  "options": [
+   {
+    "en": "absent in the class"
+   },
+   {
+    "en": "He has been"
+   },
+   {
+    "en": "for the last"
+   },
+   {
+    "en": "three days"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The adjective 'absent' takes 'from': 'absent from the class'. The other segments are correct.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_errors",
+  "subtopic": "Error spotting – adverbs",
+  "difficulty": "medium",
+  "question_en": "The following sentence has been split into four segments. Identify the segment that contains a grammatical error.\nShe looked / very much / beautiful / in the red saree.",
+  "options": [
+   {
+    "en": "She looked"
+   },
+   {
+    "en": "in the red saree"
+   },
+   {
+    "en": "beautiful"
+   },
+   {
+    "en": "very much"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "'Very' modifies an adjective in the positive degree (very beautiful); 'much' is used with comparatives and past participles (much better, much admired). So 'very much beautiful' is wrong.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_errors",
+  "subtopic": "Error spotting – agreement",
+  "difficulty": "easy",
+  "question_en": "The following sentence has been split into four segments. Identify the segment that contains a grammatical error.\nThe scenery / of Kashmir / are very / charming in spring.",
+  "options": [
+   {
+    "en": "are very"
+   },
+   {
+    "en": "The scenery"
+   },
+   {
+    "en": "of Kashmir"
+   },
+   {
+    "en": "charming in spring"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "'Scenery' is an uncountable noun and is always singular, so the verb must be 'is very charming'. Similar nouns: furniture, luggage, information, advice.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_errors",
+  "subtopic": "Error spotting – conditionals",
+  "difficulty": "hard",
+  "question_en": "The following sentence has been split into four segments. Identify the segment that contains a grammatical error.\nIf he will come / tomorrow, / I shall discuss / the matter with him.",
+  "options": [
+   {
+    "en": "If he will come"
+   },
+   {
+    "en": "tomorrow,"
+   },
+   {
+    "en": "I shall discuss"
+   },
+   {
+    "en": "the matter with him"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "In a first conditional the if-clause takes the simple present even for a future idea: 'If he comes tomorrow, I shall discuss...'. 'Will' belongs only in the main clause.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_errors",
+  "subtopic": "Error spotting – redundancy",
+  "difficulty": "easy",
+  "question_en": "The following sentence has been split into four segments. Identify the segment that contains a grammatical error.\nHe returned back / from Mumbai / late last night / by the express train.",
+  "options": [
+   {
+    "en": "from Mumbai"
+   },
+   {
+    "en": "He returned back"
+   },
+   {
+    "en": "late last night"
+   },
+   {
+    "en": "by the express train"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "'Return' already means 'come back', so 'returned back' is redundant. Similar errors: repeat again, revert back, cousin brother.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_errors",
+  "subtopic": "Error spotting – collective nouns",
+  "difficulty": "hard",
+  "question_en": "Identify the segment that contains an error. If there is no error, select 'No error'.\nThe jury were divided / in their opinions / about the verdict.",
+  "options": [
+   {
+    "en": "The jury were divided"
+   },
+   {
+    "en": "in their opinions"
+   },
+   {
+    "en": "about the verdict"
+   },
+   {
+    "en": "No error"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "A collective noun takes a plural verb when its members act as individuals with different views. 'The jury were divided in their opinions' is correct; 'their' confirms the plural sense.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_errors",
+  "subtopic": "Sentence improvement – vocabulary",
+  "difficulty": "easy",
+  "question_en": "Select the most appropriate option that can substitute the bracketed segment in the given sentence. If there is no need to substitute it, select 'No substitution required'.\nThe doctor [wrote] a strong medicine for the patient's fever.",
+  "options": [
+   {
+    "en": "described"
+   },
+   {
+    "en": "prescribed"
+   },
+   {
+    "en": "subscribed"
+   },
+   {
+    "en": "No substitution required"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "A doctor 'prescribes' medicine; 'prescribe' is the exact word for recommending a treatment. 'Described' means told about and 'subscribed' means paid for regularly.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_errors",
+  "subtopic": "Sentence improvement – prepositions",
+  "difficulty": "hard",
+  "question_en": "Select the most appropriate option that can substitute the bracketed segment in the given sentence. If there is no need to substitute it, select 'No substitution required'.\nThe Principal [laid stress over] the need for discipline in the morning assembly.",
+  "options": [
+   {
+    "en": "laid stress on"
+   },
+   {
+    "en": "laid stress at"
+   },
+   {
+    "en": "No substitution required"
+   },
+   {
+    "en": "laid stress for"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The fixed expression is 'lay stress on' (also 'lay emphasis on', 'insist on'). 'Over', 'at' and 'for' are not used with 'stress' in this sense.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_errors",
+  "subtopic": "Sentence improvement – tenses",
+  "difficulty": "medium",
+  "question_en": "Select the most appropriate option that can substitute the bracketed segment in the given sentence. If there is no need to substitute it, select 'No substitution required'.\nShe [has been working] in this school for ten years and still loves her job.",
+  "options": [
+   {
+    "en": "is working"
+   },
+   {
+    "en": "works"
+   },
+   {
+    "en": "No substitution required"
+   },
+   {
+    "en": "had worked"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "'For ten years' with an action that continues now ('still loves her job') needs the present perfect continuous, which is already used. So no substitution is required.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_errors",
+  "subtopic": "Fill in the blanks – confusable words",
+  "difficulty": "hard",
+  "question_en": "Select the most appropriate option to fill in the blank.\nThe clever thief managed to ______ the police for a whole week.",
+  "options": [
+   {
+    "en": "elude"
+   },
+   {
+    "en": "allude"
+   },
+   {
+    "en": "collude"
+   },
+   {
+    "en": "exclude"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "'Elude' means to escape or avoid being caught. 'Allude' means to refer indirectly, 'collude' to conspire secretly and 'exclude' to leave out.",
+  "pyq_concept": false
+ }
+]

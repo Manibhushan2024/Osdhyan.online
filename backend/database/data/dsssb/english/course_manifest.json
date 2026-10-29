@@ -1,0 +1,68 @@
+{
+ "subject": "English Language & Comprehension",
+ "subject_hi": "अंग्रेज़ी भाषा एवं बोध",
+ "chapters": [
+  {
+   "key": "eng_grammar",
+   "title": "1. Grammar: Tenses, Articles, Prepositions, Agreement, Voice & Narration",
+   "items": [
+    {
+     "title": "Grammar: Tenses, Articles, Prepositions, Agreement, Voice & Narration — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\english\\eng_grammar.pdf"
+    }
+   ]
+  },
+  {
+   "key": "eng_errors",
+   "title": "2. Error Spotting, Sentence Improvement & Fill in the Blanks",
+   "items": [
+    {
+     "title": "Error Spotting, Sentence Improvement & Fill in the Blanks — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\english\\eng_errors.pdf"
+    }
+   ]
+  },
+  {
+   "key": "eng_vocab",
+   "title": "3. Vocabulary: Synonyms, Antonyms, One-word Substitution, Idioms, Spelling",
+   "items": [
+    {
+     "title": "Vocabulary: Synonyms, Antonyms, One-word Substitution, Idioms, Spelling — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\english\\eng_vocab.pdf"
+    }
+   ]
+  },
+  {
+   "key": "eng_comprehension",
+   "title": "4. Reading Comprehension, Cloze Test & Para Jumbles",
+   "items": [
+    {
+     "title": "Reading Comprehension, Cloze Test & Para Jumbles — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\english\\eng_comprehension.pdf"
+    }
+   ]
+  },
+  {
+   "key": "english_practice",
+   "title": "5. Complete notes, previous-year questions & 200 most expected",
+   "items": [
+    {
+     "title": "English Language & Comprehension — fast revision sheet (revise everything quickly)",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\english\\english_fast_revision.pdf"
+    },
+    {
+     "title": "English Language & Comprehension — complete notes (all chapters in one PDF)",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\english\\english_complete_notes.pdf"
+    },
+    {
+     "title": "English Language & Comprehension — previous-year questions 2023–24 with solutions",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\english\\english_pyq_2023_24.pdf"
+    },
+    {
+     "title": "English Language & Comprehension — 200 most expected questions with answers",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\english\\english_200_most_expected.pdf"
+    }
+   ]
+  }
+ ]
+}

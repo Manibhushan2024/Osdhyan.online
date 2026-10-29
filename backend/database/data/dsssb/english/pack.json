@@ -1,0 +1,28 @@
+{
+ "name": "English Language & Comprehension",
+ "chapters": [
+  ["eng_grammar", "Grammar: Tenses, Articles, Prepositions, Agreement, Voice & Narration", "Grammar"],
+  ["eng_errors", "Error Spotting, Sentence Improvement & Fill in the Blanks", "Error Spotting & Improvement"],
+  ["eng_vocab", "Vocabulary: Synonyms, Antonyms, One-word Substitution, Idioms, Spelling", "Vocabulary"],
+  ["eng_comprehension", "Reading Comprehension, Cloze Test & Para Jumbles", "Comprehension"]
+ ],
+ "pyq_file": "english_pyq_analysis.json",
+ "pyq_rules": [
+  ["reading comprehension", "eng_comprehension"], ["para jumble", "eng_comprehension"], ["rearrangement", "eng_comprehension"], ["cloze", "eng_comprehension"],
+  ["error spotting", "eng_errors"], ["sentence improvement", "eng_errors"], ["inversion", "eng_errors"], ["fill in the blank", "eng_errors"],
+  ["spelling", "eng_vocab"], ["idiom", "eng_vocab"], ["proverb", "eng_vocab"], ["one-word", "eng_vocab"], ["synonym", "eng_vocab"], ["antonym", "eng_vocab"],
+  ["homophone", "eng_vocab"], ["homonym", "eng_vocab"], ["collocation", "eng_vocab"], ["phrasal verb", "eng_vocab"],
+  ["preposition", "eng_grammar"], ["question tag", "eng_grammar"], ["conjunction", "eng_grammar"], ["adverb", "eng_grammar"],
+  ["tense", "eng_grammar"], ["article", "eng_grammar"], ["agreement", "eng_grammar"], ["voice", "eng_grammar"], ["speech", "eng_grammar"]
+ ],
+ "question_files": ["questions_a.json", "questions_b.json"],
+ "series_name": "DSSSB TGT CS — English Language & Comprehension",
+ "series_name_hi": "DSSSB TGT CS — अंग्रेज़ी भाषा एवं बोध",
+ "series_description": "Section A English: grammar (tenses, articles, prepositions, agreement, voice, narration), error spotting and sentence improvement, vocabulary (synonyms, antonyms, one-word substitution, idioms, spelling) and reading comprehension, cloze and para jumbles — 80 previous-year questions, chapter-wise practice and the 200 most expected questions with solutions. Short notes and a fast-revision sheet are in Courses → DSSSB TGT Computer Science.",
+ "course_subject": "English Language & Comprehension",
+ "course_subject_hi": "अंग्रेज़ी भाषा एवं बोध",
+ "tagline": "tenses · articles · prepositions · agreement · voice & narration · error spotting · sentence improvement · synonyms & antonyms · one-word substitution · idioms · spelling · RC · cloze · para jumbles",
+ "intro": "Section A English carries 20 marks in every DSSSB paper. In the 4 official 2023–24 TGT CS papers ({n} questions) about 45% was vocabulary (spelling, idioms and proverbs, one-word substitution, antonyms, homophones, collocations), about 35% was reading — one passage with 5 questions in every paper plus 1–2 para jumbles — and the rest was grammar asked as error spotting or sentence improvement (prepositions, 'No sooner/Hardly' inversion, question tags, conjunctions). The notes are rule tables with right-and-wrong examples, the 100 most-asked words, idioms and spellings, and a step-by-step method for passages and para jumbles.",
+ "practice_split": 35,
+ "full_test_min_per_q": 0.6
+}

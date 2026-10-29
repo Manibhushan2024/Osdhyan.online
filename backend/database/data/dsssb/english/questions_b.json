@@ -1,0 +1,2394 @@
+[
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Synonyms",
+  "difficulty": "easy",
+  "question_en": "Select the word closest in meaning to BENEVOLENT.",
+  "options": [
+   {
+    "en": "hostile"
+   },
+   {
+    "en": "kind"
+   },
+   {
+    "en": "careless"
+   },
+   {
+    "en": "stingy"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Benevolent means well-meaning and kindly.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Synonyms",
+  "difficulty": "easy",
+  "question_en": "Select the word closest in meaning to CANDID.",
+  "options": [
+   {
+    "en": "frank"
+   },
+   {
+    "en": "secretive"
+   },
+   {
+    "en": "polite"
+   },
+   {
+    "en": "shy"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Candid means truthful and straightforward, i.e. frank.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Synonyms",
+  "difficulty": "medium",
+  "question_en": "Select the word closest in meaning to OBSOLETE.",
+  "options": [
+   {
+    "en": "modern"
+   },
+   {
+    "en": "valuable"
+   },
+   {
+    "en": "fragile"
+   },
+   {
+    "en": "outdated"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Obsolete describes something no longer in use or out of date.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Synonyms",
+  "difficulty": "medium",
+  "question_en": "Select the word closest in meaning to METICULOUS.",
+  "options": [
+   {
+    "en": "careless"
+   },
+   {
+    "en": "hasty"
+   },
+   {
+    "en": "painstaking"
+   },
+   {
+    "en": "lazy"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Meticulous means showing great attention to detail; painstaking is the nearest synonym.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Synonyms",
+  "difficulty": "medium",
+  "question_en": "Select the word closest in meaning to EPHEMERAL.",
+  "options": [
+   {
+    "en": "eternal"
+   },
+   {
+    "en": "short-lived"
+   },
+   {
+    "en": "harmful"
+   },
+   {
+    "en": "ancient"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Ephemeral things last for a very short time.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Synonyms",
+  "difficulty": "medium",
+  "question_en": "Select the word closest in meaning to ABATE.",
+  "options": [
+   {
+    "en": "increase"
+   },
+   {
+    "en": "begin"
+   },
+   {
+    "en": "subside"
+   },
+   {
+    "en": "provoke"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "To abate is to become less intense, e.g. the storm abated; subside is closest.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Synonyms",
+  "difficulty": "medium",
+  "question_en": "Select the word closest in meaning to ARDENT.",
+  "options": [
+   {
+    "en": "indifferent"
+   },
+   {
+    "en": "passionate"
+   },
+   {
+    "en": "weak"
+   },
+   {
+    "en": "calm"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Ardent means enthusiastic and passionate.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Synonyms",
+  "difficulty": "easy",
+  "question_en": "Select the word closest in meaning to FRUGAL.",
+  "options": [
+   {
+    "en": "wasteful"
+   },
+   {
+    "en": "greedy"
+   },
+   {
+    "en": "generous"
+   },
+   {
+    "en": "thrifty"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Frugal means careful about spending money, i.e. thrifty.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Synonyms",
+  "difficulty": "hard",
+  "question_en": "Select the word closest in meaning to PERNICIOUS.",
+  "options": [
+   {
+    "en": "harmful"
+   },
+   {
+    "en": "delicious"
+   },
+   {
+    "en": "trivial"
+   },
+   {
+    "en": "helpful"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Pernicious means having a gradual but destructive, harmful effect.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Synonyms",
+  "difficulty": "hard",
+  "question_en": "Select the word closest in meaning to CAPRICIOUS.",
+  "options": [
+   {
+    "en": "steady"
+   },
+   {
+    "en": "cheerful"
+   },
+   {
+    "en": "fickle"
+   },
+   {
+    "en": "brave"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Capricious means given to sudden changes of mood or behaviour, i.e. fickle.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Synonyms",
+  "difficulty": "hard",
+  "question_en": "Select the word closest in meaning to SAGACIOUS.",
+  "options": [
+   {
+    "en": "wise"
+   },
+   {
+    "en": "foolish"
+   },
+   {
+    "en": "greedy"
+   },
+   {
+    "en": "timid"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Sagacious means having sound judgement; wise is its synonym.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Synonyms",
+  "difficulty": "medium",
+  "question_en": "Select the word closest in meaning to TENACIOUS.",
+  "options": [
+   {
+    "en": "flexible"
+   },
+   {
+    "en": "gentle"
+   },
+   {
+    "en": "fragile"
+   },
+   {
+    "en": "persistent"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Tenacious means holding firmly to a purpose; persistent is nearest.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Antonyms",
+  "difficulty": "easy",
+  "question_en": "Select the word opposite in meaning to GENEROUS.",
+  "options": [
+   {
+    "en": "kind"
+   },
+   {
+    "en": "stingy"
+   },
+   {
+    "en": "liberal"
+   },
+   {
+    "en": "wealthy"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Generous means giving freely; its antonym is stingy (unwilling to give).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Antonyms",
+  "difficulty": "easy",
+  "question_en": "Select the word opposite in meaning to SCARCE.",
+  "options": [
+   {
+    "en": "rare"
+   },
+   {
+    "en": "abundant"
+   },
+   {
+    "en": "limited"
+   },
+   {
+    "en": "costly"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Scarce means in short supply; abundant means plentiful.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Antonyms",
+  "difficulty": "easy",
+  "question_en": "Select the word opposite in meaning to EXPAND.",
+  "options": [
+   {
+    "en": "contract"
+   },
+   {
+    "en": "extend"
+   },
+   {
+    "en": "grow"
+   },
+   {
+    "en": "spread"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Expand means to become larger; contract means to become smaller.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Antonyms",
+  "difficulty": "easy",
+  "question_en": "Select the word opposite in meaning to AMATEUR.",
+  "options": [
+   {
+    "en": "beginner"
+   },
+   {
+    "en": "novice"
+   },
+   {
+    "en": "learner"
+   },
+   {
+    "en": "professional"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "An amateur is non-professional; the opposite is professional.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Antonyms",
+  "difficulty": "medium",
+  "question_en": "Select the word opposite in meaning to VERBOSE.",
+  "options": [
+   {
+    "en": "wordy"
+   },
+   {
+    "en": "talkative"
+   },
+   {
+    "en": "concise"
+   },
+   {
+    "en": "lengthy"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Verbose means using more words than needed; concise means brief and to the point.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Antonyms",
+  "difficulty": "medium",
+  "question_en": "Select the word opposite in meaning to TRANSPARENT.",
+  "options": [
+   {
+    "en": "clear"
+   },
+   {
+    "en": "thin"
+   },
+   {
+    "en": "opaque"
+   },
+   {
+    "en": "visible"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Transparent allows light to pass through; opaque does not.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Antonyms",
+  "difficulty": "medium",
+  "question_en": "Select the word opposite in meaning to DILIGENT.",
+  "options": [
+   {
+    "en": "industrious"
+   },
+   {
+    "en": "indolent"
+   },
+   {
+    "en": "careful"
+   },
+   {
+    "en": "sincere"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Diligent means hard-working; indolent means habitually lazy.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Antonyms",
+  "difficulty": "medium",
+  "question_en": "Select the word opposite in meaning to BENIGN.",
+  "options": [
+   {
+    "en": "malignant"
+   },
+   {
+    "en": "gentle"
+   },
+   {
+    "en": "harmless"
+   },
+   {
+    "en": "kind"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Benign means harmless or gentle; malignant means harmful or disease-causing (e.g. a malignant tumour).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Antonyms",
+  "difficulty": "medium",
+  "question_en": "Select the word opposite in meaning to INEVITABLE.",
+  "options": [
+   {
+    "en": "certain"
+   },
+   {
+    "en": "unavoidable"
+   },
+   {
+    "en": "sure"
+   },
+   {
+    "en": "avoidable"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Inevitable means unable to be avoided; avoidable is its opposite.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Antonyms",
+  "difficulty": "hard",
+  "question_en": "Select the word opposite in meaning to ZENITH.",
+  "options": [
+   {
+    "en": "summit"
+   },
+   {
+    "en": "peak"
+   },
+   {
+    "en": "nadir"
+   },
+   {
+    "en": "apex"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Zenith is the highest point; nadir is the lowest point.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Antonyms",
+  "difficulty": "hard",
+  "question_en": "Select the word opposite in meaning to TACITURN.",
+  "options": [
+   {
+    "en": "reserved"
+   },
+   {
+    "en": "talkative"
+   },
+   {
+    "en": "silent"
+   },
+   {
+    "en": "stern"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Taciturn means habitually silent; talkative is its antonym.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Antonyms",
+  "difficulty": "hard",
+  "question_en": "Select the word opposite in meaning to MAGNANIMOUS.",
+  "options": [
+   {
+    "en": "petty"
+   },
+   {
+    "en": "generous"
+   },
+   {
+    "en": "noble"
+   },
+   {
+    "en": "forgiving"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Magnanimous means generous and forgiving; petty means small-minded and mean.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "One-word substitution",
+  "difficulty": "easy",
+  "question_en": "Select the one word that can replace: ‘That which cannot be read’.",
+  "options": [
+   {
+    "en": "Illiterate"
+   },
+   {
+    "en": "Invisible"
+   },
+   {
+    "en": "Incorrigible"
+   },
+   {
+    "en": "Illegible"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Illegible means impossible to read because of poor handwriting or print; illiterate refers to a person who cannot read.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "One-word substitution",
+  "difficulty": "easy",
+  "question_en": "Select the one word that can replace: ‘That which cannot be avoided’.",
+  "options": [
+   {
+    "en": "Inevitable"
+   },
+   {
+    "en": "Invincible"
+   },
+   {
+    "en": "Incredible"
+   },
+   {
+    "en": "Inaudible"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Inevitable means certain to happen and unavoidable.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "One-word substitution",
+  "difficulty": "medium",
+  "question_en": "Select the one word that can replace: ‘One who devotes his life to the welfare of others’.",
+  "options": [
+   {
+    "en": "Egoist"
+   },
+   {
+    "en": "Optimist"
+   },
+   {
+    "en": "Pessimist"
+   },
+   {
+    "en": "Altruist"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "An altruist is selflessly concerned for the well-being of others; an egoist is self-centred.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "One-word substitution",
+  "difficulty": "medium",
+  "question_en": "Select the one word that can replace: ‘Government by a small group of people’.",
+  "options": [
+   {
+    "en": "Democracy"
+   },
+   {
+    "en": "Oligarchy"
+   },
+   {
+    "en": "Monarchy"
+   },
+   {
+    "en": "Autocracy"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Oligarchy = rule by a few; democracy = by the people; monarchy/autocracy = by one.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "One-word substitution",
+  "difficulty": "medium",
+  "question_en": "Select the one word that can replace: ‘The scientific study of birds’.",
+  "options": [
+   {
+    "en": "Entomology"
+   },
+   {
+    "en": "Zoology"
+   },
+   {
+    "en": "Ornithology"
+   },
+   {
+    "en": "Etymology"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Ornithology is the study of birds; entomology is of insects, etymology of word origins.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "One-word substitution",
+  "difficulty": "medium",
+  "question_en": "Select the one word that can replace: ‘One who knows everything’.",
+  "options": [
+   {
+    "en": "Omniscient"
+   },
+   {
+    "en": "Omnipotent"
+   },
+   {
+    "en": "Omnipresent"
+   },
+   {
+    "en": "Omnivorous"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Omniscient = all-knowing; omnipotent = all-powerful; omnipresent = present everywhere.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "One-word substitution",
+  "difficulty": "medium",
+  "question_en": "Select the one word that can replace: ‘A place where bees are kept’.",
+  "options": [
+   {
+    "en": "Aviary"
+   },
+   {
+    "en": "Apiary"
+   },
+   {
+    "en": "Aquarium"
+   },
+   {
+    "en": "Armoury"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "An apiary houses bees; an aviary houses birds.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "One-word substitution",
+  "difficulty": "hard",
+  "question_en": "Select the one word that can replace: ‘The killing of a king’.",
+  "options": [
+   {
+    "en": "Fratricide"
+   },
+   {
+    "en": "Suicide"
+   },
+   {
+    "en": "Homicide"
+   },
+   {
+    "en": "Regicide"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Regicide (Latin rex = king) is the killing of a king; fratricide is killing of a brother.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "One-word substitution",
+  "difficulty": "hard",
+  "question_en": "Select the one word that can replace: ‘An abnormal fear of open or crowded places’.",
+  "options": [
+   {
+    "en": "Claustrophobia"
+   },
+   {
+    "en": "Hydrophobia"
+   },
+   {
+    "en": "Agoraphobia"
+   },
+   {
+    "en": "Xenophobia"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Agoraphobia is fear of open spaces; claustrophobia is fear of closed spaces.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "One-word substitution",
+  "difficulty": "hard",
+  "question_en": "Select the one word that can replace: ‘A person who hates mankind’.",
+  "options": [
+   {
+    "en": "Philanthropist"
+   },
+   {
+    "en": "Misogynist"
+   },
+   {
+    "en": "Misanthrope"
+   },
+   {
+    "en": "Pedant"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "A misanthrope hates or distrusts people in general; a misogynist hates women.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Idioms and phrases",
+  "difficulty": "easy",
+  "question_en": "Select the meaning of the idiom: ‘To break the ice’.",
+  "options": [
+   {
+    "en": "To damage something"
+   },
+   {
+    "en": "To feel very cold"
+   },
+   {
+    "en": "To end a friendship"
+   },
+   {
+    "en": "To start a conversation in a social setting"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "“Break the ice” means to ease the initial awkwardness between people who have just met.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Idioms and phrases",
+  "difficulty": "easy",
+  "question_en": "Select the meaning of the idiom: ‘Once in a blue moon’.",
+  "options": [
+   {
+    "en": "Every month"
+   },
+   {
+    "en": "Very rarely"
+   },
+   {
+    "en": "At night"
+   },
+   {
+    "en": "Very frequently"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "“Once in a blue moon” means something that happens extremely rarely.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Idioms and phrases",
+  "difficulty": "easy",
+  "question_en": "Select the meaning of the idiom: ‘A piece of cake’.",
+  "options": [
+   {
+    "en": "Something very easy"
+   },
+   {
+    "en": "A small gift"
+   },
+   {
+    "en": "A sweet dish"
+   },
+   {
+    "en": "A difficult task"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The idiom describes a task that is very easy to do.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Idioms and phrases",
+  "difficulty": "medium",
+  "question_en": "Select the meaning of the idiom: ‘To bite the bullet’.",
+  "options": [
+   {
+    "en": "To face a painful situation with courage"
+   },
+   {
+    "en": "To eat quickly"
+   },
+   {
+    "en": "To use force"
+   },
+   {
+    "en": "To avoid a problem"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The phrase means to endure a painful or unpleasant situation bravely.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Idioms and phrases",
+  "difficulty": "medium",
+  "question_en": "Select the meaning of the idiom: ‘To burn the midnight oil’.",
+  "options": [
+   {
+    "en": "To waste resources"
+   },
+   {
+    "en": "To light a lamp"
+   },
+   {
+    "en": "To cause a fire"
+   },
+   {
+    "en": "To work late into the night"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The idiom refers to studying or working until late at night.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Idioms and phrases",
+  "difficulty": "medium",
+  "question_en": "Select the meaning of the idiom: ‘Under the weather’.",
+  "options": [
+   {
+    "en": "Standing in the rain"
+   },
+   {
+    "en": "Very cheerful"
+   },
+   {
+    "en": "Feeling unwell"
+   },
+   {
+    "en": "Highly successful"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "“Under the weather” means slightly ill or in low spirits.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Idioms and phrases",
+  "difficulty": "medium",
+  "question_en": "Select the meaning of the idiom: ‘To beat around the bush’.",
+  "options": [
+   {
+    "en": "To search for something"
+   },
+   {
+    "en": "To avoid coming to the main point"
+   },
+   {
+    "en": "To hunt animals"
+   },
+   {
+    "en": "To clear the garden"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The idiom means to talk about unimportant things instead of getting to the point.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Idioms and phrases",
+  "difficulty": "medium",
+  "question_en": "Select the meaning of the idiom: ‘A blessing in disguise’.",
+  "options": [
+   {
+    "en": "Something good that seemed bad at first"
+   },
+   {
+    "en": "A secret prayer"
+   },
+   {
+    "en": "A hidden fear"
+   },
+   {
+    "en": "A fake gift"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "It describes a misfortune that eventually turns out to be beneficial.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Idioms and phrases",
+  "difficulty": "medium",
+  "question_en": "Select the meaning of the idiom: ‘To cry over spilt milk’.",
+  "options": [
+   {
+    "en": "To waste food"
+   },
+   {
+    "en": "To behave like a child"
+   },
+   {
+    "en": "To regret something that cannot be undone"
+   },
+   {
+    "en": "To mourn a death"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The idiom warns against useless grief over past mistakes that cannot be corrected.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Idioms and phrases",
+  "difficulty": "hard",
+  "question_en": "Select the meaning of the idiom: ‘Achilles’ heel’.",
+  "options": [
+   {
+    "en": "A strong ally"
+   },
+   {
+    "en": "A person’s weak point"
+   },
+   {
+    "en": "A hidden talent"
+   },
+   {
+    "en": "An old injury"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "From Greek myth, Achilles was vulnerable only at his heel; the idiom means a fatal weakness in an otherwise strong person.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Idioms and phrases",
+  "difficulty": "hard",
+  "question_en": "Select the meaning of the idiom: ‘Swan song’.",
+  "options": [
+   {
+    "en": "A beautiful melody"
+   },
+   {
+    "en": "A sad rumour"
+   },
+   {
+    "en": "A new beginning"
+   },
+   {
+    "en": "A final performance or act before retirement"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "A swan song is the last work or appearance of a person before retirement or death.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Idioms and phrases",
+  "difficulty": "hard",
+  "question_en": "Select the meaning of the idiom: ‘The elephant in the room’.",
+  "options": [
+   {
+    "en": "A very large object"
+   },
+   {
+    "en": "A famous guest"
+   },
+   {
+    "en": "An obvious problem that people avoid discussing"
+   },
+   {
+    "en": "A simple solution"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The idiom refers to a major issue everyone knows about but nobody wants to talk about.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Spelling",
+  "difficulty": "easy",
+  "question_en": "Choose the correctly spelt word.",
+  "options": [
+   {
+    "en": "Consience"
+   },
+   {
+    "en": "Conscinece"
+   },
+   {
+    "en": "Concience"
+   },
+   {
+    "en": "Conscience"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The correct spelling is C-O-N-S-C-I-E-N-C-E.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Spelling",
+  "difficulty": "medium",
+  "question_en": "Choose the correctly spelt word.",
+  "options": [
+   {
+    "en": "Accomodation"
+   },
+   {
+    "en": "Accommodation"
+   },
+   {
+    "en": "Acommodation"
+   },
+   {
+    "en": "Accommodetion"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "“Accommodation” has double c and double m.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Spelling",
+  "difficulty": "medium",
+  "question_en": "Choose the correctly spelt word.",
+  "options": [
+   {
+    "en": "Embarrassment"
+   },
+   {
+    "en": "Embarassment"
+   },
+   {
+    "en": "Embarrasment"
+   },
+   {
+    "en": "Embaressment"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "“Embarrassment” has double r and double s.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Spelling",
+  "difficulty": "medium",
+  "question_en": "Choose the correctly spelt word.",
+  "options": [
+   {
+    "en": "Maintainance"
+   },
+   {
+    "en": "Maintenence"
+   },
+   {
+    "en": "Maintenance"
+   },
+   {
+    "en": "Maintanance"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The noun of “maintain” is spelt maintenance (-tenance, not -tainance).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Spelling",
+  "difficulty": "medium",
+  "question_en": "Choose the correctly spelt word.",
+  "options": [
+   {
+    "en": "Occurence"
+   },
+   {
+    "en": "Occurrence"
+   },
+   {
+    "en": "Occurrance"
+   },
+   {
+    "en": "Ocurrence"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "“Occurrence” has double c, double r and ends in -ence.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Spelling",
+  "difficulty": "easy",
+  "question_en": "Choose the INCORRECTLY spelt word.",
+  "options": [
+   {
+    "en": "Necessary"
+   },
+   {
+    "en": "Recieve"
+   },
+   {
+    "en": "Believe"
+   },
+   {
+    "en": "Achieve"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "“Receive” follows the rule ‘i before e except after c’, so ‘Recieve’ is wrong.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Spelling",
+  "difficulty": "medium",
+  "question_en": "Choose the correctly spelt word.",
+  "options": [
+   {
+    "en": "Privilege"
+   },
+   {
+    "en": "Priviledge"
+   },
+   {
+    "en": "Privelege"
+   },
+   {
+    "en": "Previlege"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The correct spelling is P-R-I-V-I-L-E-G-E; there is no d.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Spelling",
+  "difficulty": "hard",
+  "question_en": "Choose the correctly spelt word.",
+  "options": [
+   {
+    "en": "Questionaire"
+   },
+   {
+    "en": "Quesionnaire"
+   },
+   {
+    "en": "Questionnare"
+   },
+   {
+    "en": "Questionnaire"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "“Questionnaire” has double n, derived from French.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Spelling",
+  "difficulty": "easy",
+  "question_en": "Choose the INCORRECTLY spelt word.",
+  "options": [
+   {
+    "en": "Government"
+   },
+   {
+    "en": "Environment"
+   },
+   {
+    "en": "Separate"
+   },
+   {
+    "en": "Seperate"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The correct spelling is “separate” (sep-a-rate), so ‘Seperate’ is wrong.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Homophones",
+  "difficulty": "easy",
+  "question_en": "Select the most appropriate option to fill in the blanks.\nThe ______ shop sells pens and paper, but the bus outside remained ______ for an hour.",
+  "options": [
+   {
+    "en": "stationary; stationery"
+   },
+   {
+    "en": "stationery; stationary"
+   },
+   {
+    "en": "stationary; stationary"
+   },
+   {
+    "en": "stationery; stationery"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "'Stationery' (with e, as in envelope/pen) means writing materials; 'stationary' (with a) means not moving. So 'stationery shop' and 'remained stationary'.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Homophones",
+  "difficulty": "hard",
+  "question_en": "Select the most appropriate option to fill in the blanks.\nThe ______ of the school praised the student for his high moral ______.",
+  "options": [
+   {
+    "en": "principle; principals"
+   },
+   {
+    "en": "principal; principals"
+   },
+   {
+    "en": "principle; principles"
+   },
+   {
+    "en": "principal; principles"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "'Principal' is the head of a school; 'principles' are moral rules or beliefs. So 'The principal ... high moral principles'.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Phrasal verbs",
+  "difficulty": "easy",
+  "question_en": "Select the most appropriate option to fill in the blank.\nThe meeting was ______ because the chairman was ill.",
+  "options": [
+   {
+    "en": "called on"
+   },
+   {
+    "en": "called up"
+   },
+   {
+    "en": "called for"
+   },
+   {
+    "en": "called off"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "'Call off' means to cancel. 'Call on' means to visit, 'call up' to telephone or summon for military service, and 'call for' to demand or require.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Phrasal verbs",
+  "difficulty": "medium",
+  "question_en": "Select the most appropriate option to fill in the blank.\nRiya takes ______ her mother; both have the same smile and the same patience.",
+  "options": [
+   {
+    "en": "up"
+   },
+   {
+    "en": "after"
+   },
+   {
+    "en": "over"
+   },
+   {
+    "en": "in"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "'Take after' means to resemble an older family member. 'Take up' means to start a hobby, 'take over' to gain control and 'take in' to deceive or absorb.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Collocations",
+  "difficulty": "medium",
+  "question_en": "Select the most appropriate option to fill in the blank.\nThere was ______ rain throughout the night, and the roads were flooded by morning.",
+  "options": [
+   {
+    "en": "strong"
+   },
+   {
+    "en": "thick"
+   },
+   {
+    "en": "big"
+   },
+   {
+    "en": "heavy"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The fixed collocation is 'heavy rain' (also heavy traffic, heavy smoker). 'Strong' goes with wind or tea, and 'thick' with fog.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Collocations",
+  "difficulty": "medium",
+  "question_en": "Select the most appropriate option to fill in the blank.\nThe Education Minister ______ a speech at the national conference on teacher training.",
+  "options": [
+   {
+    "en": "delivered"
+   },
+   {
+    "en": "told"
+   },
+   {
+    "en": "said"
+   },
+   {
+    "en": "spoke"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "We 'deliver' (or give/make) a speech. 'Told' needs a person or a story, 'said' needs the words spoken, and 'spoke' takes 'on' or 'to', not a direct object 'a speech'.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Proverbs",
+  "difficulty": "easy",
+  "question_en": "Select the most appropriate meaning of the given proverb.\nToo many cooks spoil the broth.",
+  "options": [
+   {
+    "en": "Cooking needs many helpers"
+   },
+   {
+    "en": "Expensive food is often badly made"
+   },
+   {
+    "en": "When too many people handle a task, the result is poor"
+   },
+   {
+    "en": "Many hands make the work light"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The proverb warns that when too many people try to manage the same work, they get in each other's way and spoil it. 'Many hands make light work' is a different proverb with the opposite idea.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Homonyms",
+  "difficulty": "medium",
+  "question_en": "Select the word that can fill both blanks.\nThe ______ of the river was flooded after the storm. / She deposited her salary in the ______.",
+  "options": [
+   {
+    "en": "shore"
+   },
+   {
+    "en": "branch"
+   },
+   {
+    "en": "account"
+   },
+   {
+    "en": "bank"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "'Bank' is a homonym: the side of a river and a financial institution. 'Shore' fits only the first blank and 'account' only the second.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_vocab",
+  "subtopic": "Spelling",
+  "difficulty": "medium",
+  "question_en": "Select the sentence with no spelling error.",
+  "options": [
+   {
+    "en": "The committee will recommend a seperate budget for the library."
+   },
+   {
+    "en": "The comittee will recommend a separate budget for the library."
+   },
+   {
+    "en": "The committee will recommend a separate budget for the library."
+   },
+   {
+    "en": "The committee will reccommend a separate budget for the library."
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Correct spellings: committee (double m, double t, double e), recommend (one c, double m) and separate (sep-a-rate). Only option 3 has all three right.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_comprehension",
+  "subtopic": "Cloze test",
+  "difficulty": "easy",
+  "question_en": "Passage: Water is (1) ______ for all living beings. However, in recent years many cities have been (2) ______ from acute water shortage. The main reason is the (3) ______ use of groundwater by industries and households. If we do not take steps to (4) ______ water, future generations will have to pay a heavy price. Every citizen should therefore (5) ______ responsibility and avoid wastage.\n\nSelect the most appropriate option to fill blank (1).\nRelevant sentence: Water is (1) ______ for all living beings.",
+  "options": [
+   {
+    "en": "essential"
+   },
+   {
+    "en": "optional"
+   },
+   {
+    "en": "harmful"
+   },
+   {
+    "en": "unknown"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Water is necessary for all life, so “essential” fits the context.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_comprehension",
+  "subtopic": "Cloze test",
+  "difficulty": "medium",
+  "question_en": "Passage: Water is (1) ______ for all living beings. However, in recent years many cities have been (2) ______ from acute water shortage. The main reason is the (3) ______ use of groundwater by industries and households. If we do not take steps to (4) ______ water, future generations will have to pay a heavy price. Every citizen should therefore (5) ______ responsibility and avoid wastage.\n\nSelect the most appropriate option to fill blank (2).\nRelevant sentence: ... many cities have been (2) ______ from acute water shortage.",
+  "options": [
+   {
+    "en": "escaping"
+   },
+   {
+    "en": "suffering"
+   },
+   {
+    "en": "benefiting"
+   },
+   {
+    "en": "preferring"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "“Suffer from” is the correct collocation, and the sense (problems of shortage) is negative.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_comprehension",
+  "subtopic": "Cloze test",
+  "difficulty": "medium",
+  "question_en": "Passage: Water is (1) ______ for all living beings. However, in recent years many cities have been (2) ______ from acute water shortage. The main reason is the (3) ______ use of groundwater by industries and households. If we do not take steps to (4) ______ water, future generations will have to pay a heavy price. Every citizen should therefore (5) ______ responsibility and avoid wastage.\n\nSelect the most appropriate option to fill blank (3).\nRelevant sentence: The main reason is the (3) ______ use of groundwater by industries and households.",
+  "options": [
+   {
+    "en": "careful"
+   },
+   {
+    "en": "limited"
+   },
+   {
+    "en": "excessive"
+   },
+   {
+    "en": "rare"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "A ‘reason’ for shortage must be over-use, hence “excessive”.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_comprehension",
+  "subtopic": "Cloze test",
+  "difficulty": "easy",
+  "question_en": "Passage: Water is (1) ______ for all living beings. However, in recent years many cities have been (2) ______ from acute water shortage. The main reason is the (3) ______ use of groundwater by industries and households. If we do not take steps to (4) ______ water, future generations will have to pay a heavy price. Every citizen should therefore (5) ______ responsibility and avoid wastage.\n\nSelect the most appropriate option to fill blank (4).\nRelevant sentence: If we do not take steps to (4) ______ water, future generations will have to pay a heavy price.",
+  "options": [
+   {
+    "en": "waste"
+   },
+   {
+    "en": "pollute"
+   },
+   {
+    "en": "conserve"
+   },
+   {
+    "en": "ignore"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The sentence calls for steps to save water, so “conserve” fits.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_comprehension",
+  "subtopic": "Cloze test",
+  "difficulty": "hard",
+  "question_en": "Passage: Water is (1) ______ for all living beings. However, in recent years many cities have been (2) ______ from acute water shortage. The main reason is the (3) ______ use of groundwater by industries and households. If we do not take steps to (4) ______ water, future generations will have to pay a heavy price. Every citizen should therefore (5) ______ responsibility and avoid wastage.\n\nSelect the most appropriate option to fill blank (5).\nRelevant sentence: Every citizen should therefore (5) ______ responsibility and avoid wastage.",
+  "options": [
+   {
+    "en": "make"
+   },
+   {
+    "en": "do"
+   },
+   {
+    "en": "give"
+   },
+   {
+    "en": "take"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The fixed collocation is “take responsibility”.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_comprehension",
+  "subtopic": "Cloze test",
+  "difficulty": "easy",
+  "question_en": "Passage: Reading is a habit that (1) ______ the mind and improves imagination. A student who reads regularly (2) ______ better vocabulary and writing skills than one who does not. Unfortunately, the (3) ______ of mobile phones has reduced the time young people (4) ______ on books. Teachers should (5) ______ students to visit libraries and discuss what they read.\n\nSelect the most appropriate option to fill blank (1).\nRelevant sentence: Reading is a habit that (1) ______ the mind and improves imagination.",
+  "options": [
+   {
+    "en": "destroys"
+   },
+   {
+    "en": "enriches"
+   },
+   {
+    "en": "confuses"
+   },
+   {
+    "en": "tires"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "“Enriches” is the positive verb that agrees with “improves imagination”.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_comprehension",
+  "subtopic": "Cloze test",
+  "difficulty": "medium",
+  "question_en": "Passage: Reading is a habit that (1) ______ the mind and improves imagination. A student who reads regularly (2) ______ better vocabulary and writing skills than one who does not. Unfortunately, the (3) ______ of mobile phones has reduced the time young people (4) ______ on books. Teachers should (5) ______ students to visit libraries and discuss what they read.\n\nSelect the most appropriate option to fill blank (2).\nRelevant sentence: A student who reads regularly (2) ______ better vocabulary and writing skills than one who does not.",
+  "options": [
+   {
+    "en": "avoids"
+   },
+   {
+    "en": "loses"
+   },
+   {
+    "en": "develops"
+   },
+   {
+    "en": "forgets"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "A regular reader develops better vocabulary; the other options are illogical.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_comprehension",
+  "subtopic": "Cloze test",
+  "difficulty": "medium",
+  "question_en": "Passage: Reading is a habit that (1) ______ the mind and improves imagination. A student who reads regularly (2) ______ better vocabulary and writing skills than one who does not. Unfortunately, the (3) ______ of mobile phones has reduced the time young people (4) ______ on books. Teachers should (5) ______ students to visit libraries and discuss what they read.\n\nSelect the most appropriate option to fill blank (3).\nRelevant sentence: Unfortunately, the (3) ______ of mobile phones has reduced the time ...",
+  "options": [
+   {
+    "en": "absence"
+   },
+   {
+    "en": "shortage"
+   },
+   {
+    "en": "popularity"
+   },
+   {
+    "en": "dislike"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Only the growing popularity of phones could reduce time for books; “absence/shortage/dislike” would not.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_comprehension",
+  "subtopic": "Cloze test",
+  "difficulty": "medium",
+  "question_en": "Passage: Reading is a habit that (1) ______ the mind and improves imagination. A student who reads regularly (2) ______ better vocabulary and writing skills than one who does not. Unfortunately, the (3) ______ of mobile phones has reduced the time young people (4) ______ on books. Teachers should (5) ______ students to visit libraries and discuss what they read.\n\nSelect the most appropriate option to fill blank (4).\nRelevant sentence: ... the time young people (4) ______ on books.",
+  "options": [
+   {
+    "en": "spending"
+   },
+   {
+    "en": "spends"
+   },
+   {
+    "en": "spend"
+   },
+   {
+    "en": "to spend"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "“Time (that) young people spend on books”: the relative clause has a plural subject, so the base form “spend” is correct.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_comprehension",
+  "subtopic": "Cloze test",
+  "difficulty": "medium",
+  "question_en": "Passage: Reading is a habit that (1) ______ the mind and improves imagination. A student who reads regularly (2) ______ better vocabulary and writing skills than one who does not. Unfortunately, the (3) ______ of mobile phones has reduced the time young people (4) ______ on books. Teachers should (5) ______ students to visit libraries and discuss what they read.\n\nSelect the most appropriate option to fill blank (5).\nRelevant sentence: Teachers should (5) ______ students to visit libraries and discuss what they read.",
+  "options": [
+   {
+    "en": "discourage"
+   },
+   {
+    "en": "encourage"
+   },
+   {
+    "en": "prevent"
+   },
+   {
+    "en": "forbid"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The passage’s message supports reading, so teachers should “encourage” students.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_comprehension",
+  "subtopic": "Reading comprehension",
+  "difficulty": "easy",
+  "question_en": "Passage: Sleep is often treated as a luxury by students and working adults, yet scientists consider it as essential as food and water. During sleep the brain does not simply switch off; it sorts the information gathered during the day, stores important memories and clears away harmful chemicals that accumulate while we are awake. Children who sleep for less than eight hours are more likely to have difficulty in concentrating and to show poor results in examinations. Adults who regularly sleep for only five or six hours face a higher risk of heart disease and depression. Experts therefore advise a fixed bedtime, avoiding screens an hour before sleeping and keeping the bedroom dark and quiet. Contrary to popular belief, sleeping late on weekends cannot fully repay the “sleep debt” collected during the week.\n\nWhat is the main idea of the passage?",
+  "options": [
+   {
+    "en": "Students should study at night."
+   },
+   {
+    "en": "Weekends are meant for rest only."
+   },
+   {
+    "en": "Sleep is essential for health and learning."
+   },
+   {
+    "en": "Screens improve sleep quality."
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The passage opens by calling sleep as essential as food and water, then describes its effects on the brain, children and adults.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_comprehension",
+  "subtopic": "Reading comprehension",
+  "difficulty": "medium",
+  "question_en": "Passage: Sleep is often treated as a luxury by students and working adults, yet scientists consider it as essential as food and water. During sleep the brain does not simply switch off; it sorts the information gathered during the day, stores important memories and clears away harmful chemicals that accumulate while we are awake. Children who sleep for less than eight hours are more likely to have difficulty in concentrating and to show poor results in examinations. Adults who regularly sleep for only five or six hours face a higher risk of heart disease and depression. Experts therefore advise a fixed bedtime, avoiding screens an hour before sleeping and keeping the bedroom dark and quiet. Contrary to popular belief, sleeping late on weekends cannot fully repay the “sleep debt” collected during the week.\n\nWhich of the following is NOT mentioned as something the brain does during sleep?",
+  "options": [
+   {
+    "en": "Sorts information gathered in the day"
+   },
+   {
+    "en": "Strengthens the bones"
+   },
+   {
+    "en": "Stores important memories"
+   },
+   {
+    "en": "Clears away harmful chemicals"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The passage lists sorting information, storing memories and clearing chemicals. Bone strength is never mentioned.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_comprehension",
+  "subtopic": "Reading comprehension",
+  "difficulty": "medium",
+  "question_en": "Passage: Sleep is often treated as a luxury by students and working adults, yet scientists consider it as essential as food and water. During sleep the brain does not simply switch off; it sorts the information gathered during the day, stores important memories and clears away harmful chemicals that accumulate while we are awake. Children who sleep for less than eight hours are more likely to have difficulty in concentrating and to show poor results in examinations. Adults who regularly sleep for only five or six hours face a higher risk of heart disease and depression. Experts therefore advise a fixed bedtime, avoiding screens an hour before sleeping and keeping the bedroom dark and quiet. Contrary to popular belief, sleeping late on weekends cannot fully repay the “sleep debt” collected during the week.\n\nChoose the word closest in meaning to ‘accumulate’ as used in the passage.",
+  "options": [
+   {
+    "en": "gather"
+   },
+   {
+    "en": "disappear"
+   },
+   {
+    "en": "reduce"
+   },
+   {
+    "en": "dissolve"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "“Accumulate” means to build up gradually, i.e. gather.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_comprehension",
+  "subtopic": "Reading comprehension",
+  "difficulty": "medium",
+  "question_en": "Passage: Sleep is often treated as a luxury by students and working adults, yet scientists consider it as essential as food and water. During sleep the brain does not simply switch off; it sorts the information gathered during the day, stores important memories and clears away harmful chemicals that accumulate while we are awake. Children who sleep for less than eight hours are more likely to have difficulty in concentrating and to show poor results in examinations. Adults who regularly sleep for only five or six hours face a higher risk of heart disease and depression. Experts therefore advise a fixed bedtime, avoiding screens an hour before sleeping and keeping the bedroom dark and quiet. Contrary to popular belief, sleeping late on weekends cannot fully repay the “sleep debt” collected during the week.\n\nAccording to the passage, which statement about sleeping late on weekends is true?",
+  "options": [
+   {
+    "en": "It improves examination results."
+   },
+   {
+    "en": "It reduces the need for food."
+   },
+   {
+    "en": "It helps cure heart disease."
+   },
+   {
+    "en": "It cannot fully repay the sleep debt of the week."
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The last sentence says sleeping late on weekends 'cannot fully repay the sleep debt collected during the week'. The passage makes none of the other three claims.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_comprehension",
+  "subtopic": "Reading comprehension",
+  "difficulty": "medium",
+  "question_en": "Passage: Sleep is often treated as a luxury by students and working adults, yet scientists consider it as essential as food and water. During sleep the brain does not simply switch off; it sorts the information gathered during the day, stores important memories and clears away harmful chemicals that accumulate while we are awake. Children who sleep for less than eight hours are more likely to have difficulty in concentrating and to show poor results in examinations. Adults who regularly sleep for only five or six hours face a higher risk of heart disease and depression. Experts therefore advise a fixed bedtime, avoiding screens an hour before sleeping and keeping the bedroom dark and quiet. Contrary to popular belief, sleeping late on weekends cannot fully repay the “sleep debt” collected during the week.\n\nThe tone of the author in the passage is best described as:",
+  "options": [
+   {
+    "en": "humorous and casual"
+   },
+   {
+    "en": "informative and advisory"
+   },
+   {
+    "en": "sarcastic and critical"
+   },
+   {
+    "en": "nostalgic and emotional"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The author presents scientific facts and gives expert advice, so the tone is informative and advisory.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_comprehension",
+  "subtopic": "Reading comprehension",
+  "difficulty": "easy",
+  "question_en": "Passage: Trees in cities do much more than make streets look pleasant. A single mature tree can absorb about twenty kilograms of carbon dioxide in a year and release enough oxygen for two people. Their leaves trap dust, while their shade can lower the temperature of a neighbourhood by several degrees, reducing the need for air conditioners. In many Indian cities, however, trees are felled for widening roads and constructing flyovers, often without any plan to replace them. Urban planners argue that development and greenery are not enemies; roads can be designed around existing trees, and every felled tree can be compensated by planting several saplings. Citizens, too, must take the initiative by protecting trees in their own colony instead of waiting for the government to act.\n\nWhat is the central theme of the passage?",
+  "options": [
+   {
+    "en": "Roads are more important than trees."
+   },
+   {
+    "en": "Air conditioners are harmful."
+   },
+   {
+    "en": "Saplings grow very fast."
+   },
+   {
+    "en": "Urban trees are valuable and should be protected."
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The passage details the benefits of city trees and urges planners and citizens to protect them.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_comprehension",
+  "subtopic": "Reading comprehension",
+  "difficulty": "easy",
+  "question_en": "Passage: Trees in cities do much more than make streets look pleasant. A single mature tree can absorb about twenty kilograms of carbon dioxide in a year and release enough oxygen for two people. Their leaves trap dust, while their shade can lower the temperature of a neighbourhood by several degrees, reducing the need for air conditioners. In many Indian cities, however, trees are felled for widening roads and constructing flyovers, often without any plan to replace them. Urban planners argue that development and greenery are not enemies; roads can be designed around existing trees, and every felled tree can be compensated by planting several saplings. Citizens, too, must take the initiative by protecting trees in their own colony instead of waiting for the government to act.\n\nAccording to the passage, how does the shade of trees help a neighbourhood?",
+  "options": [
+   {
+    "en": "It traps dust in the air."
+   },
+   {
+    "en": "It releases oxygen at night."
+   },
+   {
+    "en": "It reduces the need for air conditioners."
+   },
+   {
+    "en": "It makes roads wider."
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The passage says shade lowers the temperature and reduces the need for air conditioners; trapping dust is done by leaves.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_comprehension",
+  "subtopic": "Reading comprehension",
+  "difficulty": "medium",
+  "question_en": "Passage: Trees in cities do much more than make streets look pleasant. A single mature tree can absorb about twenty kilograms of carbon dioxide in a year and release enough oxygen for two people. Their leaves trap dust, while their shade can lower the temperature of a neighbourhood by several degrees, reducing the need for air conditioners. In many Indian cities, however, trees are felled for widening roads and constructing flyovers, often without any plan to replace them. Urban planners argue that development and greenery are not enemies; roads can be designed around existing trees, and every felled tree can be compensated by planting several saplings. Citizens, too, must take the initiative by protecting trees in their own colony instead of waiting for the government to act.\n\nThe word ‘felled’ in the passage means:",
+  "options": [
+   {
+    "en": "cut down"
+   },
+   {
+    "en": "planted"
+   },
+   {
+    "en": "watered"
+   },
+   {
+    "en": "trimmed"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "To fell a tree is to cut it down.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_comprehension",
+  "subtopic": "Reading comprehension",
+  "difficulty": "medium",
+  "question_en": "Passage: Trees in cities do much more than make streets look pleasant. A single mature tree can absorb about twenty kilograms of carbon dioxide in a year and release enough oxygen for two people. Their leaves trap dust, while their shade can lower the temperature of a neighbourhood by several degrees, reducing the need for air conditioners. In many Indian cities, however, trees are felled for widening roads and constructing flyovers, often without any plan to replace them. Urban planners argue that development and greenery are not enemies; roads can be designed around existing trees, and every felled tree can be compensated by planting several saplings. Citizens, too, must take the initiative by protecting trees in their own colony instead of waiting for the government to act.\n\nWhat is the view of urban planners according to the passage?",
+  "options": [
+   {
+    "en": "Trees should be removed for flyovers."
+   },
+   {
+    "en": "Development and greenery can go together."
+   },
+   {
+    "en": "Only the government can protect trees."
+   },
+   {
+    "en": "Saplings are not useful."
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Planners argue that development and greenery are not enemies, since roads can be designed around trees.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_comprehension",
+  "subtopic": "Reading comprehension",
+  "difficulty": "hard",
+  "question_en": "Passage: Trees in cities do much more than make streets look pleasant. A single mature tree can absorb about twenty kilograms of carbon dioxide in a year and release enough oxygen for two people. Their leaves trap dust, while their shade can lower the temperature of a neighbourhood by several degrees, reducing the need for air conditioners. In many Indian cities, however, trees are felled for widening roads and constructing flyovers, often without any plan to replace them. Urban planners argue that development and greenery are not enemies; roads can be designed around existing trees, and every felled tree can be compensated by planting several saplings. Citizens, too, must take the initiative by protecting trees in their own colony instead of waiting for the government to act.\n\nWhich of the following can be inferred from the passage?",
+  "options": [
+   {
+    "en": "Citizens are not interested in trees."
+   },
+   {
+    "en": "One tree supplies oxygen for a whole colony."
+   },
+   {
+    "en": "The government has banned flyovers."
+   },
+   {
+    "en": "Many Indian cities cut trees without a replacement plan."
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The phrase “often without any plan to replace them” supports this inference; the other options exaggerate or contradict the text.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_comprehension",
+  "subtopic": "Para jumbles",
+  "difficulty": "easy",
+  "question_en": "Sentences of a paragraph are given below in jumbled order. Arrange the sentences in the correct order to form a meaningful and coherent paragraph.\nP. Within a few years, the small shop had grown into the largest bookstore in the town.\nQ. Ramesh opened a tiny bookshop near the bus stand in 1998 with borrowed money.\nR. At first very few customers came, and he often sat alone among the shelves.\nS. Slowly, students began to visit because he let them read books free of cost in the shop.",
+  "options": [
+   {
+    "en": "RQPS"
+   },
+   {
+    "en": "QSRP"
+   },
+   {
+    "en": "QRSP"
+   },
+   {
+    "en": "PQRS"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Q introduces Ramesh and the shop, R describes the slow start ('At first'), S the change ('Slowly, students began to visit') and P the result 'within a few years'. Hence QRSP.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_comprehension",
+  "subtopic": "Para jumbles",
+  "difficulty": "hard",
+  "question_en": "Sentences of a paragraph are given below in jumbled order. Arrange the sentences in the correct order to form a meaningful and coherent paragraph.\nA. Plastic bags take hundreds of years to break down.\nB. As a result, they choke drains, harm animals and pollute the soil.\nC. Many states have therefore banned single-use plastic bags.\nD. Yet millions of them are thrown away every day after a single use.",
+  "options": [
+   {
+    "en": "ABDC"
+   },
+   {
+    "en": "DABC"
+   },
+   {
+    "en": "ACBD"
+   },
+   {
+    "en": "ADBC"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "A states the fact, D adds the contrast with 'Yet' (they are still thrown away daily), B gives the result of that ('As a result, they choke drains'), and C the remedy ('therefore banned'). Hence ADBC.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_comprehension",
+  "subtopic": "Para jumbles",
+  "difficulty": "medium",
+  "question_en": "Sentences of a paragraph are given below in jumbled order. Arrange the sentences in the correct order to form a meaningful and coherent paragraph.\n1) It was then that he decided to become a doctor and serve the poor.\n2) When Arun was ten, his grandfather fell seriously ill in their village.\n3) The nearest hospital was forty kilometres away, and the old man died on the way.\n4) Today he runs a free clinic in the same village.",
+  "options": [
+   {
+    "en": "2, 3, 1, 4"
+   },
+   {
+    "en": "1, 2, 3, 4"
+   },
+   {
+    "en": "2, 1, 3, 4"
+   },
+   {
+    "en": "3, 2, 4, 1"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "2 sets the scene (grandfather's illness), 3 tells what happened, 1 gives the decision ('It was then') which needs 3 before it, and 4 ends in the present ('Today'). Hence 2, 3, 1, 4.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_comprehension",
+  "subtopic": "Para jumbles",
+  "difficulty": "hard",
+  "question_en": "Sentences of a paragraph are given below in jumbled order. Arrange the sentences in the correct order to form a meaningful and coherent paragraph.\nP. In the Middle Ages books were copied by hand, so only the rich could own them.\nQ. The invention of the printing press in the fifteenth century changed this.\nR. As a result, knowledge, once the property of a few, reached ordinary people.\nS. Books could now be produced quickly and sold cheaply.",
+  "options": [
+   {
+    "en": "QPRS"
+   },
+   {
+    "en": "PSQR"
+   },
+   {
+    "en": "PQSR"
+   },
+   {
+    "en": "QSPR"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "P gives the old situation, Q the change ('changed this' refers back to P), S the immediate effect of printing ('could now be produced quickly') and R the wider result ('As a result'). Hence PQSR.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_comprehension",
+  "subtopic": "Sentence rearrangement",
+  "difficulty": "medium",
+  "question_en": "Rearrange the parts of the sentence in the correct order.\nThe government has decided\nP. so that no child\nQ. in remote villages\nR. is left without education\nS. to open new schools",
+  "options": [
+   {
+    "en": "PQSR"
+   },
+   {
+    "en": "SQPR"
+   },
+   {
+    "en": "SPQR"
+   },
+   {
+    "en": "QSRP"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "'Decided' is followed by the infinitive S 'to open new schools', then Q 'in remote villages', then the purpose clause P 'so that no child' and R 'is left without education'. Hence SQPR.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_comprehension",
+  "subtopic": "Reading comprehension – main idea",
+  "difficulty": "medium",
+  "question_en": "Passage: Millets such as jowar, bajra and ragi were once the staple food of most Indian households. They grow on poor soil, need very little water and can survive high temperatures, which makes them ideal for a country where more than half the farmland depends on rain. Nutritionally, they are rich in fibre, iron and calcium, and they release sugar into the blood slowly, which helps in controlling diabetes. After the Green Revolution of the 1960s, however, government support went mainly to rice and wheat, and millets came to be seen as the 'poor man's food'. Their share in the Indian plate shrank steadily. In recent years the trend has begun to reverse. The United Nations declared 2023 the International Year of Millets on India's proposal, and many states now serve millet dishes in school meals. Nutrition experts welcome the change but warn that the revival will last only if farmers receive a fair price for what they grow.\n\nWhat is the main idea of the passage?",
+  "options": [
+   {
+    "en": "Rice and wheat are more nutritious than millets."
+   },
+   {
+    "en": "Millets declined after the Green Revolution and are now being revived."
+   },
+   {
+    "en": "The Green Revolution was a complete failure."
+   },
+   {
+    "en": "Millets can be grown only in rain-fed areas."
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The passage traces millets from staple food, to decline after the Green Revolution, to the recent revival (International Year of Millets, school meals). The other options are either not stated or contradicted.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_comprehension",
+  "subtopic": "Reading comprehension – factual",
+  "difficulty": "easy",
+  "question_en": "Passage: Millets such as jowar, bajra and ragi were once the staple food of most Indian households. They grow on poor soil, need very little water and can survive high temperatures, which makes them ideal for a country where more than half the farmland depends on rain. Nutritionally, they are rich in fibre, iron and calcium, and they release sugar into the blood slowly, which helps in controlling diabetes. After the Green Revolution of the 1960s, however, government support went mainly to rice and wheat, and millets came to be seen as the 'poor man's food'. Their share in the Indian plate shrank steadily. In recent years the trend has begun to reverse. The United Nations declared 2023 the International Year of Millets on India's proposal, and many states now serve millet dishes in school meals. Nutrition experts welcome the change but warn that the revival will last only if farmers receive a fair price for what they grow.\n\nAccording to the passage, why are millets well suited to India?",
+  "options": [
+   {
+    "en": "They give the highest yield of all cereals."
+   },
+   {
+    "en": "They need fertile, well-irrigated land."
+   },
+   {
+    "en": "They grow on poor soil with very little water."
+   },
+   {
+    "en": "They are easy to export to other countries."
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The passage says millets 'grow on poor soil, need very little water and can survive high temperatures', which suits a country where most farmland depends on rain.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_comprehension",
+  "subtopic": "Reading comprehension – negative fact",
+  "difficulty": "medium",
+  "question_en": "Passage: Millets such as jowar, bajra and ragi were once the staple food of most Indian households. They grow on poor soil, need very little water and can survive high temperatures, which makes them ideal for a country where more than half the farmland depends on rain. Nutritionally, they are rich in fibre, iron and calcium, and they release sugar into the blood slowly, which helps in controlling diabetes. After the Green Revolution of the 1960s, however, government support went mainly to rice and wheat, and millets came to be seen as the 'poor man's food'. Their share in the Indian plate shrank steadily. In recent years the trend has begun to reverse. The United Nations declared 2023 the International Year of Millets on India's proposal, and many states now serve millet dishes in school meals. Nutrition experts welcome the change but warn that the revival will last only if farmers receive a fair price for what they grow.\n\nWhich of the following is NOT mentioned as a benefit of millets?",
+  "options": [
+   {
+    "en": "They are rich in iron and calcium."
+   },
+   {
+    "en": "They help in controlling diabetes."
+   },
+   {
+    "en": "They are rich in fibre."
+   },
+   {
+    "en": "They are rich in vitamin C."
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Fibre, iron, calcium and the slow release of sugar (helping diabetes) are all mentioned. Vitamin C is never mentioned, so option 4 is the answer.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_comprehension",
+  "subtopic": "Reading comprehension – vocabulary",
+  "difficulty": "easy",
+  "question_en": "Passage: Millets such as jowar, bajra and ragi were once the staple food of most Indian households. They grow on poor soil, need very little water and can survive high temperatures, which makes them ideal for a country where more than half the farmland depends on rain. Nutritionally, they are rich in fibre, iron and calcium, and they release sugar into the blood slowly, which helps in controlling diabetes. After the Green Revolution of the 1960s, however, government support went mainly to rice and wheat, and millets came to be seen as the 'poor man's food'. Their share in the Indian plate shrank steadily. In recent years the trend has begun to reverse. The United Nations declared 2023 the International Year of Millets on India's proposal, and many states now serve millet dishes in school meals. Nutrition experts welcome the change but warn that the revival will last only if farmers receive a fair price for what they grow.\n\nSelect the word closest in meaning to 'staple' as used in the passage.",
+  "options": [
+   {
+    "en": "main"
+   },
+   {
+    "en": "rare"
+   },
+   {
+    "en": "costly"
+   },
+   {
+    "en": "seasonal"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "'Staple food' is the main or basic food eaten regularly by a people. Rare, costly and seasonal do not fit 'the staple food of most Indian households'.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_comprehension",
+  "subtopic": "Reading comprehension – inference",
+  "difficulty": "hard",
+  "question_en": "Passage: Millets such as jowar, bajra and ragi were once the staple food of most Indian households. They grow on poor soil, need very little water and can survive high temperatures, which makes them ideal for a country where more than half the farmland depends on rain. Nutritionally, they are rich in fibre, iron and calcium, and they release sugar into the blood slowly, which helps in controlling diabetes. After the Green Revolution of the 1960s, however, government support went mainly to rice and wheat, and millets came to be seen as the 'poor man's food'. Their share in the Indian plate shrank steadily. In recent years the trend has begun to reverse. The United Nations declared 2023 the International Year of Millets on India's proposal, and many states now serve millet dishes in school meals. Nutrition experts welcome the change but warn that the revival will last only if farmers receive a fair price for what they grow.\n\nWhat can be inferred from the warning given by nutrition experts?",
+  "options": [
+   {
+    "en": "Millets will soon replace rice and wheat completely."
+   },
+   {
+    "en": "Farmers' earnings will decide whether the millet revival lasts."
+   },
+   {
+    "en": "School meals should stop serving millet dishes."
+   },
+   {
+    "en": "The United Nations will pay farmers to grow millets."
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The experts say the revival 'will last only if farmers receive a fair price'. So its future depends on farmers' income; the other options are not supported by the text.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_comprehension",
+  "subtopic": "Reading comprehension – title",
+  "difficulty": "easy",
+  "question_en": "Passage: When Meena Devi was posted to a government school in a small hill village, the building had two rooms, a leaking roof and forty children who came only on days when there was no work in the fields. Instead of complaining, she began by visiting every home in the evening. She listened to parents, learnt the local dialect and explained, without lecturing, why reading mattered. She turned the school veranda into a library with old newspapers and picture books collected from friends in the city. Within two years attendance had nearly doubled, and the village panchayat, moved by her persistence, repaired the roof with its own funds. Meena Devi never claimed the credit. 'The children did the work,' she said when a journalist asked about her success. 'I only kept the door open.'\n\nWhich of the following is the most suitable title for the passage?",
+  "options": [
+   {
+    "en": "Life in the Hills"
+   },
+   {
+    "en": "A Leaking Roof"
+   },
+   {
+    "en": "The Teacher Who Kept the Door Open"
+   },
+   {
+    "en": "The Duties of a Panchayat"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The passage is about how Meena Devi transformed a village school, and it ends with her line 'I only kept the door open'. The other titles cover only a detail.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_comprehension",
+  "subtopic": "Reading comprehension – factual",
+  "difficulty": "medium",
+  "question_en": "Passage: When Meena Devi was posted to a government school in a small hill village, the building had two rooms, a leaking roof and forty children who came only on days when there was no work in the fields. Instead of complaining, she began by visiting every home in the evening. She listened to parents, learnt the local dialect and explained, without lecturing, why reading mattered. She turned the school veranda into a library with old newspapers and picture books collected from friends in the city. Within two years attendance had nearly doubled, and the village panchayat, moved by her persistence, repaired the roof with its own funds. Meena Devi never claimed the credit. 'The children did the work,' she said when a journalist asked about her success. 'I only kept the door open.'\n\nHow did Meena Devi begin her effort to improve the school?",
+  "options": [
+   {
+    "en": "By punishing children who stayed away"
+   },
+   {
+    "en": "By visiting families and listening to parents"
+   },
+   {
+    "en": "By asking the panchayat for funds"
+   },
+   {
+    "en": "By writing to newspapers in the city"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "'She began by visiting every home in the evening. She listened to parents...'. The panchayat repaired the roof later, on its own, and she never wrote to newspapers.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_comprehension",
+  "subtopic": "Reading comprehension – antonyms",
+  "difficulty": "hard",
+  "question_en": "Passage: When Meena Devi was posted to a government school in a small hill village, the building had two rooms, a leaking roof and forty children who came only on days when there was no work in the fields. Instead of complaining, she began by visiting every home in the evening. She listened to parents, learnt the local dialect and explained, without lecturing, why reading mattered. She turned the school veranda into a library with old newspapers and picture books collected from friends in the city. Within two years attendance had nearly doubled, and the village panchayat, moved by her persistence, repaired the roof with its own funds. Meena Devi never claimed the credit. 'The children did the work,' she said when a journalist asked about her success. 'I only kept the door open.'\n\nSelect the word most nearly OPPOSITE in meaning to 'persistence' as used in the passage.",
+  "options": [
+   {
+    "en": "perseverance"
+   },
+   {
+    "en": "determination"
+   },
+   {
+    "en": "irresolution"
+   },
+   {
+    "en": "endurance"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "'Persistence' means continuing firmly despite difficulty. Its opposite is 'irresolution' (lack of firmness, wavering). Perseverance, determination and endurance are near-synonyms.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_comprehension",
+  "subtopic": "Reading comprehension – inference",
+  "difficulty": "medium",
+  "question_en": "Passage: When Meena Devi was posted to a government school in a small hill village, the building had two rooms, a leaking roof and forty children who came only on days when there was no work in the fields. Instead of complaining, she began by visiting every home in the evening. She listened to parents, learnt the local dialect and explained, without lecturing, why reading mattered. She turned the school veranda into a library with old newspapers and picture books collected from friends in the city. Within two years attendance had nearly doubled, and the village panchayat, moved by her persistence, repaired the roof with its own funds. Meena Devi never claimed the credit. 'The children did the work,' she said when a journalist asked about her success. 'I only kept the door open.'\n\nWhat does Meena Devi's reply to the journalist show about her?",
+  "options": [
+   {
+    "en": "She was proud of her fame."
+   },
+   {
+    "en": "She disliked talking to journalists."
+   },
+   {
+    "en": "She wanted a transfer to the city."
+   },
+   {
+    "en": "She was modest and gave the credit to others."
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "'Meena Devi never claimed the credit' and she said 'The children did the work'. This shows modesty, not pride or dislike.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_comprehension",
+  "subtopic": "Reading comprehension – inference",
+  "difficulty": "medium",
+  "question_en": "Passage: When Meena Devi was posted to a government school in a small hill village, the building had two rooms, a leaking roof and forty children who came only on days when there was no work in the fields. Instead of complaining, she began by visiting every home in the evening. She listened to parents, learnt the local dialect and explained, without lecturing, why reading mattered. She turned the school veranda into a library with old newspapers and picture books collected from friends in the city. Within two years attendance had nearly doubled, and the village panchayat, moved by her persistence, repaired the roof with its own funds. Meena Devi never claimed the credit. 'The children did the work,' she said when a journalist asked about her success. 'I only kept the door open.'\n\nWhat does Meena Devi most likely mean by 'I only kept the door open'?",
+  "options": [
+   {
+    "en": "She only gave the children the opportunity to learn."
+   },
+   {
+    "en": "She guarded the school building at night."
+   },
+   {
+    "en": "She never locked the classroom door."
+   },
+   {
+    "en": "She allowed parents to visit at any time."
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The line is figurative: she created the chance (an open door) and the children used it themselves. The literal readings about doors and locks miss the point.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "eng_comprehension",
+  "subtopic": "Cloze test",
+  "difficulty": "easy",
+  "question_en": "Passage: Discipline is the (1) ______ of success in every field. A student who (2) ______ a fixed timetable finds it easier to complete the syllabus well (3) ______ the examination. Discipline does not mean living (4) ______ fear of punishment; it means controlling one's own habits. Those who learn this early in life seldom (5) ______ their goals.\n\nSelect the most appropriate option to fill blank (1).\nRelevant sentence: Discipline is the (1) ______ of success in every field.",
+  "options": [
+   {
+    "en": "ceiling"
+   },
+   {
+    "en": "enemy"
+   },
+   {
+    "en": "foundation"
+   },
+   {
+    "en": "result"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Discipline is presented as the base on which success is built, so 'foundation' fits. 'Enemy' contradicts the passage and 'ceiling' and 'result' make no sense here.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_comprehension",
+  "subtopic": "Cloze test",
+  "difficulty": "medium",
+  "question_en": "Passage: Discipline is the (1) ______ of success in every field. A student who (2) ______ a fixed timetable finds it easier to complete the syllabus well (3) ______ the examination. Discipline does not mean living (4) ______ fear of punishment; it means controlling one's own habits. Those who learn this early in life seldom (5) ______ their goals.\n\nSelect the most appropriate option to fill blank (2).\nRelevant sentence: A student who (2) ______ a fixed timetable finds it easier to complete the syllabus...",
+  "options": [
+   {
+    "en": "follows"
+   },
+   {
+    "en": "breaks"
+   },
+   {
+    "en": "ignores"
+   },
+   {
+    "en": "avoids"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Only a student who follows a timetable would find it easier to finish the syllabus; the other three verbs reverse the meaning.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_comprehension",
+  "subtopic": "Cloze test",
+  "difficulty": "easy",
+  "question_en": "Passage: Discipline is the (1) ______ of success in every field. A student who (2) ______ a fixed timetable finds it easier to complete the syllabus well (3) ______ the examination. Discipline does not mean living (4) ______ fear of punishment; it means controlling one's own habits. Those who learn this early in life seldom (5) ______ their goals.\n\nSelect the most appropriate option to fill blank (3).\nRelevant sentence: ...finds it easier to complete the syllabus well (3) ______ the examination.",
+  "options": [
+   {
+    "en": "since"
+   },
+   {
+    "en": "during"
+   },
+   {
+    "en": "after"
+   },
+   {
+    "en": "before"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "'Well before the examination' means comfortably ahead of it, which is the advantage of discipline. 'After' and 'during' are illogical and 'since' needs a past starting point.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_comprehension",
+  "subtopic": "Cloze test",
+  "difficulty": "medium",
+  "question_en": "Passage: Discipline is the (1) ______ of success in every field. A student who (2) ______ a fixed timetable finds it easier to complete the syllabus well (3) ______ the examination. Discipline does not mean living (4) ______ fear of punishment; it means controlling one's own habits. Those who learn this early in life seldom (5) ______ their goals.\n\nSelect the most appropriate option to fill blank (4).\nRelevant sentence: Discipline does not mean living (4) ______ fear of punishment.",
+  "options": [
+   {
+    "en": "under"
+   },
+   {
+    "en": "in"
+   },
+   {
+    "en": "with"
+   },
+   {
+    "en": "from"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The fixed phrase is 'live in fear of' something. 'Under', 'with' and 'from' do not combine with 'fear of' in this sense.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "eng_comprehension",
+  "subtopic": "Cloze test",
+  "difficulty": "hard",
+  "question_en": "Passage: Discipline is the (1) ______ of success in every field. A student who (2) ______ a fixed timetable finds it easier to complete the syllabus well (3) ______ the examination. Discipline does not mean living (4) ______ fear of punishment; it means controlling one's own habits. Those who learn this early in life seldom (5) ______ their goals.\n\nSelect the most appropriate option to fill blank (5).\nRelevant sentence: Those who learn this early in life seldom (5) ______ their goals.",
+  "options": [
+   {
+    "en": "reach"
+   },
+   {
+    "en": "achieve"
+   },
+   {
+    "en": "miss"
+   },
+   {
+    "en": "set"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "'Seldom' is negative in meaning, so the verb must describe failure: disciplined people 'seldom miss their goals'. 'Seldom reach/achieve/set' would say the opposite of the passage.",
+  "pyq_concept": false
+ }
+]
