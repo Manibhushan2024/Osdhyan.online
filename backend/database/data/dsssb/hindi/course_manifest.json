@@ -1,0 +1,68 @@
+{
+ "subject": "Hindi Language & Comprehension (हिंदी)",
+ "subject_hi": "हिंदी भाषा एवं बोध",
+ "chapters": [
+  {
+   "key": "hin_vyakaran",
+   "title": "1. व्याकरण: संधि, समास, उपसर्ग–प्रत्यय, लिंग–वचन–कारक (Grammar)",
+   "items": [
+    {
+     "title": "व्याकरण: संधि, समास, उपसर्ग–प्रत्यय, लिंग–वचन–कारक (Grammar) — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\hindi\\hin_vyakaran.pdf"
+    }
+   ]
+  },
+  {
+   "key": "hin_shuddhi",
+   "title": "2. वर्तनी, वाक्य शुद्धि एवं शब्द-भेद: तत्सम–तद्भव (Spelling & Correction)",
+   "items": [
+    {
+     "title": "वर्तनी, वाक्य शुद्धि एवं शब्द-भेद: तत्सम–तद्भव (Spelling & Correction) — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\hindi\\hin_shuddhi.pdf"
+    }
+   ]
+  },
+  {
+   "key": "hin_shabd",
+   "title": "3. शब्द-भंडार: पर्यायवाची, विलोम, अनेक शब्दों के लिए एक शब्द, मुहावरे–लोकोक्तियाँ (Vocabulary)",
+   "items": [
+    {
+     "title": "शब्द-भंडार: पर्यायवाची, विलोम, अनेक शब्दों के लिए एक शब्द, मुहावरे–लोकोक्तियाँ (Vocabulary) — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\hindi\\hin_shabd.pdf"
+    }
+   ]
+  },
+  {
+   "key": "hin_sahitya",
+   "title": "4. अलंकार, रस, छंद एवं गद्यांश (Figures of speech & Comprehension)",
+   "items": [
+    {
+     "title": "अलंकार, रस, छंद एवं गद्यांश (Figures of speech & Comprehension) — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\hindi\\hin_sahitya.pdf"
+    }
+   ]
+  },
+  {
+   "key": "hindi_practice",
+   "title": "5. Complete notes, previous-year questions & 200 most expected",
+   "items": [
+    {
+     "title": "Hindi Language & Comprehension — fast revision sheet (revise everything quickly)",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\hindi\\hindi_fast_revision.pdf"
+    },
+    {
+     "title": "Hindi Language & Comprehension — complete notes (all chapters in one PDF)",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\hindi\\hindi_complete_notes.pdf"
+    },
+    {
+     "title": "Hindi Language & Comprehension — previous-year questions 2023–24 with solutions",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\hindi\\hindi_pyq_2023_24.pdf"
+    },
+    {
+     "title": "Hindi Language & Comprehension — 200 most expected questions with answers",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\hindi\\hindi_200_most_expected.pdf"
+    }
+   ]
+  }
+ ]
+}
