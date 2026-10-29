@@ -1,6 +1,6 @@
 'use client';
 
-import { Fragment, ReactNode, useState, useEffect } from 'react';
+import { Fragment, ReactNode, useState, useEffect, useRef } from 'react';
 import { useParams } from 'next/navigation';
 import api from '@/lib/api';
 import QuestionText from '@/components/tests/QuestionText';
@@ -10,22 +10,17 @@ import {
     CheckCircle2,
     XCircle,
     Info,
-    Sparkles,
-    MessageSquare,
-    Zap,
     Download,
-    Eye,
-    Languages,
-    ArrowUpRight,
     Bot,
     Send,
-    Filter,
-    MinusCircle
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { useTheme } from '@/components/providers/ThemeProvider';
 import Link from 'next/link';
 import AttemptSwitcher, { AttemptRef, reportHref } from '@/components/tests/AttemptSwitcher';
+import ConceptRevisePanel, { WeakConceptsSummary, runWithConcurrency, useConceptNotes } from '@/components/tests/ConceptRevisePanel';
+
+/** Weak-concepts summary looks up notes for at most this many wrong answers. */
+const WEAK_CONCEPT_LIMIT = 60;
 
 type Option = {
     id: number;
@@ -148,6 +143,10 @@ export default function SolutionHub() {
     const [chatMessages, setChatMessages] = useState<ChatMessage[]>([]);
     const [sendingChat, setSendingChat] = useState(false);
     const [filter, setFilter] = useState<'all' | 'correct' | 'wrong' | 'skipped'>('all');
+    const conceptNotes = useConceptNotes();
+    const { loadQuestion: loadConcept } = conceptNotes;
+    const [openConcept, setOpenConcept] = useState<Record<number, boolean>>({});
+    const questionCardRef = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
         fetchSolutions();
@@ -163,6 +162,21 @@ export default function SolutionHub() {
             setLoading(false);
         }
     };
+
+    // "Weak concepts": look up the notes chapter behind each wrong answer (6 at a time).
+    useEffect(() => {
+        if (!attempt) return;
+        const wrong = (attempt.test?.questions || [])
+            .filter((q) => {
+                const r = attempt.responses.find((x) => x.question_id === q.id);
+                return !!r?.selected_option_id && Number(r.marks_obtained) <= 0;
+            })
+            .slice(0, WEAK_CONCEPT_LIMIT)
+            .map((q) => q.id);
+        let cancelled = false;
+        void runWithConcurrency(wrong, 6, loadConcept, () => cancelled);
+        return () => { cancelled = true; };
+    }, [attempt, loadConcept]);
 
     const getQuestionStatus = (q: Question) => {
         if (!attempt) return 'skipped';
@@ -197,6 +211,21 @@ export default function SolutionHub() {
 
     if (loading) return null;
     if (!attempt || !currentQ) return null;
+
+    const wrongQuestionIds = questions.filter((q) => getQuestionStatus(q) === 'wrong').map((q) => q.id);
+    const currentStatus = getQuestionStatus(currentQ);
+
+    const jumpToQuestion = (questionId: number) => {
+        const index = questions.findIndex((q) => q.id === questionId);
+        if (index < 0) return;
+        setFilter('all');
+        setCurrentIdx(index);
+        setOpenConcept((prev) => ({ ...prev, [questionId]: true }));
+        void loadConcept(questionId);
+        requestAnimationFrame(() => {
+            questionCardRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+    };
 
     const handleSendChat = async () => {
         const message = chatMessage.trim();
@@ -273,6 +302,13 @@ export default function SolutionHub() {
                 testId={attempt.test_id ?? attempt.test?.id}
                 hrefFor={(id) => `/dashboard/tests/solutions/${id}`}
                 showDownload={false}
+            />
+
+            <WeakConceptsSummary
+                wrongIds={wrongQuestionIds.slice(0, WEAK_CONCEPT_LIMIT)}
+                totalWrong={wrongQuestionIds.length}
+                notes={conceptNotes}
+                onJump={jumpToQuestion}
             />
 
             <style dangerouslySetInnerHTML={{
@@ -377,7 +413,7 @@ export default function SolutionHub() {
                 {/* Question & Solution Area */}
                 <div className="lg:col-span-9 space-y-8">
                     {/* Question Card */}
-                    <div className="question-card bg-card-bg border border-card-border p-12 rounded-2xl shadow-sm space-y-10 group">
+                    <div ref={questionCardRef} className="question-card scroll-mt-24 bg-card-bg border border-card-border p-12 rounded-2xl shadow-sm space-y-10 group">
                         <div className="flex items-center justify-between">
                             <span className="text-xs font-black text-blue-600 uppercase tracking-wide bg-blue-500/10 px-6 py-2 rounded-full border border-blue-600/20">
                                 Question {currentIdx + 1}
@@ -431,21 +467,20 @@ export default function SolutionHub() {
                             <Info className="h-5 w-5 text-blue-600" />
                             <h3 className="text-xs font-black uppercase tracking-wide text-foreground/60 ">Explanation</h3>
                         </div>
-                        <div className="p-12 space-y-8">
+                        <div className="p-5 sm:p-12 space-y-8">
                             <div className="prose prose-blue dark:prose-invert max-w-none text-foreground/70 font-medium uppercase tracking-wide leading-relaxed text-sm">
                                 <span className="whitespace-pre-wrap">{language === 'en' ? currentQ.explanation_en : currentQ.explanation_hi || currentQ.explanation_en || "No explanation has been added for this question yet."}</span>
                             </div>
 
-                            {/* Pro Tip/Concept */}
-                            <div className="bg-blue-600/5 rounded-2xl p-8 border border-blue-600/10 space-y-3">
-                                <div className="flex items-center gap-3 text-blue-600">
-                                    <Zap className="h-4 w-4 fill-blue-600" />
-                                    <span className="text-xs font-black uppercase tracking-wide">Key concept</span>
-                                </div>
-                                <p className="text-xs font-bold text-foreground/50 uppercase tracking-wide leading-relaxed italic">
-                                    &quot;When dealing with AE/JE Civil structures, always prioritize the MOMENT OF INERTIA calculation as the first point of audit.&quot;
-                                </p>
-                            </div>
+                            {/* Revise this concept: the matching notes section, inline */}
+                            <ConceptRevisePanel
+                                key={currentQ.id}
+                                questionId={currentQ.id}
+                                highlight={currentStatus !== 'correct'}
+                                open={!!openConcept[currentQ.id]}
+                                onOpenChange={(open) => setOpenConcept((prev) => ({ ...prev, [currentQ.id]: open }))}
+                                notes={conceptNotes}
+                            />
                         </div>
                     </div>
 

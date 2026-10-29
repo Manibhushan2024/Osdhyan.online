@@ -8,6 +8,7 @@ import api from '@/lib/api';
 import QuestionText from '@/components/tests/QuestionText';
 import { AttemptRef, formatScore } from '@/components/tests/AttemptSwitcher';
 import { useAuth } from '@/components/providers/AuthProvider';
+import type { SectionResult } from '@/components/tests/SectionedPlayer';
 import { cn } from '@/lib/utils';
 
 /* ─── API shape (GET /attempts/{id}) ─────────────────────────────────────── */
@@ -57,6 +58,7 @@ type Attempt = {
         unattempted_count?: number;
         total_questions?: number;
         accuracy?: number;
+        section_results?: SectionResult[] | null;
     } | null;
     test: {
         id?: number;
@@ -282,6 +284,7 @@ function AttemptReport() {
     const negativeMarking = Number(attempt.test.negative_marking ?? 0);
     const hasHindi = attempt.test.questions?.some((q) => q.question_hi) || !!attempt.test.name_hi;
     const t = (en?: string | null, hi?: string | null) => (language === 'hi' && hi ? hi : en ?? hi ?? '');
+    const sectionResults = Array.isArray(attempt.metadata?.section_results) ? attempt.metadata.section_results : [];
 
     const summary: { label: string; value: string }[] = [
         { label: 'Score', value: `${formatScore(score)} / ${formatScore(totalMarks)}${scorePct !== null ? ` (${scorePct}%)` : ''}` },
@@ -362,6 +365,41 @@ function AttemptReport() {
                         ))}
                     </div>
                 </section>
+
+                {/* Section-wise (groups of a sectioned paper) */}
+                {sectionResults.length > 0 && (
+                    <section className="report-block mt-5">
+                        <h2 className="text-sm font-bold uppercase tracking-wide">Section-wise</h2>
+                        <div className="mt-2 overflow-x-auto">
+                            <table className="w-full text-sm border-collapse">
+                                <thead>
+                                    <tr className="border-b-2 border-gray-900 text-left">
+                                        <th className="py-1.5 pr-2 font-semibold">Section</th>
+                                        <th className="py-1.5 px-2 font-semibold text-right">Qs</th>
+                                        <th className="py-1.5 px-2 font-semibold text-right">Correct</th>
+                                        <th className="py-1.5 px-2 font-semibold text-right">Wrong</th>
+                                        <th className="py-1.5 px-2 font-semibold text-right">Skipped</th>
+                                        <th className="py-1.5 px-2 font-semibold text-right">Marks</th>
+                                        <th className="py-1.5 pl-2 font-semibold text-right">Accuracy</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {sectionResults.map((s) => (
+                                        <tr key={s.key} className="border-b border-gray-300">
+                                            <td className="py-1.5 pr-2">{t(s.name_en, s.name_hi)}</td>
+                                            <td className="py-1.5 px-2 text-right">{s.total}</td>
+                                            <td className="py-1.5 px-2 text-right">{s.correct}</td>
+                                            <td className="py-1.5 px-2 text-right">{s.incorrect}</td>
+                                            <td className="py-1.5 px-2 text-right">{s.unattempted}</td>
+                                            <td className="py-1.5 px-2 text-right font-semibold whitespace-nowrap">{formatScore(s.marks)} / {formatScore(s.max_marks)}</td>
+                                            <td className="py-1.5 pl-2 text-right">{Math.round(Number(s.accuracy) || 0)}%</td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                )}
 
                 {/* Subject-wise */}
                 {report.sections.length > 0 && (

@@ -31,6 +31,26 @@ import {
 import { cn } from '@/lib/utils';
 import { storageUrl } from '@/lib/storage';
 import { toast } from 'react-hot-toast';
+import { useAuth } from '@/components/providers/AuthProvider';
+import {
+    CBT_TEXT,
+    GeneralInstructions,
+    OtherInstructions,
+    PaletteLegend,
+    PALETTE_CLASSES,
+    SectionStrip,
+    SectionSummaryTable,
+    TickBadge,
+    ViewInSelect,
+    countPalette,
+    isSectionState,
+    paletteStatus,
+    sectionName,
+    type SectionState,
+    type SectionStatus,
+    type SectionSummaryRow,
+    type TestSection,
+} from '@/components/tests/SectionedPlayer';
 
 type Question = {
     id: number;
@@ -52,6 +72,10 @@ type Test = {
     total_marks: number;
     negative_marking: number;
     questions: Question[];
+    sections?: TestSection[] | null;
+    section_mode?: 'sequential' | 'free' | null;
+    /** false on DSSSB papers: "Answered & Marked for Review" is scored as unattempted. */
+    evaluate_marked?: boolean | null;
 };
 
 type ResponseEntry = {
@@ -81,6 +105,7 @@ type AttemptPayload = AttemptTiming & {
     test_id?: number | string;
     status?: string;
     responses?: ServerResponse[];
+    section_state?: SectionState | null;
 };
 
 type StartAttemptResponse = AttemptTiming & {
@@ -89,6 +114,16 @@ type StartAttemptResponse = AttemptTiming & {
 };
 
 type StoredAnswers = { responses: ResponseMap; dirty: number[] };
+
+/** Last section_state seen from the server, with when it arrived (for offline resume). */
+type StoredSectionState = { state: SectionState; receivedAt: number };
+
+type LockResponse = {
+    completed: boolean;
+    section_state?: SectionState;
+    remaining_sec?: number;
+    attempt?: AttemptPayload;
+};
 
 type SyncState = 'ok' | 'offline';
 
@@ -111,6 +146,7 @@ const storageKeys = {
     answers: (attemptId: number) => `osd_attempt_${attemptId}_answers`,
     index: (attemptId: number) => `osd_attempt_${attemptId}_index`,
     deadline: (attemptId: number) => `osd_attempt_${attemptId}_deadline`,
+    sections: (attemptId: number) => `osd_attempt_${attemptId}_sections`,
     activeAttempt: (testId: string) => `osd_test_${testId}_active_attempt`,
 };
 
@@ -157,12 +193,53 @@ function clearAttemptStorage(attemptId: number, testId?: string) {
     removeStorage(storageKeys.answers(attemptId));
     removeStorage(storageKeys.index(attemptId));
     removeStorage(storageKeys.deadline(attemptId));
+    removeStorage(storageKeys.sections(attemptId));
     if (testId && readStorage(storageKeys.activeAttempt(testId)) === String(attemptId)) {
         removeStorage(storageKeys.activeAttempt(testId));
     }
 }
 
+function readStoredSectionState(attemptId: number): StoredSectionState | null {
+    const raw = readStorage(storageKeys.sections(attemptId));
+    if (!raw) return null;
+    try {
+        const parsed = JSON.parse(raw) as Partial<StoredSectionState>;
+        if (!isSectionState(parsed.state) || !Number.isFinite(Number(parsed.receivedAt))) return null;
+        return { state: parsed.state, receivedAt: Number(parsed.receivedAt) };
+    } catch {
+        return null;
+    }
+}
+
 // ── Pure helpers ────────────────────────────────────────────────────────────
+function testSections(test: Test | null | undefined): TestSection[] {
+    return Array.isArray(test?.sections) ? test.sections.filter((s) => s && s.count > 0) : [];
+}
+
+function isSequentialTest(test: Test | null | undefined): boolean {
+    return test?.section_mode === 'sequential' && testSections(test).length > 0;
+}
+
+/** Index of the section that holds question `idx`, or -1. */
+function sectionIndexOf(sections: TestSection[], idx: number): number {
+    return sections.findIndex((s) => idx >= s.from && idx < s.from + s.count);
+}
+
+/** Section the student may answer right now (sequential mode), or null. */
+function activeSectionOf(test: Test | null | undefined, state: SectionState | null): TestSection | null {
+    if (!state?.active_key) return null;
+    return testSections(test).find((s) => s.key === state.active_key) ?? null;
+}
+
+function sectionQuestionIds(test: Test, section: TestSection): number[] {
+    return test.questions.slice(section.from, section.from + section.count).map((q) => q.id);
+}
+
+function errorCode(err: unknown): string | undefined {
+    if (!axios.isAxiosError(err)) return undefined;
+    return (err.response?.data as { code?: string } | undefined)?.code;
+}
+
 function statusFromServer(r: ServerResponse): string {
     if (r.is_marked_for_review) return 'marked';
     return r.selected_option_id ? 'answered' : 'not_answered';
@@ -280,6 +357,19 @@ export default function TestPlayer() {
     const [dirtyCount, setDirtyCount] = useState(0);
     const [syncState, setSyncState] = useState<SyncState>('ok');
     const [sessionExpired, setSessionExpired] = useState(false);
+    const { user } = useAuth();
+
+    // Sections ("groups", DSSSB/TCS style). All null/empty for tests without sections.
+    const [sectionState, setSectionState] = useState<SectionState | null>(null);
+    const [blockDeadline, setBlockDeadline] = useState<number | null>(null);
+    const [blockTimeLeft, setBlockTimeLeft] = useState<number | null>(null);
+    const [blockExpired, setBlockExpired] = useState(false); // group timer hit 0; waiting for the server
+    const [showSectionModal, setShowSectionModal] = useState(false);
+    const [isLocking, setIsLocking] = useState(false);
+    const [notice, setNotice] = useState<{ text: string; okLabel?: string; onOk?: () => void } | null>(null);
+    // TCS save rule: a selection is only saved by Save & Next / Mark for Review & Next.
+    const [draft, setDraft] = useState<{ qid: number; optionId: number | null } | null>(null);
+    const [languageChosen, setLanguageChosen] = useState(false);
 
     // Mutable engine state (read from timers / event listeners without re-subscribing)
     const testRef = useRef<Test | null>(null);
@@ -300,6 +390,15 @@ export default function TestPlayer() {
     const sessionExpiredRef = useRef(false);
     const expiredTokenRef = useRef<string | null>(null);
     const allowUnloadRef = useRef(false);
+    const currentIdxRef = useRef(0);
+    const sectionStateRef = useRef<SectionState | null>(null);
+    const writableRef = useRef<Set<number> | null>(null); // null = every question can be answered
+    const blockDeadlineRef = useRef<number | null>(null);
+    const blockExpiryRef = useRef<{ key: string | null; nextTryAt: number }>({ key: null, nextTryAt: 0 });
+    const blockPreFlushRef = useRef<string | null>(null);
+    const lockInFlightRef = useRef<Promise<void> | null>(null);
+    const refreshInFlightRef = useRef<Promise<void> | null>(null);
+    const lastIdxBySectionRef = useRef<Record<string, number>>({});
 
     // ── Persistence ─────────────────────────────────────────────────────────
     const persistAnswers = useCallback(() => {
@@ -315,6 +414,8 @@ export default function TestPlayer() {
         updater: (prev: ResponseEntry | undefined) => ResponseEntry,
         forceDirty = false,
     ) => {
+        // Sequential sections: only the open group takes answers (the server drops the rest).
+        if (writableRef.current && !writableRef.current.has(questionId)) return;
         const prevMap = responsesRef.current;
         const prev = prevMap[questionId];
         const next = updater(prev);
@@ -454,13 +555,159 @@ export default function TestPlayer() {
         return run;
     }, [commitTime, markSessionExpired, persistAnswers, router, testId]);
 
+    // ── Sections ────────────────────────────────────────────────────────────
+    /**
+     * Stores a server section_state (never computed locally) and derives which
+     * questions can be answered and the group timer. Returns the previously
+     * active key, or undefined when there was no state before.
+     */
+    const applySectionState = useCallback((state: SectionState | null | undefined, receivedAt = Date.now()): string | null | undefined => {
+        const testData = testRef.current;
+        if (!isSectionState(state) || !testData) return undefined;
+        const prevKey = sectionStateRef.current ? sectionStateRef.current.active_key : undefined;
+        sectionStateRef.current = state;
+        setSectionState(state);
+
+        const sequential = state.mode === 'sequential' && isSequentialTest(testData);
+        const active = activeSectionOf(testData, state);
+        writableRef.current = sequential ? new Set(active ? sectionQuestionIds(testData, active) : []) : null;
+
+        const row = state.sections.find((r) => r.key === state.active_key);
+        const rem = row?.remaining_sec;
+        const bdl = sequential && rem !== null && rem !== undefined && Number.isFinite(Number(rem))
+            ? receivedAt + Math.max(0, Number(rem)) * 1000
+            : null;
+        blockDeadlineRef.current = bdl;
+        setBlockDeadline(bdl);
+        setBlockTimeLeft(bdl === null ? null : secondsUntil(bdl));
+        setBlockExpired(bdl !== null && secondsUntil(bdl) <= 0);
+        if (blockExpiryRef.current.key !== state.active_key) blockExpiryRef.current = { key: state.active_key, nextTryAt: 0 };
+
+        const aid = attemptIdRef.current;
+        if (aid) writeStorage(storageKeys.sections(aid), JSON.stringify({ state, receivedAt } satisfies StoredSectionState));
+        return prevKey;
+    }, []);
+
+    const goToQuestion = useCallback((idx: number) => {
+        const testData = testRef.current;
+        const q = testData?.questions[idx];
+        if (!testData || !q) return;
+        // Sequential sections: only questions of the open group can be opened.
+        if (writableRef.current && !writableRef.current.has(q.id)) return;
+        commitTime();
+        setDraft(null); // moving away discards an unsaved selection (TCS rule)
+        setCurrentQuestionIdx(idx);
+        currentIdxRef.current = idx;
+        const sections = testSections(testData);
+        const secIdx = sectionIndexOf(sections, idx);
+        if (secIdx >= 0) lastIdxBySectionRef.current[sections[secIdx].key] = idx;
+        const aid = attemptIdRef.current;
+        if (aid) writeStorage(storageKeys.index(aid), String(idx));
+        markAsVisited(q.id);
+        startTracking(q.id);
+        if (dirtyRef.current.size >= NAV_FLUSH_THRESHOLD) nextSyncAtRef.current = 0; // next tick flushes
+    }, [commitTime, markAsVisited, startTracking]);
+
+    const finishAndShowResult = useCallback((aid: number, message: string) => {
+        finishedRef.current = true;
+        closedRef.current = true;
+        dirtyRef.current.clear();
+        setDirtyCount(0);
+        clearAttemptStorage(aid, testId);
+        toast.success(message);
+        router.push(`/dashboard/tests/result/${aid}`);
+    }, [router, testId]);
+
+    /** For questions that can no longer be answered, the server's copy wins. */
+    const reconcileReadOnly = useCallback((server: ServerResponse[] | undefined) => {
+        const writable = writableRef.current;
+        const testData = testRef.current;
+        if (!writable || !testData || !Array.isArray(server)) return;
+        const byId = new Map(server.map((r) => [r.question_id, r]));
+        const next: ResponseMap = { ...responsesRef.current };
+        let changed = false;
+        for (const q of testData.questions) {
+            if (writable.has(q.id)) continue;
+            dirtyRef.current.delete(q.id);
+            const local = next[q.id];
+            const r = byId.get(q.id);
+            if (!local && !r) continue;
+            const selected = r?.selected_option_id ?? null;
+            const status = r ? statusFromServer(r) : 'not_answered';
+            if (local && (local.selected_option_id ?? null) === selected && local.status === status) continue;
+            next[q.id] = { ...(local ?? {}), selected_option_id: selected, status, visited: local?.visited ?? true };
+            changed = true;
+        }
+        if (changed) {
+            responsesRef.current = next;
+            setResponses(next);
+        }
+        setDirtyCount(dirtyRef.current.size);
+        persistAnswers();
+    }, [persistAnswers]);
+
+    /** Applies a new section_state and moves the student into the open group when it changed. */
+    const handleSectionUpdate = useCallback((state: SectionState | null | undefined, cause: 'student' | 'server', receivedAt?: number) => {
+        const prevKey = applySectionState(state, receivedAt);
+        const testData = testRef.current;
+        if (!isSectionState(state) || !testData || state.mode !== 'sequential') return;
+        const active = activeSectionOf(testData, state);
+        if (!active) return;
+        const currentQ = testData.questions[currentIdxRef.current];
+        const inActive = !!currentQ && !!writableRef.current?.has(currentQ.id);
+        if (prevKey !== undefined && prevKey !== state.active_key) {
+            goToQuestion(active.from);
+            if (cause === 'server') {
+                const prev = testSections(testData).find((s) => s.key === prevKey);
+                const prevRow = state.sections.find((r) => r.key === prevKey);
+                const why = prevRow?.locked_by === 'timer' ? 'because its time is over' : 'already (for example on another device)';
+                setNotice({
+                    text: `${prev ? `“${prev.name_en}”` : 'The previous group'} has been submitted ${why}. You are now in “${active.name_en}”.`,
+                });
+            }
+        } else if (!inActive) {
+            goToQuestion(lastIdxBySectionRef.current[active.key] ?? active.from);
+        }
+    }, [applySectionState, goToQuestion]);
+
+    /** Re-reads the attempt (after a group timer ran out, a rejected answer, or a 409). */
+    const refreshAttempt = useCallback((): Promise<void> => {
+        const aid = attemptIdRef.current;
+        if (!aid || finishedRef.current) return Promise.resolve();
+        if (refreshInFlightRef.current) return refreshInFlightRef.current;
+        const run = (async () => {
+            try {
+                const res = await api.get(`/attempts/${aid}`, { skipAuthRedirect: true, timeout: 20_000 });
+                const attempt = res.data as AttemptPayload;
+                if (attempt?.status === 'completed') {
+                    finishAndShowResult(aid, 'Your test has been submitted.');
+                    return;
+                }
+                applyServerRemaining(attempt);
+                handleSectionUpdate(attempt?.section_state, 'server');
+                reconcileReadOnly(attempt?.responses);
+                setSyncState('ok');
+            } catch (err) {
+                if (httpStatus(err) === 401) markSessionExpired();
+                else setSyncState('offline');
+            }
+        })();
+        refreshInFlightRef.current = run;
+        void run.finally(() => {
+            refreshInFlightRef.current = null;
+        });
+        return run;
+    }, [applyServerRemaining, finishAndShowResult, handleSectionUpdate, markSessionExpired, reconcileReadOnly]);
+
     // ── Batched sync ────────────────────────────────────────────────────────
     const flush = useCallback(async (): Promise<void> => {
         const aid = attemptIdRef.current;
         if (!aid || closedRef.current || finishedRef.current || submitPromiseRef.current || sessionExpiredRef.current) return;
+        if (lockInFlightRef.current) return; // the lock call carries this group's answers
         if (syncInFlightRef.current) return syncInFlightRef.current;
 
         let attemptClosed = false;
+        let lockedRejected = 0;
         const run = (async () => {
             if (keepaliveInFlightRef.current) await keepaliveInFlightRef.current.catch(() => undefined);
             commitTime();
@@ -484,6 +731,9 @@ export default function TestPlayer() {
                 backoffRef.current = BACKOFF_BASE_MS;
                 nextSyncAtRef.current = Date.now() + SYNC_INTERVAL_MS + Math.random() * SYNC_JITTER_MS;
                 applyServerRemaining(res.data);
+                const data = res.data as { section_state?: SectionState; locked_rejected?: number } | undefined;
+                if (data?.section_state) handleSectionUpdate(data.section_state, 'server');
+                lockedRejected = Number(data?.locked_rejected) || 0;
             } catch (err) {
                 const status = httpStatus(err);
                 if (status === 409) {
@@ -510,12 +760,20 @@ export default function TestPlayer() {
             syncInFlightRef.current = null;
         }
         if (attemptClosed) void submitAttempt(true);
-    }, [applyServerRemaining, commitTime, markSessionExpired, persistAnswers, submitAttempt]);
+        if (lockedRejected > 0) {
+            // Answers for a group that was already closed: show the server's copy again.
+            setNotice({
+                text: `${lockedRejected} answer${lockedRejected === 1 ? ' was' : 's were'} not saved because ${lockedRejected === 1 ? 'its' : 'their'} group had already been submitted.`,
+            });
+            void refreshAttempt();
+        }
+    }, [applyServerRemaining, commitTime, handleSectionUpdate, markSessionExpired, persistAnswers, refreshAttempt, submitAttempt]);
 
     /** Fire-and-forget flush that survives tab close (pagehide / hidden). */
     const flushKeepalive = useCallback(() => {
         const aid = attemptIdRef.current;
         if (!aid || closedRef.current || finishedRef.current || submitPromiseRef.current || sessionExpiredRef.current) return;
+        if (lockInFlightRef.current) return;
         if (dirtyRef.current.size === 0) return;
 
         const ids = [...dirtyRef.current];
@@ -562,6 +820,76 @@ export default function TestPlayer() {
         keepaliveInFlightRef.current = tracked;
     }, [markSessionExpired, persistAnswers]);
 
+    // ── Submit the open group (sequential sections) ─────────────────────────
+    const lockSection = useCallback((): Promise<void> => {
+        if (lockInFlightRef.current) return lockInFlightRef.current;
+        const aid = attemptIdRef.current;
+        const testData = testRef.current;
+        const active = activeSectionOf(testData, sectionStateRef.current);
+        if (!aid || !testData || !active || finishedRef.current || submitPromiseRef.current) return Promise.resolve();
+
+        const run = (async () => {
+            setIsLocking(true);
+            await Promise.allSettled([syncInFlightRef.current, keepaliveInFlightRef.current].filter(Boolean));
+            commitTime();
+            // This group's unsaved answers travel with the lock call.
+            const blockIds = new Set(sectionQuestionIds(testData, active));
+            const ids = [...dirtyRef.current].filter((id) => blockIds.has(id));
+            const payload = ids.map((id) => toPayload(id, responsesRef.current[id]));
+            try {
+                const res = await api.post(
+                    `/attempts/${aid}/sections/${encodeURIComponent(active.key)}/lock`,
+                    { responses: payload },
+                    { skipAuthRedirect: true, timeout: 30_000 },
+                );
+                const data = res.data as LockResponse;
+                // The group is closed now: anything of it still marked unsaved (e.g. time
+                // spent, committed while the request was in flight) can no longer be sent.
+                for (const id of blockIds) dirtyRef.current.delete(id);
+                setDirtyCount(dirtyRef.current.size);
+                persistAnswers();
+                setShowSectionModal(false);
+                setSyncState('ok');
+                if (data.completed) {
+                    finishAndShowResult(aid, 'All the responses provided by you are saved in the system and the assessment has been submitted successfully.');
+                    return;
+                }
+                applyServerRemaining(data);
+                handleSectionUpdate(data.section_state, 'student');
+                const next = activeSectionOf(testRef.current, sectionStateRef.current);
+                toast.success(next ? `Group submitted. “${next.name_en}” is now open.` : 'Group submitted.');
+            } catch (err) {
+                const status = httpStatus(err);
+                const code = errorCode(err);
+                setShowSectionModal(false);
+                if (status === 409 && code === 'SECTION_NOT_ACTIVE') {
+                    // The group was already closed (its timer, or another device): follow the server.
+                    const data = axios.isAxiosError(err) ? (err.response?.data as { section_state?: SectionState } | undefined) : undefined;
+                    handleSectionUpdate(data?.section_state, 'server');
+                    await refreshAttempt();
+                } else if (status === 409) {
+                    // The attempt itself is over (time up or already submitted).
+                    closedRef.current = true;
+                    void submitAttempt(true);
+                } else if (status === 401) {
+                    markSessionExpired();
+                    toast.error('Your session expired. Sign in again to submit this group — your answers are saved on this device.');
+                } else {
+                    setSyncState('offline');
+                    toast.error('Could not submit the group. Check your internet connection and click Submit again — your answers are saved on this device.');
+                }
+            } finally {
+                setIsLocking(false);
+            }
+        })();
+
+        lockInFlightRef.current = run;
+        void run.finally(() => {
+            lockInFlightRef.current = null;
+        });
+        return run;
+    }, [applyServerRemaining, commitTime, finishAndShowResult, handleSectionUpdate, markSessionExpired, persistAnswers, refreshAttempt, submitAttempt]);
+
     // ── Enter the playing state (fresh start, resume, or refresh) ───────────
     const enterPlaying = useCallback((attempt: AttemptPayload, timing: AttemptTiming, testData: Test) => {
         const aid = Number(attempt.id);
@@ -581,6 +909,24 @@ export default function TestPlayer() {
         dirtyRef.current = merged.dirty;
         versionRef.current = {};
 
+        // Sections: the server's state when we have it, else the last copy saved on this device.
+        sectionStateRef.current = null;
+        writableRef.current = null;
+        blockDeadlineRef.current = null;
+        lastIdxBySectionRef.current = {};
+        setSectionState(null);
+        setBlockDeadline(null);
+        setBlockTimeLeft(null);
+        setBlockExpired(false);
+        setDraft(null);
+        if (isSectionState(attempt.section_state)) {
+            applySectionState(attempt.section_state);
+            reconcileReadOnly(attempt.responses); // drop stale local answers of closed groups
+        } else {
+            const stored = readStoredSectionState(aid);
+            if (stored) applySectionState(stored.state, stored.receivedAt);
+        }
+
         let dl = deadlineFromTiming(timing, testData.duration_sec);
         if (dl === null) {
             const stored = Number(readStorage(storageKeys.deadline(aid)));
@@ -591,11 +937,21 @@ export default function TestPlayer() {
 
         const questionCount = testData.questions.length;
         const storedIdx = Number(readStorage(storageKeys.index(aid)));
-        const idx = Number.isInteger(storedIdx) && storedIdx >= 0 && storedIdx < questionCount ? storedIdx : 0;
+        let idx = Number.isInteger(storedIdx) && storedIdx >= 0 && storedIdx < questionCount ? storedIdx : 0;
+        // Resume inside the open group (a stored position in a closed group is not allowed).
+        const writable = writableRef.current as Set<number> | null; // set by applySectionState above
+        if (writable && !writable.has(testData.questions[idx]?.id)) {
+            const active = activeSectionOf(testData, sectionStateRef.current);
+            idx = active ? active.from : idx;
+        }
+        currentIdxRef.current = idx;
+        const sectionsList = testSections(testData);
+        const secIdx = sectionIndexOf(sectionsList, idx);
+        if (secIdx >= 0) lastIdxBySectionRef.current[sectionsList[secIdx].key] = idx;
 
         setAttemptId(aid);
-        setResponses(merged.responses);
-        setDirtyCount(merged.dirty.size);
+        setResponses(responsesRef.current);
+        setDirtyCount(dirtyRef.current.size);
         setDeadline(dl);
         setTimeLeft(secondsUntil(dl));
         setCurrentQuestionIdx(idx);
@@ -608,8 +964,8 @@ export default function TestPlayer() {
             startTracking(q.id);
         }
         // Unsynced answers from a previous session go out shortly.
-        nextSyncAtRef.current = Date.now() + (merged.dirty.size > 0 ? 1_000 : SYNC_INTERVAL_MS) + Math.random() * SYNC_JITTER_MS;
-    }, [markAsVisited, persistAnswers, startTracking, testId]);
+        nextSyncAtRef.current = Date.now() + (dirtyRef.current.size > 0 ? 1_000 : SYNC_INTERVAL_MS) + Math.random() * SYNC_JITTER_MS;
+    }, [applySectionState, markAsVisited, persistAnswers, reconcileReadOnly, startTracking, testId]);
 
     // ── Load test, auto-resume an attempt saved on this device ──────────────
     useEffect(() => {
@@ -696,6 +1052,13 @@ export default function TestPlayer() {
             const res = await api.post(`/tests/${testId}/attempts`);
             const data = res.data as StartAttemptResponse;
             const attempt = data.attempt;
+            if (attempt?.status === 'completed') {
+                // Every group had already closed while away: the server has submitted it.
+                clearAttemptStorage(Number(attempt.id), testId);
+                toast('This attempt was already submitted.');
+                router.replace(`/dashboard/tests/result/${attempt.id}`);
+                return;
+            }
             const timing: AttemptTiming = {
                 started_at: attempt.started_at,
                 remaining_sec: data.remaining_sec ?? attempt.remaining_sec,
@@ -715,18 +1078,6 @@ export default function TestPlayer() {
         }
     };
 
-    const goToQuestion = (idx: number) => {
-        const q = test?.questions[idx];
-        if (!q) return;
-        commitTime();
-        setCurrentQuestionIdx(idx);
-        const aid = attemptIdRef.current;
-        if (aid) writeStorage(storageKeys.index(aid), String(idx));
-        markAsVisited(q.id);
-        startTracking(q.id);
-        if (dirtyRef.current.size >= NAV_FLUSH_THRESHOLD) void flush();
-    };
-
     const toggleFullscreen = () => {
         if (!document.fullscreenElement) {
             document.documentElement.requestFullscreen();
@@ -735,39 +1086,94 @@ export default function TestPlayer() {
         }
     };
 
+    // ── Sections (derived) ──────────────────────────────────────────────────
+    const sectionList = testSections(test);
+    const hasSections = sectionList.length > 0;
+    const sequential = isSequentialTest(test);
+    // Sectioned papers follow the TCS iON (DSSSB) rules: a selection is saved only
+    // by Save & Next / Mark for Review & Next. Other tests keep saving on click.
+    const cbt = hasSections;
+    const markedEvaluated = test?.evaluate_marked !== false;
+    const activeSection = sequential ? activeSectionOf(test, sectionState) : null;
+    const isLastGroup = !!activeSection && sectionList[sectionList.length - 1]?.key === activeSection.key;
+
+    const sectionStatusOf = (key: string): SectionStatus =>
+        sectionState?.sections.find((r) => r.key === key)?.status ?? (sequential ? 'pending' : 'open');
+
+    /** Next question, or null at the end of the open group (sequential) / the paper. */
+    const nextIndex = (idx: number): number | null => {
+        if (!test) return null;
+        if (sequential) {
+            if (activeSection && idx >= activeSection.from && idx < activeSection.from + activeSection.count - 1) return idx + 1;
+            return null;
+        }
+        return idx < test.questions.length - 1 ? idx + 1 : null;
+    };
+
+    const advance = (toastAtEnd: boolean) => {
+        const next = nextIndex(currentQuestionIdx);
+        if (next !== null) {
+            goToQuestion(next);
+        } else if (sequential) {
+            setNotice({ text: CBT_TEXT.endOfGroup });
+        } else if (toastAtEnd) {
+            toast.success('You have reached the last question.');
+        }
+    };
+
+    /** What the radio buttons show: the unsaved selection, else the saved answer. */
+    const shownSelection = (q: Question): number | null =>
+        draft && draft.qid === q.id ? draft.optionId : (responses[q.id]?.selected_option_id ?? null);
+
     const handleSaveAndNext = () => {
         const currentQ = test?.questions[currentQuestionIdx];
         if (!currentQ) return;
+
+        if (cbt) {
+            const selected = shownSelection(currentQ);
+            updateEntry(currentQ.id, (prev) => ({
+                ...(prev ?? {}),
+                selected_option_id: selected,
+                status: selected ? 'answered' : 'not_answered',
+                visited: true,
+            }));
+            setDraft(null);
+            advance(true);
+            return;
+        }
 
         updateEntry(currentQ.id, (prev) => ({
             ...(prev ?? {}),
             status: prev?.status === 'marked' ? 'marked' : (prev?.selected_option_id ? 'answered' : 'not_answered'),
             visited: true,
         }));
-
-        if (currentQuestionIdx < (test?.questions.length || 0) - 1) {
-            goToQuestion(currentQuestionIdx + 1);
-        } else {
-            toast.success('You have reached the last question.');
-        }
+        advance(true);
     };
 
     const handleMarkForReview = () => {
         const currentQ = test?.questions[currentQuestionIdx];
         if (!currentQ) return;
 
+        const selected = cbt ? shownSelection(currentQ) : undefined;
         updateEntry(currentQ.id, (prev) => ({
             ...(prev ?? {}),
+            ...(selected !== undefined ? { selected_option_id: selected } : {}),
             status: 'marked',
             visited: true,
         }));
-
-        if (currentQuestionIdx < (test?.questions.length || 0) - 1) {
-            goToQuestion(currentQuestionIdx + 1);
-        }
+        setDraft(null);
+        advance(false);
     };
 
     const handleSelectOption = (questionId: number, optionId: number) => {
+        if (cbt) {
+            if (writableRef.current && !writableRef.current.has(questionId)) return;
+            const q = test?.questions.find((x) => x.id === questionId);
+            const current = q ? shownSelection(q) : null;
+            // Clicking the chosen option again deselects it (TCS rule).
+            setDraft({ qid: questionId, optionId: current === optionId ? null : optionId });
+            return;
+        }
         updateEntry(questionId, (prev) => ({
             ...(prev ?? {}),
             selected_option_id: optionId,
@@ -780,6 +1186,7 @@ export default function TestPlayer() {
         const currentQ = test?.questions[currentQuestionIdx];
         if (!currentQ) return;
 
+        setDraft(null);
         updateEntry(currentQ.id, (prev) => ({
             ...(prev ?? {}),
             status: 'not_answered',
@@ -788,13 +1195,45 @@ export default function TestPlayer() {
         }));
     };
 
+    const handleSelectSection = (section: TestSection) => {
+        if (!test) return;
+        const status = sectionStatusOf(section.key);
+        if (sequential) {
+            if (status === 'locked') {
+                setNotice({ text: CBT_TEXT.attemptedGroup(sectionName(section, language)) });
+                return;
+            }
+            if (status !== 'active') return;
+        }
+        goToQuestion(lastIdxBySectionRef.current[section.key] ?? section.from);
+    };
+
     const handleSubmit = () => {
         if (!attemptId || isNaN(Number(attemptId))) {
             toast.error('No active session. Please refresh and try again.');
             return;
         }
-        if (isSubmitting) return;
+        if (isSubmitting || isLocking) return;
+        if (sequential) {
+            if (!activeSectionOf(testRef.current, sectionStateRef.current)) {
+                toast('Checking your test status…');
+                void refreshAttempt();
+                return;
+            }
+            setShowSectionModal(true);
+            return;
+        }
         setShowSubmitModal(true);
+    };
+
+    /** "Yes" on the group summary: lock the group; the last one first shows the final message. */
+    const handleConfirmSection = () => {
+        if (isLastGroup) {
+            setShowSectionModal(false);
+            setNotice({ text: CBT_TEXT.finalSubmit, okLabel: 'OK', onOk: () => void lockSection() });
+            return;
+        }
+        void lockSection();
     };
 
     const handleConfirmedSubmit = () => {
@@ -818,10 +1257,34 @@ export default function TestPlayer() {
         const interval = setInterval(() => {
             const dl = deadlineRef.current;
             if (dl !== null) setTimeLeft(secondsUntil(dl));
+
+            // Group timer (only when the group has its own duration_sec).
+            const bdl = blockDeadlineRef.current;
+            const overallOver = dl !== null && Date.now() >= dl - 1_000;
+            if (bdl !== null && !overallOver && !finishedRef.current) {
+                const left = secondsUntil(bdl);
+                setBlockTimeLeft(left);
+                const key = sectionStateRef.current?.active_key ?? null;
+                // Get the group's last answers to the server before it closes.
+                if (left <= 5 && left > 0 && blockPreFlushRef.current !== key) {
+                    blockPreFlushRef.current = key;
+                    if (dirtyRef.current.size > 0) nextSyncAtRef.current = 0;
+                }
+                if (left <= 0) {
+                    // The server closes the group; re-read and follow it (never lock locally).
+                    setBlockExpired(true);
+                    const now = Date.now();
+                    if (now >= blockExpiryRef.current.nextTryAt && !lockInFlightRef.current) {
+                        blockExpiryRef.current = { key, nextTryAt: now + 2_000 };
+                        void refreshAttempt();
+                    }
+                }
+            }
+
             if (dirtyRef.current.size > 0 && Date.now() >= nextSyncAtRef.current) void flush();
         }, 1000);
         return () => clearInterval(interval);
-    }, [step, flush]);
+    }, [step, flush, refreshAttempt]);
 
     // ── Auto-submit at 0 (effect, never inside a setState updater) ──────────
     const submitAttemptRef = useRef(submitAttempt);
@@ -908,6 +1371,112 @@ export default function TestPlayer() {
                 <div className="space-y-2 text-center">
                     <h2 className="text-xl font-semibold text-foreground">Loading test</h2>
                     <p className="text-sm text-foreground/60">Please wait while we load the questions…</p>
+                </div>
+            </div>
+        );
+    }
+
+    // Sectioned papers: the TCS iON (DSSSB) instruction pages 1 and 2.
+    if (cbt && test && (step === 'instructions' || step === 'declaration')) {
+        const ready = declared && languageChosen;
+        return (
+            <div className="max-w-4xl mx-auto py-6 sm:py-10 px-4">
+                <div className="bg-card-bg border border-card-border rounded-2xl shadow-sm overflow-hidden">
+                    <div className="flex flex-wrap items-center justify-between gap-3 px-5 sm:px-8 py-4 border-b border-card-border">
+                        <div className="min-w-0">
+                            <h1 className="text-xl sm:text-2xl font-bold tracking-tight text-foreground">Instructions</h1>
+                            <p className="text-sm text-foreground/60 truncate">{test.name_en}</p>
+                        </div>
+                        <ViewInSelect language={language} onChange={setLanguage} />
+                    </div>
+
+                    <div className="p-5 sm:p-8">
+                        {step === 'instructions' ? (
+                            <GeneralInstructions sequential={sequential} markedEvaluated={markedEvaluated} />
+                        ) : (
+                            <div className="space-y-8">
+                                <OtherInstructions
+                                    sections={sectionList}
+                                    sequential={sequential}
+                                    totalDurationSec={test.duration_sec}
+                                    totalMarks={Number(test.total_marks) || 0}
+                                    negativeMarking={Number(test.negative_marking) || 0}
+                                    language={language}
+                                />
+
+                                <div className="space-y-2 p-4 sm:p-5 bg-background rounded-xl border border-card-border">
+                                    <label className="flex flex-wrap items-center gap-3 text-sm font-semibold text-foreground">
+                                        Choose your default language :
+                                        <select
+                                            value={languageChosen ? language : ''}
+                                            onChange={(e) => {
+                                                if (!e.target.value) return;
+                                                setLanguage(e.target.value === 'hi' ? 'hi' : 'en');
+                                                setLanguageChosen(true);
+                                            }}
+                                            className="h-10 min-w-[160px] rounded-lg border border-card-border bg-card-bg px-3 text-sm font-normal"
+                                        >
+                                            <option value="">-- Select --</option>
+                                            <option value="en">English</option>
+                                            <option value="hi">Hindi</option>
+                                        </select>
+                                    </label>
+                                    <p className="text-xs text-red-600 dark:text-red-400">
+                                        Please note all questions will appear in your default language. This language can be changed for a particular question later on.
+                                    </p>
+                                </div>
+
+                                <div className="flex items-start gap-3 p-4 sm:p-5 bg-orange-500/5 rounded-xl border border-orange-500/20">
+                                    <input
+                                        type="checkbox"
+                                        id="declaration"
+                                        checked={declared}
+                                        onChange={(e) => setDeclared(e.target.checked)}
+                                        className="mt-1 h-5 w-5 shrink-0 rounded bg-background border-card-border text-blue-600 cursor-pointer"
+                                    />
+                                    <label htmlFor="declaration" className="text-sm text-foreground/80 leading-relaxed cursor-pointer select-none">
+                                        {CBT_TEXT.declaration}
+                                    </label>
+                                </div>
+                            </div>
+                        )}
+                    </div>
+
+                    <div className="flex flex-col-reverse sm:flex-row sm:items-center sm:justify-between gap-3 px-5 sm:px-8 py-4 border-t border-card-border">
+                        {step === 'declaration' ? (
+                            <button
+                                onClick={() => setStep('instructions')}
+                                className="px-4 py-3 min-h-[44px] border border-card-border rounded-xl text-sm font-semibold text-foreground/70 hover:text-foreground transition-colors flex items-center justify-center gap-2"
+                            >
+                                <ChevronLeft className="h-4 w-4" />
+                                Previous
+                            </button>
+                        ) : <span />}
+                        {step === 'instructions' ? (
+                            <button
+                                onClick={() => setStep('declaration')}
+                                className="px-6 py-3 min-h-[48px] bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold text-base transition-colors shadow-sm flex items-center justify-center gap-2"
+                            >
+                                Next
+                                <ChevronRight className="h-5 w-5" />
+                            </button>
+                        ) : (
+                            <button
+                                onClick={startTest}
+                                disabled={!ready || isStarting}
+                                title={ready ? undefined : 'Choose your default language and tick the declaration first'}
+                                className={cn(
+                                    'px-6 py-3 min-h-[48px] rounded-xl font-semibold text-base transition-colors flex items-center justify-center gap-2 shadow-sm',
+                                    ready
+                                        ? 'bg-blue-600 hover:bg-blue-700 text-white'
+                                        : 'bg-gray-200 dark:bg-gray-800 text-foreground/30 cursor-not-allowed shadow-none',
+                                )}
+                            >
+                                I am ready to begin
+                                {isStarting && <Loader2 className="h-5 w-5 animate-spin" />}
+                            </button>
+                        )}
+                    </div>
                 </div>
             </div>
         );
@@ -1087,28 +1656,55 @@ export default function TestPlayer() {
         const timeUp = deadline !== null && timeLeft <= 0;
         // Lock the paper as soon as time is up (auto-submit may be a few seconds away).
         const showSubmitOverlay = !!submitError || timeUp;
+        const showBlockOverlay = !showSubmitOverlay && sequential && blockExpired && blockDeadline !== null;
+
+        // Group shown in the palette: the open group (sequential) or the current question's group (free).
+        const currentSectionIdx = hasSections ? sectionIndexOf(sectionList, currentQuestionIdx) : -1;
+        const viewSection: TestSection | null = activeSection ?? (currentSectionIdx >= 0 ? sectionList[currentSectionIdx] : null);
+        const paletteFrom = viewSection ? viewSection.from : 0;
+        const paletteQuestions = test
+            ? (viewSection ? test.questions.slice(viewSection.from, viewSection.from + viewSection.count) : test.questions)
+            : [];
+        const paletteCounts = countPalette(paletteQuestions.map((q) => responses[q.id]));
+        const allCounts = countPalette((test?.questions ?? []).map((q) => responses[q.id]));
+        const currentSelection = currentQ ? (cbt ? shownSelection(currentQ) : (responses[currentQ.id]?.selected_option_id ?? null)) : null;
+        const currentSection = currentSectionIdx >= 0 ? sectionList[currentSectionIdx] : null;
+        const submitLabel = sequential ? 'Submit' : 'Submit test';
+
+        const summaryRow = (s: TestSection): SectionSummaryRow => ({
+            key: s.key,
+            name: sectionName(s, language),
+            total: s.count,
+            counts: countPalette((test?.questions.slice(s.from, s.from + s.count) ?? []).map((q) => responses[q.id])),
+            current: activeSection?.key === s.key,
+        });
+        const groupSummaryRows: SectionSummaryRow[] = isLastGroup || !activeSection
+            ? sectionList.map(summaryRow)
+            : [summaryRow(activeSection)];
 
         return (
             <div className="fixed inset-0 bg-background z-[100] flex flex-col font-sans">
                 {/* 1. Header Bar */}
                 <div className="h-16 sm:h-20 bg-card-bg border-b border-card-border px-3 sm:px-6 flex items-center justify-between gap-2 shadow-sm">
-                    <div className="flex items-center gap-6">
-                        <div className="h-10 w-10 bg-blue-600 rounded-xl flex items-center justify-center text-white">
+                    <div className="flex items-center gap-3 sm:gap-6 min-w-0">
+                        <div className="h-10 w-10 shrink-0 bg-blue-600 rounded-xl flex items-center justify-center text-white">
                             <Zap className="h-5 w-5" />
                         </div>
-                        <div className="hidden md:block">
+                        <div className="hidden md:block min-w-0">
                             <h2 className="text-sm font-semibold text-foreground truncate max-w-[280px]">{test?.name_en}</h2>
-                            <p className="text-xs text-foreground/50 mt-0.5">Test ID: {test?.id}</p>
+                            <p className="text-xs text-foreground/50 mt-0.5 truncate max-w-[280px]">
+                                {cbt && user?.name ? `Candidate: ${user.name}` : `Test ID: ${test?.id}`}
+                            </p>
                         </div>
                     </div>
 
-                    <div className="flex items-center gap-3 sm:gap-6">
+                    <div className="flex items-center gap-2 sm:gap-6">
                         {/* Status Counts */}
-                        <div className="hidden lg:flex items-center gap-6 border-r border-card-border pr-10">
+                        <div className="hidden xl:flex items-center gap-6 border-r border-card-border pr-8">
                             {[
-                                { label: 'Answered', count: Object.values(responses).filter(r => r.status === 'answered').length, color: 'text-green-500' },
-                                { label: 'Marked', count: Object.values(responses).filter(r => r.status === 'marked').length, color: 'text-purple-500' },
-                                { label: 'Not answered', count: (test?.questions.length || 0) - Object.keys(responses).length, color: 'text-foreground/20' }
+                                { label: 'Answered', count: allCounts.answered + allCounts.answered_marked, color: 'text-green-500' },
+                                { label: 'Marked', count: allCounts.marked + allCounts.answered_marked, color: 'text-purple-500' },
+                                { label: 'Not answered', count: allCounts.not_answered + allCounts.not_visited, color: 'text-foreground/40' },
                             ].map((s, i) => (
                                 <div key={i} className="text-center">
                                     <p className={cn("text-lg font-black leading-none", s.color)}>{s.count}</p>
@@ -1133,12 +1729,28 @@ export default function TestPlayer() {
                             <span className="max-w-[160px] leading-tight">{syncLabel}</span>
                         </div>
 
+                        {/* Group timer (only when the group has its own time limit) */}
+                        {sequential && blockTimeLeft !== null && (
+                            <div
+                                className={cn(
+                                    "flex items-center gap-1.5 px-2 sm:px-3 py-2 rounded-xl border transition-colors",
+                                    blockTimeLeft < 60 ? "bg-red-500/10 border-red-500/20 text-red-500" : "bg-background border-card-border text-foreground/70"
+                                )}
+                                title="Time left in this group"
+                            >
+                                <span className="hidden sm:inline text-xs font-semibold">Group :</span>
+                                <span className="text-sm sm:text-base font-bold tabular-nums">{formatTime(blockTimeLeft)}</span>
+                            </div>
+                        )}
+
                         {/* Timer */}
                         <div className={cn(
                             "flex items-center gap-2 sm:gap-3 px-3 sm:px-5 py-2 rounded-xl border transition-colors",
                             timeLeft < 300 ? "bg-red-500/10 border-red-500/20 text-red-500" : "bg-blue-500/5 border-blue-500/10 text-blue-600"
                         )}>
-                            <Timer className={cn("h-5 w-5", timeLeft < 300 && "animate-pulse")} />
+                            {cbt
+                                ? <span className="hidden sm:inline text-xs font-semibold whitespace-nowrap">Time Left :</span>
+                                : <Timer className={cn("h-5 w-5", timeLeft < 300 && "animate-pulse")} />}
                             <span className="text-lg sm:text-xl font-bold tabular-nums">{formatTime(timeLeft)}</span>
                         </div>
 
@@ -1146,10 +1758,10 @@ export default function TestPlayer() {
                         <div className="flex items-center gap-3">
                             <button
                                 onClick={handleSubmit}
-                                disabled={isSubmitting}
-                                className="h-11 border border-card-border rounded-xl px-4 text-sm font-semibold text-foreground/70 hover:bg-background transition-colors"
+                                disabled={isSubmitting || isLocking}
+                                className="h-11 border border-card-border rounded-xl px-3 sm:px-4 text-sm font-semibold text-foreground/70 hover:bg-background transition-colors"
                             >
-                                {isSubmitting ? <Loader2 className="h-4 w-4 animate-spin" /> : 'Submit test'}
+                                {isSubmitting || isLocking ? <Loader2 className="h-4 w-4 animate-spin" /> : submitLabel}
                             </button>
                         </div>
                     </div>
@@ -1173,30 +1785,52 @@ export default function TestPlayer() {
                     </div>
                 )}
 
+                {/* Group tabs */}
+                {hasSections && (
+                    <SectionStrip
+                        sections={sectionList}
+                        statusOf={sectionStatusOf}
+                        currentKey={currentSection?.key ?? null}
+                        language={language}
+                        sequential={sequential}
+                        onSelect={handleSelectSection}
+                    />
+                )}
+
                 {/* 2. Main Workspace */}
                 <div className="flex-1 flex overflow-hidden relative">
                     {/* Left: Question Area */}
                     <div className="flex-1 overflow-y-auto no-scrollbar p-4 sm:p-8 lg:p-12 bg-background">
                         <div className="max-w-4xl mx-auto space-y-8">
                             {/* Question Header */}
-                            <div className="flex items-center justify-between border-b border-card-border pb-6">
-                                <span className="bg-blue-600/10 text-blue-700 dark:text-blue-300 text-sm font-semibold px-3 py-1.5 rounded-full border border-blue-600/20">
-                                    Question {currentQuestionIdx + 1}
-                                </span>
-                                <div className="flex items-center gap-4">
+                            <div className="flex flex-wrap items-center justify-between gap-3 border-b border-card-border pb-6">
+                                <div className="flex flex-col gap-1 min-w-0">
+                                    {currentSection && (
+                                        <span className="text-xs font-medium text-foreground/60 truncate">{sectionName(currentSection, language)}</span>
+                                    )}
+                                    <span className="self-start bg-blue-600/10 text-blue-700 dark:text-blue-300 text-sm font-semibold px-3 py-1.5 rounded-full border border-blue-600/20">
+                                        {cbt ? 'Question No.' : 'Question'} {currentQuestionIdx + 1}
+                                    </span>
+                                </div>
+                                <div className="flex items-center gap-3 sm:gap-4">
                                     <button
                                         onClick={toggleFullscreen}
+                                        aria-label="Full screen"
                                         className="h-10 w-10 flex items-center justify-center bg-card-bg border border-card-border rounded-full hover:text-blue-600 transition-colors"
                                     >
                                         <Maximize className="h-4 w-4" />
                                     </button>
-                                    <button
-                                        onClick={() => setLanguage(language === 'en' ? 'hi' : 'en')}
-                                        className="flex items-center gap-2 px-3 py-2 min-h-[40px] bg-card-bg border border-card-border rounded-full text-sm font-medium text-foreground/70 hover:text-blue-600 transition-colors"
-                                    >
-                                        <Languages className="h-4 w-4" />
-                                        {language === 'en' ? 'Hindi' : 'English'}
-                                    </button>
+                                    {cbt ? (
+                                        <ViewInSelect language={language} onChange={setLanguage} />
+                                    ) : (
+                                        <button
+                                            onClick={() => setLanguage(language === 'en' ? 'hi' : 'en')}
+                                            className="flex items-center gap-2 px-3 py-2 min-h-[40px] bg-card-bg border border-card-border rounded-full text-sm font-medium text-foreground/70 hover:text-blue-600 transition-colors"
+                                        >
+                                            <Languages className="h-4 w-4" />
+                                            {language === 'en' ? 'Hindi' : 'English'}
+                                        </button>
+                                    )}
                                 </div>
                             </div>
 
@@ -1219,14 +1853,19 @@ export default function TestPlayer() {
                                 )}
                             </div>
 
-                            {/* Options */}
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 pb-24">
+                            {/* Options (sectioned papers: one vertical list, like the exam) */}
+                            <div
+                                className={cn("grid grid-cols-1 gap-3 sm:gap-4 pb-24", !cbt && "md:grid-cols-2")}
+                                role={cbt ? 'radiogroup' : undefined}
+                            >
                                 {currentQ?.options.map((opt, idx) => {
-                                    const isSelected = responses[currentQ.id]?.selected_option_id === opt.id;
+                                    const isSelected = currentSelection === opt.id;
                                     return (
                                         <button
                                             key={opt.id}
                                             onClick={() => handleSelectOption(currentQ.id, opt.id)}
+                                            role={cbt ? 'radio' : undefined}
+                                            aria-checked={cbt ? isSelected : undefined}
                                             className={cn(
                                                 "p-4 sm:p-5 rounded-2xl border-2 text-left transition-colors relative group flex flex-col gap-3",
                                                 isSelected
@@ -1260,7 +1899,7 @@ export default function TestPlayer() {
                                                 </div>
                                             )}
 
-                                            {isSelected && <div className="absolute top-4 right-4 h-2 w-2 bg-blue-600 rounded-full animate-ping" />}
+                                            {isSelected && !cbt && <div className="absolute top-4 right-4 h-2 w-2 bg-blue-600 rounded-full animate-ping" />}
                                         </button>
                                     );
                                 })}
@@ -1273,12 +1912,14 @@ export default function TestPlayer() {
                         "bg-card-bg border-l border-card-border transition-all overflow-hidden flex flex-col",
                         isSidebarOpen ? "absolute inset-y-0 right-0 z-20 w-full sm:static sm:w-[360px] lg:w-[400px]" : "w-0"
                     )}>
-                        <div className="p-5 border-b border-card-border flex items-center justify-between">
-                            <div className="space-y-1">
+                        <div className="p-5 border-b border-card-border flex items-center justify-between gap-2">
+                            <div className="space-y-1 min-w-0">
                                 <h3 className="text-sm font-semibold text-foreground leading-none">Question palette</h3>
-                                <p className="text-xs text-foreground/60 truncate max-w-[220px]">{test?.name_en}</p>
+                                <p className="text-xs text-foreground/60 truncate max-w-[220px]">
+                                    {viewSection ? sectionName(viewSection, language) : test?.name_en}
+                                </p>
                             </div>
-                            <div className="flex items-center gap-2">
+                            <div className="flex items-center gap-2 shrink-0">
                                 <button
                                     type="button"
                                     onClick={() => setIsSidebarOpen(false)}
@@ -1299,91 +1940,64 @@ export default function TestPlayer() {
                             </div>
                         </div>
 
-                        {/* Top: Final Submission and Stats Breakdown */}
-                        <div className="p-5 border-b border-card-border bg-emerald-600/5">
-                            <button
-                                onClick={handleSubmit}
-                                disabled={isSubmitting}
-                                className="w-full py-3 min-h-[44px] bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl font-semibold text-sm shadow-sm transition-colors flex items-center justify-center gap-2"
-                            >
-                                {isSubmitting ? <Loader2 className="h-4 w-4 animate-spin" /> : <ShieldCheck className="h-4 w-4" />}
-                                Submit test
-                            </button>
+                        {/* Legend with counts for the questions shown */}
+                        <div className="p-4 border-b border-card-border bg-background/50">
+                            <PaletteLegend counts={paletteCounts} markedEvaluated={markedEvaluated} />
                         </div>
 
                         <div className="flex-1 overflow-y-auto no-scrollbar p-5">
                             <div className="grid grid-cols-5 gap-3">
-                                {test?.questions.map((q, i) => {
-                                    const resp = responses[q.id];
+                                {paletteQuestions.map((q, j) => {
+                                    const i = paletteFrom + j;
+                                    const status = paletteStatus(responses[q.id]);
                                     const isCurrent = currentQuestionIdx === i;
-
-                                    let btnClass = "bg-background border-card-border text-foreground/20 italic"; // Not visited
-                                    if (resp?.visited && !resp?.selected_option_id && resp?.status !== 'marked') {
-                                        btnClass = "bg-red-500 border-red-500 text-white shadow-lg shadow-red-500/20";
-                                    }
-                                    if (resp?.status === 'answered') {
-                                        btnClass = "bg-green-500 border-green-500 text-white shadow-lg shadow-green-500/20";
-                                    }
-                                    if (resp?.status === 'marked') {
-                                        btnClass = "bg-purple-600 border-purple-600 text-white shadow-lg shadow-purple-600/20";
-                                    }
-                                    if (isCurrent) btnClass += " ring-4 ring-blue-500/30 ring-offset-2 ring-offset-background scale-110 z-10";
-
                                     return (
                                         <button
                                             key={q.id}
                                             onClick={() => { goToQuestion(i); closePaletteOnPhone(); }}
+                                            aria-label={`Question ${i + 1}`}
                                             className={cn(
-                                                "h-12 w-12 rounded-xl border flex items-center justify-center text-[10px] font-black transition-all hover:scale-110 relative",
-                                                btnClass
+                                                "h-12 w-12 border flex items-center justify-center text-xs font-bold transition-all hover:scale-110 relative",
+                                                PALETTE_CLASSES[status],
+                                                isCurrent && "ring-4 ring-blue-500/30 ring-offset-2 ring-offset-background scale-110 z-10"
                                             )}
                                         >
                                             {i + 1}
-                                            {resp?.status === 'marked' && resp?.selected_option_id && (
-                                                <div className="absolute -top-1 -right-1 h-3 w-3 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full" />
-                                            )}
+                                            {status === 'answered_marked' && <TickBadge />}
                                         </button>
                                     );
                                 })}
                             </div>
                         </div>
 
-                        {/* Legend */}
-                        <div className="p-5 border-t border-card-border bg-background/50 grid grid-cols-2 gap-3">
-                            <div className="flex items-center gap-3">
-                                <div className="h-3 w-3 rounded-full bg-green-500" />
-                                <span className="text-xs text-foreground/70">Answered</span>
-                            </div>
-                            <div className="flex items-center gap-3">
-                                <div className="h-3 w-3 rounded-full bg-red-500" />
-                                <span className="text-xs text-foreground/70">Not answered</span>
-                            </div>
-                            <div className="flex items-center gap-3">
-                                <div className="h-3 w-3 rounded-full bg-purple-600" />
-                                <span className="text-xs text-foreground/70">Marked for review</span>
-                            </div>
-                            <div className="flex items-center gap-3">
-                                <div className="h-3 w-3 rounded-full bg-background border border-card-border" />
-                                <span className="text-xs text-foreground/70">Not visited</span>
-                            </div>
+                        {/* Submit (below the palette, as in the exam) */}
+                        <div className="p-5 border-t border-card-border bg-emerald-600/5">
+                            <button
+                                onClick={handleSubmit}
+                                disabled={isSubmitting || isLocking}
+                                className="w-full py-3 min-h-[44px] bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl font-semibold text-sm shadow-sm transition-colors flex items-center justify-center gap-2"
+                            >
+                                {isSubmitting || isLocking ? <Loader2 className="h-4 w-4 animate-spin" /> : <ShieldCheck className="h-4 w-4" />}
+                                {submitLabel}
+                            </button>
                         </div>
                     </div>
                 </div>
 
                 {/* 3. Footer Action Bar */}
                 <div className="min-h-[72px] bg-card-bg border-t border-card-border px-3 sm:px-6 py-2 flex items-center justify-between gap-2">
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-1 sm:gap-2">
                         <button
                             onClick={handleMarkForReview}
                             className="px-3 sm:px-4 py-2.5 min-h-[44px] border border-card-border hover:border-purple-500/40 text-foreground/70 hover:text-purple-600 rounded-xl text-sm font-medium transition-colors"
                         >
-                            Mark for review & next
+                            Mark for Review &amp; Next
                         </button>
                         <button
                             onClick={handleClearSelection}
-                            className="px-3 sm:px-4 py-2.5 min-h-[44px] text-foreground/60 hover:text-red-500 text-sm font-medium transition-colors"
+                            className="px-3 sm:px-4 py-2.5 min-h-[44px] border border-transparent hover:border-card-border text-foreground/60 hover:text-red-500 rounded-xl text-sm font-medium transition-colors"
                         >
-                            Clear
+                            Clear Response
                         </button>
                     </div>
 
@@ -1397,31 +2011,77 @@ export default function TestPlayer() {
                         </button>
                         <button
                             onClick={handleSaveAndNext}
-                            className="px-5 sm:px-8 py-2.5 min-h-[44px] bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold text-sm shadow-sm transition-colors flex items-center gap-2"
+                            className="px-4 sm:px-8 py-2.5 min-h-[44px] bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold text-sm shadow-sm transition-colors flex items-center gap-2"
                         >
-                            Save & Next
+                            Save &amp; Next
                             <ChevronRight className="h-4 w-4" />
                         </button>
                     </div>
                 </div>
 
-                <div className="hidden sm:block fixed bottom-28 right-6 lg:right-12 z-[50]">
-                    <button
-                        onClick={handleSubmit}
-                        disabled={isSubmitting}
-                        className="p-6 bg-emerald-600 hover:bg-emerald-700 text-white rounded-full shadow-2xl shadow-emerald-500/20 active:scale-90 transition-all group overflow-hidden relative"
-                    >
-                        <div className="flex items-center gap-3">
-                            <Rocket className="h-6 w-6 group-hover:translate-x-12 transition-all duration-500" />
-                            <span className="text-[10px] font-black uppercase tracking-widest hidden group-hover:block animate-in slide-in-from-left duration-300">Submit test</span>
-                        </div>
-                    </button>
-                </div>
+                {!sequential && (
+                    <div className="hidden sm:block fixed bottom-28 right-6 lg:right-12 z-[50]">
+                        <button
+                            onClick={handleSubmit}
+                            disabled={isSubmitting}
+                            className="p-6 bg-emerald-600 hover:bg-emerald-700 text-white rounded-full shadow-2xl shadow-emerald-500/20 active:scale-90 transition-all group overflow-hidden relative"
+                        >
+                            <div className="flex items-center gap-3">
+                                <Rocket className="h-6 w-6 group-hover:translate-x-12 transition-all duration-500" />
+                                <span className="text-[10px] font-black uppercase tracking-widest hidden group-hover:block animate-in slide-in-from-left duration-300">Submit test</span>
+                            </div>
+                        </button>
+                    </div>
+                )}
 
-                {/* Submit Confirmation Modal */}
+                {/* Group submit: summary + "Are you sure to submit this Group?" */}
+                {showSectionModal && activeSection && (
+                    <div className="fixed inset-0 bg-slate-950/80 backdrop-blur-xl z-[300] flex items-center justify-center p-4 sm:p-6 animate-in fade-in duration-200">
+                        <div className="bg-card-bg border border-card-border rounded-2xl p-5 sm:p-7 max-w-2xl w-full shadow-2xl space-y-5 max-h-[92vh] overflow-y-auto">
+                            <div className="space-y-1">
+                                <h2 className="text-xl font-bold tracking-tight text-foreground">
+                                    {isLastGroup ? 'Exam summary' : 'Group summary'}
+                                </h2>
+                                <p className="text-sm text-foreground/60">{sectionName(activeSection, language)}</p>
+                            </div>
+
+                            <SectionSummaryTable rows={groupSummaryRows} markedEvaluated={markedEvaluated} />
+
+                            <div className="space-y-2 rounded-xl border border-orange-500/30 bg-orange-500/5 p-3 text-sm">
+                                <p className="flex items-start gap-2 text-orange-700 dark:text-orange-300">
+                                    <AlertCircle className="h-4 w-4 mt-0.5 shrink-0" />
+                                    {CBT_TEXT.lockWarning}
+                                </p>
+                                <p className="font-semibold text-foreground">{CBT_TEXT.groupConfirm}</p>
+                            </div>
+
+                            <div className="flex gap-3">
+                                <button
+                                    onClick={() => setShowSectionModal(false)}
+                                    disabled={isLocking}
+                                    className="flex-1 py-3 min-h-[44px] border border-card-border rounded-xl text-sm font-semibold text-foreground/70 hover:text-foreground hover:bg-background transition-colors"
+                                >
+                                    No
+                                </button>
+                                <button
+                                    onClick={handleConfirmSection}
+                                    disabled={isLocking}
+                                    className="flex-1 py-3 min-h-[44px] bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-sm font-semibold shadow-sm transition-colors flex items-center justify-center gap-2"
+                                >
+                                    {isLocking ? <Loader2 className="h-4 w-4 animate-spin" /> : 'Yes'}
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                )}
+
+                {/* Submit Confirmation Modal (tests without locked groups) */}
                 {showSubmitModal && (
-                    <div className="fixed inset-0 bg-slate-950/80 backdrop-blur-xl z-[300] flex items-center justify-center p-6 animate-in fade-in duration-200">
-                        <div className="bg-card-bg border border-card-border rounded-2xl p-6 sm:p-8 max-w-md w-full shadow-2xl space-y-6">
+                    <div className="fixed inset-0 bg-slate-950/80 backdrop-blur-xl z-[300] flex items-center justify-center p-4 sm:p-6 animate-in fade-in duration-200">
+                        <div className={cn(
+                            "bg-card-bg border border-card-border rounded-2xl p-6 sm:p-8 w-full shadow-2xl space-y-6 max-h-[92vh] overflow-y-auto",
+                            hasSections ? "max-w-2xl" : "max-w-md"
+                        )}>
                             <div className="flex flex-col items-center text-center space-y-4">
                                 <div className="h-16 w-16 bg-orange-500/10 rounded-[2rem] flex items-center justify-center border border-orange-500/20">
                                     <ShieldCheck className="h-8 w-8 text-orange-500" />
@@ -1432,20 +2092,24 @@ export default function TestPlayer() {
                                 </p>
                             </div>
 
-                            <div className="grid grid-cols-3 gap-3 text-center p-4 bg-background rounded-xl border border-card-border">
-                                <div>
-                                    <p className="text-xl font-black text-green-500">{Object.values(responses).filter(r => r.status === 'answered').length}</p>
-                                    <p className="text-xs text-foreground/60 mt-1">Answered</p>
+                            {hasSections ? (
+                                <SectionSummaryTable rows={sectionList.map(summaryRow)} markedEvaluated={markedEvaluated} />
+                            ) : (
+                                <div className="grid grid-cols-3 gap-3 text-center p-4 bg-background rounded-xl border border-card-border">
+                                    <div>
+                                        <p className="text-xl font-black text-green-500">{Object.values(responses).filter(r => r.status === 'answered').length}</p>
+                                        <p className="text-xs text-foreground/60 mt-1">Answered</p>
+                                    </div>
+                                    <div>
+                                        <p className="text-xl font-black text-purple-500">{Object.values(responses).filter(r => r.status === 'marked').length}</p>
+                                        <p className="text-xs text-foreground/60 mt-1">Marked</p>
+                                    </div>
+                                    <div>
+                                        <p className="text-xl font-black text-foreground/30">{(test?.questions.length || 0) - Object.values(responses).filter(r => r.status === 'answered' || r.status === 'marked').length}</p>
+                                        <p className="text-xs text-foreground/60 mt-1">Not answered</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <p className="text-xl font-black text-purple-500">{Object.values(responses).filter(r => r.status === 'marked').length}</p>
-                                    <p className="text-xs text-foreground/60 mt-1">Marked</p>
-                                </div>
-                                <div>
-                                    <p className="text-xl font-black text-foreground/30">{(test?.questions.length || 0) - Object.values(responses).filter(r => r.status === 'answered' || r.status === 'marked').length}</p>
-                                    <p className="text-xs text-foreground/60 mt-1">Not answered</p>
-                                </div>
-                            </div>
+                            )}
 
                             <div className="flex gap-4">
                                 <button
@@ -1466,9 +2130,47 @@ export default function TestPlayer() {
                     </div>
                 )}
 
+                {/* Messages (end of group, closed group, final submit, group timer) */}
+                {notice && !showSubmitOverlay && (
+                    <div className="fixed inset-0 bg-slate-950/70 backdrop-blur-sm z-[320] flex items-center justify-center p-4 sm:p-6 animate-in fade-in duration-200">
+                        <div role="alertdialog" aria-modal="true" className="bg-card-bg border border-card-border rounded-2xl p-6 max-w-md w-full shadow-2xl space-y-5">
+                            <p className="flex items-start gap-3 text-sm text-foreground leading-relaxed">
+                                <Info className="h-5 w-5 text-blue-600 shrink-0 mt-0.5" />
+                                {notice.text}
+                            </p>
+                            <div className="flex justify-end">
+                                <button
+                                    onClick={() => {
+                                        const onOk = notice.onOk;
+                                        setNotice(null);
+                                        onOk?.();
+                                    }}
+                                    disabled={isLocking}
+                                    className="px-6 py-2.5 min-h-[44px] bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-sm font-semibold transition-colors"
+                                >
+                                    {notice.okLabel ?? 'OK'}
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                )}
+
+                {/* Group timer ran out: wait for the server to close it and open the next */}
+                {showBlockOverlay && (
+                    <div className="fixed inset-0 bg-slate-950/85 backdrop-blur-xl z-[240] flex flex-col items-center justify-center p-8 text-center animate-in fade-in duration-300">
+                        <Loader2 className="h-10 w-10 text-blue-500 animate-spin mb-6" />
+                        <h2 className="text-2xl font-bold text-white mb-3">Time for this group is over</h2>
+                        <p className="text-base text-white/70 max-w-xl">
+                            {isOffline
+                                ? 'Waiting for the connection to open the next group. Your answers are saved on this device.'
+                                : 'Opening the next group…'}
+                        </p>
+                    </div>
+                )}
+
                 {/* Time-up / submission failure overlay */}
                 {showSubmitOverlay && (
-                    <div className="fixed inset-0 bg-slate-950/90 backdrop-blur-xl z-[250] flex flex-col items-center justify-center p-12 text-center animate-in fade-in duration-300">
+                    <div className="fixed inset-0 bg-slate-950/90 backdrop-blur-xl z-[250] flex flex-col items-center justify-center p-6 sm:p-12 text-center animate-in fade-in duration-300">
                         <div className="h-24 w-24 bg-blue-600/10 rounded-[3rem] flex items-center justify-center mb-10 border border-blue-600/20">
                             {submitError
                                 ? <AlertCircle className="h-10 w-10 text-orange-500" />
@@ -1480,7 +2182,7 @@ export default function TestPlayer() {
                         <p className="text-base text-white/70 mb-12 max-w-2xl">
                             {submitError
                                 ? `${submitError} Your answers are saved on this device.`
-                                : 'Submitting your answers…'}
+                                : cbt ? CBT_TEXT.timeOver : 'Submitting your answers…'}
                         </p>
                         {submitError && (
                             <div className="flex flex-wrap items-center justify-center gap-4">

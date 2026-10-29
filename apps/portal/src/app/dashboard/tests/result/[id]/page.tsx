@@ -19,6 +19,7 @@ import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { toast } from 'react-hot-toast';
 import AttemptSwitcher, { AttemptRef, formatScore } from '@/components/tests/AttemptSwitcher';
+import type { SectionResult } from '@/components/tests/SectionedPlayer';
 
 type SectionStat = {
     correct: number;
@@ -39,6 +40,8 @@ type Attempt = {
         unattempted_count?: number;
         accuracy: number;
         sectional_stats: Record<string, SectionStat>;
+        /** Sectioned papers: one row per group, in paper order. */
+        section_results?: SectionResult[] | null;
         ai_insights?: string | string[] | null;
     };
     ai_insights?: string | string[] | null;
@@ -124,6 +127,18 @@ export default function TestResult() {
     }
 
     const sectional = attempt.metadata?.sectional_stats ?? {};
+    const sectionResults = Array.isArray(attempt.metadata?.section_results) ? attempt.metadata.section_results : [];
+    const sectionTotals = sectionResults.reduce(
+        (acc, s) => ({
+            total: acc.total + (Number(s.total) || 0),
+            correct: acc.correct + (Number(s.correct) || 0),
+            incorrect: acc.incorrect + (Number(s.incorrect) || 0),
+            unattempted: acc.unattempted + (Number(s.unattempted) || 0),
+            marks: acc.marks + (Number(s.marks) || 0),
+            max: acc.max + (Number(s.max_marks) || 0),
+        }),
+        { total: 0, correct: 0, incorrect: 0, unattempted: 0, marks: 0, max: 0 },
+    );
     const totalQuestions = Object.values(sectional).reduce((acc, s) => acc + (s.total || 0), 0);
     const correct = attempt.metadata?.correct_count ?? 0;
     const incorrect = attempt.metadata?.incorrect_count ?? 0;
@@ -250,8 +265,8 @@ export default function TestResult() {
                 </div>
             </div>
 
-            {/* Sectional table */}
-            {Object.keys(sectional).length > 0 && (
+            {/* Section-wise (groups of a sectioned paper, in paper order) */}
+            {sectionResults.length > 0 && (
                 <div className="card overflow-hidden">
                     <div className="p-5 sm:p-6 border-b border-card-border">
                         <h2 className="text-lg font-semibold">Section-wise performance</h2>
@@ -261,6 +276,68 @@ export default function TestResult() {
                             <thead className="bg-muted/60 text-muted-foreground">
                                 <tr>
                                     <th className="text-left font-medium px-5 sm:px-6 py-3">Section</th>
+                                    <th className="text-right font-medium px-3 py-3">Questions</th>
+                                    <th className="text-right font-medium px-3 py-3">Correct</th>
+                                    <th className="text-right font-medium px-3 py-3">Wrong</th>
+                                    <th className="text-right font-medium px-3 py-3">Skipped</th>
+                                    <th className="text-right font-medium px-3 py-3">Marks</th>
+                                    <th className="text-right font-medium px-5 sm:px-6 py-3">Accuracy</th>
+                                </tr>
+                            </thead>
+                            <tbody className="divide-y divide-card-border">
+                                {sectionResults.map((s) => {
+                                    const acc = Math.round(Number(s.accuracy) || 0);
+                                    return (
+                                        <tr key={s.key}>
+                                            <td className="px-5 sm:px-6 py-3 font-medium min-w-[200px]">{s.name_en}</td>
+                                            <td className="px-3 py-3 text-right">{s.total}</td>
+                                            <td className="px-3 py-3 text-right text-green-700 dark:text-green-300">{s.correct}</td>
+                                            <td className="px-3 py-3 text-right text-red-700 dark:text-red-300">{s.incorrect}</td>
+                                            <td className="px-3 py-3 text-right">{s.unattempted}</td>
+                                            <td className="px-3 py-3 text-right font-semibold whitespace-nowrap">
+                                                {formatScore(s.marks)} / {formatScore(s.max_marks)}
+                                            </td>
+                                            <td className="px-5 sm:px-6 py-3 text-right">
+                                                <span className={cn(
+                                                    'badge',
+                                                    acc >= 70 ? 'badge-green' : acc >= 40 ? 'badge-blue' : 'badge-amber'
+                                                )}>
+                                                    {acc}%
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    );
+                                })}
+                            </tbody>
+                            <tfoot className="border-t-2 border-card-border font-semibold">
+                                <tr>
+                                    <td className="px-5 sm:px-6 py-3">Total</td>
+                                    <td className="px-3 py-3 text-right">{sectionTotals.total}</td>
+                                    <td className="px-3 py-3 text-right text-green-700 dark:text-green-300">{sectionTotals.correct}</td>
+                                    <td className="px-3 py-3 text-right text-red-700 dark:text-red-300">{sectionTotals.incorrect}</td>
+                                    <td className="px-3 py-3 text-right">{sectionTotals.unattempted}</td>
+                                    <td className="px-3 py-3 text-right whitespace-nowrap">
+                                        {formatScore(sectionTotals.marks)} / {formatScore(sectionTotals.max)}
+                                    </td>
+                                    <td className="px-5 sm:px-6 py-3" />
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            )}
+
+            {/* Subject-wise table */}
+            {Object.keys(sectional).length > 0 && (
+                <div className="card overflow-hidden">
+                    <div className="p-5 sm:p-6 border-b border-card-border">
+                        <h2 className="text-lg font-semibold">{sectionResults.length > 0 ? 'Subject-wise performance' : 'Section-wise performance'}</h2>
+                    </div>
+                    <div className="overflow-x-auto">
+                        <table className="w-full text-sm">
+                            <thead className="bg-muted/60 text-muted-foreground">
+                                <tr>
+                                    <th className="text-left font-medium px-5 sm:px-6 py-3">{sectionResults.length > 0 ? 'Subject' : 'Section'}</th>
                                     <th className="text-right font-medium px-3 py-3">Questions</th>
                                     <th className="text-right font-medium px-3 py-3">Correct</th>
                                     <th className="text-right font-medium px-3 py-3">Incorrect</th>
