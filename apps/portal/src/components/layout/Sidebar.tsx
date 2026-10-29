@@ -22,6 +22,7 @@ import {
     HelpCircle,
     Settings,
     LogOut,
+    CalendarCheck,
 } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
@@ -75,6 +76,7 @@ const navCategories: NavCategory[] = [
     {
         title: 'Study tools',
         items: [
+            { name: 'Study plan', href: '/dashboard/plan', icon: CalendarCheck },
             { name: 'Focus Timer', href: '/dashboard/focus', icon: Timer },
             { name: 'Productivity', href: '/dashboard/productivity', icon: Cpu },
             { name: 'My attempts', href: '/dashboard/history', icon: History },
