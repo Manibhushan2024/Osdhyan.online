@@ -25,6 +25,7 @@ import {
 import { cn } from '@/lib/utils';
 import { useTheme } from '@/components/providers/ThemeProvider';
 import Link from 'next/link';
+import AttemptSwitcher, { AttemptRef, reportHref } from '@/components/tests/AttemptSwitcher';
 
 type Option = {
     id: number;
@@ -51,7 +52,11 @@ type Response = {
 
 type Attempt = {
     id: number;
+    test_id?: number;
+    attempt_number?: number | null;
+    attempts?: AttemptRef[];
     test: {
+        id?: number;
         name_en: string;
         questions: Question[];
     };
@@ -247,30 +252,28 @@ export default function SolutionHub() {
                     <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-foreground">
                         Solutions
                     </h1>
+                    {attempt.test?.name_en && (
+                        <p className="text-sm text-muted-foreground">{attempt.test.name_en}</p>
+                    )}
                 </div>
 
-                <div className="relative group">
-                    <button className="px-8 py-4 bg-blue-600 text-white rounded-2xl font-black text-xs uppercase tracking-wide shadow-xl shadow-blue-500/20 active:scale-95 flex items-center gap-3">
-                        <Download className="h-4 w-4" />
-                        Download
-                    </button>
-                    <div className="hidden group-hover:block absolute right-0 top-full mt-2 w-56 bg-white dark:bg-card-bg border border-card-border rounded-xl shadow-2xl overflow-hidden z-50">
-                        <button
-                            onClick={() => window.print()}
-                            className="w-full text-left px-6 py-4 text-xs font-black uppercase tracking-wide hover:bg-blue-50 dark:hover:bg-blue-900/10 hover:text-blue-600 transition-colors border-b border-card-border last:border-0"
-                        >
-                            Print this question
-                        </button>
-                        <Link
-                            href={`/dashboard/tests/solutions/${attempt.id}/print`}
-                            target="_blank"
-                            className="block w-full text-left px-6 py-4 text-xs font-black uppercase tracking-wide hover:bg-blue-50 dark:hover:bg-blue-900/10 hover:text-blue-600 transition-colors"
-                        >
-                            Download all solutions (PDF)
-                        </Link>
-                    </div>
-                </div>
+                <Link
+                    href={reportHref(attempt.id)}
+                    className="self-start md:self-auto px-6 py-3 bg-blue-600 text-white rounded-2xl font-black text-xs uppercase tracking-wide shadow-xl shadow-blue-500/20 active:scale-95 flex items-center gap-3"
+                >
+                    <Download className="h-4 w-4" />
+                    Download PDF
+                </Link>
             </div>
+
+            <AttemptSwitcher
+                currentId={attempt.id}
+                attemptNumber={attempt.attempt_number}
+                attempts={attempt.attempts}
+                testId={attempt.test_id ?? attempt.test?.id}
+                hrefFor={(id) => `/dashboard/tests/solutions/${id}`}
+                showDownload={false}
+            />
 
             <style dangerouslySetInnerHTML={{
                 __html: `

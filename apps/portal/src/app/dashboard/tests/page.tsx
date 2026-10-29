@@ -19,6 +19,7 @@ import {
     MinusCircle,
     Play,
     CheckCircle2,
+    History,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useAuth } from '@/components/providers/AuthProvider';
@@ -39,6 +40,8 @@ type Test = {
     requires_purchase?: boolean;
     attempt_status?: 'in_progress' | 'completed' | 'abandoned' | 'none' | string;
     attempt_id?: number | null;
+    last_completed_attempt_id?: number | null;
+    attempts_count?: number;
 };
 
 const categories = [
@@ -83,7 +86,7 @@ export default function TestsPage() {
     const fetchTests = async () => {
         setLoading(true);
         try {
-            const params: any = {};
+            const params: { mode?: string } = {};
             if (activeTab !== 'all') {
                 params.mode = activeTab;
             }
@@ -161,8 +164,12 @@ export default function TestsPage() {
                         {filteredTests.map((test) => {
                             const isPaid = test.requires_purchase === true || test.is_free === false || test.is_locked === true;
                             const hasPricingInfo = typeof test.is_free === 'boolean' || typeof test.requires_purchase === 'boolean' || typeof test.is_locked === 'boolean';
-                            const inProgress = test.attempt_status === 'in_progress';
-                            const completed = test.attempt_status === 'completed' && !!test.attempt_id;
+                            const inProgress = test.attempt_status === 'in_progress' || test.attempt_status === 'ongoing';
+                            // Last finished attempt — reachable even while a re-attempt is in progress.
+                            const lastResultId = test.last_completed_attempt_id
+                                ?? (test.attempt_status === 'completed' ? test.attempt_id : null);
+                            const completed = !!lastResultId;
+                            const attemptsCount = Number(test.attempts_count ?? 0);
                             const negative = Number(test.negative_marking ?? 0);
 
                             return (
@@ -179,7 +186,8 @@ export default function TestsPage() {
                                                     : <span className="badge badge-green">Free</span>
                                             )}
                                             {inProgress && <span className="badge badge-blue">In progress</span>}
-                                            {completed && <span className="badge badge-gray"><CheckCircle2 className="h-3 w-3" /> Completed</span>}
+                                            {completed && !inProgress && <span className="badge badge-gray"><CheckCircle2 className="h-3 w-3" /> Completed</span>}
+                                            {attemptsCount > 0 && <span className="badge badge-gray">Attempted {attemptsCount}×</span>}
                                         </div>
                                     </div>
 
@@ -210,9 +218,21 @@ export default function TestsPage() {
                                                 <Lock className="h-4 w-4" />
                                                 Paid test
                                             </button>
+                                        ) : inProgress ? (
+                                            <>
+                                                <button onClick={() => handleStartTest(test.id)} className="btn btn-primary">
+                                                    <Play className="h-4 w-4" />
+                                                    Resume
+                                                </button>
+                                                {lastResultId && (
+                                                    <Link href={`/dashboard/tests/result/${lastResultId}`} className="btn btn-secondary">
+                                                        Last result
+                                                    </Link>
+                                                )}
+                                            </>
                                         ) : completed ? (
                                             <>
-                                                <Link href={`/dashboard/tests/result/${test.attempt_id}`} className="btn btn-primary">
+                                                <Link href={`/dashboard/tests/result/${lastResultId}`} className="btn btn-primary">
                                                     View result
                                                 </Link>
                                                 <button onClick={() => handleStartTest(test.id)} className="btn btn-secondary">
@@ -220,16 +240,17 @@ export default function TestsPage() {
                                                     Re-attempt
                                                 </button>
                                             </>
-                                        ) : inProgress ? (
-                                            <button onClick={() => handleStartTest(test.id)} className="btn btn-primary">
-                                                <Play className="h-4 w-4" />
-                                                Resume
-                                            </button>
                                         ) : (
                                             <button onClick={() => handleStartTest(test.id)} className="btn btn-primary">
                                                 <Play className="h-4 w-4" />
                                                 Start test
                                             </button>
+                                        )}
+                                        {attemptsCount > 0 && (
+                                            <Link href={`/dashboard/history?test=${test.id}`} className="btn btn-ghost">
+                                                <History className="h-4 w-4" />
+                                                All attempts
+                                            </Link>
                                         )}
                                     </div>
                                 </div>

@@ -10,7 +10,6 @@ import {
     MinusCircle,
     Clock,
     Target,
-    Download,
     Share2,
     RotateCcw,
     ArrowLeft,
@@ -19,6 +18,7 @@ import {
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { toast } from 'react-hot-toast';
+import AttemptSwitcher, { AttemptRef, formatScore } from '@/components/tests/AttemptSwitcher';
 
 type SectionStat = {
     correct: number;
@@ -30,7 +30,7 @@ type SectionStat = {
 type Attempt = {
     id: number;
     test_id?: number;
-    total_score: number;
+    total_score: number | string;
     completed_at: string;
     time_taken_sec: number;
     metadata: {
@@ -42,6 +42,8 @@ type Attempt = {
         ai_insights?: string | string[] | null;
     };
     ai_insights?: string | string[] | null;
+    attempt_number?: number | null;
+    attempts?: AttemptRef[];
     test: {
         id?: number;
         name_en: string;
@@ -78,15 +80,11 @@ export default function TestResult() {
         }
     };
 
-    const handleDownload = () => {
-        window.print();
-    };
-
     const handleShare = async () => {
         if (!attempt) return;
         const shareData = {
             title: `Result: ${attempt.test.name_en}`,
-            text: `I scored ${attempt.total_score}/${attempt.test.total_marks} in ${attempt.test.name_en} on OSDHYAN.`,
+            text: `I scored ${formatScore(attempt.total_score)}/${attempt.test.total_marks} in ${attempt.test.name_en} on OSDHYAN.`,
             url: window.location.href,
         };
 
@@ -132,7 +130,7 @@ export default function TestResult() {
     const unattempted = attempt.metadata?.unattempted_count ?? Math.max(0, totalQuestions - correct - incorrect);
     const accuracy = Math.round(Number(attempt.metadata?.accuracy ?? 0));
     const scorePercent = attempt.test.total_marks > 0
-        ? Math.max(0, Math.min(100, Math.round((attempt.total_score / attempt.test.total_marks) * 100)))
+        ? Math.max(0, Math.min(100, Math.round((Number(attempt.total_score) / attempt.test.total_marks) * 100)))
         : 0;
     const testId = attempt.test_id ?? attempt.test?.id;
     const reattemptHref = testId ? `/dashboard/tests/play/${testId}` : '/dashboard/tests';
@@ -163,10 +161,6 @@ export default function TestResult() {
                 </div>
 
                 <div className="flex flex-wrap items-center gap-2 print:hidden">
-                    <button onClick={handleDownload} className="btn btn-secondary btn-sm" title="Print or save as PDF">
-                        <Download className="h-4 w-4" />
-                        <span className="hidden sm:inline">Download</span>
-                    </button>
                     <button onClick={handleShare} className="btn btn-secondary btn-sm" title="Share">
                         <Share2 className="h-4 w-4" />
                         <span className="hidden sm:inline">Share</span>
@@ -174,12 +168,20 @@ export default function TestResult() {
                 </div>
             </div>
 
+            <AttemptSwitcher
+                currentId={attempt.id}
+                attemptNumber={attempt.attempt_number}
+                attempts={attempt.attempts}
+                testId={testId}
+                hrefFor={(id) => `/dashboard/tests/result/${id}`}
+            />
+
             {/* Score summary */}
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
                 <div className="card p-6 lg:col-span-1">
                     <p className="eyebrow">Your score</p>
                     <p className="mt-2 text-5xl font-extrabold tracking-tight">
-                        {attempt.total_score}
+                        {formatScore(attempt.total_score)}
                         <span className="text-xl font-semibold text-muted-foreground"> / {attempt.test.total_marks}</span>
                     </p>
                     <div className="mt-4 h-2 w-full rounded-full bg-muted overflow-hidden">

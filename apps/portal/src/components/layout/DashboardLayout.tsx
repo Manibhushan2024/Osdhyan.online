@@ -47,10 +47,12 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
 
     return (
         <div className="min-h-screen bg-background text-foreground">
+            {/* App chrome (sidebar, drawer, top bar) is left out when printing,
+                so pages such as the attempt report print as clean A4 sheets. */}
             {/* Mobile sidebar (drawer) */}
             <div
                 className={cn(
-                    'fixed inset-0 z-50 lg:hidden transition-opacity duration-200',
+                    'fixed inset-0 z-50 lg:hidden transition-opacity duration-200 print:hidden!',
                     isMobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
                 )}
                 aria-hidden={!isMobileMenuOpen}
@@ -79,14 +81,16 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
             </div>
 
             {/* Desktop sidebar */}
-            <div className="hidden lg:fixed lg:inset-y-0 lg:z-40 lg:flex lg:w-64 lg:flex-col">
+            <div className="hidden lg:fixed lg:inset-y-0 lg:z-40 lg:flex lg:w-64 lg:flex-col print:hidden!">
                 <Sidebar />
             </div>
 
-            <div className="lg:pl-64">
-                <Navbar onMenuClick={() => setIsMobileMenuOpen(true)} />
-                <main className="py-6 sm:py-8">
-                    <div className="page-container">
+            <div className="lg:pl-64 print:pl-0!">
+                <div className="contents print:hidden!">
+                    <Navbar onMenuClick={() => setIsMobileMenuOpen(true)} />
+                </div>
+                <main className="py-6 sm:py-8 print:py-0!">
+                    <div className="page-container print:max-w-none! print:px-0!">
                         {guestAllowed ? children : <RouteGuard>{children}</RouteGuard>}
                     </div>
                 </main>

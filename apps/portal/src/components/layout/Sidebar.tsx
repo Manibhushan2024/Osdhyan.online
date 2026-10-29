@@ -77,7 +77,7 @@ const navCategories: NavCategory[] = [
         items: [
             { name: 'Focus Timer', href: '/dashboard/focus', icon: Timer },
             { name: 'Productivity', href: '/dashboard/productivity', icon: Cpu },
-            { name: 'Test History', href: '/dashboard/history', icon: History },
+            { name: 'My attempts', href: '/dashboard/history', icon: History },
         ]
     },
     {

@@ -21,6 +21,7 @@ import {
     FlaskConical,
     Receipt,
     Unlock,
+    History,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
@@ -42,8 +43,10 @@ type Test = {
     is_free?: boolean;
     requires_purchase?: boolean;
     is_locked?: boolean;
-    attempt_status: 'none' | 'ongoing' | 'completed';
+    attempt_status: 'none' | 'ongoing' | 'in_progress' | 'completed' | string;
     attempt_id: number | null;
+    last_completed_attempt_id?: number | null;
+    attempts_count?: number;
 };
 
 type SeriesDetail = {
@@ -448,6 +451,12 @@ export default function TestSeriesDetail() {
                     {activeTests.map((test) => {
                         const locked = !!test.is_locked && !isAdmin;
                         const openable = !locked && (isEnrolled || isAdmin || (requiresPayment && !test.requires_purchase && isEnrolled));
+                        const ongoing = test.attempt_status === 'ongoing' || test.attempt_status === 'in_progress';
+                        // Last finished attempt — reachable even while a re-attempt is in progress.
+                        const lastResultId = test.last_completed_attempt_id
+                            ?? (test.attempt_status === 'completed' ? test.attempt_id : null);
+                        const done = !!lastResultId && !ongoing;
+                        const attemptsCount = Number(test.attempts_count ?? 0);
                         return (
                         <div key={test.id} className={cn("group bg-card-bg border border-card-border p-6 md:p-8 rounded-[2.5rem] transition-all shadow-sm", locked ? "opacity-80" : "hover:border-blue-500/30")}>
                             <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
@@ -456,15 +465,15 @@ export default function TestSeriesDetail() {
                                         "h-14 w-14 rounded-2xl flex items-center justify-center shrink-0 shadow-lg transition-transform group-hover:scale-110",
                                         locked
                                             ? "bg-amber-500/10 border border-amber-500/20 text-amber-600"
-                                            : test.attempt_status === 'completed'
+                                            : done
                                                 ? "bg-green-500 text-white shadow-green-500/20"
-                                                : test.attempt_status === 'ongoing'
+                                                : ongoing
                                                     ? "bg-orange-500 text-white shadow-orange-500/20 animate-pulse"
                                                     : openable
                                                         ? "bg-blue-600/10 border border-blue-500/20 text-blue-600"
                                                         : "bg-background border border-card-border text-foreground/20"
                                     )}>
-                                        {locked ? <Lock className="h-6 w-6" /> : test.attempt_status === 'completed' ? <Trophy className="h-6 w-6" /> : <Zap className="h-6 w-6" />}
+                                        {locked ? <Lock className="h-6 w-6" /> : done ? <Trophy className="h-6 w-6" /> : <Zap className="h-6 w-6" />}
                                     </div>
                                     <div className="space-y-2">
                                         <div className="flex items-center gap-3 flex-wrap">
@@ -479,20 +488,33 @@ export default function TestSeriesDetail() {
                                                     <Lock className="h-2.5 w-2.5" /> Locked
                                                 </span>
                                             )}
-                                            {test.attempt_status === 'completed' && (
+                                            {done && (
                                                 <span className="px-3 py-1 bg-green-500/10 text-green-600 rounded-full text-[8px] font-black uppercase tracking-widest border border-green-500/20">
                                                     Completed
                                                 </span>
                                             )}
-                                            {test.attempt_status === 'ongoing' && (
+                                            {ongoing && (
                                                 <span className="px-3 py-1 bg-orange-500/10 text-orange-600 rounded-full text-[8px] font-black uppercase tracking-widest border border-orange-500/20 animate-pulse">
                                                     In Progress
                                                 </span>
                                             )}
+                                            {attemptsCount > 0 && (
+                                                <span className="px-3 py-1 bg-blue-500/10 text-blue-600 rounded-full text-[8px] font-black uppercase tracking-widest border border-blue-500/20">
+                                                    Attempted {attemptsCount}×
+                                                </span>
+                                            )}
                                         </div>
-                                        <div className="flex items-center gap-6 text-[9px] font-black text-foreground/40 uppercase tracking-widest">
+                                        <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-[9px] font-black text-foreground/40 uppercase tracking-widest">
                                             <span className="flex items-center gap-1.5"><Clock className="h-3 w-3" /> {Math.floor(test.duration_sec / 60)} Mins</span>
                                             <span className="flex items-center gap-1.5"><Target className="h-3 w-3" /> {test.total_marks} Marks</span>
+                                            {attemptsCount > 0 && (
+                                                <Link
+                                                    href={`/dashboard/history?test=${test.id}`}
+                                                    className="flex items-center gap-1.5 text-blue-600 hover:underline"
+                                                >
+                                                    <History className="h-3 w-3" /> All attempts
+                                                </Link>
+                                            )}
                                         </div>
                                     </div>
                                 </div>
@@ -521,10 +543,10 @@ export default function TestSeriesDetail() {
                                         </button>
                                     ) : (
                                         <>
-                                            {test.attempt_status === 'completed' ? (
+                                            {done ? (
                                                 <>
                                                     <Link
-                                                        href={`/dashboard/tests/result/${test.attempt_id}`}
+                                                        href={`/dashboard/tests/result/${lastResultId}`}
                                                         className="flex-1 md:flex-none px-6 py-4 bg-background border border-card-border hover:border-blue-500/30 text-foreground/60 hover:text-blue-600 rounded-xl font-black text-[9px] uppercase tracking-widest transition-all flex items-center justify-center gap-2"
                                                     >
                                                         <BarChart3 className="h-3 w-3" />
@@ -538,14 +560,25 @@ export default function TestSeriesDetail() {
                                                         Re-Attempt
                                                     </button>
                                                 </>
-                                            ) : test.attempt_status === 'ongoing' ? (
+                                            ) : ongoing ? (
+                                                <>
+                                                {lastResultId && (
+                                                    <Link
+                                                        href={`/dashboard/tests/result/${lastResultId}`}
+                                                        className="flex-1 md:flex-none px-6 py-4 bg-background border border-card-border hover:border-blue-500/30 text-foreground/60 hover:text-blue-600 rounded-xl font-black text-[9px] uppercase tracking-widest transition-all flex items-center justify-center gap-2"
+                                                    >
+                                                        <BarChart3 className="h-3 w-3" />
+                                                        Last result
+                                                    </Link>
+                                                )}
                                                 <button
                                                     onClick={() => handleStartTest(test)}
-                                                    className="w-full md:w-auto px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white rounded-xl font-black text-[9px] uppercase tracking-widest shadow-lg shadow-orange-500/20 transition-all flex items-center justify-center gap-2 animate-pulse"
+                                                    className="flex-1 md:flex-none md:w-auto px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white rounded-xl font-black text-[9px] uppercase tracking-widest shadow-lg shadow-orange-500/20 transition-all flex items-center justify-center gap-2 animate-pulse"
                                                 >
                                                     <Play className="h-3 w-3" />
                                                     Resume
                                                 </button>
+                                                </>
                                             ) : (
                                                 <button
                                                     onClick={() => handleStartTest(test)}
