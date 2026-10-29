@@ -4,6 +4,7 @@ namespace App\Services\StudyPlan;
 
 use App\Models\StudyPlan;
 use App\Models\StudyPlanTask;
+use App\Models\Test;
 use App\Models\TestAttempt;
 use App\Models\User;
 use Carbon\CarbonImmutable;
@@ -24,7 +25,15 @@ use Illuminate\Support\Facades\DB;
  *            official PYQ papers and fast-revision sheets.
  *
  * Slots: office (weekday, short 15–40-minute items), library (weekday
- * evening), weekend. Deterministic for a given user, content and "today".
+ * before / after work), weekend. Each slot has clock windows (the plan's
+ * `timetable`); tasks are laid into them in order by SlotLayout, with a
+ * 10-minute break after 90 minutes in a row in the library / at weekends.
+ *
+ * No finished full-length mock yet → the first library / weekend window gets
+ * a baseline mock + review. After mocks, sections are weighted by the latest
+ * mock's section scores (lower score → more time).
+ *
+ * Deterministic for a given user, content, "today" and time of day.
  */
 class StudyPlanGenerator
 {
@@ -36,12 +45,24 @@ class StudyPlanGenerator
     public const REVISE_MIN = 30;
     public const OFFICE_MAX = 40;
     public const MIN_ITEM = 15;
+    public const FULL_LENGTH_QUESTIONS = 150;
+    public const MAX_WINDOWS = 4;
+    public const BASELINE_TITLE = 'Baseline mock — find your weak sections';
+    public const BASELINE_REVIEW_TITLE = 'Review the baseline: wrong answers + Revise this concept';
+
+    /** Clock windows per slot: lunch hour + last office hour; 3 h before office + 3.5 h after; 10 h at weekends. */
+    public const DEFAULT_TIMETABLE = [
+        'office'  => [['13:00', '14:00'], ['17:00', '18:00']],
+        'library' => [['05:30', '08:30'], ['19:00', '22:30']],
+        'weekend' => [['07:00', '13:00'], ['15:00', '19:00']],
+    ];
 
     public const DEFAULTS = [
         'exam_date'           => '2026-11-26',
         'weekday_office_min'  => 120,
         'weekday_library_min' => 390,
         'weekend_min'         => 480,
+        'timetable'           => self::DEFAULT_TIMETABLE,
     ];
 
     private ContentCatalog $catalog;
@@ -69,14 +90,24 @@ class StudyPlanGenerator
     private array $doneRefs = [];
     private array $todayRefs = [];
     private array $dayLabels = [];
+    private array $timetable = [];
+    private array $mockStats = [];       // section => 0..1 from the latest full mock
+    private ?array $latestMock = null;
+    private bool $needBaseline = false;
+    private ?array $baseline = null;     // the mock picked as the baseline
+    private ?array $baselinePlaced = null;
 
     /**
      * (Re)generate the user's plan from $today. Done tasks are kept as
      * history; everything not done is replaced.
      */
-    public function generate(User $user, array $input, CarbonInterface $today): StudyPlan
+    public function generate(User $user, array $input, CarbonInterface $today, ?CarbonInterface $now = null): StudyPlan
     {
         $today = CarbonImmutable::parse($today->toDateString());
+        // Student's clock: today's windows (or the parts of them) already gone are skipped.
+        $nowMinute = $now && $now->toDateString() === $today->toDateString()
+            ? (int) (ceil(($now->hour * 60 + $now->minute) / 5) * 5)
+            : null;
         $examDate = CarbonImmutable::parse($input['exam_date'] ?? self::DEFAULTS['exam_date']);
         $office = (int) ($input['weekday_office_min'] ?? self::DEFAULTS['weekday_office_min']);
         $library = (int) ($input['weekday_library_min'] ?? self::DEFAULTS['weekday_library_min']);
@@ -86,8 +117,10 @@ class StudyPlanGenerator
         $this->reset();
         $this->catalog = ContentCatalog::build($user);
 
-        return DB::transaction(function () use ($user, $today, $examDate, $office, $library, $weekend) {
+        return DB::transaction(function () use ($user, $input, $today, $nowMinute, $examDate, $office, $library, $weekend) {
             $plan = StudyPlan::firstOrNew(['user_id' => $user->id]);
+            // No timetable sent → keep the plan's own, else the defaults.
+            $this->timetable = self::normalizeTimetable($input['timetable'] ?? ($plan->settings['timetable'] ?? null) ?? self::DEFAULT_TIMETABLE);
             $plan->fill([
                 'exam_date'           => $examDate->toDateString(),
                 'weekday_office_min'  => $office,
@@ -98,17 +131,23 @@ class StudyPlanGenerator
 
             // Keep done tasks as history; drop everything else.
             $plan->tasks()->whereNull('done_at')->delete();
-            $kept = $plan->tasks()->get(['id', 'date', 'slot', 'position', 'type', 'ref_type', 'ref_id']);
+            $kept = $plan->tasks()->get(['id', 'date', 'slot', 'position', 'type', 'ref_type', 'ref_id', 'end_time']);
+            $busyUntil = [];   // today: ticked tasks keep their time; new ones go after them
             foreach ($kept as $t) {
                 if ($t->ref_type && $t->ref_id && $t->type !== 'review') {
                     $this->doneRefs[$t->ref_type . ':' . $t->ref_id] = true;
                 }
+                $end = SlotLayout::minute($t->end_time);
+                if ($end !== null && $t->date->toDateString() === $today->toDateString()) {
+                    $busyUntil[$t->slot] = max($busyUntil[$t->slot] ?? 0, $end);
+                }
             }
 
+            $this->readMockHistory($user);
             $this->computeWeights($user);
             $this->buildPools();
 
-            $rows = $this->schedule($today, $examDate, $office, $library, $weekend);
+            $rows = $this->schedule($today, $examDate, $office, $library, $weekend, $nowMinute, $busyUntil);
 
             // Positions continue after any kept (done) tasks on the same day/slot.
             $offsets = [];
@@ -129,6 +168,8 @@ class StudyPlanGenerator
 
             $plan->settings = [
                 'focus'           => $this->focus,
+                'timetable'       => $this->timetable,
+                'latest_mock'     => $this->latestMock,
                 'section_weights' => $this->sectionWeights,
                 'section_scores'  => $this->sectionStats,
                 'content_notes'   => array_values($this->catalog->notes),
@@ -146,19 +187,82 @@ class StudyPlanGenerator
     {
         foreach (['sectionWeights', 'sectionFactors', 'sectionStats', 'packOrder', 'learn', 'mixed', 'mockPool',
             'paperPool', 'sheets', 'revisions', 'revisionIdx', 'picks', 'readyUnits', 'plannedTests',
-            'doneRefs', 'todayRefs', 'dayLabels', 'pyqNotes', 'fullTests', 'retry'] as $p) {
+            'doneRefs', 'todayRefs', 'dayLabels', 'pyqNotes', 'fullTests', 'retry', 'mockStats'] as $p) {
             $this->{$p} = [];
         }
         $this->sheetIdx = 0;
         $this->pyqIdx = 0;
+        $this->latestMock = null;
+        $this->needBaseline = false;
+        $this->baseline = null;
+        $this->baselinePlaced = null;
+    }
+
+    // ─── Timetable ────────────────────────────────────────────────────────────
+
+    /**
+     * Valid windows per slot, sorted by start: {office: [["13:00","14:00"], …], …}.
+     * A slot missing from $timetable gets its default; invalid windows are dropped.
+     */
+    public static function normalizeTimetable(?array $timetable): array
+    {
+        $out = [];
+        foreach (StudyPlanTask::SLOTS as $slot) {
+            $list = is_array($timetable) && array_key_exists($slot, $timetable) ? $timetable[$slot] : self::DEFAULT_TIMETABLE[$slot];
+            $windows = [];
+            foreach ((array) $list as $w) {
+                if (!is_array($w) || count($w) < 2) {
+                    continue;
+                }
+                [$start, $end] = array_values($w);
+                $s = SlotLayout::minute($start);
+                $e = SlotLayout::minute($end);
+                if ($s !== null && $e !== null && $s < $e) {
+                    $windows[] = [$start, $end];
+                }
+            }
+            usort($windows, fn ($a, $b) => strcmp($a[0], $b[0]));
+            $out[$slot] = array_slice($windows, 0, self::MAX_WINDOWS);
+        }
+
+        return $out;
+    }
+
+    /** Minutes the timetable gives each slot (before breaks). */
+    public static function windowMinutes(array $timetable): array
+    {
+        $out = [];
+        foreach ($timetable as $slot => $windows) {
+            $out[$slot] = SlotLayout::total(array_map(fn ($w) => [SlotLayout::minute($w[0]), SlotLayout::minute($w[1])], $windows));
+        }
+
+        return $out;
+    }
+
+    /** One slot's windows as a layout; $from (today: now / after ticked tasks) cuts off what is gone. */
+    private function layout(string $slot, int $budget, int $from = 0): SlotLayout
+    {
+        $windows = [];
+        foreach ($this->timetable[$slot] ?? [] as [$start, $end]) {
+            $s = max((int) SlotLayout::minute($start), $from);
+            $e = (int) SlotLayout::minute($end);
+            if ($e - $s >= self::MIN_ITEM) {
+                $windows[] = [$s, $e];
+            }
+        }
+
+        return new SlotLayout($windows, $slot !== 'office', $budget);
     }
 
     // ─── Weights ──────────────────────────────────────────────────────────────
 
     /**
-     * Section weight = marks × weakness factor (× 1.5 when in focus). The
-     * factor comes from the user's completed attempts that carry per-section
-     * results: 0.5 (all right) … 1.5 (nothing right); 1.0 without data.
+     * Section weight = marks × weakness factor × latest-mock factor (× 1.5
+     * when in focus). The weakness factor comes from the user's completed
+     * attempts that carry per-section results: 0.5 (all right) … 1.5 (nothing
+     * right); 1.0 without data. The latest-mock factor uses the same scale on
+     * the newest full mock's section scores, so the plan re-weights after
+     * every mock.
      */
     private function computeWeights(User $user): void
     {
@@ -170,24 +274,7 @@ class StudyPlanGenerator
             ->get(['id', 'metadata']);
 
         foreach ($attempts as $a) {
-            $meta = $a->metadata ?? [];
-            $rows = [];
-            if (!empty($meta['sectional_stats']) && is_array($meta['sectional_stats'])) {
-                foreach ($meta['sectional_stats'] as $name => $s) {
-                    $rows[] = ['name' => (string) $name, 'marks' => $s['marks'] ?? null, 'max' => $s['total'] ?? null, 'correct' => $s['correct'] ?? 0];
-                }
-            } elseif (!empty($meta['section_results']) && is_array($meta['section_results'])) {
-                foreach ($meta['section_results'] as $s) {
-                    $rows[] = ['name' => (string) ($s['name_en'] ?? $s['key'] ?? ''), 'marks' => $s['marks'] ?? null, 'max' => $s['max_marks'] ?? $s['total'] ?? null, 'correct' => $s['correct'] ?? 0];
-                }
-            }
-            foreach ($rows as $r) {
-                $key = ContentCatalog::sectionKey($r['name']);
-                $max = (float) ($r['max'] ?? 0);
-                if (!$key || $max <= 0) {
-                    continue;
-                }
-                $marks = $r['marks'] !== null ? (float) $r['marks'] : (float) $r['correct'];
+            foreach (self::sectionScores($a->metadata ?? [], false) as $key => [$marks, $max]) {
                 $agg[$key]['marks'] = ($agg[$key]['marks'] ?? 0) + $marks;
                 $agg[$key]['max'] = ($agg[$key]['max'] ?? 0) + $max;
             }
@@ -200,12 +287,104 @@ class StudyPlanGenerator
                 $this->sectionStats[$key] = round($ratio * 100, 1);
                 $factor = 1.5 - $ratio;
             }
+            // Re-weighting by the latest full mock: 0% → ×1.5 … 100% → ×0.5.
+            if (isset($this->mockStats[$key])) {
+                $factor *= 1.5 - $this->mockStats[$key];
+            }
             if (in_array($key, $this->focus, true)) {
                 $factor *= 1.5;
             }
             $this->sectionFactors[$key] = $factor;
             $this->sectionWeights[$key] = round($marks * $factor, 2);
         }
+    }
+
+    /**
+     * Section key => [marks, max marks] from an attempt's metadata. The mock
+     * re-weighting reads section_results first (exam sections), the overall
+     * weighting sectional_stats first (question subjects).
+     */
+    private static function sectionScores(array $meta, bool $sectionsFirst): array
+    {
+        $fromStats = function () use ($meta) {
+            $rows = [];
+            foreach ((array) ($meta['sectional_stats'] ?? []) as $name => $s) {
+                $rows[] = ['name' => (string) $name, 'marks' => $s['marks'] ?? null, 'max' => $s['total'] ?? null, 'correct' => $s['correct'] ?? 0];
+            }
+
+            return $rows;
+        };
+        $fromResults = function () use ($meta) {
+            $rows = [];
+            foreach ((array) ($meta['section_results'] ?? []) as $s) {
+                $rows[] = ['name' => (string) ($s['name_en'] ?? $s['key'] ?? ''), 'marks' => $s['marks'] ?? null, 'max' => $s['max_marks'] ?? $s['total'] ?? null, 'correct' => $s['correct'] ?? 0];
+            }
+
+            return $rows;
+        };
+        $rows = $sectionsFirst ? ($fromResults() ?: $fromStats()) : ($fromStats() ?: $fromResults());
+
+        $out = [];
+        foreach ($rows as $r) {
+            $key = ContentCatalog::sectionKey($r['name']);
+            $max = (float) ($r['max'] ?? 0);
+            if (!$key || $max <= 0) {
+                continue;
+            }
+            $marks = $r['marks'] !== null ? (float) $r['marks'] : (float) $r['correct'];
+            $out[$key][0] = ($out[$key][0] ?? 0) + $marks;
+            $out[$key][1] = ($out[$key][1] ?? 0) + $max;
+        }
+
+        return $out;
+    }
+
+    /**
+     * Full-length (≥ 150 questions) DSSSB attempts, newest first: none → the
+     * plan opens with a baseline mock; the newest one with section scores
+     * re-weights the sections.
+     */
+    private function readMockHistory(User $user): void
+    {
+        $ids = array_keys($this->catalog->completedTestIds);
+        $found = false;
+        if ($ids) {
+            $questions = DB::table('question_test')->whereIn('test_id', $ids)
+                ->selectRaw('test_id, COUNT(*) AS n')->groupBy('test_id')->pluck('n', 'test_id');
+            $titles = Test::whereIn('id', $ids)->pluck('name_en', 'id');
+            $attempts = TestAttempt::where('user_id', $user->id)
+                ->where('status', 'completed')
+                ->whereIn('test_id', $ids)
+                ->orderByDesc('id')
+                ->get(['id', 'test_id', 'metadata', 'completed_at']);
+
+            foreach ($attempts as $a) {
+                $meta = $a->metadata ?? [];
+                $count = max((int) ($meta['total_questions'] ?? 0), (int) ($questions[$a->test_id] ?? 0));
+                if ($count < self::FULL_LENGTH_QUESTIONS) {
+                    continue;
+                }
+                $found = true;
+                $scores = self::sectionScores($meta, true);
+                if (!$scores) {
+                    continue;
+                }
+                $percent = [];
+                foreach ($scores as $key => [$marks, $max]) {
+                    $this->mockStats[$key] = max(0.0, min(1.0, $marks / $max));
+                    $percent[$key] = round($this->mockStats[$key] * 100, 1);
+                }
+                $this->latestMock = [
+                    'attempt_id' => (int) $a->id,
+                    'test_id'    => (int) $a->test_id,
+                    'title'      => (string) ($titles[$a->test_id] ?? 'Full mock'),
+                    'date'       => $a->completed_at?->toDateString(),
+                    'sections'   => $percent,
+                ];
+                break;
+            }
+        }
+        $this->needBaseline = !$found;
     }
 
     private function packWeight(array $pack): float
@@ -313,6 +492,39 @@ class StudyPlanGenerator
                 $this->paperPool[] = ['test' => $t, 'title' => "PYQ paper (full mock): {$t['title']}"];
             }
         }
+
+        if ($this->needBaseline) {
+            $this->pickBaseline();
+        }
+    }
+
+    /**
+     * Baseline: the earliest unused sectioned "Full Mock Test N" with N ≥ 5
+     * (1–4 re-use official papers); failing that, another fresh full mock.
+     */
+    private function pickBaseline(): void
+    {
+        $best = null;
+        $bestKey = null;
+        foreach ($this->mockPool as $i => $m) {
+            $title = $m['test']['title'];
+            if (preg_match('/official/i', $title) || !preg_match('/^full mock test\s*(\d+)/i', $title, $mm)) {
+                continue;
+            }
+            $n = (int) $mm[1];
+            $key = [$n >= 5 ? 0 : 1, empty($m['test']['sectioned']) ? 1 : 0, $n, $m['test']['id']];
+            if ($bestKey === null || $key < $bestKey) {
+                $best = $i;
+                $bestKey = $key;
+            }
+        }
+        $best ??= array_key_first($this->mockPool);
+        if ($best === null) {
+            return;
+        }
+        $m = $this->mockPool[$best];
+        array_splice($this->mockPool, $best, 1);
+        $this->baseline = ['test' => $m['test'], 'title' => self::BASELINE_TITLE];
     }
 
     private function isNewTest(int $id): bool
@@ -346,7 +558,7 @@ class StudyPlanGenerator
 
     // ─── Scheduling ───────────────────────────────────────────────────────────
 
-    private function schedule(CarbonImmutable $today, CarbonImmutable $exam, int $office, int $library, int $weekend): array
+    private function schedule(CarbonImmutable $today, CarbonImmutable $exam, int $office, int $library, int $weekend, ?int $nowMinute, array $busyUntil): array
     {
         $rows = [];
         if ($exam->lt($today)) {
@@ -373,12 +585,14 @@ class StudyPlanGenerator
 
             $this->todayRefs = [];
             $ds = $date->toDateString();
+            // Today: start after "now" and after tasks already ticked today.
+            $from = fn (string $slot) => $i === 0 ? max($nowMinute ?? 0, $busyUntil[$slot] ?? 0) : 0;
             $slots = [];
             if ($date->isWeekend()) {
-                $slots['weekend'] = $this->planWeekend($phase, $date, $weekend);
+                $slots['weekend'] = $this->planWeekend($phase, $date, $this->layout('weekend', $weekend, $from('weekend')));
             } else {
-                $slots['office'] = $this->planOffice($phase, $office);
-                $slots['library'] = $this->planLibrary($phase, $date, $library);
+                $slots['office'] = $this->planOffice($phase, $this->layout('office', $office, $from('office')));
+                $slots['library'] = $this->planLibrary($phase, $date, $this->layout('library', $library, $from('library')));
             }
 
             foreach ($slots as $slot => $items) {
@@ -387,6 +601,8 @@ class StudyPlanGenerator
                         'date'        => $ds,
                         'slot'        => $slot,
                         'position'    => $pos,
+                        'start_time'  => $it['start_time'],
+                        'end_time'    => $it['end_time'],
                         'type'        => $it['type'],
                         'title'       => $it['title'],
                         'minutes'     => $it['minutes'],
@@ -403,94 +619,124 @@ class StudyPlanGenerator
         return $rows;
     }
 
-    private function planOffice(int $phase, int $budget): array
+    private function planOffice(int $phase, SlotLayout $lay): array
     {
         $out = [];
-        $left = $budget;
         $step = 0;
-        while ($left >= self::MIN_ITEM) {
-            $max = min($left, self::OFFICE_MAX);
-            $it = match ($phase) {
+        $this->fill($out, $lay, function (int $max) use ($phase, &$step) {
+            $max = min($max, self::OFFICE_MAX);
+
+            return match ($phase) {
                 1       => $this->takeLearn($max, 8) ?? $this->takeMixed($max) ?? $this->takeRevision($max),
                 2       => $this->takeCycle(['mixed', 'revision', 'retry', 'revision'], $step++, $max),
                 default => $this->takeSheet($max) ?? $this->takeRevision($max) ?? $this->takeRetry($max),
             };
-            if (!$it) {
-                break;
-            }
-            $out[] = $it;
-            $left -= $it['minutes'];
-        }
+        });
 
         return $out;
     }
 
-    private function planLibrary(int $phase, CarbonImmutable $date, int $budget): array
+    private function planLibrary(int $phase, CarbonImmutable $date, SlotLayout $lay): array
     {
         $out = [];
-        $left = $budget;
+        $baseline = $this->addBaseline($out, $lay, $date);
 
         if ($phase === 3) {
-            $this->addFullLength($out, $left, true);
-            $this->addFrom($out, $left, $this->takeRotating($this->pyqNotes, $this->pyqIdx, $left));
-            $this->addFrom($out, $left, $this->takeSheet($left));
-        } elseif ($phase === 2) {
+            if (!$baseline) {
+                $this->addFullLength($out, $lay, true);
+            }
+            $this->fill($out, $lay, fn (int $m) => $this->takeRotating($this->pyqNotes, $this->pyqIdx, $m), 1);
+            $this->fill($out, $lay, fn (int $m) => $this->takeSheet($m), 1);
+        } elseif ($phase === 2 && !$baseline) {
             if ($date->isWednesday()) {
-                $this->addFullLength($out, $left, false);
+                $this->addFullLength($out, $lay, false);
             } else {
-                $this->addSubjectTest($out, $left);
+                $this->addSubjectTest($out, $lay);
             }
         }
 
         $step = 0;
-        while ($left >= self::MIN_ITEM) {
-            $cap = min($left, self::OFFICE_MAX);
-            $it = match ($phase) {
-                1       => $this->takeLearn($left, 12) ?? $this->takeMixed($left) ?? $this->takeRevision($cap),
-                2       => $this->takeCycle(['mixed', 'revision', 'retry', 'revision'], $step++, $left),
+        $this->fill($out, $lay, function (int $max) use ($phase, &$step) {
+            $cap = min($max, self::OFFICE_MAX);
+
+            return match ($phase) {
+                1       => $this->takeLearn($max, 12) ?? $this->takeMixed($max) ?? $this->takeRevision($cap) ?? $this->takeRetry($max),
+                2       => $this->takeCycle(['mixed', 'revision', 'retry', 'revision'], $step++, $max),
                 default => $this->takeCycle(['revision', 'retry'], $step++, $cap),
             };
-            if (!$it) {
-                break;
-            }
-            $out[] = $it;
-            $left -= $it['minutes'];
-        }
+        });
 
         return $out;
     }
 
-    private function planWeekend(int $phase, CarbonImmutable $date, int $budget): array
+    private function planWeekend(int $phase, CarbonImmutable $date, SlotLayout $lay): array
     {
         $out = [];
-        $left = $budget;
+        $baseline = $this->addBaseline($out, $lay, $date);
 
         if ($phase === 3) {
-            $this->addFullLength($out, $left, true);
-            $this->addFullLength($out, $left, true);
-            $this->addFrom($out, $left, $this->takeSheet($left));
+            if (!$baseline) {
+                $this->addFullLength($out, $lay, true);
+            }
+            $this->addFullLength($out, $lay, true);
+            $this->fill($out, $lay, fn (int $m) => $this->takeSheet($m), 1);
         } elseif ($date->isSaturday()) {
-            $this->addFullLength($out, $left, false);
+            if (!$baseline) {
+                $this->addFullLength($out, $lay, false);
+            }
         } else {
-            $this->weakAreaDay($out, $left, $date);
+            $this->weakAreaDay($out, $lay, $date);
         }
 
         $step = 0;
-        while ($left >= self::MIN_ITEM) {
-            $cap = min($left, self::OFFICE_MAX);
-            $it = match ($phase) {
-                1       => $this->takeLearn($left, 12) ?? $this->takeMixed($left) ?? $this->takeRevision($cap),
-                2       => $this->takeCycle(['mixed', 'revision', 'retry', 'revision'], $step++, $left),
+        $this->fill($out, $lay, function (int $max) use ($phase, &$step) {
+            $cap = min($max, self::OFFICE_MAX);
+
+            return match ($phase) {
+                1       => $this->takeLearn($max, 12) ?? $this->takeMixed($max) ?? $this->takeRevision($cap) ?? $this->takeRetry($max),
+                2       => $this->takeCycle(['mixed', 'revision', 'retry', 'revision'], $step++, $max),
                 default => $this->takeSheet($cap) ?? $this->takeCycle(['revision', 'retry'], $step++, $cap),
             };
-            if (!$it) {
-                break;
-            }
-            $out[] = $it;
-            $left -= $it['minutes'];
-        }
+        });
 
         return $out;
+    }
+
+    /**
+     * Keep taking items while something fits: first one that fits the rest
+     * of the current window, else one for a later (longer) window.
+     */
+    private function fill(array &$out, SlotLayout $lay, callable $pick, int $limit = PHP_INT_MAX): int
+    {
+        $n = 0;
+        while ($n < $limit && ($it = $this->takeFitting($lay, $pick))) {
+            $this->push($out, $lay, $it);
+            $n++;
+        }
+
+        return $n;
+    }
+
+    private function takeFitting(SlotLayout $lay, callable $pick): ?array
+    {
+        $room = $lay->room();
+        if ($room < self::MIN_ITEM) {
+            return null;
+        }
+        $current = $lay->currentRoom();
+        $it = $current >= self::MIN_ITEM ? $pick($current) : null;
+        if (!$it && $room > $current) {
+            $it = $pick($room);
+        }
+
+        return $it;
+    }
+
+    /** Give the item its clock time and add it. */
+    private function push(array &$out, SlotLayout $lay, array $it): void
+    {
+        [$it['start_time'], $it['end_time']] = $lay->place($it['minutes']);
+        $out[] = $it;
     }
 
     /** Take from the pool named by the cycle position, falling back to the others. */
@@ -512,16 +758,8 @@ class StudyPlanGenerator
         return null;
     }
 
-    private function addFrom(array &$out, int &$left, ?array $it): void
-    {
-        if ($it) {
-            $out[] = $it;
-            $left -= $it['minutes'];
-        }
-    }
-
     /** Sunday in phases 1–2: up to 5 items for the weakest sections first. */
-    private function weakAreaDay(array &$out, int &$left, CarbonImmutable $date): void
+    private function weakAreaDay(array &$out, SlotLayout $lay, CarbonImmutable $date): void
     {
         $ranked = array_keys(ContentCatalog::SECTIONS);
         usort($ranked, fn ($a, $b) => [-$this->sectionFactors[$a], -ContentCatalog::SECTIONS[$a][1], $a]
@@ -529,7 +767,7 @@ class StudyPlanGenerator
 
         // Without attempt data every factor is equal; rotate through Section A
         // subjects week by week (CS is covered every day anyway).
-        if (!$this->sectionStats) {
+        if (!$this->sectionStats && !$this->mockStats) {
             $ranked = array_values(array_filter($ranked, fn ($s) => !in_array($s, ['cs', 'teaching'], true)));
             $shift = ((int) floor($date->dayOfYear / 7)) % max(1, count($ranked));
             $ranked = array_merge(array_slice($ranked, $shift), array_slice($ranked, 0, $shift), ['teaching', 'cs']);
@@ -538,15 +776,14 @@ class StudyPlanGenerator
         $used = [];
         $count = 0;
         foreach ($ranked as $section) {
-            while ($count < 5 && $left >= self::MIN_ITEM) {
-                $it = $this->takeLearn($left, 40, $section)
-                    ?? $this->takeFrom($this->mixed, $left, $section)
-                    ?? $this->takeRetry($left, $section);
+            while ($count < 5) {
+                $it = $this->takeFitting($lay, fn (int $m) => $this->takeLearn($m, 40, $section)
+                    ?? $this->takeFrom($this->mixed, $m, $section)
+                    ?? $this->takeRetry($m, $section));
                 if (!$it) {
                     break;
                 }
-                $out[] = $it;
-                $left -= $it['minutes'];
+                $this->push($out, $lay, $it);
                 $used[$section] = true;
                 $count++;
             }
@@ -561,43 +798,83 @@ class StudyPlanGenerator
     }
 
     /**
+     * Room for a full-length paper and its review: the paper inside one
+     * window (the review may follow in a later one). When no window is long
+     * enough at all, the paper starts at the start of the longest window.
+     */
+    private function canHost(SlotLayout $lay, int $minutes): bool
+    {
+        if ($lay->left() < $minutes + self::REVIEW_MIN) {
+            return false;
+        }
+        if ($lay->fitsAll([$minutes, self::REVIEW_MIN])) {
+            return true;
+        }
+
+        return $lay->isEmpty() && $lay->longest() > 0 && $lay->longest() < $minutes;
+    }
+
+    /** No finished full mock yet: the first library / weekend window gets the baseline mock. */
+    private function addBaseline(array &$out, SlotLayout $lay, CarbonImmutable $date): bool
+    {
+        if (!$this->needBaseline || !$this->baseline || $this->baselinePlaced) {
+            return false;
+        }
+        $t = $this->baseline['test'];
+        if (!$this->canHost($lay, max(60, (int) $t['duration_min']))) {
+            return false;
+        }
+        $this->pushFullLength($out, $lay, $this->baseline, 'mock', self::BASELINE_REVIEW_TITLE);
+        $mock = $out[count($out) - 2];
+        $this->baselinePlaced = [
+            'test_id'    => $t['id'],
+            'test_title' => $t['title'],
+            'date'       => $date->toDateString(),
+            'start_time' => $mock['start_time'],
+            'end_time'   => $mock['end_time'],
+        ];
+
+        return true;
+    }
+
+    /**
      * One full-length paper + "review wrong answers". Phases 1–2 use fresh
      * full mocks / "Most Expected" sets; phase 3 uses the official PYQ papers
      * first, then fresh mocks, subject full tests, and finally re-attempts.
      */
-    private function addFullLength(array &$out, int &$left, bool $final): void
+    private function addFullLength(array &$out, SlotLayout $lay, bool $final): void
     {
         $pools = $final ? ['paperPool', 'mockPool', 'fullTests'] : ['mockPool'];
         $pick = null;
         foreach ($pools as $pool) {
             foreach ($this->{$pool} as $i => $m) {
-                if (max(60, (int) $m['test']['duration_min']) + self::REVIEW_MIN <= $left) {
+                if ($this->canHost($lay, max(60, (int) $m['test']['duration_min']))) {
                     $pick = $m;
                     array_splice($this->{$pool}, $i, 1);
                     break 2;
                 }
             }
         }
-        $pick ??= $this->mockReattempt($left);
+        $pick ??= $this->mockReattempt($lay);
         if ($pick) {
-            $this->pushFullLength($out, $left, $pick, 'mock');
+            $this->pushFullLength($out, $lay, $pick, 'mock');
         }
     }
 
     /** Phase 2, non-mock library days: one subject "200 Most Expected" full test. */
-    private function addSubjectTest(array &$out, int &$left): void
+    private function addSubjectTest(array &$out, SlotLayout $lay): void
     {
         foreach ($this->fullTests as $i => $m) {
-            if (max(60, (int) $m['test']['duration_min']) + self::REVIEW_MIN <= $left) {
+            if ($this->canHost($lay, max(60, (int) $m['test']['duration_min']))) {
                 array_splice($this->fullTests, $i, 1);
-                $this->pushFullLength($out, $left, $m, 'test');
+                $this->pushFullLength($out, $lay, $m, 'test');
 
                 return;
             }
         }
     }
 
-    private function pushFullLength(array &$out, int &$left, array $m, string $type): void
+    private function pushFullLength(array &$out, SlotLayout $lay, array $m, string $type, ?string $reviewTitle = null): void
     {
         $t = $m['test'];
         $mins = max(60, (int) $t['duration_min']);
@@ -606,18 +883,17 @@ class StudyPlanGenerator
         $subject = $pack ?? 'mock';
         $this->plannedTests[$t['id']] = ($this->plannedTests[$t['id']] ?? 0) + 1;
         $this->todayRefs['test:' . $t['id']] = true;
-        $out[] = $this->item($type, $m['title'], $mins, 'test', $t['id'], $subject, $section);
-        $out[] = $this->item('review', "Review wrong answers: {$t['title']} (Revise this concept)", self::REVIEW_MIN,
-            'test', $t['id'], $subject, $section);
-        $left -= $mins + self::REVIEW_MIN;
+        $this->push($out, $lay, $this->item($type, $m['title'], $mins, 'test', $t['id'], $subject, $section));
+        $this->push($out, $lay, $this->item('review', $reviewTitle ?? "Review wrong answers: {$t['title']} (Revise this concept)", self::REVIEW_MIN,
+            'test', $t['id'], $subject, $section));
     }
 
     /** Pools used up: re-attempt a full mock (least used first) while attempts allow. */
-    private function mockReattempt(int $left): ?array
+    private function mockReattempt(SlotLayout $lay): ?array
     {
         $best = null;
         foreach ($this->catalog->mocks as $t) {
-            if (max(60, $t['duration_min']) + self::REVIEW_MIN > $left || !$this->canAttemptAgain($t['id'])) {
+            if (!$this->canHost($lay, max(60, $t['duration_min'])) || !$this->canAttemptAgain($t['id'])) {
                 continue;
             }
             if ($best === null || $this->mockUses($t['id']) < $this->mockUses($best['id'])) {
@@ -843,6 +1119,34 @@ class StudyPlanGenerator
 
     // ─── Summary ──────────────────────────────────────────────────────────────
 
+    /** Plain-English lines shown above the plan: why it starts / is weighted the way it is. */
+    private function advice(): array
+    {
+        $out = [];
+        if ($b = $this->baselinePlaced) {
+            $when = CarbonImmutable::parse($b['date'])->format('D j M') . " at {$b['start_time']}";
+            $out[] = "You have not taken a full mock yet, so the plan starts with a baseline mock ({$b['test_title']}) on {$when}, "
+                . 'followed by a review of your wrong answers. When you have finished it, press Regenerate: the plan re-weights '
+                . 'every section by your scores (weaker sections get more time) and keeps the tasks you have ticked.';
+        } elseif ($this->needBaseline) {
+            $out[] = 'Take a full mock as soon as you can, then press Regenerate: the plan re-weights every section by your scores.';
+        }
+        if ($m = $this->latestMock) {
+            $sections = $m['sections'];
+            asort($sections);
+            $weak = [];
+            foreach (array_slice($sections, 0, 3, true) as $key => $pct) {
+                $weak[] = ContentCatalog::sectionLabel($key) . ' ' . rtrim(rtrim(number_format($pct, 1), '0'), '.') . '%';
+            }
+            $date = $m['date'] ? ', ' . CarbonImmutable::parse($m['date'])->format('j M') : '';
+            $out[] = "Time per section follows your latest full mock ({$m['title']}{$date}) — weakest first: " . implode(', ', $weak)
+                . '. After your next mock, press Regenerate to re-weight (ticked tasks are kept).';
+        }
+        $out[] = 'Times follow your timetable. In the library and at weekends a 10-minute break comes after every 90 minutes of study.';
+
+        return $out;
+    }
+
     private function summary(CarbonImmutable $today, CarbonImmutable $exam, array $rows): array
     {
         $byPhase = [];
@@ -881,6 +1185,7 @@ class StudyPlanGenerator
                 'marks'  => $marks,
                 'weight' => $this->sectionWeights[$key],
                 'score_percent' => $this->sectionStats[$key] ?? null,
+                'mock_percent'  => $this->latestMock['sections'][$key] ?? null,
                 'has_pack' => collect($this->catalog->packs)->contains(fn ($p) => $p['section'] === $key || ($key === 'teaching' && $p['has_teaching'])),
             ];
         }
@@ -893,6 +1198,10 @@ class StudyPlanGenerator
             'subjects'   => $subjects,
             'sections'   => $sections,
             'day_labels' => $this->dayLabels,
+            'timetable'  => $this->timetable,
+            'baseline'   => $this->baselinePlaced,
+            'latest_mock' => $this->latestMock,
+            'advice'     => $this->advice(),
             'counts'     => [
                 'tasks'   => count($rows),
                 'minutes' => array_sum(array_column($rows, 'minutes')),

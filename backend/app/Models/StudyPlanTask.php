@@ -11,7 +11,7 @@ class StudyPlanTask extends Model
     public const TYPES = ['notes', 'test', 'revision', 'mock', 'review'];
 
     protected $fillable = [
-        'plan_id', 'date', 'slot', 'position', 'type', 'title', 'minutes',
+        'plan_id', 'date', 'slot', 'position', 'start_time', 'end_time', 'type', 'title', 'minutes',
         'ref_type', 'ref_id', 'link', 'subject_key', 'phase', 'done_at',
     ];
 

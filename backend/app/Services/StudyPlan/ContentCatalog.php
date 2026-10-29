@@ -376,6 +376,8 @@ class ContentCatalog
             'duration_min' => $durationMin,
             'section'      => $section,
             'pack'         => $packKey,
+            // Exam-style sections (e.g. the 10 DSSSB blocks): per-section results after an attempt.
+            'sectioned'    => is_array($t->sections) && count($t->sections) > 0,
         ];
     }
 

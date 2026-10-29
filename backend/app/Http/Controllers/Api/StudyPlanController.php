@@ -12,12 +12,14 @@ use Carbon\CarbonImmutable;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
+use Illuminate\Validation\ValidationException;
 
 /**
  * Personal DSSSB TGT CS study plan.
  *
  *   GET   /study-plan                plan + today's / this week's tasks + progress (?full=1 adds every task)
- *   POST  /study-plan/generate       (re)build from today; done tasks are kept as history
+ *   POST  /study-plan/generate       (re)build from today; done tasks are kept as history.
+ *                                    Optional `timetable`: {office|library|weekend: [["HH:MM","HH:MM"], …]}
  *   PATCH /study-plan/tasks/{task}   {done: bool}
  */
 class StudyPlanController extends Controller
@@ -45,11 +47,54 @@ class StudyPlanController extends Controller
             'weekend_min'         => 'required|integer|min:0|max:1200',
             'focus'               => 'nullable|array|max:20',
             'focus.*'             => 'string|max:60',
+            'timetable'           => 'nullable|array',
+            'timetable.office'    => 'sometimes|array|max:' . StudyPlanGenerator::MAX_WINDOWS,
+            'timetable.library'   => 'sometimes|array|max:' . StudyPlanGenerator::MAX_WINDOWS,
+            'timetable.weekend'   => 'sometimes|array|max:' . StudyPlanGenerator::MAX_WINDOWS,
+            'timetable.*.*'       => 'array|size:2',
+            'timetable.*.*.*'     => ['required', 'string', 'regex:/^([01]\d|2[0-3]):[0-5]\d$/'],
+        ], [
+            'timetable.*.max'       => 'Use at most ' . StudyPlanGenerator::MAX_WINDOWS . ' time windows per slot.',
+            'timetable.*.*.*.regex' => 'Times must look like 07:30 (24-hour HH:MM).',
         ]);
+        if (isset($data['timetable'])) {
+            $data['timetable'] = $this->checkTimetable($data['timetable']);
+        }
 
-        $generator->generate($request->user(), $data, $today);
+        $generator->generate($request->user(), $data, $today, now(self::TIMEZONE));
 
         return response()->json($this->payload($request, (bool) $request->boolean('full')));
+    }
+
+    /** Each window must end after it starts, and windows of one slot must not overlap. */
+    private function checkTimetable(array $timetable): array
+    {
+        $errors = [];
+        $out = [];
+        foreach (StudyPlanTask::SLOTS as $slot) {
+            if (!array_key_exists($slot, $timetable)) {
+                continue;
+            }
+            $windows = array_values((array) $timetable[$slot]);
+            foreach ($windows as $i => [$start, $end]) {
+                if ($start >= $end) {
+                    $errors["timetable.{$slot}.{$i}"] = "Each time window must end after it starts ({$start}–{$end}).";
+                }
+            }
+            $sorted = $windows;
+            usort($sorted, fn ($a, $b) => strcmp($a[0], $b[0]));
+            for ($i = 1; $i < count($sorted); $i++) {
+                if ($sorted[$i][0] < $sorted[$i - 1][1]) {
+                    $errors["timetable.{$slot}"] = "Time windows overlap ({$sorted[$i - 1][0]}–{$sorted[$i - 1][1]} and {$sorted[$i][0]}–{$sorted[$i][1]}).";
+                }
+            }
+            $out[$slot] = $sorted;
+        }
+        if ($errors) {
+            throw ValidationException::withMessages($errors);
+        }
+
+        return $out;
     }
 
     public function updateTask(Request $request, int $task): JsonResponse
@@ -95,7 +140,10 @@ class StudyPlanController extends Controller
         }
 
         $weekEnd = $today->addDays(6)->toDateString();
-        $all = $plan->tasks()->orderBy('date')->orderByRaw("CASE slot WHEN 'office' THEN 0 WHEN 'library' THEN 1 ELSE 2 END")
+        // By day, then clock time (tasks from before timetables have none: slot order).
+        $all = $plan->tasks()->orderBy('date')
+            ->orderByRaw('CASE WHEN start_time IS NULL THEN 1 ELSE 0 END')->orderBy('start_time')
+            ->orderByRaw("CASE slot WHEN 'office' THEN 0 WHEN 'library' THEN 1 ELSE 2 END")
             ->orderBy('position')->orderBy('id')->get();
         $attempts = $this->attemptsFor($request, $all);
 
@@ -113,6 +161,7 @@ class StudyPlanController extends Controller
                 'weekday_library_min' => $plan->weekday_library_min,
                 'weekend_min'         => $plan->weekend_min,
                 'focus'               => $plan->settings['focus'] ?? [],
+                'timetable'           => $plan->settings['timetable'] ?? StudyPlanGenerator::DEFAULT_TIMETABLE,
                 'summary'             => $plan->plan,
                 'generated_at'        => $plan->generated_at?->toIso8601String(),
                 'days_left'           => $examDate->lt($today) ? 0 : $today->diffInDays($examDate) + 1,
@@ -150,6 +199,8 @@ class StudyPlanController extends Controller
             'date'        => $t->date->toDateString(),
             'slot'        => $t->slot,
             'position'    => $t->position,
+            'start_time'  => $t->start_time,
+            'end_time'    => $t->end_time,
             'type'        => $t->type,
             'title'       => $t->title,
             'minutes'     => $t->minutes,

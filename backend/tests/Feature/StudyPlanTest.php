@@ -10,6 +10,7 @@ use App\Models\Subject;
 use App\Models\Test;
 use App\Models\TestAttempt;
 use App\Models\TestSeries;
+use App\Services\StudyPlan\StudyPlanGenerator;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Str;
@@ -90,7 +91,10 @@ class StudyPlanTest extends TestCase
         // Main series: mocks, an official paper (+ its mock copy), section & chapter tests.
         $main = [];
         foreach (range(1, 6) as $n) {
-            $main[] = $this->test("Full Mock Test {$n}", ['mode' => 'full_mock', 'category' => 'Full Mock Tests', 'duration_sec' => 7200]);
+            // 5 and 6 carry exam-style sections (the baseline mock must be sectioned).
+            $sections = $n >= 5 ? [['key' => 'ga', 'name_en' => 'General Awareness', 'name_hi' => null, 'from' => 0, 'count' => 20, 'duration_sec' => null]] : null;
+            $main[] = $this->test("Full Mock Test {$n}", ['mode' => 'full_mock', 'category' => 'Full Mock Tests', 'duration_sec' => 7200, 'sections' => $sections]);
+            $this->ids["mock{$n}"] = end($main)->id;
         }
         $main[] = $official = $this->test('DSSSB TGT CS Official Paper — 24 June 2023 (Shift 3)', ['mode' => 'pyq', 'paper_type' => 'official', 'duration_sec' => 7200]);
         $main[] = $copy = $this->test('Full Mock Test 7 — Official Paper 24 June 2023 (Shift 3)', ['mode' => 'full_mock', 'category' => 'Full Mock Tests', 'duration_sec' => 7200]);
@@ -297,7 +301,7 @@ class StudyPlanTest extends TestCase
         TestAttempt::create([
             'user_id' => $user->id, 'test_id' => $mock->id, 'status' => 'completed',
             'started_at' => now(), 'completed_at' => now(),
-            'metadata' => ['sectional_stats' => [
+            'metadata' => ['total_questions' => 200, 'sectional_stats' => [
                 'English Language'  => ['correct' => 0, 'incorrect' => 8, 'total' => 20, 'marks' => -2],
                 'Hindi Language'    => ['correct' => 18, 'incorrect' => 0, 'total' => 20, 'marks' => 18],
                 'Computer Science'  => ['correct' => 60, 'incorrect' => 10, 'total' => 90, 'marks' => 57.5],
@@ -327,6 +331,229 @@ class StudyPlanTest extends TestCase
         $this->assertStringContainsString('English', $firstSunday->title);
         $this->assertSame(0.0, (float) $plan->plan['sections'][array_search('english', array_column($plan->plan['sections'], 'key'))]['score_percent']);
         $this->assertNotEmpty($res->json('week'));
+    }
+
+    // ─── Timetable, baseline, re-weighting ────────────────────────────────────
+
+    private static function mins(string $hhmm): int
+    {
+        [$h, $m] = explode(':', $hhmm);
+
+        return (int) $h * 60 + (int) $m;
+    }
+
+    /** @return array<string, \Illuminate\Support\Collection> "date|slot" => tasks in clock order */
+    private function bySlot(StudyPlan $plan): array
+    {
+        return $plan->tasks()->get()
+            ->groupBy(fn ($t) => $t->date->toDateString() . '|' . $t->slot)
+            ->map(fn ($g) => $g->sortBy('start_time')->values())
+            ->all();
+    }
+
+    private function windowOf(array $timetable, string $slot, string $start, string $end): ?array
+    {
+        foreach ($timetable[$slot] as $w) {
+            if ($w[0] <= $start && $end <= $w[1]) {
+                return $w;
+            }
+        }
+
+        return null;
+    }
+
+    public function test_tasks_get_clock_times_inside_the_timetable_windows(): void
+    {
+        $user = $this->actingAsStudent();
+        $res = $this->generate()->assertOk();
+        $timetable = StudyPlanGenerator::DEFAULT_TIMETABLE;
+        $this->assertSame($timetable, $res->json('plan.timetable'));
+        $this->assertSame($timetable, $res->json('defaults.timetable'));
+
+        $plan = StudyPlan::where('user_id', $user->id)->firstOrFail();
+        foreach ($this->bySlot($plan) as $key => $tasks) {
+            [, $slot] = explode('|', $key);
+            $prevEnd = null;
+            foreach ($tasks as $t) {
+                $this->assertNotNull($t->start_time, $key);
+                $this->assertSame($t->minutes, self::mins($t->end_time) - self::mins($t->start_time), "{$key} {$t->title}");
+                $this->assertNotNull($this->windowOf($timetable, $slot, $t->start_time, $t->end_time), "{$key} {$t->title} {$t->start_time}–{$t->end_time}");
+                if ($prevEnd !== null) {
+                    $this->assertGreaterThanOrEqual($prevEnd, $t->start_time, "overlap in {$key}");
+                }
+                $prevEnd = $t->end_time;
+            }
+        }
+
+        // Generated at 10:00 on Thursday: the 05:30 library window is gone, the evening one is used.
+        $today = $res->json('today');
+        $this->assertNotEmpty($today);
+        foreach ($today as $t) {
+            $this->assertNotNull($t['start_time']);
+            $this->assertGreaterThanOrEqual('10:00', $t['start_time']);
+        }
+        // Today's list is in clock order.
+        $starts = array_column($today, 'start_time');
+        $sorted = $starts;
+        sort($sorted);
+        $this->assertSame($sorted, $starts);
+        // Tomorrow the morning library window is used from 05:30.
+        $this->assertSame('05:30', $plan->tasks()->whereDate('date', '2026-10-30')->where('slot', 'library')->min('start_time'));
+        // Weekend: both windows used, never more than the 480-minute budget.
+        $sat = $plan->tasks()->whereDate('date', '2026-10-31')->get();
+        $this->assertSame('07:00', $sat->min('start_time'));
+        $this->assertTrue($sat->contains(fn ($t) => $t->start_time >= '15:00'));
+        $this->assertLessThanOrEqual(480, $sat->sum('minutes'));
+    }
+
+    public function test_mocks_sit_inside_one_window_and_breaks_follow_90_minutes(): void
+    {
+        $user = $this->actingAsStudent();
+        $this->generate()->assertOk();
+        $plan = StudyPlan::where('user_id', $user->id)->firstOrFail();
+        $timetable = StudyPlanGenerator::DEFAULT_TIMETABLE;
+
+        $mocks = $plan->tasks()->where('type', 'mock')->get();
+        $this->assertNotEmpty($mocks);
+        foreach ($mocks as $m) {
+            $this->assertNotNull($this->windowOf($timetable, $m->slot, $m->start_time, $m->end_time), "{$m->title} {$m->date->toDateString()} {$m->start_time}");
+        }
+
+        $breaks = 0;
+        foreach ($this->bySlot($plan) as $key => $tasks) {
+            [, $slot] = explode('|', $key);
+            $run = 0;
+            $prev = null;
+            foreach ($tasks as $t) {
+                if ($prev && $t->start_time === $prev->end_time) {
+                    if ($slot !== 'office') {
+                        $this->assertLessThan(90, $run, "no break before {$t->title} ({$key} {$t->start_time})");
+                    }
+                    $run += $t->minutes;
+                } else {
+                    if ($prev && $run >= 90 && self::mins($t->start_time) - self::mins($prev->end_time) === 10) {
+                        $breaks++;
+                    }
+                    $run = $t->minutes;
+                }
+                $prev = $t;
+            }
+        }
+        $this->assertGreaterThan(0, $breaks);
+    }
+
+    public function test_baseline_mock_comes_first_for_a_user_without_a_full_mock(): void
+    {
+        $user = $this->actingAsStudent();
+        $res = $this->generate()->assertOk();
+        $plan = StudyPlan::where('user_id', $user->id)->firstOrFail();
+
+        // First library / weekend task from today: Thursday's evening window.
+        $first = $plan->tasks()->whereIn('slot', ['library', 'weekend'])->orderBy('date')->orderBy('start_time')->first();
+        $this->assertSame(StudyPlanGenerator::BASELINE_TITLE, $first->title);
+        $this->assertSame('mock', $first->type);
+        $this->assertSame('2026-10-29', $first->date->toDateString());
+        $this->assertSame('19:00', $first->start_time);
+        // Earliest unused sectioned "Full Mock Test N" with N >= 5.
+        $this->assertSame($this->ids['mock5'], $first->ref_id);
+
+        $review = $plan->tasks()->whereDate('date', '2026-10-29')->where('slot', 'library')->where('position', $first->position + 1)->first();
+        $this->assertSame(StudyPlanGenerator::BASELINE_REVIEW_TITLE, $review->title);
+        $this->assertSame('review', $review->type);
+        $this->assertSame(45, $review->minutes);
+        $this->assertSame($first->ref_id, $review->ref_id);
+        $this->assertSame(1, $plan->tasks()->where('title', StudyPlanGenerator::BASELINE_TITLE)->count());
+
+        $this->assertSame($this->ids['mock5'], $res->json('plan.summary.baseline.test_id'));
+        $this->assertStringContainsString('Regenerate', $res->json('plan.summary.advice.0'));
+        $this->assertStringContainsString('re-weights', $res->json('plan.summary.advice.0'));
+        // The baseline is not given again as a fresh mock (only as a late re-attempt).
+        $this->assertFalse($plan->tasks()->where('title', 'Full mock: Full Mock Test 5')->exists());
+    }
+
+    public function test_after_a_full_mock_there_is_no_baseline_and_sections_are_reweighted(): void
+    {
+        $user = $this->actingAsStudent();
+        $section = fn ($name, $marks) => ['key' => $name, 'name_en' => $name, 'total' => 20, 'correct' => 0, 'marks' => $marks, 'max_marks' => 20];
+        TestAttempt::create([
+            'user_id' => $user->id, 'test_id' => $this->ids['mock5'], 'status' => 'completed',
+            'started_at' => now(), 'completed_at' => now(),
+            'metadata' => ['total_questions' => 200, 'section_results' => [
+                $section('Section A · English Language', 4),    // 20%
+                $section('Section A · Hindi Language', 18),     // 90%
+                $section('Section A · General Awareness', 10),  // 50%
+            ]],
+        ]);
+
+        $res = $this->generate()->assertOk();
+        $plan = StudyPlan::where('user_id', $user->id)->firstOrFail();
+        $this->assertFalse($plan->tasks()->where('title', StudyPlanGenerator::BASELINE_TITLE)->exists());
+        $this->assertNull($res->json('plan.summary.baseline'));
+
+        $weights = $plan->settings['section_weights'];
+        // Same exam marks (20 each): the lower mock score gets the bigger weight.
+        $this->assertGreaterThan($weights['ga'], $weights['english']);
+        $this->assertGreaterThan($weights['hindi'], $weights['ga']);
+        $this->assertSame($this->ids['mock5'], $res->json('plan.summary.latest_mock.test_id'));
+        $this->assertEquals(20.0, $res->json('plan.summary.latest_mock.sections.english'));
+        $this->assertStringContainsString('English 20%', implode(' ', $res->json('plan.summary.advice')));
+
+        // Deterministic.
+        $first = $this->signature($plan);
+        $this->generate()->assertOk();
+        $this->assertSame($first, $this->signature($plan->fresh()));
+    }
+
+    public function test_custom_timetable_caps_budgets_and_a_long_mock_starts_the_longest_window(): void
+    {
+        $user = $this->actingAsStudent();
+        $timetable = [
+            'office'  => [['13:00', '13:45']],
+            'library' => [['18:30', '22:00']],
+            // No weekend window holds a 2-hour mock.
+            'weekend' => [['10:00', '11:30'], ['08:00', '09:40']],
+        ];
+        $res = $this->generate(['timetable' => $timetable])->assertOk();
+        $this->assertSame([['08:00', '09:40'], ['10:00', '11:30']], $res->json('plan.timetable.weekend'));
+
+        $plan = StudyPlan::where('user_id', $user->id)->firstOrFail();
+        foreach ($this->bySlot($plan) as $key => $tasks) {
+            [, $slot] = explode('|', $key);
+            $cap = ['office' => 45, 'library' => 210, 'weekend' => 190][$slot];
+            $this->assertLessThanOrEqual($cap, $tasks->sum('minutes'), $key);
+        }
+        foreach ($plan->tasks()->where('slot', 'office')->get() as $t) {
+            $this->assertGreaterThanOrEqual('13:00', $t->start_time);
+            $this->assertLessThanOrEqual('13:45', $t->end_time);
+        }
+        // Saturday mock: starts at the start of the longest window.
+        $sat = $plan->tasks()->whereDate('date', '2026-10-31')->where('type', 'mock')->first();
+        $this->assertNotNull($sat);
+        $this->assertSame('08:00', $sat->start_time);
+
+        // Regenerating without a timetable keeps the saved one.
+        $this->generate()->assertOk()->assertJsonPath('plan.timetable.office', [['13:00', '13:45']]);
+    }
+
+    public function test_timetable_validation(): void
+    {
+        $this->actingAsStudent();
+        $ok = StudyPlanGenerator::DEFAULT_TIMETABLE;
+
+        $this->generate(['timetable' => ['library' => [['25:00', '26:00']]] + $ok])->assertStatus(422)
+            ->assertJsonValidationErrors('timetable.library.0.0');
+        $this->generate(['timetable' => ['library' => [['7:00', '09:00']]] + $ok])->assertStatus(422);
+        $this->generate(['timetable' => ['office' => [['14:00', '13:00']]] + $ok])->assertStatus(422)
+            ->assertJsonValidationErrors('timetable.office.0');
+        $this->generate(['timetable' => ['office' => [['13:00', '13:00']]] + $ok])->assertStatus(422);
+        $this->generate(['timetable' => ['weekend' => [['07:00', '08:00'], ['09:00', '10:00'], ['11:00', '12:00'], ['13:00', '14:00'], ['15:00', '16:00']]] + $ok])
+            ->assertStatus(422)->assertJsonValidationErrors('timetable.weekend');
+        $this->generate(['timetable' => ['weekend' => [['07:00', '10:00'], ['09:00', '12:00']]] + $ok])
+            ->assertStatus(422)->assertJsonValidationErrors('timetable.weekend');
+        $this->generate(['timetable' => ['office' => [['13:00']]] + $ok])->assertStatus(422);
+        $this->getJson('/api/study-plan')->assertOk()->assertJsonPath('plan', null);
+
+        $this->generate(['timetable' => $ok])->assertOk()->assertJsonPath('plan.timetable', $ok);
     }
 
     public function test_validation(): void
