@@ -267,6 +267,22 @@ class TestAttemptController extends Controller
         return $this->json($data);
     }
 
+    // ─── Analysis (visual result) ─────────────────────────────────────────────
+
+    /** GET /attempts/{id}/analysis — rank, percentile, comparison, Venn, tips. */
+    public function analysis($attemptId)
+    {
+        $attempt = $this->findOwnedAttempt($attemptId);
+        if ($attempt instanceof JsonResponse) {
+            return $attempt;
+        }
+        if ($attempt->status !== 'completed') {
+            return response()->json(['message' => 'The analysis is ready after you submit the test.', 'code' => 'NOT_COMPLETED'], 409);
+        }
+
+        return $this->json(\App\Services\AttemptAnalysis::for($attempt));
+    }
+
     // ─── Sections ─────────────────────────────────────────────────────────────
 
     /**

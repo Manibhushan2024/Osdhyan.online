@@ -118,6 +118,7 @@ Route::middleware(['auth:sanctum', 'throttle:api'])->group(function () {
     Route::get('/questions/{question}/concept', [\App\Http\Controllers\Api\ConceptController::class, 'forQuestion']);
     Route::get('/concepts/{key}', [\App\Http\Controllers\Api\ConceptController::class, 'chapter']);
     Route::get('/attempts/{attempt}', [TestAttemptController::class, 'show']);
+    Route::get('/attempts/{attempt}/analysis', [TestAttemptController::class, 'analysis']);
 
     // Answer sync is high-frequency — give it a higher limit
     Route::middleware('throttle:answers')->group(function () {

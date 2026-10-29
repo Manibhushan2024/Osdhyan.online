@@ -1,0 +1,190 @@
+{
+ "attempt_id": 94,
+ "test": {
+  "id": 65,
+  "name_en": "Full Mock Test 5",
+  "duration_sec": 7200,
+  "negative_marking": 0.25,
+  "evaluate_marked": false
+ },
+ "score": 0,
+ "max_marks": 200,
+ "percentage": 0,
+ "counts": {
+  "total": 200,
+  "attempted": 0,
+  "correct": 0,
+  "incorrect": 0,
+  "unattempted": 200,
+  "marked_not_evaluated": 0
+ },
+ "accuracy": 0,
+ "negative_marks_lost": 0,
+ "rank": {
+  "rank": 1,
+  "out_of": 1,
+  "percentile": 100,
+  "basis": "reattempt_compared_with_first_attempts"
+ },
+ "comparison": {
+  "topper": 0,
+  "average": 0,
+  "median": 0,
+  "you": 0
+ },
+ "distribution": [
+  {
+   "from": 0,
+   "to": 20,
+   "students": 1,
+   "you": true
+  },
+  {
+   "from": 20,
+   "to": 40,
+   "students": 0,
+   "you": false
+  },
+  {
+   "from": 40,
+   "to": 60,
+   "students": 0,
+   "you": false
+  },
+  "…"
+ ],
+ "sections": [
+  {
+   "key": "ga",
+   "name": "Section A · General Awareness",
+   "total": 20,
+   "correct": 0,
+   "incorrect": 0,
+   "unattempted": 20,
+   "marks": 0,
+   "max_marks": 20,
+   "time_sec": 32,
+   "accuracy": 0,
+   "percentage": 0,
+   "avg_marks": null,
+   "topper_marks": null
+  },
+  {
+   "key": "rea",
+   "name": "Section A · General Intelligence & Reasoning",
+   "total": 20,
+   "correct": 0,
+   "incorrect": 0,
+   "unattempted": 20,
+   "marks": 0,
+   "max_marks": 20,
+   "time_sec": 17,
+   "accuracy": 0,
+   "percentage": 0,
+   "avg_marks": null,
+   "topper_marks": null
+  },
+  "…"
+ ],
+ "time": {
+  "taken_sec": 171,
+  "allowed_sec": 7200,
+  "per_question_sec": 0.9
+ },
+ "venn": {
+  "attempted_only": 0,
+  "marked_only": 0,
+  "both": 0,
+  "neither": 200,
+  "correct_attempted_only": 0,
+  "correct_both": 0
+ },
+ "qualifying": {
+  "total_percent": 0,
+  "section_b_marks": 0,
+  "section_b_max": 100,
+  "section_b_percent": 0,
+  "categories": [
+   {
+    "category": "General / EWS",
+    "percent": 40,
+    "total_needed": 80,
+    "section_b_needed": 40,
+    "qualified": false,
+    "short_by": 80
+   },
+   {
+    "category": "OBC",
+    "percent": 35,
+    "total_needed": 70,
+    "section_b_needed": 35,
+    "qualified": false,
+    "short_by": 70
+   },
+   {
+    "category": "SC / ST / PwBD",
+    "percent": 30,
+    "total_needed": 60,
+    "section_b_needed": 30,
+    "qualified": false,
+    "short_by": 60
+   }
+  ]
+ },
+ "improve": [
+  {
+   "kind": "section",
+   "priority": "high",
+   "section_key": "ga",
+   "title": "Section A · General Awareness: 20 marks left (0/20)",
+   "detail": "Mostly 20 questions left. Revise this block's notes and take its chapter tests before the next mock."
+  },
+  {
+   "kind": "section",
+   "priority": "high",
+   "section_key": "rea",
+   "title": "Section A · General Intelligence & Reasoning: 20 marks left (0/20)",
+   "detail": "Mostly 20 questions left. Revise this block's notes and take its chapter tests before the next mock."
+  },
+  {
+   "kind": "section",
+   "priority": "high",
+   "section_key": "num",
+   "title": "Section A · Arithmetical & Numerical Ability: 20 marks left (0/20)",
+   "detail": "Mostly 20 questions left. Revise this block's notes and take its chapter tests before the next mock."
+  }
+ ],
+ "weak_chapters": [],
+ "trend": [
+  {
+   "attempt_id": 81,
+   "number": 1,
+   "score": 5.5,
+   "date": "2026-10-29T15:28:38.000000Z"
+  },
+  {
+   "attempt_id": 82,
+   "number": 2,
+   "score": 0.5,
+   "date": "2026-10-29T15:42:25.000000Z"
+  },
+  {
+   "attempt_id": 83,
+   "number": 3,
+   "score": 0,
+   "date": "2026-10-29T15:50:17.000000Z"
+  },
+  {
+   "attempt_id": 84,
+   "number": 4,
+   "score": 1.5,
+   "date": "2026-10-29T15:54:46.000000Z"
+  },
+  {
+   "attempt_id": 94,
+   "number": 5,
+   "score": 0,
+   "date": "2026-10-29T16:00:06.000000Z"
+  }
+ ]
+}
