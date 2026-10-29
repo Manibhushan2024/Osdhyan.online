@@ -1,0 +1,1842 @@
+[
+ {
+  "chapter_key": "rea_logic",
+  "subtopic": "Syllogism",
+  "difficulty": "easy",
+  "question_en": "Statements: All cats are dogs. All dogs are birds.\nConclusions: I. All cats are birds. II. Some birds are dogs.",
+  "options": [
+   {
+    "en": "Both I and II follow"
+   },
+   {
+    "en": "Only I follows"
+   },
+   {
+    "en": "Only II follows"
+   },
+   {
+    "en": "Neither I nor II follows"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Cats lie inside dogs, and dogs lie inside birds, so all cats are birds (I). Since all dogs are birds, at least some birds are dogs (II). Both follow.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_logic",
+  "subtopic": "Syllogism",
+  "difficulty": "medium",
+  "question_en": "Statements: Some pens are books. All books are tables.\nConclusions: I. Some pens are tables. II. All pens are tables.",
+  "options": [
+   {
+    "en": "Only II follows"
+   },
+   {
+    "en": "Both I and II follow"
+   },
+   {
+    "en": "Only I follows"
+   },
+   {
+    "en": "Neither I nor II follows"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The pens that are books are also tables, so some pens are tables (I). Only some pens are known to be books, so 'all pens are tables' (II) cannot be concluded.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_logic",
+  "subtopic": "Syllogism",
+  "difficulty": "hard",
+  "question_en": "Statements: No flower is a stone. All stones are rocks.\nConclusions: I. No flower is a rock. II. Some rocks are not flowers.",
+  "options": [
+   {
+    "en": "Only I follows"
+   },
+   {
+    "en": "Only II follows"
+   },
+   {
+    "en": "Both I and II follow"
+   },
+   {
+    "en": "Neither I nor II follows"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Stones are rocks and no stone is a flower, so those rocks (the stones) are not flowers: II follows. A flower may still be a rock that is not a stone, so I does not follow.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_logic",
+  "subtopic": "Syllogism",
+  "difficulty": "medium",
+  "question_en": "Statements: All teachers are scholars. Some scholars are doctors.\nConclusions: I. Some teachers are doctors. II. Some doctors are scholars.",
+  "options": [
+   {
+    "en": "Only I follows"
+   },
+   {
+    "en": "Both I and II follow"
+   },
+   {
+    "en": "Neither I nor II follows"
+   },
+   {
+    "en": "Only II follows"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "'Some scholars are doctors' converts to 'Some doctors are scholars', so II follows. The doctors may be scholars who are not teachers, so I is not certain.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_logic",
+  "subtopic": "Syllogism",
+  "difficulty": "medium",
+  "question_en": "Statements: Some men are kings. No king is a thief.\nConclusions: I. Some men are not thieves. II. No man is a thief.",
+  "options": [
+   {
+    "en": "Only II follows"
+   },
+   {
+    "en": "Both I and II follow"
+   },
+   {
+    "en": "Only I follows"
+   },
+   {
+    "en": "Neither I nor II follows"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The men who are kings are not thieves, so some men are not thieves (I). Nothing is known about the other men, so II does not follow.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_logic",
+  "subtopic": "Syllogism",
+  "difficulty": "hard",
+  "question_en": "Statements: Some tables are chairs. Some chairs are fans.\nConclusions: I. Some tables are fans. II. No table is a fan.",
+  "options": [
+   {
+    "en": "Only I follows"
+   },
+   {
+    "en": "Only II follows"
+   },
+   {
+    "en": "Neither I nor II follows"
+   },
+   {
+    "en": "Either I or II follows"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Two 'some' statements give no definite relation, so neither conclusion follows on its own. But I (Some tables are fans) and II (No table is a fan) are contradictories, exactly one of which must be true, so either I or II follows.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_logic",
+  "subtopic": "Syllogism",
+  "difficulty": "medium",
+  "question_en": "Statements: All roses are flowers. All flowers are plants. Some plants are trees.\nConclusions: I. Some plants are roses. II. Some trees are roses.",
+  "options": [
+   {
+    "en": "Only I follows"
+   },
+   {
+    "en": "Only II follows"
+   },
+   {
+    "en": "Both I and II follow"
+   },
+   {
+    "en": "Neither I nor II follows"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Roses are inside flowers, which are inside plants, so all roses are plants and hence some plants are roses (I). The trees need not overlap with roses, so II does not follow.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_logic",
+  "subtopic": "Syllogism",
+  "difficulty": "easy",
+  "question_en": "Statements: All pencils are pens. No pen is a rubber.\nConclusions: I. No pencil is a rubber. II. No rubber is a pencil.",
+  "options": [
+   {
+    "en": "Only I follows"
+   },
+   {
+    "en": "Both I and II follow"
+   },
+   {
+    "en": "Only II follows"
+   },
+   {
+    "en": "Neither I nor II follows"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Pencils lie inside pens, and pens have no overlap with rubbers, so no pencil is a rubber (I). A universal negative converts, so no rubber is a pencil (II).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_logic",
+  "subtopic": "Statement-Conclusion",
+  "difficulty": "medium",
+  "question_en": "Statement: Ravi scored 95% in Mathematics this year, whereas last year he scored 60%.\nConclusions: I. Ravi worked harder this year. II. Ravi's marks in Mathematics improved this year.",
+  "options": [
+   {
+    "en": "Only I follows"
+   },
+   {
+    "en": "Both I and II follow"
+   },
+   {
+    "en": "Neither I nor II follows"
+   },
+   {
+    "en": "Only II follows"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The improvement in marks is stated directly (II). The reason for it (harder work) is an assumption; he could have improved for other reasons, so I does not follow.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_logic",
+  "subtopic": "Statement-Conclusion",
+  "difficulty": "medium",
+  "question_en": "Statement: The government has increased the tax on cigarettes by 50%.\nConclusions: I. The price of cigarettes is likely to rise. II. Every smoker will quit smoking.",
+  "options": [
+   {
+    "en": "Only II follows"
+   },
+   {
+    "en": "Only I follows"
+   },
+   {
+    "en": "Both I and II follow"
+   },
+   {
+    "en": "Neither I nor II follows"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "A higher tax raises the cost to sellers, so a price rise is a reasonable conclusion. 'Every smoker will quit' is an extreme claim that cannot be drawn.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_logic",
+  "subtopic": "Statement-Conclusion",
+  "difficulty": "easy",
+  "question_en": "Statement: All the roads leading to the stadium were blocked after heavy rain.\nConclusions: I. People found it difficult to reach the stadium by road. II. The match was cancelled.",
+  "options": [
+   {
+    "en": "Only II follows"
+   },
+   {
+    "en": "Both I and II follow"
+   },
+   {
+    "en": "Only I follows"
+   },
+   {
+    "en": "Neither I nor II follows"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Blocked roads make road access difficult (I). Nothing in the statement says the match was cancelled (II).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_logic",
+  "subtopic": "Statement-Conclusion",
+  "difficulty": "easy",
+  "question_en": "Statement: Only candidates holding a graduate degree can apply for the post of TGT.\nConclusions: I. A person without a graduate degree cannot apply for the post. II. Every graduate will get the post.",
+  "options": [
+   {
+    "en": "Only I follows"
+   },
+   {
+    "en": "Only II follows"
+   },
+   {
+    "en": "Both I and II follow"
+   },
+   {
+    "en": "Neither I nor II follows"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The statement sets a necessary condition, so I follows. Being eligible to apply does not guarantee selection, so II does not follow.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_logic",
+  "subtopic": "Statement-Conclusion",
+  "difficulty": "easy",
+  "question_en": "Statement: Many students of Class X prefer science to arts.\nConclusions: I. All students of Class X prefer science. II. Some students of Class X prefer science.",
+  "options": [
+   {
+    "en": "Only I follows"
+   },
+   {
+    "en": "Both I and II follow"
+   },
+   {
+    "en": "Neither I nor II follows"
+   },
+   {
+    "en": "Only II follows"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "'Many' implies at least some, so II follows. 'All' is too strong, so I does not follow.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_logic",
+  "subtopic": "Statement-Conclusion",
+  "difficulty": "medium",
+  "question_en": "Statement: In the last election the voter turnout in the city was 62%, compared with 55% five years earlier.\nConclusions: I. A larger share of voters turned out than five years ago. II. The number of voters has doubled.",
+  "options": [
+   {
+    "en": "Only II follows"
+   },
+   {
+    "en": "Both I and II follow"
+   },
+   {
+    "en": "Neither I nor II follows"
+   },
+   {
+    "en": "Only I follows"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "62% against 55% shows a higher turnout rate (I). Turnout rates alone say nothing about the doubling of voters (II).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_logic",
+  "subtopic": "Statement-Argument",
+  "difficulty": "medium",
+  "question_en": "Statement: Should plastic bags be banned in India?\nArguments: I. Yes, they cause pollution and clog drains. II. No, because they are cheap.",
+  "options": [
+   {
+    "en": "Only II is strong"
+   },
+   {
+    "en": "Both I and II are strong"
+   },
+   {
+    "en": "Only I is strong"
+   },
+   {
+    "en": "Neither I nor II is strong"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Environmental damage is a valid and weighty reason (strong). Low cost is not a sufficient reason to keep a harmful item, so II is weak.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_logic",
+  "subtopic": "Statement-Argument",
+  "difficulty": "medium",
+  "question_en": "Statement: Should smoking be banned in public places?\nArguments: I. Yes, passive smoking harms the health of non-smokers. II. No, smokers have the right to smoke anywhere they like.",
+  "options": [
+   {
+    "en": "Only II is strong"
+   },
+   {
+    "en": "Only I is strong"
+   },
+   {
+    "en": "Both I and II are strong"
+   },
+   {
+    "en": "Neither I nor II is strong"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "I gives a strong public-health reason. II claims an unlimited right, which ignores harm to others, so it is weak.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_logic",
+  "subtopic": "Statement-Argument",
+  "difficulty": "medium",
+  "question_en": "Statement: Should online classes completely replace classroom teaching?\nArguments: I. Yes, because they save travel time. II. No, because face-to-face interaction is essential for the social and emotional development of children.",
+  "options": [
+   {
+    "en": "Only II is strong"
+   },
+   {
+    "en": "Only I is strong"
+   },
+   {
+    "en": "Both I and II are strong"
+   },
+   {
+    "en": "Neither I nor II is strong"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Saving travel time is too minor to justify a complete replacement, so I is weak. Social and emotional development is a weighty educational concern, so II is strong.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_logic",
+  "subtopic": "Statement-Argument",
+  "difficulty": "easy",
+  "question_en": "Statement: Should students be given homework daily?\nArguments: I. Yes, it helps them revise and practise concepts. II. No, because teachers do not like checking it.",
+  "options": [
+   {
+    "en": "Only II is strong"
+   },
+   {
+    "en": "Only I is strong"
+   },
+   {
+    "en": "Both I and II are strong"
+   },
+   {
+    "en": "Neither I nor II is strong"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Learning value is a valid educational reason (strong). The convenience of teachers is not a good reason against a practice that helps students, so II is weak.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_logic",
+  "subtopic": "Statement-Argument",
+  "difficulty": "medium",
+  "question_en": "Statement: Should the retirement age of teachers be raised?\nArguments: I. Yes, experienced teachers can continue to contribute and ease the shortage of teachers. II. No, it will reduce job opportunities for young graduates.",
+  "options": [
+   {
+    "en": "Only I is strong"
+   },
+   {
+    "en": "Only II is strong"
+   },
+   {
+    "en": "Neither I nor II is strong"
+   },
+   {
+    "en": "Both I and II are strong"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Each argument raises a real, relevant consequence: teacher shortage and fewer vacancies for the young. Both are strong.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_logic",
+  "subtopic": "Statement-Argument",
+  "difficulty": "medium",
+  "question_en": "Statement: Should school uniforms be abolished?\nArguments: I. Yes, because uniforms are old-fashioned. II. No, because a particular tailor will lose business.",
+  "options": [
+   {
+    "en": "Only I is strong"
+   },
+   {
+    "en": "Neither I nor II is strong"
+   },
+   {
+    "en": "Only II is strong"
+   },
+   {
+    "en": "Both I and II are strong"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "'Old-fashioned' is a matter of opinion and not a sound reason. The business of one tailor is a narrow, personal concern. Neither argument is strong.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_logic",
+  "subtopic": "Course of Action",
+  "difficulty": "easy",
+  "question_en": "Statement: Many people in a colony are suffering from dengue.\nCourses of action: I. The municipal corporation should start fogging and remove stagnant water. II. People should be asked to leave the colony permanently.",
+  "options": [
+   {
+    "en": "Only II follows"
+   },
+   {
+    "en": "Both I and II follow"
+   },
+   {
+    "en": "Neither I nor II follows"
+   },
+   {
+    "en": "Only I follows"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Fogging and removing breeding sites tackle the cause (I). Asking people to leave permanently is impractical and extreme (II).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_logic",
+  "subtopic": "Course of Action",
+  "difficulty": "easy",
+  "question_en": "Statement: The number of road accidents on a highway has increased due to over-speeding.\nCourses of action: I. Speed cameras and fines should be introduced. II. The highway should be closed forever.",
+  "options": [
+   {
+    "en": "Only II follows"
+   },
+   {
+    "en": "Both I and II follow"
+   },
+   {
+    "en": "Only I follows"
+   },
+   {
+    "en": "Neither I nor II follows"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Speed monitoring and penalties directly address over-speeding. Closing the highway forever is an extreme step.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_logic",
+  "subtopic": "Course of Action",
+  "difficulty": "easy",
+  "question_en": "Statement: A large number of students of a school failed in Mathematics in the Class X examination.\nCourses of action: I. The school should arrange remedial classes. II. The school should stop teaching Mathematics.",
+  "options": [
+   {
+    "en": "Only I follows"
+   },
+   {
+    "en": "Only II follows"
+   },
+   {
+    "en": "Both I and II follow"
+   },
+   {
+    "en": "Neither I nor II follows"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Remedial classes help weak students improve (I). Dropping a compulsory subject is not a solution (II).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_logic",
+  "subtopic": "Course of Action",
+  "difficulty": "medium",
+  "question_en": "Statement: A major fire broke out in a market due to a short circuit.\nCourses of action: I. A fire-safety audit of the market should be conducted. II. The electrical wiring of the shops should be inspected and repaired.",
+  "options": [
+   {
+    "en": "Only I follows"
+   },
+   {
+    "en": "Only II follows"
+   },
+   {
+    "en": "Neither I nor II follows"
+   },
+   {
+    "en": "Both I and II follow"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The cause is faulty wiring, so inspecting the wiring (II) and auditing fire safety to prevent a repeat (I) are both practical and relevant.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_logic",
+  "subtopic": "Course of Action",
+  "difficulty": "medium",
+  "question_en": "Statement: Public toilets at the railway station are very dirty.\nCourses of action: I. Railway should ask passengers to avoid using them. II. Railway authorities should appoint more cleaners and monitor cleanliness regularly.",
+  "options": [
+   {
+    "en": "Only I follows"
+   },
+   {
+    "en": "Only II follows"
+   },
+   {
+    "en": "Both I and II follow"
+   },
+   {
+    "en": "Neither I nor II follows"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Toilets exist to be used, so telling passengers to avoid them does not solve the problem (I). More cleaners and monitoring directly remove the problem (II).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_logic",
+  "subtopic": "Course of Action",
+  "difficulty": "hard",
+  "question_en": "Statement: A survey shows that school students spend more than five hours daily on mobile phones.\nCourses of action: I. Parents and teachers should guide students on limited and productive use of mobiles. II. Mobile phones should be completely banned for all citizens.",
+  "options": [
+   {
+    "en": "Only I follows"
+   },
+   {
+    "en": "Only II follows"
+   },
+   {
+    "en": "Both I and II follow"
+   },
+   {
+    "en": "Neither I nor II follows"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Guidance targets the problem group in a realistic way (I). A complete ban for all citizens is out of proportion to a problem concerning students (II).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_logic",
+  "subtopic": "Venn Diagram",
+  "difficulty": "easy",
+  "question_en": "Which Venn diagram best represents the relationship among Doctors, Surgeons and Teachers?",
+  "options": [
+   {
+    "en": "Three completely separate circles"
+   },
+   {
+    "en": "Surgeons lie wholly inside Doctors; Teachers form a separate circle outside both"
+   },
+   {
+    "en": "Three circles overlapping at a common region"
+   },
+   {
+    "en": "Doctors lie inside Surgeons, and Teachers lie inside Doctors"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Every surgeon is a doctor, so Surgeons is a subset of Doctors. A teacher is a different profession, so Teachers is a separate set.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_logic",
+  "subtopic": "Venn Diagram",
+  "difficulty": "easy",
+  "question_en": "Which Venn diagram best represents the relationship among Pen, Pencil and Stationery?",
+  "options": [
+   {
+    "en": "Pen and Pencil as two separate circles, both inside the Stationery circle"
+   },
+   {
+    "en": "Pen inside Pencil inside Stationery"
+   },
+   {
+    "en": "Pen and Pencil overlapping each other and outside Stationery"
+   },
+   {
+    "en": "Three separate circles"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A pen is not a pencil, so they are separate sets, but both are stationery items and so lie inside the larger Stationery set.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_logic",
+  "subtopic": "Venn Diagram",
+  "difficulty": "medium",
+  "question_en": "In a class of 50 students, 30 play cricket, 25 play football and 10 play both. How many students play neither game?",
+  "options": [
+   {
+    "en": "10"
+   },
+   {
+    "en": "15"
+   },
+   {
+    "en": "0"
+   },
+   {
+    "en": "5"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Students playing at least one game = 30 + 25 - 10 = 45. Neither = 50 - 45 = 5.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_logic",
+  "subtopic": "Venn Diagram",
+  "difficulty": "medium",
+  "question_en": "In a group of 100 people, 60 speak Hindi, 45 speak English and 15 speak both. How many speak only English?",
+  "options": [
+   {
+    "en": "45"
+   },
+   {
+    "en": "15"
+   },
+   {
+    "en": "30"
+   },
+   {
+    "en": "25"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Only English = total English - both = 45 - 15 = 30. (45 is the number speaking only Hindi.)",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_logic",
+  "subtopic": "Venn Diagram",
+  "difficulty": "medium",
+  "question_en": "In a survey of 120 students, 70 like tea, 60 like coffee and 30 like both. How many students like exactly one of the two drinks?",
+  "options": [
+   {
+    "en": "90"
+   },
+   {
+    "en": "100"
+   },
+   {
+    "en": "70"
+   },
+   {
+    "en": "40"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Only tea = 70 - 30 = 40; only coffee = 60 - 30 = 30. Exactly one = 40 + 30 = 70.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_logic",
+  "subtopic": "Venn Diagram",
+  "difficulty": "hard",
+  "question_en": "In a class of 60 students, 30 study Physics, 25 Chemistry and 20 Mathematics. 10 study Physics and Chemistry, 8 Chemistry and Mathematics, 6 Physics and Mathematics, and 4 study all three. How many students study at least one of the three subjects?",
+  "options": [
+   {
+    "en": "59"
+   },
+   {
+    "en": "51"
+   },
+   {
+    "en": "45"
+   },
+   {
+    "en": "55"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "By inclusion-exclusion: 30 + 25 + 20 - 10 - 8 - 6 + 4 = 55.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_logic",
+  "subtopic": "Venn Diagram",
+  "difficulty": "medium",
+  "question_en": "Which Venn diagram best represents the relationship among Mothers, Sisters and Women?",
+  "options": [
+   {
+    "en": "Mothers and Sisters as two separate circles, both inside Women"
+   },
+   {
+    "en": "Mothers and Sisters as two partly overlapping circles, both inside the Women circle"
+   },
+   {
+    "en": "Mothers inside Sisters inside Women"
+   },
+   {
+    "en": "Three separate circles"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "All mothers and all sisters are women. A woman can be both a mother and a sister, so the two circles overlap partly inside Women.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_logic",
+  "subtopic": "Mathematical Operations",
+  "difficulty": "medium",
+  "question_en": "If + means ×, × means −, − means ÷ and ÷ means +, then the value of 12 + 3 × 5 − 5 ÷ 4 is:",
+  "options": [
+   {
+    "en": "39"
+   },
+   {
+    "en": "35"
+   },
+   {
+    "en": "43"
+   },
+   {
+    "en": "31"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Substitute the real signs: 12 × 3 − 5 ÷ 5 + 4. BODMAS: 12 × 3 = 36 and 5 ÷ 5 = 1, so 36 − 1 + 4 = 39.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_logic",
+  "subtopic": "Mathematical Operations",
+  "difficulty": "easy",
+  "question_en": "If P means +, Q means −, R means × and S means ÷, then 20 R 3 P 8 S 4 Q 5 = ?",
+  "options": [
+   {
+    "en": "63"
+   },
+   {
+    "en": "57"
+   },
+   {
+    "en": "51"
+   },
+   {
+    "en": "47"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Replace the letters: 20 × 3 + 8 ÷ 4 − 5. By BODMAS: 60 + 2 − 5 = 57.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_logic",
+  "subtopic": "Mathematical Operations",
+  "difficulty": "medium",
+  "question_en": "If + and − are interchanged, and × and ÷ are interchanged, then 24 ÷ 6 + 8 × 2 − 3 = ?",
+  "options": [
+   {
+    "en": "23"
+   },
+   {
+    "en": "149"
+   },
+   {
+    "en": "143"
+   },
+   {
+    "en": "137"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "After interchanging the signs the expression is 24 × 6 − 8 ÷ 2 + 3. BODMAS: 144 − 4 + 3 = 143.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_logic",
+  "subtopic": "Mathematical Operations",
+  "difficulty": "medium",
+  "question_en": "If the numbers 3 and 5 are interchanged and the signs + and × are interchanged, then the value of 3 + 5 × 4 is:",
+  "options": [
+   {
+    "en": "23"
+   },
+   {
+    "en": "32"
+   },
+   {
+    "en": "17"
+   },
+   {
+    "en": "19"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Interchanging 3 and 5 gives 5 + 3 × 4; interchanging the signs gives 5 × 3 + 4. So 15 + 4 = 19.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_logic",
+  "subtopic": "Mathematical Operations",
+  "difficulty": "easy",
+  "question_en": "If 2 # 3 = 8, 4 # 5 = 24 and 6 # 7 = 48, then 8 # 9 = ?",
+  "options": [
+   {
+    "en": "80"
+   },
+   {
+    "en": "72"
+   },
+   {
+    "en": "81"
+   },
+   {
+    "en": "90"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The rule is a # b = a × (b + 1): 2 × 4 = 8, 4 × 6 = 24, 6 × 8 = 48. So 8 × 10 = 80. (72 is 8 × 9, which ignores the +1.)",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_logic",
+  "subtopic": "Mathematical Operations",
+  "difficulty": "medium",
+  "question_en": "Select the correct combination of signs to fill the blanks in order: 12 _ 4 _ 3 _ 6 = 15",
+  "options": [
+   {
+    "en": "×, ÷, +"
+   },
+   {
+    "en": "+, ÷, ×"
+   },
+   {
+    "en": "÷, +, ×"
+   },
+   {
+    "en": "÷, ×, +"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Test the options with BODMAS: 12 ÷ 4 × 3 + 6 = 3 × 3 + 6 = 15 ✓. The first option gives 12 × 4 ÷ 3 + 6 = 22, the second 12 + 4 ÷ 3 × 6 = 20 and the third 12 ÷ 4 + 3 × 6 = 21.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_logic",
+  "subtopic": "Mathematical Operations",
+  "difficulty": "hard",
+  "question_en": "If + means ÷, − means ×, × means + and ÷ means −, then 36 + 9 − 4 × 5 ÷ 3 = ?",
+  "options": [
+   {
+    "en": "18"
+   },
+   {
+    "en": "20"
+   },
+   {
+    "en": "17"
+   },
+   {
+    "en": "23"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Replace the signs: 36 ÷ 9 × 4 + 5 − 3. BODMAS: 36 ÷ 9 = 4, then 4 × 4 = 16, so 16 + 5 − 3 = 18.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Counting figures",
+  "difficulty": "easy",
+  "question_en": "A triangle ABC has three straight lines drawn from vertex A to three different points on side BC, so that BC is divided into 4 parts. How many triangles are there in the figure?",
+  "options": [
+   {
+    "en": "8"
+   },
+   {
+    "en": "10"
+   },
+   {
+    "en": "12"
+   },
+   {
+    "en": "6"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "There are 5 points on BC (B, the three new points and C). Every pair of points on BC with apex A forms a triangle, so the count is C(5,2) = 10.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Counting figures",
+  "difficulty": "medium",
+  "question_en": "In triangle ABC, three lines are drawn from vertex A to BC dividing BC into 4 parts. A line parallel to BC is then drawn across the triangle, cutting AB, AC and all three inner lines. How many triangles are there now?",
+  "options": [
+   {
+    "en": "14"
+   },
+   {
+    "en": "15"
+   },
+   {
+    "en": "20"
+   },
+   {
+    "en": "24"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "With apex A, each horizontal 'base' (BC and the parallel line) has 5 points, giving C(5,2) = 10 triangles each. Total = 2 × 10 = 20. (Only triangles with apex A exist; the strips below the parallel line are trapeziums.)",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Counting figures",
+  "difficulty": "easy",
+  "question_en": "A square has both of its diagonals drawn. How many triangles are there in the figure?",
+  "options": [
+   {
+    "en": "4"
+   },
+   {
+    "en": "6"
+   },
+   {
+    "en": "8"
+   },
+   {
+    "en": "10"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The diagonals create 4 small triangles meeting at the centre. Each diagonal also splits the square into 2 large triangles, giving 2 + 2 = 4 more. Total = 4 + 4 = 8.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Counting figures",
+  "difficulty": "medium",
+  "question_en": "A square has both its diagonals drawn and also the two lines joining the mid-points of opposite sides. How many triangles are there in the figure?",
+  "options": [
+   {
+    "en": "8"
+   },
+   {
+    "en": "12"
+   },
+   {
+    "en": "16"
+   },
+   {
+    "en": "20"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "There are 8 smallest triangles. Pairs of adjacent small triangles form 4 medium triangles (each with a whole side of the square as base), and the two diagonals give 4 large triangles. Total = 8 + 4 + 4 = 16.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Counting figures",
+  "difficulty": "medium",
+  "question_en": "An equilateral triangle has each side divided into 3 equal parts, and lines parallel to the sides are drawn through the division points, forming 9 small triangles. How many triangles are there in all?",
+  "options": [
+   {
+    "en": "9"
+   },
+   {
+    "en": "11"
+   },
+   {
+    "en": "13"
+   },
+   {
+    "en": "15"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Upright triangles: size 1 → 6, size 2 → 3, size 3 → 1 (total 10). Inverted triangles: size 1 → 3. Total = 10 + 3 = 13.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Counting figures",
+  "difficulty": "hard",
+  "question_en": "An equilateral triangle has each side divided into 4 equal parts, and lines parallel to the sides are drawn through the division points, forming 16 small triangles. How many triangles are there in all?",
+  "options": [
+   {
+    "en": "20"
+   },
+   {
+    "en": "24"
+   },
+   {
+    "en": "27"
+   },
+   {
+    "en": "30"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Upright: size 1 → 10, size 2 → 6, size 3 → 3, size 4 → 1 (total 20). Inverted: size 1 → 6, size 2 → 1 (total 7). Total = 20 + 7 = 27.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Counting figures",
+  "difficulty": "medium",
+  "question_en": "A large square is divided into a 4 × 4 grid of 16 equal small squares. How many squares of all sizes are there in the figure?",
+  "options": [
+   {
+    "en": "16"
+   },
+   {
+    "en": "25"
+   },
+   {
+    "en": "30"
+   },
+   {
+    "en": "36"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Squares of side k in an n × n grid = (n − k + 1)². For n = 4: 16 + 9 + 4 + 1 = 30. The answer 16 counts only the smallest squares.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Counting figures",
+  "difficulty": "hard",
+  "question_en": "A square is divided into a 3 × 3 grid of 9 equal small squares. How many rectangles (including squares) are there in the figure?",
+  "options": [
+   {
+    "en": "14"
+   },
+   {
+    "en": "27"
+   },
+   {
+    "en": "36"
+   },
+   {
+    "en": "49"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "A rectangle is fixed by choosing 2 of the 4 vertical lines and 2 of the 4 horizontal lines: C(4,2) × C(4,2) = 6 × 6 = 36. The answer 14 counts only squares (9 + 4 + 1).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Counting figures",
+  "difficulty": "medium",
+  "question_en": "How many squares of all sizes are there on a standard 8 × 8 chessboard?",
+  "options": [
+   {
+    "en": "64"
+   },
+   {
+    "en": "204"
+   },
+   {
+    "en": "144"
+   },
+   {
+    "en": "196"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Total = 1² + 2² + … + 8² = 8 × 9 × 17 / 6 = 204. 64 counts only the unit squares.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Series completion",
+  "difficulty": "medium",
+  "question_en": "The vertices of a regular octagon are numbered 1 to 8 clockwise. In a series of figures a star sits on vertices 1, 2, 4, 7, … (it moves 1, 2, 3, … places clockwise). On which vertex will it be in the fifth figure?",
+  "options": [
+   {
+    "en": "3"
+   },
+   {
+    "en": "5"
+   },
+   {
+    "en": "11"
+   },
+   {
+    "en": "1"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "From 7 it moves 4 places: 7 + 4 = 11, and 11 − 8 = 3. So the star is on vertex 3.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Series completion",
+  "difficulty": "easy",
+  "question_en": "The corners of a square carry letters: top-left A, top-right B, bottom-right C, bottom-left D. In every step, each letter moves one corner clockwise. After 3 steps, which letter is at the top-left corner?",
+  "options": [
+   {
+    "en": "A"
+   },
+   {
+    "en": "D"
+   },
+   {
+    "en": "C"
+   },
+   {
+    "en": "B"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Moving clockwise, the top-left corner receives the letter from bottom-left each step: after step 1 it has D, after step 2 C, after step 3 B.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Series completion",
+  "difficulty": "medium",
+  "question_en": "A row has 5 boxes numbered 1 to 5. In figure 1, box 1 is shaded. In each next figure the shading moves 2 boxes to the right, returning to the start after box 5 (box 5 → box 2). Which box is shaded in figure 6?",
+  "options": [
+   {
+    "en": "Box 2"
+   },
+   {
+    "en": "Box 3"
+   },
+   {
+    "en": "Box 5"
+   },
+   {
+    "en": "Box 1"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Figures 1 to 6: box 1 → 3 → 5 → 2 → 4 → 1. So in figure 6 box 1 is shaded.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Dice",
+  "difficulty": "medium",
+  "question_en": "Three different positions of the same die show these numbers on the three visible (mutually adjacent) faces — Position 1: 1, 2, 3; Position 2: 1, 3, 6; Position 3: 1, 6, 5. Which number is on the face opposite 1?",
+  "options": [
+   {
+    "en": "4"
+   },
+   {
+    "en": "2"
+   },
+   {
+    "en": "5"
+   },
+   {
+    "en": "6"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "1 appears with 2, 3, 6 and 5, so these four are all adjacent to 1. The only number never seen with 1 is 4, so 4 is opposite 1.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Dice",
+  "difficulty": "easy",
+  "question_en": "A standard die (opposite faces add up to 7) rests on a table with 3 on the top face. What is the sum of the numbers on the four vertical side faces?",
+  "options": [
+   {
+    "en": "14"
+   },
+   {
+    "en": "12"
+   },
+   {
+    "en": "11"
+   },
+   {
+    "en": "15"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Total of all faces = 1 + 2 + … + 6 = 21. Top 3 and bottom 4 (opposite of 3) add to 7, so the four sides add to 21 − 7 = 14. The sides of a standard die always total 14.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Dice",
+  "difficulty": "hard",
+  "question_en": "A standard die (opposite faces add up to 7) shows 1 on top, 2 facing you (front) and 3 on the right. It is rolled one quarter-turn to the right, so that the top face goes to the right side. Which number is now on top?",
+  "options": [
+   {
+    "en": "3"
+   },
+   {
+    "en": "4"
+   },
+   {
+    "en": "5"
+   },
+   {
+    "en": "6"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "When a die rolls to the right, the left face comes to the top. Left is opposite right (3), so left = 7 − 3 = 4. Hence 4 is on top.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Dice",
+  "difficulty": "easy",
+  "question_en": "A cube is folded from a net made of six squares: four squares A, B, C, D in a horizontal row (left to right), with square E attached above B and square F attached below B. Which face is opposite A?",
+  "options": [
+   {
+    "en": "D"
+   },
+   {
+    "en": "C"
+   },
+   {
+    "en": "E"
+   },
+   {
+    "en": "F"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "In a row of four squares that wraps around the cube, alternate squares are opposite: A–C and B–D. E and F, attached on either side of the row, become top and bottom and are opposite each other.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Dice",
+  "difficulty": "medium",
+  "question_en": "A cube net has four squares P, Q, R, S in a horizontal row (left to right), square T attached above P and square U attached below S. When folded into a cube, which face is opposite T?",
+  "options": [
+   {
+    "en": "U"
+   },
+   {
+    "en": "Q"
+   },
+   {
+    "en": "R"
+   },
+   {
+    "en": "S"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The row P–Q–R–S wraps around the cube, so P–R and Q–S are opposite. The two squares attached off the row (T and U) form the two remaining faces, which are opposite each other, whichever row square they are attached to.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Dice",
+  "difficulty": "medium",
+  "question_en": "Two positions of the same die are described. Position 1: 2 on top, 5 in front, 1 on the right. Position 2: 2 on top, 6 in front, 3 on the right. Which number is opposite 5?",
+  "options": [
+   {
+    "en": "1"
+   },
+   {
+    "en": "3"
+   },
+   {
+    "en": "4"
+   },
+   {
+    "en": "6"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "2 stays on top in both positions, so the die has only been turned about the vertical axis. A quarter turn would bring 1 (the old right face) or the old left face to the front, but 6 is now in front and 3 on the right, so the turn was 180°. Hence the back face is 6 (opposite front 5) and the left face is 3 (opposite 1).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Dice",
+  "difficulty": "medium",
+  "question_en": "A cube net has two rows of three squares. The upper row has squares 1, 2, 3 from left to right. The lower row has squares 4, 5, 6 from left to right, with square 4 directly below square 3 (so the lower row continues to the right). Which number is opposite 2 when the cube is folded?",
+  "options": [
+   {
+    "en": "4"
+   },
+   {
+    "en": "6"
+   },
+   {
+    "en": "1"
+   },
+   {
+    "en": "5"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "In a straight run of three squares the end squares are opposite: 1–3 in the upper row and 4–6 in the lower row. The two middle squares, 2 and 5, are left and must be opposite each other.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Dice",
+  "difficulty": "medium",
+  "question_en": "Two positions of the same die are described. Position 1: 4 on top, 5 in front, 6 on the right. Position 2: 6 on top, 1 in front, 4 on the right. Which number is opposite 5?",
+  "options": [
+   {
+    "en": "2"
+   },
+   {
+    "en": "3"
+   },
+   {
+    "en": "1"
+   },
+   {
+    "en": "6"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "With 4 on top, the side faces form a ring 5 (front), 6 (right), back, left. Position 2 shows 1 touching both 4 and 6, so 1 is a ring-neighbour of 6. The ring-neighbours of 6 are the front (5) and the back; 1 is not 5, so 1 is at the back, i.e. opposite 5.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Cube cutting & painting",
+  "difficulty": "easy",
+  "question_en": "A cube is painted on all six faces and then cut into 64 identical smaller cubes. How many small cubes have exactly two faces painted?",
+  "options": [
+   {
+    "en": "24"
+   },
+   {
+    "en": "16"
+   },
+   {
+    "en": "8"
+   },
+   {
+    "en": "32"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "64 = 4³, so n = 4. Cubes with exactly two painted faces lie on the 12 edges, excluding corners: 12 × (n − 2) = 12 × 2 = 24.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Cube cutting & painting",
+  "difficulty": "medium",
+  "question_en": "A cube painted on all faces is cut into 125 identical smaller cubes. How many small cubes have exactly one face painted?",
+  "options": [
+   {
+    "en": "36"
+   },
+   {
+    "en": "54"
+   },
+   {
+    "en": "27"
+   },
+   {
+    "en": "48"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "125 = 5³, n = 5. One-face cubes are the inner part of each face: 6 × (n − 2)² = 6 × 9 = 54. 36 is the two-face count 12 × 3; 27 is the unpainted count 3³.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Cube cutting & painting",
+  "difficulty": "medium",
+  "question_en": "A cube painted on all faces is cut into 216 identical smaller cubes. How many small cubes have no face painted?",
+  "options": [
+   {
+    "en": "48"
+   },
+   {
+    "en": "96"
+   },
+   {
+    "en": "125"
+   },
+   {
+    "en": "64"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "216 = 6³, n = 6. Unpainted cubes form the inner core of side n − 2 = 4, so 4³ = 64. 96 is the one-face count 6 × 4².",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Cube cutting & painting",
+  "difficulty": "hard",
+  "question_en": "A painted cube is cut into identical smaller cubes. Exactly 96 of the small cubes have only one face painted. How many small cubes have exactly two faces painted?",
+  "options": [
+   {
+    "en": "48"
+   },
+   {
+    "en": "36"
+   },
+   {
+    "en": "64"
+   },
+   {
+    "en": "24"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "6(n − 2)² = 96 gives (n − 2)² = 16, so n − 2 = 4 and n = 6. Two-face cubes = 12 × (n − 2) = 12 × 4 = 48.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Cube cutting & painting",
+  "difficulty": "hard",
+  "question_en": "A cube has two opposite faces painted red, two opposite faces painted green and the remaining two faces painted blue. It is cut into 125 identical small cubes. How many small cubes have only red and green paint (one face of each, no blue)?",
+  "options": [
+   {
+    "en": "8"
+   },
+   {
+    "en": "12"
+   },
+   {
+    "en": "16"
+   },
+   {
+    "en": "24"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Each red face meets each green face along one edge: 2 × 2 = 4 red–green edges. Excluding the corner cubes (which also have blue), each edge has n − 2 = 3 cubes, so 4 × 3 = 12.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Cube cutting & painting",
+  "difficulty": "medium",
+  "question_en": "A cube has two opposite faces painted red, two opposite faces green and two opposite faces blue. It is cut into 64 identical small cubes. How many small cubes have exactly one face painted, that face being red?",
+  "options": [
+   {
+    "en": "16"
+   },
+   {
+    "en": "12"
+   },
+   {
+    "en": "8"
+   },
+   {
+    "en": "4"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Each face has (n − 2)² = 2² = 4 cubes with only that face painted. There are 2 red faces, so 2 × 4 = 8.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Cube cutting & painting",
+  "difficulty": "medium",
+  "question_en": "A wooden cube has only its four vertical side faces painted (top and bottom are left unpainted). It is cut into 27 identical small cubes. How many small cubes have no paint at all?",
+  "options": [
+   {
+    "en": "3"
+   },
+   {
+    "en": "1"
+   },
+   {
+    "en": "9"
+   },
+   {
+    "en": "6"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "In the 3 × 3 top view, only the centre column is away from all four painted sides. That column contains 3 cubes (one per layer), and since the top and bottom are unpainted, all 3 are paint-free. Answer 1 would be the case if all six faces were painted.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Cube cutting & painting",
+  "difficulty": "hard",
+  "question_en": "A cuboid of size 4 cm × 3 cm × 2 cm is painted on all faces and cut into 1 cm cubes. How many cubes have exactly one face painted?",
+  "options": [
+   {
+    "en": "6"
+   },
+   {
+    "en": "8"
+   },
+   {
+    "en": "0"
+   },
+   {
+    "en": "4"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "One-face cubes on an a × b face = (a − 2)(b − 2). The 4 × 3 faces give 2 × 1 = 2 each (two faces → 4); the 4 × 2 and 3 × 2 faces give 0 because 2 − 2 = 0. Total = 4.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Cube cutting & painting",
+  "difficulty": "easy",
+  "question_en": "What is the minimum number of straight cuts needed to divide a cube into 64 identical smaller cubes?",
+  "options": [
+   {
+    "en": "9"
+   },
+   {
+    "en": "8"
+   },
+   {
+    "en": "6"
+   },
+   {
+    "en": "12"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "64 = 4 × 4 × 4 pieces need 3 cuts in each of the three directions: 3 + 3 + 3 = 9.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Mirror & water images",
+  "difficulty": "medium",
+  "question_en": "Which word will look exactly the same when seen in a vertical mirror placed to its right?",
+  "options": [
+   {
+    "en": "DAD"
+   },
+   {
+    "en": "NUN"
+   },
+   {
+    "en": "BOB"
+   },
+   {
+    "en": "MOM"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "A vertical mirror reverses the letter order and flips each letter left–right. MOM is a palindrome made only of letters symmetric about a vertical axis (M, O). D, N and B are not vertically symmetric, so their images look reversed.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Mirror & water images",
+  "difficulty": "medium",
+  "question_en": "Which word will look exactly the same in its water image (reflection in water below the word)?",
+  "options": [
+   {
+    "en": "CHOICE"
+   },
+   {
+    "en": "BRAVE"
+   },
+   {
+    "en": "PLAIN"
+   },
+   {
+    "en": "MOUSE"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A water image keeps the letter order but flips each letter top-to-bottom. All letters of CHOICE (C, H, O, I, E) are symmetric about a horizontal axis. R, V, P, L, M, U, S are not.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Mirror & water images",
+  "difficulty": "hard",
+  "question_en": "How many letters of the word EXAMINATION (counting repeated letters each time) look the same in a vertical mirror?",
+  "options": [
+   {
+    "en": "6"
+   },
+   {
+    "en": "7"
+   },
+   {
+    "en": "8"
+   },
+   {
+    "en": "9"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Vertically symmetric letters: X, A, M, I, A, T, I, O = 8. E and the two Ns are not symmetric about a vertical axis.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Paper folding & cutting",
+  "difficulty": "easy",
+  "question_en": "A square sheet of paper is folded in half, and then folded in half again to form a smaller square. One hole is punched through all the layers. How many holes will there be when the sheet is unfolded?",
+  "options": [
+   {
+    "en": "4"
+   },
+   {
+    "en": "2"
+   },
+   {
+    "en": "8"
+   },
+   {
+    "en": "6"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Two folds make 2 × 2 = 4 layers, and a hole punched through all layers appears once in each layer. So 4 holes.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Paper folding & cutting",
+  "difficulty": "easy",
+  "question_en": "A square sheet is folded along one diagonal to form a triangle, and this triangle is folded in half again to form a smaller triangle. A single hole is punched through it. How many holes are seen on unfolding?",
+  "options": [
+   {
+    "en": "2"
+   },
+   {
+    "en": "4"
+   },
+   {
+    "en": "3"
+   },
+   {
+    "en": "8"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Each fold doubles the layers: 2 folds → 4 layers, so one punch gives 4 holes, placed symmetrically about both diagonals.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Paper folding & cutting",
+  "difficulty": "medium",
+  "question_en": "A rectangular sheet is folded in half. A semicircle is cut out from the middle of the folded edge (the curved side pointing away from the fold). What will the sheet look like when unfolded?",
+  "options": [
+   {
+    "en": "Two semicircular holes at the outer edges"
+   },
+   {
+    "en": "One circular hole in the middle of the sheet"
+   },
+   {
+    "en": "Two circular holes side by side"
+   },
+   {
+    "en": "One semicircular notch on the outer edge"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The cut is made on the fold line, so its mirror image joins it across the fold: two halves of a circle meet to form one complete circular hole in the middle.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Paper folding & cutting",
+  "difficulty": "medium",
+  "question_en": "A rectangular sheet is folded in half. A small triangular notch is cut from the folded edge, with the base of the triangle lying on the fold. What will be seen on unfolding?",
+  "options": [
+   {
+    "en": "A triangular hole near the edge"
+   },
+   {
+    "en": "Two separate triangular holes"
+   },
+   {
+    "en": "A square notch at one corner"
+   },
+   {
+    "en": "A diamond (rhombus) shaped hole on the fold line"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The triangle and its mirror image across the fold share the base, so together they form a diamond-shaped (rhombus) hole centred on the fold line.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Paper folding & cutting",
+  "difficulty": "medium",
+  "question_en": "A square sheet of side 16 cm is folded in half along a vertical line, then in half along a horizontal line, and then again in half along a vertical line. What are the dimensions of the folded paper?",
+  "options": [
+   {
+    "en": "4 cm × 8 cm"
+   },
+   {
+    "en": "4 cm × 4 cm"
+   },
+   {
+    "en": "8 cm × 8 cm"
+   },
+   {
+    "en": "2 cm × 8 cm"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "16 × 16 → vertical fold → 8 (wide) × 16 (high) → horizontal fold → 8 × 8 → vertical fold → 4 × 8. Area check: 256 / 8 layers = 32 = 4 × 8.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Paper folding & cutting",
+  "difficulty": "easy",
+  "question_en": "A square sheet is folded once along its vertical centre line so that the right half lies on the left half. A hole is punched near the top-left corner of the folded sheet. On unfolding, where will the holes be?",
+  "options": [
+   {
+    "en": "Only near the top-left corner"
+   },
+   {
+    "en": "Near the top-left and bottom-left corners"
+   },
+   {
+    "en": "Near the top-left and top-right corners"
+   },
+   {
+    "en": "Near all four corners"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The hole goes through both layers. The right half is the mirror image of the left half about the vertical fold, so the second hole appears near the top-right corner.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Paper folding & cutting",
+  "difficulty": "hard",
+  "question_en": "A square sheet is folded top-half onto bottom-half, and then right-half onto left-half, giving a smaller square. A quarter-circle is cut from the corner of this small square where the two fold lines meet. What will the sheet look like when unfolded?",
+  "options": [
+   {
+    "en": "Four quarter-circle notches at the corners"
+   },
+   {
+    "en": "Two semicircular notches on opposite edges"
+   },
+   {
+    "en": "Four small circular holes near the centre"
+   },
+   {
+    "en": "One circular hole at the centre of the sheet"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The corner where both folds meet is the centre of the original sheet. The four quarter-circles (one in each layer) meet at that point and form a single circle, giving one circular hole at the centre.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_nonverbal",
+  "subtopic": "Paper folding & cutting",
+  "difficulty": "hard",
+  "question_en": "A square sheet is folded top-half onto bottom-half, and then right-half onto left-half. A small triangle is cut off at the corner of the folded square that is diagonally opposite to the corner where the two fold lines meet. What will the sheet look like when unfolded?",
+  "options": [
+   {
+    "en": "All four corners of the sheet are cut off"
+   },
+   {
+    "en": "Only one corner of the sheet is cut off"
+   },
+   {
+    "en": "Two adjacent corners are cut off"
+   },
+   {
+    "en": "A diamond-shaped hole appears at the centre"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The fold-line corner is the centre of the sheet, so the opposite corner of the folded square holds all four original corners stacked together. One cut therefore removes all four corners of the sheet.",
+  "pyq_concept": false
+ }
+]

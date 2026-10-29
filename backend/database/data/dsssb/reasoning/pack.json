@@ -1,0 +1,166 @@
+{
+ "name": "General Intelligence & Reasoning",
+ "chapters": [
+  [
+   "rea_analogy",
+   "Analogy & Classification",
+   "Analogy & Odd One Out"
+  ],
+  [
+   "rea_series",
+   "Series, Coding–Decoding & Alphabet Tests",
+   "Series & Coding"
+  ],
+  [
+   "rea_arrange",
+   "Blood Relations, Direction, Ranking, Clock & Calendar",
+   "Relations, Direction & Ranking"
+  ],
+  [
+   "rea_logic",
+   "Syllogism, Statements, Venn Diagrams & Mathematical Operations",
+   "Logic & Operations"
+  ],
+  [
+   "rea_nonverbal",
+   "Non-verbal Reasoning (Figures, Dice, Cubes, Paper Folding)",
+   "Non-verbal"
+  ]
+ ],
+ "pyq_file": "reasoning_pyq_analysis.json",
+ "pyq_rules": [
+  [
+   "data sufficiency",
+   "rea_logic"
+  ],
+  [
+   "coded inequalit",
+   "rea_logic"
+  ],
+  [
+   "mathematical operation",
+   "rea_logic"
+  ],
+  [
+   "approximation",
+   "rea_logic"
+  ],
+  [
+   "simplification",
+   "rea_logic"
+  ],
+  [
+   "syllogism",
+   "rea_logic"
+  ],
+  [
+   "statement",
+   "rea_logic"
+  ],
+  [
+   "course",
+   "rea_logic"
+  ],
+  [
+   "argument",
+   "rea_logic"
+  ],
+  [
+   "venn",
+   "rea_logic"
+  ],
+  [
+   "blood relation",
+   "rea_arrange"
+  ],
+  [
+   "direction",
+   "rea_arrange"
+  ],
+  [
+   "ranking",
+   "rea_arrange"
+  ],
+  [
+   "seating",
+   "rea_arrange"
+  ],
+  [
+   "arrangement",
+   "rea_arrange"
+  ],
+  [
+   "ordering",
+   "rea_arrange"
+  ],
+  [
+   "clock",
+   "rea_arrange"
+  ],
+  [
+   "calendar",
+   "rea_arrange"
+  ],
+  [
+   "odd one out",
+   "rea_analogy"
+  ],
+  [
+   "classification",
+   "rea_analogy"
+  ],
+  [
+   "analogy",
+   "rea_analogy"
+  ],
+  [
+   "series",
+   "rea_series"
+  ],
+  [
+   "coding",
+   "rea_series"
+  ],
+  [
+   "alphabet",
+   "rea_series"
+  ],
+  [
+   "word formation",
+   "rea_series"
+  ],
+  [
+   "dice",
+   "rea_nonverbal"
+  ],
+  [
+   "cube",
+   "rea_nonverbal"
+  ],
+  [
+   "mirror",
+   "rea_nonverbal"
+  ],
+  [
+   "paper",
+   "rea_nonverbal"
+  ],
+  [
+   "figure",
+   "rea_nonverbal"
+  ]
+ ],
+ "question_files": [
+  "questions_a.json",
+  "questions_b.json"
+ ],
+ "series_name": "DSSSB TGT CS — General Intelligence & Reasoning",
+ "series_name_hi": "DSSSB TGT CS — सामान्य बुद्धि एवं तर्कशक्ति",
+ "series_description": "Section A General Intelligence & Reasoning: analogy and odd one out, number and letter series, coding–decoding, alphabet tests, blood relations, direction sense, ranking and seating, clock and calendar, syllogism, statement–conclusion/argument/course of action, Venn diagrams, mathematical operations and non-verbal reasoning described in words — 61 previous-year questions, chapter-wise practice and the 200 most expected questions. Short method notes and a fast-revision sheet are in Courses → DSSSB TGT Computer Science.",
+ "course_subject": "General Intelligence & Reasoning",
+ "course_subject_hi": "सामान्य बुद्धि एवं तर्कशक्ति",
+ "tagline": "Analogy & odd one out · series & coding · blood relations, direction & ranking · syllogism, statements & mathematical operations · dice, cubes & paper folding",
+ "intro": "Section A General Intelligence & Reasoning carries 20 marks in every DSSSB paper. In the 4 official 2023–24 TGT CS papers ({n} questions) the favourites were odd one out (number pairs and letter-cluster codes), mathematical operations (sign replacement and sign interchange), statement–conclusion and course of action, ranking and seating in a row, coded blood relations, shadow-based direction sense, letter series and letter-position tests; most were easy and solvable in under a minute with a fixed method. The notes are method tables with a worked example for every technique; non-verbal figures are described in words.",
+ "practice_split": 35,
+ "full_test_min_per_q": 0.6
+}

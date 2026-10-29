@@ -1,0 +1,2762 @@
+[
+ {
+  "chapter_key": "rea_analogy",
+  "subtopic": "Analogy",
+  "difficulty": "easy",
+  "question_en": "Pen is to Write as Knife is to:",
+  "options": [
+   {
+    "en": "Sharp"
+   },
+   {
+    "en": "Steel"
+   },
+   {
+    "en": "Kitchen"
+   },
+   {
+    "en": "Cut"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "A pen is used to write; a knife is used to cut. The relation is instrument : function.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_analogy",
+  "subtopic": "Analogy",
+  "difficulty": "easy",
+  "question_en": "Judge : Court :: Chef : ?",
+  "options": [
+   {
+    "en": "Hotel"
+   },
+   {
+    "en": "Kitchen"
+   },
+   {
+    "en": "Food"
+   },
+   {
+    "en": "Menu"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "A judge works in a court; a chef works in a kitchen (person : place of work).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_analogy",
+  "subtopic": "Analogy",
+  "difficulty": "medium",
+  "question_en": "7 : 56 :: 9 : ?",
+  "options": [
+   {
+    "en": "90"
+   },
+   {
+    "en": "80"
+   },
+   {
+    "en": "81"
+   },
+   {
+    "en": "99"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "7 × 8 = 56 fits the rule n × (n + 1), so 9 × 10 = 90. (A fixed \"× 8\" rule would give 72, which is not offered; 80 = 9² − 1 and 81 = 9² do not fit 7 : 56.)",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_analogy",
+  "subtopic": "Analogy",
+  "difficulty": "medium",
+  "question_en": "CAT : DBU :: DOG : ?",
+  "options": [
+   {
+    "en": "ENF"
+   },
+   {
+    "en": "DPH"
+   },
+   {
+    "en": "EPH"
+   },
+   {
+    "en": "EOH"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Every letter moves one step forward: C-D, A-B, T-U. So D-E, O-P, G-H gives EPH.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_analogy",
+  "subtopic": "Analogy",
+  "difficulty": "medium",
+  "question_en": "ACE : FHJ :: BDF : ?",
+  "options": [
+   {
+    "en": "GIK"
+   },
+   {
+    "en": "GHK"
+   },
+   {
+    "en": "FHJ"
+   },
+   {
+    "en": "HJL"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Each letter is shifted 5 places ahead (A-F, C-H, E-J). B-G, D-I, F-K gives GIK.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_analogy",
+  "subtopic": "Analogy",
+  "difficulty": "easy",
+  "question_en": "Sculptor : Statue :: Poet : ?",
+  "options": [
+   {
+    "en": "Novel"
+   },
+   {
+    "en": "Paint"
+   },
+   {
+    "en": "Poem"
+   },
+   {
+    "en": "Stage"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "A sculptor creates a statue; a poet creates a poem (creator : creation).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_analogy",
+  "subtopic": "Analogy",
+  "difficulty": "hard",
+  "question_en": "3 : 28 :: 5 : ?",
+  "options": [
+   {
+    "en": "124"
+   },
+   {
+    "en": "120"
+   },
+   {
+    "en": "130"
+   },
+   {
+    "en": "126"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "3^3 + 1 = 28, so the rule is n^3 + 1. For 5: 125 + 1 = 126.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_analogy",
+  "subtopic": "Analogy",
+  "difficulty": "easy",
+  "question_en": "Heart : Circulation :: Lungs : ?",
+  "options": [
+   {
+    "en": "Digestion"
+   },
+   {
+    "en": "Respiration"
+   },
+   {
+    "en": "Excretion"
+   },
+   {
+    "en": "Reproduction"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The heart is the main organ of circulation; the lungs are the main organs of respiration.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_analogy",
+  "subtopic": "Analogy",
+  "difficulty": "medium",
+  "question_en": "Select the missing pair (third number : fourth number) that is related in the same way as the first number is related to the second number and the fifth number is related to the sixth number. (Operations must be done on whole numbers, not on their digits.)\n325 : 512 :: ? : ? :: 148 : 335",
+  "options": [
+   {
+    "en": "214 : 398"
+   },
+   {
+    "en": "261 : 446"
+   },
+   {
+    "en": "173 : 362"
+   },
+   {
+    "en": "209 : 396"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "512 − 325 = 187 and 335 − 148 = 187, so the second number is the first + 187. Only 209 + 187 = 396 fits; the other pairs differ by 184, 185 and 189.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_analogy",
+  "subtopic": "Analogy",
+  "difficulty": "medium",
+  "question_en": "Select the number that is related to the fifth number in the same way as the second number is related to the first and the fourth number is related to the third.\n5 : 150 :: 7 : 392 :: 9 : ?",
+  "options": [
+   {
+    "en": "810"
+   },
+   {
+    "en": "729"
+   },
+   {
+    "en": "891"
+   },
+   {
+    "en": "720"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Rule: n² × (n + 1). 25 × 6 = 150, 49 × 8 = 392, so 81 × 10 = 810. 729 is only 9³.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_analogy",
+  "subtopic": "Analogy",
+  "difficulty": "easy",
+  "question_en": "Select the related letters from the given alternatives.\nGKP : JNS :: CFI : ?",
+  "options": [
+   {
+    "en": "EHK"
+   },
+   {
+    "en": "FIL"
+   },
+   {
+    "en": "FHL"
+   },
+   {
+    "en": "GIL"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Each letter moves 3 places forward: G→J, K→N, P→S. So C→F, F→I, I→L gives FIL.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_analogy",
+  "subtopic": "Analogy",
+  "difficulty": "hard",
+  "question_en": "GARDEN is related to BHESOF in a certain way. In the same way, PLANET is related to which option?",
+  "options": [
+   {
+    "en": "MQBOUF"
+   },
+   {
+    "en": "QMBOFU"
+   },
+   {
+    "en": "MQOBUF"
+   },
+   {
+    "en": "MQOBFU"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Split the word into pairs, reverse each pair and move every letter 1 place forward: GA→AG→BH, RD→DR→ES, EN→NE→OF. PLANET: PL→LP→MQ, AN→NA→OB, ET→TE→UF, giving MQOBUF.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_analogy",
+  "subtopic": "Analogy",
+  "difficulty": "easy",
+  "question_en": "Thermometer : Temperature :: Barometer : ?",
+  "options": [
+   {
+    "en": "Humidity"
+   },
+   {
+    "en": "Wind speed"
+   },
+   {
+    "en": "Atmospheric pressure"
+   },
+   {
+    "en": "Rainfall"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Instrument : what it measures. A thermometer measures temperature; a barometer measures atmospheric pressure. Humidity is measured by a hygrometer, wind speed by an anemometer and rainfall by a rain gauge.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_analogy",
+  "subtopic": "Analogy",
+  "difficulty": "easy",
+  "question_en": "Bird : Aviary :: Bee : ?",
+  "options": [
+   {
+    "en": "Kennel"
+   },
+   {
+    "en": "Stable"
+   },
+   {
+    "en": "Burrow"
+   },
+   {
+    "en": "Apiary"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "An aviary is a place where birds are kept; an apiary is a place where bees are kept. A kennel is for dogs, a stable for horses, and a burrow is a wild animal's hole.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_analogy",
+  "subtopic": "Analogy",
+  "difficulty": "easy",
+  "question_en": "Cobbler : Leather :: Carpenter : ?",
+  "options": [
+   {
+    "en": "Wood"
+   },
+   {
+    "en": "Furniture"
+   },
+   {
+    "en": "Saw"
+   },
+   {
+    "en": "Nails"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Worker : raw material. A cobbler works with leather; a carpenter works with wood. Furniture is the product and a saw is a tool, so they break the relation.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_analogy",
+  "subtopic": "Analogy",
+  "difficulty": "medium",
+  "question_en": "11 : 120 :: 13 : ?",
+  "options": [
+   {
+    "en": "168"
+   },
+   {
+    "en": "169"
+   },
+   {
+    "en": "156"
+   },
+   {
+    "en": "170"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Rule: n² − 1. 11² − 1 = 120, so 13² − 1 = 168. 169 forgets the −1; 156 is 13 × 12.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_analogy",
+  "subtopic": "Analogy",
+  "difficulty": "easy",
+  "question_en": "ROAD : URDG :: SWAN : ?",
+  "options": [
+   {
+    "en": "VYDQ"
+   },
+   {
+    "en": "UZDQ"
+   },
+   {
+    "en": "VZEQ"
+   },
+   {
+    "en": "VZDQ"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Each letter moves 3 places forward: R→U, O→R, A→D, D→G. So S→V, W→Z, A→D, N→Q gives VZDQ.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_analogy",
+  "subtopic": "Classification",
+  "difficulty": "easy",
+  "question_en": "Select the odd one out: Mango, Banana, Potato, Apple",
+  "options": [
+   {
+    "en": "Potato"
+   },
+   {
+    "en": "Mango"
+   },
+   {
+    "en": "Banana"
+   },
+   {
+    "en": "Apple"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Mango, banana and apple are fruits; potato is a vegetable (a tuber).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_analogy",
+  "subtopic": "Classification",
+  "difficulty": "easy",
+  "question_en": "Select the odd one out (capitals of states): Lucknow, Jaipur, Surat, Bhopal",
+  "options": [
+   {
+    "en": "Lucknow"
+   },
+   {
+    "en": "Surat"
+   },
+   {
+    "en": "Jaipur"
+   },
+   {
+    "en": "Bhopal"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Lucknow, Jaipur and Bhopal are state capitals. Surat is a city in Gujarat but not the capital (Gandhinagar is).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_analogy",
+  "subtopic": "Classification",
+  "difficulty": "medium",
+  "question_en": "Select the odd number: 16, 64, 36, 48",
+  "options": [
+   {
+    "en": "16"
+   },
+   {
+    "en": "64"
+   },
+   {
+    "en": "48"
+   },
+   {
+    "en": "36"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "16 = 4^2, 64 = 8^2 and 36 = 6^2 are perfect squares. 48 is not a perfect square.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_analogy",
+  "subtopic": "Classification",
+  "difficulty": "medium",
+  "question_en": "Select the odd number: 17, 23, 29, 39",
+  "options": [
+   {
+    "en": "17"
+   },
+   {
+    "en": "23"
+   },
+   {
+    "en": "29"
+   },
+   {
+    "en": "39"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "17, 23 and 29 are prime. 39 = 3 x 13 is composite.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_analogy",
+  "subtopic": "Classification",
+  "difficulty": "medium",
+  "question_en": "Select the odd letter group: BDF, HJL, NPR, TVW",
+  "options": [
+   {
+    "en": "BDF"
+   },
+   {
+    "en": "HJL"
+   },
+   {
+    "en": "NPR"
+   },
+   {
+    "en": "TVW"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "BDF, HJL and NPR skip one letter each time (+2, +2). In TVW the gaps are +2, +1, so it is the odd one.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_analogy",
+  "subtopic": "Classification",
+  "difficulty": "medium",
+  "question_en": "Select the odd pair: (8, 64), (5, 25), (7, 49), (6, 48)",
+  "options": [
+   {
+    "en": "(8, 64)"
+   },
+   {
+    "en": "(5, 25)"
+   },
+   {
+    "en": "(6, 48)"
+   },
+   {
+    "en": "(7, 49)"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "In the other pairs the second number is the square of the first (8^2 = 64, 5^2 = 25, 7^2 = 49). 6^2 = 36, not 48.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_analogy",
+  "subtopic": "Classification",
+  "difficulty": "medium",
+  "question_en": "Select the odd one out: Whale, Dolphin, Shark, Seal",
+  "options": [
+   {
+    "en": "Whale"
+   },
+   {
+    "en": "Shark"
+   },
+   {
+    "en": "Dolphin"
+   },
+   {
+    "en": "Seal"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Whale, dolphin and seal are mammals. A shark is a fish.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_analogy",
+  "subtopic": "Classification",
+  "difficulty": "hard",
+  "question_en": "Select the odd number: 24, 35, 48, 65",
+  "options": [
+   {
+    "en": "65"
+   },
+   {
+    "en": "24"
+   },
+   {
+    "en": "35"
+   },
+   {
+    "en": "48"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "24 = 5^2 - 1, 35 = 6^2 - 1 and 48 = 7^2 - 1. 65 = 8^2 + 1, not 8^2 - 1 = 63, so 65 is the odd one.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_analogy",
+  "subtopic": "Classification",
+  "difficulty": "easy",
+  "question_en": "Four number-pairs have been given, out of which three are alike in some manner and one is different. Select the one that is different.",
+  "options": [
+   {
+    "en": "14 - 63"
+   },
+   {
+    "en": "20 - 90"
+   },
+   {
+    "en": "26 - 117"
+   },
+   {
+    "en": "30 - 132"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "In three pairs the second number is the first × 4.5: 14 × 4.5 = 63, 20 × 4.5 = 90, 26 × 4.5 = 117. But 30 × 4.5 = 135, not 132.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_analogy",
+  "subtopic": "Classification",
+  "difficulty": "medium",
+  "question_en": "Three of the following number-pairs follow the same rule and one does not. Select the pair that does not follow the rule.",
+  "options": [
+   {
+    "en": "18 - 111"
+   },
+   {
+    "en": "12 - 77"
+   },
+   {
+    "en": "15 - 95"
+   },
+   {
+    "en": "21 - 131"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Rule: second = first × 6 + 5. 12 × 6 + 5 = 77, 15 × 6 + 5 = 95, 21 × 6 + 5 = 131, but 18 × 6 + 5 = 113, not 111.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_analogy",
+  "subtopic": "Classification",
+  "difficulty": "medium",
+  "question_en": "Select the number-pair that is different from the other three.",
+  "options": [
+   {
+    "en": "13 - 51"
+   },
+   {
+    "en": "24 - 94"
+   },
+   {
+    "en": "21 - 83"
+   },
+   {
+    "en": "16 - 63"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Rule: second = first × 4 − 1. 13 × 4 − 1 = 51, 21 × 4 − 1 = 83, 16 × 4 − 1 = 63, but 24 × 4 − 1 = 95, not 94.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_analogy",
+  "subtopic": "Classification",
+  "difficulty": "easy",
+  "question_en": "In three of the following number-pairs the second number is obtained from the first by the same rule. Select the odd pair.",
+  "options": [
+   {
+    "en": "7 - 50"
+   },
+   {
+    "en": "9 - 82"
+   },
+   {
+    "en": "6 - 35"
+   },
+   {
+    "en": "11 - 122"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Rule: second = first² + 1. 7² + 1 = 50, 9² + 1 = 82, 11² + 1 = 122. For 6 the pair would be 37; 35 is 6² − 1.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_analogy",
+  "subtopic": "Classification",
+  "difficulty": "medium",
+  "question_en": "Four letter-cluster pairs have been given, out of which three are alike in some manner and one is different. Select the one that is different.",
+  "options": [
+   {
+    "en": "WATER : XBUFS"
+   },
+   {
+    "en": "SMILE : TNJMF"
+   },
+   {
+    "en": "BRAIN : CSBJO"
+   },
+   {
+    "en": "PLANT : QMBOS"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "In three pairs every letter moves 1 place forward (W→X, A→B, T→U, E→F, R→S). PLANT would become QMBOU; the last letter T→S breaks the rule.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_analogy",
+  "subtopic": "Classification",
+  "difficulty": "easy",
+  "question_en": "In the following, select the odd letter group from the given alternatives.",
+  "options": [
+   {
+    "en": "DGI"
+   },
+   {
+    "en": "QOL"
+   },
+   {
+    "en": "HFC"
+   },
+   {
+    "en": "VTQ"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "QOL (17, 15, 12), HFC (8, 6, 3) and VTQ (22, 20, 17) all go −2, −3. DGI (4, 7, 9) goes +3, +2.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_analogy",
+  "subtopic": "Classification",
+  "difficulty": "medium",
+  "question_en": "Three of the following four-letter groups are alike in a certain way and one is different. Select the odd group.",
+  "options": [
+   {
+    "en": "CDAF"
+   },
+   {
+    "en": "GHFJ"
+   },
+   {
+    "en": "KLIN"
+   },
+   {
+    "en": "RSPU"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "CDAF (3, 4, 1, 6), KLIN (11, 12, 9, 14) and RSPU (18, 19, 16, 21) follow +1, −3, +5. GHFJ (7, 8, 6, 10) follows +1, −2, +4.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_analogy",
+  "subtopic": "Classification",
+  "difficulty": "easy",
+  "question_en": "Select the odd one out: Mercury, Venus, Mars, Moon",
+  "options": [
+   {
+    "en": "Mercury"
+   },
+   {
+    "en": "Moon"
+   },
+   {
+    "en": "Venus"
+   },
+   {
+    "en": "Mars"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Mercury, Venus and Mars are planets of the solar system. The Moon is a natural satellite of the Earth.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_analogy",
+  "subtopic": "Classification",
+  "difficulty": "hard",
+  "question_en": "Select the odd number: 121, 169, 225, 289",
+  "options": [
+   {
+    "en": "121"
+   },
+   {
+    "en": "169"
+   },
+   {
+    "en": "225"
+   },
+   {
+    "en": "289"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "121 = 11², 169 = 13² and 289 = 17² are squares of prime numbers. 225 = 15² is the square of a composite number (15 = 3 × 5).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_analogy",
+  "subtopic": "Classification",
+  "difficulty": "easy",
+  "question_en": "Select the odd number: 27, 64, 125, 144",
+  "options": [
+   {
+    "en": "27"
+   },
+   {
+    "en": "64"
+   },
+   {
+    "en": "125"
+   },
+   {
+    "en": "144"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "27 = 3³, 64 = 4³ and 125 = 5³ are perfect cubes. 144 = 12² is a perfect square but not a cube.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_analogy",
+  "subtopic": "Classification",
+  "difficulty": "easy",
+  "question_en": "Select the odd letter group: AEI, BFJ, CGK, DHM",
+  "options": [
+   {
+    "en": "AEI"
+   },
+   {
+    "en": "DHM"
+   },
+   {
+    "en": "BFJ"
+   },
+   {
+    "en": "CGK"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "AEI, BFJ and CGK move +4, +4 (A-E-I = 1, 5, 9). DHM is 4, 8, 13, i.e. +4, +5. The rule-following group would be DHL.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_analogy",
+  "subtopic": "Matrix & grid coding",
+  "difficulty": "medium",
+  "question_en": "Find the missing number in the grid. Row 1: 4, 5, 41; Row 2: 6, 2, 40; Row 3: 3, 7, ?",
+  "options": [
+   {
+    "en": "58"
+   },
+   {
+    "en": "52"
+   },
+   {
+    "en": "49"
+   },
+   {
+    "en": "63"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Third number = (first)² + (second)²: 16 + 25 = 41, 36 + 4 = 40, so 9 + 49 = 58.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_analogy",
+  "subtopic": "Matrix & grid coding",
+  "difficulty": "easy",
+  "question_en": "Find the missing number in the grid. Row 1: 5, 3, 16; Row 2: 6, 4, 20; Row 3: 7, 8, ?",
+  "options": [
+   {
+    "en": "56"
+   },
+   {
+    "en": "30"
+   },
+   {
+    "en": "15"
+   },
+   {
+    "en": "32"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Third number = 2 × (sum of first two): 2 × 8 = 16, 2 × 10 = 20, so 2 × 15 = 30. 56 would be the product, which does not fit rows 1 and 2.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_analogy",
+  "subtopic": "Matrix & grid coding",
+  "difficulty": "easy",
+  "question_en": "Find the missing number in the grid. Row 1: 2, 3, 4; Row 2: 4, 9, 16; Row 3: 8, 27, ?",
+  "options": [
+   {
+    "en": "36"
+   },
+   {
+    "en": "54"
+   },
+   {
+    "en": "81"
+   },
+   {
+    "en": "64"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Read column-wise: each column has a number, its square and its cube. Column 3: 4, 16, 64 (4³ = 64).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_analogy",
+  "subtopic": "Matrix & grid coding",
+  "difficulty": "easy",
+  "question_en": "Find the missing number in the grid. Row 1: 12, 4, 3; Row 2: 45, 9, 5; Row 3: 56, ?, 7",
+  "options": [
+   {
+    "en": "6"
+   },
+   {
+    "en": "7"
+   },
+   {
+    "en": "8"
+   },
+   {
+    "en": "9"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "In each row, first ÷ second = third: 12 ÷ 4 = 3, 45 ÷ 9 = 5, so 56 ÷ ? = 7 gives ? = 8.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_series",
+  "subtopic": "Number Series",
+  "difficulty": "easy",
+  "question_en": "Find the next term: 4, 9, 16, 25, 36, ?",
+  "options": [
+   {
+    "en": "49"
+   },
+   {
+    "en": "42"
+   },
+   {
+    "en": "48"
+   },
+   {
+    "en": "64"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "These are squares of 2, 3, 4, 5, 6. Next is 7^2 = 49.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_series",
+  "subtopic": "Number Series",
+  "difficulty": "medium",
+  "question_en": "Find the next term: 2, 6, 12, 20, 30, ?",
+  "options": [
+   {
+    "en": "40"
+   },
+   {
+    "en": "42"
+   },
+   {
+    "en": "44"
+   },
+   {
+    "en": "36"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Differences are 4, 6, 8, 10, so the next difference is 12: 30 + 12 = 42. (Also n(n+1): 6 x 7 = 42.)",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_series",
+  "subtopic": "Number Series",
+  "difficulty": "medium",
+  "question_en": "Find the next term: 3, 6, 11, 18, 27, ?",
+  "options": [
+   {
+    "en": "36"
+   },
+   {
+    "en": "37"
+   },
+   {
+    "en": "38"
+   },
+   {
+    "en": "39"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Differences are 3, 5, 7, 9, so the next is 11: 27 + 11 = 38.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_series",
+  "subtopic": "Number Series",
+  "difficulty": "hard",
+  "question_en": "Find the next term: 2, 3, 5, 9, 17, ?",
+  "options": [
+   {
+    "en": "31"
+   },
+   {
+    "en": "34"
+   },
+   {
+    "en": "32"
+   },
+   {
+    "en": "33"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Differences are 1, 2, 4, 8, so the next is 16: 17 + 16 = 33.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_series",
+  "subtopic": "Number Series",
+  "difficulty": "medium",
+  "question_en": "Find the next term: 1, 2, 6, 24, 120, ?",
+  "options": [
+   {
+    "en": "720"
+   },
+   {
+    "en": "600"
+   },
+   {
+    "en": "480"
+   },
+   {
+    "en": "840"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Each term is multiplied by 1, 2, 3, 4, 5 in turn (factorials). Next: 120 x 6 = 720.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_series",
+  "subtopic": "Number Series",
+  "difficulty": "easy",
+  "question_en": "Find the next term: 1, 8, 27, 64, 125, ?",
+  "options": [
+   {
+    "en": "196"
+   },
+   {
+    "en": "256"
+   },
+   {
+    "en": "216"
+   },
+   {
+    "en": "243"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "These are cubes of 1 to 5, so the next is 6^3 = 216.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_series",
+  "subtopic": "Number Series",
+  "difficulty": "medium",
+  "question_en": "Find the next term: 100, 91, 83, 76, 70, ?",
+  "options": [
+   {
+    "en": "64"
+   },
+   {
+    "en": "65"
+   },
+   {
+    "en": "66"
+   },
+   {
+    "en": "60"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Differences are -9, -8, -7, -6, so the next is -5: 70 - 5 = 65.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_series",
+  "subtopic": "Number Series",
+  "difficulty": "hard",
+  "question_en": "Find the next term: 5, 6, 14, 45, 184, ?",
+  "options": [
+   {
+    "en": "920"
+   },
+   {
+    "en": "900"
+   },
+   {
+    "en": "936"
+   },
+   {
+    "en": "925"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Rule: multiply by n and add n. 5x1+1 = 6, 6x2+2 = 14, 14x3+3 = 45, 45x4+4 = 184, so 184x5+5 = 925. Option 920 forgets the +5.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_series",
+  "subtopic": "Number Series",
+  "difficulty": "medium",
+  "question_en": "How many odd numbers in the following series are immediately preceded by an even number and immediately followed by an odd number?\n4 7 9 2 5 8 3 3 6 1 7 2 9 4 5 5",
+  "options": [
+   {
+    "en": "3"
+   },
+   {
+    "en": "5"
+   },
+   {
+    "en": "4"
+   },
+   {
+    "en": "2"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Check each odd number: 7 (after 4, before 9) ✓; 3 (after 8, before 3) ✓; 1 (after 6, before 7) ✓; 5 (after 4, before 5) ✓. 5 after 2 and 9 after 2 are followed by even numbers, so they fail. Total = 4.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_series",
+  "subtopic": "Letter Series",
+  "difficulty": "medium",
+  "question_en": "Find the next letter: A, C, F, J, O, ?",
+  "options": [
+   {
+    "en": "T"
+   },
+   {
+    "en": "V"
+   },
+   {
+    "en": "S"
+   },
+   {
+    "en": "U"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Position gaps are +2, +3, +4, +5, then +6. O is the 15th letter; 15 + 6 = 21 = U.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_series",
+  "subtopic": "Letter Series",
+  "difficulty": "easy",
+  "question_en": "Find the next letter: B, E, H, K, N, ?",
+  "options": [
+   {
+    "en": "Q"
+   },
+   {
+    "en": "P"
+   },
+   {
+    "en": "R"
+   },
+   {
+    "en": "O"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Each letter moves 3 steps ahead; N + 3 = Q.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_series",
+  "subtopic": "Letter Series",
+  "difficulty": "easy",
+  "question_en": "Complete the series: AZ, BY, CX, DW, ?",
+  "options": [
+   {
+    "en": "EW"
+   },
+   {
+    "en": "EV"
+   },
+   {
+    "en": "FV"
+   },
+   {
+    "en": "EU"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The first letter goes forward (A, B, C, D, E) and the second goes backward (Z, Y, X, W, V). So EV.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_series",
+  "subtopic": "Letter Series",
+  "difficulty": "medium",
+  "question_en": "Complete the series: ACE, FHJ, KMO, ?",
+  "options": [
+   {
+    "en": "PQR"
+   },
+   {
+    "en": "OQS"
+   },
+   {
+    "en": "PRT"
+   },
+   {
+    "en": "PRS"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Each letter in a group moves 5 places ahead of the same position in the previous group: K+5 = P, M+5 = R, O+5 = T.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_series",
+  "subtopic": "Letter Series",
+  "difficulty": "easy",
+  "question_en": "Complete the series: ZYX, WVU, TSR, ?",
+  "options": [
+   {
+    "en": "QOP"
+   },
+   {
+    "en": "QPO"
+   },
+   {
+    "en": "RQP"
+   },
+   {
+    "en": "PQO"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Letters run backwards continuously: ZYX, WVU, TSR, then QPO.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_series",
+  "subtopic": "Letter Series",
+  "difficulty": "medium",
+  "question_en": "Complete the series: AB, DE, HI, MN, ?",
+  "options": [
+   {
+    "en": "RS"
+   },
+   {
+    "en": "SU"
+   },
+   {
+    "en": "TU"
+   },
+   {
+    "en": "ST"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "First letters are at positions 1, 4, 8, 13 (gaps 3, 4, 5); next gap is 6, giving 19 = S. Second letter follows it: T. So ST.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_series",
+  "subtopic": "Letter Series",
+  "difficulty": "hard",
+  "question_en": "Find the next letter: Z, X, U, Q, L, ?",
+  "options": [
+   {
+    "en": "G"
+   },
+   {
+    "en": "E"
+   },
+   {
+    "en": "F"
+   },
+   {
+    "en": "H"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Positions: 26, 24, 21, 17, 12 with decreases 2, 3, 4, 5. Next decrease is 6: 12 - 6 = 6 = F.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_series",
+  "subtopic": "Letter Series",
+  "difficulty": "hard",
+  "question_en": "Complete the series: AMZ, BNY, COX, ?",
+  "options": [
+   {
+    "en": "DPW"
+   },
+   {
+    "en": "DOW"
+   },
+   {
+    "en": "DPV"
+   },
+   {
+    "en": "EPW"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The first letters go A, B, C, D; the middle letters M, N, O, P; the last letters go backward Z, Y, X, W. So DPW.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_series",
+  "subtopic": "Coding-Decoding",
+  "difficulty": "easy",
+  "question_en": "If TABLE is coded as UBCMF, then how is CHAIR coded?",
+  "options": [
+   {
+    "en": "DIBJR"
+   },
+   {
+    "en": "BGZHQ"
+   },
+   {
+    "en": "DHBJS"
+   },
+   {
+    "en": "DIBJS"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Each letter is shifted one step forward: C-D, H-I, A-B, I-J, R-S. So DIBJS.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_series",
+  "subtopic": "Coding-Decoding",
+  "difficulty": "easy",
+  "question_en": "In a code, PAPER is written as OZODQ. How is STONE written in that code?",
+  "options": [
+   {
+    "en": "TUPOF"
+   },
+   {
+    "en": "RSNMF"
+   },
+   {
+    "en": "RSNMD"
+   },
+   {
+    "en": "RTNMD"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Each letter is moved one step backward: S-R, T-S, O-N, N-M, E-D. So RSNMD.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_series",
+  "subtopic": "Coding-Decoding",
+  "difficulty": "easy",
+  "question_en": "If CAT is coded as 24 (using the alphabet positions A = 1, B = 2, ...), then DOG will be coded as:",
+  "options": [
+   {
+    "en": "26"
+   },
+   {
+    "en": "25"
+   },
+   {
+    "en": "27"
+   },
+   {
+    "en": "28"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "CAT = 3 + 1 + 20 = 24, i.e. the sum of positions. DOG = 4 + 15 + 7 = 26.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_series",
+  "subtopic": "Coding-Decoding",
+  "difficulty": "medium",
+  "question_en": "In a code, FRUIT is written as UJVSG. How is LEMON written in that code?",
+  "options": [
+   {
+    "en": "NPOFM"
+   },
+   {
+    "en": "OPNFM"
+   },
+   {
+    "en": "MFNPO"
+   },
+   {
+    "en": "OPNEM"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The word is reversed and each letter is moved one step forward. FRUIT reversed = TIURF, +1 gives UJVSG. LEMON reversed = NOMEL, +1 gives OPNFM.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_series",
+  "subtopic": "Coding-Decoding",
+  "difficulty": "hard",
+  "question_en": "In a code language, 'sky is blue' is written as 'ro mi ta', 'blue sea deep' as 'la mi su' and 'deep sky' as 'ta la'. What is the code for 'sea'?",
+  "options": [
+   {
+    "en": "su"
+   },
+   {
+    "en": "mi"
+   },
+   {
+    "en": "la"
+   },
+   {
+    "en": "ro"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Common word in statements 2 and 3 is 'deep' = 'la'. Common word in 1 and 3 is 'sky' = 'ta'. Common in 1 and 2 is 'blue' = 'mi'. In statement 2 the remaining code 'su' stands for 'sea'.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_series",
+  "subtopic": "Coding-Decoding",
+  "difficulty": "medium",
+  "question_en": "If DELHI is coded as 73541 and CALCUTTA as 82589662, then CALICUT will be coded as:",
+  "options": [
+   {
+    "en": "8251869"
+   },
+   {
+    "en": "8215896"
+   },
+   {
+    "en": "8251966"
+   },
+   {
+    "en": "8251896"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "From the codes: C=8, A=2, L=5, U=9, T=6, I=1. CALICUT = 8-2-5-1-8-9-6 = 8251896.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_series",
+  "subtopic": "Coding-Decoding",
+  "difficulty": "medium",
+  "question_en": "In a code, FAN is written as GCQ. How will BAT be written in that code?",
+  "options": [
+   {
+    "en": "CBW"
+   },
+   {
+    "en": "CCW"
+   },
+   {
+    "en": "CCV"
+   },
+   {
+    "en": "DCW"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The letters are shifted +1, +2, +3: F-G, A-C, N-Q. So BAT: B+1 = C, A+2 = C, T+3 = W, giving CCW.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_series",
+  "subtopic": "Coding-Decoding",
+  "difficulty": "hard",
+  "question_en": "In a code, DELHI is written as EGOLN. How will PUNE be written in that code?",
+  "options": [
+   {
+    "en": "QVQI"
+   },
+   {
+    "en": "QWQJ"
+   },
+   {
+    "en": "QWQI"
+   },
+   {
+    "en": "RWQI"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The shifts are +1, +2, +3, +4, +5 from left to right: D+1 = E, E+2 = G, L+3 = O, H+4 = L, I+5 = N. For PUNE: P+1 = Q, U+2 = W, N+3 = Q, E+4 = I, giving QWQI.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_series",
+  "subtopic": "Alphabet Test",
+  "difficulty": "easy",
+  "question_en": "Which letter is the 7th to the right of the 12th letter from the left end of the English alphabet?",
+  "options": [
+   {
+    "en": "R"
+   },
+   {
+    "en": "S"
+   },
+   {
+    "en": "T"
+   },
+   {
+    "en": "Q"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The 12th letter is L. Moving 7 to the right gives the 19th letter, S.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_series",
+  "subtopic": "Alphabet Test",
+  "difficulty": "medium",
+  "question_en": "Which letter is the 5th to the left of the 15th letter from the right end of the English alphabet?",
+  "options": [
+   {
+    "en": "G"
+   },
+   {
+    "en": "F"
+   },
+   {
+    "en": "H"
+   },
+   {
+    "en": "I"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The 15th letter from the right is the 26 − 15 + 1 = 12th from the left, L. The 5th to its left is the 7th letter, G.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_series",
+  "subtopic": "Alphabet Test",
+  "difficulty": "easy",
+  "question_en": "If the letters of the word DELHI are arranged in alphabetical order, which letter will be in the middle?",
+  "options": [
+   {
+    "en": "E"
+   },
+   {
+    "en": "L"
+   },
+   {
+    "en": "H"
+   },
+   {
+    "en": "I"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Alphabetical order: D, E, H, I, L. The middle (third) letter is H.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_series",
+  "subtopic": "Alphabet Test",
+  "difficulty": "medium",
+  "question_en": "Which letter is the 8th to the right of the letter that is 5th to the left of M in the English alphabet?",
+  "options": [
+   {
+    "en": "O"
+   },
+   {
+    "en": "P"
+   },
+   {
+    "en": "Q"
+   },
+   {
+    "en": "N"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "M is the 13th letter. 5th to its left is the 8th letter, H. 8th to the right of H is the 16th letter, P.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_series",
+  "subtopic": "Alphabet Test",
+  "difficulty": "medium",
+  "question_en": "How many letters of the English alphabet lie between the 8th letter from the left end and the 8th letter from the right end?",
+  "options": [
+   {
+    "en": "9"
+   },
+   {
+    "en": "11"
+   },
+   {
+    "en": "8"
+   },
+   {
+    "en": "10"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The 8th from the left is H (8th). The 8th from the right is the 19th from the left, S. Letters between them = 19 − 8 − 1 = 10.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_series",
+  "subtopic": "Alphabet Test",
+  "difficulty": "medium",
+  "question_en": "If the letters of the word FRIEND are arranged in alphabetical order, how many letters remain in the same position as in the original word?",
+  "options": [
+   {
+    "en": "One"
+   },
+   {
+    "en": "None"
+   },
+   {
+    "en": "Two"
+   },
+   {
+    "en": "Three"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "FRIEND sorted is D, E, F, I, N, R. Comparing position by position with F, R, I, E, N, D, only the fifth letter (N) is unchanged.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_series",
+  "subtopic": "Alphabet Test",
+  "difficulty": "hard",
+  "question_en": "In the word STORM, how many pairs of letters are there such that the gap between their positions in the word equals the gap between their positions in the English alphabet?",
+  "options": [
+   {
+    "en": "2"
+   },
+   {
+    "en": "4"
+   },
+   {
+    "en": "3"
+   },
+   {
+    "en": "1"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "S(1)-T(2): word gap 1, alphabet gap 1. T(2)-R(4): word gap 2, alphabet gap 20 − 18 = 2. O(3)-M(5): word gap 2, alphabet gap 15 − 13 = 2. No other pair matches. Total 3.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_series",
+  "subtopic": "Series completion",
+  "difficulty": "easy",
+  "question_en": "In a series of figures, the first figure has 1 line, the second has 3 lines, the third has 6 lines and the fourth has 10 lines. How many lines will the fifth figure have?",
+  "options": [
+   {
+    "en": "14"
+   },
+   {
+    "en": "15"
+   },
+   {
+    "en": "16"
+   },
+   {
+    "en": "21"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The increments are +2, +3, +4, so the next increment is +5: 10 + 5 = 15 (triangular numbers).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_series",
+  "subtopic": "Series completion",
+  "difficulty": "easy",
+  "question_en": "In a series of figures, each figure shows a letter and a number: A2, C4, F8, J16. What will the fifth figure show?",
+  "options": [
+   {
+    "en": "N32"
+   },
+   {
+    "en": "O32"
+   },
+   {
+    "en": "O30"
+   },
+   {
+    "en": "P32"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Letters advance by +2, +3, +4, so next is +5: J → O. Numbers double: 16 × 2 = 32. Hence O32.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_series",
+  "subtopic": "Matrix & grid coding",
+  "difficulty": "medium",
+  "question_en": "Matrix I (rows 0–4, columns 0–4):\nRow 0: P E N T A\nRow 1: E N T A P\nRow 2: N T A P E\nRow 3: T A P E N\nRow 4: A P E N T\nMatrix II (rows 5–9, columns 5–9):\nRow 5: O R S I L\nRow 6: R S I L O\nRow 7: S I L O R\nRow 8: I L O R S\nRow 9: L O R S I\nEach letter is coded by its row number followed by its column number (for example, P can be 00 or 14). Which set of numbers correctly represents the word PEARL?",
+  "options": [
+   {
+    "en": "14, 33, 13, 56, 69"
+   },
+   {
+    "en": "23, 24, 40, 58, 59"
+   },
+   {
+    "en": "00, 10, 22, 65, 77"
+   },
+   {
+    "en": "41, 01, 03, 97, 95"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "P = 00, E = 10, A = 22, R = 65, L = 77 are all correct. In the other sets 69 = O, 58 = I and 03 = T, so each has one wrong letter.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_series",
+  "subtopic": "Matrix & grid coding",
+  "difficulty": "medium",
+  "question_en": "Matrix I (rows 0–4, columns 0–4):\nRow 0: P E N T A\nRow 1: E N T A P\nRow 2: N T A P E\nRow 3: T A P E N\nRow 4: A P E N T\nMatrix II (rows 5–9, columns 5–9):\nRow 5: O R S I L\nRow 6: R S I L O\nRow 7: S I L O R\nRow 8: I L O R S\nRow 9: L O R S I\nEach letter is coded by its row number followed by its column number (for example, P can be 00 or 14). Which set of numbers correctly represents the word STONE?",
+  "options": [
+   {
+    "en": "57, 03, 55, 02, 02"
+   },
+   {
+    "en": "66, 30, 87, 20, 42"
+   },
+   {
+    "en": "89, 21, 69, 43, 11"
+   },
+   {
+    "en": "98, 12, 78, 24, 10"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "S = 66, T = 30, O = 87, N = 20, E = 42. The first and third sets end with N (02, 11) instead of E; the fourth has 24 = E in place of N.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_series",
+  "subtopic": "Matrix & grid coding",
+  "difficulty": "easy",
+  "question_en": "Matrix I (rows 0–4, columns 0–4):\nRow 0: P E N T A\nRow 1: E N T A P\nRow 2: N T A P E\nRow 3: T A P E N\nRow 4: A P E N T\nMatrix II (rows 5–9, columns 5–9):\nRow 5: O R S I L\nRow 6: R S I L O\nRow 7: S I L O R\nRow 8: I L O R S\nRow 9: L O R S I\nEach letter is coded by its row number followed by its column number (for example, P can be 00 or 14). The set 12, 99, 86, 33 represents which word?",
+  "options": [
+   {
+    "en": "TALE"
+   },
+   {
+    "en": "PILE"
+   },
+   {
+    "en": "TIRE"
+   },
+   {
+    "en": "TILE"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "12 = row 1, column 2 = T; 99 = I; 86 = L; 33 = E. So the word is TILE.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_series",
+  "subtopic": "Matrix & grid coding",
+  "difficulty": "hard",
+  "question_en": "Matrix I (rows 0–4, columns 0–4):\nRow 0: P E N T A\nRow 1: E N T A P\nRow 2: N T A P E\nRow 3: T A P E N\nRow 4: A P E N T\nMatrix II (rows 5–9, columns 5–9):\nRow 5: O R S I L\nRow 6: R S I L O\nRow 7: S I L O R\nRow 8: I L O R S\nRow 9: L O R S I\nEach letter is coded by its row number followed by its column number (for example, P can be 00 or 14). Which of the following sets does NOT represent the word RAIN?",
+  "options": [
+   {
+    "en": "88, 31, 85, 34"
+   },
+   {
+    "en": "56, 04, 58, 02"
+   },
+   {
+    "en": "97, 22, 67, 44"
+   },
+   {
+    "en": "65, 13, 76, 20"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "In the third set 44 is row 4, column 4 = T, not N, so it spells RAIT. All other sets decode to R-A-I-N (e.g. 88 = R, 31 = A, 85 = I, 34 = N).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_series",
+  "subtopic": "Matrix & grid coding",
+  "difficulty": "easy",
+  "question_en": "In a 3 × 3 grid, Row 1 is A B C, Row 2 is D E F and Row 3 is G H I. Each letter is coded by its row number followed by its column number, so BAD is coded 12 11 21. What is the code for HIDE?",
+  "options": [
+   {
+    "en": "32 33 21 22"
+   },
+   {
+    "en": "23 33 12 22"
+   },
+   {
+    "en": "32 33 12 22"
+   },
+   {
+    "en": "31 33 21 22"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "H = row 3, column 2 = 32; I = 33; D = row 2, column 1 = 21; E = 22. Option 2 reverses row and column; option 4 uses G (31) for H.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_series",
+  "subtopic": "Matrix & grid coding",
+  "difficulty": "medium",
+  "question_en": "A 4 × 4 letter grid is: Row 1: P L A N; Row 2: T R E S; Row 3: M O U D; Row 4: C K I G. Each letter is coded by its COLUMN number followed by its ROW number. What is the code for MOUSE?",
+  "options": [
+   {
+    "en": "31 32 33 24 23"
+   },
+   {
+    "en": "13 23 33 24 32"
+   },
+   {
+    "en": "13 32 33 42 23"
+   },
+   {
+    "en": "13 23 33 42 32"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "M is in column 1, row 3 → 13; O → 23; U → 33; S is column 4, row 2 → 42; E is column 3, row 2 → 32. The first option uses row-then-column order, which is the trap.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_arrange",
+  "subtopic": "Blood Relation",
+  "difficulty": "easy",
+  "question_en": "Pointing to a photograph, Ravi says, 'She is the daughter of my grandfather's only son.' How is the girl related to Ravi?",
+  "options": [
+   {
+    "en": "Cousin"
+   },
+   {
+    "en": "Sister"
+   },
+   {
+    "en": "Aunt"
+   },
+   {
+    "en": "Mother"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Ravi's grandfather's only son is Ravi's father. The daughter of Ravi's father is Ravi's sister.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_arrange",
+  "subtopic": "Blood Relation",
+  "difficulty": "medium",
+  "question_en": "A is the sister of B. C is the mother of B. D is the father of C. How is A related to D?",
+  "options": [
+   {
+    "en": "Daughter"
+   },
+   {
+    "en": "Niece"
+   },
+   {
+    "en": "Sister"
+   },
+   {
+    "en": "Granddaughter"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "A and B are children of C. D is C's father, so A is D's granddaughter.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_arrange",
+  "subtopic": "Blood Relation",
+  "difficulty": "medium",
+  "question_en": "Pointing to a man, a woman says, 'His mother is the only daughter of my mother.' How is the woman related to the man?",
+  "options": [
+   {
+    "en": "Sister"
+   },
+   {
+    "en": "Aunt"
+   },
+   {
+    "en": "Mother"
+   },
+   {
+    "en": "Grandmother"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The only daughter of the woman's mother is the woman herself. So the man's mother is the woman: she is his mother.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_arrange",
+  "subtopic": "Blood Relation",
+  "difficulty": "easy",
+  "question_en": "Pointing to a lady, Anil said, 'She is the wife of my mother's only brother.' How is the lady related to Anil?",
+  "options": [
+   {
+    "en": "Maternal aunt (Mami)"
+   },
+   {
+    "en": "Paternal aunt"
+   },
+   {
+    "en": "Sister-in-law"
+   },
+   {
+    "en": "Mother-in-law"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Anil's mother's only brother is his maternal uncle (Mama). The uncle's wife is Anil's Mami, i.e. maternal aunt.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_arrange",
+  "subtopic": "Blood Relation",
+  "difficulty": "medium",
+  "question_en": "P is the father of Q. Q is the sister of R. R is the mother of S. How is P related to S?",
+  "options": [
+   {
+    "en": "Paternal grandfather"
+   },
+   {
+    "en": "Father"
+   },
+   {
+    "en": "Maternal grandfather"
+   },
+   {
+    "en": "Maternal uncle"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "P is father of both Q and R. R is S's mother, so P is the father of S's mother: maternal grandfather.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_arrange",
+  "subtopic": "Blood Relation",
+  "difficulty": "hard",
+  "question_en": "In a certain notation, A + B means A is the mother of B; A - B means A is the brother of B; A x B means A is the father of B. What does P - Q x R mean?",
+  "options": [
+   {
+    "en": "P is the paternal uncle of R"
+   },
+   {
+    "en": "P is the maternal uncle of R"
+   },
+   {
+    "en": "P is the father of R"
+   },
+   {
+    "en": "P is the grandfather of R"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "P - Q: P is the brother of Q. Q x R: Q is the father of R. So P is the brother of R's father: paternal uncle.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_arrange",
+  "subtopic": "Blood Relation",
+  "difficulty": "hard",
+  "question_en": "Pointing to a photograph, a man said, 'I have no brother or sister, but that man's father is my father's son.' Whose photograph was it?",
+  "options": [
+   {
+    "en": "His father"
+   },
+   {
+    "en": "His own"
+   },
+   {
+    "en": "His nephew"
+   },
+   {
+    "en": "His son"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The man has no brother, so 'my father's son' is the man himself. Hence 'that man's father' is the speaker, so the photograph is of his son.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_arrange",
+  "subtopic": "Blood Relation",
+  "difficulty": "medium",
+  "question_en": "Pointing to a boy, Meena said, 'He is the son of my mother's only son.' How is the boy related to Meena?",
+  "options": [
+   {
+    "en": "Cousin"
+   },
+   {
+    "en": "Nephew"
+   },
+   {
+    "en": "Son"
+   },
+   {
+    "en": "Brother"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Meena's mother's only son is Meena's brother. The brother's son is Meena's nephew.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_arrange",
+  "subtopic": "Direction & Distance",
+  "difficulty": "easy",
+  "question_en": "A man walks 5 km east, turns left and walks 3 km, then turns left again and walks 5 km. How far and in which direction is he from the starting point?",
+  "options": [
+   {
+    "en": "3 km north"
+   },
+   {
+    "en": "3 km south"
+   },
+   {
+    "en": "5 km north"
+   },
+   {
+    "en": "8 km north-east"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "East 5, left turn faces north (3 km), left again faces west (5 km). The east and west movements cancel, leaving 3 km north of the start.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_arrange",
+  "subtopic": "Direction & Distance",
+  "difficulty": "medium",
+  "question_en": "A person walks 8 km north, then turns right and walks 6 km. How far and in which direction is he from the starting point?",
+  "options": [
+   {
+    "en": "14 km north-east"
+   },
+   {
+    "en": "10 km north-west"
+   },
+   {
+    "en": "10 km north-east"
+   },
+   {
+    "en": "10 km south-east"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "North 8 and east 6 form a right triangle. Distance = sqrt(8^2 + 6^2) = sqrt(100) = 10 km, and he lies to the north-east of the start.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_arrange",
+  "subtopic": "Direction & Distance",
+  "difficulty": "hard",
+  "question_en": "Rahul faces east. He turns 90 degrees clockwise and then 135 degrees anticlockwise. In which direction is he facing now?",
+  "options": [
+   {
+    "en": "North-west"
+   },
+   {
+    "en": "South-east"
+   },
+   {
+    "en": "South-west"
+   },
+   {
+    "en": "North-east"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "East turned 90 degrees clockwise is south. Turning 135 degrees anticlockwise from south passes east (90 degrees) and reaches north-east (a further 45 degrees).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_arrange",
+  "subtopic": "Direction & Distance",
+  "difficulty": "medium",
+  "question_en": "One morning after sunrise, Mohan stood facing a pole. The shadow of the pole fell on his right side. Which direction was he facing?",
+  "options": [
+   {
+    "en": "South"
+   },
+   {
+    "en": "North"
+   },
+   {
+    "en": "East"
+   },
+   {
+    "en": "West"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "In the morning the sun is in the east, so shadows fall towards the west. The shadow was on his right, so west was on his right — that happens only when he faces south (facing north, west would be on the left).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_arrange",
+  "subtopic": "Direction & Distance",
+  "difficulty": "medium",
+  "question_en": "Ram walks 10 m south, turns left and walks 8 m, then turns left again and walks 4 m. How far is he from the starting point and in which direction?",
+  "options": [
+   {
+    "en": "10 m, south-west"
+   },
+   {
+    "en": "12 m, south-east"
+   },
+   {
+    "en": "8 m, east"
+   },
+   {
+    "en": "10 m, south-east"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Take the start as (0, 0). South 10 gives (0, -10); left (east) 8 gives (8, -10); left (north) 4 gives (8, -6). Distance = sqrt(8^2 + 6^2) = 10 m, and the point lies south-east of the start.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_arrange",
+  "subtopic": "Direction & Distance",
+  "difficulty": "easy",
+  "question_en": "Sunita is facing north-west. She turns 90 degrees clockwise and then 180 degrees anticlockwise. In which direction is she facing now?",
+  "options": [
+   {
+    "en": "North-east"
+   },
+   {
+    "en": "South-east"
+   },
+   {
+    "en": "South-west"
+   },
+   {
+    "en": "North-west"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "North-west turned 90 degrees clockwise is north-east. Turning 180 degrees from north-east gives the opposite direction, south-west.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_arrange",
+  "subtopic": "Direction & Distance",
+  "difficulty": "medium",
+  "question_en": "A is 5 m east of B. C is 5 m north of B. D is 5 m west of C. In which direction is D with respect to A?",
+  "options": [
+   {
+    "en": "North-west"
+   },
+   {
+    "en": "West"
+   },
+   {
+    "en": "North"
+   },
+   {
+    "en": "South-west"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Take B at (0, 0): A = (5, 0), C = (0, 5), D = (-5, 5). D is 10 m west and 5 m north of A, so it lies north-west of A.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_arrange",
+  "subtopic": "Direction & Distance",
+  "difficulty": "hard",
+  "question_en": "A man walks 15 m towards the west, turns right and walks 12 m, turns right again and walks 15 m, then turns left and walks 6 m. How far is he from the starting point and in which direction?",
+  "options": [
+   {
+    "en": "12 m, north"
+   },
+   {
+    "en": "18 m, north"
+   },
+   {
+    "en": "18 m, east"
+   },
+   {
+    "en": "27 m, north-east"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "West 15 gives (-15, 0); right (north) 12 gives (-15, 12); right (east) 15 gives (0, 12); left (north) 6 gives (0, 18). The east-west displacement cancels, leaving 18 m due north.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_arrange",
+  "subtopic": "Direction & Distance",
+  "difficulty": "medium",
+  "question_en": "In the evening, just before sunset, Rekha and Sohan stand facing each other. Rekha's shadow falls exactly to her left. In which direction is Sohan facing?",
+  "options": [
+   {
+    "en": "South"
+   },
+   {
+    "en": "North"
+   },
+   {
+    "en": "East"
+   },
+   {
+    "en": "West"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Before sunset the sun is in the west, so shadows fall to the east. East is on Rekha's left, so Rekha faces south. Sohan faces Rekha, so he faces north.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_arrange",
+  "subtopic": "Ranking & Ordering",
+  "difficulty": "easy",
+  "question_en": "Rohan ranks 12th from the top in a class of 40 students. What is his rank from the bottom?",
+  "options": [
+   {
+    "en": "28th"
+   },
+   {
+    "en": "29th"
+   },
+   {
+    "en": "30th"
+   },
+   {
+    "en": "27th"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Rank from bottom = total - rank from top + 1 = 40 - 12 + 1 = 29.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_arrange",
+  "subtopic": "Ranking & Ordering",
+  "difficulty": "easy",
+  "question_en": "In a row of girls, Neha is 7th from the left end and 12th from the right end. How many girls are there in the row?",
+  "options": [
+   {
+    "en": "19"
+   },
+   {
+    "en": "20"
+   },
+   {
+    "en": "17"
+   },
+   {
+    "en": "18"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Total = 7 + 12 - 1 = 18 (Neha is counted in both ranks).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_arrange",
+  "subtopic": "Ranking & Ordering",
+  "difficulty": "medium",
+  "question_en": "In a row of 40 students, Aman is 14th from the left and Bharat is 18th from the right. How many students are between them?",
+  "options": [
+   {
+    "en": "8"
+   },
+   {
+    "en": "7"
+   },
+   {
+    "en": "9"
+   },
+   {
+    "en": "10"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Bharat's position from the left = 40 - 18 + 1 = 23. Students between = 23 - 14 - 1 = 8.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_arrange",
+  "subtopic": "Ranking & Ordering",
+  "difficulty": "medium",
+  "question_en": "A is taller than B, B is taller than C, D is taller than A, and E is shorter than C. Who is the second tallest?",
+  "options": [
+   {
+    "en": "B"
+   },
+   {
+    "en": "D"
+   },
+   {
+    "en": "A"
+   },
+   {
+    "en": "C"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The order is D > A > B > C > E. D is the tallest, so A is second tallest.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_arrange",
+  "subtopic": "Ranking & Ordering",
+  "difficulty": "hard",
+  "question_en": "Raj is 9th from the top in a class. Amit is 14th from the bottom. If they exchange positions, Raj becomes 19th from the top. How many students are in the class?",
+  "options": [
+   {
+    "en": "33"
+   },
+   {
+    "en": "32"
+   },
+   {
+    "en": "31"
+   },
+   {
+    "en": "34"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Raj now stands where Amit stood, so Amit's original position is 19th from the top and 14th from the bottom. Total = 19 + 14 - 1 = 32.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_arrange",
+  "subtopic": "Ranking & Ordering",
+  "difficulty": "medium",
+  "question_en": "P is heavier than Q but lighter than R. S is heavier than R. T is lighter than Q. Who is the second heaviest?",
+  "options": [
+   {
+    "en": "R"
+   },
+   {
+    "en": "P"
+   },
+   {
+    "en": "S"
+   },
+   {
+    "en": "Q"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Order from heaviest: S > R > P > Q > T. So R is second heaviest.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_arrange",
+  "subtopic": "Ranking & Ordering",
+  "difficulty": "hard",
+  "question_en": "Kiran ranks 15th from the top and 25th from the bottom in a class. Divya ranks 7 places above Kiran. What is Divya's rank from the bottom?",
+  "options": [
+   {
+    "en": "31st"
+   },
+   {
+    "en": "33rd"
+   },
+   {
+    "en": "32nd"
+   },
+   {
+    "en": "30th"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Total = 15 + 25 - 1 = 39. Divya's rank from top = 15 - 7 = 8. From the bottom = 39 - 8 + 1 = 32.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_arrange",
+  "subtopic": "Ranking & Ordering",
+  "difficulty": "medium",
+  "question_en": "In a row of children facing north, Asha is 18th from the left end and Bina is 21st from the right end. When they interchange their places, Asha becomes 26th from the left end. How many children are there in the row?",
+  "options": [
+   {
+    "en": "45"
+   },
+   {
+    "en": "47"
+   },
+   {
+    "en": "44"
+   },
+   {
+    "en": "46"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "After the exchange Asha stands at Bina's old place, so that place is 26th from the left and 21st from the right. Total = 26 + 21 − 1 = 46.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_arrange",
+  "subtopic": "Ranking & Ordering",
+  "difficulty": "easy",
+  "question_en": "In a class of 42 students, Tarun is 17th from the top and is 5 places below his friend Sameer. What is Sameer's rank from the bottom?",
+  "options": [
+   {
+    "en": "30th"
+   },
+   {
+    "en": "31st"
+   },
+   {
+    "en": "26th"
+   },
+   {
+    "en": "32nd"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Sameer is 5 places above Tarun: 17 − 5 = 12th from the top. From the bottom = 42 − 12 + 1 = 31st. 26th is Tarun's rank from the bottom.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_arrange",
+  "subtopic": "Ranking & Ordering",
+  "difficulty": "medium",
+  "question_en": "Six friends J, K, L, M, N and O are of different ages. L is older than only O. J is older than K but younger than M. N is younger than K but older than L. Who is the third oldest?",
+  "options": [
+   {
+    "en": "J"
+   },
+   {
+    "en": "N"
+   },
+   {
+    "en": "K"
+   },
+   {
+    "en": "M"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "L is older than only O, so O is youngest and L second youngest. N > L, K > N, J > K and M > J give M > J > K > N > L > O. The third oldest is K.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_arrange",
+  "subtopic": "Ranking & Ordering",
+  "difficulty": "hard",
+  "question_en": "Seven people A, B, C, D, E, F and G sit in a row facing north. C sits at the extreme left end and D at the extreme right end. E sits third to the right of C. B sits between E and G and is an immediate neighbour of both. G sits to the left of E. A sits to the immediate right of E. Who sits between A and D?",
+  "options": [
+   {
+    "en": "B"
+   },
+   {
+    "en": "G"
+   },
+   {
+    "en": "E"
+   },
+   {
+    "en": "F"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "C = 1 and D = 7. E is third to the right of C, so E = 4. G is left of E and B sits between them, so B = 3 and G = 2. A = 5 (immediate right of E), which leaves F = 6, the seat between A and D.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "rea_arrange",
+  "subtopic": "Clock & Calendar",
+  "difficulty": "medium",
+  "question_en": "What is the angle between the hands of a clock at 3:30?",
+  "options": [
+   {
+    "en": "90°"
+   },
+   {
+    "en": "60°"
+   },
+   {
+    "en": "75°"
+   },
+   {
+    "en": "105°"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Angle = |30H − 5.5M| = |30 × 3 − 5.5 × 30| = |90 − 165| = 75°.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_arrange",
+  "subtopic": "Clock & Calendar",
+  "difficulty": "hard",
+  "question_en": "What is the angle between the hour hand and the minute hand at 4:20?",
+  "options": [
+   {
+    "en": "20°"
+   },
+   {
+    "en": "10°"
+   },
+   {
+    "en": "0°"
+   },
+   {
+    "en": "30°"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Angle = |30H − 5.5M| = |120 − 5.5 × 20| = |120 − 110| = 10°.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_arrange",
+  "subtopic": "Clock & Calendar",
+  "difficulty": "hard",
+  "question_en": "At what time between 4 and 5 o'clock will the two hands of a clock coincide?",
+  "options": [
+   {
+    "en": "20 minutes past 4"
+   },
+   {
+    "en": "21 9/11 minutes past 4"
+   },
+   {
+    "en": "22 minutes past 4"
+   },
+   {
+    "en": "21 1/11 minutes past 4"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Hands coincide when M = (60 × H) / 11 minutes past H. For H = 4: 240/11 = 21 9/11 minutes past 4.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_arrange",
+  "subtopic": "Clock & Calendar",
+  "difficulty": "easy",
+  "question_en": "A watch gains 2 minutes every hour. It was set right at 6:00 a.m. on Monday. What time will it show at the true time of 6:00 p.m. on the same day?",
+  "options": [
+   {
+    "en": "6:24 p.m."
+   },
+   {
+    "en": "6:12 p.m."
+   },
+   {
+    "en": "6:20 p.m."
+   },
+   {
+    "en": "6:48 p.m."
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "From 6 a.m. to 6 p.m. is 12 hours. Gain = 12 × 2 = 24 minutes, so the watch shows 6:24 p.m.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_arrange",
+  "subtopic": "Clock & Calendar",
+  "difficulty": "medium",
+  "question_en": "On which day of the week did India become independent on 15 August 1947?",
+  "options": [
+   {
+    "en": "Thursday"
+   },
+   {
+    "en": "Saturday"
+   },
+   {
+    "en": "Sunday"
+   },
+   {
+    "en": "Friday"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Odd-day method: 1600 years = 0, next 300 years = 1, next 46 years (11 leap years) = 57 days = 1, so 1946 years = 2 odd days. Days from 1 Jan to 15 Aug 1947 = 227 = 3 odd days. Total 5 odd days, and 5 corresponds to Friday (0 = Sunday).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_arrange",
+  "subtopic": "Clock & Calendar",
+  "difficulty": "medium",
+  "question_en": "If 26 January 2026 was a Monday, what day of the week was 15 August 2026?",
+  "options": [
+   {
+    "en": "Friday"
+   },
+   {
+    "en": "Sunday"
+   },
+   {
+    "en": "Saturday"
+   },
+   {
+    "en": "Thursday"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "From 26 January to 15 August 2026 (a non-leap year): remaining days of January 5, February 28, March 31, April 30, May 31, June 30, July 31, plus 15 in August = 201 days. 201 = 28 × 7 + 5, so 5 days after Monday = Saturday.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_arrange",
+  "subtopic": "Clock & Calendar",
+  "difficulty": "medium",
+  "question_en": "How many odd days are there in 200 years?",
+  "options": [
+   {
+    "en": "5"
+   },
+   {
+    "en": "0"
+   },
+   {
+    "en": "1"
+   },
+   {
+    "en": "3"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "100 years have 5 odd days, so 200 years have 10 odd days = 10 − 7 = 3 odd days.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_arrange",
+  "subtopic": "Series completion",
+  "difficulty": "medium",
+  "question_en": "An arrow initially points North. In step 1 it turns 45° clockwise, in step 2 it turns 90° clockwise, in step 3 it turns 135° clockwise, and in step 4 it turns 180° clockwise. In which direction does it point after step 4?",
+  "options": [
+   {
+    "en": "South"
+   },
+   {
+    "en": "West"
+   },
+   {
+    "en": "East"
+   },
+   {
+    "en": "North-East"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Total rotation = 45 + 90 + 135 + 180 = 450° clockwise. 450 − 360 = 90° clockwise from North = East.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_arrange",
+  "subtopic": "Series completion",
+  "difficulty": "medium",
+  "question_en": "A pointer initially points East. In each step it turns 90° anticlockwise. In which direction will it point after 5 steps?",
+  "options": [
+   {
+    "en": "North"
+   },
+   {
+    "en": "South"
+   },
+   {
+    "en": "West"
+   },
+   {
+    "en": "East"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "5 × 90° = 450° anticlockwise. 450 − 360 = 90° anticlockwise from East, which is North.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_arrange",
+  "subtopic": "Mirror & water images",
+  "difficulty": "medium",
+  "question_en": "A wall clock shows 4:20. What time will its image in a plane mirror (placed vertically beside it) appear to show?",
+  "options": [
+   {
+    "en": "8:40"
+   },
+   {
+    "en": "7:40"
+   },
+   {
+    "en": "7:20"
+   },
+   {
+    "en": "8:20"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Mirror time = 11:60 − actual time = 11:60 − 4:20 = 7:40.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_arrange",
+  "subtopic": "Mirror & water images",
+  "difficulty": "medium",
+  "question_en": "The mirror image of a clock shows the time as 9:15. What is the actual time?",
+  "options": [
+   {
+    "en": "3:45"
+   },
+   {
+    "en": "2:15"
+   },
+   {
+    "en": "2:45"
+   },
+   {
+    "en": "3:15"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Actual time = 11:60 − mirror time = 11:60 − 9:15 = 2:45. The relation works both ways.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "rea_arrange",
+  "subtopic": "Mirror & water images",
+  "difficulty": "easy",
+  "question_en": "For which of the following times does the mirror image of a clock show the same time as the actual time?",
+  "options": [
+   {
+    "en": "3:00"
+   },
+   {
+    "en": "6:00"
+   },
+   {
+    "en": "9:30"
+   },
+   {
+    "en": "4:20"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "11:60 − 6:00 = 5:60 = 6:00, so 6:00 looks unchanged (both hands lie on the vertical axis). 3:00 appears as 9:00, 9:30 as 2:30 and 4:20 as 7:40.",
+  "pyq_concept": false
+ }
+]

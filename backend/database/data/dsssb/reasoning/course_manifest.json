@@ -1,0 +1,78 @@
+{
+ "subject": "General Intelligence & Reasoning",
+ "subject_hi": "सामान्य बुद्धि एवं तर्कशक्ति",
+ "chapters": [
+  {
+   "key": "rea_analogy",
+   "title": "1. Analogy & Classification",
+   "items": [
+    {
+     "title": "Analogy & Classification — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\reasoning\\rea_analogy.pdf"
+    }
+   ]
+  },
+  {
+   "key": "rea_series",
+   "title": "2. Series, Coding–Decoding & Alphabet Tests",
+   "items": [
+    {
+     "title": "Series, Coding–Decoding & Alphabet Tests — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\reasoning\\rea_series.pdf"
+    }
+   ]
+  },
+  {
+   "key": "rea_arrange",
+   "title": "3. Blood Relations, Direction, Ranking, Clock & Calendar",
+   "items": [
+    {
+     "title": "Blood Relations, Direction, Ranking, Clock & Calendar — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\reasoning\\rea_arrange.pdf"
+    }
+   ]
+  },
+  {
+   "key": "rea_logic",
+   "title": "4. Syllogism, Statements, Venn Diagrams & Mathematical Operations",
+   "items": [
+    {
+     "title": "Syllogism, Statements, Venn Diagrams & Mathematical Operations — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\reasoning\\rea_logic.pdf"
+    }
+   ]
+  },
+  {
+   "key": "rea_nonverbal",
+   "title": "5. Non-verbal Reasoning (Figures, Dice, Cubes, Paper Folding)",
+   "items": [
+    {
+     "title": "Non-verbal Reasoning (Figures, Dice, Cubes, Paper Folding) — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\reasoning\\rea_nonverbal.pdf"
+    }
+   ]
+  },
+  {
+   "key": "reasoning_practice",
+   "title": "6. Complete notes, previous-year questions & 200 most expected",
+   "items": [
+    {
+     "title": "General Intelligence & Reasoning — fast revision sheet (revise everything quickly)",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\reasoning\\reasoning_fast_revision.pdf"
+    },
+    {
+     "title": "General Intelligence & Reasoning — complete notes (all chapters in one PDF)",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\reasoning\\reasoning_complete_notes.pdf"
+    },
+    {
+     "title": "General Intelligence & Reasoning — previous-year questions 2023–24 with solutions",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\reasoning\\reasoning_pyq_2023_24.pdf"
+    },
+    {
+     "title": "General Intelligence & Reasoning — 200 most expected questions with answers",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\reasoning\\reasoning_200_most_expected.pdf"
+    }
+   ]
+  }
+ ]
+}

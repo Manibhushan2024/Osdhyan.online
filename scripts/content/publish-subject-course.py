@@ -106,6 +106,16 @@ def main():
             api.call('POST', '/admin/materials/upload', {'topic_id': topic['id'], 'title': item['title'], 'is_published': 1},
                      files={'file': item['file']})
             print('uploaded', item['title'])
+    # A subject that already existed (created by the question importer) may carry
+    # chapters that only group questions and hold no notes. Hide those so the
+    # course does not show empty chapters; the questions keep their chapter.
+    hidden = 0
+    for c in hierarchy():
+        if not c.get('topics') and c.get('is_published', True):
+            api.call('PUT', f"/admin/chapters/{c['id']}", {'is_published': 0})
+            hidden += 1
+    if hidden:
+        print(f'hid {hidden} empty chapter(s) that only group questions')
     print(f"\nDone: subject #{subject['id']} \"{manifest['subject']}\" with {len(manifest['chapters'])} chapters.")
 
 
