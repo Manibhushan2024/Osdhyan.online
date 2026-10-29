@@ -82,25 +82,15 @@ class TestSeriesController extends Controller
 
         $requiresPayment = $series->requiresPayment();
 
-        if (Auth::check()) {
-            $testIds = $series->tests->pluck('id');
-            $attempts = \App\Models\TestAttempt::where('user_id', Auth::id())
-                ->whereIn('test_id', $testIds)
-                ->orderBy('id', 'desc')
-                ->get()
-                ->groupBy('test_id');
-
-            $series->tests->each(function($test) use ($attempts) {
-                 $latest = $attempts->get($test->id)?->first();
-                 $test->attempt_status = $latest ? $latest->status : 'none';
-                 $test->attempt_id = $latest ? $latest->id : null;
-            });
-        } else {
-            $series->tests->each(function ($test) {
-                $test->attempt_status = 'none';
-                $test->attempt_id = null;
-            });
-        }
+        // Every test carries its latest attempt, its last COMPLETED attempt
+        // (so a result stays reachable while a re-attempt is in progress)
+        // and how many times it was completed.
+        $history = Auth::check()
+            ? \App\Services\AttemptHistory::forTests(Auth::id(), $series->tests->pluck('id'))
+            : collect();
+        $series->tests->each(function ($test) use ($history) {
+            \App\Services\AttemptHistory::apply($test, $history->get($test->id));
+        });
 
         // Lock flags per test (same rule startAttempt enforces).
         $isAdmin = (bool) Auth::user()?->isAdminUser();

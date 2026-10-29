@@ -113,6 +113,7 @@ Route::middleware(['auth:sanctum', 'throttle:api'])->group(function () {
     Route::get('/tests/{test}/attempts', [TestAttemptController::class, 'index']);
     Route::post('/tests/{test}/attempts', [TestAttemptController::class, 'startAttempt']);
     Route::get('/tests/{test}/latest-attempt', [TestAttemptController::class, 'getLatestAttempt']);
+    Route::get('/attempts', [TestAttemptController::class, 'mine']);
     Route::get('/attempts/{attempt}', [TestAttemptController::class, 'show']);
 
     // Answer sync is high-frequency — give it a higher limit

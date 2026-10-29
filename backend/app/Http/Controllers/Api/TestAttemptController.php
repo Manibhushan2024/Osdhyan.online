@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Jobs\SendTestResultEmailJob;
 use App\Models\Test;
 use App\Models\TestAttempt;
+use App\Services\AttemptHistory;
 use App\Services\AttemptScorer;
 use App\Services\TestAnswerKey;
 use App\Services\TestPayload;
@@ -227,6 +228,11 @@ class TestAttemptController extends Controller
         $attempt->load('responses');
         $data = $this->presentAttempt($attempt, $test);
 
+        // Which attempt this is, and the others at the same test, so any
+        // attempt can be opened and compared — not only the latest.
+        $data['attempts'] = AttemptHistory::siblings((int) $attempt->user_id, (int) $attempt->test_id);
+        $data['attempt_number'] = collect($data['attempts'])->firstWhere('id', (int) $attempt->id)['number'] ?? null;
+
         // While ongoing, never ship correct answers or explanations.
         $data['test'] = $attempt->status === 'completed'
             ? TestPayload::withAnswers($test)
@@ -272,6 +278,72 @@ class TestAttemptController extends Controller
         $attempt->load('test');
 
         return $this->json($this->presentAttempt($attempt, $attempt->test));
+    }
+
+    // ─── My Attempts (all tests) ──────────────────────────────────────────────
+
+    /**
+     * GET /attempts — every attempt by the signed-in student, newest first,
+     * numbered per test (attempt 1 = the first time that test was taken).
+     * Filters: test_id, status (completed|in_progress). Paginated (per_page ≤ 100).
+     */
+    public function mine(Request $request)
+    {
+        $request->validate([
+            'test_id'  => 'nullable|integer',
+            'status'   => 'nullable|in:completed,in_progress',
+            'per_page' => 'nullable|integer|min:1|max:100',
+        ]);
+        $userId = (int) Auth::id();
+
+        $query = TestAttempt::query()
+            ->where('test_attempts.user_id', $userId)
+            ->join('tests', 'tests.id', '=', 'test_attempts.test_id')
+            ->select([
+                'test_attempts.id', 'test_attempts.test_id', 'test_attempts.status',
+                'test_attempts.total_score', 'test_attempts.time_taken_sec',
+                'test_attempts.started_at', 'test_attempts.completed_at', 'test_attempts.metadata',
+                'tests.name_en as test_name_en', 'tests.name_hi as test_name_hi',
+                'tests.total_marks as test_total_marks', 'tests.duration_sec as test_duration_sec',
+            ])
+            // Per-test attempt number (1 = first attempt at that test).
+            ->selectRaw('ROW_NUMBER() OVER (PARTITION BY test_attempts.test_id ORDER BY test_attempts.id) AS attempt_number')
+            ->selectRaw('COUNT(*) OVER (PARTITION BY test_attempts.test_id) AS attempts_at_test');
+
+        if ($request->filled('test_id')) {
+            $query->where('test_attempts.test_id', (int) $request->input('test_id'));
+        }
+
+        // Filter on the numbered rows so numbers stay correct.
+        $outer = DB::query()->fromSub($query, 'a')->orderByDesc('a.id');
+        if ($request->input('status') === 'completed') {
+            $outer->where('a.status', 'completed');
+        } elseif ($request->input('status') === 'in_progress') {
+            $outer->whereIn('a.status', ['ongoing', 'in_progress']);
+        }
+
+        $page = $outer->paginate((int) $request->input('per_page', 20));
+        $page->getCollection()->transform(function ($row) {
+            $meta = is_string($row->metadata) ? json_decode($row->metadata, true) : (array) $row->metadata;
+            return [
+                'id'               => (int) $row->id,
+                'test_id'          => (int) $row->test_id,
+                'test_name_en'     => $row->test_name_en,
+                'test_name_hi'     => $row->test_name_hi,
+                'status'           => $row->status === 'ongoing' ? 'in_progress' : $row->status,
+                'attempt_number'   => (int) $row->attempt_number,
+                'attempts_at_test' => (int) $row->attempts_at_test,
+                'total_score'      => $row->total_score !== null ? (float) $row->total_score : null,
+                'total_marks'      => $row->test_total_marks !== null ? (float) $row->test_total_marks : null,
+                'correct'          => $meta['correct'] ?? $meta['correct_count'] ?? null,
+                'incorrect'        => $meta['incorrect'] ?? $meta['incorrect_count'] ?? null,
+                'time_taken_sec'   => $row->time_taken_sec !== null ? (int) $row->time_taken_sec : null,
+                'started_at'       => $row->started_at ? \Illuminate\Support\Carbon::parse($row->started_at)->toISOString() : null,
+                'completed_at'     => $row->completed_at ? \Illuminate\Support\Carbon::parse($row->completed_at)->toISOString() : null,
+            ];
+        });
+
+        return $this->json($page);
     }
 
     // ─── List Attempts ────────────────────────────────────────────────────────

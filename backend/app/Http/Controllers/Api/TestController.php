@@ -44,15 +44,9 @@ class TestController extends Controller
             return $query->latest('id')->get();
         });
 
-        $latestAttempts = collect();
-        if (Auth::check()) {
-            $latestAttempts = TestAttempt::where('user_id', Auth::id())
-                ->whereIn('test_id', $tests->pluck('id'))
-                ->latest('id')
-                ->get()
-                ->groupBy('test_id')
-                ->map(fn ($items) => $items->first());
-        }
+        $latestAttempts = Auth::check()
+            ? \App\Services\AttemptHistory::forTests(Auth::id(), $tests->pluck('id'))
+            : collect();
 
         // Paid-series flags (two queries for the whole list, never cached:
         // is_locked depends on the current user's purchases).
@@ -71,9 +65,7 @@ class TestController extends Controller
             $test->locked_series_id = $flags['test_series_id'] ?? null;
 
             if ($latestAttempts->has($test->id)) {
-                $latest = $latestAttempts->get($test->id);
-                $test->attempt_id = $latest->id;
-                $test->attempt_status = $latest->status === 'ongoing' ? 'in_progress' : $latest->status;
+                \App\Services\AttemptHistory::apply($test, $latestAttempts->get($test->id));
             }
         });
 
