@@ -1,0 +1,2902 @@
+[
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "पर्यायवाची",
+  "difficulty": "easy",
+  "question_en": "निम्नलिखित में से कौन-सा शब्द 'कमल' का पर्यायवाची नहीं है?",
+  "question_hi": "निम्नलिखित में से कौन-सा शब्द 'कमल' का पर्यायवाची नहीं है?",
+  "options": [
+   {
+    "en": "पंकज",
+    "hi": "पंकज"
+   },
+   {
+    "en": "जलज",
+    "hi": "जलज"
+   },
+   {
+    "en": "सरोज",
+    "hi": "सरोज"
+   },
+   {
+    "en": "नीरद",
+    "hi": "नीरद"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Neerad means cloud, not lotus; the other three are synonyms of lotus.",
+  "explanation_hi": "पंकज, जलज और सरोज तीनों 'कमल' के पर्यायवाची हैं। 'नीरद' का अर्थ बादल (नीर देने वाला) है, कमल नहीं।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "पर्यायवाची",
+  "difficulty": "easy",
+  "question_en": "'सूर्य' का पर्यायवाची शब्द कौन-सा है?",
+  "question_hi": "'सूर्य' का पर्यायवाची शब्द कौन-सा है?",
+  "options": [
+   {
+    "en": "दिनकर",
+    "hi": "दिनकर"
+   },
+   {
+    "en": "रजनीश",
+    "hi": "रजनीश"
+   },
+   {
+    "en": "सुधाकर",
+    "hi": "सुधाकर"
+   },
+   {
+    "en": "निशाकर",
+    "hi": "निशाकर"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Dinkar means sun; the other options are names of the moon.",
+  "explanation_hi": "दिनकर (दिन को बनाने वाला) सूर्य का पर्यायवाची है। निशाकर, रजनीश और सुधाकर तीनों चंद्रमा के पर्यायवाची हैं।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "पर्यायवाची",
+  "difficulty": "medium",
+  "question_en": "'पवन' का पर्यायवाची शब्द कौन-सा है?",
+  "question_hi": "'पवन' का पर्यायवाची शब्द कौन-सा है?",
+  "options": [
+   {
+    "en": "नलिन",
+    "hi": "नलिन"
+   },
+   {
+    "en": "अनल",
+    "hi": "अनल"
+   },
+   {
+    "en": "अनिल",
+    "hi": "अनिल"
+   },
+   {
+    "en": "सलिल",
+    "hi": "सलिल"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Anil means wind; anal is fire, salil is water, nalin is lotus.",
+  "explanation_hi": "अनिल का अर्थ वायु/पवन है। 'अनल' अग्नि, 'सलिल' जल और 'नलिन' कमल का पर्यायवाची है। अनल–अनिल में भ्रम न करें।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "पर्यायवाची",
+  "difficulty": "hard",
+  "question_en": "निम्नलिखित में से कौन-सा शब्द 'समुद्र' का पर्यायवाची नहीं है?",
+  "question_hi": "निम्नलिखित में से कौन-सा शब्द 'समुद्र' का पर्यायवाची नहीं है?",
+  "options": [
+   {
+    "en": "पयोद",
+    "hi": "पयोद"
+   },
+   {
+    "en": "रत्नाकर",
+    "hi": "रत्नाकर"
+   },
+   {
+    "en": "जलधि",
+    "hi": "जलधि"
+   },
+   {
+    "en": "पयोधि",
+    "hi": "पयोधि"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Payod means cloud (water-giver); the others mean ocean.",
+  "explanation_hi": "रत्नाकर, जलधि और पयोधि (पयः = जल, धि = भंडार) समुद्र के पर्यायवाची हैं। 'पयोद' का अर्थ जल देने वाला अर्थात् बादल है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "पर्यायवाची",
+  "difficulty": "easy",
+  "question_en": "'पृथ्वी' का पर्यायवाची शब्द चुनिए।",
+  "question_hi": "'पृथ्वी' का पर्यायवाची शब्द चुनिए।",
+  "options": [
+   {
+    "en": "वारिद",
+    "hi": "वारिद"
+   },
+   {
+    "en": "व्योम",
+    "hi": "व्योम"
+   },
+   {
+    "en": "विपिन",
+    "hi": "विपिन"
+   },
+   {
+    "en": "वसुंधरा",
+    "hi": "वसुंधरा"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Vasundhara means earth; varid is cloud, vyom is sky, vipin is forest.",
+  "explanation_hi": "वसुंधरा (वसु = धन, धरा = धारण करने वाली) पृथ्वी का पर्यायवाची है। वारिद = बादल, व्योम = आकाश, विपिन = वन।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "पर्यायवाची",
+  "difficulty": "easy",
+  "question_en": "निम्नलिखित में से कौन-सा शब्द 'घर' का पर्यायवाची नहीं है?",
+  "question_hi": "निम्नलिखित में से कौन-सा शब्द 'घर' का पर्यायवाची नहीं है?",
+  "options": [
+   {
+    "en": "सदन",
+    "hi": "सदन"
+   },
+   {
+    "en": "गृह",
+    "hi": "गृह"
+   },
+   {
+    "en": "कानन",
+    "hi": "कानन"
+   },
+   {
+    "en": "आलय",
+    "hi": "आलय"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Kanan means forest; the rest mean house.",
+  "explanation_hi": "आलय, सदन और गृह 'घर' के पर्यायवाची हैं। 'कानन' का अर्थ वन/जंगल है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "पर्यायवाची",
+  "difficulty": "medium",
+  "question_en": "'अमृत' का पर्यायवाची शब्द कौन-सा है?",
+  "question_hi": "'अमृत' का पर्यायवाची शब्द कौन-सा है?",
+  "options": [
+   {
+    "en": "गरल",
+    "hi": "गरल"
+   },
+   {
+    "en": "नीर",
+    "hi": "नीर"
+   },
+   {
+    "en": "हलाहल",
+    "hi": "हलाहल"
+   },
+   {
+    "en": "सुधा",
+    "hi": "सुधा"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Sudha means nectar; halahal and garal mean poison, neer means water.",
+  "explanation_hi": "सुधा और पीयूष अमृत के पर्यायवाची हैं। हलाहल और गरल 'विष' के पर्यायवाची हैं, नीर का अर्थ जल है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "पर्यायवाची",
+  "difficulty": "medium",
+  "question_en": "निम्नलिखित में से कौन-सा शब्द 'हाथी' का पर्यायवाची नहीं है?",
+  "question_hi": "निम्नलिखित में से कौन-सा शब्द 'हाथी' का पर्यायवाची नहीं है?",
+  "options": [
+   {
+    "en": "कुंजर",
+    "hi": "कुंजर"
+   },
+   {
+    "en": "मतंग",
+    "hi": "मतंग"
+   },
+   {
+    "en": "केसरी",
+    "hi": "केसरी"
+   },
+   {
+    "en": "गज",
+    "hi": "गज"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Kesari means lion; gaj, kunjar and matang mean elephant.",
+  "explanation_hi": "गज, कुंजर, मतंग, हस्ती और करी हाथी के पर्यायवाची हैं। 'केसरी' सिंह का पर्यायवाची है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "पर्यायवाची",
+  "difficulty": "hard",
+  "question_en": "निम्नलिखित में से कौन-सा शब्द 'गंगा' का पर्यायवाची नहीं है?",
+  "question_hi": "निम्नलिखित में से कौन-सा शब्द 'गंगा' का पर्यायवाची नहीं है?",
+  "options": [
+   {
+    "en": "सुरसरि",
+    "hi": "सुरसरि"
+   },
+   {
+    "en": "भागीरथी",
+    "hi": "भागीरथी"
+   },
+   {
+    "en": "जाह्नवी",
+    "hi": "जाह्नवी"
+   },
+   {
+    "en": "कालिंदी",
+    "hi": "कालिंदी"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Kalindi is a name of the Yamuna, not the Ganga.",
+  "explanation_hi": "भागीरथी, जाह्नवी, सुरसरि, देवनदी और मंदाकिनी गंगा के पर्यायवाची हैं। 'कालिंदी' यमुना का पर्यायवाची है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "पर्यायवाची",
+  "difficulty": "medium",
+  "question_en": "निम्नलिखित में से कौन-सा शब्द 'रात' का पर्यायवाची नहीं है?",
+  "question_hi": "निम्नलिखित में से कौन-सा शब्द 'रात' का पर्यायवाची नहीं है?",
+  "options": [
+   {
+    "en": "यामिनी",
+    "hi": "यामिनी"
+   },
+   {
+    "en": "विभावरी",
+    "hi": "विभावरी"
+   },
+   {
+    "en": "वासर",
+    "hi": "वासर"
+   },
+   {
+    "en": "रजनी",
+    "hi": "रजनी"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Vasar means day; the others mean night.",
+  "explanation_hi": "रजनी, यामिनी, विभावरी, निशा और रात्रि 'रात' के पर्यायवाची हैं। 'वासर' का अर्थ दिन है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "पर्यायवाची",
+  "difficulty": "easy",
+  "question_en": "निम्नलिखित में से कौन-सा शब्द 'आँख' का पर्यायवाची नहीं है?",
+  "question_hi": "निम्नलिखित में से कौन-सा शब्द 'आँख' का पर्यायवाची नहीं है?",
+  "options": [
+   {
+    "en": "नेत्र",
+    "hi": "नेत्र"
+   },
+   {
+    "en": "लोचन",
+    "hi": "लोचन"
+   },
+   {
+    "en": "कपोल",
+    "hi": "कपोल"
+   },
+   {
+    "en": "दृग",
+    "hi": "दृग"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Kapol means cheek; the others mean eye.",
+  "explanation_hi": "नेत्र, लोचन, दृग, नयन और चक्षु 'आँख' के पर्यायवाची हैं। 'कपोल' का अर्थ गाल है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "पर्यायवाची",
+  "difficulty": "medium",
+  "question_en": "निम्नलिखित में से कौन-सा शब्द 'पक्षी' का पर्यायवाची नहीं है?",
+  "question_hi": "निम्नलिखित में से कौन-सा शब्द 'पक्षी' का पर्यायवाची नहीं है?",
+  "options": [
+   {
+    "en": "खग",
+    "hi": "खग"
+   },
+   {
+    "en": "विहग",
+    "hi": "विहग"
+   },
+   {
+    "en": "अहि",
+    "hi": "अहि"
+   },
+   {
+    "en": "पखेरू",
+    "hi": "पखेरू"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Ahi means snake; khag, vihag and pakheru mean bird.",
+  "explanation_hi": "खग, विहग, पखेरू, नभचर और द्विज 'पक्षी' के पर्यायवाची हैं। 'अहि' का अर्थ सर्प है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "विलोम",
+  "difficulty": "medium",
+  "question_en": "'उत्कर्ष' का विलोम शब्द क्या है?",
+  "question_hi": "'उत्कर्ष' का विलोम शब्द क्या है?",
+  "options": [
+   {
+    "en": "निष्कर्ष",
+    "hi": "निष्कर्ष"
+   },
+   {
+    "en": "आकर्ष",
+    "hi": "आकर्ष"
+   },
+   {
+    "en": "विकर्ष",
+    "hi": "विकर्ष"
+   },
+   {
+    "en": "अपकर्ष",
+    "hi": "अपकर्ष"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Utkarsh (rise) is opposed by apkarsh (decline).",
+  "explanation_hi": "उत्कर्ष (उन्नति) का विलोम अपकर्ष (अवनति) है। निष्कर्ष का अर्थ परिणाम है, वह विलोम नहीं।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "विलोम",
+  "difficulty": "medium",
+  "question_en": "'सापेक्ष' का विलोम शब्द चुनिए।",
+  "question_hi": "'सापेक्ष' का विलोम शब्द चुनिए।",
+  "options": [
+   {
+    "en": "निरपेक्ष",
+    "hi": "निरपेक्ष"
+   },
+   {
+    "en": "अपेक्ष",
+    "hi": "अपेक्ष"
+   },
+   {
+    "en": "परोक्ष",
+    "hi": "परोक्ष"
+   },
+   {
+    "en": "उपेक्ष",
+    "hi": "उपेक्ष"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Sapeksh (relative) vs nirpeksh (absolute).",
+  "explanation_hi": "सापेक्ष (किसी पर निर्भर) का विलोम निरपेक्ष (निर्भर न रहने वाला) है। परोक्ष का विलोम प्रत्यक्ष है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "विलोम",
+  "difficulty": "easy",
+  "question_en": "'कृतज्ञ' का विलोम शब्द क्या है?",
+  "question_hi": "'कृतज्ञ' का विलोम शब्द क्या है?",
+  "options": [
+   {
+    "en": "कृतार्थ",
+    "hi": "कृतार्थ"
+   },
+   {
+    "en": "विज्ञ",
+    "hi": "विज्ञ"
+   },
+   {
+    "en": "अज्ञ",
+    "hi": "अज्ञ"
+   },
+   {
+    "en": "कृतघ्न",
+    "hi": "कृतघ्न"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Kritagya (grateful) vs kritaghna (ungrateful).",
+  "explanation_hi": "कृतज्ञ (उपकार मानने वाला) का विलोम कृतघ्न (उपकार न मानने वाला) है। 'अकृतज्ञ' प्रचलित मानक विलोम नहीं है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "विलोम",
+  "difficulty": "easy",
+  "question_en": "'आस्तिक' का विलोम शब्द क्या है?",
+  "question_hi": "'आस्तिक' का विलोम शब्द क्या है?",
+  "options": [
+   {
+    "en": "अनास्तिक",
+    "hi": "अनास्तिक"
+   },
+   {
+    "en": "नास्तिक",
+    "hi": "नास्तिक"
+   },
+   {
+    "en": "निरास्तिक",
+    "hi": "निरास्तिक"
+   },
+   {
+    "en": "अस्तिक",
+    "hi": "अस्तिक"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Aastik (theist) vs nastik (atheist).",
+  "explanation_hi": "आस्तिक (ईश्वर को मानने वाला) का विलोम नास्तिक (ईश्वर को न मानने वाला) है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "विलोम",
+  "difficulty": "medium",
+  "question_en": "'अनुराग' का विलोम शब्द क्या है?",
+  "question_hi": "'अनुराग' का विलोम शब्द क्या है?",
+  "options": [
+   {
+    "en": "प्रेम",
+    "hi": "प्रेम"
+   },
+   {
+    "en": "विराग",
+    "hi": "विराग"
+   },
+   {
+    "en": "राग",
+    "hi": "राग"
+   },
+   {
+    "en": "अनुरक्ति",
+    "hi": "अनुरक्ति"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Anurag (attachment) vs virag (detachment).",
+  "explanation_hi": "अनुराग (प्रेम/आसक्ति) का विलोम विराग (वैराग्य/अनासक्ति) है। राग और अनुरक्ति अनुराग के पर्यायवाची हैं।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "विलोम",
+  "difficulty": "medium",
+  "question_en": "'सृष्टि' का विलोम शब्द क्या है?",
+  "question_hi": "'सृष्टि' का विलोम शब्द क्या है?",
+  "options": [
+   {
+    "en": "मृत्यु",
+    "hi": "मृत्यु"
+   },
+   {
+    "en": "विनाश",
+    "hi": "विनाश"
+   },
+   {
+    "en": "प्रलय",
+    "hi": "प्रलय"
+   },
+   {
+    "en": "संहार",
+    "hi": "संहार"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Srishti (creation) is paired with pralay (dissolution).",
+  "explanation_hi": "सृष्टि (रचना) का मानक विलोम प्रलय है। विनाश और संहार अर्थ में निकट होते हुए भी परीक्षाओं में 'सृष्टि–प्रलय' युग्म ही मान्य है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "विलोम",
+  "difficulty": "easy",
+  "question_en": "'उन्नति' का विलोम शब्द चुनिए।",
+  "question_hi": "'उन्नति' का विलोम शब्द चुनिए।",
+  "options": [
+   {
+    "en": "विनति",
+    "hi": "विनति"
+   },
+   {
+    "en": "अवनति",
+    "hi": "अवनति"
+   },
+   {
+    "en": "प्रगति",
+    "hi": "प्रगति"
+   },
+   {
+    "en": "दुर्गति",
+    "hi": "दुर्गति"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Unnati (progress) vs avnati (decline).",
+  "explanation_hi": "उन्नति (उत्थान) का विलोम अवनति (पतन) है। प्रगति पर्यायवाची है और विनति का अर्थ प्रार्थना है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "विलोम",
+  "difficulty": "easy",
+  "question_en": "'मौखिक' का विलोम शब्द क्या है?",
+  "question_hi": "'मौखिक' का विलोम शब्द क्या है?",
+  "options": [
+   {
+    "en": "शाब्दिक",
+    "hi": "शाब्दिक"
+   },
+   {
+    "en": "मूक",
+    "hi": "मूक"
+   },
+   {
+    "en": "वाचिक",
+    "hi": "वाचिक"
+   },
+   {
+    "en": "लिखित",
+    "hi": "लिखित"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Maukhik (oral) vs likhit (written).",
+  "explanation_hi": "मौखिक (मुँह से कहा गया) का विलोम लिखित है। वाचिक मौखिक का पर्यायवाची है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "विलोम",
+  "difficulty": "hard",
+  "question_en": "'स्थावर' का विलोम शब्द क्या है?",
+  "question_hi": "'स्थावर' का विलोम शब्द क्या है?",
+  "options": [
+   {
+    "en": "स्थूल",
+    "hi": "स्थूल"
+   },
+   {
+    "en": "स्थायी",
+    "hi": "स्थायी"
+   },
+   {
+    "en": "जड़",
+    "hi": "जड़"
+   },
+   {
+    "en": "जंगम",
+    "hi": "जंगम"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Sthavar (immovable) vs jangam (movable) — a fixed pair.",
+  "explanation_hi": "स्थावर (अचल, जैसे वृक्ष/भूमि) का शास्त्रीय विलोम जंगम (चलने-फिरने वाला) है। 'स्थावर–जंगम' एक रूढ़ युग्म है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "विलोम",
+  "difficulty": "easy",
+  "question_en": "'आदान' का विलोम शब्द क्या है?",
+  "question_hi": "'आदान' का विलोम शब्द क्या है?",
+  "options": [
+   {
+    "en": "अनुदान",
+    "hi": "अनुदान"
+   },
+   {
+    "en": "निदान",
+    "hi": "निदान"
+   },
+   {
+    "en": "प्रदान",
+    "hi": "प्रदान"
+   },
+   {
+    "en": "विदान",
+    "hi": "विदान"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Aadaan (taking) vs pradaan (giving).",
+  "explanation_hi": "आदान (लेना) का विलोम प्रदान (देना) है; 'आदान-प्रदान' युग्म प्रसिद्ध है। अनुदान का अर्थ सहायता-राशि और निदान का अर्थ रोग-पहचान है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "विलोम",
+  "difficulty": "hard",
+  "question_en": "'अनुलोम' का विलोम शब्द क्या है?",
+  "question_hi": "'अनुलोम' का विलोम शब्द क्या है?",
+  "options": [
+   {
+    "en": "प्रतिलोम",
+    "hi": "प्रतिलोम"
+   },
+   {
+    "en": "अलोम",
+    "hi": "अलोम"
+   },
+   {
+    "en": "सुलोम",
+    "hi": "सुलोम"
+   },
+   {
+    "en": "अवलोम",
+    "hi": "अवलोम"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Anulom (in order) vs pratilom (reverse order).",
+  "explanation_hi": "अनुलोम (क्रम के अनुसार) का विलोम प्रतिलोम (उल्टे क्रम में) है; जैसे अनुलोम-प्रतिलोम प्राणायाम। 'विलोम' सामान्य शब्द है, पर 'अनुलोम' का मानक जोड़ा 'प्रतिलोम' है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "विलोम",
+  "difficulty": "hard",
+  "question_en": "'ऋजु' का विलोम शब्द क्या है?",
+  "question_hi": "'ऋजु' का विलोम शब्द क्या है?",
+  "options": [
+   {
+    "en": "सरल",
+    "hi": "सरल"
+   },
+   {
+    "en": "वक्र",
+    "hi": "वक्र"
+   },
+   {
+    "en": "सुगम",
+    "hi": "सुगम"
+   },
+   {
+    "en": "मृदु",
+    "hi": "मृदु"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Riju (straight) vs vakra (crooked).",
+  "explanation_hi": "ऋजु (सीधा/सरल) का विलोम वक्र (टेढ़ा) है। 'सरल' ऋजु का पर्यायवाची है; 'कुटिल' स्वभाव के लिए अधिक प्रयुक्त होता है, पर मानक विलोम युग्म 'ऋजु–वक्र' है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "अनेक शब्दों के लिए एक शब्द",
+  "difficulty": "easy",
+  "question_en": "'जिसे जीता न जा सके' — इस वाक्यांश के लिए एक शब्द चुनिए।",
+  "question_hi": "'जिसे जीता न जा सके' — इस वाक्यांश के लिए एक शब्द चुनिए।",
+  "options": [
+   {
+    "en": "अजेय",
+    "hi": "अजेय"
+   },
+   {
+    "en": "अजित",
+    "hi": "अजित"
+   },
+   {
+    "en": "विजेता",
+    "hi": "विजेता"
+   },
+   {
+    "en": "अपराजित",
+    "hi": "अपराजित"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "One who cannot be conquered = ajey.",
+  "explanation_hi": "जिसे जीता न जा सके = अजेय। 'अजित' का अर्थ 'जो जीता नहीं गया' है, 'अपराजित' = जो हारा नहीं; परीक्षा में मानक उत्तर 'अजेय' है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "अनेक शब्दों के लिए एक शब्द",
+  "difficulty": "easy",
+  "question_en": "'जो कहा न जा सके' — इसके लिए एक शब्द क्या है?",
+  "question_hi": "'जो कहा न जा सके' — इसके लिए एक शब्द क्या है?",
+  "options": [
+   {
+    "en": "अकथनीय",
+    "hi": "अकथनीय"
+   },
+   {
+    "en": "अश्रव्य",
+    "hi": "अश्रव्य"
+   },
+   {
+    "en": "अदृश्य",
+    "hi": "अदृश्य"
+   },
+   {
+    "en": "अलिखित",
+    "hi": "अलिखित"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "That which cannot be said = akathaniya.",
+  "explanation_hi": "जो कहा न जा सके = अकथनीय (या अवर्णनीय)। अश्रव्य = जो सुना न जा सके, अदृश्य = जो दिखाई न दे।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "अनेक शब्दों के लिए एक शब्द",
+  "difficulty": "easy",
+  "question_en": "'जिसकी उपमा न दी जा सके' — इसके लिए एक शब्द चुनिए।",
+  "question_hi": "'जिसकी उपमा न दी जा सके' — इसके लिए एक शब्द चुनिए।",
+  "options": [
+   {
+    "en": "अद्भुत",
+    "hi": "अद्भुत"
+   },
+   {
+    "en": "अनुपम",
+    "hi": "अनुपम"
+   },
+   {
+    "en": "उपमेय",
+    "hi": "उपमेय"
+   },
+   {
+    "en": "अनुरूप",
+    "hi": "अनुरूप"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "That which has no comparison = anupam.",
+  "explanation_hi": "जिसकी उपमा न हो = अनुपम (या अनुपमेय)। 'अतुल' = जिसकी तुलना न हो, अर्थ में निकट है पर मानक उत्तर 'अनुपम' है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "अनेक शब्दों के लिए एक शब्द",
+  "difficulty": "easy",
+  "question_en": "'जानने की इच्छा' — इसके लिए एक शब्द क्या है?",
+  "question_hi": "'जानने की इच्छा' — इसके लिए एक शब्द क्या है?",
+  "options": [
+   {
+    "en": "अभिलाषा",
+    "hi": "अभिलाषा"
+   },
+   {
+    "en": "जिज्ञासा",
+    "hi": "जिज्ञासा"
+   },
+   {
+    "en": "पिपासा",
+    "hi": "पिपासा"
+   },
+   {
+    "en": "लालसा",
+    "hi": "लालसा"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Desire to know = jigyasa.",
+  "explanation_hi": "जानने की इच्छा = जिज्ञासा। पिपासा = पीने की इच्छा, लालसा/अभिलाषा = सामान्य इच्छा।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "अनेक शब्दों के लिए एक शब्द",
+  "difficulty": "easy",
+  "question_en": "'जिसके आने की कोई तिथि न हो' — इसके लिए एक शब्द है:",
+  "question_hi": "'जिसके आने की कोई तिथि न हो' — इसके लिए एक शब्द है:",
+  "options": [
+   {
+    "en": "अतिथि",
+    "hi": "अतिथि"
+   },
+   {
+    "en": "आगंतुक",
+    "hi": "आगंतुक"
+   },
+   {
+    "en": "अभ्यागत",
+    "hi": "अभ्यागत"
+   },
+   {
+    "en": "मेहमान",
+    "hi": "मेहमान"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "One whose date of arrival is not fixed = atithi.",
+  "explanation_hi": "अ + तिथि = अतिथि, अर्थात् जिसके आने की तिथि निश्चित न हो। आगंतुक और अभ्यागत का अर्थ 'आया हुआ' है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "अनेक शब्दों के लिए एक शब्द",
+  "difficulty": "easy",
+  "question_en": "'रात में घूमने वाला' — इसके लिए एक शब्द चुनिए।",
+  "question_hi": "'रात में घूमने वाला' — इसके लिए एक शब्द चुनिए।",
+  "options": [
+   {
+    "en": "रजनीश",
+    "hi": "रजनीश"
+   },
+   {
+    "en": "निशाकर",
+    "hi": "निशाकर"
+   },
+   {
+    "en": "नभचर",
+    "hi": "नभचर"
+   },
+   {
+    "en": "निशाचर",
+    "hi": "निशाचर"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "One who roams at night = nishachar.",
+  "explanation_hi": "निशा (रात) + चर (चलने वाला) = निशाचर। निशाकर और रजनीश चंद्रमा के पर्यायवाची हैं, नभचर = आकाश में विचरने वाला।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "अनेक शब्दों के लिए एक शब्द",
+  "difficulty": "medium",
+  "question_en": "'जो थोड़ा जानता हो' — इसके लिए एक शब्द क्या है?",
+  "question_hi": "'जो थोड़ा जानता हो' — इसके लिए एक शब्द क्या है?",
+  "options": [
+   {
+    "en": "अल्पज्ञ",
+    "hi": "अल्पज्ञ"
+   },
+   {
+    "en": "अज्ञ",
+    "hi": "अज्ञ"
+   },
+   {
+    "en": "सर्वज्ञ",
+    "hi": "सर्वज्ञ"
+   },
+   {
+    "en": "विज्ञ",
+    "hi": "विज्ञ"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "One who knows little = alpagya.",
+  "explanation_hi": "जो थोड़ा जानता हो = अल्पज्ञ। अज्ञ = जो कुछ न जानता हो, सर्वज्ञ = सब कुछ जानने वाला, विज्ञ = विशेष जानकार।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "अनेक शब्दों के लिए एक शब्द",
+  "difficulty": "hard",
+  "question_en": "'जिसका कोई शत्रु पैदा ही न हुआ हो' — इसके लिए एक शब्द चुनिए।",
+  "question_hi": "'जिसका कोई शत्रु पैदा ही न हुआ हो' — इसके लिए एक शब्द चुनिए।",
+  "options": [
+   {
+    "en": "शत्रुहीन",
+    "hi": "शत्रुहीन"
+   },
+   {
+    "en": "अजातशत्रु",
+    "hi": "अजातशत्रु"
+   },
+   {
+    "en": "निर्भय",
+    "hi": "निर्भय"
+   },
+   {
+    "en": "अजेय",
+    "hi": "अजेय"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "One with no enemy ever born = ajatshatru.",
+  "explanation_hi": "अजातशत्रु = जिसका शत्रु जन्मा ही न हो (अ + जात + शत्रु)। 'शत्रुहीन' शाब्दिक अनुवाद है, मानक एक-शब्द 'अजातशत्रु' है, जो युधिष्ठिर का विशेषण भी है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "अनेक शब्दों के लिए एक शब्द",
+  "difficulty": "medium",
+  "question_en": "'जो कम बोलता हो' — इसके लिए एक शब्द क्या है?",
+  "question_hi": "'जो कम बोलता हो' — इसके लिए एक शब्द क्या है?",
+  "options": [
+   {
+    "en": "मूक",
+    "hi": "मूक"
+   },
+   {
+    "en": "मितभाषी",
+    "hi": "मितभाषी"
+   },
+   {
+    "en": "मृदुभाषी",
+    "hi": "मृदुभाषी"
+   },
+   {
+    "en": "वाचाल",
+    "hi": "वाचाल"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "One who speaks little = mitbhashi.",
+  "explanation_hi": "मित (कम/सीमित) + भाषी = मितभाषी। मृदुभाषी = मीठा बोलने वाला, वाचाल = अधिक बोलने वाला, मूक = न बोलने वाला।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "अनेक शब्दों के लिए एक शब्द",
+  "difficulty": "hard",
+  "question_en": "'दूसरों के दोष खोजने वाला' — इसके लिए एक शब्द चुनिए।",
+  "question_hi": "'दूसरों के दोष खोजने वाला' — इसके लिए एक शब्द चुनिए।",
+  "options": [
+   {
+    "en": "आलोचक",
+    "hi": "आलोचक"
+   },
+   {
+    "en": "निंदक",
+    "hi": "निंदक"
+   },
+   {
+    "en": "परोपकारी",
+    "hi": "परोपकारी"
+   },
+   {
+    "en": "छिद्रान्वेषी",
+    "hi": "छिद्रान्वेषी"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "One who looks for faults in others = chhidranveshi.",
+  "explanation_hi": "छिद्र (दोष) + अन्वेषी (खोजने वाला) = छिद्रान्वेषी। आलोचक गुण-दोष दोनों देखता है; निंदक बुराई करता है; मानक उत्तर 'छिद्रान्वेषी' है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "अनेक शब्दों के लिए एक शब्द",
+  "difficulty": "medium",
+  "question_en": "'जो पहले कभी न हुआ हो' — इसके लिए एक शब्द क्या है?",
+  "question_hi": "'जो पहले कभी न हुआ हो' — इसके लिए एक शब्द क्या है?",
+  "options": [
+   {
+    "en": "अभूतपूर्व",
+    "hi": "अभूतपूर्व"
+   },
+   {
+    "en": "अनादि",
+    "hi": "अनादि"
+   },
+   {
+    "en": "अनोखा",
+    "hi": "अनोखा"
+   },
+   {
+    "en": "भूतपूर्व",
+    "hi": "भूतपूर्व"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Unprecedented = abhootpoorv; bhootpoorv means former.",
+  "explanation_hi": "अ + भूतपूर्व = अभूतपूर्व, अर्थात् जो पहले कभी न हुआ हो। 'भूतपूर्व' का अर्थ 'पहले रह चुका' (जैसे भूतपूर्व प्रधानाचार्य) है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "अनेक शब्दों के लिए एक शब्द",
+  "difficulty": "medium",
+  "question_en": "'जिसकी आशा न की गई हो' — इसके लिए एक शब्द चुनिए।",
+  "question_hi": "'जिसकी आशा न की गई हो' — इसके लिए एक शब्द चुनिए।",
+  "options": [
+   {
+    "en": "आशातीत",
+    "hi": "आशातीत"
+   },
+   {
+    "en": "अप्रत्याशित",
+    "hi": "अप्रत्याशित"
+   },
+   {
+    "en": "आशावादी",
+    "hi": "आशावादी"
+   },
+   {
+    "en": "निराश",
+    "hi": "निराश"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Unexpected = apratyashit.",
+  "explanation_hi": "जिसकी आशा न की गई हो = अप्रत्याशित। 'आशातीत' = आशा से अधिक; 'अनपेक्षित' = जिसकी अपेक्षा न हो, निकट है पर मानक उत्तर 'अप्रत्याशित' है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "मुहावरे–लोकोक्तियाँ",
+  "difficulty": "easy",
+  "question_en": "'आँख का तारा' मुहावरे का अर्थ क्या है?",
+  "question_hi": "'आँख का तारा' मुहावरे का अर्थ क्या है?",
+  "options": [
+   {
+    "en": "बहुत प्यारा",
+    "hi": "बहुत प्यारा"
+   },
+   {
+    "en": "कट्टर शत्रु",
+    "hi": "कट्टर शत्रु"
+   },
+   {
+    "en": "घमंडी व्यक्ति",
+    "hi": "घमंडी व्यक्ति"
+   },
+   {
+    "en": "चालाक व्यक्ति",
+    "hi": "चालाक व्यक्ति"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Aankh ka taara means a very dear person.",
+  "explanation_hi": "'आँख का तारा' का अर्थ है अत्यंत प्रिय व्यक्ति — 'इकलौता बेटा माँ की आँख का तारा है।'",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "मुहावरे–लोकोक्तियाँ",
+  "difficulty": "easy",
+  "question_en": "'नौ दो ग्यारह होना' मुहावरे का अर्थ क्या है?",
+  "question_hi": "'नौ दो ग्यारह होना' मुहावरे का अर्थ क्या है?",
+  "options": [
+   {
+    "en": "हिसाब लगाना",
+    "hi": "हिसाब लगाना"
+   },
+   {
+    "en": "भाग जाना",
+    "hi": "भाग जाना"
+   },
+   {
+    "en": "लाभ होना",
+    "hi": "लाभ होना"
+   },
+   {
+    "en": "धोखा देना",
+    "hi": "धोखा देना"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Nau do gyarah hona means to run away.",
+  "explanation_hi": "'नौ दो ग्यारह होना' का अर्थ है चुपके से भाग जाना — 'पुलिस को देखते ही चोर नौ दो ग्यारह हो गया।'",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "मुहावरे–लोकोक्तियाँ",
+  "difficulty": "medium",
+  "question_en": "'दाँतों तले उँगली दबाना' मुहावरे का अर्थ क्या है?",
+  "question_hi": "'दाँतों तले उँगली दबाना' मुहावरे का अर्थ क्या है?",
+  "options": [
+   {
+    "en": "डर जाना",
+    "hi": "डर जाना"
+   },
+   {
+    "en": "पछताना",
+    "hi": "पछताना"
+   },
+   {
+    "en": "आश्चर्यचकित होना",
+    "hi": "आश्चर्यचकित होना"
+   },
+   {
+    "en": "क्रोध करना",
+    "hi": "क्रोध करना"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "It means to be astonished.",
+  "explanation_hi": "'दाँतों तले उँगली दबाना' का अर्थ है बहुत अचंभित होना — 'बालक की प्रतिभा देखकर सब दाँतों तले उँगली दबा गए।' पछताने के लिए 'हाथ मलना' मुहावरा है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "मुहावरे–लोकोक्तियाँ",
+  "difficulty": "medium",
+  "question_en": "'ऊँट के मुँह में जीरा' लोकोक्ति का अर्थ क्या है?",
+  "question_hi": "'ऊँट के मुँह में जीरा' लोकोक्ति का अर्थ क्या है?",
+  "options": [
+   {
+    "en": "अत्यधिक लाभ होना",
+    "hi": "अत्यधिक लाभ होना"
+   },
+   {
+    "en": "बड़े व्यक्ति का छोटा काम",
+    "hi": "बड़े व्यक्ति का छोटा काम"
+   },
+   {
+    "en": "स्वाद बिगड़ जाना",
+    "hi": "स्वाद बिगड़ जाना"
+   },
+   {
+    "en": "आवश्यकता से बहुत कम वस्तु मिलना",
+    "hi": "आवश्यकता से बहुत कम वस्तु मिलना"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "It means getting far too little compared with the need.",
+  "explanation_hi": "विशाल ऊँट के मुँह में एक जीरे का दाना कुछ भी नहीं होता; अतः इसका अर्थ है आवश्यकता की तुलना में बहुत थोड़ी वस्तु मिलना।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "मुहावरे–लोकोक्तियाँ",
+  "difficulty": "medium",
+  "question_en": "'अधजल गगरी छलकत जाय' लोकोक्ति का अर्थ क्या है?",
+  "question_hi": "'अधजल गगरी छलकत जाय' लोकोक्ति का अर्थ क्या है?",
+  "options": [
+   {
+    "en": "कम ज्ञान वाला अधिक दिखावा करता है",
+    "hi": "कम ज्ञान वाला अधिक दिखावा करता है"
+   },
+   {
+    "en": "धीरे-धीरे काम पूरा होता है",
+    "hi": "धीरे-धीरे काम पूरा होता है"
+   },
+   {
+    "en": "आधा काम करके छोड़ देना",
+    "hi": "आधा काम करके छोड़ देना"
+   },
+   {
+    "en": "संचय करने से धन बढ़ता है",
+    "hi": "संचय करने से धन बढ़ता है"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "A person with little knowledge shows off the most.",
+  "explanation_hi": "आधी भरी गगरी अधिक छलकती है; इसी प्रकार अल्पज्ञ व्यक्ति अपने थोड़े ज्ञान का अधिक प्रदर्शन करता है, जबकि ज्ञानी गंभीर रहता है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "मुहावरे–लोकोक्तियाँ",
+  "difficulty": "medium",
+  "question_en": "'घी के दीये जलाना' मुहावरे का अर्थ क्या है?",
+  "question_hi": "'घी के दीये जलाना' मुहावरे का अर्थ क्या है?",
+  "options": [
+   {
+    "en": "धन बर्बाद करना",
+    "hi": "धन बर्बाद करना"
+   },
+   {
+    "en": "खुशियाँ मनाना",
+    "hi": "खुशियाँ मनाना"
+   },
+   {
+    "en": "पूजा-पाठ करना",
+    "hi": "पूजा-पाठ करना"
+   },
+   {
+    "en": "अंधकार दूर करना",
+    "hi": "अंधकार दूर करना"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "It means to celebrate joyfully.",
+  "explanation_hi": "'घी के दीये जलाना' का अर्थ है अत्यधिक प्रसन्न होकर उत्सव मनाना — 'बेटे के लौटने पर घर में घी के दीये जलाए गए।'",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "मुहावरे–लोकोक्तियाँ",
+  "difficulty": "hard",
+  "question_en": "'अंधों में काना राजा' लोकोक्ति का सही अर्थ क्या है?",
+  "question_hi": "'अंधों में काना राजा' लोकोक्ति का सही अर्थ क्या है?",
+  "options": [
+   {
+    "en": "अंधे व्यक्ति की सहायता करना",
+    "hi": "अंधे व्यक्ति की सहायता करना"
+   },
+   {
+    "en": "शासक का पक्षपात करना",
+    "hi": "शासक का पक्षपात करना"
+   },
+   {
+    "en": "मूर्खों के बीच थोड़ा जानने वाला भी श्रेष्ठ माना जाता है",
+    "hi": "मूर्खों के बीच थोड़ा जानने वाला भी श्रेष्ठ माना जाता है"
+   },
+   {
+    "en": "दोषी को राजा बना देना",
+    "hi": "दोषी को राजा बना देना"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Among the ignorant, a person with a little knowledge is treated as superior.",
+  "explanation_hi": "जहाँ सब अंधे हों वहाँ एक आँख वाला भी राजा बन जाता है; अर्थात् अज्ञानियों के बीच अल्प ज्ञानी भी विद्वान समझा जाता है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "मुहावरे–लोकोक्तियाँ",
+  "difficulty": "medium",
+  "question_en": "'आस्तीन का साँप' मुहावरे का अर्थ क्या है?",
+  "question_hi": "'आस्तीन का साँप' मुहावरे का अर्थ क्या है?",
+  "options": [
+   {
+    "en": "ज़हरीला जीव",
+    "hi": "ज़हरीला जीव"
+   },
+   {
+    "en": "अत्यंत क्रोधी व्यक्ति",
+    "hi": "अत्यंत क्रोधी व्यक्ति"
+   },
+   {
+    "en": "छिपा हुआ ख़ज़ाना",
+    "hi": "छिपा हुआ ख़ज़ाना"
+   },
+   {
+    "en": "मित्र बनकर धोखा देने वाला",
+    "hi": "मित्र बनकर धोखा देने वाला"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "It means a friend who betrays, a snake in the sleeve.",
+  "explanation_hi": "आस्तीन (बाँह) में छिपा साँप पास रहकर ही डसता है; अतः यह मुहावरा कपटी मित्र या अपने बीच के धोखेबाज़ के लिए प्रयुक्त होता है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "मुहावरे–लोकोक्तियाँ",
+  "difficulty": "easy",
+  "question_en": "'टेढ़ी खीर' मुहावरे का अर्थ क्या है?",
+  "question_hi": "'टेढ़ी खीर' मुहावरे का अर्थ क्या है?",
+  "options": [
+   {
+    "en": "कठिन कार्य",
+    "hi": "कठिन कार्य"
+   },
+   {
+    "en": "स्वादिष्ट भोजन",
+    "hi": "स्वादिष्ट भोजन"
+   },
+   {
+    "en": "बेकार वस्तु",
+    "hi": "बेकार वस्तु"
+   },
+   {
+    "en": "उलझी हुई बात कहना",
+    "hi": "उलझी हुई बात कहना"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Tedhi kheer means a very difficult task.",
+  "explanation_hi": "'टेढ़ी खीर' का अर्थ है ऐसा कार्य जो बहुत कठिन हो — 'बिना तैयारी के यह परीक्षा पास करना टेढ़ी खीर है।'",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "मुहावरे–लोकोक्तियाँ",
+  "difficulty": "hard",
+  "question_en": "निम्नलिखित में से कौन-सा मुहावरा–अर्थ युग्म सही नहीं है?",
+  "question_hi": "निम्नलिखित में से कौन-सा मुहावरा–अर्थ युग्म सही नहीं है?",
+  "options": [
+   {
+    "en": "हाथ मलना – पछताना",
+    "hi": "हाथ मलना – पछताना"
+   },
+   {
+    "en": "गागर में सागर भरना – व्यर्थ परिश्रम करना",
+    "hi": "गागर में सागर भरना – व्यर्थ परिश्रम करना"
+   },
+   {
+    "en": "पानी-पानी होना – लज्जित होना",
+    "hi": "पानी-पानी होना – लज्जित होना"
+   },
+   {
+    "en": "कान भरना – चुगली करना",
+    "hi": "कान भरना – चुगली करना"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Gaagar mein saagar means saying much in few words, not wasted effort.",
+  "explanation_hi": "'गागर में सागर भरना' का अर्थ है थोड़े शब्दों में बहुत अधिक बात कह देना (जैसे बिहारी के दोहे), व्यर्थ परिश्रम नहीं। शेष तीनों युग्म सही हैं।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "मुहावरे–लोकोक्तियाँ",
+  "difficulty": "hard",
+  "question_en": "'का बरखा जब कृषी सुखाने' लोकोक्ति का अर्थ क्या है?",
+  "question_hi": "'का बरखा जब कृषी सुखाने' लोकोक्ति का अर्थ क्या है?",
+  "options": [
+   {
+    "en": "वर्षा से फ़सल नष्ट होना",
+    "hi": "वर्षा से फ़सल नष्ट होना"
+   },
+   {
+    "en": "परिश्रम का फल मीठा होना",
+    "hi": "परिश्रम का फल मीठा होना"
+   },
+   {
+    "en": "अवसर निकल जाने पर सहायता व्यर्थ है",
+    "hi": "अवसर निकल जाने पर सहायता व्यर्थ है"
+   },
+   {
+    "en": "किसान का भाग्य कठोर होना",
+    "hi": "किसान का भाग्य कठोर होना"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Help that comes after the moment has passed is useless.",
+  "explanation_hi": "खेती सूख जाने के बाद वर्षा का कोई लाभ नहीं; अर्थात् समय बीत जाने पर किया गया उपाय या मिली सहायता व्यर्थ होती है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "मुहावरे–लोकोक्तियाँ",
+  "difficulty": "easy",
+  "question_en": "'नाच न जाने आँगन टेढ़ा' लोकोक्ति का अर्थ क्या है?",
+  "question_hi": "'नाच न जाने आँगन टेढ़ा' लोकोक्ति का अर्थ क्या है?",
+  "options": [
+   {
+    "en": "नृत्य कला का अभ्यास न होना",
+    "hi": "नृत्य कला का अभ्यास न होना"
+   },
+   {
+    "en": "घर का आँगन टेढ़ा होना",
+    "hi": "घर का आँगन टेढ़ा होना"
+   },
+   {
+    "en": "किसी काम में रुचि न होना",
+    "hi": "किसी काम में रुचि न होना"
+   },
+   {
+    "en": "अपनी अयोग्यता का दोष दूसरों पर डालना",
+    "hi": "अपनी अयोग्यता का दोष दूसरों पर डालना"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "It means blaming others or circumstances for one's own lack of skill.",
+  "explanation_hi": "जब कोई व्यक्ति स्वयं काम न जानने पर साधनों या परिस्थितियों को दोष दे, तब यह लोकोक्ति कही जाती है — अपनी कमी का दोष दूसरों पर मढ़ना।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "मुहावरे–लोकोक्तियाँ",
+  "difficulty": "medium",
+  "question_en": "निम्नलिखित में से शुद्ध लोकोक्ति का चयन कीजिए।",
+  "question_hi": "निम्नलिखित में से शुद्ध लोकोक्ति का चयन कीजिए।",
+  "options": [
+   {
+    "en": "जल में रहकर मछली से बैर",
+    "hi": "जल में रहकर मछली से बैर"
+   },
+   {
+    "en": "जल में रहकर कछुए से बैर",
+    "hi": "जल में रहकर कछुए से बैर"
+   },
+   {
+    "en": "जल में रहकर मेंढक से बैर",
+    "hi": "जल में रहकर मेंढक से बैर"
+   },
+   {
+    "en": "जल में रहकर मगर से बैर",
+    "hi": "जल में रहकर मगर से बैर"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The correct proverb is 'jal mein rahkar magar se bair' — enmity with the powerful one you live under.",
+  "explanation_hi": "शुद्ध लोकोक्ति है 'जल में रहकर मगर से बैर' — अर्थात् जिसके अधिकार-क्षेत्र में रहना हो, उसी शक्तिशाली से शत्रुता करना। मगर (मगरमच्छ) जल का सबसे शक्तिशाली जीव है, इसलिए वही शब्द आता है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "मुहावरे–लोकोक्तियाँ",
+  "difficulty": "easy",
+  "question_en": "'जिसकी लाठी उसकी भैंस' लोकोक्ति का अर्थ क्या है?",
+  "question_hi": "'जिसकी लाठी उसकी भैंस' लोकोक्ति का अर्थ क्या है?",
+  "options": [
+   {
+    "en": "पशुपालन लाभदायक है",
+    "hi": "पशुपालन लाभदायक है"
+   },
+   {
+    "en": "मेहनती को फल मिलता है",
+    "hi": "मेहनती को फल मिलता है"
+   },
+   {
+    "en": "शक्तिशाली की ही जीत होती है",
+    "hi": "शक्तिशाली की ही जीत होती है"
+   },
+   {
+    "en": "लाठी से भैंस चराई जाती है",
+    "hi": "लाठी से भैंस चराई जाती है"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Might is right: the powerful get their way.",
+  "explanation_hi": "इस लोकोक्ति का अर्थ है — बलवान व्यक्ति ही अपनी बात मनवा लेता है, शक्तिशाली की ही विजय होती है (न्याय की नहीं)।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "अनेकार्थी शब्द",
+  "difficulty": "easy",
+  "question_en": "'अंबर' शब्द के दो अर्थ कौन-से हैं?",
+  "question_hi": "'अंबर' शब्द के दो अर्थ कौन-से हैं?",
+  "options": [
+   {
+    "en": "जल और बादल",
+    "hi": "जल और बादल"
+   },
+   {
+    "en": "सूर्य और किरण",
+    "hi": "सूर्य और किरण"
+   },
+   {
+    "en": "पृथ्वी और पर्वत",
+    "hi": "पृथ्वी और पर्वत"
+   },
+   {
+    "en": "आकाश और वस्त्र",
+    "hi": "आकाश और वस्त्र"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Ambar means both sky and garment (as in pitambar).",
+  "explanation_hi": "'अंबर' अनेकार्थी शब्द है — इसका एक अर्थ आकाश है और दूसरा वस्त्र (कपड़ा); 'पीतांबर' = पीला वस्त्र, 'दिगंबर' = दिशाएँ ही जिसके वस्त्र हों।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "अनेकार्थी शब्द",
+  "difficulty": "medium",
+  "question_en": "'कनक' शब्द के दो अर्थ कौन-से हैं?",
+  "question_hi": "'कनक' शब्द के दो अर्थ कौन-से हैं?",
+  "options": [
+   {
+    "en": "चाँदी और कमल",
+    "hi": "चाँदी और कमल"
+   },
+   {
+    "en": "सोना और धतूरा",
+    "hi": "सोना और धतूरा"
+   },
+   {
+    "en": "ताँबा और पीतल",
+    "hi": "ताँबा और पीतल"
+   },
+   {
+    "en": "हीरा और मोती",
+    "hi": "हीरा और मोती"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Kanak means gold and also the datura plant.",
+  "explanation_hi": "'कनक' के अर्थ हैं सोना (स्वर्ण) और धतूरा। बिहारी का प्रसिद्ध दोहा 'कनक कनक ते सौ गुनी मादकता अधिकाय' इन्हीं दो अर्थों पर आधारित यमक अलंकार का उदाहरण है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shabd",
+  "subtopic": "रिक्त स्थान (शब्द चयन)",
+  "difficulty": "easy",
+  "question_en": "'परीक्षा में अच्छे अंक पाने के लिए ______ अध्ययन आवश्यक है।' — उपयुक्त शब्द चुनकर रिक्त स्थान भरिए।",
+  "question_hi": "'परीक्षा में अच्छे अंक पाने के लिए ______ अध्ययन आवश्यक है।' — उपयुक्त शब्द चुनकर रिक्त स्थान भरिए।",
+  "options": [
+   {
+    "en": "अनियमित",
+    "hi": "अनियमित"
+   },
+   {
+    "en": "आकस्मिक",
+    "hi": "आकस्मिक"
+   },
+   {
+    "en": "नियमित",
+    "hi": "नियमित"
+   },
+   {
+    "en": "असंगत",
+    "hi": "असंगत"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Regular (niyamit) study fits; the other words contradict the sense.",
+  "explanation_hi": "अच्छे परिणाम के लिए प्रतिदिन लगातार किया गया अर्थात् 'नियमित' अध्ययन आवश्यक है। 'अनियमित', 'आकस्मिक' (अचानक) और 'असंगत' (बेमेल) वाक्य के भाव के विपरीत हैं।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "अलंकार",
+  "difficulty": "easy",
+  "question_en": "'चारु चंद्र की चंचल किरणें, खेल रही हैं जल-थल में' — इस पंक्ति में कौन-सा अलंकार है?",
+  "question_hi": "'चारु चंद्र की चंचल किरणें, खेल रही हैं जल-थल में' — इस पंक्ति में कौन-सा अलंकार है?",
+  "options": [
+   {
+    "en": "अनुप्रास",
+    "hi": "अनुप्रास"
+   },
+   {
+    "en": "यमक",
+    "hi": "यमक"
+   },
+   {
+    "en": "श्लेष",
+    "hi": "श्लेष"
+   },
+   {
+    "en": "उपमा",
+    "hi": "उपमा"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Repetition of the consonant 'ch' makes it Anupras (alliteration).",
+  "explanation_hi": "इस पंक्ति में 'च' वर्ण की बार-बार आवृत्ति हुई है (चारु, चंद्र, चंचल), अतः यहाँ अनुप्रास अलंकार है। यमक में पूरा शब्द भिन्न अर्थ में दोहराया जाता है, जो यहाँ नहीं है।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "अलंकार",
+  "difficulty": "easy",
+  "question_en": "'हरि पद कोमल कमल से' — इस पंक्ति में कौन-सा अलंकार है?",
+  "question_hi": "'हरि पद कोमल कमल से' — इस पंक्ति में कौन-सा अलंकार है?",
+  "options": [
+   {
+    "en": "रूपक",
+    "hi": "रूपक"
+   },
+   {
+    "en": "उपमा",
+    "hi": "उपमा"
+   },
+   {
+    "en": "उत्प्रेक्षा",
+    "hi": "उत्प्रेक्षा"
+   },
+   {
+    "en": "अतिशयोक्ति",
+    "hi": "अतिशयोक्ति"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Hari's feet are compared to a lotus with the marker 'se' and the common quality 'komal' — Upama.",
+  "explanation_hi": "यहाँ हरि के चरणों (उपमेय) की तुलना कमल (उपमान) से की गई है, 'से' वाचक शब्द है और 'कोमल' साधारण धर्म है। उपमा के चारों अंग उपस्थित हैं, इसलिए उपमा अलंकार है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "अलंकार",
+  "difficulty": "medium",
+  "question_en": "'चरण-कमल बंदौं हरि राई' — इस पंक्ति में कौन-सा अलंकार है?",
+  "question_hi": "'चरण-कमल बंदौं हरि राई' — इस पंक्ति में कौन-सा अलंकार है?",
+  "options": [
+   {
+    "en": "उपमा",
+    "hi": "उपमा"
+   },
+   {
+    "en": "उत्प्रेक्षा",
+    "hi": "उत्प्रेक्षा"
+   },
+   {
+    "en": "रूपक",
+    "hi": "रूपक"
+   },
+   {
+    "en": "अनुप्रास",
+    "hi": "अनुप्रास"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Feet are identified with lotuses without a comparison word, which is Rupak (metaphor).",
+  "explanation_hi": "यहाँ चरणों (उपमेय) पर कमल (उपमान) का अभेद आरोप किया गया है — 'कमल रूपी चरण'। बिना वाचक शब्द के उपमेय-उपमान को एक मान लेना रूपक अलंकार है।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "अलंकार",
+  "difficulty": "medium",
+  "question_en": "'कनक कनक ते सौ गुनी, मादकता अधिकाय' — इस पंक्ति में कौन-सा अलंकार है?",
+  "question_hi": "'कनक कनक ते सौ गुनी, मादकता अधिकाय' — इस पंक्ति में कौन-सा अलंकार है?",
+  "options": [
+   {
+    "en": "श्लेष",
+    "hi": "श्लेष"
+   },
+   {
+    "en": "अनुप्रास",
+    "hi": "अनुप्रास"
+   },
+   {
+    "en": "उपमा",
+    "hi": "उपमा"
+   },
+   {
+    "en": "यमक",
+    "hi": "यमक"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "'Kanak' is repeated with two meanings (datura, gold), so it is Yamak.",
+  "explanation_hi": "'कनक' शब्द दो बार आया है और दोनों बार अर्थ भिन्न है — पहला 'धतूरा', दूसरा 'सोना'। एक ही शब्द की भिन्न अर्थों में आवृत्ति यमक अलंकार है; श्लेष में शब्द एक ही बार आता है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "अलंकार",
+  "difficulty": "medium",
+  "question_en": "'पानी गए न ऊबरै, मोती मानुष चून' — इस पंक्ति में 'पानी' शब्द के प्रयोग के कारण कौन-सा अलंकार है?",
+  "question_hi": "'पानी गए न ऊबरै, मोती मानुष चून' — इस पंक्ति में 'पानी' शब्द के प्रयोग के कारण कौन-सा अलंकार है?",
+  "options": [
+   {
+    "en": "यमक",
+    "hi": "यमक"
+   },
+   {
+    "en": "श्लेष",
+    "hi": "श्लेष"
+   },
+   {
+    "en": "रूपक",
+    "hi": "रूपक"
+   },
+   {
+    "en": "उत्प्रेक्षा",
+    "hi": "उत्प्रेक्षा"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "One word 'paani' carries three meanings at once (lustre, honour, water), so it is Shlesh (pun).",
+  "explanation_hi": "यहाँ 'पानी' शब्द एक बार प्रयुक्त होकर तीन अर्थ दे रहा है — मोती के लिए चमक, मनुष्य के लिए सम्मान और चूने के लिए जल। एक शब्द में अनेक अर्थ चिपके हों तो श्लेष अलंकार होता है।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "अलंकार",
+  "difficulty": "medium",
+  "question_en": "'सोहत ओढ़े पीत पट, स्याम सलोने गात। मनहुँ नीलमनि सैल पर, आतप परयौ प्रभात॥' — इसमें कौन-सा अलंकार है?",
+  "question_hi": "'सोहत ओढ़े पीत पट, स्याम सलोने गात। मनहुँ नीलमनि सैल पर, आतप परयौ प्रभात॥' — इसमें कौन-सा अलंकार है?",
+  "options": [
+   {
+    "en": "उत्प्रेक्षा",
+    "hi": "उत्प्रेक्षा"
+   },
+   {
+    "en": "उपमा",
+    "hi": "उपमा"
+   },
+   {
+    "en": "रूपक",
+    "hi": "रूपक"
+   },
+   {
+    "en": "यमक",
+    "hi": "यमक"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The word 'manahun' (as if) expresses imagined likeness, so it is Utpreksha.",
+  "explanation_hi": "पीले वस्त्र ओढ़े श्याम शरीर में नीलमणि पर्वत पर सुबह की धूप पड़ने की संभावना व्यक्त की गई है। 'मनहुँ' संभावना-सूचक वाचक शब्द है, अतः उत्प्रेक्षा अलंकार है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "अलंकार",
+  "difficulty": "hard",
+  "question_en": "'हनुमान की पूँछ में लगन न पाई आग, लंका सिगरी जल गई, गए निसाचर भाग' — इसमें कौन-सा अलंकार है?",
+  "question_hi": "'हनुमान की पूँछ में लगन न पाई आग, लंका सिगरी जल गई, गए निसाचर भाग' — इसमें कौन-सा अलंकार है?",
+  "options": [
+   {
+    "en": "उत्प्रेक्षा",
+    "hi": "उत्प्रेक्षा"
+   },
+   {
+    "en": "मानवीकरण",
+    "hi": "मानवीकरण"
+   },
+   {
+    "en": "अतिशयोक्ति",
+    "hi": "अतिशयोक्ति"
+   },
+   {
+    "en": "अनुप्रास",
+    "hi": "अनुप्रास"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Lanka burning even before the tail caught fire is exaggeration, i.e. Atishayokti (hyperbole).",
+  "explanation_hi": "पूँछ में आग लगने से पहले ही पूरी लंका का जल जाना लोक-सीमा से बढ़ाकर किया गया वर्णन है। किसी बात को बहुत बढ़ा-चढ़ाकर कहना अतिशयोक्ति अलंकार है।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "अलंकार",
+  "difficulty": "medium",
+  "question_en": "निम्नलिखित में से कौन-सा शब्द उत्प्रेक्षा अलंकार का वाचक शब्द है?",
+  "question_hi": "निम्नलिखित में से कौन-सा शब्द उत्प्रेक्षा अलंकार का वाचक शब्द है?",
+  "options": [
+   {
+    "en": "सम",
+    "hi": "सम"
+   },
+   {
+    "en": "सरिस",
+    "hi": "सरिस"
+   },
+   {
+    "en": "मानो",
+    "hi": "मानो"
+   },
+   {
+    "en": "सा",
+    "hi": "सा"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "'Mano' (as if) signals Utpreksha; sam, saris and sa are simile markers.",
+  "explanation_hi": "उत्प्रेक्षा में संभावना दिखाने के लिए मनु, मनहुँ, जनु, जनहुँ, मानो, जानो आदि वाचक शब्द आते हैं। सम, सरिस, सा आदि उपमा अलंकार के वाचक शब्द हैं।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "अलंकार",
+  "difficulty": "hard",
+  "question_en": "'उदित उदयगिरि मंच पर, रघुवर बाल पतंग। बिकसे संत सरोज सब, हरषे लोचन भृंग॥' — इसमें कौन-सा अलंकार है?",
+  "question_hi": "'उदित उदयगिरि मंच पर, रघुवर बाल पतंग। बिकसे संत सरोज सब, हरषे लोचन भृंग॥' — इसमें कौन-सा अलंकार है?",
+  "options": [
+   {
+    "en": "सांगरूपक",
+    "hi": "सांगरूपक"
+   },
+   {
+    "en": "उपमा",
+    "hi": "उपमा"
+   },
+   {
+    "en": "उत्प्रेक्षा",
+    "hi": "उत्प्रेक्षा"
+   },
+   {
+    "en": "यमक",
+    "hi": "यमक"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Several parts are identified with parts of a sunrise scene, so it is Sangrupak (extended metaphor).",
+  "explanation_hi": "यहाँ मंच पर उदयगिरि, रघुवर पर बाल सूर्य, संतों पर कमल और नेत्रों पर भौंरों का अंगों सहित आरोप किया गया है। उपमेय पर उपमान का अंग-उपांग सहित आरोप सांगरूपक (रूपक का भेद) कहलाता है।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "अलंकार",
+  "difficulty": "hard",
+  "question_en": "'मेघ आए बड़े बन-ठन के सँवर के' — इस पंक्ति में मुख्य रूप से कौन-सा अलंकार है?",
+  "question_hi": "'मेघ आए बड़े बन-ठन के सँवर के' — इस पंक्ति में मुख्य रूप से कौन-सा अलंकार है?",
+  "options": [
+   {
+    "en": "अतिशयोक्ति",
+    "hi": "अतिशयोक्ति"
+   },
+   {
+    "en": "मानवीकरण",
+    "hi": "मानवीकरण"
+   },
+   {
+    "en": "उत्प्रेक्षा",
+    "hi": "उत्प्रेक्षा"
+   },
+   {
+    "en": "श्लेष",
+    "hi": "श्लेष"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Clouds are shown dressing up like a person, so it is personification (Manvikaran).",
+  "explanation_hi": "यहाँ बादलों (प्रकृति) को मनुष्य की तरह सज-धजकर आते हुए दिखाया गया है। प्राकृतिक वस्तु पर मानवीय भावों और क्रियाओं का आरोप मानवीकरण अलंकार है।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "अलंकार",
+  "difficulty": "medium",
+  "question_en": "'काली घटा का घमंड घटा' — इस पंक्ति में मुख्य रूप से कौन-सा अलंकार है?",
+  "question_hi": "'काली घटा का घमंड घटा' — इस पंक्ति में मुख्य रूप से कौन-सा अलंकार है?",
+  "options": [
+   {
+    "en": "श्लेष",
+    "hi": "श्लेष"
+   },
+   {
+    "en": "रूपक",
+    "hi": "रूपक"
+   },
+   {
+    "en": "यमक",
+    "hi": "यमक"
+   },
+   {
+    "en": "उपमा",
+    "hi": "उपमा"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "'Ghata' is repeated with two meanings (clouds, decreased), so it is Yamak.",
+  "explanation_hi": "'घटा' शब्द दो बार आया है — पहली बार 'बादलों का समूह' और दूसरी बार 'कम हुआ' अर्थ में। भिन्न अर्थों में शब्द की आवृत्ति के कारण यमक अलंकार है ('घ' की आवृत्ति से अनुप्रास भी है, पर मुख्य यमक है)।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "अलंकार",
+  "difficulty": "easy",
+  "question_en": "निम्नलिखित में से कौन-सा शब्दालंकार है?",
+  "question_hi": "निम्नलिखित में से कौन-सा शब्दालंकार है?",
+  "options": [
+   {
+    "en": "उपमा",
+    "hi": "उपमा"
+   },
+   {
+    "en": "रूपक",
+    "hi": "रूपक"
+   },
+   {
+    "en": "उत्प्रेक्षा",
+    "hi": "उत्प्रेक्षा"
+   },
+   {
+    "en": "श्लेष",
+    "hi": "श्लेष"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Shlesh depends on the word itself, so it is a shabdalankar; the rest are arthalankars.",
+  "explanation_hi": "शब्दालंकार में चमत्कार शब्द पर निर्भर होता है — अनुप्रास, यमक, श्लेष इसके मुख्य भेद हैं। उपमा, रूपक और उत्प्रेक्षा अर्थालंकार हैं क्योंकि उनका सौंदर्य अर्थ पर टिका है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "अलंकार",
+  "difficulty": "easy",
+  "question_en": "जहाँ एक ही काव्य-पंक्ति में शब्दालंकार और अर्थालंकार दोनों एक साथ हों, वहाँ कौन-सा अलंकार माना जाता है?",
+  "question_hi": "जहाँ एक ही काव्य-पंक्ति में शब्दालंकार और अर्थालंकार दोनों एक साथ हों, वहाँ कौन-सा अलंकार माना जाता है?",
+  "options": [
+   {
+    "en": "उभयालंकार",
+    "hi": "उभयालंकार"
+   },
+   {
+    "en": "शब्दालंकार",
+    "hi": "शब्दालंकार"
+   },
+   {
+    "en": "अर्थालंकार",
+    "hi": "अर्थालंकार"
+   },
+   {
+    "en": "पाश्चात्य अलंकार",
+    "hi": "पाश्चात्य अलंकार"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "When sound-based and meaning-based figures occur together it is ubhayalankar.",
+  "explanation_hi": "जहाँ शब्द और अर्थ दोनों पर आधारित अलंकार एक साथ हों, उसे उभयालंकार कहते हैं — जैसे 'सो सुंदर मादक मदिरा सी' में 'म' की आवृत्ति (अनुप्रास) और 'मदिरा सी' (उपमा) दोनों हैं।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "रस",
+  "difficulty": "easy",
+  "question_en": "शृंगार रस का स्थायी भाव क्या है?",
+  "question_hi": "शृंगार रस का स्थायी भाव क्या है?",
+  "options": [
+   {
+    "en": "शोक",
+    "hi": "शोक"
+   },
+   {
+    "en": "उत्साह",
+    "hi": "उत्साह"
+   },
+   {
+    "en": "निर्वेद",
+    "hi": "निर्वेद"
+   },
+   {
+    "en": "रति",
+    "hi": "रति"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The sthayi bhav of shringar ras is rati (love).",
+  "explanation_hi": "शृंगार रस का स्थायी भाव 'रति' (प्रेम) है। शोक करुण रस का, उत्साह वीर रस का और निर्वेद शांत रस का स्थायी भाव है। शृंगार को 'रसराज' कहा जाता है।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "रस",
+  "difficulty": "easy",
+  "question_en": "वीर रस का स्थायी भाव क्या है?",
+  "question_hi": "वीर रस का स्थायी भाव क्या है?",
+  "options": [
+   {
+    "en": "क्रोध",
+    "hi": "क्रोध"
+   },
+   {
+    "en": "भय",
+    "hi": "भय"
+   },
+   {
+    "en": "उत्साह",
+    "hi": "उत्साह"
+   },
+   {
+    "en": "विस्मय",
+    "hi": "विस्मय"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Veer ras has utsah (enthusiasm) as its sthayi bhav; krodh belongs to raudra.",
+  "explanation_hi": "वीर रस का स्थायी भाव 'उत्साह' है। क्रोध रौद्र रस का, भय भयानक रस का और विस्मय अद्भुत रस का स्थायी भाव है — वीर और रौद्र को आपस में न मिलाएँ।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "रस",
+  "difficulty": "medium",
+  "question_en": "शांत रस का स्थायी भाव क्या है?",
+  "question_hi": "शांत रस का स्थायी भाव क्या है?",
+  "options": [
+   {
+    "en": "निर्वेद",
+    "hi": "निर्वेद"
+   },
+   {
+    "en": "जुगुप्सा",
+    "hi": "जुगुप्सा"
+   },
+   {
+    "en": "रति",
+    "hi": "रति"
+   },
+   {
+    "en": "हास",
+    "hi": "हास"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Shant ras has nirved (detachment) as its sthayi bhav.",
+  "explanation_hi": "शांत रस का स्थायी भाव 'निर्वेद' (वैराग्य/शम) है। जुगुप्सा वीभत्स रस का, रति शृंगार का और हास हास्य रस का स्थायी भाव है।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "छंद",
+  "difficulty": "medium",
+  "question_en": "दोहा छंद में मात्राओं की व्यवस्था कैसी होती है?",
+  "question_hi": "दोहा छंद में मात्राओं की व्यवस्था कैसी होती है?",
+  "options": [
+   {
+    "en": "विषम चरणों में 11 और सम चरणों में 13 मात्राएँ",
+    "hi": "विषम चरणों में 11 और सम चरणों में 13 मात्राएँ"
+   },
+   {
+    "en": "विषम चरणों में 13 और सम चरणों में 11 मात्राएँ",
+    "hi": "विषम चरणों में 13 और सम चरणों में 11 मात्राएँ"
+   },
+   {
+    "en": "प्रत्येक चरण में 16 मात्राएँ",
+    "hi": "प्रत्येक चरण में 16 मात्राएँ"
+   },
+   {
+    "en": "प्रत्येक चरण में 24 मात्राएँ",
+    "hi": "प्रत्येक चरण में 24 मात्राएँ"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Doha: 13 matras in odd and 11 in even quarters; the reverse is soratha.",
+  "explanation_hi": "दोहा अर्द्धसम मात्रिक छंद है — पहले और तीसरे (विषम) चरण में 13 तथा दूसरे और चौथे (सम) चरण में 11 मात्राएँ होती हैं, कुल 48। इसका उलटा (11-13) सोरठा है और 16 मात्राओं वाले चार चरण चौपाई के होते हैं।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "छंद",
+  "difficulty": "medium",
+  "question_en": "जिस छंद में दोहे के चरण उलट जाते हैं, अर्थात् विषम चरणों में 11 और सम चरणों में 13 मात्राएँ होती हैं, वह कौन-सा छंद है?",
+  "question_hi": "जिस छंद में दोहे के चरण उलट जाते हैं, अर्थात् विषम चरणों में 11 और सम चरणों में 13 मात्राएँ होती हैं, वह कौन-सा छंद है?",
+  "options": [
+   {
+    "en": "सोरठा",
+    "hi": "सोरठा"
+   },
+   {
+    "en": "चौपाई",
+    "hi": "चौपाई"
+   },
+   {
+    "en": "रोला",
+    "hi": "रोला"
+   },
+   {
+    "en": "कुंडलिया",
+    "hi": "कुंडलिया"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Soratha reverses the doha: 11 matras in odd and 13 in even quarters.",
+  "explanation_hi": "सोरठा दोहे का उलटा है — विषम चरण 11 और सम चरण 13 मात्राएँ। चौपाई में प्रत्येक चरण 16 मात्राओं का, रोला में प्रत्येक पंक्ति 24 मात्राओं की और कुंडलिया दोहा + रोला से बनता है।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "गद्यांश",
+  "difficulty": "easy",
+  "question_en": "गद्यांश: पुस्तकें मनुष्य की सबसे अच्छी मित्र होती हैं। वे बिना किसी स्वार्थ के हमें ज्ञान देती हैं और कठिन समय में धैर्य बँधाती हैं। जो व्यक्ति नियमित रूप से अच्छी पुस्तकें पढ़ता है, उसके विचारों में गहराई आती है तथा उसकी भाषा समृद्ध होती है। आज के डिजिटल युग में भी पुस्तकों का महत्त्व कम नहीं हुआ है, केवल उनका रूप बदल गया है। अब ई-पुस्तकें और ऑडियो-पुस्तकें भी पाठकों तक पहुँच रही हैं। आवश्यकता इस बात की है कि विद्यार्थी केवल परीक्षा के लिए नहीं, बल्कि आनंद और जिज्ञासा के लिए भी पढ़ें।\n\nप्रश्न: गद्यांश के अनुसार पुस्तकें मनुष्य की क्या होती हैं?",
+  "question_hi": "गद्यांश: पुस्तकें मनुष्य की सबसे अच्छी मित्र होती हैं। वे बिना किसी स्वार्थ के हमें ज्ञान देती हैं और कठिन समय में धैर्य बँधाती हैं। जो व्यक्ति नियमित रूप से अच्छी पुस्तकें पढ़ता है, उसके विचारों में गहराई आती है तथा उसकी भाषा समृद्ध होती है। आज के डिजिटल युग में भी पुस्तकों का महत्त्व कम नहीं हुआ है, केवल उनका रूप बदल गया है। अब ई-पुस्तकें और ऑडियो-पुस्तकें भी पाठकों तक पहुँच रही हैं। आवश्यकता इस बात की है कि विद्यार्थी केवल परीक्षा के लिए नहीं, बल्कि आनंद और जिज्ञासा के लिए भी पढ़ें।\n\nप्रश्न: गद्यांश के अनुसार पुस्तकें मनुष्य की क्या होती हैं?",
+  "options": [
+   {
+    "en": "सबसे अच्छी मित्र",
+    "hi": "सबसे अच्छी मित्र"
+   },
+   {
+    "en": "केवल परीक्षा का साधन",
+    "hi": "केवल परीक्षा का साधन"
+   },
+   {
+    "en": "मनोरंजन का एकमात्र साधन",
+    "hi": "मनोरंजन का एकमात्र साधन"
+   },
+   {
+    "en": "धन कमाने का माध्यम",
+    "hi": "धन कमाने का माध्यम"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The first sentence calls books man's best friends.",
+  "explanation_hi": "गद्यांश के पहले ही वाक्य में कहा गया है कि 'पुस्तकें मनुष्य की सबसे अच्छी मित्र होती हैं।'",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "गद्यांश",
+  "difficulty": "medium",
+  "question_en": "गद्यांश: पुस्तकें मनुष्य की सबसे अच्छी मित्र होती हैं। वे बिना किसी स्वार्थ के हमें ज्ञान देती हैं और कठिन समय में धैर्य बँधाती हैं। जो व्यक्ति नियमित रूप से अच्छी पुस्तकें पढ़ता है, उसके विचारों में गहराई आती है तथा उसकी भाषा समृद्ध होती है। आज के डिजिटल युग में भी पुस्तकों का महत्त्व कम नहीं हुआ है, केवल उनका रूप बदल गया है। अब ई-पुस्तकें और ऑडियो-पुस्तकें भी पाठकों तक पहुँच रही हैं। आवश्यकता इस बात की है कि विद्यार्थी केवल परीक्षा के लिए नहीं, बल्कि आनंद और जिज्ञासा के लिए भी पढ़ें।\n\nप्रश्न: डिजिटल युग में पुस्तकों के विषय में लेखक का क्या मत है?",
+  "question_hi": "गद्यांश: पुस्तकें मनुष्य की सबसे अच्छी मित्र होती हैं। वे बिना किसी स्वार्थ के हमें ज्ञान देती हैं और कठिन समय में धैर्य बँधाती हैं। जो व्यक्ति नियमित रूप से अच्छी पुस्तकें पढ़ता है, उसके विचारों में गहराई आती है तथा उसकी भाषा समृद्ध होती है। आज के डिजिटल युग में भी पुस्तकों का महत्त्व कम नहीं हुआ है, केवल उनका रूप बदल गया है। अब ई-पुस्तकें और ऑडियो-पुस्तकें भी पाठकों तक पहुँच रही हैं। आवश्यकता इस बात की है कि विद्यार्थी केवल परीक्षा के लिए नहीं, बल्कि आनंद और जिज्ञासा के लिए भी पढ़ें।\n\nप्रश्न: डिजिटल युग में पुस्तकों के विषय में लेखक का क्या मत है?",
+  "options": [
+   {
+    "en": "पुस्तकों का महत्त्व समाप्त हो गया है",
+    "hi": "पुस्तकों का महत्त्व समाप्त हो गया है"
+   },
+   {
+    "en": "पुस्तकों का महत्त्व बना हुआ है, केवल रूप बदला है",
+    "hi": "पुस्तकों का महत्त्व बना हुआ है, केवल रूप बदला है"
+   },
+   {
+    "en": "केवल छपी पुस्तकें ही उपयोगी हैं",
+    "hi": "केवल छपी पुस्तकें ही उपयोगी हैं"
+   },
+   {
+    "en": "ई-पुस्तकें पढ़ना हानिकारक है",
+    "hi": "ई-पुस्तकें पढ़ना हानिकारक है"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Books remain important; only their form has changed.",
+  "explanation_hi": "लेखक के अनुसार डिजिटल युग में भी पुस्तकों का महत्त्व कम नहीं हुआ, केवल उनका रूप बदलकर ई-पुस्तक और ऑडियो-पुस्तक हो गया है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "गद्यांश",
+  "difficulty": "medium",
+  "question_en": "गद्यांश: पुस्तकें मनुष्य की सबसे अच्छी मित्र होती हैं। वे बिना किसी स्वार्थ के हमें ज्ञान देती हैं और कठिन समय में धैर्य बँधाती हैं। जो व्यक्ति नियमित रूप से अच्छी पुस्तकें पढ़ता है, उसके विचारों में गहराई आती है तथा उसकी भाषा समृद्ध होती है। आज के डिजिटल युग में भी पुस्तकों का महत्त्व कम नहीं हुआ है, केवल उनका रूप बदल गया है। अब ई-पुस्तकें और ऑडियो-पुस्तकें भी पाठकों तक पहुँच रही हैं। आवश्यकता इस बात की है कि विद्यार्थी केवल परीक्षा के लिए नहीं, बल्कि आनंद और जिज्ञासा के लिए भी पढ़ें।\n\nप्रश्न: गद्यांश में प्रयुक्त 'समृद्ध' शब्द का विलोम क्या है?",
+  "question_hi": "गद्यांश: पुस्तकें मनुष्य की सबसे अच्छी मित्र होती हैं। वे बिना किसी स्वार्थ के हमें ज्ञान देती हैं और कठिन समय में धैर्य बँधाती हैं। जो व्यक्ति नियमित रूप से अच्छी पुस्तकें पढ़ता है, उसके विचारों में गहराई आती है तथा उसकी भाषा समृद्ध होती है। आज के डिजिटल युग में भी पुस्तकों का महत्त्व कम नहीं हुआ है, केवल उनका रूप बदल गया है। अब ई-पुस्तकें और ऑडियो-पुस्तकें भी पाठकों तक पहुँच रही हैं। आवश्यकता इस बात की है कि विद्यार्थी केवल परीक्षा के लिए नहीं, बल्कि आनंद और जिज्ञासा के लिए भी पढ़ें।\n\nप्रश्न: गद्यांश में प्रयुक्त 'समृद्ध' शब्द का विलोम क्या है?",
+  "options": [
+   {
+    "en": "संपन्न",
+    "hi": "संपन्न"
+   },
+   {
+    "en": "वैभवशाली",
+    "hi": "वैभवशाली"
+   },
+   {
+    "en": "विपन्न",
+    "hi": "विपन्न"
+   },
+   {
+    "en": "सशक्त",
+    "hi": "सशक्त"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The antonym of samriddh (prosperous) is vipann (destitute).",
+  "explanation_hi": "'समृद्ध' का अर्थ है संपन्न या भरा-पूरा; इसका विलोम 'विपन्न' (अभावग्रस्त) है। संपन्न और वैभवशाली इसके पर्यायवाची हैं।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "गद्यांश",
+  "difficulty": "medium",
+  "question_en": "गद्यांश: पुस्तकें मनुष्य की सबसे अच्छी मित्र होती हैं। वे बिना किसी स्वार्थ के हमें ज्ञान देती हैं और कठिन समय में धैर्य बँधाती हैं। जो व्यक्ति नियमित रूप से अच्छी पुस्तकें पढ़ता है, उसके विचारों में गहराई आती है तथा उसकी भाषा समृद्ध होती है। आज के डिजिटल युग में भी पुस्तकों का महत्त्व कम नहीं हुआ है, केवल उनका रूप बदल गया है। अब ई-पुस्तकें और ऑडियो-पुस्तकें भी पाठकों तक पहुँच रही हैं। आवश्यकता इस बात की है कि विद्यार्थी केवल परीक्षा के लिए नहीं, बल्कि आनंद और जिज्ञासा के लिए भी पढ़ें।\n\nप्रश्न: गद्यांश में आए 'स्वार्थ' शब्द का सही संधि-विच्छेद और संधि का प्रकार क्या है?",
+  "question_hi": "गद्यांश: पुस्तकें मनुष्य की सबसे अच्छी मित्र होती हैं। वे बिना किसी स्वार्थ के हमें ज्ञान देती हैं और कठिन समय में धैर्य बँधाती हैं। जो व्यक्ति नियमित रूप से अच्छी पुस्तकें पढ़ता है, उसके विचारों में गहराई आती है तथा उसकी भाषा समृद्ध होती है। आज के डिजिटल युग में भी पुस्तकों का महत्त्व कम नहीं हुआ है, केवल उनका रूप बदल गया है। अब ई-पुस्तकें और ऑडियो-पुस्तकें भी पाठकों तक पहुँच रही हैं। आवश्यकता इस बात की है कि विद्यार्थी केवल परीक्षा के लिए नहीं, बल्कि आनंद और जिज्ञासा के लिए भी पढ़ें।\n\nप्रश्न: गद्यांश में आए 'स्वार्थ' शब्द का सही संधि-विच्छेद और संधि का प्रकार क्या है?",
+  "options": [
+   {
+    "en": "स्वा + अर्थ — गुण संधि",
+    "hi": "स्वा + अर्थ — गुण संधि"
+   },
+   {
+    "en": "स्व + आर्थ — यण संधि",
+    "hi": "स्व + आर्थ — यण संधि"
+   },
+   {
+    "en": "स्वा + र्थ — व्यंजन संधि",
+    "hi": "स्वा + र्थ — व्यंजन संधि"
+   },
+   {
+    "en": "स्व + अर्थ — दीर्घ संधि",
+    "hi": "स्व + अर्थ — दीर्घ संधि"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Sva + arth = svaarth; a + a gives aa (deergh sandhi).",
+  "explanation_hi": "स्व + अर्थ = स्वार्थ; यहाँ अ + अ मिलकर 'आ' बना है, इसलिए दीर्घ स्वर संधि है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "गद्यांश",
+  "difficulty": "medium",
+  "question_en": "गद्यांश: पुस्तकें मनुष्य की सबसे अच्छी मित्र होती हैं। वे बिना किसी स्वार्थ के हमें ज्ञान देती हैं और कठिन समय में धैर्य बँधाती हैं। जो व्यक्ति नियमित रूप से अच्छी पुस्तकें पढ़ता है, उसके विचारों में गहराई आती है तथा उसकी भाषा समृद्ध होती है। आज के डिजिटल युग में भी पुस्तकों का महत्त्व कम नहीं हुआ है, केवल उनका रूप बदल गया है। अब ई-पुस्तकें और ऑडियो-पुस्तकें भी पाठकों तक पहुँच रही हैं। आवश्यकता इस बात की है कि विद्यार्थी केवल परीक्षा के लिए नहीं, बल्कि आनंद और जिज्ञासा के लिए भी पढ़ें।\n\nप्रश्न: गद्यांश के लिए सबसे उपयुक्त शीर्षक कौन-सा है?",
+  "question_hi": "गद्यांश: पुस्तकें मनुष्य की सबसे अच्छी मित्र होती हैं। वे बिना किसी स्वार्थ के हमें ज्ञान देती हैं और कठिन समय में धैर्य बँधाती हैं। जो व्यक्ति नियमित रूप से अच्छी पुस्तकें पढ़ता है, उसके विचारों में गहराई आती है तथा उसकी भाषा समृद्ध होती है। आज के डिजिटल युग में भी पुस्तकों का महत्त्व कम नहीं हुआ है, केवल उनका रूप बदल गया है। अब ई-पुस्तकें और ऑडियो-पुस्तकें भी पाठकों तक पहुँच रही हैं। आवश्यकता इस बात की है कि विद्यार्थी केवल परीक्षा के लिए नहीं, बल्कि आनंद और जिज्ञासा के लिए भी पढ़ें।\n\nप्रश्न: गद्यांश के लिए सबसे उपयुक्त शीर्षक कौन-सा है?",
+  "options": [
+   {
+    "en": "पुस्तकें: हमारी सच्ची मित्र",
+    "hi": "पुस्तकें: हमारी सच्ची मित्र"
+   },
+   {
+    "en": "डिजिटल युग की चुनौतियाँ",
+    "hi": "डिजिटल युग की चुनौतियाँ"
+   },
+   {
+    "en": "परीक्षा की तैयारी कैसे करें",
+    "hi": "परीक्षा की तैयारी कैसे करें"
+   },
+   {
+    "en": "ऑडियो-पुस्तकों का बाज़ार",
+    "hi": "ऑडियो-पुस्तकों का बाज़ार"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The passage is about books being our true friends.",
+  "explanation_hi": "पूरा गद्यांश पुस्तकों के महत्त्व और उन्हें मित्र के रूप में अपनाने पर केंद्रित है; अन्य विकल्प गद्यांश के केवल किसी एक अंश को छूते हैं या उससे बाहर हैं।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "गद्यांश",
+  "difficulty": "easy",
+  "question_en": "गद्यांश: एक अच्छा शिक्षक केवल पाठ्यपुस्तक का ज्ञान नहीं देता, बल्कि विद्यार्थियों में सोचने की क्षमता जगाता है। वह प्रश्न पूछने को प्रोत्साहित करता है और गलती को सीखने का अवसर मानता है। कक्षा में भय का वातावरण होने पर विद्यार्थी अपनी शंकाएँ व्यक्त नहीं कर पाते, इसलिए शिक्षक को मित्रवत् व्यवहार करना चाहिए। राष्ट्रीय शिक्षा नीति 2020 भी रटने के स्थान पर समझ पर आधारित शिक्षा पर बल देती है। वास्तव में शिक्षक वह दीपक है जो स्वयं जलकर दूसरों का मार्ग आलोकित करता है।\n\nप्रश्न: गद्यांश के अनुसार एक अच्छा शिक्षक विद्यार्थियों में क्या जगाता है?",
+  "question_hi": "गद्यांश: एक अच्छा शिक्षक केवल पाठ्यपुस्तक का ज्ञान नहीं देता, बल्कि विद्यार्थियों में सोचने की क्षमता जगाता है। वह प्रश्न पूछने को प्रोत्साहित करता है और गलती को सीखने का अवसर मानता है। कक्षा में भय का वातावरण होने पर विद्यार्थी अपनी शंकाएँ व्यक्त नहीं कर पाते, इसलिए शिक्षक को मित्रवत् व्यवहार करना चाहिए। राष्ट्रीय शिक्षा नीति 2020 भी रटने के स्थान पर समझ पर आधारित शिक्षा पर बल देती है। वास्तव में शिक्षक वह दीपक है जो स्वयं जलकर दूसरों का मार्ग आलोकित करता है।\n\nप्रश्न: गद्यांश के अनुसार एक अच्छा शिक्षक विद्यार्थियों में क्या जगाता है?",
+  "options": [
+   {
+    "en": "रटने की आदत",
+    "hi": "रटने की आदत"
+   },
+   {
+    "en": "सोचने की क्षमता",
+    "hi": "सोचने की क्षमता"
+   },
+   {
+    "en": "परीक्षा का भय",
+    "hi": "परीक्षा का भय"
+   },
+   {
+    "en": "प्रतियोगिता की भावना",
+    "hi": "प्रतियोगिता की भावना"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "A good teacher awakens the ability to think.",
+  "explanation_hi": "पहले वाक्य में स्पष्ट है कि अच्छा शिक्षक केवल पाठ्यपुस्तक का ज्ञान नहीं देता, बल्कि 'सोचने की क्षमता जगाता है।'",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "गद्यांश",
+  "difficulty": "easy",
+  "question_en": "गद्यांश: एक अच्छा शिक्षक केवल पाठ्यपुस्तक का ज्ञान नहीं देता, बल्कि विद्यार्थियों में सोचने की क्षमता जगाता है। वह प्रश्न पूछने को प्रोत्साहित करता है और गलती को सीखने का अवसर मानता है। कक्षा में भय का वातावरण होने पर विद्यार्थी अपनी शंकाएँ व्यक्त नहीं कर पाते, इसलिए शिक्षक को मित्रवत् व्यवहार करना चाहिए। राष्ट्रीय शिक्षा नीति 2020 भी रटने के स्थान पर समझ पर आधारित शिक्षा पर बल देती है। वास्तव में शिक्षक वह दीपक है जो स्वयं जलकर दूसरों का मार्ग आलोकित करता है।\n\nप्रश्न: गद्यांश के अनुसार विद्यार्थी अपनी शंकाएँ कब व्यक्त नहीं कर पाते?",
+  "question_hi": "गद्यांश: एक अच्छा शिक्षक केवल पाठ्यपुस्तक का ज्ञान नहीं देता, बल्कि विद्यार्थियों में सोचने की क्षमता जगाता है। वह प्रश्न पूछने को प्रोत्साहित करता है और गलती को सीखने का अवसर मानता है। कक्षा में भय का वातावरण होने पर विद्यार्थी अपनी शंकाएँ व्यक्त नहीं कर पाते, इसलिए शिक्षक को मित्रवत् व्यवहार करना चाहिए। राष्ट्रीय शिक्षा नीति 2020 भी रटने के स्थान पर समझ पर आधारित शिक्षा पर बल देती है। वास्तव में शिक्षक वह दीपक है जो स्वयं जलकर दूसरों का मार्ग आलोकित करता है।\n\nप्रश्न: गद्यांश के अनुसार विद्यार्थी अपनी शंकाएँ कब व्यक्त नहीं कर पाते?",
+  "options": [
+   {
+    "en": "जब पाठ्यपुस्तक कठिन हो",
+    "hi": "जब पाठ्यपुस्तक कठिन हो"
+   },
+   {
+    "en": "जब परीक्षा निकट हो",
+    "hi": "जब परीक्षा निकट हो"
+   },
+   {
+    "en": "जब कक्षा में भय का वातावरण हो",
+    "hi": "जब कक्षा में भय का वातावरण हो"
+   },
+   {
+    "en": "जब शिक्षक प्रश्न पूछे",
+    "hi": "जब शिक्षक प्रश्न पूछे"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Students hold back doubts when the classroom feels fearful.",
+  "explanation_hi": "गद्यांश कहता है कि 'कक्षा में भय का वातावरण होने पर विद्यार्थी अपनी शंकाएँ व्यक्त नहीं कर पाते', इसीलिए शिक्षक को मित्रवत् होना चाहिए।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "गद्यांश",
+  "difficulty": "medium",
+  "question_en": "गद्यांश: एक अच्छा शिक्षक केवल पाठ्यपुस्तक का ज्ञान नहीं देता, बल्कि विद्यार्थियों में सोचने की क्षमता जगाता है। वह प्रश्न पूछने को प्रोत्साहित करता है और गलती को सीखने का अवसर मानता है। कक्षा में भय का वातावरण होने पर विद्यार्थी अपनी शंकाएँ व्यक्त नहीं कर पाते, इसलिए शिक्षक को मित्रवत् व्यवहार करना चाहिए। राष्ट्रीय शिक्षा नीति 2020 भी रटने के स्थान पर समझ पर आधारित शिक्षा पर बल देती है। वास्तव में शिक्षक वह दीपक है जो स्वयं जलकर दूसरों का मार्ग आलोकित करता है।\n\nप्रश्न: गद्यांश के अनुसार राष्ट्रीय शिक्षा नीति 2020 किस पर बल देती है?",
+  "question_hi": "गद्यांश: एक अच्छा शिक्षक केवल पाठ्यपुस्तक का ज्ञान नहीं देता, बल्कि विद्यार्थियों में सोचने की क्षमता जगाता है। वह प्रश्न पूछने को प्रोत्साहित करता है और गलती को सीखने का अवसर मानता है। कक्षा में भय का वातावरण होने पर विद्यार्थी अपनी शंकाएँ व्यक्त नहीं कर पाते, इसलिए शिक्षक को मित्रवत् व्यवहार करना चाहिए। राष्ट्रीय शिक्षा नीति 2020 भी रटने के स्थान पर समझ पर आधारित शिक्षा पर बल देती है। वास्तव में शिक्षक वह दीपक है जो स्वयं जलकर दूसरों का मार्ग आलोकित करता है।\n\nप्रश्न: गद्यांश के अनुसार राष्ट्रीय शिक्षा नीति 2020 किस पर बल देती है?",
+  "options": [
+   {
+    "en": "रटने पर आधारित शिक्षा",
+    "hi": "रटने पर आधारित शिक्षा"
+   },
+   {
+    "en": "केवल परीक्षा-परिणाम",
+    "hi": "केवल परीक्षा-परिणाम"
+   },
+   {
+    "en": "अधिक गृहकार्य",
+    "hi": "अधिक गृहकार्य"
+   },
+   {
+    "en": "समझ पर आधारित शिक्षा",
+    "hi": "समझ पर आधारित शिक्षा"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "NEP 2020 stresses understanding over rote learning.",
+  "explanation_hi": "गद्यांश के अनुसार NEP 2020 'रटने के स्थान पर समझ पर आधारित शिक्षा' पर बल देती है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "गद्यांश",
+  "difficulty": "medium",
+  "question_en": "गद्यांश: एक अच्छा शिक्षक केवल पाठ्यपुस्तक का ज्ञान नहीं देता, बल्कि विद्यार्थियों में सोचने की क्षमता जगाता है। वह प्रश्न पूछने को प्रोत्साहित करता है और गलती को सीखने का अवसर मानता है। कक्षा में भय का वातावरण होने पर विद्यार्थी अपनी शंकाएँ व्यक्त नहीं कर पाते, इसलिए शिक्षक को मित्रवत् व्यवहार करना चाहिए। राष्ट्रीय शिक्षा नीति 2020 भी रटने के स्थान पर समझ पर आधारित शिक्षा पर बल देती है। वास्तव में शिक्षक वह दीपक है जो स्वयं जलकर दूसरों का मार्ग आलोकित करता है।\n\nप्रश्न: 'शिक्षक वह दीपक है जो स्वयं जलकर दूसरों का मार्ग आलोकित करता है' — इस वाक्य में कौन-सा अलंकार है?",
+  "question_hi": "गद्यांश: एक अच्छा शिक्षक केवल पाठ्यपुस्तक का ज्ञान नहीं देता, बल्कि विद्यार्थियों में सोचने की क्षमता जगाता है। वह प्रश्न पूछने को प्रोत्साहित करता है और गलती को सीखने का अवसर मानता है। कक्षा में भय का वातावरण होने पर विद्यार्थी अपनी शंकाएँ व्यक्त नहीं कर पाते, इसलिए शिक्षक को मित्रवत् व्यवहार करना चाहिए। राष्ट्रीय शिक्षा नीति 2020 भी रटने के स्थान पर समझ पर आधारित शिक्षा पर बल देती है। वास्तव में शिक्षक वह दीपक है जो स्वयं जलकर दूसरों का मार्ग आलोकित करता है।\n\nप्रश्न: 'शिक्षक वह दीपक है जो स्वयं जलकर दूसरों का मार्ग आलोकित करता है' — इस वाक्य में कौन-सा अलंकार है?",
+  "options": [
+   {
+    "en": "रूपक",
+    "hi": "रूपक"
+   },
+   {
+    "en": "यमक",
+    "hi": "यमक"
+   },
+   {
+    "en": "अनुप्रास",
+    "hi": "अनुप्रास"
+   },
+   {
+    "en": "श्लेष",
+    "hi": "श्लेष"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The teacher is directly called a lamp, so it is Rupak (metaphor).",
+  "explanation_hi": "यहाँ शिक्षक (उपमेय) को सीधे दीपक (उपमान) कह दिया गया है, बिना किसी वाचक शब्द के; उपमेय पर उपमान का अभेद आरोप रूपक अलंकार है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "गद्यांश",
+  "difficulty": "hard",
+  "question_en": "गद्यांश: एक अच्छा शिक्षक केवल पाठ्यपुस्तक का ज्ञान नहीं देता, बल्कि विद्यार्थियों में सोचने की क्षमता जगाता है। वह प्रश्न पूछने को प्रोत्साहित करता है और गलती को सीखने का अवसर मानता है। कक्षा में भय का वातावरण होने पर विद्यार्थी अपनी शंकाएँ व्यक्त नहीं कर पाते, इसलिए शिक्षक को मित्रवत् व्यवहार करना चाहिए। राष्ट्रीय शिक्षा नीति 2020 भी रटने के स्थान पर समझ पर आधारित शिक्षा पर बल देती है। वास्तव में शिक्षक वह दीपक है जो स्वयं जलकर दूसरों का मार्ग आलोकित करता है।\n\nप्रश्न: गद्यांश में प्रयुक्त 'आलोकित' शब्द का अर्थ क्या है?",
+  "question_hi": "गद्यांश: एक अच्छा शिक्षक केवल पाठ्यपुस्तक का ज्ञान नहीं देता, बल्कि विद्यार्थियों में सोचने की क्षमता जगाता है। वह प्रश्न पूछने को प्रोत्साहित करता है और गलती को सीखने का अवसर मानता है। कक्षा में भय का वातावरण होने पर विद्यार्थी अपनी शंकाएँ व्यक्त नहीं कर पाते, इसलिए शिक्षक को मित्रवत् व्यवहार करना चाहिए। राष्ट्रीय शिक्षा नीति 2020 भी रटने के स्थान पर समझ पर आधारित शिक्षा पर बल देती है। वास्तव में शिक्षक वह दीपक है जो स्वयं जलकर दूसरों का मार्ग आलोकित करता है।\n\nप्रश्न: गद्यांश में प्रयुक्त 'आलोकित' शब्द का अर्थ क्या है?",
+  "options": [
+   {
+    "en": "अंधकारमय",
+    "hi": "अंधकारमय"
+   },
+   {
+    "en": "प्रकाशित",
+    "hi": "प्रकाशित"
+   },
+   {
+    "en": "आलोचित",
+    "hi": "आलोचित"
+   },
+   {
+    "en": "अवलोकित",
+    "hi": "अवलोकित"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Aalokit means illuminated (from aalok, light).",
+  "explanation_hi": "'आलोक' का अर्थ है प्रकाश, इसलिए 'आलोकित' का अर्थ है प्रकाशित या रोशन। 'आलोचित' (जिसकी आलोचना हुई हो) और 'अवलोकित' (देखा गया) मिलती-जुलती ध्वनि वाले भ्रामक विकल्प हैं।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "गद्यांश",
+  "difficulty": "easy",
+  "question_en": "गद्यांश: परिश्रम ही सफलता की कुंजी है। इतिहास साक्षी है कि जिन लोगों ने कठिन परिश्रम किया, वे साधनों के अभाव में भी ऊँचाइयों तक पहुँचे। भाग्य के भरोसे बैठे रहने वाला व्यक्ति अवसर आने पर भी उसका लाभ नहीं उठा पाता। परिश्रमी व्यक्ति असफलता से निराश नहीं होता; वह अपनी भूलों से सीखकर फिर प्रयास करता है। आलस्य मनुष्य का सबसे बड़ा शत्रु है, जो उसकी प्रतिभा को धीरे-धीरे नष्ट कर देता है।\n\nप्रश्न: गद्यांश के अनुसार मनुष्य का सबसे बड़ा शत्रु कौन है?",
+  "question_hi": "गद्यांश: परिश्रम ही सफलता की कुंजी है। इतिहास साक्षी है कि जिन लोगों ने कठिन परिश्रम किया, वे साधनों के अभाव में भी ऊँचाइयों तक पहुँचे। भाग्य के भरोसे बैठे रहने वाला व्यक्ति अवसर आने पर भी उसका लाभ नहीं उठा पाता। परिश्रमी व्यक्ति असफलता से निराश नहीं होता; वह अपनी भूलों से सीखकर फिर प्रयास करता है। आलस्य मनुष्य का सबसे बड़ा शत्रु है, जो उसकी प्रतिभा को धीरे-धीरे नष्ट कर देता है।\n\nप्रश्न: गद्यांश के अनुसार मनुष्य का सबसे बड़ा शत्रु कौन है?",
+  "options": [
+   {
+    "en": "असफलता",
+    "hi": "असफलता"
+   },
+   {
+    "en": "भाग्य",
+    "hi": "भाग्य"
+   },
+   {
+    "en": "आलस्य",
+    "hi": "आलस्य"
+   },
+   {
+    "en": "साधनों का अभाव",
+    "hi": "साधनों का अभाव"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Laziness is called man's greatest enemy.",
+  "explanation_hi": "अंतिम वाक्य में कहा गया है कि 'आलस्य मनुष्य का सबसे बड़ा शत्रु है', जो प्रतिभा को धीरे-धीरे नष्ट कर देता है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "गद्यांश",
+  "difficulty": "medium",
+  "question_en": "गद्यांश: परिश्रम ही सफलता की कुंजी है। इतिहास साक्षी है कि जिन लोगों ने कठिन परिश्रम किया, वे साधनों के अभाव में भी ऊँचाइयों तक पहुँचे। भाग्य के भरोसे बैठे रहने वाला व्यक्ति अवसर आने पर भी उसका लाभ नहीं उठा पाता। परिश्रमी व्यक्ति असफलता से निराश नहीं होता; वह अपनी भूलों से सीखकर फिर प्रयास करता है। आलस्य मनुष्य का सबसे बड़ा शत्रु है, जो उसकी प्रतिभा को धीरे-धीरे नष्ट कर देता है।\n\nप्रश्न: गद्यांश के अनुसार परिश्रमी व्यक्ति असफल होने पर क्या करता है?",
+  "question_hi": "गद्यांश: परिश्रम ही सफलता की कुंजी है। इतिहास साक्षी है कि जिन लोगों ने कठिन परिश्रम किया, वे साधनों के अभाव में भी ऊँचाइयों तक पहुँचे। भाग्य के भरोसे बैठे रहने वाला व्यक्ति अवसर आने पर भी उसका लाभ नहीं उठा पाता। परिश्रमी व्यक्ति असफलता से निराश नहीं होता; वह अपनी भूलों से सीखकर फिर प्रयास करता है। आलस्य मनुष्य का सबसे बड़ा शत्रु है, जो उसकी प्रतिभा को धीरे-धीरे नष्ट कर देता है।\n\nप्रश्न: गद्यांश के अनुसार परिश्रमी व्यक्ति असफल होने पर क्या करता है?",
+  "options": [
+   {
+    "en": "भाग्य को दोष देता है",
+    "hi": "भाग्य को दोष देता है"
+   },
+   {
+    "en": "अपनी भूलों से सीखकर फिर प्रयास करता है",
+    "hi": "अपनी भूलों से सीखकर फिर प्रयास करता है"
+   },
+   {
+    "en": "कार्य बदल लेता है",
+    "hi": "कार्य बदल लेता है"
+   },
+   {
+    "en": "दूसरों से सहायता माँगता है",
+    "hi": "दूसरों से सहायता माँगता है"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "He learns from mistakes and tries again.",
+  "explanation_hi": "गद्यांश कहता है कि परिश्रमी व्यक्ति असफलता से निराश नहीं होता, बल्कि 'अपनी भूलों से सीखकर फिर प्रयास करता है।'",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "गद्यांश",
+  "difficulty": "medium",
+  "question_en": "गद्यांश: परिश्रम ही सफलता की कुंजी है। इतिहास साक्षी है कि जिन लोगों ने कठिन परिश्रम किया, वे साधनों के अभाव में भी ऊँचाइयों तक पहुँचे। भाग्य के भरोसे बैठे रहने वाला व्यक्ति अवसर आने पर भी उसका लाभ नहीं उठा पाता। परिश्रमी व्यक्ति असफलता से निराश नहीं होता; वह अपनी भूलों से सीखकर फिर प्रयास करता है। आलस्य मनुष्य का सबसे बड़ा शत्रु है, जो उसकी प्रतिभा को धीरे-धीरे नष्ट कर देता है।\n\nप्रश्न: गद्यांश में आए 'परिश्रम' शब्द में कौन-सा उपसर्ग है?",
+  "question_hi": "गद्यांश: परिश्रम ही सफलता की कुंजी है। इतिहास साक्षी है कि जिन लोगों ने कठिन परिश्रम किया, वे साधनों के अभाव में भी ऊँचाइयों तक पहुँचे। भाग्य के भरोसे बैठे रहने वाला व्यक्ति अवसर आने पर भी उसका लाभ नहीं उठा पाता। परिश्रमी व्यक्ति असफलता से निराश नहीं होता; वह अपनी भूलों से सीखकर फिर प्रयास करता है। आलस्य मनुष्य का सबसे बड़ा शत्रु है, जो उसकी प्रतिभा को धीरे-धीरे नष्ट कर देता है।\n\nप्रश्न: गद्यांश में आए 'परिश्रम' शब्द में कौन-सा उपसर्ग है?",
+  "options": [
+   {
+    "en": "परी",
+    "hi": "परी"
+   },
+   {
+    "en": "पर",
+    "hi": "पर"
+   },
+   {
+    "en": "प्र",
+    "hi": "प्र"
+   },
+   {
+    "en": "परि",
+    "hi": "परि"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Parishram = pari + shram; the prefix is 'pari'.",
+  "explanation_hi": "परि + श्रम = परिश्रम। 'परि' संस्कृत उपसर्ग है जिसका अर्थ 'चारों ओर/पूर्ण रूप से' है; इसी से परिक्रमा, परिपूर्ण जैसे शब्द बनते हैं।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "गद्यांश",
+  "difficulty": "hard",
+  "question_en": "गद्यांश: परिश्रम ही सफलता की कुंजी है। इतिहास साक्षी है कि जिन लोगों ने कठिन परिश्रम किया, वे साधनों के अभाव में भी ऊँचाइयों तक पहुँचे। भाग्य के भरोसे बैठे रहने वाला व्यक्ति अवसर आने पर भी उसका लाभ नहीं उठा पाता। परिश्रमी व्यक्ति असफलता से निराश नहीं होता; वह अपनी भूलों से सीखकर फिर प्रयास करता है। आलस्य मनुष्य का सबसे बड़ा शत्रु है, जो उसकी प्रतिभा को धीरे-धीरे नष्ट कर देता है।\n\nप्रश्न: गद्यांश का केंद्रीय भाव क्या है?",
+  "question_hi": "गद्यांश: परिश्रम ही सफलता की कुंजी है। इतिहास साक्षी है कि जिन लोगों ने कठिन परिश्रम किया, वे साधनों के अभाव में भी ऊँचाइयों तक पहुँचे। भाग्य के भरोसे बैठे रहने वाला व्यक्ति अवसर आने पर भी उसका लाभ नहीं उठा पाता। परिश्रमी व्यक्ति असफलता से निराश नहीं होता; वह अपनी भूलों से सीखकर फिर प्रयास करता है। आलस्य मनुष्य का सबसे बड़ा शत्रु है, जो उसकी प्रतिभा को धीरे-धीरे नष्ट कर देता है।\n\nप्रश्न: गद्यांश का केंद्रीय भाव क्या है?",
+  "options": [
+   {
+    "en": "निरंतर परिश्रम से ही सफलता मिलती है, आलस्य उसका बाधक है",
+    "hi": "निरंतर परिश्रम से ही सफलता मिलती है, आलस्य उसका बाधक है"
+   },
+   {
+    "en": "सफलता केवल भाग्य से मिलती है",
+    "hi": "सफलता केवल भाग्य से मिलती है"
+   },
+   {
+    "en": "इतिहास का अध्ययन आवश्यक है",
+    "hi": "इतिहास का अध्ययन आवश्यक है"
+   },
+   {
+    "en": "साधनों के बिना सफलता असंभव है",
+    "hi": "साधनों के बिना सफलता असंभव है"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Sustained hard work brings success; laziness blocks it.",
+  "explanation_hi": "पूरा गद्यांश परिश्रम को सफलता की कुंजी और आलस्य को सबसे बड़ा शत्रु बताता है। अंतिम विकल्प गद्यांश के विपरीत है, क्योंकि उसमें कहा गया है कि परिश्रमी लोग साधनों के अभाव में भी सफल हुए।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "गद्यांश",
+  "difficulty": "easy",
+  "question_en": "गद्यांश: भारत में विश्व की लगभग अठारह प्रतिशत जनसंख्या रहती है, किंतु विश्व के मीठे जल संसाधनों का केवल चार प्रतिशत ही हमारे पास है। हमारी अधिकांश वर्षा मानसून के चार महीनों में होती है और यह जल यदि रोका न जाए तो बहकर समुद्र में चला जाता है। बढ़ते शहरीकरण के कारण धरती का बड़ा भाग कंक्रीट से ढक गया है, जिससे वर्षा का पानी भूमि में रिस नहीं पाता और भूजल-स्तर लगातार नीचे जा रहा है। हमारे पूर्वज बावड़ियों, तालाबों और कुओं के माध्यम से जल का संचयन करते थे। आज छतों पर गिरने वाले वर्षा-जल को एकत्र करके भूमि में पहुँचाना सबसे सरल और सस्ता उपाय है। यदि हर घर और विद्यालय यह छोटा-सा प्रयास करे, तो वह दिन दूर नहीं जब दुर्लभ होता जा रहा जल फिर से सबके लिए सुलभ हो सकेगा।\n\nप्रश्न: गद्यांश के अनुसार भूजल-स्तर लगातार नीचे जाने का मुख्य कारण क्या है?",
+  "question_hi": "गद्यांश: भारत में विश्व की लगभग अठारह प्रतिशत जनसंख्या रहती है, किंतु विश्व के मीठे जल संसाधनों का केवल चार प्रतिशत ही हमारे पास है। हमारी अधिकांश वर्षा मानसून के चार महीनों में होती है और यह जल यदि रोका न जाए तो बहकर समुद्र में चला जाता है। बढ़ते शहरीकरण के कारण धरती का बड़ा भाग कंक्रीट से ढक गया है, जिससे वर्षा का पानी भूमि में रिस नहीं पाता और भूजल-स्तर लगातार नीचे जा रहा है। हमारे पूर्वज बावड़ियों, तालाबों और कुओं के माध्यम से जल का संचयन करते थे। आज छतों पर गिरने वाले वर्षा-जल को एकत्र करके भूमि में पहुँचाना सबसे सरल और सस्ता उपाय है। यदि हर घर और विद्यालय यह छोटा-सा प्रयास करे, तो वह दिन दूर नहीं जब दुर्लभ होता जा रहा जल फिर से सबके लिए सुलभ हो सकेगा।\n\nप्रश्न: गद्यांश के अनुसार भूजल-स्तर लगातार नीचे जाने का मुख्य कारण क्या है?",
+  "options": [
+   {
+    "en": "मानसून का देर से आना",
+    "hi": "मानसून का देर से आना"
+   },
+   {
+    "en": "समुद्र का जल-स्तर बढ़ना",
+    "hi": "समुद्र का जल-स्तर बढ़ना"
+   },
+   {
+    "en": "बावड़ियों और तालाबों की अधिक संख्या",
+    "hi": "बावड़ियों और तालाबों की अधिक संख्या"
+   },
+   {
+    "en": "कंक्रीट से ढकी धरती के कारण वर्षा-जल का भूमि में न रिस पाना",
+    "hi": "कंक्रीट से ढकी धरती के कारण वर्षा-जल का भूमि में न रिस पाना"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Concrete cover stops rainwater from seeping in, so groundwater falls.",
+  "explanation_hi": "गद्यांश में स्पष्ट लिखा है कि शहरीकरण से धरती कंक्रीट से ढक गई है, जिससे वर्षा का पानी भूमि में रिस नहीं पाता और भूजल-स्तर नीचे जा रहा है। शेष कारण गद्यांश में नहीं दिए गए।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "गद्यांश",
+  "difficulty": "medium",
+  "question_en": "गद्यांश: भारत में विश्व की लगभग अठारह प्रतिशत जनसंख्या रहती है, किंतु विश्व के मीठे जल संसाधनों का केवल चार प्रतिशत ही हमारे पास है। हमारी अधिकांश वर्षा मानसून के चार महीनों में होती है और यह जल यदि रोका न जाए तो बहकर समुद्र में चला जाता है। बढ़ते शहरीकरण के कारण धरती का बड़ा भाग कंक्रीट से ढक गया है, जिससे वर्षा का पानी भूमि में रिस नहीं पाता और भूजल-स्तर लगातार नीचे जा रहा है। हमारे पूर्वज बावड़ियों, तालाबों और कुओं के माध्यम से जल का संचयन करते थे। आज छतों पर गिरने वाले वर्षा-जल को एकत्र करके भूमि में पहुँचाना सबसे सरल और सस्ता उपाय है। यदि हर घर और विद्यालय यह छोटा-सा प्रयास करे, तो वह दिन दूर नहीं जब दुर्लभ होता जा रहा जल फिर से सबके लिए सुलभ हो सकेगा।\n\nप्रश्न: निम्नलिखित में से कौन-सा कथन गद्यांश के अनुसार सत्य नहीं है?",
+  "question_hi": "गद्यांश: भारत में विश्व की लगभग अठारह प्रतिशत जनसंख्या रहती है, किंतु विश्व के मीठे जल संसाधनों का केवल चार प्रतिशत ही हमारे पास है। हमारी अधिकांश वर्षा मानसून के चार महीनों में होती है और यह जल यदि रोका न जाए तो बहकर समुद्र में चला जाता है। बढ़ते शहरीकरण के कारण धरती का बड़ा भाग कंक्रीट से ढक गया है, जिससे वर्षा का पानी भूमि में रिस नहीं पाता और भूजल-स्तर लगातार नीचे जा रहा है। हमारे पूर्वज बावड़ियों, तालाबों और कुओं के माध्यम से जल का संचयन करते थे। आज छतों पर गिरने वाले वर्षा-जल को एकत्र करके भूमि में पहुँचाना सबसे सरल और सस्ता उपाय है। यदि हर घर और विद्यालय यह छोटा-सा प्रयास करे, तो वह दिन दूर नहीं जब दुर्लभ होता जा रहा जल फिर से सबके लिए सुलभ हो सकेगा।\n\nप्रश्न: निम्नलिखित में से कौन-सा कथन गद्यांश के अनुसार सत्य नहीं है?",
+  "options": [
+   {
+    "en": "भारत में अधिकांश वर्षा मानसून के चार महीनों में होती है।",
+    "hi": "भारत में अधिकांश वर्षा मानसून के चार महीनों में होती है।"
+   },
+   {
+    "en": "हमारे पूर्वज बावड़ियों, तालाबों और कुओं से जल का संचयन करते थे।",
+    "hi": "हमारे पूर्वज बावड़ियों, तालाबों और कुओं से जल का संचयन करते थे।"
+   },
+   {
+    "en": "भारत के पास विश्व के मीठे जल संसाधनों का अठारह प्रतिशत भाग है।",
+    "hi": "भारत के पास विश्व के मीठे जल संसाधनों का अठारह प्रतिशत भाग है।"
+   },
+   {
+    "en": "छत के वर्षा-जल को भूमि में पहुँचाना सरल और सस्ता उपाय है।",
+    "hi": "छत के वर्षा-जल को भूमि में पहुँचाना सरल और सस्ता उपाय है।"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "India has 18% of the population but only 4% of fresh water, so the first statement is false.",
+  "explanation_hi": "गद्यांश के अनुसार भारत में विश्व की अठारह प्रतिशत जनसंख्या है, पर मीठे जल का केवल चार प्रतिशत भाग है। इसलिए 'अठारह प्रतिशत जल' वाला कथन असत्य है; शेष तीनों कथन गद्यांश में दिए गए हैं।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "गद्यांश",
+  "difficulty": "easy",
+  "question_en": "गद्यांश: भारत में विश्व की लगभग अठारह प्रतिशत जनसंख्या रहती है, किंतु विश्व के मीठे जल संसाधनों का केवल चार प्रतिशत ही हमारे पास है। हमारी अधिकांश वर्षा मानसून के चार महीनों में होती है और यह जल यदि रोका न जाए तो बहकर समुद्र में चला जाता है। बढ़ते शहरीकरण के कारण धरती का बड़ा भाग कंक्रीट से ढक गया है, जिससे वर्षा का पानी भूमि में रिस नहीं पाता और भूजल-स्तर लगातार नीचे जा रहा है। हमारे पूर्वज बावड़ियों, तालाबों और कुओं के माध्यम से जल का संचयन करते थे। आज छतों पर गिरने वाले वर्षा-जल को एकत्र करके भूमि में पहुँचाना सबसे सरल और सस्ता उपाय है। यदि हर घर और विद्यालय यह छोटा-सा प्रयास करे, तो वह दिन दूर नहीं जब दुर्लभ होता जा रहा जल फिर से सबके लिए सुलभ हो सकेगा।\n\nप्रश्न: गद्यांश में प्रयुक्त 'दुर्लभ' शब्द का विलोम क्या है?",
+  "question_hi": "गद्यांश: भारत में विश्व की लगभग अठारह प्रतिशत जनसंख्या रहती है, किंतु विश्व के मीठे जल संसाधनों का केवल चार प्रतिशत ही हमारे पास है। हमारी अधिकांश वर्षा मानसून के चार महीनों में होती है और यह जल यदि रोका न जाए तो बहकर समुद्र में चला जाता है। बढ़ते शहरीकरण के कारण धरती का बड़ा भाग कंक्रीट से ढक गया है, जिससे वर्षा का पानी भूमि में रिस नहीं पाता और भूजल-स्तर लगातार नीचे जा रहा है। हमारे पूर्वज बावड़ियों, तालाबों और कुओं के माध्यम से जल का संचयन करते थे। आज छतों पर गिरने वाले वर्षा-जल को एकत्र करके भूमि में पहुँचाना सबसे सरल और सस्ता उपाय है। यदि हर घर और विद्यालय यह छोटा-सा प्रयास करे, तो वह दिन दूर नहीं जब दुर्लभ होता जा रहा जल फिर से सबके लिए सुलभ हो सकेगा।\n\nप्रश्न: गद्यांश में प्रयुक्त 'दुर्लभ' शब्द का विलोम क्या है?",
+  "options": [
+   {
+    "en": "दुर्गम",
+    "hi": "दुर्गम"
+   },
+   {
+    "en": "सुलभ",
+    "hi": "सुलभ"
+   },
+   {
+    "en": "कठिन",
+    "hi": "कठिन"
+   },
+   {
+    "en": "अलभ्य",
+    "hi": "अलभ्य"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The antonym of durlabh (hard to get) is sulabh (easily available).",
+  "explanation_hi": "'दुर्लभ' (दुर् + लभ = कठिनाई से मिलने वाला) का विलोम 'सुलभ' (सरलता से मिलने वाला) है, जो गद्यांश की अंतिम पंक्ति में भी आया है। 'अलभ्य' इसका पर्याय है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "गद्यांश",
+  "difficulty": "easy",
+  "question_en": "गद्यांश: भारत में विश्व की लगभग अठारह प्रतिशत जनसंख्या रहती है, किंतु विश्व के मीठे जल संसाधनों का केवल चार प्रतिशत ही हमारे पास है। हमारी अधिकांश वर्षा मानसून के चार महीनों में होती है और यह जल यदि रोका न जाए तो बहकर समुद्र में चला जाता है। बढ़ते शहरीकरण के कारण धरती का बड़ा भाग कंक्रीट से ढक गया है, जिससे वर्षा का पानी भूमि में रिस नहीं पाता और भूजल-स्तर लगातार नीचे जा रहा है। हमारे पूर्वज बावड़ियों, तालाबों और कुओं के माध्यम से जल का संचयन करते थे। आज छतों पर गिरने वाले वर्षा-जल को एकत्र करके भूमि में पहुँचाना सबसे सरल और सस्ता उपाय है। यदि हर घर और विद्यालय यह छोटा-सा प्रयास करे, तो वह दिन दूर नहीं जब दुर्लभ होता जा रहा जल फिर से सबके लिए सुलभ हो सकेगा।\n\nप्रश्न: गद्यांश में प्रयुक्त 'संचयन' शब्द का अर्थ क्या है?",
+  "question_hi": "गद्यांश: भारत में विश्व की लगभग अठारह प्रतिशत जनसंख्या रहती है, किंतु विश्व के मीठे जल संसाधनों का केवल चार प्रतिशत ही हमारे पास है। हमारी अधिकांश वर्षा मानसून के चार महीनों में होती है और यह जल यदि रोका न जाए तो बहकर समुद्र में चला जाता है। बढ़ते शहरीकरण के कारण धरती का बड़ा भाग कंक्रीट से ढक गया है, जिससे वर्षा का पानी भूमि में रिस नहीं पाता और भूजल-स्तर लगातार नीचे जा रहा है। हमारे पूर्वज बावड़ियों, तालाबों और कुओं के माध्यम से जल का संचयन करते थे। आज छतों पर गिरने वाले वर्षा-जल को एकत्र करके भूमि में पहुँचाना सबसे सरल और सस्ता उपाय है। यदि हर घर और विद्यालय यह छोटा-सा प्रयास करे, तो वह दिन दूर नहीं जब दुर्लभ होता जा रहा जल फिर से सबके लिए सुलभ हो सकेगा।\n\nप्रश्न: गद्यांश में प्रयुक्त 'संचयन' शब्द का अर्थ क्या है?",
+  "options": [
+   {
+    "en": "बहा देना",
+    "hi": "बहा देना"
+   },
+   {
+    "en": "बाँट देना",
+    "hi": "बाँट देना"
+   },
+   {
+    "en": "साफ़ करना",
+    "hi": "साफ़ करना"
+   },
+   {
+    "en": "इकट्ठा करना",
+    "hi": "इकट्ठा करना"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Sanchayan means collecting and storing.",
+  "explanation_hi": "'संचयन' का अर्थ है एकत्र करना या इकट्ठा करके रखना — 'जल-संचयन' अर्थात् जल को इकट्ठा करके सुरक्षित रखना।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "गद्यांश",
+  "difficulty": "medium",
+  "question_en": "गद्यांश: भारत में विश्व की लगभग अठारह प्रतिशत जनसंख्या रहती है, किंतु विश्व के मीठे जल संसाधनों का केवल चार प्रतिशत ही हमारे पास है। हमारी अधिकांश वर्षा मानसून के चार महीनों में होती है और यह जल यदि रोका न जाए तो बहकर समुद्र में चला जाता है। बढ़ते शहरीकरण के कारण धरती का बड़ा भाग कंक्रीट से ढक गया है, जिससे वर्षा का पानी भूमि में रिस नहीं पाता और भूजल-स्तर लगातार नीचे जा रहा है। हमारे पूर्वज बावड़ियों, तालाबों और कुओं के माध्यम से जल का संचयन करते थे। आज छतों पर गिरने वाले वर्षा-जल को एकत्र करके भूमि में पहुँचाना सबसे सरल और सस्ता उपाय है। यदि हर घर और विद्यालय यह छोटा-सा प्रयास करे, तो वह दिन दूर नहीं जब दुर्लभ होता जा रहा जल फिर से सबके लिए सुलभ हो सकेगा।\n\nप्रश्न: गद्यांश के लिए सबसे उपयुक्त शीर्षक कौन-सा है?",
+  "question_hi": "गद्यांश: भारत में विश्व की लगभग अठारह प्रतिशत जनसंख्या रहती है, किंतु विश्व के मीठे जल संसाधनों का केवल चार प्रतिशत ही हमारे पास है। हमारी अधिकांश वर्षा मानसून के चार महीनों में होती है और यह जल यदि रोका न जाए तो बहकर समुद्र में चला जाता है। बढ़ते शहरीकरण के कारण धरती का बड़ा भाग कंक्रीट से ढक गया है, जिससे वर्षा का पानी भूमि में रिस नहीं पाता और भूजल-स्तर लगातार नीचे जा रहा है। हमारे पूर्वज बावड़ियों, तालाबों और कुओं के माध्यम से जल का संचयन करते थे। आज छतों पर गिरने वाले वर्षा-जल को एकत्र करके भूमि में पहुँचाना सबसे सरल और सस्ता उपाय है। यदि हर घर और विद्यालय यह छोटा-सा प्रयास करे, तो वह दिन दूर नहीं जब दुर्लभ होता जा रहा जल फिर से सबके लिए सुलभ हो सकेगा।\n\nप्रश्न: गद्यांश के लिए सबसे उपयुक्त शीर्षक कौन-सा है?",
+  "options": [
+   {
+    "en": "वर्षा-जल संचयन: समय की माँग",
+    "hi": "वर्षा-जल संचयन: समय की माँग"
+   },
+   {
+    "en": "मानसून का भूगोल",
+    "hi": "मानसून का भूगोल"
+   },
+   {
+    "en": "शहरीकरण के लाभ",
+    "hi": "शहरीकरण के लाभ"
+   },
+   {
+    "en": "समुद्र और नदियाँ",
+    "hi": "समुद्र और नदियाँ"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The passage argues for rainwater harvesting, so that is the best title.",
+  "explanation_hi": "पूरा गद्यांश जल-संकट के कारण बताकर वर्षा-जल को एकत्र करने के उपाय पर बल देता है, इसलिए 'वर्षा-जल संचयन: समय की माँग' सबसे उपयुक्त शीर्षक है। अन्य शीर्षक केवल एक गौण बिंदु को छूते हैं।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "गद्यांश",
+  "difficulty": "easy",
+  "question_en": "गद्यांश: इक्कीसवीं सदी में डिजिटल साक्षरता उतनी ही आवश्यक हो गई है जितना कभी अक्षर-ज्ञान था। आज बैंक का लेन-देन, रेल का आरक्षण और सरकारी योजनाओं का लाभ — सब कुछ मोबाइल और इंटरनेट से जुड़ गया है। किंतु तकनीक के साथ ख़तरे भी आए हैं। अनजान लिंक पर क्लिक करने या किसी को ओटीपी बताने से लोग अपनी जीवन-भर की कमाई गँवा बैठते हैं। इसलिए विद्यालयों में केवल कंप्यूटर चलाना सिखाना पर्याप्त नहीं है; विद्यार्थियों को यह भी सिखाना होगा कि सूचना की सत्यता कैसे जाँचें, अपना पासवर्ड कैसे सुरक्षित रखें और सोशल मीडिया पर मर्यादित व्यवहार कैसे करें। शिक्षक इस परिवर्तन के सबसे बड़े वाहक हैं। जो शिक्षक स्वयं तकनीक से मित्रता करता है, वही अपने विद्यार्थियों को विवेकशील डिजिटल नागरिक बना सकता है।\n\nप्रश्न: लेखक के अनुसार विद्यालयों में केवल क्या सिखाना पर्याप्त नहीं है?",
+  "question_hi": "गद्यांश: इक्कीसवीं सदी में डिजिटल साक्षरता उतनी ही आवश्यक हो गई है जितना कभी अक्षर-ज्ञान था। आज बैंक का लेन-देन, रेल का आरक्षण और सरकारी योजनाओं का लाभ — सब कुछ मोबाइल और इंटरनेट से जुड़ गया है। किंतु तकनीक के साथ ख़तरे भी आए हैं। अनजान लिंक पर क्लिक करने या किसी को ओटीपी बताने से लोग अपनी जीवन-भर की कमाई गँवा बैठते हैं। इसलिए विद्यालयों में केवल कंप्यूटर चलाना सिखाना पर्याप्त नहीं है; विद्यार्थियों को यह भी सिखाना होगा कि सूचना की सत्यता कैसे जाँचें, अपना पासवर्ड कैसे सुरक्षित रखें और सोशल मीडिया पर मर्यादित व्यवहार कैसे करें। शिक्षक इस परिवर्तन के सबसे बड़े वाहक हैं। जो शिक्षक स्वयं तकनीक से मित्रता करता है, वही अपने विद्यार्थियों को विवेकशील डिजिटल नागरिक बना सकता है।\n\nप्रश्न: लेखक के अनुसार विद्यालयों में केवल क्या सिखाना पर्याप्त नहीं है?",
+  "options": [
+   {
+    "en": "सूचना की सत्यता जाँचना",
+    "hi": "सूचना की सत्यता जाँचना"
+   },
+   {
+    "en": "पासवर्ड सुरक्षित रखना",
+    "hi": "पासवर्ड सुरक्षित रखना"
+   },
+   {
+    "en": "कंप्यूटर चलाना",
+    "hi": "कंप्यूटर चलाना"
+   },
+   {
+    "en": "सोशल मीडिया पर मर्यादित व्यवहार",
+    "hi": "सोशल मीडिया पर मर्यादित व्यवहार"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Only teaching how to operate a computer is not enough, says the passage.",
+  "explanation_hi": "गद्यांश कहता है कि 'केवल कंप्यूटर चलाना सिखाना पर्याप्त नहीं है'; उसके साथ सूचना की सत्यता जाँचना, पासवर्ड सुरक्षित रखना और मर्यादित व्यवहार भी सिखाना होगा।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "गद्यांश",
+  "difficulty": "medium",
+  "question_en": "गद्यांश: इक्कीसवीं सदी में डिजिटल साक्षरता उतनी ही आवश्यक हो गई है जितना कभी अक्षर-ज्ञान था। आज बैंक का लेन-देन, रेल का आरक्षण और सरकारी योजनाओं का लाभ — सब कुछ मोबाइल और इंटरनेट से जुड़ गया है। किंतु तकनीक के साथ ख़तरे भी आए हैं। अनजान लिंक पर क्लिक करने या किसी को ओटीपी बताने से लोग अपनी जीवन-भर की कमाई गँवा बैठते हैं। इसलिए विद्यालयों में केवल कंप्यूटर चलाना सिखाना पर्याप्त नहीं है; विद्यार्थियों को यह भी सिखाना होगा कि सूचना की सत्यता कैसे जाँचें, अपना पासवर्ड कैसे सुरक्षित रखें और सोशल मीडिया पर मर्यादित व्यवहार कैसे करें। शिक्षक इस परिवर्तन के सबसे बड़े वाहक हैं। जो शिक्षक स्वयं तकनीक से मित्रता करता है, वही अपने विद्यार्थियों को विवेकशील डिजिटल नागरिक बना सकता है।\n\nप्रश्न: निम्नलिखित में से कौन-सा कथन गद्यांश के अनुसार सही नहीं है?",
+  "question_hi": "गद्यांश: इक्कीसवीं सदी में डिजिटल साक्षरता उतनी ही आवश्यक हो गई है जितना कभी अक्षर-ज्ञान था। आज बैंक का लेन-देन, रेल का आरक्षण और सरकारी योजनाओं का लाभ — सब कुछ मोबाइल और इंटरनेट से जुड़ गया है। किंतु तकनीक के साथ ख़तरे भी आए हैं। अनजान लिंक पर क्लिक करने या किसी को ओटीपी बताने से लोग अपनी जीवन-भर की कमाई गँवा बैठते हैं। इसलिए विद्यालयों में केवल कंप्यूटर चलाना सिखाना पर्याप्त नहीं है; विद्यार्थियों को यह भी सिखाना होगा कि सूचना की सत्यता कैसे जाँचें, अपना पासवर्ड कैसे सुरक्षित रखें और सोशल मीडिया पर मर्यादित व्यवहार कैसे करें। शिक्षक इस परिवर्तन के सबसे बड़े वाहक हैं। जो शिक्षक स्वयं तकनीक से मित्रता करता है, वही अपने विद्यार्थियों को विवेकशील डिजिटल नागरिक बना सकता है।\n\nप्रश्न: निम्नलिखित में से कौन-सा कथन गद्यांश के अनुसार सही नहीं है?",
+  "options": [
+   {
+    "en": "आज बैंक का लेन-देन और रेल आरक्षण इंटरनेट से जुड़ गए हैं।",
+    "hi": "आज बैंक का लेन-देन और रेल आरक्षण इंटरनेट से जुड़ गए हैं।"
+   },
+   {
+    "en": "तकनीक के आने से ऑनलाइन धोखाधड़ी का ख़तरा समाप्त हो गया है।",
+    "hi": "तकनीक के आने से ऑनलाइन धोखाधड़ी का ख़तरा समाप्त हो गया है।"
+   },
+   {
+    "en": "किसी को ओटीपी बताने से जीवन-भर की कमाई जा सकती है।",
+    "hi": "किसी को ओटीपी बताने से जीवन-भर की कमाई जा सकती है।"
+   },
+   {
+    "en": "शिक्षक डिजिटल परिवर्तन के सबसे बड़े वाहक हैं।",
+    "hi": "शिक्षक डिजिटल परिवर्तन के सबसे बड़े वाहक हैं।"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The passage says technology brought new dangers, so fraud has not ended.",
+  "explanation_hi": "गद्यांश के अनुसार तकनीक के साथ ख़तरे भी आए हैं — अनजान लिंक और ओटीपी से लोग कमाई गँवा बैठते हैं। अतः 'ख़तरा समाप्त हो गया है' वाला कथन गद्यांश के विपरीत है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "गद्यांश",
+  "difficulty": "medium",
+  "question_en": "गद्यांश: इक्कीसवीं सदी में डिजिटल साक्षरता उतनी ही आवश्यक हो गई है जितना कभी अक्षर-ज्ञान था। आज बैंक का लेन-देन, रेल का आरक्षण और सरकारी योजनाओं का लाभ — सब कुछ मोबाइल और इंटरनेट से जुड़ गया है। किंतु तकनीक के साथ ख़तरे भी आए हैं। अनजान लिंक पर क्लिक करने या किसी को ओटीपी बताने से लोग अपनी जीवन-भर की कमाई गँवा बैठते हैं। इसलिए विद्यालयों में केवल कंप्यूटर चलाना सिखाना पर्याप्त नहीं है; विद्यार्थियों को यह भी सिखाना होगा कि सूचना की सत्यता कैसे जाँचें, अपना पासवर्ड कैसे सुरक्षित रखें और सोशल मीडिया पर मर्यादित व्यवहार कैसे करें। शिक्षक इस परिवर्तन के सबसे बड़े वाहक हैं। जो शिक्षक स्वयं तकनीक से मित्रता करता है, वही अपने विद्यार्थियों को विवेकशील डिजिटल नागरिक बना सकता है।\n\nप्रश्न: गद्यांश में प्रयुक्त 'साक्षरता' शब्द में कौन-सा प्रत्यय है?",
+  "question_hi": "गद्यांश: इक्कीसवीं सदी में डिजिटल साक्षरता उतनी ही आवश्यक हो गई है जितना कभी अक्षर-ज्ञान था। आज बैंक का लेन-देन, रेल का आरक्षण और सरकारी योजनाओं का लाभ — सब कुछ मोबाइल और इंटरनेट से जुड़ गया है। किंतु तकनीक के साथ ख़तरे भी आए हैं। अनजान लिंक पर क्लिक करने या किसी को ओटीपी बताने से लोग अपनी जीवन-भर की कमाई गँवा बैठते हैं। इसलिए विद्यालयों में केवल कंप्यूटर चलाना सिखाना पर्याप्त नहीं है; विद्यार्थियों को यह भी सिखाना होगा कि सूचना की सत्यता कैसे जाँचें, अपना पासवर्ड कैसे सुरक्षित रखें और सोशल मीडिया पर मर्यादित व्यवहार कैसे करें। शिक्षक इस परिवर्तन के सबसे बड़े वाहक हैं। जो शिक्षक स्वयं तकनीक से मित्रता करता है, वही अपने विद्यार्थियों को विवेकशील डिजिटल नागरिक बना सकता है।\n\nप्रश्न: गद्यांश में प्रयुक्त 'साक्षरता' शब्द में कौन-सा प्रत्यय है?",
+  "options": [
+   {
+    "en": "अता",
+    "hi": "अता"
+   },
+   {
+    "en": "रता",
+    "hi": "रता"
+   },
+   {
+    "en": "ता",
+    "hi": "ता"
+   },
+   {
+    "en": "क्षरता",
+    "hi": "क्षरता"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Saakshar + ta = saaksharta; 'ta' forms an abstract noun.",
+  "explanation_hi": "साक्षर + ता = साक्षरता। 'ता' प्रत्यय विशेषण से भाववाचक संज्ञा बनाता है (मानव → मानवता, सुंदर → सुंदरता)। यह तद्धित प्रत्यय है।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "गद्यांश",
+  "difficulty": "medium",
+  "question_en": "गद्यांश: इक्कीसवीं सदी में डिजिटल साक्षरता उतनी ही आवश्यक हो गई है जितना कभी अक्षर-ज्ञान था। आज बैंक का लेन-देन, रेल का आरक्षण और सरकारी योजनाओं का लाभ — सब कुछ मोबाइल और इंटरनेट से जुड़ गया है। किंतु तकनीक के साथ ख़तरे भी आए हैं। अनजान लिंक पर क्लिक करने या किसी को ओटीपी बताने से लोग अपनी जीवन-भर की कमाई गँवा बैठते हैं। इसलिए विद्यालयों में केवल कंप्यूटर चलाना सिखाना पर्याप्त नहीं है; विद्यार्थियों को यह भी सिखाना होगा कि सूचना की सत्यता कैसे जाँचें, अपना पासवर्ड कैसे सुरक्षित रखें और सोशल मीडिया पर मर्यादित व्यवहार कैसे करें। शिक्षक इस परिवर्तन के सबसे बड़े वाहक हैं। जो शिक्षक स्वयं तकनीक से मित्रता करता है, वही अपने विद्यार्थियों को विवेकशील डिजिटल नागरिक बना सकता है।\n\nप्रश्न: गद्यांश में प्रयुक्त 'विवेकशील' शब्द का अर्थ क्या है?",
+  "question_hi": "गद्यांश: इक्कीसवीं सदी में डिजिटल साक्षरता उतनी ही आवश्यक हो गई है जितना कभी अक्षर-ज्ञान था। आज बैंक का लेन-देन, रेल का आरक्षण और सरकारी योजनाओं का लाभ — सब कुछ मोबाइल और इंटरनेट से जुड़ गया है। किंतु तकनीक के साथ ख़तरे भी आए हैं। अनजान लिंक पर क्लिक करने या किसी को ओटीपी बताने से लोग अपनी जीवन-भर की कमाई गँवा बैठते हैं। इसलिए विद्यालयों में केवल कंप्यूटर चलाना सिखाना पर्याप्त नहीं है; विद्यार्थियों को यह भी सिखाना होगा कि सूचना की सत्यता कैसे जाँचें, अपना पासवर्ड कैसे सुरक्षित रखें और सोशल मीडिया पर मर्यादित व्यवहार कैसे करें। शिक्षक इस परिवर्तन के सबसे बड़े वाहक हैं। जो शिक्षक स्वयं तकनीक से मित्रता करता है, वही अपने विद्यार्थियों को विवेकशील डिजिटल नागरिक बना सकता है।\n\nप्रश्न: गद्यांश में प्रयुक्त 'विवेकशील' शब्द का अर्थ क्या है?",
+  "options": [
+   {
+    "en": "अधिक धन कमाने वाला",
+    "hi": "अधिक धन कमाने वाला"
+   },
+   {
+    "en": "उचित-अनुचित में भेद करने वाला",
+    "hi": "उचित-अनुचित में भेद करने वाला"
+   },
+   {
+    "en": "तकनीक से डरने वाला",
+    "hi": "तकनीक से डरने वाला"
+   },
+   {
+    "en": "केवल आदेश मानने वाला",
+    "hi": "केवल आदेश मानने वाला"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Vivekasheel means one who can tell right from wrong.",
+  "explanation_hi": "'विवेक' का अर्थ है अच्छे-बुरे या उचित-अनुचित को पहचानने की बुद्धि; 'शील' = स्वभाव वाला। अतः 'विवेकशील' वह है जो सोच-समझकर उचित-अनुचित में भेद कर सके।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "गद्यांश",
+  "difficulty": "hard",
+  "question_en": "गद्यांश: इक्कीसवीं सदी में डिजिटल साक्षरता उतनी ही आवश्यक हो गई है जितना कभी अक्षर-ज्ञान था। आज बैंक का लेन-देन, रेल का आरक्षण और सरकारी योजनाओं का लाभ — सब कुछ मोबाइल और इंटरनेट से जुड़ गया है। किंतु तकनीक के साथ ख़तरे भी आए हैं। अनजान लिंक पर क्लिक करने या किसी को ओटीपी बताने से लोग अपनी जीवन-भर की कमाई गँवा बैठते हैं। इसलिए विद्यालयों में केवल कंप्यूटर चलाना सिखाना पर्याप्त नहीं है; विद्यार्थियों को यह भी सिखाना होगा कि सूचना की सत्यता कैसे जाँचें, अपना पासवर्ड कैसे सुरक्षित रखें और सोशल मीडिया पर मर्यादित व्यवहार कैसे करें। शिक्षक इस परिवर्तन के सबसे बड़े वाहक हैं। जो शिक्षक स्वयं तकनीक से मित्रता करता है, वही अपने विद्यार्थियों को विवेकशील डिजिटल नागरिक बना सकता है।\n\nप्रश्न: गद्यांश की शैली कैसी है?",
+  "question_hi": "गद्यांश: इक्कीसवीं सदी में डिजिटल साक्षरता उतनी ही आवश्यक हो गई है जितना कभी अक्षर-ज्ञान था। आज बैंक का लेन-देन, रेल का आरक्षण और सरकारी योजनाओं का लाभ — सब कुछ मोबाइल और इंटरनेट से जुड़ गया है। किंतु तकनीक के साथ ख़तरे भी आए हैं। अनजान लिंक पर क्लिक करने या किसी को ओटीपी बताने से लोग अपनी जीवन-भर की कमाई गँवा बैठते हैं। इसलिए विद्यालयों में केवल कंप्यूटर चलाना सिखाना पर्याप्त नहीं है; विद्यार्थियों को यह भी सिखाना होगा कि सूचना की सत्यता कैसे जाँचें, अपना पासवर्ड कैसे सुरक्षित रखें और सोशल मीडिया पर मर्यादित व्यवहार कैसे करें। शिक्षक इस परिवर्तन के सबसे बड़े वाहक हैं। जो शिक्षक स्वयं तकनीक से मित्रता करता है, वही अपने विद्यार्थियों को विवेकशील डिजिटल नागरिक बना सकता है।\n\nप्रश्न: गद्यांश की शैली कैसी है?",
+  "options": [
+   {
+    "en": "आत्मकथात्मक",
+    "hi": "आत्मकथात्मक"
+   },
+   {
+    "en": "व्यंग्यात्मक",
+    "hi": "व्यंग्यात्मक"
+   },
+   {
+    "en": "काव्यात्मक",
+    "hi": "काव्यात्मक"
+   },
+   {
+    "en": "विचारात्मक",
+    "hi": "विचारात्मक"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The writer argues a point with reasons and suggestions — a reflective/argumentative style.",
+  "explanation_hi": "लेखक एक विषय (डिजिटल साक्षरता) पर तर्क देकर अपने विचार और सुझाव रखता है, इसलिए शैली विचारात्मक है। इसमें न लेखक की आत्मकथा है, न व्यंग्य और न पद्य जैसी लय।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "गद्यांश",
+  "difficulty": "easy",
+  "question_en": "गद्यांश: प्रेमचंद का वास्तविक नाम धनपत राय था। उन्होंने आरंभ में 'नवाब राय' नाम से उर्दू में लिखना शुरू किया। उनका पहला कहानी-संग्रह 'सोज़े-वतन' अंग्रेज़ सरकार ने उसमें भरी देशभक्ति की भावना के कारण ज़ब्त कर लिया, जिसके बाद वे 'प्रेमचंद' नाम से लिखने लगे। उनके कथा-साहित्य में भारतीय गाँव अपनी पूरी सच्चाई के साथ उपस्थित है — क़र्ज़ में डूबा किसान, शोषण करता महाजन और रूढ़ियों में जकड़ा समाज। आरंभिक रचनाओं में वे समस्याओं का आदर्शवादी समाधान प्रस्तुत करते थे, इसीलिए आलोचक उनकी दृष्टि को 'आदर्शोन्मुख यथार्थवाद' कहते हैं। किंतु 'गोदान' और 'कफ़न' तक आते-आते उनका यथार्थ अधिक कठोर और निर्मम हो गया। सरल, मुहावरेदार और पात्रानुकूल भाषा के कारण वे आज भी सबसे अधिक पढ़े जाने वाले हिंदी कथाकार हैं।\n\nप्रश्न: गद्यांश के अनुसार प्रेमचंद ने आरंभ में किस नाम से लिखना शुरू किया?",
+  "question_hi": "गद्यांश: प्रेमचंद का वास्तविक नाम धनपत राय था। उन्होंने आरंभ में 'नवाब राय' नाम से उर्दू में लिखना शुरू किया। उनका पहला कहानी-संग्रह 'सोज़े-वतन' अंग्रेज़ सरकार ने उसमें भरी देशभक्ति की भावना के कारण ज़ब्त कर लिया, जिसके बाद वे 'प्रेमचंद' नाम से लिखने लगे। उनके कथा-साहित्य में भारतीय गाँव अपनी पूरी सच्चाई के साथ उपस्थित है — क़र्ज़ में डूबा किसान, शोषण करता महाजन और रूढ़ियों में जकड़ा समाज। आरंभिक रचनाओं में वे समस्याओं का आदर्शवादी समाधान प्रस्तुत करते थे, इसीलिए आलोचक उनकी दृष्टि को 'आदर्शोन्मुख यथार्थवाद' कहते हैं। किंतु 'गोदान' और 'कफ़न' तक आते-आते उनका यथार्थ अधिक कठोर और निर्मम हो गया। सरल, मुहावरेदार और पात्रानुकूल भाषा के कारण वे आज भी सबसे अधिक पढ़े जाने वाले हिंदी कथाकार हैं।\n\nप्रश्न: गद्यांश के अनुसार प्रेमचंद ने आरंभ में किस नाम से लिखना शुरू किया?",
+  "options": [
+   {
+    "en": "नवाब राय",
+    "hi": "नवाब राय"
+   },
+   {
+    "en": "धनपत राय",
+    "hi": "धनपत राय"
+   },
+   {
+    "en": "प्रेमनाथ",
+    "hi": "प्रेमनाथ"
+   },
+   {
+    "en": "वतन राय",
+    "hi": "वतन राय"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "He first wrote in Urdu as Nawab Rai; Dhanpat Rai was his real name.",
+  "explanation_hi": "गद्यांश के अनुसार उन्होंने आरंभ में 'नवाब राय' नाम से उर्दू में लिखा। 'धनपत राय' उनका वास्तविक नाम था, लेखन का नाम नहीं — यही विकल्प जाल है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "गद्यांश",
+  "difficulty": "easy",
+  "question_en": "गद्यांश: प्रेमचंद का वास्तविक नाम धनपत राय था। उन्होंने आरंभ में 'नवाब राय' नाम से उर्दू में लिखना शुरू किया। उनका पहला कहानी-संग्रह 'सोज़े-वतन' अंग्रेज़ सरकार ने उसमें भरी देशभक्ति की भावना के कारण ज़ब्त कर लिया, जिसके बाद वे 'प्रेमचंद' नाम से लिखने लगे। उनके कथा-साहित्य में भारतीय गाँव अपनी पूरी सच्चाई के साथ उपस्थित है — क़र्ज़ में डूबा किसान, शोषण करता महाजन और रूढ़ियों में जकड़ा समाज। आरंभिक रचनाओं में वे समस्याओं का आदर्शवादी समाधान प्रस्तुत करते थे, इसीलिए आलोचक उनकी दृष्टि को 'आदर्शोन्मुख यथार्थवाद' कहते हैं। किंतु 'गोदान' और 'कफ़न' तक आते-आते उनका यथार्थ अधिक कठोर और निर्मम हो गया। सरल, मुहावरेदार और पात्रानुकूल भाषा के कारण वे आज भी सबसे अधिक पढ़े जाने वाले हिंदी कथाकार हैं।\n\nप्रश्न: 'सोज़े-वतन' को अंग्रेज़ सरकार ने क्यों ज़ब्त कर लिया?",
+  "question_hi": "गद्यांश: प्रेमचंद का वास्तविक नाम धनपत राय था। उन्होंने आरंभ में 'नवाब राय' नाम से उर्दू में लिखना शुरू किया। उनका पहला कहानी-संग्रह 'सोज़े-वतन' अंग्रेज़ सरकार ने उसमें भरी देशभक्ति की भावना के कारण ज़ब्त कर लिया, जिसके बाद वे 'प्रेमचंद' नाम से लिखने लगे। उनके कथा-साहित्य में भारतीय गाँव अपनी पूरी सच्चाई के साथ उपस्थित है — क़र्ज़ में डूबा किसान, शोषण करता महाजन और रूढ़ियों में जकड़ा समाज। आरंभिक रचनाओं में वे समस्याओं का आदर्शवादी समाधान प्रस्तुत करते थे, इसीलिए आलोचक उनकी दृष्टि को 'आदर्शोन्मुख यथार्थवाद' कहते हैं। किंतु 'गोदान' और 'कफ़न' तक आते-आते उनका यथार्थ अधिक कठोर और निर्मम हो गया। सरल, मुहावरेदार और पात्रानुकूल भाषा के कारण वे आज भी सबसे अधिक पढ़े जाने वाले हिंदी कथाकार हैं।\n\nप्रश्न: 'सोज़े-वतन' को अंग्रेज़ सरकार ने क्यों ज़ब्त कर लिया?",
+  "options": [
+   {
+    "en": "उसमें भरी देशभक्ति की भावना के कारण",
+    "hi": "उसमें भरी देशभक्ति की भावना के कारण"
+   },
+   {
+    "en": "वह उर्दू भाषा में था",
+    "hi": "वह उर्दू भाषा में था"
+   },
+   {
+    "en": "उसमें किसानों का वर्णन था",
+    "hi": "उसमें किसानों का वर्णन था"
+   },
+   {
+    "en": "वह बहुत महँगा था",
+    "hi": "वह बहुत महँगा था"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "It was confiscated for its patriotic feeling.",
+  "explanation_hi": "गद्यांश में स्पष्ट है कि 'सोज़े-वतन' को उसमें भरी देशभक्ति की भावना के कारण ज़ब्त किया गया। उर्दू में होना या किसान-जीवन का वर्णन ज़ब्ती का कारण नहीं बताया गया।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "गद्यांश",
+  "difficulty": "medium",
+  "question_en": "गद्यांश: प्रेमचंद का वास्तविक नाम धनपत राय था। उन्होंने आरंभ में 'नवाब राय' नाम से उर्दू में लिखना शुरू किया। उनका पहला कहानी-संग्रह 'सोज़े-वतन' अंग्रेज़ सरकार ने उसमें भरी देशभक्ति की भावना के कारण ज़ब्त कर लिया, जिसके बाद वे 'प्रेमचंद' नाम से लिखने लगे। उनके कथा-साहित्य में भारतीय गाँव अपनी पूरी सच्चाई के साथ उपस्थित है — क़र्ज़ में डूबा किसान, शोषण करता महाजन और रूढ़ियों में जकड़ा समाज। आरंभिक रचनाओं में वे समस्याओं का आदर्शवादी समाधान प्रस्तुत करते थे, इसीलिए आलोचक उनकी दृष्टि को 'आदर्शोन्मुख यथार्थवाद' कहते हैं। किंतु 'गोदान' और 'कफ़न' तक आते-आते उनका यथार्थ अधिक कठोर और निर्मम हो गया। सरल, मुहावरेदार और पात्रानुकूल भाषा के कारण वे आज भी सबसे अधिक पढ़े जाने वाले हिंदी कथाकार हैं।\n\nप्रश्न: आलोचक प्रेमचंद की आरंभिक दृष्टि को क्या कहते हैं?",
+  "question_hi": "गद्यांश: प्रेमचंद का वास्तविक नाम धनपत राय था। उन्होंने आरंभ में 'नवाब राय' नाम से उर्दू में लिखना शुरू किया। उनका पहला कहानी-संग्रह 'सोज़े-वतन' अंग्रेज़ सरकार ने उसमें भरी देशभक्ति की भावना के कारण ज़ब्त कर लिया, जिसके बाद वे 'प्रेमचंद' नाम से लिखने लगे। उनके कथा-साहित्य में भारतीय गाँव अपनी पूरी सच्चाई के साथ उपस्थित है — क़र्ज़ में डूबा किसान, शोषण करता महाजन और रूढ़ियों में जकड़ा समाज। आरंभिक रचनाओं में वे समस्याओं का आदर्शवादी समाधान प्रस्तुत करते थे, इसीलिए आलोचक उनकी दृष्टि को 'आदर्शोन्मुख यथार्थवाद' कहते हैं। किंतु 'गोदान' और 'कफ़न' तक आते-आते उनका यथार्थ अधिक कठोर और निर्मम हो गया। सरल, मुहावरेदार और पात्रानुकूल भाषा के कारण वे आज भी सबसे अधिक पढ़े जाने वाले हिंदी कथाकार हैं।\n\nप्रश्न: आलोचक प्रेमचंद की आरंभिक दृष्टि को क्या कहते हैं?",
+  "options": [
+   {
+    "en": "प्रगतिवाद",
+    "hi": "प्रगतिवाद"
+   },
+   {
+    "en": "छायावाद",
+    "hi": "छायावाद"
+   },
+   {
+    "en": "आदर्शोन्मुख यथार्थवाद",
+    "hi": "आदर्शोन्मुख यथार्थवाद"
+   },
+   {
+    "en": "रहस्यवाद",
+    "hi": "रहस्यवाद"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Critics call his early vision idealistic realism (adarshonmukh yatharthvad).",
+  "explanation_hi": "गद्यांश के अनुसार आरंभिक रचनाओं में वे समस्याओं का आदर्शवादी समाधान देते थे, इसलिए उनकी दृष्टि 'आदर्शोन्मुख यथार्थवाद' कहलाती है। छायावाद और रहस्यवाद काव्य-धाराएँ हैं।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "गद्यांश",
+  "difficulty": "medium",
+  "question_en": "गद्यांश: प्रेमचंद का वास्तविक नाम धनपत राय था। उन्होंने आरंभ में 'नवाब राय' नाम से उर्दू में लिखना शुरू किया। उनका पहला कहानी-संग्रह 'सोज़े-वतन' अंग्रेज़ सरकार ने उसमें भरी देशभक्ति की भावना के कारण ज़ब्त कर लिया, जिसके बाद वे 'प्रेमचंद' नाम से लिखने लगे। उनके कथा-साहित्य में भारतीय गाँव अपनी पूरी सच्चाई के साथ उपस्थित है — क़र्ज़ में डूबा किसान, शोषण करता महाजन और रूढ़ियों में जकड़ा समाज। आरंभिक रचनाओं में वे समस्याओं का आदर्शवादी समाधान प्रस्तुत करते थे, इसीलिए आलोचक उनकी दृष्टि को 'आदर्शोन्मुख यथार्थवाद' कहते हैं। किंतु 'गोदान' और 'कफ़न' तक आते-आते उनका यथार्थ अधिक कठोर और निर्मम हो गया। सरल, मुहावरेदार और पात्रानुकूल भाषा के कारण वे आज भी सबसे अधिक पढ़े जाने वाले हिंदी कथाकार हैं।\n\nप्रश्न: गद्यांश में प्रयुक्त 'निर्मम' शब्द में कौन-सा उपसर्ग है?",
+  "question_hi": "गद्यांश: प्रेमचंद का वास्तविक नाम धनपत राय था। उन्होंने आरंभ में 'नवाब राय' नाम से उर्दू में लिखना शुरू किया। उनका पहला कहानी-संग्रह 'सोज़े-वतन' अंग्रेज़ सरकार ने उसमें भरी देशभक्ति की भावना के कारण ज़ब्त कर लिया, जिसके बाद वे 'प्रेमचंद' नाम से लिखने लगे। उनके कथा-साहित्य में भारतीय गाँव अपनी पूरी सच्चाई के साथ उपस्थित है — क़र्ज़ में डूबा किसान, शोषण करता महाजन और रूढ़ियों में जकड़ा समाज। आरंभिक रचनाओं में वे समस्याओं का आदर्शवादी समाधान प्रस्तुत करते थे, इसीलिए आलोचक उनकी दृष्टि को 'आदर्शोन्मुख यथार्थवाद' कहते हैं। किंतु 'गोदान' और 'कफ़न' तक आते-आते उनका यथार्थ अधिक कठोर और निर्मम हो गया। सरल, मुहावरेदार और पात्रानुकूल भाषा के कारण वे आज भी सबसे अधिक पढ़े जाने वाले हिंदी कथाकार हैं।\n\nप्रश्न: गद्यांश में प्रयुक्त 'निर्मम' शब्द में कौन-सा उपसर्ग है?",
+  "options": [
+   {
+    "en": "नि",
+    "hi": "नि"
+   },
+   {
+    "en": "न",
+    "hi": "न"
+   },
+   {
+    "en": "निम",
+    "hi": "निम"
+   },
+   {
+    "en": "निर्",
+    "hi": "निर्"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Nir + mam = nirmam; the prefix nir means 'without'.",
+  "explanation_hi": "निर् + मम = निर्मम (ममता रहित, कठोर)। 'निर्' उपसर्ग का अर्थ है 'रहित' — निर्धन, निर्दोष, निर्भय।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_sahitya",
+  "subtopic": "गद्यांश",
+  "difficulty": "medium",
+  "question_en": "गद्यांश: प्रेमचंद का वास्तविक नाम धनपत राय था। उन्होंने आरंभ में 'नवाब राय' नाम से उर्दू में लिखना शुरू किया। उनका पहला कहानी-संग्रह 'सोज़े-वतन' अंग्रेज़ सरकार ने उसमें भरी देशभक्ति की भावना के कारण ज़ब्त कर लिया, जिसके बाद वे 'प्रेमचंद' नाम से लिखने लगे। उनके कथा-साहित्य में भारतीय गाँव अपनी पूरी सच्चाई के साथ उपस्थित है — क़र्ज़ में डूबा किसान, शोषण करता महाजन और रूढ़ियों में जकड़ा समाज। आरंभिक रचनाओं में वे समस्याओं का आदर्शवादी समाधान प्रस्तुत करते थे, इसीलिए आलोचक उनकी दृष्टि को 'आदर्शोन्मुख यथार्थवाद' कहते हैं। किंतु 'गोदान' और 'कफ़न' तक आते-आते उनका यथार्थ अधिक कठोर और निर्मम हो गया। सरल, मुहावरेदार और पात्रानुकूल भाषा के कारण वे आज भी सबसे अधिक पढ़े जाने वाले हिंदी कथाकार हैं।\n\nप्रश्न: गद्यांश के लिए सबसे उपयुक्त शीर्षक कौन-सा है?",
+  "question_hi": "गद्यांश: प्रेमचंद का वास्तविक नाम धनपत राय था। उन्होंने आरंभ में 'नवाब राय' नाम से उर्दू में लिखना शुरू किया। उनका पहला कहानी-संग्रह 'सोज़े-वतन' अंग्रेज़ सरकार ने उसमें भरी देशभक्ति की भावना के कारण ज़ब्त कर लिया, जिसके बाद वे 'प्रेमचंद' नाम से लिखने लगे। उनके कथा-साहित्य में भारतीय गाँव अपनी पूरी सच्चाई के साथ उपस्थित है — क़र्ज़ में डूबा किसान, शोषण करता महाजन और रूढ़ियों में जकड़ा समाज। आरंभिक रचनाओं में वे समस्याओं का आदर्शवादी समाधान प्रस्तुत करते थे, इसीलिए आलोचक उनकी दृष्टि को 'आदर्शोन्मुख यथार्थवाद' कहते हैं। किंतु 'गोदान' और 'कफ़न' तक आते-आते उनका यथार्थ अधिक कठोर और निर्मम हो गया। सरल, मुहावरेदार और पात्रानुकूल भाषा के कारण वे आज भी सबसे अधिक पढ़े जाने वाले हिंदी कथाकार हैं।\n\nप्रश्न: गद्यांश के लिए सबसे उपयुक्त शीर्षक कौन-सा है?",
+  "options": [
+   {
+    "en": "उर्दू भाषा का इतिहास",
+    "hi": "उर्दू भाषा का इतिहास"
+   },
+   {
+    "en": "प्रेमचंद: गाँव के यथार्थ के कथाकार",
+    "hi": "प्रेमचंद: गाँव के यथार्थ के कथाकार"
+   },
+   {
+    "en": "अंग्रेज़ी शासन की नीतियाँ",
+    "hi": "अंग्रेज़ी शासन की नीतियाँ"
+   },
+   {
+    "en": "आधुनिक हिंदी कविता",
+    "hi": "आधुनिक हिंदी कविता"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The passage is about Premchand as the storyteller of village reality.",
+  "explanation_hi": "गद्यांश प्रेमचंद के नाम, लेखन-यात्रा, ग्रामीण यथार्थ के चित्रण और भाषा पर केंद्रित है, इसलिए 'प्रेमचंद: गाँव के यथार्थ के कथाकार' सबसे उपयुक्त शीर्षक है।",
+  "pyq_concept": true
+ }
+]

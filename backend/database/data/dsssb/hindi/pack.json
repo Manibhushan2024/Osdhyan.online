@@ -1,0 +1,31 @@
+{
+ "name": "Hindi Language & Comprehension",
+ "chapters": [
+  ["hin_vyakaran", "व्याकरण: संधि, समास, उपसर्ग–प्रत्यय, लिंग–वचन–कारक (Grammar)", "व्याकरण (Grammar)"],
+  ["hin_shuddhi", "वर्तनी, वाक्य शुद्धि एवं शब्द-भेद: तत्सम–तद्भव (Spelling & Correction)", "वर्तनी एवं वाक्य शुद्धि (Spelling & Correction)"],
+  ["hin_shabd", "शब्द-भंडार: पर्यायवाची, विलोम, अनेक शब्दों के लिए एक शब्द, मुहावरे–लोकोक्तियाँ (Vocabulary)", "शब्द-भंडार (Vocabulary)"],
+  ["hin_sahitya", "अलंकार, रस, छंद एवं गद्यांश (Figures of speech & Comprehension)", "अलंकार एवं गद्यांश (Figures of speech & Comprehension)"]
+ ],
+ "pyq_file": "hindi_pyq_analysis.json",
+ "pyq_rules": [
+  ["reading comprehension", "hin_sahitya"], ["गद्यांश", "hin_sahitya"], ["alankar", "hin_sahitya"], ["अलंकार", "hin_sahitya"], ["ras", "hin_sahitya"], ["chhand", "hin_sahitya"],
+  ["spelling", "hin_shuddhi"], ["वर्तनी", "hin_shuddhi"], ["sentence", "hin_shuddhi"], ["word order", "hin_shuddhi"], ["padkram", "hin_shuddhi"],
+  ["tatsam", "hin_shuddhi"], ["tadbhav", "hin_shuddhi"], ["तत्सम", "hin_shuddhi"], ["videshaj", "hin_shuddhi"], ["deshaj", "hin_shuddhi"],
+  ["idiom", "hin_shabd"], ["muhavar", "hin_shabd"], ["मुहावर", "hin_shabd"], ["lokokti", "hin_shabd"], ["लोकोक्ति", "hin_shabd"], ["one-word", "hin_shabd"], ["vakyansh", "hin_shabd"],
+  ["synonym", "hin_shabd"], ["paryayvachi", "hin_shabd"], ["पर्यायवाची", "hin_shabd"], ["antonym", "hin_shabd"], ["vilom", "hin_shabd"], ["विलोम", "hin_shabd"],
+  ["anekarthi", "hin_shabd"], ["fill in the blank", "hin_shabd"], ["shabd chayan", "hin_shabd"],
+  ["sandhi", "hin_vyakaran"], ["संधि", "hin_vyakaran"], ["samas", "hin_vyakaran"], ["समास", "hin_vyakaran"], ["karak", "hin_vyakaran"], ["कारक", "hin_vyakaran"],
+  ["upsarg", "hin_vyakaran"], ["pratyay", "hin_vyakaran"], ["ling", "hin_vyakaran"], ["vachan", "hin_vyakaran"],
+  ["sangya", "hin_vyakaran"], ["sarvanam", "hin_vyakaran"], ["visheshan", "hin_vyakaran"], ["kriya", "hin_vyakaran"]
+ ],
+ "question_files": ["questions_a.json", "questions_b.json"],
+ "series_name": "DSSSB TGT CS — Hindi Language & Comprehension (हिंदी)",
+ "series_name_hi": "DSSSB TGT CS — हिंदी भाषा एवं बोध",
+ "series_description": "Section A Hindi (हिंदी भाषा एवं बोध): व्याकरण (संधि, समास, उपसर्ग–प्रत्यय, लिंग–वचन–कारक, संज्ञा–सर्वनाम–विशेषण–क्रिया), वर्तनी, वाक्य शुद्धि, पदक्रम, तत्सम–तद्भव–देशज–विदेशज, शब्द-भंडार (पर्यायवाची, विलोम, अनेक शब्दों के लिए एक शब्द, मुहावरे–लोकोक्तियाँ) और अलंकार, रस, छंद एवं गद्यांश — 80 previous-year questions, chapter-wise practice and the 200 most expected questions with solutions in Hindi. Short notes in Hindi and a fast-revision sheet are in Courses → DSSSB TGT Computer Science.",
+ "course_subject": "Hindi Language & Comprehension (हिंदी)",
+ "course_subject_hi": "हिंदी भाषा एवं बोध",
+ "tagline": "संधि · समास · उपसर्ग–प्रत्यय · लिंग–वचन–कारक · वर्तनी · वाक्य शुद्धि · पदक्रम · तत्सम–तद्भव · पर्यायवाची · विलोम · एक शब्द · मुहावरे–लोकोक्तियाँ · अलंकार · रस · छंद · गद्यांश",
+ "intro": "Section A Hindi carries 20 marks in every DSSSB paper. In the 4 official 2023–24 TGT CS papers ({n} questions) every paper had one गद्यांश with 5 questions (title, facts, 'which is NOT true', word meaning, synonym/antonym, style); about a third was शब्द-भंडार (मुहावरे, लोकोक्तियाँ, अनेक शब्दों के लिए एक शब्द, पर्यायवाची, विलोम, रिक्त स्थान); the rest was अलंकार (यमक, उपमा, उत्प्रेक्षा, उभयालंकार), संधि-विच्छेद (विसर्ग, यण), समास, कारक, तत्सम–तद्भव–विदेशज and पदक्रम / वाक्य-विन्यास. The notes are in Hindi: rule tables with 10 examples per संधि type, the 100 most-asked पर्यायवाची, विलोम, मुहावरे and एक शब्द, अलंकार–रस–छंद with lines, and a step-by-step method for गद्यांश.",
+ "practice_split": 35,
+ "full_test_min_per_q": 0.6
+}

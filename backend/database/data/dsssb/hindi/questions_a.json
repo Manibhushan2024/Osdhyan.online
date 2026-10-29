@@ -1,0 +1,2902 @@
+[
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "संधि",
+  "difficulty": "easy",
+  "question_en": "'विद्यालय' शब्द का सही संधि-विच्छेद क्या है?",
+  "question_hi": "'विद्यालय' शब्द का सही संधि-विच्छेद क्या है?",
+  "options": [
+   {
+    "en": "विद्या + लय",
+    "hi": "विद्या + लय"
+   },
+   {
+    "en": "विद्या + आलय",
+    "hi": "विद्या + आलय"
+   },
+   {
+    "en": "विद + आलय",
+    "hi": "विद + आलय"
+   },
+   {
+    "en": "विद्य + आलय",
+    "hi": "विद्य + आलय"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Vidya + aalay = Vidyalay; aa + aa gives aa (deergh swar sandhi).",
+  "explanation_hi": "विद्या + आलय = विद्यालय। यहाँ आ + आ मिलकर 'आ' बनता है, अतः यह दीर्घ स्वर संधि है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "संधि",
+  "difficulty": "easy",
+  "question_en": "'सूर्योदय' शब्द में कौन-सी संधि है?",
+  "question_hi": "'सूर्योदय' शब्द में कौन-सी संधि है?",
+  "options": [
+   {
+    "en": "दीर्घ संधि",
+    "hi": "दीर्घ संधि"
+   },
+   {
+    "en": "गुण संधि",
+    "hi": "गुण संधि"
+   },
+   {
+    "en": "वृद्धि संधि",
+    "hi": "वृद्धि संधि"
+   },
+   {
+    "en": "यण संधि",
+    "hi": "यण संधि"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Surya + uday: a + u = o, so it is gun sandhi.",
+  "explanation_hi": "सूर्य + उदय = सूर्योदय। अ + उ = ओ होने से यह गुण संधि है। दीर्घ संधि में समान स्वर मिलते हैं, इसलिए वह विकल्प गलत है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "संधि",
+  "difficulty": "medium",
+  "question_en": "'इत्यादि' शब्द का संधि-विच्छेद और संधि का प्रकार चुनिए।",
+  "question_hi": "'इत्यादि' शब्द का संधि-विच्छेद और संधि का प्रकार चुनिए।",
+  "options": [
+   {
+    "en": "इत + यादि — दीर्घ संधि",
+    "hi": "इत + यादि — दीर्घ संधि"
+   },
+   {
+    "en": "इति + यादि — अयादि संधि",
+    "hi": "इति + यादि — अयादि संधि"
+   },
+   {
+    "en": "इत्य + आदि — गुण संधि",
+    "hi": "इत्य + आदि — गुण संधि"
+   },
+   {
+    "en": "इति + आदि — यण संधि",
+    "hi": "इति + आदि — यण संधि"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Iti + aadi: i before a different vowel becomes y — yan sandhi.",
+  "explanation_hi": "इति + आदि = इत्यादि। इ के बाद भिन्न स्वर 'आ' आने पर इ का 'य्' हो जाता है, यह यण संधि का नियम है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "संधि",
+  "difficulty": "medium",
+  "question_en": "'नयन' शब्द में कौन-सी स्वर संधि है?",
+  "question_hi": "'नयन' शब्द में कौन-सी स्वर संधि है?",
+  "options": [
+   {
+    "en": "गुण संधि",
+    "hi": "गुण संधि"
+   },
+   {
+    "en": "वृद्धि संधि",
+    "hi": "वृद्धि संधि"
+   },
+   {
+    "en": "अयादि संधि",
+    "hi": "अयादि संधि"
+   },
+   {
+    "en": "यण संधि",
+    "hi": "यण संधि"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Ne + an = nayan; e changes to ay before a vowel — ayadi sandhi.",
+  "explanation_hi": "ने + अन = नयन। 'ए' के बाद कोई भिन्न स्वर आने पर 'ए' का 'अय्' हो जाता है; यह अयादि संधि है। गुण संधि में अ/आ के साथ इ, उ, ऋ मिलते हैं।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "संधि",
+  "difficulty": "medium",
+  "question_en": "'महर्षि' शब्द का सही संधि-विच्छेद क्या है?",
+  "question_hi": "'महर्षि' शब्द का सही संधि-विच्छेद क्या है?",
+  "options": [
+   {
+    "en": "महा + ऋषि",
+    "hi": "महा + ऋषि"
+   },
+   {
+    "en": "मह + ऋषि",
+    "hi": "मह + ऋषि"
+   },
+   {
+    "en": "महा + रिषि",
+    "hi": "महा + रिषि"
+   },
+   {
+    "en": "महर + षि",
+    "hi": "महर + षि"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Maha + rishi = maharshi; aa + ri = ar (gun sandhi).",
+  "explanation_hi": "महा + ऋषि = महर्षि। आ + ऋ = अर् होता है, यह गुण संधि का उदाहरण है (जैसे राजा + ऋषि = राजर्षि)।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "संधि",
+  "difficulty": "medium",
+  "question_en": "'निश्चल' शब्द में कौन-सी संधि है?",
+  "question_hi": "'निश्चल' शब्द में कौन-सी संधि है?",
+  "options": [
+   {
+    "en": "स्वर संधि",
+    "hi": "स्वर संधि"
+   },
+   {
+    "en": "व्यंजन संधि",
+    "hi": "व्यंजन संधि"
+   },
+   {
+    "en": "विसर्ग संधि",
+    "hi": "विसर्ग संधि"
+   },
+   {
+    "en": "दीर्घ संधि",
+    "hi": "दीर्घ संधि"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Nih + chal: visarga becomes sh before ch — visarga sandhi.",
+  "explanation_hi": "निः + चल = निश्चल। विसर्ग के बाद 'च' आने पर विसर्ग 'श्' में बदल जाता है; यह विसर्ग संधि का नियम है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "संधि",
+  "difficulty": "easy",
+  "question_en": "'जगन्नाथ' शब्द का संधि-विच्छेद क्या होगा?",
+  "question_hi": "'जगन्नाथ' शब्द का संधि-विच्छेद क्या होगा?",
+  "options": [
+   {
+    "en": "जगः + नाथ",
+    "hi": "जगः + नाथ"
+   },
+   {
+    "en": "जग + नाथ",
+    "hi": "जग + नाथ"
+   },
+   {
+    "en": "जगत् + नाथ",
+    "hi": "जगत् + नाथ"
+   },
+   {
+    "en": "जगन + नाथ",
+    "hi": "जगन + नाथ"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Jagat + nath: t before n becomes n — vyanjan sandhi.",
+  "explanation_hi": "जगत् + नाथ = जगन्नाथ। 'त्' के बाद 'न' आने पर 'त्' का 'न्' हो जाता है; यह व्यंजन संधि है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "संधि",
+  "difficulty": "medium",
+  "question_en": "'वाग्दान' शब्द में कौन-सी संधि है?",
+  "question_hi": "'वाग्दान' शब्द में कौन-सी संधि है?",
+  "options": [
+   {
+    "en": "यण संधि",
+    "hi": "यण संधि"
+   },
+   {
+    "en": "दीर्घ संधि",
+    "hi": "दीर्घ संधि"
+   },
+   {
+    "en": "व्यंजन संधि",
+    "hi": "व्यंजन संधि"
+   },
+   {
+    "en": "विसर्ग संधि",
+    "hi": "विसर्ग संधि"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Vaak + daan: k becomes g before a voiced consonant — vyanjan sandhi.",
+  "explanation_hi": "वाक् + दान = वाग्दान। 'क्' के बाद सघोष व्यंजन 'द' आने से 'क्' का 'ग्' हो गया; यह व्यंजन संधि है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "संधि",
+  "difficulty": "medium",
+  "question_en": "'एकैक' शब्द में कौन-सी संधि है?",
+  "question_hi": "'एकैक' शब्द में कौन-सी संधि है?",
+  "options": [
+   {
+    "en": "दीर्घ संधि",
+    "hi": "दीर्घ संधि"
+   },
+   {
+    "en": "वृद्धि संधि",
+    "hi": "वृद्धि संधि"
+   },
+   {
+    "en": "अयादि संधि",
+    "hi": "अयादि संधि"
+   },
+   {
+    "en": "गुण संधि",
+    "hi": "गुण संधि"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Ek + ek: a + e = ai — vriddhi sandhi.",
+  "explanation_hi": "एक + एक = एकैक। अ + ए = ऐ होता है, जो वृद्धि संधि का नियम है (जैसे सदा + एव = सदैव)।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "संधि",
+  "difficulty": "easy",
+  "question_en": "'मनोरथ' शब्द का सही संधि-विच्छेद चुनिए।",
+  "question_hi": "'मनोरथ' शब्द का सही संधि-विच्छेद चुनिए।",
+  "options": [
+   {
+    "en": "मनो + रथ",
+    "hi": "मनो + रथ"
+   },
+   {
+    "en": "मना + रथ",
+    "hi": "मना + रथ"
+   },
+   {
+    "en": "मन + रथ",
+    "hi": "मन + रथ"
+   },
+   {
+    "en": "मनः + रथ",
+    "hi": "मनः + रथ"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Manah + rath: visarga becomes o — visarga sandhi.",
+  "explanation_hi": "मनः + रथ = मनोरथ। विसर्ग से पहले 'अ' और बाद में सघोष व्यंजन 'र' होने पर विसर्ग 'ओ' में बदलता है; यह विसर्ग संधि है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "संधि",
+  "difficulty": "hard",
+  "question_en": "'पवन' शब्द में कौन-सी संधि है?",
+  "question_hi": "'पवन' शब्द में कौन-सी संधि है?",
+  "options": [
+   {
+    "en": "यण संधि",
+    "hi": "यण संधि"
+   },
+   {
+    "en": "वृद्धि संधि",
+    "hi": "वृद्धि संधि"
+   },
+   {
+    "en": "गुण संधि",
+    "hi": "गुण संधि"
+   },
+   {
+    "en": "अयादि संधि",
+    "hi": "अयादि संधि"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Po + an = pavan; o becomes av before a vowel — ayadi sandhi.",
+  "explanation_hi": "पो + अन = पवन। 'ओ' के बाद भिन्न स्वर आने पर 'ओ' का 'अव्' हो जाता है; यह अयादि संधि है। इसी प्रकार भो + अन = भवन।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "संधि",
+  "difficulty": "hard",
+  "question_en": "'उल्लेख' शब्द का सही संधि-विच्छेद क्या है?",
+  "question_hi": "'उल्लेख' शब्द का सही संधि-विच्छेद क्या है?",
+  "options": [
+   {
+    "en": "उल + लेख",
+    "hi": "उल + लेख"
+   },
+   {
+    "en": "उत् + लेख",
+    "hi": "उत् + लेख"
+   },
+   {
+    "en": "उल् + लेख",
+    "hi": "उल् + लेख"
+   },
+   {
+    "en": "उः + लेख",
+    "hi": "उः + लेख"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Ut + lekh: t before l becomes l — vyanjan sandhi.",
+  "explanation_hi": "उत् + लेख = उल्लेख। 'त्' के बाद 'ल' आने पर 'त्' का 'ल्' हो जाता है; यह व्यंजन संधि है। इसी नियम से उत् + लास = उल्लास।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "संधि",
+  "difficulty": "medium",
+  "question_en": "'नीरस' शब्द का शुद्ध संधि-विच्छेद क्या है?",
+  "question_hi": "'नीरस' शब्द का शुद्ध संधि-विच्छेद क्या है?",
+  "options": [
+   {
+    "en": "निः + रस",
+    "hi": "निः + रस"
+   },
+   {
+    "en": "नि + रस",
+    "hi": "नि + रस"
+   },
+   {
+    "en": "निर + रस",
+    "hi": "निर + रस"
+   },
+   {
+    "en": "नी + रस",
+    "hi": "नी + रस"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Nih + ras = neeras: before 'r' the visarga drops and the short vowel lengthens (visarga sandhi).",
+  "explanation_hi": "विसर्ग संधि का नियम: 'निः' के बाद 'र' आए तो विसर्ग लुप्त हो जाता है और पहले का ह्रस्व 'इ' दीर्घ 'ई' हो जाता है — निः + रस = नीरस (इसी प्रकार नीरोग, नीरव)। इसलिए 'निरोग' लिखना अशुद्ध है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "समास",
+  "difficulty": "easy",
+  "question_en": "'पीतांबर' (पीत है अंबर जिसका — अर्थात् श्रीकृष्ण) में कौन-सा समास है?",
+  "question_hi": "'पीतांबर' (पीत है अंबर जिसका — अर्थात् श्रीकृष्ण) में कौन-सा समास है?",
+  "options": [
+   {
+    "en": "कर्मधारय",
+    "hi": "कर्मधारय"
+   },
+   {
+    "en": "तत्पुरुष",
+    "hi": "तत्पुरुष"
+   },
+   {
+    "en": "बहुव्रीहि",
+    "hi": "बहुव्रीहि"
+   },
+   {
+    "en": "द्विगु",
+    "hi": "द्विगु"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Pitambar refers to Vishnu (one whose garment is yellow) — bahuvrihi.",
+  "explanation_hi": "विग्रह 'पीत है अंबर जिसका' (श्रीकृष्ण) में दोनों पद मिलकर किसी अन्य (तीसरे) व्यक्ति का बोध कराते हैं, इसलिए बहुव्रीहि समास है। यदि विग्रह 'पीला है जो अंबर' (पीला वस्त्र) हो तो यही शब्द कर्मधारय होगा — परीक्षा में विग्रह देखकर उत्तर दें।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "समास",
+  "difficulty": "easy",
+  "question_en": "'राजपुत्र' शब्द में कौन-सा समास है?",
+  "question_hi": "'राजपुत्र' शब्द में कौन-सा समास है?",
+  "options": [
+   {
+    "en": "तत्पुरुष",
+    "hi": "तत्पुरुष"
+   },
+   {
+    "en": "अव्ययीभाव",
+    "hi": "अव्ययीभाव"
+   },
+   {
+    "en": "द्विगु",
+    "hi": "द्विगु"
+   },
+   {
+    "en": "द्वंद्व",
+    "hi": "द्वंद्व"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Rajputra = son of the king; genitive marker dropped — tatpurush.",
+  "explanation_hi": "राजपुत्र = राजा का पुत्र। 'का' विभक्ति का लोप होने से यह संबंध (षष्ठी) तत्पुरुष समास है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "समास",
+  "difficulty": "easy",
+  "question_en": "'यथाशक्ति' शब्द में कौन-सा समास है?",
+  "question_hi": "'यथाशक्ति' शब्द में कौन-सा समास है?",
+  "options": [
+   {
+    "en": "कर्मधारय",
+    "hi": "कर्मधारय"
+   },
+   {
+    "en": "अव्ययीभाव",
+    "hi": "अव्ययीभाव"
+   },
+   {
+    "en": "तत्पुरुष",
+    "hi": "तत्पुरुष"
+   },
+   {
+    "en": "बहुव्रीहि",
+    "hi": "बहुव्रीहि"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "First member 'yatha' is an indeclinable — avyayibhav samas.",
+  "explanation_hi": "यथाशक्ति = शक्ति के अनुसार। पहला पद 'यथा' अव्यय है और पूरा पद भी अव्यय की तरह प्रयुक्त होता है, अतः अव्ययीभाव समास है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "समास",
+  "difficulty": "easy",
+  "question_en": "'नीलकमल' शब्द में कौन-सा समास है?",
+  "question_hi": "'नीलकमल' शब्द में कौन-सा समास है?",
+  "options": [
+   {
+    "en": "द्विगु",
+    "hi": "द्विगु"
+   },
+   {
+    "en": "कर्मधारय",
+    "hi": "कर्मधारय"
+   },
+   {
+    "en": "द्वंद्व",
+    "hi": "द्वंद्व"
+   },
+   {
+    "en": "बहुव्रीहि",
+    "hi": "बहुव्रीहि"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Adjective + noun relation (blue lotus) — karmadharaya.",
+  "explanation_hi": "नीलकमल = नीला है जो कमल। यहाँ विशेषण (नील) और विशेष्य (कमल) का संबंध है, अतः कर्मधारय समास है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "समास",
+  "difficulty": "easy",
+  "question_en": "'त्रिभुवन' शब्द में कौन-सा समास है?",
+  "question_hi": "'त्रिभुवन' शब्द में कौन-सा समास है?",
+  "options": [
+   {
+    "en": "तत्पुरुष",
+    "hi": "तत्पुरुष"
+   },
+   {
+    "en": "अव्ययीभाव",
+    "hi": "अव्ययीभाव"
+   },
+   {
+    "en": "द्विगु",
+    "hi": "द्विगु"
+   },
+   {
+    "en": "बहुव्रीहि",
+    "hi": "बहुव्रीहि"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "First member is a numeral denoting a group of three worlds — dvigu.",
+  "explanation_hi": "त्रिभुवन = तीन भुवनों का समाहार। पहला पद संख्यावाचक होने और समूह का बोध कराने से यह द्विगु समास है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "समास",
+  "difficulty": "easy",
+  "question_en": "'माता-पिता' शब्द में कौन-सा समास है?",
+  "question_hi": "'माता-पिता' शब्द में कौन-सा समास है?",
+  "options": [
+   {
+    "en": "बहुव्रीहि",
+    "hi": "बहुव्रीहि"
+   },
+   {
+    "en": "कर्मधारय",
+    "hi": "कर्मधारय"
+   },
+   {
+    "en": "द्वंद्व",
+    "hi": "द्वंद्व"
+   },
+   {
+    "en": "तत्पुरुष",
+    "hi": "तत्पुरुष"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Both members are equally principal (mother and father) — dvandva.",
+  "explanation_hi": "माता-पिता = माता और पिता। दोनों पद प्रधान हैं और बीच में 'और' का लोप है, अतः द्वंद्व समास है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "समास",
+  "difficulty": "medium",
+  "question_en": "'चंद्रमुख' शब्द में कौन-सा समास है?",
+  "question_hi": "'चंद्रमुख' शब्द में कौन-सा समास है?",
+  "options": [
+   {
+    "en": "कर्मधारय",
+    "hi": "कर्मधारय"
+   },
+   {
+    "en": "द्विगु",
+    "hi": "द्विगु"
+   },
+   {
+    "en": "बहुव्रीहि",
+    "hi": "बहुव्रीहि"
+   },
+   {
+    "en": "तत्पुरुष",
+    "hi": "तत्पुरुष"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Moon-like face: upaman–upamey relation — karmadharaya.",
+  "explanation_hi": "चंद्रमुख = चंद्र के समान मुख। यहाँ उपमान (चंद्र) और उपमेय (मुख) का संबंध है, जो कर्मधारय समास का एक भेद है। यदि अर्थ 'चंद्र-जैसा मुख है जिसका' लिया जाए तो बहुव्रीहि होता, पर सामान्य विग्रह कर्मधारय का ही है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "समास",
+  "difficulty": "medium",
+  "question_en": "'दशानन' शब्द में कौन-सा समास है?",
+  "question_hi": "'दशानन' शब्द में कौन-सा समास है?",
+  "options": [
+   {
+    "en": "कर्मधारय",
+    "hi": "कर्मधारय"
+   },
+   {
+    "en": "तत्पुरुष",
+    "hi": "तत्पुरुष"
+   },
+   {
+    "en": "द्विगु",
+    "hi": "द्विगु"
+   },
+   {
+    "en": "बहुव्रीहि",
+    "hi": "बहुव्रीहि"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Dashanan denotes Ravana (one with ten faces) — bahuvrihi, not dvigu.",
+  "explanation_hi": "दशानन = दस हैं आनन (मुख) जिसके, अर्थात् रावण। पद किसी अन्य (रावण) की ओर संकेत करता है, अतः बहुव्रीहि है। केवल 'दस मुखों का समूह' अर्थ होता तो द्विगु होता।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "समास",
+  "difficulty": "medium",
+  "question_en": "निम्नलिखित में से करण तत्पुरुष समास का उदाहरण कौन-सा है?",
+  "question_hi": "निम्नलिखित में से करण तत्पुरुष समास का उदाहरण कौन-सा है?",
+  "options": [
+   {
+    "en": "गंगाजल",
+    "hi": "गंगाजल"
+   },
+   {
+    "en": "हस्तलिखित",
+    "hi": "हस्तलिखित"
+   },
+   {
+    "en": "राजमहल",
+    "hi": "राजमहल"
+   },
+   {
+    "en": "देशनिकाला",
+    "hi": "देशनिकाला"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Hastalikhit = written by hand; instrumental marker dropped — karan tatpurush.",
+  "explanation_hi": "हस्तलिखित = हाथ से लिखा हुआ; 'से' (करण) विभक्ति का लोप है। राजमहल और गंगाजल संबंध तत्पुरुष हैं, देशनिकाला अपादान तत्पुरुष है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "समास",
+  "difficulty": "medium",
+  "question_en": "'आजन्म' शब्द में कौन-सा समास है?",
+  "question_hi": "'आजन्म' शब्द में कौन-सा समास है?",
+  "options": [
+   {
+    "en": "द्विगु",
+    "hi": "द्विगु"
+   },
+   {
+    "en": "तत्पुरुष",
+    "hi": "तत्पुरुष"
+   },
+   {
+    "en": "कर्मधारय",
+    "hi": "कर्मधारय"
+   },
+   {
+    "en": "अव्ययीभाव",
+    "hi": "अव्ययीभाव"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Aajanma = since birth; indeclinable compound — avyayibhav.",
+  "explanation_hi": "आजन्म = जन्म से लेकर (जन्म पर्यंत)। 'आ' उपसर्ग/अव्यय पहला पद है और समस्त पद क्रिया-विशेषण की तरह प्रयुक्त होता है, अतः अव्ययीभाव समास है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "समास",
+  "difficulty": "medium",
+  "question_en": "'शरणागत' शब्द में कौन-सा समास है?",
+  "question_hi": "'शरणागत' शब्द में कौन-सा समास है?",
+  "options": [
+   {
+    "en": "कर्म तत्पुरुष",
+    "hi": "कर्म तत्पुरुष"
+   },
+   {
+    "en": "करण तत्पुरुष",
+    "hi": "करण तत्पुरुष"
+   },
+   {
+    "en": "संप्रदान तत्पुरुष",
+    "hi": "संप्रदान तत्पुरुष"
+   },
+   {
+    "en": "अधिकरण तत्पुरुष",
+    "hi": "अधिकरण तत्पुरुष"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Sharanagat = come to refuge; accusative marker dropped — karm tatpurush.",
+  "explanation_hi": "शरणागत = शरण को आया हुआ। 'को' (कर्म कारक) विभक्ति का लोप है, अतः कर्म तत्पुरुष समास है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "समास",
+  "difficulty": "hard",
+  "question_en": "'वनवास' शब्द में कौन-सा समास है?",
+  "question_hi": "'वनवास' शब्द में कौन-सा समास है?",
+  "options": [
+   {
+    "en": "कर्मधारय",
+    "hi": "कर्मधारय"
+   },
+   {
+    "en": "बहुव्रीहि",
+    "hi": "बहुव्रीहि"
+   },
+   {
+    "en": "संबंध तत्पुरुष",
+    "hi": "संबंध तत्पुरुष"
+   },
+   {
+    "en": "अधिकरण तत्पुरुष",
+    "hi": "अधिकरण तत्पुरुष"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Vanvaas = vaas in the forest; the locative marker is dropped — adhikaran tatpurush.",
+  "explanation_hi": "'वनवास' का विग्रह है 'वन में वास'। यहाँ अधिकरण कारक की विभक्ति 'में' लुप्त है, इसलिए यह अधिकरण तत्पुरुष समास है (इसी प्रकार ग्रामवास, जलमग्न, शोकमग्न)।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "समास",
+  "difficulty": "hard",
+  "question_en": "निम्नलिखित में से कौन-सा शब्द 'समाहार द्वंद्व' समास का उदाहरण है?",
+  "question_hi": "निम्नलिखित में से कौन-सा शब्द 'समाहार द्वंद्व' समास का उदाहरण है?",
+  "options": [
+   {
+    "en": "राम-लक्ष्मण",
+    "hi": "राम-लक्ष्मण"
+   },
+   {
+    "en": "भला-बुरा",
+    "hi": "भला-बुरा"
+   },
+   {
+    "en": "रुपया-पैसा",
+    "hi": "रुपया-पैसा"
+   },
+   {
+    "en": "सीता-राम",
+    "hi": "सीता-राम"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Rupaya-paisa means money and similar things, so it is samahar dvandva; the others are itaretar or vaikalpik dvandva.",
+  "explanation_hi": "समाहार द्वंद्व में दोनों पदों के साथ उसी प्रकार की अन्य वस्तुओं का भी बोध होता है — 'रुपया-पैसा' = रुपया, पैसा आदि (धन-संपत्ति)। राम-लक्ष्मण और सीता-राम इतरेतर द्वंद्व (और से जुड़े) तथा भला-बुरा वैकल्पिक द्वंद्व (या से जुड़ा) है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "उपसर्ग–प्रत्यय",
+  "difficulty": "easy",
+  "question_en": "'प्रतिकूल' शब्द में कौन-सा उपसर्ग है?",
+  "question_hi": "'प्रतिकूल' शब्द में कौन-सा उपसर्ग है?",
+  "options": [
+   {
+    "en": "प्र",
+    "hi": "प्र"
+   },
+   {
+    "en": "प्रति",
+    "hi": "प्रति"
+   },
+   {
+    "en": "परि",
+    "hi": "परि"
+   },
+   {
+    "en": "प्रत",
+    "hi": "प्रत"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Pratikool = prati + kool; 'prati' is the prefix.",
+  "explanation_hi": "प्रतिकूल = प्रति + कूल। 'प्रति' संस्कृत उपसर्ग है जिसका अर्थ 'विरुद्ध/उलटा' होता है, जैसे प्रतिध्वनि, प्रतिदिन।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "उपसर्ग–प्रत्यय",
+  "difficulty": "medium",
+  "question_en": "'अभ्यागत' शब्द में कौन-सा उपसर्ग है?",
+  "question_hi": "'अभ्यागत' शब्द में कौन-सा उपसर्ग है?",
+  "options": [
+   {
+    "en": "अभि",
+    "hi": "अभि"
+   },
+   {
+    "en": "अभ्य",
+    "hi": "अभ्य"
+   },
+   {
+    "en": "अ",
+    "hi": "अ"
+   },
+   {
+    "en": "अप",
+    "hi": "अप"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Abhyagat = abhi + aagat; the prefix is 'abhi'.",
+  "explanation_hi": "अभ्यागत = अभि + आगत (आ + गत)। 'अभि' उपसर्ग के 'इ' का यण संधि से 'य्' हो गया है। अतः उपसर्ग 'अभि' है।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "उपसर्ग–प्रत्यय",
+  "difficulty": "easy",
+  "question_en": "'निर्धन' शब्द में कौन-सा उपसर्ग है?",
+  "question_hi": "'निर्धन' शब्द में कौन-सा उपसर्ग है?",
+  "options": [
+   {
+    "en": "न",
+    "hi": "न"
+   },
+   {
+    "en": "नि",
+    "hi": "नि"
+   },
+   {
+    "en": "निर्",
+    "hi": "निर्"
+   },
+   {
+    "en": "नी",
+    "hi": "नी"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Nirdhan = nir + dhan; 'nir' means without.",
+  "explanation_hi": "निर्धन = निर् + धन, अर्थात् जिसके पास धन न हो। 'निर्' उपसर्ग का अर्थ 'रहित/बाहर' है, जैसे निर्भय, निर्दोष।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "उपसर्ग–प्रत्यय",
+  "difficulty": "easy",
+  "question_en": "'अनुवाद' शब्द में कौन-सा उपसर्ग है?",
+  "question_hi": "'अनुवाद' शब्द में कौन-सा उपसर्ग है?",
+  "options": [
+   {
+    "en": "अनु",
+    "hi": "अनु"
+   },
+   {
+    "en": "अन्",
+    "hi": "अन्"
+   },
+   {
+    "en": "अ",
+    "hi": "अ"
+   },
+   {
+    "en": "अन",
+    "hi": "अन"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Anuvaad = anu + vaad; 'anu' means after/following.",
+  "explanation_hi": "अनुवाद = अनु + वाद। 'अनु' उपसर्ग का अर्थ 'पीछे/बाद में' है, जैसे अनुकरण, अनुशासन, अनुज।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "उपसर्ग–प्रत्यय",
+  "difficulty": "medium",
+  "question_en": "'बेईमान' शब्द में प्रयुक्त उपसर्ग किस भाषा का है?",
+  "question_hi": "'बेईमान' शब्द में प्रयुक्त उपसर्ग किस भाषा का है?",
+  "options": [
+   {
+    "en": "हिंदी",
+    "hi": "हिंदी"
+   },
+   {
+    "en": "फ़ारसी/उर्दू",
+    "hi": "फ़ारसी/उर्दू"
+   },
+   {
+    "en": "अंग्रेज़ी",
+    "hi": "अंग्रेज़ी"
+   },
+   {
+    "en": "संस्कृत",
+    "hi": "संस्कृत"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "'Be' (without) is a Persian/Urdu prefix.",
+  "explanation_hi": "'बे' उपसर्ग फ़ारसी/उर्दू का है जिसका अर्थ 'बिना' होता है, जैसे बेकार, बेखबर, बेवक्त। संस्कृत में इसके समकक्ष 'निर्' या 'अ' उपसर्ग हैं।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "उपसर्ग–प्रत्यय",
+  "difficulty": "easy",
+  "question_en": "'लिखावट' शब्द में कौन-सा प्रत्यय है?",
+  "question_hi": "'लिखावट' शब्द में कौन-सा प्रत्यय है?",
+  "options": [
+   {
+    "en": "आवट",
+    "hi": "आवट"
+   },
+   {
+    "en": "ट",
+    "hi": "ट"
+   },
+   {
+    "en": "अट",
+    "hi": "अट"
+   },
+   {
+    "en": "वट",
+    "hi": "वट"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Likhavat = likh + aavat; 'aavat' forms abstract nouns from verbs.",
+  "explanation_hi": "लिखावट = लिख + आवट। 'आवट' कृत् प्रत्यय है जो क्रिया से भाववाचक संज्ञा बनाता है, जैसे सजावट, बनावट, रुकावट।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "उपसर्ग–प्रत्यय",
+  "difficulty": "medium",
+  "question_en": "'दयालु' शब्द में कौन-सा प्रत्यय है?",
+  "question_hi": "'दयालु' शब्द में कौन-सा प्रत्यय है?",
+  "options": [
+   {
+    "en": "अलु",
+    "hi": "अलु"
+   },
+   {
+    "en": "ालु",
+    "hi": "ालु"
+   },
+   {
+    "en": "लु",
+    "hi": "लु"
+   },
+   {
+    "en": "आलु",
+    "hi": "आलु"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Dayalu = daya + aalu; 'aalu' forms adjectives from nouns.",
+  "explanation_hi": "दयालु = दया + आलु। 'आलु' तद्धित प्रत्यय है जो संज्ञा से विशेषण बनाता है, जैसे कृपालु, श्रद्धालु, ईर्ष्यालु।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "उपसर्ग–प्रत्यय",
+  "difficulty": "medium",
+  "question_en": "'मानवता' शब्द में प्रयुक्त प्रत्यय किस प्रकार का है?",
+  "question_hi": "'मानवता' शब्द में प्रयुक्त प्रत्यय किस प्रकार का है?",
+  "options": [
+   {
+    "en": "उपसर्ग",
+    "hi": "उपसर्ग"
+   },
+   {
+    "en": "विभक्ति",
+    "hi": "विभक्ति"
+   },
+   {
+    "en": "कृत् प्रत्यय",
+    "hi": "कृत् प्रत्यय"
+   },
+   {
+    "en": "तद्धित प्रत्यय",
+    "hi": "तद्धित प्रत्यय"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "'Ta' is added to a noun, so it is a taddhit (noun-derived) suffix.",
+  "explanation_hi": "मानवता = मानव + ता। 'ता' प्रत्यय संज्ञा शब्द (मानव) में जुड़ा है, इसलिए यह तद्धित प्रत्यय है। कृत् प्रत्यय क्रिया-धातु में जुड़ते हैं।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "उपसर्ग–प्रत्यय",
+  "difficulty": "medium",
+  "question_en": "'भुलक्कड़' शब्द में कौन-सा प्रत्यय है?",
+  "question_hi": "'भुलक्कड़' शब्द में कौन-सा प्रत्यय है?",
+  "options": [
+   {
+    "en": "क्कड़",
+    "hi": "क्कड़"
+   },
+   {
+    "en": "ड़",
+    "hi": "ड़"
+   },
+   {
+    "en": "कड़",
+    "hi": "कड़"
+   },
+   {
+    "en": "अक्कड़",
+    "hi": "अक्कड़"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Bhulakkad = bhool + akkad; 'akkad' forms agent adjectives.",
+  "explanation_hi": "भुलक्कड़ = भूल + अक्कड़। 'अक्कड़' कृत् प्रत्यय से कर्तृवाचक विशेषण बनता है, जैसे पियक्कड़, घुमक्कड़।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "उपसर्ग–प्रत्यय",
+  "difficulty": "easy",
+  "question_en": "'सुयोग' शब्द में उपसर्ग अलग कीजिए।",
+  "question_hi": "'सुयोग' शब्द में उपसर्ग अलग कीजिए।",
+  "options": [
+   {
+    "en": "स्व",
+    "hi": "स्व"
+   },
+   {
+    "en": "स",
+    "hi": "स"
+   },
+   {
+    "en": "सु",
+    "hi": "सु"
+   },
+   {
+    "en": "सुय",
+    "hi": "सुय"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Suyog = su + yog; 'su' means good.",
+  "explanation_hi": "सुयोग = सु + योग। 'सु' उपसर्ग का अर्थ 'अच्छा' है, जैसे सुपुत्र, सुगम, सुलभ।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "उपसर्ग–प्रत्यय",
+  "difficulty": "hard",
+  "question_en": "निम्नलिखित में से किस शब्द में दो उपसर्ग प्रयुक्त हुए हैं?",
+  "question_hi": "निम्नलिखित में से किस शब्द में दो उपसर्ग प्रयुक्त हुए हैं?",
+  "options": [
+   {
+    "en": "अपमान",
+    "hi": "अपमान"
+   },
+   {
+    "en": "निरभिमान",
+    "hi": "निरभिमान"
+   },
+   {
+    "en": "सम्मान",
+    "hi": "सम्मान"
+   },
+   {
+    "en": "अभिमान",
+    "hi": "अभिमान"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Nirabhimaan has two prefixes: nir + abhi + maan.",
+  "explanation_hi": "निरभिमान = निर् + अभि + मान, जिसमें 'निर्' और 'अभि' दो उपसर्ग हैं। शेष शब्दों में एक-एक उपसर्ग (अभि, अप, सम्) है।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "उपसर्ग–प्रत्यय",
+  "difficulty": "medium",
+  "question_en": "'ऐतिहासिक' शब्द में कौन-सा प्रत्यय है?",
+  "question_hi": "'ऐतिहासिक' शब्द में कौन-सा प्रत्यय है?",
+  "options": [
+   {
+    "en": "ऐ",
+    "hi": "ऐ"
+   },
+   {
+    "en": "सिक",
+    "hi": "सिक"
+   },
+   {
+    "en": "इ",
+    "hi": "इ"
+   },
+   {
+    "en": "इक",
+    "hi": "इक"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Aitihasik = itihas + ik; the 'ik' suffix causes vowel strengthening.",
+  "explanation_hi": "ऐतिहासिक = इतिहास + इक। 'इक' तद्धित प्रत्यय लगने पर शब्द के पहले स्वर की वृद्धि हो जाती है (इ → ऐ), जैसे समाज + इक = सामाजिक।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "लिंग–वचन–कारक",
+  "difficulty": "easy",
+  "question_en": "निम्नलिखित में से कौन-सा शब्द स्त्रीलिंग है?",
+  "question_hi": "निम्नलिखित में से कौन-सा शब्द स्त्रीलिंग है?",
+  "options": [
+   {
+    "en": "दही",
+    "hi": "दही"
+   },
+   {
+    "en": "पानी",
+    "hi": "पानी"
+   },
+   {
+    "en": "मोती",
+    "hi": "मोती"
+   },
+   {
+    "en": "चाय",
+    "hi": "चाय"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Chai is feminine; dahi, paani and moti are masculine despite ending in -i.",
+  "explanation_hi": "'चाय' स्त्रीलिंग है — 'चाय ठंडी हो गई'। दही, पानी और मोती ईकारांत होते हुए भी पुल्लिंग हैं — 'दही खट्टा है', 'पानी ठंडा है'।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "लिंग–वचन–कारक",
+  "difficulty": "medium",
+  "question_en": "'विद्वान' शब्द का स्त्रीलिंग रूप क्या है?",
+  "question_hi": "'विद्वान' शब्द का स्त्रीलिंग रूप क्या है?",
+  "options": [
+   {
+    "en": "विद्वानी",
+    "hi": "विद्वानी"
+   },
+   {
+    "en": "विदुषी",
+    "hi": "विदुषी"
+   },
+   {
+    "en": "विद्वत्ता",
+    "hi": "विद्वत्ता"
+   },
+   {
+    "en": "विदुषा",
+    "hi": "विदुषा"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The feminine of vidvaan is vidushi.",
+  "explanation_hi": "'विद्वान' का स्त्रीलिंग 'विदुषी' होता है। 'विद्वत्ता' भाववाचक संज्ञा (विद्वान होने का भाव) है, स्त्रीलिंग रूप नहीं।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "लिंग–वचन–कारक",
+  "difficulty": "hard",
+  "question_en": "निम्नलिखित में से कौन-सा शब्द पुल्लिंग है?",
+  "question_hi": "निम्नलिखित में से कौन-सा शब्द पुल्लिंग है?",
+  "options": [
+   {
+    "en": "आत्मा",
+    "hi": "आत्मा"
+   },
+   {
+    "en": "सरसों",
+    "hi": "सरसों"
+   },
+   {
+    "en": "हस्ताक्षर",
+    "hi": "हस्ताक्षर"
+   },
+   {
+    "en": "आयु",
+    "hi": "आयु"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Hastakshar is masculine; aatma, sarson and aayu are feminine.",
+  "explanation_hi": "'हस्ताक्षर' पुल्लिंग है — 'मेरे हस्ताक्षर'। आत्मा, सरसों और आयु स्त्रीलिंग हैं — 'आत्मा अमर है', 'लंबी आयु'।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "लिंग–वचन–कारक",
+  "difficulty": "medium",
+  "question_en": "'कवि' शब्द का शुद्ध स्त्रीलिंग रूप क्या है?",
+  "question_hi": "'कवि' शब्द का शुद्ध स्त्रीलिंग रूप क्या है?",
+  "options": [
+   {
+    "en": "कवियित्री",
+    "hi": "कवियित्री"
+   },
+   {
+    "en": "कविनी",
+    "hi": "कविनी"
+   },
+   {
+    "en": "कविता",
+    "hi": "कविता"
+   },
+   {
+    "en": "कवयित्री",
+    "hi": "कवयित्री"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The correct feminine of kavi is kavayitri.",
+  "explanation_hi": "'कवि' का स्त्रीलिंग 'कवयित्री' है। 'कवियित्री' लिखना प्रचलित भूल है, और 'कविता' रचना का नाम है, स्त्रीलिंग रूप नहीं।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "लिंग–वचन–कारक",
+  "difficulty": "easy",
+  "question_en": "'नदी' शब्द का बहुवचन (बिना विभक्ति) रूप क्या है?",
+  "question_hi": "'नदी' शब्द का बहुवचन (बिना विभक्ति) रूप क्या है?",
+  "options": [
+   {
+    "en": "नदियाँ",
+    "hi": "नदियाँ"
+   },
+   {
+    "en": "नदीयाँ",
+    "hi": "नदीयाँ"
+   },
+   {
+    "en": "नदियों",
+    "hi": "नदियों"
+   },
+   {
+    "en": "नदें",
+    "hi": "नदें"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Nadi becomes nadiyaan; nadiyon is the oblique form used before postpositions.",
+  "explanation_hi": "ईकारांत स्त्रीलिंग शब्दों में 'ई' को 'इ' करके 'याँ' जोड़ा जाता है — नदी → नदियाँ। 'नदियों' विभक्ति सहित (तिर्यक) रूप है, जैसे 'नदियों में'।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "लिंग–वचन–कारक",
+  "difficulty": "medium",
+  "question_en": "निम्नलिखित में से कौन-सा शब्द सदा बहुवचन में प्रयुक्त होता है?",
+  "question_hi": "निम्नलिखित में से कौन-सा शब्द सदा बहुवचन में प्रयुक्त होता है?",
+  "options": [
+   {
+    "en": "पुस्तक",
+    "hi": "पुस्तक"
+   },
+   {
+    "en": "प्राण",
+    "hi": "प्राण"
+   },
+   {
+    "en": "लड़का",
+    "hi": "लड़का"
+   },
+   {
+    "en": "घोड़ा",
+    "hi": "घोड़ा"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Praan is always used in the plural.",
+  "explanation_hi": "'प्राण' सदैव बहुवचन में प्रयुक्त होता है — 'उसके प्राण निकल गए'। इसी प्रकार दर्शन, हस्ताक्षर, होश, आँसू भी प्रायः बहुवचन में आते हैं।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "लिंग–वचन–कारक",
+  "difficulty": "medium",
+  "question_en": "'माला' शब्द का बहुवचन (बिना विभक्ति) रूप क्या है?",
+  "question_hi": "'माला' शब्द का बहुवचन (बिना विभक्ति) रूप क्या है?",
+  "options": [
+   {
+    "en": "मालाओं",
+    "hi": "मालाओं"
+   },
+   {
+    "en": "मालाएँ",
+    "hi": "मालाएँ"
+   },
+   {
+    "en": "मालियाँ",
+    "hi": "मालियाँ"
+   },
+   {
+    "en": "मालें",
+    "hi": "मालें"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Mala becomes maalaayen in the direct plural.",
+  "explanation_hi": "आकारांत स्त्रीलिंग शब्दों में 'एँ' जोड़कर बहुवचन बनता है — माला → मालाएँ। 'मालाओं' विभक्ति लगने पर बनने वाला रूप है।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "लिंग–वचन–कारक",
+  "difficulty": "hard",
+  "question_en": "निम्नलिखित में से किस वाक्य में आदरार्थ बहुवचन का प्रयोग हुआ है?",
+  "question_hi": "निम्नलिखित में से किस वाक्य में आदरार्थ बहुवचन का प्रयोग हुआ है?",
+  "options": [
+   {
+    "en": "लड़के मैदान में खेल रहे हैं।",
+    "hi": "लड़के मैदान में खेल रहे हैं।"
+   },
+   {
+    "en": "पेड़ आँधी में हिल रहे हैं।",
+    "hi": "पेड़ आँधी में हिल रहे हैं।"
+   },
+   {
+    "en": "पिताजी दफ़्तर से आ रहे हैं।",
+    "hi": "पिताजी दफ़्तर से आ रहे हैं।"
+   },
+   {
+    "en": "बच्चे कमरे में सो रहे हैं।",
+    "hi": "बच्चे कमरे में सो रहे हैं।"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Pitaji is one person but takes a plural verb out of respect.",
+  "explanation_hi": "'पिताजी' एक ही व्यक्ति हैं, पर सम्मान प्रकट करने के लिए क्रिया बहुवचन ('आ रहे हैं') में प्रयुक्त हुई है — यही आदरार्थ बहुवचन है। अन्य वाक्यों में कर्ता वास्तव में अनेक हैं।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "लिंग–वचन–कारक",
+  "difficulty": "easy",
+  "question_en": "'ने' परसर्ग (विभक्ति-चिह्न) किस कारक का है?",
+  "question_hi": "'ने' परसर्ग (विभक्ति-चिह्न) किस कारक का है?",
+  "options": [
+   {
+    "en": "कर्म",
+    "hi": "कर्म"
+   },
+   {
+    "en": "कर्ता",
+    "hi": "कर्ता"
+   },
+   {
+    "en": "करण",
+    "hi": "करण"
+   },
+   {
+    "en": "संप्रदान",
+    "hi": "संप्रदान"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "'Ne' marks the karta (subject/agent) case.",
+  "explanation_hi": "'ने' कर्ता कारक का चिह्न है — 'राम ने पत्र लिखा'। कर्म का चिह्न 'को', करण का 'से/के द्वारा' और संप्रदान का 'को/के लिए' है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "लिंग–वचन–कारक",
+  "difficulty": "medium",
+  "question_en": "'वह कलम से पत्र लिखता है।' — इस वाक्य में 'कलम से' में कौन-सा कारक है?",
+  "question_hi": "'वह कलम से पत्र लिखता है।' — इस वाक्य में 'कलम से' में कौन-सा कारक है?",
+  "options": [
+   {
+    "en": "अपादान",
+    "hi": "अपादान"
+   },
+   {
+    "en": "कर्म",
+    "hi": "कर्म"
+   },
+   {
+    "en": "अधिकरण",
+    "hi": "अधिकरण"
+   },
+   {
+    "en": "करण",
+    "hi": "करण"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The pen is the instrument, so 'se' here is karan (instrumental) case.",
+  "explanation_hi": "कलम क्रिया (लिखना) का साधन है; साधन बताने वाला 'से' करण कारक का चिह्न है। अलग होने के अर्थ में आने वाला 'से' अपादान कारक का होता है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "लिंग–वचन–कारक",
+  "difficulty": "medium",
+  "question_en": "'पेड़ से पत्ता गिरा।' — इस वाक्य में 'पेड़ से' में कौन-सा कारक है?",
+  "question_hi": "'पेड़ से पत्ता गिरा।' — इस वाक्य में 'पेड़ से' में कौन-सा कारक है?",
+  "options": [
+   {
+    "en": "अपादान",
+    "hi": "अपादान"
+   },
+   {
+    "en": "करण",
+    "hi": "करण"
+   },
+   {
+    "en": "संबंध",
+    "hi": "संबंध"
+   },
+   {
+    "en": "अधिकरण",
+    "hi": "अधिकरण"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "'Se' showing separation is apaadaan (ablative) case.",
+  "explanation_hi": "पत्ता पेड़ से अलग हो रहा है; अलगाव (पृथकता) के अर्थ में 'से' अपादान कारक का चिह्न है। साधन के अर्थ वाला 'से' करण कारक होता है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "लिंग–वचन–कारक",
+  "difficulty": "hard",
+  "question_en": "'गरीबों को कंबल दो।' — इस वाक्य में 'गरीबों को' में कौन-सा कारक है?",
+  "question_hi": "'गरीबों को कंबल दो।' — इस वाक्य में 'गरीबों को' में कौन-सा कारक है?",
+  "options": [
+   {
+    "en": "कर्म",
+    "hi": "कर्म"
+   },
+   {
+    "en": "अपादान",
+    "hi": "अपादान"
+   },
+   {
+    "en": "संप्रदान",
+    "hi": "संप्रदान"
+   },
+   {
+    "en": "संबंध",
+    "hi": "संबंध"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "'Ko' in the sense of giving marks sampradaan (dative) case; the object is the blanket.",
+  "explanation_hi": "जिसके लिए कुछ किया जाए या जिसे कुछ दिया जाए, वह संप्रदान कारक होता है; देने के अर्थ में 'को' संप्रदान का चिह्न है। यहाँ कर्म 'कंबल' है, 'गरीबों' नहीं।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "संज्ञा–सर्वनाम–विशेषण–क्रिया",
+  "difficulty": "easy",
+  "question_en": "'बुढ़ापा' शब्द किस प्रकार की संज्ञा है?",
+  "question_hi": "'बुढ़ापा' शब्द किस प्रकार की संज्ञा है?",
+  "options": [
+   {
+    "en": "जातिवाचक संज्ञा",
+    "hi": "जातिवाचक संज्ञा"
+   },
+   {
+    "en": "व्यक्तिवाचक संज्ञा",
+    "hi": "व्यक्तिवाचक संज्ञा"
+   },
+   {
+    "en": "समूहवाचक संज्ञा",
+    "hi": "समूहवाचक संज्ञा"
+   },
+   {
+    "en": "भाववाचक संज्ञा",
+    "hi": "भाववाचक संज्ञा"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Budhapa (old age) names a state, so it is an abstract noun (bhavvachak sangya).",
+  "explanation_hi": "'बुढ़ापा' (बूढ़ा + पा) एक अवस्था का नाम है जिसे केवल अनुभव किया जा सकता है, छुआ नहीं जा सकता; अवस्था, गुण, भाव के नाम भाववाचक संज्ञा कहलाते हैं (जैसे बचपन, मिठास, थकान)।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "संज्ञा–सर्वनाम–विशेषण–क्रिया",
+  "difficulty": "medium",
+  "question_en": "'मैं यह काम अपने-आप कर लूँगा।' — इस वाक्य में 'अपने-आप' कौन-सा सर्वनाम है?",
+  "question_hi": "'मैं यह काम अपने-आप कर लूँगा।' — इस वाक्य में 'अपने-आप' कौन-सा सर्वनाम है?",
+  "options": [
+   {
+    "en": "निजवाचक सर्वनाम",
+    "hi": "निजवाचक सर्वनाम"
+   },
+   {
+    "en": "पुरुषवाचक सर्वनाम",
+    "hi": "पुरुषवाचक सर्वनाम"
+   },
+   {
+    "en": "निश्चयवाचक सर्वनाम",
+    "hi": "निश्चयवाचक सर्वनाम"
+   },
+   {
+    "en": "संबंधवाचक सर्वनाम",
+    "hi": "संबंधवाचक सर्वनाम"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Apne-aap refers back to the subject itself, so it is a reflexive pronoun (nijvachak sarvanam).",
+  "explanation_hi": "'आप', 'अपने-आप', 'स्वयं', 'खुद' जब कर्ता स्वयं के लिए प्रयुक्त हों तो निजवाचक सर्वनाम होते हैं। आदरसूचक 'आप' (आप कब आए?) पुरुषवाचक सर्वनाम है — यही परीक्षा का जाल है।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "संज्ञा–सर्वनाम–विशेषण–क्रिया",
+  "difficulty": "medium",
+  "question_en": "'बाज़ार से दो लीटर दूध ले आओ।' — इस वाक्य में 'दो लीटर' कौन-सा विशेषण है?",
+  "question_hi": "'बाज़ार से दो लीटर दूध ले आओ।' — इस वाक्य में 'दो लीटर' कौन-सा विशेषण है?",
+  "options": [
+   {
+    "en": "संख्यावाचक विशेषण",
+    "hi": "संख्यावाचक विशेषण"
+   },
+   {
+    "en": "गुणवाचक विशेषण",
+    "hi": "गुणवाचक विशेषण"
+   },
+   {
+    "en": "परिमाणवाचक विशेषण",
+    "hi": "परिमाणवाचक विशेषण"
+   },
+   {
+    "en": "सार्वनामिक विशेषण",
+    "hi": "सार्वनामिक विशेषण"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Do litre measures a quantity of milk, so it is a quantitative adjective, not a numeral adjective.",
+  "explanation_hi": "जो विशेषण किसी वस्तु की माप-तौल (मात्रा) बताए वह परिमाणवाचक विशेषण है — 'दो लीटर दूध', 'चार किलो चीनी' (निश्चित परिमाणवाचक)। 'दो' देखकर संख्यावाचक चुनना सामान्य भूल है; संख्यावाचक गिनी जा सकने वाली वस्तुओं के लिए होता है (दो लड़के)।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_vyakaran",
+  "subtopic": "संज्ञा–सर्वनाम–विशेषण–क्रिया",
+  "difficulty": "medium",
+  "question_en": "'माँ ने बच्चे को सुलाया।' — इस वाक्य में 'सुलाया' कौन-सी क्रिया है?",
+  "question_hi": "'माँ ने बच्चे को सुलाया।' — इस वाक्य में 'सुलाया' कौन-सी क्रिया है?",
+  "options": [
+   {
+    "en": "अकर्मक क्रिया",
+    "hi": "अकर्मक क्रिया"
+   },
+   {
+    "en": "नामधातु क्रिया",
+    "hi": "नामधातु क्रिया"
+   },
+   {
+    "en": "पूर्वकालिक क्रिया",
+    "hi": "पूर्वकालिक क्रिया"
+   },
+   {
+    "en": "प्रेरणार्थक क्रिया",
+    "hi": "प्रेरणार्थक क्रिया"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Sulana (make someone sleep) is the causative form of sona, so it is a prernarthak (causative) verb.",
+  "explanation_hi": "जब कर्ता स्वयं कार्य न करके किसी दूसरे से कार्य करवाए तो प्रेरणार्थक क्रिया होती है — सोना → सुलाना → सुलवाना। यहाँ बच्चा सो रहा है, माँ उसे सोने के लिए प्रेरित कर रही है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "वर्तनी",
+  "difficulty": "easy",
+  "question_en": "'चमकदार/स्वच्छ' अर्थ वाले शब्द की शुद्ध वर्तनी चुनिए।",
+  "question_hi": "'चमकदार/स्वच्छ' अर्थ वाले शब्द की शुद्ध वर्तनी चुनिए।",
+  "options": [
+   {
+    "en": "उज्ज्वल",
+    "hi": "उज्ज्वल"
+   },
+   {
+    "en": "उज्वल",
+    "hi": "उज्वल"
+   },
+   {
+    "en": "उजवल",
+    "hi": "उजवल"
+   },
+   {
+    "en": "उज्जवल",
+    "hi": "उज्जवल"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Correct spelling is ujjval (ut + jval).",
+  "explanation_hi": "शुद्ध शब्द 'उज्ज्वल' है (उत् + ज्वल)। संधि के कारण 'ज्' के बाद 'ज्व' आता है, इसलिए 'ज्ज्व' लिखा जाता है; 'उज्जवल' सबसे आम भूल है।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "वर्तनी",
+  "difficulty": "easy",
+  "question_en": "'बड़ों द्वारा दी गई शुभकामना' अर्थ वाले शब्द की शुद्ध वर्तनी चुनिए।",
+  "question_hi": "'बड़ों द्वारा दी गई शुभकामना' अर्थ वाले शब्द की शुद्ध वर्तनी चुनिए।",
+  "options": [
+   {
+    "en": "आर्शीवाद",
+    "hi": "आर्शीवाद"
+   },
+   {
+    "en": "आशीर्वाद",
+    "hi": "आशीर्वाद"
+   },
+   {
+    "en": "आशिर्वाद",
+    "hi": "आशिर्वाद"
+   },
+   {
+    "en": "आशीरवाद",
+    "hi": "आशीरवाद"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Correct spelling is aashirvaad with the r-sign above 'va'.",
+  "explanation_hi": "शुद्ध रूप 'आशीर्वाद' है (आशीः + वाद)। रेफ़ (र्) 'व' के ऊपर लगता है, इसलिए 'आर्शीवाद' अशुद्ध है।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "वर्तनी",
+  "difficulty": "medium",
+  "question_en": "'बहुत अधिक' अर्थ वाले शब्द की शुद्ध वर्तनी कौन-सी है?",
+  "question_hi": "'बहुत अधिक' अर्थ वाले शब्द की शुद्ध वर्तनी कौन-सी है?",
+  "options": [
+   {
+    "en": "अत्याधिक",
+    "hi": "अत्याधिक"
+   },
+   {
+    "en": "अत्यधीक",
+    "hi": "अत्यधीक"
+   },
+   {
+    "en": "अत्यधिक",
+    "hi": "अत्यधिक"
+   },
+   {
+    "en": "अतयधिक",
+    "hi": "अतयधिक"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Ati + adhik = atyadhik (yan sandhi), not atyaadhik.",
+  "explanation_hi": "अति + अधिक = अत्यधिक (यण संधि)। 'इ' का 'य्' हो जाता है और 'अ' ज्यों-का-त्यों रहता है, इसलिए 'अत्याधिक' अशुद्ध है।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "वर्तनी",
+  "difficulty": "hard",
+  "question_en": "'ऊपर कहा गया' अर्थ वाले शब्द का शुद्ध रूप चुनिए।",
+  "question_hi": "'ऊपर कहा गया' अर्थ वाले शब्द का शुद्ध रूप चुनिए।",
+  "options": [
+   {
+    "en": "उपरोक्त",
+    "hi": "उपरोक्त"
+   },
+   {
+    "en": "उपर्युक्त",
+    "hi": "उपर्युक्त"
+   },
+   {
+    "en": "उपर्यूक्त",
+    "hi": "उपर्यूक्त"
+   },
+   {
+    "en": "ऊपर्युक्त",
+    "hi": "ऊपर्युक्त"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Upari + ukt = uparyukt; 'uparokt' is a common but incorrect form.",
+  "explanation_hi": "उपरि + उक्त = उपर्युक्त (यण संधि)। 'उपरोक्त' बोलचाल में प्रचलित है, पर व्याकरण की दृष्टि से अशुद्ध है।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "वर्तनी",
+  "difficulty": "medium",
+  "question_en": "'सुंदरता' के अर्थ वाले शब्द की शुद्ध वर्तनी कौन-सी है?",
+  "question_hi": "'सुंदरता' के अर्थ वाले शब्द की शुद्ध वर्तनी कौन-सी है?",
+  "options": [
+   {
+    "en": "सोंदर्य",
+    "hi": "सोंदर्य"
+   },
+   {
+    "en": "सौदर्य",
+    "hi": "सौदर्य"
+   },
+   {
+    "en": "सौंन्दर्य",
+    "hi": "सौंन्दर्य"
+   },
+   {
+    "en": "सौंदर्य",
+    "hi": "सौंदर्य"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Correct spelling is saundarya.",
+  "explanation_hi": "शुद्ध रूप 'सौंदर्य' (सौन्दर्य) है — 'सुंदर' में 'उ' की वृद्धि होकर 'औ' बनता है। अनुस्वार और पंचमाक्षर दोनों एक साथ ('सौंन्') लगाना अशुद्ध है।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "वर्तनी",
+  "difficulty": "medium",
+  "question_en": "'प्रमाण से सिद्ध' अर्थ वाले विशेषण की शुद्ध वर्तनी चुनिए।",
+  "question_hi": "'प्रमाण से सिद्ध' अर्थ वाले विशेषण की शुद्ध वर्तनी चुनिए।",
+  "options": [
+   {
+    "en": "प्रामाणिक",
+    "hi": "प्रामाणिक"
+   },
+   {
+    "en": "प्रमाणिक",
+    "hi": "प्रमाणिक"
+   },
+   {
+    "en": "प्रामाणीक",
+    "hi": "प्रामाणीक"
+   },
+   {
+    "en": "परामाणिक",
+    "hi": "परामाणिक"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Adding -ik lengthens the first vowel: pramaan becomes praamaanik.",
+  "explanation_hi": "'प्रमाण' में 'इक' प्रत्यय जुड़ने पर पहले स्वर की वृद्धि होती है — प्रमाण → प्रामाणिक। इसी नियम से इतिहास → ऐतिहासिक, समाज → सामाजिक।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "वर्तनी",
+  "difficulty": "hard",
+  "question_en": "निम्नलिखित में से अशुद्ध वर्तनी वाला शब्द चुनिए।",
+  "question_hi": "निम्नलिखित में से अशुद्ध वर्तनी वाला शब्द चुनिए।",
+  "options": [
+   {
+    "en": "श्रीमती",
+    "hi": "श्रीमती"
+   },
+   {
+    "en": "द्वंद्व",
+    "hi": "द्वंद्व"
+   },
+   {
+    "en": "ऐतिहासिक",
+    "hi": "ऐतिहासिक"
+   },
+   {
+    "en": "अंतर्ध्यान",
+    "hi": "अंतर्ध्यान"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The correct word is antardhaan (to vanish), not antardhyaan.",
+  "explanation_hi": "शुद्ध शब्द 'अंतर्धान' (अंतः + धान, अर्थात् लुप्त होना) है; इसमें 'ध्यान' नहीं आता। शेष तीनों शब्द शुद्ध हैं।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "वर्तनी",
+  "difficulty": "hard",
+  "question_en": "'बिना अधिकार के' अर्थ वाले शब्द की शुद्ध वर्तनी चुनिए।",
+  "question_hi": "'बिना अधिकार के' अर्थ वाले शब्द की शुद्ध वर्तनी चुनिए।",
+  "options": [
+   {
+    "en": "अनाधिकार",
+    "hi": "अनाधिकार"
+   },
+   {
+    "en": "अनधिकार",
+    "hi": "अनधिकार"
+   },
+   {
+    "en": "अनधीकार",
+    "hi": "अनधीकार"
+   },
+   {
+    "en": "अनाधीकार",
+    "hi": "अनाधीकार"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "An + adhikaar = anadhikaar; no long 'aa' is formed.",
+  "explanation_hi": "अन् + अधिकार = अनधिकार। 'अन्' उपसर्ग के बाद 'अ' जुड़ता है, दीर्घ 'आ' नहीं बनता; इसलिए 'अनाधिकार' अशुद्ध है।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "वर्तनी",
+  "difficulty": "hard",
+  "question_en": "'संसार त्याग देने वाला' अर्थ वाले शब्द की शुद्ध वर्तनी कौन-सी है?",
+  "question_hi": "'संसार त्याग देने वाला' अर्थ वाले शब्द की शुद्ध वर्तनी कौन-सी है?",
+  "options": [
+   {
+    "en": "सन्यासी",
+    "hi": "सन्यासी"
+   },
+   {
+    "en": "संन्यासी",
+    "hi": "संन्यासी"
+   },
+   {
+    "en": "सन्यासि",
+    "hi": "सन्यासि"
+   },
+   {
+    "en": "सनयासी",
+    "hi": "सनयासी"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Sam + nyaas gives sannyaas, so sannyaasi needs both n-sounds.",
+  "explanation_hi": "सम् + न्यास = संन्यास, इसलिए शुद्ध रूप 'संन्यासी' (या सन्न्यासी) है। 'सन्यासी' में एक 'न्' छूट जाता है, यह अशुद्ध है।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "वर्तनी",
+  "difficulty": "easy",
+  "question_en": "'इम्तिहान' के अर्थ वाले तत्सम शब्द की शुद्ध वर्तनी चुनिए।",
+  "question_hi": "'इम्तिहान' के अर्थ वाले तत्सम शब्द की शुद्ध वर्तनी चुनिए।",
+  "options": [
+   {
+    "en": "परीक्षा",
+    "hi": "परीक्षा"
+   },
+   {
+    "en": "परिक्षा",
+    "hi": "परिक्षा"
+   },
+   {
+    "en": "परीछा",
+    "hi": "परीछा"
+   },
+   {
+    "en": "परिक्शा",
+    "hi": "परिक्शा"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Pari + iksha = pariksha with a long 'ee'.",
+  "explanation_hi": "परि + ईक्षा = परीक्षा (दीर्घ संधि), इसलिए 'री' दीर्घ होता है और 'क्ष' संयुक्ताक्षर आता है।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "वर्तनी",
+  "difficulty": "medium",
+  "question_en": "निम्नलिखित में से किस शब्द की वर्तनी अशुद्ध है?",
+  "question_hi": "निम्नलिखित में से किस शब्द की वर्तनी अशुद्ध है?",
+  "options": [
+   {
+    "en": "पूज्य",
+    "hi": "पूज्य"
+   },
+   {
+    "en": "मंत्रिमंडल",
+    "hi": "मंत्रिमंडल"
+   },
+   {
+    "en": "पूज्यनीय",
+    "hi": "पूज्यनीय"
+   },
+   {
+    "en": "कृपया",
+    "hi": "कृपया"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Pujyaniya wrongly doubles two suffixes; pujya or pujaniya is correct.",
+  "explanation_hi": "'पूज्य' और 'पूजनीय' दोनों शुद्ध हैं, पर 'पूज्यनीय' में 'य' और 'अनीय' दोनों प्रत्ययों का दोहराव है, अतः यह अशुद्ध है। 'मंत्रिमंडल' (मंत्री का 'ई' ह्रस्व) शुद्ध है।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "वर्तनी",
+  "difficulty": "medium",
+  "question_en": "निम्नलिखित में से शुद्ध वर्तनी वाला शब्द चुनिए।",
+  "question_hi": "निम्नलिखित में से शुद्ध वर्तनी वाला शब्द चुनिए।",
+  "options": [
+   {
+    "en": "अंताक्षरी",
+    "hi": "अंताक्षरी"
+   },
+   {
+    "en": "अंत्यक्षरी",
+    "hi": "अंत्यक्षरी"
+   },
+   {
+    "en": "अंत्याक्षरी",
+    "hi": "अंत्याक्षरी"
+   },
+   {
+    "en": "अन्ताक्षरि",
+    "hi": "अन्ताक्षरि"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Antyakshari (antya + akshar) is the correct spelling; antakshari is a common error.",
+  "explanation_hi": "शुद्ध शब्द 'अंत्याक्षरी' है — अंत्य (अंतिम) + अक्षर + ई; अंतिम अक्षर से अगला पद आरंभ करने का खेल। बोलचाल का 'अंताक्षरी' अशुद्ध रूप है।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "वर्तनी",
+  "difficulty": "hard",
+  "question_en": "'चाँदनी' के अर्थ वाले तत्सम शब्द की शुद्ध वर्तनी चुनिए।",
+  "question_hi": "'चाँदनी' के अर्थ वाले तत्सम शब्द की शुद्ध वर्तनी चुनिए।",
+  "options": [
+   {
+    "en": "ज्योत्स्ना",
+    "hi": "ज्योत्स्ना"
+   },
+   {
+    "en": "ज्योत्सना",
+    "hi": "ज्योत्सना"
+   },
+   {
+    "en": "ज्योतस्ना",
+    "hi": "ज्योतस्ना"
+   },
+   {
+    "en": "ज्योस्त्ना",
+    "hi": "ज्योस्त्ना"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Jyotsna (moonlight) is spelt with half t and half s before na.",
+  "explanation_hi": "'चाँदनी' का तत्सम शब्द 'ज्योत्स्ना' है — 'त्' और 'स्' दोनों आधे हैं (त्स्न)। 'ज्योत्सना' में 'स' पूरा लिखना सबसे आम अशुद्धि है।",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "वाक्य शुद्धि",
+  "difficulty": "easy",
+  "question_en": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (मुझे/मेरे को)",
+  "question_hi": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (मुझे/मेरे को)",
+  "options": [
+   {
+    "en": "मेरे को घर जाना है।",
+    "hi": "मेरे को घर जाना है।"
+   },
+   {
+    "en": "मुझे घर जाना है।",
+    "hi": "मुझे घर जाना है।"
+   },
+   {
+    "en": "मुझको को घर जाना है।",
+    "hi": "मुझको को घर जाना है।"
+   },
+   {
+    "en": "मेरे से घर जाना है।",
+    "hi": "मेरे से घर जाना है।"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Standard Hindi uses 'mujhe', not 'mere ko'.",
+  "explanation_hi": "मानक हिंदी में 'मेरे को' का प्रयोग अशुद्ध माना जाता है; 'मुझे' या 'मुझको' लिखा जाता है। 'मुझको को' में परसर्ग का दोहराव है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "वाक्य शुद्धि",
+  "difficulty": "medium",
+  "question_en": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (प्रातःकाल)",
+  "question_hi": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (प्रातःकाल)",
+  "options": [
+   {
+    "en": "वह प्रातःकाल के समय टहलता है।",
+    "hi": "वह प्रातःकाल के समय टहलता है।"
+   },
+   {
+    "en": "वह प्रातःकाल में समय टहलता है।",
+    "hi": "वह प्रातःकाल में समय टहलता है।"
+   },
+   {
+    "en": "वह प्रातःकाल टहलता है।",
+    "hi": "वह प्रातःकाल टहलता है।"
+   },
+   {
+    "en": "वह सुबह प्रातःकाल टहलता है।",
+    "hi": "वह सुबह प्रातःकाल टहलता है।"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Praatahkaal already means morning time, so adding 'ke samay' is redundant.",
+  "explanation_hi": "'प्रातःकाल' में 'काल' का अर्थ ही समय है, इसलिए 'के समय' या 'सुबह' जोड़ना पुनरुक्ति दोष है। शुद्ध वाक्य है — 'वह प्रातःकाल टहलता है।'",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "वाक्य शुद्धि",
+  "difficulty": "medium",
+  "question_en": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (अवकाश हेतु प्रार्थना)",
+  "question_hi": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (अवकाश हेतु प्रार्थना)",
+  "options": [
+   {
+    "en": "कृपया आज अवकाश देने की कृपा करें।",
+    "hi": "कृपया आज अवकाश देने की कृपा करें।"
+   },
+   {
+    "en": "आज अवकाश देने की कृपा करें।",
+    "hi": "आज अवकाश देने की कृपा करें।"
+   },
+   {
+    "en": "कृपया आज की अवकाश दें।",
+    "hi": "कृपया आज की अवकाश दें।"
+   },
+   {
+    "en": "कृपा करके कृपया अवकाश दें।",
+    "hi": "कृपा करके कृपया अवकाश दें।"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Using both kripaya and kripa karein is redundant.",
+  "explanation_hi": "'कृपया' और 'कृपा करें' एक साथ लिखना पुनरुक्ति है। 'अवकाश' पुल्लिंग है, इसलिए 'आज की अवकाश' भी अशुद्ध है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "वाक्य शुद्धि",
+  "difficulty": "medium",
+  "question_en": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (दही)",
+  "question_hi": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (दही)",
+  "options": [
+   {
+    "en": "मेरा दही खट्टी है।",
+    "hi": "मेरा दही खट्टी है।"
+   },
+   {
+    "en": "मेरी दही खट्टा है।",
+    "hi": "मेरी दही खट्टा है।"
+   },
+   {
+    "en": "मेरा दही खट्टा है।",
+    "hi": "मेरा दही खट्टा है।"
+   },
+   {
+    "en": "मेरी दही खट्टी है।",
+    "hi": "मेरी दही खट्टी है।"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Dahi is masculine, so both modifiers must be masculine.",
+  "explanation_hi": "मानक हिंदी में 'दही' पुल्लिंग है, इसलिए सर्वनाम और विशेषण दोनों पुल्लिंग होंगे — 'मेरा दही खट्टा है।'",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "वाक्य शुद्धि",
+  "difficulty": "medium",
+  "question_en": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (रहस्य)",
+  "question_hi": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (रहस्य)",
+  "options": [
+   {
+    "en": "उसने एक गोपनीय रहस्य बताया।",
+    "hi": "उसने एक गोपनीय रहस्य बताया।"
+   },
+   {
+    "en": "उसने एक रहस्य बताया।",
+    "hi": "उसने एक रहस्य बताया।"
+   },
+   {
+    "en": "उसने रहस्य को बताई।",
+    "hi": "उसने रहस्य को बताई।"
+   },
+   {
+    "en": "उसने एक रहस्य बताई।",
+    "hi": "उसने एक रहस्य बताई।"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "A secret is already confidential; rahasya is masculine, so 'bataya'.",
+  "explanation_hi": "'रहस्य' स्वयं गोपनीय बात है, इसलिए 'गोपनीय रहस्य' पुनरुक्ति है। 'रहस्य' पुल्लिंग है, अतः क्रिया 'बताया' होगी, 'बताई' नहीं।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "वाक्य शुद्धि",
+  "difficulty": "medium",
+  "question_en": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (प्रत्येक)",
+  "question_hi": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (प्रत्येक)",
+  "options": [
+   {
+    "en": "प्रत्येक व्यक्ति को अपना कर्तव्य निभाना चाहिए।",
+    "hi": "प्रत्येक व्यक्ति को अपना कर्तव्य निभाना चाहिए।"
+   },
+   {
+    "en": "प्रत्येक व्यक्तियों को अपना कर्तव्य निभाना चाहिए।",
+    "hi": "प्रत्येक व्यक्तियों को अपना कर्तव्य निभाना चाहिए।"
+   },
+   {
+    "en": "हर एक व्यक्तियों को अपने कर्तव्य निभाने चाहिए।",
+    "hi": "हर एक व्यक्तियों को अपने कर्तव्य निभाने चाहिए।"
+   },
+   {
+    "en": "प्रत्येक व्यक्ति को अपने कर्तव्य निभानी चाहिए।",
+    "hi": "प्रत्येक व्यक्ति को अपने कर्तव्य निभानी चाहिए।"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "'Pratyek' takes a singular noun.",
+  "explanation_hi": "'प्रत्येक' और 'हर एक' के साथ संज्ञा सदा एकवचन में आती है, इसलिए 'प्रत्येक व्यक्तियों' अशुद्ध है। 'कर्तव्य' पुल्लिंग है, अतः 'निभानी' भी अशुद्ध है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "वाक्य शुद्धि",
+  "difficulty": "medium",
+  "question_en": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (सज्जन)",
+  "question_hi": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (सज्जन)",
+  "options": [
+   {
+    "en": "वह एक सज्जन पुरुष है।",
+    "hi": "वह एक सज्जन पुरुष है।"
+   },
+   {
+    "en": "वह एक सज्जन व्यक्ति पुरुष है।",
+    "hi": "वह एक सज्जन व्यक्ति पुरुष है।"
+   },
+   {
+    "en": "वे एक सज्जन है।",
+    "hi": "वे एक सज्जन है।"
+   },
+   {
+    "en": "वह एक सज्जन है।",
+    "hi": "वह एक सज्जन है।"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Sajjan already means a good man, so 'purush' is redundant.",
+  "explanation_hi": "'सज्जन' का अर्थ ही 'भला पुरुष' है, इसलिए 'सज्जन पुरुष' में पुनरुक्ति है। 'वे' के साथ 'है' लगाना वचन-दोष है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "वाक्य शुद्धि",
+  "difficulty": "medium",
+  "question_en": "निम्नलिखित में से अशुद्ध वाक्य चुनिए।",
+  "question_hi": "निम्नलिखित में से अशुद्ध वाक्य चुनिए।",
+  "options": [
+   {
+    "en": "मैं आपका आभारी हूँ।",
+    "hi": "मैं आपका आभारी हूँ।"
+   },
+   {
+    "en": "उसने कल पुस्तक पढ़ी।",
+    "hi": "उसने कल पुस्तक पढ़ी।"
+   },
+   {
+    "en": "सीता ने गीत गाया।",
+    "hi": "सीता ने गीत गाया।"
+   },
+   {
+    "en": "राम ने रोटी खाया।",
+    "hi": "राम ने रोटी खाया।"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "With 'ne', the verb agrees with the object; roti is feminine, so 'khaayi'.",
+  "explanation_hi": "'ने' लगने पर सकर्मक क्रिया कर्म के लिंग-वचन के अनुसार चलती है। 'रोटी' स्त्रीलिंग है, इसलिए शुद्ध वाक्य होगा — 'राम ने रोटी खाई।'",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "वाक्य शुद्धि",
+  "difficulty": "medium",
+  "question_en": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (तुलना)",
+  "question_hi": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (तुलना)",
+  "options": [
+   {
+    "en": "राम श्याम से अधिक बुद्धिमान है।",
+    "hi": "राम श्याम से अधिक बुद्धिमान है।"
+   },
+   {
+    "en": "राम श्याम से अधिक बुद्धिमानतर है।",
+    "hi": "राम श्याम से अधिक बुद्धिमानतर है।"
+   },
+   {
+    "en": "राम श्याम की अपेक्षा अधिक बुद्धिमानतम है।",
+    "hi": "राम श्याम की अपेक्षा अधिक बुद्धिमानतम है।"
+   },
+   {
+    "en": "राम श्याम से सबसे बुद्धिमान है।",
+    "hi": "राम श्याम से सबसे बुद्धिमान है।"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "'Se adhik' alone marks comparison; adding -tar or -tam is double comparison.",
+  "explanation_hi": "दो के बीच तुलना में 'से अधिक' पर्याप्त है; 'अधिक' के साथ 'तर' जोड़ना दोहरी तुलना है। 'सबसे' या 'तम' तीन या अधिक की तुलना में आते हैं।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "वाक्य शुद्धि",
+  "difficulty": "hard",
+  "question_en": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (चुकना)",
+  "question_hi": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (चुकना)",
+  "options": [
+   {
+    "en": "मैं यह पुस्तक पढ़ चुका हूँ।",
+    "hi": "मैं यह पुस्तक पढ़ चुका हूँ।"
+   },
+   {
+    "en": "मैंने यह पुस्तक पढ़ चुका हूँ।",
+    "hi": "मैंने यह पुस्तक पढ़ चुका हूँ।"
+   },
+   {
+    "en": "मैंने यह पुस्तक पढ़ चुकी है।",
+    "hi": "मैंने यह पुस्तक पढ़ चुकी है।"
+   },
+   {
+    "en": "मुझे यह पुस्तक पढ़ चुका।",
+    "hi": "मुझे यह पुस्तक पढ़ चुका।"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Compound verbs with 'chukna' do not take 'ne' with the subject.",
+  "explanation_hi": "'चुकना', 'सकना', 'लगना' जैसी सहायक क्रियाओं वाली संयुक्त क्रिया में कर्ता के साथ 'ने' नहीं लगता। अतः 'मैं ... पढ़ चुका हूँ' शुद्ध है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "वाक्य शुद्धि",
+  "difficulty": "easy",
+  "question_en": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (आदरसूचक 'आप')",
+  "question_hi": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (आदरसूचक 'आप')",
+  "options": [
+   {
+    "en": "आप कल आना।",
+    "hi": "आप कल आना।"
+   },
+   {
+    "en": "आप कल आइएगा।",
+    "hi": "आप कल आइएगा।"
+   },
+   {
+    "en": "आप कल आ।",
+    "hi": "आप कल आ।"
+   },
+   {
+    "en": "आप कल आओगा।",
+    "hi": "आप कल आओगा।"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Respectful 'aap' takes the polite verb form 'aaiyega'.",
+  "explanation_hi": "'आप' आदरसूचक सर्वनाम है, इसलिए इसके साथ आदरसूचक क्रिया रूप 'आइए/आइएगा' आता है। 'आना' 'तुम' के साथ और 'आ' 'तू' के साथ प्रयुक्त होता है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "वाक्य शुद्धि",
+  "difficulty": "medium",
+  "question_en": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (अनेक)",
+  "question_hi": "निम्नलिखित में से शुद्ध वाक्य चुनिए: (अनेक)",
+  "options": [
+   {
+    "en": "देश में अनेकों समस्याएँ हैं।",
+    "hi": "देश में अनेकों समस्याएँ हैं।"
+   },
+   {
+    "en": "देश में अनेक समस्याएँ हैं।",
+    "hi": "देश में अनेक समस्याएँ हैं।"
+   },
+   {
+    "en": "देश में अनेक समस्याओं हैं।",
+    "hi": "देश में अनेक समस्याओं हैं।"
+   },
+   {
+    "en": "देश में अनेकों समस्या है।",
+    "hi": "देश में अनेकों समस्या है।"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "'Anek' is already plural, so 'anekon' is incorrect.",
+  "explanation_hi": "'अनेक' स्वयं बहुवचन (एक से अधिक) का बोध कराता है, इसलिए 'अनेकों' अशुद्ध है। 'समस्याओं' विभक्ति-रहित स्थिति में प्रयोग नहीं होगा।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "वाक्य शुद्धि",
+  "difficulty": "easy",
+  "question_en": "निम्नलिखित में से शुद्ध वाक्य चुनिए।",
+  "question_hi": "निम्नलिखित में से शुद्ध वाक्य चुनिए।",
+  "options": [
+   {
+    "en": "उसने अपना भाई को पत्र लिखा।",
+    "hi": "उसने अपना भाई को पत्र लिखा।"
+   },
+   {
+    "en": "उसने अपने भाई से पत्र लिखा।",
+    "hi": "उसने अपने भाई से पत्र लिखा।"
+   },
+   {
+    "en": "उसको अपने भाई को पत्र लिखा।",
+    "hi": "उसको अपने भाई को पत्र लिखा।"
+   },
+   {
+    "en": "उसने अपने भाई को पत्र लिखा।",
+    "hi": "उसने अपने भाई को पत्र लिखा।"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Apne (oblique) before 'ko', 'ko' for the receiver and 'usne' with a past transitive verb.",
+  "explanation_hi": "परसर्ग 'को' से पहले 'अपना' का तिर्यक रूप 'अपने' होता है; पत्र जिसे लिखा जाता है वह संप्रदान 'को' लेता है, 'से' नहीं; और भूतकाल सकर्मक क्रिया के साथ कर्ता 'उसने' होगा, 'उसको' नहीं।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "वाक्य-विन्यास (पदक्रम)",
+  "difficulty": "easy",
+  "question_en": "पदक्रम की दृष्टि से शुद्ध वाक्य का चयन कीजिए।",
+  "question_hi": "पदक्रम की दृष्टि से शुद्ध वाक्य का चयन कीजिए।",
+  "options": [
+   {
+    "en": "मेधावी छात्रों को पुरस्कार दिए प्रधानाचार्य ने।",
+    "hi": "मेधावी छात्रों को पुरस्कार दिए प्रधानाचार्य ने।"
+   },
+   {
+    "en": "प्रधानाचार्य ने पुरस्कार दिए मेधावी छात्रों को।",
+    "hi": "प्रधानाचार्य ने पुरस्कार दिए मेधावी छात्रों को।"
+   },
+   {
+    "en": "प्रधानाचार्य ने मेधावी छात्रों को पुरस्कार दिए।",
+    "hi": "प्रधानाचार्य ने मेधावी छात्रों को पुरस्कार दिए।"
+   },
+   {
+    "en": "पुरस्कार दिए प्रधानाचार्य ने मेधावी छात्रों को।",
+    "hi": "पुरस्कार दिए प्रधानाचार्य ने मेधावी छात्रों को।"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Hindi order is subject + indirect object + object + verb, with the verb at the end.",
+  "explanation_hi": "हिंदी वाक्य का सामान्य क्रम है — कर्ता + गौण कर्म + मुख्य कर्म + क्रिया। 'प्रधानाचार्य ने (कर्ता) मेधावी छात्रों को (गौण कर्म) पुरस्कार (कर्म) दिए (क्रिया)' — क्रिया अंत में है। अन्य वाक्यों में क्रिया बीच में या आरंभ में आ गई है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "वाक्य-विन्यास (पदक्रम)",
+  "difficulty": "medium",
+  "question_en": "वाक्य-विन्यास की दृष्टि से शुद्ध वाक्य चुनिए।",
+  "question_hi": "वाक्य-विन्यास की दृष्टि से शुद्ध वाक्य चुनिए।",
+  "options": [
+   {
+    "en": "हर रविवार को मेरे पिताजी बाज़ार से ताज़ी सब्ज़ियाँ लाते हैं।",
+    "hi": "हर रविवार को मेरे पिताजी बाज़ार से ताज़ी सब्ज़ियाँ लाते हैं।"
+   },
+   {
+    "en": "मेरे पिताजी लाते हैं हर रविवार को बाज़ार से ताज़ी सब्ज़ियाँ।",
+    "hi": "मेरे पिताजी लाते हैं हर रविवार को बाज़ार से ताज़ी सब्ज़ियाँ।"
+   },
+   {
+    "en": "ताज़ी सब्ज़ियाँ हर रविवार को लाते हैं मेरे पिताजी बाज़ार से।",
+    "hi": "ताज़ी सब्ज़ियाँ हर रविवार को लाते हैं मेरे पिताजी बाज़ार से।"
+   },
+   {
+    "en": "हर रविवार को बाज़ार से लाते हैं ताज़ी सब्ज़ियाँ मेरे पिताजी।",
+    "hi": "हर रविवार को बाज़ार से लाते हैं ताज़ी सब्ज़ियाँ मेरे पिताजी।"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Time word, subject, place, object, then the verb at the end gives the natural Hindi order.",
+  "explanation_hi": "कालवाचक पद (हर रविवार को) प्रायः आरंभ में, फिर कर्ता (मेरे पिताजी), स्थानवाचक (बाज़ार से), विशेषण सहित कर्म (ताज़ी सब्ज़ियाँ) और अंत में क्रिया (लाते हैं) आती है। शेष वाक्यों में क्रिया अपने स्थान से हटी हुई है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "वाक्य पुनर्व्यवस्था",
+  "difficulty": "medium",
+  "question_en": "नीचे दिए गए वाक्यांशों को सही क्रम में व्यवस्थित कीजिए:\n(1) इसलिए हमें पानी की एक-एक बूँद\n(2) जल ही जीवन का आधार है\n(3) बचाने का संकल्प लेना चाहिए\n(4) और इसके बिना धरती पर जीवन संभव नहीं",
+  "question_hi": "नीचे दिए गए वाक्यांशों को सही क्रम में व्यवस्थित कीजिए:\n(1) इसलिए हमें पानी की एक-एक बूँद\n(2) जल ही जीवन का आधार है\n(3) बचाने का संकल्प लेना चाहिए\n(4) और इसके बिना धरती पर जीवन संभव नहीं",
+  "options": [
+   {
+    "en": "2, 4, 1, 3",
+    "hi": "2, 4, 1, 3"
+   },
+   {
+    "en": "4, 2, 1, 3",
+    "hi": "4, 2, 1, 3"
+   },
+   {
+    "en": "2, 1, 4, 3",
+    "hi": "2, 1, 4, 3"
+   },
+   {
+    "en": "1, 3, 2, 4",
+    "hi": "1, 3, 2, 4"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Statement (2), its extension with 'aur' (4), conclusion with 'isliye' (1), then the verb part (3).",
+  "explanation_hi": "पहले कथन (2: जल ही जीवन का आधार है), फिर उसी का विस्तार 'और' से (4), फिर निष्कर्ष 'इसलिए' से (1) और अंत में क्रिया वाला भाग (3: बचाने का संकल्प लेना चाहिए)। 'इसलिए' कभी वाक्य का आरंभिक विचार नहीं होता — वह कारण के बाद आता है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "वाक्य पुनर्व्यवस्था",
+  "difficulty": "medium",
+  "question_en": "नीचे दिए गए वाक्यांशों को सही क्रम में व्यवस्थित कीजिए:\n(क) तो उसने देखा कि\n(ख) निकल चुकी थी\n(ग) जब वह स्टेशन पहुँचा\n(घ) गाड़ी प्लेटफ़ॉर्म से",
+  "question_hi": "नीचे दिए गए वाक्यांशों को सही क्रम में व्यवस्थित कीजिए:\n(क) तो उसने देखा कि\n(ख) निकल चुकी थी\n(ग) जब वह स्टेशन पहुँचा\n(घ) गाड़ी प्लेटफ़ॉर्म से",
+  "options": [
+   {
+    "en": "क, ग, घ, ख",
+    "hi": "क, ग, घ, ख"
+   },
+   {
+    "en": "ग, घ, क, ख",
+    "hi": "ग, घ, क, ख"
+   },
+   {
+    "en": "ग, क, घ, ख",
+    "hi": "ग, क, घ, ख"
+   },
+   {
+    "en": "घ, ख, ग, क",
+    "hi": "घ, ख, ग, क"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The jab...to pair fixes (ग) then (क); what he saw follows: (घ) then (ख).",
+  "explanation_hi": "'जब…तो' का युग्म बताता है कि 'जब' वाला भाग (ग) पहले आएगा और 'तो' वाला (क) उसके बाद। 'देखा कि' के बाद जो देखा गया वह आएगा — 'गाड़ी प्लेटफ़ॉर्म से' (घ) 'निकल चुकी थी' (ख)। सही क्रम: ग, क, घ, ख।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "तत्सम–तद्भव",
+  "difficulty": "easy",
+  "question_en": "'अग्नि' शब्द का तद्भव रूप क्या है?",
+  "question_hi": "'अग्नि' शब्द का तद्भव रूप क्या है?",
+  "options": [
+   {
+    "en": "आग",
+    "hi": "आग"
+   },
+   {
+    "en": "ज्वाला",
+    "hi": "ज्वाला"
+   },
+   {
+    "en": "अनल",
+    "hi": "अनल"
+   },
+   {
+    "en": "पावक",
+    "hi": "पावक"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Aag is the tadbhav form of agni; the other options are Sanskrit synonyms.",
+  "explanation_hi": "संस्कृत 'अग्नि' से विकसित होकर हिंदी में 'आग' बना है, अतः 'आग' तद्भव है। ज्वाला, अनल और पावक अग्नि के तत्सम पर्यायवाची हैं, तद्भव रूप नहीं।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "तत्सम–तद्भव",
+  "difficulty": "easy",
+  "question_en": "'हाथ' शब्द का तत्सम रूप क्या है?",
+  "question_hi": "'हाथ' शब्द का तत्सम रूप क्या है?",
+  "options": [
+   {
+    "en": "हत्थ",
+    "hi": "हत्थ"
+   },
+   {
+    "en": "हस्त",
+    "hi": "हस्त"
+   },
+   {
+    "en": "कर्ण",
+    "hi": "कर्ण"
+   },
+   {
+    "en": "हस्ती",
+    "hi": "हस्ती"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The tatsam form of haath is hast.",
+  "explanation_hi": "'हाथ' संस्कृत 'हस्त' से बना तद्भव शब्द है, अतः इसका तत्सम रूप 'हस्त' है। 'हस्ती' का अर्थ हाथी है और 'कर्ण' कान का तत्सम है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "तत्सम–तद्भव",
+  "difficulty": "medium",
+  "question_en": "निम्नलिखित में से कौन-सा तत्सम–तद्भव युग्म सही नहीं है?",
+  "question_hi": "निम्नलिखित में से कौन-सा तत्सम–तद्भव युग्म सही नहीं है?",
+  "options": [
+   {
+    "en": "कर्म – काम",
+    "hi": "कर्म – काम"
+   },
+   {
+    "en": "दुग्ध – दूध",
+    "hi": "दुग्ध – दूध"
+   },
+   {
+    "en": "क्षेत्र – खेत",
+    "hi": "क्षेत्र – खेत"
+   },
+   {
+    "en": "सर्प – साँस",
+    "hi": "सर्प – साँस"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Sarp becomes saanp, not saans (which comes from shvaas).",
+  "explanation_hi": "'सर्प' का तद्भव 'साँप' होता है, 'साँस' नहीं; 'साँस' का तत्सम 'श्वास' है। शेष युग्म — कर्म-काम, दुग्ध-दूध, क्षेत्र-खेत — सही हैं।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "तत्सम–तद्भव",
+  "difficulty": "medium",
+  "question_en": "'घी' शब्द का तत्सम रूप क्या है?",
+  "question_hi": "'घी' शब्द का तत्सम रूप क्या है?",
+  "options": [
+   {
+    "en": "घर्त",
+    "hi": "घर्त"
+   },
+   {
+    "en": "घृति",
+    "hi": "घृति"
+   },
+   {
+    "en": "घृत",
+    "hi": "घृत"
+   },
+   {
+    "en": "घीत",
+    "hi": "घीत"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The tatsam form of ghee is ghrit.",
+  "explanation_hi": "'घी' संस्कृत 'घृत' से बना तद्भव शब्द है। 'घृति' और 'घर्त' अशुद्ध/भिन्न रूप हैं, इसलिए सही तत्सम 'घृत' है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "तत्सम–तद्भव",
+  "difficulty": "medium",
+  "question_en": "'स्वप्न' शब्द का तद्भव रूप क्या है?",
+  "question_hi": "'स्वप्न' शब्द का तद्भव रूप क्या है?",
+  "options": [
+   {
+    "en": "सपना",
+    "hi": "सपना"
+   },
+   {
+    "en": "नींद",
+    "hi": "नींद"
+   },
+   {
+    "en": "स्वप्निल",
+    "hi": "स्वप्निल"
+   },
+   {
+    "en": "ख़्वाब",
+    "hi": "ख़्वाब"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Sapna is the tadbhav of svapna; khwab is a Persian loanword.",
+  "explanation_hi": "संस्कृत 'स्वप्न' से हिंदी का 'सपना' बना है। 'ख़्वाब' फ़ारसी (विदेशज) शब्द है और 'स्वप्निल' विशेषण है, तद्भव नहीं।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "तत्सम–तद्भव",
+  "difficulty": "medium",
+  "question_en": "निम्नलिखित में से तत्सम शब्द कौन-सा है?",
+  "question_hi": "निम्नलिखित में से तत्सम शब्द कौन-सा है?",
+  "options": [
+   {
+    "en": "कपूर",
+    "hi": "कपूर"
+   },
+   {
+    "en": "खेत",
+    "hi": "खेत"
+   },
+   {
+    "en": "आँसू",
+    "hi": "आँसू"
+   },
+   {
+    "en": "कर्पूर",
+    "hi": "कर्पूर"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Karpoor is the original Sanskrit word; the others are tadbhav forms.",
+  "explanation_hi": "'कर्पूर' संस्कृत का मूल (तत्सम) शब्द है, जिससे 'कपूर' बना। 'खेत' (क्षेत्र) और 'आँसू' (अश्रु) तद्भव शब्द हैं।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "तत्सम–तद्भव",
+  "difficulty": "medium",
+  "question_en": "निम्नलिखित में से तद्भव शब्द कौन-सा है?",
+  "question_hi": "निम्नलिखित में से तद्भव शब्द कौन-सा है?",
+  "options": [
+   {
+    "en": "पुष्प",
+    "hi": "पुष्प"
+   },
+   {
+    "en": "ग्राम",
+    "hi": "ग्राम"
+   },
+   {
+    "en": "सूरज",
+    "hi": "सूरज"
+   },
+   {
+    "en": "नेत्र",
+    "hi": "नेत्र"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Suraj is the tadbhav of surya; the others are tatsam.",
+  "explanation_hi": "'सूरज' संस्कृत 'सूर्य' से विकसित तद्भव शब्द है। पुष्प, ग्राम और नेत्र संस्कृत से ज्यों-के-त्यों लिए गए तत्सम शब्द हैं।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "तत्सम–तद्भव",
+  "difficulty": "hard",
+  "question_en": "'कोयल' शब्द का तत्सम रूप क्या है?",
+  "question_hi": "'कोयल' शब्द का तत्सम रूप क्या है?",
+  "options": [
+   {
+    "en": "काकी",
+    "hi": "काकी"
+   },
+   {
+    "en": "कोकिल",
+    "hi": "कोकिल"
+   },
+   {
+    "en": "कोयली",
+    "hi": "कोयली"
+   },
+   {
+    "en": "कुहुक",
+    "hi": "कुहुक"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The tatsam form of koyal is kokil.",
+  "explanation_hi": "'कोयल' संस्कृत 'कोकिल' का तद्भव रूप है। 'काकी' कौए की मादा के लिए प्रयुक्त होता है और 'कुहुक' कोयल की बोली है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "तत्सम–तद्भव",
+  "difficulty": "hard",
+  "question_en": "'भतीजा' शब्द का तत्सम रूप क्या है?",
+  "question_hi": "'भतीजा' शब्द का तत्सम रूप क्या है?",
+  "options": [
+   {
+    "en": "भ्राता",
+    "hi": "भ्राता"
+   },
+   {
+    "en": "भ्रातृजा",
+    "hi": "भ्रातृजा"
+   },
+   {
+    "en": "भातृज",
+    "hi": "भातृज"
+   },
+   {
+    "en": "भ्रातृज",
+    "hi": "भ्रातृज"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Bhatija comes from bhraatrij; bhraatrija means niece.",
+  "explanation_hi": "'भ्रातृज' (भाई से उत्पन्न) से 'भतीजा' बना है। 'भ्रातृजा' का अर्थ भतीजी है और 'भ्राता' भाई का तत्सम है; 'भातृज' वर्तनी की दृष्टि से अशुद्ध है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "तत्सम–तद्भव",
+  "difficulty": "medium",
+  "question_en": "'होंठ' शब्द का तत्सम रूप क्या है?",
+  "question_hi": "'होंठ' शब्द का तत्सम रूप क्या है?",
+  "options": [
+   {
+    "en": "ओष्ट",
+    "hi": "ओष्ट"
+   },
+   {
+    "en": "उष्ठ",
+    "hi": "उष्ठ"
+   },
+   {
+    "en": "ओष्ठ",
+    "hi": "ओष्ठ"
+   },
+   {
+    "en": "होष्ठ",
+    "hi": "होष्ठ"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The tatsam form of honth is oshth.",
+  "explanation_hi": "'होंठ/ओठ' संस्कृत 'ओष्ठ' से बने हैं। 'ओष्ट' में 'ठ' के स्थान पर 'ट' लिखना सामान्य वर्तनी-भूल है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "तत्सम–तद्भव",
+  "difficulty": "easy",
+  "question_en": "'तद्भव' शब्द का शाब्दिक अर्थ क्या है?",
+  "question_hi": "'तद्भव' शब्द का शाब्दिक अर्थ क्या है?",
+  "options": [
+   {
+    "en": "उससे (संस्कृत से) उत्पन्न",
+    "hi": "उससे (संस्कृत से) उत्पन्न"
+   },
+   {
+    "en": "उसके (संस्कृत के) समान",
+    "hi": "उसके (संस्कृत के) समान"
+   },
+   {
+    "en": "देश में ही उत्पन्न",
+    "hi": "देश में ही उत्पन्न"
+   },
+   {
+    "en": "विदेश से आया हुआ",
+    "hi": "विदेश से आया हुआ"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Tadbhav literally means 'born from it' (from Sanskrit).",
+  "explanation_hi": "तत् + भव = उससे उत्पन्न; अर्थात् संस्कृत से विकसित होकर रूप बदल चुके शब्द तद्भव कहलाते हैं। 'उसके समान' तत्सम का अर्थ है, जबकि देश में उत्पन्न शब्द देशज कहलाते हैं।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "तत्सम–तद्भव",
+  "difficulty": "easy",
+  "question_en": "'किसान ______ में हल चला रहा है।' — उपयुक्त तद्भव शब्द चुनकर वाक्य पूरा कीजिए।",
+  "question_hi": "'किसान ______ में हल चला रहा है।' — उपयुक्त तद्भव शब्द चुनकर वाक्य पूरा कीजिए।",
+  "options": [
+   {
+    "en": "क्षेत्र",
+    "hi": "क्षेत्र"
+   },
+   {
+    "en": "कृषि",
+    "hi": "कृषि"
+   },
+   {
+    "en": "भूमि",
+    "hi": "भूमि"
+   },
+   {
+    "en": "खेत",
+    "hi": "खेत"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Khet is the tadbhav of kshetra; the other three are tatsam words.",
+  "explanation_hi": "'खेत' संस्कृत 'क्षेत्र' का तद्भव रूप है। 'क्षेत्र', 'कृषि' और 'भूमि' तीनों तत्सम शब्द हैं। प्रश्न तद्भव शब्द माँग रहा है, इसलिए 'खेत' सही है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "तत्सम–तद्भव",
+  "difficulty": "medium",
+  "question_en": "'आम' (फल) शब्द का तत्सम रूप क्या है?",
+  "question_hi": "'आम' (फल) शब्द का तत्सम रूप क्या है?",
+  "options": [
+   {
+    "en": "अम्ब",
+    "hi": "अम्ब"
+   },
+   {
+    "en": "आमृ",
+    "hi": "आमृ"
+   },
+   {
+    "en": "आम्र",
+    "hi": "आम्र"
+   },
+   {
+    "en": "अम्र",
+    "hi": "अम्र"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The Sanskrit (tatsam) form of aam is aamra.",
+  "explanation_hi": "'आम' का तत्सम रूप 'आम्र' है (आम्र → अम्ब → आम)। इसी प्रकार आम्रचूर्ण से 'अमचूर' बना है। शेष विकल्प शुद्ध तत्सम रूप नहीं हैं।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "देशज–विदेशज",
+  "difficulty": "easy",
+  "question_en": "निम्नलिखित में से कौन-सा शब्द विदेशज (अरबी) है?",
+  "question_hi": "निम्नलिखित में से कौन-सा शब्द विदेशज (अरबी) है?",
+  "options": [
+   {
+    "en": "कागज़",
+    "hi": "कागज़"
+   },
+   {
+    "en": "पत्र",
+    "hi": "पत्र"
+   },
+   {
+    "en": "लोटा",
+    "hi": "लोटा"
+   },
+   {
+    "en": "खिड़की",
+    "hi": "खिड़की"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Kaagaz came into Hindi from Arabic; patra is tatsam, lota and khidki are deshaj.",
+  "explanation_hi": "'कागज़' अरबी भाषा से हिंदी में आया विदेशज शब्द है। 'पत्र' संस्कृत का तत्सम शब्द है, जबकि 'लोटा' और 'खिड़की' देशज शब्द हैं जो स्थानीय बोलियों से बने हैं।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "देशज–विदेशज",
+  "difficulty": "medium",
+  "question_en": "निम्नलिखित में से देशज शब्द कौन-सा है?",
+  "question_hi": "निम्नलिखित में से देशज शब्द कौन-सा है?",
+  "options": [
+   {
+    "en": "दुग्ध",
+    "hi": "दुग्ध"
+   },
+   {
+    "en": "स्कूल",
+    "hi": "स्कूल"
+   },
+   {
+    "en": "किताब",
+    "hi": "किताब"
+   },
+   {
+    "en": "पगड़ी",
+    "hi": "पगड़ी"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Pagdi is a deshaj (native) word; dugdh is tatsam, school is English, kitaab is Arabic.",
+  "explanation_hi": "देशज शब्द वे हैं जिनका स्रोत संस्कृत या कोई विदेशी भाषा न होकर स्थानीय बोलियाँ हों — पगड़ी, लोटा, खिड़की, झोला, ठेठ। 'दुग्ध' तत्सम, 'स्कूल' अंग्रेज़ी और 'किताब' अरबी (विदेशज) शब्द है।",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "hin_shuddhi",
+  "subtopic": "देशज–विदेशज",
+  "difficulty": "easy",
+  "question_en": "'कमरे में एक ______ रखी है।' — विदेशी (पुर्तगाली) शब्द चुनकर वाक्य पूरा कीजिए।",
+  "question_hi": "'कमरे में एक ______ रखी है।' — विदेशी (पुर्तगाली) शब्द चुनकर वाक्य पूरा कीजिए।",
+  "options": [
+   {
+    "en": "मेज़",
+    "hi": "मेज़"
+   },
+   {
+    "en": "खाट",
+    "hi": "खाट"
+   },
+   {
+    "en": "चौकी",
+    "hi": "चौकी"
+   },
+   {
+    "en": "शय्या",
+    "hi": "शय्या"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Mez comes from Portuguese; khaat and chauki are native words, shayya is Sanskrit.",
+  "explanation_hi": "'मेज़' पुर्तगाली भाषा से आया शब्द है (इसी प्रकार चाबी, अलमारी, बाल्टी, गोभी)। 'खाट' और 'चौकी' हिंदी के अपने (देशज/तद्भव) शब्द हैं तथा 'शय्या' संस्कृत का तत्सम शब्द है।",
+  "pyq_concept": true
+ }
+]
