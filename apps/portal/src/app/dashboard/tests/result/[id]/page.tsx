@@ -20,6 +20,19 @@ import Link from 'next/link';
 import { toast } from 'react-hot-toast';
 import AttemptSwitcher, { AttemptRef, formatScore } from '@/components/tests/AttemptSwitcher';
 import type { SectionResult } from '@/components/tests/SectionedPlayer';
+import { useTheme } from '@/components/providers/ThemeProvider';
+import {
+    AnswerPanel,
+    HeroPanel,
+    ImprovePanel,
+    QualifyingPanel,
+    ResultSkeleton,
+    SectionPanel,
+    StandingPanel,
+    TrendPanel,
+    type SectionTableRow,
+} from '@/components/tests/result/Panels';
+import { chartColors, type Analysis } from '@/components/tests/result/types';
 
 type SectionStat = {
     correct: number;
@@ -67,9 +80,17 @@ export default function TestResult() {
     const params = useParams();
     const [attempt, setAttempt] = useState<Attempt | null>(null);
     const [loading, setLoading] = useState(true);
+    // Visual analysis (rank, distribution, Venn, tips). Loaded alongside the
+    // attempt; if it fails the page falls back to the plain score card.
+    const [analysis, setAnalysis] = useState<Analysis | null>(null);
+    const [analysisState, setAnalysisState] = useState<'loading' | 'ready' | 'failed'>('loading');
+    const { theme } = useTheme();
+    const colors = chartColors(theme === 'dark');
 
     useEffect(() => {
         fetchResult();
+        fetchAnalysis();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [params.id]);
 
     const fetchResult = async () => {
@@ -80,6 +101,19 @@ export default function TestResult() {
             console.error('Failed to fetch result', error);
         } finally {
             setLoading(false);
+        }
+    };
+
+    const fetchAnalysis = async () => {
+        setAnalysisState('loading');
+        try {
+            const res = await api.get(`/attempts/${params.id}/analysis`);
+            setAnalysis(res.data);
+            setAnalysisState('ready');
+        } catch (error) {
+            console.error('Failed to fetch analysis', error);
+            setAnalysis(null);
+            setAnalysisState('failed');
         }
     };
 
@@ -150,6 +184,37 @@ export default function TestResult() {
     const testId = attempt.test_id ?? attempt.test?.id;
     const reattemptHref = testId ? `/dashboard/tests/play/${testId}` : '/dashboard/tests';
 
+    const solutionsHref = `/dashboard/tests/solutions/${attempt.id}`;
+    const actions = (
+        <div className="flex flex-wrap gap-2 print:hidden">
+            <Link href={solutionsHref} className="btn btn-primary">
+                View solutions
+            </Link>
+            <Link href={reattemptHref} className="btn btn-secondary">
+                <RotateCcw className="h-4 w-4" />
+                Re-attempt
+            </Link>
+            <Link href="/dashboard/tests" className="btn btn-ghost">
+                <ArrowLeft className="h-4 w-4" />
+                Back to tests
+            </Link>
+        </div>
+    );
+    const tableRows: SectionTableRow[] = (analysis?.sections ?? []).map((s) => ({
+        key: s.key,
+        name: s.name,
+        total: s.total,
+        correct: s.correct,
+        incorrect: s.incorrect,
+        unattempted: s.unattempted,
+        marks: s.marks,
+        max_marks: s.max_marks,
+        accuracy: s.accuracy,
+        avg_marks: s.avg_marks,
+        topper_marks: s.topper_marks,
+        time_sec: s.time_sec,
+    }));
+
     const rawInsights = attempt.ai_insights ?? attempt.metadata?.ai_insights;
     const insights: string[] = Array.isArray(rawInsights)
         ? rawInsights.filter(Boolean)
@@ -191,7 +256,31 @@ export default function TestResult() {
                 hrefFor={(id) => `/dashboard/tests/result/${id}`}
             />
 
-            {/* Score summary */}
+            {analysisState === 'loading' && <ResultSkeleton />}
+
+            {analysisState === 'ready' && analysis && (
+                <>
+                    <HeroPanel a={analysis} actions={actions} />
+                    <StandingPanel a={analysis} colors={colors} />
+                    <AnswerPanel a={analysis} colors={colors} />
+                    {analysis.sections.length > 0 && (
+                        <SectionPanel sections={analysis.sections} tableRows={tableRows} colors={colors} />
+                    )}
+                    <QualifyingPanel a={analysis} />
+                    <ImprovePanel a={analysis} solutionsHref={solutionsHref} />
+                    <TrendPanel a={analysis} colors={colors} />
+                </>
+            )}
+
+            {analysisState === 'failed' && (
+                <div className="card p-4 flex flex-wrap items-center justify-between gap-3 print:hidden">
+                    <p className="text-sm text-muted-foreground">The detailed analysis (rank, charts, tips) could not load.</p>
+                    <button onClick={fetchAnalysis} className="btn btn-secondary btn-sm">Try again</button>
+                </div>
+            )}
+
+            {/* Score summary (fallback when the analysis is unavailable) */}
+            {analysisState === 'failed' && (
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
                 <div className="card p-6 lg:col-span-1">
                     <p className="eyebrow">Your score</p>
@@ -264,9 +353,10 @@ export default function TestResult() {
                     </div>
                 </div>
             </div>
+            )}
 
-            {/* Section-wise (groups of a sectioned paper, in paper order) */}
-            {sectionResults.length > 0 && (
+            {/* Section-wise table (fallback; the analysis has its own charts + table) */}
+            {analysisState === 'failed' && sectionResults.length > 0 && (
                 <div className="card overflow-hidden">
                     <div className="p-5 sm:p-6 border-b border-card-border">
                         <h2 className="text-lg font-semibold">Section-wise performance</h2>
