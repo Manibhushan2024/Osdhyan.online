@@ -44,11 +44,12 @@ class StudyPlanGenerator
     public const SECTION_A = ['ga', 'reasoning', 'arithmetic', 'hindi', 'english'];
 
     /**
-     * Order of the Computer Science packs: by how many questions the 2023–24
-     * DSSSB TGT CS papers asked (programming and DBMS most), the broad
-     * fundamentals/teaching pack last.
+     * Order of the Section B packs by how many questions the four official
+     * 2023–24 DSSSB TGT CS papers asked (≈ per paper): Fundamentals, SE, Web,
+     * IT & Teaching 238 (~60), Programming 46 (~11), Networks 43 (~11),
+     * OS 33 (~8), DBMS 23 (~6), DSA 13 (~3).
      */
-    public const CS_ORDER = ['programming', 'dbms', 'network', 'os', 'dsa', 'fundamental'];
+    public const CS_ORDER = ['fundamental', 'programming', 'network', 'os', 'dbms', 'dsa'];
     public const PHASE1_SHARE = 0.6;     // max share of the pre-phase-3 days spent in phase 1
     public const NOTES_MIN = 40;
     public const REVIEW_MIN = 45;
