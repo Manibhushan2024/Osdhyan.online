@@ -1,0 +1,2279 @@
+[
+ {
+  "chapter_key": "num_algebra",
+  "subtopic": "Algebra – x + 1/x identities",
+  "difficulty": "easy",
+  "question_en": "If x + 1/x = 5, then the value of x² + 1/x² is:",
+  "options": [
+   {
+    "en": "25"
+   },
+   {
+    "en": "27"
+   },
+   {
+    "en": "23"
+   },
+   {
+    "en": "21"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Square both sides: x² + 2 + 1/x² = 25, so x² + 1/x² = 25 − 2 = 23. The trap answer 27 adds 2 instead of subtracting it.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_algebra",
+  "subtopic": "Algebra – x + 1/x identities",
+  "difficulty": "medium",
+  "question_en": "If x + 1/x = 3, then x³ + 1/x³ equals:",
+  "options": [
+   {
+    "en": "18"
+   },
+   {
+    "en": "27"
+   },
+   {
+    "en": "24"
+   },
+   {
+    "en": "36"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "x³ + 1/x³ = (x + 1/x)³ − 3(x + 1/x) = 27 − 9 = 18.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_algebra",
+  "subtopic": "Algebra – identities",
+  "difficulty": "easy",
+  "question_en": "If a + b = 10 and ab = 21, then a² + b² is:",
+  "options": [
+   {
+    "en": "79"
+   },
+   {
+    "en": "58"
+   },
+   {
+    "en": "121"
+   },
+   {
+    "en": "42"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "a² + b² = (a + b)² − 2ab = 100 − 42 = 58. (Check: a = 7, b = 3 gives 49 + 9 = 58.)",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_algebra",
+  "subtopic": "Algebra – identities",
+  "difficulty": "medium",
+  "question_en": "If a + b + c = 0 and abc = 4, then a³ + b³ + c³ is:",
+  "options": [
+   {
+    "en": "0"
+   },
+   {
+    "en": "4"
+   },
+   {
+    "en": "64"
+   },
+   {
+    "en": "12"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Identity: a³ + b³ + c³ − 3abc = (a + b + c)(a² + b² + c² − ab − bc − ca). With a + b + c = 0, a³ + b³ + c³ = 3abc = 3 × 4 = 12.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_algebra",
+  "subtopic": "Algebra – quadratic equations",
+  "difficulty": "medium",
+  "question_en": "The roots of the quadratic equation 2x² − 7x + 3 = 0 are:",
+  "options": [
+   {
+    "en": "3 and 1/2"
+   },
+   {
+    "en": "−3 and −1/2"
+   },
+   {
+    "en": "3 and −1/2"
+   },
+   {
+    "en": "1/3 and 2"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Split the middle term: 2x² − 6x − x + 3 = 2x(x − 3) − 1(x − 3) = (2x − 1)(x − 3). So x = 3 or x = 1/2. Check: sum 7/2 = −b/a and product 3/2 = c/a.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_algebra",
+  "subtopic": "Algebra – quadratic equations",
+  "difficulty": "medium",
+  "question_en": "If α and β are the roots of x² − 5x + 6 = 0, then α² + β² equals:",
+  "options": [
+   {
+    "en": "25"
+   },
+   {
+    "en": "13"
+   },
+   {
+    "en": "37"
+   },
+   {
+    "en": "19"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "α + β = 5 and αβ = 6. α² + β² = (α + β)² − 2αβ = 25 − 12 = 13. (Roots are 2 and 3: 4 + 9 = 13.)",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_algebra",
+  "subtopic": "Algebra – quadratic equations",
+  "difficulty": "hard",
+  "question_en": "For what values of k does the equation x² + kx + 16 = 0 have two equal real roots?",
+  "options": [
+   {
+    "en": "k = 4 only"
+   },
+   {
+    "en": "k = ±4"
+   },
+   {
+    "en": "k = 8 only"
+   },
+   {
+    "en": "k = ±8"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Equal roots need discriminant b² − 4ac = 0: k² − 64 = 0, so k = ±8. Taking only the positive root (8) misses k = −8.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_algebra",
+  "subtopic": "Algebra – linear equations",
+  "difficulty": "medium",
+  "question_en": "If 2x + 3y = 13 and 3x − y = 3, then x + y equals:",
+  "options": [
+   {
+    "en": "5"
+   },
+   {
+    "en": "4"
+   },
+   {
+    "en": "6"
+   },
+   {
+    "en": "7"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "From the second equation y = 3x − 3. Substituting: 2x + 9x − 9 = 13 → 11x = 22 → x = 2, y = 3. So x + y = 5.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_algebra",
+  "subtopic": "Algebra – identities",
+  "difficulty": "hard",
+  "question_en": "If a − b = 3 and a³ − b³ = 117, then the value of ab is:",
+  "options": [
+   {
+    "en": "8"
+   },
+   {
+    "en": "9"
+   },
+   {
+    "en": "10"
+   },
+   {
+    "en": "12"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "a³ − b³ = (a − b)³ + 3ab(a − b). So 117 = 27 + 9ab → 9ab = 90 → ab = 10. (Check: a = 5, b = 2.)",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_algebra",
+  "subtopic": "Algebra – x + 1/x identities",
+  "difficulty": "hard",
+  "question_en": "If x − 1/x = 4, then x⁴ + 1/x⁴ equals:",
+  "options": [
+   {
+    "en": "256"
+   },
+   {
+    "en": "196"
+   },
+   {
+    "en": "324"
+   },
+   {
+    "en": "322"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "x² + 1/x² = (x − 1/x)² + 2 = 16 + 2 = 18. Then x⁴ + 1/x⁴ = 18² − 2 = 324 − 2 = 322.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_algebra",
+  "subtopic": "Algebra – identities",
+  "difficulty": "easy",
+  "question_en": "Using an algebraic identity, the value of 103 × 97 is:",
+  "options": [
+   {
+    "en": "10009"
+   },
+   {
+    "en": "9991"
+   },
+   {
+    "en": "9909"
+   },
+   {
+    "en": "10091"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "103 × 97 = (100 + 3)(100 − 3) = 100² − 3² = 10000 − 9 = 9991.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_algebra",
+  "subtopic": "Algebra – x + 1/x identities",
+  "difficulty": "medium",
+  "question_en": "If x = 2 + √3, then x² + 1/x² equals:",
+  "options": [
+   {
+    "en": "14"
+   },
+   {
+    "en": "16"
+   },
+   {
+    "en": "12"
+   },
+   {
+    "en": "4"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "1/x = 1/(2 + √3) = 2 − √3 (rationalise, since (2 + √3)(2 − √3) = 1). So x + 1/x = 4 and x² + 1/x² = 16 − 2 = 14.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_algebra",
+  "subtopic": "Trigonometry – standard angle values",
+  "difficulty": "easy",
+  "question_en": "The value of sin 30° + cos 60° is:",
+  "options": [
+   {
+    "en": "1/2"
+   },
+   {
+    "en": "√3/2"
+   },
+   {
+    "en": "1"
+   },
+   {
+    "en": "√3"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "sin 30° = 1/2 and cos 60° = 1/2, so the sum is 1.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_algebra",
+  "subtopic": "Trigonometry – ratios from one ratio",
+  "difficulty": "easy",
+  "question_en": "If tan θ = 3/4 and θ is acute, then sin θ is:",
+  "options": [
+   {
+    "en": "4/5"
+   },
+   {
+    "en": "3/5"
+   },
+   {
+    "en": "3/4"
+   },
+   {
+    "en": "5/3"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Take opposite = 3, adjacent = 4, so hypotenuse = √(9 + 16) = 5. sin θ = opposite / hypotenuse = 3/5.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_algebra",
+  "subtopic": "Trigonometry – identities",
+  "difficulty": "easy",
+  "question_en": "The value of (1 − sin²θ) × sec²θ is:",
+  "options": [
+   {
+    "en": "1"
+   },
+   {
+    "en": "0"
+   },
+   {
+    "en": "sin²θ"
+   },
+   {
+    "en": "tan²θ"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "1 − sin²θ = cos²θ, and cos²θ × sec²θ = cos²θ × 1/cos²θ = 1.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_algebra",
+  "subtopic": "Trigonometry – complementary angles",
+  "difficulty": "medium",
+  "question_en": "The value of tan 10° × tan 20° × tan 70° × tan 80° is:",
+  "options": [
+   {
+    "en": "0"
+   },
+   {
+    "en": "√3"
+   },
+   {
+    "en": "1/√3"
+   },
+   {
+    "en": "1"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "tan 80° = cot 10° and tan 70° = cot 20°. So the product = (tan 10° cot 10°)(tan 20° cot 20°) = 1 × 1 = 1.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_algebra",
+  "subtopic": "Trigonometry – complementary angles",
+  "difficulty": "medium",
+  "question_en": "If sin 3θ = cos(θ − 6°), where 3θ and (θ − 6°) are acute angles, then θ equals:",
+  "options": [
+   {
+    "en": "24°"
+   },
+   {
+    "en": "21°"
+   },
+   {
+    "en": "32°"
+   },
+   {
+    "en": "48°"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "sin A = cos B with both acute means A + B = 90°. So 3θ + θ − 6° = 90° → 4θ = 96° → θ = 24°.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_algebra",
+  "subtopic": "Trigonometry – heights and distances",
+  "difficulty": "medium",
+  "question_en": "From a point on the ground 30 m away from the foot of a tower, the angle of elevation of the top of the tower is 60°. The height of the tower is:",
+  "options": [
+   {
+    "en": "10√3 m"
+   },
+   {
+    "en": "30√3 m"
+   },
+   {
+    "en": "15 m"
+   },
+   {
+    "en": "30 m"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "tan 60° = height / 30 → height = 30 × √3 = 30√3 m (≈ 51.96 m). 10√3 m would result from using tan 30° by mistake.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_algebra",
+  "subtopic": "Trigonometry – heights and distances",
+  "difficulty": "hard",
+  "question_en": "The shadow of a tower becomes 40 m shorter when the Sun's altitude increases from 30° to 60°. The height of the tower is:",
+  "options": [
+   {
+    "en": "20 m"
+   },
+   {
+    "en": "40√3 m"
+   },
+   {
+    "en": "20√3 m"
+   },
+   {
+    "en": "40 m"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Shadow = h cot θ. h cot 30° − h cot 60° = 40 → h(√3 − 1/√3) = 40 → h × 2/√3 = 40 → h = 20√3 m (≈ 34.64 m).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_algebra",
+  "subtopic": "Trigonometry – identities",
+  "difficulty": "medium",
+  "question_en": "If sec θ + tan θ = 4, then sec θ − tan θ equals:",
+  "options": [
+   {
+    "en": "4"
+   },
+   {
+    "en": "−4"
+   },
+   {
+    "en": "3"
+   },
+   {
+    "en": "1/4"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "sec²θ − tan²θ = 1, i.e. (sec θ + tan θ)(sec θ − tan θ) = 1. So sec θ − tan θ = 1/4.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_algebra",
+  "subtopic": "Trigonometry – identities",
+  "difficulty": "hard",
+  "question_en": "If sec θ + tan θ = 4, then sin θ equals:",
+  "options": [
+   {
+    "en": "8/17"
+   },
+   {
+    "en": "15/17"
+   },
+   {
+    "en": "15/8"
+   },
+   {
+    "en": "17/15"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "sec θ − tan θ = 1/4 (since sec²θ − tan²θ = 1). Adding: 2 sec θ = 17/4 → sec θ = 17/8; subtracting: tan θ = 15/8. sin θ = tan θ / sec θ = 15/17.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_algebra",
+  "subtopic": "Trigonometry – standard angle values",
+  "difficulty": "easy",
+  "question_en": "The value of cos 0° + sin 90° + tan 45° is:",
+  "options": [
+   {
+    "en": "0"
+   },
+   {
+    "en": "1"
+   },
+   {
+    "en": "2"
+   },
+   {
+    "en": "3"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "cos 0° = 1, sin 90° = 1 and tan 45° = 1, so the sum is 3.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_algebra",
+  "subtopic": "Trigonometry – standard angle values",
+  "difficulty": "medium",
+  "question_en": "The value of 2 sin²30° + 3 tan²60° − cos²45° is:",
+  "options": [
+   {
+    "en": "10"
+   },
+   {
+    "en": "8"
+   },
+   {
+    "en": "9"
+   },
+   {
+    "en": "19/2"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "2 × (1/2)² = 1/2; 3 × (√3)² = 9; cos²45° = 1/2. Total = 1/2 + 9 − 1/2 = 9.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_algebra",
+  "subtopic": "Trigonometry – heights and distances",
+  "difficulty": "medium",
+  "question_en": "A ladder 20 m long leans against a vertical wall and makes an angle of 60° with the ground. How high up the wall does the ladder reach?",
+  "options": [
+   {
+    "en": "10 m"
+   },
+   {
+    "en": "20√3 m"
+   },
+   {
+    "en": "10√3 m"
+   },
+   {
+    "en": "10√2 m"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Height = ladder × sin 60° = 20 × √3/2 = 10√3 m (≈ 17.32 m). 10 m is the distance of the foot from the wall (20 cos 60°).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_algebra",
+  "subtopic": "Algebra – surds √(a ± 2√b)",
+  "difficulty": "medium",
+  "question_en": "If x = √(11 + 2√30) − √(11 − 2√30), then x equals:",
+  "options": [
+   {
+    "en": "2√6"
+   },
+   {
+    "en": "2√5"
+   },
+   {
+    "en": "2"
+   },
+   {
+    "en": "√30"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "11 + 2√30 = 6 + 5 + 2√6√5 = (√6 + √5)², and 11 − 2√30 = (√6 − √5)². So x = (√6 + √5) − (√6 − √5) = 2√5.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_algebra",
+  "subtopic": "Algebra – surds √(a ± 2√b)",
+  "difficulty": "medium",
+  "question_en": "The value of √(14 + 6√5) + √(14 − 6√5) is:",
+  "options": [
+   {
+    "en": "2√5"
+   },
+   {
+    "en": "3√5"
+   },
+   {
+    "en": "6"
+   },
+   {
+    "en": "4"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "14 + 6√5 = 9 + 5 + 2 × 3 × √5 = (3 + √5)², and 14 − 6√5 = (3 − √5)². Sum = (3 + √5) + (3 − √5) = 6.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_algebra",
+  "subtopic": "Algebra – rationalisation",
+  "difficulty": "medium",
+  "question_en": "The value of 1/(√7 − √6) − 1/(√6 − √5) is:",
+  "options": [
+   {
+    "en": "√7 + √5"
+   },
+   {
+    "en": "2√6"
+   },
+   {
+    "en": "√5 − √7"
+   },
+   {
+    "en": "√7 − √5"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Rationalise: 1/(√7 − √6) = √7 + √6 (since 7 − 6 = 1) and 1/(√6 − √5) = √6 + √5. Difference = (√7 + √6) − (√6 + √5) = √7 − √5.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_algebra",
+  "subtopic": "Algebra – linear equations",
+  "difficulty": "easy",
+  "question_en": "The sum of two numbers is 75 and their difference is 15. What is their product?",
+  "options": [
+   {
+    "en": "1350"
+   },
+   {
+    "en": "1250"
+   },
+   {
+    "en": "1400"
+   },
+   {
+    "en": "1300"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Larger = (75 + 15)/2 = 45 and smaller = (75 − 15)/2 = 30. Product = 45 × 30 = 1350.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_algebra",
+  "subtopic": "Algebra – remainder theorem",
+  "difficulty": "easy",
+  "question_en": "What is the remainder when x³ − 2x² + 4x − 5 is divided by (x − 2)?",
+  "options": [
+   {
+    "en": "−3"
+   },
+   {
+    "en": "3"
+   },
+   {
+    "en": "11"
+   },
+   {
+    "en": "5"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "By the remainder theorem, put x = 2: 8 − 8 + 8 − 5 = 3.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_algebra",
+  "subtopic": "Algebra – identities (a³ + b³)",
+  "difficulty": "medium",
+  "question_en": "If a + b = 7 and ab = 10, then a³ + b³ equals:",
+  "options": [
+   {
+    "en": "343"
+   },
+   {
+    "en": "210"
+   },
+   {
+    "en": "133"
+   },
+   {
+    "en": "123"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "a³ + b³ = (a + b)³ − 3ab(a + b) = 343 − 3 × 10 × 7 = 343 − 210 = 133. Check: a = 5, b = 2 gives 125 + 8 = 133.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_algebra",
+  "subtopic": "Trigonometry – identities",
+  "difficulty": "medium",
+  "question_en": "If sin θ + cos θ = √2, then the value of sin θ cos θ is:",
+  "options": [
+   {
+    "en": "1"
+   },
+   {
+    "en": "√2/2"
+   },
+   {
+    "en": "1/4"
+   },
+   {
+    "en": "1/2"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Square both sides: sin²θ + cos²θ + 2 sin θ cos θ = 2, i.e. 1 + 2 sin θ cos θ = 2, so sin θ cos θ = 1/2 (θ = 45°).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_algebra",
+  "subtopic": "Trigonometry – complementary angles",
+  "difficulty": "easy",
+  "question_en": "The value of sin²25° + sin²65° + tan 30° × tan 60° is:",
+  "options": [
+   {
+    "en": "2"
+   },
+   {
+    "en": "1"
+   },
+   {
+    "en": "3"
+   },
+   {
+    "en": "√3"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "sin 65° = cos 25°, so sin²25° + sin²65° = sin²25° + cos²25° = 1. tan 30° × tan 60° = (1/√3) × √3 = 1. Total = 2.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_algebra",
+  "subtopic": "Trigonometry – heights and distances",
+  "difficulty": "medium",
+  "question_en": "From the top of a building 60 m high, the angle of depression of a car on the road is 30°. How far is the car from the foot of the building?",
+  "options": [
+   {
+    "en": "20√3 m"
+   },
+   {
+    "en": "60√3 m"
+   },
+   {
+    "en": "30 m"
+   },
+   {
+    "en": "120 m"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Angle of depression = angle of elevation from the car = 30°. tan 30° = 60/d, so d = 60/(1/√3) = 60√3 m (≈ 103.9 m). 20√3 m comes from wrongly using tan 60°.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_geometry",
+  "subtopic": "Geometry – polygons",
+  "difficulty": "easy",
+  "question_en": "The sum of the interior angles of a hexagon is:",
+  "options": [
+   {
+    "en": "540°"
+   },
+   {
+    "en": "1080°"
+   },
+   {
+    "en": "720°"
+   },
+   {
+    "en": "900°"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Sum of interior angles = (n − 2) × 180° = (6 − 2) × 180° = 720°.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_geometry",
+  "subtopic": "Geometry – polygons",
+  "difficulty": "easy",
+  "question_en": "Each exterior angle of a regular polygon is 24°. The number of sides of the polygon is:",
+  "options": [
+   {
+    "en": "12"
+   },
+   {
+    "en": "18"
+   },
+   {
+    "en": "20"
+   },
+   {
+    "en": "15"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Exterior angles of any polygon add up to 360°, so n = 360 / 24 = 15.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_geometry",
+  "subtopic": "Geometry – angles of a triangle",
+  "difficulty": "easy",
+  "question_en": "The angles of a triangle are in the ratio 2 : 3 : 4. The largest angle is:",
+  "options": [
+   {
+    "en": "80°"
+   },
+   {
+    "en": "60°"
+   },
+   {
+    "en": "90°"
+   },
+   {
+    "en": "100°"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "2k + 3k + 4k = 180° → 9k = 180° → k = 20°. Largest angle = 4 × 20° = 80°.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_geometry",
+  "subtopic": "Geometry – angles of a triangle",
+  "difficulty": "medium",
+  "question_en": "An exterior angle of a triangle is 110° and one of the two interior opposite angles is 45°. The other interior opposite angle is:",
+  "options": [
+   {
+    "en": "55°"
+   },
+   {
+    "en": "65°"
+   },
+   {
+    "en": "70°"
+   },
+   {
+    "en": "135°"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Exterior angle = sum of the two interior opposite angles, so the other angle = 110° − 45° = 65°.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_geometry",
+  "subtopic": "Geometry – circles",
+  "difficulty": "medium",
+  "question_en": "In a circle of radius 13 cm, a chord is 24 cm long. The distance of the chord from the centre is:",
+  "options": [
+   {
+    "en": "5 cm"
+   },
+   {
+    "en": "7 cm"
+   },
+   {
+    "en": "11 cm"
+   },
+   {
+    "en": "12 cm"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The perpendicular from the centre bisects the chord: half-chord = 12 cm. Distance = √(13² − 12²) = √25 = 5 cm.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_geometry",
+  "subtopic": "Geometry – circles",
+  "difficulty": "medium",
+  "question_en": "A point P is 25 cm from the centre of a circle of radius 7 cm. The length of the tangent drawn from P to the circle is:",
+  "options": [
+   {
+    "en": "18 cm"
+   },
+   {
+    "en": "26 cm"
+   },
+   {
+    "en": "24 cm"
+   },
+   {
+    "en": "32 cm"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The radius is perpendicular to the tangent at the point of contact, so tangent = √(25² − 7²) = √(625 − 49) = √576 = 24 cm.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_geometry",
+  "subtopic": "Geometry – circles",
+  "difficulty": "hard",
+  "question_en": "Two chords AB and CD of a circle intersect at a point P inside the circle. If AP = 6 cm, PB = 4 cm and CP = 3 cm, then PD is:",
+  "options": [
+   {
+    "en": "2 cm"
+   },
+   {
+    "en": "4.5 cm"
+   },
+   {
+    "en": "6 cm"
+   },
+   {
+    "en": "8 cm"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "By the intersecting chords theorem, AP × PB = CP × PD → 6 × 4 = 3 × PD → PD = 8 cm.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_geometry",
+  "subtopic": "Geometry – circles",
+  "difficulty": "medium",
+  "question_en": "An arc of a circle subtends an angle of 120° at the centre. The angle it subtends at any point on the remaining part (major arc) of the circle is:",
+  "options": [
+   {
+    "en": "60°"
+   },
+   {
+    "en": "120°"
+   },
+   {
+    "en": "240°"
+   },
+   {
+    "en": "30°"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The angle subtended by an arc at the centre is double the angle it subtends at any point on the remaining part of the circle: 120° / 2 = 60°.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_geometry",
+  "subtopic": "Geometry – circles",
+  "difficulty": "medium",
+  "question_en": "ABCD is a cyclic quadrilateral in which ∠A = 70° and ∠B = 95°. The measure of ∠C is:",
+  "options": [
+   {
+    "en": "85°"
+   },
+   {
+    "en": "95°"
+   },
+   {
+    "en": "110°"
+   },
+   {
+    "en": "70°"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Opposite angles of a cyclic quadrilateral are supplementary: ∠C = 180° − ∠A = 180° − 70° = 110°. (∠D = 180° − 95° = 85°, the trap answer.)",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_geometry",
+  "subtopic": "Geometry – median of a right triangle",
+  "difficulty": "medium",
+  "question_en": "In a triangle with sides 6 cm, 8 cm and 10 cm, the length of the median drawn to the longest side is:",
+  "options": [
+   {
+    "en": "4 cm"
+   },
+   {
+    "en": "7 cm"
+   },
+   {
+    "en": "6 cm"
+   },
+   {
+    "en": "5 cm"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "6² + 8² = 100 = 10², so the triangle is right-angled with hypotenuse 10 cm. The median to the hypotenuse equals half of it (the midpoint is the circumcentre): 5 cm.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_geometry",
+  "subtopic": "Geometry – similar triangles",
+  "difficulty": "hard",
+  "question_en": "The areas of two similar triangles are in the ratio 16 : 25. The ratio of their corresponding altitudes is:",
+  "options": [
+   {
+    "en": "16 : 25"
+   },
+   {
+    "en": "256 : 625"
+   },
+   {
+    "en": "4 : 5"
+   },
+   {
+    "en": "8 : 5"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "For similar triangles, ratio of areas = square of the ratio of corresponding sides, altitudes or medians. So altitude ratio = √16 : √25 = 4 : 5.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_geometry",
+  "subtopic": "Geometry – similar triangles",
+  "difficulty": "medium",
+  "question_en": "In triangle ABC, a line DE is drawn parallel to BC, with D on AB and E on AC. If AD = 3 cm, DB = 2 cm and AE = 4.5 cm, then EC is:",
+  "options": [
+   {
+    "en": "2 cm"
+   },
+   {
+    "en": "3 cm"
+   },
+   {
+    "en": "3.5 cm"
+   },
+   {
+    "en": "6.75 cm"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "By the Basic Proportionality (Thales) theorem, AD/DB = AE/EC → 3/2 = 4.5/EC → EC = 3 cm.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_geometry",
+  "subtopic": "Mensuration – area of a triangle",
+  "difficulty": "easy",
+  "question_en": "The area of a triangle with sides 13 cm, 14 cm and 15 cm is:",
+  "options": [
+   {
+    "en": "84 cm²"
+   },
+   {
+    "en": "91 cm²"
+   },
+   {
+    "en": "72 cm²"
+   },
+   {
+    "en": "96 cm²"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Heron's formula: s = (13 + 14 + 15)/2 = 21. Area = √[21 × 8 × 7 × 6] = √7056 = 84 cm².",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_geometry",
+  "subtopic": "Mensuration – circle",
+  "difficulty": "easy",
+  "question_en": "The circumference of a circle is 44 cm. Its area is (take π = 22/7):",
+  "options": [
+   {
+    "en": "144 cm²"
+   },
+   {
+    "en": "616 cm²"
+   },
+   {
+    "en": "176 cm²"
+   },
+   {
+    "en": "154 cm²"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "2πr = 44 → r = 44 × 7 / 44 = 7 cm. Area = πr² = 22/7 × 49 = 154 cm².",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_geometry",
+  "subtopic": "Mensuration – rectangle",
+  "difficulty": "easy",
+  "question_en": "The diagonal of a rectangle of length 24 cm and breadth 7 cm is:",
+  "options": [
+   {
+    "en": "31 cm"
+   },
+   {
+    "en": "25 cm"
+   },
+   {
+    "en": "26 cm"
+   },
+   {
+    "en": "17 cm"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Diagonal = √(24² + 7²) = √(576 + 49) = √625 = 25 cm.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_geometry",
+  "subtopic": "Mensuration – rhombus",
+  "difficulty": "medium",
+  "question_en": "The diagonals of a rhombus are 16 cm and 12 cm. The perimeter of the rhombus is:",
+  "options": [
+   {
+    "en": "40 cm"
+   },
+   {
+    "en": "48 cm"
+   },
+   {
+    "en": "56 cm"
+   },
+   {
+    "en": "96 cm"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The diagonals bisect each other at right angles, so side = √(8² + 6²) = 10 cm and perimeter = 4 × 10 = 40 cm. 96 cm² is its area (½ × 16 × 12).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_geometry",
+  "subtopic": "Mensuration – cube and cuboid",
+  "difficulty": "medium",
+  "question_en": "The volume of a cube is 343 cm³. Its total surface area is:",
+  "options": [
+   {
+    "en": "196 cm²"
+   },
+   {
+    "en": "245 cm²"
+   },
+   {
+    "en": "294 cm²"
+   },
+   {
+    "en": "343 cm²"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Side = ∛343 = 7 cm. Total surface area = 6a² = 6 × 49 = 294 cm². 196 cm² is the lateral surface area (4a²).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_geometry",
+  "subtopic": "Mensuration – cylinder",
+  "difficulty": "medium",
+  "question_en": "The volume of a right circular cylinder of radius 7 cm and height 10 cm is (take π = 22/7):",
+  "options": [
+   {
+    "en": "440 cm³"
+   },
+   {
+    "en": "770 cm³"
+   },
+   {
+    "en": "2200 cm³"
+   },
+   {
+    "en": "1540 cm³"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "V = πr²h = 22/7 × 49 × 10 = 154 × 10 = 1540 cm³. 440 cm² is the curved surface area 2πrh, a common mix-up.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_geometry",
+  "subtopic": "Mensuration – cone",
+  "difficulty": "medium",
+  "question_en": "The curved surface area of a right circular cone of base radius 6 cm and height 8 cm is:",
+  "options": [
+   {
+    "en": "48π cm²"
+   },
+   {
+    "en": "60π cm²"
+   },
+   {
+    "en": "96π cm²"
+   },
+   {
+    "en": "36π cm²"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Slant height l = √(6² + 8²) = 10 cm. Curved surface area = πrl = π × 6 × 10 = 60π cm². Using the height instead of the slant height gives the wrong 48π.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_geometry",
+  "subtopic": "Mensuration – melting and recasting",
+  "difficulty": "hard",
+  "question_en": "A solid metal sphere of radius 6 cm is melted and recast into small solid cones, each of base radius 3 cm and height 4 cm. How many cones are formed?",
+  "options": [
+   {
+    "en": "12"
+   },
+   {
+    "en": "18"
+   },
+   {
+    "en": "24"
+   },
+   {
+    "en": "36"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Sphere volume = (4/3)π × 216 = 288π. Cone volume = (1/3)π × 9 × 4 = 12π. Number of cones = 288π / 12π = 24.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_geometry",
+  "subtopic": "Mensuration – hemisphere",
+  "difficulty": "medium",
+  "question_en": "The total surface area of a solid hemisphere of radius 21 cm is (take π = 22/7):",
+  "options": [
+   {
+    "en": "2772 cm²"
+   },
+   {
+    "en": "4158 cm²"
+   },
+   {
+    "en": "5544 cm²"
+   },
+   {
+    "en": "1386 cm²"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "TSA of a solid hemisphere = curved 2πr² + flat base πr² = 3πr² = 3 × 22/7 × 441 = 4158 cm². 2772 cm² is only the curved part.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_geometry",
+  "subtopic": "Mensuration – rectangle",
+  "difficulty": "hard",
+  "question_en": "A rectangular park is 60 m long and 40 m wide. A path 5 m wide runs all around it on the outside. The area of the path is:",
+  "options": [
+   {
+    "en": "1000 m²"
+   },
+   {
+    "en": "1100 m²"
+   },
+   {
+    "en": "1200 m²"
+   },
+   {
+    "en": "900 m²"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Outer rectangle = (60 + 10) × (40 + 10) = 70 × 50 = 3500 m². Park = 60 × 40 = 2400 m². Path = 3500 − 2400 = 1100 m². Adding only 5 m (not 2 × 5) to each side is the usual error.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_geometry",
+  "subtopic": "Mensuration – percentage change in area",
+  "difficulty": "medium",
+  "question_en": "If the radius of a circle is increased by 10%, its area increases by:",
+  "options": [
+   {
+    "en": "10%"
+   },
+   {
+    "en": "20%"
+   },
+   {
+    "en": "21%"
+   },
+   {
+    "en": "121%"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Area ∝ r². New area factor = 1.1² = 1.21, an increase of 21%. Equivalently a + b + ab/100 = 10 + 10 + 1 = 21%.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_geometry",
+  "subtopic": "Mensuration – cube and cuboid",
+  "difficulty": "hard",
+  "question_en": "A cuboid of dimensions 12 cm × 8 cm × 6 cm is melted and recast into cubes of side 2 cm. How many cubes are obtained?",
+  "options": [
+   {
+    "en": "48"
+   },
+   {
+    "en": "144"
+   },
+   {
+    "en": "96"
+   },
+   {
+    "en": "72"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Cuboid volume = 12 × 8 × 6 = 576 cm³. Each cube = 2³ = 8 cm³. Number of cubes = 576 / 8 = 72.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_geometry",
+  "subtopic": "Mensuration – area of a triangle",
+  "difficulty": "easy",
+  "question_en": "The area of an equilateral triangle of side 8 cm is:",
+  "options": [
+   {
+    "en": "16√3 cm²"
+   },
+   {
+    "en": "32√3 cm²"
+   },
+   {
+    "en": "64√3 cm²"
+   },
+   {
+    "en": "8√3 cm²"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Area = (√3/4) a² = (√3/4) × 64 = 16√3 cm².",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_geometry",
+  "subtopic": "Geometry – circumcircle of a right triangle",
+  "difficulty": "medium",
+  "question_en": "What is the area of the circle that circumscribes a triangle with sides 20 cm, 21 cm and 29 cm?",
+  "options": [
+   {
+    "en": "841π cm²"
+   },
+   {
+    "en": "420.25π cm²"
+   },
+   {
+    "en": "210.25π cm²"
+   },
+   {
+    "en": "225π cm²"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "20² + 21² = 400 + 441 = 841 = 29², so the triangle is right-angled and the hypotenuse is the diameter of the circumcircle. R = 29/2 = 14.5 cm; area = π × 14.5² = 210.25π cm². 841π uses the hypotenuse as the radius.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_geometry",
+  "subtopic": "Mensuration – circular ring",
+  "difficulty": "medium",
+  "question_en": "The area of the ring between two concentric circles is 286 cm² and the difference of their radii is 7 cm. What is the radius of the outer circle? (Use π = 22/7)",
+  "options": [
+   {
+    "en": "13 cm"
+   },
+   {
+    "en": "7 cm"
+   },
+   {
+    "en": "8.5 cm"
+   },
+   {
+    "en": "10 cm"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "π(R² − r²) = 286, so R² − r² = 286 × 7/22 = 91. Since (R − r)(R + r) = 91 and R − r = 7, R + r = 13. Adding: 2R = 20, so R = 10 cm (r = 3 cm).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_geometry",
+  "subtopic": "Mensuration – cones recast into a sphere",
+  "difficulty": "medium",
+  "question_en": "Two solid cones, each of base radius 6 cm and heights 10 cm and 14 cm, are melted and recast into a solid sphere. What is the surface area of the sphere?",
+  "options": [
+   {
+    "en": "144π cm²"
+   },
+   {
+    "en": "216π cm²"
+   },
+   {
+    "en": "288π cm²"
+   },
+   {
+    "en": "196π cm²"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Total volume = (1/3)π × 6² × (10 + 14) = (1/3)π × 36 × 24 = 288π. (4/3)πR³ = 288π gives R³ = 216, so R = 6 cm. Surface area = 4πR² = 4π × 36 = 144π cm². 288π is the volume, not the area.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_geometry",
+  "subtopic": "Mensuration – cylinder inscribed in a sphere",
+  "difficulty": "hard",
+  "question_en": "A right circular cylinder of height 10 cm is inscribed in a sphere of radius 13 cm. What is the volume of the cylinder?",
+  "options": [
+   {
+    "en": "1690π cm³"
+   },
+   {
+    "en": "1440π cm³"
+   },
+   {
+    "en": "1200π cm³"
+   },
+   {
+    "en": "1960π cm³"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The centre of the sphere is at mid-height, 5 cm from each base. Cylinder radius r = √(13² − 5²) = √144 = 12 cm. Volume = πr²h = π × 144 × 10 = 1440π cm³.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_geometry",
+  "subtopic": "Mensuration – cone (cost of painting)",
+  "difficulty": "hard",
+  "question_en": "The cost of painting the curved surface of a conical tent at ₹3 per m² is ₹6,600. If its slant height is 50 m, what is its volume? (Use π = 22/7)",
+  "options": [
+   {
+    "en": "10560 m³"
+   },
+   {
+    "en": "9240 m³"
+   },
+   {
+    "en": "9856 m³"
+   },
+   {
+    "en": "8624 m³"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Curved surface = 6600/3 = 2200 m². πrl = 2200 gives (22/7) × r × 50 = 2200, so r = 14 m. Height = √(50² − 14²) = √2304 = 48 m. Volume = (1/3) × (22/7) × 196 × 48 = 616 × 16 = 9856 m³.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_geometry",
+  "subtopic": "Mensuration – percentage change in surface area",
+  "difficulty": "easy",
+  "question_en": "If each edge of a cube is increased by 20%, by what percentage does its total surface area increase?",
+  "options": [
+   {
+    "en": "40%"
+   },
+   {
+    "en": "20%"
+   },
+   {
+    "en": "72.8%"
+   },
+   {
+    "en": "44%"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Surface area ∝ edge². New factor = 1.2² = 1.44, an increase of 44% (shortcut 20 + 20 + 20 × 20/100 = 44). 72.8% is the increase in volume (1.2³ = 1.728).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_geometry",
+  "subtopic": "Mensuration – cylinder and cone of equal volume",
+  "difficulty": "hard",
+  "question_en": "A cylinder of base radius 4 cm and height 9 cm has the same volume as a cone of height 12 cm. What is the curved surface area of the cone?",
+  "options": [
+   {
+    "en": "36√5π cm²"
+   },
+   {
+    "en": "30√5π cm²"
+   },
+   {
+    "en": "72π cm²"
+   },
+   {
+    "en": "45√5π cm²"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Cylinder volume = π × 16 × 9 = 144π. (1/3)πr² × 12 = 144π gives r² = 36, so r = 6 cm. Slant height l = √(6² + 12²) = √180 = 6√5 cm. Curved surface = πrl = π × 6 × 6√5 = 36√5π cm².",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_geometry",
+  "subtopic": "Geometry – inradius of a right triangle",
+  "difficulty": "medium",
+  "question_en": "What is the radius of the circle inscribed in a triangle with sides 8 cm, 15 cm and 17 cm?",
+  "options": [
+   {
+    "en": "4 cm"
+   },
+   {
+    "en": "3 cm"
+   },
+   {
+    "en": "2.5 cm"
+   },
+   {
+    "en": "3.5 cm"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "8² + 15² = 289 = 17², a right triangle. Inradius r = Area/s = (½ × 8 × 15)/20 = 60/20 = 3 cm. Shortcut for a right triangle: r = (a + b − c)/2 = (8 + 15 − 17)/2 = 3 cm.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_data",
+  "subtopic": "Data interpretation – table (pass percentage)",
+  "difficulty": "easy",
+  "question_en": "The table shows the number of students who appeared and passed in a Computer Science examination from five schools.\nSchool | Appeared | Passed\nP | 240 | 180\nQ | 300 | 255\nR | 180 | 117\nS | 360 | 288\nT | 220 | 198\nWhich school has the highest pass percentage?",
+  "options": [
+   {
+    "en": "Q"
+   },
+   {
+    "en": "S"
+   },
+   {
+    "en": "P"
+   },
+   {
+    "en": "T"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Pass % = passed/appeared × 100: P 75%, Q 85%, R 65%, S 80%, T 90%. T is highest; S has the most passes but not the highest rate.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_data",
+  "subtopic": "Data interpretation – table (pass percentage)",
+  "difficulty": "medium",
+  "question_en": "The table shows the number of students who appeared and passed in a Computer Science examination from five schools.\nSchool | Appeared | Passed\nP | 240 | 180\nQ | 300 | 255\nR | 180 | 117\nS | 360 | 288\nT | 220 | 198\nWhat is the overall pass percentage of all five schools taken together (approximately)?",
+  "options": [
+   {
+    "en": "79.8%"
+   },
+   {
+    "en": "80.2%"
+   },
+   {
+    "en": "78.6%"
+   },
+   {
+    "en": "81.4%"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Total appeared = 240 + 300 + 180 + 360 + 220 = 1300; total passed = 180 + 255 + 117 + 288 + 198 = 1038. 1038/1300 × 100 ≈ 79.85%. Averaging the five percentages (79%) is wrong because school sizes differ.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_data",
+  "subtopic": "Data interpretation – table (pass percentage)",
+  "difficulty": "medium",
+  "question_en": "The table shows the number of students who appeared and passed in a Computer Science examination from five schools.\nSchool | Appeared | Passed\nP | 240 | 180\nQ | 300 | 255\nR | 180 | 117\nS | 360 | 288\nT | 220 | 198\nWhat is the ratio of the number of students who failed in school P to those who failed in school Q?",
+  "options": [
+   {
+    "en": "3 : 4"
+   },
+   {
+    "en": "6 : 5"
+   },
+   {
+    "en": "5 : 4"
+   },
+   {
+    "en": "4 : 3"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Failed in P = 240 − 180 = 60; failed in Q = 300 − 255 = 45. Ratio = 60 : 45 = 4 : 3.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_data",
+  "subtopic": "Data interpretation – table (pass percentage)",
+  "difficulty": "easy",
+  "question_en": "The table shows the number of students who appeared and passed in a Computer Science examination from five schools.\nSchool | Appeared | Passed\nP | 240 | 180\nQ | 300 | 255\nR | 180 | 117\nS | 360 | 288\nT | 220 | 198\nWhat is the average number of students who passed per school?",
+  "options": [
+   {
+    "en": "198.4"
+   },
+   {
+    "en": "207.6"
+   },
+   {
+    "en": "210.2"
+   },
+   {
+    "en": "260"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Total passed = 1038. Average = 1038 / 5 = 207.6. 260 is the average number appeared (1300/5).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_data",
+  "subtopic": "Data interpretation – table (pass percentage)",
+  "difficulty": "hard",
+  "question_en": "The table shows the number of students who appeared and passed in a Computer Science examination from five schools.\nSchool | Appeared | Passed\nP | 240 | 180\nQ | 300 | 255\nR | 180 | 117\nS | 360 | 288\nT | 220 | 198\nThe number of students who failed in school S is what percent of the number who failed in school R (approximately)?",
+  "options": [
+   {
+    "en": "87.5%"
+   },
+   {
+    "en": "114.3%"
+   },
+   {
+    "en": "120.0%"
+   },
+   {
+    "en": "108.6%"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Failed in S = 360 − 288 = 72; failed in R = 180 − 117 = 63. 72/63 × 100 ≈ 114.29%. Inverting the ratio gives 87.5%.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_data",
+  "subtopic": "Data interpretation – table (pass percentage)",
+  "difficulty": "hard",
+  "question_en": "The table shows the number of students who appeared and passed in a Computer Science examination from five schools.\nSchool | Appeared | Passed\nP | 240 | 180\nQ | 300 | 255\nR | 180 | 117\nS | 360 | 288\nT | 220 | 198\nIn how many schools is the pass percentage higher than the overall pass percentage of all five schools combined?",
+  "options": [
+   {
+    "en": "1"
+   },
+   {
+    "en": "2"
+   },
+   {
+    "en": "3"
+   },
+   {
+    "en": "4"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Overall = 1038/1300 ≈ 79.85%. School pass %: P 75, Q 85, R 65, S 80, T 90. Q, S and T exceed 79.85%, so the answer is 3 (S just qualifies at 80%).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_data",
+  "subtopic": "Data interpretation – table (production)",
+  "difficulty": "easy",
+  "question_en": "The table shows the production (in thousand units) of three items by a company.\nYear | Laptops | Tablets | Printers\n2020 | 40 | 25 | 15\n2021 | 45 | 30 | 20\n2022 | 50 | 35 | 18\n2023 | 60 | 32 | 24\n2024 | 55 | 40 | 30\nBy what percent did laptop production increase from 2020 to 2023?",
+  "options": [
+   {
+    "en": "20%"
+   },
+   {
+    "en": "33.3%"
+   },
+   {
+    "en": "50%"
+   },
+   {
+    "en": "60%"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Increase = 60 − 40 = 20 thousand. Percent increase = 20/40 × 100 = 50%. 33.3% wrongly divides by the final value (20/60).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_data",
+  "subtopic": "Data interpretation – table (production)",
+  "difficulty": "easy",
+  "question_en": "The table shows the production (in thousand units) of three items by a company.\nYear | Laptops | Tablets | Printers\n2020 | 40 | 25 | 15\n2021 | 45 | 30 | 20\n2022 | 50 | 35 | 18\n2023 | 60 | 32 | 24\n2024 | 55 | 40 | 30\nWhat was the total production of all three items in 2022?",
+  "options": [
+   {
+    "en": "103 thousand"
+   },
+   {
+    "en": "98 thousand"
+   },
+   {
+    "en": "105 thousand"
+   },
+   {
+    "en": "113 thousand"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "2022 total = 50 + 35 + 18 = 103 thousand units.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_data",
+  "subtopic": "Data interpretation – table (production)",
+  "difficulty": "medium",
+  "question_en": "The table shows the production (in thousand units) of three items by a company.\nYear | Laptops | Tablets | Printers\n2020 | 40 | 25 | 15\n2021 | 45 | 30 | 20\n2022 | 50 | 35 | 18\n2023 | 60 | 32 | 24\n2024 | 55 | 40 | 30\nWhat is the average annual production of tablets over the five years?",
+  "options": [
+   {
+    "en": "30.6 thousand"
+   },
+   {
+    "en": "35.2 thousand"
+   },
+   {
+    "en": "33.0 thousand"
+   },
+   {
+    "en": "32.4 thousand"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Total tablets = 25 + 30 + 35 + 32 + 40 = 162 thousand. Average = 162 / 5 = 32.4 thousand units.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_data",
+  "subtopic": "Data interpretation – table (production)",
+  "difficulty": "hard",
+  "question_en": "The table shows the production (in thousand units) of three items by a company.\nYear | Laptops | Tablets | Printers\n2020 | 40 | 25 | 15\n2021 | 45 | 30 | 20\n2022 | 50 | 35 | 18\n2023 | 60 | 32 | 24\n2024 | 55 | 40 | 30\nIn which year did printers form the highest percentage of the company's total production in that year?",
+  "options": [
+   {
+    "en": "2021"
+   },
+   {
+    "en": "2023"
+   },
+   {
+    "en": "2020"
+   },
+   {
+    "en": "2024"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Totals: 80, 95, 103, 116, 125. Printer share: 2020 15/80 = 18.75%, 2021 20/95 ≈ 21.05%, 2022 18/103 ≈ 17.48%, 2023 24/116 ≈ 20.69%, 2024 30/125 = 24%. 2024 is highest.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_data",
+  "subtopic": "Data interpretation – table (production)",
+  "difficulty": "medium",
+  "question_en": "The table shows the production (in thousand units) of three items by a company.\nYear | Laptops | Tablets | Printers\n2020 | 40 | 25 | 15\n2021 | 45 | 30 | 20\n2022 | 50 | 35 | 18\n2023 | 60 | 32 | 24\n2024 | 55 | 40 | 30\nBy approximately what percent did the total production of the three items increase from 2021 to 2024?",
+  "options": [
+   {
+    "en": "24.0%"
+   },
+   {
+    "en": "30.0%"
+   },
+   {
+    "en": "31.6%"
+   },
+   {
+    "en": "35.4%"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Total 2021 = 45 + 30 + 20 = 95; total 2024 = 55 + 40 + 30 = 125. Increase = 30/95 × 100 ≈ 31.58%. 24% wrongly divides by 125.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_data",
+  "subtopic": "Data interpretation – table (production)",
+  "difficulty": "easy",
+  "question_en": "The table shows the production (in thousand units) of three items by a company.\nYear | Laptops | Tablets | Printers\n2020 | 40 | 25 | 15\n2021 | 45 | 30 | 20\n2022 | 50 | 35 | 18\n2023 | 60 | 32 | 24\n2024 | 55 | 40 | 30\nIn how many years (2021 to 2024) did tablet production fall compared with the previous year?",
+  "options": [
+   {
+    "en": "0"
+   },
+   {
+    "en": "1"
+   },
+   {
+    "en": "2"
+   },
+   {
+    "en": "3"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Tablet figures: 25 → 30 (rise), 30 → 35 (rise), 35 → 32 (fall in 2023), 32 → 40 (rise). Only one year, 2023, shows a fall.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_data",
+  "subtopic": "Statistics – mean",
+  "difficulty": "easy",
+  "question_en": "The arithmetic mean of the first 10 natural numbers is:",
+  "options": [
+   {
+    "en": "5"
+   },
+   {
+    "en": "5.5"
+   },
+   {
+    "en": "10"
+   },
+   {
+    "en": "55"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Sum = 10 × 11 / 2 = 55, so the mean = 55 / 10 = 5.5. In general the mean of the first n natural numbers is (n + 1)/2.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_data",
+  "subtopic": "Statistics – median",
+  "difficulty": "easy",
+  "question_en": "The median of the data 7, 3, 9, 4, 12, 6 is:",
+  "options": [
+   {
+    "en": "6.5"
+   },
+   {
+    "en": "7"
+   },
+   {
+    "en": "6"
+   },
+   {
+    "en": "6.83"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Arrange in order: 3, 4, 6, 7, 9, 12. With an even count (6), median = average of the 3rd and 4th values = (6 + 7)/2 = 6.5. 6.83 is the mean, not the median.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_data",
+  "subtopic": "Statistics – mode",
+  "difficulty": "easy",
+  "question_en": "The mode of the data 2, 3, 5, 3, 7, 5, 3, 8 is:",
+  "options": [
+   {
+    "en": "3"
+   },
+   {
+    "en": "5"
+   },
+   {
+    "en": "4.5"
+   },
+   {
+    "en": "8"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "3 occurs three times, more than any other value (5 occurs twice), so the mode is 3.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_data",
+  "subtopic": "Statistics – mode",
+  "difficulty": "medium",
+  "question_en": "For a moderately skewed distribution, the mean is 25 and the median is 24. Using the empirical relation, the mode is:",
+  "options": [
+   {
+    "en": "22"
+   },
+   {
+    "en": "26"
+   },
+   {
+    "en": "23"
+   },
+   {
+    "en": "27"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Empirical relation: Mode = 3 Median − 2 Mean = 3 × 24 − 2 × 25 = 72 − 50 = 22.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_data",
+  "subtopic": "Statistics – mean",
+  "difficulty": "medium",
+  "question_en": "The mean of five numbers is 20. When one number is removed, the mean of the remaining four numbers becomes 18. The number removed is:",
+  "options": [
+   {
+    "en": "22"
+   },
+   {
+    "en": "26"
+   },
+   {
+    "en": "28"
+   },
+   {
+    "en": "30"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Sum of five = 5 × 20 = 100; sum of four = 4 × 18 = 72. Removed number = 100 − 72 = 28.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_data",
+  "subtopic": "Statistics – corrected mean",
+  "difficulty": "medium",
+  "question_en": "The average marks of 30 students was found to be 60. Later it was found that one student's marks were read as 75 instead of 45. The correct average is:",
+  "options": [
+   {
+    "en": "59"
+   },
+   {
+    "en": "61"
+   },
+   {
+    "en": "58"
+   },
+   {
+    "en": "59.5"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Wrong total = 30 × 60 = 1800. Correct total = 1800 − 75 + 45 = 1770. Correct average = 1770 / 30 = 59.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_data",
+  "subtopic": "Statistics – mean",
+  "difficulty": "hard",
+  "question_en": "Find the mean of the following frequency distribution. Values (x): 10, 20, 30, 40. Frequencies (f): 3, 5, 8, 4.",
+  "options": [
+   {
+    "en": "25"
+   },
+   {
+    "en": "28"
+   },
+   {
+    "en": "27.5"
+   },
+   {
+    "en": "26.5"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Σfx = 10×3 + 20×5 + 30×8 + 40×4 = 30 + 100 + 240 + 160 = 530. Σf = 20. Mean = 530 / 20 = 26.5. The simple average of the values (25) ignores the frequencies.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_data",
+  "subtopic": "Statistics – range and standard deviation",
+  "difficulty": "easy",
+  "question_en": "The range of the data 15, 22, 8, 31, 19 is:",
+  "options": [
+   {
+    "en": "16"
+   },
+   {
+    "en": "19"
+   },
+   {
+    "en": "23"
+   },
+   {
+    "en": "31"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Range = largest − smallest = 31 − 8 = 23.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_data",
+  "subtopic": "Statistics – range and standard deviation",
+  "difficulty": "hard",
+  "question_en": "The standard deviation of the data 2, 4, 6, 8, 10 is:",
+  "options": [
+   {
+    "en": "2"
+   },
+   {
+    "en": "2√2"
+   },
+   {
+    "en": "4"
+   },
+   {
+    "en": "8"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Mean = 30 / 5 = 6. Squared deviations: 16, 4, 0, 4, 16 → sum 40. Variance = 40 / 5 = 8, so SD = √8 = 2√2 ≈ 2.83. 8 is the variance, not the SD.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_data",
+  "subtopic": "Data interpretation – percentage profit (income and expenditure)",
+  "difficulty": "easy",
+  "question_en": "The percentage profit of companies X and Y in four years is given below (in text form).\nYear | X | Y\n2019 | 20% | 30%\n2020 | 25% | 40%\n2021 | 40% | 35%\n2022 | 30% | 50%\nPercentage profit = (Income − Expenditure)/Expenditure × 100.\nIf the expenditure of company X in 2020 was ₹240 crore, what was its income in that year?",
+  "options": [
+   {
+    "en": "₹288 crore"
+   },
+   {
+    "en": "₹300 crore"
+   },
+   {
+    "en": "₹320 crore"
+   },
+   {
+    "en": "₹264 crore"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Income = Expenditure × (1 + profit%/100) = 240 × 1.25 = ₹300 crore. ₹288 crore wrongly uses X's 2019 profit of 20%.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_data",
+  "subtopic": "Data interpretation – percentage profit (income and expenditure)",
+  "difficulty": "medium",
+  "question_en": "The percentage profit of companies X and Y in four years is given below (in text form).\nYear | X | Y\n2019 | 20% | 30%\n2020 | 25% | 40%\n2021 | 40% | 35%\n2022 | 30% | 50%\nPercentage profit = (Income − Expenditure)/Expenditure × 100.\nIf the income of company Y in 2021 was ₹270 crore, what was its expenditure in that year?",
+  "options": [
+   {
+    "en": "₹175.5 crore"
+   },
+   {
+    "en": "₹210 crore"
+   },
+   {
+    "en": "₹190 crore"
+   },
+   {
+    "en": "₹200 crore"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Income = 1.35 × Expenditure, so Expenditure = 270/1.35 = ₹200 crore. ₹175.5 crore wrongly takes 35% off the income (270 × 0.65).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_data",
+  "subtopic": "Data interpretation – percentage profit (income and expenditure)",
+  "difficulty": "medium",
+  "question_en": "The percentage profit of companies X and Y in four years is given below (in text form).\nYear | X | Y\n2019 | 20% | 30%\n2020 | 25% | 40%\n2021 | 40% | 35%\n2022 | 30% | 50%\nPercentage profit = (Income − Expenditure)/Expenditure × 100.\nIn 2022 the expenditures of X and Y were equal, and their total income was ₹504 crore. What was the expenditure of each company?",
+  "options": [
+   {
+    "en": "₹180 crore"
+   },
+   {
+    "en": "₹168 crore"
+   },
+   {
+    "en": "₹200 crore"
+   },
+   {
+    "en": "₹190 crore"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Let each expenditure be E. Income of X = 1.3E and of Y = 1.5E, so 2.8E = 504 and E = ₹180 crore.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_data",
+  "subtopic": "Data interpretation – percentage profit (income and expenditure)",
+  "difficulty": "hard",
+  "question_en": "The percentage profit of companies X and Y in four years is given below (in text form).\nYear | X | Y\n2019 | 20% | 30%\n2020 | 25% | 40%\n2021 | 40% | 35%\n2022 | 30% | 50%\nPercentage profit = (Income − Expenditure)/Expenditure × 100.\nIf the incomes of X and Y were equal in 2019, what was the ratio of the expenditure of X to that of Y?",
+  "options": [
+   {
+    "en": "12 : 13"
+   },
+   {
+    "en": "2 : 3"
+   },
+   {
+    "en": "13 : 12"
+   },
+   {
+    "en": "4 : 5"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Expenditure = Income/(1 + profit%). With equal income I: X = I/1.2 and Y = I/1.3. Ratio = 1/1.2 : 1/1.3 = 1.3 : 1.2 = 13 : 12.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_data",
+  "subtopic": "Data interpretation – table (percentage)",
+  "difficulty": "easy",
+  "question_en": "The table shows the number of cars (in thousands) produced and sold by a company.\nYear | Produced | Sold\n2020 | 120 | 100\n2021 | 150 | 132\n2022 | 160 | 128\n2023 | 200 | 180\n2024 | 175 | 147\nIn which year was the percentage of produced cars that were sold the highest?",
+  "options": [
+   {
+    "en": "2021"
+   },
+   {
+    "en": "2024"
+   },
+   {
+    "en": "2020"
+   },
+   {
+    "en": "2023"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Sold ÷ produced: 2020 83.3%, 2021 88%, 2022 80%, 2023 90%, 2024 84%. The highest is 2023.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_data",
+  "subtopic": "Data interpretation – table (totals)",
+  "difficulty": "medium",
+  "question_en": "The table shows the number of cars (in thousands) produced and sold by a company.\nYear | Produced | Sold\n2020 | 120 | 100\n2021 | 150 | 132\n2022 | 160 | 128\n2023 | 200 | 180\n2024 | 175 | 147\nHow many cars (in thousands) remained unsold over the five years taken together?",
+  "options": [
+   {
+    "en": "108"
+   },
+   {
+    "en": "118"
+   },
+   {
+    "en": "128"
+   },
+   {
+    "en": "122"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Total produced = 120 + 150 + 160 + 200 + 175 = 805. Total sold = 100 + 132 + 128 + 180 + 147 = 687. Unsold = 805 − 687 = 118 thousand.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_data",
+  "subtopic": "Data interpretation – table (average)",
+  "difficulty": "easy",
+  "question_en": "The table shows the number of cars (in thousands) produced and sold by a company.\nYear | Produced | Sold\n2020 | 120 | 100\n2021 | 150 | 132\n2022 | 160 | 128\n2023 | 200 | 180\n2024 | 175 | 147\nWhat was the average number of cars (in thousands) produced per year?",
+  "options": [
+   {
+    "en": "157"
+   },
+   {
+    "en": "165"
+   },
+   {
+    "en": "161"
+   },
+   {
+    "en": "137.4"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Total produced = 805 thousand over 5 years. Average = 805/5 = 161 thousand. 137.4 is the average of the cars sold (687/5).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_data",
+  "subtopic": "Data interpretation – table (percentage more)",
+  "difficulty": "medium",
+  "question_en": "The table shows the number of cars (in thousands) produced and sold by a company.\nYear | Produced | Sold\n2020 | 120 | 100\n2021 | 150 | 132\n2022 | 160 | 128\n2023 | 200 | 180\n2024 | 175 | 147\nThe number of cars sold in 2023 is what percentage more than the number sold in 2020?",
+  "options": [
+   {
+    "en": "80%"
+   },
+   {
+    "en": "44.4%"
+   },
+   {
+    "en": "66.7%"
+   },
+   {
+    "en": "75%"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Increase = 180 − 100 = 80 thousand on a base of 100 thousand (2020), so 80/100 × 100 = 80% more. 44.4% wrongly divides by 180.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_data",
+  "subtopic": "Statistics – combined mean",
+  "difficulty": "easy",
+  "question_en": "The mean marks of 30 boys in a class are 60 and the mean marks of 20 girls are 70. What are the mean marks of the whole class?",
+  "options": [
+   {
+    "en": "65"
+   },
+   {
+    "en": "64"
+   },
+   {
+    "en": "66"
+   },
+   {
+    "en": "62"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Combined mean = (30 × 60 + 20 × 70)/(30 + 20) = (1800 + 1400)/50 = 3200/50 = 64. The simple average of 60 and 70 (65) ignores the group sizes.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_data",
+  "subtopic": "Statistics – median",
+  "difficulty": "easy",
+  "question_en": "What is the median of 21, 15, 34, 18, 27, 40 and 12?",
+  "options": [
+   {
+    "en": "18"
+   },
+   {
+    "en": "27"
+   },
+   {
+    "en": "24"
+   },
+   {
+    "en": "21"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Arrange in order: 12, 15, 18, 21, 27, 34, 40. With 7 values the median is the 4th value, 21. (The mean is 167/7 ≈ 23.9.)",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_data",
+  "subtopic": "Statistics – effect of changing every observation",
+  "difficulty": "medium",
+  "question_en": "The mean of 10 observations is 25. If 5 is added to each observation and every result is then multiplied by 2, what is the new mean?",
+  "options": [
+   {
+    "en": "55"
+   },
+   {
+    "en": "50"
+   },
+   {
+    "en": "60"
+   },
+   {
+    "en": "70"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The mean follows the same operations as each value: (25 + 5) × 2 = 60. 55 comes from doing the steps in the wrong order (25 × 2 + 5).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_data",
+  "subtopic": "Statistics – mean and median",
+  "difficulty": "medium",
+  "question_en": "The mean of the data 4, 7, x, 9, 10, 12 is 8. What is the median of the data?",
+  "options": [
+   {
+    "en": "8"
+   },
+   {
+    "en": "7.5"
+   },
+   {
+    "en": "9"
+   },
+   {
+    "en": "7"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Sum = 6 × 8 = 48, so 42 + x = 48 and x = 6. Ordered data: 4, 6, 7, 9, 10, 12. Median = (7 + 9)/2 = 8.",
+  "pyq_concept": true
+ }
+]

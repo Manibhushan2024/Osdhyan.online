@@ -1,0 +1,2325 @@
+[
+ {
+  "chapter_key": "num_number",
+  "subtopic": "Number system – sum of natural numbers",
+  "difficulty": "easy",
+  "question_en": "What is the sum of the first 20 natural numbers?",
+  "options": [
+   {
+    "en": "200"
+   },
+   {
+    "en": "220"
+   },
+   {
+    "en": "190"
+   },
+   {
+    "en": "210"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Sum = n(n + 1)/2 = 20 × 21 / 2 = 210.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_number",
+  "subtopic": "Number system – unit digit",
+  "difficulty": "medium",
+  "question_en": "What is the unit digit of 7^243?",
+  "options": [
+   {
+    "en": "1"
+   },
+   {
+    "en": "3"
+   },
+   {
+    "en": "7"
+   },
+   {
+    "en": "9"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Unit digits of powers of 7 repeat in a cycle of 4: 7, 9, 3, 1. 243 = 4 × 60 + 3, so the unit digit is the 3rd in the cycle, 3.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_number",
+  "subtopic": "Number system – divisibility by 11",
+  "difficulty": "easy",
+  "question_en": "Which of the following numbers is divisible by 11?",
+  "options": [
+   {
+    "en": "3685"
+   },
+   {
+    "en": "4372"
+   },
+   {
+    "en": "5281"
+   },
+   {
+    "en": "6153"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Test: (sum of digits at odd places) − (sum at even places) should be 0 or a multiple of 11. For 3685: (3 + 8) − (6 + 5) = 0, so it is divisible (3685 = 11 × 335). The others give differences of 6 (4372), 10 (5281) and 7 (6153), so they are not divisible.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_number",
+  "subtopic": "Number system – greatest number divisible",
+  "difficulty": "easy",
+  "question_en": "What is the greatest 4-digit number divisible by 12?",
+  "options": [
+   {
+    "en": "9998"
+   },
+   {
+    "en": "9990"
+   },
+   {
+    "en": "9996"
+   },
+   {
+    "en": "9984"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "9999 ÷ 12 leaves remainder 3, so subtract 3: 9996 = 12 × 833.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_number",
+  "subtopic": "Number system – remainders of powers",
+  "difficulty": "medium",
+  "question_en": "What is the remainder when 2^50 is divided by 7?",
+  "options": [
+   {
+    "en": "4"
+   },
+   {
+    "en": "1"
+   },
+   {
+    "en": "2"
+   },
+   {
+    "en": "3"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "2^3 = 8 leaves remainder 1 when divided by 7. 2^50 = (2^3)^16 × 2^2 = 1 × 4, so the remainder is 4.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_number",
+  "subtopic": "Number system – prime numbers",
+  "difficulty": "easy",
+  "question_en": "How many prime numbers are there between 1 and 30?",
+  "options": [
+   {
+    "en": "9"
+   },
+   {
+    "en": "11"
+   },
+   {
+    "en": "10"
+   },
+   {
+    "en": "12"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The primes are 2, 3, 5, 7, 11, 13, 17, 19, 23, 29 — ten in all.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_number",
+  "subtopic": "Number system – counting multiples",
+  "difficulty": "medium",
+  "question_en": "How many numbers between 100 and 200 are divisible by 7?",
+  "options": [
+   {
+    "en": "13"
+   },
+   {
+    "en": "15"
+   },
+   {
+    "en": "12"
+   },
+   {
+    "en": "14"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The first multiple is 105 = 7 × 15 and the last is 196 = 7 × 28. Count = 28 − 15 + 1 = 14.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_number",
+  "subtopic": "Number system – remainders",
+  "difficulty": "hard",
+  "question_en": "What is the smallest positive number which leaves remainder 3 when divided by 5 and remainder 5 when divided by 7?",
+  "options": [
+   {
+    "en": "28"
+   },
+   {
+    "en": "33"
+   },
+   {
+    "en": "38"
+   },
+   {
+    "en": "23"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Numbers leaving remainder 5 with 7 are 5, 12, 19, 26, 33, ... Checking remainder 3 with 5: 33 = 5 × 6 + 3. So the smallest is 33.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_number",
+  "subtopic": "HCF – prime factorisation",
+  "difficulty": "easy",
+  "question_en": "What is the HCF of 36 and 84?",
+  "options": [
+   {
+    "en": "12"
+   },
+   {
+    "en": "6"
+   },
+   {
+    "en": "18"
+   },
+   {
+    "en": "24"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "36 = 2^2 × 3^2 and 84 = 2^2 × 3 × 7. Common part = 2^2 × 3 = 12.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_number",
+  "subtopic": "LCM – prime factorisation",
+  "difficulty": "easy",
+  "question_en": "What is the LCM of 12, 18 and 24?",
+  "options": [
+   {
+    "en": "36"
+   },
+   {
+    "en": "72"
+   },
+   {
+    "en": "144"
+   },
+   {
+    "en": "48"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "12 = 2^2 × 3, 18 = 2 × 3^2, 24 = 2^3 × 3. LCM = 2^3 × 3^2 = 72.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_number",
+  "subtopic": "HCF × LCM = product",
+  "difficulty": "medium",
+  "question_en": "The product of two numbers is 1620 and their HCF is 9. What is their LCM?",
+  "options": [
+   {
+    "en": "162"
+   },
+   {
+    "en": "90"
+   },
+   {
+    "en": "180"
+   },
+   {
+    "en": "270"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "HCF × LCM = product of the numbers. LCM = 1620 / 9 = 180.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_number",
+  "subtopic": "LCM – same remainder",
+  "difficulty": "medium",
+  "question_en": "What is the smallest number which, when divided by 8, 12 and 15, leaves a remainder of 5 in each case?",
+  "options": [
+   {
+    "en": "120"
+   },
+   {
+    "en": "245"
+   },
+   {
+    "en": "115"
+   },
+   {
+    "en": "125"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "LCM of 8, 12, 15 = 120. The required number = 120 + 5 = 125.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_number",
+  "subtopic": "LCM – bells ringing together",
+  "difficulty": "medium",
+  "question_en": "Three bells ring at intervals of 12, 18 and 30 minutes. If they ring together at 8:00 a.m., when will they next ring together?",
+  "options": [
+   {
+    "en": "10:00 a.m."
+   },
+   {
+    "en": "11:30 a.m."
+   },
+   {
+    "en": "12:00 noon"
+   },
+   {
+    "en": "11:00 a.m."
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "LCM of 12, 18, 30 = 180 minutes = 3 hours. So they ring together again at 11:00 a.m.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_number",
+  "subtopic": "HCF – given remainders",
+  "difficulty": "hard",
+  "question_en": "What is the greatest number that divides 70 and 125, leaving remainders 5 and 8 respectively?",
+  "options": [
+   {
+    "en": "11"
+   },
+   {
+    "en": "17"
+   },
+   {
+    "en": "13"
+   },
+   {
+    "en": "9"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "The number divides 70 − 5 = 65 and 125 − 8 = 117. HCF(65, 117) = 13, and 13 is greater than both remainders.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_number",
+  "subtopic": "HCF × LCM = product",
+  "difficulty": "medium",
+  "question_en": "The HCF and LCM of two numbers are 12 and 144 respectively. If one number is 48, the other is:",
+  "options": [
+   {
+    "en": "72"
+   },
+   {
+    "en": "36"
+   },
+   {
+    "en": "24"
+   },
+   {
+    "en": "60"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Product of the numbers = HCF × LCM = 12 × 144 = 1728. Other number = 1728 / 48 = 36.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_number",
+  "subtopic": "HCF and LCM of fractions",
+  "difficulty": "medium",
+  "question_en": "What is the HCF of 2/3, 4/9 and 8/27?",
+  "options": [
+   {
+    "en": "2/27"
+   },
+   {
+    "en": "8/3"
+   },
+   {
+    "en": "4/27"
+   },
+   {
+    "en": "2/3"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "HCF of fractions = HCF of numerators / LCM of denominators = HCF(2, 4, 8) / LCM(3, 9, 27) = 2/27. (8/3 is their LCM.)",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_number",
+  "subtopic": "Simplification – BODMAS",
+  "difficulty": "easy",
+  "question_en": "Simplify: 15 + 3 × 12 ÷ 4 − 6",
+  "options": [
+   {
+    "en": "18"
+   },
+   {
+    "en": "27"
+   },
+   {
+    "en": "12"
+   },
+   {
+    "en": "21"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "By BODMAS: 3 × 12 = 36, 36 ÷ 4 = 9; then 15 + 9 − 6 = 18.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_number",
+  "subtopic": "Simplification – BODMAS",
+  "difficulty": "easy",
+  "question_en": "Simplify: 0.25 × 0.4 + 0.5",
+  "options": [
+   {
+    "en": "0.75"
+   },
+   {
+    "en": "0.6"
+   },
+   {
+    "en": "0.9"
+   },
+   {
+    "en": "0.35"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "0.25 × 0.4 = 0.1. Adding 0.5 gives 0.6.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_number",
+  "subtopic": "Simplification – algebraic identities in arithmetic",
+  "difficulty": "medium",
+  "question_en": "What is the value of (25² − 15²) ÷ 40?",
+  "options": [
+   {
+    "en": "15"
+   },
+   {
+    "en": "20"
+   },
+   {
+    "en": "10"
+   },
+   {
+    "en": "5"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "25² − 15² = (25 − 15)(25 + 15) = 10 × 40 = 400. Dividing by 40 gives 10.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_number",
+  "subtopic": "Simplification – BODMAS",
+  "difficulty": "medium",
+  "question_en": "Simplify: √1521 ÷ 13 + 2^5",
+  "options": [
+   {
+    "en": "41"
+   },
+   {
+    "en": "67"
+   },
+   {
+    "en": "44"
+   },
+   {
+    "en": "35"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "√1521 = 39 (39² = 1521). 39 ÷ 13 = 3, and 2^5 = 32, so the value is 35.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_number",
+  "subtopic": "Simplification – algebraic identities in arithmetic",
+  "difficulty": "medium",
+  "question_en": "What is the value of (0.8 × 0.8 + 0.2 × 0.2 + 2 × 0.8 × 0.2)?",
+  "options": [
+   {
+    "en": "0.8"
+   },
+   {
+    "en": "1"
+   },
+   {
+    "en": "1.2"
+   },
+   {
+    "en": "0.64"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "The expression is a² + b² + 2ab with a = 0.8, b = 0.2, which equals (a + b)² = (1.0)² = 1. Directly: 0.64 + 0.04 + 0.32 = 1.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_number",
+  "subtopic": "Simplification – fractions with 'of'",
+  "difficulty": "easy",
+  "question_en": "Simplify: 7/8 of 96 − 5/6 of 72",
+  "options": [
+   {
+    "en": "28"
+   },
+   {
+    "en": "30"
+   },
+   {
+    "en": "24"
+   },
+   {
+    "en": "18"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "7/8 of 96 = 84 and 5/6 of 72 = 60. The difference is 84 − 60 = 24.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_number",
+  "subtopic": "Simplification – BODMAS with fractions",
+  "difficulty": "hard",
+  "question_en": "Simplify: 2/3 ÷ 4/9 × 3/4 − 1/2",
+  "options": [
+   {
+    "en": "9/8"
+   },
+   {
+    "en": "3/8"
+   },
+   {
+    "en": "7/8"
+   },
+   {
+    "en": "5/8"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "BODMAS: ÷ and × from left to right. 2/3 ÷ 4/9 = 2/3 × 9/4 = 3/2. Then 3/2 × 3/4 = 9/8. Finally 9/8 − 1/2 = 9/8 − 4/8 = 5/8.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_number",
+  "subtopic": "Simplification – percentages of numbers",
+  "difficulty": "medium",
+  "question_en": "Find the value of 48.5% of 1200 + 12.5% of 640.",
+  "options": [
+   {
+    "en": "662"
+   },
+   {
+    "en": "582"
+   },
+   {
+    "en": "680"
+   },
+   {
+    "en": "650"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "48.5% of 1200 = 582 and 12.5% of 640 = 80. Sum = 662.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_number",
+  "subtopic": "Number system – divisibility by 72",
+  "difficulty": "medium",
+  "question_en": "If the 6-digit number 52x34y is divisible by 72, what is the maximum possible value of (x + y)?",
+  "options": [
+   {
+    "en": "13"
+   },
+   {
+    "en": "4"
+   },
+   {
+    "en": "9"
+   },
+   {
+    "en": "12"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "72 = 8 × 9. For 8, the last three digits 34y must be divisible by 8: only 344 works, so y = 4. For 9, the digit sum 5 + 2 + x + 3 + 4 + 4 = 18 + x must be a multiple of 9, so x = 0 or 9. Maximum x + y = 9 + 4 = 13.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_number",
+  "subtopic": "HCF – same remainder",
+  "difficulty": "medium",
+  "question_en": "When 1352, 2169 and 3158 are divided by the greatest possible number n, the remainder is r in each case. What is the value of (n + r)?",
+  "options": [
+   {
+    "en": "57"
+   },
+   {
+    "en": "62"
+   },
+   {
+    "en": "64"
+   },
+   {
+    "en": "66"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "n divides the differences: 2169 − 1352 = 817 = 43 × 19 and 3158 − 2169 = 989 = 43 × 23, so n = HCF = 43. Remainder r = 1352 − 43 × 31 = 1352 − 1333 = 19. n + r = 43 + 19 = 62.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_number",
+  "subtopic": "LCM – remainder with divisibility",
+  "difficulty": "hard",
+  "question_en": "Let N be the least number which, when divided by 12, 15, 20 and 54, leaves a remainder of 8 in each case, and N is divisible by 11. What is the sum of the digits of N?",
+  "options": [
+   {
+    "en": "15"
+   },
+   {
+    "en": "16"
+   },
+   {
+    "en": "17"
+   },
+   {
+    "en": "18"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "LCM(12, 15, 20, 54) = 2² × 3³ × 5 = 540, so N = 540k + 8. Since 540 = 11 × 49 + 1, N leaves remainder k + 8 on division by 11; k = 3 makes it 11. N = 540 × 3 + 8 = 1628 = 11 × 148. Digit sum = 1 + 6 + 2 + 8 = 17.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_number",
+  "subtopic": "Simplification – 'of' before division",
+  "difficulty": "medium",
+  "question_en": "The value of 3/4 of 2 2/3 ÷ 1 1/3 of 3/8 + 1/2 is:",
+  "options": [
+   {
+    "en": "1 1/16"
+   },
+   {
+    "en": "2 1/2"
+   },
+   {
+    "en": "3 3/4"
+   },
+   {
+    "en": "4 1/2"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "'of' is done before ÷. 3/4 of 8/3 = 2, and 4/3 of 3/8 = 1/2. Then 2 ÷ 1/2 = 4, and 4 + 1/2 = 4 1/2. Doing ÷ before 'of' gives the wrong 1 1/16.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_number",
+  "subtopic": "Number system – recurring decimals",
+  "difficulty": "medium",
+  "question_en": "The decimal 0.47̄ (only the 7 recurring) written as a fraction is:",
+  "options": [
+   {
+    "en": "43/90"
+   },
+   {
+    "en": "47/99"
+   },
+   {
+    "en": "47/90"
+   },
+   {
+    "en": "43/99"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Mixed recurring rule: (all the digits − the non-recurring part) ÷ (one 9 for each recurring digit followed by one 0 for each non-recurring digit) = (47 − 4)/90 = 43/90. 47/99 would be 0.4747… (both digits recurring).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_number",
+  "subtopic": "Number system – number of factors",
+  "difficulty": "medium",
+  "question_en": "How many factors (divisors) does 540 have?",
+  "options": [
+   {
+    "en": "18"
+   },
+   {
+    "en": "24"
+   },
+   {
+    "en": "20"
+   },
+   {
+    "en": "30"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "540 = 2² × 3³ × 5¹. Number of factors = (2 + 1)(3 + 1)(1 + 1) = 3 × 4 × 2 = 24.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_number",
+  "subtopic": "Number system – unit digit",
+  "difficulty": "hard",
+  "question_en": "What is the unit digit of 3^65 × 6^59 × 7^71?",
+  "options": [
+   {
+    "en": "2"
+   },
+   {
+    "en": "6"
+   },
+   {
+    "en": "4"
+   },
+   {
+    "en": "8"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Unit digits of 3 cycle 3, 9, 7, 1: 65 = 4 × 16 + 1 → 3. Any power of 6 ends in 6. Unit digits of 7 cycle 7, 9, 3, 1: 71 = 4 × 17 + 3 → 3. Product of unit digits 3 × 6 × 3 = 54 → unit digit 4.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_number",
+  "subtopic": "Simplification – BODMAS",
+  "difficulty": "easy",
+  "question_en": "What is the value of 48 ÷ 12 × 3 + 64 ÷ 8 × 2 − 15 ÷ 5 × 4?",
+  "options": [
+   {
+    "en": "12"
+   },
+   {
+    "en": "18"
+   },
+   {
+    "en": "10"
+   },
+   {
+    "en": "16"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Division and multiplication from left to right first: 48 ÷ 12 × 3 = 4 × 3 = 12; 64 ÷ 8 × 2 = 8 × 2 = 16; 15 ÷ 5 × 4 = 3 × 4 = 12. Then 12 + 16 − 12 = 16.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_number",
+  "subtopic": "Number system – sum of an arithmetic sequence",
+  "difficulty": "medium",
+  "question_en": "What is the sum of all two-digit numbers that are divisible by 6?",
+  "options": [
+   {
+    "en": "810"
+   },
+   {
+    "en": "816"
+   },
+   {
+    "en": "750"
+   },
+   {
+    "en": "864"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Two-digit multiples of 6 run from 12 to 96: count = (96 − 12)/6 + 1 = 15. Sum = n/2 × (first + last) = 15/2 × (12 + 96) = 15 × 54 = 810.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_percent",
+  "subtopic": "Percentage – successive change",
+  "difficulty": "medium",
+  "question_en": "A number is first increased by 20% and then decreased by 20%. What is the net change?",
+  "options": [
+   {
+    "en": "No change"
+   },
+   {
+    "en": "4% increase"
+   },
+   {
+    "en": "4% decrease"
+   },
+   {
+    "en": "2% decrease"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Let the number be 100. After +20% → 120. After −20% of 120 (= 24) → 96. Net = 4% decrease. (Rule: x − y − xy/100 = 20 − 20 − 4 = −4.)",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_percent",
+  "subtopic": "Percentage – population growth",
+  "difficulty": "medium",
+  "question_en": "The population of a town is 25,000. If it increases by 10% every year, what will it be after 2 years?",
+  "options": [
+   {
+    "en": "30,000"
+   },
+   {
+    "en": "30,250"
+   },
+   {
+    "en": "27,500"
+   },
+   {
+    "en": "31,000"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Population = 25000 × (1.1)² = 25000 × 1.21 = 30,250. (30,000 is what simple growth would give; 27,500 is only one year's growth.)",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_percent",
+  "subtopic": "Percentage – examination marks",
+  "difficulty": "medium",
+  "question_en": "In an examination, the pass mark is 40%. A student scores 120 marks and fails by 20 marks. What are the maximum marks?",
+  "options": [
+   {
+    "en": "300"
+   },
+   {
+    "en": "400"
+   },
+   {
+    "en": "325"
+   },
+   {
+    "en": "350"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Pass marks = 120 + 20 = 140. 40% of M = 140, so M = 140 × 100 / 40 = 350.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_percent",
+  "subtopic": "Percentage – price rise and consumption",
+  "difficulty": "medium",
+  "question_en": "The price of sugar increases by 25%. By what percentage must a family cut its consumption so that its expenditure remains unchanged?",
+  "options": [
+   {
+    "en": "25%"
+   },
+   {
+    "en": "16.67%"
+   },
+   {
+    "en": "30%"
+   },
+   {
+    "en": "20%"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Reduction % = r / (100 + r) × 100 = 25/125 × 100 = 20%. (Taking 25% is the common mistake.)",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_percent",
+  "subtopic": "Percentage – \"more than / less than\"",
+  "difficulty": "hard",
+  "question_en": "If x is 20% more than y, then y is what percent less than x?",
+  "options": [
+   {
+    "en": "16 2/3%"
+   },
+   {
+    "en": "20%"
+   },
+   {
+    "en": "15%"
+   },
+   {
+    "en": "18 1/3%"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Let y = 100, so x = 120. y is less than x by 20, i.e. 20/120 × 100 = 16 2/3%.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_percent",
+  "subtopic": "Percentage – income, expenditure and savings",
+  "difficulty": "hard",
+  "question_en": "Ravi spends 80% of his income. If his income increases by 20% and his expenditure increases by 10%, what is the percentage increase in his savings?",
+  "options": [
+   {
+    "en": "40%"
+   },
+   {
+    "en": "60%"
+   },
+   {
+    "en": "50%"
+   },
+   {
+    "en": "75%"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Take income = 100: expenditure 80, saving 20. New income 120, new expenditure 88, new saving 32. Increase = 12/20 × 100 = 60%.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_percent",
+  "subtopic": "Ratio – compound ratio A : B : C",
+  "difficulty": "medium",
+  "question_en": "If A : B = 2 : 3 and B : C = 4 : 5, then A : B : C is:",
+  "options": [
+   {
+    "en": "2 : 3 : 5"
+   },
+   {
+    "en": "8 : 6 : 5"
+   },
+   {
+    "en": "10 : 15 : 12"
+   },
+   {
+    "en": "8 : 12 : 15"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Make B equal: multiply the first ratio by 4 and the second by 3. A : B = 8 : 12 and B : C = 12 : 15, so A : B : C = 8 : 12 : 15.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_percent",
+  "subtopic": "Ratio – change in ratio",
+  "difficulty": "medium",
+  "question_en": "Two numbers are in the ratio 3 : 5. If 10 is added to each, the ratio becomes 5 : 7. What is the smaller number?",
+  "options": [
+   {
+    "en": "9"
+   },
+   {
+    "en": "12"
+   },
+   {
+    "en": "18"
+   },
+   {
+    "en": "15"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Let the numbers be 3x and 5x. (3x + 10)/(5x + 10) = 5/7 gives 21x + 70 = 25x + 50, so x = 5. Smaller number = 15 (the numbers are 15 and 25).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_percent",
+  "subtopic": "Ratio – division in fractional ratio",
+  "difficulty": "medium",
+  "question_en": "₹810 is divided among A, B and C in the ratio 1/2 : 1/3 : 1/6. What is A's share?",
+  "options": [
+   {
+    "en": "₹270"
+   },
+   {
+    "en": "₹135"
+   },
+   {
+    "en": "₹405"
+   },
+   {
+    "en": "₹300"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Multiply by 6: 3 : 2 : 1 (sum 6). A's share = 3/6 × 810 = ₹405.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_percent",
+  "subtopic": "Ratio – income and expenditure",
+  "difficulty": "hard",
+  "question_en": "The incomes of A and B are in the ratio 5 : 4 and their expenditures are in the ratio 3 : 2. If each saves ₹1,600, what is A's income?",
+  "options": [
+   {
+    "en": "₹3,200"
+   },
+   {
+    "en": "₹4,000"
+   },
+   {
+    "en": "₹5,000"
+   },
+   {
+    "en": "₹2,400"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Let incomes be 5x, 4x and expenses 3y, 2y. 5x − 3y = 1600 and 4x − 2y = 1600. From the second, y = 2x − 800. Substituting: 5x − 6x + 2400 = 1600, so x = 800. A's income = 5 × 800 = ₹4,000 (B's income is ₹3,200).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_percent",
+  "subtopic": "Average – including a new member",
+  "difficulty": "medium",
+  "question_en": "The average age of 40 students is 15 years. When the teacher's age is included, the average rises to 16 years. What is the teacher's age?",
+  "options": [
+   {
+    "en": "45 years"
+   },
+   {
+    "en": "56 years"
+   },
+   {
+    "en": "50 years"
+   },
+   {
+    "en": "41 years"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Total with teacher = 41 × 16 = 656. Total of students = 40 × 15 = 600. Teacher's age = 656 − 600 = 56 years.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_percent",
+  "subtopic": "Average – overlapping groups",
+  "difficulty": "hard",
+  "question_en": "The average of 11 results is 50. The average of the first six is 49 and of the last six is 52. What is the sixth result?",
+  "options": [
+   {
+    "en": "52"
+   },
+   {
+    "en": "60"
+   },
+   {
+    "en": "56"
+   },
+   {
+    "en": "54"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Sum of first six + sum of last six = 6 × 49 + 6 × 52 = 294 + 312 = 606. This counts the sixth result twice. Total of all 11 = 550, so sixth result = 606 − 550 = 56.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_percent",
+  "subtopic": "Average – batting average",
+  "difficulty": "medium",
+  "question_en": "A batsman scores 61 runs in his 12th innings and thereby raises his average by 3. What is his average after the 12th innings?",
+  "options": [
+   {
+    "en": "25"
+   },
+   {
+    "en": "31"
+   },
+   {
+    "en": "28"
+   },
+   {
+    "en": "30"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Let the average after 11 innings be x. 11x + 61 = 12(x + 3) gives x = 25. New average = 28.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_percent",
+  "subtopic": "Average – replacement",
+  "difficulty": "medium",
+  "question_en": "The average weight of 8 persons increases by 2.5 kg when a new person replaces one weighing 65 kg. What is the weight of the new person?",
+  "options": [
+   {
+    "en": "80 kg"
+   },
+   {
+    "en": "85 kg"
+   },
+   {
+    "en": "82.5 kg"
+   },
+   {
+    "en": "90 kg"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Total weight increases by 8 × 2.5 = 20 kg. New person's weight = 65 + 20 = 85 kg.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_percent",
+  "subtopic": "Profit & loss – cost price from loss",
+  "difficulty": "easy",
+  "question_en": "A trader sells an article at a loss of 20% for ₹640. What is its cost price?",
+  "options": [
+   {
+    "en": "₹768"
+   },
+   {
+    "en": "₹720"
+   },
+   {
+    "en": "₹850"
+   },
+   {
+    "en": "₹800"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "SP = 80% of CP, so CP = 640 / 0.8 = ₹800.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_percent",
+  "subtopic": "Discount – successive discounts",
+  "difficulty": "medium",
+  "question_en": "What single discount is equivalent to successive discounts of 20% and 10%?",
+  "options": [
+   {
+    "en": "30%"
+   },
+   {
+    "en": "28%"
+   },
+   {
+    "en": "27%"
+   },
+   {
+    "en": "25%"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Net multiplier = 0.8 × 0.9 = 0.72, so the net discount = 28%. (Adding to 30% is the common mistake.)",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_percent",
+  "subtopic": "Profit & loss – mark-up and discount",
+  "difficulty": "medium",
+  "question_en": "A shopkeeper marks his goods 25% above the cost price and allows a discount of 10%. What is his profit percentage?",
+  "options": [
+   {
+    "en": "15%"
+   },
+   {
+    "en": "12.5%"
+   },
+   {
+    "en": "10%"
+   },
+   {
+    "en": "13.5%"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Let CP = 100. Marked price = 125. SP = 125 × 0.9 = 112.5. Profit = 12.5%.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_percent",
+  "subtopic": "Profit & loss – equal selling prices",
+  "difficulty": "medium",
+  "question_en": "Two articles are sold at ₹1,200 each, one at a profit of 20% and the other at a loss of 20%. What is the overall result?",
+  "options": [
+   {
+    "en": "No profit, no loss"
+   },
+   {
+    "en": "Profit of 4%"
+   },
+   {
+    "en": "Loss of 2%"
+   },
+   {
+    "en": "Loss of 4%"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "CP of first = 1200/1.2 = 1000; CP of second = 1200/0.8 = 1500. Total CP = 2500, total SP = 2400. Loss = 100, i.e. 4% of 2500 (formula: loss % = (20/10)² = 4%).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_percent",
+  "subtopic": "Profit & loss – articles bought and sold",
+  "difficulty": "medium",
+  "question_en": "The cost price of 12 articles is equal to the selling price of 10 articles. What is the profit percentage?",
+  "options": [
+   {
+    "en": "16.67%"
+   },
+   {
+    "en": "25%"
+   },
+   {
+    "en": "20%"
+   },
+   {
+    "en": "15%"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "12 CP = 10 SP, so SP/CP = 12/10 = 1.2. Profit = 20%.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_percent",
+  "subtopic": "Profit & loss – change in selling price",
+  "difficulty": "hard",
+  "question_en": "A man sells an article at a loss of 10%. Had he sold it for ₹150 more, he would have gained 5%. What is the cost price?",
+  "options": [
+   {
+    "en": "₹1,000"
+   },
+   {
+    "en": "₹1,200"
+   },
+   {
+    "en": "₹1,500"
+   },
+   {
+    "en": "₹900"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "The difference between 105% and 90% of CP is 15% of CP = ₹150. So CP = 150/0.15 = ₹1,000.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_percent",
+  "subtopic": "Simple interest – principal from amount",
+  "difficulty": "medium",
+  "question_en": "A sum of money amounts to ₹6,600 in 5 years at 10% per annum simple interest. What is the sum?",
+  "options": [
+   {
+    "en": "₹4,400"
+   },
+   {
+    "en": "₹5,000"
+   },
+   {
+    "en": "₹5,500"
+   },
+   {
+    "en": "₹4,000"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Amount = P(1 + RT/100) = P(1 + 0.5) = 1.5P. P = 6600 / 1.5 = ₹4,400.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_percent",
+  "subtopic": "Compound interest – annual",
+  "difficulty": "easy",
+  "question_en": "What is the compound interest on ₹10,000 at 10% per annum for 2 years?",
+  "options": [
+   {
+    "en": "₹2,000"
+   },
+   {
+    "en": "₹2,200"
+   },
+   {
+    "en": "₹1,100"
+   },
+   {
+    "en": "₹2,100"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Amount = 10000 × 1.1² = 12,100. CI = 12,100 − 10,000 = ₹2,100.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_percent",
+  "subtopic": "CI and SI – difference for 2 years",
+  "difficulty": "medium",
+  "question_en": "What is the difference between the compound interest and simple interest on ₹5,000 at 10% per annum for 2 years?",
+  "options": [
+   {
+    "en": "₹25"
+   },
+   {
+    "en": "₹50"
+   },
+   {
+    "en": "₹100"
+   },
+   {
+    "en": "₹500"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "For 2 years the difference = P(R/100)² = 5000 × (0.1)² = ₹50. (CI = 1050, SI = 1000.)",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_percent",
+  "subtopic": "Simple interest – doubling time",
+  "difficulty": "medium",
+  "question_en": "At what rate of simple interest per annum will a sum of money double itself in 8 years?",
+  "options": [
+   {
+    "en": "12.5%"
+   },
+   {
+    "en": "10%"
+   },
+   {
+    "en": "8%"
+   },
+   {
+    "en": "15%"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Interest = P in 8 years, so P = P × R × 8 / 100, giving R = 100/8 = 12.5%.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_percent",
+  "subtopic": "Compound interest – principal from amount",
+  "difficulty": "medium",
+  "question_en": "A sum of money invested at 8% compound interest per annum amounts to ₹5,832 in 2 years. What is the sum?",
+  "options": [
+   {
+    "en": "₹5,200"
+   },
+   {
+    "en": "₹4,800"
+   },
+   {
+    "en": "₹5,000"
+   },
+   {
+    "en": "₹5,400"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "P × 1.08² = 5832 and 1.08² = 1.1664. P = 5832 / 1.1664 = ₹5,000.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_percent",
+  "subtopic": "Compound interest – half-yearly",
+  "difficulty": "hard",
+  "question_en": "What is the compound interest on ₹12,000 for 1.5 years at 10% per annum, compounded half-yearly?",
+  "options": [
+   {
+    "en": "₹1,800"
+   },
+   {
+    "en": "₹1,900"
+   },
+   {
+    "en": "₹1,860"
+   },
+   {
+    "en": "₹1,891.50"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Rate per half-year = 5%, number of half-years = 3. Amount = 12000 × 1.05³ = 12000 × 1.157625 = 13,891.50. CI = ₹1,891.50. (₹1,800 is the simple interest.)",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_percent",
+  "subtopic": "CI and SI – from SI to CI",
+  "difficulty": "hard",
+  "question_en": "The simple interest on a sum of money for 2 years at 5% per annum is ₹500. What is the compound interest on the same sum at the same rate for 2 years?",
+  "options": [
+   {
+    "en": "₹512.50"
+   },
+   {
+    "en": "₹525"
+   },
+   {
+    "en": "₹500"
+   },
+   {
+    "en": "₹550"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "P = 500 / (0.05 × 2) = ₹5,000. CI = 5000 × (1.05² − 1) = 5000 × 0.1025 = ₹512.50.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_percent",
+  "subtopic": "Problems on ages – present ages",
+  "difficulty": "easy",
+  "question_en": "A father is 3 times as old as his son. After 12 years he will be twice as old as his son. What is the present age of the son?",
+  "options": [
+   {
+    "en": "10 years"
+   },
+   {
+    "en": "14 years"
+   },
+   {
+    "en": "16 years"
+   },
+   {
+    "en": "12 years"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Let the son be S, father 3S. 3S + 12 = 2(S + 12), so S = 12 (father is 36).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_percent",
+  "subtopic": "Problems on ages – ratio of ages",
+  "difficulty": "medium",
+  "question_en": "The present ages of A and B are in the ratio 5 : 7. After 6 years the ratio will be 3 : 4. What is the present age of A?",
+  "options": [
+   {
+    "en": "30 years"
+   },
+   {
+    "en": "35 years"
+   },
+   {
+    "en": "25 years"
+   },
+   {
+    "en": "36 years"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Let the ages be 5x and 7x. (5x + 6)/(7x + 6) = 3/4 gives 20x + 24 = 21x + 18, so x = 6. A = 30 years (B = 42 years).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_percent",
+  "subtopic": "Problems on ages – present ages",
+  "difficulty": "medium",
+  "question_en": "The sum of the ages of a mother and her daughter is 56 years. Four years ago the mother's age was 7 times the daughter's age. What is the mother's present age?",
+  "options": [
+   {
+    "en": "46 years"
+   },
+   {
+    "en": "44 years"
+   },
+   {
+    "en": "48 years"
+   },
+   {
+    "en": "42 years"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Let the daughter be D, mother M = 56 − D. M − 4 = 7(D − 4) gives 52 − D = 7D − 28, so D = 10 and M = 46. Check: 42 = 7 × 6.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_percent",
+  "subtopic": "Problems on ages – ratio of ages",
+  "difficulty": "hard",
+  "question_en": "Six years ago the ratio of the ages of A and B was 6 : 5. Four years from now it will be 11 : 10. What is the present age of B?",
+  "options": [
+   {
+    "en": "18 years"
+   },
+   {
+    "en": "14 years"
+   },
+   {
+    "en": "16 years"
+   },
+   {
+    "en": "20 years"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Let their ages six years ago be 6k and 5k. Four years hence: (6k + 10)/(5k + 10) = 11/10, so 60k + 100 = 55k + 110 and k = 2. Present ages: A = 18, B = 16.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_percent",
+  "subtopic": "Partnership – capital changed during the year",
+  "difficulty": "medium",
+  "question_en": "A and B start a business with capitals in the ratio 3/4 : 2/3. After 6 months, A withdraws one-third of his capital and B increases his capital by 50%. Out of a total profit of ₹1,40,000 at the end of the year, what is B's share?",
+  "options": [
+   {
+    "en": "₹60,000"
+   },
+   {
+    "en": "₹70,000"
+   },
+   {
+    "en": "₹80,000"
+   },
+   {
+    "en": "₹75,000"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "3/4 : 2/3 = 9 : 8. A: 9 × 6 + 6 × 6 = 90 (capital becomes 9 × 2/3 = 6). B: 8 × 6 + 12 × 6 = 120 (capital becomes 8 × 1.5 = 12). Profit ratio 90 : 120 = 3 : 4, so B gets 4/7 × 1,40,000 = ₹80,000.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_percent",
+  "subtopic": "Variation – direct and inverse",
+  "difficulty": "easy",
+  "question_en": "x varies directly as y² and inversely as z. When y = 4 and z = 8, x = 10. What is x when y = 6 and z = 12?",
+  "options": [
+   {
+    "en": "12"
+   },
+   {
+    "en": "15"
+   },
+   {
+    "en": "18"
+   },
+   {
+    "en": "22.5"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "x = k y²/z. From 10 = k × 16/8, k = 5. Then x = 5 × 36/12 = 15.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_percent",
+  "subtopic": "Compound interest – equal instalments",
+  "difficulty": "hard",
+  "question_en": "A loan of ₹21,000 is to be repaid in two equal annual instalments at 10% per annum compound interest. What is the amount of each instalment?",
+  "options": [
+   {
+    "en": "₹12,100"
+   },
+   {
+    "en": "₹11,550"
+   },
+   {
+    "en": "₹12,000"
+   },
+   {
+    "en": "₹12,705"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Present value of the instalments = loan: X/1.1 + X/1.21 = 21000, i.e. X × 2.1/1.21 = 21000, so X = 21000 × 1.21/2.1 = ₹12,100. (Total interest = 24,200 − 21,000 = ₹3,200.) ₹11,550 is just 21000 × 1.1 ÷ 2.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_time",
+  "subtopic": "Time & work – combined work",
+  "difficulty": "medium",
+  "question_en": "A and B together can do a job in 12 days. A alone can do it in 20 days. In how many days can B alone do it?",
+  "options": [
+   {
+    "en": "32 days"
+   },
+   {
+    "en": "24 days"
+   },
+   {
+    "en": "30 days"
+   },
+   {
+    "en": "36 days"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "B's one-day work = 1/12 − 1/20 = (5 − 3)/60 = 1/30. So B alone takes 30 days.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_time",
+  "subtopic": "Time & work – combined work",
+  "difficulty": "easy",
+  "question_en": "12 men can complete a work in 18 days. In how many days can 9 men complete the same work?",
+  "options": [
+   {
+    "en": "24 days"
+   },
+   {
+    "en": "27 days"
+   },
+   {
+    "en": "20 days"
+   },
+   {
+    "en": "22 days"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Men × days is constant: 12 × 18 = 216. Days for 9 men = 216/9 = 24.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_time",
+  "subtopic": "Time & work – combined work",
+  "difficulty": "medium",
+  "question_en": "A and B can do a work in 8 days, B and C in 12 days, and A and C in 24 days. In how many days can all three together do the work?",
+  "options": [
+   {
+    "en": "6 days"
+   },
+   {
+    "en": "8 days"
+   },
+   {
+    "en": "10 days"
+   },
+   {
+    "en": "12 days"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Adding: 2(A + B + C) = 1/8 + 1/12 + 1/24 = (3 + 2 + 1)/24 = 1/4. So A + B + C = 1/8 per day, i.e. 8 days.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_time",
+  "subtopic": "Time & work – efficiency",
+  "difficulty": "medium",
+  "question_en": "A is twice as efficient as B. Together they complete a work in 14 days. In how many days can B alone complete it?",
+  "options": [
+   {
+    "en": "28 days"
+   },
+   {
+    "en": "21 days"
+   },
+   {
+    "en": "36 days"
+   },
+   {
+    "en": "42 days"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Let B's rate be b, so A's is 2b. 3b = 1/14, so b = 1/42. B alone takes 42 days.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_time",
+  "subtopic": "Time & work – wages",
+  "difficulty": "medium",
+  "question_en": "A and B can complete a work in 12 days and 18 days respectively. They work together and are paid ₹3,000 in all. What is A's share?",
+  "options": [
+   {
+    "en": "₹1,800"
+   },
+   {
+    "en": "₹1,500"
+   },
+   {
+    "en": "₹1,200"
+   },
+   {
+    "en": "₹2,000"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Shares are in the ratio of work done = 1/12 : 1/18 = 3 : 2. A gets 3/5 × 3000 = ₹1,800.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_time",
+  "subtopic": "Time & work – one person leaves",
+  "difficulty": "hard",
+  "question_en": "A can do a work in 20 days and B in 30 days. They start together, but A leaves 5 days before the work is completed. In how many days is the whole work completed?",
+  "options": [
+   {
+    "en": "12 days"
+   },
+   {
+    "en": "18 days"
+   },
+   {
+    "en": "15 days"
+   },
+   {
+    "en": "14 days"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Let the total time be x days. B works for x days and A for (x − 5) days: (x − 5)/20 + x/30 = 1. Multiply by 60: 3(x − 5) + 2x = 60, so 5x = 75 and x = 15.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_time",
+  "subtopic": "Pipes & cisterns – leak / outlet",
+  "difficulty": "medium",
+  "question_en": "A pipe can fill a tank in 6 hours. A leak at the bottom can empty the full tank in 8 hours. If both are open, how long will the tank take to fill?",
+  "options": [
+   {
+    "en": "24 hours"
+   },
+   {
+    "en": "14 hours"
+   },
+   {
+    "en": "12 hours"
+   },
+   {
+    "en": "18 hours"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Net rate = 1/6 − 1/8 = (4 − 3)/24 = 1/24 per hour. So it takes 24 hours.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_time",
+  "subtopic": "Pipes & cisterns – inlet and outlet together",
+  "difficulty": "medium",
+  "question_en": "Pipes A and B can fill a tank in 10 and 15 minutes respectively, while pipe C can empty it in 30 minutes. If all three are opened together, in how much time will the empty tank be full?",
+  "options": [
+   {
+    "en": "8 minutes"
+   },
+   {
+    "en": "6 minutes"
+   },
+   {
+    "en": "7.5 minutes"
+   },
+   {
+    "en": "9 minutes"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Net rate = 1/10 + 1/15 − 1/30 = (3 + 2 − 1)/30 = 4/30 = 2/15. Time = 15/2 = 7.5 minutes.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_time",
+  "subtopic": "Pipes & cisterns – leak / outlet",
+  "difficulty": "medium",
+  "question_en": "A tank can be filled by a pipe in 4 hours and emptied by another pipe in 6 hours. If both are opened together, how long will it take to fill half of the empty tank?",
+  "options": [
+   {
+    "en": "12 hours"
+   },
+   {
+    "en": "8 hours"
+   },
+   {
+    "en": "3 hours"
+   },
+   {
+    "en": "6 hours"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Net rate = 1/4 − 1/6 = 1/12 per hour, so the full tank takes 12 hours. Half the tank takes 6 hours.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_time",
+  "subtopic": "Pipes & cisterns – leak / outlet",
+  "difficulty": "medium",
+  "question_en": "A pipe can fill a tank in 15 hours. Because of a leak, it takes 20 hours. How long will the leak take to empty the full tank?",
+  "options": [
+   {
+    "en": "45 hours"
+   },
+   {
+    "en": "60 hours"
+   },
+   {
+    "en": "75 hours"
+   },
+   {
+    "en": "50 hours"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Leak rate = 1/15 − 1/20 = (4 − 3)/60 = 1/60. The leak empties the full tank in 60 hours.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_time",
+  "subtopic": "Pipes & cisterns – pipe closed midway",
+  "difficulty": "hard",
+  "question_en": "Pipes A and B can fill a tank in 12 and 16 minutes respectively. Both are opened together, but A is closed after 4 minutes. How much more time will B need to fill the rest?",
+  "options": [
+   {
+    "en": "6 min"
+   },
+   {
+    "en": "5 min 20 sec"
+   },
+   {
+    "en": "6 min 40 sec"
+   },
+   {
+    "en": "7 min"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "In 4 minutes both fill 4 × (1/12 + 1/16) = 4 × 7/48 = 7/12 of the tank. Remaining 5/12 is filled by B at 1/16 per minute: (5/12) × 16 = 20/3 min = 6 min 40 sec.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_time",
+  "subtopic": "Pipes & cisterns – pipe closed midway",
+  "difficulty": "hard",
+  "question_en": "Three pipes A, B and C can together fill a tank in 6 hours. After working together for 2 hours, C is closed and A and B take 7 more hours to fill the rest. In how many hours can C alone fill the tank?",
+  "options": [
+   {
+    "en": "12 hours"
+   },
+   {
+    "en": "16 hours"
+   },
+   {
+    "en": "10 hours"
+   },
+   {
+    "en": "14 hours"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "In 2 hours, 2/6 = 1/3 is filled; 2/3 remains. A + B fill it in 7 hours, so A + B = (2/3)/7 = 2/21 per hour. C = 1/6 − 2/21 = (7 − 4)/42 = 1/14. So C alone takes 14 hours.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_time",
+  "subtopic": "Speed – average speed",
+  "difficulty": "medium",
+  "question_en": "A man goes from his house to his office at 40 km/h and returns at 60 km/h. What is his average speed for the whole journey?",
+  "options": [
+   {
+    "en": "50 km/h"
+   },
+   {
+    "en": "52 km/h"
+   },
+   {
+    "en": "48 km/h"
+   },
+   {
+    "en": "45 km/h"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "For equal distances the average speed = 2xy/(x + y) = 2 × 40 × 60 / 100 = 48 km/h. (The arithmetic mean 50 is the usual wrong answer.)",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_time",
+  "subtopic": "Speed – late and early arrival",
+  "difficulty": "medium",
+  "question_en": "Walking at 5/6 of his usual speed, a man reaches his office 12 minutes late. What is his usual time to reach the office?",
+  "options": [
+   {
+    "en": "50 minutes"
+   },
+   {
+    "en": "60 minutes"
+   },
+   {
+    "en": "72 minutes"
+   },
+   {
+    "en": "48 minutes"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "At 5/6 speed the time becomes 6/5 of the usual. So 6/5 T − T = T/5 = 12 min, giving T = 60 minutes.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_time",
+  "subtopic": "Speed – relative speed",
+  "difficulty": "easy",
+  "question_en": "Two persons start from the same point and walk in opposite directions at 5 km/h and 7 km/h. How far apart will they be after 3 hours?",
+  "options": [
+   {
+    "en": "36 km"
+   },
+   {
+    "en": "6 km"
+   },
+   {
+    "en": "30 km"
+   },
+   {
+    "en": "42 km"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "In opposite directions the speeds add: relative speed = 12 km/h. Distance = 12 × 3 = 36 km.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_time",
+  "subtopic": "Speed – average speed",
+  "difficulty": "medium",
+  "question_en": "A cyclist covers 24 km at 12 km/h and then 36 km at 18 km/h. What is his average speed for the whole journey?",
+  "options": [
+   {
+    "en": "14 km/h"
+   },
+   {
+    "en": "15 km/h"
+   },
+   {
+    "en": "16 km/h"
+   },
+   {
+    "en": "15.5 km/h"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Time for the first part = 24/12 = 2 h; second part = 36/18 = 2 h. Total distance = 60 km and total time = 4 h, so average speed = 15 km/h.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_time",
+  "subtopic": "Speed – relative speed",
+  "difficulty": "hard",
+  "question_en": "A policeman spots a thief 200 m away. The thief starts running at 10 km/h and the policeman chases him at 11 km/h. How far does the thief run before he is caught?",
+  "options": [
+   {
+    "en": "1800 m"
+   },
+   {
+    "en": "2200 m"
+   },
+   {
+    "en": "2000 m"
+   },
+   {
+    "en": "2400 m"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Relative speed = 1 km/h = 1000 m per hour. To close 200 m takes 0.2 hour. The thief runs 10 × 0.2 = 2 km = 2000 m (the policeman runs 2200 m).",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_time",
+  "subtopic": "Speed – late and early arrival",
+  "difficulty": "hard",
+  "question_en": "Ramesh walks to school at 4 km/h and reaches 5 minutes late. At 5 km/h he reaches 10 minutes early. What is the distance to school?",
+  "options": [
+   {
+    "en": "4 km"
+   },
+   {
+    "en": "6 km"
+   },
+   {
+    "en": "3 km"
+   },
+   {
+    "en": "5 km"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "The difference in time = 15 min = 1/4 h. d/4 − d/5 = 1/4, so d/20 = 1/4 and d = 5 km.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_time",
+  "subtopic": "Trains – crossing a platform",
+  "difficulty": "medium",
+  "question_en": "A 180 m long train crosses a 270 m long platform in 30 seconds. What is the speed of the train?",
+  "options": [
+   {
+    "en": "48 km/h"
+   },
+   {
+    "en": "60 km/h"
+   },
+   {
+    "en": "36 km/h"
+   },
+   {
+    "en": "54 km/h"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Distance covered = 180 + 270 = 450 m in 30 s, so speed = 15 m/s = 15 × 18/5 = 54 km/h.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_time",
+  "subtopic": "Trains – two trains crossing",
+  "difficulty": "medium",
+  "question_en": "Two trains of length 140 m and 160 m run on parallel tracks in opposite directions at 60 km/h and 40 km/h. In how many seconds will they cross each other?",
+  "options": [
+   {
+    "en": "12 seconds"
+   },
+   {
+    "en": "9 seconds"
+   },
+   {
+    "en": "10.8 seconds"
+   },
+   {
+    "en": "14.4 seconds"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Relative speed = 100 km/h = 100 × 5/18 = 250/9 m/s. Distance = 300 m. Time = 300 × 9/250 = 10.8 s.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_time",
+  "subtopic": "Trains – two trains crossing",
+  "difficulty": "medium",
+  "question_en": "Two trains of length 100 m and 150 m run in the same direction at 72 km/h and 54 km/h respectively. How long does the faster train take to completely overtake the slower one?",
+  "options": [
+   {
+    "en": "50 seconds"
+   },
+   {
+    "en": "40 seconds"
+   },
+   {
+    "en": "25 seconds"
+   },
+   {
+    "en": "60 seconds"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Relative speed = 18 km/h = 5 m/s. Distance to be covered = 100 + 150 = 250 m. Time = 250/5 = 50 s.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_time",
+  "subtopic": "Trains – passing a moving man",
+  "difficulty": "hard",
+  "question_en": "A 110 m long train passes a man walking in the opposite direction at 6 km/h in 6 seconds. What is the speed of the train?",
+  "options": [
+   {
+    "en": "66 km/h"
+   },
+   {
+    "en": "54 km/h"
+   },
+   {
+    "en": "72 km/h"
+   },
+   {
+    "en": "60 km/h"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Relative speed = 110/6 m/s = 110/6 × 18/5 = 66 km/h. Since they move in opposite directions, train speed = 66 − 6 = 60 km/h.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_time",
+  "subtopic": "Trains – crossing a platform",
+  "difficulty": "medium",
+  "question_en": "A train running at 54 km/h takes 20 seconds to cross a platform and 12 seconds to pass a man standing on the platform. What is the length of the platform?",
+  "options": [
+   {
+    "en": "150 m"
+   },
+   {
+    "en": "180 m"
+   },
+   {
+    "en": "120 m"
+   },
+   {
+    "en": "100 m"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Speed = 54 × 5/18 = 15 m/s. Train length = 15 × 12 = 180 m. Platform + train = 15 × 20 = 300 m, so platform = 120 m.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_time",
+  "subtopic": "Trains – two trains crossing",
+  "difficulty": "hard",
+  "question_en": "A train travelling at 48 km/h crosses another train, half its length and travelling in the opposite direction at 42 km/h, in 12 seconds. It also passes a platform in 45 seconds. What is the length of the platform?",
+  "options": [
+   {
+    "en": "400 m"
+   },
+   {
+    "en": "350 m"
+   },
+   {
+    "en": "450 m"
+   },
+   {
+    "en": "300 m"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Relative speed = 90 km/h = 25 m/s. Distance in 12 s = 300 m = L + L/2, so L = 200 m. Train speed = 48 × 5/18 = 40/3 m/s; in 45 s it covers 600 m = L + platform, so platform = 600 − 200 = 400 m.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_time",
+  "subtopic": "Boats & streams – upstream and downstream",
+  "difficulty": "medium",
+  "question_en": "A boat covers 18 km downstream in 2 hours and 12 km upstream in 2 hours. What is the speed of the stream?",
+  "options": [
+   {
+    "en": "1.5 km/h"
+   },
+   {
+    "en": "3 km/h"
+   },
+   {
+    "en": "1 km/h"
+   },
+   {
+    "en": "2 km/h"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Downstream = 9 km/h, upstream = 6 km/h. Stream = (9 − 6)/2 = 1.5 km/h (still-water speed = 7.5 km/h).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_time",
+  "subtopic": "Boats & streams – round trip",
+  "difficulty": "medium",
+  "question_en": "A boat's speed in still water is 15 km/h and the stream flows at 5 km/h. How much time does it take to go 60 km downstream and come back?",
+  "options": [
+   {
+    "en": "8 hours"
+   },
+   {
+    "en": "10 hours"
+   },
+   {
+    "en": "7.5 hours"
+   },
+   {
+    "en": "9 hours"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Downstream speed = 20 km/h, time = 3 h. Upstream speed = 10 km/h, time = 6 h. Total = 9 hours.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_time",
+  "subtopic": "Boats & streams – upstream and downstream",
+  "difficulty": "medium",
+  "question_en": "A man can row at 6 km/h in still water. In a river flowing at 2 km/h it takes him 3 hours to row to a place and come back. How far is the place?",
+  "options": [
+   {
+    "en": "9 km"
+   },
+   {
+    "en": "7.5 km"
+   },
+   {
+    "en": "6 km"
+   },
+   {
+    "en": "8 km"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "Downstream speed = 8 km/h, upstream = 4 km/h. d/8 + d/4 = 3 gives 3d/8 = 3, so d = 8 km.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_time",
+  "subtopic": "Boats & streams – upstream and downstream",
+  "difficulty": "hard",
+  "question_en": "A boat goes 30 km upstream and 44 km downstream in 10 hours. It goes 40 km upstream and 55 km downstream in 13 hours. What is the speed of the boat in still water?",
+  "options": [
+   {
+    "en": "8 km/h"
+   },
+   {
+    "en": "6 km/h"
+   },
+   {
+    "en": "9 km/h"
+   },
+   {
+    "en": "10 km/h"
+   }
+  ],
+  "answer_index": 0,
+  "explanation_en": "Let upstream speed u and downstream speed d. 30/u + 44/d = 10 and 40/u + 55/d = 13. Multiply the first by 4 and the second by 3: 120/u + 176/d = 40 and 120/u + 165/d = 39. Subtracting: 11/d = 1, so d = 11. Then 30/u = 10 − 4 = 6, so u = 5. Boat speed = (11 + 5)/2 = 8 km/h (stream = 3 km/h).",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_time",
+  "subtopic": "Mixture & alligation – rule of alligation",
+  "difficulty": "medium",
+  "question_en": "In what ratio must rice at ₹40 per kg be mixed with rice at ₹55 per kg so that the mixture is worth ₹46 per kg?",
+  "options": [
+   {
+    "en": "2 : 3"
+   },
+   {
+    "en": "1 : 1"
+   },
+   {
+    "en": "4 : 5"
+   },
+   {
+    "en": "3 : 2"
+   }
+  ],
+  "answer_index": 3,
+  "explanation_en": "By alligation, the ratio of cheaper : dearer = (55 − 46) : (46 − 40) = 9 : 6 = 3 : 2.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_time",
+  "subtopic": "Mixture & alligation – adding water",
+  "difficulty": "easy",
+  "question_en": "A 40-litre mixture contains milk and water in the ratio 3 : 1. How much water must be added to make the ratio 3 : 2?",
+  "options": [
+   {
+    "en": "20 litres"
+   },
+   {
+    "en": "10 litres"
+   },
+   {
+    "en": "5 litres"
+   },
+   {
+    "en": "15 litres"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Milk = 30 L, water = 10 L. For ratio 3 : 2 the water must be 30 × 2/3 = 20 L. Water to add = 20 − 10 = 10 L.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_time",
+  "subtopic": "Mixture & alligation – repeated replacement",
+  "difficulty": "hard",
+  "question_en": "A vessel contains 60 litres of pure milk. 12 litres are drawn out and replaced by water. The process is repeated once more. How much milk is now in the vessel?",
+  "options": [
+   {
+    "en": "36 litres"
+   },
+   {
+    "en": "38.4 litres"
+   },
+   {
+    "en": "40 litres"
+   },
+   {
+    "en": "43.2 litres"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Milk left = 60 × (1 − 12/60)² = 60 × (4/5)² = 60 × 16/25 = 38.4 litres. (48 L after the first step; 48 × 4/5 = 38.4 after the second.)",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_time",
+  "subtopic": "Mixture & alligation – mixing two solutions",
+  "difficulty": "hard",
+  "question_en": "Two vessels contain milk and water in the ratios 2 : 3 and 3 : 4. If equal quantities of the two mixtures are poured into a third vessel, what is the ratio of milk to water in it?",
+  "options": [
+   {
+    "en": "5 : 7"
+   },
+   {
+    "en": "29 : 41"
+   },
+   {
+    "en": "1 : 1"
+   },
+   {
+    "en": "31 : 39"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "Take 35 units from each vessel. Vessel 1: milk 14, water 21. Vessel 2: milk 15, water 20. Total milk = 29, water = 41. Ratio = 29 : 41.",
+  "pyq_concept": true
+ },
+ {
+  "chapter_key": "num_time",
+  "subtopic": "Mixture & alligation – dishonest milkman",
+  "difficulty": "medium",
+  "question_en": "A milkman mixes water with milk and sells the mixture at the cost price of pure milk. If his gain is 20%, what is the ratio of water to milk in the mixture?",
+  "options": [
+   {
+    "en": "1 : 4"
+   },
+   {
+    "en": "1 : 5"
+   },
+   {
+    "en": "1 : 6"
+   },
+   {
+    "en": "1 : 3"
+   }
+  ],
+  "answer_index": 1,
+  "explanation_en": "For every 5 litres of milk bought (cost 5), he sells 6 litres of mixture (revenue 6), a gain of 1/5 = 20%. So 1 litre of water is added to 5 litres of milk: water : milk = 1 : 5.",
+  "pyq_concept": false
+ },
+ {
+  "chapter_key": "num_time",
+  "subtopic": "Speed – average speed over three equal distances",
+  "difficulty": "medium",
+  "question_en": "A bus covers the first one-third of a journey at 30 km/h, the next one-third at 40 km/h and the last one-third at 60 km/h. What is its average speed for the whole journey?",
+  "options": [
+   {
+    "en": "43 1/3 km/h"
+   },
+   {
+    "en": "42 km/h"
+   },
+   {
+    "en": "40 km/h"
+   },
+   {
+    "en": "45 km/h"
+   }
+  ],
+  "answer_index": 2,
+  "explanation_en": "Take the journey as 120 km (40 km per part). Time = 40/30 + 40/40 + 40/60 = 4/3 + 1 + 2/3 = 3 h. Average speed = 120/3 = 40 km/h. 43 1/3 is the simple mean of the speeds, which is wrong for equal distances.",
+  "pyq_concept": true
+ }
+]

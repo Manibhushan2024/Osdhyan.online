@@ -1,0 +1,88 @@
+{
+ "subject": "Arithmetical & Numerical Ability",
+ "subject_hi": "अंकगणितीय एवं संख्यात्मक क्षमता",
+ "chapters": [
+  {
+   "key": "num_number",
+   "title": "1. Number System, LCM–HCF & Simplification",
+   "items": [
+    {
+     "title": "Number System, LCM–HCF & Simplification — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\numerical\\num_number.pdf"
+    }
+   ]
+  },
+  {
+   "key": "num_percent",
+   "title": "2. Percentage, Ratio, Average, Ages, Profit–Loss, SI–CI",
+   "items": [
+    {
+     "title": "Percentage, Ratio, Average, Ages, Profit–Loss, SI–CI — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\numerical\\num_percent.pdf"
+    }
+   ]
+  },
+  {
+   "key": "num_time",
+   "title": "3. Time & Work, Pipes, Speed–Distance, Trains, Boats, Mixtures",
+   "items": [
+    {
+     "title": "Time & Work, Pipes, Speed–Distance, Trains, Boats, Mixtures — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\numerical\\num_time.pdf"
+    }
+   ]
+  },
+  {
+   "key": "num_algebra",
+   "title": "4. Algebra & Trigonometry Basics",
+   "items": [
+    {
+     "title": "Algebra & Trigonometry Basics — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\numerical\\num_algebra.pdf"
+    }
+   ]
+  },
+  {
+   "key": "num_geometry",
+   "title": "5. Geometry & Mensuration",
+   "items": [
+    {
+     "title": "Geometry & Mensuration — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\numerical\\num_geometry.pdf"
+    }
+   ]
+  },
+  {
+   "key": "num_data",
+   "title": "6. Data Interpretation & Statistics",
+   "items": [
+    {
+     "title": "Data Interpretation & Statistics — revision notes",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\numerical\\num_data.pdf"
+    }
+   ]
+  },
+  {
+   "key": "numerical_practice",
+   "title": "7. Complete notes, previous-year questions & 200 most expected",
+   "items": [
+    {
+     "title": "Arithmetical & Numerical Ability — fast revision sheet (revise everything quickly)",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\numerical\\numerical_fast_revision.pdf"
+    },
+    {
+     "title": "Arithmetical & Numerical Ability — complete notes (all chapters in one PDF)",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\numerical\\numerical_complete_notes.pdf"
+    },
+    {
+     "title": "Arithmetical & Numerical Ability — previous-year questions 2023–24 with solutions",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\numerical\\numerical_pyq_2023_24.pdf"
+    },
+    {
+     "title": "Arithmetical & Numerical Ability — 200 most expected questions with answers",
+     "file": "C:\\dev\\test-series-platform\\backend\\storage\\app\\public\\materials\\dsssb\\numerical\\numerical_200_most_expected.pdf"
+    }
+   ]
+  }
+ ]
+}

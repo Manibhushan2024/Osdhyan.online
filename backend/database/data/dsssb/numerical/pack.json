@@ -1,0 +1,26 @@
+{
+ "name": "Arithmetical & Numerical Ability",
+ "chapters": [
+  ["num_number", "Number System, LCM–HCF & Simplification", "Number System & Simplification"],
+  ["num_percent", "Percentage, Ratio, Average, Ages, Profit–Loss, SI–CI", "Percentage, Ratio, P&L, Interest"],
+  ["num_time", "Time & Work, Pipes, Speed–Distance, Trains, Boats, Mixtures", "Time, Work & Distance"],
+  ["num_algebra", "Algebra & Trigonometry Basics", "Algebra & Trigonometry"],
+  ["num_geometry", "Geometry & Mensuration", "Geometry & Mensuration"],
+  ["num_data", "Data Interpretation & Statistics", "DI & Statistics"]
+ ],
+ "pyq_file": "numerical_pyq_analysis.json",
+ "pyq_rules": [
+  ["[num_number]", "num_number"], ["[num_percent]", "num_percent"], ["[num_time]", "num_time"],
+  ["[num_algebra]", "num_algebra"], ["[num_geometry]", "num_geometry"], ["[num_data]", "num_data"]
+ ],
+ "question_files": ["questions_a.json", "questions_b.json"],
+ "series_name": "DSSSB TGT CS — Arithmetical & Numerical Ability",
+ "series_name_hi": "DSSSB TGT CS — अंकगणितीय एवं संख्यात्मक क्षमता",
+ "series_description": "Section A Arithmetical & Numerical Ability: number system, LCM–HCF and simplification; percentage, ratio, average, ages, profit–loss–discount, simple and compound interest; time & work, pipes, speed–distance, trains, boats and mixtures; algebra and trigonometry basics; geometry and mensuration; data interpretation and statistics — 76 previous-year questions with worked solutions, chapter-wise practice and 200 most expected questions. Formula notes and a fast-revision sheet are in Courses → DSSSB TGT Computer Science.",
+ "course_subject": "Arithmetical & Numerical Ability",
+ "course_subject_hi": "अंकगणितीय एवं संख्यात्मक क्षमता",
+ "tagline": "Number system & simplification · percentage, ratio, P&L, SI–CI · time–work, speed, trains, mixtures · algebra & trigonometry · geometry & mensuration · DI & statistics",
+ "intro": "Section A Arithmetical & Numerical Ability carries 20 marks in every DSSSB paper. In the 4 official 2023–24 TGT CS papers ({n} questions) almost half came from percentage, profit–loss–discount, simple and compound interest (including instalments), partnership, variation and ages; about a fifth from time–work, pipes, average speed, trains, boats and mixtures; the rest from HCF–LCM remainders, divisibility and long BODMAS fractions, mensuration of cones, cylinders and spheres, surds and text-form data interpretation. Most questions are SSC-CGL Tier-1 level with two or three steps. The notes give every formula with a worked DSSSB-level example and a shortcut.",
+ "practice_split": 35,
+ "full_test_min_per_q": 0.75
+}
