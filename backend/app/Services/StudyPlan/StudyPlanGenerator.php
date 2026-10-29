@@ -38,6 +38,17 @@ use Illuminate\Support\Facades\DB;
 class StudyPlanGenerator
 {
     public const PHASE3_DAYS = 10;
+
+    /** Section B (deep study in library/weekend hours) and Section A (short office slots). */
+    public const SECTION_B = ['cs', 'teaching'];
+    public const SECTION_A = ['ga', 'reasoning', 'arithmetic', 'hindi', 'english'];
+
+    /**
+     * Order of the Computer Science packs: by how many questions the 2023–24
+     * DSSSB TGT CS papers asked (programming and DBMS most), the broad
+     * fundamentals/teaching pack last.
+     */
+    public const CS_ORDER = ['programming', 'dbms', 'network', 'os', 'dsa', 'fundamental'];
     public const PHASE1_SHARE = 0.6;     // max share of the pre-phase-3 days spent in phase 1
     public const NOTES_MIN = 40;
     public const REVIEW_MIN = 45;
@@ -387,6 +398,22 @@ class StudyPlanGenerator
         $this->needBaseline = !$found;
     }
 
+    /** Position of a Section B pack in CS_ORDER (Section A packs sort after, by weight). */
+    private function csRank(array $pack): int
+    {
+        if (!in_array($pack['section'], self::SECTION_B, true)) {
+            return 100;
+        }
+        $key = strtolower($pack['key'] . ' ' . ($pack['label'] ?? ''));
+        foreach (self::CS_ORDER as $i => $needle) {
+            if (str_contains($key, $needle)) {
+                return $i;
+            }
+        }
+
+        return 50;
+    }
+
     private function packWeight(array $pack): float
     {
         $section = $pack['section'];
@@ -413,7 +440,7 @@ class StudyPlanGenerator
             $fa = in_array($a['key'], $this->focus, true) || in_array($a['section'], $this->focus, true) ? 0 : 1;
             $fb = in_array($b['key'], $this->focus, true) || in_array($b['section'], $this->focus, true) ? 0 : 1;
 
-            return [$fa, -$this->packWeight($a), $index[$a['key']]] <=> [$fb, -$this->packWeight($b), $index[$b['key']]];
+            return [$fa, $this->csRank($a), -$this->packWeight($a), $index[$a['key']]] <=> [$fb, $this->csRank($b), -$this->packWeight($b), $index[$b['key']]];
         });
         $this->packOrder = array_column($packs, 'key');
 
@@ -627,7 +654,8 @@ class StudyPlanGenerator
             $max = min($max, self::OFFICE_MAX);
 
             return match ($phase) {
-                1       => $this->takeLearn($max, 8) ?? $this->takeMixed($max) ?? $this->takeRevision($max),
+                // Office: Section A chapter notes and practice tests (short, interruptible).
+                1       => $this->takeLearn($max, 8, self::SECTION_A) ?? $this->takeLearn($max, 8) ?? $this->takeMixed($max) ?? $this->takeRevision($max),
                 2       => $this->takeCycle(['mixed', 'revision', 'retry', 'revision'], $step++, $max),
                 default => $this->takeSheet($max) ?? $this->takeRevision($max) ?? $this->takeRetry($max),
             };
@@ -660,7 +688,8 @@ class StudyPlanGenerator
             $cap = min($max, self::OFFICE_MAX);
 
             return match ($phase) {
-                1       => $this->takeLearn($max, 12) ?? $this->takeMixed($max) ?? $this->takeRevision($cap) ?? $this->takeRetry($max),
+                // Library: Section B learning (core Computer Science first).
+                1       => $this->takeLearn($max, 12, self::SECTION_B) ?? $this->takeLearn($max, 12) ?? $this->takeMixed($max) ?? $this->takeRevision($cap) ?? $this->takeRetry($max),
                 2       => $this->takeCycle(['mixed', 'revision', 'retry', 'revision'], $step++, $max),
                 default => $this->takeCycle(['revision', 'retry'], $step++, $cap),
             };
@@ -693,7 +722,9 @@ class StudyPlanGenerator
             $cap = min($max, self::OFFICE_MAX);
 
             return match ($phase) {
-                1       => $this->takeLearn($max, 12) ?? $this->takeMixed($max) ?? $this->takeRevision($cap) ?? $this->takeRetry($max),
+                // Weekend: Section B with a Section A item every third pick.
+                1       => ($step++ % 3 === 2 ? $this->takeLearn(min($max, $cap), 12, self::SECTION_A) : $this->takeLearn($max, 12, self::SECTION_B))
+                    ?? $this->takeLearn($max, 12) ?? $this->takeMixed($max) ?? $this->takeRevision($cap) ?? $this->takeRetry($max),
                 2       => $this->takeCycle(['mixed', 'revision', 'retry', 'revision'], $step++, $max),
                 default => $this->takeSheet($cap) ?? $this->takeCycle(['revision', 'retry'], $step++, $cap),
             };
@@ -976,7 +1007,7 @@ class StudyPlanGenerator
     }
 
     /** Next ready item from the learn queue that fits (optionally one section only). */
-    private function takeLearn(int $max, int $lookahead, ?string $section = null): ?array
+    private function takeLearn(int $max, int $lookahead, string|array|null $section = null): ?array
     {
         return $this->takeFrom($this->learn, $max, $section, $lookahead, $max <= self::OFFICE_MAX);
     }
@@ -1011,12 +1042,15 @@ class StudyPlanGenerator
         return $this->mark($it);
     }
 
-    private function takeFrom(array &$pool, int $max, ?string $section = null, int $lookahead = PHP_INT_MAX, bool $officeOnly = false): ?array
+    private function takeFrom(array &$pool, int $max, string|array|null $section = null, int $lookahead = PHP_INT_MAX, bool $officeOnly = false): ?array
     {
         $seen = 0;
         foreach ($pool as $i => $it) {
-            if ($section !== null && ($it['section'] ?? null) !== $section) {
-                continue;
+            if ($section !== null) {
+                $wanted = is_array($section) ? $section : [$section];
+                if (!in_array($it['section'] ?? null, $wanted, true)) {
+                    continue;
+                }
             }
             if (++$seen > $lookahead) {
                 break;
