@@ -102,8 +102,11 @@ class AttemptAnalysis
 
         // ── Others: first completed attempt of each real student ───────
         $firsts = $this->firstAttempts($test->id);
-        $myFirstId = $firsts->firstWhere('user_id', $attempt->user_id)?->id;
-        $isFirst = $myFirstId === $attempt->id;
+        // "First attempt" comes from the student's own history, not the ranking
+        // pool (accounts left out of ranking still have a first attempt).
+        $myFirstId = TestAttempt::where('user_id', $attempt->user_id)->where('test_id', $test->id)
+            ->where('status', 'completed')->min('id');
+        $isFirst = (int) $myFirstId === (int) $attempt->id;
         $others = $firsts->reject(fn ($a) => (int) $a->user_id === (int) $attempt->user_id);
         $scores = $others->pluck('total_score')->map(fn ($s) => (float) $s)->values();
         $pool = $scores->concat([$score])->sort()->values(); // others + me
