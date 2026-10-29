@@ -36,13 +36,23 @@ def call(api, method, path, token=None, body=None, raw=None, content_type=None):
         headers["Authorization"] = f"Bearer {token}"
     req = urllib.request.Request(url, data=data, method=method, headers=headers)
     start = time.perf_counter()
-    try:
-        with urllib.request.urlopen(req, timeout=60) as resp:
-            status, text = resp.status, resp.read().decode("utf-8", "replace")
-    except urllib.error.HTTPError as e:
-        status, text = e.code, e.read().decode("utf-8", "replace")
-    except Exception as e:  # network error
-        status, text = 0, str(e)
+    for attempt in range(4):
+        try:
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                status, text = resp.status, resp.read().decode("utf-8", "replace")
+            break
+        except urllib.error.HTTPError as e:
+            status, text = e.code, e.read().decode("utf-8", "replace")
+            break
+        except urllib.error.URLError as e:  # connection-level (TLS EOF, reset): nothing reached the server
+            status, text = 0, str(e)
+            if attempt < 3:
+                time.sleep(1.5 * (attempt + 1))
+                continue
+            break
+        except Exception as e:  # network error
+            status, text = 0, str(e)
+            break
     ms = int((time.perf_counter() - start) * 1000)
     try:
         payload = json.loads(text) if text else None

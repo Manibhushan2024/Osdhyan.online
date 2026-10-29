@@ -25,6 +25,18 @@ DATA = os.path.join(ROOT, 'backend', 'database', 'data', 'dsssb')
 TOPIC = 'Revision notes & practice'
 
 
+def _urlopen_retry(req, tries=4):
+    """Connection-level failures (TLS EOF, reset) never reached the server: retry them."""
+    import time
+    for attempt in range(tries):
+        try:
+            return urllib.request.urlopen(req, timeout=300)
+        except urllib.error.URLError as e:
+            if isinstance(e, urllib.error.HTTPError) or attempt == tries - 1:
+                raise
+            time.sleep(1.5 * (attempt + 1))
+
+
 class Api:
     def __init__(self, base):
         self.base = base.rstrip('/')
@@ -53,7 +65,7 @@ class Api:
             headers['Content-Type'] = 'application/json'
         req = urllib.request.Request(self.base + path, data=data, method=method, headers=headers)
         try:
-            with urllib.request.urlopen(req, timeout=300) as r:
+            with _urlopen_retry(req) as r:
                 raw = r.read()
                 return json.loads(raw) if raw else None
         except urllib.error.HTTPError as e:
