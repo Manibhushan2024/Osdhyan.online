@@ -3,6 +3,7 @@
 import { Download, FileText, FolderOpen, Headphones } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { type CourseMaterial, materialUrl, storageUrl, youtubeEmbedUrl } from '@/lib/courseContent';
+import FullscreenFrame from './FullscreenFrame';
 
 type MaterialViewProps = {
     material: CourseMaterial;
@@ -15,9 +16,33 @@ type MaterialViewProps = {
  * Renders one piece of course content:
  * pdf → inline viewer, image → picture, video → <video>, audio → <audio>,
  * youtube → embedded player, anything else → download card.
+ *
+ * PDFs, images, videos and YouTube lessons get a real full-screen mode
+ * (FullscreenFrame): button in the corner, F to toggle, Esc to leave.
  */
 export default function MaterialView({ material, fill = true, className }: MaterialViewProps) {
     const fileUrl = storageUrl(material.file_path);
+    const viewable = ['pdf', 'image', 'video', 'youtube'].includes(material.type)
+        && (material.type === 'youtube' ? !!youtubeEmbedUrl(material) : !!fileUrl);
+
+    if (!viewable) {
+        return <Content material={material} fileUrl={fileUrl} fill={fill} className={className} full={false} />;
+    }
+
+    return (
+        <FullscreenFrame title={material.title} className={fill ? 'h-full w-full' : 'w-full'}>
+            {(full) => <Content material={material} fileUrl={fileUrl} fill={fill || full} className={full ? undefined : className} full={full} />}
+        </FullscreenFrame>
+    );
+}
+
+function Content({ material, fileUrl, fill, className, full }: {
+    material: CourseMaterial;
+    fileUrl: string | null;
+    fill: boolean;
+    className?: string;
+    full: boolean;
+}) {
     const frame = cn(fill ? 'h-full w-full' : 'w-full', className);
 
     if (material.type === 'youtube') {
@@ -44,7 +69,7 @@ export default function MaterialView({ material, fill = true, className }: Mater
             <iframe
                 src={`${fileUrl}#view=FitH&navpanes=0`}
                 title={material.title}
-                className={cn(frame, 'border-0 bg-white', !fill && 'min-h-[80vh]')}
+                className={cn(frame, 'border-0 bg-white', !fill && !full && 'min-h-[80vh]')}
             />
         );
     }

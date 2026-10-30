@@ -143,7 +143,7 @@ export default function MultiModalPlayer({ group, topic }: MultiModalPlayerProps
                                 <PictureInPicture2 className="h-4 w-4" />
                             </IconButton>
                         )}
-                        <IconButton title={isFullscreen ? 'Exit full screen' : 'Full screen'} onClick={() => setViewMode(isFullscreen ? 'normal' : 'fullscreen')}>
+                        <IconButton title={isFullscreen ? 'Back to normal view' : 'Expand (use the Full screen button on the material for true full screen)'} onClick={() => setViewMode(isFullscreen ? 'normal' : 'fullscreen')}>
                             {isFullscreen ? <Minimize2 className="h-4 w-4" /> : <Maximize2 className="h-4 w-4" />}
                         </IconButton>
                         {isFullscreen && (

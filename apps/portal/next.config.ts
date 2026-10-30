@@ -86,16 +86,22 @@ const nextConfig: NextConfig = {
           },
         ],
       },
-      {
-        // Cache static assets aggressively
-        source: "/_next/static/(.*)",
-        headers: [
-          {
-            key: "Cache-Control",
-            value: "public, max-age=31536000, immutable",
-          },
-        ],
-      },
+      // Cache static assets aggressively — production only: production chunk
+      // names carry a content hash, dev chunk names do not, so in dev this
+      // header made browsers keep running stale code after every edit.
+      ...(process.env.NODE_ENV === "production"
+        ? [
+            {
+              source: "/_next/static/(.*)",
+              headers: [
+                {
+                  key: "Cache-Control",
+                  value: "public, max-age=31536000, immutable",
+                },
+              ],
+            },
+          ]
+        : []),
       {
         // Cache public images for 30 days
         source: "/(.*)\\.(png|jpg|jpeg|gif|webp|svg|ico)$",
