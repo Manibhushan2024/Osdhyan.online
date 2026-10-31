@@ -31,7 +31,7 @@ Api = _publish.Api
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('chapter', help='chapter name, e.g. "Computer Fundamentals & Digital Logic"')
-    ap.add_argument('items', nargs='+', help='"Title=path/to/file"')
+    ap.add_argument('items', nargs='+', help='"Title=path/to/file", optionally followed by "::description"')
     ap.add_argument('--api', default='http://127.0.0.1:3000/api')
     args = ap.parse_args()
     email = os.environ.get('OSDHYAN_ADMIN_EMAIL', 'admin@local.test')
@@ -40,10 +40,11 @@ def main():
         sys.exit('Set OSDHYAN_ADMIN_PASSWORD (root admin password) first.')
     items = []
     for raw in args.items:
-        title, _, path = raw.partition('=')
+        title, _, rest = raw.partition('=')
+        path, _, description = rest.partition('::')
         if not path or not os.path.isfile(path):
             sys.exit(f'not a file: {raw}')
-        items.append((title.strip(), path))
+        items.append((title.strip(), path, description.strip()))
 
     api = Api(args.api)
     login = api.call('POST', '/auth/admin/login', {'login': email, 'password': password})
@@ -68,11 +69,13 @@ def main():
         topic = api.call('POST', '/admin/topics', {'chapter_id': chapter['id'], 'name_en': TOPIC})['data']
         topic['materials'] = []
         print('created topic', topic['id'])
-    for title, path in items:
+    for title, path, description in items:
         for old in [m for m in topic.get('materials', []) if m.get('title') == title]:
             api.call('DELETE', f"/admin/materials/{old['id']}")
-        res = api.call('POST', '/admin/materials/upload', {'topic_id': topic['id'], 'title': title, 'is_published': 1},
-                       files={'file': path})
+        body = {'topic_id': topic['id'], 'title': title, 'is_published': 1}
+        if description:
+            body['description'] = description
+        res = api.call('POST', '/admin/materials/upload', body, files={'file': path})
         m = res.get('data', res)
         print('uploaded', title, '->', m.get('type'), m.get('file_path'))
 
