@@ -32,6 +32,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('chapter', help='chapter name, e.g. "Computer Fundamentals & Digital Logic"')
     ap.add_argument('items', nargs='+', help='"Title=path/to/file", optionally followed by "::description"')
+    ap.add_argument('--subject', help='subject name; needed when several subjects share the chapter name')
     ap.add_argument('--api', default='http://127.0.0.1:3000/api')
     args = ap.parse_args()
     email = os.environ.get('OSDHYAN_ADMIN_EMAIL', 'admin@local.test')
@@ -54,7 +55,7 @@ def main():
     subjects = api.call('GET', '/admin/subjects')
     subjects = subjects.get('data', subjects) if isinstance(subjects, dict) else subjects
     chapter = None
-    for s in (s for s in subjects if s['exam_id'] == exam['id']):
+    for s in (s for s in subjects if s['exam_id'] == exam['id'] and (not args.subject or s['name_en'] == args.subject)):
         for c in api.call('GET', f"/admin/subjects/{s['id']}/hierarchy")['data']:
             if c['name_en'] == args.chapter and c.get('is_published', True):
                 chapter = c
