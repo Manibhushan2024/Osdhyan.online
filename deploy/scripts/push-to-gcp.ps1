@@ -22,11 +22,15 @@ if ($LASTEXITCODE -ne 0) { throw 'upload failed' }
 
 $remote = @"
 set -e
+old_caddy=`$(md5sum $Dir/deploy/Caddyfile 2>/dev/null | cut -d' ' -f1)
 tar -xzf /home/dell/osdhyan-code.tar.gz -C $Dir
 cd $Dir/deploy
 docker compose exec -T backup /bin/sh /backup-loop.sh now || true
 docker compose build
 docker compose up -d
+# The Caddyfile is a single-file mount: tar replaces the file, so the running
+# container keeps the old copy until it restarts.
+[ "`$old_caddy" = "`$(md5sum Caddyfile | cut -d' ' -f1)" ] || docker compose restart caddy
 docker image prune -f >/dev/null
 for i in `$(seq 1 40); do docker compose exec -T backend curl -fsS http://127.0.0.1:10000/api/health >/dev/null 2>&1 && break; sleep 3; done
 docker compose ps --format 'table {{.Service}}\t{{.Status}}'
